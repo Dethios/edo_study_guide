@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/project_export.schema.json",
+  "title": "Project Export Schema v1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["project_metadata", "assets", "handoff"],
+  "properties": {
+    "project_metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["project_name", "export_timestamp_iso", "project_instructions_raw", "project_memory_highlights", "known_limits"],
+      "properties": {
+        "project_name": { "type": "string", "minLength": 1 },
+        "export_timestamp_iso": {
+          "type": "string",
+          "description": "RFC3339/ISO-8601 timestamp with timezone",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "project_instructions_raw": { "type": ["string", "null"] },
+        "project_memory_highlights": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "known_limits": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["files_visible", "can_list_past_chats", "notes"],
+          "properties": {
+            "files_visible": {
+              "oneOf": [
+                { "type": "integer", "minimum": 0 },
+                { "type": "string", "enum": ["unknown"] }
+              ]
+            },
+            "can_list_past_chats": { "type": "boolean" },
+            "notes": { "type": "string" }
+          }
+        }
+      }
+    },
+    "assets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["files", "project_instructions_analysis", "referencable_chats"],
+      "properties": {
+        "files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["filename", "filetype", "approx_pages_or_rows", "summary", "key_points", "entities", "dates", "decisions", "assumptions", "risks", "open_questions", "sources_or_citations", "quality_bias_notes"],
+            "properties": {
+              "filename": { "type": "string", "minLength": 1 },
+              "filetype": {
+                "type": "string",
+                "enum": ["pdf", "docx", "md", "csv", "xlsx", "image", "txt", "other"]
+              },
+              "approx_pages_or_rows": {
+                "oneOf": [
+                  { "type": "integer", "minimum": 1 },
+                  { "type": "string", "enum": ["unknown"] }
+                ]
+              },
+              "summary": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1200,
+                "description": "150–300 word neutral summary (soft limit not enforced by schema)"
+              },
+              "key_points": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "entities": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["people", "orgs", "products", "locations"],
+                "properties": {
+                  "people": { "type": "array", "items": { "type": "string" } },
+                  "orgs": { "type": "array", "items": { "type": "string" } },
+                  "products": { "type": "array", "items": { "type": "string" } },
+                  "locations": { "type": "array", "items": { "type": "string" } }
+                }
+              },
+              "dates": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "description": "ISO date/time or month-year",
+                  "pattern": "^(\\d{4}(-\\d{2}(-\\d{2}(T.*)?)?)?|\\d{4}-\\d{2})$"
+                }
+              },
+              "decisions": { "type": "array", "items": { "type": "string" } },
+              "assumptions": { "type": "array", "items": { "type": "string" } },
+              "risks": { "type": "array", "items": { "type": "string" } },
+              "open_questions": { "type": "array", "items": { "type": "string" } },
+              "sources_or_citations": { "type": "array", "items": { "type": "string" } },
+              "quality_bias_notes": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["recency", "completeness", "author_biases", "conflicts_of_interest"],
+                "properties": {
+                  "recency": { "type": "string", "enum": ["fresh", "stale", "unknown"] },
+                  "completeness": { "type": "string", "enum": ["high", "medium", "low"] },
+                  "author_biases": { "type": "array", "items": { "type": "string" } },
+                  "conflicts_of_interest": { "type": "array", "items": { "type": "string" } }
+                }
+              }
+            }
+          }
+        },
+        "project_instructions_analysis": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["role", "tone_style", "constraints", "alignment_with_goals", "gaps_or_conflicts"],
+          "properties": {
+            "role": { "type": "string" },
+            "tone_style": { "type": "string" },
+            "constraints": { "type": "array", "items": { "type": "string" } },
+            "alignment_with_goals": { "type": "string" },
+            "gaps_or_conflicts": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "referencable_chats": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["title_or_slug", "date_range", "participants", "purpose", "summary", "key_decisions", "action_items", "linked_files", "notable_citations", "bias_or_quality_notes"],
+            "properties": {
+              "title_or_slug": { "type": ["string", "null"] },
+              "date_range": {
+                "type": "string",
+                "description": "YYYY-MM-DD to YYYY-MM-DD or 'unknown'",
+                "pattern": "^(\\d{4}-\\d{2}-\\d{2} to \\d{4}-\\d{2}-\\d{2}|unknown)$"
+              },
+              "participants": {
+                "type": "array",
+                "items": { "type": "string", "enum": ["user", "assistant"] },
+                "minItems": 1
+              },
+              "purpose": { "type": "string" },
+              "summary": { "type": "string" },
+              "key_decisions": { "type": "array", "items": { "type": "string" } },
+              "action_items": { "type": "array", "items": { "type": "string" } },
+              "linked_files": { "type": "array", "items": { "type": "string" } },
+              "notable_citations": { "type": "array", "items": { "type": "string" } },
+              "bias_or_quality_notes": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tags", "recommended_next_actions", "integration_hints_for_custom_gpts"],
+      "properties": {
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "recommended_next_actions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["owner", "action", "due"],
+            "properties": {
+              "owner": { "type": "string", "enum": ["me", "you", "team"] },
+              "action": { "type": "string" },
+              "due": { "type": "string" }
+            }
+          }
+        },
+        "integration_hints_for_custom_gpts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["ideal_knowledge_chunks", "suggested_embeddings_fields", "canonical_ids"],
+          "properties": {
+            "ideal_knowledge_chunks": { "type": "string" },
+            "suggested_embeddings_fields": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["summary", "key_points", "decisions", "risks", "entities", "dates"]
+              }
+            },
+            "canonical_ids": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["project_slug", "asset_prefix"],
+              "properties": {
+                "project_slug": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+                },
+                "asset_prefix": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9-]{1,24}$"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

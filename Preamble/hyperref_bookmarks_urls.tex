@@ -1,0 +1,89 @@
+% =============================================================================
+% HYPERREF EXTENSIONS
+% =============================================================================
+\usepackage{hyperref}
+\usepackage{xurl}              % richer URL breakpoints
+\usepackage{etoolbox}          % hooks for post-package adjustments
+\Urlmuskip=0mu plus 2mu
+\hypersetup{
+  breaklinks=true,
+  colorlinks=true,
+  linkcolor=AccentBlue,
+  citecolor=AccentGreen,
+  urlcolor=AccentPurple,
+  filecolor=AccentBlue,
+  pdfborder={0 0 0},
+  pdfborderstyle={/S/U/W 0}
+}
+
+\usepackage{xr-hyper}
+\providecommand{\subfix}[1]{#1}
+\newcommand{\ImportAUX}[1]{%
+  \IfFileExists{#1.aux}{\externaldocument*{#1}}{}%
+}
+
+\makeatletter
+\@ifundefined{IfSubfilesClassLoaded}{}{
+  \IfSubfilesClassLoaded{
+    \ImportAUX{\subfix{../build/main}}
+  }{}
+}
+\makeatother
+
+\usepackage{bookmark}
+\urlstyle{tt}
+
+\makeatletter
+\pdfstringdefDisableCommands{
+  \def\color#1{}%
+  \def\textcolor#1#2{#2}%
+}
+\makeatother
+
+\pdfsuppresswarningdupdest=1
+\pdfsuppresswarningdupmap=1
+
+\makeatletter
+\newcount\codex@destcount
+\codex@destcount\z@
+\newcommand*{\codex@deststore}{}
+\let\codex@deststore\@empty
+\newcommand*{\codex@rememberdest}[1]{%
+  \begingroup
+    \edef\codex@tempa{\endgroup\noexpand\codex@rememberdest@aux{#1}}%
+  \codex@tempa
+}
+\newcommand*{\codex@rememberdest@aux}[1]{%
+  \expandafter\ifx\csname codex@seen@#1\endcsname\relax
+    \expandafter\gdef\csname codex@seen@#1\endcsname{}%
+    \global\advance\codex@destcount\@ne
+    \g@addto@macro\codex@deststore{%
+      \begingroup\leavevmode
+        \hbox{\Hy@raisedlink{\hyperlink{#1}{\kern.1pt}}}%
+      \endgroup
+    }%
+  \fi
+}
+\AfterPackage*{biblatex}{%
+  \let\codex@orig@abx@aux@cite\abx@aux@cite
+  \protected\def\abx@aux@cite##1##2{%
+    \codex@rememberdest{cite.##1@##2}%
+    \codex@orig@abx@aux@cite{##1}{##2}%
+  }%
+}
+\AfterPackage*{glossaries-extra}{%
+  \AtBeginDocument{%
+    \forallglsentries{\codex@glslabel}{%
+      \codex@rememberdest{glo:\glsdetoklabel{\codex@glslabel}}%
+    }%
+  }%
+}
+\AtEndDocument{%
+  \ifx\codex@deststore\@empty
+    \typeout{CODEX: no supplementary hyperlink anchors injected}%
+  \else
+    \typeout{CODEX: injecting \the\codex@destcount\space supplementary hyperlink anchors}%
+    \codex@deststore
+  \fi
+}
+\makeatother

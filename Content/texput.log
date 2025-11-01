@@ -1,0 +1,21 @@
+This is LuaTeX, Version 1.22.0 (MiKTeX 25.4) (format=dvilualatex 2025.10.23)  23 OCT 2025 14:46
+ restricted system commands enabled.
+**c:/Users/vic-l/OneDrive/Victor's Stuff\Documents\EDO Study Guide\Content\1_Ch
+ain_of_command.tex
+
+! Emergency stop.
+<*> c:/Users/vic-l/OneDrive/Victor's 
+                                     Stuff\Documents\EDO Study Guide\Content...
+
+Here is how much of LuaTeX's memory you used:
+ 5 strings out of 476286
+ 100000,460012 words of node,token memory allocated
+ 270 words of node memory still in use:
+   1 hlist, 39 glue_spec nodes
+   avail lists: 2:12,3:3,4:1,5:1
+ 22352 multiletter control sequences out of 65536+600000
+ 14 fonts using 591679 bytes
+ 0i,0n,0p,0b,6s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, bad output DVI file produced!
+No pages of output.
+

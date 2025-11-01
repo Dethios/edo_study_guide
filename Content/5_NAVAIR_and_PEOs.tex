@@ -1,0 +1,135 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% =============================================================================
+% CHAPTER 5: NAVAIR AND PEOS
+%
+% DESCRIPTION: This chapter provides an overview of NAVAIR Warfare Centers and
+%              Navy Program Executive Offices (PEOs), including their roles,
+%              responsibilities, and interaction models.
+% =============================================================================
+
+\begin{document}
+\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+%====================
+% Contents here
+%====================
+\begin{refsegment}
+% === NAVAIR WARFARE CENTERS ===
+\section{NAVAIR Warfare Centers}
+\minibib
+\Tab{\ref{tab:navair-centers}} lists \ac{navair} Warfare Centers with locations and descriptions. This is an optional item to know for the \ac{edo} board, not as critical as \ac{navsea}/\ac{navwar}.
+
+\begin{longtblr}[%
+  caption = {NAVAIR Warfare Centers with locations and descriptions.},
+  label   = {tab:navair-centers},
+  entry   = {NAVAIR Warfare Centers},
+  remark{Source} = {\tabCite{edo-2-1-4-warfare-centers-2024}}%
+]{colspec = {@{} F L L @{}}}
+  \toprule
+  {Center} & {Location} & {Description} \\
+  \midrule
+  NAWCAD & Patuxent River, MD           & Aircraft/engines/avionics RDT\&E; Test Pilot School. \\
+  NAWCWD & China Lake / Point Mugu, CA  & Weapons systems, ranges, guided-missle integration. \\
+  \bottomrule
+\end{longtblr}
+\HR
+\end{refsegment}
+\begin{refsegment}
+% === PEOs ===
+\section{Navy PEOs (Program Executive Offices)}
+\minibib
+\begin{description}
+	\item[\textbf{\ac{peocvn}.}] Designs, builds, delivers, and sustains nuclear-powered aircraft carriers.
+	      \begin{description}
+		      \item[\textbf{PMS 312}.] In-service aircraft carrier program management.
+		      \item[\textbf{PMS 378}.] \ac{cvn}-78 class program management.
+		      \item[\textbf{PMS 379}.] \ac{cvn}-79/80 program management.
+	      \end{description}
+	\item[\textbf{\ac{peoiws}.}] Develops and sustains ship and submarine combat systems.
+	      \begin{description}
+		      \item[\textbf{IWS 1.0}.] Aegis combat system lead.
+		      \item[\textbf{IWS 1.0F}.] Aegis fleet readiness.
+		      \item[\textbf{IWS 2.0}.] Above-water sensors portfolio.
+		      \item[\textbf{IWS 3.0}.] Surface ship weapons integration.
+		      \item[\textbf{IWS 4.0}.] International and foreign military sales.
+		      \item[\textbf{IWS 5.0}.] Undersea systems.
+		      \item[\textbf{IWS 6.0}.] Command-and-control systems.
+		      \item[\textbf{IWS 9.0}.] DDG-1000, littoral combat ship, and patrol craft combat systems.
+		      \item[\textbf{IWS 11.0}.] Terminal defense systems.
+		      \item[\textbf{IWS 12.0}.] NATO Seasparrow programs.
+		      \item[\textbf{IWS 80.0}.] Atalanta combat systems.
+		      \item[\textbf{IWS X}.] Integrated combat-system document center.
+	      \end{description}
+	\item[\textbf{\ac{peoships}.}] Oversees surface combatant and amphibious ship construction and modernization.
+	\item[\textbf{\ac{peousc}.}] Manages littoral combat ships, frigates, expeditionary platforms, and unmanned surface/undersea portfolios.
+	\item[\textbf{Team Submarines.}] Integrates strategic and attack submarine acquisition and sustainment.
+	      \begin{description}
+		      \item[\textbf{\ac{peossn}.}] Attack submarine programs.
+		            \begin{description}
+			            \item[\textbf{PMS 351}.] New attack submarine acquisition.
+			            \item[\textbf{PMS 390}.] Undersea special mission systems.
+			            \item[\textbf{PMS 391}.] In-service submarine sustainment.
+			            \item[\textbf{PMS 394}.] Advanced undersea systems development.
+			            \item[\textbf{PMS 450}.] Virginia class program management.
+		            \end{description}
+		      \item[\textbf{\ac{peossbn}.}] Strategic deterrent submarine portfolio.
+		            \begin{description}
+			            \item[\textbf{PMS 396}.] In-service \ac{ssbn} sustainment.
+			            \item[\textbf{PMS 397}.] Columbia class program management.
+			            \item[\textbf{\ac{submepp}}.] Surface maintenance engineering planning program support to ballistic submarine availabilities.
+		            \end{description}
+		      \item[\textbf{\ac{peouws}}.] Submarine combat, cyber, and sensor systems.
+		            \begin{description}
+			            \item[\textbf{PMS 401}.] Submarine acoustic systems.
+			            \item[\textbf{PMS 404}.] Undersea weapons.
+			            \item[\textbf{PMS 415}.] Undersea defensive warfare systems.
+			            \item[\textbf{PMS 425}.] Combat and weapon control systems.
+			            \item[\textbf{PMS 435}.] Electromagnetic systems.
+			            \item[\textbf{PMS 485}.] Maritime surveillance systems.
+		            \end{description}
+	      \end{description}
+	\item[\textbf{\ac{peoc4i}.}] Delivers fleet \ac{c4i} capabilities.
+	      \begin{description}
+		      \item[\textbf{PMW 120}.] Battlespace awareness and information operations.
+		      \item[\textbf{PMW 130}.] \ac{ia} and cybersecurity programs.
+		      \item[\textbf{PMW 150}.] Navy command-and-control systems.
+		      \item[\textbf{PMW 160}.] Tactical networks.
+		      \item[\textbf{PMW 170}.] Communications and \ac{gps} navigation.
+		      \item[\textbf{PMW 740}.] International \ac{c4i} integration.
+		      \item[\textbf{PMW 750}.] Carrier strike and air integration.
+		      \item[\textbf{PMW 760}.] Ship integration.
+		      \item[\textbf{PMW 770}.] Undersea integration.
+		      \item[\textbf{PMW 790}.] Shore and expeditionary integration.
+	      \end{description}
+	\item[PMW series focus.] Two PMW series within \ac{peoc4i} have distinct roles:
+	      \begin{description}
+		      \item[\textbf{PMW 1XX}.] Major capability development portfolios (new platforms and end-to-end networks) where \ac{peoc4i} owns the baseline capabilities document, acquisition strategy, and milestone execution; Warfare Centers supply lead systems integration, test ranges, and engineering agents via tailored project orders~\autocite{SECNAV5400-15D,edo-2-1-4-warfare-centers-2024}.
+		      \item[\textbf{PMW 7XX}.] Fleet integration portfolios synchronizing new capabilities into existing hulls, aircraft, and shore nodes; emphasizes installation planning, logistics, and interoperability packages coordinated through regional Warfare Centers and type commanders~\autocite{SECNAV5400-15D,edo-3-1-5-field-activity-fm-2025}.
+	      \end{description}
+	\item[\textbf{\ac{peodigital}.}] Provides enterprise digital services (e.g., Flank Speed collaboration environment).
+	\item[\textbf{\ac{peomlb}.}] Modernizes manpower, logistics, and business information-technology systems.
+\end{description}
+
+\subsection{PEO/Warfare Center Interaction Model}
+\begin{description}
+	\item[\textbf{Role Designation.}] \acp{peo} charter Warfare Centers as \acp{ea} (\ac{isea}, \ac{da}, \ac{sia}) via technical direction letters aligned with \autocite{SECNAV5400-15D}; the Warfare Center executes under \ac{nwcf} funding while reporting performance to the \ac{pm}~\autocite{edo-2-1-4-warfare-centers-2024}.
+	\item[\textbf{Requirements Translation.}] \ac{pm} \acp{ipt} decompose \acp{cdd} into technical requirements that Warfare Center \ac{ta} holders validate and flow down through alteration packages, interface control documents, and test plans~\autocite{edo-2-1-4-warfare-centers-2024}.
+	\item[\textbf{Funding Mechanisms.}] \ac{peo} \acp{pmo} issue project orders or Economy Act orders using their appropriations; Warfare Centers accept into \ac{nwcf}, schedule \acp{wbs}, and recover rates through \acp{slr} while keeping the \ac{pm} apprised of burn rates and \ac{nor} impacts~\autocite{edo-3-1-5-field-activity-fm-2025}.
+	\item[\textbf{Governance Rhythm.}] Monthly technical reviews focus on requirements churn, test results, and configuration control; quarterly business reviews reconcile execution to \ac{slr} assumptions and assess workforce mix, drawing on Warfare Center cost visibility~\autocite{SECNAV5400-15D,edo-3-1-5-field-activity-fm-2025}.
+	\item[\textbf{Acquisition Decision Events.}] Warfare Centers provide independent readiness assessments (test status, technical risk) for \ac{peo} milestone decisions, often serving as certifying authorities for safety releases or flight clearances prior to fielding~\autocite{SECNAV5400-15D,edo-2-1-4-warfare-centers-2024}.
+\end{description}
+\end{refsegment}
+%====================
+% End of file
+%====================
+\ifSubfilesClassLoaded{
+  \renewcommand*{\entryname}{\textbf{\color{Modern} Acronym}}
+  \renewcommand*{\descriptionname}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+]}{}
+\end{document}

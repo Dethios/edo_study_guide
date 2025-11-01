@@ -1,0 +1,199 @@
+﻿Site Feedback
+You are using an unsupported browser× 
+You are using an unsupported browser. This web site is designed for the current versions of Microsoft Edge, Google Chrome, Mozilla Firefox, or Safari. 
+× 
+Site Feedback
+The Office of the Federal Register publishes documents on behalf of Federal agencies but does not have any authority over their programs. We recommend you directly contact the agency associated with the content in question. 
+
+
+
+If you have comments or suggestions on how to improve the www.ecfr.gov website or have questions about using www.ecfr.gov, please choose the 'Website Feedback' button below. 
+Website Feedback 
+If you would like to comment on the current content, please use the 'Content Feedback' button below for instructions on contacting the issuing agency 
+Content Feedback 
+If you have questions for the Agency that issued the current document please contact the agency directly.
+× 
+Website Feedback
+* Your Name
+* Email
+Attachment
+* How can we help you?
+* I am requesting technical help or providing website feedback
+This contact form is only for website help or website suggestions. If you have questions or comments regarding a published document please contact the publishing agency. Comments or questions about document content can not be answered by OFR staff. Please do not provide confidential information or personal data. 
+ 
+The National Archives and Records Administration is closed to normal operations due to a lack of appropriations. eCFR.gov will not be updated until we resume normal operations.
+
+Browse 
+Titles 
+Agencies 
+Incorporation by Reference 
+Recent Updates 
+Search 
+Recent Changes 
+Corrections 
+Reader Aids 
+Reader Aids Home 
+Using the eCFR Point-in-Time System 
+Understanding the eCFR 
+Government Policy and OFR Procedures 
+Developer Resources 
+Recent Site Updates 
+My eCFR 
+My Subscriptions 
+Sign Out 
+Sign In / Sign Up 
+   
+Sign In / Sign Up 
+Hi, Sign Out 
+eCFR
+The Electronic Code of Federal Regulations
+Enhanced Content :: FR Reference
+Enhanced content is provided to the user to provide additional context.
+Enhanced Content :: FR Reference
+Title 48 
+This content is from the eCFR and is authoritative but unofficial.
+Displaying title 48, up to date as of 9/29/2025. Title 48 was last amended 9/22/2025. 
+view historical versions 
+A drafting site is available for use when drafting amendatory language 
+switch to drafting site 
+ 
+Navigate by entering citations or phrases (eg: 1 CFR 1.1 49 CFR 172.101 Organization and Purpose 1/1.1 Regulation Y FAR). 
+Choosing an item from citations and headings will bring you directly to the content. Choosing an item from full text search results will bring you to those results. Pressing enter in the search box will also bring you to search results. 
+Background and more details are available in the Search & Navigation guide. 
+   
+  
+   
+  
+  
+Title 48 —Federal Acquisition Regulations System 
+Chapter 1 —Federal Acquisition Regulation 
+Subchapter B —Acquisition Planning 
+Part 9 —Contractor Qualifications 
+Subpart 9.1 —Responsible Prospective Contractors 
+9.104-1 
+Previous 
+Next 
+Top 
+
+Table of Contents
+Enhanced Content - Table of Contents
+The in-page Table of Contents is available only when multiple sections are being viewed. 
+Use the navigation links in the gray bar above to view the table of contents that this content belongs to. 
+Enhanced Content - Table of Contents
+Details
+Enhanced Content - Details
+URL 
+https://www.ecfr.gov/current/title-48/part-9/section-9.104-1 
+Citation 
+48 CFR 9.104-1 
+Alternate reference 
+FAR 9.104-1 
+Agency 
+Federal Acquisition Regulatory Council 
+
+
+
+Part 9 
+Authority:
+40 U.S.C. 121(c); 10 U.S.C. chapter 4 and 10 U.S.C. chapter 137 legacy provisions (see 10 U.S.C. 3016); and 51 U.S.C. 20113. 
+Source:
+48 FR 42142, Sept. 19, 1983, unless otherwise noted. 
+Enhanced Content - Details
+Print/PDF
+Enhanced Content - Print
+Generate PDF 
+This content is from the eCFR and may include recent changes applied to the CFR. The official, published CFR, is updated annually and available below under "Published Edition". You can learn more about the process here. 
+Enhanced Content - Print
+Display Options
+Enhanced Content - Display Options
+Enhanced Content - Display Options
+Subscribe
+Enhanced Content - Subscribe
+Subscribe to: 48 CFR 9.104-1
+
+
+
+
+
+
+Via Email:  
+Enhanced Content - Subscribe
+
+Timeline
+Enhanced Content - Timeline
+5/06/2019 view on this date view change introduced   
+Enhanced Content - Timeline
+Go to Date
+Enhanced Content - Go to Date
+Date
+ 
+ 
+ 
+Enhanced Content - Go to Date
+Compare Dates
+Enhanced Content - Compare Dates
+Compare
+ 
+ 
+to
+ 
+ 
+
+
+ 
+Show changes as:red/greenpurple/orange
+Show strike-through for removed contentyesno
+Enhanced Content - Compare Dates
+
+Published Edition
+Enhanced Content - Published Edition
+View the most recent official publication: 
+View Title 48 on govinfo.gov 
+View the PDF for 48 CFR 9.104-1 
+These links go to the official, published CFR, which is updated annually. As a result, it may not include the most recent changes applied to the CFR. Learn more. 
+Enhanced Content - Published Edition
+
+Developer Tools
+Enhanced Content - Developer Tools
+
+
+
+Information and documentation can be found in our developer resources. 
+Enhanced Content - Developer Tools
+eCFR Content
+The Code of Federal Regulations (CFR) is the official legal print publication containing the codification of the general and permanent rules published in the Federal Register by the departments and agencies of the Federal Government. The Electronic Code of Federal Regulations (eCFR) is a continuously updated online version of the CFR. It is not an official legal edition of the CFR.
+Learn more about the eCFR, its status, and the editorial process.
+9.104-1 General standards.
+To be determined responsible, a prospective contractor must—
+(a) Have adequate financial resources to perform the contract, or the ability to obtain them (see 9.104-3(a));
+(b) Be able to comply with the required or proposed delivery or performance schedule, taking into consideration all existing commercial and governmental business commitments;
+(c) Have a satisfactory performance record (see 9.104-3(b) and subpart 42.15). A prospective contractor shall not be determined responsible or nonresponsible solely on the basis of a lack of relevant performance history, except as provided in 9.104-2;
+(d) Have a satisfactory record of integrity and business ethics (for example, see subpart 42.15);
+(e) Have the necessary organization, experience, accounting and operational controls, and technical skills, or the ability to obtain them (including, as appropriate, such elements as production control procedures, property control systems, quality assurance measures, and safety programs applicable to materials to be produced or services to be performed by the prospective contractor and subcontractors) (see 9.104-3(a));
+(f) Have the necessary production, construction, and technical equipment and facilities, or the ability to obtain them (see 9.104-3(a)); and
+(g) Be otherwise qualified and eligible to receive an award under applicable laws and regulations (see also inverted domestic corporation prohibition at 9.108).
+[48 FR 42142, Sept. 19, 1983, as amended at 51 FR 27119, July 29, 1986; 56 FR 55374, Oct. 25, 1991; 60 FR 16718, Mar. 31, 1995; 61 FR 67410, Dec. 20, 1996; 65 FR 80264, Dec. 20, 2000; 66 FR 17756, Apr. 3, 2001; 66 FR 66986, 66989, Dec. 27, 2001; 73 FR 67091, Nov. 12, 2008; 74 FR 31563, July 1, 2009; 76 FR 31413, May 31, 2011; 84 FR 19844, May 6, 2019] 
+eCFR Content
+Pages
+Home 
+Titles 
+Search 
+Recent Changes 
+Corrections 
+Reader Aids
+Using the eCFR Point-in-Time System 
+Understanding the eCFR 
+Government Policy and OFR Procedures 
+Developer Resources 
+Recent Site Updates 
+Information
+About This Site 
+Legal Status 
+Privacy 
+Accessibility 
+FOIA 
+No Fear Act 
+Continuity Information 
+My eCFR
+My Subscriptions 
+Sign In / Sign Up 

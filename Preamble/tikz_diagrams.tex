@@ -1,0 +1,48 @@
+% =============================================================================
+% TIKZ / SMARTDIAGRAM HELPERS (moderntech already loads core packages)
+% =============================================================================
+\tikzset{
+  edo/.style = {
+    font=\sffamily\small\color{BodyText},
+    draw=Modern,
+    rounded corners=2pt,
+    inner xsep=6pt,
+    inner ysep=4pt,
+    align=left
+  },
+  edo-title/.style = {
+    font=\sffamily\bfseries\color{AccentBlue},
+    draw=Modern,
+    rounded corners=3pt,
+    fill=AccentBlue!12,
+    inner xsep=8pt,
+    inner ysep=6pt,
+    align=center
+  },
+  edo-line/.style = {Modern, very thick},
+  edo-thin/.style = {Modern, semithick},
+  belowx/.style  args={#1 of #2}{below=#1 of #2},
+  rightx/.style  args={#1 of #2}{right=#1 of #2},
+  leftx/.style   args={#1 of #2}{left=#1 of #2},
+  abovex/.style  args={#1 of #2}{above=#1 of #2},
+}
+
+\smartdiagramset{
+  font=\sffamily\small\color{BodyText},
+  text color=BodyText,
+  set color list = {AccentBlue!35, AccentTeal!40, AccentGreen!40, AccentPurple!35, AccentOrange!35},
+  uniform color list = AccentBlue!30 for 10 items,
+  module shape = rounded rectangle,
+  module x sep = 1.6cm,
+  module y sep = 1.0cm,
+  module minimum width = 2.8cm,
+  module minimum height = 1.0cm,
+  arrow tip = Latex,
+  arrow line width = 1.2pt,
+  arrow color = Modern
+}
+
+% Optional externalization (kept commented pending large diagram builds).
+% \usetikzlibrary{external}
+% \tikzexternalize[prefix=TikZ/cache/]
+% \tikzset{external/force remake=false}

@@ -1,0 +1,46 @@
+INFO:  latexindent.pl version 3.24.7, 2025-08-15, a script to indent .tex files
+       latexindent.pl lives here: C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/scripts/latexindent/
+       Mon Oct 27 16:36:13 2025
+       Filename: c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/direct_indirect_costs
+INFO:  Processing switches:
+       -y|--yaml: YAML settings specified via command line
+       -c|--cruft: cruft directory
+INFO:  Directory for backup files and log file c:\Users\U47A74UA\OneDrive\Victor's Stuff\Documents\EDO Study Guide\TikZ\indent.log:
+       c:\Users\U47A74UA\OneDrive\Victor's Stuff\Documents\EDO Study Guide\TikZ\
+INFO:  Perl modules are being loaded from the following directories:
+       C:/Users/U47A74UA/AppData/Local/Programs/Perl/lib/FindBin.pm
+       C:/Users/U47A74UA/AppData/Local/Programs/Perl/vendor/lib/YAML/Tiny.pm
+       C:/Users/U47A74UA/AppData/Local/Programs/Perl/lib/File/Copy.pm
+       C:/Users/U47A74UA/AppData/Local/Programs/Perl/lib/File/Basename.pm
+       C:/Users/U47A74UA/AppData/Local/Programs/Perl/lib/Getopt/Long.pm
+       C:/Users/U47A74UA/AppData/Local/Programs/Perl/vendor/lib/File/HomeDir.pm
+INFO:  LatexIndent perl modules are being loaded from, for example:
+       C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/scripts/latexindent/LatexIndent/Document.pm
+INFO:  YAML settings read: defaultSettings.yaml
+       Reading defaultSettings.yaml from C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/scripts/latexindent/defaultSettings.yaml
+INFO:  YAML reading settings
+       Home directory is C:\Users\U47A74UA\AppData\Local\Programs\Perl\data
+       latexindent.pl didn't find indentconfig.yaml or .indentconfig.yaml
+       see all possible locations: https://latexindentpl.readthedocs.io/en/latest/sec-appendices.html#indentconfig-options)
+INFO:  YAML settings read: -y switch
+       YAML setting: defaultIndent:'  '
+       single-quoted string found in -y switch: '  ', substitute to   
+       Updating mainSettings with defaultIndent:   
+INFO:  File extension work:
+       latexindent called to act upon c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/direct_indirect_costs without a file extension;
+       searching for files in the following order (see fileExtensionPreference):
+       c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/direct_indirect_costs.tex
+       c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/direct_indirect_costs.sty
+       c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/direct_indirect_costs.cls
+       c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/direct_indirect_costs.bib
+       c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/direct_indirect_costs.tex found!
+       Updated fileName to c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/direct_indirect_costs.tex
+INFO:  Phase 1: searching for objects
+INFO:  Phase 2: finding surrounding indentation
+INFO:  Phase 3: indenting objects
+INFO:  Phase 4: final indentation check
+INFO:  Output routine:
+       Not outputting to file; see -w and -o switches for more options.
+       --------------
+INFO:  Please direct all communication/issues to:
+        https://github.com/cmhughes/latexindent.pl

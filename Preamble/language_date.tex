@@ -1,0 +1,24 @@
+% =============================================================================
+% LANGUAGE, DATES, AND LOCALIZATION (scrbook/LuaLaTeX-friendly)
+% =============================================================================
+
+% Silence datatool/tracklang locale chatter (used by datetime2)
+\PassOptionsToPackage{nowarn}{tracklang}
+
+% Language & hyphenation (american as main)
+\usepackage[main=american]{babel}
+% If you later need multiple languages, add: \babelprovide[import]{<lang>}
+
+% Date handling (datetime2 integrates with babel)
+\usepackage[datesep=~,calc]{datetime2}
+
+% --- Display styles -----------------------------------------------------------
+% 1) Your existing compact display: "DD Mon YYYY"
+\DTMnewdatestyle{mydateformat}{%
+  \renewcommand*{\DTMdisplaydate}[4]{%
+    \DTMtwodigits{##3}~\DTMshortmonthname{##2}~\number##1%
+  }%
+}
+
+% Optional: choose a default here (main.tex already sets mydateformat at begin)
+% \DTMsetdatestyle{mydateformat}

@@ -1,0 +1,21 @@
+% =============================================================================
+% PAGE GEOMETRY, SPACING, AND MICROTYPOGRAPHY — KOMA (scrbook)
+% =============================================================================
+
+% --- Type area / margins (replace geometry) ----------------------------------
+% Target: 0.5in margins on letterpaper (8.5x11in)
+% With KOMA, we can set the text block directly:
+\KOMAoptions{headinclude=true, footinclude=true} % header/footer part of typearea
+\newlength{\TargetMargin}
+\setlength{\TargetMargin}{0.5in}
+\areaset
+  {\dimexpr\paperwidth  - 2\TargetMargin\relax}   % text width  = 8.5in - 1.0in = 7.5in
+  {\dimexpr\paperheight - 2\TargetMargin\relax}   % text height = 11in  - 1.0in = 10.0in
+
+% Header / footer spacing (match your previous geometry settings)
+\setlength{\headheight}{20pt}
+\setlength{\headsep}{12pt}
+\setlength{\footskip}{24pt}
+
+% If you later want KOMA to recompute the typearea after changing any of the
+% lengths above, call: \recalctypearea

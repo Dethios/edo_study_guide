@@ -1,0 +1,82 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% =============================================================================
+% CHAPTER 1: COMMAND CHAINS AND GOVERNANCE
+%
+% DESCRIPTION: This chapter outlines the operational and acquisition chains
+%              of command within the U.S. Navy, highlighting the differences
+%              between Title 10 authority and acquisition governance.
+% =============================================================================
+
+\begin{document}
+\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+%====================
+% Contents here
+%====================
+% === COMMAND CHAINS & GOVERNANCE ===
+\section{Command Chains and Governance}
+\minibib
+\subsection{Operations Chain (Title 10)}
+
+\begin{description}
+	\item[\textbf{Chain flow.}] President $\to$ \ac{secdef} $\to$ \ac{ccdr}. The \ac{cjcs} is the principal military adviser; service chiefs are \emph{not} in the operational chain of Title 10.
+	\item[\textbf{Board cue.}] Boards love the contrast with acquisition authority; avoid conflating operational and acquisition chains.
+	\item[\textbf{Echelons.}] Counted from the \ac{cno} (e.g., \ac{cno} is Echelon I, \acp{syscom} are Echelon II, etc.).
+\end{description}
+
+Figure \ref{fig:chain_of_command_ops} shows the Title 10 chain of command. \Fig{\ref{fig:chain_of_command_org_chart}} shows the Chain of Command from the President to Echelon III commands.
+
+\begin{figure}[!htbp]
+	\centering\color{DarkGray}
+	\includegraphics[width=\linewidth]{Command Structure.jpeg}
+	\caption[Title 10 Chain of Command]{Title 10 Chain of Command.~\srcCite{edo-2-1-1-command-structures-2025}.}
+	\label{fig:chain_of_command_ops}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering\color{DarkGray}
+	\includestandalone[width=\linewidth]{TikZ/Org_Chart}
+	\caption{Organization Command Structure}
+	\label{fig:chain_of_command_org_chart}
+\end{figure}
+
+\subsection{Acquisition Governance (Department of the Navy)}
+
+\begin{description}
+	\item[\textbf{Policy authority.}] \ac{asnrdanda} is the \ac{sae} for the \ac{don} and sets policy for \acp{peo} and \acp{drpm}~\autocite{SECNAV5400-15D,SECNAV5000-2G}.
+	\item[\textbf{Matrix execution.}] \acp{peo} hold program authority; \acp{syscom} (\ac{navsea}, \ac{navwar}, \ac{navair}) provide the \ac{ta} warrants and workforce; \acp{nwc} deliver research, development, test, and engineering support~\autocite{SECNAV5400-15D}.
+\end{description}
+
+Figure \ref{fig:chain_of_command_acq_gov} shows the Navy acquisition governance chain of command.
+
+\begin{figure}[!htbp]
+	\centering\color{DarkGray}
+	\includegraphics[width=0.7\linewidth]{Images/Navy Acquisition Organization.jpeg}
+	\caption[Acquisition Governance Chain of Command]{Acquisition Governance Chain of Command.~\srcCite{edo-2-1-1-command-structures-2025}.}
+	\label{fig:chain_of_command_acq_gov}
+\end{figure}
+
+\subsection{Approving Authorities}
+
+\begin{figure}[!htbp]
+	\centering\color{DarkGray}
+	\includegraphics[width=0.7\linewidth]{Images/TA vs PA.png}
+	\caption[Technical Authority v.s.\ Program Authority]{Technical Authority v.s.\ Program Authority alignment.~\srcCite{edo-2-1-5-technical-authority-2025}}
+	\label{fig:chain_of_command_auth_roles}
+\end{figure}
+
+Figure \ref{fig:chain_of_command_auth_roles} contrasts the roles of \ac{ta} and \ac{pa} in Navy acquisition.
+%====================
+% End of file
+%====================
+\ifSubfilesClassLoaded{
+  \renewcommand*{\entryname}{\textbf{\color{Modern} Acronym}}
+  \renewcommand*{\descriptionname}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+]}{}
+\end{document}

@@ -1,0 +1,31 @@
+% =============================================================================
+% PAGE STYLE HELPERS (scrlayer-scrpage already loaded by moderntech)
+% =============================================================================
+\usepackage{lastpage}
+
+\newcommand{\StudyGuideHeader}{\headingfont\Large\scshape\color{AccentBlue} EDO Study Guide}
+\newcommand{\StudyGuideFooter}[1]{\textcolor{Gray60}{#1}}
+
+\newcommand*\SetFrontMatterStyle{%
+  \clearpairofpagestyles
+  \automark{section}
+  \ihead{\sffamily\itshape\color{gray}\leftmark}
+  \ohead{\sffamily\color{gray}\pagemark}
+  \pagestyle{scrheadings}
+}
+\newcommand*\SetMainMatterStyle{%
+  \clearpairofpagestyles
+  \automark{section}
+  \ihead{\sffamily\itshape\color{gray}\leftmark}
+  \ohead{\sffamily\color{gray}\pagemark}
+  \pagestyle{scrheadings}
+}
+\newcommand*\SetBackMatterStyleA{%
+  \clearpairofpagestyles
+  \automark{section}
+  \ohead{\sffamily\color{gray}\pagemark}
+  \pagestyle{scrheadings}
+}
+\newcommand{\HR}{%
+  \par\noindent\color{Gray90}\rule{\linewidth}{1pt}\par\color{BodyText}%
+}

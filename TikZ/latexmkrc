@@ -1,0 +1,18 @@
+# Keep PDF in repo; put aux where LaTeX/biber agree
+$out_dir = 'H:\EDO_Study_Guide\out';
+$aux_dir = 'H:\EDO_Study_Guide\build';
+
+# Tell latexmk this is a LuaLaTeX workflow
+$pdf_mode = 4;
+
+# Enable shell-escape, synctex, etc.
+$force_mode   = 1;
+$shell_escape = 1;
+$synctex      = 1;
+$interaction  = 'nonstopmode';
+
+# --- Modified pdflatex command ---
+$pdflatex = 'lualatex -interaction=nonstopmode -file-line-error %O %S';
+
+# Force biber to read/write the aux dir
+$bibtex = "biber --input-directory=\"$aux_dir\" --output-directory=\"$aux_dir\" %O %B";

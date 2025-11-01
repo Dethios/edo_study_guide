@@ -1,0 +1,153 @@
+% !TEX program = lualatex
+% !TEX root    = main.tex
+% !TEX options = jobname = "EDO Study Guide"
+% !BIB program = biber
+% =============================================================================
+% ROOT DOCUMENT FILE — KOMA-Script (scrbook)
+% =============================================================================
+
+\documentclass[
+  11pt,
+  oneside,
+  letterpaper,
+  headings=big,          % larger chapter/section heads
+  numbers=noendperiod,   % no trailing dot in numbered headings
+  parskip=half           % block-style paragraphs (tune later if desired)
+]{scrbook}
+
+% High-level KOMA options that affect layout lists; detailed layout moves to preamble files
+\KOMAoptions{
+  toc=flat,              % compact ToC layout
+  listof=flat,           % compact LoF/LoT layout
+  headinclude=true,      % include header space in typearea calc (page style file will refine)
+  footinclude=false
+}
+
+% --- Your modular preambles (we'll refactor each for scrbook in turn) ---
+\usepackage{shellesc}
+\input{Preamble/fonts.tex}                       % fonts first
+\input{Preamble/language_date.tex}               % language and date handling
+\input{Preamble/page_geometry.tex}               % (will migrate from geometry → typearea)
+\input{Preamble/graphics_color_ragged_utils.tex} % graphics, color, ragged, utils
+\input{Preamble/tables_captions_numbering.tex}   % (will migrate caption/toc to KOMA)
+\input{Preamble/headings_paragraphs_page_style.tex} % (titlesec/fancyhdr → KOMA)
+\input{Preamble/tikz_diagrams.tex}
+\input{Preamble/quotes_bibliography.tex}
+\input{Preamble/hyperref_bookmarks_urls.tex}
+\input{Preamble/glossaries.tex}
+\input{Preamble/low_level_tweaks_macros.tex}
+
+% ============================================================
+% 12) TITLE / AUTHOR / METADATA HELPERS
+% ============================================================
+\title{EDO Board Prep Study Guide}
+\author{LCDR Victor Lee, USN, PMP}
+\DTMsavedate{Coursebook_Version}{2025-09-19}
+
+\newcommand{\StudyTitleLogo}{Images/NAVWAR LOGO.JPG}
+\newcommand{\StudyTitleLogoWidth}{.7\linewidth}
+
+\NewDocumentCommand{\StudySubfile}{m}{%
+  \subfile{Content/#1}%
+  \HR
+}
+
+\NewDocumentCommand{\ChapterWithRefsAtStart}{m}{%
+  \begin{refsegment}%
+    \subfile{Content/#1}%
+  \end{refsegment}%
+  \HR%
+}
+
+\makeatletter
+%================
+\begin{document}
+%================
+
+\DTMsetdatestyle{mydateformat}
+
+% ----- TITLE -----
+\hypersetup{pageanchor=false}
+\begin{titlepage}%
+  \centering%
+  \DTMsetdatestyle{iso}
+  {\headingfont\bfseries\fontsize{24pt}{26pt}\selectfont%
+    \color{NavyBlue}\@title\par}%
+  \vspace{6pt}%
+  \includegraphics[width=\StudyTitleLogoWidth]{\StudyTitleLogo}\par%
+  \vspace{6pt}%
+  {\fontsize{16pt}{18pt}\selectfont%
+    \firasb\color{NavyBlue}\@author\par}%
+  {\fontsize{12pt}{14pt}\selectfont%
+    \textit{\color{CrimsonRed}Guide Updated: \color{Modern}\today}\par}%
+  {\fontsize{12pt}{14pt}\selectfont%
+    \textit{\color{CrimsonRed}EDO Coursebook Current as of:
+      \color{Modern}\DTMusedate{Coursebook_Version}}}%
+  \DTMsetdatestyle{mydateformat}
+\end{titlepage}%
+\hypersetup{pageanchor=true}
+\clearpage
+% ----- FRONTMATTER -----
+\frontmatter
+\SetFrontMatterStyle
+\tableofcontents
+\HR
+\listoffigures
+\HR
+\listoftables
+\HR
+% --- Acronyms / Glossary ---
+\renewcommand*{\entryname}{\textbf{\color{Modern} Acronym}}
+\renewcommand*{\descriptionname}{\textbf{\color{Modern} Definition}}
+\printnoidxglossary[
+  type=\acronymtype,
+  title=List of Acronyms,
+  numberedsection,
+  style=long-booktabs
+]
+
+\clearpage
+% ----- MAINMATTER -----
+\mainmatter
+\SetMainMatterStyle
+\chapter{Objectives and Organization}
+\ChapterWithRefsAtStart{0_Objectives}
+\ChapterWithRefsAtStart{1_Chain_of_command}
+\ChapterWithRefsAtStart{2_TA_EA}
+\ChapterWithRefsAtStart{3_NAVSEA}
+\ChapterWithRefsAtStart{4_NAVWAR}
+\StudySubfile{5_NAVAIR_and_PEOs}
+
+\chapter{Navy Aqusitions}
+\ChapterWithRefsAtStart{6_PPBE}
+\ChapterWithRefsAtStart{7_NWCF}
+\ChapterWithRefsAtStart{8_Congressional_Enactment}
+\ChapterWithRefsAtStart{9_Program_Funding_and_Execution}
+\ChapterWithRefsAtStart{10_Cost_Fundamentals}
+\ChapterWithRefsAtStart{11_Contracting_Fundamentals}
+\ChapterWithRefsAtStart{12_Solicitation}
+\ChapterWithRefsAtStart{13_cost_price_eval}
+
+\appendix
+% Optional TOC divider line "Appendices"
+\addpart*{Appendices}
+\addcontentsline{toc}{part}{Appendices}
+\StudySubfile{appendix_plat_card}
+\chapter{Key Roles in Acquisition and Modernization}
+\StudySubfile{appendix_key_roles}
+\StudySubfile{appendix_edo_flags}
+\StudySubfile{appendix_combatant_commands}
+
+\clearpage
+\phantomsection
+\label{LastPageMain}
+% ----- BACKMATTER -----
+\backmatter
+\SetBackMatterStyleA
+% --- Final Full Bibliography ---
+\printbibliography[heading=bibnumbered, title={References}]
+
+\makeatother
+%================
+\end{document}
+%================

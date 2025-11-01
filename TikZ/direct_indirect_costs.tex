@@ -1,0 +1,146 @@
+% !TEX program = lualatex
+\documentclass[tikz,border=6pt]{standalone}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric}
+
+% Palette (use your own if already defined)
+\definecolor{Modern}{HTML}{1F6AA5}   % Navy blue
+\definecolor{CrimsonRed}{HTML}{B22222}
+
+\begin{document}
+\begin{tikzpicture}[
+  >={Latex[length=2.0mm]},
+  node distance=8mm and 12mm,
+  font=\sffamily,
+  title/.style   ={
+    rectangle,
+    rounded corners=4pt,
+    draw=Modern,
+    thick,
+    fill=Modern!18,
+    align=center,
+    inner xsep=8pt,
+    inner ysep=7pt,
+    font=\sffamily\bfseries
+  },
+  hub/.style     ={
+    diamond,
+    aspect=2.1,
+    draw=CrimsonRed!70!black,
+    very thick,
+    fill=yellow!12,
+    align=center,
+    inner xsep=8pt,
+    inner ysep=7pt,
+    font=\sffamily\bfseries
+  },
+  group/.style   ={
+    rectangle,
+    rounded corners=4pt,
+    draw=Modern,
+    thick,
+    fill=Modern!12,
+    align=center,
+    inner xsep=8pt,
+    inner ysep=7pt,
+    font=\sffamily\bfseries\scshape,
+    text width=58mm,
+    minimum height=9mm
+  },
+  card/.style    ={
+    rectangle,
+    rounded corners=4pt,
+    draw=Modern!60!black,
+    very thick,
+    fill=white,align=left,
+    inner xsep=9pt,
+    nner ysep=7pt,
+    text width=58mm
+  },
+  rightcard/.style={
+    card,
+    text width=54mm
+  },
+  note/.style    ={
+    align=left,
+    font=\scriptsize\sffamily,
+    text width=120mm,
+    inner xsep=0pt,
+    inner ysep=0pt,
+    draw=none,
+    fill=none
+  }
+]
+% ---- Top row ----
+\node[title,text width=95mm] (top) {Proposed Price = Cost + Profit (or Fee)};
+
+\node[title,below left=12mm and 5mm of top,text width=62mm] (cost)
+  {Cost\\\footnotesize (Cost Elements)};
+
+\node[hub,below right=12mm and 26mm of top] (pof) {Profit (or Fee)};
+
+\draw[thick] (top.south) -- ++(0,-3mm) -| (cost.north);
+\draw[thick] (top.south) -- ++(0,-3mm) -| (pof.north);
+
+% ========== LEFT COLUMN: COST ==========
+% Groups
+\node[group,below left=26mm and 35mm of cost.west,anchor=west] (direct) {Direct Costs *};
+\node[group,below right=26mm and 35mm  of cost.east,anchor=east] (indirect) {Indirect Costs **};
+
+% Connect Cost to Direct/Indirect groups
+\draw[thick] (cost.south) -- ++(0,-4mm) -| (direct.north);
+\draw[thick] (cost.south) -- ++(0,-4mm) -| (indirect.north);
+
+% --- Direct stack (vertical) with side bus like your org chart ---
+\node[card,below=30mm of direct.south,anchor=south] (dm)
+  {\textbf{Direct Material}\\-- Raw Material\\-- Purchased Parts\\-- Subcontracts};
+\node[card,below=20mm of dm.south,anchor=south] (dl)
+  {\textbf{Direct Labor}\\-- Engineering\\-- Manufacturing};
+\node[card,below=20mm of dl.south,anchor=south] (odc)
+  {\textbf{Other Direct Costs (ODCs)}\\-- Travel\\-- Tooling};
+
+% Side bus (left) for Direct
+\coordinate (direct_bus_drop)   at ($(direct.west)+(-0.5cm,0)$);
+\coordinate (direct_bus_left)   at ($(dm.west)+(-0.5cm,0)$);
+\coordinate (direct_bus_left2)  at ($(dl.west)+(-0.5cm,0)$);
+\coordinate (direct_bus_bottom) at ($(odc.west)+(-0.5cm,0)$);
+
+\draw[thick] (direct.west)      -- (direct_bus_drop);
+\draw[thick] (direct_bus_drop)  -- (direct_bus_bottom);
+\draw[thick] (direct_bus_left)  -- (dm.west);
+\draw[thick] (direct_bus_left2) -- (dl.west);
+\draw[thick] (direct_bus_bottom)-- (odc.west);
+
+% --- Indirect stack (vertical) with side bus (right) ---
+\node[card,below=30mm of indirect.south,anchor=south] (oh)
+  {\textbf{Overhead (OH)}\\-- Material Handling\\-- Engineering\\-- Manufacturing};
+\node[card,below=20mm of oh.south,anchor=south] (ga)
+  {\textbf{General \& Administrative (G\&A)}\\Expenses};
+
+% Side bus (right) for Indirect (mirrors your NAVSEA example)
+\coordinate (ind_bus_drop)   at ($(indirect.east)+(0.5,0)$);
+\coordinate (ind_bus_right)  at ($(oh.east)+( 0.5cm,0)$);
+\coordinate (ind_bus_bottom) at ($(ga.east)+( 0.5cm,0)$);
+
+\draw[thick] (indirect.east) -- (ind_bus_drop);
+\draw[thick] (ind_bus_drop)  -- (ind_bus_bottom);
+\draw[thick] (oh.east)       -- (ind_bus_right);
+\draw[thick] (ga.east)       -- (ind_bus_bottom);
+
+% ========== RIGHT COLUMN: PROFIT / FEE ==========
+\node[rightcard,below left=34mm and 25mm of pof] (profit)
+  {\textbf{Profit}\\\footnotesize DFARS 215.404--70 to --73\\\footnotesize Application of the DoD Weighted Guidelines};
+
+\node[rightcard,below=28mm of pof] (fee)
+  {\textbf{Fee}\\\footnotesize DFARS 215.404--74 \& --75};
+
+\draw[thick] (pof.west) -| (profit.north);
+\draw[thick] (pof.south) -- (fee.north);
+
+% ---- Footnotes ----
+\node[note,below=12mm of ga.south,anchor=west] (fn1)
+  {* Direct Cost: Any cost that is identified with a particular final cost objective.\\
+  \vspace{6pt}
+  ** Indirect Cost: Any cost not identified with a single final objective, but identified with two or more final cost objectives.};
+
+\end{tikzpicture}
+\end{document}

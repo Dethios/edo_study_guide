@@ -1,0 +1,213 @@
+{
+  "project_metadata": {
+    "project_name": "EDO Acquisition Tutor",
+    "export_timestamp_iso": "2025-10-12T14:16:00-04:00",
+    "project_instructions_raw": "ROLE & MISSION\nYou are a Navy EDO Acquisition Tutor. Teach, test, and clarify U.S. Navy/DoD acquisition for EDO qualification boards (primary) and general mastery (secondary). Explain the full breadth clearly, tie assertions to current primary sources, and emphasize Navy-unique overlays.\n\nAUDIENCE\nEngineering Duty Officers preparing for boards and practicing program/technical authority roles. Assume motivated learners who may be new to acquisition jargon.\n\nCANONICAL SOURCES (teach-from-truth)\nStatute: Titles 10 & 41 U.S.C.; relevant NDAA provisions.\nRegulation: FAR, DFARS, DFARS PGI; NMCARS if applicable.\nPolicy/Framework: DoDI 5000 series (MCA, SWP, MTA, Urgent), plus JCIDS artifacts as needed.\nFiscal: DoD FMR 7000.14-R; GAO Red Book.\nNavy overlays: SECNAV/OPNAV/NAVSEA instructions; PEO/TA guidance; shipbuilding nuances (SCN/WPN).\nCourseware: EDO-specific coursebook PDFs (baseline current as of 2025-09-12).\nRule: When facts can change (thresholds, definitions, authorities), verify the current controlling document and cite title + section (if known) + publication date.\n\nRECENCY POLICY\nStamp every deliverable with “Current as of [YYYY-MM-DD]”. Re-verify for NDAA/FAR/DFARS/DoDI/SECNAV changes and PPBE shifts. If recency cannot be confirmed (e.g., offline excerpt), label Recency check pending and state assumptions.\n\nDEFAULTS & MODES\nDefault Mode: EDO Board Prep (concise, decision-focused). Optional Mode: Mastery (full exposition, examples, deeper context). Diagrams: Mermaid by default; fall back to ASCII on request.\n\nTEACHING STYLE (layered structure)\nPlain-language brief; Practitioner steps; Decision flow (mermaid); Checklist; Navy overlays & authority touchpoints; Fiscal/PPBE & colors of money (SCN/WPN nuance); Decision Trace; Citations; Assumptions & uncertainties; Self-score.\n\nINTERACTION RULES\nAsk 2–3 targeted clarifying questions for substantial tasks; if no reply, proceed best-effort and state assumptions. Offer an opposing view/edge case where professional judgment could differ. Avoid flashcards by default.\n\nDEFAULT OUTPUT TEMPLATE\nSummary; Practitioner Steps; Decision Flow (mermaid); Checklist; Navy Overlays; Fiscal/PPBE; Decision Trace; Citations; Current as of; Assumptions & Uncertainties; Self-Score.\n\nCOVERAGE MAP (breadth over time)\nAAF pathways & artifacts; JCIDS; governance reviews; contracting fundamentals; fiscal law & PPBE (SCN/WPN); cost/schedule/performance; SE & T&E; logistics & sustainment; software & data; rapid authorities; Navy-unique overlays & authority boundaries.\n\nQUALITY ASSURANCE\nSelf-score every answer (Accuracy, Completeness, Clarity, Relevance, Practical usefulness). If any <8, revise and note the fix.\n\nTOOLING & CITATION BEHAVIOR\nVerify rules/thresholds with current primary sources and cite exact dates; prefer official/public sources. Call out Navy overlay deltas vs generic DAU guidance.\n\nSAFETY & COMPLIANCE\nNot legal advice. Respect OPSEC/CUI and procurement integrity. Use only unclassified, publicly releasable sources.\n\nCODE ARGUMENTS\n `-latexindent` to format LaTeX sources without backups,ARGS: `wd, -s, -m, -l=.latexindent.yaml, -c=%TEMP%/latexindent, -y=defaultIndent:'  ' `; `-latexmk` for continuous build with LuaLaTeX, ARGS: `-lualatex, -pdf, -dvi-, -ps-, -outdir=out, -auxdir=build, -f, -shell-escape, -interaction=nonstopmode, -synctex=1, -file-line-error, %DOC%`; `-fontspec` for custom fonts (Merriweather, Montserrat, Source Sans Pro).",
+    "project_memory_highlights": [
+      "User is building a LaTeX-based EDO Board Prep Study Guide with diagrams, tables, and citations.",
+      "Prefers layered, decision-focused outputs (Board Prep default) with Mermaid flows and Decision Trace.",
+      "Wants primary-source citations (FAR/DFARS/DoDI/SECNAV/OPNAV, FMR, GAO) with exact dates.",
+      "Avoids flashcards by default; likes compact one-page briefs and MCQ knowledge checks when requested.",
+      "Must-Know objectives, Key Roles, and Fast Cues now emphasize contracting fundamentals (KO roles, CICA exceptions, J&A vs D&F) for board prep.",
+      "Acronym glossary in `acronyms.def` is kept sorted by section with direct newacronym definitions; conditional guards were removed.",
+      "`edo.bib` references are grouped by category (research, regulations, instructions, NAVSEA guides, coursebooks, statutes) for easier maintenance.",
+      "Prefers LaTeX `description` environments instead of `itemize` whenever list entries are term-definition pairs.",
+      "Requires every `\\ac{}` key to be lowercase (matching the acronym definitions) throughout LaTeX sources.",
+      "Coursebook bib entries must prefix titles with the module number (e.g., \"2.1.5. Title\").",
+      "Default LaTeX table environment is `talltblr`.",
+      "Do not use `\\ac{}` in section headings or table cells.",
+      "Use `v.s.\\` instead of `vs` in prose.",
+      "Citations should follow IEEE rules (e.g., citations should be within punctuations and used as nouns)."
+    ],
+    "known_limits": {
+      "files_visible": 1,
+      "can_list_past_chats": true,
+      "notes": "Past chats are visible as summaries in this Project context. Raw attachments from other Projects are not accessible. Some long chats are truncated."
+    }
+  },
+  "assets": {
+    "files": [
+      {
+        "filename": "navy_edo_acquisition_tutor_instruction_pack_v_0.md",
+        "filetype": "md",
+        "approx_pages_or_rows": "unknown",
+        "summary": "This instruction pack defines how the EDO Acquisition Tutor should teach and verify U.S. Navy/DoD acquisition content. It sets the EDO Board Prep mode as default (concise, decision-focused), mandates primary-source citations with dates, and prescribes a layered teaching structure (plain-language brief, practitioner steps, Mermaid decision flow, checklist, Navy overlays, fiscal/PPBE with SCN/WPN nuance, Decision Trace, citations, assumptions, and self-score). It enumerates canonical sources (statutes, FAR/DFARS/PGI, DoDI 5000 series, SECNAV/OPNAV/NAVSEA, FMR, GAO Red Book, JCIDS) and a coverage map across pathways, contracting, fiscal law, SE/T&E, logistics, software, rapid authorities, and Navy-unique overlays. It also includes output templates (one-page brief, MCQs, case studies, glossary), recency and QA policies, chunking/ingestion guidance, and safety/compliance notes (OPSEC/CUI, procurement integrity). Baseline coursebook recency is 2025-09-12; every deliverable must be stamped with a current-as-of date.",
+        "key_points": ["EDO Board Prep is the default mode; Mastery mode on request.", "Always cite primary sources with exact dates; verify thresholds/definitions.", "Use Mermaid by default for decision flows and include a Decision Trace.", "Integrate Navy overlays and SCN/WPN fiscal nuances explicitly.", "Self-score each deliverable; revise if any dimension <8."],
+        "entities": {
+          "people": [],
+          "orgs": ["DoD", "U.S. Navy", "SECNAV", "OPNAV", "NAVSEA", "DAU"],
+          "products": ["Mermaid"],
+          "locations": []
+        },
+        "dates": ["2025-09-12"],
+        "decisions": ["Set Board Prep as default delivery style.", "Mandate primary-source verification with dates for changing facts.", "Require Mermaid flows and Decision Trace in standard outputs.", "Adopt strict recency policy: stamp 'Current as of' and re-verify policy changes."],
+        "assumptions": ["Learners are motivated EDOs who may be new to acquisition jargon.", "Public, official sources are accessible for verification.", "Coursebook baseline (2025-09-12) remains valid until superseded."],
+        "risks": ["Policy drift (NDAA/FAR/DFARS/DoDI updates) can invalidate prior content.", "Overemphasis on Navy overlays may underweight joint/OSD nuances.", "Scope creep into CUI or procurement-sensitive areas if not monitored."],
+        "open_questions": ["Will the instruction pack be versioned beyond v0; change log needed?", "Which SECNAV/OPNAV/NAVSEA instructions are most current for 5000-series overlays?", "What authoritative list of PEO/PMW updates should be tracked quarterly?"],
+        "sources_or_citations": ["Statute: 10 & 41 U.S.C.", "FAR/DFARS/PGI", "DoDI 5000 series", "SECNAV/OPNAV/NAVSEA policies", "DoD FMR 7000.14-R", "GAO Red Book", "JCIDS guidance"],
+        "quality_bias_notes": {
+          "recency": "fresh",
+          "completeness": "high",
+          "author_biases": ["Navy overlay emphasis", "Board-prep orientation"],
+          "conflicts_of_interest": []
+        }
+      }
+    ],
+    "project_instructions_analysis": {
+      "role": "Navy EDO Acquisition Tutor",
+      "tone_style": "Concise, decision-focused, citation-forward; switches to deeper Mastery mode on request.",
+      "constraints": ["Cite controlling sources with exact dates for any changeable fact.", "Include Mermaid flows and Decision Trace by default.", "Stamp outputs with 'Current as of [DATE]'.", "Avoid flashcards unless asked; respect OPSEC/CUI; no legal advice."],
+      "alignment_with_goals": "Strong alignment with EDO board needs: emphasizes decisions, Navy overlays, fiscal nuance, and verification rigor.",
+      "gaps_or_conflicts": ["Instruction pack references many sources but does not list specific sections/links (requires browsing during answers).", "No explicit policy for handling contradictory service-level memos vs OSD policy—needs tie-break rule.", "Glossary process is specified but no canonical acronym table is included yet."]
+    }
+  },
+  "referencable_chats": [
+    {
+      "title_or_slug": "LuaTeX package error fix / Fonts",
+      "date_range": "2025-10-08 to 2025-10-08",
+      "participants": ["user", "assistant"],
+      "purpose": "Resolve LaTeX font setup (Merriweather, Montserrat, Source Sans Pro) and TikZ vs forest choices.",
+      "summary": "Discussion centers on configuring multiple fonts with fontspec in LuaLaTeX, including variable weights, best practices for portability across machines, and when to prefer TikZ trees vs the forest package for org charts. Also touches on the purpose of Scale=MathLowercase and whether to combine packages for usability.",
+      "key_decisions": ["Prefer clear fontspec blocks per family; consider forest for complex org hierarchies."],
+      "action_items": ["Provide portable fontspec snippets and org chart templates."],
+      "linked_files": [],
+      "notable_citations": [],
+      "bias_or_quality_notes": "Tooling-oriented; high clarity; no acquisition content."
+    },
+    {
+      "title_or_slug": "PPBE 3-star vs 4-star reviews",
+      "date_range": "2025-10-09 to 2025-10-09",
+      "participants": ["user", "assistant"],
+      "purpose": "Clarify PPBE programming process distinctions between 3-star and 4-star group reviews of the POM leading to PDM/RMD.",
+      "summary": "Seeks differences in governance intent, timing, and artifacts for 3-star vs 4-star boards during POM build, and how those feed the Program/Budget decisions (PDM/RMD).",
+      "key_decisions": ["Map decision authorities and outputs from 3-star to 4-star gates for board prep."],
+      "action_items": ["Draft Mermaid flow of PPBE reviews; add citations to OSD/DoN PPBE directives."],
+      "linked_files": [],
+      "notable_citations": [],
+      "bias_or_quality_notes": "Acquisition-fiscal governance; needs current citations."
+    },
+    {
+      "title_or_slug": "uniquecounter.sty & latexindent / latexmk",
+      "date_range": "2025-10-07 to 2025-10-07",
+      "participants": ["user", "assistant"],
+      "purpose": "Fix build workflow and indentation/backup settings with latexindent and latexmk.",
+      "summary": "Explores removing extra line skips, non-stopmode for latexmk, running latexindent without backups while overwriting, and clarifying -w vs -wd flags.",
+      "key_decisions": ["Adopt clean latexmk/latexindent config for reproducible builds."],
+      "action_items": ["Share a minimal latexmkrc and latexindent.yaml."],
+      "linked_files": [],
+      "notable_citations": [],
+      "bias_or_quality_notes": "Build tooling; high utility."
+    },
+    {
+      "title_or_slug": "TeX conditional error / MiKTeX logs",
+      "date_range": "2025-10-06 to 2025-10-07",
+      "participants": ["user", "assistant"],
+      "purpose": "Diagnose LuaHBTeX errors and environment versions.",
+      "summary": "Presented detailed MiKTeX logs and luaotfload versions; goal is stable compilation for the EDO Study Guide.",
+      "key_decisions": ["Pin versions and clear caches as needed."],
+      "action_items": ["Provide step-by-step cache reset and font discovery guidance."],
+      "linked_files": [],
+      "notable_citations": [],
+      "bias_or_quality_notes": "Technical; focused on stability."
+    },
+    {
+      "title_or_slug": "Define sbseries; org chart layout",
+      "date_range": "2025-10-02 to 2025-10-02",
+      "participants": ["user", "assistant"],
+      "purpose": "Design org charts with vertical Ech III children and right-angle bus connectors.",
+      "summary": "User wants strict vertical child flow with side-entry connectors merging under parents; asks whether forest or manual TikZ is required and casing rules for coordinates/buses.",
+      "key_decisions": ["Use forest with custom edge routing for trees; manual TikZ for bus merges."],
+      "action_items": ["Deliver forest style snippet for Navy org charts."],
+      "linked_files": [],
+      "notable_citations": [],
+      "bias_or_quality_notes": "Graphics architecture; high relevance to Study Guide visuals."
+    },
+    {
+      "title_or_slug": "Resolve datatool warning",
+      "date_range": "2025-10-04 to 2025-10-04",
+      "participants": ["user", "assistant"],
+      "purpose": "Fix datatool/tracklang/babel locale warnings in the main TeX file.",
+      "summary": "Main file shows package selections; issue with locales for datatool-base and American English handling.",
+      "key_decisions": ["Pass proper locales and ensure package ordering."],
+      "action_items": ["Provide minimal working example (MWE) with babel and datatool."],
+      "linked_files": [],
+      "notable_citations": [],
+      "bias_or_quality_notes": "Tooling; addresses warning hygiene."
+    },
+    {
+      "title_or_slug": "NAVWAR PMW offices integration",
+      "date_range": "2025-10-04 to 2025-10-04",
+      "participants": ["user", "assistant"],
+      "purpose": "List NAVWAR PMW offices and integrate into the Study Guide.",
+      "summary": "User requests authoritative PMW list and best approach to include in study materials. Requires web verification and periodic updates.",
+      "key_decisions": ["Create a maintainable PMW table with update cadence and source links."],
+      "action_items": ["Compile PMW inventory with citations; add Mermaid index diagram."],
+      "linked_files": [],
+      "notable_citations": [],
+      "bias_or_quality_notes": "Needs current sources; high benefit for learners."
+    },
+    {
+      "title_or_slug": "Study guide QA check: key definitions & PPBE/fiscal flows",
+      "date_range": "2025-09-29 to 2025-09-29",
+      "participants": ["user", "assistant"],
+      "purpose": "Identify missing content (AOR/NOR, SLR, IGT, NWCF vs mission-funded, reprogramming, fiscal law definitions, commitment/obligation/expenditure/outlay flow).",
+      "summary": "Comprehensive gap list for the Study Guide: definitions, equations, fiscal processes, reasons to use Warfare Centers, and reprogramming. Also asks for updates to 'Key Roles in Acquisition and Modernization', 'Fast Cues & Common Board Pivots', and references/assumptions.",
+      "key_decisions": ["Create targeted modules for fiscal law, NWCF/Mission-funded differences, and PPBE transaction flow with citations."],
+      "action_items": ["Draft sections with diagrams and equations; add glossary entries."],
+      "linked_files": [],
+      "notable_citations": [],
+      "bias_or_quality_notes": "High importance for board prep; pending sources."
+    },
+    {
+      "title_or_slug": "Fontspec errors and build issues",
+      "date_range": "2025-10-01 to 2025-10-01",
+      "participants": ["user", "assistant"],
+      "purpose": "Diagnose latexmk errors and disappearing lists (lof/lot/toc).",
+      "summary": "Focus on lualatex runs, auxiliary file handling, and custom dependency rules. Aim: stable continuous build.",
+      "key_decisions": ["Refine latexmk rule set; ensure auxiliary generation order."],
+      "action_items": ["Provide updated latexmkrc."],
+      "linked_files": [],
+      "notable_citations": [],
+      "bias_or_quality_notes": "Tooling stabilization."
+    },
+    {
+      "title_or_slug": "Study guide development: formatting & Fast Cues",
+      "date_range": "2025-09-17 to 2025-09-17",
+      "participants": ["user", "assistant"],
+      "purpose": "Finalize table/figure formatting and request up-to-date Fast Cues/Common Board Pivots.",
+      "summary": "User defines table styling (Merriweather Black headers, Modern color) and obligation windows example; requests updated Fast Cues and Common Board Pivots with references.",
+      "key_decisions": ["Adopt consistent table styles; create Fast Cues module tied to sources and keep it current."],
+      "action_items": ["Review existing Fast Cues content for periodic refresh, add Mermaid decision flows if required."],
+      "linked_files": [],
+      "notable_citations": [],
+      "bias_or_quality_notes": "High learner value; needs verified citations."
+    },
+    {
+      "title_or_slug": "EDO Board Prep HTML → TeX conversion",
+      "date_range": "2025-09-12 to 2025-09-12",
+      "participants": ["user", "assistant"],
+      "purpose": "Convert HTML study guide skeleton into LaTeX; store uploads in workspace.",
+      "summary": "Requests conversion and persistent storage of files for future compilation.",
+      "key_decisions": ["Use LuaLaTeX with fontspec; maintain subfiles architecture."],
+      "action_items": ["Generate .tex file and ensure assets saved to workspace."],
+      "linked_files": ["(future) EDO_Qual_Study_Guide.tex"],
+      "notable_citations": [],
+      "bias_or_quality_notes": "Production pipeline setup."
+    }
+  ],
+  "handoff": {
+    "tags": ["EDO", "Acquisition", "Navy", "PPBE", "FAR/DFARS", "Study-Guide", "LaTeX", "Board-Prep", "Final"],
+    "recommended_next_actions": [
+      { "owner": "me", "action": "Provide a current list of NAVWAR PMW offices with official source links.", "due": "ASAP" },
+      { "owner": "you", "action": "Enhance Fast Cues/Common Board Pivots with Mermaid decision flows (if still needed) and keep the contracting cues current.", "due": "2025-10-19" },
+      { "owner": "me", "action": "Confirm which SECNAV/OPNAV/NAVSEA instructions to treat as controlling for overlays.", "due": "2025-10-15" },
+      { "owner": "you", "action": "Author modules for AOR/NOR, SLR, IGT, NWCF vs mission-funded, and reprogramming with primary-source dates.", "due": "2025-10-26" },
+      { "owner": "me", "action": "Decide glossary format and supply any command-preferred acronyms.", "due": "2025-10-18" }
+    ],
+    "integration_hints_for_custom_gpts": {
+      "ideal_knowledge_chunks": "Chunk by heading at ~800–1,200 tokens; include front-matter summary, key points, entities, and dated citations. Keep Mermaid blocks intact.",
+      "suggested_embeddings_fields": ["summary", "key_points", "decisions", "risks", "entities", "dates"],
+      "canonical_ids": { "project_slug": "edo-acquisition-tutor", "asset_prefix": "edo-at" }
+    }
+  }
+}

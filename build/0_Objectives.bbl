@@ -1,0 +1,164 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{FAR}{report}{}{}
+      \list{organization}{1}{%
+        {GSA, DoD, NASA}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{Federal Acquisition Regulation (FAR)}}
+      \field{type}{Regulation}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.acquisition.gov/far
+      \endverb
+      \verb{url}
+      \verb https://www.acquisition.gov/far
+      \endverb
+    \endentry
+    \entry{DFARS}{report}{}{}
+      \list{organization}{1}{%
+        {Department of Defense}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{Defense Federal Acquisition Regulation Supplement (DFARS)}}
+      \field{type}{Regulation}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.acquisition.gov/dfars
+      \endverb
+      \verb{url}
+      \verb https://www.acquisition.gov/dfars
+      \endverb
+    \endentry
+    \entry{NMCARS}{report}{}{}
+      \list{organization}{1}{%
+        {Department of the Navy}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{Navy Marine Corps Acquisition Regulation Supplement (NMCARS)}}
+      \field{type}{Regulation}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.acquisition.gov/nmcars
+      \endverb
+      \verb{url}
+      \verb https://www.acquisition.gov/nmcars
+      \endverb
+    \endentry
+    \entry{SOM-Ch3-2023}{manual}{}{}
+      \list{institution}{1}{%
+        {Naval Sea Systems Command}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{month}{9}
+      \field{number}{Chapter 3}
+      \field{title}{{SUPSHIP Operations Manual, Chapter 3: Contract Management}}
+      \field{type}{Manual}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.navsea.navy.mil/Portals/103/Documents/SUPSALV/SOM/SOM-Ch3.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.navsea.navy.mil/Portals/103/Documents/SUPSALV/SOM/SOM-Ch3.pdf
+      \endverb
+    \endentry
+    \entry{NAVSEA-Source-Selection-Guide-2022}{manual}{}{}
+      \list{institution}{1}{%
+        {Naval Sea Systems Command}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{month}{8}
+      \field{title}{{NAVSEA Source Selection Guide}}
+      \field{type}{Guide}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.navsea.navy.mil/Portals/103/Documents/SEA%2002/NAVSEA-Source-Selection-Guide.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.navsea.navy.mil/Portals/103/Documents/SEA%2002/NAVSEA-Source-Selection-Guide.pdf
+      \endverb
+    \endentry
+    \entry{NAVSEA-Contracts-Handbook-2023}{manual}{}{}
+      \list{institution}{1}{%
+        {Naval Sea Systems Command}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{month}{5}
+      \field{title}{{NAVSEA Contracts Handbook}}
+      \field{type}{Handbook}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.navsea.navy.mil/Portals/103/Documents/SEA%2002/NAVSEA-Contracts-Handbook.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.navsea.navy.mil/Portals/103/Documents/SEA%2002/NAVSEA-Contracts-Handbook.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

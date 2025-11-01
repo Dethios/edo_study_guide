@@ -1,0 +1,107 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% =============================================================================
+% CHAPTER 3: NAVSEA ORGANIZATION AND WARFARE CENTERS
+%
+% DESCRIPTION: This chapter provides an overview of the NAVSEA organization,
+%              including its headquarters codes and its associated warfare
+%              centers.
+% =============================================================================
+
+\begin{document}
+\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+%====================
+% Contents here
+%====================
+
+% === NAVSEA ===
+\section{NAVSEA Organization and Warfare Centers}
+\minibib
+\subsection{HQ Codes (must-know one-liners)}
+
+\begin{description}
+	\item[\textbf{SEA 01 -- Comptroller.}] \ac{bso}; leads \ac{navsea} financial governance.
+	\item[\textbf{SEA 02 -- Contracts.}] Contracting authority and policy.
+	\item[\textbf{SEA 03 -- Cyber Engineering and Digital.}] Enterprise cyber engineering and digital transformation.
+	\item[\textbf{SEA 04 -- Industrial Operations.}] Shipyards, logistics, and quality-assurance oversight.
+	\item[\textbf{SEA 05 -- Chief Engineer (\ac{ta}).}] Sets engineering standards and certifies designs.
+	\item[\textbf{SEA 06 -- Sustainment.}] Life-cycle product support.
+	\item[\textbf{SEA 07 -- Undersea Warfare.}] Dual-hatted as \ac{peouws}; provides life-cycle support for in-service submarine and undersea forces.
+	\item[\textbf{SEA 08 -- Nuclear Propulsion.}] Manages all technical matters pertaining to naval reactors. Triple-hat duties:
+	      \begin{description}
+		      \item[\textbf{SEA 08 Deputy Commander.}] Leads nuclear propulsion activities within \ac{navsea}.
+		      \item[\textbf{Director, Naval Nuclear Propulsion (\ac{opnav}~00N).}] Serves as the Navy's principal nuclear propulsion authority.
+		      \item[\textbf{Deputy Administrator for Naval Reactors.}] Interfaces with the National Nuclear Security Administration and the Department of Energy.
+	      \end{description}
+	\item[\textbf{SEA 09 -- Safety and Regulatory Compliance.}] Strengthens and aligns safety oversight and reporting.
+	\item[\textbf{SEA 10 -- Total Force and Corporate Operations.}] Manages the workforce, corporate services, and governance.
+	\item[\textbf{SEA 21 -- In-Service Ships (dual-hat \ac{cnrmc}).}] Oversees fleet surface-ship sustainment and modernization. \acp{pmo} under SEA 21:
+	      \begin{description}
+		      \item[\textbf{PMS 321.}] Unmanned small combatants and amphibious ships.
+		      \item[\textbf{PMS 326.}] International fleet support.
+		      \item[\textbf{PMS 339.}] Surface training systems.
+		      \item[\textbf{PMS 421.}] Large surface combatant modernization and sustainment.
+		      \item[\textbf{PMS 443.}] Bridge integration and HM\&E sustainment.
+		      \item[\textbf{PMS 451.}] Destroyer Modernization~2.0 portfolio.
+		      \item[\textbf{SEA 21I.}] Inactive Ships Directorate.
+		      \item[\textbf{\ac{surfmepp} Activity.}] Surface Maintenance Engineering Planning Program.
+	      \end{description}
+\end{description}
+
+\subsection{Warfare Centers (alphabetical)}
+
+\Tab{\ref{tab:navsea-centers}} lists \ac{navsea} Warfare Centers with locations and descriptions.
+
+% \begin{center}
+\begin{longtblr}[%
+		caption = {NAVSEA Warfare Centers with locations and descriptions.},%
+		label   = {tab:navsea-centers},%
+		entry   = {NAVSEA Warfare Centers},%
+		remark{Source} = {\tabCite{edo-2-1-4-warfare-centers-2024} \tabCite{navsea_warfare_centers}},%
+		remark{\tHint} = {Remember that for \acp{nswc} there are 3-C's, 2-D's, and 3-P's plus 1-I. There are only two "Ports" for \acp{nuwc}.}%
+	]
+	{%
+		colspec = {@{} F L L @{}}%
+	}
+	\toprule
+	{Center}          & {Location}         & {Description}                                                                      \\
+	\midrule
+	NSWC Carderock    & West Bethesda, MD  & Ship design and engineering.                                                       \\
+	NSWC Corona       & Corona, CA         & Analytics and data driven performance assessments.                                 \\
+	NSWC Crane        & Crane, IN          & Electronic/expeditionary warfare; strategic system components.                     \\
+	NSWC Dahlgren     & Dahlgren, VA       & Surface ship weapons system development and integration .                          \\
+	NSWC Dam Neck     & Virginia Beach, VA & Combat-system software, training/testing.                                          \\
+	NSWC Indian Head  & Indian Head, MD    & Energetics, explosive-ordnance-disposal technologies.                              \\
+	NSWC Panama City  & Panama City, FL    & Mine warfare and littoral warefare systems.                                        \\
+	NSWC Philadelphia & Philadelphia, PA   & Surface and undersea machinery, power, controls, and auxiliary ship systems.       \\
+	NSWC Port Hueneme & Port Hueneme, CA   & Integrated logistics and test and evaluation for surface warefare combat systems.  \\
+  \midrule
+	NUWC Keyport      & Keyport, WA        & Sustaining undersea warefare systems and vehicles.                                 \\
+	NUWC Newport      & Newport, RI        & Undersea, subsea, and seabed warfare weapons systems development and integration.  \\
+	\bottomrule
+\end{longtblr}
+% \end{center}
+
+\subsection{NWC Locations}
+
+\Fig{\ref{fig:nwc-locations}} shows the geographic locations of \acp{nwc}. For the \ac{edo} board, most recommend drawing the US to show where the \acp{nwc} are located. The other option is to list them out, but a map is more visual.
+\begin{figure}[htbp]
+	\centering\color{DarkGray}
+	\includegraphics[width=\linewidth]{Images/Geographic locations of NWCs.jpeg}
+	\caption[Geographic locations of Navy Warfare Center]{Geographic locations of Navy Warfare Centers.\srcCite{edo-2-1-4-warfare-centers-2024}.}
+	\label{fig:nwc-locations}
+\end{figure}
+%====================
+% End of file
+%====================
+\ifSubfilesClassLoaded{
+  \renewcommand*{\entryname}{\textbf{\color{Modern} Acronym}}
+  \renewcommand*{\descriptionname}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+]}{}
+\end{document}

@@ -1,0 +1,99 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% =============================================================================
+% CHAPTER 10: COST FUNDAMENTALS
+%
+% DESCRIPTION: This chapter covers the fundamentals of cost estimating,
+%              including cost elements, program cost terms, estimating
+%              methods, and the learning curve.
+% =============================================================================
+\begin{document}
+\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+%====================
+% Contents here
+%====================
+
+% === COST FUNDAMENTALS ===
+\section{Cost Elements, Estimates, and Learning Curves}
+\minibib
+
+\subsection{Direct v.s.\ Indirect Costs}
+\begin{description}
+	\item[\textbf{Direct.}] Traceable to a final cost objective (e.g., technician hours, end-item material).
+	\item[\textbf{Indirect.}] Pooled and allocated (overhead, G\&A, facilities, depreciation). See the \ac{far} cost principles~\autocite{FAR}.
+\end{description}
+
+\subsection{Program Cost Terms (Know the Stack)}
+\begin{description}
+	\item[\textbf{Flyaway Cost.}] Recurring production cost of an aircraft/weapon delivered (excludes non-recurring tooling, spares, support).
+	\item[\textbf{Weapon System Cost.}] Flyaway plus support equipment, training, data, and initial spares.
+	\item[\textbf{Procurement Cost.}] Weapon system cost plus peculiar support and \ac{milcon} as applicable.
+	\item[\textbf{\ac{lcc}.}] All costs from concept through disposal (\ac{rdte}, procurement, \ac{os.phase}, disposal).
+	\item[\textbf{\ac{toc}.}] \ac{lcc} plus broader infrastructure/indirect enterprise costs.
+\end{description}
+\note{Use \ac{don}/\ac{dod} cost handbook definitions; be consistent across documents.}
+\srcCite{SECNAV5000-2G,DoDI5000-85}.
+
+\Fig{\ref{fig:lcc_composition}} shows the \ac{lcc} from above and how they relate to one another.  Note how each cost builds to the next as different types of expenditures are added.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.7\linewidth]{LCC_Composition.png}
+	\caption{Composition of Life Cycle Costs. \srcCite{edo-3-1-6-cost-estimating-2024}.}
+	\label{fig:lcc_composition}
+\end{figure}
+
+\subsection{Why the LCCE Matters}
+Establishes the affordability baseline, informs \ac{apb}, drives color-of-money phasing, and underpins ``will-cost / should-cost'' targets~\autocite{DoDI5000-85}. \Fig{\ref{fig:lcc_time}} shows the different types of funding that will be used in different phases of the \ac{mca}.  Most of the \ac{lcc} will be from the \ac{os.phase} phase.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.7\linewidth]{lcc_over_time.png}
+	\caption{\ac{lcc} over time.  The colors of money used are shown for each phase including percent of total costs. \srcCite{edo-3-1-6-cost-estimating-2024}}
+	\label{fig:lcc_time}
+\end{figure}
+
+\subsection{Estimating Methods (When to Use)}
+\begin{description}
+	\item[\textbf{Analogy.}] Early stages; limited data; similar system scaling.
+	\item[\textbf{Parametric.}] \acp{cer} (e.g., weight, \acp{sloc}); \ac{aoa}/\ac{tmrr}; fast trade-space.
+	\item[\textbf{Engineering (Bottom-up).}] Detailed design/\acp{bom}; \ac{emd}/production maturity; schedule-critical \acp{ibr}.
+	\item[\textbf{Actuals/Extrapolation.}] Learning/production maturity; later lots
+\end{description}
+\srcCite{DAU-EMD}.
+
+\subsection{Products and Players}
+\begin{description}
+	\item[\textbf{\ac{card}.}] Technical/schedule baseline for independent estimates.
+	\item[\textbf{\ac{ice}.}] \ac{cae} or \ac{osd} \ac{cape} for \ac{acat} I; \ac{poe}.
+	\item[\textbf{\ac{csdr}.}] Contractor cost \& software data reporting for actuals/\acp{cer}.
+	\item[\textbf{\ac{apb}/\ac{sar}/\ac{daes}.}] Baselines and reporting.
+\end{description}
+\srcCite{DoDI5000-85}.
+
+\subsection{Learning Curve (Production Efficiency)}
+If unit time/cost follows an $s$\% slope, doubling quantity reduces unit cost by $s$\%. Typical aerospace slopes: 85--90\% early, flattening as processes mature. Plan lots and spares buys accordingly~\autocite{DAU-EMD}.
+
+\subsection{Cost Escalation (Inflation Indices)}
+Escalate base-year costs to then-year using approved \ac{dod} inflation indices; separate real growth from price growth; align phasing to obligation windows~\autocite{DoDFMR-Vol3}.
+
+\subsection{Will-Cost / Should-Cost}
+\begin{description}
+	\item[\textbf{Will-Cost.}] Conservative reference estimate used for budgeting and margin planning.
+	\item[\textbf{Should-Cost.}] Management targets that drive efficiencies (e.g., lean events, value engineering, rate negotiations)~\autocite{DoDI5000-85}.
+\end{description}
+
+%====================
+% End of file
+%====================
+\ifSubfilesClassLoaded{
+  \renewcommand*{\entryname}{\textbf{\color{Modern} Acronym}}
+  \renewcommand*{\descriptionname}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+]}{}
+\end{document}

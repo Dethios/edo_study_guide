@@ -1,0 +1,34 @@
+% =============================================================================
+% LOW-LEVEL TWEAKS AND MACROS
+% =============================================================================
+
+% ---------------- Lists (enumitem) ----------------
+\setlist[itemize]{
+  label=\textcolor{Modern}{\Large\textbullet},
+  leftmargin=*,
+  itemsep=4pt,
+  topsep=4pt
+}
+\setlist[enumerate]{leftmargin=*, itemsep=4pt, topsep=4pt}
+\setlist[description]{
+  style=nextline,
+  font=\bfseries,
+  labelsep=0.5em,
+  itemsep=4pt,
+  topsep=4pt,
+  leftmargin=1.5em
+}
+% ---------------- Footnotes ----------------
+\interfootnotelinepenalty=1000 % limit breakage across pages
+
+% ---------------- Hyphenation / paragraph badness ----------------
+\hyphenpenalty=500
+\exhyphenpenalty=200
+\tolerance=2000
+\emergencystretch=3em
+\hbadness=10000
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\brokenpenalty=5000
+\hfuzz=0.5pt

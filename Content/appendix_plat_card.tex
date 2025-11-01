@@ -1,0 +1,100 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% =============================================================================
+% APPENDIX: PLATINUM CARD
+%
+% DESCRIPTION: This appendix contains the "Platinum Card," a key study tool
+%              for EDO boards, summarizing critical acquisition concepts in
+%              a series of diagrams.
+% =============================================================================
+
+\begin{document}
+\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+%====================
+% Contents here
+%====================
+\chapter{Platinum Card}
+The \emph{Platinum Card} is a primary study tool that will have most of the information required for your boards. Sources: EDO Coursebook Modules~3.1.1, 3.1.3, 3.1.4, and~3.1.6. Be able to draw and talk through Figures~\ref{fig:plat_lifecycle}--\ref{fig:plat_appropriation_lifecycle}.
+
+\begin{figure}[H]
+	\centering\color{DarkGray}
+	\includegraphics[width=0.7\linewidth]{Images/Platinum Card Life Cycle Cost.png}
+	\caption[Platinum Card: Life Cycle Cost Composition]{Platinum Card: Life Cycle Cost Composition}
+	\label{fig:plat_lifecycle}
+\end{figure}
+
+\begin{figure}[H]
+	\centering\color{DarkGray}
+	\includegraphics[width=.7\linewidth]{Images/Platinum Card Cost Estimating Requirements.png}
+	\caption[Platinum Card: Cost Estimating Requirements]{Platinum Card: Cost Estimating Requirements}
+	\label{fig:plat_cost_estimating}
+\end{figure}
+
+\begin{figure}[H]
+	\centering\color{DarkGray}
+	\includegraphics[width=.7\linewidth]{Images/Platinum Card PBBE.png}
+	\caption[Platinum Card: PPBE Planning Phase (Lead by USD (P))]{Platinum Card: PPBE Planning Phase (Lead by USD (P))}
+	\label{fig:plat_ppbe}
+\end{figure}
+
+\begin{figure}[H]
+	\centering\color{DarkGray}
+	\includegraphics[width=.7\linewidth]{Images/Platinum Card Concurrent Program Budget Review.png}
+	\caption[Platinum Card: Concurrent Program/Budget Review]{Platinum Card: Concurrent Program/Budget Review}
+	\label{fig:plat_concurrent_prog}
+\end{figure}
+
+\begin{figure}[H]
+	\centering\color{DarkGray}
+	\includegraphics[width=.7\linewidth]{Images/Platinum Card Below Threshold Reprogramming.png}
+	\caption[Platinum Card: Below Threshold Reprogramming]{Platinum Card: Below Threshold Reprogramming}
+	\label{fig:plat_reprogramming}
+\end{figure}
+
+\begin{figure}[H]
+	\centering\color{DarkGray}
+	\includegraphics[width=.7\linewidth]{Images/Platinum Card Resource Allocation Process.png}
+	\caption[Platinum Card: Resource Allocation Process]{Platinum Card: Resource Allocation Process}
+	\label{fig:plat_resource_allocation}
+\end{figure}
+
+\begin{figure}[H]
+	\centering\color{DarkGray}
+	\includegraphics[width=.7\linewidth]{Images/Platinum Card Congressional Enactment Timeline.png}
+	\caption[Platinum Card: Congressional Enactment Timeline]{Platinum Card: Congressional Enactment Timeline}
+	\label{fig:plat_enactment}
+\end{figure}
+
+\begin{figure}[H]
+	\centering\color{DarkGray}
+	\includegraphics[width=.7\linewidth]{Images/Platinum Card Funding for Product Improvements.png}
+	\caption[Platinum Card: Funding for Product Improvements]{Platinum Card: Funding for Product Improvements}
+	\label{fig:plat_product_Improvements}
+\end{figure}
+
+\begin{description}
+	\item[\textbf{RDT\&E.}] Engineering changes requiring development/test.
+	\item[\textbf{Procurement.}] Production/installation of approved mods/end-items.
+	\item[\textbf{O\&M.}] Minor mods/installation labor when authorized and not creating a new end-item.
+\end{description}
+
+\begin{figure}[H]
+	\centering\color{DarkGray}
+	\includegraphics[width=.7\linewidth]{Images/Platinum Card Appropriation Life Cycle.png}
+	\caption[Platinum Card: Appropriation Life Cycle]{Platinum Card: Appropriation Life Cycle}
+	\label{fig:plat_appropriation_lifecycle}
+\end{figure}
+%====================
+% End of file
+%====================
+\ifSubfilesClassLoaded{
+  \renewcommand*{\entryname}{\textbf{\color{Modern} Acronym}}
+  \renewcommand*{\descriptionname}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+]}{}
+\end{document}

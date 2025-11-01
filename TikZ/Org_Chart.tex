@@ -1,0 +1,136 @@
+% =============================================================================
+% TIKZ ORGANIZATIONAL CHART
+%
+% DESCRIPTION: This file contains the TikZ code for the organizational chart
+%              of the U.S. Navy's chain of command, from the President down
+%              to Echelon III commands.
+% =============================================================================
+% !TEX program = lualatex
+\documentclass[tikz]{standalone}
+\usetikzlibrary{shapes,arrows.meta,positioning,calc}
+\usepackage{smartdiagram} % Uses TikZ; keep after tikz
+
+\begin{document}
+\begin{tikzpicture}[
+		% Style for the main organization boxes
+		orgchart node/.style={
+				Rectangle,
+				draw=black,
+				thick,
+				fill=blue!10,
+				text width=3cm,
+				align=center,
+				font=\sffamily\small,
+				minimum height=1cm,
+				rounded corners,
+			},
+		% Style for the Echelon labels on the left
+		label node/.style={
+				font=\sffamily\small,
+				align=right,
+			}
+	]
+
+	% == 1. ECHELON I HIERARCHY ==
+	% Place the main vertical chain
+	\node[orgchart node] (potus) {POTUS};
+	\node[orgchart node, below=1cm of potus] (secdef) {SECDEF};
+	\node[orgchart node, below=1cm of secdef] (secnav) {SECNAV};
+	\node[orgchart node, below=1cm of secnav] (cno) {CNO};
+
+	% Draw connections for the main chain
+	\draw[thick] (potus) -- (secdef);
+	\draw[thick] (secdef) -- (secnav);
+	\draw[thick] (secnav) -- (cno);
+
+	% == 2. ECHELON II NODES (Horizontal Row) ==
+	% Define positions for the horizontal nodes relative to CNO
+	% We use a 'scope' to apply settings to a group of nodes
+	\begin{scope}[every node/.style={orgchart node, below=8cm of cno}]
+		\node (navwar) at (-14cm,0) {NAVWAR};
+		\node (navsea) at (-10cm,0) {NAVSEA};
+		\node (navfac) at (-6cm,0) {NAVFAC};
+		\node (navair) at (-2cm,0) {NAVAIR};
+		\node (navsup) at (2cm,0) {NAVSUP};
+		\node (oni)    at (6cm,0) {ONI};
+		\node (onr)    at (10cm,0) {ONR};
+		\node (ssp)    at (14cm,0) {SSP};
+	\end{scope}
+
+	% Draw the connector "bus" from CNO to the Echelon II nodes
+	\coordinate (cno_bus) at ($(cno.south)+(0,-.75cm)$); % Invisible anchor point below CNO
+	\draw[thick] (cno.south) -- (cno_bus); % Vertical line down from CNO
+	\foreach \child in {navwar, navsea, navfac, navair, navsup, oni, onr, ssp} {
+			\draw[thick] (cno_bus) -| (\child.north); % Draw right-angled line to each child
+		}
+
+	% == 3. ECHELON III NODES (Vertical Stacks) ==
+	% Note: Each item is its own node, stacked using 'below=of'
+
+	% Children of NAVWAR (stacked vertically)
+	\node[orgchart node, below=1cm of navwar] (niwc-pac) {NIWC PAC};
+	\node[orgchart node, below=0.75cm of niwc-pac] (niwc-lant) {NIWC LANT};
+	\node[orgchart node, below=0.75cm of niwc-lant] (nsfa) {NSFA};
+
+	% Side bus to avoid connectors crossing the children
+	\coordinate (navwar_bus) at ($(navwar.south) + (0,-0.5cm)$);
+	\coordinate (navwar_bus_left) at ($(navwar_bus) + (-2cm,0)$);
+	\coordinate (navwar_bus_bottom) at ($(nsfa.west) + (-0.4,0cm)$);
+
+	% Draw vertical/side bus and short stem from NAVWAR
+	\draw[thick] (navwar.south) -- (navwar_bus);
+	\draw[thick] (navwar_bus) -- (navwar_bus_left);
+	\draw[thick] (navwar_bus_left) -- (navwar_bus_bottom);
+
+	% Connect the side bus to each child (horizontal into the child's west side)
+	\foreach \child in {niwc-pac, niwc-lant, nsfa} {
+			\draw[thick] (navwar_bus_left) |- (\child.west);
+		}
+
+	% Children of NAVSEA
+	\node[orgchart node, below=1cm of navsea] (nswc-carderock) {NSWC Carderock};
+	\node[orgchart node, below=0.75cm of nswc-carderock] (nswc-corona) {NSWC Corona};
+	\node[orgchart node, below=0.75cm of nswc-corona] (nswc-crane) {NSWC Crane};
+	\node[orgchart node, below=0.75cm of nswc-crane] (nswc-phil) {NSWC Philadelphia};
+	\node[orgchart node, below=0.75cm of nswc-phil] (nswc-dahlgren) {NSWC Dahlgren};
+	\node[orgchart node, below=0.75cm of nswc-dahlgren] (nswc-indianhead) {NSWC Indian Head};
+	\node[orgchart node, below=0.75cm of nswc-indianhead] (nswc-porthueneme) {NSWC Port Hueneme};
+	\node[orgchart node, below=0.75cm of nswc-porthueneme] (nuwc-keyport) {NUWC Keyport};
+	\node[orgchart node, below=0.75cm of nuwc-keyport] (nuwc-newport) {NUWC Newport};
+	% Connections for NAVSEA's children
+	\coordinate (navsea_bus) at ($(navsea.south) + (0,-0.5cm)$);
+	\coordinate (navsea_bus_right) at ($(navsea_bus) + (+2cm,0)$);
+	\coordinate (navsea_bus_bottom) at ($(nuwc-newport.east) + (+0.4,0cm)$);
+	\draw[thick] (navsea.south) -- (navsea_bus);
+	\draw[thick] (navsea_bus) -- (navsea_bus_right);
+	\draw[thick] (navsea_bus_right) -- (navsea_bus_bottom);
+	\foreach \child in {nswc-carderock, nswc-corona, nswc-crane, nswc-phil, nswc-dahlgren, nswc-indianhead, nswc-porthueneme, nuwc-keyport, nuwc-newport} {
+			\draw[thick] (navsea_bus_right) |- (\child.east);
+		}
+
+	% Children of NAVAIR
+	\node[orgchart node, below=1cm of navair] (nawcad) {NAWCAD};
+	\node[orgchart node, below=1cm of nawcad] (nawcwd) {NAWCWD};
+	% Connections for NAVAIR's children
+	\coordinate (navair_bus) at ($(navair.south) + (0,-0.5cm)$);
+	\coordinate (navair_bus_left) at ($(navair_bus) + (-2cm,0)$);
+	\coordinate (navair_bus_bottom) at ($(nawcwd.west) + (-0.4,0cm)$);
+	\draw[thick] (navair.south) -- (navair_bus);
+	\draw[thick] (navair_bus) -- (navair_bus_left);
+	\draw[thick] (navair_bus_left) -- (navair_bus_bottom);
+	\foreach \child in {nawcad, nawcwd} {
+			\draw[thick] (navair_bus_left) |- (\child.west);
+		}
+
+	% Child of ONR
+	\node[orgchart node, below=1cm of onr] (nrl) {NRL};
+	\draw[thick] (onr.south) -- (nrl.north);
+
+	% == 4. ECHELON LABELS ==
+	% Place labels to the left of key nodes
+	\node[label node, left=1cm of cno] {Echelon I};
+	\node[label node, left=1cm of navwar] {Echelon II};
+	\node[label node, left=1cm of niwc-pac] {Echelon III};
+
+\end{tikzpicture}
+\end{document}

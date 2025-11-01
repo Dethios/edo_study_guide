@@ -1,0 +1,81 @@
+% =============================================================================
+% MODERNTECH THEME INTEGRATION
+% =============================================================================
+\makeatletter
+\def\caption@documentclass{standard}
+\let\caption@CheckCompatibility\relax
+\let\caption@checkcompatibility\relax
+\makeatother
+\PassOptionsToPackage{compatibility=false}{caption}
+\usepackage[
+  autosegsection=false,
+  autominibib=false,
+  minted=false
+]{moderntech}
+
+% Legacy color aliases (retain existing document commands while mapping them to
+% the integrated palette recommended in the typography guide).
+\colorlet{NavyBlue}{AccentBlue}
+\colorlet{CrimsonRed}{AccentOrange}
+\colorlet{SkyBlue}{AccentBlue!35}
+\colorlet{DarkGray}{BodyText}
+\colorlet{LightGray}{Gray90}
+\colorlet{Green}{AccentGreen}
+\colorlet{text}{BodyText}
+\colorlet{bg}{Gray90}
+
+% Convenience font helpers maintained for compatibility with existing sources.
+\newcommand{\headingfont}{\sffamily}
+\newcommand{\sectionfont}{\sffamily}
+\newcommand{\firasb}{\sffamily\bfseries}
+\newcommand{\merriweatherblack}{\rmfamily\bfseries}
+\newcommand{\sourcesansprofont}{\sffamily}
+\newcommand{\textsb}[1]{{\sffamily\bfseries #1}}
+
+% Legacy inline hint/note wrappers routed through the moderntech styled boxes.
+\newcommand{\hint}[1]{\Hint{#1}}
+\newcommand{\note}[1]{\Note{#1}}
+\newcommand{\tHint}{\textcolor{AccentPurple}{Hint}}
+\newcommand{\tNote}{\textcolor{AccentTeal}{Note}}
+
+\defaultfontfeatures[\ttfamily]{
+  Scale=MatchLowercase,
+  Contextuals=Alternate,
+  FakeSlant=0.2,
+  FakeBold=0.2,
+  FakeSmallCaps
+}
+\setmonofont[
+  FontFace={m}{it}{Fira Code},
+  FontFace={m}{sl}{Fira Code},
+  FontFace={m}{sc}{Fira Code},
+  FontFace={m}{scit}{Fira Code},
+  FontFace={m}{ui}{Fira Code},
+  FontFace={m}{In}{Fira Code},
+  FontFace={b}{n}{Fira Code},
+  FontFace={b}{it}{Fira Code},
+  FontFace={b}{sl}{Fira Code},
+  FontFace={b}{sc}{Fira Code},
+  FontFace={b}{scit}{Fira Code},
+  FontFace={bx}{n}{Fira Code},
+  FontFace={bx}{it}{Fira Code},
+  FontFace={bx}{sl}{Fira Code},
+  FontFace={bx}{sc}{Fira Code},
+  FontFace={bx}{scit}{Fira Code},
+  FontFace={bx}{ui}{Fira Code},
+  FontFace={bc}{n}{Fira Code},
+  FontFace={bc}{it}{Fira Code},
+  FontFace={bc}{sl}{Fira Code},
+  FontFace={bc}{sc}{Fira Code},
+  FontFace={bc}{scit}{Fira Code},
+  FontFace={sb}{n}{Fira Code},
+  FontFace={sb}{it}{Fira Code},
+  FontFace={sb}{sl}{Fira Code},
+  FontFace={sb}{sc}{Fira Code},
+  FontFace={sb}{scit}{Fira Code},
+  FontFace={l}{n}{Fira Code},
+  FontFace={l}{it}{Fira Code},
+  FontFace={l}{sl}{Fira Code},
+  FontFace={l}{sc}{Fira Code},
+  FontFace={l}{scit}{Fira Code}
+]{Fira Code}

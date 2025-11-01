@@ -1,0 +1,84 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% =============================================================================
+% CHAPTER 8: CONGRESSIONAL ENACTMENT
+%
+% DESCRIPTION: This chapter provides an overview of the congressional
+%              enactment process, including its constitutional foundations,
+%              key players, and the regular-order timeline.
+% =============================================================================
+\begin{document}
+\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+%====================
+% Contents here
+%====================
+\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+% === CONGRESSIONAL ENACTMENT ===
+\section{Congressional Enactment}
+\minibib
+\subsection{Foundations and core definitions}
+\begin{description}
+	\item[\textbf{Power of the purse.}] U.S.\ Constitution, Article I.
+	      \begin{description}
+		      \item[\textbf{Section~8.}] \textit{\quote ``The Congress shall have power to... provide for the Common Defense... and general welfare...''}
+		      \item[\textbf{Section~9.}] \textit{\quote ``No money shall be drawn from Treasury, but in consequence of Appropriations made by law...''}
+	      \end{description}
+	\item[\textbf{Key terms.}] \ac{ba} (legal authority to incur obligations), \ac{toa}, obligations, outlays, \ac{legprop}.
+	\item[\textbf{Authorization v.s.\ Appropriation.}] \ac{ndaa} authorizes programs/policy; appropriations provide \ac{ba}.
+\end{description}
+
+\subsection{Who drafts what}
+\begin{description}
+	\item[\textbf{Authorization.}] \ac{hasc} / \ac{sasc}.
+	\item[\textbf{Appropriations.}] \ac{hac} / \ac{sac}.
+	\item[\textbf{Budget Resolution.}] \ac{hbc} / \ac{sbc} (sets topline aggregates and 302 allocations; not a law).
+	\item[\textbf{Independent analysis/oversight.}] \ac{cbo} (scoring), \ac{crs} (research), \ac{gao} (audits/oversight).
+\end{description}
+
+\subsection{Regular-order timeline}
+Figure~\ref{fig:congress-regular-order} shows the timeline from the \ac{pb} $\to$ Appropriation Bill with approximate timelines assuming no \ac{cr}.
+\begin{figure}[!htbp]
+	\centering\color{DarkGray}
+	\includegraphics[width=\linewidth]{Images/Congressional Enactment Timeline.png}
+	\caption[Congressional Enactment Timeline]{Congressional Enactment Timeline. \srcCite{edo-3-1-2-congressional-enactment-2025}.}
+	\label{fig:congress-regular-order}
+\end{figure}
+
+\subsection{The 12 regular appropriations bills}
+\begin{description}
+	\item[\textbf{Defense.}] Department of Defense appropriations.
+	\item[\textbf{Military Construction and Veterans Affairs.}] Military construction, housing, and Department of Veterans Affairs programs.
+	\item[\textbf{Energy and Water.}] Department of Energy, Army Corps of Engineers, and related infrastructure programs.
+	\item[\textbf{Homeland Security.}] Department of Homeland Security operations and components.
+	\item[\textbf{Interior and Environment.}] Department of the Interior and Environmental Protection Agency activities.
+	\item[\textbf{Labor, Health and Human Services, Education.}] Departments of Labor, Health and Human Services, and Education, plus related agencies.
+	\item[\textbf{Legislative Branch.}] U.S. Congress and supporting legislative branch agencies.
+	\item[\textbf{Financial Services and General Government.}] Treasury, judiciary, Small Business Administration, and other independent agencies.
+	\item[\textbf{Transportation and Housing and Urban Development.}] Departments of Transportation and Housing and Urban Development.
+	\item[\textbf{Commerce, Justice, Science.}] Departments of Commerce and Justice plus science agencies such as NASA and the National Science Foundation.
+	\item[\textbf{State and Foreign Operations.}] Department of State, U.S. Agency for International Development, and foreign assistance programs.
+	\item[\textbf{Agriculture and \ac{fda}.}] Department of Agriculture and Food and Drug Administration activities.
+\end{description}
+\note{The bills that \ac{edo}'s care about the most are Defense, \ac{milcon} \& \ac{va} and Energy \& Water. This because those bills directly affect funding for our acquisitions.}
+\hint{These bills are sometimes packaged into minibuses or a single omnibus appropriations act.}
+
+\subsection{Continuing Resolution}
+\paragraph{\ac{cr} rules (board one-liner).}
+\emph{No new starts}; rate/quantity changes generally constrained unless specified; execution limited by \ac{omb} apportionment and any anomalies in law~\autocite{CRS-CR}.
+
+\subsection{Sequestration}
+Automatic, across-the-board reductions if statutory caps/triggers are breached; applied by account unless modified by law.
+%====================
+% End of file
+%====================
+\ifSubfilesClassLoaded{
+  \renewcommand*{\entryname}{\textbf{\color{Modern} Acronym}}
+  \renewcommand*{\descriptionname}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+]}{}
+\end{document}

@@ -1,0 +1,115 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+%====================
+% File: SECTION_FILE_NAME.tex
+%====================
+\begin{document}
+\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+% The section title is not used for regular content. The title is set in the main document.
+%====================
+% Contents
+%====================
+% Enter content here.
+% === COST AND PRICE EVALUATION (EDO 3.2.4) ===
+\section{Cost and Price Evaluation}
+\minibib
+
+\subsection{Summary}
+\begin{description}
+\item[\textbf{KO accountability.}] The \ac{ko} must determine that every negotiated price is fair and reasonable, integrating price, cost, technical, field-pricing, and risk analysis inputs before award per FAR~15.404-1(a)(1)--(5)~\autocite[\S~15.404-1(a)]{FAR}.
+\item[\textbf{Cost v.s.\ price lens.}] Use price analysis when certified cost or pricing data are not required, and escalate to cost analysis when element-by-element scrutiny is needed to support the prenegotiation objective~\autocite[\S\S~15.404-1(b), 15.404-1(c)]{FAR}.
+\item[\textbf{Rate discipline.}] Forward pricing rates and structured profit analysis keep the Government prenegotiation objective current; the objective is always proposed cost plus profit or fee per FAR policy~\autocite[\S\S~15.401, 15.404-4, 15.407-3]{FAR}.
+	\item[\textbf{Financial health cue.}] Profitability ratios (\ac{ros}, \ac{roa}) and cash-flow checks expose responsibility risk and focus \ac{dcaa}/\ac{dcma} field-pricing support requested by the \ac{ko}~\autocite[\S~9.104-1]{FAR}\autocite{edo-3-2-4-cost-price-evaluation-2024}.
+\end{description}
+
+\subsection{Practitioner Steps}
+\begin{enumerate}
+	\item Baseline the offeror's proposal: confirm certified cost or pricing data requirements, request data other than certified cost or pricing data when warranted, and map contractual requirement traces~\autocite[\S\S~15.403-1, 15.404-1(a)]{FAR}.
+	\item Execute price analysis first---compare competition results, historical buys, catalog/commercial data, and independent estimates; pivot to cost analysis when price analysis alone cannot demonstrate reasonableness~\autocite[\S\S~15.404-1(b), 15.404-1(c)]{FAR}.
+	\item Decompose direct labor, material, and \acp{odc}; verify indirect pools and allocation bases; and apply the five allowability tests before accepting proposed cost elements~\autocite[\S\S~31.201-2, 31.202, 31.203]{FAR}.
+	\item Establish the profit/fee objective using the agency's structured approach and update forward pricing rates or agreements as necessary to avoid stale factors in negotiations~\autocite[\S\S~15.404-4, 15.407-3]{FAR}.
+	\item Pull in field-pricing support early: blend \ac{dcaa} audit results, \ac{dcma} production assessments, and program team technical evaluations into the prenegotiation briefing and contract file~\autocite[\S~15.404-1(a)(5)]{FAR}\autocite[\S~42.101(b)]{FAR}\autocite[\S~242.302(a)(13)(A)]{DFARS}.
+\end{enumerate}
+
+\subsection{Proposed Price, Cost, Profit, and Fee}
+\begin{description}
+	\item[\textbf{Proposed price.}] The offeror's total price equals estimated cost plus any profit or fee applicable to the contract type~\autocite[\S~15.401]{FAR}.
+	\item[\textbf{Cost.}] Sum of allowable direct and indirect costs required to deliver the contract---all subject to reasonableness, allocability, and cost-principle limits~\autocite[\S\S~31.201-2, 31.202, 31.203]{FAR}.
+	\item[\textbf{Profit}.] Negotiated incentive element above allowable cost for fixed-price or incentive contracts, set through structured analysis~\autocite[\S~15.404-4(a)]{FAR}.
+	\item[\textbf{Fee}.] Fixed remuneration on cost-reimbursement vehicles that does not vary with actual cost (e.g., \ac{cpff} fee)~\autocite[\S~16.306(a)]{FAR}.
+\end{description}
+
+\subsection{Direct and Indirect Cost Structure}
+\begin{description}
+	\item[\textbf{Direct cost pools.}] Direct labor, materials, and \acp{odc} traceable to a single final cost objective; charged through project-specific accounts backed by bills of material, timecards, travel authorizations, or subcontract quotes~\autocite[\S~31.202]{FAR}\autocite{edo-3-2-4-cost-price-evaluation-2024}.
+	\item[\textbf{Indirect cost pools.}] Overhead (manufacturing, engineering) and \ac{ganda} accrued across multiple objectives, then allocated using consistent bases that reflect benefits received~\autocite[\S~31.203]{FAR}.
+\end{description}
+\begin{figure}[!htbp]
+	\centering
+	\includestandalone[width=\linewidth]{TikZ/direct_indirect_costs}
+	\caption{Mapping direct v.s.\ indirect contractor cost elements.\srcCite{edo-3-2-4-cost-price-evaluation-2024}}
+	\label{fig:direct_indirect_costs}
+\end{figure}
+
+\subsection{Other Direct Costs and Cost Allowability}
+\begin{description}
+	\item[\textbf{Other direct costs (\acp{odc}).}] Travel, subcontract services, specialized tooling, and similar charges that can be singled out for the contract even though they are not labor or bulk material categories~\autocite[\S~31.202]{FAR}\autocite{edo-3-2-4-cost-price-evaluation-2024}.
+	\item[\textbf{Cost allowability.}] A cost is billable only if it is reasonable, allocable, consistent with applicable \ac{cas}/\ac{gaap}, compliant with contract terms, and within any Subpart~31.2 limitations~\autocite[\S~31.201-2]{FAR}.
+\end{description}
+\note{Slides may refer to ``cash allowability''; FAR terminology is \emph{cost} allowability.}
+
+\subsection{Cost and Price Analysis}
+\begin{description}
+	\item[\textbf{Price analysis.}] Examination of the total proposed price without breaking out cost elements using competition, historical buys, or market indicators~\autocite[\S~15.404-1(b)]{FAR}.
+	\item[\textbf{Cost analysis.}] Evaluation of individual cost elements (direct, indirect, and profit) when price analysis alone cannot demonstrate reasonableness~\autocite[\S~15.404-1(c)]{FAR}.
+	\item[\textbf{Integrated view.}] Technical analysis, field-pricing support, and risk assessments feed both techniques to substantiate the final fair and reasonable determination~\autocite[\S~15.404-1(a)(5)]{FAR}.
+\end{description}
+
+\subsection{Forward Pricing Rates and Fully Burdened Labor}
+\begin{description}
+	\item[\textbf{\ac{fprp}.}] Contractor-submitted forward pricing rate proposal that lays out projected indirect rates and factors for the pricing period~\autocite[\S~15.407-3(a)]{FAR}.
+	\item[\textbf{\ac{fpra}.}] Negotiated agreement-often executed by \ac{dcma}-that locks indirect rates for one to three years, reducing repetitive audits and speeding negotiations~\autocite[\S~15.407-3(c)]{FAR}\autocite{edo-3-2-4-cost-price-evaluation-2024}.
+	\item[\textbf{Fully burdened rate.}] Applies direct labor, indirect burdens, and any negotiated profit/fee to a common labor-hour baseline so skill mixes can be compared on an apples-to-apples basis~\autocite{edo-3-2-4-cost-price-evaluation-2024}.
+\end{description}
+
+\subsection{Indirect Rate Math and Profitability Checks}
+Apply the standard relationships from the cost principles and the coursebook when validating proposals; they are board favorites for quick-turn computations covering indirect pools, total cost input (\ac{tci}), \ac{ganda}, and profitability metrics such as \ac{ros} and \ac{roa}~\autocite[\S\S~31.201-2, 31.202, 31.203]{FAR}\autocite{edo-3-2-4-cost-price-evaluation-2024}.
+\begin{align}
+	\text{Indirect Cost Rate} &= \frac{\text{Indirect Cost Pool}}{\text{Allocation Base}}\label{eq:indirect_rate}\\
+	\text{TCI} &= \text{Direct Cost} + \text{Overhead Cost}\label{eq:tci}\\
+	\text{G\&A Cost} &= \text{G\&A Rate} \times \text{TCI}\label{eq:ganda_cost}\\
+	\text{Fully Burdened Labor Rate} &= \frac{\text{Direct Labor Cost} + \text{Indirect Costs} + \text{Profit/Fee}}{\text{Direct Labor Hours}}\label{eq:fully_burdened}\\
+	\text{ROS} &= \frac{\text{Operating Profit}}{\text{Net Sales}}\label{eq:ros}\\
+	\text{ROA} &= \frac{\text{Net Income}}{\text{Total Assets}}\label{eq:roa}
+\end{align}
+Track ROS and ROA against industry benchmarks, cash-on-hand, and debt loads to detect responsibility concerns or unsustainable buy-ins before negotiations~\autocite{edo-3-2-4-cost-price-evaluation-2024}.
+
+\subsection{Oversight and Field Pricing Support}
+\begin{description}
+	\item[\textbf{\ac{dcma} production insight.}] Delegated contract administration offices deliver manufacturing surveillance, schedule risk analysis, and forward-pricing coordination; DFARS highlights that payment authority stays with the buying command even when DCMA supports rates~\autocite[\S~242.302(a)(13)(A)]{DFARS}\autocite{edo-3-2-4-cost-price-evaluation-2024}.
+	\item[\textbf{\ac{dcaa} audit coverage.}] \ac{dcaa} is the responsible Government audit agency for most contractors, providing proposal adequacy reviews, incurred cost audits, and financial capability analyses~\autocite[\S~42.101(b)]{FAR}.
+	\item[\textbf{Integrated negotiation record.}] Document how DCMA, DCAA, technical, and program inputs influenced the prenegotiation objective and the final price reasonableness determination~\autocite[\S~15.404-1(a)(5)]{FAR}\autocite{edo-3-2-4-cost-price-evaluation-2024}.
+\end{description}
+
+\subsection{Checklist}
+\begin{itemize}
+	\item File both price and cost analysis results (including technical inputs) showing how the fair-and-reasonable price was determined~\autocite[\S~15.404-1]{FAR}.
+	\item Verify each significant cost element passes the five allowability tests and that allocation bases match current practice~\autocite[\S\S~31.201-2, 31.203]{FAR}.
+	\item Confirm the current \ac{fpra}/\ac{fprp} is in the file or document why legacy rates remain valid~\autocite[\S~15.407-3]{FAR}.
+	\item Capture DCAA audit opinions, DCMA rate guidance, and profitability ratio trends in the prenegotiation briefing to evidence responsibility diligence~\autocite[\S\S~9.104-1, 42.101(b)]{FAR}\autocite{edo-3-2-4-cost-price-evaluation-2024}.
+\end{itemize}
+
+%====================
+% End of file
+%====================
+\ifSubfilesClassLoaded{
+  \renewcommand*{\entryname}{\textbf{\color{Modern} Acronym}}
+  \renewcommand*{\descriptionname}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+]}{}
+\end{document}

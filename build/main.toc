@@ -1,0 +1,3 @@
+\babel@toc {american}{}\relax 
+\contentsline {chapter}{\nonumberline List of Figures}{ii}{chapter*.2}%
+\contentsline {chapter}{\nonumberline List of Tables}{iii}{chapter*.3}%

@@ -1,0 +1,45 @@
+INFO:  latexindent.pl version 3.24.7, 2025-08-15, a script to indent .tex files
+       latexindent.pl lives here: C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/scripts/latexindent/
+       Wed Oct 29 11:35:18 2025
+       Filename: .latexindent.yaml
+INFO:  Processing switches:
+       -s|--silent: Silent mode active (you have used either -s or --silent)
+       -wd|--overwriteIfDifferent: will overwrite ONLY if indented text is different
+       -y|--yaml: YAML settings specified via command line
+       -m|--modifylinebreaks: modify line breaks
+       -c|--cruft: cruft directory
+INFO:  Directory for backup files and log file %TEMP%\latexindent\indent.log:
+       %TEMP%\latexindent
+INFO:  Perl modules are being loaded from the following directories:
+       C:/Users/U47A74UA/AppData/Local/Programs/Perl/lib/FindBin.pm
+       C:/Users/U47A74UA/AppData/Local/Programs/Perl/vendor/lib/YAML/Tiny.pm
+       C:/Users/U47A74UA/AppData/Local/Programs/Perl/lib/File/Copy.pm
+       C:/Users/U47A74UA/AppData/Local/Programs/Perl/lib/File/Basename.pm
+       C:/Users/U47A74UA/AppData/Local/Programs/Perl/lib/Getopt/Long.pm
+       C:/Users/U47A74UA/AppData/Local/Programs/Perl/vendor/lib/File/HomeDir.pm
+INFO:  LatexIndent perl modules are being loaded from, for example:
+       C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/scripts/latexindent/LatexIndent/Document.pm
+INFO:  YAML settings read: defaultSettings.yaml
+       Reading defaultSettings.yaml from C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/scripts/latexindent/defaultSettings.yaml
+INFO:  YAML reading settings
+       Home directory is C:\Users\U47A74UA\AppData\Local\Programs\Perl\data
+       latexindent.pl didn't find indentconfig.yaml or .indentconfig.yaml
+       see all possible locations: https://latexindentpl.readthedocs.io/en/latest/sec-appendices.html#indentconfig-options)
+INFO:  -l switch used without filename, will search for the following files in turn:
+       localSettings.yaml,latexindent.yaml,.localSettings.yaml,.latexindent.yaml
+INFO:  YAML settings read: -l switch
+       Multiple localSettings found, separated by commas:
+       localSettings.yaml, latexindent.yaml, .localSettings.yaml, .latexindent.yaml
+WARN:  yaml file not found: localSettings.yaml not found. Proceeding without it.
+WARN:  yaml file not found: latexindent.yaml not found. Proceeding without it.
+WARN:  yaml file not found: .localSettings.yaml not found. Proceeding without it.
+WARN:  yaml file not found: .latexindent.yaml not found. Proceeding without it.
+INFO:  YAML settings read: -y switch
+       YAML setting: defaultIndent:'  '
+       single-quoted string found in -y switch: '  ', substitute to   
+       Updating mainSettings with defaultIndent:   
+FATAL I couldn't find .latexindent.yaml, are you sure it exists?
+      Exiting, no indentation done.
+       --------------
+INFO:  Please direct all communication/issues to:
+        https://github.com/cmhughes/latexindent.pl

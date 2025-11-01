@@ -1,0 +1,202 @@
+﻿Site Feedback
+You are using an unsupported browser× 
+You are using an unsupported browser. This web site is designed for the current versions of Microsoft Edge, Google Chrome, Mozilla Firefox, or Safari. 
+× 
+Site Feedback
+The Office of the Federal Register publishes documents on behalf of Federal agencies but does not have any authority over their programs. We recommend you directly contact the agency associated with the content in question. 
+
+
+
+If you have comments or suggestions on how to improve the www.ecfr.gov website or have questions about using www.ecfr.gov, please choose the 'Website Feedback' button below. 
+Website Feedback 
+If you would like to comment on the current content, please use the 'Content Feedback' button below for instructions on contacting the issuing agency 
+Content Feedback 
+If you have questions for the Agency that issued the current document please contact the agency directly.
+× 
+Website Feedback
+* Your Name
+* Email
+Attachment
+* How can we help you?
+* I am requesting technical help or providing website feedback
+This contact form is only for website help or website suggestions. If you have questions or comments regarding a published document please contact the publishing agency. Comments or questions about document content can not be answered by OFR staff. Please do not provide confidential information or personal data. 
+ 
+The National Archives and Records Administration is closed to normal operations due to a lack of appropriations. eCFR.gov will not be updated until we resume normal operations.
+
+Browse 
+Titles 
+Agencies 
+Incorporation by Reference 
+Recent Updates 
+Search 
+Recent Changes 
+Corrections 
+Reader Aids 
+Reader Aids Home 
+Using the eCFR Point-in-Time System 
+Understanding the eCFR 
+Government Policy and OFR Procedures 
+Developer Resources 
+Recent Site Updates 
+My eCFR 
+My Subscriptions 
+Sign Out 
+Sign In / Sign Up 
+   
+Sign In / Sign Up 
+Hi, Sign Out 
+eCFR
+The Electronic Code of Federal Regulations
+Enhanced Content :: FR Reference
+Enhanced content is provided to the user to provide additional context.
+Enhanced Content :: FR Reference
+Title 48 
+This content is from the eCFR and is authoritative but unofficial.
+Displaying title 48, up to date as of 9/29/2025. Title 48 was last amended 9/22/2025. 
+view historical versions 
+A drafting site is available for use when drafting amendatory language 
+switch to drafting site 
+ 
+Navigate by entering citations or phrases (eg: 1 CFR 1.1 49 CFR 172.101 Organization and Purpose 1/1.1 Regulation Y FAR). 
+Choosing an item from citations and headings will bring you directly to the content. Choosing an item from full text search results will bring you to those results. Pressing enter in the search box will also bring you to search results. 
+Background and more details are available in the Search & Navigation guide. 
+   
+  
+   
+  
+  
+Title 48 —Federal Acquisition Regulations System 
+Chapter 1 —Federal Acquisition Regulation 
+Subchapter E —General Contracting Requirements 
+Part 31 —Contract Cost Principles and Procedures 
+Subpart 31.2 —Contracts With Commercial Organizations 
+31.203 
+Previous 
+Next 
+Top 
+
+Table of Contents
+Enhanced Content - Table of Contents
+The in-page Table of Contents is available only when multiple sections are being viewed. 
+Use the navigation links in the gray bar above to view the table of contents that this content belongs to. 
+Enhanced Content - Table of Contents
+Details
+Enhanced Content - Details
+URL 
+https://www.ecfr.gov/current/title-48/part-31/section-31.203 
+Citation 
+48 CFR 31.203 
+Alternate reference 
+FAR 31.203 
+Agency 
+Federal Acquisition Regulatory Council 
+
+
+
+Part 31 
+Authority:
+40 U.S.C. 121(c); 10 U.S.C. chapter 4 and 10 U.S.C. chapter 137 legacy provisions (see 10 U.S.C. 3016); and 51 U.S.C. 20113. 
+Source:
+48 FR 42301, Sept. 19, 1983, unless otherwise noted. 
+Enhanced Content - Details
+Print/PDF
+Enhanced Content - Print
+Generate PDF 
+This content is from the eCFR and may include recent changes applied to the CFR. The official, published CFR, is updated annually and available below under "Published Edition". You can learn more about the process here. 
+Enhanced Content - Print
+Display Options
+Enhanced Content - Display Options
+Enhanced Content - Display Options
+Subscribe
+Enhanced Content - Subscribe
+Subscribe to: 48 CFR 31.203
+
+
+
+
+
+
+Via Email:  
+Enhanced Content - Subscribe
+
+Timeline
+Enhanced Content - Timeline
+No changes found for this content after 1/03/2017. 
+Enhanced Content - Timeline
+Go to Date
+Enhanced Content - Go to Date
+Date
+ 
+ 
+ 
+Enhanced Content - Go to Date
+Compare Dates
+Enhanced Content - Compare Dates
+Compare
+ 
+ 
+to
+ 
+ 
+
+
+ 
+Show changes as:red/greenpurple/orange
+Show strike-through for removed contentyesno
+Enhanced Content - Compare Dates
+
+Published Edition
+Enhanced Content - Published Edition
+View the most recent official publication: 
+View Title 48 on govinfo.gov 
+View the PDF for 48 CFR 31.203 
+These links go to the official, published CFR, which is updated annually. As a result, it may not include the most recent changes applied to the CFR. Learn more. 
+Enhanced Content - Published Edition
+
+Developer Tools
+Enhanced Content - Developer Tools
+
+
+
+Information and documentation can be found in our developer resources. 
+Enhanced Content - Developer Tools
+eCFR Content
+The Code of Federal Regulations (CFR) is the official legal print publication containing the codification of the general and permanent rules published in the Federal Register by the departments and agencies of the Federal Government. The Electronic Code of Federal Regulations (eCFR) is a continuously updated online version of the CFR. It is not an official legal edition of the CFR.
+Learn more about the eCFR, its status, and the editorial process.
+31.203 Indirect costs.
+(a) For contracts subject to full CAS coverage, allocation of indirect costs shall be based on the applicable provisions. For all other contracts, the applicable CAS provisions in paragraphs (b) through (h) of this section apply.
+(b) After direct costs have been determined and charged directly to the contract or other work, indirect costs are those remaining to be allocated to intermediate or two or more final cost objectives. No final cost objective shall have allocated to it as an indirect cost any cost, if other costs incurred for the same purpose, in like circumstances, have been included as a direct cost of that or any other final cost objective.
+(c) The contractor shall accumulate indirect costs by logical cost groupings with due consideration of the reasons for incurring such costs. The contractor shall determine each grouping so as to permit use of an allocation base that is common to all cost objectives to which the grouping is to be allocated. The base selected shall allocate the grouping on the basis of the benefits accruing to intermediate and final cost objectives. When substantially the same results can be achieved through less precise methods, the number and composition of cost groupings should be governed by practical considerations and should not unduly complicate the allocation.
+(d) Once an appropriate base for allocating indirect costs has been accepted, the contractor shall not fragment the base by removing individual elements. All items properly includable in an indirect cost base shall bear a pro rata share of indirect costs irrespective of their acceptance as Government contract costs. For example, when a cost input base is used for the allocation of G&A costs, the contractor shall include in the base all items that would properly be part of the cost input base, whether allowable or unallowable, and these items shall bear their pro rata share of G&A costs.
+(e) The method of allocating indirect costs may require revision when there is a significant change in the nature of the business, the extent of subcontracting, fixed-asset improvement programs, inventories, the volume of sales and production, manufacturing processes, the contractor's products, or other relevant circumstances.
+(f) Separate cost groupings for costs allocable to offsite locations may be necessary to permit equitable distribution of costs on the basis of the benefits accruing to the several cost objectives.
+(g) A base period for allocating indirect costs is the cost accounting period during which such costs are incurred and accumulated for allocation to work performed in that period.
+(1) For contracts subject to full or modified CAS coverage, the contractor shall follow the criteria and guidance in 48 CFR 9904.406 for selecting the cost accounting periods to be used in allocating indirect costs.
+(2) For contracts other than those subject to paragraph (g)(1) of this section, the base period for allocating indirect costs shall be the contractor's fiscal year used for financial reporting purposes in accordance with generally accepted accounting principles. The fiscal year will normally be 12 months, but a different period may be appropriate (e.g., when a change in fiscal year occurs due to a business combination or other circumstances).
+(h) Special care should be exercised in applying the principles of paragraphs (c), (d), and (e) of this section when Government-owned contractor-operated (GOCO) plants are involved. The distribution of corporate, division or branch office G&A expenses to such plants operating with little or no dependence on corporate administrative activities may require more precise cost groupings, detailed accounts screening, and carefully developed distribution bases.
+(i) Indirect costs that meet the definition of “excessive pass-through charge” in 52.215-23, are unallowable.
+[69 FR 17767, Apr. 5, 2004, as amended at 74 FR 52855, Oct. 14, 2009] 
+eCFR Content
+Pages
+Home 
+Titles 
+Search 
+Recent Changes 
+Corrections 
+Reader Aids
+Using the eCFR Point-in-Time System 
+Understanding the eCFR 
+Government Policy and OFR Procedures 
+Developer Resources 
+Recent Site Updates 
+Information
+About This Site 
+Legal Status 
+Privacy 
+Accessibility 
+FOIA 
+No Fear Act 
+Continuity Information 
+My eCFR
+My Subscriptions 
+Sign In / Sign Up 

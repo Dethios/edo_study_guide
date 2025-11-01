@@ -1,0 +1,350 @@
+% ============================================
+% Acronym Definitions (grouped for maintenance)
+% ============================================
+
+% --- Governance & Senior Leadership ---
+
+\newacronym{ops-chain}{Ops Chain}{Operational Chain of Command}
+\newacronym{ccdr}{CCDR}{Combatant Commander}
+\newacronym{cjcs}{CJCS}{Chairman of the Joint Chiefs of Staff}
+\newacronym{vcjcs}{VCJCS}{Vice-Chairman of the Joint Chiefs of Staff}
+\newacronym{osd}{OSD}{Office of the Secretary of Defense}
+\newacronym{secdef}{SECDEF}{Secretary of Defense}
+\newacronym{dod}{DoD}{Department of Defense}
+\newacronym{don}{DON}{Department of the Navy}
+\newacronym{secnav}{SECNAV}{Secretary of the Navy}
+\newacronym{asnrdanda}{{ASN(RD\&A)}}{Assistant Secretary of the Navy for Research, Development and Acquisition}
+\newacronym{cae}{CAE}{Component Acquisition Executive}
+\newacronym{sae}{SAE}{Service Acquisition Executive}
+\newacronym{pmildep}{PMILDEP}{Principal Military Deputy}
+\newacronym{mda}{MDA}{Missile Defense Agency}
+\newacronym{ssp}{SSP}{Strategic Systems Program}
+\newacronym{omb}{OMB}{Office of Management and Budget}
+\newacronym{doe}{DOE}{Department of Energy}
+
+% --- Navy Enterprise Commands ---
+
+\newacronym{cno}{CNO}{Chief of Naval Operations}
+\newacronym{opnav}{OPNAV}{Office of the Chief of Naval Operations}
+\newacronym{pacflt}{PACFLT}{U.S. Pacific Fleet}
+\newacronym{usff}{USFF}{U.S. Fleet Forces}
+\newacronym{bso}{BSO}{Budget Submitting Office}
+\newacronym{frd}{FRD}{Fleet Readiness Directorate}
+\newacronym{cnrmc}{CNRMC}{Commander, Navy Regional Maintenance Center}
+\newacronym{comnavsea}{COMNAVSEA}{Commander, Naval Sea Systems Command}
+\newacronym{navsea}{NAVSEA}{Naval Sea Systems Command}
+\newacronym{navwar}{NAVWAR}{Naval Information Warfare Systems Command}
+\newacronym{navair}{NAVAIR}{Naval Air Systems Command}
+\newacronym{supship}{SUPSHIP}{Supervisor of Shipbuilding}
+\newacronym{surfmepp}{SURFMEPP}{Surface Maintenance Engineering Planning Program}
+\newacronym{submepp}{SUBMEPP}{Submarine Maintenance Engineering Planning Program}
+\newacronym{syscom}{SYSCOM}{Systems Command}
+\newacronym{n8}{N8}{OPNAV Integration of Capabilities and Resources}
+\newacronym{n82}{N82}{OPNAV Programming Division}
+\newacronym{n9}{N9}{OPNAV Warfare Systems}
+\newacronym{n91}{N91}{Warfare Integration Directorate}
+\newacronym{pao}{PAO}{Public Affairs Officer}
+\newacronym{c4i}{C4I}{Command, Control, Communications, Computers, and Intelligence}
+\newacronym{c4isr}{C4ISR}{Command, Control, Communications, Computers, Intelligence, Surveillance, and Reconnaissance}
+\newacronym{cio}{CIO}{Chief Information Officer}
+\newacronym{cnr}{CNR}{Chief of Naval Research}
+
+% --- Warfare Centers & Field Activities ---
+
+\newacronym{nwc}{NWC}{Naval Warfare Center}
+\newacronym{nswc}{NSWC}{Naval Surface Warfare Center}
+\newacronym{nuwc}{NUWC}{Naval Undersea Warfare Center}
+\newacronym{niwclant}{NIWC LANT}{Naval Information Warfare Center Atlantic}
+\newacronym{niwcpac}{NIWC PAC}{Naval Information Warfare Center Pacific}
+\newacronym{nsfa}{NSFA}{NAVWAR Space Field Activity}
+\newacronym{nawcad}{NAWCAD}{Naval Air Warfare Center Aircraft Division}
+\newacronym{nawcwd}{NAWCWD}{Naval Air Warfare Center Weapons Division}
+\newacronym{nro}{NRO}{National Reconnaissance Office}
+
+% --- Technical Authority & Engineering Roles ---
+
+\newacronym{ta}{TA}{Technical Authority}
+\newacronym{uta}{UTA}{Ultimate Technical Authority}
+\newacronym{twh}{TWH}{Technical Warrant Holder}
+\newacronym{ea}{EA}{Engineering Agent}
+\newacronym{aea}{AEA}{Alteration Engineering Agent}
+\newacronym{da}{DA}{Design Agent}
+\newacronym{sia}{SIA}{Systems Integration Agent}
+\newacronym{isea}{ISEA}{In-Service Engineering Agent}
+\newacronym{tda}{TDA}{Technical Direction Agent}
+\newacronym{tdp}{TDP}{Technical Data Package}
+\newacronym{twd}{TWD}{Technical Work Document}
+\newacronym{casrep}{CASREP}{Casualty Report}
+\newacronym{icd}{ICD}{Initial Capabilities Document}
+\newacronym{sandt}{{S\&T}}{Science and Technology}
+
+% --- Cybersecurity & Risk Management ---
+
+\newacronym{ao}{AO}{Authorizing Official}
+\newacronym{rmf}{RMF}{Risk Management Framework}
+\newacronym{ia}{IA}{Information Assurance}
+
+% --- Program Executive Offices & Portfolios ---
+
+\newacronym{peo}{PEO}{Program Executive Office}
+\newacronym{peoc4i}{PEO C4I}{Program Executive Office, Command, Control, Communications, Computers, and Intelligence}
+\newacronym{peocolumbia}{PEO Columbia}{Program Executive Office, Columbia-Class Submarines}
+\newacronym{peocvn}{PEO CVN}{Program Executive Office, Aircraft Carriers}
+\newacronym{peodigital}{PEO Digital}{Program Executive Office, Digital and Enterprise Services}
+\newacronym{peoiws}{PEO IWS}{Program Executive Office, Integrated Warfare Systems}
+\newacronym{peomlb}{PEO MLB}{Program Executive Office, Manpower, Logistics and Business IT}
+\newacronym{peoships}{PEO Ships}{Program Executive Office, Ships}
+\newacronym{peossbn}{PEO SSBN}{Program Executive Office, SSBN}
+\newacronym{peossn}{PEO SSN}{Program Executive Office, Attack Submarines}
+\newacronym{peosub}{PEO SUB}{Program Executive Office, Submarines}
+\newacronym{peousc}{PEO USC}{Program Executive Office, Unmanned and Small Combatants}
+\newacronym{peouws}{PEO UWS}{Program Executive Office, Undersea Warfare Systems}
+\newacronym{ssbn}{SSBN}{Ballistic Missile Submarine, Nuclear}
+
+% --- Program Leadership & Stakeholders ---
+
+\newacronym{pa}{PA}{Program Authority}
+\newacronym{pm}{PM}{Program Manager}
+\newacronym{parm}{PARM}{Participating Acquisition Resource Manager}
+\newacronym{shapm}{SHAPM}{Ship Acquisition Program Manager}
+\newacronym{slm}{SLM}{Ship Lifecycle Manager}
+\newacronym{spm}{SPM}{Ship Program Manager}
+\newacronym{spd}{SPD}{Ship Project Director}
+\newacronym{pmo}{PMO}{Program Management Office}
+\newacronym{pms}{PMS}{Program Manager, Ships}
+\newacronym{drpm}{DRPM}{Direct Reporting Program Manager}
+
+% --- Acquisition Decision Framework ---
+
+\newacronym{acat}{ACAT}{Acquisition Category}
+\newacronym{aoa}{AoA}{Analysis of Alternatives}
+\newacronym{mca}{MCA}{Major Capability Acquisition}
+\newacronym{msa}{MSA}{Materiel Solution Analysis}
+\newacronym{tmrr}{TMRR}{Technology Maturation and Risk Reduction}
+\newacronym{emd}{EMD}{Engineering and Manufacturing Development}
+\newacronym{ibr}{IBR}{Integrated Baseline Review}
+\newacronym{apb}{APB}{Acquisition Program Baseline}
+\newacronym{sar}{SAR}{Selected Acquisition Report}
+\newacronym{daes}{DAES}{Defense Acquisition Executive Summary}
+\newacronym{card}{CARD}{Cost Analysis Requirements Description}
+\newacronym{cape}{CAPE}{Cost Assessment and Program Evaluation}
+\newacronym{dcape}{DCAPE}{Director, CAPE}
+\newacronym{cpa}{CPA}{Chairman's Program Assessment}
+\newacronym{ipt}{IPT}{Integrated Product Team}
+
+% --- Contracting Authorities & Teams ---
+
+\newacronym{ko}{KO}{Contracting Officer}
+\newacronym{pco}{PCO}{Procuring Contracting Officer}
+\newacronym{aco}{ACO}{Administrative Contracting Officer}
+\newacronym{tco}{TCO}{Termination Contracting Officer}
+\newacronym{cor}{COR}{Contracting Officer's Representative}
+\newacronym{hca}{HCA}{Head Contracting Activity}
+\newacronym{ssac}{SSAC}{Source Selection Advisory Council}
+\newacronym{ssa}{SSA}{Source Selection Authority}
+\newacronym{sseb}{SSEB}{Source Selection Evaluation Board}
+\newacronym{dcaa}{DCAA}{Defense Contract Audit Agency}
+\newacronym{dcma}{DCMA}{Defense Contract Management Agency}
+\newacronym{pv}{PV}{Planned Value}
+\newacronym{ev}{EV}{Earned Value}
+\newacronym{sv}{SV}{Schedule Variance}
+\newacronym{ac}{AC}{Actual Cost}
+\newacronym{cv}{CV}{Cost Variance}
+\newacronym{bac}{BAC}{Budget at Completion}
+\newacronym{eac}{EAC}{Estimate at Completion}
+\newacronym{spi}{SPI}{Schedule Performance Index}
+\newacronym{cpi}{CPI}{Cost Performance Index}
+\newacronym{evm}{EVM}{Earned Value Management}
+\newacronym{ipmdar}{IPMDAR}{Integrated Program Manager's Data Analysis Report}
+\newacronym{ims}{IMS}{Integrated Master Schedule}
+\newacronym{pmb}{PMB}{Performance Measurement Baseline}
+\newacronym{bcws}{BCWS}{Budgeted Cost of Work Scheduled}
+\newacronym{bcwp}{BCWP}{Budgeted Cost of Work Performed}
+\newacronym{acwp}{ACWP}{Actual Cost of Work Performed}
+\newacronym{ada.acq}{ADA}{Acquisition Data and Analytics}
+\newacronym{cam}{CAM}{Control Account Manager}
+\newacronym{ram}{RAM}{Responsibility Assignment Matrix}
+\newacronym{tcpi}{TCPI}{Total Cost Performance Index}
+
+% --- Contracting Policies & Instruments ---
+
+\newacronym{far}{FAR}{Federal Acquisition Regulation}
+\newacronym{dfars}{DFARS}{Defense Federal Acquisition Regulation Supplement}
+\newacronym{nmcars}{NMCARS}{Navy Marine Corps Acquisition Regulation Supplement}
+\newacronym{som}{SOM}{SUPSHIP Operation Manual}
+\newacronym{sap}{SAP}{Simplified Acquisition Procedures}
+\newacronym{sat}{SAT}{Simplified Acquisition Threshold}
+\newacronym{ucf}{UCF}{Uniform Contract Format}
+\newacronym{idiq}{IDIQ}{Indefinite-Delivery, Indefinite-Quantity}
+\newacronym{ot}{OT}{Other Transaction}
+\newacronym{hubzone}{HUBZone}{Historically Underutilized Business Zone}
+\newacronym{sbir}{SBIR}{Small Business Innovation Research}
+\newacronym{sba}{SBA}{Small Business Administration}
+\newacronym{sdvosb}{SDVOSB}{Service-Disabled Veteran-Owned Small Business}
+\newacronym{wosb}{WOSB}{Women-Owned Small Business}
+\newacronym{tnm}{{T\&M}}{Time-and-Materials}
+\newacronym{lh}{LH}{Labor-Hour}
+\newacronym{loe}{LOE}{Level of Effort}
+\newacronym{uca}{UCA}{Undefinitized Contract Action}
+\newacronym{rfi}{RFI}{Request for Information}
+\newacronym{rfp}{RFP}{Request for Proposal}
+\newacronym{sow}{SOW}{Statement of Work}
+\newacronym{oci}{OCI}{Organizational Conflict of Interest}
+\newacronym{arc}{ARC}{Acquisition Research Center}
+\newacronym{wawf}{WAWF}{Wide Area Workflow}
+\newacronym{cdrl}{CDRL}{Contract Data Requirements List}
+\newacronym{cica}{CICA}{Competition in Contracting Act}
+\newacronym{lpta}{LPTA}{Lowest Price Technically Acceptable}
+\newacronym{csfr}{CSFR}{Contract Funds Status Report}
+
+% --- Contract Types & Incentives ---
+
+\newacronym{ffp}{FFP}{Firm-Fixed-Price}
+\newacronym{fpif}{FPIF}{Fixed-Price Incentive (Firm Target)}
+\newacronym{fpepa}{FPEPA}{Fixed-Price with Economic Price Adjustment}
+\newacronym{fpr}{FPR}{Fixed-Price Redetermination}
+\newacronym{cpff}{CPFF}{Cost-Plus-Fixed-Fee}
+\newacronym{cpif}{CPIF}{Cost-Plus-Incentive-Fee}
+\newacronym{cpaf}{CPAF}{Cost-Plus-Award-Fee}
+\newacronym{pta}{PTA}{Point of Total Assumption}
+\newacronym{bb}{BB}{Block Buy}
+\newacronym{myp}{MYP}{Multiyear Procurement}
+
+% --- Budget Formulation & Decision ---
+
+\newacronym{ppbe}{PPBE}{Planning, Programming, Budgeting and Execution}
+\newacronym{pb}{PB}{President's Budget}
+\newacronym{pom}{POM}{Program Objective Memorandum}
+\newacronym{fydp}{FYDP}{Future Years Defense Program}
+\newacronym{fy}{FY}{Fiscal Year}
+\newacronym{py}{PY}{Past Year}
+\newacronym{cy}{CY}{Current Year}
+\newacronym{by}{BY}{Budget Year}
+\newacronym{ba}{BA}{Budget Authority}
+\newacronym{pdm}{PDM}{Program Decision Memorandum}
+\newacronym{rmd}{RMD}{Resource Management Decision}
+\newacronym{dmag}{DMAG}{Deputy's Management Action Group}
+\newacronym{fmb}{FMB}{Financial Management Budget (OPNAV)}
+\newacronym{cbo}{CBO}{Congressional Budget Office}
+\newacronym{gao}{GAO}{Government Accountability Office}
+\newacronym{crs}{CRS}{Congressional Research Service}
+\newacronym{cr}{CR}{Continuing Resolution}
+
+% --- Congressional Engagement & Statutes ---
+
+\newacronym{ndaa}{NDAA}{National Defense Authorization Act}
+\newacronym{hac}{HAC}{House Appropriations Committee}
+\newacronym{hbc}{HBC}{House Budget Committee}
+\newacronym{hasc}{HASC}{House Armed Services Committee}
+\newacronym{sac}{SAC}{Senate Appropriations Committee}
+\newacronym{sasc}{SASC}{Senate Armed Services Committee}
+\newacronym{sbc}{SBC}{Senate Budget Committee}
+\newacronym{legprop}{LEGPROP}{Legislative Proposal}
+\newacronym{toa}{TOA}{Total Obligational Authority}
+
+% --- Appropriations & Funding Accounts ---
+
+\newacronym{rdte}{RDT\&E}{Research, Development, Test, and Evaluation}
+\newacronym{opn}{OPN}{Other Procurement, Navy}
+\newacronym{omn}{OMN}{Operation and Maintenance, Navy}
+\newacronym{scn}{SCN}{Shipbuilding and Conversion, Navy}
+\newacronym{apn}{APN}{Aircraft Procurement, Navy}
+\newacronym{ap}{AP}{Advanced Procurement}
+\newacronym{milcon}{MILCON}{Military Construction}
+\newacronym{milpers}{MILPERS}{Military Personnel}
+\newacronym{nwcf}{NWCF}{Navy Working Capital Fund}
+\newacronym{wcf}{WCF}{Working Capital Fund}
+\newacronym{cvn}{CVN}{Nuclear-Powered Aircraft Carrier}
+\newacronym{rcoh}{RCOH}{Refueling and Complex Overhaul}
+\newacronym{ctc}{CTC}{Cost-to-Complete}
+\newacronym{eoq}{EOQ}{Economic Order Quantity}
+\newacronym{lltm}{LLTM}{Long-Lead Time Material}
+\newacronym{fda}{FDA}{Food and Drug Administration}
+
+% --- Execution & Reprogramming Controls ---
+
+\newacronym{aor}{AOR}{Accumulated Operating Result}
+\newacronym{nor}{NOR}{Net Operating Result}
+\newacronym{slr}{SLR}{Stabilized Labor Rate}
+\newacronym{dfas}{DFAS}{Defense Finance and Accounting Service}
+\newacronym{dodfmr}{DoD FMR}{Department of Defense Financial Management Regulation}
+\newacronym{fmr}{FMR}{Financial Management Regulation}
+\newacronym{btr}{BTR}{Below-Threshold Reprogramming}
+\newacronym{ir}{IR}{Internal Reprogramming}
+\newacronym{pa-reprog}{PA Reprog}{Prior Approval Reprogramming}
+\newacronym{lt}{LT}{Letter Transfer}
+\newacronym{mipr}{MIPR}{Military Interdepartmental Purchase Request}
+\newacronym{pr}{PR}{Purchase Request}
+\newacronym{rca}{RCA}{Request for Contract Action}
+\newacronym{igt}{IGT}{Intragovernmental Transaction}
+\newacronym{ipac}{IPAC}{Intra-Governmental Payment and Collection}
+\newacronym{bom}{BoM}{Bill of Material}
+\newacronym{erp}{ERP}{Enterprise Resource Planning}
+\newacronym{lrip}{LRIP}{Low-Rate Initial Production}
+
+% --- Cost Estimation & Analysis ---
+
+\newacronym{lcc}{LCC}{Life-Cycle Cost}
+\newacronym{lcce}{LCCE}{Life-Cycle Cost Estimate}
+\newacronym{ice}{ICE}{Independent Cost Estimate}
+\newacronym{igce}{IGCE}{Independent Government Cost Estimate}
+\newacronym{poe}{POE}{Program Office Estimate}
+\newacronym{cer}{CER}{Cost Estimating Relationship}
+\newacronym{csdr}{CSDR}{Cost and Software Data}
+\newacronym{sloc}{SLOC}{Source Lines of Code}
+\newacronym{gps}{GPS}{Global Positioning System}
+\newacronym{toc}{TOC}{Total Ownership Cost}
+\newacronym{wbs}{WBS}{Work Breakdown Structure}
+\newacronym{ganda}{G\&A}{General and Administrative}
+\newacronym{cas}{CAS}{Cost Accounting Standards}
+\newacronym{gaap}{GAAP}{Generally Accepted Accounting Principles}
+\newacronym{tci}{TCI}{Total Cost Input}
+\newacronym{odc}{ODC}{Other Direct Cost}
+\newacronym{fpra}{FPRA}{Forward Pricing Rate Agreement}
+\newacronym{fprp}{FPRP}{Forward Pricing Rate Proposal}
+\newacronym{ros}{ROS}{Return on Sales}
+\newacronym{roa}{ROA}{Return on Assets}
+
+% --- Fiscal Law & Compliance ---
+
+\newacronym{ada}{ADA}{Anti-Deficiency Act}
+
+% --- People & Communities ---
+
+\newacronym{edo}{EDO}{Engineering Duty Officer}
+
+% --- Extended Reference (optional) ---
+
+\newacronym{cdd}{CDD}{Capabilities Development Document}
+\newacronym{niwc}{NIWC}{Naval Information Warfare Center}
+\newacronym{nrl}{NRL}{Naval Research Laboratory}
+\newacronym{nsc}{NSC}{National Security Council}
+\newacronym{onr}{ONR}{Office of Naval Research}
+\newacronym{usaf}{USAF}{United States Air Force}
+\newacronym{usafricom}{USAFRICOM}{United States Africa Command}
+\newacronym{uscentcom}{USCENTCOM}{United States Central Command}
+\newacronym{uscg}{USCG}{United States Coast Guard}
+\newacronym{uscis}{USCIS}{U.S. Citizenship and Immigration Services}
+\newacronym{uscybercom}{USCYBERCOM}{United States Cyber Command}
+\newacronym{useucom}{USEUCOM}{United States European Command}
+\newacronym{usindopacom}{USINDOPACOM}{United States Indo-Pacific Command}
+\newacronym{usmc}{USMC}{United States Marine Corps}
+\newacronym{usn}{USN}{United States Navy}
+\newacronym{usnorthcom}{USNORTHCOM}{United States Northern Command}
+\newacronym{ussocom}{USSOCOM}{United States Special Operations Command}
+\newacronym{ussouthcom}{USSOUTHCOM}{United States Southern Command}
+\newacronym{usspacecom}{USSPACECOM}{United States Space Command}
+\newacronym{usstratcom}{USSTRATCOM}{United States Strategic Command}
+\newacronym{ustranscom}{USTRANSCOM}{United States Transportation Command}
+\newacronym{va}{VA}{Department of Veterans Affairs}
+\newacronym{whoi}{WHOI}{Woods Hole Oceanographic Institution}
+
+% --- Acquisition Phases ---
+
+\newacronym{pd.phase}{P\&D}{Production and Deployment Phase}
+\newacronym{os.phase}{O\&S}{Operations and Support Phase}
+
+% --- Unsorted and Recently Added ---
+
+\newacronym{cfo}{CFO}{Chief Financial Officer}
+\newacronym{cip}{CIP}{Capital Investment Program}

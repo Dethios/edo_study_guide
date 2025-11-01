@@ -1,0 +1,184 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+%====================
+% File: SECTION_FILE_NAME.tex
+%====================
+\begin{document}
+\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+% The section title is not used for regular content. The title is set in the main document.
+%====================
+% Contents
+%====================
+% Enter content here.
+% === EVM (EDO 3.6.1 & 3.6.2) ===
+\section{Earned Value Management (EVM)}
+\minibib
+
+\subsection{What EVM is}
+
+\ac{evm} is a project management technique that integrates scope, schedule, and cost to assess project performance and progress. It provides a quantitative measure of project performance by comparing the planned work with the actual work completed and the associated costs.
+\ac{evm} is widely used in government and defense projects to ensure that projects are delivered on time and within budget.
+
+\subsection{Key Components of EVM}
+\srcCite{edo-3-6-1-evm-intro-2025, edo-3-6-2-evm-analysis-2025}
+\begin{description}
+	\item [\textbf{\ac{pv} / \ac{bcws}}]: The budgeted cost for the work scheduled to be completed by a specific date.
+	\item [\textbf{\ac{ev} / \ac{bcwp}}]: The budgeted cost for the work actually completed by a specific date.
+	\item [\textbf{\ac{ac} / \ac{acwp}}]: The actual cost incurred for the work completed by a specific date.
+	\item [\textbf{\ac{bac}}]: The total budget allocated for the project.
+	\item [\textbf{\ac{eac}}]: The forecasted total cost of the project based on current performance.
+	\item [\textbf{\ac{cpi}}]: A measure of cost efficiency, calculated as $\text{CPI} = \text{EV} / \text{AC}$. A \ac{cpi} less than 1 indicates a cost overrun.
+	\item [\textbf{\ac{spi}}]: A measure of schedule efficiency, calculated as $\text{SPI} = \text{EV} / \text{PV}$. An \ac{spi} less than 1 indicates a schedule delay.
+	\item [\textbf{\ac{sv}}]: The difference between the earned value and the planned value, calculated as $\text{SV} = \text{EV} - \text{PV}$. A negative \ac{sv} indicates a schedule delay.
+	\item [\textbf{\ac{cv}}]: The difference between the earned value and the actual cost, calculated as $\text{CV} = \text{EV} - \text{AC}$. A negative \ac{cv} indicates a cost overrun.
+\end{description}
+\Info{The first three are equivalent terms and should know both.  This guide will use the first set (\ac{pv}, \ac{ev}, \ac{ac})}
+
+\subsection{When to Use EVM}
+\ac{evm} is typically used in projects that have well-defined scopes, schedules, and budgets. It is particularly useful for large, complex projects where tracking performance is critical to project success. \ac{evm} can be applied at various levels of a project, from the overall project level to individual work packages or tasks. It is often mandated for government contracts, especially in defense and aerospace sectors, to ensure accountability and transparency in project management. Hard requirements for \ac{evm} compliance may be specified in the contract terms and for the following~\autocite{edo-3-6-1-evm-intro-2025}:
+\begin{itemize}
+	\item Nature of the work is discreetly measurable and...
+	\item Cost contracts of \$20 million or more.
+	\item Cost contracts of \$100 million or more must be formallly validated by \ac{dcma}.
+	\item \ac{ipmdar} and \ac{ibr} are required when \ac{evm} is required.
+\end{itemize}
+
+\subsection{EVM Compliance}
+\begin{itemize}
+	\item Contracts must comply with guidance use \ac{evm} as a tool.
+	\item \ac{dcma} enforces compliance with validation and surveillance.
+	\item \ac{dcaa} and other specialized agencies may also be involved in audits and reviews.
+\end{itemize}
+
+\subsection{EVM Principal Players}
+\srcCite{edo-3-6-1-evm-intro-2025}
+\begin{itemize}
+	\item \ac{pmo}---Procurement Activitiy
+	\item \ac{dcma}---\ac{dod} \ac{evm} Executive Management
+	      \begin{itemize}
+		      \item Ensures \ac{evm} integrity and efffectiveness
+		      \item Maintains contractor infor acceptance and schedule performance
+		      \item Conducts \ac{ipmdar} and \ac{ims} reviews
+	      \end{itemize}
+	\item \ac{dcaa}---Contract Auditor
+	      \begin{itemize}
+		      \item Audits contractor cost data
+		      \item Verifies \ac{evm} data accuracy
+		      \item Ensures compliance with accounting standards
+	      \end{itemize}
+	\item \ac{ada.acq}---Focal point for policy, guidance and competency relating to \ac{evm}
+	\item \ac{don} Center for \ac{evm}---Navy's central point of contact and authority for Navy \ac{evm}
+	\item \ac{supship}---Fills many \ac{dcma} and \ac{dcaa} roles for shipbuilding contracts
+\end{itemize}
+
+\subsection{PMB}
+
+\Fig{\ref{fig:pmb}} shows the ``S''-shaped curved shwoing the cumulative $\text{PV}/\text{BCWS}$. \Fig{\ref{fig:pmb_dev}} shows the workflow from defining the \ac{sow} to final \ac{pmb} adjustments. \ac{pmb}'s are:
+\begin{itemize}
+	\item Scoped, scheduled, and budgeted work plan
+	\item Time-phased for authorized work
+	\item Basis for cost and schedule
+	\item Effectively the \ac{pv} for tthe entire project
+\end{itemize}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\linewidth]{PMB.png}
+	\caption[PMB ``S''-Curve]{PMB Cost v.s.\ Time chart showing the ``S''-curve. \srcCite{edo-3-6-1-evm-intro-2025}.}
+	\label{fig:pmb}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.85\linewidth]{pmb_development.png}
+	\caption[PMB Development Flow]{The development flow for PMB. \srcCite{edo-3-6-1-evm-intro-2025}.}
+	\label{fig:pmb_dev}
+\end{figure}
+
+\subsubsection{PMB Development}
+\begin{enumerate}
+	\item[STEP 1:] \emph{Define All Work}. Work is broken down by \ac{wbs} and it intersects the organization structure.  Control acconuts are natural management points for organization elements on one program \ac{wbs} element. \acp{cam} are assiged to each control account.  Control accounts contain work packages and planning packages.
+	\item[STEP 2:] \emph{Schedule the Work}. This is the basis of the time-phased budget.  Master schedule includes milestones and work is broken down by \ac{wbs} and sequenced.  The most comment illustration of this is the Gantt chart.
+	\item[STEP 3:] \emph{Budget the Work}.  Assign a budget to each piece of work.  Retain a management reserver for known-unkowns (\textbf{in-scope} tasks).  The budget should also be time-phased.
+\end{enumerate}
+
+Changes to the \ac{pmb} must be formally controlled and documented.  Reasons for changes include:
+\begin{itemize}
+	\item Contract changes
+	\item Internal replanning
+	\item Formal reprogramming
+\end{itemize}
+
+\subsection{EVM Reviews and Reports}
+\srcCite{edo-3-6-1-evm-intro-2025}
+
+\subsubsection{Post-Acceptance Review}
+\begin{itemize}
+	\item Ensure accurate performance data
+	\item Done prior to the \ac{ibr}
+	\item Led by Review Director, normally \ac{dcma}
+	\item Review Director prepares report
+\end{itemize}
+
+\subsubsection{Initial Compliance Review}
+\begin{itemize}
+	\item Validates the Contractor's \ac{evm} system
+	\item Done prior to the \ac{ibr}
+	\item Lead by \ac{dcma} Review Directror
+	\item Review Director prepares report
+\end{itemize}
+
+\subsubsection{Integrated Baseline Review}
+\begin{itemize}
+	\item The Contractor, \ac{pm} and/or Deputy \ac{pm}, \ac{dcma}/\ac{dcaa}/\ac{supship} personnel, and technical staff---as appropriate---joint assessment conducted to verify realism and accuracy of the \ac{pmb}
+	\item Must be done within six months of contract award
+\end{itemize}
+
+\subsubsection{Integrated Program Management Data Anaylsis Report}
+This is a contractually required reportthe Contractor prepares to show performance data derived from their \ac{evm}.  It should provide the status of cost and schedule.  It is required on any contract requiring \ac{evm} and must be provided monthly, at minimum.  There are six formats:
+\begin{enumerate}
+	\item \ac{wbs} (most common)
+	\item Organizational categories
+	\item Program Management Baseline
+	\item Staffing
+	\item Explanation and Problem Analysis
+	\item \ac{ims}
+\end{enumerate}
+A \ac{csfr} provides fuding information.  It is based on \ac{ipmdar} data but informs \emph{price} rather than cost~\autocite{edo-3-6-1-evm-intro-2025}.
+
+\subsection{EVM Data Analysis}
+\Fig{\ref{fig:evm_var}} shows the ``S''-curve for te \ac{evm} variables.  The differences between the different lines are the variances
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{EVM-chart.png}
+	\caption[EVM Variances]{EVM chart showing the independent variables and variances. \srcCite{edo-3-6-2-evm-analysis-2025}}
+	\label{fig:evm_var}
+\end{figure}
+
+\subsubsection{Equations}
+\begin{align*}
+  \text{CV}           &= \text{EV} - \text{AC}\\
+  \text{SV}           &= \text{EV} - \text{PV}\\
+  \text{CPI}          &= \frac{\text{EV}}{\text{AC}}\\
+  \text{SPI}          &= \frac{\text{EV}}{\text{PV}}\\
+  \text{CV} \%         &= \left(\frac{\text{CV}}{\text{EV}}\right)*100\\
+  \text{SV} \%         &= \left(\frac{\text{SV}}{\text{PV}}\right)*100\\
+  \text{\% Complete}  &= \left(\frac{\text{EV}}{\text{BAC}}\right)*100\\
+  \text{\% Spent}     &= \left(\frac{\text{AC}}{\text{BAC}}\right)*100\\
+  \text{EAC}          &= \frac{BAC}{CPI}\\
+\end{align*}
+%====================
+% End of file
+%====================
+\ifSubfilesClassLoaded{
+	\renewcommand*{\entryname}{\textbf{\color{Modern} Acronym}}
+	\renewcommand*{\descriptionname}{\textbf{\color{Modern} Definition}}
+	\printnoidxglossary[
+		type=\acronymtype,
+		title=Acronyms,
+		style=long-booktabs
+	]}{}
+\end{document}

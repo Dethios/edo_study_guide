@@ -1,0 +1,77 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% =============================================================================
+% APPENDIX: EDO FLAG OFFICERS
+%
+% DESCRIPTION: This appendix provides a snapshot of Engineering Duty Officer
+%              (EDO) flag officers and their billets. This information is
+%              time-sensitive and should be verified before use.
+% =============================================================================
+
+\begin{document}
+\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+%====================
+% Contents here
+%====================
+\section{EDO Flag Officers (snapshot)}
+\emph{\footnotesize Verify names/billets the week of your board. Update: 29 Sep 2025.}
+
+\subsubsection*{Vice Admirals}
+\begin{description}[style=nextline, labelsep=0.5em, font=\bfseries]
+	\item[\textbf{VADM James P.\ Downey.}]
+	\ac{comnavsea}.
+	\item[\textbf{VADM Johnny R.\ Wolfe Jr.}]
+	Director, \ac{ssp}.
+	\item[\textbf{VADM Seiko Okano.}]
+	\ac{pmildep} to \ac{asnrdanda}.
+\end{description}
+
+\subsubsection*{Rear Admirals (Upper Half)}
+\begin{description}[style=nextline, labelsep=0.5em, font=\bfseries]
+	\item[\textbf{RADM Casey J.\ Moton.}]
+	\ac{peocvn}.
+	\item[\textbf{RADM Kurt J.\ Rothenhaus.}]
+	\ac{cnr}.
+	\item[\textbf{RADM Jonathan E.\ Rucker.}]
+	\ac{peossn}.
+	\item[\textbf{RADM Brian A.\ Metcalf.}]
+	\ac{peoships}.
+	\item[\textbf{RADM Douglas L.\ Williams.}]
+	Director for Test, \ac{mda}.
+\end{description}
+
+\subsubsection*{Rear Admirals (Lower Half)}
+\begin{description}[style=nextline, labelsep=0.5em, font=\bfseries]
+	\item[\textbf{RDML Peter D.\ Small.}]
+	\ac{navsea} Chief Engineer / Commander, \ac{nswc}/\ac{nuwc}.
+	\item[\textbf{RDML Dan L.\ Lannamann.}]
+	\ac{cnrmc}.
+	\item[\textbf{RDML Kevin R.\ Smith.}]
+	\ac{peousc}.
+	\item[\textbf{RDML Dianna Wolfson.}]
+	Fleet Maintenance Officer, \ac{usff}.
+	\item[\textbf{RDML Daniel W.\ Ettlich.}]
+	Director, Fleet Maintenance, \ac{pacflt}.
+\end{description}
+
+\subsubsection*{Reserve EDO Flags}
+\begin{description}[style=nextline, labelsep=0.5em, font=\bfseries]
+	\item[\textbf{RDML Robert J.\ Dodson (USNR).}]
+	Deputy Commander, Supervision of Shipbuilding (SUPSHIP), \ac{navsea}.
+	\item[\textbf{RDML Michael S.\ Richman (USNR).}]
+	Deputy Director, Regional Strike Systems, \ac{ssp}.
+\end{description}
+%====================
+% End of file
+%====================
+\ifSubfilesClassLoaded{
+  \renewcommand*{\entryname}{\textbf{\color{Modern} Acronym}}
+  \renewcommand*{\descriptionname}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+]}{}
+\end{document}

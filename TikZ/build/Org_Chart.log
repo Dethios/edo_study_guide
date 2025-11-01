@@ -1,0 +1,1047 @@
+This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.10.14)  27 OCT 2025 15:47
+ system commands enabled.
+ file:line:error style messages enabled.
+**"c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org
+_Chart.tex"
+
+("c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_
+Chart.tex"
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-09-02>
+Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
+collection.
+luaotfload | conf : Root cache directory is "C:/Users/U47A74UA/AppData/Local/MiK
+TeX/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/luatex/luaotfloa
+d/fontloader-2023-12-28.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/Users/U47A74UA/AppData/Local/MiK
+TeX/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'.
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/standalone/standalon
+e.cls
+Document Class: standalone 2025/02/22 v1.5a Class to compile TeX sub-files stan
+dalone
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/tools/shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkeyval.te
+x
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkvutils.t
+ex
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/keyval.tex
+))
+\XKV@depth=\count273
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\sa@internal=\count274
+\c@sapage=\count275
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/standalone/standalon
+e.cfg
+File: standalone.cfg 2025/02/22 v1.5a Default configuration file for 'standalon
+e' class
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/base/size10.clo
+File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from C:/Users/U47A74UA/AppData/Loca
+l/MiKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz)
+\c@part=\count276
+\c@section=\count277
+\c@subsection=\count278
+\c@subsubsection=\count279
+\c@paragraph=\count280
+\c@subparagraph=\count281
+\c@figure=\count282
+\c@table=\count283
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen147
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/luatex85/luatex85.st
+y
+Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pdftexcmds/pdftexc
+mds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/infwarerr/infwarer
+r.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/ltxcmds/ltxcmds.st
+y
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks19
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/pgf/frontendlayer/ti
+kz.sty
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgf.s
+ty
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs
+.sty
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfu
+til-common.tex
+\pgfutil@everybye=\toks20
+\pgfutil@tempdima=\dimen148
+\pgfutil@tempdimb=\dimen149
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfu
+til-latex.def
+\pgfutil@abb=\box53
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfr
+cs.code.tex
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/pgf.revision.t
+ex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgfco
+re.sty
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphicx.st
+y
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphics.st
+y
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphic
+s.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 106.
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/graphics-def/luatex.
+def
+File: luatex.def 2025/09/29 v1.2f Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/pgf/systemlayer/pgfs
+ys.sty
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pg
+fsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfk
+eys.code.tex
+\pgfkeys@pathtoks=\toks21
+\pgfkeys@temptoks=\toks22
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfk
+eyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks23
+))
+\pgf@x=\dimen152
+\pgf@y=\dimen153
+\pgf@xa=\dimen154
+\pgf@ya=\dimen155
+\pgf@xb=\dimen156
+\pgf@yb=\dimen157
+\pgf@xc=\dimen158
+\pgf@yc=\dimen159
+\pgf@xd=\dimen160
+\pgf@yd=\dimen161
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count284
+\c@pgf@countb=\count285
+\c@pgf@countc=\count286
+\c@pgf@countd=\count287
+\t@pgf@toka=\toks24
+\t@pgf@tokb=\toks25
+\t@pgf@tokc=\toks26
+\pgf@sys@id@count=\count288
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pg
+f.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-luatex.def
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pg
+fsys-luatex.def
+File: pgfsys-luatex.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pg
+fsys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pg
+fsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count289
+\pgfsyssoftpath@bigbuffer@items=\count290
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pg
+fsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/color.c
+fg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 274.
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/graphics/mathcolor.l
+tx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgf
+core.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.c
+ode.tex
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathut
+il.code.tex)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathpa
+rser.code.tex
+\pgfmath@dimen=\dimen162
+\pgfmath@count=\count291
+\pgfmath@box=\box54
+\pgfmath@toks=\toks27
+\pgfmath@stack@operand=\toks28
+\pgfmath@stack@operation=\toks29
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfu
+nctions.code.tex)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfu
+nctions.basic.code.tex)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfu
+nctions.trigonometric.code.tex)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfu
+nctions.random.code.tex)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfu
+nctions.comparison.code.tex)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfu
+nctions.base.code.tex)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfu
+nctions.round.code.tex)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfu
+nctions.misc.code.tex)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfu
+nctions.integerarithmetics.code.tex)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathca
+lc.code.tex)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfl
+oat.code.tex
+\c@pgfmathroundto@lastzeros=\count292
+))
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfint.co
+de.tex)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgf
+corepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen163
+\pgf@picmaxx=\dimen164
+\pgf@picminy=\dimen165
+\pgf@picmaxy=\dimen166
+\pgf@pathminx=\dimen167
+\pgf@pathmaxx=\dimen168
+\pgf@pathminy=\dimen169
+\pgf@pathmaxy=\dimen170
+\pgf@xx=\dimen171
+\pgf@xy=\dimen172
+\pgf@yx=\dimen173
+\pgf@yy=\dimen174
+\pgf@zx=\dimen175
+\pgf@zy=\dimen176
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgf
+corepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen177
+\pgf@path@lasty=\dimen178
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgf
+corepathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen179
+\pgf@shorten@start@additional=\dimen180
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgf
+corescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box55
+\pgf@hbox=\box56
+\pgf@layerbox@main=\box57
+\pgf@picture@serial@count=\count293
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgf
+coregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen181
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgf
+coretransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen182
+\pgf@pt@y=\dimen183
+\pgf@pt@temp=\dimen184
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgf
+corequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgf
+coreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgf
+corepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgf
+corearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen185
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgf
+coreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen186
+\pgf@sys@shading@range@num=\count294
+\pgf@shadingcount=\count295
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgf
+coreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgf
+coreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box58
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgf
+corelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgf
+coretransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgf
+corepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgf
+corerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmod
+uleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box59
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmod
+uleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pg
+fcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen187
+\pgf@nodesepend=\dimen188
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pg
+fcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgffor
+.sty
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfkey
+s.sty
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfk
+eys.code.tex))
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/pgf/math/pgfmath.sty
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.c
+ode.tex))
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgff
+or.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen189
+\pgffor@skip=\dimen190
+\pgffor@stack=\toks30
+\pgffor@toks=\toks31
+))
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/
+tikz/tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgfl
+ibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count296
+\pgfplotmarksize=\dimen191
+)
+\tikz@lastx=\dimen192
+\tikz@lasty=\dimen193
+\tikz@lastxsaved=\dimen194
+\tikz@lastysaved=\dimen195
+\tikz@lastmovetox=\dimen196
+\tikz@lastmovetoy=\dimen197
+\tikzleveldistance=\dimen198
+\tikzsiblingdistance=\dimen199
+\tikz@figbox=\box60
+\tikz@figbox@bg=\box61
+\tikz@tempbox=\box62
+\tikz@tempbox@bg=\box63
+\tikztreelevel=\count297
+\tikznumberofchildren=\count298
+\tikznumberofcurrentchild=\count299
+\tikz@fig@count=\count300
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmod
+ulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count301
+\pgfmatrixcurrentcolumn=\count302
+\pgf@matrix@numberofcolumns=\count303
+)
+\tikz@expandcount=\count304
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/
+tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+\sa@box=\box64
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/
+tikz/libraries/tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/
+tikz/libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/shap
+es/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/
+tikz/libraries/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/shap
+es/pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/
+tikz/libraries/tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/shap
+es/pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/
+tikz/libraries/tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/shap
+es/pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/
+tikz/libraries/tikzlibraryshapes.callouts.code.tex
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/shap
+es/pgflibraryshapes.callouts.code.tex))
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/
+tikz/libraries/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/shap
+es/pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodepartlowerbox=\box65
+\pgfnodeparttwobox=\box66
+\pgfnodepartthreebox=\box67
+\pgfnodepartfourbox=\box68
+\pgfnodeparttwentybox=\box69
+\pgfnodepartnineteenbox=\box70
+\pgfnodeparteighteenbox=\box71
+\pgfnodepartseventeenbox=\box72
+\pgfnodepartsixteenbox=\box73
+\pgfnodepartfifteenbox=\box74
+\pgfnodepartfourteenbox=\box75
+\pgfnodepartthirteenbox=\box76
+\pgfnodeparttwelvebox=\box77
+\pgfnodepartelevenbox=\box78
+\pgfnodeparttenbox=\box79
+\pgfnodepartninebox=\box80
+\pgfnodeparteightbox=\box81
+\pgfnodepartsevenbox=\box82
+\pgfnodepartsixbox=\box83
+\pgfnodepartfivebox=\box84
+)))
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgfl
+ibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowinset=\dimen256
+\pgfarrowlength=\dimen257
+\pgfarrowwidth=\dimen258
+\pgfarrowlinewidth=\dimen259
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/
+tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/
+tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/smartdiagram/smartdi
+agram.sty
+Package: smartdiagram 2016/12/23 v0.3b Automatic creation of smart diagrams fro
+m lists of items.
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.st
+y
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count305
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/xparse/xp
+arse.sty
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-09-02 L3 programming layer (loader) 
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-
+luatex.def
+File: l3backend-luatex.def 2025-06-09 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count306
+Inserting `l3color' in `luaotfload.parse_color'.))
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/xstring/xstring.te
+x
+\xs_counta=\count307
+\xs_countb=\count308
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/
+tikz/libraries/tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@layerbox@background=\box85
+\pgf@layerboxsaved@background=\box86
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/
+tikz/libraries/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgfl
+ibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/
+tikz/libraries/tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+\pgf@layerbox@smart diagram arrow back=\box87
+\pgf@layerboxsaved@smart diagram arrow back=\box88
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/smartdiagram/smartdi
+agramlibrarycore.definitions.code.tex)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/smartdiagram/smartdi
+agramlibrarycore.styles.code.tex)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/smartdiagram/smartdi
+agramlibrarycore.commands.code.tex))
+("c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/buil
+d/Org_Chart.aux")
+\openout1 = Org_Chart.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf
+.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count309
+\scratchdimen=\dimen260
+\scratchbox=\box89
+\nofMPsegments=\count310
+\nofMParguments=\count311
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count312
+\MPscratchDim=\dimen261
+\MPnumerator=\count313
+\makeMPintoPDFobject=\count314
+\everyMPtoPDFconversion=\toks33
+)
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopd
+f-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:/Users/U47A74UA/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sy
+s.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:36: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 	\node[orgchart node]
+                           (potus) {POTUS};
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:37: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 	\node[orgchart node, below=1cm of potus]
+                                               (secdef) {SECDEF};
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:38: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 	\node[orgchart node, below=1cm of secdef]
+                                                (secnav) {SECNAV};
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:39: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 	\node[orgchart node, below=1cm of secnav]
+                                                (cno) {CNO};
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:50: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 		\node (
+              navwar) at (-14cm,0) {NAVWAR};
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:51: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 		\node (
+              navsea) at (-10cm,0) {NAVSEA};
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:52: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 		\node (
+              navfac) at (-6cm,0) {NAVFAC};
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:53: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 		\node (
+              navair) at (-2cm,0) {NAVAIR};
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:54: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 		\node (
+              navsup) at (2cm,0) {NAVSUP};
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:55: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 		\node (
+              oni)    at (6cm,0) {ONI};
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:56: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 		\node (
+              onr)    at (10cm,0) {ONR};
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:57: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 		\node (
+              ssp)    at (14cm,0) {SSP};
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:71: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 	\node[orgchart node, below=1cm of navwar]
+                                                (niwc-pac) {NIWC PAC};
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:72: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 ...e[orgchart node, below=0.75cm of niwc-pac]
+                                                   (niwc-lant) {NIWC LANT};
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:73: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 ...[orgchart node, below=0.75cm of niwc-lant]
+                                                   (nsfa) {NSFA};
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:91: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.91 	\node[orgchart node, below=1cm of navsea]
+                                                (nswc-carderock) {NSWC Carde...
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:92: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 ...hart node, below=0.75cm of nswc-carderock]
+                                                   (nswc-corona) {NSWC Corona};
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:93: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93 ...rgchart node, below=0.75cm of nswc-corona]
+                                                   (nswc-crane) {NSWC Crane};
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:94: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 ...orgchart node, below=0.75cm of nswc-crane]
+                                                   (nswc-phil) {NSWC Philade...
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:95: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95 ...[orgchart node, below=0.75cm of nswc-phil]
+                                                   (nswc-dahlgren) {NSWC Dah...
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:96: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 ...chart node, below=0.75cm of nswc-dahlgren]
+                                                   (nswc-indianhead) {NSWC I...
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:97: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 ...art node, below=0.75cm of nswc-indianhead]
+                                                   (nswc-porthueneme) {NSWC ...
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:98: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 ...rt node, below=0.75cm of nswc-porthueneme]
+                                                   (nuwc-keyport) {NUWC Keyp...
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:99: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and I
+ am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 ...gchart node, below=0.75cm of nuwc-keyport]
+                                                   (nuwc-newport) {NUWC Newp...
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:112: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and 
+I am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 	\node[orgchart node, below=1cm of navair]
+                                                 (nawcad) {NAWCAD};
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:113: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and 
+I am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113 	\node[orgchart node, below=1cm of nawcad]
+                                                 (nawcwd) {NAWCWD};
+(That was another \errmessage.)
+
+
+c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/Org_Cha
+rt.tex:126: Package pgfkeys Error: I do not know the key '/tikz/Rectangle' and 
+I am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 	\node[orgchart node, below=1cm of onr]
+                                              (nrl) {NRL};
+(That was another \errmessage.)
+
+
+
+[1
+
+
+Non-PDF special ignored!{C:/Users/U47A74UA/AppData/Local/MiKTeX/fonts/map/pdftex
+/pdftex.map}]
+("c:/Users/U47A74UA/OneDrive/Victor's Stuff/Documents/EDO Study Guide/TikZ/buil
+d/Org_Chart.aux")
+ ***********
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-09-02>
+ ***********
+)
+
+Here is how much of LuaTeX's memory you used:
+ 16668 strings out of 476291
+ 100000,794899 words of node,token memory allocated
+ 1424 words of node memory still in use:
+   32 hlist, 1 vlist, 10 rule, 18 glue, 3 kern, 1 glyph, 97 attribute, 48 glue_s
+pec, 97 attribute_list, 2 write, 39 pdf_literal, 18 pdf_colorstack nodes
+   avail lists: 2:3520,3:3332,4:22,5:138,6:83,7:2609,9:1062,10:1,11:51
+ 38339 multiletter control sequences out of 65536+600000
+ 17 fonts using 986807 bytes
+ 117i,7n,114p,520b,842s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/users/u47a74ua/appdata/local/programs/miktex/fonts/opentype/public/lm/lmsans
+9-regular.otf>
+Output written on Org_Chart.pdf (1 page, 17317 bytes).
+
+PDF statistics: 43 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 196 words of extra memory for PDF output out of 10000 (max. 100000000)
+

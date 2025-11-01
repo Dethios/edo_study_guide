@@ -1,0 +1,1046 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{edo-2-1-1-command-structures-2025}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=446f9ea040cd451da579f77cc41c77de}{%
+           family={{Engineering Duty Officer School}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Engineering Duty Officer (EDO) School}%
+      }
+      \strng{namehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \strng{bibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorbibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authornamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{11}
+      \field{month}{3}
+      \field{note}{CIN A-4N-0021/-0034; coursebook PDF provided by author}
+      \field{number}{2.1.1}
+      \field{title}{{2.1.1. Command Structures}}
+      \field{type}{Coursebook Module}
+      \field{version}{5.2}
+      \field{year}{2025}
+      \field{dateera}{ce}
+    \endentry
+    \entry{SECNAV5400-15D}{manual}{}{}
+      \list{organization}{1}{%
+        {Department of the Navy}%
+      }
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{1}
+      \field{number}{SECNAVINST 5400.15D}
+      \field{subtitle}{{Department of the Navy Research, Development and Acquisition---Organizational Relationships and Responsibilities}}
+      \field{title}{{SECNAVINST 5400.15D}}
+      \field{type}{Instruction}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.secnav.navy.mil/doni/SECNAVInstructions/05000-05999/5400.15D.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.secnav.navy.mil/doni/SECNAVInstructions/05000-05999/5400.15D.pdf
+      \endverb
+    \endentry
+    \entry{SECNAV5000-2G}{manual}{}{}
+      \list{organization}{1}{%
+        {Department of the Navy}%
+      }
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{month}{4}
+      \field{number}{SECNAVINST 5000.2G}
+      \field{subtitle}{{Defense Acquisition System and JCIDS Implementation in the Department of the Navy}}
+      \field{title}{{SECNAVINST 5000.2G}}
+      \field{type}{Instruction}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.secnav.navy.mil/doni/SECNAVInstructions/05000-05999/5000.2G.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.secnav.navy.mil/doni/SECNAVInstructions/05000-05999/5000.2G.pdf
+      \endverb
+    \endentry
+    \entry{edo-2-1-5-technical-authority-2025}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=446f9ea040cd451da579f77cc41c77de}{%
+           family={{Engineering Duty Officer School}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Engineering Duty Officer (EDO) School}%
+      }
+      \strng{namehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \strng{bibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorbibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authornamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{11}
+      \field{month}{4}
+      \field{note}{CIN A-4N-0021/-0034}
+      \field{number}{2.1.5}
+      \field{title}{{2.1.5. Technical Authority and Engineering Agents}}
+      \field{type}{Coursebook Module}
+      \field{version}{5.4}
+      \field{year}{2025}
+      \field{dateera}{ce}
+    \endentry
+    \entry{edo-2-1-4-warfare-centers-2024}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=446f9ea040cd451da579f77cc41c77de}{%
+           family={{Engineering Duty Officer School}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Engineering Duty Officer (EDO) School}%
+      }
+      \strng{namehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \strng{bibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorbibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authornamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{18}
+      \field{month}{12}
+      \field{note}{CIN A-4N-0021/-0034}
+      \field{number}{2.1.4}
+      \field{title}{{2.1.4. Naval Warfare Centers}}
+      \field{type}{Coursebook Module}
+      \field{version}{5.0}
+      \field{year}{2024}
+      \field{dateera}{ce}
+    \endentry
+    \entry{navsea_warfare_centers}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=73e2609b4607fc72f82bf338b4d1760a}{%
+           family={{NAVSEA}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{73e2609b4607fc72f82bf338b4d1760a}
+      \strng{fullhash}{73e2609b4607fc72f82bf338b4d1760a}
+      \strng{fullhashraw}{73e2609b4607fc72f82bf338b4d1760a}
+      \strng{bibnamehash}{73e2609b4607fc72f82bf338b4d1760a}
+      \strng{authorbibnamehash}{73e2609b4607fc72f82bf338b4d1760a}
+      \strng{authornamehash}{73e2609b4607fc72f82bf338b4d1760a}
+      \strng{authorfullhash}{73e2609b4607fc72f82bf338b4d1760a}
+      \strng{authorfullhashraw}{73e2609b4607fc72f82bf338b4d1760a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Warefare Centers}
+      \field{urlday}{29}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.navsea.navy.mil/Home/Warefare-Centers/
+      \endverb
+      \verb{url}
+      \verb https://www.navsea.navy.mil/Home/Warefare-Centers/
+      \endverb
+    \endentry
+    \entry{edo-2-1-3-navwar-enterprise-2024}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=446f9ea040cd451da579f77cc41c77de}{%
+           family={{Engineering Duty Officer School}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Engineering Duty Officer (EDO) School}%
+      }
+      \strng{namehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \strng{bibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorbibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authornamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \field{extraname}{4}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{17}
+      \field{month}{12}
+      \field{note}{CIN A-4N-0021/-0034}
+      \field{number}{2.1.3}
+      \field{title}{{2.1.3. NAVWAR Enterprise}}
+      \field{type}{Coursebook Module}
+      \field{version}{5.0}
+      \field{year}{2024}
+      \field{dateera}{ce}
+    \endentry
+    \entry{edo-3-1-5-field-activity-fm-2025}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=446f9ea040cd451da579f77cc41c77de}{%
+           family={{Engineering Duty Officer School}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Engineering Duty Officer (EDO) School}%
+      }
+      \strng{namehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \strng{bibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorbibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authornamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \field{extraname}{5}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{month}{3}
+      \field{note}{CIN A-4N-0021/-0034}
+      \field{number}{3.1.5}
+      \field{title}{{3.1.5. Field Activity Financial Management}}
+      \field{type}{Coursebook Module}
+      \field{version}{5.2}
+      \field{year}{2025}
+      \field{dateera}{ce}
+    \endentry
+    \entry{edo-3-1-1-ppbe-2025}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=446f9ea040cd451da579f77cc41c77de}{%
+           family={{Engineering Duty Officer School}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Engineering Duty Officer (EDO) School}%
+      }
+      \strng{namehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \strng{bibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorbibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authornamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \field{extraname}{6}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{month}{3}
+      \field{note}{CIN A-4N-0021/-0034}
+      \field{number}{3.1.1}
+      \field{title}{{3.1.1. PPBE (Planning, Programming, Budgeting, and Execution)}}
+      \field{type}{Coursebook Module}
+      \field{version}{5.2}
+      \field{year}{2025}
+      \field{dateera}{ce}
+    \endentry
+    \entry{edo-3-1-2-congressional-enactment-2025}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=446f9ea040cd451da579f77cc41c77de}{%
+           family={{Engineering Duty Officer School}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Engineering Duty Officer (EDO) School}%
+      }
+      \strng{namehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \strng{bibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorbibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authornamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \field{extraname}{7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{month}{3}
+      \field{note}{CIN A-4N-0021/-0034}
+      \field{number}{3.1.2}
+      \field{title}{{3.1.2. Congressional Enactment}}
+      \field{type}{Coursebook Module}
+      \field{version}{5.2}
+      \field{year}{2025}
+      \field{dateera}{ce}
+    \endentry
+    \entry{DoDFMR-Vol3}{report}{}{}
+      \list{institution}{1}{%
+        {Office of the Under Secretary of Defense (Comptroller)}%
+      }
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{month}{7}
+      \field{number}{Vol. 3}
+      \field{title}{{DoD Financial Management Regulation 7000.14—R, Volume 3}}
+      \field{type}{Regulation}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://comptroller.defense.gov/fmr/
+      \endverb
+      \verb{url}
+      \verb https://comptroller.defense.gov/fmr/
+      \endverb
+    \endentry
+    \entry{edo-3-1-3-program-funding-2025}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=446f9ea040cd451da579f77cc41c77de}{%
+           family={{Engineering Duty Officer School}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Engineering Duty Officer (EDO) School}%
+      }
+      \strng{namehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \strng{bibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorbibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authornamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \field{extraname}{8}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{month}{9}
+      \field{note}{CIN A-4N-0021/-0034}
+      \field{number}{3.1.3}
+      \field{title}{{3.1.3. Program Funding}}
+      \field{type}{Coursebook Module}
+      \field{version}{5.3}
+      \field{year}{2025}
+      \field{dateera}{ce}
+    \endentry
+    \entry{Treasury-GInvoicing}{online}{}{}
+      \list{organization}{1}{%
+        {U.S. Department of the Treasury, Bureau of the Fiscal Service}%
+      }
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labeltitlesource}{title}
+      \field{title}{{G-Invoicing Program Guide and Resources}}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.fiscal.treasury.gov/g-invoicing/
+      \endverb
+      \verb{url}
+      \verb https://www.fiscal.treasury.gov/g-invoicing/
+      \endverb
+    \endentry
+    \entry{USC-6307-ProjectOrder}{legislation}{}{}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{{Project Order statute}}
+      \field{title}{{41 U.S.C. §~6307}}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://uscode.house.gov/
+      \endverb
+      \verb{url}
+      \verb https://uscode.house.gov/
+      \endverb
+    \endentry
+    \entry{USC-1535-EconomyAct}{legislation}{}{}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{{Economy Act}}
+      \field{title}{{31 U.S.C. §~1535}}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://uscode.house.gov/
+      \endverb
+      \verb{url}
+      \verb https://uscode.house.gov/
+      \endverb
+    \endentry
+    \entry{USC-1301-Purpose}{legislation}{}{}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{{Application — Purpose Statute}}
+      \field{title}{{31 U.S.C. §~1301(a)}}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://uscode.house.gov/
+      \endverb
+      \verb{url}
+      \verb https://uscode.house.gov/
+      \endverb
+    \endentry
+    \entry{USC-1502-BFN}{legislation}{}{}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{{Bona Fide Needs Rule}}
+      \field{title}{{31 U.S.C. §~1502(a)}}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://uscode.house.gov/
+      \endverb
+      \verb{url}
+      \verb https://uscode.house.gov/
+      \endverb
+    \endentry
+    \entry{USC-1341-ADA}{legislation}{}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{{Anti-Deficiency Act}}
+      \field{title}{{31 U.S.C. §~1341; §~1517}}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://uscode.house.gov/
+      \endverb
+      \verb{url}
+      \verb https://uscode.house.gov/
+      \endverb
+    \endentry
+    \entry{USC-2208-NWCF}{legislation}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{{Working-capital funds}}
+      \field{title}{{10 U.S.C. §~2208}}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://uscode.house.gov/
+      \endverb
+      \verb{url}
+      \verb https://uscode.house.gov/
+      \endverb
+    \endentry
+    \entry{DoDFMR-Vol3-Ch19}{report}{}{}
+      \list{institution}{1}{%
+        {Office of the Under Secretary of Defense (Comptroller)}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{month}{7}
+      \field{title}{{DoD FMR 7000.14-R, Volume 3, Chapter 19: Defense Working Capital Funds}}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://comptroller.defense.gov/fmr/
+      \endverb
+      \verb{url}
+      \verb https://comptroller.defense.gov/fmr/
+      \endverb
+    \endentry
+    \entry{CRS-CR}{report}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=59dc0915b0467b44ab05d0a572a0706a}{%
+           family={Saturno},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima V.},
+           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Congressional Research Service}%
+      }
+      \strng{namehash}{bf9bb72db638234cbe7407484eeb42c6}
+      \strng{fullhash}{bf9bb72db638234cbe7407484eeb42c6}
+      \strng{fullhashraw}{bf9bb72db638234cbe7407484eeb42c6}
+      \strng{bibnamehash}{bf9bb72db638234cbe7407484eeb42c6}
+      \strng{authorbibnamehash}{bf9bb72db638234cbe7407484eeb42c6}
+      \strng{authornamehash}{bf9bb72db638234cbe7407484eeb42c6}
+      \strng{authorfullhash}{bf9bb72db638234cbe7407484eeb42c6}
+      \strng{authorfullhashraw}{bf9bb72db638234cbe7407484eeb42c6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{27}
+      \field{month}{3}
+      \field{number}{R42647}
+      \field{title}{{Continuing Resolutions: Overview of Components and Recent Practices}}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://crsreports.congress.gov/
+      \endverb
+      \verb{url}
+      \verb https://crsreports.congress.gov/
+      \endverb
+    \endentry
+    \entry{USC-3501}{legislation}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{note}{Title 10 recodification; formerly Title 10 U.S.C. §~2306b}
+      \field{subtitle}{{Multiyear Procurement}}
+      \field{title}{{10 U.S.C. §~3501}}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://uscode.house.gov/
+      \endverb
+      \verb{url}
+      \verb https://uscode.house.gov/
+      \endverb
+    \endentry
+    \entry{DFARS217-172}{report}{}{}
+      \list{organization}{1}{%
+        {Department of Defense}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{DFARS 217.172: Multiyear Contracts}}
+      \field{type}{Regulation}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.acquisition.gov/dfars/part-217
+      \endverb
+      \verb{url}
+      \verb https://www.acquisition.gov/dfars/part-217
+      \endverb
+    \endentry
+    \entry{FAR}{report}{}{}
+      \list{organization}{1}{%
+        {GSA, DoD, NASA}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{Federal Acquisition Regulation (FAR)}}
+      \field{type}{Regulation}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.acquisition.gov/far
+      \endverb
+      \verb{url}
+      \verb https://www.acquisition.gov/far
+      \endverb
+    \endentry
+    \entry{DoDI5000-85}{manual}{}{}
+      \list{organization}{1}{%
+        {Department of Defense}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{month}{8}
+      \field{note}{Change(s) as applicable}
+      \field{number}{DoDI 5000.85}
+      \field{subtitle}{{Major Capability Acquisition}}
+      \field{title}{{DoDI 5000.85}}
+      \field{type}{Instruction}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.esd.whs.mil/Directives/issuances/dodissuances/
+      \endverb
+      \verb{url}
+      \verb https://www.esd.whs.mil/Directives/issuances/dodissuances/
+      \endverb
+    \endentry
+    \entry{edo-3-1-6-cost-estimating-2024}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=446f9ea040cd451da579f77cc41c77de}{%
+           family={{Engineering Duty Officer School}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Engineering Duty Officer (EDO) School}%
+      }
+      \strng{namehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \strng{bibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorbibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authornamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \field{extraname}{9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{18}
+      \field{month}{12}
+      \field{note}{CIN A-4N-0021/-0034}
+      \field{number}{3.1.6}
+      \field{title}{{3.1.6. Cost Estimating}}
+      \field{type}{Coursebook Module}
+      \field{version}{5.0}
+      \field{year}{2024}
+      \field{dateera}{ce}
+    \endentry
+    \entry{DAU-EMD}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=7062d3a96c02c6594094872ac46c72af}{%
+           family={{Defense Acquisition University}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{7062d3a96c02c6594094872ac46c72af}
+      \strng{fullhash}{7062d3a96c02c6594094872ac46c72af}
+      \strng{fullhashraw}{7062d3a96c02c6594094872ac46c72af}
+      \strng{bibnamehash}{7062d3a96c02c6594094872ac46c72af}
+      \strng{authorbibnamehash}{7062d3a96c02c6594094872ac46c72af}
+      \strng{authornamehash}{7062d3a96c02c6594094872ac46c72af}
+      \strng{authorfullhash}{7062d3a96c02c6594094872ac46c72af}
+      \strng{authorfullhashraw}{7062d3a96c02c6594094872ac46c72af}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Engineering \& Manufacturing Development (EMD) Phase}}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://aaf.dau.edu/
+      \endverb
+      \verb{url}
+      \verb https://aaf.dau.edu/
+      \endverb
+    \endentry
+    \entry{DFARS}{report}{}{}
+      \list{organization}{1}{%
+        {Department of Defense}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{Defense Federal Acquisition Regulation Supplement (DFARS)}}
+      \field{type}{Regulation}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.acquisition.gov/dfars
+      \endverb
+      \verb{url}
+      \verb https://www.acquisition.gov/dfars
+      \endverb
+    \endentry
+    \entry{NMCARS}{report}{}{}
+      \list{organization}{1}{%
+        {Department of the Navy}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{Navy Marine Corps Acquisition Regulation Supplement (NMCARS)}}
+      \field{type}{Regulation}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.acquisition.gov/nmcars
+      \endverb
+      \verb{url}
+      \verb https://www.acquisition.gov/nmcars
+      \endverb
+    \endentry
+    \entry{SOM-Ch3-2023}{manual}{}{}
+      \list{institution}{1}{%
+        {Naval Sea Systems Command}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{month}{9}
+      \field{number}{Chapter 3}
+      \field{title}{{SUPSHIP Operations Manual, Chapter 3: Contract Management}}
+      \field{type}{Manual}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.navsea.navy.mil/Portals/103/Documents/SUPSALV/SOM/SOM-Ch3.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.navsea.navy.mil/Portals/103/Documents/SUPSALV/SOM/SOM-Ch3.pdf
+      \endverb
+    \endentry
+    \entry{NAVSEA-Source-Selection-Guide-2022}{manual}{}{}
+      \list{institution}{1}{%
+        {Naval Sea Systems Command}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{month}{8}
+      \field{title}{{NAVSEA Source Selection Guide}}
+      \field{type}{Guide}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.navsea.navy.mil/Portals/103/Documents/SEA%2002/NAVSEA-Source-Selection-Guide.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.navsea.navy.mil/Portals/103/Documents/SEA%2002/NAVSEA-Source-Selection-Guide.pdf
+      \endverb
+    \endentry
+    \entry{NAVSEA-Contracts-Handbook-2023}{manual}{}{}
+      \list{institution}{1}{%
+        {Naval Sea Systems Command}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{month}{5}
+      \field{title}{{NAVSEA Contracts Handbook}}
+      \field{type}{Handbook}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.navsea.navy.mil/Portals/103/Documents/SEA%2002/NAVSEA-Contracts-Handbook.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.navsea.navy.mil/Portals/103/Documents/SEA%2002/NAVSEA-Contracts-Handbook.pdf
+      \endverb
+    \endentry
+    \entry{USC-3201-CICA}{legislation}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{{Competition requirements}}
+      \field{title}{{10 U.S.C. §~3201}}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://uscode.house.gov/
+      \endverb
+      \verb{url}
+      \verb https://uscode.house.gov/
+      \endverb
+    \endentry
+    \entry{edo-3-2-2-solicitation-prep-2025}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=446f9ea040cd451da579f77cc41c77de}{%
+           family={{Engineering Duty Officer School}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Engineering Duty Officer (EDO) School}%
+      }
+      \strng{namehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \strng{bibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorbibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authornamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \field{extraname}{10}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{month}{3}
+      \field{note}{CIN A-4N-0021/-0034}
+      \field{number}{3.2.2}
+      \field{title}{{3.2.2. Solicitation Preparation}}
+      \field{type}{Coursebook Module}
+      \field{version}{5.1}
+      \field{year}{2025}
+      \field{dateera}{ce}
+    \endentry
+    \entry{USC-4021-OTA}{legislation}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{{Prototype projects: other transaction authority}}
+      \field{title}{{10 U.S.C. §~4021}}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://uscode.house.gov/
+      \endverb
+      \verb{url}
+      \verb https://uscode.house.gov/
+      \endverb
+    \endentry
+    \entry{USC-4022-OTF}{legislation}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{{Follow-on production contracts or transactions}}
+      \field{title}{{10 U.S.C. §~4022}}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://uscode.house.gov/
+      \endverb
+      \verb{url}
+      \verb https://uscode.house.gov/
+      \endverb
+    \endentry
+    \entry{USC-638-SBIR}{legislation}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{{Small Business Innovation Research program}}
+      \field{title}{{15 U.S.C. §~638}}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://uscode.house.gov/
+      \endverb
+      \verb{url}
+      \verb https://uscode.house.gov/
+      \endverb
+    \endentry
+    \entry{edo-3-2-4-cost-price-evaluation-2024}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=446f9ea040cd451da579f77cc41c77de}{%
+           family={{Engineering Duty Officer School}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Engineering Duty Officer (EDO) School}%
+      }
+      \strng{namehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \strng{bibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorbibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authornamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \field{extraname}{11}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{18}
+      \field{month}{12}
+      \field{note}{CIN A-4N-0021/-0034}
+      \field{number}{3.2.4}
+      \field{title}{{3.2.4. Cost and Price Evaluation}}
+      \field{type}{Coursebook Module}
+      \field{version}{5.0}
+      \field{year}{2024}
+      \field{dateera}{ce}
+    \endentry
+    \entry{edo-3-6-1-evm-intro-2025}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=446f9ea040cd451da579f77cc41c77de}{%
+           family={{Engineering Duty Officer School}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Engineering Duty Officer (EDO) School}%
+      }
+      \strng{namehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \strng{bibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorbibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authornamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \field{extraname}{12}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{month}{3}
+      \field{note}{CIN A-4N-0021/-0034}
+      \field{number}{3.6.1}
+      \field{title}{{3.6.1. Introduction to EVM}}
+      \field{type}{Coursebook Module}
+      \field{version}{5.2}
+      \field{year}{2025}
+      \field{dateera}{ce}
+    \endentry
+    \entry{edo-3-6-2-evm-analysis-2025}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=446f9ea040cd451da579f77cc41c77de}{%
+           family={{Engineering Duty Officer School}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Engineering Duty Officer (EDO) School}%
+      }
+      \strng{namehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{fullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \strng{bibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorbibnamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authornamehash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhash}{446f9ea040cd451da579f77cc41c77de}
+      \strng{authorfullhashraw}{446f9ea040cd451da579f77cc41c77de}
+      \field{extraname}{13}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{month}{3}
+      \field{note}{CIN A-4N-0021/-0034}
+      \field{number}{3.6.2}
+      \field{title}{{3.6.2. EVM Data Analysis}}
+      \field{type}{Coursebook Module}
+      \field{version}{5.2}
+      \field{year}{2025}
+      \field{dateera}{ce}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
