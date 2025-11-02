@@ -8,60 +8,84 @@ git% !TEX root = ../main.tex
 \begin{document}
 \ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 % The section title is not used for regular content. The title is set in the main document.
-%====================
-% Contents
-%====================
-% Enter content here.
+% === POLICY (EDO 3.3.1) ===
 \section{Acquisition Policy}
 \minibib
 
-\subsection{Acquisition-Related Laws and Regulations}
-\srcCite{edo-3.3.1-policy-players-2025}
-
-\subsubsection{Title 10 USC}: Governs the organization, structure and operation of the Armed Forces of the United States.
-\begin{itemize}
-  \item Several sections charge the secretaries of the military departments(Army, Navy, and Air Force) with responsibility to “equip” the armed forces.
-  \item General acquisition provisions are spread throughout Title 10.
-  \item \ac{ndaa}, also set forth in Title 10, is one of the principal mechanism by which Congress modifies the defense acquisition structure.
-\end{itemize}
-
-\subsubsection{Other Applicable Laws}
-\begin{itemize}
-  \item Armed Services Procurement Act (1947), as amended
-  \item Small Business Act (1963), as amended
-  \item Office of Federal Procurement Policy Act (1983), as amended
-  \item Competition in Contracting Act (1984)
-  \item DoD Procurement Reform Act (1985)
-  \item DoD Reorganization Act of 1986 (Goldwater‐Nichols)
-  \item Defense Acquisition Workforce Improvement Act 1990
-  \item Federal Acquisition Streamlining Act of 1994
-  \item Clinger‐Cohen Act of 1996
-  \item Weapon Systems Acquisition Reform Act of 2009
-\end{itemize}
-
-\subsubsection{Federal Regulations}
-Navy acquisitions is governed by a set of regulations that build on one another.
-
-\paragraph{FAR}~\autocite{FAR}
-\begin{itemize}
-  \item Primary regulation for use by all Federal agencies for the acquisition of supplies and services with appropriated funds. It is the highest level of regulations for federal acquisitions~\autocite{edo-3.3.1-policy-players-2025}.
-  \item Guides and directs \ac{dod} \acp{pm} in:
-    \begin{itemize}
-      \item Acquisition planning
-      \item Competition requirements
-      \item Contract award procedures
-      \item Warranties
-    \end{itemize}
-\end{itemize}
-
-\paragraph{DFAR}~\autocite{DFAR}
-This is the \ac{dod} Supplement to the \ac{far}. It provides \ac{dod} specific procedures.
-
-\paragraph{DoD Acquisition Policy}.  Articulated in two documents:
+\subsection{Summary}
 \begin{description}
-  \item[DoD Directive 5000.01]---The Defense Acquisition System~\autocite{DoDD5000}.  States the policies and principles that guide all defense acquisition programs. Identifies the \ac{dod} key acquisition officials and forums.
-  \item[DoD Instruction 5000.02]---Operation of the Adaptive Acquisition Framework~\autocite{DoDI5000-02}. Objective is to deliver effective, suitable, survivable, sustainable, and affordable solutions to the end user in a timely manner. Six pathways provide opportunities for \acp{mda} and \acp{pm} to develop acquisition strategies and employ acquisition processes that match the characteristics of the capability being acquired.
+  \item[\textbf{Statute drives authority.}] Title~10 charges the Military Departments to equip the force, while each annual \ac{ndaa} refreshes acquisition authorities and reporting duties---know the latest delegation trail before advising a board~\srcCite{edo-3-3-1-acq-policy-players-2025}.
+  \item[\textbf{Policy = DoD 5000 series.}] DoDD~5000.01 establishes acquisition principles and senior roles; DoDI~5000.02 operationalizes the Adaptive Acquisition Framework (AAF) pathways; DoDI~5000.85 prescribes Major Capability Acquisition execution details~\srcCite{DoDD5000-01,DoDI5000-02,DoDI5000-85}.
+  \item[\textbf{Regulation stack.}] FAR~\textgreater~DFARS~\textgreater~NMCARS translates statute and policy into enforceable contracting rules; SECNAVINST~5000.2G tailors the AAF for DON programs and makes ASN(RDA) the Service Acquisition Executive~\srcCite{FAR,DFARS,SECNAV5000-2G}.
 \end{description}
+
+\subsection{Practitioner Steps (Board Prep Focus)}
+\begin{enumerate}
+  \item Confirm statutory authority and delegation: identify the Defense Acquisition Executive (USD(A\&S)) or delegated MDA, the Service Acquisition Executive (ASN(RDA)), and the resource sponsor accountable for the requirement~\srcCite{DoDD5000-01,edo-3-3-1-acq-policy-players-2025,SECNAV5000-2G}.
+  \item Select the correct AAF pathway (or hybrid) and align entry/exit criteria, statutory reports, and decision forums (MS~A/B/C, MDD, BCAs, Congressional notices)~\srcCite{DoDI5000-02,DoDI5000-85}.
+  \item Map contracting rules to the pathway: FAR/DFARS clauses, competition requirements, and Tailored Acquisition Strategy approvals~\srcCite{FAR,DFARS,edo-3-3-1-acq-policy-players-2025}.
+  \item Crosswalk Navy overlays: SECNAVINST~5000.2G, SECNAVINST~5400.15D organization responsibilities, and PEO/DRPM charters for technical authority touchpoints~\srcCite{SECNAV5000-2G,SECNAV5400-15D}.
+  \item Prepare decision documentation: update the Acquisition Strategy/SEP/TEMP, ensure statutory certifications (Clinger-Cohen, PPBE affordability caps) are current, and pre-brief the chain (Program Office~\textrightarrow~PEO~\textrightarrow~ASN(RDA))~\srcCite{DoDI5000-85,edo-3-3-1-acq-policy-players-2025}.
+\end{enumerate}
+
+\subsection{Policy Stack and Authorities}
+\begin{description}
+  \item[\textbf{Title 10, U.S.C.}] Establishes Service responsibilities (Subtitle~C for DON organization, Subtitle~A Part~V for acquisition management) and empowers annual \acp{ndaa} to adjust acquisition thresholds or pilot authorities~\srcCite{edo-3-3-1-acq-policy-players-2025}.
+  \item[\textbf{DoD Directives/Instructions.}] DoDD~5000.01 sets acquisition principles, governance forums, and senior leader responsibilities; DoDI~5000.02 implements the AAF with six scalable pathways; DoDI~5000.85 gives MCA-specific statutory requirements (JROC, cost reporting, baseline control)~\srcCite{DoDD5000-01,DoDI5000-02,DoDI5000-85}.
+  \item[\textbf{Regulations.}] FAR governs all federal contracting; DFARS adds DoD-specific clauses (e.g., earned value, data rights, cybersecurity); NMCARS adds DON policy and ASN(RDA) approval levels~\srcCite{FAR,DFARS,NMCARS}.
+  \item[\textbf{Service overlays.}] SECNAVINST~5000.2G tailors milestone documentation, Naval SYSCOM oversight, and Naval Accelerated Acquisition; SECNAVINST~5400.15D assigns PEO and SYSCOM responsibilities for acquisition program execution~\srcCite{SECNAV5000-2G,SECNAV5400-15D}.
+  \item[\textbf{Advisory guidance.}] The DoD Acquisition Guidebook (DAG) captures best practices---it is not directive authority, but boards expect you to know how it informs planning reviews and tailoring memoranda~\srcCite{DoDAcqGuidebook}.
+\end{description}
+\Info{Boards expect you to quote the controlling document \emph{and} state who owns the decision. Memorize the policy ladder: Statute~$\rightarrow$~Directive~$\rightarrow$~Instruction~$\rightarrow$~Regulation~$\rightarrow$~Service overlay.}
+
+\subsection{Acquisition Players and Decision Forums}
+\begin{description}
+  \item[\textbf{Defense Acquisition Executive (DAE).}] USD(A\&S) chairs the Defense Acquisition Board, is Milestone Decision Authority for ACAT~ID/IAM programs unless delegated, and approves key acquisition policies~\srcCite{DoDD5000-01,edo-3-3-1-acq-policy-players-2025}.
+  \item[\textbf{Service Acquisition Executive (SAE).}] ASN(RDA) serves as the DON SAE; appoints PEOs, assigns MDAs for ACAT~II and below, and ensures Navy acquisition compliance with DoD policy~\srcCite{SECNAV5000-2G,SECNAV5400-15D}.
+  \item[\textbf{Chief of Naval Operations/Resource Sponsor.}] Validates requirements and PPBE resourcing, provides integrated warfare/community priorities to ASN(RDA) and the PEOs~\srcCite{edo-3-3-1-acq-policy-players-2025}.
+  \item[\textbf{PEO/DRPM.}] Executes programs within delegated authorities; maintains acquisition baseline control, briefs ASN(RDA) and DAB-level forums, and ensures SYSCOM technical authority integration~\srcCite{SECNAV5400-15D,DoDI5000-85}.
+  \item[\textbf{Program Manager (PM).}] Accountable for cost, schedule, performance; leads the Integrated Product Team, maintains statutory certifications, and readies milestone documentation~\srcCite{DoDI5000-85,edo-3-3-1-acq-policy-players-2025}.
+  \item[\textbf{Governance forums.}] Milestone Decision Reviews, the Defense Acquisition Board, Configuration Steering Boards, Overarching IPTs, and Navy Program Executive Council reviews provide structured oversight and risk adjudication~\srcCite{DoDD5000-01,DoDI5000-85,edo-3-3-1-acq-policy-players-2025}.
+\end{description}
+\note{Edge case: Rapid acquisition authorities (e.g., Urgent Capability Acquisition) compress governance. Ensure delegation letters document any waived statutory certifications before you recommend skipping a DAB or ASN(RDA) review~\srcCite{DoDI5000-02}.}
+
+\subsection{Adaptive Acquisition Framework Pathways}
+\begin{description}
+  \item[\textbf{Major Capability Acquisition (MCA).}] Default for weapon systems; milestone-driven with statutory reports (SAR, DAES) and LIVE-Fire/TEMP requirements~\srcCite{DoDI5000-85}.
+  \item[\textbf{Middle Tier of Acquisition (MTA).}] Rapid prototyping (≤5~years to field) and rapid fielding pathways; report to USD(R\&E)/USD(A\&S) and Congress semi-annually~\srcCite{DoDI5000-02}.
+  \item[\textbf{Software Acquisition.}] Iterative DevSecOps delivery, tailored documentation (Software Acquisition Strategy) and continuous Authority to Operate emphasis~\srcCite{DoDI5000-02}.
+  \item[\textbf{Business Systems.}] Focuses on business process re-engineering, investment review board certification, and Clinger-Cohen Act compliance~\srcCite{DoDI5000-02}.
+  \item[\textbf{Defense Urgent Capability.}] Immediate warfighter needs; compressed oversight but still documents affordability and sustainment plans~\srcCite{DoDI5000-02}.
+  \item[\textbf{Services Acquisition.}] Managed via DoDI~5000.74 (referenced in DoDI~5000.02) with governance through functional domain leads; consider when an availability or modernization effort is better treated as a service~\srcCite{DoDI5000-02,edo-3-3-1-acq-policy-players-2025}.
+\end{description}
+\Info{Pathways can be combined (e.g., prototype under MTA then transition to MCA). Boards ask why your chosen path best fits cost/schedule urgency.}
+
+\subsection{Checklist}
+\begin{itemize}
+  \item Identify the MDA, SAE, and PEO delegations in writing; confirm currency against ASN(RDA) memos~\srcCite{SECNAV5000-2G,SECNAV5400-15D}.
+  \item Validate statutory certifications (Clinger-Cohen, PDR/CDR assessments, cyber strategy) are signed within required timelines~\srcCite{DoDI5000-85}.
+  \item Ensure acquisition artifacts align: Acquisition Strategy matches pathway, SEP/TEMP updated for milestone, LCSP integrates sustainment metrics~\srcCite{DoDI5000-85,DoDI5000-02}.
+  \item Confirm FAR/DFARS/NMCARS clauses and approvals reflect pathway tailoring (competition, EVM, cybersecurity, data rights)~\srcCite{FAR,DFARS,NMCARS}.
+  \item Coordinate Navy overlays: Technical Authority endorsements, NAVSEA/NAVWAR instructions, PEO-specific tailoring guides~\srcCite{SECNAV5000-2G,edo-3-3-1-acq-policy-players-2025}.
+\end{itemize}
+
+\subsection{Decision Trace (Board Cues)}
+\begin{description}
+  \item[\textbf{What statute applies?}] Cite the Title~10 section or NDAA provision that triggers the decision or reporting requirement.
+  \item[\textbf{Who owns the decision?}] Name the MDA and escalation path (PM~$\rightarrow$~PEO~$\rightarrow$~ASN(RDA) or USD(A\&S)).
+  \item[\textbf{Which pathway?}] Justify the selected AAF pathway and any tailoring memo.
+  \item[\textbf{What oversight bodies?}] Identify upcoming DAB, ASN(RDA), or OPNAV reviews and required artifacts.
+  \item[\textbf{What Navy overlays?}] Highlight SECNAV/OPNAV directives that change generic DoD timelines or artifacts.
+\end{description}
+
+\subsection{Navy Overlays and Touchpoints}
+\begin{description}
+  \item[\textbf{SECNAVINST 5000.2G.}] Implements ASN(RDA) Program Decision Meetings, requires risk-based tailoring plans, and codifies DON-level documentation (Acquisition Plan, LCSP, POA\&M)~\srcCite{SECNAV5000-2G}.
+  \item[\textbf{SECNAVINST 5400.15D.}] Aligns PEOs and SYSCOMs, clarifies technical authority (NAVSEA 05, NAVWAR 5.0) integration, and designates Deputy ASN(RDA) portfolio responsibilities~\srcCite{SECNAV5400-15D}.
+  \item[\textbf{Resource Sponsor coordination.}] OPNAV N9, N4, or equivalent sponsor must endorse requirements and PPBE positions before ASN(RDA) decisions~\srcCite{edo-3-3-1-acq-policy-players-2025}.
+\end{description}
+\note{When SECNAV policy conflicts with older DoD memoranda, defer to the most current directive from the higher authority unless ASN(RDA) grants written tailoring. Document the rationale in the Acquisition Strategy.}
+
 %====================
 % End of file
 %====================

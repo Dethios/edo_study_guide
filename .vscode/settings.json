@@ -3,11 +3,13 @@
   "git.autofetch": true,
   "git.autofetchPeriod": 180, // seconds (3 min)
   "git.postCommitCommand": "sync",
+
   "latex-workshop.latex.autoBuild.run": "never",
+
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk",
-      "command": "/usr/local/texlive/2025/bin/x86_64-linux/latexmk",
+      "command": "${workspaceFolder}/tools/latexmk-universal.sh",
       "args": [
         "-lualatex",
         "-pdf",
@@ -26,12 +28,15 @@
       "args": ["%DOC%"]
     }
   ],
+
   "latex-workshop.latex.recipes": [
     { "name": "BUILD", "tools": ["latexmk"] },
     { "name": "BUILD (auto-install)", "tools": ["latexmk-auto"] }
   ],
   "latex-workshop.latex.recipe.default": "BUILD (auto-install)",
-  "latex-workshop.formatting.latexindent.path": "/usr/local/texlive/2025/bin/x86_64-linux/latexindent",
+
+  // Use universal wrapper so formatting works on both machines
+  "latex-workshop.formatting.latexindent.path": "${workspaceFolder}/tools/latexindent-universal.sh",
   "latex-workshop.formatting.latexindent.args": [
     "-w",
     "-s",
