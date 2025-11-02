@@ -1,4 +1,4 @@
-% !TEX root = ../main.tex
+git% !TEX root = ../main.tex
 % !TEX program = lualatex
 \documentclass[../main.tex]{subfiles}
 \IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
@@ -14,7 +14,7 @@
 % Enter content here.
 % === EVM (EDO 3.6.1 & 3.6.2) ===
 \section{Acquisition Policy}
-\minibib                                                                                                                                        
+\minibib
 
 \subsection{Acquisition-Related Law}
 
