@@ -15,7 +15,7 @@ git% !TEX root = ../main.tex
 \subsection{Summary}
 \begin{description}
   \item[\textbf{Statute drives authority.}] Title~10 charges the Military Departments to equip the force, while each annual \ac{ndaa} refreshes acquisition authorities and reporting duties---know the latest delegation trail before advising a board~\srcCite{edo-3-3-1-acq-policy-players-2025}.
-  \item[\textbf{Policy = DoD 5000 series.}] DoDD~5000.01 establishes acquisition principles and senior roles; DoDI~5000.02 operationalizes the Adaptive Acquisition Framework (AAF) pathways; DoDI~5000.85 prescribes Major Capability Acquisition execution details~\srcCite{DoDD5000-01,DoDI5000-02,DoDI5000-85}.
+  \item[\textbf{Policy = DoD 5000 series.}] DoDD~5000.01 establishes acquisition principles and senior roles; DoDI~5000.02 operationalizes the \ac{aaf} pathways; DoDI~5000.85 prescribes \ac{mca} execution details~\srcCite{DoDD5000-01,DoDI5000-02,DoDI5000-85}.
   \item[\textbf{Regulation stack.}] FAR~\textgreater~DFARS~\textgreater~NMCARS translates statute and policy into enforceable contracting rules; SECNAVINST~5000.2G tailors the AAF for DON programs and makes ASN(RDA) the Service Acquisition Executive~\srcCite{FAR,DFARS,SECNAV5000-2G}.
 \end{description}
 

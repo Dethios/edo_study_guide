@@ -9,7 +9,7 @@
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk",
-      "command": "${workspaceFolder}/tools/latexmk-universal.sh",
+      "command": "tools/latexmk-universal.sh",
       "args": [
         "-lualatex",
         "-pdf",
@@ -24,7 +24,7 @@
     },
     {
       "name": "latexmk-auto",
-      "command": "/home/victor/bin/latexmk-auto.sh",
+      "command": "/usr/local/texlive/2025/bin/aarch64-linux/latexmk-auto",
       "args": ["%DOC%"]
     }
   ],
@@ -36,7 +36,7 @@
   "latex-workshop.latex.recipe.default": "BUILD (auto-install)",
 
   // Use universal wrapper so formatting works on both machines
-  "latex-workshop.formatting.latexindent.path": "${workspaceFolder}/tools/latexindent-universal.sh",
+  "latex-workshop.formatting.latexindent.path": "tools/latexindent-universal.sh",
   "latex-workshop.formatting.latexindent.args": [
     "-w",
     "-s",
