@@ -49,6 +49,14 @@ Additional policy considerations~\autocite{edo-3-6-1-evm-intro-2025,DoDI5000-85}
 	\item For efforts below \$20 million, the \ac{pm} conducts a risk-based cost-benefit analysis to decide whether \ac{evm} adds value.
 	\item Contracts that require \ac{evm} must also deliver \ac{ipmdar} data and complete an \ac{ibr} within six months of award.
 \end{itemize}
+\subsection{EVM Compliance}
+\ac{evm} clauses are flowed in the solicitation and award package (DFARS 252.234-7001 and 252.234-7002) alongside the Contractor Business Systems clause (DFARS 252.242-7005) to anchor validation and surveillance requirements~\autocite{DFARS}. Compliance expectations~\autocite{edo-3-6-1-evm-intro-2025,DoDI5000-85}:
+\begin{itemize}
+	\item The program office integrates \ac{evm} planning into the \ac{wbs}, maintains the Performance Measurement Baseline, and ensures timely receipt and analysis of \ac{ipmdar} submissions.
+	\item \ac{dcma} leads \ac{evm} system acceptance, validation, and ongoing surveillance against ANSI/EIA-748 and the DoD Earned Value Management Implementation Guide; \ac{dcaa} supports with accounting system audits.
+	\item Service focal points such as Acquisition Data and Analytics and the \ac{don} Center for \ac{evm} adjudicate applicability determinations and coordinate policy updates.
+	\item \ac{supship} can execute validation and surveillance responsibilities for shipbuilding programs on behalf of \ac{dcma}.
+\end{itemize}
 
 \subsection{EVM Compliance}
 \ac{evm} clauses are flowed in the solicitation and award package (DFARS 252.234-7001 and 252.234-7002) alongside the Contractor Business Systems clause (DFARS 252.242-7005) to anchor validation and surveillance requirements~\autocite{DFARS}. Compliance expectations~\autocite{edo-3-6-1-evm-intro-2025,DoDI5000-85}:
@@ -73,12 +81,12 @@ Additional policy considerations~\autocite{edo-3-6-1-evm-intro-2025,DoDI5000-85}
 \subsection{PMB}
 
 \Fig{\ref{fig:pmb}} shows the characteristic S-curve depicting cumulative $\text{PV}/\text{BCWS}$, while \Fig{\ref{fig:pmb_dev}} summarizes the progression from defining the \ac{sow} to final \ac{pmb} adjustments. \ac{pmb}s are:
-\begin{itemize}
+\begin{itemize}␊
 	\item Scoped, scheduled, and budgeted plans for the authorized work
 	\item Time-phased budgets that align to the master schedule
 	\item The basis for cost and schedule performance management
 	\item Effectively the \ac{pv} for the entire project
-\end{itemize}
+\end{itemize}␊
 
 \begin{figure}
 	\centering
@@ -100,7 +108,6 @@ Additional policy considerations~\autocite{edo-3-6-1-evm-intro-2025,DoDI5000-85}
 	\item[STEP 2:] \emph{Schedule the work}. Develop the integrated schedule (often visualized with Gantt charts) that sequences the \ac{wbs} elements, includes key milestones, and forms the backbone of the time-phased budget.
 	\item[STEP 3:] \emph{Budget the work}. Assign time-phased budgets to each work package, establish management reserve for in-scope known unknowns, and confirm that the sum of the control accounts equals the contract budget base.
 \end{enumerate}
-
 Changes to the \ac{pmb} must be formally controlled and documented. Reasons for changes include:
 \begin{itemize}
 	\item Contract changes
@@ -110,7 +117,6 @@ Changes to the \ac{pmb} must be formally controlled and documented. Reasons for 
 
 \subsection{EVM Reviews and Reports}
 \srcCite{edo-3-6-1-evm-intro-2025}
-
 \subsubsection{Post-Acceptance Review}
 \begin{itemize}
 	\item Objective: ensure performance data remain accurate after system acceptance and identify any corrective actions required to reaffirm compliance.
@@ -118,7 +124,6 @@ Changes to the \ac{pmb} must be formally controlled and documented. Reasons for 
 	\item Led by the Review Director (typically \ac{dcma}) with membership tailored to the purpose of the review.
 	\item Culminates in a formal report prepared by the Review Director.
 \end{itemize}
-
 \subsubsection{Initial Compliance Evaluation}
 \begin{itemize}
 	\item Objective: validate that the contractor’s \ac{evm} system description matches actual practice and satisfies the EVMS criteria.
@@ -126,14 +131,12 @@ Changes to the \ac{pmb} must be formally controlled and documented. Reasons for 
 	\item Led by the \ac{dcma} Review Director with cross-functional support as required.
 	\item Results documented in a report signed by the Review Director.
 \end{itemize}
-
 \subsubsection{Integrated Baseline Review}
 \begin{itemize}
 	\item Participants: the contractor, \ac{pm} and deputy, \ac{dcma}/\ac{dcaa}/\ac{supship} personnel, and relevant technical staff.
 	\item Purpose: joint assessment to verify the realism and accuracy of the \ac{pmb}, confirm the entire technical scope is captured, and ensure resources and schedules are achievable.
 	\item Timing: conducted within six months of contract award (or major replanning event) in accordance with the DoD \ac{evm} Implementation Guide and service policy~\autocite{edo-3-6-1-evm-intro-2025}.
 \end{itemize}
-
 \subsubsection{Integrated Program Management Data Analysis Report}
 This contractually required report delivers cost, schedule, and technical status derived from the contractor’s \ac{evm} system, enabling the \ac{pmo} to identify performance problem areas and emerging risks. It is required on every contract that mandates \ac{evm} and must be delivered at least monthly. The data set is tailored for each contract based on risk, size, and integration considerations, but the canonical formats are:
 \begin{enumerate}
@@ -145,7 +148,6 @@ This contractually required report delivers cost, schedule, and technical status
 	\item \ac{ims}
 \end{enumerate}
 A \ac{csfr} complements the \ac{ipmdar} by providing funding (price) information that reconciles to the cost-focused earned value data~\autocite{edo-3-6-1-evm-intro-2025}.
-
 \subsubsection{Problems}
 When using \ac{evm}, the following are indications that a problem exists~\autocite{edo-3-6-2-evm-analysis-2025}:
 \begin{itemize}
@@ -153,20 +155,17 @@ When using \ac{evm}, the following are indications that a problem exists~\autoci
   \item Significant revisions to the \ac{pmb}
   \item Zero variance
   \item Sudden change in trends
-  \item Linear decreasing \ac{cv}
   \item Unreasonable \ac{tcpi}
 \end{itemize}
 
 \subsection{EVM Data Analysis}
 \Fig{\ref{fig:evm_var}} shows the S-curve representation of the \ac{evm} variables; the gaps between the curves are the cost and schedule variances that drive performance assessments~\srcCite{edo-3-6-2-evm-analysis-2025}.
-
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{EVM-chart.png}
 	\caption[EVM Variances]{EVM chart showing the independent variables and variances. \srcCite{edo-3-6-2-evm-analysis-2025}}
 	\label{fig:evm_var}
 \end{figure}
-
 \subsubsection{Data Analysis Steps}
 \begin{enumerate}
 	\item \textbf{Get current status}: capture the latest cost and schedule performance using \ac{cpi}, \ac{spi}, and narrative explanations.
@@ -174,7 +173,6 @@ When using \ac{evm}, the following are indications that a problem exists~\autoci
 	\item \textbf{Predict completion}: develop independent \ac{eac} and \ac{vac} assessments to forecast final outcomes.
 	\item \textbf{Determine management actions}: decide where to apply resources, contract changes, or risk mitigations to recover performance~\srcCite{edo-3-6-2-evm-analysis-2025}.
 \end{enumerate}
-
 \subsubsection{Performance Measurement Techniques}
 \begin{description}
 	\item[Percent Complete:] Applies to long-duration tasks lacking interim milestones; progress is reported as the earned value fraction of total budget.
@@ -182,7 +180,6 @@ When using \ac{evm}, the following are indications that a problem exists~\autoci
 	\item[Percent Start/Percent Finish:] Suitable for short-duration tasks (less than two reporting periods) with credit apportioned at start and finish.
 	\item[0/100 Method:] Provides earned value only when the task is complete, offering a conservative measure for discrete, short tasks~\srcCite{edo-3-6-2-evm-analysis-2025}.
 \end{description}
-
 \subsubsection{Equations}
 Standard cost and schedule performance calculations include~\autocite{edo-3-6-2-evm-analysis-2025}:
 \begin{align*}
