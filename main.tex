@@ -37,18 +37,7 @@
 \input{Preamble/glossaries.tex}
 \input{Preamble/low_level_tweaks_macros.tex}
 
-\makeatletter
-\def\input@path{{build/}{}}% ensure aux files in build/ are found
-\def\@input#1{\IfFileExists{build/#1}{\@@input{build/#1}}{\@@input{#1}}}% prefer build/ for aux outputs
-\begingroup
-  \def\newlabel##1##2{\typeout{SETTING LABEL ##1}\global\@namedef{r@##1}{##2}}% preload aux labels
-  \InputIfFileExists{build/main.aux}{\typeout{Loaded aux labels}}{}
-\endgroup
-\typeout{Check ref preload: \ifcsname r@fig:chain_of_command_ops\endcsname yes\else no\fi}
-\makeatother
-
-
-% ============================================================
+ % ============================================================
 % 12) TITLE / AUTHOR / METADATA HELPERS
 % ============================================================
 \title{EDO Board Prep Study Guide}

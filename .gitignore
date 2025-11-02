@@ -1,0 +1,28 @@
+# LaTeX
+out/
+build/
+*.synctex.gz
+*.aux
+*.log
+*.toc
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.nav
+*.snm
+*.vrb
+*.tmp
+
+# Editors
+.vscode/
+!.vscode/settings.json    # keep workspace settings if you want
+!.vscode/extensions.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.*

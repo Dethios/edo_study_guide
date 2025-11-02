@@ -1,11 +1,46 @@
 {
+  // ===================================================================
+  // VS Code Tasks Configuration
+  // ===================================================================
   "version": "2.0.0",
   "tasks": [
+    // ---------------------------------------------------------------
+    // JSON patch helper (merges clipboard JSON into project export)
+    // ---------------------------------------------------------------
     {
       "label": "Apply JSON patch from clipboard",
       "type": "shell",
-      "command": "python - << 'PY'\nimport json,sys,pyperclip,os\np=json.loads(pyperclip.paste())\nwith open('docs/project_export.json','r',encoding='utf-8') as f: base=json.load(f)\n# RFC 7396 merge patch\ndef merge(a,b):\n  for k,v in b.items():\n    if v is None: a.pop(k,None)\n    elif isinstance(v,dict) and isinstance(a.get(k),dict): merge(a[k],v)\n    else: a[k]=v\n  return a\nwith open('docs/project_export.json','w',encoding='utf-8') as f: json.dump(merge(base,p),f,indent=2,ensure_ascii=False)\nprint('Patched docs/project_export.json')\nPY",
+      "command": "python3 - << 'PY'\nimport json,sys,pyperclip,os\np=json.loads(pyperclip.paste())\nwith open('docs/project_export.json','r',encoding='utf-8') as f: base=json.load(f)\ndef merge(a,b):\n  for k,v in b.items():\n    if v is None: a.pop(k,None)\n    elif isinstance(v,dict) and isinstance(a.get(k),dict): merge(a[k],v)\n    else: a[k]=v\n  return a\nwith open('docs/project_export.json','w',encoding='utf-8') as f: json.dump(merge(base,p),f,indent=2,ensure_ascii=False)\nprint('✅ Patched docs/project_export.json')\nPY",
       "problemMatcher": []
+    },
+
+    // ---------------------------------------------------------------
+    // Safe Git auto-push (runs ./scripts/push.sh)
+    // ---------------------------------------------------------------
+    {
+      "label": "Git: Push (safe auto)",
+      "type": "shell",
+      "command": "./scripts/push.sh",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+
+    // ---------------------------------------------------------------
+    // Auto pull when project is opened in VS Code
+    // ---------------------------------------------------------------
+    {
+      "label": "Git: Pull on Open",
+      "type": "shell",
+      "command": "git pull --ff-only",
+      "presentation": { "reveal": "silent" },
+      "runOptions": { "runOn": "folderOpen" }
     }
   ]
 }
