@@ -12,19 +12,24 @@
       "command": "tools/latexmk-universal.sh",
       "args": [
         "-lualatex",
-        "-pdf",
         "-outdir=out",
         "-auxdir=build",
         "-f",
         "-synctex=1",
         "-interaction=nonstopmode",
         "-file-line-error",
+        "-shell-escape",
         "%DOC%"
       ]
     },
     {
       "name": "latexmk-auto",
       "command": "/usr/local/texlive/2025/bin/aarch64-linux/latexmk-auto",
+      "args": ["%DOC%"]
+    },
+    {
+      "name": "texliveonfly",
+      "command": "/usr/local/texlive/2025/bin/aarch64-linux/texliveonfly",
       "args": ["%DOC%"]
     }
   ],
@@ -33,7 +38,7 @@
     { "name": "BUILD", "tools": ["latexmk"] },
     { "name": "BUILD (auto-install)", "tools": ["latexmk-auto"] }
   ],
-  "latex-workshop.latex.recipe.default": "BUILD (auto-install)",
+  "latex-workshop.latex.recipe.default": "BUILD",
 
   // Use universal wrapper so formatting works on both machines
   "latex-workshop.formatting.latexindent.path": "tools/latexindent-universal.sh",
