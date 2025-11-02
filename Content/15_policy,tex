@@ -12,12 +12,56 @@ git% !TEX root = ../main.tex
 % Contents
 %====================
 % Enter content here.
-% === EVM (EDO 3.6.1 & 3.6.2) ===
 \section{Acquisition Policy}
 \minibib
 
-\subsection{Acquisition-Related Law}
+\subsection{Acquisition-Related Laws and Regulations}
+\srcCite{edo-3.3.1-policy-players-2025}
 
+\subsubsection{Title 10 USC}: Governs the organization, structure and operation of the Armed Forces of the United States.
+\begin{itemize}
+  \item Several sections charge the secretaries of the military departments(Army, Navy, and Air Force) with responsibility to “equip” the armed forces.
+  \item General acquisition provisions are spread throughout Title 10.
+  \item \ac{ndaa}, also set forth in Title 10, is one of the principal mechanism by which Congress modifies the defense acquisition structure.
+\end{itemize}
+
+\subsubsection{Other Applicable Laws}
+\begin{itemize}
+  \item Armed Services Procurement Act (1947), as amended
+  \item Small Business Act (1963), as amended
+  \item Office of Federal Procurement Policy Act (1983), as amended
+  \item Competition in Contracting Act (1984)
+  \item DoD Procurement Reform Act (1985)
+  \item DoD Reorganization Act of 1986 (Goldwater‐Nichols)
+  \item Defense Acquisition Workforce Improvement Act 1990
+  \item Federal Acquisition Streamlining Act of 1994
+  \item Clinger‐Cohen Act of 1996
+  \item Weapon Systems Acquisition Reform Act of 2009
+\end{itemize}
+
+\subsubsection{Federal Regulations}
+Navy acquisitions is governed by a set of regulations that build on one another.
+
+\paragraph{FAR}~\autocite{FAR}
+\begin{itemize}
+  \item Primary regulation for use by all Federal agencies for the acquisition of supplies and services with appropriated funds. It is the highest level of regulations for federal acquisitions~\autocite{edo-3.3.1-policy-players-2025}.
+  \item Guides and directs \ac{dod} \acp{pm} in:
+    \begin{itemize}
+      \item Acquisition planning
+      \item Competition requirements
+      \item Contract award procedures
+      \item Warranties
+    \end{itemize}
+\end{itemize}
+
+\paragraph{DFAR}~\autocite{DFAR}
+This is the \ac{dod} Supplement to the \ac{far}. It provides \ac{dod} specific procedures.
+
+\paragraph{DoD Acquisition Policy}.  Articulated in two documents:
+\begin{description}
+  \item[DoD Directive 5000.01]---The Defense Acquisition System~\autocite{DoDD5000}.  States the policies and principles that guide all defense acquisition programs. Identifies the \ac{dod} key acquisition officials and forums.
+  \item[DoD Instruction 5000.02]---Operation of the Adaptive Acquisition Framework~\autocite{DoDI5000-02}. Objective is to deliver effective, suitable, survivable, sustainable, and affordable solutions to the end user in a timely manner. Six pathways provide opportunities for \acp{mda} and \acp{pm} to develop acquisition strategies and employ acquisition processes that match the characteristics of the capability being acquired.
+\end{description}
 %====================
 % End of file
 %====================
