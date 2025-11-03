@@ -1287,5 +1287,20 @@
   // ===================================================================
   "yaml.format.printWidth": 100,
   "yaml.format.proseWrap": "always",
-  "yaml.keyOrdering": true
+  "yaml.keyOrdering": true,
+  "cSpell.words": [
+    "auxlock",
+    "dpth",
+    "epstopdf",
+    "glsdefs",
+    "glstex",
+    "hyperref",
+    "latexindent",
+    "latexmk",
+    "pygments",
+    "pygtex",
+    "synctex",
+    "tikzexternals",
+    "xindy"
+  ]
 }
