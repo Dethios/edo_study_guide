@@ -42,8 +42,8 @@ if ($Mode -eq "Watch") {
 
 # Run latexindent
 Write-Host "Formatting $Doc with latexindent..."
-Write-Host "Arguments: -w -l -m -s -y=`"preserveBlankLines:2,backupExtension:''`"" -ForegroundColor Cyan
-latexindent -w -l -m -s -y="preserveBlankLines:2,backupExtension:''" $Doc
+Write-Host "Arguments: -w -l -m -s -y=defaultIndent:'  ';preserveBlankLines:2 --overwriteIfDifferent --outputdir=/dev/null;maxNumberOfBackUps:0;backupExtension:''" -ForegroundColor Cyan
+latexindent -w -m -s -y="defaultIndent:'  ';preserveBlankLines:2;maxNumberOfBackUps:0;backupExtension:''" --overwriteIfDifferent --outputdir=/dev/null $Doc
 
 # Run latexmk
 Write-Host "Running latexmk in $Mode mode..."

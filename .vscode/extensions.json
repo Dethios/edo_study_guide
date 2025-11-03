@@ -1,3 +1,30 @@
 {
-  "recommendations": ["james-yu.latex-workshop"]
+  "recommendations": [
+    "james-yu.latex-workshop",
+    "tamasfe.even-better-toml",
+    "tecosaur.latex-utilities",
+    "zhangyu.latex-formatter",
+    "valentjn.ltex",
+    "tomoki1207.latexindent",
+    "redhat.vscode-yaml",
+    "formulahendry.code-runner",
+    "notzaki.citer",
+    "mathiasfrohlich.KotlinBibtex",
+    "jeff-hykin.latex-references",
+    "yzhang.markdown-all-in-one",
+    "mushan.vscode-paste-image",
+    "eamodio.gitlens",
+    "github.copilot",
+    "github.copilot-chat",
+    "alefragnani.project-manager",
+    "gruntfuggly.todo-tree",
+    "usernamehw.errorlens",
+    "arcticicestudio.nord-visual-studio-code",
+    "binaryify.one-dark-pro",
+    "pkief.material-icon-theme",
+    "ms-vscode-remote.remote-wsl",
+    "ms-vscode-remote.remote-ssh",
+    "streetsidesoftware.code-spell-checker",
+    "aaron-bond.better-comments"
+  ]
 }
