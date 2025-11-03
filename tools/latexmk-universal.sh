@@ -1,44 +1,71 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# --- Config ---
-: "${TEX_COMPILER:=lualatex}"   # pdflatex|xelatex|lualatex, etc.
+# --- Config (customize as needed) ---
+: "${ENGINE:=lualatex}"   # lualatex | xelatex | pdflatex
+: "${OUTDIR:=out}"
+: "${AUXDIR:=build}"
 
 arch="$(uname -m)"
 
-# --- Locate texliveonfly for this arch ---
+# Locate texliveonfly
 case "$arch" in
   x86_64)        TEXLIVEONFLY="/usr/local/texlive/2025/bin/x86_64-linux/texliveonfly" ;;
   aarch64|arm64) TEXLIVEONFLY="/usr/local/texlive/2025/bin/aarch64-linux/texliveonfly" ;;
   *)             TEXLIVEONFLY="$(command -v texliveonfly || true)" ;;
 esac
 
-if [[ -z "${TEXLIVEONFLY:-}" || ! -x "${TEXLIVEONFLY:-/nonexistent}" ]]; then
-  echo "ERROR: texliveonfly not found for arch '$arch'. Looked for: ${TEXLIVEONFLY:-<unset>}" >&2
-  exit 127
-fi
+# Locate latexmk
+case "$arch" in
+  x86_64)        LATEXMK="/usr/local/texlive/2025/bin/x86_64-linux/latexmk" ;;
+  aarch64|arm64) LATEXMK="/usr/local/texlive/2025/bin/aarch64-linux/latexmk" ;;
+  *)             LATEXMK="$(command -v latexmk || true)" ;;
+esac
 
-# --- Collect .tex targets from args; default to ./main.tex if none provided ---
+[[ -x "${TEXLIVEONFLY:-}" ]] || { echo "ERROR: texliveonfly not found"; exit 127; }
+[[ -x "${LATEXMK:-}"      ]] || { echo "ERROR: latexmk not found";      exit 127; }
+
+# Engine flag for latexmk
+engine_flag=""
+case "$ENGINE" in
+  lualatex) engine_flag="-lualatex" ;;
+  xelatex)  engine_flag="-xelatex"  ;;
+  pdflatex) engine_flag="" ;;  # latexmk -pdf defaults to pdflatex
+  *) echo "ERROR: Unsupported ENGINE='$ENGINE' (use lualatex|xelatex|pdflatex)"; exit 2 ;;
+esac
+
+mkdir -p "$OUTDIR" "$AUXDIR"
+
+# Create a one-shot shim with all args embedded (no extra argv to texliveonfly)
+shim="$(mktemp -t texonfly-mk-XXXXXX.sh)"
+cat >"$shim" <<EOF
+#!/usr/bin/env bash
+set -euo pipefail
+TEXFILE="\$1"
+exec "$LATEXMK" -pdf $engine_flag \
+  -outdir="$OUTDIR" -auxdir="$AUXDIR" \
+  -latexoption="-synctex=1" \
+  -latexoption="-shell-escape" \
+  -latexoption="-interaction=nonstopmode" \
+  -latexoption="-file-line-error" \
+  "\$TEXFILE"
+EOF
+chmod +x "$shim"
+
+# Collect .tex targets; default to main.tex
 tex_targets=()
 for arg in "$@"; do
-  if [[ "$arg" == *.tex && -e "$arg" ]]; then
-    tex_targets+=("$arg")
-  fi
+  [[ "$arg" == *.tex && -e "$arg" ]] && tex_targets+=("$arg")
 done
-
 if [[ ${#tex_targets[@]} -eq 0 ]]; then
-  if [[ -e "main.tex" ]]; then
-    tex_targets=("main.tex")
-  else
-    echo "Usage: $(basename "$0") [file1.tex file2.tex ...]" >&2
-    echo "Hint: no files given and ./main.tex not found." >&2
-    exit 2
-  fi
+  [[ -e main.tex ]] || { echo "Usage: $(basename "$0") [file1.tex ...]"; rm -f "$shim"; exit 2; }
+  tex_targets=("main.tex")
 fi
 
-# --- Run texliveonfly once per target (quietly) to auto-install missing packages ---
+# Run: texliveonfly -c <shim> <file.tex>
 for f in "${tex_targets[@]}"; do
-  echo ">> texliveonfly preflight: '$f' (compiler=${TEX_COMPILER})"
-  # -c selects engine; -q quiets chatter; '--' passes through to engine if needed later
-  "$TEXLIVEONFLY" -c "$TEX_COMPILER" -q -- "$f"
+  echo ">> texliveonfly preflight via latexmk: '$f'  (ENGINE=$ENGINE, OUTDIR=$OUTDIR, AUXDIR=$AUXDIR, synctex=1, shell-escape)"
+  "$TEXLIVEONFLY" -c "$shim" "$f"
 done
+
+rm -f "$shim"

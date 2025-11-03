@@ -4,7 +4,7 @@
   "git.autofetchPeriod": 180, // seconds (3 min)
   "git.postCommitCommand": "sync",
 
-  "latex-workshop.latex.autoBuild.run": "never",
+  "latex-workshop.latex.autoBuild.run": "onFileChange",
 
   "latex-workshop.latex.tools": [
     {
@@ -36,7 +36,6 @@
 
   "latex-workshop.latex.recipes": [
     { "name": "BUILD", "tools": ["latexmk"] },
-    { "name": "BUILD (auto-install)", "tools": ["latexmk-auto"] }
   ],
   "latex-workshop.latex.recipe.default": "BUILD",
 
