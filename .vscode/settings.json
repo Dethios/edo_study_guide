@@ -1,5 +1,54 @@
 {
   // ===================================================================
+  // C/C++
+  // ===================================================================
+  "C_Cpp.vcFormat.indent.accessSpecifiers": true,
+  "C_Cpp.vcFormat.indent.braces": true,
+  "C_Cpp.vcFormat.indent.caseContentsWhenBlock": true,
+  "C_Cpp.vcFormat.indent.caseLabels": true,
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "newLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "newLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "newLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "newLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "newLine",
+  "C_Cpp.vcFormat.newLine.beforeWhileInDoWhile": true,
+  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
+  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
+  "C_Cpp.vcFormat.space.beforeInitializerListOpenBrace": true,
+  "C_Cpp.vcFormat.space.beforeLambdaOpenParenthesis": true,
+  "C_Cpp.vcFormat.space.beforeOpenSquareBracket": true,
+  "C_Cpp.vcFormat.space.betweenEmptyBraces": true,
+  "C_Cpp.vcFormat.space.betweenEmptyLambdaBrackets": true,
+  "C_Cpp.vcFormat.space.betweenEmptyParameterListParentheses": true,
+  "C_Cpp.vcFormat.space.betweenEmptySquareBrackets": true,
+  "C_Cpp.vcFormat.space.insertAfterSemicolon": true,
+  "C_Cpp.vcFormat.space.withinCastParentheses": true,
+  "C_Cpp.vcFormat.space.withinControlFlowStatementParentheses": true,
+  "C_Cpp.vcFormat.space.withinExpressionParentheses": true,
+  "C_Cpp.vcFormat.space.withinLambdaBrackets": true,
+  "C_Cpp.vcFormat.space.withinParameterListParentheses": true,
+  "C_Cpp.vcFormat.space.withinSquareBrackets": true,
+
+  // ===================================================================
+  // LANGUAGE OVERRIDES
+  // ===================================================================
+  "[bibtex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop",
+    "editor.formatOnSave": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+
+  // ===================================================================
   // BETTER COMMENTS
   // ===================================================================
   "better-comments.highlightPlainText": true,
@@ -21,7 +70,7 @@
       "strikethrough": false,
       "tag": "?",
       "underline": false
-    }, // fixed invalid color
+    },
     {
       "backgroundColor": "transparent",
       "bold": false,
@@ -85,56 +134,18 @@
   "bookmarks.useWorkaroundForFormatters": true,
 
   // ===================================================================
-  // C/C++
-  // ===================================================================
-  "C_Cpp.vcFormat.indent.accessSpecifiers": true,
-  "C_Cpp.vcFormat.indent.braces": true,
-  "C_Cpp.vcFormat.indent.caseContentsWhenBlock": true,
-  "C_Cpp.vcFormat.indent.caseLabels": true,
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "newLine",
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "newLine",
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "newLine",
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "newLine",
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "newLine",
-  "C_Cpp.vcFormat.newLine.beforeWhileInDoWhile": true,
-  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
-  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
-  "C_Cpp.vcFormat.space.beforeInitializerListOpenBrace": true,
-  "C_Cpp.vcFormat.space.beforeLambdaOpenParenthesis": true,
-  "C_Cpp.vcFormat.space.beforeOpenSquareBracket": true,
-  "C_Cpp.vcFormat.space.betweenEmptyBraces": true,
-  "C_Cpp.vcFormat.space.betweenEmptyLambdaBrackets": true,
-  "C_Cpp.vcFormat.space.betweenEmptyParameterListParentheses": true,
-  "C_Cpp.vcFormat.space.betweenEmptySquareBrackets": true,
-  "C_Cpp.vcFormat.space.insertAfterSemicolon": true,
-  "C_Cpp.vcFormat.space.withinCastParentheses": true,
-  "C_Cpp.vcFormat.space.withinControlFlowStatementParentheses": true,
-  "C_Cpp.vcFormat.space.withinExpressionParentheses": true,
-  "C_Cpp.vcFormat.space.withinLambdaBrackets": true,
-  "C_Cpp.vcFormat.space.withinParameterListParentheses": true,
-  "C_Cpp.vcFormat.space.withinSquareBrackets": true,
-
-  // ===================================================================
-  // CHAT / ASSISTANTS
-  // ===================================================================
-  "chat.editor.wordWrap": "on",
-  "chatgpt.runCodexInWindowsSubsystemForLinux": true,
-
-  // ===================================================================
-  // CSS / HTML
-  // ===================================================================
-  "css.format.braceStyle": "expand",
-  "html.format.indentHandlebars": true,
-  "html.format.indentInnerHtml": true,
-  "html.format.templating": true,
-  "html.format.wrapLineLength": 100,
-
-  // ===================================================================
-  // CSPELL
+  // SPELLING (C-SPELL)
   // ===================================================================
   "cSpell.autoFormatConfigFile": true,
-  "cSpell.customDictionaries": { "custom": true, "internal-terms": true },
-  "cSpell.enabledFileTypes": { "json": false, "log": true, "yaml": true },
+  "cSpell.customDictionaries": {
+    "custom": true,
+    "internal-terms": true
+  },
+  "cSpell.enabledFileTypes": {
+    "json": false,
+    "log": true,
+    "yaml": true
+  },
   "cSpell.userWords": [
     "ACAT",
     "actuals",
@@ -202,7 +213,22 @@
   ],
 
   // ===================================================================
-  // EDITOR — CORE
+  // CHAT / ASSISTANTS
+  // ===================================================================
+  "chat.editor.wordWrap": "on",
+
+  // ===================================================================
+  // CHATGPT
+  // ===================================================================
+  "chatgpt.runCodexInWindowsSubsystemForLinux": true,
+
+  // ===================================================================
+  // CSS
+  // ===================================================================
+  "css.format.braceStyle": "expand",
+
+  // ===================================================================
+  // EDITOR
   // ===================================================================
   "editor.aiStats.enabled": true,
   "editor.allowVariableFontsInAccessibilityMode": true,
@@ -215,7 +241,7 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
-  "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "\u0027Fira Code\u0027, Consolas, \u0027Courier New\u0027, monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 12,
   "editor.fontVariations": true,
@@ -224,10 +250,10 @@
   "editor.formatOnSaveMode": "modificationsIfAvailable",
   "editor.formatOnType": true,
   "editor.indentSize": "tabSize",
-  "editor.insertSpaces": true,
   "editor.inlineSuggest.enabled": true,
-  "editor.inlineSuggest.fontFamily": "'Fira Code'", // keep ghost font = editor font
+  "editor.inlineSuggest.fontFamily": "\u0027Fira Code\u0027",
   "editor.inlineSuggest.showToolbar": "onHover",
+  "editor.insertSpaces": true,
   "editor.linkedEditing": true,
   "editor.maxTokenizationLineLength": 200000,
   "editor.minimap.enabled": false,
@@ -238,14 +264,14 @@
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "editor.trimWhitespaceOnDelete": true,
-  "editor.wordBasedSuggestions": "matchingDocuments", // tighter & faster on big repos
+  "editor.wordBasedSuggestions": "matchingDocuments",
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 100,
-  "editor.wrappingIndent": "indent",
   "editor.wrapOnEscapedLineFeeds": true,
+  "editor.wrappingIndent": "indent",
 
   // ===================================================================
-  // EVEN BETTER TOML
+  // TOML
   // ===================================================================
   "evenBetterToml.formatter.alignComments": true,
   "evenBetterToml.formatter.alignEntries": true,
@@ -264,7 +290,18 @@
   "evenBetterToml.semanticTokens": true,
 
   // ===================================================================
-  // FILES & SEARCH
+  // EXPLORER
+  // ===================================================================
+  "explorer.confirmDragAndDrop": false,
+
+  // ===================================================================
+  // EXTENSIONS
+  // ===================================================================
+  "extensions.autoCheckUpdates": true,
+  "extensions.autoUpdate": true,
+
+  // ===================================================================
+  // FILES
   // ===================================================================
   "files.autoGuessEncoding": true,
   "files.autoSave": "afterDelay",
@@ -279,23 +316,24 @@
     "**/node_modules/**": true,
     "**/out/**": true
   },
-  "search.exclude": {
-    "**/.git/**": true,
-    "**/.texlive202*/**": true,
-    "**/build/**": true,
-    "**/node_modules/**": true,
-    "**/out/**": true
-  },
-  "search.followSymlinks": false,
-  "search.useIgnoreFiles": true,
-  "git.autofetch": true, // reliable & fast
-  "git.autofetchPeriod": 180, // seconds
+
+  // ===================================================================
+  // GIT
+  // ===================================================================
+  "git.allowNoVerifyCommit": true,
   "git.autoStash": true,
+  "git.autofetch": true,
+  "git.autofetchPeriod": 180,
+  "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.mergeEditor": true,
+  "git.postCommitCommand": "sync",
   "git.pruneOnFetch": true,
   "git.replaceTagsWhenPull": true,
-  "git.repositoryScanMaxDepth": 2, // avoid slow -1 on big drives
+  "git.repositoryScanMaxDepth": 2,
+  "git.useCommitInputAsStashMessage": true,
+  "git.useEditorAsCommitInput": false,
+  "git.useEditorAsCommittingEditor": false,
 
   // ===================================================================
   // GITLENS
@@ -304,139 +342,27 @@
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
 
   // ===================================================================
-  // JAVASCRIPT / TYPESCRIPT
+  // HTML
+  // ===================================================================
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true,
+  "html.format.templating": true,
+  "html.format.wrapLineLength": 100,
+
+  // ===================================================================
+  // JAVASCRIPT
   // ===================================================================
   "javascript.referencesCodeLens.enabled": true,
   "javascript.referencesCodeLens.showOnAllFunctions": true,
-  "typescript.implementationsCodeLens.enabled": true,
-  "typescript.implementationsCodeLens.showOnInterfaceMethods": true,
-  "typescript.referencesCodeLens.enabled": true,
-  "typescript.referencesCodeLens.showOnAllFunctions": true,
 
   // ===================================================================
-  // JSON / YAML / NPM
+  // JSON
   // ===================================================================
   "json.schemaDownload.enable": false,
-  "npm.fetchOnlinePackageInfo": false,
-  "npm.runSilent": true,
-  "yaml.format.printWidth": 100,
-  "yaml.format.proseWrap": "always",
-  "yaml.keyOrdering": true,
 
   // ===================================================================
-  // LATEX — LATEX WORKSHOP (viewer/sync)
+  // LATEX UTILITIES
   // ===================================================================
-  "latex-workshop.latex.auxDir": "build",
-  "latex-workshop.latex.outDir": "out",
-  "latex-workshop.latex.rootFile.doNotPrompt": true,
-  "latex-workshop.latex.rootFile.useSubFile": true,
-  "latex-workshop.synctex.afterBuild.enabled": true,
-  "latex-workshop.texmagic.enabled": true,
-  "latex-workshop.view.outline.sync.viewer": true,
-  "latex-workshop.view.pdf.internal.synctex.keybinding": "ctrl-click",
-  "latex-workshop.view.pdf.reload.transition": "none",
-  "latex-workshop.view.pdf.sidebar.open": "off",
-  "latex-workshop.view.pdf.sidebar.view": "outline",
-  "latex-workshop.view.pdf.viewer": "tab",
-
-  // LATEX — LATEX WORKSHOP (build/recipes)
-  "latex-workshop.latex.autoBuild.interval": 5000,
-  "latex-workshop.latex.autoBuild.run": "never", // you build via scripts/recipes
-  "latex-workshop.latex.build.clearLog.everyRecipeStep.enabled": false,
-  "latex-workshop.latex.build.forceRecipeUsage": true,
-  "latex-workshop.latex.build.rootfileInStatus": true,
-  "latex-workshop.latex.clean.subfolder.enabled": true,
-  "latex-workshop.latex.autoClean.run": "never",
-  "latex-workshop.latex.recipes": [
-    { "name": "BUILD-WIN", "tools": ["latexmk-win"] },
-    { "name": "BUILD-WSL", "tools": ["latexmk-wsl"] },
-    { "name": "AUTO (latexmk-auto)", "tools": ["latexmk-auto"] },
-    { "name": "ON-THE-FLY", "tools": ["texliveonfly"] }
-  ],
-  "latex-workshop.latex.recipe.default": "lastUsed",
-  "latex-workshop.latex.tools": [
-    {
-      "args": [
-        "-lualatex",
-        "-outdir=out",
-        "-auxdir=build",
-        "-f",
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "-shell-escape",
-        "%DOC%"
-      ],
-      "command": "tools/latexmk-universal.sh",
-      "name": "latexmk-wsl"
-    },
-    {
-      "args": [
-        "-lualatex",
-        "-outdir=out",
-        "-auxdir=build",
-        "-f",
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "-shell-escape",
-        "%DOC%"
-      ],
-      "command": "latexmk",
-      "name": "latexmk-win"
-    },
-    {
-      "args": ["%DOC%"],
-      "command": "/usr/local/texlive/2025/bin/aarch64-linux/latexmk-auto",
-      "name": "latexmk-auto"
-    },
-    {
-      "args": ["%DOC%"],
-      "command": "/usr/local/texlive/2025/bin/aarch64-linux/texliveonfly",
-      "name": "texliveonfly"
-    }
-  ],
-
-  // LATEX — LATEX WORKSHOP (formatting/lint/intellisense/watch)
-  "latex-workshop.bibtex-fields.sort.enabled": true,
-  "latex-workshop.bibtex-format.sort.enabled": true,
-  "latex-workshop.bibtex-format.tab": "2",
-  "latex-workshop.bibtex-format.trailingComma": true,
-  "latex-workshop.formatting.latex": "latexindent",
-  "latex-workshop.formatting.latexindent.args": [
-    "-w",
-    "-s",
-    "-m",
-    "-y=backupExtension:'';defaultIndent:'  ';preserveBlankLines:2",
-    "--overwriteIfDifferent",
-    "--outputdir=/dev/null"
-  ],
-  "latex-workshop.formatting.latexindent.path": "latexindent",
-  "latex-workshop.intellisense.bibtexJSON.replace": {},
-  "latex-workshop.intellisense.package.unusual": true,
-  "latex-workshop.intellisense.subsuperscript.enabled": true,
-  "latex-workshop.intellisense.unimathsymbols.enabled": true,
-  "latex-workshop.intellisense.update.aggressive.enabled": true,
-  "latex-workshop.latex.watch.pdf.delay": 1000,
-  "latex-workshop.latex.watch.usePolling": true,
-  "latex-workshop.linting.chktex.convertOutput.column.chktexrcTabSize": 4,
-  "latex-workshop.linting.run": "onType",
-  "latex-workshop.message.badbox.show": "none",
-  "latex-workshop.message.information.show": true,
-  "latex-workshop.message.log.show": true,
-
-  // LATEX — LANGUAGE OVERRIDES
-  "[bibtex]": { "editor.defaultFormatter": "James-Yu.latex-workshop" },
-  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[latex]": {
-    "editor.defaultFormatter": "James-Yu.latex-workshop",
-    "editor.formatOnSave": false,
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2
-  },
-
-  // LATEX — LATEX UTILITIES
   "latex-utilities.formattedPaste.maxLineLength": 100,
   "latex-utilities.formattedPaste.useAsDefault": true,
   "latex-utilities.liveReformat.enabled": true,
@@ -476,7 +402,7 @@
       "body": "$1 $2",
       "description": "whitespace before operators",
       "mode": "maths",
-      "prefix": "([^ &\\\\\\+\\-=<>\\|!~@])([\\+\\-=<>])$",
+      "prefix": "([^ \u0026\\\\\\+\\-=\u003c\u003e\\|!~@])([\\+\\-=\u003c\u003e])$",
       "priority": -1,
       "triggerWhenComplete": true
     },
@@ -484,7 +410,7 @@
       "body": "$1 $2",
       "description": "whitespace after operators",
       "mode": "maths",
-      "prefix": "([\\+\\-=<>])([^ &\\\\\\+\\-=<>\\|!~])$",
+      "prefix": "([\\+\\-=\u003c\u003e])([^ \u0026\\\\\\+\\-=\u003c\u003e\\|!~])$",
       "priority": -1,
       "triggerWhenComplete": true
     },
@@ -499,14 +425,14 @@
       "body": "\\implies ",
       "description": "⇒",
       "mode": "maths",
-      "prefix": "=>$",
+      "prefix": "=\u003e$",
       "triggerWhenComplete": true
     },
     {
       "body": "\\impliedby ",
       "description": "implied by",
       "mode": "maths",
-      "prefix": "=<$",
+      "prefix": "=\u003c$",
       "triggerWhenComplete": true
     },
     {
@@ -582,7 +508,7 @@
       "triggerWhenComplete": true
     },
     {
-      "body": "&= ",
+      "body": "\u0026= ",
       "description": "aligned equal",
       "mode": "maths",
       "prefix": "==$",
@@ -607,28 +533,28 @@
       "body": " \\geq ",
       "description": "≥",
       "mode": "maths",
-      "prefix": " ?>=$",
+      "prefix": " ?\u003e=$",
       "triggerWhenComplete": true
     },
     {
       "body": " \\leq ",
       "description": "≤",
       "mode": "maths",
-      "prefix": " ?<=$",
+      "prefix": " ?\u003c=$",
       "triggerWhenComplete": true
     },
     {
       "body": " \\gg ",
       "description": "≫",
       "mode": "maths",
-      "prefix": " ?>>$",
+      "prefix": " ?\u003e\u003e$",
       "triggerWhenComplete": true
     },
     {
       "body": " \\ll ",
       "description": "≪",
       "mode": "maths",
-      "prefix": " ?<<$",
+      "prefix": " ?\u003c\u003c$",
       "triggerWhenComplete": true
     },
     {
@@ -649,14 +575,14 @@
       "body": "$1\\to ",
       "description": "→",
       "mode": "maths",
-      "prefix": "(^|[^\\\\]\\b|[ ,\\)\\]\\}]\\w*)(to|->)$",
+      "prefix": "(^|[^\\\\]\\b|[ ,\\)\\]\\}]\\w*)(to|-\u003e)$",
       "triggerWhenComplete": true
     },
     {
       "body": " \\mapsto ",
       "description": "↦",
       "mode": "maths",
-      "prefix": " ?(?:\\|->|!>)$",
+      "prefix": " ?(?:\\|-\u003e|!\u003e)$",
       "priority": 1.1,
       "triggerWhenComplete": true
     },
@@ -895,7 +821,7 @@
       "body": "\\diamond ",
       "description": "⋄",
       "mode": "maths",
-      "prefix": "< ?>$",
+      "prefix": "\u003c ?\u003e$",
       "triggerWhenComplete": true
     },
     {
@@ -938,9 +864,131 @@
     }
   ],
 
-  // LATEX — PREVIEW EXT
+  // ===================================================================
+  // LATEX WORKSHOP
+  // ===================================================================
+  "latex-workshop.bibtex-fields.sort.enabled": true,
+  "latex-workshop.bibtex-format.sort.enabled": true,
+  "latex-workshop.bibtex-format.tab": "2",
+  "latex-workshop.bibtex-format.trailingComma": true,
+  "latex-workshop.formatting.latex": "latexindent",
+  "latex-workshop.formatting.latexindent.args": [
+    "-w",
+    "-s",
+    "-m",
+    "-y=backupExtension:\u0027\u0027;defaultIndent:\u0027  \u0027;preserveBlankLines:2",
+    "--overwriteIfDifferent",
+    "--outputdir=/dev/null"
+  ],
+  "latex-workshop.formatting.latexindent.path": "latexindent",
+  "latex-workshop.intellisense.bibtexJSON.replace": {},
+  "latex-workshop.intellisense.package.unusual": true,
+  "latex-workshop.intellisense.subsuperscript.enabled": true,
+  "latex-workshop.intellisense.unimathsymbols.enabled": true,
+  "latex-workshop.intellisense.update.aggressive.enabled": true,
+  "latex-workshop.latex.autoBuild.interval": 5000,
+  "latex-workshop.latex.autoBuild.run": "never",
+  "latex-workshop.latex.autoClean.run": "never",
+  "latex-workshop.latex.auxDir": "build",
+  "latex-workshop.latex.build.clearLog.everyRecipeStep.enabled": false,
+  "latex-workshop.latex.build.forceRecipeUsage": true,
+  "latex-workshop.latex.build.rootfileInStatus": true,
+  "latex-workshop.latex.clean.subfolder.enabled": true,
+  "latex-workshop.latex.outDir": "out",
+  "latex-workshop.latex.recipe.default": "lastUsed",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "BUILD-WIN",
+      "tools": "latexmk-win"
+    },
+    {
+      "name": "BUILD-WSL",
+      "tools": "latexmk-wsl"
+    },
+    {
+      "name": "AUTO (latexmk-auto)",
+      "tools": "latexmk-auto"
+    },
+    {
+      "name": "ON-THE-FLY",
+      "tools": "texliveonfly"
+    }
+  ],
+  "latex-workshop.latex.rootFile.doNotPrompt": true,
+  "latex-workshop.latex.rootFile.useSubFile": true,
+  "latex-workshop.latex.tools": [
+    {
+      "args": [
+        "-lualatex",
+        "-outdir=out",
+        "-auxdir=build",
+        "-f",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-shell-escape",
+        "%DOC%"
+      ],
+      "command": "tools/latexmk-universal.sh",
+      "name": "latexmk-wsl"
+    },
+    {
+      "args": [
+        "-lualatex",
+        "-outdir=out",
+        "-auxdir=build",
+        "-f",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-shell-escape",
+        "%DOC%"
+      ],
+      "command": "latexmk",
+      "name": "latexmk-win"
+    },
+    {
+      "args": "%DOC%",
+      "command": "/usr/local/texlive/2025/bin/aarch64-linux/latexmk-auto",
+      "name": "latexmk-auto"
+    },
+    {
+      "args": "%DOC%",
+      "command": "/usr/local/texlive/2025/bin/aarch64-linux/texliveonfly",
+      "name": "texliveonfly"
+    }
+  ],
+  "latex-workshop.latex.watch.pdf.delay": 1000,
+  "latex-workshop.latex.watch.usePolling": true,
+  "latex-workshop.linting.chktex.convertOutput.column.chktexrcTabSize": 4,
+  "latex-workshop.linting.run": "onType",
+  "latex-workshop.message.badbox.show": "none",
+  "latex-workshop.message.information.show": true,
+  "latex-workshop.message.log.show": true,
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.texmagic.enabled": true,
+  "latex-workshop.view.outline.sync.viewer": true,
+  "latex-workshop.view.pdf.internal.synctex.keybinding": "ctrl-click",
+  "latex-workshop.view.pdf.reload.transition": "none",
+  "latex-workshop.view.pdf.sidebar.open": "off",
+  "latex-workshop.view.pdf.sidebar.view": "outline",
+  "latex-workshop.view.pdf.viewer": "tab",
+
+  // ===================================================================
+  // LATEX PREVIEW
+  // ===================================================================
   "latexPreview.latexFontDir": "C:\\\\Users\\\\vic-l\\\\AppData\\\\Local\\\\Programs\\\\MiKTeX\\\\fonts",
   "latexPreview.pageSize": "US Letter",
+
+  // ===================================================================
+  // MARKDOWN PREVIEW ENHANCED
+  // ===================================================================
+  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+  "markdown-preview-enhanced.enableCriticMarkupSyntax": true,
+  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+  "markdown-preview-enhanced.enableHTML5Embed": true,
+  "markdown-preview-enhanced.enableTypographer": true,
+  "markdown-preview-enhanced.latexEngine": "lualatex",
 
   // ===================================================================
   // MARKDOWN
@@ -950,15 +998,37 @@
   "markdown.extension.italic.indicator": "_",
   "markdown.extension.toc.orderedList": true,
   "markdown.preview.breaks": true,
-  "markdown.preview.fontFamily": "'Fira Sans',-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
+  "markdown.preview.fontFamily": "\u0027Fira Sans\u0027,-apple-system, BlinkMacSystemFont, \u0027Segoe WPC\u0027, \u0027Segoe UI\u0027, system-ui, \u0027Ubuntu\u0027, \u0027Droid Sans\u0027, sans-serif",
   "markdown.preview.lineHeight": 1.2,
-  "markdownPreviewEnhanced.previewTheme": "one-dark", // harmless alias if extension installed
-  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
-  "markdown-preview-enhanced.enableCriticMarkupSyntax": true,
-  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
-  "markdown-preview-enhanced.enableHTML5Embed": true,
-  "markdown-preview-enhanced.enableTypographer": true,
-  "markdown-preview-enhanced.latexEngine": "lualatex",
+
+  // ===================================================================
+  // MARKDOWN PREVIEW ENHANCED (LEGACY)
+  // ===================================================================
+  "markdownPreviewEnhanced.previewTheme": "one-dark",
+
+  // ===================================================================
+  // MERGE CONFLICT
+  // ===================================================================
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+
+  // ===================================================================
+  // NOTEBOOKS
+  // ===================================================================
+  "notebook.defaultFormatter": "esbenp.prettier-vscode",
+  "notebook.formatOnCellExecution": true,
+  "notebook.formatOnSave.enabled": true,
+  "notebook.output.wordWrap": true,
+
+  // ===================================================================
+  // NPM
+  // ===================================================================
+  "npm.fetchOnlinePackageInfo": false,
+  "npm.runSilent": true,
+
+  // ===================================================================
+  // PASTE IMAGE
+  // ===================================================================
+  "pasteImage.basePath": "${projectRoot}/Images",
 
   // ===================================================================
   // PATH INTELLISENSE
@@ -984,13 +1054,14 @@
   "powershell.codeFormatting.trimWhitespaceAroundPipe": true,
   "powershell.codeFormatting.useCorrectCasing": true,
   "powershell.codeFormatting.whitespaceBetweenParameters": true,
+  "powershell.integratedConsole.startLocation": "Editor",
   "powershell.promptToUpdatePowerShell": false,
   "powershell.startAsLoginShell.linux": true,
 
   // ===================================================================
-  // PRETTIER — GLOBAL DEFAULT
+  // PRETTIER
   // ===================================================================
-  "prettier.endOfLine": "lf", // match files.eol
+  "prettier.endOfLine": "lf",
   "prettier.printWidth": 100,
   "prettier.proseWrap": "always",
   "prettier.singleAttributePerLine": true,
@@ -1005,10 +1076,27 @@
   "python.analysis.autoFormatStrings": true,
 
   // ===================================================================
-  // SCM / MERGE
+  // RUN IN POWERSHELL
   // ===================================================================
-  "merge-conflict.autoNavigateNextConflict.enabled": true,
+  "runInPowerShell.PowershellCoreLocation": "\"C: \\\\ProgramFiles\\\\PowerShell\\\\7\\\\pwsh.exe\"",
+
+  // ===================================================================
+  // SCM
+  // ===================================================================
   "scm.inputFontFamily": "editor",
+
+  // ===================================================================
+  // SEARCH
+  // ===================================================================
+  "search.exclude": {
+    "**/.git/**": true,
+    "**/.texlive202*/**": true,
+    "**/build/**": true,
+    "**/node_modules/**": true,
+    "**/out/**": true
+  },
+  "search.followSymlinks": false,
+  "search.useIgnoreFiles": true,
 
   // ===================================================================
   // SECURITY
@@ -1016,73 +1104,77 @@
   "security.workspace.trust.untrustedFiles": "open",
 
   // ===================================================================
+  // TELEMETRY
+  // ===================================================================
+  "telemetry.telemetryLevel": "off",
+
+  // ===================================================================
   // TERMINAL
   // ===================================================================
-  "runInPowerShell.PowershellCoreLocation": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\"",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "terminal.integrated.fontFamily": "'Fira Code'",
+  "terminal.integrated.fontFamily": "\u0027Fira Code\u0027",
   "terminal.integrated.fontLigatures.enabled": true,
   "terminal.integrated.fontLigatures.fallbackLigatures": [
-    "<--",
-    "<---",
-    "<<-",
-    "<-",
-    "->",
-    "->>",
-    "-->",
-    "--->",
-    "<==",
-    "<===",
-    "<<=",
-    "<=",
-    "=>",
-    "=>>",
-    "==>",
-    "===>",
-    ">=",
-    ">>=",
-    "<->",
-    "<-->",
-    "<--->",
-    "<---->",
-    "<=>",
-    "<==>",
-    "<===>",
-    "<====>",
+    "\u003c--",
+    "\u003c---",
+    "\u003c\u003c-",
+    "\u003c-",
+    "-\u003e",
+    "-\u003e\u003e",
+    "--\u003e",
+    "---\u003e",
+    "\u003c==",
+    "\u003c===",
+    "\u003c\u003c=",
+    "\u003c=",
+    "=\u003e",
+    "=\u003e\u003e",
+    "==\u003e",
+    "===\u003e",
+    "\u003e=",
+    "\u003e\u003e=",
+    "\u003c-\u003e",
+    "\u003c--\u003e",
+    "\u003c---\u003e",
+    "\u003c----\u003e",
+    "\u003c=\u003e",
+    "\u003c==\u003e",
+    "\u003c===\u003e",
+    "\u003c====\u003e",
     "::",
     ":::",
-    "<~~",
-    "</",
-    "</>",
-    "/>",
-    "~~>",
+    "\u003c~~",
+    "\u003c/",
+    "\u003c/\u003e",
+    "/\u003e",
+    "~~\u003e",
     "==",
     "!=",
     "/=",
     "~=",
-    "<>",
+    "\u003c\u003e",
     "===",
     "!==",
     "!===",
-    "<:",
+    "\u003c:",
     ":=",
     "*=",
     "*+",
-    "<*",
-    "<*>",
-    "*>",
-    "<|",
-    "<|>",
-    "|>",
+    "\u003c*",
+    "\u003c*\u003e",
+    "*\u003e",
+    "\u003c|",
+    "\u003c|\u003e",
+    "|\u003e",
     "+*",
     "=*",
     "=:",
-    ":>",
+    ":\u003e",
     "/*",
     "*/",
     "+++",
-    "<!--",
-    "<!---"
+    "\u003c!--",
+    "\u003c!---"
   ],
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.fontWeight": "normal",
@@ -1092,31 +1184,45 @@
   "terminal.integrated.tabStopWidth": 4,
   "terminal.integrated.tabs.showActions": "singleTerminal",
   "terminal.integrated.tabs.showActiveTerminal": "singleTerminal",
-  "terminal.integrated.windowsEnableConpty": true, // better perf if stable on your box
+  "terminal.integrated.windowsEnableConpty": true,
 
   // ===================================================================
-  // TELEMETRY & UPDATES
+  // TYPESCRIPT
   // ===================================================================
-  "extensions.autoCheckUpdates": true,
-  "extensions.autoUpdate": true,
-  "telemetry.telemetryLevel": "off",
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.implementationsCodeLens.showOnInterfaceMethods": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.referencesCodeLens.showOnAllFunctions": true,
+
+  // ===================================================================
+  // UPDATES
+  // ===================================================================
   "update.enableWindowsBackgroundUpdates": true,
   "update.mode": "default",
   "update.showReleaseNotes": false,
 
   // ===================================================================
-  // THEMING / UI
+  // EDGE DEVTOOLS
+  // ===================================================================
+  "vscode-edge-devtools.useHttps": true,
+  "vscode-edge-devtools.webhint": false,
+  "vscode-edge-devtools.webhintInstallNotification": true,
+
+  // ===================================================================
+  // VSICONS
   // ===================================================================
   "vsicons.dontShowNewVersionMessage": true,
   "vsicons.projectDetection.autoReload": true,
+
+  // ===================================================================
+  // WINDOW
+  // ===================================================================
   "window.newWindowProfile": "Default",
   "window.systemColorTheme": "dark",
-  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.editor.wrapTabs": true,
-  "workbench.enableExperiments": true,
-  "workbench.iconTheme": "office-material-icon-theme",
-  "workbench.settings.enableNaturalLanguageSearch": false,
-  "workbench.tree.indent": 4,
+
+  // ===================================================================
+  // WORKBENCH
+  // ===================================================================
   "workbench.colorCustomizations": {
     "activityBar.background": "#000000",
     "activityBar.foreground": "#E5E9F0",
@@ -1165,29 +1271,21 @@
     "titleBar.activeForeground": "#E5E9F0"
   },
   "workbench.colorTheme": "Default Dark Modern",
-
-  // ===================================================================
-  // VSCODE-EDGE-DEVTOOLS
-  // ===================================================================
-  "vscode-edge-devtools.useHttps": true,
-  "vscode-edge-devtools.webhint": false,
-  "vscode-edge-devtools.webhintInstallNotification": true,
-
-  // ===================================================================
-  // WORD/NOTEBOOK/CHAT
-  // ===================================================================
-  "notebook.defaultFormatter": "esbenp.prettier-vscode",
-  "notebook.formatOnCellExecution": true,
-  "notebook.formatOnSave.enabled": true,
-  "notebook.output.wordWrap": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.wrapTabs": true,
   "workbench.editorAssociations": {
     "*.copilotmd": "vscode.markdown.preview.editor",
     "*.pdf": "latex-workshop-pdf-hook"
   },
-  "explorer.confirmDragAndDrop": false,
-  "pasteImage.basePath": "${projectRoot}/Images",
-  "git.allowNoVerifyCommit": true,
-  "powershell.integratedConsole.startLocation": "Editor",
-  "git.useEditorAsCommittingEditor": false,
-  "git.confirmSync": false
+  "workbench.enableExperiments": true,
+  "workbench.iconTheme": "office-material-icon-theme",
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.tree.indent": 4,
+
+  // ===================================================================
+  // YAML
+  // ===================================================================
+  "yaml.format.printWidth": 100,
+  "yaml.format.proseWrap": "always",
+  "yaml.keyOrdering": true
 }
