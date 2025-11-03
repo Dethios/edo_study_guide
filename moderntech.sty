@@ -31,16 +31,9 @@
 \DeclareBoolOption[true]{tblrpreset}
 \DeclareBoolOption[true]{tabularnums}
 \DeclareBoolOption[true]{smallcapsheads}
-\DeclareBoolOption[true]{capslabel}
-\DeclareBoolOption[true]{capslabelseffective}
+\DeclareBoolOption[false]{capslabelseffective}
 \DeclareBoolOption[false]{autoloadhyperref}
 \ProcessKeyvalOptions*
-
-% Normalize caption-label option aliases (capslabel implies capslabelseffective)
-\newif\ifmoderntech@capslabelseffective
-\ifmoderntech@capslabelseffective\else
-  \ifmoderntech@capslabel\moderntech@capslabelseffectivetrue\fi
-\fi
 
 % =============================
 % Core packages
@@ -266,9 +259,9 @@
 % =============================
 \ifmoderntech@tabularnums
   \AtBeginDocument{%
-    \SetTblrDefault{cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}}}%
-    \SetTblrDefault[longtblr]{cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}}}%
-    \SetTblrDefault[talltblr]{cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}}}%
+    \SetTblrDefault{theme=moderntech,cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}}}%
+    \SetTblrDefault[longtblr]{theme=moderntech,cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}}}%
+    \SetTblrDefault[talltblr]{theme=moderntech,cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}}}%
   }%
 \fi
 
@@ -287,21 +280,41 @@
 
 \NewTblrTheme{moderntech}{
   \SetTblrStyle{caption-tag}{font=\sffamily\bfseries\color{AccentBlue}}
-  \SetTblrStyle{caption-text}{font=\small\itshape\color{BodyText}}
+  \SetTblrStyle{caption-text}{font=\small\scshape\color{BodyText}}
   \SetTblrStyle{firsthead}{font=\small\sffamily\bfseries}
   \SetTblrStyle{head}{font=\small\sffamily\bfseries}
   \SetTblrStyle{foot}{font=\small\sffamily\bfseries}
   \SetTblrInner{rowsep=2pt, colsep=2pt}
 }
 
+% % --- Tabularray caption templates (modern look) ---
+% % Assumes your palette/fonts like \color{Modern} etc. already defined.
+% \DeclareTblrTemplate{caption-tag}{modern}{%
+%   \bfseries\color{AccentBlue}\InsertTblrText{caption-name}~\InsertTblrCounter{table}%
+% }
+% \DeclareTblrTemplate{caption-sep}{modern}{.\enskip}
+% \DeclareTblrTemplate{caption-text}{modern}{%
+%   \small\color{BodyText}\InsertTblrText{caption}%
+% }
+% % Compose the final caption line:
+% \DeclareTblrTemplate{caption}{modern}{%
+%   \UseTblrTemplate{caption-tag}{modern}%
+%   \UseTblrTemplate{caption-sep}{modern}%
+%   \UseTblrTemplate{caption-text}{modern}%
+% }
+% % Activate as the default for tabularray tables:
+% \SetTblrTemplate{caption}{modern}
+
 \newcommand{\MTUseTblrPreset}{%
   \SetTblrDefault{
+    theme      = moderntech,
     column{1}  = {leftsep=0pt},
     column{Z}  = {rightsep=0pt},
     row{1}     = {font=\sffamily\bfseries\scshape\color{AccentBlue}},
     width      = \linewidth
   }%
   \SetTblrDefault[longtblr]{
+    theme      = moderntech,
     rowhead    = 1,
     column{1}  = {leftsep=0pt},
     column{Z}  = {rightsep=0pt},
@@ -309,6 +322,7 @@
     row{1}     = {font=\sffamily\bfseries\scshape\color{AccentBlue}}
   }%
   \SetTblrDefault[talltblr]{
+    theme      = moderntech,
     column{1}  = {leftsep=0pt},
     column{Z}  = {rightsep=0pt},
     width      = \linewidth,
@@ -318,7 +332,7 @@
 \ifmoderntech@tblrpreset
   \AtBeginDocument{\MTUseTblrPreset}
 \fi
-
+\UseTblrTheme{moderntech}
 \newenvironment{mtblr}[1][]{\begin{tblr}[theme=moderntech,cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}},column{1}={leftsep=0pt},column{Z}={rightsep=0pt},#1]}{\end{tblr}}
 \newenvironment{mlongtblr}[1][]{\begin{longtblr}[theme=moderntech,cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}},column{1}={leftsep=0pt},column{Z}={rightsep=0pt},#1]}{\end{longtblr}}
 \newenvironment{mtalltblr}[1][]{\begin{talltblr}[theme=moderntech,cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}},column{1}={leftsep=0pt},column{Z}={rightsep=0pt},#1]}{\end{talltblr}}
