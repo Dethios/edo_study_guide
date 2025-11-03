@@ -241,7 +241,7 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
-  "editor.fontFamily": "\u0027Fira Code\u0027, Consolas, \u0027Courier New\u0027, monospace",
+  "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 12,
   "editor.fontVariations": true,
@@ -251,7 +251,7 @@
   "editor.formatOnType": true,
   "editor.indentSize": "tabSize",
   "editor.inlineSuggest.enabled": true,
-  "editor.inlineSuggest.fontFamily": "\u0027Fira Code\u0027",
+  "editor.inlineSuggest.fontFamily": "'Fira Code'",
   "editor.inlineSuggest.showToolbar": "onHover",
   "editor.insertSpaces": true,
   "editor.linkedEditing": true,
@@ -876,7 +876,7 @@
     "-w",
     "-s",
     "-m",
-    "-y=backupExtension:\u0027\u0027;defaultIndent:\u0027  \u0027;preserveBlankLines:2",
+    "-y=backupExtension:'';defaultIndent:'  ';preserveBlankLines:2",
     "--overwriteIfDifferent",
     "--outputdir=/dev/null"
   ],
@@ -906,8 +906,8 @@
       "tools": "latexmk-wsl"
     },
     {
-      "name": "AUTO (latexmk-auto)",
-      "tools": "latexmk-auto"
+      "name": "AUTO",
+      "tools": "latexmk-pvc"
     },
     {
       "name": "ON-THE-FLY",
@@ -946,6 +946,22 @@
       ],
       "command": "latexmk",
       "name": "latexmk-win"
+    },
+    {
+      "args": [
+        "-lualatex",
+        "-outdir=out",
+        "-auxdir=build",
+        "-f",
+        "-pvc",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-shell-escape",
+        "%DOC%"
+      ],
+      "command": "latexmk",
+      "name": "latexmk-pvc"
     },
     {
       "args": "%DOC%",
@@ -998,7 +1014,7 @@
   "markdown.extension.italic.indicator": "_",
   "markdown.extension.toc.orderedList": true,
   "markdown.preview.breaks": true,
-  "markdown.preview.fontFamily": "\u0027Fira Sans\u0027,-apple-system, BlinkMacSystemFont, \u0027Segoe WPC\u0027, \u0027Segoe UI\u0027, system-ui, \u0027Ubuntu\u0027, \u0027Droid Sans\u0027, sans-serif",
+  "markdown.preview.fontFamily": "'Fira Sans',-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
   "markdown.preview.lineHeight": 1.2,
 
   // ===================================================================
@@ -1112,7 +1128,7 @@
   // TERMINAL
   // ===================================================================
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "terminal.integrated.fontFamily": "\u0027Fira Code\u0027",
+  "terminal.integrated.fontFamily": "'Fira Code'",
   "terminal.integrated.fontLigatures.enabled": true,
   "terminal.integrated.fontLigatures.fallbackLigatures": [
     "\u003c--",
