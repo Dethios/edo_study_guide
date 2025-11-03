@@ -287,23 +287,34 @@
   \SetTblrInner{rowsep=2pt, colsep=2pt}
 }
 
-% % --- Tabularray caption templates (modern look) ---
-% % Assumes your palette/fonts like \color{Modern} etc. already defined.
-% \DeclareTblrTemplate{caption-tag}{modern}{%
-%   \bfseries\color{AccentBlue}\InsertTblrText{caption-name}~\InsertTblrCounter{table}%
-% }
-% \DeclareTblrTemplate{caption-sep}{modern}{.\enskip}
-% \DeclareTblrTemplate{caption-text}{modern}{%
-%   \small\color{BodyText}\InsertTblrText{caption}%
-% }
-% % Compose the final caption line:
-% \DeclareTblrTemplate{caption}{modern}{%
-%   \UseTblrTemplate{caption-tag}{modern}%
-%   \UseTblrTemplate{caption-sep}{modern}%
-%   \UseTblrTemplate{caption-text}{modern}%
-% }
-% % Activate as the default for tabularray tables:
-% \SetTblrTemplate{caption}{modern}
+% --- Tabularray caption templates (modern look) ---
+% Assumes your palette/fonts like \color{Modern} etc. already defined.
+\DeclareTblrTemplate{caption-tag}{modern}{%
+  \bfseries\color{AccentBlue}\InsertTblrText{caption-name}~\InsertTblrCounter{table}%
+}
+\DeclareTblrTemplate{caption-sep}{modern}{.\enskip}
+\DeclareTblrTemplate{caption-text}{modern}{%
+  \scshape\small\color{BodyText}\InsertTblrText{caption}%
+}
+% Compose the final caption line:
+\DeclareTblrTemplate{caption}{modern}{%
+  \UseTblrTemplate{caption-tag}{modern}%
+  \UseTblrTemplate{caption-sep}{modern}%
+  \UseTblrTemplate{caption-text}{modern}%
+}
+% Activate as the default for tabularray tables:
+\SetTblrTemplate{caption}{modern}
+
+% Global look for ALL tables (incl. tabularray/talltblr)
+\captionsetup[table]{
+  font={small,\scshape\color{BodyText}},            % caption text: small caps, BodyText color
+  labelfont={bf,\sffamily\color{AccentBlue}},       % "Table 1:" / "Figure 1:" in bold AccentBlue
+  labelsep=period,                                  % "Table 1. Text"
+  justification=RaggedRight,                        % left align (requires ragged2e)
+  singlelinecheck=false,                            % don't center one-liners
+  skip=6pt,                                         % space between caption and body
+  position=above                                    % place caption above for tables
+}
 
 \newcommand{\MTUseTblrPreset}{%
   \SetTblrDefault{
@@ -332,7 +343,7 @@
 \ifmoderntech@tblrpreset
   \AtBeginDocument{\MTUseTblrPreset}
 \fi
-\UseTblrTheme{moderntech}
+
 \newenvironment{mtblr}[1][]{\begin{tblr}[theme=moderntech,cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}},column{1}={leftsep=0pt},column{Z}={rightsep=0pt},#1]}{\end{tblr}}
 \newenvironment{mlongtblr}[1][]{\begin{longtblr}[theme=moderntech,cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}},column{1}={leftsep=0pt},column{Z}={rightsep=0pt},#1]}{\end{longtblr}}
 \newenvironment{mtalltblr}[1][]{\begin{talltblr}[theme=moderntech,cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}},column{1}={leftsep=0pt},column{Z}={rightsep=0pt},#1]}{\end{talltblr}}
