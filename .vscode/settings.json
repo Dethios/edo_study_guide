@@ -288,11 +288,6 @@
   },
   "search.followSymlinks": false,
   "search.useIgnoreFiles": true,
-
-  // ===================================================================
-  // GIT
-  // ===================================================================
-  "git.allowNoVerifyCommit": true,
   "git.autofetch": true, // reliable & fast
   "git.autofetchPeriod": 180, // seconds
   "git.autoStash": true,
@@ -1191,5 +1186,8 @@
   },
   "explorer.confirmDragAndDrop": false,
   "pasteImage.basePath": "${projectRoot}/Images",
-  "cSpell.words": ["auxdir", "latexindent", "latexmk", "nonstopmode", "outputdir", "synctex"]
+  "git.allowNoVerifyCommit": true,
+  "powershell.integratedConsole.startLocation": "Editor",
+  "git.useEditorAsCommittingEditor": false,
+  "git.confirmSync": false
 }
