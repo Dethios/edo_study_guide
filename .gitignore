@@ -86,6 +86,7 @@ indent.log
 .DS_Store
 Thumbs.db
 *:Zone.Identifier
+.ini
 
 # ======================
 # Secrets / env
