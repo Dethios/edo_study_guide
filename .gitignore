@@ -25,6 +25,7 @@ build/
 *.dvi
 *.xdv
 *.ps
+*-ERROR
 
 # BibLaTeX / Biber
 *.bcf
@@ -86,7 +87,7 @@ indent.log
 .DS_Store
 Thumbs.db
 *:Zone.Identifier
-.ini
+*.ini
 
 # ======================
 # Secrets / env
