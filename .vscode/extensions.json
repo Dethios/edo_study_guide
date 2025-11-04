@@ -26,6 +26,11 @@
     "ms-vscode-remote.remote-ssh",
     "streetsidesoftware.code-spell-checker",
     "aaron-bond.better-comments",
-    "ibm.output-colorizer"
+    "ibm.output-colorizer",
+    "ms-vscode-remote.remote-wsl",
+    "visualstudioexptteam.vscodeintellicode",
+    "jasonlhy.hungry-delete",
+    "ms-vscode.sublime-keybindings",
+    "tal7aouy.indent-colorizer"
   ]
 }

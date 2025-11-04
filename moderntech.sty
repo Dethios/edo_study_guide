@@ -57,19 +57,11 @@
 \RequirePackage{marginnote}
 \RequirePackage{ifoddpage}
 
-% Class detection
-\newif\ifmoderntech@iskoma
-\@ifclassloaded{scrbook}{\moderntech@iskomatrue}{}
-\@ifclassloaded{scrreprt}{\moderntech@iskomatrue}{}
-\@ifclassloaded{scrartcl}{\moderntech@iskomatrue}{}
-
-% Header/footer & headings helpers by class
-\ifmoderntech@iskoma
-  \RequirePackage{scrlayer-scrpage}
-\else
-  \RequirePackage{fancyhdr}
-  \RequirePackage{titlesec}
-\fi
+% Class requirement (scrbook only)
+\@ifclassloaded{scrbook}{}{%
+  \PackageError{moderntech}{moderntech.sty targets the scrbook class}{Load the scrbook class before this package.}%
+}
+\RequirePackage{scrlayer-scrpage}
 
 % =============================
 % Color palette (WCAG-conscious)
@@ -126,11 +118,7 @@
 \newcommand{\SC}[1]{\textls[40]{\textsc{#1}}}
 \newcommand{\Caps}[1]{\textls[60]{\MakeUppercase{#1}}}
 \newcommand{\moderntechSectionNumbersSmallCaps}{%
-  \ifmoderntech@iskoma
-    \addtokomafont{section}{\scshape}
-  \else
-    % standard classes: handled via titlesec if needed
-  \fi
+  \addtokomafont{section}{\scshape}%
 }
 
 % =============================
@@ -151,70 +139,45 @@
 % =============================
 % Headings
 % =============================
-\ifmoderntech@iskoma
-  \addtokomafont{disposition}{\sffamily\bfseries\color{AccentBlue}}
-  \setkomafont{chapter}{\sffamily\bfseries\color{AccentBlue}\Huge}
-  \setkomafont{section}{\sffamily\bfseries\Large}
-  \setkomafont{subsection}{\sffamily\bfseries\large}
-  \setkomafont{subsubsection}{\sffamily\bfseries\normalsize}
-  \RedeclareSectionCommand[beforeskip=2.5ex plus .2ex minus .1ex, afterskip=1.0ex plus .2ex]{section}
-  \RedeclareSectionCommand[beforeskip=2.0ex plus .2ex minus .1ex, afterskip=0.8ex plus .2ex]{subsection}
-  \RedeclareSectionCommand[beforeskip=1.5ex plus .2ex minus .1ex, afterskip=0.5ex plus .2ex]{subsubsection}
-  \setkomafont{caption}{\small\itshape\color{BodyText}}
-  \setkomafont{captionlabel}{\sffamily\bfseries\color{AccentBlue}}
-\else
-  \titleformat{\section}{\color{AccentBlue}\sffamily\bfseries\Large}{\thesection}{0.6em}{}
-  \titlespacing*{\section}{0pt}{2.5ex plus .2ex}{1.0ex plus .2ex}
-  \titleformat{\subsection}{\color{AccentBlue}\sffamily\bfseries\large}{\thesubsection}{0.6em}{}
-  \titlespacing*{\subsection}{0pt}{2.0ex plus .2ex}{0.8ex plus .2ex}
-  \titleformat{\subsubsection}{\sffamily\bfseries\normalsize}{\thesubsubsection}{0.6em}{}
-  \titlespacing*{\subsubsection}{0pt}{1.5ex plus .2ex}{0.5ex plus .2ex}
-  \captionsetup{font={small,it}, labelfont={bf}}
-\fi
-\captionsetup{skip=6pt}
+\addtokomafont{disposition}{\sffamily\bfseries\color{AccentBlue}}
+\setkomafont{chapter}{\sffamily\bfseries\color{AccentBlue}\Huge}
+\setkomafont{section}{\sffamily\bfseries\Large}
+\setkomafont{subsection}{\sffamily\bfseries\large}
+\setkomafont{subsubsection}{\sffamily\bfseries\normalsize}
+\RedeclareSectionCommand[beforeskip=2.5ex plus .2ex minus .1ex, afterskip=1.0ex plus .2ex]{section}
+\RedeclareSectionCommand[beforeskip=2.0ex plus .2ex minus .1ex, afterskip=0.8ex plus .2ex]{subsection}
+\RedeclareSectionCommand[beforeskip=1.5ex plus .2ex minus .1ex, afterskip=0.5ex plus .2ex]{subsubsection}
+\setkomafont{caption}{\normalfont\sffamily\small\scshape\color{BodyText}}
+\setkomafont{captionlabel}{\normalfont\sffamily\scshape\color{AccentBlue}}
+\captionsetup{
+  skip      = 6pt,
+  labelfont = {normalfont,sf,sc,color=AccentBlue},
+  textfont  = {normalfont,sf,sc,small,color=BodyText},
+  justification = RaggedRight,
+  singlelinecheck = true
+}
+\captionsetup[table]{labelfont={normalfont,sf,sc,color=AccentBlue},textfont={normalfont,sf,sc,small,color=BodyText}}
+\captionsetup[tblr]{labelfont={normalfont,sf,sc,color=AccentBlue},textfont={normalfont,sf,sc,small,color=BodyText}}
+\captionsetup[talltblr]{labelfont={normalfont,sf,sc,color=AccentBlue},textfont={normalfont,sf,sc,small,color=BodyText}}
+\captionsetup[longtblr]{labelfont={normalfont,sf,sc,color=AccentBlue},textfont={normalfont,sf,sc,small,color=BodyText}}
 
 % ---- Optional small caps for lower heads ----
 \ifmoderntech@smallcapsheads
-  \ifmoderntech@iskoma
-    \addtokomafont{subsubsection}{\scshape}
-    \addtokomafont{paragraph}{\scshape}
-    \addtokomafont{subparagraph}{\scshape}
-  \else
-    \titleformat{\subsubsection}{\sffamily\bfseries\scshape\normalsize}{\thesubsubsection}{0.6em}{}
-    \titlespacing*{\subsubsection}{0pt}{1.5ex plus .2ex}{0.5ex plus .2ex}
-    \titleformat{\paragraph}{\sffamily\bfseries\scshape\normalsize}{}{0pt}{}
-    \titlespacing*{\paragraph}{0pt}{1.2ex plus .2ex}{0.3ex plus .2ex}
-    \titleformat{\subparagraph}{\sffamily\bfseries\scshape\normalsize}{}{0pt}{}
-    \titlespacing*{\subparagraph}{0pt}{1.0ex plus .2ex}{0.2ex plus .2ex}
-  \fi
+  \addtokomafont{subsubsection}{\scshape}
+  \addtokomafont{paragraph}{\scshape}
+  \addtokomafont{subparagraph}{\scshape}
 \fi
 
 % =============================
 % TOC styling (modern by default)
 % =============================
 
-% Ensure TOC backend for standard classes
-\ifmoderntech@iskoma\else
-  \IfFileExists{tocloft.sty}{\RequirePackage{tocloft}}{%
-    \PackageWarning{moderntech}{Package 'tocloft' not found; TOC styling for standard classes will be limited.}%
-  }%
-\fi
-
 \newcommand\moderntechsetupTOC{%
-  \ifmoderntech@iskoma
-    \addtokomafont{section}{\sffamily\bfseries\color{AccentBlue}}%
-    \addtokomafont{subsection}{\sffamily\bfseries\color{AccentBlue}}%
-    \addtokomafont{subsubsection}{\sffamily\itshape\color{BodyText}}%
-    \setkomafont{pagenumber}{\sffamily\bfseries\color{AccentBlue}}%
-    \KOMAoptions{toc=graduated}%
-  \else
-    \@ifpackageloaded{tocloft}{%
-      \renewcommand{\cftsecfont}{\sffamily\bfseries\color{AccentBlue}}%
-      \renewcommand{\cftsubsecfont}{\sffamily\bfseries\color{AccentBlue}}%
-      \renewcommand{\cftsecpagefont}{\sffamily\bfseries\color{AccentBlue}}%
-      \renewcommand{\cftdotsep}{1}%
-    }{}%
-  \fi
+  \addtokomafont{section}{\sffamily\bfseries\color{AccentBlue}}%
+  \addtokomafont{subsection}{\sffamily\bfseries\color{AccentBlue}}%
+  \addtokomafont{subsubsection}{\sffamily\itshape\color{BodyText}}%
+  \setkomafont{pagenumber}{\sffamily\bfseries\color{AccentBlue}}%
+  \KOMAoptions{toc=graduated}%
 }
 \AtBeginDocument{\moderntechsetupTOC}
 
@@ -235,19 +198,11 @@
 % =============================
 % Headers / Footers
 % =============================
-\ifmoderntech@iskoma
-  \clearpairofpagestyles
-  \automark{section}
-  \ihead{\sffamily\itshape\color{gray}\leftmark}
-  \ohead{\sffamily\color{gray}\thepage}
-  \pagestyle{scrheadings}
-\else
-  \pagestyle{fancy}
-  \fancyhf{}
-  \fancyhead[LE,RO]{\sffamily\color{gray}\thepage}
-  \fancyhead[LO,RE]{\sffamily\itshape\color{gray}\nouppercase{\leftmark}}
-  \renewcommand{\headrulewidth}{0pt}
-\fi
+\clearpairofpagestyles
+\automark{section}
+\ihead{\sffamily\itshape\color{gray}\leftmark}
+\ohead{\sffamily\color{gray}\thepage}
+\pagestyle{scrheadings}
 
 % =============================
 % Lists
@@ -259,9 +214,9 @@
 % =============================
 \ifmoderntech@tabularnums
   \AtBeginDocument{%
-    \SetTblrDefault{theme=moderntech,cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}}}%
-    \SetTblrDefault[longtblr]{theme=moderntech,cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}}}%
-    \SetTblrDefault[talltblr]{theme=moderntech,cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}}}%
+    \SetTblrDefault{cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}}}%
+    \SetTblrDefault[longtblr]{cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}}}%
+    \SetTblrDefault[talltblr]{cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}}}%
   }%
 \fi
 
@@ -278,32 +233,12 @@
 \RequirePackage{array}
 \newcolumntype{N}[1]{>{\addfontfeatures{Numbers={Monospaced,Lining}}}#1}
 
-\NewTblrTheme{moderntech}{
-  \SetTblrStyle{caption-tag}{font=\sffamily\bfseries\color{AccentBlue}}
-  \SetTblrStyle{caption-text}{font=\small\scshape\color{BodyText}}
-  \SetTblrStyle{firsthead}{font=\small\sffamily\bfseries}
-  \SetTblrStyle{head}{font=\small\sffamily\bfseries}
-  \SetTblrStyle{foot}{font=\small\sffamily\bfseries}
-  \SetTblrInner{rowsep=2pt, colsep=2pt}
-}
-
-% --- Tabularray caption templates (modern look) ---
-% Assumes your palette/fonts like \color{Modern} etc. already defined.
-\DeclareTblrTemplate{caption-tag}{modern}{%
-  \bfseries\color{AccentBlue}\InsertTblrText{caption-name}~\InsertTblrCounter{table}%
-}
-\DeclareTblrTemplate{caption-sep}{modern}{.\enskip}
-\DeclareTblrTemplate{caption-text}{modern}{%
-  \scshape\small\color{BodyText}\InsertTblrText{caption}%
-}
-% Compose the final caption line:
-\DeclareTblrTemplate{caption}{modern}{%
-  \UseTblrTemplate{caption-tag}{modern}%
-  \UseTblrTemplate{caption-sep}{modern}%
-  \UseTblrTemplate{caption-text}{modern}%
-}
-% Activate as the default for tabularray tables:
-\SetTblrTemplate{caption}{modern}
+\SetTblrStyle{caption-tag}{font=\normalfont\sffamily\scshape\bfseries\color{AccentBlue}}
+\SetTblrStyle{caption-text}{font=\normalfont\sffamily\small\scshape\color{BodyText}}
+\SetTblrStyle{firsthead}{font=\small\sffamily\bfseries}
+\SetTblrStyle{head}{font=\small\sffamily}
+\SetTblrStyle{foot}{font=\small\sffamily}
+\SetTblrInner{rowsep=2pt, colsep=2pt}
 
 % Global look for ALL tables (incl. tabularray/talltblr)
 % \captionsetup[table]{
@@ -318,14 +253,12 @@
 
 \newcommand{\MTUseTblrPreset}{%
   \SetTblrDefault{
-    theme      = moderntech,
     column{1}  = {leftsep=0pt},
     column{Z}  = {rightsep=0pt},
     row{1}     = {font=\sffamily\bfseries\scshape\color{AccentBlue}},
     width      = \linewidth
   }%
   \SetTblrDefault[longtblr]{
-    theme      = moderntech,
     rowhead    = 1,
     column{1}  = {leftsep=0pt},
     column{Z}  = {rightsep=0pt},
@@ -333,7 +266,6 @@
     row{1}     = {font=\sffamily\bfseries\scshape\color{AccentBlue}}
   }%
   \SetTblrDefault[talltblr]{
-    theme      = moderntech,
     column{1}  = {leftsep=0pt},
     column{Z}  = {rightsep=0pt},
     width      = \linewidth,
@@ -344,17 +276,13 @@
   \AtBeginDocument{\MTUseTblrPreset}
 \fi
 
-\newenvironment{mtblr}[1][]{\begin{tblr}[theme=moderntech,cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}},column{1}={leftsep=0pt},column{Z}={rightsep=0pt},#1]}{\end{tblr}}
-\newenvironment{mlongtblr}[1][]{\begin{longtblr}[theme=moderntech,cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}},column{1}={leftsep=0pt},column{Z}={rightsep=0pt},#1]}{\end{longtblr}}
-\newenvironment{mtalltblr}[1][]{\begin{talltblr}[theme=moderntech,cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}},column{1}={leftsep=0pt},column{Z}={rightsep=0pt},#1]}{\end{talltblr}}
+\newenvironment{mtblr}[1][]{\begin{tblr}[cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}},column{1}={leftsep=0pt},column{Z}={rightsep=0pt},#1]}{\end{tblr}}
+\newenvironment{mlongtblr}[1][]{\begin{longtblr}[cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}},column{1}={leftsep=0pt},column{Z}={rightsep=0pt},#1]}{\end{longtblr}}
+\newenvironment{mtalltblr}[1][]{\begin{talltblr}[cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}},column{1}={leftsep=0pt},column{Z}={rightsep=0pt},#1]}{\end{talltblr}}
 
 % --- Optional small-caps caption labels and bold SC table headers ---
 \ifmoderntech@capslabelseffective
-  \ifmoderntech@iskoma
-    \addtokomafont{captionlabel}{\scshape\color{AccentBlue}}
-  \else
-    \captionsetup{labelfont+={sc,sf}}
-  \fi
+  \addtokomafont{captionlabel}{\scshape\color{AccentBlue}}
   \SetTblrStyle{firsthead}{font=\sffamily\bfseries\scshape}
   \SetTblrStyle{head}{font=\sffamily\bfseries\scshape}
 \fi
@@ -441,11 +369,11 @@
 % =============================
 \ifmoderntech@floatieee
   \RequirePackage{float}
-  \floatplacement{table}{!htbp}
-  \floatplacement{figure}{!htbp}
-  \floatplacement{talltblr}{!htbp}
+  \floatplacement{table}{H}
+  \floatplacement{figure}{H}
+  \floatplacement{talltblr}{H}
   \providecommand{\dblfloatplacement}[2]{}%
-  \dblfloatplacement{figure}{!t}%
+  \dblfloatplacement{figure}{H}%
   \captionsetup[figure]{position=below}
   \captionsetup[table]{position=above}
 \fi

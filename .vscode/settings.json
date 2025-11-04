@@ -1,900 +1,242 @@
 {
   // ===================================================================
-  // C/C++
+  // THEME / COLORS / UI
   // ===================================================================
-  "C_Cpp.vcFormat.indent.accessSpecifiers": true,
-  "C_Cpp.vcFormat.indent.braces": true,
-  "C_Cpp.vcFormat.indent.caseContentsWhenBlock": true,
-  "C_Cpp.vcFormat.indent.caseLabels": true,
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "newLine",
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "newLine",
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "newLine",
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "newLine",
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "newLine",
-  "C_Cpp.vcFormat.newLine.beforeWhileInDoWhile": true,
-  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
-  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
-  "C_Cpp.vcFormat.space.beforeInitializerListOpenBrace": true,
-  "C_Cpp.vcFormat.space.beforeLambdaOpenParenthesis": true,
-  "C_Cpp.vcFormat.space.beforeOpenSquareBracket": true,
-  "C_Cpp.vcFormat.space.betweenEmptyBraces": true,
-  "C_Cpp.vcFormat.space.betweenEmptyLambdaBrackets": true,
-  "C_Cpp.vcFormat.space.betweenEmptyParameterListParentheses": true,
-  "C_Cpp.vcFormat.space.betweenEmptySquareBrackets": true,
-  "C_Cpp.vcFormat.space.insertAfterSemicolon": true,
-  "C_Cpp.vcFormat.space.withinCastParentheses": true,
-  "C_Cpp.vcFormat.space.withinControlFlowStatementParentheses": true,
-  "C_Cpp.vcFormat.space.withinExpressionParentheses": true,
-  "C_Cpp.vcFormat.space.withinLambdaBrackets": true,
-  "C_Cpp.vcFormat.space.withinParameterListParentheses": true,
-  "C_Cpp.vcFormat.space.withinSquareBrackets": true,
+  "workbench.colorTheme": "Abyss",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.wrapTabs": true,
+  "workbench.tree.indent": 4,
+  "workbench.enableExperiments": true,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+
+  "window.newWindowProfile": "Default",
+  "window.systemColorTheme": "dark",
+
+  // Custom OLED-optimized Nord-ish refresh (kept as you had it)
+  "workbench.colorCustomizations": {
+    "foreground": "#E5E9F0",
+    "focusBorder": "#8FB3D9",
+    "selection.background": "#2A3140",
+
+    "editor.background": "#000000",
+    "editor.foreground": "#E5E9F0",
+    "editor.lineHighlightBackground": "#0D0D0D",
+    "editor.selectionBackground": "#2A3140",
+    "editor.selectionHighlightBackground": "#2A314080",
+    "editor.inactiveSelectionBackground": "#2A314040",
+    "editorCursor.foreground": "#E5E9F0",
+    "editorWhitespace.foreground": "#333A47",
+    "editorBracketMatch.border": "#8FB3D9",
+
+    "diffEditor.insertedTextBackground": "#A7C79522",
+    "diffEditor.removedTextBackground": "#E5737322",
+    "editorGutter.addedBackground": "#A7C795",
+    "editorGutter.modifiedBackground": "#8FB3D9",
+    "editorGutter.deletedBackground": "#E57373",
+
+    "activityBar.background": "#000000",
+    "activityBar.foreground": "#E5E9F0",
+    "sideBar.background": "#000000",
+    "sideBar.foreground": "#E5E9F0",
+
+    "editorGroupHeader.tabsBackground": "#000000",
+    "tab.activeBorderTop": "#8FB3D9",
+    "panel.background": "#000000",
+    "panel.border": "#111111",
+
+    "statusBar.background": "#000000",
+    "statusBar.foreground": "#E5E9F0",
+    "titleBar.activeBackground": "#000000",
+    "titleBar.activeForeground": "#E5E9F0",
+
+    "terminal.background": "#000000",
+    "terminal.foreground": "#E5E9F0",
+    "terminalCursor.foreground": "#E5E9F0",
+    "terminal.selectionBackground": "#2A3140",
+
+    "terminal.ansiBlack": "#000000",
+    "terminal.ansiRed": "#E57373",
+    "terminal.ansiGreen": "#A7C795",
+    "terminal.ansiYellow": "#F1D8A5",
+    "terminal.ansiBlue": "#8FB3D9",
+    "terminal.ansiMagenta": "#C895BF",
+    "terminal.ansiCyan": "#8ED1E3",
+    "terminal.ansiWhite": "#E5E9F0",
+    "terminal.ansiBrightBlack": "#555A67",
+    "terminal.ansiBrightRed": "#EF9A9A",
+    "terminal.ansiBrightGreen": "#B5D6A4",
+    "terminal.ansiBrightYellow": "#F5E0B5",
+    "terminal.ansiBrightBlue": "#9CC7EA",
+    "terminal.ansiBrightMagenta": "#D8A5D2",
+    "terminal.ansiBrightCyan": "#9FE3F2",
+    "terminal.ansiBrightWhite": "#F2F4F8"
+  },
+
+  // Token colors (comments neutral but readable on true black)
+  "editor.tokenColorCustomizations": {
+    "comments": "#7E8591",
+    "strings": "#A7C795",
+    "numbers": "#F1D8A5",
+    "keywords": "#8FB3D9",
+    "functions": "#8ED1E3",
+    "variables": "#E5E9F0",
+    "types": "#94D0CC",
+    "textMateRules": [
+      {
+        "scope": ["comment", "punctuation.definition.comment"],
+        "settings": { "foreground": "#7E8591", "fontStyle": "italic" }
+      },
+      {
+        "scope": ["constant.numeric", "constant.language.boolean"],
+        "settings": { "foreground": "#F1D8A5" }
+      },
+      {
+        "scope": ["keyword", "storage.type", "storage.modifier"],
+        "settings": { "foreground": "#8FB3D9" }
+      },
+      {
+        "scope": ["entity.name.function", "support.function"],
+        "settings": { "foreground": "#8ED1E3" }
+      },
+      {
+        "scope": ["string", "string.quoted", "string.template"],
+        "settings": { "foreground": "#A7C795" }
+      },
+      {
+        "scope": ["entity.name.type", "support.type", "support.class"],
+        "settings": { "foreground": "#94D0CC" }
+      }
+    ]
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "rules": {
+      "comment": "#7E8591",
+      "string": "#A7C795",
+      "number": "#F1D8A5",
+      "keyword": "#8FB3D9",
+      "function": "#8ED1E3",
+      "method": "#8ED1E3",
+      "type": "#94D0CC",
+      "property": "#E5E9F0",
+      "variable": "#E5E9F0"
+    }
+  },
+
+  // ===================================================================
+  // EDITOR CORE / ERGONOMICS
+  // ===================================================================
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.indentSize": "tabSize",
+  "editor.insertSpaces": true,
+  "editor.stickyTabStops": true,
+
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 100,
+  "editor.wrappingIndent": "indent",
+  "editor.wrapOnEscapedLineFeeds": true,
+
+  "editor.minimap.enabled": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "all",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.maxTokenizationLineLength": 200000,
+  "editor.codeLensFontFamily": "Fira Code",
+  "editor.allowVariableFontsInAccessibilityMode": true,
+
+  "editor.fontFamily": "'Fira Code', 'Source Code Pro', 'Cascadia Code', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontVariations": true,
+
+  // Inline suggestions (Gemini preferred; avoid Copilot double-ghosting)
+  "editor.inlineSuggest.enabled": true,
+  "editor.inlineSuggest.showToolbar": "onHover",
+  "editor.inlineSuggest.fontFamily": "'Fira Code'",
+  "editor.suggest.preview": true,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.tabCompletion": "on",
+  "editor.linkedEditing": true,
+  "editor.wordBasedSuggestions": "matchingDocuments",
+  "editor.aiStats.enabled": true,
+
+  // Formatting defaults (Prettier) & triggers
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.codeActionsOnSave": {},
+
+  // ===================================================================
+  // FILES / SEARCH / WATCHERS
+  // ===================================================================
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.autoGuessEncoding": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/node_modules/**": true,
+    "**/out/**": true,
+    "**/build/**": true,
+    "**/.texlive202*/**": true
+  },
+  "search.exclude": {
+    "**/.git/**": true,
+    "**/node_modules/**": true,
+    "**/out/**": true,
+    "**/build/**": true,
+    "**/.texlive202*/**": true
+  },
+  "search.followSymlinks": false,
+  "search.useIgnoreFiles": true,
 
   // ===================================================================
   // LANGUAGE OVERRIDES
   // ===================================================================
-  "[bibtex]": {
-    "editor.defaultFormatter": "James-Yu.latex-workshop"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[latex]": {
     "editor.defaultFormatter": "James-Yu.latex-workshop",
     "editor.formatOnSave": false,
     "editor.insertSpaces": true,
     "editor.tabSize": 2
   },
+  "[bibtex]": { "editor.defaultFormatter": "James-Yu.latex-workshop" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
   // ===================================================================
-  // BETTER COMMENTS
+  // PRETTIER (GLOBAL)
   // ===================================================================
-  "better-comments.highlightPlainText": true,
-  "better-comments.tags": [
-    {
-      "backgroundColor": "transparent",
-      "bold": false,
-      "color": "#FF2D00",
-      "italic": false,
-      "strikethrough": false,
-      "tag": "!",
-      "underline": false
-    },
-    {
-      "backgroundColor": "transparent",
-      "bold": false,
-      "color": "#FF2D08",
-      "italic": false,
-      "strikethrough": false,
-      "tag": "?",
-      "underline": false
-    },
-    {
-      "backgroundColor": "transparent",
-      "bold": false,
-      "color": "#474747",
-      "italic": false,
-      "strikethrough": false,
-      "tag": "//",
-      "underline": false
-    },
-    {
-      "backgroundColor": "transparent",
-      "bold": false,
-      "color": "#FF8C00",
-      "italic": false,
-      "strikethrough": false,
-      "tag": "todo",
-      "underline": false
-    },
-    {
-      "backgroundColor": "transparent",
-      "bold": false,
-      "color": "#98C379",
-      "italic": false,
-      "strikethrough": false,
-      "tag": "*",
-      "underline": false
-    },
-    {
-      "backgroundColor": "transparent",
-      "bold": false,
-      "color": "#E0AB0B",
-      "italic": false,
-      "strikethrough": false,
-      "tag": "/#",
-      "underline": false
-    },
-    {
-      "backgroundColor": "transparent",
-      "bold": false,
-      "color": "#A4DFC9",
-      "italic": false,
-      "strikethrough": false,
-      "tag": "/!",
-      "underline": false
-    },
-    {
-      "backgroundColor": "transparent",
-      "bold": false,
-      "color": "#E197F3",
-      "italic": false,
-      "strikethrough": false,
-      "tag": "/?",
-      "underline": false
-    }
-  ],
+  "prettier.useTabs": false,
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 100,
+  "prettier.proseWrap": "always",
+  "prettier.singleAttributePerLine": true,
+  "prettier.endOfLine": "lf",
+  "prettier.vueIndentScriptAndStyle": true,
+  "prettier.withNodeModules": true,
 
   // ===================================================================
-  // BOOKMARKS
+  // LATEX WORKSHOP — BUILD/VIEW/LINT (matches your workspace recipes)
   // ===================================================================
-  "bookmarks.saveBookmarksInProject": true,
-  "bookmarks.useWorkaroundForFormatters": true,
-
-  // ===================================================================
-  // SPELLING (C-SPELL)
-  // ===================================================================
-  "cSpell.autoFormatConfigFile": true,
-  "cSpell.customDictionaries": {
-    "custom": true,
-    "internal-terms": true
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.pdf": "latex-workshop-pdf-hook"
   },
-  "cSpell.enabledFileTypes": {
-    "json": false,
-    "log": true,
-    "yaml": true
-  },
-  "cSpell.userWords": [
-    "ACAT",
-    "actuals",
-    "amphibs",
-    "BACKMATTER",
-    "biber",
-    "Carderock",
-    "checkmarks",
-    "CNRMC",
-    "COMNAVSEA",
-    "cutover",
-    "Dahlgren",
-    "Downey",
-    "DRPM",
-    "Duplicative",
-    "Ettlich",
-    "fancyhdr",
-    "Fira",
-    "fontspec",
-    "FRONTMATTER",
-    "Hueneme",
-    "hypersetup",
-    "indianhead",
-    "jobname",
-    "Keyport",
-    "KOMA",
-    "Lannamann",
-    "LANT",
-    "lualatex",
-    "MAINMATTER",
-    "Metcalf",
-    "Moton",
-    "NAVSEA",
-    "NAVWAR",
-    "NIWC",
-    "NSFA",
-    "NSWC",
-    "NUWC",
-    "NWCF",
-    "Okano",
-    "operationalizes",
-    "PACFLT",
-    "peoiws",
-    "porthueneme",
-    "PPBE",
-    "RADM",
-    "RDML",
-    "regs",
-    "Rothenhaus",
-    "Rucker",
-    "scrbook",
-    "Seasparrow",
-    "SECNAVINST",
-    "SSBN",
-    "SUPSHIP",
-    "SYSCOM",
-    "titlesec",
-    "touchpoints",
-    "Touchpoints",
-    "Tradespace",
-    "typearea",
-    "VADM",
-    "warfighter",
-    "Wolfson"
-  ],
-
-  // ===================================================================
-  // CHAT / ASSISTANTS
-  // ===================================================================
-  "chat.editor.wordWrap": "on",
-
-  // ===================================================================
-  // CHATGPT
-  // ===================================================================
-  "chatgpt.runCodexInWindowsSubsystemForLinux": true,
-
-  // ===================================================================
-  // CSS
-  // ===================================================================
-  "css.format.braceStyle": "expand",
-
-  // ===================================================================
-  // EDITOR
-  // ===================================================================
-  "editor.aiStats.enabled": true,
-  "editor.allowVariableFontsInAccessibilityMode": true,
-  "editor.autoIndentOnPaste": true,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "editor.codeActions.triggerOnFocusChange": true,
-  "editor.codeActionsOnSave": {},
-  "editor.codeLensFontFamily": "Fira Code",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.detectIndentation": false,
-  "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 12,
-  "editor.fontVariations": true,
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.formatOnSaveMode": "modificationsIfAvailable",
-  "editor.formatOnType": true,
-  "editor.indentSize": "tabSize",
-  "editor.inlineSuggest.enabled": true,
-  "editor.inlineSuggest.fontFamily": "'Fira Code'",
-  "editor.inlineSuggest.showToolbar": "onHover",
-  "editor.insertSpaces": true,
-  "editor.linkedEditing": true,
-  "editor.maxTokenizationLineLength": 200000,
-  "editor.minimap.enabled": false,
-  "editor.renderControlCharacters": true,
-  "editor.renderWhitespace": "all",
-  "editor.smoothScrolling": true,
-  "editor.stickyTabStops": true,
-  "editor.tabCompletion": "on",
-  "editor.tabSize": 2,
-  "editor.trimWhitespaceOnDelete": true,
-  "editor.wordBasedSuggestions": "matchingDocuments",
-  "editor.wordWrap": "on",
-  "editor.wordWrapColumn": 100,
-  "editor.wrapOnEscapedLineFeeds": true,
-  "editor.wrappingIndent": "indent",
-
-  // ===================================================================
-  // TOML
-  // ===================================================================
-  "evenBetterToml.formatter.alignComments": true,
-  "evenBetterToml.formatter.alignEntries": true,
-  "evenBetterToml.formatter.allowedBlankLines": 1,
-  "evenBetterToml.formatter.arrayAutoCollapse": true,
-  "evenBetterToml.formatter.arrayAutoExpand": true,
-  "evenBetterToml.formatter.arrayTrailingComma": true,
-  "evenBetterToml.formatter.columnWidth": 100,
-  "evenBetterToml.formatter.indentEntries": true,
-  "evenBetterToml.formatter.indentTables": true,
-  "evenBetterToml.formatter.reorderArrays": true,
-  "evenBetterToml.formatter.reorderInlineTables": true,
-  "evenBetterToml.formatter.reorderKeys": true,
-  "evenBetterToml.formatter.trailingNewline": true,
-  "evenBetterToml.schema.links": true,
-  "evenBetterToml.semanticTokens": true,
-
-  // ===================================================================
-  // EXPLORER
-  // ===================================================================
-  "explorer.confirmDragAndDrop": false,
-
-  // ===================================================================
-  // EXTENSIONS
-  // ===================================================================
-  "extensions.autoCheckUpdates": true,
-  "extensions.autoUpdate": true,
-
-  // ===================================================================
-  // FILES
-  // ===================================================================
-  "files.autoGuessEncoding": true,
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1000,
-  "files.autoSaveWhenNoErrors": true,
-  "files.eol": "\n",
-  "files.trimTrailingWhitespace": true,
-  "files.watcherExclude": {
-    "**/.git/**": true,
-    "**/.texlive202*/**": true,
-    "**/build/**": true,
-    "**/node_modules/**": true,
-    "**/out/**": true
-  },
-
-  // ===================================================================
-  // GIT
-  // ===================================================================
-  "git.allowNoVerifyCommit": true,
-  "git.autoStash": true,
-  "git.autofetch": true,
-  "git.autofetchPeriod": 180,
-  "git.confirmSync": false,
-  "git.enableSmartCommit": true,
-  "git.mergeEditor": true,
-  "git.postCommitCommand": "sync",
-  "git.pruneOnFetch": true,
-  "git.replaceTagsWhenPull": true,
-  "git.repositoryScanMaxDepth": 2,
-  "git.useCommitInputAsStashMessage": true,
-  "git.useEditorAsCommitInput": false,
-  "git.useEditorAsCommittingEditor": false,
-
-  // ===================================================================
-  // GITLENS
-  // ===================================================================
-  "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-
-  // ===================================================================
-  // HTML
-  // ===================================================================
-  "html.format.indentHandlebars": true,
-  "html.format.indentInnerHtml": true,
-  "html.format.templating": true,
-  "html.format.wrapLineLength": 100,
-
-  // ===================================================================
-  // JAVASCRIPT
-  // ===================================================================
-  "javascript.referencesCodeLens.enabled": true,
-  "javascript.referencesCodeLens.showOnAllFunctions": true,
-
-  // ===================================================================
-  // JSON
-  // ===================================================================
-  "json.schemaDownload.enable": false,
-
-  // ===================================================================
-  // LATEX UTILITIES
-  // ===================================================================
-  "latex-utilities.formattedPaste.maxLineLength": 100,
-  "latex-utilities.formattedPaste.useAsDefault": true,
-  "latex-utilities.liveReformat.enabled": true,
-  "latex-utilities.liveReformat.languages": ["tex", "doctex", "latex", "rsweave", "jlweave"],
-  "latex-utilities.liveReformat.snippets": [
-    {
-      "body": "$1_$2",
-      "description": "auto subscript",
-      "mode": "maths",
-      "prefix": "([A-Za-z}\\)\\]])(\\d)$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1_{$2}",
-      "description": "auto escape subscript",
-      "mode": "maths",
-      "prefix": "([A-Za-z}\\)\\]]) ?_(\\d\\d)$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1$2",
-      "description": "remove extraneous sub/superscript space",
-      "mode": "maths",
-      "prefix": "(\\S) ([\\^_])$",
-      "priority": 2,
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1^{$2}",
-      "description": "auto escape superscript",
-      "mode": "maths",
-      "prefix": "([A-Za-z}\\)\\]]) ?\\^ ?(\\d\\d|[\\+\\-] ?(?:\\d|[A-Za-z]|\\\\\\w+))$",
-      "priority": 2,
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1 $2",
-      "description": "whitespace before operators",
-      "mode": "maths",
-      "prefix": "([^ \u0026\\\\\\+\\-=\u003c\u003e\\|!~@])([\\+\\-=\u003c\u003e])$",
-      "priority": -1,
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1 $2",
-      "description": "whitespace after operators",
-      "mode": "maths",
-      "prefix": "([\\+\\-=\u003c\u003e])([^ \u0026\\\\\\+\\-=\u003c\u003e\\|!~])$",
-      "priority": -1,
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\dots ",
-      "description": "⋯",
-      "mode": "maths",
-      "prefix": "\\.\\.\\.$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\implies ",
-      "description": "⇒",
-      "mode": "maths",
-      "prefix": "=\u003e$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\impliedby ",
-      "description": "implied by",
-      "mode": "maths",
-      "prefix": "=\u003c$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\frac{$1}{$2} ",
-      "description": "fraction (empty)",
-      "mode": "maths",
-      "prefix": "//$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\frac{$1}{$1}$0",
-      "description": "fraction (from regex)",
-      "mode": "maths",
-      "prefix": "(([\\d\\.]+)|([\\d\\.]*)(\\\\)?([A-Za-z]+)((\\^|_)(\\{\\d+\\}|\\d|[A-Za-z]|\\\\\\w+))*!?)\\/$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "SPECIAL_ACTION_FRACTION",
-      "description": "fraction (parsed)",
-      "mode": "maths",
-      "noPlaceholders": false,
-      "prefix": "([\\)\\]}]) ?/$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "sympy $1 sympy",
-      "description": "sympy block",
-      "mode": "maths",
-      "prefix": "sympy$",
-      "triggerWhenComplete": false
-    },
-    {
-      "body": "SPECIAL_ACTION_BREAK",
-      "mode": "maths",
-      "prefix": "sympy.+$",
-      "priority": 2,
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "SPECIAL_ACTION_SYMPY",
-      "description": "sympy",
-      "mode": "maths",
-      "prefix": "sympy ?(.+?) ?sympy ?$",
-      "priority": 3,
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1\\iff ",
-      "description": "⇔",
-      "mode": "maths",
-      "prefix": "(^|[^\\\\])\\biff$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1\\in ",
-      "description": "in",
-      "mode": "maths",
-      "prefix": "(^|[^\\\\])\\binn$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1\\not\\in ",
-      "description": "∈",
-      "mode": "maths",
-      "prefix": "(^|[^\\\\])\\bnotin$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": " \\neq ",
-      "description": "neq",
-      "mode": "maths",
-      "prefix": " ?!=$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\u0026= ",
-      "description": "aligned equal",
-      "mode": "maths",
-      "prefix": "==$",
-      "priority": 1,
-      "triggerWhenComplete": true
-    },
-    {
-      "body": " \\approx ",
-      "description": "≈",
-      "mode": "maths",
-      "prefix": " ?~=$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": " \\sim ",
-      "description": "∼",
-      "mode": "maths",
-      "prefix": " ?~~$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": " \\geq ",
-      "description": "≥",
-      "mode": "maths",
-      "prefix": " ?\u003e=$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": " \\leq ",
-      "description": "≤",
-      "mode": "maths",
-      "prefix": " ?\u003c=$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": " \\gg ",
-      "description": "≫",
-      "mode": "maths",
-      "prefix": " ?\u003e\u003e$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": " \\ll ",
-      "description": "≪",
-      "mode": "maths",
-      "prefix": " ?\u003c\u003c$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": " \\times ",
-      "description": "×",
-      "mode": "maths",
-      "prefix": " ?xx$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": " \\cdot ",
-      "description": "⋅",
-      "mode": "maths",
-      "prefix": " ?\\*\\*$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1\\to ",
-      "description": "→",
-      "mode": "maths",
-      "prefix": "(^|[^\\\\]\\b|[ ,\\)\\]\\}]\\w*)(to|-\u003e)$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": " \\mapsto ",
-      "description": "↦",
-      "mode": "maths",
-      "prefix": " ?(?:\\|-\u003e|!\u003e)$",
-      "priority": 1.1,
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1\\arc$2 ",
-      "description": "arc(trig)",
-      "mode": "maths",
-      "prefix": "(^|[^\\\\])a(?:rc)?(sin|cos|tan|cot|csc|sec)$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1\\$2 ",
-      "description": "un-backslashed operator",
-      "mode": "maths",
-      "prefix": "(^|[^\\\\])(sin|cos|tan|cot|csc|sec|min|max|log|exp)$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1\\$2",
-      "description": "pi",
-      "mode": "maths",
-      "prefix": "(^|[^\\\\])(pi)$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\vec{$1}",
-      "description": "vector",
-      "mode": "maths",
-      "prefix": "((?:\\b|\\\\)\\w{1,7})(,\\.|\\.,)$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\tilde{$1}",
-      "description": "tilde",
-      "mode": "maths",
-      "prefix": "(\\\\?[\\w\\^]{1,7})~ $",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\dot{$1}",
-      "description": "dot",
-      "mode": "maths",
-      "prefix": "(\\\\?[\\w\\^]{1,7})\\. $",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\ddot{$1}",
-      "description": "ddot",
-      "mode": "maths",
-      "prefix": "(\\\\?[\\w\\^]{1,7})\\.\\. $",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\overline{$1}",
-      "description": "overline",
-      "mode": "maths",
-      "prefix": "\\bbar$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\overline{$1}",
-      "description": "overline",
-      "mode": "maths",
-      "prefix": "\\b(\\\\?[\\w\\^{}]{1,3})bar$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1\\hat{$1}",
-      "description": "hat",
-      "mode": "maths",
-      "prefix": "(^|[^\\\\])\\bhat$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\hat{$1}",
-      "description": "hat",
-      "mode": "maths",
-      "prefix": "\\b([\\w\\^{}])hat$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\) $1",
-      "description": "space after inline maths",
-      "mode": "any",
-      "prefix": "\\\\\\)(\\w)$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\setminus ",
-      "description": "∖ (setminus)",
-      "mode": "maths",
-      "prefix": "\\\\\\\\\\\\$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\begin{pmatrix} $1 \\end{pmatrix} ",
-      "description": "pmatrix",
-      "mode": "maths",
-      "prefix": "\\bpmat$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\begin{bmatrix} $1 \\end{bmatrix} ",
-      "description": "bmatrix",
-      "mode": "maths",
-      "prefix": "\\bbmat$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\frac{\\partial ${1:V}}{\\partial ${2:x}} ",
-      "description": "partial derivative",
-      "mode": "maths",
-      "prefix": "\\bpart$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\sqrt{$1}",
-      "description": "√",
-      "mode": "maths",
-      "prefix": "\\bsq$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "^2",
-      "description": "²",
-      "mode": "maths",
-      "prefix": " ?sr$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "^3",
-      "description": "³",
-      "mode": "maths",
-      "prefix": " ?cb$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\exists ",
-      "description": "∃",
-      "mode": "maths",
-      "prefix": "\\bEE$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\forall ",
-      "description": "∀",
-      "mode": "maths",
-      "prefix": "\\bAA$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1_$2",
-      "description": "subscript letter",
-      "mode": "maths",
-      "prefix": "\\b([A-Za-z])([A-Za-z])\\2$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1_{$2+1}",
-      "description": "subscript letter + 1",
-      "mode": "maths",
-      "prefix": "\\b([A-Za-z])([A-Za-z])\\2?p1$",
-      "priority": 2,
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\int_{${1:-\\infty}}^{${2:\\infty}} ",
-      "description": "∫ₐᵇ",
-      "mode": "maths",
-      "prefix": "\\bdint$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1\\, ",
-      "description": "add maths whitespace \\,",
-      "mode": "maths",
-      "prefix": "([^ \\\\])  $",
-      "priority": -1,
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1\\: ",
-      "description": "add maths whitespace \\:",
-      "mode": "maths",
-      "prefix": "([^ \\\\])\\\\, {2,4}$",
-      "priority": 0.1,
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1\\; ",
-      "description": "add maths whitespace \\;",
-      "mode": "maths",
-      "prefix": "([^ \\\\])\\\\: {2,4}$",
-      "priority": 0.2,
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1\\ ",
-      "description": "add maths whitespace \\ ",
-      "mode": "maths",
-      "prefix": "([^ \\\\])\\\\; {2,4}$",
-      "priority": 0.3,
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1\\quad ",
-      "description": "add maths whitespace quad",
-      "mode": "maths",
-      "prefix": "([^ \\\\])\\\\ {2,4}$",
-      "priority": 0.4,
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1\\qquad ",
-      "description": "add maths whitespace qquad",
-      "mode": "maths",
-      "prefix": "([^ \\\\])\\\\quad {2,4}$",
-      "priority": 0.5,
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\\\{$1\\\\} ",
-      "description": "set {}",
-      "mode": "maths",
-      "prefix": "\\bset$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": " \\mid ",
-      "description": "∣",
-      "mode": "maths",
-      "prefix": " ?\\|\\|$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\diamond ",
-      "description": "⋄",
-      "mode": "maths",
-      "prefix": "\u003c ?\u003e$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\begin{cases} $1 \\end{cases} ",
-      "description": "cases",
-      "mode": "maths",
-      "prefix": "\\bcase$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "$1\\text{s.t.} ",
-      "description": "such that",
-      "mode": "maths",
-      "prefix": "(^|[^\\\\])\\bst$",
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\pm ",
-      "description": "±",
-      "mode": "maths",
-      "prefix": "\\+ ?-$",
-      "priority": 1,
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\mp ",
-      "description": "∓",
-      "mode": "maths",
-      "prefix": "- ?\\+$",
-      "priority": 1,
-      "triggerWhenComplete": true
-    },
-    {
-      "body": "\\binom{$1$2}{$3$4}",
-      "description": "binomial",
-      "mode": "maths",
-      "prefix": "(?:([A-Za-z0-9]|\\\\\\w{,7})|\\(([^\\)]+)\\))C(?:([A-Za-z0-9]|\\\\\\w{,7})|\\(([^\\)]+)\\))$",
-      "priority": 2,
-      "triggerWhenComplete": true
-    }
-  ],
-
-  // ===================================================================
-  // LATEX WORKSHOP
-  // ===================================================================
-  "latex-workshop.bibtex-fields.sort.enabled": true,
-  "latex-workshop.bibtex-format.sort.enabled": true,
-  "latex-workshop.bibtex-format.tab": "2",
-  "latex-workshop.bibtex-format.trailingComma": true,
-  "latex-workshop.formatting.latex": "latexindent",
-  "latex-workshop.formatting.latexindent.args": [
-    "-w",
-    "-s",
-    "-m",
-    "-y=backupExtension:'';defaultIndent:'  ';preserveBlankLines:2",
-    "--overwriteIfDifferent",
-    "--outputdir=/dev/null"
-  ],
-  "latex-workshop.formatting.latexindent.path": "latexindent",
-  "latex-workshop.intellisense.bibtexJSON.replace": {},
-  "latex-workshop.intellisense.package.unusual": true,
-  "latex-workshop.intellisense.subsuperscript.enabled": true,
-  "latex-workshop.intellisense.unimathsymbols.enabled": true,
-  "latex-workshop.intellisense.update.aggressive.enabled": true,
+  "latex-workshop.latex.autoBuild.run": "onFileChange",
   "latex-workshop.latex.autoBuild.interval": 5000,
-  "latex-workshop.latex.autoBuild.run": "never",
-  "latex-workshop.latex.autoClean.run": "never",
-  "latex-workshop.latex.auxDir": "build",
-  "latex-workshop.latex.build.clearLog.everyRecipeStep.enabled": false,
   "latex-workshop.latex.build.forceRecipeUsage": true,
   "latex-workshop.latex.build.rootfileInStatus": true,
   "latex-workshop.latex.clean.subfolder.enabled": true,
+  "latex-workshop.latex.autoClean.run": "never",
   "latex-workshop.latex.outDir": "out",
+  "latex-workshop.latex.auxDir": "build",
   "latex-workshop.latex.recipe.default": "lastUsed",
   "latex-workshop.latex.recipes": [
     { "name": "BUILD-WIN", "tools": ["latexmk-win"] },
@@ -902,10 +244,6 @@
     { "name": "AUTO", "tools": ["latexmk-pvc"] },
     { "name": "ON-THE-FLY", "tools": ["texliveonfly"] }
   ],
-
-  "latex-workshop.latex.rootFile.doNotPrompt": true,
-  "latex-workshop.latex.rootFile.useSubFile": true,
-
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk-wsl",
@@ -964,41 +302,48 @@
       "args": ["%DOC%"]
     }
   ],
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.view.pdf.sidebar.open": "off",
+  "latex-workshop.view.pdf.sidebar.view": "outline",
+  "latex-workshop.view.pdf.reload.transition": "none",
+  "latex-workshop.view.outline.sync.viewer": true,
+  "latex-workshop.view.pdf.internal.synctex.keybinding": "ctrl-click",
+  "latex-workshop.synctex.afterBuild.enabled": true,
 
-  "latex-workshop.latex.watch.pdf.delay": 100,
+  "latex-workshop.latex.rootFile.useSubFile": true,
+  "latex-workshop.latex.rootFile.doNotPrompt": true,
+
   "latex-workshop.latex.watch.usePolling": true,
-  "latex-workshop.linting.chktex.convertOutput.column.chktexrcTabSize": 4,
+  "latex-workshop.latex.watch.pdf.delay": 100,
   "latex-workshop.linting.run": "onType",
+  "latex-workshop.linting.chktex.convertOutput.column.chktexrcTabSize": 4,
   "latex-workshop.message.badbox.show": "none",
   "latex-workshop.message.information.show": true,
   "latex-workshop.message.log.show": true,
-  "latex-workshop.synctex.afterBuild.enabled": true,
-  "latex-workshop.texmagic.enabled": true,
-  "latex-workshop.view.outline.sync.viewer": true,
-  "latex-workshop.view.pdf.internal.synctex.keybinding": "ctrl-click",
-  "latex-workshop.view.pdf.reload.transition": "none",
-  "latex-workshop.view.pdf.sidebar.open": "off",
-  "latex-workshop.view.pdf.sidebar.view": "outline",
-  "latex-workshop.view.pdf.viewer": "tab",
+
+  // latexindent (exact args)
+  "latex-workshop.formatting.latex": "latexindent",
+  "latex-workshop.formatting.latexindent.path": "latexindent",
+  "latex-workshop.formatting.latexindent.args": [
+    "-w", // write-in-place
+    "-s", // silent
+    "-m", // only modify if changes occur
+    "--overwriteIfDifferent" // avoids needless writes when unchanged
+  ],
 
   // ===================================================================
-  // LATEX PREVIEW
+  // LATEX UTILITIES / LATEX PREVIEW
   // ===================================================================
+  "latex-utilities.formattedPaste.useAsDefault": true,
+  "latex-utilities.formattedPaste.maxLineLength": 100,
+  "latex-utilities.liveReformat.enabled": true,
+  "latex-utilities.liveReformat.languages": ["tex", "doctex", "latex", "rsweave", "jlweave"],
+
   "latexPreview.latexFontDir": "C:\\\\Users\\\\vic-l\\\\AppData\\\\Local\\\\Programs\\\\MiKTeX\\\\fonts",
   "latexPreview.pageSize": "US Letter",
 
   // ===================================================================
-  // MARKDOWN PREVIEW ENHANCED
-  // ===================================================================
-  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
-  "markdown-preview-enhanced.enableCriticMarkupSyntax": true,
-  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
-  "markdown-preview-enhanced.enableHTML5Embed": true,
-  "markdown-preview-enhanced.enableTypographer": true,
-  "markdown-preview-enhanced.latexEngine": "lualatex",
-
-  // ===================================================================
-  // MARKDOWN
+  // MARKDOWN / NOTEBOOKS
   // ===================================================================
   "markdown.copyFiles.overwriteBehavior": "overwrite",
   "markdown.extension.completion.enabled": true,
@@ -1008,38 +353,183 @@
   "markdown.preview.fontFamily": "'Fira Sans',-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
   "markdown.preview.lineHeight": 1.2,
 
-  // ===================================================================
-  // MARKDOWN PREVIEW ENHANCED (LEGACY)
-  // ===================================================================
+  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+  "markdown-preview-enhanced.enableCriticMarkupSyntax": true,
+  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+  "markdown-preview-enhanced.enableHTML5Embed": true,
+  "markdown-preview-enhanced.enableTypographer": true,
+  "markdown-preview-enhanced.latexEngine": "lualatex",
   "markdownPreviewEnhanced.previewTheme": "one-dark",
 
   // ===================================================================
-  // MERGE CONFLICT
+  // TERMINAL
   // ===================================================================
-  "merge-conflict.autoNavigateNextConflict.enabled": true,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.windowsEnableConpty": true,
+  "terminal.integrated.fontFamily": "'Fira Code'",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.lineHeight": 1.15,
+  "terminal.integrated.letterSpacing": 1,
+  "terminal.integrated.tabStopWidth": 4,
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.tabs.showActiveTerminal": "singleTerminal",
+  "terminal.integrated.tabs.showActions": "singleTerminal",
+  "terminal.integrated.fontLigatures.enabled": true,
+  "terminal.integrated.fontLigatures.fallbackLigatures": [
+    "<--",
+    "<---",
+    "<<-",
+    "<-",
+    "->",
+    "->>",
+    "-->",
+    "--->",
+    "<==",
+    "<===",
+    "<<=",
+    "<=",
+    "=>",
+    "=>>",
+    "==>",
+    "===>",
+    ">=",
+    ">>=",
+    "<->",
+    "<-->",
+    "<--->",
+    "<---->",
+    "<=>",
+    "<==>",
+    "<===>",
+    "<====>",
+    "::",
+    ":::",
+    "<~~",
+    "</",
+    "</>",
+    "/>",
+    "~~>",
+    "==",
+    "!=",
+    "/=",
+    "~=",
+    "<>",
+    "===",
+    "!==",
+    "!===",
+    "<:",
+    ":=",
+    "*=",
+    "*+",
+    "<*",
+    "<*>",
+    "*>",
+    "<|",
+    "<|>",
+    "|>",
+    "+*",
+    "=*",
+    "=:",
+    ":>",
+    "/*",
+    "*/",
+    "+++",
+    "<!--",
+    "<!---"
+  ],
 
   // ===================================================================
-  // NOTEBOOKS
+  // GIT / SCM
   // ===================================================================
-  "notebook.defaultFormatter": "esbenp.prettier-vscode",
-  "notebook.formatOnCellExecution": true,
-  "notebook.formatOnSave.enabled": true,
-  "notebook.output.wordWrap": true,
+  "git.autofetch": true,
+  "git.autofetchPeriod": 180,
+  "git.autoStash": true,
+  "git.enableSmartCommit": true,
+  "git.postCommitCommand": "sync",
+  "git.mergeEditor": true,
+  "git.pruneOnFetch": true,
+  "git.replaceTagsWhenPull": true,
+  "git.repositoryScanMaxDepth": 2,
+  "git.allowNoVerifyCommit": true,
+  "git.useCommitInputAsStashMessage": true,
+  "git.useEditorAsCommitInput": false,
+  "git.useEditorAsCommittingEditor": false,
+
+  "scm.inputFontFamily": "editor",
+
+  // GitLens model (kept as-is)
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
 
   // ===================================================================
-  // NPM
+  // LANGUAGES (HTML / JS / TS / TOML / YAML / Python / PowerShell)
   // ===================================================================
+  "html.format.wrapLineLength": 100,
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true,
+  "html.format.templating": true,
+
+  "javascript.referencesCodeLens.enabled": true,
+  "javascript.referencesCodeLens.showOnAllFunctions": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.implementationsCodeLens.showOnInterfaceMethods": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.referencesCodeLens.showOnAllFunctions": true,
+
+  "evenBetterToml.formatter.allowedBlankLines": 1,
+  "evenBetterToml.formatter.columnWidth": 100,
+  "evenBetterToml.formatter.alignComments": true,
+  "evenBetterToml.formatter.alignEntries": true,
+  "evenBetterToml.formatter.arrayTrailingComma": true,
+  "evenBetterToml.formatter.trailingNewline": true,
+  "evenBetterToml.formatter.arrayAutoCollapse": true,
+  "evenBetterToml.formatter.arrayAutoExpand": true,
+  "evenBetterToml.formatter.indentEntries": true,
+  "evenBetterToml.formatter.indentTables": true,
+  "evenBetterToml.formatter.reorderArrays": true,
+  "evenBetterToml.formatter.reorderInlineTables": true,
+  "evenBetterToml.formatter.reorderKeys": true,
+  "evenBetterToml.schema.links": true,
+  "evenBetterToml.semanticTokens": true,
+
+  "yaml.format.printWidth": 100,
+  "yaml.format.proseWrap": "always",
+  "yaml.keyOrdering": false,
+
+  "python.analysis.autoFormatStrings": true,
+
+  // PowerShell path (fixed spacing/escape)
+  "runInPowerShell.PowershellCoreLocation": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\"",
+  "powershell.integratedConsole.startLocation": "Editor",
+  "powershell.promptToUpdatePowerShell": false,
+  "powershell.startAsLoginShell.linux": true,
+  "powershell.analyzeOpenDocumentsOnly": true,
+  "powershell.codeFormatting.autoCorrectAliases": true,
+  "powershell.codeFormatting.avoidSemicolonsAsLineTerminators": true,
+  "powershell.codeFormatting.pipelineIndentationStyle": "IncreaseIndentationAfterEveryPipeline",
+  "powershell.codeFormatting.trimWhitespaceAroundPipe": true,
+  "powershell.codeFormatting.useCorrectCasing": true,
+  "powershell.codeFormatting.whitespaceBetweenParameters": true,
+  "powershell.buttons.showPanelMovementButtons": true,
+
+  // ===================================================================
+  // EXTENSIONS / EDGE DEVTOOLS / NPM
+  // ===================================================================
+  "extensions.autoCheckUpdates": true,
+  "extensions.autoUpdate": true,
+
+  "vscode-edge-devtools.useHttps": true,
+  "vscode-edge-devtools.webhint": false,
+  "vscode-edge-devtools.webhintInstallNotification": true,
+
   "npm.fetchOnlinePackageInfo": false,
   "npm.runSilent": true,
 
   // ===================================================================
-  // PASTE IMAGE
+  // PATH INTELLISENSE / IMAGES
   // ===================================================================
-  "pasteImage.basePath": "${projectRoot}/Images",
-
-  // ===================================================================
-  // PATH INTELLISENSE
-  // ===================================================================
+  "pasteImage.basePath": "edo_study_guide/Images",
   "path-intellisense.autoSlashAfterDirectory": true,
   "path-intellisense.autoTriggerNextSuggestion": true,
   "path-intellisense.extensionOnImport": true,
@@ -1051,307 +541,116 @@
   "path-intellisense.showHiddenFiles": true,
 
   // ===================================================================
-  // POWERSHELL
+  // BETTER COMMENTS
   // ===================================================================
-  "powershell.analyzeOpenDocumentsOnly": true,
-  "powershell.buttons.showPanelMovementButtons": true,
-  "powershell.codeFormatting.autoCorrectAliases": true,
-  "powershell.codeFormatting.avoidSemicolonsAsLineTerminators": true,
-  "powershell.codeFormatting.pipelineIndentationStyle": "IncreaseIndentationAfterEveryPipeline",
-  "powershell.codeFormatting.trimWhitespaceAroundPipe": true,
-  "powershell.codeFormatting.useCorrectCasing": true,
-  "powershell.codeFormatting.whitespaceBetweenParameters": true,
-  "powershell.integratedConsole.startLocation": "Editor",
-  "powershell.promptToUpdatePowerShell": false,
-  "powershell.startAsLoginShell.linux": true,
+  "better-comments.highlightPlainText": true,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "?",
+      "color": "#FF2D08",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "/#",
+      "color": "#E0AB0B",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "/!",
+      "color": "#A4DFC9",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "/?",
+      "color": "#E197F3",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    }
+  ],
 
   // ===================================================================
-  // PRETTIER
-  // ===================================================================
-  "prettier.endOfLine": "lf",
-  "prettier.printWidth": 100,
-  "prettier.proseWrap": "always",
-  "prettier.singleAttributePerLine": true,
-  "prettier.tabWidth": 2,
-  "prettier.useTabs": false,
-  "prettier.vueIndentScriptAndStyle": true,
-  "prettier.withNodeModules": true,
-
-  // ===================================================================
-  // PYTHON
-  // ===================================================================
-  "python.analysis.autoFormatStrings": true,
-
-  // ===================================================================
-  // RUN IN POWERSHELL
-  // ===================================================================
-  "runInPowerShell.PowershellCoreLocation": "\"C: \\\\ProgramFiles\\\\PowerShell\\\\7\\\\pwsh.exe\"",
-
-  // ===================================================================
-  // SCM
-  // ===================================================================
-  "scm.inputFontFamily": "editor",
-
-  // ===================================================================
-  // SEARCH
-  // ===================================================================
-  "search.exclude": {
-    "**/.git/**": true,
-    "**/.texlive202*/**": true,
-    "**/build/**": true,
-    "**/node_modules/**": true,
-    "**/out/**": true
-  },
-  "search.followSymlinks": false,
-  "search.useIgnoreFiles": true,
-
-  // ===================================================================
-  // SECURITY
+  // SECURITY / TELEMETRY / UPDATES
   // ===================================================================
   "security.workspace.trust.untrustedFiles": "open",
-
-  // ===================================================================
-  // TELEMETRY
-  // ===================================================================
   "telemetry.telemetryLevel": "off",
-
-  // ===================================================================
-  // TERMINAL
-  // ===================================================================
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "terminal.integrated.fontFamily": "'Fira Code'",
-  "terminal.integrated.fontLigatures.enabled": true,
-  "terminal.integrated.fontLigatures.fallbackLigatures": [
-    "\u003c--",
-    "\u003c---",
-    "\u003c\u003c-",
-    "\u003c-",
-    "-\u003e",
-    "-\u003e\u003e",
-    "--\u003e",
-    "---\u003e",
-    "\u003c==",
-    "\u003c===",
-    "\u003c\u003c=",
-    "\u003c=",
-    "=\u003e",
-    "=\u003e\u003e",
-    "==\u003e",
-    "===\u003e",
-    "\u003e=",
-    "\u003e\u003e=",
-    "\u003c-\u003e",
-    "\u003c--\u003e",
-    "\u003c---\u003e",
-    "\u003c----\u003e",
-    "\u003c=\u003e",
-    "\u003c==\u003e",
-    "\u003c===\u003e",
-    "\u003c====\u003e",
-    "::",
-    ":::",
-    "\u003c~~",
-    "\u003c/",
-    "\u003c/\u003e",
-    "/\u003e",
-    "~~\u003e",
-    "==",
-    "!=",
-    "/=",
-    "~=",
-    "\u003c\u003e",
-    "===",
-    "!==",
-    "!===",
-    "\u003c:",
-    ":=",
-    "*=",
-    "*+",
-    "\u003c*",
-    "\u003c*\u003e",
-    "*\u003e",
-    "\u003c|",
-    "\u003c|\u003e",
-    "|\u003e",
-    "+*",
-    "=*",
-    "=:",
-    ":\u003e",
-    "/*",
-    "*/",
-    "+++",
-    "\u003c!--",
-    "\u003c!---"
-  ],
-  "terminal.integrated.fontSize": 12,
-  "terminal.integrated.fontWeight": "normal",
-  "terminal.integrated.letterSpacing": 1,
-  "terminal.integrated.lineHeight": 1.15,
-  "terminal.integrated.suggest.enabled": true,
-  "terminal.integrated.tabStopWidth": 4,
-  "terminal.integrated.tabs.showActions": "singleTerminal",
-  "terminal.integrated.tabs.showActiveTerminal": "singleTerminal",
-  "terminal.integrated.windowsEnableConpty": true,
-
-  // ===================================================================
-  // TYPESCRIPT
-  // ===================================================================
-  "typescript.implementationsCodeLens.enabled": true,
-  "typescript.implementationsCodeLens.showOnInterfaceMethods": true,
-  "typescript.referencesCodeLens.enabled": true,
-  "typescript.referencesCodeLens.showOnAllFunctions": true,
-
-  // ===================================================================
-  // UPDATES
-  // ===================================================================
-  "update.enableWindowsBackgroundUpdates": true,
   "update.mode": "default",
+  "update.enableWindowsBackgroundUpdates": true,
   "update.showReleaseNotes": false,
 
   // ===================================================================
-  // EDGE DEVTOOLS
+  // MISC / DICTS / UTILS
   // ===================================================================
-  "vscode-edge-devtools.useHttps": true,
-  "vscode-edge-devtools.webhint": false,
-  "vscode-edge-devtools.webhintInstallNotification": true,
+  "json.schemaDownload.enable": false,
+  "explorer.confirmDragAndDrop": false,
 
-  // ===================================================================
-  // VSICONS
-  // ===================================================================
-  "vsicons.dontShowNewVersionMessage": true,
-  "vsicons.projectDetection.autoReload": true,
+  "bookmarks.saveBookmarksInProject": true,
+  "bookmarks.useWorkaroundForFormatters": true,
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
 
-  // ===================================================================
-  // WINDOW
-  // ===================================================================
-  "window.newWindowProfile": "Default",
-  "window.systemColorTheme": "dark",
+  "chat.editor.wordWrap": "on",
+  "chatgpt.runCodexInWindowsSubsystemForLinux": true,
 
-  "workbench.colorCustomizations": {
-    // --- Core ---
-    "foreground": "#E5E9F0",
-    "focusBorder": "#8FB3D9",
-    "selection.background": "#2A3140",
-    // --- Editor ---
-    "editor.background": "#000000",
-    "editor.foreground": "#E5E9F0",
-    "editor.lineHighlightBackground": "#0D0D0D",
-    "editor.selectionBackground": "#2A3140",
-    "editor.selectionHighlightBackground": "#2A314080",
-    "editor.inactiveSelectionBackground": "#2A314040",
-    "editorCursor.foreground": "#E5E9F0",
-    "editorWhitespace.foreground": "#333A47",
-    "editorBracketMatch.border": "#8FB3D9",
-    // --- Diff / Gutter ---
-    "diffEditor.insertedTextBackground": "#A7C79522",
-    "diffEditor.removedTextBackground": "#E5737322",
-    "editorGutter.addedBackground": "#A7C795",
-    "editorGutter.modifiedBackground": "#8FB3D9",
-    "editorGutter.deletedBackground": "#E57373",
-    // --- Activity & Sidebars ---
-    "activityBar.background": "#000000",
-    "activityBar.foreground": "#E5E9F0",
-    "sideBar.background": "#000000",
-    "sideBar.foreground": "#E5E9F0",
-    // --- Tabs & Panels ---
-    "editorGroupHeader.tabsBackground": "#000000",
-    "tab.activeBorderTop": "#8FB3D9",
-    "panel.background": "#000000",
-    "panel.border": "#111111",
-    // --- Status / Title Bars ---
-    "statusBar.background": "#000000",
-    "statusBar.foreground": "#E5E9F0",
-    "titleBar.activeBackground": "#000000",
-    "titleBar.activeForeground": "#E5E9F0",
-    // --- Terminal ---
-    "terminal.background": "#000000",
-    "terminal.foreground": "#E5E9F0",
-    "terminalCursor.foreground": "#E5E9F0",
-    "terminal.selectionBackground": "#2A3140",
-    "terminal.ansiBlack": "#000000",
-    "terminal.ansiRed": "#E57373",
-    "terminal.ansiGreen": "#A7C795",
-    "terminal.ansiYellow": "#F1D8A5",
-    "terminal.ansiBlue": "#8FB3D9",
-    "terminal.ansiMagenta": "#C895BF",
-    "terminal.ansiCyan": "#8ED1E3",
-    "terminal.ansiWhite": "#E5E9F0",
-    "terminal.ansiBrightBlack": "#555A67",
-    "terminal.ansiBrightRed": "#EF9A9A",
-    "terminal.ansiBrightGreen": "#B5D6A4",
-    "terminal.ansiBrightYellow": "#F5E0B5",
-    "terminal.ansiBrightBlue": "#9CC7EA",
-    "terminal.ansiBrightMagenta": "#D8A5D2",
-    "terminal.ansiBrightCyan": "#9FE3F2",
-    "terminal.ansiBrightWhite": "#F2F4F8"
+  // Spellings (kept long lists intact)
+  "cSpell.autoFormatConfigFile": true,
+  "cSpell.customDictionaries": { "custom": true, "internal-terms": true },
+  "cSpell.enabledFileTypes": {
+    "json": false,
+    "log": true,
+    "yaml": true,
+    "sty": true
   },
-  "editor.tokenColorCustomizations": {
-    "comments": "#7E8591",
-    "strings": "#A7C795",
-    "numbers": "#F1D8A5",
-    "keywords": "#8FB3D9",
-    "functions": "#8ED1E3",
-    "variables": "#E5E9F0",
-    "types": "#94D0CC",
-    "textMateRules": [
-      {
-        "scope": ["comment", "punctuation.definition.comment"],
-        "settings": { "foreground": "#7E8591", "fontStyle": "italic" }
-      },
-      {
-        "scope": ["constant.numeric", "constant.language.boolean"],
-        "settings": { "foreground": "#F1D8A5" }
-      },
-      {
-        "scope": ["keyword", "storage.type", "storage.modifier"],
-        "settings": { "foreground": "#8FB3D9" }
-      },
-      {
-        "scope": ["entity.name.function", "support.function"],
-        "settings": { "foreground": "#8ED1E3" }
-      },
-      {
-        "scope": ["string", "string.quoted", "string.template"],
-        "settings": { "foreground": "#A7C795" }
-      },
-      {
-        "scope": ["entity.name.type", "support.type", "support.class"],
-        "settings": { "foreground": "#94D0CC" }
-      }
-    ]
-  },
-  "editor.semanticTokenColorCustomizations": {
-    "rules": {
-      "comment": "#7E8591",
-      "string": "#A7C795",
-      "number": "#F1D8A5",
-      "keyword": "#8FB3D9",
-      "function": "#8ED1E3",
-      "method": "#8ED1E3",
-      "type": "#94D0CC",
-      "property": "#E5E9F0",
-      "variable": "#E5E9F0"
-    }
-  },
-  "workbench.colorTheme": "Abyss",
-  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.editor.wrapTabs": true,
-  "workbench.editorAssociations": {
-    "*.copilotmd": "vscode.markdown.preview.editor",
-    "*.pdf": "latex-workshop-pdf-hook"
-  },
-  "workbench.enableExperiments": true,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.settings.enableNaturalLanguageSearch": false,
-  "workbench.tree.indent": 4,
-
-  // ===================================================================
-  // YAML
-  // ===================================================================
-  "yaml.format.printWidth": 100,
-  "yaml.format.proseWrap": "always",
-  "yaml.keyOrdering": true,
-  "cSpell.words": [
+  "cSpell.userWords": [
     "addbibresource",
     "addcolon",
     "addcomma",
@@ -1360,21 +659,29 @@
     "addtokomafont",
     "afterskip",
     "autocite",
+    "autogobble",
     "autoloadhyperref",
     "automark",
     "autominibib",
     "autosegsection",
     "auxlock",
+    "backgroundcolor",
+    "basicstyle",
     "beforeskip",
     "begentry",
     "begingroup",
     "bfseries",
+    "bgcolor",
     "bibfont",
     "bibindex",
     "biblatex",
     "bibresource",
+    "bmatrix",
     "booktabs",
     "booktitle",
+    "boxrule",
+    "boxsep",
+    "breaklines",
     "capslabelseffective",
     "captionlabel",
     "captionsetup",
@@ -1384,15 +691,21 @@
     "cftsecfont",
     "cftsecpagefont",
     "cftsubsecfont",
+    "checkoddpage",
     "chngcntr",
     "citeauthor",
     "citetitle",
     "citeyear",
     "clearpairofpagestyles",
+    "codebg",
+    "colback",
+    "colframe",
     "colorlet",
     "colorlinks",
     "colsep",
     "colspec",
+    "coltitle",
+    "commentstyle",
     "Contextuals",
     "counterwithout",
     "csquotes",
@@ -1400,6 +713,7 @@
     "defbibheading",
     "defernumbers",
     "definecolor",
+    "DFARS",
     "dpth",
     "endcsname",
     "endgroup",
@@ -1411,13 +725,19 @@
     "expl",
     "fancyhead",
     "fancyhf",
+    "filecontents",
     "finentry",
     "firsthead",
     "floatieee",
     "floatplacement",
+    "fontsize",
+    "fonttitle",
+    "fontupper",
+    "footnotesize",
     "giveninits",
     "glsdefs",
     "glstex",
+    "halign",
     "headrulewidth",
     "htbp",
     "hyperref",
@@ -1438,6 +758,7 @@
     "itemsep",
     "itshape",
     "Keyval",
+    "keywordstyle",
     "kvoptions",
     "labelfont",
     "labelsep",
@@ -1446,12 +767,18 @@
     "leftmark",
     "leftsep",
     "listof",
+    "longtable",
     "longtblr",
+    "lstlisting",
+    "lstset",
     "makeatletter",
     "marginnote",
+    "marginparwidth",
     "microtype",
     "minibib",
     "minipage",
+    "mintedfalse",
+    "mintinline",
     "mlongtblr",
     "moderntech",
     "moderntechsetup",
@@ -1464,12 +791,15 @@
     "newcommand",
     "newenvironment",
     "newif",
+    "newtcolorbox",
     "newunit",
     "newunitpunct",
     "nopagebreak",
     "normalfont",
     "normalsize",
     "nouppercase",
+    "operationalizes",
+    "outerplace",
     "pagenumber",
     "pagestyle",
     "parindent",
@@ -1484,10 +814,13 @@
     "renewbibmacro",
     "renewcommand",
     "resetnumbers",
+    "reversemarginparfalse",
+    "reversemarginpartrue",
     "rightsep",
     "rmfamily",
     "rowhead",
     "rowsep",
+    "rulecolor",
     "sansbody",
     "scrartcl",
     "scrheadings",
@@ -1501,6 +834,7 @@
     "setlist",
     "setmainfont",
     "setmathfont",
+    "setminted",
     "setmonofont",
     "setsansfont",
     "setspace",
@@ -1511,30 +845,41 @@
     "shellescapefalse",
     "shellescapetrue",
     "shorttitle",
+    "showstringspaces",
+    "sidehint",
+    "sideinfo",
+    "sidenote",
+    "sidewarn",
     "singlelinecheck",
     "sisetup",
     "siunitx",
     "smallcapsheads",
+    "Smartdiagram",
+    "stringstyle",
     "subrefs",
     "subsubsection",
     "synctex",
     "tablesroman",
     "tabularnums",
     "tabularray",
+    "tabularx",
     "talltblr",
     "tblr",
     "Tblr",
     "tblrpreset",
+    "tcbset",
     "tcolorbox",
     "textbf",
     "textls",
     "textsc",
+    "texttt",
     "thepage",
     "therefsegment",
     "thesection",
     "thesubsection",
     "thesubsubsection",
     "thetable",
+    "tikz",
     "tikzexternals",
     "tikzsmart",
     "titleformat",
@@ -1545,12 +890,28 @@
     "tocpagenumberformat",
     "topsep",
     "totoc",
+    "touchpoints",
+    "ttfamily",
+    "Tufte",
+    "twoside",
     "urldate",
     "usebibmacro",
+    "usetikzlibrary",
     "varwidth",
     "WCAG",
     "xcolor",
     "xelatex",
     "xindy"
-  ]
+  ],
+
+  // Handy tweaks
+  "hungryDelete.considerIncreaseIndentPattern": true,
+  "editor.minimap.maxColumn": 100,
+  "editor.multiCursorPaste": "full",
+  "cSpell.diagnosticLevel": "Hint",
+  "cSpell.hideIssuesWhileTyping": "Line",
+  "cSpell.maxNumberOfProblems": 250,
+  "cSpell.suggestionMenuType": "quickFix",
+  "cSpell.checkVSCodeSystemFiles": true,
+  "editor.autoIndentOnPaste": true
 }

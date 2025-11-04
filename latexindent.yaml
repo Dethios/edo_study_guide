@@ -1,0 +1,79 @@
+# ===== General =====
+backupExtension: ""
+defaultIndent: "  "
+indentPreamble: 1
+onlyOneBackUp: 1
+preserveBlankLines: 1
+
+# The VS Code schema expects an object here (not a bare 0/1).
+# You can independently toggle pre/post whitespace trimming if you like.
+removeTrailingWhitespace:
+  beforeProcessing: 0
+  afterProcessing: 0
+
+# ===== Alignment for common math/table environments =====
+lookForAlignDelims:
+  align:
+    alignDoubleBackSlash: 1
+    spacesBeforeDoubleBackSlash: 1
+  "align*":
+    alignDoubleBackSlash: 1
+    spacesBeforeDoubleBackSlash: 1
+  aligned:
+    alignDoubleBackSlash: 1
+    spacesBeforeDoubleBackSlash: 1
+  array:
+    alignDoubleBackSlash: 1
+    spacesBeforeDoubleBackSlash: 1
+  bmatrix:
+    alignDoubleBackSlash: 1
+    spacesBeforeDoubleBackSlash: 1
+  cases:
+    alignDoubleBackSlash: 1
+    spacesBeforeDoubleBackSlash: 1
+  equation:
+    alignDoubleBackSlash: 1
+    spacesBeforeDoubleBackSlash: 1
+  "equation*":
+    alignDoubleBackSlash: 1
+    spacesBeforeDoubleBackSlash: 1
+  gather:
+    alignDoubleBackSlash: 1
+    spacesBeforeDoubleBackSlash: 1
+  longtable:
+    alignDoubleBackSlash: 1
+    spacesBeforeDoubleBackSlash: 1
+  matrix:
+    alignDoubleBackSlash: 1
+    spacesBeforeDoubleBackSlash: 1
+  pmatrix:
+    alignDoubleBackSlash: 1
+    spacesBeforeDoubleBackSlash: 1
+  tabular:
+    alignDoubleBackSlash: 1
+    spacesBeforeDoubleBackSlash: 1
+  tabularx:
+    alignDoubleBackSlash: 1
+    spacesBeforeDoubleBackSlash: 1
+
+# ===== Line-break heuristics (keep environments tidy) =====
+modifyLineBreaks:
+  environments:
+    BeginStartsOnOwnLine: 1
+    BodyStartsOnOwnLine: 1
+    EndStartsOnOwnLine: 1
+    EndFinishesWithLineBreak: 1
+
+# ===== Soft wrap guard for long prose =====
+textWrapOptions:
+  wrap: 0
+  columns: 100
+
+# ===== Verbatim-like environments (schema prefers object mapping) =====
+verbatimEnvironments:
+  Verbatim: 1
+  comment: 1
+  filecontents: 1
+  lstlisting: 1
+  minted: 1
+  verbatim: 1

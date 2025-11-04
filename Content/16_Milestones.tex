@@ -1,0 +1,29 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+%====================
+% File: 16_Milestones.tex
+%====================
+\begin{document}
+\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+% The section title is not used for regular content. The title is set in the main document.
+% === MILESTONES (EDO 3.3.2) ===
+\section{Milestones and Phases}
+\minibib
+
+
+
+%====================
+% End of file
+%====================
+\ifSubfilesClassLoaded{
+	\renewcommand*{\entryname}{\textbf{\color{Modern} Acronym}}
+	\renewcommand*{\descriptionname}{\textbf{\color{Modern} Definition}}
+	\printnoidxglossary[
+		type=\acronymtype,
+		title=Acronyms,
+		style=long-booktabs
+	]}{}
+\end{document}
+

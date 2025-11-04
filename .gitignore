@@ -73,6 +73,7 @@ build/
 
 # latexindent (if it ever drops a log/temp)
 indent.log
+__latexindent_temp_*
 *.bak*        # safety for ad-hoc backups
 
 # Temp files from editors/aux tools
