@@ -1,2 +1,36 @@
-*.pdf filter=lfs diff=lfs merge=lfs -text
-*.zip filter=lfs diff=lfs merge=lfs -text
+# Text defaults
+* text=auto eol=lf
+
+# Windows scripts that should stay CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Build artifacts
+out/**  -text
+build/** -text
+
+# Treat TeX-related files as text with better diff
+*.tex text diff=tex
+*.sty text
+*.cls text
+*.bib text
+*.bbx text
+*.cbx text
+*.lbx text
+*.texlua text
+*.mkiv text
+*.mkii text
+
+# Ensure these are stored as binary (no diffs/CRLF conversions)
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.eps binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary

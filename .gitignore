@@ -1,28 +1,105 @@
-# LaTeX
-out/
+# ======================
+# LaTeX build products
+# ======================
+# Directories (your layout)
+# out/
 build/
-*.synctex.gz
+
+# Common aux/logs across engines & tools
 *.aux
+*.auxlock
 *.log
+*.lof
+*.lot
 *.toc
-*.bbl
-*.blg
-*.fdb_latexmk
+*.out          # hyperref .out (not your out/ dir)
 *.fls
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
 *.nav
 *.snm
 *.vrb
+*.dvi
+*.xdv
+*.ps
+
+# BibLaTeX / Biber
+*.bcf
+*.bbl
+*.blg
+*.run.xml
+*.biber.log
+
+# Indexing / Nomenclature / MakeIndex / xindy
+*.idx
+*.ind
+*.ilg
+*.ist
+*.xdy
+*.nlo
+*.nls
+*.nlg
+
+# Glossaries (glossaries + glossaries-extra)
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.glstex
+
+# TikZ/PGF externalization (PDFs and caches)
+*-figure*.pdf
+*-figure*.log
+*-figure*.md5
+*-figure*.dpth
+# If you externalize to a folder, ignore it:
+# tikzexternals/
+
+# minted / pygments cache
+*_minted-*/
+*.pyg
+*.pygtex
+
+# pdfTeX/XeTeX/epstopdf helpers
+*-eps-converted-to.pdf
+*-converted-to.pdf
+
+# latexindent (if it ever drops a log/temp)
+indent.log
+*.bak*        # safety for ad-hoc backups
+
+# Temp files from editors/aux tools
 *.tmp
+*.temp
+*.swp
+*.swo
 
-# Editors
-.vscode/
-!.vscode/settings.json    # keep workspace settings if you want
-!.vscode/extensions.json
-
-# OS
+# ======================
+# OS cruft
+# ======================
 .DS_Store
 Thumbs.db
+*:Zone.Identifier
+.ini
 
-# Secrets
+# ======================
+# Secrets / env
+# ======================
 .env
 .env.*
+
+# ======================
+# Optional toggles (uncomment what you want)
+# ======================
+# Ignore generated PDFs by default (good for repos with frequent rebuilds)
+# *.pdf
+
+# Keep release PDFs in a dedicated folder if you ignore PDFs globally:
+# !Releases/*.pdf
+# Releases/

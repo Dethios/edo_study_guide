@@ -8,8 +8,10 @@
 \newacronym{ccdr}{CCDR}{Combatant Commander}
 \newacronym{cjcs}{CJCS}{Chairman of the Joint Chiefs of Staff}
 \newacronym{vcjcs}{VCJCS}{Vice-Chairman of the Joint Chiefs of Staff}
+\newacronym{jroc}{JROC}{Joint Requirements Oversight Council}
 \newacronym{osd}{OSD}{Office of the Secretary of Defense}
 \newacronym{secdef}{SECDEF}{Secretary of Defense}
+\newacronym{dae}{DAE}{Defense Acquisition Executive}
 \newacronym{dod}{DoD}{Department of Defense}
 \newacronym{don}{DON}{Department of the Navy}
 \newacronym{secnav}{SECNAV}{Secretary of the Navy}
@@ -118,19 +120,28 @@
 
 \newacronym{acat}{ACAT}{Acquisition Category}
 \newacronym{aoa}{AoA}{Analysis of Alternatives}
+\newacronym{bca}{BCA}{Business Case Analysis}
 \newacronym{mca}{MCA}{Major Capability Acquisition}
+\newacronym{mdd}{MDD}{Materiel Development Decision}
+\newacronym{mdauthority}{MDA}{Milestone Decision Authority}
 \newacronym{msa}{MSA}{Materiel Solution Analysis}
 \newacronym{tmrr}{TMRR}{Technology Maturation and Risk Reduction}
 \newacronym{emd}{EMD}{Engineering and Manufacturing Development}
 \newacronym{ibr}{IBR}{Integrated Baseline Review}
 \newacronym{apb}{APB}{Acquisition Program Baseline}
+\newacronym{sep}{SEP}{Systems Engineering Plan}
+\newacronym{temp}{TEMP}{Test and Evaluation Master Plan}
 \newacronym{sar}{SAR}{Selected Acquisition Report}
 \newacronym{daes}{DAES}{Defense Acquisition Executive Summary}
+\newacronym{dab}{DAB}{Defense Acquisition Board}
 \newacronym{card}{CARD}{Cost Analysis Requirements Description}
 \newacronym{cape}{CAPE}{Cost Assessment and Program Evaluation}
 \newacronym{dcape}{DCAPE}{Director, CAPE}
 \newacronym{cpa}{CPA}{Chairman's Program Assessment}
 \newacronym{ipt}{IPT}{Integrated Product Team}
+\newacronym{aaf}{AAF}{Adaptive Acquisition Framework}
+\newacronym{dag}{DAG}{Defense Acquisition Guidebook}
+\newacronym{lcsp}{LCSP}{Life-Cycle Sustainment Plan}
 
 % --- Contracting Authorities & Teams ---
 
@@ -165,6 +176,7 @@
 \newacronym{cam}{CAM}{Control Account Manager}
 \newacronym{ram}{RAM}{Responsibility Assignment Matrix}
 \newacronym{tcpi}{TCPI}{Total Cost Performance Index}
+\newacronym{vac}{VAC}{Variance at Complete}
 
 % --- Contracting Policies & Instruments ---
 

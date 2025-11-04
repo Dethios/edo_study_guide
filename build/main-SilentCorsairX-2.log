@@ -1,9 +1,0 @@
-This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.9.20)  31 OCT 2025 21:39
- system commands enabled.
- file:line:error style messages enabled.
-**"c:/Users/vic-l/OneDrive/Victor's Stuff/Documents/EDO Study Guide/main.tex"
-(
-c:/Users/vic-l/OneDrive/Victor's Stuff/Documents/EDO Study Guide/main.tex:0: err
-or:  (file io): fflush() failed (Invalid argument)
-c:/Users/vic-l/OneDrive/Victor's Stuff/Documents/EDO Study Guide/main.tex:0:  ==
-> Fatal error occurred, no output PDF file produced!
