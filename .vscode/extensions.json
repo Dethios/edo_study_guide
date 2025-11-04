@@ -25,6 +25,7 @@
     "ms-vscode-remote.remote-wsl",
     "ms-vscode-remote.remote-ssh",
     "streetsidesoftware.code-spell-checker",
-    "aaron-bond.better-comments"
+    "aaron-bond.better-comments",
+    "ibm.output-colorizer"
   ]
 }
