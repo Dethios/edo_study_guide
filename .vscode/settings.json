@@ -1277,7 +1277,7 @@
     "titleBar.activeBackground": "#000000",
     "titleBar.activeForeground": "#E5E9F0"
   },
-  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.colorTheme": "Nord",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.wrapTabs": true,
   "workbench.editorAssociations": {
