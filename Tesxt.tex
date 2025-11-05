@@ -1,0 +1,12 @@
+\documentclass{article}
+\usepackage[tracking=true]{microtype}
+\usepackage[acronym]{glossaries-extra}
+\makenoidxglossaries
+\setabbreviationstyle[acronym]{long-short}
+\newacronym{navsea}{NAVSEA}{Naval Sea Systems Command}
+\begin{document}
+\gls{navsea} test.
+
+\microtypesetup{tracking=false}
+\gls{navsea} test.
+\end{document}

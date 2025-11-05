@@ -65,8 +65,14 @@
 
 % --- Technical Authority & Engineering Roles ---
 
-\newacronym{ta}{TA}{Technical Authority}
-\newacronym{uta}{UTA}{Ultimate Technical Authority}
+\newacronym[
+	shortplural={TAs},
+	longplural={Technical Authorities}
+]{ta}{TA}{Technical Authority}
+\newacronym[
+	shortplural={UTAs},
+	longplural={Ultimate Technical Authorities}
+]{uta}{UTA}{Ultimate Technical Authority}
 \newacronym{twh}{TWH}{Technical Warrant Holder}
 \newacronym{ea}{EA}{Engineering Agent}
 \newacronym{aea}{AEA}{Alteration Engineering Agent}
@@ -110,28 +116,66 @@
 
 % --- Program Leadership & Stakeholders ---
 
-\newacronym{pa}{PA}{Program Authority}
+\newacronym[
+	shortplural={PAs},
+	longplural={Program Authorities}
+]{pa}{PA}{Program Authority}
 \newacronym{pm}{PM}{Program Manager}
 \newacronym{parm}{PARM}{Participating Acquisition Resource Manager}
 \newacronym{shapm}{SHAPM}{Ship Acquisition Program Manager}
 \newacronym{slm}{SLM}{Ship Lifecycle Manager}
 \newacronym{spm}{SPM}{Ship Program Manager}
-\newacronym{spd}{SPD}{Ship Project Director}
-\newacronym{pmo}{PMO}{Program Management Office}
+\newacronym[
+	shortplural={SPDs},
+	longplural={Ship Project Directors}
+]{spd}{SPD}{Ship Project Director}
+\newacronym[
+	shortplural={PMOs},
+	longplural={Program Management Offices}
+]{pmo}{PMO}{Program Management Office}
 \newacronym{pms}{PMS}{Program Manager, Ships}
 \newacronym{drpm}{DRPM}{Direct Reporting Program Manager}
 
 % --- Acquisition Decision Framework ---
 
 \newacronym{aaf}{AAF}{Adaptive Acquisition Framework}
-\newacronym{acat}{ACAT}{Acquisition Category}
-\newacronym{aoa}{AoA}{Analysis of Alternatives}
-\newacronym{apb}{APB}{Acquisition Program Baseline}
-\newacronym{bca}{BCA}{Business Case Analysis}
-\newacronym{card}{CARD}{Cost Analysis Requirements Description}
-\newacronym{cape}{CAPE}{Cost Assessment and Program Evaluation}
+\newacronym[
+	shortplural={ACATs},
+	longplural={Acquisition Categories}
+]{acat}{ACAT}{Acquisition Category}
+\newacronym[
+	shortplural={ADMs},
+	longplural={Acquisition Decision Memoranda}
+]{adm}{ADM}{Acquisition Decision Memorandum}
+\newacronym[
+	shortplural={AoAs},
+	longplural={Analyses of Alternatives}
+]{aoa}{AoA}{Analysis of Alternatives}
+\newacronym[
+	shortplural={APBs},
+	longplural={Acquisition Program Baselines}
+]{apb}{APB}{Acquisition Program Baseline}
+\newacronym[
+	shortplural={BCAs},
+	longplural={Business Case Analyses}
+]{bca}{BCA}{Business Case Analysis}
+\newacronym[
+	shortplural={BCACs},
+	longplural={Business Capability Acquisition Cycles}
+]{bcac}{BCAC}{Business Capability Acquisition Cycle}
+\newacronym[
+	shortplural={CARDs},
+	longplural={Cost Analysis Requirements Descriptions}
+]{card}{CARD}{Cost Analysis Requirements Description}
+\newacronym[
+	shortplural={CAPEs},
+	longplural={Cost Assessments and Program Evaluations}
+]{cape}{CAPE}{Cost Assessment and Program Evaluation}
 \newacronym{dab}{DAB}{Defense Acquisition Board}
-\newacronym{daes}{DAES}{Defense Acquisition Executive Summary}
+\newacronym[
+	shortplural={DAESes},
+	longplural={Defense Acquisition Executive Summaries}
+]{daes}{DAES}{Defense Acquisition Executive Summary}
 \newacronym{dag}{DAG}{Defense Acquisition Guidebook}
 \newacronym{das}{DAS}{Defense Acquisition System}
 \newacronym{dbs}{DBS}{Defense Business System}
@@ -143,15 +187,28 @@
 \newacronym{ipt}{IPT}{Integrated Product Team}
 \newacronym{lcsp}{LCSP}{Life-Cycle Sustainment Plan}
 \newacronym{mca}{MCA}{Major Capability Acquisition}
-\newacronym{mdauthority}{MDA}{Milestone Decision Authority}
+\newacronym[
+	shortplural={MDAs},
+	longplural={Milestone Decision Authorities}
+]{mdauthority}{MDA}{Milestone Decision Authority}
 \newacronym{mdd}{MDD}{Materiel Development Decision}
 \newacronym{msa}{MSA}{Materiel Solution Analysis}
 \newacronym{mta}{MTA}{Middle Tier of Acquisition}
 \newacronym{sar}{SAR}{Selected Acquisition Report}
 \newacronym{sep}{SEP}{Systems Engineering Plan}
-\newacronym{temp}{TEMP}{Test and Evaluation Master Plan}
+\newacronym[
+	shortplural={TEMPs},
+	longplural={Test and Evaluation Master Plans}
+]{temp}{TEMP}{Test and Evaluation Master Plan}
 \newacronym{tmrr}{TMRR}{Technology Maturation and Risk Reduction}
-\newacronym{ucaacq}{UCA}{Urgent Capability Acquisition}
+\newacronym[
+	shortplural={TRLs},
+	longplural={Technology Readiness Levels}
+]{trl}{TRL}{Technology Readiness Level}
+\newacronym[
+	shortplural={UCAs},
+	longplural={Urgent Capability Acquisitions}
+]{ucaacq}{UCA}{Urgent Capability Acquisition}
 
 % --- Contracting Authorities & Teams ---
 
@@ -160,17 +217,37 @@
 \newacronym{aco}{ACO}{Administrative Contracting Officer}
 \newacronym{tco}{TCO}{Termination Contracting Officer}
 \newacronym{cor}{COR}{Contracting Officer's Representative}
-\newacronym{hca}{HCA}{Head Contracting Activity}
+\newacronym[
+	shortplural={HCAs},
+	longplural={Head Contracting Activities}
+]{hca}{HCA}{Head Contracting Activity}
 \newacronym{ssac}{SSAC}{Source Selection Advisory Council}
-\newacronym{ssa}{SSA}{Source Selection Authority}
+\newacronym[
+	shortplural={SSAs},
+	longplural={Source Selection Authorities}
+]{ssa}{SSA}{Source Selection Authority}
 \newacronym{sseb}{SSEB}{Source Selection Evaluation Board}
-\newacronym{dcaa}{DCAA}{Defense Contract Audit Agency}
-\newacronym{dcma}{DCMA}{Defense Contract Management Agency}
+\newacronym[
+	shortplural={DCAAs},
+	longplural={Defense Contract Audit Agencies}
+]{dcaa}{DCAA}{Defense Contract Audit Agency}
+\newacronym[
+	shortplural={DCMAs},
+	longplural={Defense Contract Management Agencies}
+]{dcma}{DCMA}{Defense Contract Management Agency}
 \newacronym{pv}{PV}{Planned Value}
 \newacronym{ev}{EV}{Earned Value}
 \newacronym{sv}{SV}{Schedule Variance}
 \newacronym{ac}{AC}{Actual Cost}
 \newacronym{cv}{CV}{Cost Variance}
+\newacronym[
+	shortplural={PAUCs},
+	longplural={Program Acquisition Unit Costs}
+]{pauc}{PAUC}{Program Acquisition Unit Cost}
+\newacronym[
+	shortplural={APUCs},
+	longplural={Average Procurement Unit Costs}
+]{apuc}{APUC}{Average Procurement Unit Cost}
 \newacronym{bac}{BAC}{Budget at Completion}
 \newacronym{eac}{EAC}{Estimate at Completion}
 \newacronym{spi}{SPI}{Schedule Performance Index}
@@ -233,6 +310,17 @@
 \newacronym{bb}{BB}{Block Buy}
 \newacronym{myp}{MYP}{Multiyear Procurement}
 
+% --- International Acquisition ---
+
+\newacronym[
+	shortplural={FMS},
+	longplural={Foreign Military Sales}
+]{fms}{FMS}{Foreign Military Sales}
+\newacronym[
+	shortplural={DCS},
+	longplural={Direct Commercial Sales}
+]{dcs}{DCS}{Direct Commercial Sales}
+
 % --- Budget Formulation & Decision ---
 
 \newacronym{ppbe}{PPBE}{Planning, Programming, Budgeting and Execution}
@@ -243,7 +331,10 @@
 \newacronym{py}{PY}{Past Year}
 \newacronym{cy}{CY}{Current Year}
 \newacronym{by}{BY}{Budget Year}
-\newacronym{ba}{BA}{Budget Authority}
+\newacronym[
+	shortplural={BAs},
+	longplural={Budget Authorities}
+]{ba}{BA}{Budget Authority}
 \newacronym{pdm}{PDM}{Program Decision Memorandum}
 \newacronym{rmd}{RMD}{Resource Management Decision}
 \newacronym{dmag}{DMAG}{Deputy's Management Action Group}
@@ -263,7 +354,10 @@
 \newacronym{sasc}{SASC}{Senate Armed Services Committee}
 \newacronym{sbc}{SBC}{Senate Budget Committee}
 \newacronym{legprop}{LEGPROP}{Legislative Proposal}
-\newacronym{toa}{TOA}{Total Obligational Authority}
+\newacronym[
+	shortplural={TOAs},
+	longplural={Total Obligational Authorities}
+]{toa}{TOA}{Total Obligational Authority}
 
 % --- Appropriations & Funding Accounts ---
 
@@ -367,6 +461,10 @@
 
 % --- Acquisition Phases ---
 
+\newacronym[
+	shortplural={IOT\&Es},
+	longplural={Initial Operational Test and Evaluations}
+]{iote}{IOT&E}{Initial Operational Test and Evaluation}
 \newacronym{pd.phase}{P\&D}{Production and Deployment Phase}
 \newacronym{ioc}{IOC}{Initial Operational Capability}
 \newacronym{foc}{FOC}{Full Operational Capability}

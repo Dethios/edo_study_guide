@@ -12,6 +12,7 @@
   nonumberlist,
   nogroupskip,
   nopostdot,
+  shortcuts,
   toc                   % add entries to the Table of Contents (KOMA-friendly)
 ]{glossaries-extra}
 
@@ -30,12 +31,14 @@
 \ResetAcronymsPerChapterfalse
 % \ResetAcronymsPerChaptertrue   % <- uncomment to enable per-chapter reset
 \ifResetAcronymsPerChapter
-  \usepackage{etoolbox}
-  \pretocmd{\chapter}{\glsresetall}{}{}
+  \usepackage{etoolbox}%
+  \pretocmd{\chapter}{\glsresetall[acronym]}{}{}%
+  \pretocmd{\chapter*}{\glsresetall[acronym]}{}{}%
 \fi
 
 % --- PDF string safety (bookmarks, etc.) ------------------------------------
 % Ensure glossary-related commands render plain text in PDF strings.
+\providecommand\pdfstringdefDisableCommands[1]{}
 \pdfstringdefDisableCommands{%
   \def\gls#1{\glsentrytext{#1}}%
   \def\glspl#1{\glsentryplural{#1}}%
@@ -43,13 +46,6 @@
   \def\acrlong#1{\glsentrylong{#1}}%
   \def\acrfull#1{\glsentrylong{#1}\space(\glsentryshort{#1})}%
 }
-
-% --- Shorthand helpers -------------------------------------------------------
-\let\ac\gls
-\let\acp\glspl
-% Capitalized forms for sentence starts
-\newcommand{\Ac}[1]{\Gls{#1}}
-\newcommand{\Acp}[1]{\Glspl{#1}}
 
 % --- Printing notes ----------------------------------------------------------
 % In main.tex you already use:

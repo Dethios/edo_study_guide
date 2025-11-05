@@ -147,19 +147,19 @@
 \RedeclareSectionCommand[beforeskip=2.5ex plus .2ex minus .1ex, afterskip=1.0ex plus .2ex]{section}
 \RedeclareSectionCommand[beforeskip=2.0ex plus .2ex minus .1ex, afterskip=0.8ex plus .2ex]{subsection}
 \RedeclareSectionCommand[beforeskip=1.5ex plus .2ex minus .1ex, afterskip=0.5ex plus .2ex]{subsubsection}
-\setkomafont{caption}{\normalfont\sffamily\small\scshape\color{BodyText}}
-\setkomafont{captionlabel}{\normalfont\sffamily\scshape\color{AccentBlue}}
+\setkomafont{caption}{\normalfont\sffamily\small\itshape\color{BodyText}}
+\setkomafont{captionlabel}{\normalfont\sffamily\bfseries\color{AccentBlue}}
 \captionsetup{
   skip      = 6pt,
-  labelfont = {normalfont,sf,sc,color=AccentBlue},
-  textfont  = {normalfont,sf,sc,small,color=BodyText},
+  labelfont = {normalfont,bf,sf,it,color=AccentBlue},
+  textfont  = {normalfont,sf,small,color=BodyText},
   justification = RaggedRight,
   singlelinecheck = true
 }
 \captionsetup[table]{labelfont={normalfont,sf,sc,color=AccentBlue},textfont={normalfont,sf,sc,small,color=BodyText}}
-\captionsetup[tblr]{labelfont={normalfont,sf,sc,color=AccentBlue},textfont={normalfont,sf,sc,small,color=BodyText}}
-\captionsetup[talltblr]{labelfont={normalfont,sf,sc,color=AccentBlue},textfont={normalfont,sf,sc,small,color=BodyText}}
-\captionsetup[longtblr]{labelfont={normalfont,sf,sc,color=AccentBlue},textfont={normalfont,sf,sc,small,color=BodyText}}
+\captionsetup[tblr]{labelfont={normalfont,bf,sf,sc,color=AccentBlue},textfont={normalfont,sf,sc,small,color=BodyText}}
+\captionsetup[talltblr]{labelfont={normalfont,bf,sf,sc,color=AccentBlue},textfont={normalfont,sf,sc,small,color=BodyText}}
+\captionsetup[longtblr]{labelfont={normalfont,bf,sf,sc,color=AccentBlue},textfont={normalfont,sf,sc,small,color=BodyText}}
 
 % ---- Optional small caps for lower heads ----
 \ifmoderntech@smallcapsheads
@@ -240,17 +240,6 @@
 \SetTblrStyle{foot}{font=\small\sffamily}
 \SetTblrInner{rowsep=2pt, colsep=2pt}
 
-% Global look for ALL tables (incl. tabularray/talltblr)
-% \captionsetup[table]{
-%   font={small,\scshape\color{BodyText}},            % caption text: small caps, BodyText color
-%   labelfont={bf,\sffamily\color{AccentBlue}},       % "Table 1:" / "Figure 1:" in bold AccentBlue
-%   labelsep=period,                                  % "Table 1. Text"
-%   justification=RaggedRight,                        % left align (requires ragged2e)
-%   singlelinecheck=false,                            % don't center one-liners
-%   skip=6pt,                                         % space between caption and body
-%   position=above                                    % place caption above for tables
-% }
-
 \newcommand{\MTUseTblrPreset}{%
   \SetTblrDefault{
     column{1}  = {leftsep=0pt},
@@ -283,8 +272,8 @@
 % --- Optional small-caps caption labels and bold SC table headers ---
 \ifmoderntech@capslabelseffective
   \addtokomafont{captionlabel}{\scshape\color{AccentBlue}}
-  \SetTblrStyle{firsthead}{font=\sffamily\bfseries\scshape}
-  \SetTblrStyle{head}{font=\sffamily\bfseries\scshape}
+  \SetTblrStyle{firsthead}{font=\sffamily\scshape}
+  \SetTblrStyle{head}{font=\sffamily\scshape}
 \fi
 
 % =============================
