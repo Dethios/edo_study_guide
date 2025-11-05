@@ -12,6 +12,171 @@
 \section{Milestones and Phases}
 \minibib
 
+\subsection{Defense Acquisition System Overview}
+The \ac{das} is the governance framework that aligns requirements, resourcing, and acquisition execution to deliver warfighter capability. It is policy-driven by DoDD~5000.01 and process-enabled through DoDI~5000.02, using the \ac{aaf} to tailor pathways while preserving statutory oversight and Navy-unique controls~\autocite{DoDD5000-01,DoDI5000-02}.
+
+\subsection{Adaptive Acquisition Framework Pathways (Board Snapshot)}
+\begin{description}
+	\item[\textbf{\ac{mca}.}] Default for complex weapon systems; uses phased milestones with mandatory statutory certifications; emphasizes affordability trades, test rigor, and Navy two-pass / seven-gate touchpoints~\autocite{DoDI5000-85}.
+	\item[\textbf{Middle Tier of Acquisition (\ac{mta}).}] Rapid prototyping or rapid fielding to deliver an operational capability within five years; minimizes documentation, but demands robust transition planning to \ac{mca} or sustainment funding~\autocite{DoDI5000-80}.
+	\item[\textbf{\ac{ucaacq}.}] Accelerated path to field urgent capability within 2~years or provide an interim solution in less than 5; leverages tailored test, streamlined acquisition decision memoranda, and dedicated senior oversight~\autocite{DoDI5000-81}.
+	\item[\textbf{Software Acquisition Pathway.}] Iterative, DevSecOps-focused delivery of software increments with continuous integration, enterprise cloud alignment, and recurring user feedback cadences~\autocite{DoDI5000-87}.
+	\item[\textbf{Acquisition of Services Pathway.}] Structures service requirements, performance metrics, and contracting strategies to assure mission outcomes and oversight thresholds (e.g., Multi-Functional IPT requirements review)\autocite{DoDI5000-74}.
+	\item[\textbf{Defense Business Systems Pathway.}] Rationalizes business processes, data standards, and Business Capability Acquisitions Committees (BCAC) to unlock enterprise interoperability before investing in solutions~\autocite{DoDI5000-75}.
+\end{description}
+\note{Pathways are not exclusive---an EDO may begin in \ac{mta} for prototyping, then transition to \ac{mca} for production once requirements and sustainment plans stabilize. Programs can also leverage \ac{ucaacq} for an initial bridge while planning a transition to \ac{mca}.}
+
+\subsection{Urgent Operational Needs Taxonomy}
+\begin{description}
+	\item[\textbf{\ac{juon}.}] Joint urgent gap requiring Combatant Commander sponsorship; validated by the Joint Rapid Acquisition Cell with rapid fielding oversight~\autocite{CJCSI3470-01H}.
+	\item[\textbf{\ac{jeon}.}] Joint emergent gap tied to potential contingency; enables deliberate analysis but retains joint prioritization and Board-level visibility~\autocite{CJCSI5123-01H}.
+	\item[\textbf{\ac{uon}.}] Service-specific urgent need (e.g., Fleet Commanders); informs Navy resource prioritization and can transition to \ac{juon}/\ac{jeon} if joint impact grows~\autocite{OPNAVINST5000-42E}.
+\end{description}
+
+\subsection{Baseline Discipline: Acquisition Program Baselines, Deviations, and Nunn--McCurdy}
+\begin{description}
+	\item[\textbf{\ac{apb}.}] The cost-schedule-performance contract between the \ac{mdauthority}, resource sponsor, and \ac{peo}; defines objective and threshold values that bound trade space~\autocite{DoDI5000-85}.
+	\item[\textbf{Program Deviations.}] Triggered when performance, schedule, or cost thresholds breach; the Program Manager must notify the \ac{mdauthority} within 30~days and submit a corrective action plan within 60~\autocite{DoDI5000-85}.
+	\item[\textbf{Nunn--McCurdy Act.}] Statutory reporting when Program Acquisition Unit Cost (PAUC) or Average Procurement Unit Cost (APUC) breaches significant ($\geq$15\% current / 30\% original) or critical ($\geq$25\% current / 50\% original) thresholds; critical breaches require certification to Congress within 60~days or program termination~\autocite{USC-4371-NunnMcCurdy}.
+\end{description}
+
+\subsection{JCIDS Flow into the Defense Acquisition System}
+\begin{description}
+	\item[\textbf{\ac{icd}.}] Supports the \ac{mdd} with validated capability needs and initial attributes~\autocite{CJCSI5123-01H}.
+	\item[\textbf{\ac{cdd}.}] Provides Key Performance Parameters (\ac{kpp}) and Key System Attributes (\ac{ksa}) to anchor Milestone~B and the Technical Requirements Baseline~\autocite{CJCSI5123-01H}.
+	\item[\textbf{Capability Production Document (CPD).}] Updates \ac{kpp}/\ac{ksa} values for production decisions and sustainment planning at Milestone~C~\autocite{CJCSI5123-01H}.
+\end{description}
+\note{Maintain requirements traceability matrices linking \ac{kpp} thresholds to test plans and \ac{apb} values for board discussions.}
+
+\subsection{Acquisition Strategy Essentials}
+\begin{description}
+	\item[\textbf{Purpose.}] Documents tailored acquisition approach, contract strategy, intellectual property posture, and affordability constraints for \ac{mdauthority} approval~\autocite{DoDI5000-85}.
+	\item[\textbf{Key Contents.}] Pathway selection, phasing plan, incentive structure, test and evaluation strategy, risk burn-down, sustainment concept, cybersecurity, international cooperation, and business case for software/data management~\autocite{DoDI5000-85,DoDD5000-01}.
+	\item[\textbf{Approval Event.}] \ac{mdauthority} concurrence at Milestone~A (initial) with updates prior to Milestone~B and significant re-baselines; Navy 2-pass/7-gate integrates resource validation before signature~\autocite{OPNAVINST5000-42E}.
+\end{description}
+
+\subsection{International Acquisition Objectives}
+\begin{description}
+	\item[\textbf{Foreign Military Sales (FMS).}] Strengthen partner capability while leveraging U.S. economies of scale; requires disclosure review and Letter of Offer and Acceptance alignment~\autocite{DoDI5000-85}.
+	\item[\textbf{Direct Commercial Sales (DCS).}] Contractor-led exports; Program Office ensures configuration control and technology-security compliance~\autocite{DoDI5000-85}.
+	\item[\textbf{Cooperative Development.}] Shared investment with allies (e.g., Memoranda of Understanding) to reduce life-cycle cost and enhance interoperability~\autocite{DoDI5000-85}.
+	\item[\textbf{Armaments Cooperation / International Programs Security.}] Integrates disclosure, export licensing, and technology protection plans into the Acquisition Strategy~\autocite{DoDI5000-85}.
+\end{description}
+
+\subsection{Navy Two-Pass / Seven-Gate Review}
+\begin{description}
+	\item[\textbf{Pass 1 -- Capability.}] Led by OPNAV~N9 to mature the requirement: Gate~1 validates the capability gap, Gate~2 refines solutions and mission analysis, Gate~3 assesses affordability and alignment with Navy enterprises, and Gate~4 authorizes program initiation (supports \ac{mdd})\autocite{OPNAVINST5000-42E}.
+	\item[\textbf{Pass 2 -- Resourcing.}] Led by OPNAV~N8 to align budgeting: Gate~5 verifies contracting/test readiness before Milestone~B (often synchronized with the Development RFP Release Decision), Gate~6 confirms production and sustainment resources prior to Milestone~C, and Gate~7 evaluates sustainment performance and modernization plans~\autocite{OPNAVINST5000-42E}.
+\end{description}
+\note{For board prep, highlight where SECNAV Gate Reviews or Defense Acquisition Board touchpoints overlay Navy gates to demonstrate cross-tier synchronization.}
+
+\subsection{Technology Readiness Levels (TRLs)}
+\Tab{\ref{tab:trl}} summarizes TRL definitions with representative naval examples.
+
+\begin{longtblr}[
+		caption = {Technology Readiness Levels with representative naval examples.},
+		label   = {tab:trl},
+		entry   = {TRL reference},
+		remark{Source} = {\tabCite{USDRE-TRA-2020}},
+		remark{\tHint} = {Match TRLs to \ac{tmrr} exit criteria: critical technologies should be $\geq$~TRL~6 before Milestone~B.}
+	]{
+		colspec = {@{} Q[l,1.2] X[l] X[l] @{}}}
+	\toprule
+	{TRL} & {Definition} & {Example (EDO context)} \\
+	\midrule
+	TRL~1 & Basic principles observed & Novel corrosion-resistant alloy proven in laboratory \\
+	TRL~2 & Technology concept formulated & Hypothesis for integrating alloy into hull structures \\
+	TRL~3 & Analytical and experimental proof-of-concept & Coupon tests validating stress performance in relevant environment \\
+	TRL~4 & Component validation in laboratory & Scale panel fabrication and testing under controlled loads \\
+	TRL~5 & Component validation in relevant environment & Module integrated into land-based test site with salt-fog exposure \\
+	TRL~6 & System/subsystem prototype in relevant environment & Full-scale hull section installed on test article or surrogate vessel \\
+	TRL~7 & System prototype in operational environment & Prototype hull segment installed on operational ship during limited sea trials \\
+	TRL~8 & Actual system completed and qualified & Final production drawings released, inspections passed for lead ship \\
+	TRL~9 & Actual system proven in mission operations & Sustained operational deployment meeting performance metrics \\
+	\bottomrule
+\end{longtblr}
+
+\subsection{Major Capability Acquisition Lifecycle Overview}
+\begin{description}
+	\item[\textbf{\ac{msa}.}] Shape the trade space and select a preferred materiel solution; conclude with an \ac{aoa} recommendation and technology maturation plan~\autocite{DoDI5000-85}.
+	\item[\textbf{\ac{tmrr}.}] Mature technologies, refine requirements, and reduce integration risk to enter \ac{emd}; manage competitive prototyping where feasible~\autocite{DoDI5000-85}.
+	\item[\textbf{\ac{emd}.}] Complete detailed design, verify system performance, and prepare for production and deployment decisions~\autocite{DoDI5000-85}.
+	\item[\textbf{\ac{pd.phase}.}] Produce capability, conduct IOT\&E, field initial units, and decide on Full-Rate Production~\autocite{DoDI5000-85}.
+	\item[\textbf{\ac{os.phase}.}] Sustain readiness, execute modernization, and plan for disposal while feeding affordability back into PPBE cycles~\autocite{DoDI5000-85}.
+\end{description}
+
+\begin{figure}[H]
+	\centering
+	\fbox{\parbox[c][2.25in][c]{0.9\linewidth}{\centering Placeholder for MCA Integrated Master Schedule graphic.\\Coordinate with TikZ cell for final layout.}}
+	\caption{Planned location for \ac{mca} schedule visualization.\srcCite{DoDI5000-85}}
+	\label{fig:mca_schedule_placeholder}
+\end{figure}
+
+\subsection{Materiel Development Decision (MDD)}
+\begin{description}
+	\item[\textbf{Inputs.}] Validated \ac{icd}, initial affordability analysis, preliminary acquisition strategy, and resource sponsor endorsement~\autocite{DoDI5000-02}.
+	\item[\textbf{Decision.}] \ac{mdauthority} authorizes entry into \ac{msa} (or an alternate pathway) and designates the lead \ac{peo}/Program Manager~\autocite{DoDI5000-85}.
+	\item[\textbf{Outputs.}] Acquisition Decision Memorandum, competitive \ac{aoa} guidance, and direction to form the Integrated Product Team structure~\autocite{DoDI5000-85}.
+\end{description}
+
+\subsection{Materiel Solution Analysis Phase Essentials}
+\begin{description}
+	\item[\textbf{Purpose.}] Analyze alternatives, define the preferred materiel solution, and scope technology maturity and risk reduction tasks~\autocite{DoDI5000-85}.
+	\item[\textbf{Key Activities.}] Conduct \ac{aoa}, establish initial system performance metrics, develop early test strategies, and plan technology maturation for critical subsystems~\autocite{DoDI5000-85}.
+	\item[\textbf{Entrance Criteria.}] Approved \ac{mdd}, resourced \ac{aoa} study guidance, and draft acquisition strategy~\autocite{DoDI5000-02}.
+	\item[\textbf{Exit Criteria.}] Approved \ac{tmrr} acquisition strategy update, technology risk assessments (TRL~$\geq$~3--4), and draft \ac{cdd} inputs for Joint staffing~\autocite{DoDI5000-85}.
+\end{description}
+
+\subsection{Milestone~A Focus Areas}
+\begin{description}
+	\item[\textbf{Purpose.}] Authorize entry into \ac{tmrr} and approve the initial Acquisition Strategy and \ac{apb}~\autocite{DoDI5000-85}.
+	\item[\textbf{Board Topics.}] \ac{aoa} results, technology maturation plans, affordability caps, cost estimates, and early test strategies~\autocite{DoDI5000-85}.
+	\item[\textbf{Outputs.}] Acquisition Decision Memorandum, approved initial \ac{apb}, direction for competitive prototyping, and signed Technology Development Strategy if required~\autocite{DoDI5000-85}.
+\end{description}
+
+\subsection{Technology Maturation and Risk Reduction Phase Essentials}
+\begin{description}
+	\item[\textbf{Purpose.}] Reduce integration risk, mature the Technical Baseline, and prepare for Engineering \& Manufacturing Development source selection~\autocite{DoDI5000-85}.
+	\item[\textbf{Key Activities.}] Competitive prototyping (if directed), systems engineering trade studies, reliability growth, cyber-resilience planning, and \ac{cdd}-validation (\ac{cdd}-V)\autocite{DoDI5000-85}.
+	\item[\textbf{Entrance Criteria.}] Approved Milestone~A ADM, funded risk-reduction plan, and established Integrated Master Schedule aligned to Navy Gate~5 timeline~\autocite{DoDI5000-85,OPNAVINST5000-42E}.
+	\item[\textbf{Exit Criteria.}] Technology Readiness Assessments showing TRL~$\geq$~6, draft Milestone~B documentation (e.g., Systems Engineering Plan, Test \& Evaluation Master Plan), and configured product baseline ready for the Development RFP Release Decision (\ac{drfprd})\autocite{DoDI5000-85}.
+\end{description}
+
+\subsection{Milestone~B Focus Areas}
+\begin{description}
+	\item[\textbf{Purpose.}] Authorize entry into \ac{emd} and establish the program as a major defense acquisition program with formal reporting~\autocite{DoDI5000-85}.
+	\item[\textbf{Board Topics.}] Affordability caps, independent cost estimates, Test \& Evaluation Master Plan approval, Low-Rate Initial Production (\ac{lrip}) planning, and production-representative prototype evidence~\autocite{DoDI5000-85}.
+	\item[\textbf{Outputs.}] Updated \ac{apb}, approved Acquisition Strategy revision, and contractual authority to release EMD RFPs~\autocite{DoDI5000-85}.
+\end{description}
+
+\subsection{Engineering and Manufacturing Development Phase Essentials}
+\begin{description}
+	\item[\textbf{Purpose.}] Complete detailed design, build and test engineering development models, and validate manufacturing processes~\autocite{DoDI5000-85}.
+	\item[\textbf{Key Activities.}] Critical Design Review (\ac{cdr}), system verification, developmental test events, cybersecurity accreditations, and sustainment baseline development~\autocite{DoDI5000-85}.
+	\item[\textbf{Entrance Criteria.}] Approved Milestone~B ADM with resourced contracts, finalized technical baseline, and product-support planning aligned to Navy Gate~6~\autocite{DoDI5000-85}.
+	\item[\textbf{Exit Criteria.}] Successful Initial Operational Test \& Evaluation readiness, manufacturing readiness $\geq$~MRL~8, and validated sustainment strategies supporting Milestone~C~\autocite{DoDI5000-85}.
+\end{description}
+
+\subsection{Milestone~C Focus Areas}
+\begin{description}
+	\item[\textbf{Purpose.}] Authorize production and deployment following demonstration of operational effectiveness and suitability~\autocite{DoDI5000-85}.
+	\item[\textbf{Board Topics.}] IOT\&E results, sustainment and supply-chain readiness, affordability assessments, and updated manpower/training plans~\autocite{DoDI5000-85}.
+	\item[\textbf{Outputs.}] Full-Rate Production Decision Review (\ac{frpdr}) plan, updated \ac{apb}, and authority to obligate procurement funding for production lots~\autocite{DoDI5000-85}.
+\end{description}
+
+\subsection{Production and Deployment Phase Essentials}
+\begin{description}
+	\item[\textbf{Purpose.}] Produce and deliver the system while validating operational performance and support concepts~\autocite{DoDI5000-85}.
+	\item[\textbf{Key Activities.}] \ac{lrip} execution, IOT\&E, Configuration Steering Board (\ac{csb}) governance, and ramp to Full-Rate Production~\autocite{DoDI5000-85}.
+	\item[\textbf{Exit Criteria.}] Full-Rate Production approval, attainment of Initial Operational Capability (\ac{ioc}), and sustainment plans ready for fleet release~\autocite{DoDI5000-85}.
+\end{description}
+
+\subsection{Operations and Support Phase Essentials}
+\begin{description}
+	\item[\textbf{Purpose.}] Sustain mission effectiveness, execute modernization, and manage total ownership cost until disposal~\autocite{DoDI5000-85}.
+	\item[\textbf{Key Activities.}] Performance-Based Logistics execution, Depot maintenance planning, Post-Deployment reviews, and Configuration Steering Boards for major updates~\autocite{DoDI5000-85}.
+	\item[\textbf{Milestones.}] Full Operational Capability (\ac{foc}), disposal decision documentation, and updates to capability requirements feeding future planning cycles~\autocite{DoDI5000-85}.
+\end{description}
 
 
 %====================
@@ -26,4 +191,7 @@
 		style=long-booktabs
 	]}{}
 \end{document}
+
+
+
 

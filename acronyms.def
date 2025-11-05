@@ -78,6 +78,11 @@
 \newacronym{twd}{TWD}{Technical Work Document}
 \newacronym{casrep}{CASREP}{Casualty Report}
 \newacronym{icd}{ICD}{Initial Capabilities Document}
+\newacronym{kpp}{KPP}{Key Performance Parameter}
+\newacronym{ksa}{KSA}{Key System Attribute}
+\newacronym{juon}{JUON}{Joint Urgent Operational Need}
+\newacronym{jeon}{JEON}{Joint Emergent Operational Need}
+\newacronym{uon}{UON}{Urgent Operational Need}
 \newacronym{sandt}{{S\&T}}{Science and Technology}
 
 % --- Cybersecurity & Risk Management ---
@@ -118,30 +123,35 @@
 
 % --- Acquisition Decision Framework ---
 
+\newacronym{aaf}{AAF}{Adaptive Acquisition Framework}
 \newacronym{acat}{ACAT}{Acquisition Category}
 \newacronym{aoa}{AoA}{Analysis of Alternatives}
-\newacronym{bca}{BCA}{Business Case Analysis}
-\newacronym{mca}{MCA}{Major Capability Acquisition}
-\newacronym{mdd}{MDD}{Materiel Development Decision}
-\newacronym{mdauthority}{MDA}{Milestone Decision Authority}
-\newacronym{msa}{MSA}{Materiel Solution Analysis}
-\newacronym{tmrr}{TMRR}{Technology Maturation and Risk Reduction}
-\newacronym{emd}{EMD}{Engineering and Manufacturing Development}
-\newacronym{ibr}{IBR}{Integrated Baseline Review}
 \newacronym{apb}{APB}{Acquisition Program Baseline}
-\newacronym{sep}{SEP}{Systems Engineering Plan}
-\newacronym{temp}{TEMP}{Test and Evaluation Master Plan}
-\newacronym{sar}{SAR}{Selected Acquisition Report}
-\newacronym{daes}{DAES}{Defense Acquisition Executive Summary}
-\newacronym{dab}{DAB}{Defense Acquisition Board}
+\newacronym{bca}{BCA}{Business Case Analysis}
 \newacronym{card}{CARD}{Cost Analysis Requirements Description}
 \newacronym{cape}{CAPE}{Cost Assessment and Program Evaluation}
-\newacronym{dcape}{DCAPE}{Director, CAPE}
-\newacronym{cpa}{CPA}{Chairman's Program Assessment}
-\newacronym{ipt}{IPT}{Integrated Product Team}
-\newacronym{aaf}{AAF}{Adaptive Acquisition Framework}
+\newacronym{dab}{DAB}{Defense Acquisition Board}
+\newacronym{daes}{DAES}{Defense Acquisition Executive Summary}
 \newacronym{dag}{DAG}{Defense Acquisition Guidebook}
+\newacronym{das}{DAS}{Defense Acquisition System}
+\newacronym{dbs}{DBS}{Defense Business System}
+\newacronym{cpa}{CPA}{Chairman's Program Assessment}
+\newacronym{dcape}{DCAPE}{Director, CAPE}
+\newacronym{drfprd}{DRFPRD}{Development Request for Proposal Release Decision}
+\newacronym{emd}{EMD}{Engineering and Manufacturing Development}
+\newacronym{ibr}{IBR}{Integrated Baseline Review}
+\newacronym{ipt}{IPT}{Integrated Product Team}
 \newacronym{lcsp}{LCSP}{Life-Cycle Sustainment Plan}
+\newacronym{mca}{MCA}{Major Capability Acquisition}
+\newacronym{mdauthority}{MDA}{Milestone Decision Authority}
+\newacronym{mdd}{MDD}{Materiel Development Decision}
+\newacronym{msa}{MSA}{Materiel Solution Analysis}
+\newacronym{mta}{MTA}{Middle Tier of Acquisition}
+\newacronym{sar}{SAR}{Selected Acquisition Report}
+\newacronym{sep}{SEP}{Systems Engineering Plan}
+\newacronym{temp}{TEMP}{Test and Evaluation Master Plan}
+\newacronym{tmrr}{TMRR}{Technology Maturation and Risk Reduction}
+\newacronym{ucaacq}{UCA}{Urgent Capability Acquisition}
 
 % --- Contracting Authorities & Teams ---
 
@@ -169,6 +179,7 @@
 \newacronym{ipmdar}{IPMDAR}{Integrated Program Manager's Data Analysis Report}
 \newacronym{ims}{IMS}{Integrated Master Schedule}
 \newacronym{pmb}{PMB}{Performance Measurement Baseline}
+\newacronym{csb}{CSB}{Configuration Steering Board}
 \newacronym{bcws}{BCWS}{Budgeted Cost of Work Scheduled}
 \newacronym{bcwp}{BCWP}{Budgeted Cost of Work Performed}
 \newacronym{acwp}{ACWP}{Actual Cost of Work Performed}
@@ -293,6 +304,9 @@
 \newacronym{bom}{BoM}{Bill of Material}
 \newacronym{erp}{ERP}{Enterprise Resource Planning}
 \newacronym{lrip}{LRIP}{Low-Rate Initial Production}
+\newacronym{frpdr}{FRPDR}{Full-Rate Production Decision Review}
+\newacronym{pdr}{PDR}{Preliminary Design Review}
+\newacronym{cdr}{CDR}{Critical Design Review}
 
 % --- Cost Estimation & Analysis ---
 
@@ -354,6 +368,8 @@
 % --- Acquisition Phases ---
 
 \newacronym{pd.phase}{P\&D}{Production and Deployment Phase}
+\newacronym{ioc}{IOC}{Initial Operational Capability}
+\newacronym{foc}{FOC}{Full Operational Capability}
 \newacronym{os.phase}{O\&S}{Operations and Support Phase}
 
 % --- Unsorted and Recently Added ---
