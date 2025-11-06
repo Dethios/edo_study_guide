@@ -1,0 +1,3809 @@
+EDO Board Prep Study Guide
+
+LCDR Victor Lee, USN, PMP
+Guide Updated: 2025-11-06
+EDO Coursebook Current as of: 2025-09-19
+
+Contents
+
+List of Figures
+
+List of Tables
+
+1 Organization
+1.1 Command Chains and Governance
+Refs:
+
+1.1.1 Operations Chain (Title 10)
+Chain flow. President → Secretary of Defense (SECDEF) → Combatant Commander (CCDR). The Chairman of the Joint
+
+Chiefs of Staff (CJCS) is the principal military adviser; service chiefs are not in the operational chain of Title 10.
+Board cue. Boards love the contrast with acquisition authority; avoid conflating operational and acquisition chains.
+Echelons. Counted from the Chief of Naval Operations (CNO) (e.g., CNO is Echelon I, Systems Commands (SYSCOMs) are
+
+Echelon II, etc.).
+Figure 1.1 shows the Title 10 chain of command. Figure 1.2 shows the Chain of Command from the President to Echelon III
+commands.
+
+1.1 Command Chains and Governance
+
+2
+
+Figure 1.1. Title 10 Chain of Command. Source: edo-2-1-1-command-structures-2025, edo-2-1-1-command-structures-2025 [edo-2-1-1-command-struc
+
+1.1 Command Chains and Governance
+
+3
+POTUS
+
+SECDEF
+
+SECNAV
+
+Echelon I
+
+Echelon II
+
+NAVWAR
+
+NAVSEA
+
+Echelon III
+
+NIWC PAC
+
+NSWC Carderock
+
+NIWC LANT
+
+NSWC Corona
+
+NSFA
+
+NSWC Crane
+
+NAVFAC
+
+CNO
+
+NAVAIR
+
+NAVSUP
+
+ONI
+
+NAWCAD
+
+ONR
+
+SSP
+
+NRL
+
+NAWCWD
+
+NSWC Philadelphia
+
+NSWC Dahlgren
+
+NSWC Indian Head
+
+NSWC Port Hueneme
+
+NUWC Keyport
+
+NUWC Newport
+
+Figure 1.2. Organization Command Structure
+
+1.1.2 Acquisition Governance (Department of the Navy)
+Policy authority. Assistant Secretary of the Navy for Research, Development and Acquisition (ASN(RD&A)) is the Service
+
+Acquisition Executive (SAE) for the Department of the Navy (DON) and sets policy for Program Executive Offices (PEOs)
+and Direct Reporting Program Managers (DRPMs) [SECNAV5400-15D, SECNAV5000-2G].
+Matrix execution. PEOs hold program authority; SYSCOMs ( Naval Sea Systems Command (NAVSEA), Naval Informa-
+
+tion Warfare Systems Command (NAVWAR), Naval Air Systems Command (NAVAIR)) provide the Technical Authority
+(TA) warrants and workforce; Naval Warfare Centers (NWCs) deliver research, development, test, and engineering support [SECNAV5400-15D].
+Figure 1.3 shows the Navy acquisition governance chain of command.
+
+1.1 Command Chains and Governance
+
+4
+
+Figure 1.3. Acquisition Governance Chain of Command. Source: edo-2-1-1-command-structures-2025, edo-2-1-1-command-structures-2025 [edo-2-1-1-
+
+1.2 Technical Authority and Engineering Agents
+
+5
+
+1.1.3 Approving Authorities
+
+Figure 1.4. Technical Authority v.s. Program Authority alignment. Source: edo-2-1-5-technical-authority-2025, edo-2-1-5-technical-authority-2025 [edo-2
+
+Figure 1.4 contrasts the roles of TA and Program Authority (PA) in Navy acquisition.
+
+1.2 Technical Authority and Engineering Agents
+Refs:
+
+1.2.1 What Technical Authority Is
+TA. Independent engineering authority to set, maintain, and certify conformance to technical standards and baselines across
+
+the lifecycle [SECNAV5400-15D].
+Ultimate Technical Authority (UTA). Executed at the SYSCOM level (e.g., NAVSEA); resides with the Commander and flows
+
+through the Chief Engineer via a formal warranting system [edo-2-1-5-technical-authority-2025].
+Delegated TA. Warranted Technical Warrant Holders (TWHs) (Lead/Local/Warranted TA) receive domain-specific
+
+authority across hull, mechanical, and electrical systems, combat systems, cybersecurity, and airworthiness or
+seaworthiness [edo-2-1-5-technical-authority-2025].
+Core TA duties. Must-know responsibilities:
+
+1.2 Technical Authority and Engineering Agents
+
+6
+
+1. Establish and approve technical requirements, standards, and certification criteria;
+2. Control the authoritative technical baseline (drawings, specs, interface control);
+3. Adjudicate departures and waivers from specification and safety-critical changes; and
+4. Certify readiness, readiness for service, and technical acceptability.
+Independence. TA remains separate from cost, schedule, and programmatic authority to protect warfighter safety and mission
+
+assurance [SECNAV5400-15D].
+1.2.2 What EAs Do (and Do Not Do)
+
+Engineering Agents (EAs) perform lifecycle engineering under TA governance. They are not TA unless they hold a TA warrant [edo-2-1-5-technical-authority-2025]. Common EA roles include:
+In-Service Engineering Agent (ISEA). Lifecycle systems engineering for fielded systems (e.g., fleet introduction, distance support,
+
+troubleshooting/ Casualty Report (CASREP) support, maintenance planning, obsolescence, technical manuals/data, configuration of the in-service baseline).
+Design Agent (DA). Develops detailed design and configuration documentation for a system or platform (e.g., ship detail de-
+
+sign, Initial Capabilities Documents (ICDs), drawings, Technical Data Packages (TDPs)) to TA-approved standards.
+Alteration Engineering Agent (AEA). Produces alteration packages (e.g., installation drawings, test procedures, logistics updates)
+
+and supports fleet introduction for ship or system changes.
+Systems Integration Agent (SIA). Orchestrates system-of-systems integration (e.g., interfaces, interoperability, cybersecurity in
+
+the integration space) across combat system elements and platforms.
+Technical Direction Agent (TDA). Issues and maintains technical work direction for installations and maintenance (e.g., Techni-
+
+cal Work Document (TWD), local instructions) consistent with the TA-approved baseline.
+1.2.3 Where Engineering Agent Authority Comes From
+Statutory basis. [SECNAV5400-15D] assigns DON acquisition responsibilities, directing SYSCOMs to execute TA and to
+
+designate Warfare Centers as EAs that support PEOs and Program Managers (PMs).
+Delegations from TA. NAVSEA, NAVAIR, and NAVWAR Chief Engineers issue written warrants or designation
+
+letters (Lead/Lab/Local TA) that flow requirements to specific Warfare Center codes; EA charters reference those
+warrants [edo-2-1-5-technical-authority-2025].
+Execution orders. PEOs and PMs provide technical direction letters, project orders, and statements of work that scope the
+
+EA’s tasks while preserving independence for specification compliance and certification [edo-2-1-4-warfare-centers-2024].
+
+1.3 NAVSEA Organization and Warfare Centers
+
+7
+
+Accountability. EAs report to the SYSCOM Chief Engineer for technical rigor and to the sponsoring PM for
+
+cost and schedule; loss of a warrant or charter terminates their authority to issue technical documentation [edo-2-1-5-technical-authority-2025].
+1.2.4 Waterfront Triage: What Engages Whom
+Spec/drawing nonconformance (build or repair). Generate a departure or waiver request for the proper TA warrant holder;
+
+minor deviations may be approved by Local or Lead TA, while major or safety-critical issues go to the Chief Engineer/ UTA.
+In-service failure ( CASREP/technical assist). ISEA opens a support case, provides immediate workarounds and troubleshooting,
+
+coordinates root-cause analysis, updates technical data, and recommends permanent fixes (engineering change or alteration).
+Change to configuration. If a permanent change is needed, the AEA develops the alteration package; SIA validates interfaces;
+
+DA updates drawings and TDPs; TA approves and certifies.
+Principle to remember. EAs execute engineering; TA sets the rules and certifies compliance.
+
+1.3 NAVSEA Organization and Warfare Centers
+Refs:
+
+1.3.1 HQ Codes (must-know one-liners)
+SEA 01 – Comptroller. Budget Submitting Office (BSO); leads NAVSEA financial governance.
+SEA 02 – Contracts. Contracting authority and policy.
+SEA 03 – Cyber Engineering and Digital. Enterprise cyber engineering and digital transformation.
+SEA 04 – Industrial Operations. Shipyards, logistics, and quality-assurance oversight.
+SEA 05 – Chief Engineer ( TA). Sets engineering standards and certifies designs.
+SEA 06 – Sustainment. Life-cycle product support.
+SEA 07 – Undersea Warfare. Dual-hatted as Program Executive Office, Undersea Warfare Systems (PEO UWS); provides life-
+
+cycle support for in-service submarine and undersea forces.
+SEA 08 – Nuclear Propulsion. Manages all technical matters pertaining to naval reactors. Triple-hat duties:
+SEA 08 Deputy Commander. Leads nuclear propulsion activities within NAVSEA.
+
+1.3 NAVSEA Organization and Warfare Centers
+
+8
+
+Director, Naval Nuclear Propulsion ( Office of the Chief of Naval Operations (OPNAV) 00N). Serves as the Navy’s principal nu-
+
+clear propulsion authority.
+Deputy Administrator for Naval Reactors. Interfaces with the National Nuclear Security Administration and the Department
+
+of Energy.
+SEA 09 – Safety and Regulatory Compliance. Strengthens and aligns safety oversight and reporting.
+SEA 10 – Total Force and Corporate Operations. Manages the workforce, corporate services, and governance.
+SEA 21 – In-Service Ships (dual-hat Commander, Navy Regional Maintenance Center (CNRMC)). Oversees fleet surface-ship sustain-
+
+ment and modernization. Program Management Offices (PMOs) under SEA 21:
+PMS 321. Unmanned small combatants and amphibious ships.
+PMS 326. International fleet support.
+PMS 339. Surface training systems.
+PMS 421. Large surface combatant modernization and sustainment.
+PMS 443. Bridge integration and HM&E sustainment.
+PMS 451. Destroyer Modernization 2.0 portfolio.
+SEA 21I. Inactive Ships Directorate.
+Surface Maintenance Engineering Planning Program (SURFMEPP) Activity. Surface Maintenance Engineering Planning Pro-
+
+gram.
+1.3.2 Warfare Centers (alphabetical)
+
+Table I lists NAVSEA Warfare Centers with locations and descriptions.
+Table I: NAVSEA Warfare Centers with locations and descriptions.
+
+Center
+
+Location
+
+Description
+
+NSWC Carderock
+
+West Bethesda, MD
+
+Ship design and engineering.
+
+NSWC Corona
+
+Corona, CA
+
+Analytics and data driven performance assessments.
+
+NSWC Crane
+
+Crane, IN
+
+Electronic/expeditionary warfare; strategic system components.
+
+NSWC Dahlgren
+
+Dahlgren, VA
+
+Surface ship weapons system development and integration .
+
+NSWC Dam Neck
+
+Virginia Beach, VA
+
+Combat-system software, training/testing.
+
+NSWC Indian Head
+
+Indian Head, MD
+
+Energetics, explosive-ordnance-disposal technologies.
+Continued on next page
+
+1.3 NAVSEA Organization and Warfare Centers
+
+9
+
+Table I: NAVSEA Warfare Centers with locations and descriptions. (Continued)
+
+Center
+
+Location
+
+Description
+
+NSWC Panama City
+
+Panama City, FL
+
+Mine warfare and littoral warefare systems.
+
+NSWC Philadelphia
+
+Philadelphia, PA
+
+Surface and undersea machinery, power, controls, and auxiliary ship systems.
+
+NSWC Port Hueneme
+
+Port Hueneme, CA
+
+Integrated logistics and test and evaluation for surface warefare combat systems.
+
+NUWC Keyport
+
+Keyport, WA
+
+Sustaining undersea warefare systems and vehicles.
+
+NUWC Newport
+
+Newport, RI
+
+Undersea, subsea, and seabed warfare weapons systems development and integration.
+
+Source – edo-2-1-4-warfare-centers-2024, edo-2-1-4-warfare-centers-2024 [edo-2-1-4-warfare-centers-2024]
+
+navsea_warfare_centers, navsea_warfare_centers [navsea_warfare_centers]
+Hint – Remember that for Naval Surface Warfare Centers (NSWCs) there are 3-C’s, 2-D’s, and 3-P’s plus 1-I. There are only two ”Ports” for Naval
+Undersea Warfare Centers (NUWCs).
+
+1.3.3 NWC Locations
+
+Figure 1.5 shows the geographic locations of NWCs. For the Engineering Duty Officer (EDO) board, most recommend drawing
+the US to show where the NWCs are located. The other option is to list them out, but a map is more visual.
+
+1.4 NAVWAR Enterprise and Warfare Centers
+
+10
+
+Figure 1.5. Geographic locations of Navy Warfare Centers.Source: edo-2-1-4-warfare-centers-2024, edo-2-1-4-warfare-centers-2024 [edo-2-1-4-warfare
+
+1.4 NAVWAR Enterprise and Warfare Centers
+Refs:
+
+1.4.1 HQ Directorates and FRD
+
+Table II lists NAVWAR HQ directorates and Fleet Readiness Directorates (FRDs) with one-line roles.
+Table II: NAVWARHQ directorates and Field Readiness Directorates – one-line roles.
+
+Code
+
+Office
+
+One-liner
+
+1.0
+
+Comptroller
+
+Budget formulation/execution; BSO duties; funds control and financial reporting.
+Continued on next page
+
+1.4 NAVWAR Enterprise and Warfare Centers
+
+11
+
+Table II: NAVWARHQ directorates and Field Readiness Directorates – one-line roles. (Continued)
+
+Code
+
+Office
+
+One-liner
+
+2.0
+
+Contracts
+
+Contracting policy/oversight; acquisition strategy; award/administration of instruments.
+
+3.0
+
+Counsel
+
+Legal counsel for acquisition/ethics; protests, claims, agreements, and compliance.
+
+4.0
+
+Logistics & Fleet Support
+
+Life-cycle logistics; sustainment planning; supply/tech data; fleet support integration.
+
+5.0
+
+Chief Engineer / TA (Cyber)
+
+Technical standards/architecture; interoperability; cyber TA; certification/air-gapping where
+required.
+
+6.0
+
+Program Management
+
+Program governance; milestone readiness; portfolio integration; interface with PEOs.
+
+7.0
+
+Science & Technology
+
+S&T portfolio; experimentation/prototyping; tech transition to programs of record.
+
+8.0
+
+Corporate Operations
+
+Workforce, security, facilities, enterprise information-technology/chief-information-officer services, PAO, and other corporate enablers.
+
+FRD-100
+
+Fleet Support
+
+Sustainment services and distance support; field engineering and readiness assistance.
+
+FRD-200
+
+Installations
+
+C4I installation planning/execution; shore/afloat integration and cutover support.
+
+Source – edo-2-1-3-navwar-enterprise-2024, edo-2-1-3-navwar-enterprise-2024 [edo-2-1-3-navwar-enterprise-2024]
+
+1.4.2 Warfare Centers (alphabetical)
+
+Table III lists NAVWAR Warfare Centers with locations and descriptions.
+Table III: NAVWAR Warfare Centers with locations and descriptions.
+
+Center
+
+Location
+
+Description
+
+NIWC LANT
+
+Charleston, SC
+
+Enterprise information-technology solutions; cradle-to-grave C4ISR.
+
+NIWC PAC
+
+San Diego, CA
+
+C4ISR RDT&E; Navy/Joint/Allied support.
+
+NSFA
+
+Chantilly, VA
+
+Navy link to the NRO; space research and development coordination.
+
+Source – edo-2-1-3-navwar-enterprise-2024, edo-2-1-3-navwar-enterprise-2024 [edo-2-1-3-navwar-enterprise-2024]
+
+NIWC LANT detachments
+
+• HQ: Charleston, SC.
+• New Orleans, LA.
+• Norfolk, VA.
+• Naples, Italy.
+• Manama, Bahrain.
+NIWC PAC detachments
+
+1.6 Navy PEOs (Program Executive Offices)
+
+12
+
+• HQ: San Diego, CA.
+• Everett, WA.
+• Pearl City, HI.
+• Santa Rita, Guam.
+• Yokosuka, Japan.
+
+1.5 NAVAIR Warfare Centers
+Refs:
+
+Table IV lists NAVAIR Warfare Centers with locations and descriptions. This is an optional item to know for the EDO board, not
+as critical as NAVSEA/ NAVWAR.
+Table IV: NAVAIR Warfare Centers with locations and descriptions.
+
+Center
+
+Location
+
+Description
+
+NAWCAD
+
+Patuxent River, MD
+
+Aircraft/engines/avionics RDT&E; Test Pilot School.
+
+NAWCWD
+
+China Lake / Point Mugu, CA
+
+Weapons systems, ranges, guided-missle integration.
+
+Source – edo-2-1-4-warfare-centers-2024, edo-2-1-4-warfare-centers-2024 [edo-2-1-4-warfare-centers-2024]
+
+1.6 Navy PEOs (Program Executive Offices)
+Refs:
+
+Program Executive Office, Aircraft Carriers (PEO CVN). Designs, builds, delivers, and sustains nuclear-powered aircraft carriers.
+PMS 312. In-service aircraft carrier program management.
+PMS 378. Nuclear-Powered Aircraft Carrier (CVN)-78 class program management.
+PMS 379. CVN-79/80 program management.
+Program Executive Office, Integrated Warfare Systems (PEO IWS). Develops and sustains ship and submarine combat systems.
+IWS 1.0. Aegis combat system lead.
+
+1.6 Navy PEOs (Program Executive Offices)
+
+13
+
+IWS 1.0F. Aegis fleet readiness.
+IWS 2.0. Above-water sensors portfolio.
+IWS 3.0. Surface ship weapons integration.
+IWS 4.0. International and foreign military sales.
+IWS 5.0. Undersea systems.
+IWS 6.0. Command-and-control systems.
+IWS 9.0. DDG-1000, littoral combat ship, and patrol craft combat systems.
+IWS 11.0. Terminal defense systems.
+IWS 12.0. NATO Seasparrow programs.
+IWS 80.0. Atalanta combat systems.
+IWS X. Integrated combat-system document center.
+Program Executive Office, Ships (PEO Ships). Oversees surface combatant and amphibious ship construction and modernization.
+Program Executive Office, Unmanned and Small Combatants (PEO USC). Manages littoral combat ships, frigates, expeditionary
+
+platforms, and unmanned surface/undersea portfolios.
+Team Submarines. Integrates strategic and attack submarine acquisition and sustainment.
+Program Executive Office, Attack Submarines (PEO SSN). Attack submarine programs.
+PMS 351. New attack submarine acquisition.
+PMS 390. Undersea special mission systems.
+PMS 391. In-service submarine sustainment.
+PMS 394. Advanced undersea systems development.
+PMS 450. Virginia class program management.
+Program Executive Office, SSBN (PEO SSBN). Strategic deterrent submarine portfolio.
+PMS 396. In-service Ballistic Missile Submarine, Nuclear (SSBN) sustainment.
+PMS 397. Columbia class program management.
+Submarine Maintenance Engineering Planning Program (SUBMEPP). Surface maintenance engineering planning program
+
+support to ballistic submarine availabilities.
+
+1.6 Navy PEOs (Program Executive Offices)
+
+14
+
+PEO UWS. Submarine combat, cyber, and sensor systems.
+PMS 401. Submarine acoustic systems.
+PMS 404. Undersea weapons.
+PMS 415. Undersea defensive warfare systems.
+PMS 425. Combat and weapon control systems.
+PMS 435. Electromagnetic systems.
+PMS 485. Maritime surveillance systems.
+Program Executive Office, Command, Control, Communications, Computers, and Intelligence (PEO C4I). Delivers fleet Command,
+
+Control, Communications, Computers, and Intelligence (C4I) capabilities.
+PMW 120. Battlespace awareness and information operations.
+PMW 130. Information Assurance (IA) and cybersecurity programs.
+PMW 150. Navy command-and-control systems.
+PMW 160. Tactical networks.
+PMW 170. Communications and Global Positioning System (GPS) navigation.
+PMW 740. International C4I integration.
+PMW 750. Carrier strike and air integration.
+PMW 760. Ship integration.
+PMW 770. Undersea integration.
+PMW 790. Shore and expeditionary integration.
+PMW series focus. Two PMW series within PEO C4I have distinct roles:
+PMW 1XX. Major capability development portfolios (new platforms and end-to-end networks) where PEO C4I
+
+owns the baseline capabilities document, acquisition strategy, and milestone execution; Warfare Centers supply
+lead systems integration, test ranges, and engineering agents via tailored project orders [SECNAV5400-15D,
+edo-2-1-4-warfare-centers-2024].
+PMW 7XX. Fleet integration portfolios synchronizing new capabilities into existing hulls, aircraft, and shore nodes; empha-
+
+sizes installation planning, logistics, and interoperability packages coordinated through regional Warfare Centers and
+type commanders [SECNAV5400-15D, edo-3-1-5-field-activity-fm-2025].
+
+1.6 Navy PEOs (Program Executive Offices)
+
+15
+
+Program Executive Office, Digital and Enterprise Services (PEO Digital). Provides enterprise digital services (e.g., Flank Speed
+
+collaboration environment).
+Program Executive Office, Manpower, Logistics and Business IT (PEO MLB). Modernizes manpower, logistics, and business
+
+information-technology systems.
+1.6.1 PEO/Warfare Center Interaction Model
+Role Designation. PEOs charter Warfare Centers as EAs ( ISEA, DA, SIA) via technical direction letters aligned with
+
+[SECNAV5400-15D]; the Warfare Center executes under Navy Working Capital Fund (NWCF) funding while reporting
+performance to the PM [edo-2-1-4-warfare-centers-2024].
+Requirements Translation. PM Integrated Product Teams (IPTs) decompose Capabilities Development Documents (CDDs)
+
+into technical requirements that Warfare Center TA holders validate and flow down through alteration packages, interface
+control documents, and test plans [edo-2-1-4-warfare-centers-2024].
+Funding Mechanisms. PEO PMOs issue project orders or Economy Act orders using their appropriations; Warfare Centers
+
+accept into NWCF, schedule Work Breakdown Structures (WBSs), and recover rates through Stabilized Labor Rates (SLRs)
+while keeping the PM apprised of burn rates and Net Operating Result (NOR) impacts [edo-3-1-5-field-activity-fm-2025].
+Governance Rhythm. Monthly technical reviews focus on requirements churn, test results, and configuration control; quarterly
+
+business reviews reconcile execution to SLR assumptions and assess workforce mix, drawing on Warfare Center cost visibility [SECNAV5400-15D, edo-3-1-5-field-activity-fm-2025].
+Acquisition Decision Events. Warfare Centers provide independent readiness assessments (test status, technical risk)
+
+for PEO milestone decisions, often serving as certifying authorities for safety releases or flight clearances prior to
+fielding [SECNAV5400-15D, edo-2-1-4-warfare-centers-2024].
+
+2 PPBE
+2.1 PPBE (Planning, Programming, Budgeting, and Execution)
+Refs:
+
+2.1.1 What PPBE does
+
+Aligns strategy to resources across the Future Years Defense Program (FYDP). Planning (strategy → guidance), Programming
+(balanced force/program → Program Objective Memorandum (POM)), Budgeting (validated request → President’s Budget
+(PB)), Execution (obligations/outlays → performance feedback) [edo-3-1-1-ppbe-2025].
+2.1.2 Timeline (annual rhythm)
+
+Figure 2.1 shows the Planning, Programming, Budgeting and Execution (PPBE) timeline across multiple fiscal years with key
+milestones during each calendar year.
+
+2.1 PPBE (Planning, Programming, Budgeting, and Execution)
+
+17
+
+Figure 2.1. PPBE Timeline for multiple fiscal years. Source: edo-3-1-1-ppbe-2025, edo-3-1-1-ppbe-2025 [edo-3-1-1-ppbe-2025].
+
+2.1.3 Congressional Enactment (Regular Order)
+
+Figure 2.2 highlights how Congress moves from the PB submission through authorization and appropriations when operating
+on-time without a Continuing Resolution (CR). Being able to walk this chart helps bridge PPBE milestones with Hill activity.
+
+2.1 PPBE (Planning, Programming, Budgeting, and Execution)
+
+18
+
+Figure 2.2. Congressional Enactment Timeline. Source: edo-3-1-2-congressional-enactment-2025, edo-3-1-2-congressional-enactment-2025 [edo-3-1-2
+
+2.1.4 Key Terms and Definitions
+
+Table V lists key terms and definitions.
+Table V: Key terms in PPBE
+
+Term
+
+One-liner
+
+PY
+
+Last completed FY: execution look-back and CR baselines.
+
+CY
+
+Ongoing FY: execution and mid-year reviews.
+
+BY
+
+Next FY in submission.
+
+POM
+
+Service’s balanced force/program across the FYDP.
+
+FYDP
+
+5-year program structure and resources.
+
+Source – DoDFMR-Vol3, DoDFMR-Vol3 [DoDFMR-Vol3]
+
+Other terms and definitions from [edo-3-1-1-ppbe-2025]:
+Cost Assessment and Program Evaluation (CAPE). Provides independent cost assessment and program evaluation.
+Program Decision Memorandum (PDM). Records SECDEF program decisions at the end of Program Review.
+OPNAV Integration of Capabilities and Resources (N8). Builds the Navy POM; trades across portfolios with cost/risk realism.
+
+2.1 PPBE (Planning, Programming, Budgeting, and Execution)
+
+19
+
+OPNAV Warfare Systems (N9). Validates/advocates warfare requirements; integrates by mission area.
+Warfare Integration Directorate (N91). Manages cross-domain mission integration and architecture; orchestrates POM issue
+
+papers and mission engineering. Office designators can shift; verify current subcodes week-of.
+2.1.5 Programming v.s. Budgeting
+
+Table VI compares key differences between Programming and Budgeting. One way to think about this: (1) Budgeting is for the
+money for this year and (2) Programming is for the 5-year FYDP.
+Table VI: Programming v.s. Budgeting
+
+Programming
+
+Budgeting
+
+Purpose
+
+Build a balanced force across FYDP
+
+Price/validate an executable BY request
+
+Lead
+
+N8 with supporting codes/PEOs/SYSCOMs
+
+FMB/OSD (Comptroller)/OMB
+
+Key products
+
+POM, PDM
+
+Budget estimate, reclama, President’s Budget
+
+Source – edo-3-1-1-ppbe-2025, edo-3-1-1-ppbe-2025 [edo-3-1-1-ppbe-2025]
+
+2.1.6 PPBE Programming
+3-Star v.s. 4-Star Reviews:
+
+During Office of the Secretary of Defense (OSD)’s Program Review, issues raised on the Services’
+
+POMs move first to a 3-Star Programmers Panel (staff-level, chaired by Director, CAPE (DCAPE)) that vets issue papers,
+builds options (with offsets), and forwards recommendations. Unresolved or strategy-level trades go to the 4-Star forum, the
+Deputy’s Management Action Group (DMAG) co-led by the Deputy SECDEF (with the Vice-Chairman of the Joint Chiefs of
+Staff (VCJCS)), for senior adjudication. Decisions at this stage are documented as a PDM or (in recent cycles) a programmatic
+Resource Management Decision (RMD), which updates the FYDP and hands off to the Comptroller’s Budget Review that
+culminates in budgetary RMDs.
+2.1.7 Appropriations Life-cycle (Colors of Money)
+
+Figure 2.3 visualizes when each major appropriation category is Current, Expired, or Cancelled. Pair this with the obligation
+windows discussion so you can sketch the chart quickly at the board.
+
+2.1 PPBE (Planning, Programming, Budgeting, and Execution)
+
+20
+
+Figure 2.3. Colors of Money Timeline. Source: edo-3-1-3-program-funding-2025, edo-3-1-3-program-funding-2025 [edo-3-1-3-program-funding-2025
+
+2.1.8 IGT (Intragovernmental Transactions)
+Definition. Orders and collections between federal entities using Treasury’s G-Invoicing: 7600A (order), 7600B (agreemen-
+
+t/performance), Intra-Governmental Payment and Collection (IPAC) for collections [Treasury-GInvoicing].
+Why it matters. Intragovernmental Transaction (IGT) acceptance is an obligation on the customer side and the revenue recogni-
+
+tion driver for the performing Working Capital Fund (WCF) activity.
+2.1.9 Common Ordering Instruments
+Work Order. Internal directive used within a command to control scope/cost/schedule.
+Project Order. Statutory order for a definite, specific, and entire project; obligational on acceptance; performs like a contract
+
+between Department of Defense (DoD) activities. (41 U.S.C. § 6307) [USC-6307-ProjectOrder]
+Military Interdepartmental Purchase Request (MIPR)/IPR (DD Form 448). Economy Act order between federal entities;
+
+obligational when accepted; performed by the servicing agency. (31 U.S.C. § 1535) [USC-1535-EconomyAct,
+Treasury-GInvoicing]
+
+2.1.10 Fiscal Law (Know These Cold)
+
+Purpose Statute (“Misappropriation”). Funds must be used only for their appropriated purpose (31 U.S.C. § 1301(a)) [USC-1301-Purpos
+
+Bona Fide Needs Rule. Use current-year appropriations only for legitimate needs of that fiscal year (31 U.S.C. § 1502(a)) [USC-1502-BFN
+Anti-Deficiency Act. Do not obligate/expend in excess of available amounts or before funds are available (31 U.S.C. § 1341,
+
+§ 1517) [USC-1341-ADA].
+
+2.2 NWCF Essentials: Rates, Results, and Execution
+
+21
+
+2.1.11 Reprogramming: Moving Resources After Enactment
+Four mechanisms (high level).
+
+1. Congressional Prior Approval Reprogramming (PA Reprog): Actions above statutory/committee thresholds or affecting
+congressional special-interest items or new starts. Requires approval from all four defense committees; timing driven by
+committee cycles [DoDFMR-Vol3].
+2. Internal Reprogramming (IR): Realignments within an appropriation that do not cross thresholds or trigger congressional
+interest; used for proper purpose alignment without changing totals. Notice sent to committees [DoDFMR-Vol3].
+3. Below-Threshold Reprogramming (BTR): Component-level authority to move funds below set dollar/percent
+limits within the same appropriation/fiscal year; limits reset annually by appropriations acts/committee guidance [DoDFMR-Vol3].
+4. Letter Transfer (LT): Treasury non-expenditure transfer moving budgetary resources between appropriations/treasury
+symbols when authorized (e.g., statute or enacted language) [DoDFMR-Vol3].
+Hint
+
+General rules of thumb—cannot change color-of-money or extend time; must complete before funds’ obligation period ends;
+
+expired-year accounts limited to valid upward/downward adjustments only [DoDFMR-Vol3].
+
+2.1.12 From Enactment to Field Authority
+
+1. Treasury warrants the appropriation; Office of Management and Budget (OMB) apportions on Standard Form 132.
+2. OSD (Comptroller) issues allocations to components such as the DON.
+3. OPNAV ( Financial Management Budget (OPNAV) (FMB)/ OPNAV Programming Division (N82)) allocates to SYSCOM
+BSOs (Echelon II), which suballocate to Warfare Centers (Echelon III), followed by allowances/allotments to the Enterprise
+Resource Planning (ERP) system [DoDFMR-Vol3].
+4. Commands record commitments, obligations, and expenses, and request outlays via Defense Finance and Accounting
+Service (DFAS).
+
+2.2 NWCF Essentials: Rates, Results, and Execution
+Refs:
+
+2.2 NWCF Essentials: Rates, Results, and Execution
+
+22
+
+2.2.1 Key Definitions (Execution)
+Commitment. Administrative reservation of funds in anticipation of an obligation; reduces available authority but is not yet a
+
+legal liability [DoDFMR-Vol3] (e.g., National Reconnaissance Office (NRO)’s Request for Contract Action (RCA) process).
+Obligation. Legal liability incurred that encumbers funds [DoDFMR-Vol3] (e.g., award of a contract, acceptance of an IGT
+
+order).
+Expenditure/Expense. Recording of cost when goods/services are received/accepted (accrual basis) [DoDFMR-Vol3] (e.g.,
+
+sending check to pay an invoice).
+Outlay/Disbursement. Treasury cash payment to a vendor or performing activity [DoDFMR-Vol3] (e.g., payment check is
+
+cashed in).
+2.2.2 Flow: PMO Purchase Request to Treasury Payment
+
+1. PMO commits funds (approved in the ERP system).
+2. Contract award or IGT order acceptance creates the obligation [DoDFMR-Vol3, Treasury-GInvoicing].
+3. Performance/acceptance posts expense (accrual).
+4. DFAS schedules the invoice for payment; Treasury disburses (outlay) via IPAC (for IGT) or commercial
+EFT [Treasury-GInvoicing].
+2.2.3 NWCF Metrics and Equations
+NOR (annual profit/loss).
+
+NOR = Revenue − Total Expenses
+Target performance remains near break-even over time (small NOR) [DoDFMR-Vol3].
+Accumulated Operating Result (AOR) (retained earnings/equity over time).
+
+AOR𝑡 = AOR𝑡−1 + NOR𝑡 ± Other Adjustments
+Represents the corpus (net position) of the fund [DoDFMR-Vol3].
+2.2.4 NWCF Corpus v.s. Appropriations
+Corpus ( AOR/Working Capital). Revolving cash and retained earnings authorized under 10 U.S.C. § 2208 [USC-2208-NWCF];
+
+remains available without fiscal year limitation to finance operations until recovered through stabilized
+rates [DoDFMR-Vol3-Ch19].
+
+2.2 NWCF Essentials: Rates, Results, and Execution
+
+23
+
+Customer Appropriations. Mission-funded (e.g., Operation and Maintenance, Navy (OMN), Research, Development, Test, and
+
+Evaluation (RDT&E), Shipbuilding and Conversion, Navy (SCN)) dollars obligated by the customer when a project order or
+inter/intra-governmental order is accepted; purpose, time, and amount statutes still apply to the customer [DoDFMR-Vol3].
+Capital Investment Program (CIP). Financed by NWCF corpus but budgeted in the capital budget exhibit; used for plant/equip-
+
+ment modernization and amortized back through rates, not through a separate appropriation [DoDFMR-Vol3-Ch19].
+No Augmentation. NWCF activities cannot augment customer appropriations; corpus only bridges cash timing between ex-
+
+pense recognition and reimbursement [DoDFMR-Vol3-Ch19].
+2.2.5 Stabilized Rates and SLR
+Stabilized Rates. Customer prices set in the budget build to recover expected full costs (labor, material, overhead, deprecia-
+
+tion/C CIP) with a near-zero NOR goal [DoDFMR-Vol3].
+SLR. Published labor $/hr for a shop/code; recovers direct labor + fringe + overhead + G&A + capital depreciation recov-
+
+ery [DoDFMR-Vol3]:
+SLR =
+
+Direct Labor + Fringe + OH + G&A + Depreciation Recovery
+Direct Labor Hours
+
+Adjustment Battle Rhythm. Rates are established two years ahead during the PPBE budget build and held constant
+
+throughout budget year execution; mid-year changes require OUSD(C) approval when earned rates diverge materially
+from planned costs, and Navy BSOs typically review SLR accuracy monthly/quarterly to recommend any out-of-cycle
+adjustments [DoDFMR-Vol3-Ch19].
+2.2.6 NWCF v.s. Mission-Funded (Appropriation) Commands
+Which billets at NWCF are mission-funded.
+
+Military administration and leadership billets (CO/XO/Admin) are funded by Mili-
+
+tary Personnel (MILPERS) and treated as mission-funded within NWCF; certain command/HQ oversight billets may also be
+
+OMN funded by policy, so verify locally. These costs are not recovered in stabilized rates. Others that are assigned to NWCF will
+bill hours towards work and the NWCF will reimburse MILPERS [DoDFMR-Vol3].
+2.2.7 Standing Up or Modifying a NWCF Business Area
+
+1. Business Case Development: Sponsor (e.g., ASN(RD&A) or SYSCOM) prepares analytical justification showing workload,
+demand signal, and ability to operate on a revolving basis without violating purpose/time/amount [DoDFMR-Vol3-Ch19].
+2. acdon Approval Chain: Secretary of the Navy (SECNAV) (delegated to ASN (FM&C)) endorses the concept and forwards
+to OUSD(C) while coordinating with Navy Comptroller to align PPBE exhibits [DoDFMR-Vol3-Ch19].
+3. OUSD(C)/ OMB Review: DoD Chief Financial Officer (CFO) validates cash requirements, rate methodology, and capital
+plan, then seeks OMB alignment for the PB [DoDFMR-Vol3-Ch19].
+
+2.2 NWCF Essentials: Rates, Results, and Execution
+
+24
+
+4. Congressional Notification: Congress must be notified (and, when required, explicitly authorize in appropriations or
+authorizations) before execution; 10 U.S.C. § 2208 [USC-2208-NWCF] restricts creation of new WCFs without legislative
+awareness [DoDFMR-Vol3-Ch19].
+5. Implementation: Once approved, the new business area is issued an NWCF business unit code, begins PPBE rate build
+two years out, and transitions legacy appropriated accounts via opening balance adjustments [DoDFMR-Vol3-Ch19].
+2.2.8 NWCF Cycle of Operations (Order to Cash)
+
+1. Customer order. IGT 7600A or project order is received and accepted, creating the customer’s obligation.
+2. Work in process. Labor and material are applied; costs accumulate; billing events are scheduled per percent complete or
+delivery.
+3. Revenue recognition and billing. The NWCF recognizes revenue and bills via IPAC ( IGT) or a commercial invoice if
+authorized.
+4. Collection (cash). Treasury IPAC/electronic funds transfer posts; NWCF cash increases; NOR/ AOR update through the
+period close [DoDFMR-Vol3, Treasury-GInvoicing].
+2.2.9 Operating During a Continuing Resolution
+Customer Funding Limits. Appropriated customers remain bound by prior-year obligation rates and anti-deficiency constraints;
+
+NWCF orders cannot exceed apportioned CR amounts until an appropriations act is passed [CRS-CR].
+Cash Cushion. Existing NWCF corpus allows Warfare Centers to keep executing accepted orders (labor continues,
+
+suppliers paid) even if reimbursements lag, provided cash balances stay within the FMR’s upper/lower operating
+limits [DoDFMR-Vol3-Ch19].
+No New Starts. CR guidance prohibits new start projects, major capital investments, or rate changes absent explicit exception;
+
+NWCF managers defer new workloads that would obligate customer funds beyond CR allowances [CRS-CR].
+Rate Discipline. Stabilized rates remain frozen; only emergency OUSD(C)-approved rate adjustments may occur, so BSOs focus
+
+on expense control to avoid large NOR swings during the CR period [DoDFMR-Vol3-Ch19].
+2.2.10 Why Use a Warfare Center (Organic)
+Things PMOs/industry can’t do. Inherently governmental TA warrants, certification authority, certain safety releases; highly
+
+classified or nuclear workspaces.
+Things they shouldn’t do. Independent test/assessment, spec adjudication, tech baseline control, blue-&-gold separation to
+
+avoid Organizational Conflict of Interest (OCI).
+Things they won’t do. Sustainment engineering at scale, depot-level organic repair, fleet distance support.
+
+2.3 Congressional Enactment
+
+25
+
+2.3 Congressional Enactment
+Refs:
+
+2.3.1 Foundations and core definitions
+Power of the purse. U.S. Constitution, Article I.
+Section 8.
+
+“The Congress shall have power to... provide for the Common Defense... and general welfare...”
+Section 9.
+
+“No money shall be drawn from Treasury, but in consequence of Appropriations made by law...”
+Key terms. Budget Authority (BA) (legal authority to incur obligations), Total Obligational Authority (TOA), obligations,
+
+outlays, Legislative Proposal (LEGPROP).
+Authorization v.s. Appropriation. National Defense Authorization Act (NDAA) authorizes programs/policy; appropriations
+
+provide BA.
+2.3.2 Who drafts what
+Authorization. House Armed Services Committee (HASC) / Senate Armed Services Committee (SASC).
+Appropriations. House Appropriations Committee (HAC) / Senate Appropriations Committee (SAC).
+Budget Resolution. House Budget Committee (HBC) / Senate Budget Committee (SBC) (sets topline aggregates and 302
+
+allocations; not a law).
+Independent analysis/oversight. Congressional Budget Office (CBO) (scoring), Congressional Research Service (CRS) (re-
+
+search), Government Accountability Office (GAO) (audits/oversight).
+2.3.3 Regular-order timeline
+
+Figure 2.4 shows the timeline from the PB → Appropriation Bill with approximate timelines assuming no CR.
+
+2.3 Congressional Enactment
+
+26
+
+Figure 2.4. Congressional Enactment Timeline. Source: edo-3-1-2-congressional-enactment-2025, edo-3-1-2-congressional-enactment-2025 [edo-3-1-2
+
+2.3.4 The 12 regular appropriations bills
+Defense. Department of Defense appropriations.
+Military Construction and Veterans Affairs. Military construction, housing, and Department of Veterans Affairs programs.
+Energy and Water. Department of Energy, Army Corps of Engineers, and related infrastructure programs.
+Homeland Security. Department of Homeland Security operations and components.
+Interior and Environment. Department of the Interior and Environmental Protection Agency activities.
+Labor, Health and Human Services, Education. Departments of Labor, Health and Human Services, and Education, plus related
+
+agencies.
+Legislative Branch. U.S. Congress and supporting legislative branch agencies.
+Financial Services and General Government. Treasury, judiciary, Small Business Administration, and other independent agencies.
+Transportation and Housing and Urban Development. Departments of Transportation and Housing and Urban Development.
+Commerce, Justice, Science. Departments of Commerce and Justice plus science agencies such as NASA and the National Sci-
+
+ence Foundation.
+State and Foreign Operations. Department of State, U.S. Agency for International Development, and foreign assistance pro-
+
+grams.
+
+2.4 Program Funding and Execution
+
+27
+
+Agriculture and Food and Drug Administration (FDA). Department of Agriculture and Food and Drug Administration activities.
+Note
+
+The bills that EDO’s care about the most are Defense, Military Construction (MILCON) & Department of Veterans Affairs
+(VA) and Energy & Water. This because those bills directly affect funding for our acquisitions.
+Hint
+
+These bills are sometimes packaged into minibuses or a single omnibus appropriations act.
+
+2.3.5 Continuing Resolution
+CR rules (board one-liner).
+
+No new starts; rate/quantity changes generally constrained unless specified; execution limited by
+
+OMB apportionment and any anomalies in law [CRS-CR].
+2.3.6 Sequestration
+
+Automatic, across-the-board reductions if statutory caps/triggers are breached; applied by account unless modified by law.
+
+2.4 Program Funding and Execution
+Refs:
+
+2.4.1 BA, commitment, obligation, expenditure, outlay
+
+1. BA available (legal authority).
+2. Commitment (administrative reservation).
+3. Obligation (legal liability via contract/order).
+4. Expenditure (payment recorded).
+5. Outlay (cash disbursed/Treasury).
+Source references [DoDFMR-Vol3, Treasury-GInvoicing].
+2.4.2 Appropriation categories, scope, obligation windows
+
+Table VII shows the Colors of Money with their spending categories and obligation windows. Figure 2.3 from § 2.1.7 visually
+shows when each category is Current, Expired, or Cancelled.
+
+2.4 Program Funding and Execution
+
+28
+Table VII: Appropriation categories, scope, obligation windows
+
+Category
+
+Typical Scope
+
+Obligation Window
+
+RDT&E
+
+Science & technology; development; test & evaluation
+
+2 years
+
+OPNa
+
+End items/modernization and spares
+
+3 years
+
+OMN
+
+Operations, maintenance, training, minor mods
+
+1 year
+
+MILCON
+
+Facilities construction and real property
+
+5 years
+
+MILPERS
+
+Personnel pay
+
+1 year
+
+a
+
+SCN is a specific procurement with a 5-year obligation window.
+
+Source – DoDFMR-Vol3, DoDFMR-Vol3 [DoDFMR-Vol3]
+
+2.4.3 Funding policies
+Annual. ( OMN/ MILPERS). Fund only bona fide needs of the fiscal year.
+Incremental. ( RDT&E). Fund work as it occurs by fiscal year.
+Full-funding. (Procurement/ MILCON). Fund the total usable end-item at award.1
+
+Common techniques/exceptions: Advance Procurement (long-lead items), Multiyear Procurement, Economic Order Quantity, Cost-
+
+to-Complete when provided in law.
+Exceptions to the Full Funding Policy
+
+Below is the list of the key exceptions to the Full Funding Policy, what they allow, and the must-know rules/approvals (Table VIII
+shows full details).
+
+1
+
+Exceptions to Full funding are select SCN programs (CVNs, SSBNs, and LHD/LHAs) with Congressional approval.
+
+2.4 Program Funding and Execution
+
+29
+
+Table VIII: Key exceptions to the Full Funding Policy: what they allow and what to remember
+
+Exception
+
+Typical
+
+What it allows
+
+Must-know rules / approvals
+
+Single contract covering multiple fiscal years
+
+Requires specific congressional authoriza-
+
+of buys to achieve predictable demand and
+
+tion; stable requirements/design; credible
+
+unit-cost savings; may include EOQ pur-
+
+savings; low technical risk; term generally
+
+chases common across years.
+
+up to 5 years; plan/budget any cancellation
+
+Appropriation
+MYP
+
+APN, OPN, SCN
+
+liability.
+Advance Procure-
+
+APN, OPN, SCN
+
+Limited early funding (often 1–2 years be-
+
+Narrow and part-specific; must be justified
+
+ment (incl. LLT-
+
+fore the main “buy” year) for long-lead com-
+
+in budget docs; EOQ commonly tied to MYP
+
+M/EOQ)
+
+ponents or EOQ lots to protect schedule or
+
+(or explicit block authority); does not equal
+
+achieve price breaks.
+
+full funding of the end item.
+
+A single contract buying multiple ships
+
+Requires explicit congressional authoriza-
+
+(or end items) across fiscal years to gain
+
+tion; funds still obligated year-by-year; not
+
+tooling/learning-curve efficiencies.
+
+under the MYP statute, so oversight mechan-
+
+Primarily SCN
+
+BB
+
+ics differ.
+CTC
+
+SCN
+
+Additional funds in a later FY to finish an
+
+Completes original approved scope (not
+
+item (e.g., ship) when matured estimates
+
+added capability); appears as a distinct re-
+
+exceed prior appropriations.
+
+quest/justification; common in long-duration
+shipbuilding.
+
+RCOH for CVN
+
+SCN (with prior Ad-
+
+Mid-life refueling and major overhaul
+
+Recognized exception due to size/complex-
+
+vance Procurement)
+
+funded incrementally over multiple years;
+
+ity; incremental SCN with advance procure-
+
+early procurement of nuclear fuel/critical
+
+ment years ahead of the principal execution.
+
+components.
+Notes – (i) Economic Order Quantity (EOQ) purchases are commonly approved within Multiyear Procurement (MYP) or other explicit multi-year
+constructs;
+(ii) Block Buy resembles MYP in intent (savings) but uses program-specific authorization;
+(iii) Plan for cancellation liability under MYP when required.
+Source – USC-3501, DFARS217-172, DoDFMR-Vol3, USC-3501, DFARS217-172, DoDFMR-Vol3 [USC-3501, DFARS217-172,
+
+DoDFMR-Vol3]
+
+Quick information regarding exceptions to the full funding policy:
+MYP. Up to 5 years; stable design; verifiable savings; cancellation liability planned.
+Advance Procurement ( Long-Lead Time Material (LLTM)/ EOQ). Focused early buys for schedule/savings; not full funding.
+Block Buy (BB). Congressionally authorized multi-ship buys; obligate by Fiscal Year (FY); not the MYP statute.
+Cost-to-Complete (CTC). Complete original scope when estimates mature upward; separate SCN request.
+
+2.5 Cost Elements, Estimates, and Learning Curves
+
+30
+
+Refueling and Complex Overhaul (RCOH). Planned mid-life overhaul; incremental SCN with advance procurement of cores/criti-
+
+cal material.
+2.4.4 Which money when (by acquisition phase)
+
+Table IX shows the nominal types of appropriation used for Materiel Solution Analysis (MSA), Technology Maturation and
+Risk Reduction (TMRR), Engineering and Manufacturing Development (EMD), Production and Deployment Phase (P&D), and
+Operations and Support Phase (O&S)
+Table IX: Appropriation types per phase
+
+Phase
+
+Typical appropriation(s)
+
+MSA
+
+RDT&E (analyses, prototyping); small OMN for studies
+
+TMRR
+
+RDT&E (risk reduction, development, test)
+
+EMD
+
+RDT&E (develop/build/test/qualify); selected long-lead/AP/EOQ in Procurement when authorized
+
+PD
+
+Procurement (e.g., OPN); limited RDT&E for fixes
+
+OS
+
+OMN sustainment; spares via Procurement as applicable
+
+2.4.5 MILCON v.s. O&M sustainment v.s. OPN modernization
+
+Rule of thumb: Real property construction ⇒ MILCON; keeping systems running (repair/overhaul, services) ⇒ OMN; new
+
+capability/end-item upgrades ⇒ Procurement (e.g., Other Procurement, Navy (OPN)).
+2.4.6 Field Activity Financial Management (NWCF quick hits)
+Goal. NWCF activities price to break even over time; in-year result is NOR, cumulative is AOR.
+Rates ( SLR). Recover direct labor + overhead + G&A; shocks flow to NOR/AOR and are managed over time.
+Carryover. Unfilled orders at FY end; subject to limits/management.
+IGT via G-Invoicing. Treasury-mandated platform for intra-gov orders/settlement; apportionment/availability rules still govern
+
+customer funds.
+
+2.5 Cost Elements, Estimates, and Learning Curves
+Refs:
+
+2.5 Cost Elements, Estimates, and Learning Curves
+
+31
+
+2.5.1 Direct v.s. Indirect Costs
+Direct. Traceable to a final cost objective (e.g., technician hours, end-item material).
+Indirect. Pooled and allocated (overhead, G&A, facilities, depreciation). See the Federal Acquisition Regulation (FAR) cost
+
+principles [FAR].
+2.5.2 Program Cost Terms (Know the Stack)
+Flyaway Cost. Recurring production cost of an aircraft/weapon delivered (excludes non-recurring tooling, spares, support).
+Weapon System Cost. Flyaway plus support equipment, training, data, and initial spares.
+Procurement Cost. Weapon system cost plus peculiar support and MILCON as applicable.
+Life-Cycle Cost (LCC). All costs from concept through disposal ( RDT&E, procurement, O&S, disposal).
+Total Ownership Cost (TOC). LCC plus broader infrastructure/indirect enterprise costs.
+Note
+
+Use DON/ DoD cost handbook definitions; be consistent across documents. [SECNAV5000-2G, DoDI5000-85].
+Figure 2.5 shows the LCC from above and how they relate to one another. Note how each cost builds to the next as different
+types of expenditures are added.
+
+Figure 2.5. Composition of Life Cycle Costs. Source: edo-3-1-6-cost-estimating-2024, edo-3-1-6-cost-estimating-2024 [edo-3-1-6-cost-estimating-2024]
+
+2.5 Cost Elements, Estimates, and Learning Curves
+
+32
+
+2.5.3 Why the LCCE Matters
+
+Establishes the affordability baseline, informs Acquisition Program Baseline (APB), drives color-of-money phasing, and underpins
+“will-cost / should-cost” targets [DoDI5000-85]. Figure 2.6 shows the different types of funding that will be used in different
+phases of the Major Capability Acquisition (MCA). Most of the LCC will be from the O&S phase.
+
+Figure 2.6. LCC over time. The colors of money used are shown for each phase including percent of total costs.
+Source: edo-3-1-6-cost-estimating-2024, edo-3-1-6-cost-estimating-2024 [edo-3-1-6-cost-estimating-2024]
+
+2.5.4 Estimating Methods (When to Use)
+Analogy. Early stages; limited data; similar system scaling.
+Parametric. Cost Estimating Relationships (CERs) (e.g., weight, Source Lines of Codes (SLOCs)); Analysis of Alternatives
+
+(AoA)/ TMRR; fast trade-space.
+Engineering (Bottom-up). Detailed design/ Bill of Materials (BoMs); EMD/production maturity; schedule-critical Integrated
+
+Baseline Reviews (IBRs).
+Actuals/Extrapolation. Learning/production maturity; later lots [DAU-AAF].
+
+2.5.5 Products and Players
+Cost Analysis Requirements Description (CARD). Technical/schedule baseline for independent estimates.
+Independent Cost Estimate (ICE). Component Acquisition Executive (CAE) or OSD CAPE for Acquisition Category (ACAT) I;
+
+Program Office Estimate (POE).
+
+2.5 Cost Elements, Estimates, and Learning Curves
+
+33
+
+Cost and Software Data (CSDR). Contractor cost & software data reporting for actuals/ CERs.
+APB/ Selected Acquisition Report (SAR)/ Defense Acquisition Executive Summary (DAES). Baselines and report-
+
+ing [DoDI5000-85].
+2.5.6 Learning Curve (Production Efficiency)
+
+If unit time/cost follows an 𝑠% slope, doubling quantity reduces unit cost by 𝑠%. Typical aerospace slopes: 85–90% early, flattening as processes mature. Plan lots and spares buys accordingly [DAU-AAF].
+2.5.7 Cost Escalation (Inflation Indices)
+
+Escalate base-year costs to then-year using approved DoD inflation indices; separate real growth from price growth; align phasing to obligation windows [DoDFMR-Vol3].
+2.5.8 Will-Cost / Should-Cost
+Will-Cost. Conservative reference estimate used for budgeting and margin planning.
+Should-Cost. Management targets that drive efficiencies (e.g., lean events, value engineering, rate negotia-
+
+tions) [DoDI5000-85].
+
+3 Contracting and Solicitation
+3.1 Intro to Contracting Fundamentals
+Refs:
+
+3.1.1 Why the Navy Uses Contracts
+
+• Contracts create a legally enforceable relationship between the Government and industry partners, defining rights and
+responsibilities for each party.
+
+• Written terms provide structure for changes via agreed conditions, protecting both the Navy and the Contractor throughout
+acquisition actions.
+
+• Binding agreements ensure accountability for cost, schedule, and performance outcomes that cannot be achieved through
+informal arrangements.
+3.1.2 Essential Elements of a Binding Contract
+Mutual Assent. Requires an offer and acceptance with a meeting of the minds on all material terms such as scope, price, quan-
+
+tity, and delivery.
+Consideration. Both sides exchange value (e.g., payment, performance, schedule relief) that courts will evaluate for adequacy
+
+in Government contracting.
+Capacity. Parties must be legally competent to enter the agreement; lack of capacity (e.g., incapacity, lack of authority) under-
+
+mines enforceability.
+Lawful Purpose. The contract must pursue a legal objective; agreements for unlawful acts are void.
+
+3.1.3 Government Relationship to Contractors
+Transactional. Each party enters with distinct incentives (contractor profit versus government outcomes); avoid unauthorized
+
+commitments.
+Professional. Both teams must understand the contract and collaborate to meet requirements.
+
+3.1 Intro to Contracting Fundamentals
+
+35
+
+Collaborative. Contractors bring technical expertise while programmatic decision-making remains inherently governmental.
+Constrained. Interactions are bound by ethics rules, conflicts-of-interest standards, and contract clauses.
+
+3.1.4 FAR System and NAVSEA Overlays
+FAR. Government-wide acquisition regulation establishing policy, procedures, and contract clauses [FAR].
+DFARS. DoD-level supplement tailoring FAR provisions for defense-unique requirements, including competition, source selec-
+
+tion, and industrial base policy [DFARS].
+NMCARS. Department of the Navy supplement that adds Navy-specific directives such as approval thresholds, peer reviews, and
+
+templates [NMCARS].
+SOM Chapter 3. NAVSEA guidance for Supervisors of Shipbuilding on contract formation, modification, and surveil-
+
+lance [SOM-Ch3-2023].
+NAVSEA Source Selection Guide. Standardizes competitive source selection procedures, roles, and documentation for Sea Sys-
+
+tems Command procurements [NAVSEA-Source-Selection-Guide-2022].
+NAVSEA Contracts Handbook. Practical desk reference covering policy interpretations, clause usage, and best practices for
+
+NAVSEA contracting professionals [NAVSEA-Contracts-Handbook-2023].
+3.1.5 Types of Contracting Officers (Know All Three)
+Procuring Contracting Officer (PCO). Leads acquisition planning through award; signs contracts and bilateral modifications on
+
+behalf of the Government.
+Administrative Contracting Officer (ACO). Oversees post-award administration, surveillance, and contractor performance; typi-
+
+cally assigned via Defense Contract Management Agency (DCMA) or NAVSEA field offices.
+Termination Contracting Officer (TCO). Manages partial or complete contract terminations, settlement proposals, and equitable
+
+adjustments.
+All contracting officers must hold a warrant that delineates dollar and authority limits; only a warranted Contracting Officer
+(KO) can obligate the United States [FAR].
+3.1.6 PM and KO Partnership
+PM. Accountable to the Milestone Decision Authority for cost, schedule, and performance; integrates technical authority,
+
+requirements, and budget execution across the lifecycle.
+KO. Provides acquisition strategy execution expertise, ensures compliance with statute/regulation, and is responsible for
+
+contract integrity and enforceability.
+
+3.1 Intro to Contracting Fundamentals
+
+36
+
+Board Cue. PMs lead program outcomes; KOs safeguard the contracting instrument. Neither can assume the other’s authori-
+
+ties, so coordination before solicitations, negotiations, or modifications is mandatory.
+3.1.7 Competition in Contracting Act Requirements
+Full and Open Competition. Default posture: all responsible sources may compete [USC-3201-CICA, FAR].
+Full and Open After Exclusion of Sources. Permits set-asides (e.g., small business, 8(a)) or alternate-source strategies when justi-
+
+fied [FAR].
+Approval for Other than Full and Open. Requires documented justification and senior approval per Subpart 6.3 [FAR].
+Seven Exceptions to Full and Open Competition (Memorize)
+
+1. Only one responsible source will satisfy agency requirements (see [FAR]).
+2. Unusual and compelling urgency (see [FAR]).
+3. Industrial mobilization; engineering, developmental, or research capability (see [FAR]).
+4. International agreement (see [FAR]).
+5. Authorized or required by statute (see [FAR]).
+6. National security (see [FAR]).
+7. Public interest (see [FAR]).
+Hint
+
+Be ready to cite an example scenario for each exception and the approval level required.
+
+3.1.8 Responsiveness, Responsibility, and Key Determinations
+Responsiveness (sealed bidding). Bid must conform to all material terms of the Invitation for Bids; nonconforming bids are
+
+rejected without discussion [FAR].
+Responsibility. Prospective contractor must possess adequate resources, schedule compliance, performance record, integrity,
+
+and necessary systems to receive award ([FAR]).
+3.1.9 Justification and Approval (J&A) v.s. Determination and Findings (D&F)
+J&A. Documents the rationale for other-than-full-and-open competition, identifies the chosen statutory exception, and records
+
+approval by the appropriate official. Must be posted to https://sam.gov after award with required redactions [FAR].
+
+3.2 Solicitation Preparation
+
+37
+
+D&F. Formal determination that specific conditions are satisfied before taking an action (e.g., use of special contract types,
+
+multiyear contracting); states the findings that support the determination [FAR].
+Note
+
+At the NRO, documents and rational are post on the low and high-side Acquisition Research Center (ARC). We are
+required to post other-full-and-0pen compeition for five days on the ARC to allow opportuniy for other contracters to bid.
+
+3.1.10 Who Signs D&Fs (and When)
+General Rule. [FAR] requires the contracting officer to sign D&Fs when the action is within their delegated authority, unless a
+
+higher approval level is specified elsewhere in the regulation or delegation memo.
+Head Contracting Activity (HCA). [FAR] reserve approval for actions such as issuing a letter contract or awarding a single-award
+
+task/delivery Indefinite-Delivery, Indefinite-Quantity (IDIQ) expected to exceed $100M; DON HCAs may redelegate no
+lower than a flag/Senior Executive [NMCARS].
+SAE. Multiyear contracting, extraordinary contractual relief, or other actions identified in [FAR] and [DFARS] require a D&F
+
+signed by the Service SAE ( ASN(RD&A) for the Navy, who is also the DON Senior Procurement Executive) or a specifically
+delegated official.
+Document Content. Every D&F must cite the specific statutory/regulatory authority, describe supporting facts, and state the
+
+determination in clear language; expiration dates and any required follow-on reviews must also be included per [FAR] and
+[NMCARS] guidance.
+
+3.2 Solicitation Preparation
+Refs:
+
+3.2.1 Summary
+Uniform Contract Format (UCF) scaffolding. Tailor the Uniform Contract Format (Sections A through M) so Section C defines
+
+the requirement, Section L tells offerors how to respond, and Section M mirrors evaluation factors and the stated basis of
+award [FAR, edo-3-2-2-solicitation-prep-2025].
+Release readiness. Do not release the Request for Proposal (RFP) until the acquisition plan/strategy is approved, funds are
+
+certified, legal review is complete, synopsis rules are satisfied, and the source-selection teams are chartered [FAR, NMCARS,
+edo-3-2-2-solicitation-prep-2025].
+
+3.2 Solicitation Preparation
+
+38
+
+Communication discipline. Request for Informations (RFIs), draft RFPs, industry days, and Q&A all flow through the KO;
+
+once released, clarifications must be shared with all offerors through written amendments or controlled exchanges [FAR,
+edo-3-2-2-solicitation-prep-2025].
+
+3.2.2 Practitioner Steps
+
+1. Finalize the requirement package (spec/ Statement of Work (SOW), Contract Data Requirements Lists (CDRLs), Independent Government Cost Estimate (IGCE), market research report) with IPT concurrence and Small Business coordination
+documentation [FAR, edo-3-2-2-solicitation-prep-2025].
+2. Structure Section L instructions: volumes, page limits, submission medium, proposal due date, classification controls, and
+[FAR] synopsis timing.
+3. Align Section M evaluation factors, subfactors, and relative importance statements with the basis of award ( Lowest Price
+Technically Acceptable (LPTA) v.s.
+trade-off) and rating methodology approved by the Source Selection Authority (SSA), KO, legal, and cost/price community [FAR, NAVSEA-Source-Selection-Guide-2022].
+4. Verify pre-release approvals and postings: acquisition plan or strategy, Determination of Acquisition Strategy (as applicable),
+certified funds, and SAM.gov synopsis [NMCARS, edo-3-2-2-solicitation-prep-2025].
+5. Manage amendments and records after release: capture bidder Q&A, issue conformed RFPs, adjust milestones when requirements shift, and file every action in the official contract record [FAR, NAVSEA-Contracts-Handbook-2023].
+3.2.3 Checklist
+
+• Acquisition plan/strategy signed; conformed requirements package appended [NMCARS].
+• Funding document ( Purchase Request (PR), project order, or MIPR) signed and funds certified for the planned obligation [FAR].
+
+• Market research report and Small Business Coordination Record approved [FAR].
+• Source Selection Plan endorsed by SSA, legal, and cost/price; nondisclosure/ OCI statements executed
+for SSA, Source Selection Advisory Council (SSAC), Source Selection Evaluation Board (SSEB), and advisors [NAVSEA-Source-Selection-Guide-2022].
+
+• Section L instructions mirror Section M factors, include proposal structure, late proposal policy, and submission portal
+guidance [FAR].
+
+• SAM.gov synopsis posted (15 days before closing for most supplies/services; 30 days for R&D unless justified) [FAR].
+
+• Amendment template/change log prepared; routing matrix established for expedited approvals [NAVSEA-Contracts-Handbook-202
+
+3.2 Solicitation Preparation
+
+39
+
+3.2.4 Navy Overlays and Tailoring
+NMCARS overlays. Follow 5205.303/5205.301 for synopsis exceptions and NAVSEA contracting notices for Contract Require-
+
+ment Package checklists and release approvals [NMCARS, NAVSEA-Contracts-Handbook-2023].
+Technical data. Coordinate with TA on DFARS § 252.227 clauses, distribution statements, and CDRL tailoring to protect Navy
+
+equities [DFARS].
+Shipbuilding tailoring. For availabilities, modernization, or planning efforts, ensure Section C and the WBS
+
+matches the avail sequence and integrates warfare-center technical direction and installation responsibilities [edo-3-2-2-solicitation-prep-2025].
+3.2.5 Industry Engagement & Communications
+Pre-release. RFIs, sources-sought notices, draft RFPs, and industry days are vetted through the KO; responses shared with all
+
+potential offerors to avoid unequal access [FAR].
+Post-release. Clarifications and Q&A must be issued as amendments for all offerors; exchanges stay within [FAR] boundaries
+
+until competitive range is established [NAVSEA-Contracts-Handbook-2023].
+Small business focus. Coordinate with the Small Business Professional and Competition Advocate on set-aside decisions, sub-
+
+contracting plan reviews, and mitigation of potential limitations on subcontracting [FAR].
+3.2.6 Documentation & Approvals to Capture
+
+• Signed Source Selection Plan and SSA/ SSAC/ SSEB appointment letters with confidentiality and OCI certifications [NAVSEA-Source-Selection-Guide-2022].
+
+• Competition Advocate memoranda where narrowed sources or synopsis deviations are requested [FAR, NMCARS].
+• Legal sufficiency memorandum for the conformed solicitation (Sections C, H, L, and M) retained in the contract
+file [NAVSEA-Contracts-Handbook-2023].
+
+• KO release memorandum noting solicitation number, issue date, amendment log, and proposal due date/time [edo-3-2-2-solicitation-prep-2025].
+3.2.7 Competitive Method Selection: Sealed Bidding v.s. Negotiated Procurement
+Sealed bidding (FAR Part 14). Preferred when requirements are well-defined, award will be based on price alone, discussions
+
+are not needed, and the Government expects to receive more than one responsive bid. It uses public opening, responsiveness
+determinations, and fixed-price awards [FAR].
+Negotiated procurement (FAR Part 15). Used when the Government needs to evaluate technical approach or past performance,
+
+intends to conduct discussions, or when requirements or pricing demand flexibility. Negotiated acquisitions support bestvalue trade-offs and cost-reimbursement vehicles [FAR].
+
+3.2 Solicitation Preparation
+
+40
+
+When to choose. If the team can describe performance in terms of precise specifications with minimal risk and expects
+
+no need for exchanges, sealed bidding streamlines award. When innovation, risk, or integration complexity requires
+subjective evaluation, or when schedule/budget changes are likely, negotiated procurement is mandatory [FAR,
+NAVSEA-Source-Selection-Guide-2022].
+
+3.2.8 Contract Type Landscape and Risk Allocation
+Fixed-price family. Contractor accepts the cost risk; Government locks price once requirements are stable. Includes:
+
+• Firm-Fixed-Price (FFP): Used for mature, low-risk requirements, often in Production and Deployment [FAR,
+DoDI5000-85].
+
+• Fixed-Price Incentive (Firm Target) (FPIF): Shares cost variance through a negotiated share ratio; encourages cost
+control while keeping final price bounded by a ceiling. Used during Engineering & Manufacturing Development ( EMD)
+or Low-Rate Initial Production (LRIP) when cost risk remains but production discipline is needed [FAR, DoDI5000-85].
+
+• Fixed-Price with Economic Price Adjustment (FPEPA): Adds indexed adjustments for volatile commodities or longlead items [FAR].
+
+• Fixed-Price Redetermination (FPR): Re-prices after defined milestones when initial uncertainty is expected to retire [FAR].
+Cost-reimbursement family. Government carries more cost risk; contractor must deliver best effort. Includes:
+
+• Cost-Plus-Fixed-Fee (CPFF): Used in early R&D or prototyping ( MSA/ TMRR) when effort is exploratory [FAR,
+DoDI5000-85].
+
+• Cost-Plus-Incentive-Fee (CPIF): Shares cost variance similar to FPIF but without a price ceiling; encourages efficiency
+while acknowledging uncertain cost baseline [FAR].
+
+• Cost-Plus-Award-Fee (CPAF): Adds subjective award-fee evaluation for mission effectiveness or management performance that cannot be captured in objective metrics [FAR].
+
+3.2 Solicitation Preparation
+
+41
+
+Figure 3.1. Cost-reimbursement contract risk/fee characteristics.
+
+Award v.s. incentive fees. Incentive fees (cost or performance) are calculated from predetermined formulas tied to measurable
+
+outcomes (cost, schedule, technical). Award fees are earned through periodic board evaluations against tailored factors and
+may be unearned if performance is merely satisfactory [FAR, NAVSEA-Contracts-Handbook-2023].
+Award-fee governance. The Award Fee Determining Official (often the PM or SSA designee) chairs an Award Fee Board, uses
+
+the approved plan, and issues a determination memo. Fees are paid after each period and must be commensurate with value
+delivered; scores below the threshold earn zero dollars for that segment [FAR, NAVSEA-Source-Selection-Guide-2022].
+MCA phase alignment. MSA and TMRR generally use CPFF or CPAF because of design uncertainty; EMD can transition to
+
+CPIF or FPIF as risk retires; Production and Deployment favors FFP/ FPIF; Operations and Support relies on FFP or FFP
+Level of Effort (LOE) and can incorporate sustainment IDIQs for depot work [DoDI5000-85].
+MSA. Analytical trades and early prototypes benefit from CPFF flexibility as requirement scope evolves.
+TMRR. CPIF/ CPAF maintain incentives while the Government still absorbs major technical risk during competitive prototyp-
+
+ing.
+EMD. FPIF or CPIF balance contractor motivation and cost control once the design stabilizes, with ceilings to protect the
+
+Government.
+
+3.2 Solicitation Preparation
+
+42
+
+PD. FFP/ FPIF dominate because production baselines and learning curves are known; contractor should own execution
+
+risk.
+OS. Sustainment leverages FFP, FFP LOE, or IDIQs task orders to manage repeatable workloads and retain competition for
+
+modernization.
+
+Figure 3.2. Contract-type emphasis across MCA phases.
+
+3.2.9 Fixed-Price Incentive (Firm Target) Mechanics
+Share ratio. Defines how cost overruns or underruns are split between Government and contractor (e.g., 70/30 means Govern-
+
+ment absorbs 70
+Point of total assumption ( Point of Total Assumption (PTA)). The cost point beyond which every additional dollar of overrun is
+
+borne entirely by the contractor:
+
+𝑃𝑇𝐴 =
+
+Ceiling Price − Target Cost
+Government Share Ratio
+
++ Target Cost.
+
+Example. Target cost $100M, target profit $10M (target price $110M), ceiling price $120M, share ratio 70/30. If actual cost is
+
+$112M:
+Contract price = $110M + 0.3 × ($100M − $112M) = $106.4M.
+
+The PTA occurs at $113.3 M; beyond that, profit erodes dollar-for-dollar until exhausted [FAR, NAVSEA-Contracts-Handbook-2023]
+
+3.2 Solicitation Preparation
+
+43
+
+Figure 3.3. Fixed-price incentive geometry (cost, profit, PTA).
+
+3.2.10 Indefinite & Flexible Contract Forms
+IDIQ. Indefinite-Delivery, Indefinite-Quantity contracts provide flexibility in quantity and timing with task/delivery orders;
+
+suited for recurring installations, sustainment, or services [FAR].
+Time-and-Materials (T&M)/ Labor-Hour (LH). Hybrid vehicles when it is not possible to estimate effort precisely; require ceiling
+
+price, surveillance, and justification because Government assumes cost risk on labor hours [FAR].
+Undefinitized contract actions ( Undefinitized Contract Actions (UCAs)). Letter contracts or other actions authorized before all
+
+terms are settled (e.g., urgent ship repair). Must be definitized within the regulatory timeline, with strict management for
+obligation limits and profit [FAR, DFARS, NMCARS].
+3.2.11 Simplified Acquisition and Small Business Programs
+Simplified Acquisition Threshold ( Simplified Acquisition Threshold (SAT)). Generally $250,000 (higher in contingency or overseas
+
+circumstances). Benefits include streamlined competition, quotation-based awards, and mandatory small-business reservations above the micro-purchase threshold [FAR].
+Small Business Administration ( Small Business Administration (SBA)) programs. FAR Part 19 [FAR] implements 8(a), Historically
+
+Underutilized Business Zone (HUBZone), Service-Disabled Veteran-Owned Small Business (SDVOSB), and Women-Owned
+Small Business (WOSB) programs. The contracting officer must consider set-asides, sole-source thresholds, and subcontracting plans to meet DON goals.
+
+3.3 Cost and Price Evaluation
+
+44
+
+3.2.12 Alternative Acquisition Authorities
+Other Transaction ( Other Transaction (OT)) agreements. Authorized by 10 U.S.C. § 4021 (prototype) and § 4022 (follow-on
+
+production) to rapidly engage nontraditional performers, provided cost share or significant participation criteria are
+met [USC-4021-OTA, USC-4022-OTF].
+Small Business Innovation Research ( Small Business Innovation Research (SBIR)). 15 U.S.C. § 638 establishes Phase I (feasibility),
+
+Phase II (prototype), and Phase III (commercialization/production). SBIR awards leverage R&D funds to deliver Navy-unique
+technology with data rights protections for five years [USC-638-SBIR].
+3.2.13 Technical Data Rights Overview
+Unlimited rights. Government may use, disclose, and authorize others without restriction (typically for data developed exclu-
+
+sively at Government expense) [DFARS].
+Government purpose rights. Government may use or authorize contractors for Government purposes for five years, after which
+
+rights convert to unlimited. Applies to mixed-funding developments [DFARS].
+Limited/Restricted rights. Contractor retains control; Government use is constrained to internal purposes (limited for noncom-
+
+mercial technical data, restricted for commercial computer software). Negotiated licenses or specifically negotiated licenses
+can expand access [DFARS].
+3.2.14 Uniform Contract Format Essentials
+Sections A through H (contract). Cover Standard Form 33, supplies/services, packaging, inspection, delivery, special contract
+
+requirements, clauses, and attachments [FAR].
+Sections I through K (legal/representations). Incorporate FAR/DFARS clauses, representations, certifications, and instructions
+
+for completion [FAR, DFARS].
+Sections L and M (solicitation/Evaluation). Instructions to offerors, proposal structure, page limits, and evaluation
+
+criteria that must remain synchronized to any change to factors or relative order requires an amendment [FAR,
+NAVSEA-Source-Selection-Guide-2022].
+
+3.3 Cost and Price Evaluation
+Refs:
+
+3.3.1 Summary
+KO accountability. The KO must determine that every negotiated price is fair and reasonable, integrating price, cost, technical,
+
+field-pricing, and risk analysis inputs before award per FAR 15.404-1(a)(1)–(5) [FAR].
+
+3.3 Cost and Price Evaluation
+
+45
+
+Cost v.s. price lens. Use price analysis when certified cost or pricing data are not required, and escalate to cost analysis when
+
+element-by-element scrutiny is needed to support the prenegotiation objective [FAR].
+Rate discipline. Forward pricing rates and structured profit analysis keep the Government prenegotiation objective current; the
+
+objective is always proposed cost plus profit or fee per FAR policy [FAR].
+Financial health cue. Profitability ratios ( Return on Sales (ROS), Return on Assets (ROA)) and cash-flow checks expose
+
+responsibility risk and focus Defense Contract Audit Agency (DCAA)/ DCMA field-pricing support requested by the
+KO [FAR] [edo-3-2-4-cost-price-evaluation-2024].
+3.3.2 Practitioner Steps
+
+1. Baseline the offeror’s proposal: confirm certified cost or pricing data requirements, request data other than certified cost or
+pricing data when warranted, and map contractual requirement traces [FAR].
+2. Execute price analysis first—compare competition results, historical buys, catalog/commercial data, and independent
+estimates; pivot to cost analysis when price analysis alone cannot demonstrate reasonableness [FAR].
+3. Decompose direct labor, material, and Other Direct Costs (ODCs); verify indirect pools and allocation bases; and apply the
+five allowability tests before accepting proposed cost elements [FAR].
+4. Establish the profit/fee objective using the agency’s structured approach and update forward pricing rates or agreements as
+necessary to avoid stale factors in negotiations [FAR].
+5. Pull in field-pricing support early: blend DCAA audit results, DCMA production assessments, and program team technical
+evaluations into the prenegotiation briefing and contract file [FAR] [FAR] [DFARS].
+3.3.3 Proposed Price, Cost, Profit, and Fee
+Proposed price. The offeror’s total price equals estimated cost plus any profit or fee applicable to the contract type [FAR].
+Cost. Sum of allowable direct and indirect costs required to deliver the contract—all subject to reasonableness, allocability, and
+
+cost-principle limits [FAR].
+Profit. Negotiated incentive element above allowable cost for fixed-price or incentive contracts, set through structured analy-
+
+sis [FAR].
+Fee. Fixed remuneration on cost-reimbursement vehicles that does not vary with actual cost (e.g., CPFF fee) [FAR].
+
+3.3.4 Direct and Indirect Cost Structure
+Direct cost pools. Direct labor, materials, and ODCs traceable to a single final cost objective; charged through
+
+project-specific accounts backed by bills of material, timecards, travel authorizations, or subcontract
+quotes [FAR] [edo-3-2-4-cost-price-evaluation-2024].
+
+3.3 Cost and Price Evaluation
+
+46
+
+Indirect cost pools. Overhead (manufacturing, engineering) and General and Administrative (G&A) accrued across multiple
+
+objectives, then allocated using consistent bases that reflect benefits received [FAR].
+Proposed Price = Cost + Profit (or Fee)
+
+Cost
+
+Profit (or Fee)
+
+(Cost Elements)
+
+Direct Costs *
+
+Indirect Costs **
+
+Direct Material
+– Raw Material
+– Purchased Parts
+– Subcontracts
+
+Overhead (OH)
+– Material Handling
+– Engineering
+– Manufacturing
+
+Direct Labor
+– Engineering
+– Manufacturing
+
+General & Administrative (G&A)
+Expenses
+
+Other Direct Costs (ODCs)
+– Travel
+– Tooling
+
+Profit
+
+DFARS 215.404–70 to –73
+Application of the DoD Weighted Guide-
+
+Fee
+
+DFARS 215.404–74 & –75
+
+lines
+
+* Direct Cost: Any cost that is identified with a particular final cost objective.
+** Indirect Cost: Any cost not identified with a single final objective, but identified with two or more final
+cost objectives.
+
+Figure 3.4. Mapping direct v.s. indirect contractor cost elements.Source: edo-3-2-4-cost-price-evaluation-2024, edo-3-2-4-cost-price-evaluation-2024 [ed
+
+3.3.5 Other Direct Costs and Cost Allowability
+Other direct costs ( ODCs). Travel, subcontract services, specialized tooling, and similar charges that can be singled out for the
+
+contract even though they are not labor or bulk material categories [FAR] [edo-3-2-4-cost-price-evaluation-2024].
+Cost allowability. A cost is billable only if it is reasonable, allocable, consistent with applicable Cost Accounting Standards
+
+(CAS)/ Generally Accepted Accounting Principles (GAAP), compliant with contract terms, and within any Subpart 31.2
+limitations [FAR].
+Note
+
+Slides may refer to “cash allowability”; FAR terminology is cost allowability.
+
+3.3.6 Cost and Price Analysis
+Price analysis. Examination of the total proposed price without breaking out cost elements using competition, historical buys,
+
+or market indicators [FAR].
+Cost analysis. Evaluation of individual cost elements (direct, indirect, and profit) when price analysis alone cannot demon-
+
+strate reasonableness [FAR].
+
+3.3 Cost and Price Evaluation
+
+47
+
+Integrated view. Technical analysis, field-pricing support, and risk assessments feed both techniques to substantiate the final
+
+fair and reasonable determination [FAR].
+3.3.7 Forward Pricing Rates and Fully Burdened Labor
+Forward Pricing Rate Proposal (FPRP). Contractor-submitted forward pricing rate proposal that lays out projected indirect rates
+
+and factors for the pricing period [FAR].
+Forward Pricing Rate Agreement (FPRA). Negotiated agreement-often executed by DCMA-that locks indirect rates for one to
+
+three years, reducing repetitive audits and speeding negotiations [FAR] [edo-3-2-4-cost-price-evaluation-2024].
+Fully burdened rate. Applies direct labor, indirect burdens, and any negotiated profit/fee to a common labor-hour baseline so
+
+skill mixes can be compared on an apples-to-apples basis [edo-3-2-4-cost-price-evaluation-2024].
+3.3.8 Indirect Rate Math and Profitability Checks
+
+Apply the standard relationships from the cost principles and the coursebook when validating proposals; they are board favorites
+for quick-turn computations covering indirect pools, total cost input ( Total Cost Input (TCI)), G&A, and profitability metrics
+such as ROS and ROA [FAR] [edo-3-2-4-cost-price-evaluation-2024].
+Indirect Cost Rate =
+
+Indirect Cost Pool
+Allocation Base
+
+TCI = Direct Cost + Overhead Cost
+G&A Cost = G&A Rate × TCI
+Fully Burdened Labor Rate =
+ROS =
+ROA =
+
+Direct Labor Cost + Indirect Costs + Profit/Fee
+Direct Labor Hours
+Operating Profit
+Net Sales
+Net Income
+Total Assets
+
+(3.1)
+(3.2)
+(3.3)
+(3.4)
+(3.5)
+(3.6)
+
+Track ROS and ROA against industry benchmarks, cash-on-hand, and debt loads to detect responsibility concerns or unsustainable buy-ins before negotiations [edo-3-2-4-cost-price-evaluation-2024].
+3.3.9 Oversight and Field Pricing Support
+DCMA production insight. Delegated contract administration offices deliver manufacturing surveillance, schedule risk analysis,
+
+and forward-pricing coordination; DFARS highlights that payment authority stays with the buying command even when
+DCMA supports rates [DFARS] [edo-3-2-4-cost-price-evaluation-2024].
+DCAA audit coverage. DCAA is the responsible Government audit agency for most contractors, providing proposal adequacy
+
+reviews, incurred cost audits, and financial capability analyses [FAR].
+Integrated negotiation record. Document how DCMA, DCAA, technical, and program inputs influenced the prenegotiation
+
+objective and the final price reasonableness determination [FAR] [edo-3-2-4-cost-price-evaluation-2024].
+
+3.4 Earned Value Management (EVM)
+
+48
+
+3.3.10 Checklist
+
+• File both price and cost analysis results (including technical inputs) showing how the fair-and-reasonable price was determined [FAR].
+
+• Verify each significant cost element passes the five allowability tests and that allocation bases match current practice [FAR].
+• Confirm the current FPRA/ FPRP is in the file or document why legacy rates remain valid [FAR].
+• Capture DCAA audit opinions, DCMA rate guidance, and profitability ratio trends in the prenegotiation briefing to evidence
+responsibility diligence [FAR] [edo-3-2-4-cost-price-evaluation-2024].
+
+3.4 Earned Value Management (EVM)
+Refs:
+
+3.4.1 What EVM is
+
+Earned Value Management (EVM) is a project management technique that integrates scope, schedule, and cost to assess project
+performance and progress. It provides a quantitative measure of project performance by comparing the planned work with the
+actual work completed and the associated costs. EVM is widely used in government and defense projects to ensure that projects
+are delivered on time and within budget.
+3.4.2 Key Components of EVM
+
+Core cost and schedule metrics establish the earned value performance baseline [edo-3-6-1-evm-intro-2025,
+edo-3-6-2-evm-analysis-2025].
+Planned Value (PV) / Budgeted Cost of Work Scheduled (BCWS) : The budgeted cost for the work scheduled to be completed by
+
+a specific date.
+Earned Value (EV) / Budgeted Cost of Work Performed (BCWP) : The budgeted cost for the work actually completed by a specific
+
+date.
+Actual Cost (AC) / Actual Cost of Work Performed (ACWP) : The actual cost incurred for the work completed by a specific date.
+Budget at Completion (BAC) : The total budget allocated for the project.
+Estimate at Completion (EAC) : The forecasted total cost of the project based on current performance.
+Cost Performance Index (CPI) : A measure of cost efficiency, calculated as CPI = EV/AC. A CPI less than 1 indicates a cost
+
+overrun.
+
+3.4 Earned Value Management (EVM)
+
+49
+
+Schedule Performance Index (SPI) : A measure of schedule efficiency, calculated as SPI = EV/PV. An SPI less than 1 indicates a
+
+schedule delay.
+Schedule Variance (SV) : The difference between the earned value and the planned value, calculated as SV = EV − PV. A
+
+negative SV indicates a schedule delay.
+Cost Variance (CV) : The difference between the earned value and the actual cost, calculated as CV = EV − AC. A negative CV
+
+indicates a cost overrun.
+Info
+
+The first three are equivalent terms and should know both. This guide will use the first set ( PV, EV, AC)
+
+3.4.3 When to Use EVM
+
+EVM is mandated on cost or incentive contracts (and applicable subcontracts) when the program meets the policy thresholds
+and the effort is discretely measurable [edo-3-6-1-evm-intro-2025, DFARS]. Key decision points for the PM include:
+$100 million and above: Implement the full ANSI/EIA-748 standard and ensure the contractorâ€™s system is formally vali-
+
+dated by DCMA.
+$20 million to $99.9 million: Implement ANSI/EIA-748 guidelines, with validation required when performance indicates risk.
+
+Additional policy considerations [edo-3-6-1-evm-intro-2025, DoDI5000-85]:
+
+• Applicability determinations must confirm the work scope can be discretely measured before mandating EVM.
+• The Milestone Decision Authority may approve EVM on FFP, time-and-materials, or LOE contracts, but such use is discouraged absent clear benefit.
+
+• For efforts below $20 million, the PM conducts a risk-based cost-benefit analysis to decide whether EVM adds value.
+• Contracts that require EVM must also deliver Integrated Program Manager’s Data Analysis Report (IPMDAR) data and
+complete an IBR within six months of award.
+3.4.4 EVM Compliance
+
+EVM clauses are flowed in the solicitation and award package (DFARS 252.234-7001 and 252.234-7002) alongside the Contractor Business Systems clause (DFARS 252.242-7005) to anchor validation and surveillance requirements [DFARS]. Compliance
+expectations [edo-3-6-1-evm-intro-2025, DoDI5000-85]:
+
+• The program office integrates EVM planning into the WBS, maintains the Performance Measurement Baseline, and ensures timely receipt and analysis of IPMDAR submissions.
+
+• DCMA leads EVM system acceptance, validation, and ongoing surveillance against ANSI/EIA-748 and the DoD EVM
+Implementation Guide; DCAA supports with accounting system audits.
+
+3.4 Earned Value Management (EVM)
+
+50
+
+• Service focal points such as Acquisition Data and Analytics and the DON Center for EVM adjudicate applicability determinations and coordinate policy updates.
+
+• Supervisor of Shipbuilding (SUPSHIP) can execute validation and surveillance responsibilities for shipbuilding programs on
+behalf of DCMA.
+3.4.5 EVM Compliance
+
+EVM clauses are flowed in the solicitation and award package (DFARS 252.234-7001 and 252.234-7002) alongside the Contractor Business Systems clause (DFARS 252.242-7005) to anchor validation and surveillance requirements [DFARS]. Compliance
+expectations [edo-3-6-1-evm-intro-2025, DoDI5000-85]:
+
+• The program office integrates EVM planning into the WBS, maintains the Performance Measurement Baseline, and ensures timely receipt and analysis of IPMDAR submissions.
+
+• DCMA leads EVM system acceptance, validation, and ongoing surveillance against ANSI/EIA-748 and the DoD EVM
+Implementation Guide; DCAA supports with accounting system audits.
+
+• Service focal points such as Acquisition Data and Analytics and the DON Center for EVM adjudicate applicability determinations and coordinate policy updates.
+
+• SUPSHIP can execute validation and surveillance responsibilities for shipbuilding programs on behalf of DCMA.
+3.4.6 EVM Principal Players
+
+Programmatic, contracting, and oversight roles synchronize to sustain disciplined performance management [edo-3-6-1-evm-intro-2025].
+PMO: Implements EVM on the contract, ensures solicitations and awards contain the required clauses, and works with the
+
+contracting activity to tailor reporting and Integrated Master Schedule (IMS) requirements.
+DCMA: Serves as the DoD EVM Executive Agent by validating, accepting, and surveilling contractor systems, maintaining the
+
+official acceptance roster, and analyzing IPMDAR and schedule submissions (including the 14-point IMS review) to focus
+government attention on emerging issues.
+DCAA: Conducts accounting system audits, corroborates cost data, and supports DCMA during surveillance events and re-
+
+views.
+Acquisition Data and Analytics (ADA): Acts as the department-wide focal point for EVM policy, guidance, and competency man-
+
+agement; issues interpretations to maintain consistent application across programs.
+DON Center for EVM: Coordinates applicability determinations with the Deputy Assistant Secretary of the Navy for Acquisition
+
+Policy and Budget and the Office of the Secretary of Defense, and serves as the Navyâ€™s central point of contact for EVM
+matters.
+
+3.4 Earned Value Management (EVM)
+
+51
+
+SUPSHIP: Performs many DCMA/ DCAA surveillance roles for shipbuilding contracts when delegated by the cognizant pro-
+
+gram office.
+3.4.7 PMB
+
+Figure ?? shows the characteristic S-curve depicting cumulative PV/BCWS, while Figure ?? summarizes the progression from
+defining the SOW to final Performance Measurement Baseline (PMB) adjustments. PMBs are:
+
+• Scoped, scheduled, and budgeted plans for the authorized work
+• Time-phased budgets that align to the master schedule
+• The basis for cost and schedule performance management
+• Effectively the PV for the entire project
+
+Figure 3.5. PMB Cost v.s. Time chart showing the “S”-curve. Source: edo-3-6-1-evm-intro-2025, edo-3-6-1-evm-intro-2025 [edo-3-6-1-evm-intro-2025].
+
+Figure 3.6. The development flow for PMB. Source: edo-3-6-1-evm-intro-2025, edo-3-6-1-evm-intro-2025 [edo-3-6-1-evm-intro-2025].
+
+3.4 Earned Value Management (EVM)
+
+52
+
+PMB Development
+
+STEP 1: Define all work. Decompose the effort using the WBS and align it with the organizational structure. Control accounts are
+the natural management points where Control Account Managers (CAMs) are assigned, and each control account contains
+work packages and (if needed) planning packages.
+STEP 2: Schedule the work. Develop the integrated schedule (often visualized with Gantt charts) that sequences the WBS elements,
+includes key milestones, and forms the backbone of the time-phased budget.
+STEP 3: Budget the work. Assign time-phased budgets to each work package, establish management reserve for in-scope known
+unknowns, and confirm that the sum of the control accounts equals the contract budget base.
+Changes to the PMB must be formally controlled and documented. Reasons for changes include:
+
+• Contract changes
+• Internal replanning
+• Formal reprogramming
+3.4.8 EVM Reviews and Reports
+
+Formal reviews validate the integrity of EVM data products before and after system acceptance [edo-3-6-1-evm-intro-2025].
+Post-Acceptance Review
+
+• Objective: ensure performance data remain accurate after system acceptance and identify any corrective actions required to
+reaffirm compliance.
+
+• Timing: conducted as needed following system acceptance and prior to the next IBR.
+• Led by the Review Director (typically DCMA) with membership tailored to the purpose of the review.
+• Culminates in a formal report prepared by the Review Director.
+Initial Compliance Evaluation
+
+• Objective: validate that the contractorâ€™s EVM system description matches actual practice and satisfies the EVMS criteria.
+
+• Timing: executed prior to the initial IBR (and subsequently only if needed).
+• Led by the DCMA Review Director with cross-functional support as required.
+• Results documented in a report signed by the Review Director.
+
+3.4 Earned Value Management (EVM)
+
+53
+
+Integrated Baseline Review
+
+• Participants: the contractor, PM and deputy, DCMA/ DCAA/ SUPSHIP personnel, and relevant technical staff.
+• Purpose: joint assessment to verify the realism and accuracy of the PMB, confirm the entire technical scope is captured,
+and ensure resources and schedules are achievable.
+
+• Timing: conducted within six months of contract award (or major replanning event) in accordance with the DoD EVM
+Implementation Guide and service policy [edo-3-6-1-evm-intro-2025].
+Integrated Program Management Data Analysis Report
+
+This contractually required report delivers cost, schedule, and technical status derived from the contractorâ€™s EVM system,
+enabling the PMO to identify performance problem areas and emerging risks. It is required on every contract that mandates
+EVM and must be delivered at least monthly. The data set is tailored for each contract based on risk, size, and integration considerations, but the canonical formats are:
+1. WBS (most common)
+2. Organizational categories
+3. Program Management Baseline
+4. Staffing
+5. Explanation and Problem Analysis
+6. IMS
+A Contract Funds Status Report (CSFR) complements the IPMDAR by providing funding (price) information that reconciles to
+the cost-focused earned value data [edo-3-6-1-evm-intro-2025].
+Problems
+
+When using EVM, the following are indications that a problem exists [edo-3-6-2-evm-analysis-2025]:
+
+• Use of management reserves
+• Significant revisions to the PMB
+• Zero variance
+• Sudden change in trends
+• Unreasonable Total Cost Performance Index (TCPI)
+
+3.4 Earned Value Management (EVM)
+
+54
+
+3.4.9 EVM Data Analysis
+
+Figure ?? shows the S-curve representation of the EVM variables; the gaps between the curves are the cost and schedule
+variances that drive performance assessments [edo-3-6-2-evm-analysis-2025].
+
+Figure 3.7. EVM chart showing the independent variables and variances. Source: edo-3-6-2-evm-analysis-2025, edo-3-6-2-evm-analysis-2025 [edo-3-6-2-e
+
+Data Analysis Steps
+
+1. Get current status: capture the latest cost and schedule performance using CPI, SPI, and narrative explanations.
+2. Identify trends: analyze indices and variance trajectories over time to highlight emerging risks and opportunities.
+3. Predict completion: develop independent EAC and Variance at Complete (VAC) assessments to forecast final outcomes.
+4. Determine management actions: decide where to apply resources, contract changes, or risk mitigations to recover performance [edo-3-6-2-evm-analysis-2025].
+Performance Measurement Techniques
+Percent Complete: Applies to long-duration tasks lacking interim milestones; progress is reported as the earned value fraction
+
+of total budget.
+Weighted Milestones: Uses milestone weights for long-duration tasks with clear waypoints, crediting earned value as milestones
+
+are completed.
+Percent Start/Percent Finish: Suitable for short-duration tasks (less than two reporting periods) with credit apportioned at start
+
+and finish.
+0/100 Method: Provides earned value only when the task is complete, offering a conservative measure for discrete, short
+
+tasks [edo-3-6-2-evm-analysis-2025].
+
+3.4 Earned Value Management (EVM)
+
+55
+
+Equations
+
+Standard cost and schedule performance calculations include [edo-3-6-2-evm-analysis-2025]:
+CV = EV − AC
+SV = EV − PV
+CPI =
+SPI =
+
+EV
+AC
+EV
+
+PV
+CV
+CV% = (
+) × 100
+EV
+SV
+SV% = ( ) × 100
+PV
+EV
+% Complete = (
+) × 100
+BAC
+AC
+% Spent = (
+) × 100
+BAC
+BAC
+EAC =
+CPI
+BAC − EV
+EAC = AC +
+EV
+( AC
+)
+
+3 months
+
+EAC = AC +
+EAC = AC +
+
+BAC − EV
+
+CPI × SPI
+BAC − EV
+
+0.8 CPI + 0.2 SPI
+VAC = BAC − EAC
+
+TCPI =
+TCPIEAC =
+TCPIBAC =
+
+Work remaining
+Budget remaining
+BAC − EV
+EAC − AC
+BAC − EV
+BAC − AC
+
+4 Defense Acquisitions
+4.1 Acquisition Policy
+Refs:
+
+4.1.1 Summary
+Statute drives authority. Title 10 charges the Military Departments to equip the force, while each annual NDAA
+
+refreshes acquisition authorities and reporting duties—know the latest delegation trail before advising a
+board [edo-3-3-1-acq-policy-players-2025].
+Policy = DoD 5000 series. DoDD 5000.01 establishes acquisition principles and senior roles; DoDI 5000.02 operationalizes
+
+the Adaptive Acquisition Framework (AAF) pathways; DoDI 5000.85 prescribes MCA execution details [DoDD5000-01,
+DoDI5000-02, DoDI5000-85].
+Regulation stack. FAR > Defense Federal Acquisition Regulation Supplement (DFARS) > Navy Marine Corps Acquisition
+
+Regulation Supplement (NMCARS) translates statute and policy into enforceable contracting rules; SECNAVINST 5000.2G
+tailors the acaaf for acdon programs and makes ASN(RD&A) the SAE [FAR, DFARS, SECNAV5000-2G].
+The main drivers that a PM must balance is cost, schedule, and performance as shown in Figure ??. The trade space for performance versus cost is shown in Figure ??, which shows the relation of performance and cost with the threshold and objective
+requirements.
+
+Figure 4.1. The cost, schedule, and performance triangle that must be balanced and traded. Source: edo-3-3-1-acq-policy-players-2025, edo-3-3-1-acq-polic
+
+4.1 Acquisition Policy
+
+57
+
+Figure 4.2. Trade space of performance v.s. cost showing the range of viable options with the region of best “value.”
+Source: edo-3-3-1-acq-policy-players-2025, edo-3-3-1-acq-policy-players-2025 [edo-3-3-1-acq-policy-players-2025].
+
+4.1.2 Practitioner Steps (Board Prep Focus)
+
+1. Confirm statutory authority and delegation: identify the Defense Acquisition Executive (DAE) (USD(A&S)) or delegated
+Milestone Decision Authority (MDA), the SAE ( ASN(RD&A)), and the resource sponsor accountable for the requirement [DoDD5000-01, edo-3-3-1-acq-policy-players-2025, SECNAV5000-2G].
+2. Select the correct AAF pathway (or hybrid) and align entry/exit criteria, statutory reports, and decision forums (MS A/B/C,
+Materiel Development Decision (MDD), Business Case Analyses (BCAs), Congressional notices) [DoDI5000-02,
+DoDI5000-85].
+
+3. Map contracting rules to the pathway: FAR/ DFARS clauses, competition requirements, and Tailored Acquisition Strategy
+approvals [FAR, DFARS, edo-3-3-1-acq-policy-players-2025].
+4. Crosswalk Navy overlays: SECNAVINST 5000.2G, SECNAVINST 5400.15D organization responsibilities, and PEO/ DRPM
+charters for technical authority touchpoints [SECNAV5000-2G, SECNAV5400-15D].
+5. Prepare decision documentation: update the Acquisition Strategy / Systems Engineering Plan (SEP) / Test and Evaluation
+Master Plan (TEMP), ensure statutory certifications (Clinger-Cohen, PPBE affordability caps) are current, and pre-brief the
+chain (Program Office → PEO → ASN(RD&A)) [DoDI5000-85, edo-3-3-1-acq-policy-players-2025].
+
+4.1 Acquisition Policy
+
+58
+
+4.1.3 Policy Stack and Authorities
+Title 10, U.S.C. Establishes Service responsibilities (Subtitle C for DON organization, Subtitle A Part V for
+
+acquisition management) and empowers annual NDAAs to adjust acquisition thresholds or pilot authorities [edo-3-3-1-acq-policy-players-2025].
+DoD Directives/Instructions. DoDD 5000.01 sets acquisition principles, governance forums, and senior leader responsibili-
+
+ties; DoDI 5000.02 implements the AAF with six scalable pathways; DoDI 5000.85 gives MCA-specific statutory requirements ( Joint Requirements Oversight Council (JROC), cost reporting, baseline control) [DoDD5000-01, DoDI5000-02,
+DoDI5000-85].
+Regulations. FAR and DFARS governs all federal contracting; DFARS adds DoD-specific clauses (e.g., earned value, data
+
+rights, cybersecurity); NMCARS adds DON policy and ASN(RD&A) approval levels [FAR, DFARS, NMCARS].
+Service overlays. SECNAVINST 5000.2G tailors milestone documentation, Naval SYSCOM oversight, and Naval
+
+Accelerated Acquisition; SECNAVINST 5400.15D assigns PEO and SYSCOM responsibilities for acquisition program
+execution [SECNAV5000-2G, SECNAV5400-15D].
+Advisory guidance. The Defense Acquisition Guidebook (DAG) captures best practices—it is not directive authority, but boards
+
+expect you to know how it informs planning reviews and tailoring memoranda [DoDAcqGuidebook].
+Info
+
+Boards expect you to quote the controlling document and state who owns the decision. Memorize the policy ladder:
+Statute → Directive → Instruction → Regulation → Service overlay.
+
+4.1.4 Acquisition Players and Decision Forums
+DAE. USD(A&S) chairs the Defense Acquisition Board (DAB), is MDA for ACAT ID/IAM programs unless delegated, and
+
+approves key acquisition policies [DoDD5000-01, edo-3-3-1-acq-policy-players-2025].
+SAE. ASN(RD&A) serves as the DON SAE; appoints PEOs, assigns MDA for ACAT II and below, and ensures Navy acquisition
+
+compliance with DoD policy [SECNAV5000-2G, SECNAV5400-15D].
+Chief of Naval Operations/Resource Sponsor. Validates requirements and PPBE resourcing, provides integrated warfare/com-
+
+munity priorities to ASN(RD&A) and the PEOs [edo-3-3-1-acq-policy-players-2025].
+PEO/DRPM. Executes programs within delegated authorities; maintains acquisition baseline control, briefs ASN(RD&A) and
+
+DAB-level forums, and ensures SYSCOM technical authority integration [SECNAV5400-15D, DoDI5000-85].
+PM. Accountable for cost, schedule, performance; leads the IPT, maintains statutory certifications, and readies milestone
+
+documentation [DoDI5000-85, edo-3-3-1-acq-policy-players-2025].
+
+4.1 Acquisition Policy
+
+59
+
+Governance forums. Milestone Decision Reviews, the DAB, Configuration Steering Boards, Overarching IPTs, and Navy
+
+Program Executive Council reviews provide structured oversight and risk adjudication [DoDD5000-01, DoDI5000-85,
+edo-3-3-1-acq-policy-players-2025].
+Note
+
+Edge case: Rapid acquisition authorities (e.g., UCA) compress governance. Ensure delegation letters document any waived
+statutory certifications before you recommend skipping a DAB or ASN(RD&A) review [DoDI5000-02].
+
+4.1.5 Adaptive Acquisition Framework Pathways
+
+The AAF can be visualized in Figure ??. The figure shows all six pathways with their purposes and general flow of the acquisition for each.
+
+Figure 4.3. Adaptive Acquisition Pathways. Source: DAU-AAF, DAU-AAF [DAU-AAF].
+
+The MCA is the main acquisition pathway that EDOs will operate in. As shown in Figure ??, it can be broken down into five
+phases, four major decision points and three milestones.
+
+4.1 Acquisition Policy
+
+60
+
+Figure 4.4. Major Capability Acquisition with phases, milestones, and decisions points. Source: edo-3-3-1-acq-policy-players-2025, edo-3-3-1-acq-policy-pl
+
+Major Capability Acquisition. Default for weapon systems; milestone-driven with statutory reports ( SAR, DAES) and Live-Fire/
+
+TEMP requirements [DoDI5000-85].
+Middle Tier of Acquisition. Rapid prototyping (≤5 years to field) and rapid fielding pathways; report to USD(R&E)/USD(A&S)
+
+and Congress semi-annually [DoDI5000-02].
+Software Acquisition. Iterative DevSecOps delivery, tailored documentation (Software Acquisition Strategy) and continuous
+
+Authority to Operate emphasis [DoDI5000-02].
+Business Systems. Focuses on business process re-engineering, investment review board certification, and Clinger-Cohen Act
+
+compliance [DoDI5000-02].
+Defense Urgent Capability. Immediate warfighter needs; compressed oversight but still documents affordability and sustain-
+
+ment plans [DoDI5000-02].
+Services Acquisition. Managed via DoDI 5000.74 (referenced in DoDI 5000.02) with governance through functional
+
+domain leads; consider when an availability or modernization effort is better treated as a service [DoDI5000-02,
+edo-3-3-1-acq-policy-players-2025].
+Info
+
+Pathways can be combined (e.g., prototype under Middle-Tier then transition to MCA). Boards ask why your chosen path
+best fits cost/schedule urgency.
+
+4.1.6 Navy Overlays and Touchpoints
+SECNAVINST 5000.2G. Implements ASN(RD&A) Program Decision Meetings, requires risk-based tailoring plans, and codifies
+
+DON-level documentation (Acquisition Plan, Life-Cycle Sustainment Plan (LCSP), POA&M) [SECNAV5000-2G].
+SECNAVINST 5400.15D. Aligns PEOs and SYSCOMs, clarifies technical authority (NAVSEA 05, NAVWAR 5.0) integration, and
+
+designates Deputy ASN(RD&A) portfolio responsibilities [SECNAV5400-15D].
+Resource Sponsor coordination. OPNAV N9, N4, or equivalent sponsor must endorse requirements and PPBE positions before
+
+ASN(RD&A) decisions [edo-3-3-1-acq-policy-players-2025].
+
+4.2 Milestones and Phases
+
+61
+
+Note
+
+When SECNAV policy conflicts with older DoD memoranda, defer to the most current directive from the higher authority
+unless ASN(RD&A) grants written tailoring. Document the rationale in the Acquisition Strategy.
+
+4.2 Milestones and Phases
+Refs:
+
+4.2.1 Defense Acquisition System Overview
+
+The Defense Acquisition System (DAS) is the governance framework that aligns requirements, resourcing, and acquisition
+execution to deliver warfighter capability. It is policy-driven by DoDD 5000.01 and process-enabled through DoDI 5000.02, using
+the AAF to tailor pathways while preserving statutory oversight and Navy-unique controls [DoDD5000-01, DoDI5000-02].
+4.2.2 Adaptive Acquisition Framework Pathways (Board Snapshot)
+MCA. Default for complex weapon systems; uses phased milestones with mandatory statutory certifications; emphasizes afford-
+
+ability trades, test rigor, and Navy two-pass / seven-gate touchpoints [DoDI5000-85].
+Middle Tier of Acquisition (MTA). Rapid prototyping or rapid fielding to deliver an operational capability within five years; mini-
+
+mizes documentation, but demands robust transition planning to MCA or sustainment funding [DoDI5000-80].
+Urgent Capability Acquisition (UCA). Accelerated path to field urgent capability within 2 years or provide an interim
+
+solution in less than 5; leverages tailored test, streamlined acquisition decision memoranda, and dedicated senior
+oversight [DoDI5000-81].
+Software Acquisition Pathway. Iterative, DevSecOps-focused delivery of software increments with continuous integration, enter-
+
+prise cloud alignment, and recurring user feedback cadences [DoDI5000-87].
+Acquisition of Services Pathway. Structures service requirements, performance metrics, and contracting strategies to assure
+
+mission outcomes and oversight thresholds (e.g., Multi-Functional IPT requirements review)[DoDI5000-74].
+Defense Business Systems Pathway. Rationalizes business processes, data standards, and Business Capability Acquisitions Com-
+
+mittees (BCAC) to unlock enterprise interoperability before investing in solutions [DoDI5000-75].
+Note
+
+Pathways are not exclusive—an EDO may begin in MTA for prototyping, then transition to MCA for production once
+requirements and sustainment plans stabilize. Programs can also leverage UCA for an initial bridge while planning a
+transition to MCA.
+
+4.2 Milestones and Phases
+
+62
+
+4.2.3 Urgent Operational Needs Taxonomy
+Joint Urgent Operational Need (JUON). Joint urgent gap requiring Combatant Commander sponsorship; validated by the Joint
+
+Rapid Acquisition Cell with rapid fielding oversight [CJCSI3470-01H].
+Joint Emergent Operational Need (JEON). Joint emergent gap tied to potential contingency; enables deliberate analysis but re-
+
+tains joint prioritization and Board-level visibility [CJCSI5123-01H].
+Urgent Operational Need (UON). Service-specific urgent need (e.g., Fleet Commanders); informs Navy resource prioritization
+
+and can transition to JUON/ JEON if joint impact grows [OPNAVINST5000-42E].
+4.2.4 Baseline Discipline: Acquisition Program Baselines, Deviations, and Nunn–McCurdy
+APB. The cost-schedule-performance contract between the MDA, resource sponsor, and PEO; defines objective and threshold
+
+values that bound trade space [DoDI5000-85].
+Program Deviations. Triggered when performance, schedule, or cost thresholds breach; the Program Manager must notify the
+
+MDA within 30 days and submit a corrective action plan within 60 [DoDI5000-85].
+Nunn–McCurdy Act. Statutory reporting when Program Acquisition Unit Cost (PAUC) or Average Procurement Unit Cost (APUC)
+
+breaches significant (≥15% current / 30% original) or critical (≥25% current / 50% original) thresholds; critical breaches
+require certification to Congress within 60 days or program termination [USC-4371-NunnMcCurdy].
+4.2.5 JCIDS Flow into the Defense Acquisition System
+ICD. Supports the MDD with validated capability needs and initial attributes [CJCSI5123-01H].
+CDD. Provides Key Performance Parameters (KPPs) and Key System Attributes (KSAs) to anchor Milestone B and the Techni-
+
+cal Requirements Baseline [CJCSI5123-01H].
+Capability Production Document (CPD). Updates KPP/ KSA values for production decisions and sustainment planning at Mile-
+
+stone C [CJCSI5123-01H].
+Note
+
+Maintain requirements traceability matrices linking KPP thresholds to test plans and APB values for board discussions.
+
+4.2.6 Acquisition Strategy Essentials
+Purpose. Documents tailored acquisition approach, contract strategy, intellectual property posture, and affordability con-
+
+straints for MDA approval [DoDI5000-85].
+Key Contents. Pathway selection, phasing plan, incentive structure, test and evaluation strategy, risk burn-down, sustain-
+
+ment concept, cybersecurity, international cooperation, and business case for software/data management [DoDI5000-85,
+DoDD5000-01].
+
+4.2 Milestones and Phases
+
+63
+
+Approval Event. MDA concurrence at Milestone A (initial) with updates prior to Milestone B and significant re-baselines; Navy
+
+2-pass/7-gate integrates resource validation before signature [OPNAVINST5000-42E].
+4.2.7 International Acquisition Objectives
+Foreign Military Sales (FMS). Strengthen partner capability while leveraging U.S. economies of scale; requires disclosure review
+
+and Letter of Offer and Acceptance alignment [DoDI5000-85].
+Direct Commercial Sales (DCS). Contractor-led exports; Program Office ensures configuration control and technology-security
+
+compliance [DoDI5000-85].
+Cooperative Development. Shared investment with allies (e.g., Memoranda of Understanding) to reduce life-cycle cost and
+
+enhance interoperability [DoDI5000-85].
+Armaments Cooperation / International Programs Security. Integrates disclosure, export licensing, and technology protection
+
+plans into the Acquisition Strategy [DoDI5000-85].
+4.2.8 Navy Two-Pass / Seven-Gate Review
+Pass 1 – Capability. Led by OPNAV N9 to mature the requirement: Gate 1 validates the capability gap, Gate 2 refines solutions
+
+and mission analysis, Gate 3 assesses affordability and alignment with Navy enterprises, and Gate 4 authorizes program
+initiation (supports MDD)[OPNAVINST5000-42E].
+Pass 2 – Resourcing. Led by OPNAV N8 to align budgeting: Gate 5 verifies contracting/test readiness before Milestone B (often
+
+synchronized with the Development RFP Release Decision), Gate 6 confirms production and sustainment resources prior to
+Milestone C, and Gate 7 evaluates sustainment performance and modernization plans [OPNAVINST5000-42E].
+Note
+
+For board prep, highlight where SECNAV Gate Reviews or Defense Acquisition Board touchpoints overlay Navy gates to
+demonstrate cross-tier synchronization.
+
+4.2.9 Technology Readiness Levels
+
+Table ?? summarizes TRL definitions with representative naval examples.
+Table X: Technology Readiness Levels with representative naval examples.
+
+TRL
+
+Definition
+
+Example (EDO context)
+
+TRL 1
+
+Basic principles observed
+
+Novel corrosion-resistant alloy proven in laboratory
+
+TRL 2
+
+Technology concept formulated
+
+Hypothesis for integrating alloy into hull structures
+
+TRL 3
+
+Analytical and experimental proof-of-concept
+
+Coupon tests validating stress performance in relevant environment
+Continued on next page
+
+4.2 Milestones and Phases
+
+64
+Table X: Technology Readiness Levels with representative naval examples. (Continued)
+
+TRL
+
+Definition
+
+Example (EDO context)
+
+TRL 4
+
+Component validation in laboratory
+
+Scale panel fabrication and testing under controlled loads
+
+TRL 5
+
+Component validation in relevant environment
+
+Module integrated into land-based test site with salt-fog exposure
+
+TRL 6
+
+System/subsystem prototype in relevant environment
+
+Full-scale hull section installed on test article or surrogate vessel
+
+TRL 7
+
+System prototype in operational environment
+
+Prototype hull segment installed on operational ship during limited sea
+trials
+
+TRL 8
+
+Actual system completed and qualified
+
+Final production drawings released, inspections passed for lead ship
+
+TRL 9
+
+Actual system proven in mission operations
+
+Sustained operational deployment meeting performance metrics
+
+Source – USDRE-TRA-2020, USDRE-TRA-2020 [USDRE-TRA-2020]
+Hint – Match TRLs to TMRR exit criteria: critical technologies should be ≥ TRL 6 before Milestone B.
+
+4.2.10 Major Capability Acquisition Lifecycle Overview
+MSA. Shape the trade space and select a preferred materiel solution; conclude with an AoA recommendation and technology
+
+maturation plan [DoDI5000-85].
+TMRR. Mature technologies, refine requirements, and reduce integration risk to enter EMD; manage competitive prototyping
+
+where feasible [DoDI5000-85].
+EMD. Complete detailed design, verify system performance, and prepare for production and deployment deci-
+
+sions [DoDI5000-85].
+P&D. Produce capability, conduct IOT&E, field initial units, and decide on Full-Rate Production [DoDI5000-85].
+O&S. Sustain readiness, execute modernization, and plan for disposal while feeding affordability back into PPBE
+
+cycles [DoDI5000-85].
+
+Placeholder for MCA Integrated Master Schedule graphic.
+Coordinate with TikZ cell for final layout.
+
+Figure 4.5. Planned location for MCA schedule visualization.Source: DoDI5000-85, DoDI5000-85 [DoDI5000-85]
+
+4.2 Milestones and Phases
+
+65
+
+4.2.11 Materiel Development Decision
+Inputs. Validated ICD, initial affordability analysis, preliminary acquisition strategy, and resource sponsor endorse-
+
+ment [DoDI5000-02].
+Decision. MDA authorizes entry into MSA (or an alternate pathway) and designates the lead PEO/Program
+
+Manager [DoDI5000-85].
+Outputs. Acquisition Decision Memorandum, competitive AoA guidance, and direction to form the Integrated Product Team
+
+structure [DoDI5000-85].
+4.2.12 Materiel Solution Analysis Phase Essentials
+Purpose. Analyze alternatives, define the preferred materiel solution, and scope technology maturity and risk reduction
+
+tasks [DoDI5000-85].
+Key Activities. Conduct AoA, establish initial system performance metrics, develop early test strategies, and plan technology
+
+maturation for critical subsystems [DoDI5000-85].
+Entrance Criteria. Approved MDD, resourced AoA study guidance, and draft acquisition strategy [DoDI5000-02].
+Exit Criteria. Approved TMRR acquisition strategy update, technology risk assessments (TRL ≥ 3–4), and draft CDD inputs for
+
+Joint staffing [DoDI5000-85].
+4.2.13 Milestone A Focus Areas
+Purpose. Authorize entry into TMRR and approve the initial Acquisition Strategy and APB [DoDI5000-85].
+Board Topics. AoA results, technology maturation plans, affordability caps, cost estimates, and early test strate-
+
+gies [DoDI5000-85].
+Outputs. Acquisition Decision Memorandum, approved initial APB, direction for competitive prototyping, and signed Technol-
+
+ogy Development Strategy if required [DoDI5000-85].
+4.2.14 Technology Maturation and Risk Reduction Phase Essentials
+Purpose. Reduce integration risk, mature the Technical Baseline, and prepare for Engineering & Manufacturing Development
+
+source selection [DoDI5000-85].
+Key Activities. Competitive prototyping (if directed), systems engineering trade studies, reliability growth, cyber-resilience
+
+planning, and CDD-validation ( CDD-V)[DoDI5000-85].
+Entrance Criteria. Approved Milestone A ADM, funded risk-reduction plan, and established Integrated Master Schedule aligned
+
+to Navy Gate 5 timeline [DoDI5000-85, OPNAVINST5000-42E].
+
+4.2 Milestones and Phases
+
+66
+
+Exit Criteria. Technology Readiness Assessments showing TRL ≥ 6, draft Milestone B documentation (e.g., Systems Engineering
+
+Plan, Test & Evaluation Master Plan), and configured product baseline ready for the Development RFP Release Decision (
+Development Request for Proposal Release Decision (DRFPRD))[DoDI5000-85].
+4.2.15 Milestone B Focus Areas
+Purpose. Authorize entry into EMD and establish the program as a major defense acquisition program with formal report-
+
+ing [DoDI5000-85].
+Board Topics. Affordability caps, independent cost estimates, Test & Evaluation Master Plan approval, Low-Rate Initial Produc-
+
+tion ( LRIP) planning, and production-representative prototype evidence [DoDI5000-85].
+Outputs. Updated APB, approved Acquisition Strategy revision, and contractual authority to release EMD
+
+RFPs [DoDI5000-85].
+4.2.16 Engineering and Manufacturing Development Phase Essentials
+Purpose. Complete detailed design, build and test engineering development models, and validate manufacturing
+
+processes [DoDI5000-85].
+Key Activities. Critical Design Review (CDR), system verification, developmental test events, cybersecurity accreditations, and
+
+sustainment baseline development [DoDI5000-85].
+Entrance Criteria. Approved Milestone B ADM with resourced contracts, finalized technical baseline, and product-support
+
+planning aligned to Navy Gate 6 [DoDI5000-85].
+Exit Criteria. Successful Initial Operational Test & Evaluation readiness, manufacturing readiness ≥ TRL 8, and validated
+
+sustainment strategies supporting Milestone C [DoDI5000-85].
+4.2.17 Milestone C Focus Areas
+Purpose. Authorize production and deployment following demonstration of operational effectiveness and suitabil-
+
+ity [DoDI5000-85].
+Board Topics. IOT&E results, sustainment and supply-chain readiness, affordability assessments, and updated manpower/train-
+
+ing plans [DoDI5000-85].
+Outputs. Full-Rate Production Decision Review ( Full-Rate Production Decision Review (FRPDR)) plan, updated APB, and
+
+authority to obligate procurement funding for production lots [DoDI5000-85].
+4.2.18 Production and Deployment Phase Essentials
+Purpose. Produce and deliver the system while validating operational performance and support concepts [DoDI5000-85].
+
+4.2 Milestones and Phases
+
+67
+
+Key Activities. LRIP execution, IOT&E, Configuration Steering Board ( Configuration Steering Board (CSB)) governance, and
+
+ramp to Full-Rate Production [DoDI5000-85].
+Exit Criteria. Full-Rate Production approval, attainment of Initial Operational Capability ( Initial Operational Capability (IOC)),
+
+and sustainment plans ready for fleet release [DoDI5000-85].
+4.2.19 Operations and Support Phase Essentials
+Purpose. Sustain mission effectiveness, execute modernization, and manage total ownership cost until dis-
+
+posal [DoDI5000-85].
+Key Activities. Performance-Based Logistics execution, Depot maintenance planning, Post-Deployment reviews, and Configura-
+
+tion Steering Boards for major updates [DoDI5000-85].
+Milestones. Full Operational Capability ( Full Operational Capability (FOC)), disposal decision documentation, and updates to
+
+capability requirements feeding future planning cycles [DoDI5000-85].
+
+Appendices
+
+A Platinum Card
+The Platinum Card is a primary study tool that will have most of the information required for your boards. Sources: EDO Coursebook Modules 3.1.1, 3.1.3, 3.1.4, and 3.1.6. Be able to draw and talk through Figures ??–??.
+
+Figure A.1. Platinum Card: Life Cycle Cost Composition
+
+70
+
+Figure A.2. Platinum Card: Cost Estimating Requirements
+
+Figure A.3. Platinum Card: PPBE Planning Phase (Lead by USD (P))
+
+71
+
+Figure A.4. Platinum Card: Concurrent Program/Budget Review
+
+72
+
+Figure A.5. Platinum Card: Below Threshold Reprogramming
+
+Figure A.6. Platinum Card: Resource Allocation Process
+
+73
+
+Figure A.7. Platinum Card: Congressional Enactment Timeline
+
+Figure A.8. Platinum Card: Funding for Product Improvements
+
+RDT&E. Engineering changes requiring development/test.
+Procurement. Production/installation of approved mods/end-items.
+O&M. Minor mods/installation labor when authorized and not creating a new end-item.
+
+74
+
+Figure A.9. Platinum Card: Appropriation Life Cycle
+
+B Key Roles in Acquisition and Modernization
+B.1 EDO Flag Officers (snapshot)
+Verify names/billets the week of your board. Update: 29 Sep 2025.
+
+Vice Admirals
+VADM James P. Downey.
+
+Commander, Naval Sea Systems Command (COMNAVSEA).
+VADM Johnny R. Wolfe Jr.
+
+Director, Strategic Systems Program (SSP).
+VADM Seiko Okano.
+
+Principal Military Deputy (PMILDEP) to ASN(RD&A).
+Rear Admirals (Upper Half)
+RADM Casey J. Moton.
+
+PEO CVN.
+RADM Kurt J. Rothenhaus.
+
+Chief of Naval Research (CNR).
+RADM Jonathan E. Rucker.
+
+PEO SSN.
+RADM Brian A. Metcalf.
+
+PEO Ships.
+RADM Douglas L. Williams.
+
+Director for Test, Missile Defense Agency (MDA).
+Rear Admirals (Lower Half)
+RDML Peter D. Small.
+
+NAVSEA Chief Engineer / Commander, NSWC/ NUWC.
+
+B.2 Key Roles in Acquisition and Modernization
+
+76
+
+RDML Dan L. Lannamann.
+
+CNRMC.
+RDML Kevin R. Smith.
+
+PEO USC.
+RDML Dianna Wolfson.
+
+Fleet Maintenance Officer, U.S. Fleet Forces (USFF).
+RDML Daniel W. Ettlich.
+
+Director, Fleet Maintenance, U.S. Pacific Fleet (PACFLT).
+Reserve EDO Flags
+RDML Robert J. Dodson (USNR).
+
+Deputy Commander, Supervision of Shipbuilding (SUPSHIP), NAVSEA.
+RDML Michael S. Richman (USNR).
+
+Deputy Director, Regional Strike Systems, SSP.
+
+B.2 Key Roles in Acquisition and Modernization
+Department acquisition governance.
+
+Sources: SECNAVINST 5400.15D; SECNAVINST 5000.2G; DoDI 5000.85.
+
+• ASN(RD&A), the SAE and CAE for the DON, sets acquisition policy, charters PEOs/ DRPMs, and adjudicates milestone decisions when delegated by the Milestone Decision Authority.
+
+• PEOs and DRPMs hold delegated program authority, establish baselines, and are accountable for translating capability
+needs into executable acquisition strategies.
+
+• SYSCOM Commanders provide the workforce, infrastructure, and TA warrants that underpin PEO execution inside the
+Navy matrix construct.
+Program Authority chain.
+
+Sources: SECNAVINST 5000.2G; DoDI 5000.85.
+
+• PEO/ PA: Owns program outcomes, charters PMs, approves acquisition strategies and baselines.
+• DRPM: Direct-report program leads for special access or priority portfolios with the same milestone authority as PEOs.
+• Ship Program Manager (SPM)/ PM: Accountable for cost/schedule/performance, leads risk management, orchestrates
+IPTs.
+
+B.2 Key Roles in Acquisition and Modernization
+
+77
+
+• Ship Acquisition Program Manager (SHAPM): Delivers new hulls; coordinates design/build/activation sequencing.
+• Ship Lifecycle Manager (SLM): Drives sustainment and modernization packages for in-service assets.
+• Participating Acquisition Resource Manager (PARM)/ Ship Project Director (SPD): Sponsors platform-level upgrades and alteration packages.
+Technical Authority chain.
+
+Source: SECNAVINST 5400.15D.
+
+• UTA / Chief Engineer: Issues enterprise technical policy, owns warrants.
+• TWHs: Certifies design compliance, adjudicates departures/concurrence packages.
+• Engineering Agents ( ISEA, DA, AEA, SIA, TDA): Execute lifecycle engineering; provide in-service engineering
+decisions under delegated authority.
+NAVSEA headquarters roles.
+
+Source: EDO Coursebook Module 2.1.2 (NAVSEA Organization, 2025 edition).
+
+• SEA 01 Comptroller: BSO lead for NAVSEA financial governance and funds control.
+• SEA 02 Contracts: Enterprise contracting authority, policy, and warrant management.
+• SEA 03 Cyber Engineering and Digital: Drives cyber resiliency, digital engineering, and data transformation initiatives.
+• SEA 04 Industrial Operations: Oversees public shipyards, maintenance execution, and quality assurance.
+• SEA 05 Chief Engineer: Chief TA; issues warrants, certifies designs, and maintains technical standards.
+• SEA 06 Sustainment: Manages product support strategies and lifecycle logistics integration.
+• SEA 07 Undersea Warfare: Dual-hatted as PEO UWS; oversees undersea combat systems sustainment.
+• SEA 08 Nuclear Propulsion: Three-hatted nuclear propulsion authority across DON and Department of Energy (DOE)
+roles.
+
+• SEA 09 Safety and Regulatory Compliance: Aligns enterprise safety governance and reporting.
+• SEA 10 Total Force and Corporate Ops: Manages workforce planning, corporate services, and governance.
+• SEA 21 In-Service Ships/ CNRMC: Leads surface-ship sustainment and modernization (PMS 321/326/339/421/443/451,
+SEA 21I, SURFMEPP).
+NAVWAR enterprise directorates.
+
+Source: EDO Coursebook Module 2.1.3 (NAVWAR Enterprise, 2024 edition).
+
+• Code 1.0 Comptroller: Budget formulation/execution, BSO duties, and funds certification.
+
+B.2 Key Roles in Acquisition and Modernization
+
+78
+
+• 2.0 Contracts: Contracting policy, strategy reviews, and award/administration oversight.
+• 3.0 Counsel: Acquisition law, ethics, protests, and claim resolution.
+• 4.0 Logistics and Fleet Support: Lifecycle logistics, technical data, and fleet distance support integration.
+• 5.0 Chief Engineer/ TA: Enterprise architectures, interoperability, and cyber certification authority.
+• 6.0 Program Management: Portfolio governance, milestone preparation, and PEO integration.
+• 7.0 Science and Technology: S&T portfolio management, prototyping, and technology transition.
+• 8.0 Corporate Operations: Workforce, Chief Information Officer (CIO) services, facilities, security, and public affairs.
+• FRD-100 Fleet Support: Deployed engineering assistance and sustainment response.
+• FRD-200 Installations: Shore/afloat C4I installation planning and cutover execution.
+Program Executive Offices (Navy portfolios).
+
+Sources: SECNAVINST 5400.15D; EDO Coursebook Modules 2.1.4 and 3.1.5.
+
+• PEO CVN: Designs, builds, and sustains nuclear-powered aircraft carriers (e.g., PMS 312/378/379).
+• PEO IWS: Develops and sustains ship/submarine combat systems; mission-aligned IWS directorates cover sensors,
+weapons, C2, and allied integration.
+
+• PEO Ships: Oversees surface combatant and amphibious ship construction and modernization.
+• PEO USC: Leads LCS, FFG 62, expeditionary, and unmanned surface/undersea portfolios.
+• Team Submarines ( PEO SSN, PEO SSBN, Program Executive Office, Columbia-Class Submarines (PEO Columbia),
+PEO UWS): Manages attack/strategic submarine acquisition, in-service support, and undersea combat systems.
+
+• PEO C4I: Delivers fleet C4I; PMW 1XX focus on capability development, PMW 7XX on platform integration.
+• PEO Digital: Provides enterprise digital services (e.g., Flank Speed) across the DON.
+• PEO MLB: Modernizes manpower, logistics, and business IT systems.
+Contracting authority ( KO family).
+
+Sources: FAR; DFARS; NMCARS; EDO Coursebook Module 3.2.1.
+
+• PCO: Plans the acquisition, synchs with PMs before solicitation, awards and signs contracts/mods.
+• ACO: Oversees post-award performance, surveillance, and payment/contract administration (often DCMA/ NAVSEA
+field activities).
+
+• TCO: Leads partial/full terminations, settlement negotiations, and equitable adjustments.
+
+B.2 Key Roles in Acquisition and Modernization
+
+79
+
+• KO warrant: Defines the dollar/authority limits; only the warranted KO can bind or obligate the Government.
+• Contracting Officer’s Representative (COR) / assistant PM / engineering support: Provide technical surveillance
+and acceptance recommendations; cannot direct work or obligate funds (FAR Parts 1 and 42).
+
+• HCA: Approves actions such as letter contracts and high-value single-award IDIQs; may delegate no lower than flag/Senior Executive levels within the DON per FAR 1.601 and DFARS/NMCARS supplements.
+
+• SAE ( ASN(RD&A)): Signs D&Fs for multiyear contracting, extraordinary relief, and other actions reserved to the
+Service Acquisition Executive under FAR Subparts 1.7 and 17.1.
+Program Manager / KO partnership.
+
+Sources: DoDI 5000.85; EDO Coursebook Module 3.2.1.
+
+• PM integrates warfighter need, technical baseline, and budget; KO ensures statutory/regulatory compliance and contract enforceability.
+
+• Both align on acquisition strategy, competition approach ( Competition in Contracting Act (CICA)), incentives, and
+change management before RFP release or modification execution.
+Source selection governance.
+
+Sources: FAR Parts 1, 5, and 15; NAVSEA Source Selection Guide (2022); EDO Coursebook Module 3.2.2.
+
+• SSA: Senior official who approves the Source Selection Plan, receives SSAC/ SSEB recommendations, and signs the
+best-value decision memorandum.
+
+• SSAC: Advisory council that synthesizes SSEB findings, compares proposals across factors, and briefs the SSA on
+trade-offs.
+
+• SSEB: Multi-disciplinary evaluators (technical, management, past performance, cost/price) who rate proposals against
+Section M factors.
+
+• Small Business Professional / Competition Advocate: Confirms set-aside decisions, reviews subcontracting plans, and
+endorses synopsis waivers.
+
+• Cost/Price Analyst & Legal Counsel: Validate reasonableness determinations, alignment of Sections L/M, and clause
+sufficiency before release.
+
+• Award Fee Determining Official & Award Fee Board: Plans award-fee periods, chairs performance reviews, and signs
+the determination memo authorizing or withholding fee payments (FAR Part 16; NAVSEA Source Selection Guide).
+Fiscal control & certification.
+
+Source: DoD FMR 7000.14-R Volume 3.
+
+• Funds Certifying Official/Comptroller: Verifies purpose/time/amount before obligation; Anti-Deficiency Act (ADA)
+safeguard.
+
+B.3 Combatant Commands (Reference)
+
+80
+
+• Program/Budget Analyst: Tracks execution, monitors reprogramming thresholds, prepares obligation/expenditure
+burn-down.
+
+• Resource allocation chain: OUSD(C) apportions to the Navy; OPNAV (N82/FMB) allocates to BSOs; SYSCOM
+comptrollers (e.g., SEA 01) issue suballocations to executing activities.
+PPBE resource sponsors.
+
+Source: EDO Coursebook Module 3.1.1 (PPBE, 2025 edition).
+
+• CAPE: Provides independent cost assessments and program evaluation across the Department.
+• N8: Builds the Navy POM, balancing capability and fiscal constraints across the FYDP.
+• N9: Integrates warfare requirements and advocates mission-area investments.
+• N91: Conducts cross-domain mission integration and orchestrates POM issue resolution.
+Congressional resource chain.
+
+Source: EDO Coursebook Module 3.1.2 (Congressional Enactment, 2025 edition).
+
+• HASC / SASC: Authorize defense programs and policy in the annual NDAA.
+• HAC / SAC: Produce appropriations bills that provide BA to execute Navy programs.
+• HBC / SBC: Set topline guidance and 302 allocations through the budget resolution process.
+• CBO, CRS, GAO: Supply independent scoring, research, and oversight that shape committee deliberations.
+Cyber/Authorizations (when IT/C2 in scope).
+
+Source: SECNAVINST 5000.2G.
+
+• Authorizing Official (AO): Grants Authority to Operate; enforces Risk Management Framework (RMF) controls that
+drive design and integration requirements.
+
+B.3 Combatant Commands (Reference)
+AOR: The geographic (or astrographic) area assigned to a CCDR for missions and forces. (Title 10)
+Geographic (7):
+
+• USAFRICOM
+• USCENTCOM
+• USEUCOM
+
+B.3 Combatant Commands (Reference)
+
+• USINDOPACOM
+• USNORTHCOM
+• USSOUTHCOM
+• USSPACECOM1
+Functional (4):
+
+• USSOCOM
+• USSTRATCOM
+• USTRANSCOM
+• USCYBERCOM
+
+1
+
+USSPACECOM is treated by DoD as a geographic (astrographic) command with an AOR beginning at the Kármán line (∼100 km)
+
+81
+
+List of Acronyms
+Acronym
+
+Definition
+
+ACAT
+
+Acquisition Category
+
+ACO
+
+Administrative Contracting Officer
+
+AEA
+
+Alteration Engineering Agent
+
+AoA
+
+Analysis of Alternatives
+
+AOR
+
+Accumulated Operating Result
+
+APB
+
+Acquisition Program Baseline
+
+ARC
+
+Acquisition Research Center
+
+ASN(RD&A)
+
+Assistant Secretary of the Navy for Research, Development and Acquisition
+
+BA
+
+Budget Authority
+
+BB
+
+Block Buy
+
+BoM
+
+Bill of Material
+
+BSO
+
+Budget Submitting Office
+
+BTR
+
+Below-Threshold Reprogramming
+
+C4I
+
+Command, Control, Communications, Computers, and Intelligence
+
+CAE
+
+Component Acquisition Executive
+
+CAPE
+
+Cost Assessment and Program Evaluation
+
+CARD
+
+Cost Analysis Requirements Description
+
+CASREP
+
+Casualty Report
+
+CBO
+
+Congressional Budget Office
+
+CCDR
+
+Combatant Commander
+
+CDD
+
+Capabilities Development Document
+
+CDRL
+
+Contract Data Requirements List
+
+CER
+
+Cost Estimating Relationship
+
+CFO
+
+Chief Financial Officer
+
+CIP
+
+Capital Investment Program
+
+CJCS
+
+Chairman of the Joint Chiefs of Staff
+
+CNO
+
+Chief of Naval Operations
+
+CNRMC
+
+Commander, Navy Regional Maintenance Center
+
+CPAF
+
+Cost-Plus-Award-Fee
+
+CPFF
+
+Cost-Plus-Fixed-Fee
+
+83
+
+Acronym
+
+Definition
+
+CPIF
+
+Cost-Plus-Incentive-Fee
+
+CR
+
+Continuing Resolution
+
+CRS
+
+Congressional Research Service
+
+CSDR
+
+Cost and Software Data
+
+CTC
+
+Cost-to-Complete
+
+CVN
+
+Nuclear-Powered Aircraft Carrier
+
+DA
+
+Design Agent
+
+DAES
+
+Defense Acquisition Executive Summary
+
+DCAPE
+
+Director, CAPE
+
+DCMA
+
+Defense Contract Management Agency
+
+DFAS
+
+Defense Finance and Accounting Service
+
+DMAG
+
+Deputy’s Management Action Group
+
+DoD
+
+Department of Defense
+
+DON
+
+Department of the Navy
+
+DRPM
+
+Direct Reporting Program Manager
+
+EA
+
+Engineering Agent
+
+EDO
+
+Engineering Duty Officer
+
+EMD
+
+Engineering and Manufacturing Development
+
+EOQ
+
+Economic Order Quantity
+
+ERP
+
+Enterprise Resource Planning
+
+FAR
+
+Federal Acquisition Regulation
+
+FDA
+
+Food and Drug Administration
+
+FFP
+
+Firm-Fixed-Price
+
+FMB
+
+Financial Management Budget (OPNAV)
+
+FPEPA
+
+Fixed-Price with Economic Price Adjustment
+
+FPIF
+
+Fixed-Price Incentive (Firm Target)
+
+FPR
+
+Fixed-Price Redetermination
+
+FRD
+
+Fleet Readiness Directorate
+
+FY
+
+Fiscal Year
+
+FYDP
+
+Future Years Defense Program
+
+GAO
+
+Government Accountability Office
+
+GPS
+
+Global Positioning System
+
+HAC
+
+House Appropriations Committee
+
+HASC
+
+House Armed Services Committee
+
+HBC
+
+House Budget Committee
+
+HCA
+
+Head Contracting Activity
+
+HUBZone
+
+Historically Underutilized Business Zone
+
+IA
+
+Information Assurance
+
+84
+
+Acronym
+
+Definition
+
+IBR
+
+Integrated Baseline Review
+
+ICD
+
+Initial Capabilities Document
+
+ICE
+
+Independent Cost Estimate
+
+IDIQ
+
+Indefinite-Delivery, Indefinite-Quantity
+
+IGCE
+
+Independent Government Cost Estimate
+
+IGT
+
+Intragovernmental Transaction
+
+IPAC
+
+Intra-Governmental Payment and Collection
+
+IPT
+
+Integrated Product Team
+
+IR
+
+Internal Reprogramming
+
+ISEA
+
+In-Service Engineering Agent
+
+KO
+
+Contracting Officer
+
+LCC
+
+Life-Cycle Cost
+
+LEGPROP
+
+Legislative Proposal
+
+LH
+
+Labor-Hour
+
+LLTM
+
+Long-Lead Time Material
+
+LOE
+
+Level of Effort
+
+LPTA
+
+Lowest Price Technically Acceptable
+
+LRIP
+
+Low-Rate Initial Production
+
+LT
+
+Letter Transfer
+
+MCA
+
+Major Capability Acquisition
+
+MILCON
+
+Military Construction
+
+MILPERS
+
+Military Personnel
+
+MIPR
+
+Military Interdepartmental Purchase Request
+
+MSA
+
+Materiel Solution Analysis
+
+MYP
+
+Multiyear Procurement
+
+N8
+
+OPNAV Integration of Capabilities and Resources
+
+N82
+
+OPNAV Programming Division
+
+N9
+
+OPNAV Warfare Systems
+
+N91
+
+Warfare Integration Directorate
+
+NAVAIR
+
+Naval Air Systems Command
+
+NAVSEA
+
+Naval Sea Systems Command
+
+NAVWAR
+
+Naval Information Warfare Systems Command
+
+NDAA
+
+National Defense Authorization Act
+
+NOR
+
+Net Operating Result
+
+NRO
+
+National Reconnaissance Office
+
+NSWC
+
+Naval Surface Warfare Center
+
+NUWC
+
+Naval Undersea Warfare Center
+
+NWC
+
+Naval Warfare Center
+
+85
+
+Acronym
+
+Definition
+
+NWCF
+
+Navy Working Capital Fund
+
+O&S
+
+Operations and Support Phase
+
+OCI
+
+Organizational Conflict of Interest
+
+OMB
+
+Office of Management and Budget
+
+OMN
+
+Operation and Maintenance, Navy
+
+OPN
+
+Other Procurement, Navy
+
+OPNAV
+
+Office of the Chief of Naval Operations
+
+OSD
+
+Office of the Secretary of Defense
+
+P&D
+
+Production and Deployment Phase
+
+PA
+
+Program Authority
+
+PA Reprog
+
+Prior Approval Reprogramming
+
+PB
+
+President’s Budget
+
+PCO
+
+Procuring Contracting Officer
+
+PDM
+
+Program Decision Memorandum
+
+PEO
+
+Program Executive Office
+
+PEO C4I
+
+Program Executive Office, Command, Control, Communications, Computers,
+and Intelligence
+
+PEO CVN
+
+Program Executive Office, Aircraft Carriers
+
+PEO Digital
+
+Program Executive Office, Digital and Enterprise Services
+
+PEO IWS
+
+Program Executive Office, Integrated Warfare Systems
+
+PEO MLB
+
+Program Executive Office, Manpower, Logistics and Business IT
+
+PEO Ships
+
+Program Executive Office, Ships
+
+PEO SSBN
+
+Program Executive Office, SSBN
+
+PEO SSN
+
+Program Executive Office, Attack Submarines
+
+PEO USC
+
+Program Executive Office, Unmanned and Small Combatants
+
+PEO UWS
+
+Program Executive Office, Undersea Warfare Systems
+
+PM
+
+Program Manager
+
+PMO
+
+Program Management Office
+
+POE
+
+Program Office Estimate
+
+POM
+
+Program Objective Memorandum
+
+PPBE
+
+Planning, Programming, Budgeting and Execution
+
+PR
+
+Purchase Request
+
+PTA
+
+Point of Total Assumption
+
+RCA
+
+Request for Contract Action
+
+RCOH
+
+Refueling and Complex Overhaul
+
+RDT&E
+
+Research, Development, Test, and Evaluation
+
+RFI
+
+Request for Information
+
+RFP
+
+Request for Proposal
+
+86
+
+Acronym
+
+Definition
+
+RMD
+
+Resource Management Decision
+
+SAC
+
+Senate Appropriations Committee
+
+SAE
+
+Service Acquisition Executive
+
+SAR
+
+Selected Acquisition Report
+
+SASC
+
+Senate Armed Services Committee
+
+SAT
+
+Simplified Acquisition Threshold
+
+SBA
+
+Small Business Administration
+
+SBC
+
+Senate Budget Committee
+
+SCN
+
+Shipbuilding and Conversion, Navy
+
+SDVOSB
+
+Service-Disabled Veteran-Owned Small Business
+
+SECDEF
+
+Secretary of Defense
+
+SECNAV
+
+Secretary of the Navy
+
+SIA
+
+Systems Integration Agent
+
+SLOC
+
+Source Lines of Code
+
+SLR
+
+Stabilized Labor Rate
+
+SOW
+
+Statement of Work
+
+SSA
+
+Source Selection Authority
+
+SSAC
+
+Source Selection Advisory Council
+
+SSBN
+
+Ballistic Missile Submarine, Nuclear
+
+SSEB
+
+Source Selection Evaluation Board
+
+SUBMEPP
+
+Submarine Maintenance Engineering Planning Program
+
+SURFMEPP
+
+Surface Maintenance Engineering Planning Program
+
+SYSCOM
+
+Systems Command
+
+T&M
+
+Time-and-Materials
+
+TA
+
+Technical Authority
+
+TCO
+
+Termination Contracting Officer
+
+TDA
+
+Technical Direction Agent
+
+TDP
+
+Technical Data Package
+
+TMRR
+
+Technology Maturation and Risk Reduction
+
+TOA
+
+Total Obligational Authority
+
+TOC
+
+Total Ownership Cost
+
+TWD
+
+Technical Work Document
+
+TWH
+
+Technical Warrant Holder
+
+UCA
+
+Undefinitized Contract Action
+
+UCF
+
+Uniform Contract Format
+
+UTA
+
+Ultimate Technical Authority
+
+VA
+
+Department of Veterans Affairs
+
+VCJCS
+
+Vice-Chairman of the Joint Chiefs of Staff
+
+87
+
+Acronym
+
+Definition
+
+WBS
+
+Work Breakdown Structure
+
+WCF
+
+Working Capital Fund
+
+WOSB
+
+Women-Owned Small Business
+
+

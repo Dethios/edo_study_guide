@@ -1,0 +1,7 @@
+DoD leading paragraph.
+Next paragraph starts with DoD again.
+DoD after explicit noindent.
+
+1
+
+

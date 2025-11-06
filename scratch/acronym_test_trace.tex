@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage[stylemods=all,acronym,nonumberlist,shortcuts]{glossaries-extra}
+\makenoidxglossaries
+\newacronym{dod}{DoD}{Department of Defense}
+\makeatletter
+\microtypesetup{tracking=false}
+\renewcommand*{\glsacspacemax}{0pt}
+\renewcommand*{\glsacspace}[1]{\space}
+\renewcommand*{\glsabspace}[1]{\glsxtrgenentrytextfmt{ }}
+\makeatother
+\begin{document}
+\tracingmacros=2 \tracingcommands=2
+Text (\gls{dod}) test.
+\end{document}

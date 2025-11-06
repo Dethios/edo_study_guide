@@ -326,12 +326,7 @@
   // latexindent matches the repo tooling, avoiding backup files.
   "latex-workshop.formatting.latex": "latexindent",
   "latex-workshop.formatting.latexindent.path": "latexindent",
-  "latex-workshop.formatting.latexindent.args": [
-    "-w",
-    "-s",
-    "-m",
-    "--overwriteIfDifferent"
-  ],
+  "latex-workshop.formatting.latexindent.args": ["-w", "-s", "-m", "--overwriteIfDifferent"],
 
   // Convenience helpers around LaTeX authoring.
   "latex-utilities.formattedPaste.useAsDefault": true,
@@ -888,5 +883,8 @@
     "xcolor",
     "xelatex",
     "xindy"
-  ]
+  ],
+  "[latex-package]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  }
 }

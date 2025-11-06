@@ -31,6 +31,7 @@
     "visualstudioexptteam.vscodeintellicode",
     "jasonlhy.hungry-delete",
     "ms-vscode.sublime-keybindings",
-    "tal7aouy.indent-colorizer"
+    "tal7aouy.indent-colorizer",
+    "ms-vscode.notepadplusplus-keybindings"
   ]
 }
