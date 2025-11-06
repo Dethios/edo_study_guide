@@ -34,3 +34,8 @@
 
 % ---------------- Fixing extra space issue in AC ------------------
 \microtypesetup{tracking=false}
+\makeatletter
+\renewcommand*{\glsacspacemax}{0pt}
+\renewcommand*{\glsacspace}[1]{\space}
+\renewcommand*{\glsabspace}[1]{\glsxtrgenentrytextfmt{ }}
+\makeatother

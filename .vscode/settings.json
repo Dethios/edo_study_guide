@@ -1,6 +1,6 @@
 {
   // ===================================================================
-  // THEME / COLORS / UI
+  // 1. UI & LAYOUT — theme, icons, and OLED-friendly color palette
   // ===================================================================
   "workbench.colorTheme": "Abyss",
   "workbench.iconTheme": "material-icon-theme",
@@ -9,11 +9,10 @@
   "workbench.tree.indent": 4,
   "workbench.enableExperiments": true,
   "workbench.settings.enableNaturalLanguageSearch": false,
-
   "window.newWindowProfile": "Default",
   "window.systemColorTheme": "dark",
 
-  // Custom OLED-optimized Nord-ish refresh (kept as you had it)
+  // Custom Nord-inspired palette tuned for true black backgrounds.
   "workbench.colorCustomizations": {
     "foreground": "#E5E9F0",
     "focusBorder": "#8FB3D9",
@@ -73,7 +72,7 @@
     "terminal.ansiBrightWhite": "#F2F4F8"
   },
 
-  // Token colors (comments neutral but readable on true black)
+  // Token palette tuned for readability on true black backgrounds.
   "editor.tokenColorCustomizations": {
     "comments": "#7E8591",
     "strings": "#A7C795",
@@ -124,46 +123,50 @@
   },
 
   // ===================================================================
-  // EDITOR CORE / ERGONOMICS
+  // 2. EDITOR EXPERIENCE — fonts, wrapping, suggestions, and automation
   // ===================================================================
+  // Indentation and whitespace discipline.
   "editor.detectIndentation": false,
   "editor.tabSize": 2,
   "editor.indentSize": "tabSize",
   "editor.insertSpaces": true,
   "editor.stickyTabStops": true,
+  "editor.autoIndentOnPaste": true,
+  "hungryDelete.considerIncreaseIndentPattern": true,
 
+  // Font and rendering polish.
+  "editor.fontFamily": "'Fira Code', 'Source Code Pro', 'Cascadia Code', Consolas, 'Courier New', monospace",
+  "editor.codeLensFontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontVariations": true,
+  "editor.allowVariableFontsInAccessibilityMode": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "all",
+  "editor.maxTokenizationLineLength": 200000,
+  "editor.minimap.enabled": false,
+  "editor.minimap.maxColumn": 100,
+
+  // Wrapping keeps long acquisition cites readable.
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 100,
   "editor.wrappingIndent": "indent",
   "editor.wrapOnEscapedLineFeeds": true,
 
-  "editor.minimap.enabled": false,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.smoothScrolling": true,
-  "editor.renderControlCharacters": true,
-  "editor.renderWhitespace": "all",
-  "editor.bracketPairColorization.enabled": true,
-  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "editor.maxTokenizationLineLength": 200000,
-  "editor.codeLensFontFamily": "Fira Code",
-  "editor.allowVariableFontsInAccessibilityMode": true,
-
-  "editor.fontFamily": "'Fira Code', 'Source Code Pro', 'Cascadia Code', Consolas, 'Courier New', monospace",
-  "editor.fontLigatures": true,
-  "editor.fontVariations": true,
-
-  // Inline suggestions (Gemini preferred; avoid Copilot double-ghosting)
+  // Suggestions and inline assists tuned for Gemini + Prettier.
   "editor.inlineSuggest.enabled": true,
   "editor.inlineSuggest.showToolbar": "onHover",
   "editor.inlineSuggest.fontFamily": "'Fira Code'",
   "editor.suggest.preview": true,
   "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.wordBasedSuggestions": "matchingDocuments",
   "editor.tabCompletion": "on",
   "editor.linkedEditing": true,
-  "editor.wordBasedSuggestions": "matchingDocuments",
   "editor.aiStats.enabled": true,
+  "editor.multiCursorPaste": "full",
 
-  // Formatting defaults (Prettier) & triggers
+  // Formatting defaults (Prettier-first workflow).
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "modificationsIfAvailable",
@@ -172,14 +175,14 @@
   "editor.codeActionsOnSave": {},
 
   // ===================================================================
-  // FILES / SEARCH / WATCHERS
+  // 3. FILES & SEARCH — encoding, autosave, and ignore patterns
   // ===================================================================
+  "explorer.confirmDragAndDrop": false,
   "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
   "files.autoGuessEncoding": true,
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1000,
-
   "files.watcherExclude": {
     "**/.git/**": true,
     "**/node_modules/**": true,
@@ -196,10 +199,22 @@
   },
   "search.followSymlinks": false,
   "search.useIgnoreFiles": true,
+  "json.schemaDownload.enable": false,
 
   // ===================================================================
-  // LANGUAGE OVERRIDES
+  // 4. FORMATTING DEFAULTS — Prettier plus language-specific overrides
   // ===================================================================
+  // Global Prettier preferences.
+  "prettier.useTabs": false,
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 100,
+  "prettier.proseWrap": "always",
+  "prettier.singleAttributePerLine": true,
+  "prettier.endOfLine": "lf",
+  "prettier.vueIndentScriptAndStyle": true,
+  "prettier.withNodeModules": true,
+
+  // Language-specific formatter overrides.
   "[latex]": {
     "editor.defaultFormatter": "James-Yu.latex-workshop",
     "editor.formatOnSave": false,
@@ -211,20 +226,9 @@
   "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
   // ===================================================================
-  // PRETTIER (GLOBAL)
+  // 5. LATEX TOOLCHAIN — build recipes, preview, and formatting parity
   // ===================================================================
-  "prettier.useTabs": false,
-  "prettier.tabWidth": 2,
-  "prettier.printWidth": 100,
-  "prettier.proseWrap": "always",
-  "prettier.singleAttributePerLine": true,
-  "prettier.endOfLine": "lf",
-  "prettier.vueIndentScriptAndStyle": true,
-  "prettier.withNodeModules": true,
-
-  // ===================================================================
-  // LATEX WORKSHOP — BUILD/VIEW/LINT (matches your workspace recipes)
-  // ===================================================================
+  // Keep PDFs in VS Code so synctex stays in one window.
   "workbench.editorAssociations": {
     "*.copilotmd": "vscode.markdown.preview.editor",
     "*.pdf": "latex-workshop-pdf-hook"
@@ -309,10 +313,8 @@
   "latex-workshop.view.outline.sync.viewer": true,
   "latex-workshop.view.pdf.internal.synctex.keybinding": "ctrl-click",
   "latex-workshop.synctex.afterBuild.enabled": true,
-
   "latex-workshop.latex.rootFile.useSubFile": true,
   "latex-workshop.latex.rootFile.doNotPrompt": true,
-
   "latex-workshop.latex.watch.usePolling": true,
   "latex-workshop.latex.watch.pdf.delay": 100,
   "latex-workshop.linting.run": "onType",
@@ -321,29 +323,26 @@
   "latex-workshop.message.information.show": true,
   "latex-workshop.message.log.show": true,
 
-  // latexindent (exact args)
+  // latexindent matches the repo tooling, avoiding backup files.
   "latex-workshop.formatting.latex": "latexindent",
   "latex-workshop.formatting.latexindent.path": "latexindent",
   "latex-workshop.formatting.latexindent.args": [
-    "-w", // write-in-place
-    "-s", // silent
-    "-m", // only modify if changes occur
-    "--overwriteIfDifferent" // avoids needless writes when unchanged
+    "-w",
+    "-s",
+    "-m",
+    "--overwriteIfDifferent"
   ],
 
-  // ===================================================================
-  // LATEX UTILITIES / LATEX PREVIEW
-  // ===================================================================
+  // Convenience helpers around LaTeX authoring.
   "latex-utilities.formattedPaste.useAsDefault": true,
   "latex-utilities.formattedPaste.maxLineLength": 100,
   "latex-utilities.liveReformat.enabled": true,
   "latex-utilities.liveReformat.languages": ["tex", "doctex", "latex", "rsweave", "jlweave"],
-
-  "latexPreview.latexFontDir": "C:\\\\Users\\\\vic-l\\\\AppData\\\\Local\\\\Programs\\\\MiKTeX\\\\fonts",
+  "latexPreview.latexFontDir": "C:\\Users\\vic-l\\AppData\\Local\\Programs\\MiKTeX\\fonts",
   "latexPreview.pageSize": "US Letter",
 
   // ===================================================================
-  // MARKDOWN / NOTEBOOKS
+  // 6. MARKDOWN & NOTEBOOKS — preview, extensions, and typography
   // ===================================================================
   "markdown.copyFiles.overwriteBehavior": "overwrite",
   "markdown.extension.completion.enabled": true,
@@ -352,7 +351,6 @@
   "markdown.preview.breaks": true,
   "markdown.preview.fontFamily": "'Fira Sans',-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
   "markdown.preview.lineHeight": 1.2,
-
   "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
   "markdown-preview-enhanced.enableCriticMarkupSyntax": true,
   "markdown-preview-enhanced.enableExtendedTableSyntax": true,
@@ -362,7 +360,7 @@
   "markdownPreviewEnhanced.previewTheme": "one-dark",
 
   // ===================================================================
-  // TERMINAL
+  // 7. TERMINAL — fonts, ligatures, and usability defaults
   // ===================================================================
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.windowsEnableConpty": true,
@@ -440,7 +438,7 @@
   ],
 
   // ===================================================================
-  // GIT / SCM
+  // 8. SOURCE CONTROL — Git ergonomics and inline insights
   // ===================================================================
   "git.autofetch": true,
   "git.autofetchPeriod": 180,
@@ -455,28 +453,24 @@
   "git.useCommitInputAsStashMessage": true,
   "git.useEditorAsCommitInput": false,
   "git.useEditorAsCommittingEditor": false,
-
   "scm.inputFontFamily": "editor",
-
-  // GitLens model (kept as-is)
+  // GitLens model preference for inline blame and chat.
   "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
 
   // ===================================================================
-  // LANGUAGES (HTML / JS / TS / TOML / YAML / Python / PowerShell)
+  // 9. LANGUAGE TOOLING — HTML, JS/TS, config files, Python, PowerShell
   // ===================================================================
   "html.format.wrapLineLength": 100,
   "html.format.indentHandlebars": true,
   "html.format.indentInnerHtml": true,
   "html.format.templating": true,
-
   "javascript.referencesCodeLens.enabled": true,
   "javascript.referencesCodeLens.showOnAllFunctions": true,
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.implementationsCodeLens.showOnInterfaceMethods": true,
   "typescript.referencesCodeLens.enabled": true,
   "typescript.referencesCodeLens.showOnAllFunctions": true,
-
   "evenBetterToml.formatter.allowedBlankLines": 1,
   "evenBetterToml.formatter.columnWidth": 100,
   "evenBetterToml.formatter.alignComments": true,
@@ -492,15 +486,11 @@
   "evenBetterToml.formatter.reorderKeys": true,
   "evenBetterToml.schema.links": true,
   "evenBetterToml.semanticTokens": true,
-
   "yaml.format.printWidth": 100,
   "yaml.format.proseWrap": "always",
   "yaml.keyOrdering": false,
-
   "python.analysis.autoFormatStrings": true,
-
-  // PowerShell path (fixed spacing/escape)
-  "runInPowerShell.PowershellCoreLocation": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\"",
+  "runInPowerShell.PowershellCoreLocation": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\"",
   "powershell.integratedConsole.startLocation": "Editor",
   "powershell.promptToUpdatePowerShell": false,
   "powershell.startAsLoginShell.linux": true,
@@ -514,21 +504,15 @@
   "powershell.buttons.showPanelMovementButtons": true,
 
   // ===================================================================
-  // EXTENSIONS / EDGE DEVTOOLS / NPM
+  // 10. EXTENSIONS & INTEGRATIONS — updates, asset helpers, annotations
   // ===================================================================
   "extensions.autoCheckUpdates": true,
   "extensions.autoUpdate": true,
-
   "vscode-edge-devtools.useHttps": true,
   "vscode-edge-devtools.webhint": false,
   "vscode-edge-devtools.webhintInstallNotification": true,
-
   "npm.fetchOnlinePackageInfo": false,
   "npm.runSilent": true,
-
-  // ===================================================================
-  // PATH INTELLISENSE / IMAGES
-  // ===================================================================
   "pasteImage.basePath": "edo_study_guide/Images",
   "path-intellisense.autoSlashAfterDirectory": true,
   "path-intellisense.autoTriggerNextSuggestion": true,
@@ -539,10 +523,6 @@
     "TikZ": "${workspaceFolder}/TikZ"
   },
   "path-intellisense.showHiddenFiles": true,
-
-  // ===================================================================
-  // BETTER COMMENTS
-  // ===================================================================
   "better-comments.highlightPlainText": true,
   "better-comments.tags": [
     {
@@ -618,9 +598,19 @@
       "backgroundColor": "transparent"
     }
   ],
+  "bookmarks.saveBookmarksInProject": true,
+  "bookmarks.useWorkaroundForFormatters": true,
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+  "invisibleAiChartDetector.doubleBlankThreshold": 3,
 
   // ===================================================================
-  // SECURITY / TELEMETRY / UPDATES
+  // 11. AI & CHAT — keep collaboration threads compact
+  // ===================================================================
+  "chat.editor.wordWrap": "on",
+  "chatgpt.runCodexInWindowsSubsystemForLinux": true,
+
+  // ===================================================================
+  // 12. SECURITY & UPDATES — reduce noise and keep releases predictable
   // ===================================================================
   "security.workspace.trust.untrustedFiles": "open",
   "telemetry.telemetryLevel": "off",
@@ -629,19 +619,8 @@
   "update.showReleaseNotes": false,
 
   // ===================================================================
-  // MISC / DICTS / UTILS
+  // 13. SPELLCHECK & DICTIONARIES — tuned for LaTeX acquisition jargon
   // ===================================================================
-  "json.schemaDownload.enable": false,
-  "explorer.confirmDragAndDrop": false,
-
-  "bookmarks.saveBookmarksInProject": true,
-  "bookmarks.useWorkaroundForFormatters": true,
-  "merge-conflict.autoNavigateNextConflict.enabled": true,
-
-  "chat.editor.wordWrap": "on",
-  "chatgpt.runCodexInWindowsSubsystemForLinux": true,
-
-  // Spellings (kept long lists intact)
   "cSpell.autoFormatConfigFile": true,
   "cSpell.customDictionaries": { "custom": true, "internal-terms": true },
   "cSpell.enabledFileTypes": {
@@ -650,6 +629,13 @@
     "yaml": true,
     "sty": true
   },
+  "cSpell.diagnosticLevel": "Hint",
+  "cSpell.hideIssuesWhileTyping": "Line",
+  "cSpell.maxNumberOfProblems": 250,
+  "cSpell.suggestionMenuType": "quickFix",
+  "cSpell.checkVSCodeSystemFiles": true,
+
+  // Keep this alphabetical; it feeds LaTeX-specific linting.
   "cSpell.userWords": [
     "addbibresource",
     "addcolon",
@@ -902,16 +888,5 @@
     "xcolor",
     "xelatex",
     "xindy"
-  ],
-
-  // Handy tweaks
-  "hungryDelete.considerIncreaseIndentPattern": true,
-  "editor.minimap.maxColumn": 100,
-  "editor.multiCursorPaste": "full",
-  "cSpell.diagnosticLevel": "Hint",
-  "cSpell.hideIssuesWhileTyping": "Line",
-  "cSpell.maxNumberOfProblems": 250,
-  "cSpell.suggestionMenuType": "quickFix",
-  "cSpell.checkVSCodeSystemFiles": true,
-  "editor.autoIndentOnPaste": true
+  ]
 }
