@@ -13,15 +13,7 @@
   headings=big,          % larger chapter/section heads
   numbers=noendperiod,   % no trailing dot in numbered headings
   parskip=half           % block-style paragraphs (tune later if desired)
-]{scrbook}
-
-% High-level KOMA options that affect layout lists; detailed layout moves to preamble files
-\KOMAoptions{
-  toc=flat,              % compact ToC layout
-  listof=flat,           % compact LoF/LoT layout
-  headinclude=true,      % include header space in typearea calc (page style file will refine)
-  footinclude=false
-}
+]{moderntech}
 
 % --- Your modular preambles (we'll refactor each for scrbook in turn) ---
 \usepackage{shellesc}
@@ -58,7 +50,6 @@
 %================
 \begin{document}
 %================
-\frenchspacing
 \DTMsetdatestyle{mydateformat}
 
 % ----- TITLE -----
@@ -66,7 +57,7 @@
 \begin{titlepage}%
   \centering%
   \DTMsetdatestyle{iso}
-  {\headingfont\bfseries\fontsize{24pt}{26pt}\selectfont%
+  {\sffamily\bfseries\fontsize{24pt}{26pt}\selectfont%
     \color{NavyBlue}\@title\par}%
   \vspace{6pt}%
   \includegraphics[width=\StudyTitleLogoWidth]{\StudyTitleLogo}\par%

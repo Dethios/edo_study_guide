@@ -294,6 +294,14 @@
 \newacronym{wawf}{WAWF}{Wide Area Workflow}
 \newacronym{cdrl}{CDRL}{Contract Data Requirements List}
 \newacronym{cica}{CICA}{Competition in Contracting Act}
+\newacronym[
+	shortplural={J\&As},
+	longplural={Justifications and Approvals}
+]{ja}{J\&A}{Justification and Approval}
+\newacronym[
+	shortplural={D\&Fs},
+	longplural={Determinations and Findings}
+]{df}{D\&F}{Determination and Findings}
 \newacronym{lpta}{LPTA}{Lowest Price Technically Acceptable}
 \newacronym{csfr}{CSFR}{Contract Funds Status Report}
 
@@ -414,7 +422,10 @@
 \newacronym{sloc}{SLOC}{Source Lines of Code}
 \newacronym{gps}{GPS}{Global Positioning System}
 \newacronym{toc}{TOC}{Total Ownership Cost}
-\newacronym{wbs}{WBS}{Work Breakdown Structure}
+\newacronym[
+	shortplural={WBSes},
+	longplural={Work Breakdown Structures}
+]{wbs}{WBS}{Work Breakdown Structure}
 \newacronym{ganda}{G\&A}{General and Administrative}
 \newacronym{cas}{CAS}{Cost Accounting Standards}
 \newacronym{gaap}{GAAP}{Generally Accepted Accounting Principles}
@@ -436,6 +447,7 @@
 % --- Extended Reference (optional) ---
 
 \newacronym{cdd}{CDD}{Capabilities Development Document}
+\newacronym{cddv}{CDD-V}{Capabilities Development Document Validation}
 \newacronym{niwc}{NIWC}{Naval Information Warfare Center}
 \newacronym{nrl}{NRL}{Naval Research Laboratory}
 \newacronym{nsc}{NSC}{National Security Council}

@@ -4,6 +4,7 @@
 # Directories (your layout)
 # out/
 build/
+scratch/
 
 # Common aux/logs across engines & tools
 *.aux

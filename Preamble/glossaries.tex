@@ -47,6 +47,25 @@
   \def\acrfull#1{\glsentrylong{#1}\space(\glsentryshort{#1})}%
 }
 
+% --- Space factor tuning -----------------------------------------------------
+% Disable automatic spacing so authors can manage surrounding spaces explicitly.
+\makeatletter
+\@ifundefined{glsxtrpostspace}{%
+  \newcommand{\glsxtrpostspace}{}
+}{%
+  \renewcommand*{\glsxtrpostspace}{}
+}
+\@ifundefined{glsxtrpretag}{%
+    \newcommand{\glsxtrpretag}{}
+  }{%
+    \renewcommand*{\glsxtrpretag}{}
+}
+\@ifundefined{glsxtrposttag}{%
+  \newcommand{\glsxtrpostag}{}
+  }{%
+  \renewcommand*{\glsxtrpostag}{}}
+\makeatother
+
 % --- Printing notes ----------------------------------------------------------
 % In main.tex you already use:
 % \printnoidxglossary[type=\acronymtype, title=List of Acronyms, numberedsection, style=long-booktabs]

@@ -1,16 +1,6 @@
 % =============================================================================
 % MODERNTECH THEME INTEGRATION
 % =============================================================================
-\makeatletter
-\def\caption@documentclass{standard}
-\let\caption@CheckCompatibility\relax
-\let\caption@checkcompatibility\relax
-\makeatother
-\PassOptionsToPackage{compatibility=false}{caption}
-\usepackage[
-  minted=false
-]{moderntech}
-
 % Legacy color aliases (retain existing document commands while mapping them to
 % the integrated palette recommended in the typography guide).
 \colorlet{NavyBlue}{AccentBlue}
@@ -23,12 +13,12 @@
 \colorlet{bg}{Gray90}
 
 % Convenience font helpers maintained for compatibility with existing sources.
-\newcommand{\headingfont}{\sffamily}
-\newcommand{\sectionfont}{\sffamily}
-\newcommand{\firasb}{\sffamily\bfseries}
+\newcommand{\headingfont}{\firasanssemibold\color{AccentBlue}\Large}
+\newcommand{\sectionfont}{\firasanssemibold\color{AccentBlue}\Large}
+\newcommand{\firasb}{\firasanssemibold}
 \newcommand{\merriweatherblack}{\rmfamily\bfseries}
 \newcommand{\sourcesansprofont}{\sffamily}
-\newcommand{\textsb}[1]{{\sffamily\bfseries #1}}
+\newcommand{\textsb}[1]{{\firasanssemibold #1}}
 
 % Legacy inline hint/note wrappers routed through the moderntech styled boxes.
 \newcommand{\hint}[1]{\Hint{#1}}
@@ -38,10 +28,7 @@
 
 \defaultfontfeatures[\ttfamily]{
   Scale=MatchLowercase,
-  Contextuals=Alternate,
-  FakeSlant=0.2,
-  FakeBold=0.2,
-  FakeSmallCaps
+  Contextuals=Alternate
 }
 \setmonofont[
   FontFace={m}{it}{Fira Code},

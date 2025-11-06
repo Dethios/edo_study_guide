@@ -886,5 +886,8 @@
   ],
   "[latex-package]": {
     "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+  "[latex-class]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
   }
 }
