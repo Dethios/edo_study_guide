@@ -406,9 +406,18 @@
 \newacronym{bom}{BoM}{Bill of Material}
 \newacronym{erp}{ERP}{Enterprise Resource Planning}
 \newacronym{lrip}{LRIP}{Low-Rate Initial Production}
+\newacronym{frp}{FRP}{Full-Rate Production}
+\newacronym{dt}{DT}{Developmental Test}
 \newacronym{frpdr}{FRPDR}{Full-Rate Production Decision Review}
+\newacronym{asr}{ASR}{Alternative Systems Review}
+\newacronym{srr}{SRR}{System Requirements Review}
+\newacronym{sfr}{SFR}{System Functional Review}
 \newacronym{pdr}{PDR}{Preliminary Design Review}
 \newacronym{cdr}{CDR}{Critical Design Review}
+\newacronym{trr}{TRR}{Test Readiness Review}
+\newacronym{svr}{SVR}{System Verification Review}
+\newacronym{otrr}{OTRR}{Operational Test Readiness Review}
+\newacronym{prr}{PRR}{Production Readiness Review}
 
 % --- Cost Estimation & Analysis ---
 
@@ -435,6 +444,7 @@
 \newacronym{fprp}{FPRP}{Forward Pricing Rate Proposal}
 \newacronym{ros}{ROS}{Return on Sales}
 \newacronym{roa}{ROA}{Return on Assets}
+\newacronym{dote}{DOT\&E}{Director, Operational Test and Evaluation}
 
 % --- Fiscal Law & Compliance ---
 
@@ -447,6 +457,7 @@
 % --- Extended Reference (optional) ---
 
 \newacronym{cdd}{CDD}{Capabilities Development Document}
+\newacronym{cpd}{CPD}{Capability Production Document}
 \newacronym{cddv}{CDD-V}{Capabilities Development Document Validation}
 \newacronym{niwc}{NIWC}{Naval Information Warfare Center}
 \newacronym{nrl}{NRL}{Naval Research Laboratory}
@@ -476,7 +487,7 @@
 \newacronym[
 	shortplural={IOT\&Es},
 	longplural={Initial Operational Test and Evaluations}
-]{iote}{IOT&E}{Initial Operational Test and Evaluation}
+]{iote}{IOT\&E}{Initial Operational Test and Evaluation}
 \newacronym{pd.phase}{P\&D}{Production and Deployment Phase}
 \newacronym{ioc}{IOC}{Initial Operational Capability}
 \newacronym{foc}{FOC}{Full Operational Capability}

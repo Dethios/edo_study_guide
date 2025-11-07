@@ -3,7 +3,7 @@
 \documentclass[../main.tex]{subfiles}
 \IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
 % =============================================================================
-% CHAPTER 7: \acs{nwcf} ESSENTIALS
+% CHAPTER 7:\acs{nwcf} ESSENTIALS
 %
 % DESCRIPTION: This chapter covers the essentials of the Navy Working Capital
 %              Fund (\acs{nwcf}), including key definitions, metrics, and the cycle
@@ -20,18 +20,18 @@
 \minibib
 \subsection{Key Definitions (Execution)}
 \begin{description}
-	\item[\textbf{Commitment.}] Administrative reservation of funds in anticipation of an obligation; reduces available authority but is not yet a legal liability~\autocite{DoDFMR-Vol3} (e.g., \ac{nro}'s \ac{rca} process).
-	\item[\textbf{Obligation.}] Legal liability incurred that encumbers funds~\autocite{DoDFMR-Vol3} (e.g., award of a contract, acceptance of an \ac{igt} order).
+	\item[\textbf{Commitment.}] Administrative reservation of funds in anticipation of an obligation; reduces available authority but is not yet a legal liability~\autocite{DoDFMR-Vol3} (e.g.,\ac{nro}'s\ac{rca} process).
+	\item[\textbf{Obligation.}] Legal liability incurred that encumbers funds~\autocite{DoDFMR-Vol3} (e.g., award of a contract, acceptance of an\ac{igt} order).
 	\item[\textbf{Expenditure/Expense.}] Recording of cost when goods/services are received/accepted (accrual basis)~\autocite{DoDFMR-Vol3} (e.g., sending check to pay an invoice).
 	\item[\textbf{Outlay/Disbursement.}] Treasury cash payment to a vendor or performing activity~\autocite{DoDFMR-Vol3} (e.g., payment check is cashed in).
 \end{description}
 
 \subsection{Flow: PMO Purchase Request to Treasury Payment}
 \begin{enumerate}
-	\item \ac{pmo} \emph{commits} funds (approved in the \ac{erp} system). % commitment
-	\item Contract award or \ac{igt} order acceptance creates the \emph{obligation}~\autocite{DoDFMR-Vol3,Treasury-GInvoicing}.
+	\item\ac{pmo} \emph{commits} funds (approved in the\ac{erp} system). % commitment
+	\item Contract award or\ac{igt} order acceptance creates the \emph{obligation}~\autocite{DoDFMR-Vol3,Treasury-GInvoicing}.
 	\item Performance/acceptance posts \emph{expense} (accrual). % expenditure
-	\item \ac{dfas} schedules the invoice for payment; Treasury disburses (\emph{outlay}) via \ac{ipac} (for \ac{igt}) or commercial EFT~\autocite{Treasury-GInvoicing}.
+	\item\ac{dfas} schedules the invoice for payment; Treasury disburses (\emph{outlay}) via\ac{ipac} (for\ac{igt}) or commercial EFT~\autocite{Treasury-GInvoicing}.
 \end{enumerate}
 
 \subsection{NWCF Metrics and Equations}
@@ -40,7 +40,7 @@
 	      \[
 		      \text{\ac{nor}} = \text{Revenue} - \text{Total Expenses}
 	      \]
-	      Target performance remains near break-even over time (small \ac{nor})~\autocite{DoDFMR-Vol3}.
+	      Target performance remains near break-even over time (small\ac{nor})~\autocite{DoDFMR-Vol3}.
 	\item[\textbf{\ac{aor} (retained earnings/equity over time).}]
 	      \[
 		      \text{\ac{aor}}_{t} = \text{\ac{aor}}_{t-1} + \text{\ac{nor}}_{t} \pm \text{Other Adjustments}
@@ -51,54 +51,54 @@
 \subsection{NWCF Corpus v.s.\ Appropriations}
 \begin{description}
 	\item[\textbf{Corpus (\ac{aor}/Working Capital).}] Revolving cash and retained earnings authorized under 10~U.S.C.~\S~2208~\autocite{USC-2208-NWCF}; remains available without fiscal year limitation to finance operations until recovered through stabilized rates~\autocite{DoDFMR-Vol3-Ch19}.
-	\item[\textbf{Customer Appropriations.}] Mission-funded (e.g., \ac{omn}, \ac{rdte}, \ac{scn}) dollars obligated by the customer when a project order or inter/intra-governmental order is accepted; purpose, time, and amount statutes still apply to the customer~\autocite{DoDFMR-Vol3}.
-	\item[\textbf{\ac{cip}.}] Financed by \ac{nwcf} corpus but budgeted in the capital budget exhibit; used for plant/equipment modernization and amortized back through rates, not through a separate appropriation~\autocite{DoDFMR-Vol3-Ch19}.
-	\item[\textbf{No Augmentation.}] \ac{nwcf} activities cannot augment customer appropriations; corpus only bridges cash timing between expense recognition and reimbursement~\autocite{DoDFMR-Vol3-Ch19}.
+	\item[\textbf{Customer Appropriations.}] Mission-funded (e.g.,\ac{omn},\ac{rdte},\ac{scn}) dollars obligated by the customer when a project order or inter/intra-governmental order is accepted; purpose, time, and amount statutes still apply to the customer~\autocite{DoDFMR-Vol3}.
+	\item[\textbf{\ac{cip}.}] Financed by\ac{nwcf} corpus but budgeted in the capital budget exhibit; used for plant/equipment modernization and amortized back through rates, not through a separate appropriation~\autocite{DoDFMR-Vol3-Ch19}.
+	\item[\textbf{No Augmentation.}]\ac{nwcf} activities cannot augment customer appropriations; corpus only bridges cash timing between expense recognition and reimbursement~\autocite{DoDFMR-Vol3-Ch19}.
 \end{description}
 
 \subsection{Stabilized Rates and SLR}
 \begin{description}
-	\item[\textbf{Stabilized Rates.}] Customer prices set in the budget build to recover expected full costs (labor, material, overhead, depreciation/C\ac{cip}) with a near-zero \ac{nor} goal~\autocite{DoDFMR-Vol3}.
+	\item[\textbf{Stabilized Rates.}] Customer prices set in the budget build to recover expected full costs (labor, material, overhead, depreciation/C\ac{cip}) with a near-zero\ac{nor} goal~\autocite{DoDFMR-Vol3}.
 	\item[\textbf{\ac{slr}.}] Published labor \$/hr for a shop/code; recovers direct labor + fringe + overhead + G\&A + capital depreciation recovery~\autocite{DoDFMR-Vol3}:
 	      \[
 		      \text{\ac{slr}} = \frac{\text{Direct Labor} + \text{Fringe} + \text{OH} + \text{G\&A} + \text{Depreciation Recovery}}{\text{Direct Labor Hours}}
 	      \]
-	\item[\textbf{Adjustment Battle Rhythm.}] Rates are established two years ahead during the PPBE budget build and held constant throughout budget year execution; mid-year changes require OUSD(C) approval when earned rates diverge materially from planned costs, and Navy \acp{bso} typically review \ac{slr} accuracy monthly/quarterly to recommend any out-of-cycle adjustments~\autocite{DoDFMR-Vol3-Ch19}.
+	\item[\textbf{Adjustment Battle Rhythm.}] Rates are established two years ahead during the PPBE budget build and held constant throughout budget year execution; mid-year changes require OUSD(C) approval when earned rates diverge materially from planned costs, and Navy\acp{bso} typically review\ac{slr} accuracy monthly/quarterly to recommend any out-of-cycle adjustments~\autocite{DoDFMR-Vol3-Ch19}.
 \end{description}
 
 \subsection{NWCF v.s.\ Mission-Funded (Appropriation) Commands}
-\paragraph*{Which billets at \ac{nwcf} are mission-funded.}
-Military administration and leadership billets (CO/XO/Admin) are funded by \textbf{\ac{milpers}} and treated as mission-funded within \ac{nwcf}; certain command/HQ oversight billets may also be \ac{omn} funded by policy, so verify locally. These costs are not recovered in stabilized rates. Others that are assigned to \ac{nwcf} will bill hours towards work and the \ac{nwcf} will reimburse \ac{milpers}~\autocite{DoDFMR-Vol3}.
+\paragraph*{Which billets at\ac{nwcf} are mission-funded.}
+Military administration and leadership billets (CO/XO/Admin) are funded by \textbf{\ac{milpers}} and treated as mission-funded within\ac{nwcf}; certain command/HQ oversight billets may also be\ac{omn} funded by policy, so verify locally. These costs are not recovered in stabilized rates. Others that are assigned to\ac{nwcf} will bill hours towards work and the\ac{nwcf} will reimburse\ac{milpers}~\autocite{DoDFMR-Vol3}.
 
 \subsection{Standing Up or Modifying a NWCF Business Area}
 \begin{enumerate}
-	\item \textbf{Business Case Development}: Sponsor (e.g., \ac{asnrdanda} or \ac{syscom}) prepares analytical justification showing workload, demand signal, and ability to operate on a revolving basis without violating purpose/time/amount~\autocite{DoDFMR-Vol3-Ch19}.
-	\item \textbf{ac{don} Approval Chain}: \ac{secnav} (delegated to ASN (FM\&C)) endorses the concept and forwards to OUSD(C) while coordinating with Navy Comptroller to align \ac{ppbe} exhibits~\autocite{DoDFMR-Vol3-Ch19}.
-	\item \textbf{OUSD(C)/\ac{omb} Review}: \ac{dod} \ac{cfo} validates cash requirements, rate methodology, and capital plan, then seeks \ac{omb} alignment for the \ac{pb}~\autocite{DoDFMR-Vol3-Ch19}.
-	\item \textbf{Congressional Notification}: Congress must be notified (and, when required, explicitly authorize in appropriations or authorizations) before execution; 10~U.S.C.~\S~2208~\autocite{USC-2208-NWCF} restricts creation of new \acp{wcf} without legislative awareness~\autocite{DoDFMR-Vol3-Ch19}.
-	\item \textbf{Implementation}: Once approved, the new business area is issued an \ac{nwcf} business unit code, begins \ac{ppbe} rate build two years out, and transitions legacy appropriated accounts via opening balance adjustments~\autocite{DoDFMR-Vol3-Ch19}.
+	\item \textbf{Business Case Development}: Sponsor (e.g.,\ac{asnrdanda} or\ac{syscom}) prepares analytical justification showing workload, demand signal, and ability to operate on a revolving basis without violating purpose/time/amount~\autocite{DoDFMR-Vol3-Ch19}.
+	\item \textbf{ac{don} Approval Chain}:\ac{secnav} (delegated to ASN (FM\&C)) endorses the concept and forwards to OUSD(C) while coordinating with Navy Comptroller to align\ac{ppbe} exhibits~\autocite{DoDFMR-Vol3-Ch19}.
+	\item \textbf{OUSD(C)/\ac{omb} Review}:\ac{dod}\ac{cfo} validates cash requirements, rate methodology, and capital plan, then seeks\ac{omb} alignment for the\ac{pb}~\autocite{DoDFMR-Vol3-Ch19}.
+	\item \textbf{Congressional Notification}: Congress must be notified (and, when required, explicitly authorize in appropriations or authorizations) before execution; 10~U.S.C.~\S~2208~\autocite{USC-2208-NWCF} restricts creation of new\acp{wcf} without legislative awareness~\autocite{DoDFMR-Vol3-Ch19}.
+	\item \textbf{Implementation}: Once approved, the new business area is issued an\ac{nwcf} business unit code, begins\ac{ppbe} rate build two years out, and transitions legacy appropriated accounts via opening balance adjustments~\autocite{DoDFMR-Vol3-Ch19}.
 \end{enumerate}
 
 \subsection{NWCF Cycle of Operations (Order to Cash)}
 \begin{enumerate}
-	\item \textbf{Customer order.} \ac{igt} 7600A or project order is received and \emph{accepted}, creating the customer's obligation.
+	\item \textbf{Customer order.}\ac{igt} 7600A or project order is received and \emph{accepted}, creating the customer's obligation.
 	\item \textbf{Work in process.} Labor and material are applied; costs accumulate; billing events are scheduled per percent complete or delivery.
-	\item \textbf{Revenue recognition and billing.} The \ac{nwcf} recognizes revenue and bills via \ac{ipac} (\ac{igt}) or a commercial invoice if authorized.
-	\item \textbf{Collection (cash).} Treasury \ac{ipac}/electronic funds transfer posts; \ac{nwcf} cash increases; \ac{nor}/\ac{aor} update through the period close~\autocite{DoDFMR-Vol3,Treasury-GInvoicing}.
+	\item \textbf{Revenue recognition and billing.} The\ac{nwcf} recognizes revenue and bills via\ac{ipac} (\ac{igt}) or a commercial invoice if authorized.
+	\item \textbf{Collection (cash).} Treasury\ac{ipac}/electronic funds transfer posts;\ac{nwcf} cash increases;\ac{nor}/\ac{aor} update through the period close~\autocite{DoDFMR-Vol3,Treasury-GInvoicing}.
 \end{enumerate}
 
 \subsection{Operating During a Continuing Resolution}
 \begin{description}
-	\item[\textbf{Customer Funding Limits.}] Appropriated customers remain bound by prior-year obligation rates and anti-deficiency constraints; \ac{nwcf} orders cannot exceed apportioned \ac{cr} amounts until an appropriations act is passed~\autocite{CRS-CR}.
-	\item[\textbf{Cash Cushion.}] Existing \ac{nwcf} corpus allows Warfare Centers to keep executing accepted orders (labor continues, suppliers paid) even if reimbursements lag, provided cash balances stay within the FMR's upper/lower operating limits~\autocite{DoDFMR-Vol3-Ch19}.
-	\item[\textbf{No New Starts.}] \ac{cr} guidance prohibits new start projects, major capital investments, or rate changes absent explicit exception; \ac{nwcf} managers defer new workloads that would obligate customer funds beyond \ac{cr} allowances~\autocite{CRS-CR}.
-	\item[\textbf{Rate Discipline.}] Stabilized rates remain frozen; only emergency OUSD(C)-approved rate adjustments may occur, so \acp{bso} focus on expense control to avoid large \ac{nor} swings during the \ac{cr} period~\autocite{DoDFMR-Vol3-Ch19}.
+	\item[\textbf{Customer Funding Limits.}] Appropriated customers remain bound by prior-year obligation rates and anti-deficiency constraints;\ac{nwcf} orders cannot exceed apportioned\ac{cr} amounts until an appropriations act is passed~\autocite{CRS-CR}.
+	\item[\textbf{Cash Cushion.}] Existing\ac{nwcf} corpus allows Warfare Centers to keep executing accepted orders (labor continues, suppliers paid) even if reimbursements lag, provided cash balances stay within the FMR's upper/lower operating limits~\autocite{DoDFMR-Vol3-Ch19}.
+	\item[\textbf{No New Starts.}]\ac{cr} guidance prohibits new start projects, major capital investments, or rate changes absent explicit exception;\ac{nwcf} managers defer new workloads that would obligate customer funds beyond\ac{cr} allowances~\autocite{CRS-CR}.
+	\item[\textbf{Rate Discipline.}] Stabilized rates remain frozen; only emergency OUSD(C)-approved rate adjustments may occur, so\acp{bso} focus on expense control to avoid large\ac{nor} swings during the\ac{cr} period~\autocite{DoDFMR-Vol3-Ch19}.
 \end{description}
 
 \subsection{Why Use a Warfare Center (Organic)}
 \begin{description}
-	\item[\textbf{Things \acp{pmo}/industry \emph{can't} do.}] Inherently governmental \ac{ta} warrants, certification authority, certain safety releases; highly classified or nuclear workspaces.
-	\item[\textbf{Things they \emph{shouldn't} do.}] Independent test/assessment, spec adjudication, tech baseline control, blue-\&-gold separation to avoid \ac{oci}.
+	\item[\textbf{Things\acp{pmo}/industry \emph{can't} do.}] Inherently governmental\ac{ta} warrants, certification authority, certain safety releases; highly classified or nuclear workspaces.
+	\item[\textbf{Things they \emph{shouldn't} do.}] Independent test/assessment, spec adjudication, tech baseline control, blue-\&-gold separation to avoid\ac{oci}.
 	\item[\textbf{Things they \emph{won't} do.}] Sustainment engineering at scale, depot-level organic repair, fleet distance support.
 \end{description}
 %====================

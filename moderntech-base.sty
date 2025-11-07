@@ -221,7 +221,7 @@
 \else
   \RaggedRight
   \AtBeginDocument{\RaggedRight}
-  \setlength{\RaggedRightRightskip}{0pt plus .02\textwidth}
+  % \setlength{\RaggedRightRightskip}{0pt plus .02\textwidth}
   \setlength{\RaggedRightParindent}{\parindent}
 \fi
 
@@ -306,7 +306,6 @@
   ]{tocline}{subsection}%
 }
 \AtBeginDocument{\moderntechsetupTOC}
-
 
 \providecommand{\MTTocTightDots}{%
   \@ifpackageloaded{tocbasic}{%
@@ -538,7 +537,6 @@
 \dblfloatplacement{figure}{H}%
 \captionsetup[figure]{position=below}
 \captionsetup[table]{position=above}
-
 
 % =============================
 % Roman table numbering + no chapter reset (optional)
