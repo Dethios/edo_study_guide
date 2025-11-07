@@ -1,16 +1,44 @@
 {
+  // -------------------------------------------------------------------
+  // CONFIG ROADMAP
+  // 1. UI & LAYOUT
+  // 2. EDITOR EXPERIENCE
+  // 3. FILES & SEARCH
+  // 4. FORMATTING DEFAULTS
+  // 5. LATEX TOOLCHAIN
+  // 6. MARKDOWN & NOTEBOOKS
+  // 7. TERMINAL
+  // 8. SOURCE CONTROL
+  // 9. LANGUAGE TOOLING
+  // 10. EXTENSIONS & INTEGRATIONS
+  // 11. AI & CHAT
+  // 12. SECURITY & UPDATES
+  // 13. SPELLCHECK & DICTIONARIES
+  // -------------------------------------------------------------------
+
   // ===================================================================
-  // 1. UI & LAYOUT — theme, icons, and OLED-friendly color palette
+  // 1. UI & LAYOUT Ã¢â‚¬â€ theme, icons, and OLED-friendly color palette
   // ===================================================================
   "workbench.colorTheme": "Abyss",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.wrapTabs": true,
   "workbench.tree.indent": 4,
-  "workbench.enableExperiments": true,
-  "workbench.settings.enableNaturalLanguageSearch": false,
   "window.newWindowProfile": "Default",
   "window.systemColorTheme": "dark",
+  // Workspace chrome & experimentation toggles.
+  "workbench.preferredDarkColorTheme": "Abyss",
+  "workbench.editor.tabSizingFixedMaxWidth": 100,
+  "workbench.view.showQuietly": {
+    "workbench.panel.output": true
+  },
+  "workbench.settings.useSplitJSON": true,
+  "workbench.commandPalette.experimental.suggestCommands": true,
+  "workbench.enableExperiments": true,
+  "workbench.experimental.cloudChanges.autoStore": "onShutdown",
+  "workbench.experimental.cloudChanges.partialMatches.enabled": true,
+  "workbench.experimental.share.enabled": true,
+  "application.experimental.rendererProfiling": true,
 
   // Custom Nord-inspired palette tuned for true black backgrounds.
   "workbench.colorCustomizations": {
@@ -123,7 +151,7 @@
   },
 
   // ===================================================================
-  // 2. EDITOR EXPERIENCE — fonts, wrapping, suggestions, and automation
+  // 2. EDITOR EXPERIENCE Ã¢â‚¬â€ fonts, wrapping, suggestions, and automation
   // ===================================================================
   // Indentation and whitespace discipline.
   "editor.detectIndentation": false,
@@ -136,7 +164,7 @@
 
   // Font and rendering polish.
   "editor.fontFamily": "'Fira Code', 'Source Code Pro', 'Cascadia Code', Consolas, 'Courier New', monospace",
-  "editor.codeLensFontFamily": "Fira Code",
+  "editor.codeLensFontFamily": "'Source Code Pro'",
   "editor.fontLigatures": true,
   "editor.fontVariations": true,
   "editor.allowVariableFontsInAccessibilityMode": true,
@@ -146,7 +174,7 @@
   "editor.renderWhitespace": "all",
   "editor.maxTokenizationLineLength": 200000,
   "editor.minimap.enabled": false,
-  "editor.minimap.maxColumn": 100,
+  "editor.minimap.maxColumn": 50,
 
   // Wrapping keeps long acquisition cites readable.
   "editor.wordWrap": "on",
@@ -157,10 +185,10 @@
   // Suggestions and inline assists tuned for Gemini + Prettier.
   "editor.inlineSuggest.enabled": true,
   "editor.inlineSuggest.showToolbar": "onHover",
-  "editor.inlineSuggest.fontFamily": "'Fira Code'",
+  "editor.inlineSuggest.fontFamily": "'Cascadia Code'",
   "editor.suggest.preview": true,
-  "editor.suggestSelection": "recentlyUsedByPrefix",
-  "editor.wordBasedSuggestions": "matchingDocuments",
+  "editor.suggestSelection": "recentlyUsed",
+  "editor.wordBasedSuggestions": "allDocuments",
   "editor.tabCompletion": "on",
   "editor.linkedEditing": true,
   "editor.aiStats.enabled": true,
@@ -169,16 +197,33 @@
   // Formatting defaults (Prettier-first workflow).
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "editor.formatOnSaveMode": "modificationsIfAvailable",
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "editor.codeActionsOnSave": {},
 
+  // Automation, hints, and acceptance behavior.
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingComments": "always",
+  "editor.autoClosingDelete": "always",
+  "editor.autoClosingOvertype": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.inlayHints.fontFamily": "'Source Sans Pro'",
+  "editor.trimWhitespaceOnDelete": true,
+  "editor.unfoldOnClickAfterEndOfLine": true,
+  "editor.cursorBlinking": "phase",
+  "diffEditor.codeLens": true,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.inlineSuggest.experimental.showOnSuggestConflict": "always",
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "editor.quickSuggestionsDelay": 5,
+  "editor.suggest.localityBonus": true,
+  "editor.suggest.shareSuggestSelections": true,
+  "editor.suggest.showDeprecated": false,
+
   // ===================================================================
-  // 3. FILES & SEARCH — encoding, autosave, and ignore patterns
+  // 3. FILES & SEARCH Ã¢â‚¬â€ encoding, autosave, and ignore patterns
   // ===================================================================
   "explorer.confirmDragAndDrop": false,
-  "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
   "files.autoGuessEncoding": true,
   "files.autoSave": "afterDelay",
@@ -190,6 +235,10 @@
     "**/build/**": true,
     "**/.texlive202*/**": true
   },
+  // File hygiene toggles.
+  "files.insertFinalNewline": true,
+  "files.simpleDialog.enable": true,
+  "files.trimFinalNewlines": true,
   "search.exclude": {
     "**/.git/**": true,
     "**/node_modules/**": true,
@@ -202,7 +251,7 @@
   "json.schemaDownload.enable": false,
 
   // ===================================================================
-  // 4. FORMATTING DEFAULTS — Prettier plus language-specific overrides
+  // 4. FORMATTING DEFAULTS Ã¢â‚¬â€ Prettier plus language-specific overrides
   // ===================================================================
   // Global Prettier preferences.
   "prettier.useTabs": false,
@@ -224,9 +273,15 @@
   "[bibtex]": { "editor.defaultFormatter": "James-Yu.latex-workshop" },
   "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[latex-package]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+  "[latex-class]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
 
   // ===================================================================
-  // 5. LATEX TOOLCHAIN — build recipes, preview, and formatting parity
+  // 5. LATEX TOOLCHAIN Ã¢â‚¬â€ build recipes, preview, and formatting parity
   // ===================================================================
   // Keep PDFs in VS Code so synctex stays in one window.
   "workbench.editorAssociations": {
@@ -336,8 +391,54 @@
   "latexPreview.latexFontDir": "C:\\Users\\vic-l\\AppData\\Local\\Programs\\MiKTeX\\fonts",
   "latexPreview.pageSize": "US Letter",
 
+  // Intellisense, cleanup, and bibliography polish.
+  "latex-workshop.bibtex-fields.sort.enabled": true,
+  "latex-workshop.bibtex-format.sort.enabled": true,
+  "latex-workshop.bind.altKeymap.enabled": true,
+  "latex-workshop.bibtex-format.trailingComma": true,
+  "latex-workshop.format.fixQuotes.enabled": true,
+  "latex-workshop.intellisense.citation.backend": "biblatex",
+  "latex-workshop.intellisense.file.base": "both",
+  "latex-workshop.intellisense.package.unusual": true,
+  "latex-workshop.intellisense.subsuperscript.enabled": true,
+  "latex-workshop.intellisense.update.aggressive.enabled": true,
+  "latex-workshop.intellisense.update.delay": 10,
+  "latex-workshop.latex.build.clearLog.everyRecipeStep.enabled": false,
+  "latex-workshop.latex.clean.fileTypes": [
+    "%DOCFILE%.blg",
+    "%DOCFILE%.idx",
+    "%DOCFILE%.ind",
+    "%DOCFILE%.lof",
+    "%DOCFILE%.lot",
+    "%DOCFILE%.out",
+    "%DOCFILE%.toc",
+    "%DOCFILE%.acn",
+    "%DOCFILE%.alg",
+    "%DOCFILE%.glg",
+    "%DOCFILE%.glo",
+    "%DOCFILE%.gls",
+    "%DOCFILE%.fls",
+    "%DOCFILE%.log",
+    "%DOCFILE%.fdb_latexmk",
+    "%DOCFILE%.snm",
+    "%DOCFILE%.synctex(busy)",
+    "%DOCFILE%.synctex.gz(busy)",
+    "%DOCFILE%.nav",
+    "%DOCFILE%.vrb"
+  ],
+  "latex-workshop.linting.chktex.enabled": true,
+  "latex-workshop.chktex.configFile": ".chktexrc",
+  "latex-workshop.linting.lacheck.enabled": false,
+  "latex-workshop.mathpreviewpanel.cursor.enabled": true,
+  "latex-workshop.view.autoFocus.enabled": true,
+  "latex-utilities.formattedPaste.imagePathOverride": "Images",
+  "latex-utilities.formattedPaste.image.template": "\\includegraphics[width=.8\\linewidth]{${imageFilePath}}",
+  "latex-utilities.message.update.show": false,
+  "latex-utilities.zotero.citeMethod": "vscode",
+  "PandocCiter.DefaultBib": "${workspaceFolder}/edo.bib",
+
   // ===================================================================
-  // 6. MARKDOWN & NOTEBOOKS — preview, extensions, and typography
+  // 6. MARKDOWN & NOTEBOOKS Ã¢â‚¬â€ preview, extensions, and typography
   // ===================================================================
   "markdown.copyFiles.overwriteBehavior": "overwrite",
   "markdown.extension.completion.enabled": true,
@@ -355,7 +456,7 @@
   "markdownPreviewEnhanced.previewTheme": "one-dark",
 
   // ===================================================================
-  // 7. TERMINAL — fonts, ligatures, and usability defaults
+  // 7. TERMINAL Ã¢â‚¬â€ fonts, ligatures, and usability defaults
   // ===================================================================
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.windowsEnableConpty": true,
@@ -433,7 +534,7 @@
   ],
 
   // ===================================================================
-  // 8. SOURCE CONTROL — Git ergonomics and inline insights
+  // 8. SOURCE CONTROL Ã¢â‚¬â€ Git ergonomics and inline insights
   // ===================================================================
   "git.autofetch": true,
   "git.autofetchPeriod": 180,
@@ -454,7 +555,7 @@
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
 
   // ===================================================================
-  // 9. LANGUAGE TOOLING — HTML, JS/TS, config files, Python, PowerShell
+  // 9. LANGUAGE TOOLING Ã¢â‚¬â€ HTML, JS/TS, config files, Python, PowerShell
   // ===================================================================
   "html.format.wrapLineLength": 100,
   "html.format.indentHandlebars": true,
@@ -499,7 +600,7 @@
   "powershell.buttons.showPanelMovementButtons": true,
 
   // ===================================================================
-  // 10. EXTENSIONS & INTEGRATIONS — updates, asset helpers, annotations
+  // 10. EXTENSIONS & INTEGRATIONS Ã¢â‚¬â€ updates, asset helpers, annotations
   // ===================================================================
   "extensions.autoCheckUpdates": true,
   "extensions.autoUpdate": true,
@@ -597,24 +698,44 @@
   "bookmarks.useWorkaroundForFormatters": true,
   "merge-conflict.autoNavigateNextConflict.enabled": true,
   "invisibleAiChartDetector.doubleBlankThreshold": 3,
+  "jake.autoDetect": "on",
+  "JSON-zain.json.autorefresh": true,
 
   // ===================================================================
-  // 11. AI & CHAT — keep collaboration threads compact
+  // 11. AI & CHAT Ã¢â‚¬â€ keep collaboration threads compact
   // ===================================================================
   "chat.editor.wordWrap": "on",
+  "chat.agent.thinkingStyle": "collapsedPreview",
+  "chat.allowAnonymousAccess": true,
+  "chat.checkpoints.showFileChanges": true,
+  "chat.editor.fontFamily": "'Fira Code'",
+  "chat.edits2.enabled": true,
+  "chat.emptyState.history.enabled": true,
+  "chat.fontFamily": "'Fira Sans'",
+  "chat.tools.global.autoApprove": true,
+  "chat.tools.terminal.autoReplyToPrompts": true,
+  "chat.useCloudButtonV2": true,
+  "chat.useNestedAgentsMdFiles": true,
   "chatgpt.runCodexInWindowsSubsystemForLinux": true,
+  // Inline chat controls.
+  "inlineChat.enableV2": true,
+  "inlineChat.finishOnType": true,
+  "inlineChat.hideOnRequest": true,
+  "inlineChat.lineEmptyHint": true,
+  "inlineChat.notebookAgent": true,
 
   // ===================================================================
-  // 12. SECURITY & UPDATES — reduce noise and keep releases predictable
+  // 12. SECURITY & UPDATES Ã¢â‚¬â€ reduce noise and keep releases predictable
   // ===================================================================
   "security.workspace.trust.untrustedFiles": "open",
   "telemetry.telemetryLevel": "off",
+  "extensions.verifySignature": false,
   "update.mode": "default",
   "update.enableWindowsBackgroundUpdates": true,
   "update.showReleaseNotes": false,
 
   // ===================================================================
-  // 13. SPELLCHECK & DICTIONARIES — tuned for LaTeX acquisition jargon
+  // 13. SPELLCHECK & DICTIONARIES Ã¢â‚¬â€ tuned for LaTeX acquisition jargon
   // ===================================================================
   "cSpell.autoFormatConfigFile": true,
   "cSpell.customDictionaries": { "custom": true, "internal-terms": true },
@@ -639,24 +760,36 @@
     "addspace",
     "addtokomafont",
     "afterskip",
+    "appendix_combatant_commands",
+    "appendix_edo_flags",
+    "appendix_key_roles",
+    "appendix_plat_card",
+    "audir",
     "autocite",
+    "autofetch",
     "autogobble",
     "autoloadhyperref",
     "automark",
     "autominibib",
+    "autorefresh",
     "autosegsection",
     "auxlock",
     "backgroundcolor",
+    "BACKMATTER",
+    "badbox",
     "basicstyle",
     "beforeskip",
     "begentry",
     "begingroup",
     "bfseries",
     "bgcolor",
+    "BIB",
+    "biber",
     "bibfont",
     "bibindex",
     "biblatex",
     "bibresource",
+    "bibtex",
     "bmatrix",
     "booktabs",
     "booktitle",
@@ -672,7 +805,11 @@
     "cftsecfont",
     "cftsecpagefont",
     "cftsubsecfont",
+    "Chain_of_command",
+    "ChapterWithRefsAtStart",
     "checkoddpage",
+    "chkctexrc",
+    "chktex",
     "chngcntr",
     "citeauthor",
     "citetitle",
@@ -687,8 +824,17 @@
     "colspec",
     "coltitle",
     "commentstyle",
+    "Congressional_Enactment",
+    "Conpty",
+    "Consolas",
     "Contextuals",
+    "Contracting_Fundamentals",
+    "copilotmd",
+    "Cost_Fundamentals",
+    "cost_price_eval",
     "counterwithout",
+    "Coursebook_Version",
+    "CrimsonRed",
     "csquotes",
     "dblfloatplacement",
     "defbibheading",
@@ -696,6 +842,10 @@
     "definecolor",
     "DFARS",
     "dpth",
+    "DTMsavedate",
+    "DTMsetdatestyle",
+    "DTMusedate",
+    "EDO",
     "endcsname",
     "endgroup",
     "enskip",
@@ -703,9 +853,11 @@
     "eprint",
     "epstopdf",
     "etoolbox",
+    "EVM",
     "expl",
     "fancyhead",
     "fancyhf",
+    "FILE",
     "filecontents",
     "finentry",
     "firsthead",
@@ -715,13 +867,18 @@
     "fonttitle",
     "fontupper",
     "footnotesize",
+    "FRONTMATTER",
     "giveninits",
     "glsdefs",
     "glstex",
+    "graphics_color_ragged_utils",
     "halign",
     "headrulewidth",
+    "HELPERS",
+    "HR",
     "htbp",
     "hyperref",
+    "hyperref_bookmarks_urls",
     "ieeebib",
     "ifclassloaded",
     "ifcsname",
@@ -738,23 +895,33 @@
     "issuetitle",
     "itemsep",
     "itshape",
+    "jobname",
+    "JPG",
     "Keyval",
     "keywordstyle",
+    "KOMA",
     "kvoptions",
     "labelfont",
     "labelsep",
+    "language_date",
+    "LastPageMain",
     "latexindent",
     "latexmk",
+    "LCDR",
     "leftmark",
     "leftsep",
     "listof",
+    "LOGO",
     "longtable",
     "longtblr",
+    "low_level_tweaks_macros",
     "lstlisting",
     "lstset",
+    "lualatex",
     "makeatletter",
     "marginnote",
     "marginparwidth",
+    "METADATA",
     "microtype",
     "minibib",
     "minipage",
@@ -765,11 +932,17 @@
     "moderntechsetup",
     "mtalltblr",
     "mtblr",
+    "mtTOClevel",
+    "NAVAIR_and_PEOs",
+    "NAVSEA",
+    "NAVWAR",
+    "NavyBlue",
     "nbcite",
     "newbibmacro",
     "newblock",
     "newcolumntype",
     "newcommand",
+    "NewDocumentCommand",
     "newenvironment",
     "newif",
     "newtcolorbox",
@@ -779,6 +952,7 @@
     "normalfont",
     "normalsize",
     "nouppercase",
+    "NWCF",
     "operationalizes",
     "outerplace",
     "pagenumber",
@@ -786,9 +960,12 @@
     "parindent",
     "parskip",
     "pdfshellescape",
+    "PMP",
+    "PPBE",
     "printbibliography",
     "printfield",
     "printlist",
+    "Program_Funding_and_Execution",
     "providecommand",
     "pygments",
     "pygtex",
@@ -799,6 +976,7 @@
     "reversemarginpartrue",
     "rightsep",
     "rmfamily",
+    "ROOT",
     "rowhead",
     "rowsep",
     "rulecolor",
@@ -809,11 +987,14 @@
     "scrpage",
     "scrreprt",
     "scshape",
+    "SetBackMatterStyleA",
     "setfonts",
+    "SetFrontMatterStyle",
     "setkomafont",
     "setlength",
     "setlist",
     "setmainfont",
+    "SetMainMatterStyle",
     "setmathfont",
     "setminted",
     "setmonofont",
@@ -837,19 +1018,23 @@
     "smallcapsheads",
     "Smartdiagram",
     "stringstyle",
+    "StudySubfile",
+    "StudyTitleLogo",
+    "StudyTitleLogoWidth",
     "subrefs",
     "subsubsection",
     "synctex",
+    "TA_EA",
     "tablesroman",
     "tabularnums",
     "tabularray",
     "tabularx",
     "talltblr",
-    "tblr",
     "Tblr",
     "tblrpreset",
     "tcbset",
     "tcolorbox",
+    "TEX",
     "textbf",
     "textls",
     "textsc",
@@ -878,16 +1063,11 @@
     "urldate",
     "usebibmacro",
     "usetikzlibrary",
+    "USN",
     "varwidth",
     "WCAG",
     "xcolor",
     "xelatex",
     "xindy"
-  ],
-  "[latex-package]": {
-    "editor.defaultFormatter": "James-Yu.latex-workshop"
-  },
-  "[latex-class]": {
-    "editor.defaultFormatter": "James-Yu.latex-workshop"
-  }
+  ]
 }

@@ -50,7 +50,8 @@
 \RequirePackage{csquotes}
 \RequirePackage{siunitx}
 \RequirePackage{booktabs}
-\RequirePackage{caption}
+\@ifundefined{caption@documentclass}{\def\caption@documentclass{standard}}{}
+\RequirePackage[compatibility=false]{caption}
 \RequirePackage{ragged2e}
 \RequirePackage{enumitem}
 \RequirePackage{tabularray}
@@ -119,7 +120,11 @@
 
 \newfontfamily\firasanssemibold[
   Scale=MatchLowercase,
-  Ligatures=TeX
+  Ligatures=TeX,
+  UprightFont    = {Fira Sans SemiBold},
+  ItalicFont     = {Fira Sans SemiBold Italic},
+  BoldFont       = {Fira Sans SemiBold},
+  BoldItalicFont = {Fira Sans SemiBold Italic}
 ]{Fira Sans SemiBold}
 
 % --- Math font selection helper (respects `math=` option) ------------

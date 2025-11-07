@@ -48,6 +48,13 @@ The\ac{das} is the governance framework that aligns requirements, resourcing, an
 \end{description}
 \note{Maintain requirements traceability matrices linking\ac{kpp} thresholds to test plans and\ac{apb} values for board discussions.}
 
+\subsection{KPPs v.s. KSAs (Know the Difference)}
+\begin{description}
+  \item[\textbf{KPP (Key Performance Parameter).}] A performance attribute of a system critical to mission success. Each \ac{kpp} has a threshold (minimally acceptable) and objective (desired) value. Failure to meet a \emph{threshold} normally triggers program reassessment or revalidation of the requirement. \emph{Why it matters:} Drives design trades, tempers requirement creep, and is reportable in baselines and decision reviews~\autocite{CJCSI5123-01H}.
+  \item[\textbf{KSA (Key System Attribute).}] Important performance attribute not critical enough to be a \ac{kpp}. KSAs are managed and traded to balance cost/schedule/performance without jeopardizing mission effectiveness. \emph{Why it matters:} Provides disciplined trade-space for the Program Manager and requirements sponsor~\autocite{CJCSI5123-01H}.
+  \item[\textbf{Difference.}] \acp{kpp} are mission-critical and tightly controlled; \acp{ksa} are important but offer more flexibility. Both appear in the \ac{cdd}/\ac{cpd} with threshold/objective values, but \acp{kpp} carry higher visibility and risk if breached.
+\end{description}
+
 \subsection{Acquisition Strategy Essentials}
 \begin{description}
 	\item[\textbf{Purpose.}] Documents tailored acquisition approach, contract strategy, intellectual property posture, and affordability constraints for\ac{mdauthority} approval~\autocite{DoDI5000-85}.
@@ -80,7 +87,7 @@ The\ac{das} is the governance framework that aligns requirements, resourcing, an
 		remark{Source} = {\tabCite{USDRE-TRA-2020}},
 		remark{\tHint} = {Match\acp{trl} to\ac{tmrr} exit criteria: critical technologies should be $\geq$~\ac{trl}~6 before Milestone~B.}
 	]{
-		colspec = {@{} F L W @{}}}
+		colspec = {@{} F L L @{}}}
 	\toprule
 	{TRL} & {Definition} & {Example (EDO context)} \\
 	\midrule
@@ -95,6 +102,18 @@ The\ac{das} is the governance framework that aligns requirements, resourcing, an
 	TRL~9 & Actual system proven in mission operations & Sustained operational deployment meeting performance metrics \\
 	\bottomrule
 \end{longtblr}
+
+\note{Operational environment testing typically begins at \textbf{TRL~7} (system prototype in an operational environment). \textbf{TRL~8} means the actual system is completed and qualified (e.g., qualification/acceptance testing, certifications). \textbf{TRL~9} means the actual system is \emph{proven in mission operations} (e.g., successful fleet employment meeting mission metrics).}
+
+\subsection{T\&E Organizations and Roles}
+\begin{description}
+  \item[\textbf{OSD \ac{dote}.}] Independent oversight of operational test adequacy, approves/concurs in \ac{temp} for covered programs, and reports to Congress on operational suitability and effectiveness.
+  \item[\textbf{Service Operational Test Agencies.}] Navy \emph{COMOPTEVFOR (COTF)}, Air Force \emph{\ac{afotec}}, Army \emph{\ac{atec}}, Marine Corps \emph{\ac{mcotea}}. Plan/execute \ac{iote} and report independent findings to the Service and \ac{dote}.
+  \item[\textbf{Developmental Test (DT).}] Program Office with SYSCOM Warfare Centers (e.g., \ac{nawcad}, \ac{nawcwd}, \ac{nswc}, \ac{nuwc}) plan and run DT to verify requirements, qualify designs, and feed \ac{otrr}.
+  \item[\textbf{Interoperability/Joint.}] \emph{\ac{jitc}} assesses joint interoperability/Net-Ready KPP compliance where applicable.
+  \item[\textbf{Ranges/Land-based sites.}] Service ranges and land-based engineering/test sites provide representative and operational environments to support DT/OT.
+  \item[\textbf{Artifacts.}] \ac{temp} aligns DT/OT scope and phases; \ac{otrr} certifies readiness for \ac{iote}; \ac{sar}/\ac{daes} capture results for governance~\autocite{DoDI5000-85}.
+\end{description}
 
 \subsection{Major Capability Acquisition Lifecycle Overview}
 \begin{description}

@@ -54,13 +54,29 @@ Establishes the affordability baseline, informs\ac{apb}, drives color-of-money p
 	\label{fig:lcc_time}
 \end{figure}
 
-\subsection{Estimating Methods (When to Use)}
+\subsection{Estimating Methods (Types, When, and Why)}
 \begin{description}
-	\item[\textbf{Analogy.}] Early stages; limited data; similar system scaling.
-	\item[\textbf{Parametric.}]\acp{cer} (e.g., weight,\acp{sloc});\ac{aoa}/\ac{tmrr}; fast trade-space.
-	\item[\textbf{Engineering (Bottom-up).}] Detailed design/\acp{bom};\ac{emd}/production maturity; schedule-critical\acp{ibr}.
-	\item[\textbf{Actuals/Extrapolation.}] Learning/production maturity; later lots~\autocite{DAU-AAF}.
+	\item[\textbf{Analogy (top-down).}] \emph{When:} Earliest stages (\ac{icd}/\ac{mdd}, pre-\ac{aoa}) when design is immature and only analogous programs or components exist. \emph{Why:} Fast, defensible scoping by scaling from a close comparator using adjustment factors (size, weight, speed, complexity). Good for bounding affordability and informing trades before detailed data exists.
+	\item[\textbf{Parametric (CER-based).}] \emph{When:} \ac{aoa} through \ac{tmrr} when historical data supports \acp{cer} (e.g., weight, \acp{sloc}, thrust, kW). \emph{Why:} Enables rapid sensitivity analysis and trade-space exploration with statistical confidence intervals; supports independent cross-checks and early budget phasing.
+	\item[\textbf{Engineering (bottom-up).}] \emph{When:} \ac{emd} and production planning when \acp{bom}, routing, labor standards, and quotes are available. \emph{Why:} Most traceable and auditable; ties to technical baseline and schedule networks; supports \acp{ibr} and negotiation objectives.
+	\item[\textbf{Actuals / Extrapolation.}] \emph{When:} From late \ac{tmrr} into production when pilots/LRIP actuals exist and learning effects are visible. \emph{Why:} Highest fidelity; captures learning curves and process improvements; anchors estimates to realized performance and \ac{csdr} actuals~\autocite{DAU-AAF}.
 \end{description}
+
+\begin{center}
+  \begin{talltblr}{
+      row{1} = {font=\bfseries\scshape\color{Modern}},
+      colspec = {@{} F L L L @{}}
+    }
+    \toprule
+    {Type} & {Description} & {When Used} & {Why Used} \\
+    \midrule
+    Analogy & Uses cost of a similar past system, adjusted for differences & Early concept/refinement (Pre-Milestone A/B) & Quick estimate when data limited \\
+    Parametric & Uses statistical cost estimating relationships (CERs) like cost vs. weight or power & Milestone B/C; early design & Captures cost drivers using quantifiable parameters \\
+    Engineering (Bottom-Up) & Builds from detailed WBS---materials, labor, overhead & Post-CDR, LRIP & High accuracy for mature designs \\
+    Actual Cost / Extrapolation & Uses historical/production actuals (learning curves) & FRP / O\&S & Most accurate; supports should-cost and sustainment budgeting \\
+    \bottomrule
+  \end{talltblr}
+\end{center}
 
 \subsection{Products and Players}
 \begin{description}
@@ -94,5 +110,3 @@ Escalate base-year costs to then-year using approved\ac{dod} inflation indices; 
     style=long-booktabs
 ]}{}
 \end{document}
-
-

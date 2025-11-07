@@ -235,6 +235,7 @@
 	shortplural={DCMAs},
 	longplural={Defense Contract Management Agencies}
 ]{dcma}{DCMA}{Defense Contract Management Agency}
+\newacronym{pbl}{PBL}{Performance-Based Logistics}
 \newacronym{pv}{PV}{Planned Value}
 \newacronym{ev}{EV}{Earned Value}
 \newacronym{sv}{SV}{Schedule Variance}
@@ -418,6 +419,13 @@
 \newacronym{svr}{SVR}{System Verification Review}
 \newacronym{otrr}{OTRR}{Operational Test Readiness Review}
 \newacronym{prr}{PRR}{Production Readiness Review}
+
+% --- Operational Test Agencies & Interop ---
+\newacronym{comoptevfor}{COMOPTEVFOR}{Commander, Operational Test and Evaluation Force}
+\newacronym{afotec}{AFOTEC}{Air Force Operational Test and Evaluation Center}
+\newacronym{atec}{ATEC}{U.S. Army Test and Evaluation Command}
+\newacronym{mcotea}{MCOTEA}{Marine Corps Operational Test and Evaluation Activity}
+\newacronym{jitc}{JITC}{Joint Interoperability Test Command}
 
 % --- Cost Estimation & Analysis ---
 

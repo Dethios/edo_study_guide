@@ -1,0 +1,77 @@
+# ==========================================================
+# ChkTeX Configuration for Navy EDO Study Guide Project
+# ==========================================================
+# Purpose: Keep functional LaTeX hygiene (spacing, refs, labels)
+#          without flagging harmless structural commands.
+# Author:  Victor — tuned for moderntech + KOMA classes
+# Current as of: 2025-11-07
+# ==========================================================
+
+# ---- General Strictness ----
+# Default warning level: normal (not too noisy)
+WarnLevel=normal
+
+# ---- Disable stylistic or harmless warnings ----
+# Code 8  = Command terminated with space (e.g., \mainmatter)
+# Code 9  = Missing space after command (often false with \emph)
+# Code 11 = You should use \protect (modern engines handle this fine)
+# Code 16 = Wrong use of accents (rarely relevant in English)
+# Code 17 = Comment within math mode (common, harmless)
+# Code 18 = Comment after line continuation
+# Code 36 = Use '~' or '\ ' before reference — keep enabled!
+# Code 24 = Space before \label — keep enabled!
+# ----------------------------------------------------------
+# Disable only those that create false positives
+Ignore 8    # \mainmatter and \frontmatter line breaks
+Ignore 9    # after macros like \emph or \textbf
+Ignore 11   # \protect warnings for section titles (Xe/LuaLaTeX safe)
+Ignore 16
+Ignore 17
+Ignore 18
+
+# ---- Keep core functional checks ----
+# DO NOT disable these:
+# 24: page reference spacing
+# 36: non-breaking space before \ref/\cite
+# 44: double space after punctuation
+# 46: suspicious dash usage
+# 50: misplaced \item
+# 55: unmatched braces
+
+# ---- Whitespace policy ----
+# Make ChkTeX treat lines ending with % as no-space
+CheckSpace=on
+IgnoreSpaceAfterPercent=on
+
+# ---- Macros known to be single-line structural commands ----
+# This suppresses Code 8 for them specifically, not globally
+Command\mainmatter      0
+Command\frontmatter     0
+Command\backmatter      0
+Command\cleardoublepage 0
+Command\clearpage       0
+Command\appendix        0
+Command\StudySubfile    0
+
+# ---- Allow \gls and \ac style macros (avoid false ref warnings)
+Command\gls 1
+Command\ac  1
+Command\cgls 1
+Command\glsentryshort 1
+
+# ---- Formatting ----
+# Limit output to key columns
+Verbosity=normal
+MaxErrors=999
+InputEncoding=utf8
+OutputEncoding=utf8
+
+# ---- Optional local suppression inline marker ----
+# Usage: % chktex <number> to ignore next warning
+# Example: \mainmatter % chktex 8
+
+# ---- Files or patterns to ignore entirely ----
+# (add generated aux dirs)
+IgnoreFilePattern=build/.*,out/.*
+
+# ---- End of configuration ----

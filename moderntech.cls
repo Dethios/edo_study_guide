@@ -66,14 +66,16 @@
 % Provide class defaults (can be overridden by user options above)
 \LoadClass[
   fontsize=11pt,
-  paper=letter,
   headings=big,
   parskip=half,
-  headinclude=true,
-  footinclude=true,
   toc=graduated,
   listof=totoc
 ]{\mt@baseclass}
+\KOMAoptions{
+  paper=letter,
+  headinclude=true,
+  footinclude=true
+}
 
 % ---------- Early pass-throughs for common packages (safe defaults) ----------
 % microtype: honor final even if global draft is set

@@ -36,7 +36,7 @@
 
 \NewDocumentCommand{\StudySubfile}{m}{%
   \subfile{Content/#1}%
-  \HR
+  \HR%
 }
 
 \NewDocumentCommand{\ChapterWithRefsAtStart}{m}{%
@@ -75,26 +75,26 @@
 \clearpage
 % ----- FRONTMATTER -----
 % helper to pick the right ToC level
-\makeatletter
+\makeatletter%
 \newcommand{\mtTOClevel}{\@ifundefined{chapter}{section}{chapter}}
-\makeatother
+\makeatother%
 
 % --- FRONTMATTER ---
-\frontmatter
-\SetFrontMatterStyle
-\tableofcontents
-\HR
+\frontmatter%
+\SetFrontMatterStyle%
+\tableofcontents%
+\HR%
 
-\listoffigures
-\HR
+\listoffigures%
+\HR%
 
-\listoftables
-\HR
+\listoftables%
+\HR%
 
-\clearpage
+\clearpage%
 % ----- MAINMATTER -----
-\mainmatter
-\SetMainMatterStyle
+\mainmatter%
+\SetMainMatterStyle%
 \chapter{Organization}
 % \ChapterWithRefsAtStart{0_Objectives}
 \ChapterWithRefsAtStart{1_Chain_of_command}
@@ -120,7 +120,7 @@
 \ChapterWithRefsAtStart{15_policy}
 \ChapterWithRefsAtStart{16_Milestones}
 
-\appendix
+\appendix%
 % Optional TOC divider line "Appendices"
 \addpart*{Appendices}
 \addcontentsline{toc}{part}{Appendices}
@@ -129,25 +129,28 @@
 \StudySubfile{appendix_edo_flags}
 \StudySubfile{appendix_key_roles}
 \StudySubfile{appendix_combatant_commands}
-\label{LastPageMain}
-\clearpage
-\phantomsection
+\clearpage\label{LastPageMain}
+\phantomsection%
 % ----- BACKMATTER -----
-\backmatter
-\SetBackMatterStyleA
+\backmatter%%
+\SetBackMatterStyleA%
 % --- Final Full Bibliography ---
 \printbibliography[heading=bibnumbered, title={References}]
 % --- Acronyms / Glossary ---
-\clearpage
+\clearpage%
 \renewcommand*{\entryname}{\textbf{\color{Modern} Acronym}}
 \renewcommand*{\descriptionname}{\textbf{\color{Modern} Definition}}
+\begingroup
+% In the glossary list, make each acronym's "name" a hypertarget:
+\renewcommand*{\glsnamefont}[1]{\glstarget{glo:\glslabel}{#1}}
 \printnoidxglossary[
   type=\acronymtype,
   title=List of Acronyms,
   numberedsection,
   style=long-booktabs
 ]
-\makeatother
+\endgroup
+\makeatother%
 %================
 \end{document}
 %================

@@ -10,16 +10,33 @@
   stylemods=all,
   acronym,
   nonumberlist,
-  nogroupskip,
-  nopostdot,
-  shortcuts=ac,
+  % nogroupskip,
+  % nopostdot,
+  % shortcuts=ac,
   toc             % add entries to the Table of Contents (KOMA-friendly)
 ]{glossaries-extra}
 % --- Abbreviation style: first use "Long (SHORT)", then "SHORT" -------------
 \setabbreviationstyle[acronym]{long-short}
 % --- Build mode: no external indexing (fast, good for continuous writing) ---
-\makenoidxglossaries
-
+% Kill auto "smart space" in old glossaries/glossaries-extra
+\makeatletter
+% If a global autospacing flag exists, turn it off.
+\@ifundefined{gls@autospacingfalse}{}{%
+  \gls@autospacingfalse % old/new releases that have the flag
+}%
+% In older releases, \glsdoautoinsert performs the lookahead; neutralize it.
+\@ifundefined{glsdoautoinsert}{}{%
+  \let\glsdoautoinsert\@gobble % swallow its argument(s) and do nothing
+}%
+% Ensure the final space emitter does nothing.
+\@ifundefined{gls@insertspace}{}{%
+  \renewcommand*\gls@insertspace{}%
+}%
+\makeatother
+\let\ac\gls
+\let\acp\glspl
+\let\Ac\Gls
+\let\Acp\Glspl
 % --- Load your acronym definitions ------------------------------------------
 \loadglsentries{acronyms.def}
 
@@ -45,24 +62,69 @@
 %   \def\acrfull#1{\glsentrylong{#1}\space(\glsentryshort{#1})}%
 % }
 
-% --- Space factor tuning -----------------------------------------------------
-% Disable automatic spacing so authors can manage surrounding spaces explicitly.
-% \makeatletter
-% \@ifundefined{glsxtrpostspace}{%
-%   \newcommand{\glsxtrpostspace}{}
-% }{%
-%   \renewcommand*{\glsxtrpostspace}{}
-% }
-% \@ifundefined{glsxtrpretag}{%
-%     \newcommand{\glsxtrpretag}{}
+% =========================
+% Hyperlinked, no-space acronyms
+% =========================
+% \usepackage{xparse}%
+
+% % \ac{<lab>}  : first use -> long (SHORT), later -> SHORT; linked; usage tracked
+% % \ac*{<lab>} : always SHORT; linked; no usage change
+% \RenewDocumentCommand{\ac}{s m}{%
+%   \IfBooleanTF{#1}{%
+%     \hyperlink{glo:#2}{\glsentryshort{#2}}%
 %   }{%
-%     \renewcommand*{\glsxtrpretag}{}
-% }
-% \@ifundefined{glsxtrposttag}{%
-%   \newcommand{\glsxtrpostag}{}
+%     \ifglsused{#2}{%
+%       \hyperlink{glo:#2}{\glsentryshort{#2}}%
+%     }{%
+%       \hyperlink{glo:#2}{\glsentryfull{#2}}%
+%       \glsadd{#2}%
+%     }%
+%   }%
+% }%
+
+% % Plural
+% \RenewDocumentCommand{\acp}{s m}{%
+%   \IfBooleanTF{#1}{%
+%     \hyperlink{glo:#2}{\glsentryshortpl{#2}}%
 %   }{%
-%   \renewcommand*{\glsxtrpostag}{}}
-% \makeatother
+%     \ifglsused{#2}{%
+%       \hyperlink{glo:#2}{\glsentryshortpl{#2}}%
+%     }{%
+%       \hyperlink{glo:#2}{\glsentryfullpl{#2}}%
+%       \glsadd{#2}%
+%     }%
+%   }%
+% }%
+
+% % Capitalized variants
+% \RenewDocumentCommand{\Ac}{s m}{%
+%   \IfBooleanTF{#1}{%
+%     \hyperlink{glo:#2}{\Glsentryshort{#2}}%
+%   }{%
+%     \ifglsused{#2}{%
+%       \hyperlink{glo:#2}{\Glsentryshort{#2}}%
+%     }{%
+%       \hyperlink{glo:#2}{\Glsentryfull{#2}}%
+%       \glsadd{#2}%
+%     }%
+%   }%
+% }%
+% \RenewDocumentCommand{\Acp}{s m}{%
+%   \IfBooleanTF{#1}{%
+%     \hyperlink{glo:#2}{\Glsentryshortpl{#2}}%
+%   }{%
+%     \ifglsused{#2}{%
+%       \hyperlink{glo:#2}{\Glsentryshortpl{#2}}%
+%     }{%
+%       \hyperlink{glo:#2}{\Glsentryfullpl{#2}}%
+%       \glsadd{#2}%
+%     }%
+%   }%
+% }%
+
+% For list labels / moving args (optional; linked)
+\DeclareRobustCommand{\aclabel}[1]{\hyperlink{glo:#1}{\glsentryshort{#1}}}%
+
 
 % --- Printing notes ----------------------------------------------------------
 % In main.tex you already use:

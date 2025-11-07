@@ -12,12 +12,10 @@
     "mathiasfrohlich.KotlinBibtex",
     "jeff-hykin.latex-references",
     "yzhang.markdown-all-in-one",
-    "mushan.vscode-paste-image",
     "eamodio.gitlens",
     "github.copilot",
     "github.copilot-chat",
     "alefragnani.project-manager",
-    "gruntfuggly.todo-tree",
     "usernamehw.errorlens",
     "arcticicestudio.nord-visual-studio-code",
     "binaryify.one-dark-pro",
@@ -30,7 +28,6 @@
     "ms-vscode-remote.remote-wsl",
     "visualstudioexptteam.vscodeintellicode",
     "jasonlhy.hungry-delete",
-    "ms-vscode.sublime-keybindings",
     "tal7aouy.indent-colorizer",
     "ms-vscode.notepadplusplus-keybindings"
   ]
