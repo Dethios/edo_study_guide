@@ -17,7 +17,7 @@
   // -------------------------------------------------------------------
 
   // ===================================================================
-  // 1. UI & LAYOUT Ã¢â‚¬â€ theme, icons, and OLED-friendly color palette
+  // 1. UI & LAYOUT theme, icons, and OLED-friendly color palette
   // ===================================================================
   "workbench.colorTheme": "Abyss",
   "workbench.iconTheme": "material-icon-theme",

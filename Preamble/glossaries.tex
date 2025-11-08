@@ -10,11 +10,12 @@
   stylemods=all,
   acronym,
   nonumberlist,
-  % nogroupskip,
-  % nopostdot,
+  nogroupskip,
+  nopostdot,
   % shortcuts=ac,
   toc             % add entries to the Table of Contents (KOMA-friendly)
 ]{glossaries-extra}
+\usepackage{xspace}
 % --- Abbreviation style: first use "Long (SHORT)", then "SHORT" -------------
 \setabbreviationstyle[acronym]{long-short}
 % --- Build mode: no external indexing (fast, good for continuous writing) ---
@@ -33,10 +34,10 @@
   \renewcommand*\gls@insertspace{}%
 }%
 \makeatother
-\let\ac\gls
-\let\acp\glspl
-\let\Ac\Gls
-\let\Acp\Glspl
+% \let\ac\gls
+% \let\acp\glspl
+% \let\Ac\Gls
+% \let\Acp\Glspl
 % --- Load your acronym definitions ------------------------------------------
 \loadglsentries{acronyms.def}
 
@@ -65,66 +66,49 @@
 % =========================
 % Hyperlinked, no-space acronyms
 % =========================
-% \usepackage{xparse}%
+% Shared helpers for linked acronym output and smart spacing
+\NewDocumentCommand{\edoAcrLink}{m m}{\hyperlink{glo:#1}{#2}}%
+\newif\ifEdoAcrAutoSpace
+\EdoAcrAutoSpacefalse % set true to enable \xspace-style behavior
+\NewDocumentCommand{\edoAcrSpace}{}{\ifEdoAcrAutoSpace\xspace\fi}%
+\NewDocumentCommand{\edoAcrRender}{m m m m}{%
+  \IfBooleanTF{#1}{%
+    \edoAcrLink{#2}{#3{#2}}%
+  }{%
+    \ifglsused{#2}{%
+      \edoAcrLink{#2}{#3{#2}}%
+    }{%
+      \glsadd{#2}%
+      \glsunset{#2}%
+      \edoAcrLink{#2}{#4{#2}~(#3{#2})}%
+    }%
+  }%
+  \xspace%
+}%
 
-% % \ac{<lab>}  : first use -> long (SHORT), later -> SHORT; linked; usage tracked
-% % \ac*{<lab>} : always SHORT; linked; no usage change
-% \RenewDocumentCommand{\ac}{s m}{%
-%   \IfBooleanTF{#1}{%
-%     \hyperlink{glo:#2}{\glsentryshort{#2}}%
-%   }{%
-%     \ifglsused{#2}{%
-%       \hyperlink{glo:#2}{\glsentryshort{#2}}%
-%     }{%
-%       \hyperlink{glo:#2}{\glsentryfull{#2}}%
-%       \glsadd{#2}%
-%     }%
-%   }%
-% }%
+% \ac{<lab>}  : first use -> long (SHORT), later -> SHORT; linked; usage tracked
+% \ac*{<lab>} : always SHORT; linked; no usage change
+\NewDocumentCommand{\ac}{s m}{%
+  \edoAcrRender{#1}{#2}{\glsentryshort}{\glsentrylong}%
+}%
 
-% % Plural
-% \RenewDocumentCommand{\acp}{s m}{%
-%   \IfBooleanTF{#1}{%
-%     \hyperlink{glo:#2}{\glsentryshortpl{#2}}%
-%   }{%
-%     \ifglsused{#2}{%
-%       \hyperlink{glo:#2}{\glsentryshortpl{#2}}%
-%     }{%
-%       \hyperlink{glo:#2}{\glsentryfullpl{#2}}%
-%       \glsadd{#2}%
-%     }%
-%   }%
-% }%
+% Plural
+\NewDocumentCommand{\acp}{s m}{%
+  \edoAcrRender{#1}{#2}{\glsentryshortpl}{\glsentrylongpl}%
+}%
 
-% % Capitalized variants
-% \RenewDocumentCommand{\Ac}{s m}{%
-%   \IfBooleanTF{#1}{%
-%     \hyperlink{glo:#2}{\Glsentryshort{#2}}%
-%   }{%
-%     \ifglsused{#2}{%
-%       \hyperlink{glo:#2}{\Glsentryshort{#2}}%
-%     }{%
-%       \hyperlink{glo:#2}{\Glsentryfull{#2}}%
-%       \glsadd{#2}%
-%     }%
-%   }%
-% }%
-% \RenewDocumentCommand{\Acp}{s m}{%
-%   \IfBooleanTF{#1}{%
-%     \hyperlink{glo:#2}{\Glsentryshortpl{#2}}%
-%   }{%
-%     \ifglsused{#2}{%
-%       \hyperlink{glo:#2}{\Glsentryshortpl{#2}}%
-%     }{%
-%       \hyperlink{glo:#2}{\Glsentryfullpl{#2}}%
-%       \glsadd{#2}%
-%     }%
-%   }%
-% }%
+% Capitalized variants
+\NewDocumentCommand{\Ac}{s m}{%
+  \edoAcrRender{#1}{#2}{\Glsentryshort}{\Glsentrylong}%
+}%
+\NewDocumentCommand{\Acp}{s m}{%
+  \edoAcrRender{#1}{#2}{\Glsentryshortpl}{\Glsentrylongpl}%
+}%
 
 % For list labels / moving args (optional; linked)
-\DeclareRobustCommand{\aclabel}[1]{\hyperlink{glo:#1}{\glsentryshort{#1}}}%
-
+\NewDocumentCommand{\aclabel}{m}{%
+  \hyperlink{glo:#1}{\glsentryshort{#1}}%
+}%
 
 % --- Printing notes ----------------------------------------------------------
 % In main.tex you already use:
