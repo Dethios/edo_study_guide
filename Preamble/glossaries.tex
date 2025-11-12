@@ -67,10 +67,27 @@
 % Hyperlinked, no-space acronyms
 % =========================
 % Shared helpers for linked acronym output and smart spacing
+\makeatletter
+\DeclareRobustCommand{\silentglsadd}[1]{%
+  \@bsphack
+  \glsadd{#1}%
+  \@esphack
+  \futurelet\@let@token\silentglsadd@i
+}
+\def\silentglsadd@i{%
+  \ifx\@let@token\space
+    \expandafter\silentglsadd@gobble
+  \else
+    \ignorespaces
+  \fi
+}
+\def\silentglsadd@gobble#1{}%
+\makeatother
+
 \NewDocumentCommand{\edoAcrLink}{m m}{\hyperlink{glo:#1}{#2}}%
-\newif\ifEdoAcrAutoSpace
-\EdoAcrAutoSpacefalse % set true to enable \xspace-style behavior
-\NewDocumentCommand{\edoAcrSpace}{}{\ifEdoAcrAutoSpace\xspace\fi}%
+\makeatletter
+  \AtBeginDocument{\let\@gls@adjustmode\@empty}%
+\makeatother
 \NewDocumentCommand{\edoAcrRender}{m m m m}{%
   \IfBooleanTF{#1}{%
     \edoAcrLink{#2}{#3{#2}}%
@@ -78,10 +95,9 @@
     \ifglsused{#2}{%
       \edoAcrLink{#2}{#3{#2}}%
     }{%
-      \edoAcrLink{#2}{#4{#2}~(#3{#2})}\glsunset{#2}\glsadd{#2}%
+      \edoAcrLink{#2}{#4{#2}~(#3{#2})}\glsunset{#2}\leavevmode\silentglsadd{#2}%
     }%
   }%
-  % \xspace%
 }%
 
 % \ac{<lab>}  : first use -> long (SHORT), later -> SHORT; linked; usage tracked
