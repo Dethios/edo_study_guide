@@ -1,5 +1,5 @@
 % =============================================================================
-% GLOSSARIES AND ACRONYMS (scrbook-friendly)
+% * GLOSSARIES AND ACRONYMS (scrbook-friendly)
 %
 % - Uses glossaries-extra (no indexer: makenoidxglossaries)
 % - Abbrev first use: long (SHORT), thereafter: SHORT
@@ -12,11 +12,48 @@
   nonumberlist,
   nogroupskip,
   nopostdot,
-  % shortcuts=ac,
+  shortcuts=ac,
   toc             % add entries to the Table of Contents (KOMA-friendly)
 ]{glossaries-extra}
-\usepackage{xspace}
+
 % --- Abbreviation style: first use "Long (SHORT)", then "SHORT" -------------
+\makeatletter
+
+% Stop \glslink from leaving a node that preserves trailing whitespace
+\pretocmd{\@gls@link}{\@bsphack}{}{}
+\apptocmd{\@gls@link}{\@esphack\ignorespaces}{}{}
+
+% Don’t inject the \mbox{} that \glsadd uses to force horizontal mode
+\renewcommand*{\@gls@adjustmode}{}
+
+\NewDocumentCommand{\silentglsadd}{m}{%
+  \IfBooleanTF{\glsentryexists{#1}}{}{%
+    \PackageWarning{edo-glossary}{Undefined glossary entry `#1' ignored}%
+    \ReturnFromDocumentCommand
+  }%
+  \@bsphack
+  \glsadd{#1}%
+  \@esphack
+  \futurelet\@let@token\silentglsadd@i
+}
+\NewDocumentCommand{\silentglsadd@i}{}{%
+  \IfBooleanTF{\token_if_eq_char:NNT \@let@token \space}{%
+    \silentglsadd@gobble
+  }{%
+    \ignorespaces
+  }%
+}
+\NewDocumentCommand{\silentglsadd@gobble}{m}{}
+\makeatother
+
+\glsdefpostlink{acronym}{%
+  \ifglsused{\glslabel}{}{%
+    \silentglsadd{\glslabel}%
+    \glslink{\glslabel}{(\glsentryshort{\glslabel})}%
+    \glsunset{\glslabel}%
+  }%
+}
+
 \setabbreviationstyle[acronym]{long-short}
 % --- Build mode: no external indexing (fast, good for continuous writing) ---
 % Kill auto "smart space" in old glossaries/glossaries-extra
@@ -31,16 +68,14 @@
 }%
 % Ensure the final space emitter does nothing.
 \@ifundefined{gls@insertspace}{}{%
-  \renewcommand*\gls@insertspace{}%
+  \renewcommand*{\gls@insertspace}{}%
 }%
 \makeatother
-% \let\ac\gls
-% \let\acp\glspl
-% \let\Ac\Gls
-% \let\Acp\Glspl
+
 % --- Load your acronym definitions ------------------------------------------
 \loadglsentries{acronyms.def}
 \makenoidxglossaries
+
 % --- OPTIONAL: reset first-use at each chapter (OFF by default) -------------
 % Turn on if you want each chapter to re-introduce acronyms on first use.
 \newif\ifResetAcronymsPerChapter
@@ -52,37 +87,10 @@
   \pretocmd{\chapter*}{\glsresetall[acronym]}{}{}%
 \fi
 
-% --- PDF string safety (bookmarks, etc.) ------------------------------------
-% Ensure glossary-related commands render plain text in PDF strings.
-% \providecommand\pdfstringdefDisableCommands[1]{}
-% \pdfstringdefDisableCommands{%
-%   \def\gls#1{\glsentrytext{#1}}%
-%   \def\glspl#1{\glsentryplural{#1}}%
-%   \def\acrshort#1{\glsentryshort{#1}}%
-%   \def\acrlong#1{\glsentrylong{#1}}%
-%   \def\acrfull#1{\glsentrylong{#1}\space(\glsentryshort{#1})}%
-% }
-
 % =========================
 % Hyperlinked, no-space acronyms
 % =========================
 % Shared helpers for linked acronym output and smart spacing
-\makeatletter
-\DeclareRobustCommand{\silentglsadd}[1]{%
-  \@bsphack
-  \glsadd{#1}%
-  \@esphack
-  \futurelet\@let@token\silentglsadd@i
-}
-\def\silentglsadd@i{%
-  \ifx\@let@token\space
-    \expandafter\silentglsadd@gobble
-  \else
-    \ignorespaces
-  \fi
-}
-\def\silentglsadd@gobble#1{}%
-\makeatother
 
 \NewDocumentCommand{\edoAcrLink}{m m}{\hyperlink{glo:#1}{#2}}%
 \makeatletter
@@ -102,20 +110,20 @@
 
 % \ac{<lab>}  : first use -> long (SHORT), later -> SHORT; linked; usage tracked
 % \ac*{<lab>} : always SHORT; linked; no usage change
-\NewDocumentCommand{\ac}{s m}{%
+\RenewDocumentCommand{\ac}{s m}{%
   \edoAcrRender{#1}{#2}{\glsentryshort}{\glsentrylong}%
 }%
 
 % Plural
-\NewDocumentCommand{\acp}{s m}{%
+\RenewDocumentCommand{\acp}{s m}{%
   \edoAcrRender{#1}{#2}{\glsentryshortpl}{\glsentrylongpl}%
 }%
 
 % Capitalized variants
-\NewDocumentCommand{\Ac}{s m}{%
+\RenewDocumentCommand{\Ac}{s m}{%
   \edoAcrRender{#1}{#2}{\Glsentryshort}{\Glsentrylong}%
 }%
-\NewDocumentCommand{\Acp}{s m}{%
+\RenewDocumentCommand{\Acp}{s m}{%
   \edoAcrRender{#1}{#2}{\Glsentryshortpl}{\Glsentrylongpl}%
 }%
 

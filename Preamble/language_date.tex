@@ -15,7 +15,7 @@
 % --- Display styles -----------------------------------------------------------
 % 1) Your existing compact display: "DD Mon YYYY"
 \DTMnewdatestyle{mydateformat}{%
-  \renewcommand*{\DTMdisplaydate}[4]{%
+  \RenewDocumentCommand{\DTMdisplaydate}{m m m m}{%
     \DTMtwodigits{##3}~\DTMshortmonthname{##2}~\number##1%
   }%
 }

@@ -15,7 +15,7 @@
 
 % ---------- Option plumbing ----------
 \makeatletter
-\newcommand\mt@baseclass{scrbook}   % default
+\NewDocumentCommand{\mt@baseclass}{}{scrbook}   % default
 
 \def\mt@markbaseoption#1{%
   \expandafter\def\csname mt@isbase@#1\endcsname{1}%
@@ -46,13 +46,13 @@
 }
 
 % Baseclass selector (friendly aliases)
-\DeclareOption{book}{   \renewcommand\mt@baseclass{scrbook}}
-\DeclareOption{report}{ \renewcommand\mt@baseclass{scrreprt}}
-\DeclareOption{article}{\renewcommand\mt@baseclass{scrartcl}}
+\DeclareOption{book}{   \RenewDocumentCommand{\mt@baseclass}{}{scrbook}}
+\DeclareOption{report}{ \RenewDocumentCommand{\mt@baseclass}{}{scrreprt}}
+\DeclareOption{article}{\RenewDocumentCommand{\mt@baseclass}{}{scrartcl}}
 % Also accept explicit KOMA names
-\DeclareOption{scrbook}{  \renewcommand\mt@baseclass{scrbook}}
-\DeclareOption{scrreprt}{ \renewcommand\mt@baseclass{scrreprt}}
-\DeclareOption{scrartcl}{ \renewcommand\mt@baseclass{scrartcl}}
+\DeclareOption{scrbook}{  \RenewDocumentCommand{\mt@baseclass}{}{scrbook}}
+\DeclareOption{scrreprt}{ \RenewDocumentCommand{\mt@baseclass}{}{scrreprt}}
+\DeclareOption{scrartcl}{ \RenewDocumentCommand{\mt@baseclass}{}{scrartcl}}
 
 % Collect any other option:
 %  - forward to moderntech-base (theme features)

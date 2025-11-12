@@ -1,0 +1,44 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+%====================
+% * File: ##_name.tex
+%====================
+\begin{document}
+\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+% === Coursebook Section (X.X.X) ===
+\section{ }
+\minibib
+%====================
+% * Contents
+%====================
+
+% TODO: [ ] Read X.X.X and assigned Codex actions
+% TODO: [ ] Codex section development
+% TODO: [ ] Review for syntax accuracy and correct information
+% * Codex markdown instructions
+% # Integration directions.
+% 1. Please ensure the following are addressed:
+%   -
+% 2. Include placeholders for figures at appropriate spots:
+% 3. Update `acronyms.def` and `edo.bib` with new entries as needed.
+% 4. The Coursebook is the first source document, but relevant sources from the Coursebook, DAU, and other resources should also be used.
+% 5. Cross-verify that the information from this section flows logically with the rest of the study guide.
+% 6. Review entire study guide and update the Key Roles Appendix.
+% 7. Review entire study guide and verify proper usage of acronym calls inside body text (no calls within headings, sections, tables, etc.)
+
+% * Enter content here:
+
+%====================
+% * End of file
+%====================
+\ifSubfilesClassLoaded{
+\RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+\RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+\printnoidxglossary[
+		type=\acronymtype,
+		title=Acronyms,
+		style=long-booktabs
+	]}{}
+\end{document}

@@ -13,19 +13,19 @@
 \colorlet{bg}{Gray90}
 
 % Convenience font helpers maintained for compatibility with existing sources.
-\newcommand{\headingfont}{\firasanssemibold\color{AccentBlue}\Large}
-\newcommand{\sectionfont}{\firasanssemibold\color{AccentBlue}\Large}
-\newcommand{\firasb}{\firasanssemibold}
-\newcommand{\merriweatherblack}{\rmfamily\bfseries}
-\newcommand{\sourcesansprofont}{\sffamily}
-\newcommand{\textsb}[1]{{\firasanssemibold #1}}
+\NewDocumentCommand{\headingfont}{}{\firasanssemibold\color{AccentBlue}\Large}
+\NewDocumentCommand{\sectionfont}{}{\firasanssemibold\color{AccentBlue}\Large}
+\NewDocumentCommand{\firasb}{}{\firasanssemibold}
+\NewDocumentCommand{\merriweatherblack}{}{\rmfamily\bfseries}
+\NewDocumentCommand{\sourcesansprofont}{}{\sffamily}
+\NewDocumentCommand{\textsb}{m}{{\firasanssemibold #1}}
 
 % Legacy inline hint/note wrappers routed through the moderntech styled boxes.
-\newcommand{\hint}[1]{\Hint{#1}}
-\newcommand{\note}[1]{\Note{#1}}
-\newcommand{\tHint}{\textbf{\textcolor{AccentPurple}{Hint}}}
-\newcommand{\tNote}{\textbf{\textcolor{AccentTeal}{Note}}}
-\newcommand{\tSource}{\textbf{\textcolor{AccentGreen}{Source}}}
+\NewDocumentCommand{\hint}{m}{\Hint{#1}}
+\NewDocumentCommand{\note}{m}{\Note{#1}}
+\NewDocumentCommand{\tHint}{}{\textbf{\textcolor{AccentPurple}{Hint}}}
+\NewDocumentCommand{\tNote}{}{\textbf{\textcolor{AccentTeal}{Note}}}
+\NewDocumentCommand{\tSource}{}{\textbf{\textcolor{AccentGreen}{Source}}}
 
 \defaultfontfeatures[\ttfamily]{
   Scale=MatchLowercase,

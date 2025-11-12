@@ -1,0 +1,160 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+%====================
+% * File: 17_JCIDS.tex
+%====================
+\begin{document}
+\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+% === JCIDS (EDO 3.3.3) ===
+\section{Joint Capabilities Integration \& Development System}
+\minibib
+%====================
+% * Contents
+%====================
+
+% TODO: [ ] Read 3.3.3 and assigned Codex actions
+% TODO: [ ] Codex section development
+% TODO: [ ] Review for syntax accuracy and correct information
+% * Codex markdown instructions
+% # 17_JCIDS integration directions.
+% 1. Please ensure the following are addressed:
+%   - Describe the difference between DAS and JCIDS. Which governing documents relate the two.
+%   - Describe what is the purpose of Capability Requirements and CBA. What are the phases?
+%   - Describe the following documents in detail to include what happens in each phase of MCA: (1) ICD, (2) CDD, (3) CPD, and (3) CDD Updates.
+%   - How are JCIDS KPPs integrated within DAS?
+%   - What is the importance and priority of material and non-material solutions.
+%   - What is the role of JROC and Joint Staff. What abvout JCBs and FCBs?
+%   - How does the aspects of JCIDS apply to IT Acquisitions (e.g., Net-Ready, interoperability, architecture, reuse)
+%   - Why must C4I interoperability must be considered with all affected US and Allied systems
+%   - Current Events: How does the new Secretary of War directives for Acquisition Transformation Strategy change JCIDS and the requirements space? Does it also affect DAS?
+%   - Describe the aspects of DOTMLPF-P and how each one is applied
+%   - Who validates requirements?
+%   - describe the flow: Strategic guidance --> Joint concepts --> CBA, who is involved and what happens at each part?
+% 2. Include placeholders for figures at appropriate spots: (1) JCIDS to DAS Relationship, (2) JCIDS within DAS
+% 3. Update `acronyms.def` and `edo.bib` with new entries as needed.
+% 4. 3.3.3 JCIDS is the first source document, but relevant sources from the Coursebook, DAU, and other resources should also be used.
+% 5. Cross-verify that the information from this section flows logically with the rest of the study guide.
+% 6. Review entire study guide and update the Key Roles Appendix.
+% 7. Review entire study guide and verify proper usage of acronym calls inside body text (no calls within headings, sections, tables, etc.)
+
+% * Enter content here:
+\subsection{Requirements Demand Versus Acquisition Supply}
+\begin{description}
+	\item[\textbf{\ac{jcids}.}] Establishes the joint demand signal by translating strategic guidance into validated capability requirements, risk statements, and \ac{dotmlpfp} change recommendations that scope non-materiel and materiel options~\autocite{jcids-manual-2021,edo-3-3-3-jcids-2025}.
+	\item[\textbf{\ac{das}.}] Converts validated requirements into executable acquisition strategies, cost/schedule baselines, and lifecycle sustainment plans under DoDD~5000.01 and DoDI~5000.85~\autocite{DoDD5000-01,DoDI5000-85}.
+\end{description}
+\note{Board cue: be ready to explain where a program sits in both systems; Gate~2 packages are dead on arrival if the \ac{jcids} paperwork is stale even when the \ac{das} strategy is current~\autocite{edo-3-3-3-jcids-2025}.}
+
+% TODO: Insert Joint Capabilities Integration and Development System to Defense Acquisition System relationship figure (showing validation feeding milestones).
+\begin{figure}
+	\centering
+	\fbox{\parbox{0.9\linewidth}{\centering TODO: Insert Joint Capabilities Integration and Development System to Defense Acquisition System relationship figure (showing validation feeding milestones).}}
+	\caption{Relationship between the Joint Capabilities Integration and Development System and the Defense Acquisition System.}
+\end{figure}
+
+\subsection{Capability Requirements and the Capability-Based Assessment Cadence}
+Capability requirements are mission-task statements (task, condition, standard) that are solution-agnostic yet measurable enough to drive trades, and \acp{cba} provide the disciplined analysis to justify them~\autocite{jcids-manual-2021}. Each \ac{cba} follows repeatable phases:
+\begin{description}
+	\item[\textbf{Study initiation.}] The sponsoring component issues the study notice, nominates a lead \ac{fcb}, scopes timelines, and aligns analytical support and governance expectations~\autocite[Annex~B]{jcids-manual-2021}.
+	\item[\textbf{Operational context \& mission threads.}] Analysts decompose national/\ac{ccmd} guidance into joint concepts, mission threads, and integrated architectures to keep the study ``concept-based and threat-informed''~\autocite[Encl.~A]{jcids-manual-2021}.
+	\item[\textbf{Gap and risk assessment.}] Existing and programmed capabilities are mapped against required mission effects to quantify gaps, assess risk, and prioritize by warfighting impact and threat timelines~\autocite{jcids-manual-2021}.
+	\item[\textbf{Solution analysis.}] Non-materiel levers (\ac{dotmlpfp}) are explored first; only when risk remains unacceptable are materiel approaches carried forward, together with preliminary affordability bounds and schedule realism~\autocite{jcids-manual-2021}.
+	\item[\textbf{Documentation \& validation path.}] The resulting evidence package (mission context, gaps, \ac{dotmlpfp} recommendations, risk, and proposed documents) feeds the Gatekeeper, \ac{fcb}, and validation authority decision on which \ac{jcids} artifact (\ac{icd}, \ac{dcr}, update) to staff~\autocite[Encl.~A]{jcids-manual-2021}.
+\end{description}
+
+%  TODO: Mermaid flow --- Strategic guidance $\rightarrow$ Joint concepts $\rightarrow$ Mission threads $\rightarrow$ capability-based assessment $\rightarrow$ DOTMLPF-P recommendations $\rightarrow$ Validated requirement $\rightarrow$ DAS milestone.
+\begin{figure}
+	\centering
+	\fbox{\parbox{0.9\linewidth}{\centering TODO: Mermaid flow --- Strategic guidance $\rightarrow$ Joint concepts $\rightarrow$ Mission threads $\rightarrow$ capability-based assessment $\rightarrow$ DOTMLPF-P recommendations $\rightarrow$ Validated requirement $\rightarrow$ DAS milestone.}}
+	\caption{Concept-to-requirement flow that must stay synchronized with acquisition execution.}
+\end{figure}
+
+\subsection{Strategy-to-Requirement Synchronization}
+Joint demand starts with strategic direction (National Defense Strategy, Joint Warfighting Concept, campaign orders) and is progressively tailored until a validated requirement enters the \ac{das}~\autocite{jcids-manual-2021,edo-3-3-3-jcids-2025}. Key touchpoints:
+\begin{description}
+	\item[\textbf{Strategic guidance.}] The Secretary of Defense and \ac{cjcs} translate national objectives into force design problems and assign lead sponsors; the Joint Staff J-7 houses concept development and readiness assessments that set the analytical agenda~\autocite{jcids-manual-2021}.
+	\item[\textbf{Joint concepts \& mission threads.}] Mission engineers decompose guidance into mission areas, integrated kill chains, and threat-informed architectures so that requirements stay ``concept-based and threat-informed'' before solutioneering~\autocite[Encl.~A]{jcids-manual-2021}.
+	\item[\textbf{\acp{cba}.}] Sponsors conduct the structured \ac{cba} described above to document measurable capability requirements, prioritize risks, and recommend \ac{dotmlpfp} levers with quantitative evidence~\autocite{jcids-manual-2021}.
+	\item[\textbf{Gatekeeping \& staffing.}] The Joint Staff Gatekeeper assigns a \ac{jsd}, routes packages through \ac{km-ds}, and tasks the appropriate \ac{fcb} for certification prep; timelines and suspense assignments live inside \ac{km-ds} so Navy leads can monitor in real time~\autocite{jcids-manual-2021}.
+	\item[\textbf{Validation.}] Depending on the \ac{jsd}, the \ac{jroc}, \ac{jcb}, or delegated Service/\ac{ccmd} authority validates requirements, issues memoranda \acp{jrocm}, and records mandatory actions (e.g., certifications, follow-on \acp{dcr}) that acquisition teams must honor~\autocite{jcids-manual-2021,USC-10-181}.
+	\item[\textbf{Acquisition handoff.}] Validated artifacts, with their \ac{jrocm} direction and \ac{ctctrade} or \ac{csb} trade expectations, become entry criteria for Gate~2, the \ac{mdd}, and milestone reviews, ensuring the \ac{pae} and \ac{peo} communities inherit coherent demand signals~\autocite{edo-3-3-3-jcids-2025}.
+\end{description}
+
+\subsection{Major Capability Acquisition Requirement Set}
+\begin{description}
+	\item[\textbf{\ac{icd}.}] Captures the operational context, quantified gaps, and risk that justify materiel and non-materiel approaches; it is required to support the Materiel Development Decision and is deliberately solution-agnostic~\autocite[Appendix~B-A]{jcids-manual-2021}.
+	\item[\textbf{\ac{cdd}.}] Establishes system-level performance attributes (\acp{kpp}, \acp{ksa}, \acp{apa}) that anchor \ac{tmrr} planning and must be validated before the Development \ac{rfp} release and Milestone~B; it becomes the authoritative source for the Technical Requirements Baseline~\autocite{jcids-manual-2021,DoDI5000-85}.
+	\item[\textbf{CDD updates.}] Refine thresholds/objectives when an \ac{emd} phase spans multiple lots or when \acp{kpp} trades are needed before Milestone~C; updates keep production-representative values authoritative without re-opening earlier portions of the document~\autocite{jcids-manual-2021}.
+	\item[\textbf{\ac{cpd}.}] Translates the validated \ac{cdd} into production-ready parameters, sustainment metrics, and deployment considerations for Milestone~C and Full-Rate Production/Fielding decisions~\autocite{jcids-manual-2021,DoDI5000-85}.
+\end{description}
+
+% TODO: Insert Joint Capabilities Integration and Development System within Defense Acquisition System figure showing ICD$\rightarrow$Milestone~A, CDD$\rightarrow$Milestone~B, CDD Update/CPD$\rightarrow$Milestone~C.
+\begin{figure}
+	\centering
+	\fbox{\parbox{0.9\linewidth}{\centering TODO: Insert Joint Capabilities Integration and Development System within Defense Acquisition System figure showing ICD$\rightarrow$Milestone~A, CDD$\rightarrow$Milestone~B, CDD Update/CPD$\rightarrow$Milestone~C.}}
+	\caption{Placement of Joint Capabilities Integration and Development System artifacts inside the phased Major Capability Acquisition pathway.}
+\end{figure}
+
+\subsection{How KPPs Stay Integrated with DAS}
+Validated \acp{kpp} define the trade space that Milestone Decision Authorities use to approve baselines, certifications, and contracts. DoDI~5000.85 requires \ac{kpp} ownership to be traceable from the \ac{cdd} into the System Requirements Review, Developmental Test plans, and Acquisition Program Baseline; breaches trigger Gatekeeper tripwire reviews and Configuration Steering Boards~\autocite{DoDI5000-85,jcids-manual-2021}. Navy \acp{pm} must therefore align \ac{cdd}/\ac{cpd} updates with SEA~05 warrant packages and \ac{asnrdanda} Gate~6 readiness to keep statutory certifications (\ac{nr}-\ac{kpp}, cybersecurity, safety) synchronized~\autocite{OPNAVINST5000-42E,edo-3-3-3-jcids-2025}.
+
+\subsection{Prioritizing Materiel and Non-Materiel Solutions}
+\Ac{jcids} policy directs sponsors to work through every \ac{dotmlpfp} lever before defaulting to expensive materiel approaches, both to reduce risk and to speed delivery~\autocite{jcids-manual-2021}. Practical applications include:
+\begin{description}
+	\item[\textbf{Doctrine.}] Update joint/combined warfighting concepts or tactics to mitigate gaps quickly (e.g., change \ac{asw} \ac{conops} before buying sensors).
+	\item[\textbf{Organization.}] Re-align Fleet/\ac{navwar} command relationships or mission tailoring to close gaps without new hardware.
+	\item[\textbf{Training.}] Modify Fleet Readiness Training Plan events or simulator syllabi so crews can exploit existing systems better.
+	\item[\textbf{Materiel.}] Only after non-materiel levers fail should new materiel increments be scoped, with clear linkage to \ac{das} milestones.
+	\item[\textbf{Leadership \& education.}] Insert leadership development or acquisition workforce upskilling when governance bottlenecks (e.g., \ac{jroc} literacy) create the gap.
+	\item[\textbf{Personnel.}] Adjust billets, Navy Enlisted Classifications, or civilian skill codes to align manpower with capability employment.
+	\item[\textbf{Facilities.}] Invest in pier-side infrastructure, cyber ranges, or test venues necessary to realize capability performance.
+	\item[\textbf{Policy.}] Seek changes to \ac{secnav}/\ac{opnav} directives or coalition agreements when authorities constrain capability delivery.
+\end{description}
+
+\subsection{Governance Roles and Validation Chain}
+\begin{description}
+	\item[\textbf{\ac{jroc}.}] Executes Title~10 \S~181 duties---prioritizing capability gaps, validating \acp{kpp}, delegating authority, and issuing \ac{jrocm} guidance that binds both requirements and acquisition communities~\autocite{jcids-manual-2021,USC-10-181}.
+	\item[\textbf{Joint Staff Gatekeeper \& \ac{jcb}.}] The J-8 Gatekeeper screens every submission, assigns Joint Staff suspense, and recommends whether the \ac{jroc} or \ac{jcb} (chaired by the \ac{vcjcs}) is the right validation venue; the \ac{jcb} focuses on issues that are joint but lower risk, accelerating queue time for most Navy programs~\autocite{jcids-manual-2021}.
+	\item[\textbf{\acp{fcb}.}] Functional Capabilities Boards (e.g., C4/Cyber, Protection, Logistics) chair working groups, broker certifications (Net-Ready, Force Protection, System Survivability), monitor implementation of \acp{dcr} tasks, and elevate tripwires to the \ac{jcb}/\ac{jroc}~\autocite{jcids-manual-2021}.
+	\item[\textbf{Service validation authorities.}] \ac{opnav} N9/N9I act as the Navy Gatekeeper, ensuring Gate~0/1 packages satisfy OPNAVINST~5000.42E expectations before forwarding to the Joint Staff, and they remain responsible for Service-specific ``Joint Integration'' decisions even when joint validation is delegated~\autocite{OPNAVINST5000-42E}.
+\end{description}
+Requirements are therefore validated either by the \ac{jroc}, the \ac{jcb} (if delegated), or by the cognizant Service/\ac{ccmd} authority when the Joint Staff assigns a Joint Staffing Designator of ``Joint Integration/Information''~\autocite{jcids-manual-2021}.
+
+\subsection{IT, C4I, and Coalition Interoperability Implications}
+\begin{description}
+\item[\textbf{Net-Ready.}] Every \ac{is} \ac{icd}, \ac{is} \ac{cdd}, and Capability Drop version of the \ac{cdd} must secure Net-Ready certification from the C4/Cyber \ac{fcb} chair, demonstrating compliance with enterprise architecture, data standards, and mission thread-level interoperability~\autocite{jcids-manual-2021}.
+\item[\textbf{Architecture and reuse.}] Sponsors must deliver \ac{dodaf} views (\ac{avview}, \ac{ovview}, \ac{svview}, \ac{cvview}) that trace requirements to reusable services, \acp{api}, and data models, enabling software pathways and rapid iteration~\autocite{jcids-manual-2021,DoDI5000-02}.
+\item[\textbf{\ac{c4i} interoperability.}] DoDD~5000.01 compels all acquisition programs to plan for cross-Service and allied interoperability; \ac{jcids} enforces this by requiring coalition releasability considerations and Combined/Joint Mission Threads inside every requirement~\autocite{DoDD5000-01}.
+\item[\textbf{Allied impacts.}] Capability sponsors must document how U.S.\ and allied systems exchange data, share bandwidth, and remain cyber survivable before validation; failure to do so can halt Gate~2 or Net-Ready \acp{kpp} endorsements~\autocite{jcids-manual-2021,edo-3-3-3-jcids-2025}.
+\end{description}
+
+\subsection{Current Events: Secretary of War Acquisition Transformation Strategy}
+The 10~Nov~2025 Acquisition Transformation Strategy directs the Warfighting Acquisition System to eliminate legacy \ac{jcids} bureaucracy, convert Configuration Steering Boards into \acp{ctctrade}, and empower \acp{pae} to make requirements trades inside cost/schedule thresholds~\autocite{secwar-acq-transformation-2025}. The memo explicitly calls for \ac{jcids} elimination and streamlining of \ac{das} reviews, meaning Navy teams must plan for near-term transition periods where \acp{pae} convene \acp{ctctrade} to validate trades in lieu of traditional Joint Staff staffing, while \ac{das} documentation is simultaneously pushed to lower approval levels~\autocite{secwar-acq-transformation-2025}. Expect joint governance updates (Gatekeeper rules, \ac{fcb} charters) and plan to capture trade rationales in Decision Memoranda so that future auditors can trace how requirements changes affected \acp{apb}.
+
+\subsection{Practitioner Steps (Board-Focused)}
+\begin{enumerate}
+	\item Confirm the latest Joint Staff validation status in \ac{km-ds} before taking any \ac{das} decision memo to \ac{asnrdanda}---out-of-date \ac{jsd} codes are a fast way to fail a board question~\autocite{edo-3-3-3-jcids-2025}.
+	\item Map every \ac{kpp}/\ac{ksa} to a test event and logistic metric inside the \ac{sep}/\ac{temp}; if a \ac{kpp} lacks a verification method, the Gatekeeper will bounce the package~\autocite{DoDI5000-85}.
+	\item Show which \ac{dotmlpfp} levers were exhausted prior to requesting a new-start line; Fleet leadership expects to see realistic non-materiel mitigations even when you are asking for ships or software~\autocite{jcids-manual-2021}.
+\end{enumerate}
+
+\subsection{Checklist and Decision Trace}
+\begin{description}
+	\item[\textbf{Checklist.}] (1) Latest \ac{icd}/\ac{cdd}/\ac{cpd} and Gatekeeper Control Number on file; (2) Net-Ready, cybersecurity, safety, and intel certifications aligned with milestone schedule; (3) \ac{dotmlpfp} changes resourced; (4) Navy Gate packages (Gate~0/1/2) consistent with joint validation status.
+	\item[\textbf{Decision trace.}] If the capability gap is still unacceptable after \ac{dotmlpfp} adjustments, elevate to the appropriate validation authority with quantified risk; once validated, lock the \ac{kpp}s into the \ac{apb} and document all trades via \ac{ctctrade} or \ac{csb} minutes so the \ac{das} record remains synchronized with the requirements record~\autocite{jcids-manual-2021,DoDI5000-85}.
+\end{description}
+
+%====================
+% * End of file
+%====================
+\ifSubfilesClassLoaded{
+\RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+\RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+\printnoidxglossary[
+		type=\acronymtype,
+		title=Acronyms,
+		style=long-booktabs
+	]}{}
+\end{document}
