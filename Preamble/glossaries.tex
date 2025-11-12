@@ -17,42 +17,42 @@
 ]{glossaries-extra}
 
 % --- Abbreviation style: first use "Long (SHORT)", then "SHORT" -------------
-\makeatletter
+% \makeatletter
 
-% Stop \glslink from leaving a node that preserves trailing whitespace
-\pretocmd{\@gls@link}{\@bsphack}{}{}
-\apptocmd{\@gls@link}{\@esphack\ignorespaces}{}{}
+% % Stop \glslink from leaving a node that preserves trailing whitespace
+% \pretocmd{\@gls@link}{\@bsphack}{}{}
+% \apptocmd{\@gls@link}{\@esphack\ignorespaces}{}{}
 
-% Don’t inject the \mbox{} that \glsadd uses to force horizontal mode
-\renewcommand*{\@gls@adjustmode}{}
+% % Don’t inject the \mbox{} that \glsadd uses to force horizontal mode
+% \renewcommand*{\@gls@adjustmode}{}
 
-\NewDocumentCommand{\silentglsadd}{m}{%
-  \IfBooleanTF{\glsentryexists{#1}}{}{%
-    \PackageWarning{edo-glossary}{Undefined glossary entry `#1' ignored}%
-    \ReturnFromDocumentCommand
-  }%
-  \@bsphack
-  \glsadd{#1}%
-  \@esphack
-  \futurelet\@let@token\silentglsadd@i
-}
-\NewDocumentCommand{\silentglsadd@i}{}{%
-  \IfBooleanTF{\token_if_eq_char:NNT \@let@token \space}{%
-    \silentglsadd@gobble
-  }{%
-    \ignorespaces
-  }%
-}
-\NewDocumentCommand{\silentglsadd@gobble}{m}{}
-\makeatother
+% \NewDocumentCommand{\silentglsadd}{m}{%
+%   \IfBooleanTF{\glsentryexists{#1}}{}{%
+%     \PackageWarning{edo-glossary}{Undefined glossary entry `#1' ignored}%
+%     \ReturnFromDocumentCommand
+%   }%
+%   \@bsphack
+%   \glsadd{#1}%
+%   \@esphack
+%   \futurelet\@let@token\silentglsadd@i
+% }
+% \NewDocumentCommand{\silentglsadd@i}{}{%
+%   \IfBooleanTF{\token_if_eq_char:NNT \@let@token \space}{%
+%     \silentglsadd@gobble
+%   }{%
+%     \ignorespaces
+%   }%
+% }
+% \NewDocumentCommand{\silentglsadd@gobble}{m}{}
+% \makeatother
 
-\glsdefpostlink{acronym}{%
-  \ifglsused{\glslabel}{}{%
-    \silentglsadd{\glslabel}%
-    \glslink{\glslabel}{(\glsentryshort{\glslabel})}%
-    \glsunset{\glslabel}%
-  }%
-}
+% \glsdefpostlink{acronym}{%
+%   \ifglsused{\glslabel}{}{%
+%     \silentglsadd{\glslabel}%
+%     \glslink{\glslabel}{(\glsentryshort{\glslabel})}%
+%     \glsunset{\glslabel}%
+%   }%
+% }
 
 \setabbreviationstyle[acronym]{long-short}
 % --- Build mode: no external indexing (fast, good for continuous writing) ---
@@ -76,21 +76,26 @@
 \loadglsentries{acronyms.def}
 \makenoidxglossaries
 
-% --- OPTIONAL: reset first-use at each chapter (OFF by default) -------------
-% Turn on if you want each chapter to re-introduce acronyms on first use.
-\newif\ifResetAcronymsPerChapter
-\ResetAcronymsPerChapterfalse
-% \ResetAcronymsPerChaptertrue   % <- uncomment to enable per-chapter reset
-\ifResetAcronymsPerChapter
-  \usepackage{etoolbox}%
-  \pretocmd{\chapter}{\glsresetall[acronym]}{}{}%
-  \pretocmd{\chapter*}{\glsresetall[acronym]}{}{}%
-\fi
-
 % =========================
 % Hyperlinked, no-space acronyms
 % =========================
 % Shared helpers for linked acronym output and smart spacing
+\makeatletter
+\DeclareRobustCommand{\silentglsadd}[1]{%
+  \@bsphack
+  \glsadd{#1}%
+  \@esphack
+  \futurelet\@let@token\silentglsadd@i
+}
+\def\silentglsadd@i{%
+  \ifx\@let@token\space
+    \expandafter\silentglsadd@gobble
+  \else
+    \ignorespaces
+  \fi
+}
+\def\silentglsadd@gobble#1{}%
+\makeatother
 
 \NewDocumentCommand{\edoAcrLink}{m m}{\hyperlink{glo:#1}{#2}}%
 \makeatletter
@@ -110,20 +115,20 @@
 
 % \ac{<lab>}  : first use -> long (SHORT), later -> SHORT; linked; usage tracked
 % \ac*{<lab>} : always SHORT; linked; no usage change
-\RenewDocumentCommand{\ac}{s m}{%
+\NewDocumentCommand{\ac}{s m}{%
   \edoAcrRender{#1}{#2}{\glsentryshort}{\glsentrylong}%
 }%
 
 % Plural
-\RenewDocumentCommand{\acp}{s m}{%
+\NewDocumentCommand{\acp}{s m}{%
   \edoAcrRender{#1}{#2}{\glsentryshortpl}{\glsentrylongpl}%
 }%
 
 % Capitalized variants
-\RenewDocumentCommand{\Ac}{s m}{%
+\NewDocumentCommand{\Ac}{s m}{%
   \edoAcrRender{#1}{#2}{\Glsentryshort}{\Glsentrylong}%
 }%
-\RenewDocumentCommand{\Acp}{s m}{%
+\NewDocumentCommand{\Acp}{s m}{%
   \edoAcrRender{#1}{#2}{\Glsentryshortpl}{\Glsentrylongpl}%
 }%
 
