@@ -67,7 +67,7 @@
   {\fontsize{12pt}{14pt}\selectfont%
     \textit{\color{CrimsonRed}Guide Updated: \color{Modern}\today}\par}%
   {\fontsize{12pt}{14pt}\selectfont%
-    \textit{\color{CrimsonRed}EDO Coursebook Current as of:
+    \textit{\color{CrimsonRed}EDO Coursebook Version: %
       \color{Modern}\DTMusedate{Coursebook_Version}}}%
   \DTMsetdatestyle{mydateformat}
 \end{titlepage}%
@@ -75,9 +75,7 @@
 \clearpage
 % ----- FRONTMATTER -----
 % helper to pick the right ToC level
-\makeatletter%
 \newcommand{\mtTOClevel}{\@ifundefined{chapter}{section}{chapter}}
-\makeatother%
 
 % --- FRONTMATTER ---
 \frontmatter%
@@ -140,7 +138,7 @@
 \clearpage%
 \renewcommand*{\entryname}{\textbf{\color{Modern} Acronym}}
 \renewcommand*{\descriptionname}{\textbf{\color{Modern} Definition}}
-\begingroup
+
 % In the glossary list, make each acronym's "name" a hypertarget:
 \renewcommand*{\glsnamefont}[1]{\glstarget{glo:\glslabel}{#1}}
 \printnoidxglossary[
@@ -149,7 +147,7 @@
   numberedsection,
   style=long-booktabs
 ]
-\endgroup
+
 \makeatother%
 %================
 \end{document}

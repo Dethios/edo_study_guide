@@ -40,7 +40,7 @@
 % \let\Acp\Glspl
 % --- Load your acronym definitions ------------------------------------------
 \loadglsentries{acronyms.def}
-
+\makenoidxglossaries
 % --- OPTIONAL: reset first-use at each chapter (OFF by default) -------------
 % Turn on if you want each chapter to re-introduce acronyms on first use.
 \newif\ifResetAcronymsPerChapter
@@ -78,12 +78,10 @@
     \ifglsused{#2}{%
       \edoAcrLink{#2}{#3{#2}}%
     }{%
-      \glsadd{#2}%
-      \glsunset{#2}%
-      \edoAcrLink{#2}{#4{#2}~(#3{#2})}%
+      \edoAcrLink{#2}{#4{#2}~(#3{#2})}\glsunset{#2}\glsadd{#2}%
     }%
   }%
-  \xspace%
+  % \xspace%
 }%
 
 % \ac{<lab>}  : first use -> long (SHORT), later -> SHORT; linked; usage tracked
