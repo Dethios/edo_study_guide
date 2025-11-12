@@ -95,7 +95,7 @@
     \ifglsused{#2}{%
       \edoAcrLink{#2}{#3{#2}}%
     }{%
-      \edoAcrLink{#2}{#4{#2}~(#3{#2})}\glsunset{#2}\leavevmode\silentglsadd{#2}%
+      \edoAcrLink{#2}{#4{#2}\silentglsadd{#2}(#3{#2})}\glsunset{#2}%
     }%
   }%
 }%
