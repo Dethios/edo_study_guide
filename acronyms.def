@@ -21,7 +21,9 @@
 \newacronym{dod}{DoD}{Department of Defense}
 \newacronym{don}{DON}{Department of the Navy}
 \newacronym{secnav}{SECNAV}{Secretary of the Navy}
+\newacronym{secwar}{SECWAR}{Secretary of War}
 \newacronym{asnrdanda}{{ASN(RD\&A)}}{Assistant Secretary of the Navy for Research, Development and Acquisition}
+\newacronym{dasnapb}{DASN (APB)}{Deputy Assistant Secretary of the Navy (Acquisition Policy and Budget)}
 \newacronym{cae}{CAE}{Component Acquisition Executive}
 \newacronym{sae}{SAE}{Service Acquisition Executive}
 \newacronym{pmildep}{PMILDEP}{Principal Military Deputy}
@@ -455,10 +457,42 @@
 
 % --- Operational Test Agencies & Interop ---
 \newacronym{comoptevfor}{COMOPTEVFOR}{Commander, Operational Test and Evaluation Force}
+\newacronym{cotf}{COTF}{Commander, Operational Test Force}
 \newacronym{afotec}{AFOTEC}{Air Force Operational Test and Evaluation Center}
 \newacronym{atec}{ATEC}{U.S. Army Test and Evaluation Command}
 \newacronym{mcotea}{MCOTEA}{Marine Corps Operational Test and Evaluation Activity}
 \newacronym{jitc}{JITC}{Joint Interoperability Test Command}
+
+% --- Test & Evaluation Fundamentals ---
+
+\newacronym{te}{T\&E}{Test and Evaluation}
+\newacronym{dte}{DT\&E}{Developmental Test and Evaluation}
+\newacronym{ote}{OT\&E}{Operational Test and Evaluation}
+\newacronym{lfte}{LFT\&E}{Live Fire Test and Evaluation}
+\newacronym{optest}{OT}{Operational Test}
+\newacronym{techeval}{TECHEVAL}{Technical Evaluation}
+\newacronym{opeval}{OPEVAL}{Operational Evaluation}
+\newacronym{dasdte}{DASD(T\&E)}{Deputy Assistant Secretary of Defense for Test and Evaluation}
+\newacronym{cdt}{CDT}{Chief Developmental Tester}
+\newacronym{ldto}{LDTO}{Lead Developmental Test and Evaluation Organization}
+\newacronym{ctp}{CTP}{Critical Technical Parameter}
+\newacronym{tpm}{TPM}{Technical Performance Measure}
+\newacronym{coi}{COI}{Critical Operational Issue}
+\newacronym[
+	shortplural={MOEs},
+	longplural={Measures of Effectiveness}
+]{moe}{MOE}{Measure of Effectiveness}
+\newacronym[
+	shortplural={MOSs},
+	longplural={Measures of Suitability}
+]{mos}{MOS}{Measure of Suitability}
+\newacronym{mop}{MOP}{Measure of Performance}
+\newacronym{eoa}{EOA}{Early Operational Assessment}
+\newacronym{oa}{OA}{Operational Assessment}
+\newacronym{iotre}{IOT\&RE}{Initial Operational Test and Readiness Evaluation}
+\newacronym{vv}{V\&V}{Verification and Validation}
+\newacronym{vva}{VV\&A}{Verification, Validation, and Accreditation}
+\newacronym{mtbomf}{MTBOMF}{Mean Time Between Operational Mission Failure}
 
 % --- Cost Estimation & Analysis ---
 
@@ -544,3 +578,4 @@
 
 \newacronym{cfo}{CFO}{Chief Financial Officer}
 \newacronym{cip}{CIP}{Capital Investment Program}
+\newacronym{devsecops}{DevSecOps}{Development, Security, and Operations}

@@ -27,10 +27,10 @@
 %   - Describe and define the DoD T&E Organization
 %   - Detailed description of Developmental T&Es. Define each one.
 %   - Detailed description of Live Fire T&E
-%   - Detailed description of Operational T&E
+%   - Detailed description of Operational T&E (Ininclude EOA, OA, IOT&RE, and FOT&E)
 %   - Define the T&E terms
 %   - Describe CTPs and how do they relate to TPMs, ICD, CDD, APB, etc.
-%   - Detailed description of the TEMP
+%   - Detailed description of the \ac{temp}
 %   - Describe Modeling and Simulation. When and why is it used?
 % 2. Include placeholders for figures at appropriate spots: (1) Test and Evaluation graphic for MCA; (2) DoD T&E Org
 % 3. Update `acronyms.def` and `edo.bib` with new entries as needed. Verify no duplicate acronym labels
@@ -41,6 +41,86 @@
 % 8. Ensure consistency with remainder of the Study guide.
 
 % * Enter content here:
+\subsection{Board Prep Summary}
+\ac{te} provides the objective evidence that a system can achieve the warfighter outcomes promised in requirements documents before obligating the fleet to fielding, sustainment, and congressional reporting commitments~\autocite{edo-3-5-5-test-eval-part-i-2025,DoDI5000-85}. A test is the controlled activity (lab, range, digital thread, fleet event) that produces data, while an evaluation is the analytic judgment that compares that data to thresholds, suitability expectations, and risk acceptance criteria~\autocite{edo-3-5-5-test-eval-part-i-2025}. Effective \ac{te} integrates developmental, operational, and live-fire evidence so that each \ac{mca} milestone is backed by verified design data and validated mission performance insights rather than optimistic modeling alone~\autocite{DoDI5000-89}. Programs that synchronize \ac{te} with systems engineering and program control expose performance gaps early, recycle fixes through the technical baselines, and enter \ac{otrr} with a defendable \ac{temp}, resource plan, and deficiency scrub.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{TE_MCA.png}
+	\caption[MCA T\&E Touchpoints]{Key \ac{mca} test and evaluation touchpoints that frame \ac{dt}, \ac{optest}, and certification decisions. \srcCite{edo-3-5-5-test-eval-part-i-2025}.}\label{fig:TE_MCA}
+\end{figure}
+
+\subsection{Definition and Relationship to Verification and Validation}
+\ac{dte} verifies ``did we build the system right'' by showing the technical baseline meets allocated requirements, standards, and interface controls, while \ac{ote} validates ``did we build the right capability'' by proving Sailors and Marines can accomplish missions under representative threat, environment, and sustainment conditions~\autocite{DoDI5000-02}. Verification relies on repeatable measurements (e.g., propulsion plant efficiency in a land-based engineering site) and feeds configuration control; validation uses operational scenarios, tactics, and logistics supportability to demonstrate mission effectiveness and suitability. \ac{vv} and \ac{vva} activities must be planned in the \ac{temp} and \ac{sep} so that models, simulations, hardware-in-the-loop facilities, and live events share common data assumptions and confidence levels before milestone reviews~\autocite{DoDI5000-89}.
+
+\subsection{Statutory Requirements and Key Roles}
+\begin{description}
+	\item[\textbf{10~U.S.C.~\S~139.}] Establishes the \ac{dote} as an independent advisor to \ac{secdef} and Congress; \ac{dote} approves operational test plans, monitors execution, and must issue a public report for covered programs~\autocite{USC-10-139}.
+	\item[\textbf{10~U.S.C.~\S~2399.}] Prohibits a program from proceeding beyond \ac{lrip} or requesting Full-Rate Production approval until \ac{dote} and the lead Operational Test Agency submit their independent reports to Congress~\autocite{USC-10-2399}.
+	\item[\textbf{10~U.S.C.~\S~2366.}] Requires \ac{lfte} or an approved waiver for covered systems (personnel, platform, and munitions lethality/survivability) before beyond-\ac{lrip} decisions; it also directs reporting of vulnerability/lethality findings to defense committees~\autocite{USC-10-2366}.
+	\item[\textbf{\ac{dasdte}.}] Serves as the \ac{osd} focal point for test resources, designates \acp{cdt} for ACAT I programs, charters \acp{ldto}, and co-chairs Defense-level \ac{te} Working Integrated Product Teams~\autocite{DoDI5000-89}.
+	\item[\textbf{\ac{cdt} and \ac{ldto}.}] The \ac{cdt} orchestrates the integrated test schedule, data requirements, and deficiency resolution cadence, while the \ac{ldto} (often a warfare center or system command test directorate) furnishes instrumentation, modeling, and range execution authority for \ac{dte}~\autocite{DoDI5000-89}.
+	\item[\textbf{Operational Test Agencies.}] \ac{comoptevfor}, \ac{afotec}, \ac{atec}, and \ac{mcotea} plan and execute \ac{ote} events, provide fleet-representative crews, and deliver suitability/effectiveness findings that enter the Milestone Decision Authority (\ac{mda}) record~\autocite{edo-3-5-6-test-eval-part-ii-2025}.
+\end{description}
+
+% TODO: Insert DoD-wide test and evaluation organization graphic (OSD DOT&E, DASD(T&E), Service OTAs, warfare centers).
+\begin{figure}
+	\centering
+	\fbox{\parbox{0.9\linewidth}{\centering TODO: Insert DoD-wide test and evaluation organization graphic (OSD DOT\&E, DASD(T\&E), Service OTAs, warfare centers).}}
+	\caption{Notional \ac{dod} test and evaluation governance chain.}
+\end{figure}
+
+\subsection{Developmental Test Activities}
+\begin{description}
+	\item[\textbf{Component and qualification testing.}] Bench, lab, and land-based engineering site events that verify materials, software builds, cyber hardening, interoperability, and safety factors before integration; data feeds configuration audits and reliability growth curves~\autocite{edo-3-5-5-test-eval-part-i-2025}.
+	\item[\textbf{Subsystem and integration testing.}] Hardware-in-the-loop, systems integration labs, and shore-based platform integration tests that expose interface defects and mission thread timing issues before at-sea trials~\autocite{edo-3-5-5-test-eval-part-i-2025}.
+	\item[\textbf{System-level \ac{dte}.}] Full-up prototypes or first-of-class hulls execute combined developmental/operational scenarios, cybersecurity assessments, and logistics demonstrations to validate readiness for \ac{trr} and \ac{techeval}~\autocite{DoDI5000-85}.
+	\item[\textbf{Reliability growth and maintainability demonstrations.}] Planned stress events and failure-mode tracking prove that \ac{mtbomf} and corrective maintenance timelines align with sustainment strategies before Operational Test Readiness~\autocite{DoDI5000-89}.
+	\item[\textbf{Certification testing.}] Airworthiness, safety, information assurance, weapon certification, and electromagnetic environmental effects tests that deliver statutory certifications needed for fielding~\autocite{edo-3-5-5-test-eval-part-i-2025}.
+\end{description}
+\note{Edge case: Software pathway efforts may collapse \ac{techeval}/\ac{opeval} into continuous \ac{devsecops} assessments, but the program must still show how combined testing and user evaluations satisfy Title~10 adequacy requirements before fielding~\autocite{DoDI5000-02}.}
+
+\subsection{Live Fire Test and Evaluation}
+\ac{lfte} assesses vulnerability (platform survivability) and lethality (munition effectiveness) using full-up systems, major subsystems, and surrogate articles subjected to operationally realistic threats, with instrumentation that captures battle damage, crew survivability, and cascading effects~\autocite{USC-10-2366,DoDI5000-89}. Covered systems (manned platforms, combat vehicles, munitions, and missile defense interceptors) must either execute a full-up \ac{lfte} program or obtain a waiver approved by \ac{secdef} and reported to Congress. Results inform design hardening, tactics (e.g., shot doctrine, avoidance envelopes), and survivability equipment upgrades, and they form a mandatory appendix within the \ac{dote} report before Full-Rate Production Decision Review (\ac{frpdr})~\autocite{DoDI5000-85}.
+
+\subsection{Operational Test Phases}
+\begin{description}
+	\item[\textbf{\ac{eoa}.}] A qualitative review, often using simulations or limited field events, that informs \ac{cdd} refinement and acquisition strategy decisions before Milestone~B~\autocite{edo-3-5-6-test-eval-part-ii-2025}.
+	\item[\textbf{\ac{oa}.}] Focused operational events (sometimes embedded in Fleet Battle Problems or Fleet Exercises) that characterize mission effectiveness, training load, and logistics demands prior to \ac{lrip} or dedicated \ac{iote}~\autocite{edo-3-5-6-test-eval-part-ii-2025}.
+	\item[\textbf{\ac{iotre}.}] Navy programs often combine \ac{iote} and Readiness Evaluation to prove both mission performance and Fleet introduction readiness; Title~10 requires that the \ac{iote} portion be adequate, realistic, and reported to Congress before \ac{frp}~\autocite{USC-10-2399}.
+	\item[\textbf{\ac{fote}.}] Conducted after \ac{frp} or major configuration changes to verify corrective actions, \ac{cpd} thresholds, cybersecurity resilience, and software drops prior to wide deployment~\autocite{DoDI5000-89}.
+\end{description}
+
+\subsection{Fundamental Test and Evaluation Terms}
+\begin{description}
+	\item[\textbf{\ac{coi}.}] The mission-outcome questions (``Can the ship defend itself against a raid?'') that structure \ac{ote} plans and reports~\autocite{edo-3-5-6-test-eval-part-ii-2025}.
+	\item[\textbf{\ac{moe} \& \ac{mos}.}] Measures of Effectiveness and Suitability quantify warfighting value (probability of raid annihilation) and fleet readiness attributes (reliability, maintainability, training burden) tied to \acp{coi}~\autocite{edo-3-5-6-test-eval-part-ii-2025}.
+	\item[\textbf{\ac{mop}.}] Measures of Performance (e.g., radar detection range) show lower-level technical behaviors that roll up to \acp{moe}/\ac{mos}~\autocite{edo-3-5-5-test-eval-part-i-2025}.
+	\item[\textbf{Deficiency categories.}] Category~I deficiencies are mission-critical failures that could cause death, severe injury, or major mission loss; Category~II items are significant but less critical issues requiring tracking and correction~\autocite{edo-3-5-6-test-eval-part-ii-2025}.
+	\item[\textbf{Combined testing.}] Planned events that collect developmental and operational data simultaneously to save schedule and align datasets for evaluation teams~\autocite{DoDI5000-02}.
+\end{description}
+
+\subsection{Critical Technical Parameters and Technical Performance Measures}
+\acp{ctp} are the small subset of design attributes that must be controlled to assure a K\ac{kpp} or \ac{ksa} remains achievable; they are derived from the \ac{icd}/\ac{cdd} and baselined inside the \ac{apb}~\autocite{DoDI5000-85}. Each \ac{ctp} maps to one or more \acp{tpm} that engineers track continuously using lab data, digital models, or \ac{dte} results; \acp{tpm} trends highlight when technical debt threatens \ac{temp} and \ac{sep} assumptions so leadership can adjust scope, schedule, or funding. Programs are expected to show a clean trace from \ac{coi}~$\rightarrow$ KPP/KSA~$\rightarrow$ \ac{ctp}~$\rightarrow$ \ac{tpm}~$\rightarrow$ planned test points in the \ac{temp}, ensuring every test objective underwrites an operational outcome and every requirement has an observable verification method~\autocite{DoDI5000-89,edo-3-5-5-test-eval-part-i-2025}.
+
+\subsection{Test and Evaluation Master Plan}
+The \ac{temp} captures the integrated \ac{te} strategy, schedule, resources, and data management approach across the lifecycle; it harmonizes the \ac{sep}, \ac{lcsp}, and \ac{apb} so that every milestone package shows how risk will be retired~\autocite{DoDAcqGuidebook}. Part~I summarizes program context and key performance requirements, Part~II defines the integrated test program (\ac{dt}, \ac{optest}, certification, modeling, and analysis), Part~III outlines resource needs (ranges, threat surrogates, workforce, instrumentation), and annexes address data rights, stats, and cyber accreditation~\autocite{DoDI5000-89}. ACAT~ID \acp{temp} require \ac{dote} approval; other \acp{temp} are approved by the Component Acquisition Executive. Updates are mandatory when requirements change, critical deficiencies emerge, or significant schedule/funding revisions alter test sequencing~\autocite{DoDI5000-85}.
+
+\subsection{Modeling and Simulation}
+Modeling and simulation provide the only practical way to explore the mission design space before hardware exists, rehearse high-risk scenarios (e.g., hypersonic raid defense), and extend sparse live-test data across the operational envelope~\autocite{edo-3-5-5-test-eval-part-i-2025}. Programs must document model purpose, pedigree, uncertainty, and \ac{vva} status in the \ac{temp}; accredited models can bound live-test needs, size instrumentation, and support decision-quality evaluations when safety, cost, or treaties limit destructive testing~\autocite{DoDI5000-89}. Mission engineering digital threads (system-of-systems simulations, campaign models) allow combined \ac{dt}/\ac{optest} teams to choreograph events, align data management plans, and feed statistical confidence calculations before and after live events.
+
+\subsection{Navy Overlays and Integration}
+OPNAVINST~3960-series policy (captured in the coursebook) requires Navy programs to plan \ac{techeval} (led by the engineering agent) before \ac{opeval}, to obtain \ac{opnav} N94/N9 concurrence on test objectives that bear on Fleet introduction risk, and to route \ac{otrr} packages through \ac{comoptevfor} for certification that logistics, training, and safety enablers are in place~\autocite{edo-3-5-6-test-eval-part-ii-2025}. First-of-class ships also execute Builder's and Acceptance Trials, INSURV events, and dedicated combat system Ship Qualification Trials that integrate with \ac{techeval}/\ac{opeval} data packages. Navy \ac{cotf} retains authority to recommend restricted Fleet release if Cat~I deficiencies remain; those actions feed the Key Roles appendix update for \ac{dasdte}, \ac{cdt}, and \ac{cotf} responsibilities.
+
+\subsection{Fiscal and PPBE Touchpoints}
+\ac{rdte} appropriations fund most \ac{dte} events, test articles, range time, and contractor support, while procurement colors such as \ac{scn} or Weapons Procurement, Navy buy dedicated \ac{optest} assets when production-representative hardware is required for statutory adequacy~\autocite{DoDFMR-Vol3,edo-3-5-5-test-eval-part-i-2025}. Operations and Maintenance funds cover Fleet participation, temporary duty, and sustainment of government test ranges. Because \ac{optest} adequacy is a precondition for \ac{frp} and sustainment decisions, Program Objective Memorandum issue papers must protect test range modernization, threat-representative targets, and Modeling \& Simulation accreditation costs or risk a \ac{ppbe} disconnect when \ac{comoptevfor} identifies unfunded test objectives.
+
+\subsection{Assumptions and Uncertainties}
+\begin{itemize}
+	\item Coursebook Modules~3.5.5 and~3.5.6 (March~2025 editions) remain the latest \ac{don}-specific T\&E references.
+	\item \ac{comoptevfor} manual updates post-2024 were not available offline; Navy-specific terminology (e.g., \ac{opeval} taxonomy) is based on coursebook guidance.
+	\item Upcoming \ac{ndaa} changes to Title~10 T\&E statutes have not been incorporated pending official publication.
+\end{itemize}
 
 %====================
 % * End of file
