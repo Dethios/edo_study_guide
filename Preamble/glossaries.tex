@@ -52,16 +52,6 @@
   \pretocmd{\chapter*}{\glsresetall[acronym]}{}{}%
 \fi
 
-% --- PDF string safety (bookmarks, etc.) ------------------------------------
-% Ensure glossary-related commands render plain text in PDF strings.
-% \providecommand\pdfstringdefDisableCommands[1]{}
-% \pdfstringdefDisableCommands{%
-%   \def\gls#1{\glsentrytext{#1}}%
-%   \def\glspl#1{\glsentryplural{#1}}%
-%   \def\acrshort#1{\glsentryshort{#1}}%
-%   \def\acrlong#1{\glsentrylong{#1}}%
-%   \def\acrfull#1{\glsentrylong{#1}\space(\glsentryshort{#1})}%
-% }
 
 % =========================
 % Hyperlinked, no-space acronyms
