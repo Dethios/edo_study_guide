@@ -1,0 +1,56 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+%====================
+% * File: 18_test_eval.tex
+%====================
+\begin{document}
+\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+% === Test & Eval (EDO 3.5.5 and 3.6.6) ===
+\section{Test \& Evaluation}
+\minibib
+%====================
+% * Contents
+%====================
+
+% TODO: [ ] Read 3.5.5, 3.5.6 and assigned Codex actions
+% TODO: [ ] Codex section development
+% TODO: [ ] Review for syntax accuracy and correct information
+% * Codex markdown instructions
+% # 18_test_eval integration directions.
+% 1. Please ensure the following are addressed:
+%   - Ensure that all Topic Learning Objectives are addressed in the Study Guide
+%   - Define T&E. Difference between a test and an evauluation?
+%   - Relationship to verification and validation
+%   - What are the statuartory requirements? Which key roles did they make and what do they do?
+%   - Describe and define the DoD T&E Organization
+%   - Detailed description of Developmental T&Es. Define each one.
+%   - Detailed description of Live Fire T&E
+%   - Detailed description of Operational T&E
+%   - Define the T&E terms
+%   - Describe CTPs and how do they relate to TPMs, ICD, CDD, APB, etc.
+%   - Detailed description of the TEMP
+%   - Describe Modeling and Simulation. When and why is it used?
+% 2. Include placeholders for figures at appropriate spots: (1) Test and Evaluation graphic for MCA; (2) DoD T&E Org
+% 3. Update `acronyms.def` and `edo.bib` with new entries as needed. Verify no duplicate acronym labels
+% 4. Coursebook is the first source document, but relevant sources from the Coursebook, DAU, and other resources should also be used.
+% 5. Cross-verify that the information from this section flows logically with the rest of the study guide.
+% 6. Review entire study guide and update the Key Roles Appendix.
+% 7. Review entire study guide and verify proper usage of acronym calls inside body text (no calls within headings, sections, tables, etc.)
+% 8. Ensure consistency with remainder of the Study guide.
+
+% * Enter content here:
+
+%====================
+% * End of file
+%====================
+\ifSubfilesClassLoaded{
+\RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+\RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+\printnoidxglossary[
+		type=\acronymtype,
+		title=Acronyms,
+		style=long-booktabs
+	]}{}
+\end{document}

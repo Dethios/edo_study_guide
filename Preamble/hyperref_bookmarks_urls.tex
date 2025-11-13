@@ -16,7 +16,7 @@
 
 \usepackage{xr-hyper}
 \providecommand{\subfix}[1]{#1}
-\newcommand{\ImportAUX}[1]{%
+\NewDocumentCommand{\ImportAUX}{m}{%
   \IfFileExists{#1.aux}{\externaldocument*{#1}}{}%
 }
 

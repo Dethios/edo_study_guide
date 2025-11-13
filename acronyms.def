@@ -6,9 +6,15 @@
 
 \newacronym{ops-chain}{Ops Chain}{Operational Chain of Command}
 \newacronym{ccdr}{CCDR}{Combatant Commander}
+\newacronym{ccmd}{CCMD}{Combatant Command}
 \newacronym{cjcs}{CJCS}{Chairman of the Joint Chiefs of Staff}
 \newacronym{vcjcs}{VCJCS}{Vice-Chairman of the Joint Chiefs of Staff}
 \newacronym{jroc}{JROC}{Joint Requirements Oversight Council}
+\newacronym{jcb}{JCB}{Joint Capabilities Board}
+\newacronym{jrocm}{JROCM}{Joint Requirements Oversight Council Memorandum}
+\newacronym{jcids}{JCIDS}{Joint Capabilities Integration and Development System}
+\newacronym{jsd}{JSD}{Joint Staffing Designator}
+\newacronym{fcb}{FCB}{Functional Capabilities Board}
 \newacronym{osd}{OSD}{Office of the Secretary of Defense}
 \newacronym{secdef}{SECDEF}{Secretary of Defense}
 \newacronym{dae}{DAE}{Defense Acquisition Executive}
@@ -84,8 +90,11 @@
 \newacronym{twd}{TWD}{Technical Work Document}
 \newacronym{casrep}{CASREP}{Casualty Report}
 \newacronym{icd}{ICD}{Initial Capabilities Document}
+\newacronym{cba}{CBA}{Capability-Based Assessment}
 \newacronym{kpp}{KPP}{Key Performance Parameter}
 \newacronym{ksa}{KSA}{Key System Attribute}
+\newacronym{apa}{APA}{Additional Performance Attribute}
+\newacronym{dotmlpfp}{DOTMLPF-P}{Doctrine, Organization, Training, Materiel, Leadership and Education, Personnel, Facilities, and Policy}
 \newacronym{juon}{JUON}{Joint Urgent Operational Need}
 \newacronym{jeon}{JEON}{Joint Emergent Operational Need}
 \newacronym{uon}{UON}{Urgent Operational Need}
@@ -129,6 +138,10 @@
 	shortplural={SPDs},
 	longplural={Ship Project Directors}
 ]{spd}{SPD}{Ship Project Director}
+\newacronym[
+	shortplural={PAEs},
+	longplural={Portfolio Acquisition Executives}
+]{pae}{PAE}{Portfolio Acquisition Executive}
 \newacronym[
 	shortplural={PMOs},
 	longplural={Program Management Offices}
@@ -182,6 +195,22 @@
 \newacronym{cpa}{CPA}{Chairman's Program Assessment}
 \newacronym{dcape}{DCAPE}{Director, CAPE}
 \newacronym{drfprd}{DRFPRD}{Development Request for Proposal Release Decision}
+
+% --- Requirements Systems & Data ---
+
+\newacronym{km-ds}{KM/DS}{Knowledge Management and Decision Support}
+\newacronym{conops}{CONOPS}{Concept of Operations}
+\newacronym{dodaf}{DoDAF}{Department of Defense Architecture Framework}
+\newacronym{is}{IS}{Information System}
+\newacronym{avview}{AV}{All Viewpoint}
+\newacronym{ovview}{OV}{Operational Viewpoint}
+\newacronym{svview}{SV}{Systems Viewpoint}
+\newacronym{cvview}{CV}{Capability Viewpoint}
+\newacronym{nr}{NR}{Net-Ready}
+\newacronym[
+	shortplural={APIs},
+	longplural={Application Programming Interfaces}
+]{api}{API}{Application Programming Interface}
 \newacronym{emd}{EMD}{Engineering and Manufacturing Development}
 \newacronym{ibr}{IBR}{Integrated Baseline Review}
 \newacronym{ipt}{IPT}{Integrated Product Team}
@@ -258,6 +287,10 @@
 \newacronym{ims}{IMS}{Integrated Master Schedule}
 \newacronym{pmb}{PMB}{Performance Measurement Baseline}
 \newacronym{csb}{CSB}{Configuration Steering Board}
+\newacronym[
+	shortplural={CTCs},
+	longplural={Capability Trade Councils}
+]{ctctrade}{CTC}{Capability Trade Council}
 \newacronym{bcws}{BCWS}{Budgeted Cost of Work Scheduled}
 \newacronym{bcwp}{BCWP}{Budgeted Cost of Work Performed}
 \newacronym{acwp}{ACWP}{Actual Cost of Work Performed}
@@ -457,6 +490,7 @@
 % --- Fiscal Law & Compliance ---
 
 \newacronym{ada}{ADA}{Anti-Deficiency Act}
+\newacronym{asw}{ASW}{Anti-Submarine Warfare}
 
 % --- People & Communities ---
 
@@ -467,6 +501,7 @@
 \newacronym{cdd}{CDD}{Capabilities Development Document}
 \newacronym{cpd}{CPD}{Capability Production Document}
 \newacronym{cddv}{CDD-V}{Capabilities Development Document Validation}
+\newacronym{dcr}{DCR}{DOTMLPF-P Change Recommendation}
 \newacronym{niwc}{NIWC}{Naval Information Warfare Center}
 \newacronym{nrl}{NRL}{Naval Research Laboratory}
 \newacronym{nsc}{NSC}{National Security Council}
@@ -496,6 +531,10 @@
 	shortplural={IOT\&Es},
 	longplural={Initial Operational Test and Evaluations}
 ]{iote}{IOT\&E}{Initial Operational Test and Evaluation}
+\newacronym[
+	shortplural={FOT\&Es},
+	longplural={Follow-on Operational Tests and Evaluations}
+]{fote}{FOT\&E}{Follow-on Operational Test and Evaluation}
 \newacronym{pd.phase}{P\&D}{Production and Deployment Phase}
 \newacronym{ioc}{IOC}{Initial Operational Capability}
 \newacronym{foc}{FOC}{Full Operational Capability}

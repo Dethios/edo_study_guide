@@ -40,8 +40,7 @@
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{LCC_Composition.png}
-	\caption{Composition of Life Cycle Costs. \srcCite{edo-3-1-6-cost-estimating-2024}.}
-	\label{fig:lcc_composition}
+	\caption[Life Cycle Costs]{Composition of Life Cycle Costs. \srcCite{edo-3-1-6-cost-estimating-2024}.}\label{fig:lcc_composition}
 \end{figure}
 
 \subsection{Why the LCCE Matters}
@@ -102,8 +101,8 @@ Escalate base-year costs to then-year using approved \ac{dod} inflation indices;
 % End of file
 %====================
 \ifSubfilesClassLoaded{
-  \renewcommand*{\entryname}{\textbf{\color{Modern} Acronym}}
-  \renewcommand*{\descriptionname}{\textbf{\color{Modern} Definition}}
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
   \printnoidxglossary[
     type=\acronymtype,
     title=Acronyms,

@@ -1,5 +1,5 @@
 % =============================================================================
-% GLOSSARIES AND ACRONYMS (scrbook-friendly)
+% * GLOSSARIES AND ACRONYMS (scrbook-friendly)
 %
 % - Uses glossaries-extra (no indexer: makenoidxglossaries)
 % - Abbrev first use: long (SHORT), thereafter: SHORT
@@ -12,11 +12,48 @@
   nonumberlist,
   nogroupskip,
   nopostdot,
-  % shortcuts=ac,
+  shortcuts=ac,
   toc             % add entries to the Table of Contents (KOMA-friendly)
 ]{glossaries-extra}
-\usepackage{xspace}
+
 % --- Abbreviation style: first use "Long (SHORT)", then "SHORT" -------------
+% \makeatletter
+
+% % Stop \glslink from leaving a node that preserves trailing whitespace
+% \pretocmd{\@gls@link}{\@bsphack}{}{}
+% \apptocmd{\@gls@link}{\@esphack\ignorespaces}{}{}
+
+% % Don’t inject the \mbox{} that \glsadd uses to force horizontal mode
+% \renewcommand*{\@gls@adjustmode}{}
+
+% \NewDocumentCommand{\silentglsadd}{m}{%
+%   \IfBooleanTF{\glsentryexists{#1}}{}{%
+%     \PackageWarning{edo-glossary}{Undefined glossary entry `#1' ignored}%
+%     \ReturnFromDocumentCommand
+%   }%
+%   \@bsphack
+%   \glsadd{#1}%
+%   \@esphack
+%   \futurelet\@let@token\silentglsadd@i
+% }
+% \NewDocumentCommand{\silentglsadd@i}{}{%
+%   \IfBooleanTF{\token_if_eq_char:NNT \@let@token \space}{%
+%     \silentglsadd@gobble
+%   }{%
+%     \ignorespaces
+%   }%
+% }
+% \NewDocumentCommand{\silentglsadd@gobble}{m}{}
+% \makeatother
+
+% \glsdefpostlink{acronym}{%
+%   \ifglsused{\glslabel}{}{%
+%     \silentglsadd{\glslabel}%
+%     \glslink{\glslabel}{(\glsentryshort{\glslabel})}%
+%     \glsunset{\glslabel}%
+%   }%
+% }
+
 \setabbreviationstyle[acronym]{long-short}
 % --- Build mode: no external indexing (fast, good for continuous writing) ---
 % Kill auto "smart space" in old glossaries/glossaries-extra
@@ -31,16 +68,14 @@
 }%
 % Ensure the final space emitter does nothing.
 \@ifundefined{gls@insertspace}{}{%
-  \renewcommand*\gls@insertspace{}%
+  \renewcommand*{\gls@insertspace}{}%
 }%
 \makeatother
-% \let\ac\gls
-% \let\acp\glspl
-% \let\Ac\Gls
-% \let\Acp\Glspl
+
 % --- Load your acronym definitions ------------------------------------------
 \loadglsentries{acronyms.def}
 \makenoidxglossaries
+<<<<<<< HEAD
 % --- OPTIONAL: reset first-use at each chapter (OFF by default) -------------
 % Turn on if you want each chapter to re-introduce acronyms on first use.
 \newif\ifResetAcronymsPerChapter
@@ -52,6 +87,8 @@
   \pretocmd{\chapter*}{\glsresetall[acronym]}{}{}%
 \fi
 
+=======
+>>>>>>> 131ad59105028ab6f1a15aa65d304fb1ecf35655
 
 % =========================
 % Hyperlinked, no-space acronyms
@@ -85,7 +122,7 @@
     \ifglsused{#2}{%
       \edoAcrLink{#2}{#3{#2}}%
     }{%
-      \edoAcrLink{#2}{#4{#2}~(#3{#2})}\glsunset{#2}\leavevmode\silentglsadd{#2}%
+      \edoAcrLink{#2}{#4{#2}\silentglsadd{#2}(#3{#2})}\glsunset{#2}%
     }%
   }%
 }%

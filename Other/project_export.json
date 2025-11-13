@@ -19,6 +19,7 @@
       "Use `v.s.\\` instead of `vs` in prose.",
       "Citations should follow IEEE rules (e.g., citations should be within punctuations and used as nouns).",
       "Inline prose must use `\\autocite`; reserve `\\srcCite`/`\\tabCite` for figures or tables and keep citations embedded in sentences.",
+      "All new or updated LaTeX macros must use xparse forms (`\\NewDocumentCommand`, `\\RenewDocumentCommand`, etc.) instead of legacy `\\newcommand`/`\\renewcommand`.",
       "Always use the `scratch` folder for test files for troubleshooting and debugging."
     ],
     "known_limits": {

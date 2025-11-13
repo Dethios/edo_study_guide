@@ -97,8 +97,8 @@
 % End of file
 %====================
 \ifSubfilesClassLoaded{
-  \renewcommand*{\entryname}{\textbf{\color{Modern} Acronym}}
-  \renewcommand*{\descriptionname}{\textbf{\color{Modern} Definition}}
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
   \printnoidxglossary[
     type=\acronymtype,
     title=Acronyms,

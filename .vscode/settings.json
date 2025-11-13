@@ -32,7 +32,6 @@
   "workbench.view.showQuietly": {
     "workbench.panel.output": true
   },
-  "workbench.settings.useSplitJSON": true,
   "workbench.commandPalette.experimental.suggestCommands": true,
   "workbench.enableExperiments": true,
   "workbench.experimental.cloudChanges.autoStore": "onShutdown",
@@ -288,7 +287,7 @@
     "*.copilotmd": "vscode.markdown.preview.editor",
     "*.pdf": "latex-workshop-pdf-hook"
   },
-  "latex-workshop.latex.autoBuild.run": "onFileChange",
+  "latex-workshop.latex.autoBuild.run": "never",
   "latex-workshop.latex.autoBuild.interval": 5000,
   "latex-workshop.latex.build.forceRecipeUsage": true,
   "latex-workshop.latex.build.rootfileInStatus": true,
@@ -384,8 +383,6 @@
   "latex-workshop.formatting.latexindent.args": ["-w", "-s", "-m", "--overwriteIfDifferent"],
 
   // Convenience helpers around LaTeX authoring.
-  "latex-utilities.formattedPaste.useAsDefault": true,
-  "latex-utilities.formattedPaste.maxLineLength": 100,
   "latex-utilities.liveReformat.enabled": true,
   "latex-utilities.liveReformat.languages": ["tex", "doctex", "latex", "rsweave", "jlweave"],
   "latexPreview.latexFontDir": "C:\\Users\\vic-l\\AppData\\Local\\Programs\\MiKTeX\\fonts",
@@ -1069,5 +1066,6 @@
     "xcolor",
     "xelatex",
     "xindy"
-  ]
+  ],
+  "cSpell.words": ["JCIDS", "JROC"]
 }

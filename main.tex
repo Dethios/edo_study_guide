@@ -31,8 +31,8 @@
 \author{LCDR Victor Lee, USN, PMP}
 \DTMsavedate{Coursebook_Version}{2025-09-19}
 
-\newcommand{\StudyTitleLogo}{Images/NAVWAR LOGO.JPG}
-\newcommand{\StudyTitleLogoWidth}{.7\linewidth}
+\NewDocumentCommand{\StudyTitleLogo}{}{Images/NAVWAR LOGO.JPG}
+\NewDocumentCommand{\StudyTitleLogoWidth}{}{.7\linewidth}
 
 \NewDocumentCommand{\StudySubfile}{m}{%
   \subfile{Content/#1}%
@@ -75,7 +75,7 @@
 \clearpage
 % ----- FRONTMATTER -----
 % helper to pick the right ToC level
-\newcommand{\mtTOClevel}{\@ifundefined{chapter}{section}{chapter}}
+\NewDocumentCommand{\mtTOClevel}{}{\@ifundefined{chapter}{section}{chapter}}
 
 % --- FRONTMATTER ---
 \frontmatter%
@@ -94,7 +94,6 @@
 \mainmatter%
 \SetMainMatterStyle%
 \chapter{Organization}
-% \ChapterWithRefsAtStart{0_Objectives}
 \ChapterWithRefsAtStart{1_Chain_of_command}
 \ChapterWithRefsAtStart{2_TA_EA}
 \ChapterWithRefsAtStart{3_NAVSEA}
@@ -118,6 +117,9 @@
 \ChapterWithRefsAtStart{15_policy}
 \ChapterWithRefsAtStart{16_Milestones}
 
+\chapter{Requirements}
+\ChapterWithRefsAtStart{17_JCIDS}
+
 \appendix%
 % Optional TOC divider line "Appendices"
 \addpart*{Appendices}
@@ -136,11 +138,16 @@
 \printbibliography[heading=bibnumbered, title={References}]
 % --- Acronyms / Glossary ---
 \clearpage%
-\renewcommand*{\entryname}{\textbf{\color{Modern} Acronym}}
-\renewcommand*{\descriptionname}{\textbf{\color{Modern} Definition}}
+
+% Acronym list headings
+\RenewDocumentCommand{\entryname}{}{\sffamily\textbf{\color{Modern} Acronym}}
+\RenewDocumentCommand{\descriptionname}{}{\sffamily\textbf{\color{Modern} Definition}}
 
 % In the glossary list, make each acronym's "name" a hypertarget:
-\renewcommand*{\glsnamefont}[1]{\glstarget{glo:\glslabel}{#1}}
+\RenewDocumentCommand{\glsnamefont}{m}{%
+  \glsentryitem{\glslabel}%
+  \glstarget{\glslabel}{#1}%
+}
 \printnoidxglossary[
   type=\acronymtype,
   title=List of Acronyms,
