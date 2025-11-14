@@ -85,15 +85,79 @@ The \ac{mca} is the main acquisition pathway that \acp{edo} will operate in. As 
   \label{fig:mca}
 \end{figure}
 
-\begin{description}
-	\item[\textbf{Major Capability Acquisition.}] Default for weapon systems; milestone-driven with statutory reports (\ac{sar}, \ac{daes}) and Live-Fire/\ac{temp} requirements~\autocite{DoDI5000-85}.
-	\item[\textbf{Middle Tier of Acquisition.}] Rapid prototyping (\leq 5~years to field) and rapid fielding pathways; report to USD(R\&E)/USD(A\&S) and Congress semi-annually~\autocite{DoDI5000-02}.
-	\item[\textbf{Software Acquisition.}] Iterative \ac{devsecops} delivery, tailored documentation (Software Acquisition Strategy) and continuous Authority to Operate emphasis~\autocite{DoDI5000-02}.
-	\item[\textbf{Business Systems.}] Focuses on business process re-engineering, investment review board certification, and Clinger-Cohen Act compliance~\autocite{DoDI5000-02}.
-	\item[\textbf{Defense Urgent Capability.}] Immediate warfighter needs; compressed oversight but still documents affordability and sustainment plans~\autocite{DoDI5000-02}.
-	\item[\textbf{Services Acquisition.}] Managed via DoDI~5000.74 (referenced in DoDI~5000.02) with governance through functional domain leads; consider when an availability or modernization effort is better treated as a service~\autocite{DoDI5000-02,edo-3-3-1-acq-policy-players-2025}.
+\subsubsection{Pathway Playbooks}
+\begin{description}[style=nextline,labelsep=0.5em,font=\bfseries]
+  \item[Major Capability Acquisition.]
+    \textit{Entry.} Default when a validated \ac{icd}, PPBE affordability certification, and Title~10 \ac{mdap} thresholds are triggered; the \ac{dae} (USD(A\&S)) or delegated \ac{mdauthority} authorizes the Materiel Development Decision.\autocite{DoDI5000-02,DoDI5000-85,USC-10-4201}
+    \textit{Major events.} Materiel Solution Analysis, \ac{tmrr}, \ac{emd}, Production \& Deployment, and Operations \& Support framed by MS~A/B/C, Production Readiness Reviews, Configuration Steering Boards, and Full-Rate Production Decisions.\autocite{DoDI5000-85}
+    \textit{Outputs.} Acquisition Strategy, \ac{sep}, \ac{lcsp}, \ac{temp}, \ac{sar}/\ac{daes}, and when applicable Live Fire and survivability certifications.\autocite{DoDI5000-85,DoDI5000-89,USC-10-2366}
+    \textit{What happens.} The Program Manager leads integrated product teams, controls the Acquisition Program Baseline, and coordinates statutory certifications before each milestone package is staffed through the Navy Program Executive Council and the \ac{dab}.\autocite{DoDI5000-85}
+    \textit{Pros.} Maximum statutory confidence, predictable decision forums, and the ability to tailor documentation while retaining congressional transparency.\autocite{DoDI5000-85}
+    \textit{Cons.} Heavier documentation, longer lead times, and concurrency risks if requirements or funding discipline erodes between milestones.\autocite{DoDI5000-85}
+  \item[Middle Tier of Acquisition.]
+    \textit{Entry.} Warfighter sponsor certifies the capability can be prototyped or fielded within 5~years, and the \ac{mdauthority} approves a rapid prototyping or rapid fielding strategy in lieu of JCIDS milestone paperwork.\autocite{DoDI5000-80}
+    \textit{Major events.} Competitive prototyping sprints, operational demonstrations, and limited fielding increments documented in the MTA Strategy and semiannual execution reports to USD(R\&E)/USD(A\&S).\autocite{DoDI5000-80}
+    \textit{Outputs.} MTA Acquisition Strategy, Test Strategy (tailored \ac{temp}), transition plan to either \ac{mca} or sustainment funding, and congressional notifications when cost or schedule deviates.\autocite{DoDI5000-80}
+    \textit{What happens.} Programs lean on OTAs, digital engineering, and combined DT/OT events; logistics and cybersecurity artifacts are right-sized but must be ready before transition to production.\autocite{DoDI5000-80}
+    \textit{Pros.} Compresses documentation, accelerates learning, and protects prototyping budgets from the full milestone stack.
+    \textit{Cons.} Sustainment planning and PPBE wedges still have to be established before transition; poor exit planning strands prototypes without a production home.\autocite{DoDI5000-80}
+  \item[Software Acquisition Pathway.]
+    \textit{Entry.} Capability owner commits to iterative \ac{devsecops} delivery, establishes a software factory or enterprise pipeline, and designates a product manager vice a traditional milestone PM.\autocite{DoDI5000-87}
+    \textit{Major events.} Plan, Execute, and Deliver phases with quarterly (or faster) capability drops, authority-to-operate reciprocity reviews, and portfolio synchronization reviews in lieu of MS~A/B/C.\autocite{DoDI5000-87}
+    \textit{Outputs.} Software Acquisition Strategy, Product Roadmap, backlog burn-down metrics, continuous test/accreditation evidence, and sustainment metrics for cloud hosting costs.\autocite{DoDI5000-87}
+    \textit{What happens.} The government product owner jointly manages the pipeline with contractors, employs automated testing, and updates requirements via configuration-controlled roadmaps instead of static CDDs.\autocite{DoDI5000-87}
+    \textit{Pros.} Continuous user feedback, cyber resiliency baked into each sprint, and the ability to budget in capability releases instead of monolithic blocks.\autocite{DoDI5000-87}
+    \textit{Cons.} Requires mature pipelines, disciplined product management, and close PPBE coordination to realign color-of-money profiles from hardware-centric norms.\autocite{DoDI5000-87}
+  \item[Urgent Capability Acquisition.]
+    \textit{Entry.} A validated \ac{juon}/\ac{jeon}/\ac{uon} identifies a combatant-commander risk that cannot wait two years; \ac{asnrdanda} or USD(A\&S) approves entry with an affordability determination and sustainment exit criteria.\autocite{CJCSI3470-01H,DoDI5000-81}
+    \textit{Major events.} Rapid assessment within days, solution selection inside 30~days, fielding no later than 24~months, and close-out/transition reviews that assign residual sustainment ownership.\autocite{DoDI5000-81}
+    \textit{Outputs.} Urgent Capability Acquisition Strategy, tailored test/safety releases, congressional notification packages, and a signed disposition plan for residual hardware.\autocite{DoDI5000-81}
+    \textit{What happens.} The Rapid Acquisition Cell coordinates funding reprogramming, waivers, and senior integration group decisions while the program office executes minimal-but-sufficient contracting and test.\autocite{DoDI5000-81}
+    \textit{Pros.} Weeks-to-months fielding, ability to leverage existing production lines or COTS solutions.
+    \textit{Cons.} Limited longevity (normally five years or less), intense oversight on waivers, and explicit requirement to transition to another pathway or divest.\autocite{DoDI5000-81}
+  \item[Defense Business Systems.]
+    \textit{Entry.} A portfolio exceeds the statutory DBS cost thresholds or is designated critical; requires Business Process Reengineering certification, a Functional Sponsor, and alignment to the Business Enterprise Architecture before funds may be released.\autocite{DoDI5000-75}
+    \textit{Major events.} Capability Needs Statement approval, Functional Requirements Board adjudication, incremental capability releases, and annual Investment Review Board certification to Congress.\autocite{DoDI5000-75}
+    \textit{Outputs.} Business Case, Functional Strategies, Capability Support Plan, data standards, and interoperability determinations to satisfy Net-Ready KPP expectations.\autocite{DoDI5000-75}
+    \textit{What happens.} Functional leads co-chair the IPT with the Program Manager, enforcing process improvements before automating legacy workflows.\autocite{DoDI5000-75}
+    \textit{Pros.} Forces portfolio-level prioritization, ties funding to measurable process change.
+    \textit{Cons.} Extra governance (IRB, Defense Business Council) and Clinger-Cohen certifications can slow schedules if stakeholders are not aligned early.\autocite{DoDI5000-75}
+  \item[Defense Acquisition of Services.]
+    \textit{Entry.} Non-IT services exceeding simplified acquisition thresholds, or any effort designated special interest, must use DoDI~5000.74 governance and appoint a Services Category Manager before solicitation.\autocite{DoDI5000-74}
+    \textit{Major events.} Service Requirement Review Board, Acquisition Strategy Panel, independent cost estimate for Category~I/II services, and annual review of contractor performance metrics.\autocite{DoDI5000-74}
+    \textit{Outputs.} Services Acquisition Plan, Quality Assurance Surveillance Plan, Performance Work Statement, and documented affordability/cost realism analyses.\autocite{DoDI5000-74}
+    \textit{What happens.} Multifunctional teams (requirements owner, contracting, legal, comptroller) collaborate early, determine best-fit contract type, and tailor competitive ranges for recurring availabilities or modernization services.\autocite{DoDI5000-74}
+    \textit{Pros.} Aligns recurring services with category management, encourages outcome-based metrics.
+    \textit{Cons.} Additional reviews for Category~I/II services can add lead time if the requirement was scoped as a product effort originally.\autocite{DoDI5000-74}
 \end{description}
-\Info{Pathways can be combined (e.g., prototype under Middle-Tier then transition to \ac{mca}). Boards ask why your chosen path best fits cost/schedule urgency.}
+\Info{Pathways can be combined (e.g., prototype under Middle-Tier, transition to \ac{mca}, then adopt the Software Pathway for continuous upgrades). Boards expect you to articulate which statutory obligations remain even when tailoring.\autocite{DoDI5000-02}}
+
+\subsection{Urgent Operational Needs Governance}
+\begin{description}[style=nextline,labelsep=0.5em,font=\bfseries]
+  \item[\ac{juon}.] Combatant commanders submit \acp{juon} to the Joint Rapid Acquisition Cell when an unforeseen operational gap threatens lives or mission success within the current fight; the Joint Staff validates within days, assigns a lead Service, and requires fielding in $\leq$24~months with a plan to transition or terminate after the contingency.\autocite{CJCSI3470-01H}
+  \item[\ac{jeon}.] A \ac{jeon} covers emerging threats with a slightly longer horizon (2--5~years) but still demands joint prioritization, Functional Capabilities Board staffing, and explicit affordability bounds before the Joint Requirements Oversight Council renders a decision.\autocite{CJCSI5123-01H}
+  \item[\ac{uon}.] Fleet, Type, and numbered Force Commanders elevate \acp{uon} per OPNAVINST~5000.42E; requests must include the operational vignette, DOTMLPF-P analysis, recommended sponsor, and incremental funding estimate before Gate~1 of the two-pass/seven-gate process.\autocite{OPNAVINST5000-42E}
+\end{description}
+\begin{description}[style=nextline,labelsep=0.5em,font=\bfseries]
+  \item[\textbf{Request content.}] Every urgent package documents the risk of not acting, desired operational effect, timeframe to theater, sustainment/retrograde plans, cybersecurity implications, and classification handling; incomplete data delays Joint Staff or OPNAV acceptance.\autocite{CJCSI3470-01H,OPNAVINST5000-42E}
+  \item[\textbf{Acquisition handoff.}] Validated packages flow to the \ac{uon} Management Board and then to \ac{asnrdanda} for alignment with the \ac{ucaacq} pathway, rapid contracting, and source selection; the \ac{mdauthority} records any tailored documentation and must still close on lifecycle ownership before the temporary solution sunsets.\autocite{DoDI5000-81}
+\end{description}
+
+\subsection{Acquisition Categories and Delegated Decision Authority}
+USD(A\&S) serves as the \ac{dae}; SECNAV designates \ac{asnrdanda} as both the Navy \ac{sae} and \ac{cae}, while SECNAVINST~5000.2G and the Warfighting Acquisition Strategy empower Portfolio/Program Acquisition Executives (\acp{pae}) to manage portfolios and request tailored delegation.\autocite{DoDD5000-01,SECNAV5000-2G,secwar-acq-transformation-2025}
+\begin{description}[style=nextline,labelsep=0.5em,font=\bfseries]
+  \item[ACAT~I (MDAP).] Programs that meet the \ac{mdap} thresholds ($\geq\$525\text{M}$ RDT\&E or $\geq\$3.6\text{B}$ procurement in FY~2020 constant dollars) default to \ac{dae} oversight; ACAT~ID programs (e.g., \textit{Columbia}-class SSBN) keep USD(A\&S) as \ac{mdauthority}, whereas ACAT~IC efforts (e.g., DDG(X) combat systems refresh) are normally delegated to \ac{asnrdanda} with reporting to Congress via \ac{sar}/\ac{daes}.\autocite{USC-10-4201,DoDI5000-85,edo-3-3-1-acq-policy-players-2025}
+  \item[ACAT~IA.] Major Automated Information Systems exceeding \$360\,M life-cycle cost or designated by USD(C)/\ac{cae}; the Navy \ac{sae} is the default \ac{mdauthority} and may assign PEO Digital or the relevant \ac{pae} to execute under the Software or Business Systems pathways (examples: Navy ERP, Maritime Maintenance IT portfolio).\autocite{DoDI5000-02,DoDI5000-75}
+  \item[ACAT~II.] Programs below MDAP thresholds but above \$200\,M RDT\&E or \$920\,M procurement (FY~2020 constant dollars) are typically delegated from \ac{asnrdanda} to the cognizant \ac{pae}/\ac{peo}; examples include shipboard radars, launch-and-recovery systems, or complex weapon upgrades where the \ac{peo} retains the \ac{mdauthority}.\autocite{DoDI5000-85,edo-3-3-1-acq-policy-players-2025}
+  \item[ACAT~III.] Efforts below ACAT~II thresholds (but still acquisition programs) normally have the \ac{pae}, SYSCOM commander, or PM acting as \ac{mdauthority}; documentation is tailored, yet APBs, \ac{temp}s, and configuration control still apply.\autocite{DoDI5000-85,SECNAV5000-2G}
+  \item[ACAT~IV (DON unique).] SECNAVINST~5000.2G divides ACAT~IV into IVT (test) and IVM (monitor) for sustainment, modernization, and In-Service Engineering efforts; NAVSEA/NAVAIR/NAVWAR commanders often serve as \ac{mdauthority}, delegating narrowly scoped efforts to PMs while ensuring technical authority concurrence.\autocite{SECNAV5000-2G}
+\end{description}
+\textbf{Delegation chain.} The \ac{dae} retains ACAT~ID decisions unless a signed memo delegates to \ac{asnrdanda}; the Navy \ac{sae} typically keeps ACAT~IC/IA programs and can further delegate ACAT~II/III/IV to \acp{pae}. SECNAVINST~5000.2G requires each delegation letter to specify statutory certifications retained by \ac{asnrdanda}, while the Warfighting Acquisition Strategy directs \acp{pae} to chair Capability Trade Councils and reassign funds across their portfolios when trades stay within cost/schedule thresholds.\autocite{SECNAV5000-2G,secwar-acq-transformation-2025}
+
+\subsection{Project Overmatch Status}
+Project Overmatch is the Navy's operational architecture initiative to link platforms, weapons, sensors, and data fabrics so that Fleet Commanders can execute \ac{cjadc2} and Joint Fires at decision speed.\autocite{DVIDS-Overmatch-OpenDAGIR-2025,DVIDS-Overmatch-FVEY-2025} VADM Seiko Okano serves as the direct reporting program manager (DRPM) for Project Overmatch and Commander, NAVWAR; she continues to sponsor Five Eyes data-sharing arrangements, Maven Smart Systems overlays, and Open DAGIR integrations that move capability from concept to fielded software in weeks.\autocite{DVIDS-Okano-2024,DVIDS-Overmatch-OpenDAGIR-2025}
+
+The DRPM title matters: a DRPM reports directly to \ac{asnrdanda}, can tailor milestone documentation, and retains signature authority for integration decisions that cut across multiple \acp{peo}. As PMILDEP, VADM Okano now chairs Program Decision Meetings when delegated, synchronizes \acp{pae} across portfolios, and uses tools such as Open DAGIR and Maven to inform both requirements trades and PPBE issue papers.\autocite{SECNAV5000-2G,DVIDS-Overmatch-OpenDAGIR-2025} Her priorities for FY26--27 include: (1) expanding the Joint Fires Network interface validated during the 2025 FVEY Project Arrangement; (2) institutionalizing Open DAGIR so commercial AI/ML tools can be onboarded at “commercial speed”; and (3) ensuring Overmatch digital threads remain visible in milestone packages so that new ship, submarine, and aircraft programs inherit the data standards by default.\autocite{DVIDS-Overmatch-FVEY-2025,DVIDS-Overmatch-OpenDAGIR-2025}
 
 \subsection{Navy Overlays and Touchpoints}
 \begin{description}

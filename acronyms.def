@@ -13,6 +13,7 @@
 \newacronym{jcb}{JCB}{Joint Capabilities Board}
 \newacronym{jrocm}{JROCM}{Joint Requirements Oversight Council Memorandum}
 \newacronym{jcids}{JCIDS}{Joint Capabilities Integration and Development System}
+\newacronym{cjadc2}{CJADC2}{Combined Joint All-Domain Command and Control}
 \newacronym{jsd}{JSD}{Joint Staffing Designator}
 \newacronym{fcb}{FCB}{Functional Capabilities Board}
 \newacronym{osd}{OSD}{Office of the Secretary of Defense}
@@ -26,7 +27,9 @@
 \newacronym{dasnapb}{DASN (APB)}{Deputy Assistant Secretary of the Navy (Acquisition Policy and Budget)}
 \newacronym{cae}{CAE}{Component Acquisition Executive}
 \newacronym{sae}{SAE}{Service Acquisition Executive}
+\newacronym{cpm}{CPM}{Capability Portfolio Management}
 \newacronym{pmildep}{PMILDEP}{Principal Military Deputy}
+\newacronym{was}{WAS}{Warfighting Acquisition System}
 \newacronym{mda}{MDA}{Missile Defense Agency}
 \newacronym{ssp}{SSP}{Strategic Systems Program}
 \newacronym{omb}{OMB}{Office of Management and Budget}
@@ -213,6 +216,7 @@
 	shortplural={APIs},
 	longplural={Application Programming Interfaces}
 ]{api}{API}{Application Programming Interface}
+\newacronym{dagir}{DAGIR}{Data and Applications Government-owned Interoperable Repositories}
 \newacronym{emd}{EMD}{Engineering and Manufacturing Development}
 \newacronym{ibr}{IBR}{Integrated Baseline Review}
 \newacronym{ipt}{IPT}{Integrated Product Team}
