@@ -1,9 +1,9 @@
 FROM ghcr.io/willfantom/devcontainer-latex:latest-small
 
-# We’ll install TeX Live 2025 as root
+# Install TeX Live 2025 as root
 USER root
 
-# Copy profile into image
+# Copy profile into image (from repo-root build context)
 COPY .devcontainer/texlive.profile /tmp/texlive.profile
 
 # Install minimal tools needed for the TL installer
