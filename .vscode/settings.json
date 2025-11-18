@@ -150,7 +150,7 @@
   },
 
   // ===================================================================
-  // 2. EDITOR EXPERIENCE Ã¢â‚¬â€ fonts, wrapping, suggestions, and automation
+  // 2. EDITOR EXPERIENCE - fonts, wrapping, suggestions, and automation
   // ===================================================================
   // Indentation and whitespace discipline.
   "editor.detectIndentation": false,
@@ -220,7 +220,7 @@
   "editor.suggest.showDeprecated": false,
 
   // ===================================================================
-  // 3. FILES & SEARCH Ã¢â‚¬â€ encoding, autosave, and ignore patterns
+  // 3. FILES & SEARCH - encoding, autosave, and ignore patterns
   // ===================================================================
   "explorer.confirmDragAndDrop": false,
   "files.trimTrailingWhitespace": true,
@@ -250,7 +250,7 @@
   "json.schemaDownload.enable": false,
 
   // ===================================================================
-  // 4. FORMATTING DEFAULTS Ã¢â‚¬â€ Prettier plus language-specific overrides
+  // 4. FORMATTING DEFAULTS - Prettier plus language-specific overrides
   // ===================================================================
   // Global Prettier preferences.
   "prettier.useTabs": false,
@@ -280,7 +280,7 @@
   },
 
   // ===================================================================
-  // 5. LATEX TOOLCHAIN Ã¢â‚¬â€ build recipes, preview, and formatting parity
+  // 5. LATEX TOOLCHAIN - build recipes, preview, and formatting parity
   // ===================================================================
   // Keep PDFs in VS Code so synctex stays in one window.
   "workbench.editorAssociations": {
@@ -435,7 +435,7 @@
   "PandocCiter.DefaultBib": "${workspaceFolder}/edo.bib",
 
   // ===================================================================
-  // 6. MARKDOWN & NOTEBOOKS Ã¢â‚¬â€ preview, extensions, and typography
+  // 6. MARKDOWN & NOTEBOOKS - preview, extensions, and typography
   // ===================================================================
   "markdown.copyFiles.overwriteBehavior": "overwrite",
   "markdown.extension.completion.enabled": true,
@@ -451,9 +451,19 @@
   "markdown-preview-enhanced.enableTypographer": true,
   "markdown-preview-enhanced.latexEngine": "lualatex",
   "markdownPreviewEnhanced.previewTheme": "one-dark",
+  "ltex.additionalRules.motherTongue": "en-US",
+  "ltex.completion.enabled": true,
+  "ltex.dictionary": {},
+  "ltex.enabled": true,
+  "ltex.enabledTypes": ["sentence", "comment", "string"],
+  "ltex.disabledRules": {
+    "en-US": ["MORFOLOGIK_RULE_EN_US"]
+  },
+  "ltex.language": "en-US",
+  "ltex.ltex-ls.java.path": "java",
 
   // ===================================================================
-  // 7. TERMINAL Ã¢â‚¬â€ fonts, ligatures, and usability defaults
+  // 7. TERMINAL - fonts, ligatures, and usability defaults
   // ===================================================================
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.windowsEnableConpty": true,
@@ -531,7 +541,7 @@
   ],
 
   // ===================================================================
-  // 8. SOURCE CONTROL Ã¢â‚¬â€ Git ergonomics and inline insights
+  // 8. SOURCE CONTROL - Git ergonomics and inline insights
   // ===================================================================
   "git.autofetch": true,
   "git.autofetchPeriod": 180,
@@ -548,11 +558,11 @@
   "git.useEditorAsCommittingEditor": false,
   "scm.inputFontFamily": "editor",
   // GitLens model preference for inline blame and chat.
-  "gitlens.ai.model": "vscode",
+  "gitlens.ai.model": "gemini:gemini-2.5-pro",
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
 
   // ===================================================================
-  // 9. LANGUAGE TOOLING Ã¢â‚¬â€ HTML, JS/TS, config files, Python, PowerShell
+  // 9. LANGUAGE TOOLING - HTML, JS/TS, config files, Python, PowerShell
   // ===================================================================
   "html.format.wrapLineLength": 100,
   "html.format.indentHandlebars": true,
@@ -564,6 +574,10 @@
   "typescript.implementationsCodeLens.showOnInterfaceMethods": true,
   "typescript.referencesCodeLens.enabled": true,
   "typescript.referencesCodeLens.showOnAllFunctions": true,
+  "C_Cpp.files.exclude": {
+    "**/.vscode": true,
+    "**/.vs": true
+  },
   "evenBetterToml.formatter.allowedBlankLines": 1,
   "evenBetterToml.formatter.columnWidth": 100,
   "evenBetterToml.formatter.alignComments": true,
@@ -597,7 +611,7 @@
   "powershell.buttons.showPanelMovementButtons": true,
 
   // ===================================================================
-  // 10. EXTENSIONS & INTEGRATIONS Ã¢â‚¬â€ updates, asset helpers, annotations
+  // 10. EXTENSIONS & INTEGRATIONS - updates, asset helpers, annotations
   // ===================================================================
   "extensions.autoCheckUpdates": true,
   "extensions.autoUpdate": true,
@@ -699,7 +713,7 @@
   "JSON-zain.json.autorefresh": true,
 
   // ===================================================================
-  // 11. AI & CHAT Ã¢â‚¬â€ keep collaboration threads compact
+  // 11. AI & CHAT keep collaboration threads compact
   // ===================================================================
   "chat.editor.wordWrap": "on",
   "chat.agent.thinkingStyle": "collapsedPreview",
@@ -722,8 +736,9 @@
   "inlineChat.notebookAgent": true,
 
   // ===================================================================
-  // 12. SECURITY & UPDATES Ã¢â‚¬â€ reduce noise and keep releases predictable
+  // 12. SECURITY & UPDATES - reduce noise and keep releases predictable
   // ===================================================================
+  "security.allowedUNCHosts": ["wsl.localhost"],
   "security.workspace.trust.untrustedFiles": "open",
   "telemetry.telemetryLevel": "off",
   "extensions.verifySignature": false,
@@ -732,10 +747,12 @@
   "update.showReleaseNotes": false,
 
   // ===================================================================
-  // 13. SPELLCHECK & DICTIONARIES Ã¢â‚¬â€ tuned for LaTeX acquisition jargon
+  // 13. SPELLCHECK & DICTIONARIES - tuned for LaTeX acquisition jargon
   // ===================================================================
+  "cSpell.allowCompoundWords": true,
   "cSpell.autoFormatConfigFile": true,
   "cSpell.customDictionaries": { "custom": true, "internal-terms": true },
+  "cSpell.enabled": true,
   "cSpell.enabledFileTypes": {
     "json": false,
     "log": true,
@@ -744,6 +761,7 @@
   },
   "cSpell.diagnosticLevel": "Hint",
   "cSpell.hideIssuesWhileTyping": "Line",
+  "cSpell.language": "en-US",
   "cSpell.maxNumberOfProblems": 250,
   "cSpell.suggestionMenuType": "quickFix",
   "cSpell.checkVSCodeSystemFiles": true,
@@ -838,6 +856,7 @@
     "defernumbers",
     "definecolor",
     "DFARS",
+    "DoDI",
     "dpth",
     "DTMsavedate",
     "DTMsetdatestyle",
@@ -950,6 +969,7 @@
     "normalsize",
     "nouppercase",
     "NWCF",
+    "OPNAV",
     "operationalizes",
     "outerplace",
     "pagenumber",
@@ -977,6 +997,7 @@
     "rowhead",
     "rowsep",
     "rulecolor",
+    "SECNAV",
     "sansbody",
     "scrartcl",
     "scrheadings",

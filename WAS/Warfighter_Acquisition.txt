@@ -1,0 +1,70 @@
+Warfighter Acquisition System: Replacing JCIDS in Requirements and Acquisition
+In 2025, the Department of War undertook sweeping reform to accelerate capability development by replacing the Joint Capabilities Integration and Development System (JCIDS) with a streamlined, warfighter-centric framework. This shift emphasizes solving operational problems quickly and efficiently, leveraging experimentation, direct service-level authority, and agile acquisition practices.
+Governing Policies and Official Guidance
+Executive Order 14265 and DoW-level memoranda issued in 2025 ordered the JCIDS sunset and the transition to a new framework.
+JROC Role Reduction: The Joint Requirements Oversight Council (JROC) now focuses only on a short list of joint “Key Operational Problems” (KOPs).
+Requirements and Resourcing Alignment Board (RRAB): New high-level board co-chaired by the Deputy Secretary of War and the Vice Chairman of the Joint Chiefs to align problem-solving with funding.
+Joint Acceleration Reserve (JAR): New rapid-reaction fund to bridge the “valley of death” in prototyping.
+Mission Engineering and Integration Activity (MEIA): Cross-service experiments to define needs through demonstration and prototyping.
+Portfolio Acquisition Executives (PAEs): Service-led portfolios with direct accountability and authority for tailoring and delivery.
+Operational Flow: Phases and Documentation
+Phase
+Inputs
+Outputs (Decision & Documentation)
+Need Identification
+Threats, gaps, COCOM feedback, strategy
+KOP statement or Service-specific requirement
+Problem Prioritization
+KOP nominations
+JROC-approved KOP list
+Solution Experimentation
+Concepts, technologies, MEIA prototypes
+Demo results, operational concepts, refined minimal requirement
+Funding Alignment (RRAB)
+Experiment outcomes, estimated costs
+Joint/Service budget decisions, possible JAR disbursement, guidance to acquisition community
+Acquisition Execution
+Tailored acquisition plans, prototype packages
+Capability delivery, IOC, feedback collection
+Fielding & Iteration
+Warfighter feedback, threat shifts, performance data
+Capability refinements, next increment approval, portfolio scorecards
+JCIDS vs. New Framework: Key Differences
+Dimension
+JCIDS (Legacy)
+Warfighter Acquisition Framework
+Authority
+Centralized in JROC
+Decentralized; Services own most decisions; JROC handles top KOPs only
+Timeline
+Often 800+ days for requirement approval
+Aim: same-year problem-ID to funding; months not years
+Documentation
+ICD, CDD, CPD, JCIDS Manual formats
+Lean documents: KOPs, short statements, experiment reports
+Integration with Budget
+Disconnected from PPBE; unfunded needs linger
+RRAB aligns requirements and funds in-cycle; uses JAR to accelerate
+Adaptability
+One-size-fits-all; change-resistant
+Tailored by PAE/Service; trade-off encouraged; risk accepted
+Warfighter Role
+Warfighter input filtered via layers
+Direct feedback from field; warfighters help shape prototypes during MEIA campaigns
+Innovation Access
+Bureaucratic barrier to non-traditionals
+Startups, COTS, non-trads welcomed via early experimentation and commercial pathways
+Implications for EDO and Acquisition Professionals
+Expect fewer staff products and more warfighter interaction.
+Field-driven prototyping replaces requirements writing.
+Faster authority pathways and less HQ review.
+Portfolio ownership and time-based metrics are becoming standard.
+Training and DAU courses will focus on agility, not compliance.
+Primary Sources
+DoW Memorandum: “Reforming the Joint Requirements Process to Accelerate Fielding of Warfighting Capabilities” (Aug/Nov 2025)
+USW(A&S)/USW(R&E) Joint Directive on Mission Engineering
+Executive Order 14265
+JCIDS Rescission Guidance
+RRAB and JAR implementation memos (DoW CAPE)
+This summary distills key structural changes for use in formal DoW acquisition training, internal EDO guides, or as briefers for senior military leadership.
+For citation format in LaTeX or reference management, consult the IEEE-formatted .tex version available upon request.

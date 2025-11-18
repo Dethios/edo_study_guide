@@ -15,7 +15,7 @@ EDO Coursebook Current as of: 2025-09-19
 Refs:
 
 1.1.1 Operations Chain (Title 10)
-Chain flow. President → Secretary of Defense (SECDEF) → Combatant Commander (CCDR). The Chairman of the Joint
+Chain flow. President → Secretary of War (SECWAR) → Combatant Commander (CCDR). The Chairman of the Joint
 
 Chiefs of Staff (CJCS) is the principal military adviser; service chiefs are not in the operational chain of Title 10.
 Board cue. Boards love the contrast with acquisition authority; avoid conflating operational and acquisition chains.
@@ -36,7 +36,7 @@ Figure 1.1. Title 10 Chain of Command. Source: edo-2-1-1-command-structures-2025
 3
 POTUS
 
-SECDEF
+SECWAR
 
 SECNAV
 
@@ -687,7 +687,7 @@ Source – DoDFMR-Vol3, DoDFMR-Vol3 [DoDFMR-Vol3]
 
 Other terms and definitions from [edo-3-1-1-ppbe-2025]:
 Cost Assessment and Program Evaluation (CAPE). Provides independent cost assessment and program evaluation.
-Program Decision Memorandum (PDM). Records SECDEF program decisions at the end of Program Review.
+Program Decision Memorandum (PDM). Records SECWAR program decisions at the end of Program Review.
 OPNAV Integration of Capabilities and Resources (N8). Builds the Navy POM; trades across portfolios with cost/risk realism.
 
 2.1 PPBE (Planning, Programming, Budgeting, and Execution)
@@ -731,11 +731,11 @@ Source – edo-3-1-1-ppbe-2025, edo-3-1-1-ppbe-2025 [edo-3-1-1-ppbe-2025]
 2.1.6 PPBE Programming
 3-Star v.s. 4-Star Reviews:
 
-During Office of the Secretary of Defense (OSD)’s Program Review, issues raised on the Services’
+During Office of the Secretary of War (OSD)’s Program Review, issues raised on the Services’
 
 POMs move first to a 3-Star Programmers Panel (staff-level, chaired by Director, CAPE (DCAPE)) that vets issue papers,
 builds options (with offsets), and forwards recommendations. Unresolved or strategy-level trades go to the 4-Star forum, the
-Deputy’s Management Action Group (DMAG) co-led by the Deputy SECDEF (with the Vice-Chairman of the Joint Chiefs of
+Deputy’s Management Action Group (DMAG) co-led by the Deputy SECWAR (with the Vice-Chairman of the Joint Chiefs of
 Staff (VCJCS)), for senior adjudication. Decisions at this stage are documented as a PDM or (in recent cycles) a programmatic
 Resource Management Decision (RMD), which updates the FYDP and hands off to the Comptroller’s Budget Review that
 culminates in budgetary RMDs.
@@ -761,7 +761,7 @@ tion driver for the performing Working Capital Fund (WCF) activity.
 Work Order. Internal directive used within a command to control scope/cost/schedule.
 Project Order. Statutory order for a definite, specific, and entire project; obligational on acceptance; performs like a contract
 
-between Department of Defense (DoD) activities. (41 U.S.C. § 6307) [USC-6307-ProjectOrder]
+between Department of Defense (DoW) activities. (41 U.S.C. § 6307) [USC-6307-ProjectOrder]
 Military Interdepartmental Purchase Request (MIPR)/IPR (DD Form 448). Economy Act order between federal entities;
 
 obligational when accepted; performed by the servicing agency. (31 U.S.C. § 1535) [USC-1535-EconomyAct,
@@ -878,7 +878,7 @@ Direct Labor Hours
 
 Adjustment Battle Rhythm. Rates are established two years ahead during the PPBE budget build and held constant
 
-throughout budget year execution; mid-year changes require OUSD(C) approval when earned rates diverge materially
+throughout budget year execution; mid-year changes require OUSW(C) approval when earned rates diverge materially
 from planned costs, and Navy BSOs typically review SLR accuracy monthly/quarterly to recommend any out-of-cycle
 adjustments [DoDFMR-Vol3-Ch19].
 2.2.6 NWCF v.s. Mission-Funded (Appropriation) Commands
@@ -895,8 +895,8 @@ bill hours towards work and the NWCF will reimburse MILPERS [DoDFMR-Vol3].
 1. Business Case Development: Sponsor (e.g., ASN(RD&A) or SYSCOM) prepares analytical justification showing workload,
 demand signal, and ability to operate on a revolving basis without violating purpose/time/amount [DoDFMR-Vol3-Ch19].
 2. acdon Approval Chain: Secretary of the Navy (SECNAV) (delegated to ASN (FM&C)) endorses the concept and forwards
-to OUSD(C) while coordinating with Navy Comptroller to align PPBE exhibits [DoDFMR-Vol3-Ch19].
-3. OUSD(C)/ OMB Review: DoD Chief Financial Officer (CFO) validates cash requirements, rate methodology, and capital
+to OUSW(C) while coordinating with Navy Comptroller to align PPBE exhibits [DoDFMR-Vol3-Ch19].
+3. OUSW(C)/ OMB Review: DoW Chief Financial Officer (CFO) validates cash requirements, rate methodology, and capital
 plan, then seeks OMB alignment for the PB [DoDFMR-Vol3-Ch19].
 
 2.2 NWCF Essentials: Rates, Results, and Execution
@@ -928,7 +928,7 @@ limits [DoDFMR-Vol3-Ch19].
 No New Starts. CR guidance prohibits new start projects, major capital investments, or rate changes absent explicit exception;
 
 NWCF managers defer new workloads that would obligate customer funds beyond CR allowances [CRS-CR].
-Rate Discipline. Stabilized rates remain frozen; only emergency OUSD(C)-approved rate adjustments may occur, so BSOs focus
+Rate Discipline. Stabilized rates remain frozen; only emergency OUSW(C)-approved rate adjustments may occur, so BSOs focus
 
 on expense control to avoid large NOR swings during the CR period [DoDFMR-Vol3-Ch19].
 2.2.10 Why Use a Warfare Center (Organic)
@@ -1300,7 +1300,7 @@ Life-Cycle Cost (LCC). All costs from concept through disposal ( RDT&E, procurem
 Total Ownership Cost (TOC). LCC plus broader infrastructure/indirect enterprise costs.
 Note
 
-Use DON/ DoD cost handbook definitions; be consistent across documents. [SECNAV5000-2G, DoDI5000-85].
+Use DON/ DoW cost handbook definitions; be consistent across documents. [SECNAV5000-2G, DoDI5000-85].
 Figure 2.5 shows the LCC from above and how they relate to one another. Note how each cost builds to the next as different
 types of expenditures are added.
 
@@ -1348,7 +1348,7 @@ ing [DoDI5000-85].
 If unit time/cost follows an 𝑠% slope, doubling quantity reduces unit cost by 𝑠%. Typical aerospace slopes: 85–90% early, flattening as processes mature. Plan lots and spares buys accordingly [DAU-AAF].
 2.5.7 Cost Escalation (Inflation Indices)
 
-Escalate base-year costs to then-year using approved DoD inflation indices; separate real growth from price growth; align phasing to obligation windows [DoDFMR-Vol3].
+Escalate base-year costs to then-year using approved DoW inflation indices; separate real growth from price growth; align phasing to obligation windows [DoDFMR-Vol3].
 2.5.8 Will-Cost / Should-Cost
 Will-Cost. Conservative reference estimate used for budgeting and margin planning.
 Should-Cost. Management targets that drive efficiencies (e.g., lean events, value engineering, rate negotia-
@@ -1396,7 +1396,7 @@ Constrained. Interactions are bound by ethics rules, conflicts-of-interest stand
 
 3.1.4 FAR System and NAVSEA Overlays
 FAR. Government-wide acquisition regulation establishing policy, procedures, and contract clauses [FAR].
-DFARS. DoD-level supplement tailoring FAR provisions for defense-unique requirements, including competition, source selec-
+DFARS. DoW-level supplement tailoring FAR provisions for defense-unique requirements, including competition, source selec-
 
 tion, and industrial base policy [DFARS].
 NMCARS. Department of the Navy supplement that adds Navy-specific directives such as approval thresholds, peer reviews, and
@@ -1839,7 +1839,7 @@ Other Direct Costs (ODCs)
 Profit
 
 DFARS 215.404–70 to –73
-Application of the DoD Weighted Guide-
+Application of the DoW Weighted Guide-
 
 Fee
 
@@ -2013,7 +2013,7 @@ expectations [edo-3-6-1-evm-intro-2025, DoDI5000-85]:
 
 • The program office integrates EVM planning into the WBS, maintains the Performance Measurement Baseline, and ensures timely receipt and analysis of IPMDAR submissions.
 
-• DCMA leads EVM system acceptance, validation, and ongoing surveillance against ANSI/EIA-748 and the DoD EVM
+• DCMA leads EVM system acceptance, validation, and ongoing surveillance against ANSI/EIA-748 and the DoW EVM
 Implementation Guide; DCAA supports with accounting system audits.
 
 3.4 Earned Value Management (EVM)
@@ -2031,7 +2031,7 @@ expectations [edo-3-6-1-evm-intro-2025, DoDI5000-85]:
 
 • The program office integrates EVM planning into the WBS, maintains the Performance Measurement Baseline, and ensures timely receipt and analysis of IPMDAR submissions.
 
-• DCMA leads EVM system acceptance, validation, and ongoing surveillance against ANSI/EIA-748 and the DoD EVM
+• DCMA leads EVM system acceptance, validation, and ongoing surveillance against ANSI/EIA-748 and the DoW EVM
 Implementation Guide; DCAA supports with accounting system audits.
 
 • Service focal points such as Acquisition Data and Analytics and the DON Center for EVM adjudicate applicability determinations and coordinate policy updates.
@@ -2043,7 +2043,7 @@ Programmatic, contracting, and oversight roles synchronize to sustain discipline
 PMO: Implements EVM on the contract, ensures solicitations and awards contain the required clauses, and works with the
 
 contracting activity to tailor reporting and Integrated Master Schedule (IMS) requirements.
-DCMA: Serves as the DoD EVM Executive Agent by validating, accepting, and surveilling contractor systems, maintaining the
+DCMA: Serves as the DoW EVM Executive Agent by validating, accepting, and surveilling contractor systems, maintaining the
 
 official acceptance roster, and analyzing IPMDAR and schedule submissions (including the 14-point IMS review) to focus
 government attention on emerging issues.
@@ -2055,7 +2055,7 @@ Acquisition Data and Analytics (ADA): Acts as the department-wide focal point fo
 agement; issues interpretations to maintain consistent application across programs.
 DON Center for EVM: Coordinates applicability determinations with the Deputy Assistant Secretary of the Navy for Acquisition
 
-Policy and Budget and the Office of the Secretary of Defense, and serves as the Navyâ€™s central point of contact for EVM
+Policy and Budget and the Office of the Secretary of War, and serves as the Navyâ€™s central point of contact for EVM
 matters.
 
 3.4 Earned Value Management (EVM)
@@ -2126,7 +2126,7 @@ Integrated Baseline Review
 • Purpose: joint assessment to verify the realism and accuracy of the PMB, confirm the entire technical scope is captured,
 and ensure resources and schedules are achievable.
 
-• Timing: conducted within six months of contract award (or major replanning event) in accordance with the DoD EVM
+• Timing: conducted within six months of contract award (or major replanning event) in accordance with the DoW EVM
 Implementation Guide and service policy [edo-3-6-1-evm-intro-2025].
 Integrated Program Management Data Analysis Report
 
@@ -2256,7 +2256,7 @@ Statute drives authority. Title 10 charges the Military Departments to equip the
 
 refreshes acquisition authorities and reporting duties—know the latest delegation trail before advising a
 board [edo-3-3-1-acq-policy-players-2025].
-Policy = DoD 5000 series. DoDD 5000.01 establishes acquisition principles and senior roles; DoDI 5000.02 operationalizes
+Policy = DoW 5000 series. DoDD 5000.01 establishes acquisition principles and senior roles; DoDI 5000.02 operationalizes
 
 the Adaptive Acquisition Framework (AAF) pathways; DoDI 5000.85 prescribes MCA execution details [DoDD5000-01,
 DoDI5000-02, DoDI5000-85].
@@ -2300,11 +2300,11 @@ chain (Program Office → PEO → ASN(RD&A)) [DoDI5000-85, edo-3-3-1-acq-policy-
 Title 10, U.S.C. Establishes Service responsibilities (Subtitle C for DON organization, Subtitle A Part V for
 
 acquisition management) and empowers annual NDAAs to adjust acquisition thresholds or pilot authorities [edo-3-3-1-acq-policy-players-2025].
-DoD Directives/Instructions. DoDD 5000.01 sets acquisition principles, governance forums, and senior leader responsibili-
+DoW Directives/Instructions. DoDD 5000.01 sets acquisition principles, governance forums, and senior leader responsibili-
 
 ties; DoDI 5000.02 implements the AAF with six scalable pathways; DoDI 5000.85 gives MCA-specific statutory requirements ( Joint Requirements Oversight Council (JROC), cost reporting, baseline control) [DoDD5000-01, DoDI5000-02,
 DoDI5000-85].
-Regulations. FAR and DFARS governs all federal contracting; DFARS adds DoD-specific clauses (e.g., earned value, data
+Regulations. FAR and DFARS governs all federal contracting; DFARS adds DoW-specific clauses (e.g., earned value, data
 
 rights, cybersecurity); NMCARS adds DON policy and ASN(RD&A) approval levels [FAR, DFARS, NMCARS].
 Service overlays. SECNAVINST 5000.2G tailors milestone documentation, Naval SYSCOM oversight, and Naval
@@ -2325,7 +2325,7 @@ DAE. USD(A&S) chairs the Defense Acquisition Board (DAB), is MDA for ACAT ID/IAM
 approves key acquisition policies [DoDD5000-01, edo-3-3-1-acq-policy-players-2025].
 SAE. ASN(RD&A) serves as the DON SAE; appoints PEOs, assigns MDA for ACAT II and below, and ensures Navy acquisition
 
-compliance with DoD policy [SECNAV5000-2G, SECNAV5400-15D].
+compliance with DoW policy [SECNAV5000-2G, SECNAV5400-15D].
 Chief of Naval Operations/Resource Sponsor. Validates requirements and PPBE resourcing, provides integrated warfare/com-
 
 munity priorities to ASN(RD&A) and the PEOs [edo-3-3-1-acq-policy-players-2025].
@@ -2405,7 +2405,7 @@ ASN(RD&A) decisions [edo-3-3-1-acq-policy-players-2025].
 
 Note
 
-When SECNAV policy conflicts with older DoD memoranda, defer to the most current directive from the higher authority
+When SECNAV policy conflicts with older DoW memoranda, defer to the most current directive from the higher authority
 unless ASN(RD&A) grants written tailoring. Document the rationale in the Acquisition Strategy.
 
 4.2 Milestones and Phases
@@ -2970,7 +2970,7 @@ sufficiency before release.
 the determination memo authorizing or withholding fee payments (FAR Part 16; NAVSEA Source Selection Guide).
 Fiscal control & certification.
 
-Source: DoD FMR 7000.14-R Volume 3.
+Source: DoW FMR 7000.14-R Volume 3.
 
 • Funds Certifying Official/Comptroller: Verifies purpose/time/amount before obligation; Anti-Deficiency Act (ADA)
 safeguard.
@@ -2982,7 +2982,7 @@ safeguard.
 • Program/Budget Analyst: Tracks execution, monitors reprogramming thresholds, prepares obligation/expenditure
 burn-down.
 
-• Resource allocation chain: OUSD(C) apportions to the Navy; OPNAV (N82/FMB) allocates to BSOs; SYSCOM
+• Resource allocation chain: OUSW(C) apportions to the Navy; OPNAV (N82/FMB) allocates to BSOs; SYSCOM
 comptrollers (e.g., SEA 01) issue suballocations to executing activities.
 PPBE resource sponsors.
 
@@ -3030,7 +3030,7 @@ Functional (4):
 
 1
 
-USSPACECOM is treated by DoD as a geographic (astrographic) command with an AOR beginning at the Kármán line (∼100 km)
+USSPACECOM is treated by DoW as a geographic (astrographic) command with an AOR beginning at the Kármán line (∼100 km)
 
 81
 
@@ -3213,7 +3213,7 @@ DMAG
 
 Deputy’s Management Action Group
 
-DoD
+DoW
 
 Department of Defense
 
@@ -3511,7 +3511,7 @@ Office of the Chief of Naval Operations
 
 OSD
 
-Office of the Secretary of Defense
+Office of the Secretary of War
 
 P&D
 
@@ -3676,9 +3676,9 @@ SDVOSB
 
 Service-Disabled Veteran-Owned Small Business
 
-SECDEF
+SECWAR
 
-Secretary of Defense
+Secretary of War
 
 SECNAV
 

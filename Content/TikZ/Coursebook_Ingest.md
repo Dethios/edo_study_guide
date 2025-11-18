@@ -10,7 +10,7 @@
 - `\srcCite` will be used for tables, figures citatins that empasses the entire passage where an
   inline citation would not make sense.
 - Information will be verified via source references (include those referred to by the coursebook).
-  Another verification against DAU and other online DoD Acquisition Guidedances will be needed.
+  Another verification against DAU and other online DoW Acquisition Guidedances will be needed.
 - New references will be added to `edo.bib`
 - The information will need to make logical sense with the rest of the study guide. This includes,
   but is not limited to:

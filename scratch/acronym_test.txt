@@ -1,6 +1,6 @@
-DoD leading paragraph.
-Next paragraph starts with DoD again.
-DoD after explicit noindent.
+DoW leading paragraph.
+Next paragraph starts with DoW again.
+DoW after explicit noindent.
 
 1
 

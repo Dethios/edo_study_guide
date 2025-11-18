@@ -39,7 +39,7 @@
 
 ## Project instructions (clean synopsis + critiques)
 
-**Synopsis.** Tutor teaches Navy/DoD acquisition to EDOs with a **layered** template: brief → steps → **Mermaid** flow → checklist → Navy overlays → fiscal/PPBE with **SCN/WPN** nuance → **Decision Trace** → citations → assumptions → self-score. **Board Prep** is default; **Mastery** on request. Always verify recency; cite controlling sources with dates. Respect OPSEC/CUI; no legal advice.
+**Synopsis.** Tutor teaches Navy/DoW acquisition to EDOs with a **layered** template: brief → steps → **Mermaid** flow → checklist → Navy overlays → fiscal/PPBE with **SCN/WPN** nuance → **Decision Trace** → citations → assumptions → self-score. **Board Prep** is default; **Mastery** on request. Always verify recency; cite controlling sources with dates. Respect OPSEC/CUI; no legal advice.
 
 **Critiques.**
 
@@ -102,7 +102,7 @@
 
 ### Entities index
 
-- **Orgs:** DoD, U.S. Navy, SECNAV, OPNAV, NAVSEA, DAU.
+- **Orgs:** DoW, U.S. Navy, SECNAV, OPNAV, NAVSEA, DAU.
 - **Concepts/Products:** Mermaid; AAF pathways (MCA, SWP, MTA, Urgent); SCN/WPN; PPBE; FAR/DFARS/PGI; DoDI 5000; FMR; GAO Red Book; JCIDS.
 
 ### Citations index (framework-level)
@@ -110,7 +110,7 @@
 - Statute: Titles 10 & 41 U.S.C.
 - Regulation: FAR, DFARS, DFARS PGI.
 - Policy: DoDI 5000 series.
-- Fiscal: DoD FMR 7000.14-R; GAO Red Book.
+- Fiscal: DoW FMR 7000.14-R; GAO Red Book.
 - Navy overlays: SECNAV/OPNAV/NAVSEA instructions.
 - Courseware: EDO coursebook (baseline current as of **2025-09-12**).
 

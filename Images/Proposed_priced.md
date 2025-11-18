@@ -45,7 +45,7 @@ flowchart TD
   B --> H
 
   %% Right column: Profit v.s.\\ Fee
-  K["**Profit**<br/><span style='font-size:12px'>DFARS 215.404-70 to -73<br/>Application of the DoD Weighted Guidelines</span>"]:::leaf
+  K["**Profit**<br/><span style='font-size:12px'>DFARS 215.404-70 to -73<br/>Application of the DoW Weighted Guidelines</span>"]:::leaf
   L["**Fee**<br/><span style='font-size:12px'>DFARS 215.404-74 &amp; -75</span>"]:::leaf
   C --> K
   C --> L

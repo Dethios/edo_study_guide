@@ -16,20 +16,31 @@
 \newacronym{cjadc2}{CJADC2}{Combined Joint All-Domain Command and Control}
 \newacronym{jsd}{JSD}{Joint Staffing Designator}
 \newacronym{fcb}{FCB}{Functional Capabilities Board}
-\newacronym{osd}{OSD}{Office of the Secretary of Defense}
-\newacronym{secdef}{SECDEF}{Secretary of Defense}
+\newacronym{osd}{OSD}{Office of the Secretary of War}
+\newacronym{secdef}{SECDEF}{Secretary of War}
 \newacronym{dae}{DAE}{Defense Acquisition Executive}
-\newacronym{dod}{DoD}{Department of Defense}
+\newacronym{dod}{DoW}{Department of War}
 \newacronym{don}{DON}{Department of the Navy}
 \newacronym{secnav}{SECNAV}{Secretary of the Navy}
 \newacronym{secwar}{SECWAR}{Secretary of War}
+\newacronym{uswas}{USW(A\&S)}{Under Secretary of War for Acquisition and Sustainment}
+\newacronym{uswre}{USW(R\&E)}{Under Secretary of War for Research and Engineering}
+\newacronym{uswc}{USW(C)}{Under Secretary of War (Comptroller)}
+\newacronym{ouswas}{OUSW(A\&S)}{Office of the Under Secretary of War for Acquisition and Sustainment}
+\newacronym{ouswre}{OUSW(R\&E)}{Office of the Under Secretary of War for Research and Engineering}
+\newacronym{ouswc}{OUSW(C)}{Office of the Under Secretary of War (Comptroller)}
 \newacronym{asnrdanda}{{ASN(RD\&A)}}{Assistant Secretary of the Navy for Research, Development and Acquisition}
 \newacronym{dasnapb}{DASN (APB)}{Deputy Assistant Secretary of the Navy (Acquisition Policy and Budget)}
 \newacronym{cae}{CAE}{Component Acquisition Executive}
 \newacronym{sae}{SAE}{Service Acquisition Executive}
 \newacronym{cpm}{CPM}{Capability Portfolio Management}
+\newacronym{kop}{KOP}{Key Operational Problem}
+\newacronym{rrab}{RRAB}{Requirements and Resourcing Alignment Board}
+\newacronym{jar}{JAR}{Joint Acceleration Reserve}
+\newacronym{meia}{MEIA}{Mission Engineering and Integration Activity}
 \newacronym{pmildep}{PMILDEP}{Principal Military Deputy}
 \newacronym{was}{WAS}{Warfighting Acquisition System}
+\newacronym{nscf}{NSCF}{National Security Capital Forum}
 \newacronym{mda}{MDA}{Missile Defense Agency}
 \newacronym{ssp}{SSP}{Strategic Systems Program}
 \newacronym{omb}{OMB}{Office of Management and Budget}
@@ -61,6 +72,8 @@
 \newacronym{c4isr}{C4ISR}{Command, Control, Communications, Computers, Intelligence, Surveillance, and Reconnaissance}
 \newacronym{cio}{CIO}{Chief Information Officer}
 \newacronym{cnr}{CNR}{Chief of Naval Research}
+\newacronym{dsca}{DSCA}{Defense Security Cooperation Agency}
+\newacronym{dtsa}{DTSA}{Defense Technology Security Administration}
 
 % --- Warfare Centers & Field Activities ---
 
@@ -200,12 +213,13 @@
 \newacronym{cpa}{CPA}{Chairman's Program Assessment}
 \newacronym{dcape}{DCAPE}{Director, CAPE}
 \newacronym{drfprd}{DRFPRD}{Development Request for Proposal Release Decision}
+\newacronym{mdap}{MDAP}{Major Defense Acquisition Program}
 
 % --- Requirements Systems & Data ---
 
 \newacronym{km-ds}{KM/DS}{Knowledge Management and Decision Support}
 \newacronym{conops}{CONOPS}{Concept of Operations}
-\newacronym{dodaf}{DoDAF}{Department of Defense Architecture Framework}
+\newacronym{dodaf}{DoDAF}{Department of War Architecture Framework}
 \newacronym{is}{IS}{Information System}
 \newacronym{avview}{AV}{All Viewpoint}
 \newacronym{ovview}{OV}{Operational Viewpoint}
@@ -432,7 +446,7 @@
 \newacronym{nor}{NOR}{Net Operating Result}
 \newacronym{slr}{SLR}{Stabilized Labor Rate}
 \newacronym{dfas}{DFAS}{Defense Finance and Accounting Service}
-\newacronym{dodfmr}{DoD FMR}{Department of Defense Financial Management Regulation}
+\newacronym{dodfmr}{DoW FMR}{Department of War Financial Management Regulation}
 \newacronym{fmr}{FMR}{Financial Management Regulation}
 \newacronym{btr}{BTR}{Below-Threshold Reprogramming}
 \newacronym{ir}{IR}{Internal Reprogramming}
@@ -476,7 +490,7 @@
 \newacronym{optest}{OT}{Operational Test}
 \newacronym{techeval}{TECHEVAL}{Technical Evaluation}
 \newacronym{opeval}{OPEVAL}{Operational Evaluation}
-\newacronym{dasdte}{DASD(T\&E)}{Deputy Assistant Secretary of Defense for Test and Evaluation}
+\newacronym{dasdte}{DASW(T\&E)}{Deputy Assistant Secretary of War for Test and Evaluation}
 \newacronym{cdt}{CDT}{Chief Developmental Tester}
 \newacronym{ldto}{LDTO}{Lead Developmental Test and Evaluation Organization}
 \newacronym{ctp}{CTP}{Critical Technical Parameter}
