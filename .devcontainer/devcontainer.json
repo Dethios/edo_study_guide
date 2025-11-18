@@ -1,6 +1,9 @@
 {
   "name": "EDO Acquisition Tutor",
-  "image": "ghcr.io/willfantom/devcontainer-latex:latest-small",
+  "build": {
+    "dockerfile": ".devcontainer/Dockerfile",
+    "context": ".."
+  },
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {
       "installZsh": true,
