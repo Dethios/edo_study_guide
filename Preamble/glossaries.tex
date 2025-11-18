@@ -16,44 +16,6 @@
   toc             % add entries to the Table of Contents (KOMA-friendly)
 ]{glossaries-extra}
 
-% --- Abbreviation style: first use "Long (SHORT)", then "SHORT" -------------
-% \makeatletter
-
-% % Stop \glslink from leaving a node that preserves trailing whitespace
-% \pretocmd{\@gls@link}{\@bsphack}{}{}
-% \apptocmd{\@gls@link}{\@esphack\ignorespaces}{}{}
-
-% % Don’t inject the \mbox{} that \glsadd uses to force horizontal mode
-% \renewcommand*{\@gls@adjustmode}{}
-
-% \NewDocumentCommand{\silentglsadd}{m}{%
-%   \IfBooleanTF{\glsentryexists{#1}}{}{%
-%     \PackageWarning{edo-glossary}{Undefined glossary entry `#1' ignored}%
-%     \ReturnFromDocumentCommand
-%   }%
-%   \@bsphack
-%   \glsadd{#1}%
-%   \@esphack
-%   \futurelet\@let@token\silentglsadd@i
-% }
-% \NewDocumentCommand{\silentglsadd@i}{}{%
-%   \IfBooleanTF{\token_if_eq_char:NNT \@let@token \space}{%
-%     \silentglsadd@gobble
-%   }{%
-%     \ignorespaces
-%   }%
-% }
-% \NewDocumentCommand{\silentglsadd@gobble}{m}{}
-% \makeatother
-
-% \glsdefpostlink{acronym}{%
-%   \ifglsused{\glslabel}{}{%
-%     \silentglsadd{\glslabel}%
-%     \glslink{\glslabel}{(\glsentryshort{\glslabel})}%
-%     \glsunset{\glslabel}%
-%   }%
-% }
-
 \setabbreviationstyle[acronym]{long-short}
 % --- Build mode: no external indexing (fast, good for continuous writing) ---
 % Kill auto "smart space" in old glossaries/glossaries-extra
@@ -75,20 +37,6 @@
 % --- Load your acronym definitions ------------------------------------------
 \loadglsentries{acronyms.def}
 \makenoidxglossaries
-<<<<<<< HEAD
-% --- OPTIONAL: reset first-use at each chapter (OFF by default) -------------
-% Turn on if you want each chapter to re-introduce acronyms on first use.
-\newif\ifResetAcronymsPerChapter
-\ResetAcronymsPerChapterfalse
-% \ResetAcronymsPerChaptertrue   % <- uncomment to enable per-chapter reset
-\ifResetAcronymsPerChapter
-  \usepackage{etoolbox}%
-  \pretocmd{\chapter}{\glsresetall[acronym]}{}{}%
-  \pretocmd{\chapter*}{\glsresetall[acronym]}{}{}%
-\fi
-
-=======
->>>>>>> 131ad59105028ab6f1a15aa65d304fb1ecf35655
 
 % =========================
 % Hyperlinked, no-space acronyms
