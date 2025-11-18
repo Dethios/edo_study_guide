@@ -1,9 +1,13 @@
 {
   "name": "EDO Acquisition Tutor",
+
+  // Build a custom image from .devcontainer/Dockerfile,
+  // using the REPO ROOT (..) as the Docker build context.
   "build": {
     "dockerfile": "Dockerfile",
     "context": ".."
   },
+
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {
       "installZsh": true,
@@ -11,8 +15,10 @@
     },
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
-  "postCreateCommand": "bash .post-create.sh",
+
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
   "remoteUser": "vscode",
+
   "customizations": {
     "vscode": {
       "extensions": [
