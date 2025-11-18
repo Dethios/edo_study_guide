@@ -4,7 +4,7 @@ FROM ghcr.io/willfantom/devcontainer-latex:latest-small
 USER root
 
 # Copy profile into image
-COPY texlive.profile /tmp/texlive.profile
+COPY .devcontainer/texlive.profile /tmp/texlive.profile
 
 # Install minimal tools needed for the TL installer
 RUN apt-get update \
