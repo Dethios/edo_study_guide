@@ -19,7 +19,7 @@
   // ===================================================================
   // 1. UI & LAYOUT theme, icons, and OLED-friendly color palette
   // ===================================================================
-  "workbench.colorTheme": "Nord",
+  "workbench.colorTheme": "Abyss",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.wrapTabs": true,
@@ -366,7 +366,7 @@
   "latex-workshop.view.pdf.reload.transition": "none",
   "latex-workshop.view.outline.sync.viewer": true,
   "latex-workshop.view.pdf.internal.synctex.keybinding": "ctrl-click",
-  "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.synctex.afterBuild.enabled": false,
   "latex-workshop.latex.rootFile.useSubFile": true,
   "latex-workshop.latex.rootFile.doNotPrompt": true,
   "latex-workshop.latex.watch.usePolling": true,
