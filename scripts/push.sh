@@ -3,7 +3,7 @@ set -euo pipefail
 
 # Config
 DEFAULT_MSG="Auto-commit: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-BRANCH="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo main)"
+BRANCH="$(git rev-parse --abbrev-ref HEAD 2> /dev/null || echo main)"
 
 # Guardrails: block obvious secrets by pattern (edit as needed)
 BLOCK_PATTERNS=(
@@ -21,14 +21,17 @@ fi
 
 # 2) Stage & skip if nothing
 git add -A
-git diff --cached --quiet && { echo "No changes to commit."; exit 0; }
+git diff --cached --quiet && {
+  echo "No changes to commit."
+  exit 0
+}
 
 # 3) Commit with message (arg or default)
 MSG="${1:-$DEFAULT_MSG}"
 git commit -m "$MSG"
 
 # 4) Ensure upstream once
-if ! git rev-parse --symbolic-full-name --verify "@{u}" >/dev/null 2>&1; then
+if ! git rev-parse --symbolic-full-name --verify "@{u}" > /dev/null 2>&1; then
   git push -u origin "$BRANCH"
 else
   git push
