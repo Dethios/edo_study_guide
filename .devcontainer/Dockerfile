@@ -79,6 +79,9 @@ RUN tlmgr option repository https://mirror.ctan.org/systems/texlive/tlnet && \
   luaotfload-tool --update && \
   mktexlsr
 
+# Include Python
+RUN ln -s /usr/bin/python3 /usr/bin/python || true
+
 # Install Fira Code system font via apt
 RUN apt-get update && \
   apt-get install -y fonts-firacode && \

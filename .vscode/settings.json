@@ -19,7 +19,7 @@
   // ===================================================================
   // 1. UI & LAYOUT theme, icons, and OLED-friendly color palette
   // ===================================================================
-  "workbench.colorTheme": "Abyss",
+  "workbench.colorTheme": "Nord",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.wrapTabs": true,
@@ -287,7 +287,7 @@
     "*.copilotmd": "vscode.markdown.preview.editor",
     "*.pdf": "latex-workshop-pdf-hook"
   },
-  "latex-workshop.latex.autoBuild.run": "onFileChange",
+  "latex-workshop.latex.autoBuild.run": "never",
   "latex-workshop.latex.autoBuild.interval": 5000,
   "latex-workshop.latex.build.forceRecipeUsage": true,
   "latex-workshop.latex.build.rootfileInStatus": true,
@@ -457,10 +457,36 @@
   "ltex.enabled": true,
   "ltex.enabledTypes": ["sentence", "comment", "string"],
   "ltex.disabledRules": {
-    "en-US": ["MORFOLOGIK_RULE_EN_US"]
+    "en-US": [
+      "MORFOLOGIK_RULE_EN_US",
+      "EN_QUOTES",
+      "COMMA_PARENTHESIS_WHITESPACE",
+      "OXFORD_COMMA",
+      "WHITESPACE_RULE"
+    ]
   },
   "ltex.language": "en-US",
   "ltex.ltex-ls.java.path": "java",
+  "ltex.ignorePaths": ["**/main.tex", "**/build/**", "**/out/**", "**/figures/**"],
+  "ltex.latex.environments": {
+    "equation": "ignore",
+    "align": "ignore",
+    "lstlisting": "ignore",
+    "minted": "ignore",
+    "tikzpicture": "ignore"
+  },
+
+  "ltex.latex.commands": {
+    "\\gls{}": "dummy",
+    "\\Gls{}": "dummy",
+    "\\ac{}": "dummy",
+    "\\acrshort{}": "dummy",
+    "\\acrlong{}": "dummy",
+    "\\qty{}": "dummy",
+    "\\SI{}": "dummy",
+    "\\textcite{}": "dummy",
+    "\\parencite{}": "dummy"
+  },
 
   // ===================================================================
   // 7. TERMINAL - fonts, ligatures, and usability defaults
