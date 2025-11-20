@@ -59,7 +59,8 @@
 \def\silentglsadd@gobble#1{}%
 \makeatother
 
-\NewDocumentCommand{\edoAcrLink}{m m}{\glslink{#1}{#2}}%
+% Bypass \glslink to avoid its auto-inserted leading space; link directly to the glossary target.
+\NewDocumentCommand{\edoAcrLink}{m m}{\hyperlink{glo:#1}{#2}}%
 \makeatletter
   \AtBeginDocument{\let\@gls@adjustmode\@empty}%
 \makeatother
