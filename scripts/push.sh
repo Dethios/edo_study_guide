@@ -11,6 +11,9 @@ BLOCK_PATTERNS=(
   'id_rsa|id_ed25519|_key$'
   'token|apikey|secret'
 )
+# 0) Optional create a release file
+echo "Creating release file..."
+./scripts/copy_release_linux.sh
 
 # 1) Refuse if patterns present in staged or untracked
 if git ls-files -o -m --exclude-standard | grep -E "${BLOCK_PATTERNS[*]}" -iq; then

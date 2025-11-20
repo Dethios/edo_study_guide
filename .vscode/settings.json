@@ -1114,5 +1114,6 @@
     "xelatex",
     "xindy"
   ],
-  "cSpell.words": ["JCIDS", "JROC"]
+  "cSpell.words": ["JCIDS", "JROC"],
+  "editor.fontSize": 13
 }
