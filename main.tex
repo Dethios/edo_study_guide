@@ -156,11 +156,7 @@
 \RenewDocumentCommand{\entryname}{}{\sffamily\textbf{\color{Modern} Acronym}}
 \RenewDocumentCommand{\descriptionname}{}{\sffamily\textbf{\color{Modern} Definition}}
 
-% In the glossary list, make each acronym's "name" a hypertarget:
-\RenewDocumentCommand{\glsnamefont}{m}{%
-  \glsentryitem{\glslabel}%
-  \glstarget{\glslabel}{#1}%
-}
+\RenewDocumentCommand{\glsnamefont}{m}{\textbf{#1}}
 \printnoidxglossary[
   type=\acronymtype,
   title=List of Acronyms,

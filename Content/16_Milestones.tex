@@ -6,7 +6,7 @@
 % File: 16_Milestones.tex
 %====================
 \begin{document}
-\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 % The section title is not used for regular content. The title is set in the main document.
 % === MILESTONES (EDO 3.3.2) ===
 \section{Milestones and Phases}
@@ -21,7 +21,7 @@ The \ac{das} is the governance framework that aligns requirements, resourcing, a
 	\item[\textbf{\ac{mta}.}] Rapid prototyping or rapid fielding to deliver an operational capability within five years; minimizes documentation, but demands robust transition planning to \ac{mca} or sustainment funding~\autocite{DoDI5000-80}.
 	\item[\textbf{\ac{ucaacq}.}] Accelerated path to field urgent capability within 2~years or provide an interim solution in less than 5; leverages tailored test, streamlined acquisition decision memoranda, and dedicated senior oversight~\autocite{DoDI5000-81}.
 	\item[\textbf{Software Acquisition Pathway.}] Iterative, \ac{devsecops}-focused delivery of software increments with continuous integration, enterprise cloud alignment, and recurring user feedback cadences~\autocite{DoDI5000-87}.
-	\item[\textbf{Acquisition of Services Pathway.}] Structures service requirements, performance metrics, and contracting strategies to assure mission outcomes and oversight thresholds (e.g., Multi-Functional \ac{ipt} requirements review)\autocite{DoDI5000-74}.
+\item[\textbf{Acquisition of Services Pathway.}] Structures service requirements, performance metrics, and contracting strategies to assure mission outcomes and oversight thresholds (e.g., Multi-Functional \ac{ipt} requirements review)~\autocite{DoDI5000-74}.
 	\item[\textbf{Defense Business Systems Pathway.}] Rationalizes business processes, data standards, and \ac{bcac} to unlock enterprise interoperability before investing in solutions~\autocite{DoDI5000-75}.
 \end{description}
 \note{Pathways are not exclusive---an \ac{edo} may begin in \ac{mta} for prototyping, then transition to \ac{mca} for production once requirements and sustainment plans stabilize. Programs can also leverage \ac{ucaacq} for an initial bridge while planning a transition to \ac{mca}.}
@@ -65,7 +65,7 @@ The \ac{das} is the governance framework that aligns requirements, resourcing, a
 
 \subsection{Navy Two-Pass / Seven-Gate Review}
 \begin{description}
-	\item[\textbf{Pass 1 -- Capability.}] Led by OPNAV~N9 to mature the requirement: Gate~1 validates the capability gap, Gate~2 refines solutions and mission analysis, Gate~3 assesses affordability and alignment with Navy enterprises, and Gate~4 authorizes program initiation (supports \ac{mdd})\autocite{OPNAVINST5000-42E}.
+\item[\textbf{Pass 1 -- Capability.}] Led by OPNAV~N9 to mature the requirement: Gate~1 validates the capability gap, Gate~2 refines solutions and mission analysis, Gate~3 assesses affordability and alignment with Navy enterprises, and Gate~4 authorizes program initiation (supports \ac{mdd})~\autocite{OPNAVINST5000-42E}.
 	\item[\textbf{Pass 2 -- Resourcing.}] Led by OPNAV~N8 to align budgeting: Gate~5 verifies contracting/test readiness before Milestone~B (often synchronized with the Development RFP Release Decision), Gate~6 confirms production and sustainment resources prior to Milestone~C, and Gate~7 evaluates sustainment performance and modernization plans~\autocite{OPNAVINST5000-42E}.
 \end{description}
 \note{For board prep, highlight where SECNAV Gate Reviews or Defense Acquisition Board touchpoints overlay Navy gates to demonstrate cross-tier synchronization.}
@@ -205,7 +205,7 @@ The \ac{das} is the governance framework that aligns requirements, resourcing, a
 %====================
 % End of file
 %====================
-\ifSubfilesClassLoaded{
+\IfSubfilesClassLoaded{
   \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
   \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
   \printnoidxglossary[

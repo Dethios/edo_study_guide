@@ -1,7 +1,7 @@
 % !TEX root = ../main.tex
 % !TEX program = lualatex
 \documentclass[../main.tex]{subfiles}
-\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}{}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
 % =============================================================================
 % CONCLUDING SECTIONS: ASSUMPTIONS AND STUDY CUES
 %
@@ -11,7 +11,7 @@
 % =============================================================================
 
 \begin{document}
-\ifSubfilesClassLoaded{\chapter{EDO Study Guide}{}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 %====================
 % Contents here
 %====================
@@ -26,7 +26,7 @@
 	\item[\textbf{Rates \& \ac{nwcf}.}] \ac{slr}, \ac{nor}, \ac{aor}, and \ac{nwcf} v.s.\ mission-funded distinctions derive from the latest \ac{fmr} updates~\autocite{DoDFMR-Vol3,DoDFMR-Vol3-Ch19}.
 	\item[\textbf{Contracting overlays.}] \ac{ko} authority, cost principles, source-selection doctrine, and shipbuilding execution rely on the current FAR/DFARS/NMCARS stack plus \ac{navsea} implementation guides. Monitor \ac{navsea} notices for \ac{som}, Source Selection Guide, and Contracts Handbook updates~\autocite{FAR,DFARS,NMCARS,SOM-Ch3-2023,NAVSEA-Source-Selection-Guide-2022,NAVSEA-Contracts-Handbook-2023}.
 	\item[\textbf{Competition rules.}] \ac{cica} requirements and the seven FAR~6.302 exceptions are treated as current; verify statutory citations if the \ac{ndaa} revises 10~U.S.C.~\S~3201 or companion sections~\autocite{USC-3201-CICA,FAR}.
-	\item[\textbf{Solicitation prep.}] Release criteria, evaluation governance, and communication rules follow FAR parts~5/15, the \ac{navsea} Source Selection Guide/Contracts Handbook, and Coursebook~3.2.2; treat as baseline until updated~\autocite{FAR,NAVSEA-Source-Selection-Guide-2022,NAVSEA-Contracts-Handbook-2023,edo-3-2-2-solicitation-prep-2025}
+\item[\textbf{Solicitation prep.}] Release criteria, evaluation governance, and communication rules follow FAR parts~5/15, the \ac{navsea} Source Selection Guide/Contracts Handbook, and Coursebook~3.2.2; treat as baseline until updated~\autocite{FAR,NAVSEA-Source-Selection-Guide-2022,NAVSEA-Contracts-Handbook-2023,edo-3-2-2-solicitation-prep-2025}.
 	\item[\textbf{Coursebook crosswalk.}] Content tracks \ac{edo} courseware modules cited in the bibliography (2.1.*, 3.1.*, 3.2.*) for board prep currency~\autocite{edo-2-1-1-command-structures-2025,edo-2-1-5-technical-authority-2025,edo-3-1-1-ppbe-2025,edo-3-1-4-budget-execution-2025,edo-3-2-1-intro-contracting-2025,edo-3-2-2-solicitation-prep-2025}.
 \end{description}
 \HR
@@ -63,9 +63,9 @@
 %====================
 % End of file
 %====================
-\ifSubfilesClassLoaded{
-  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}
-  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
   \printnoidxglossary[
     type=\acronymtype,
     title=Acronyms,

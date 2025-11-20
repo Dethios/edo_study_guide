@@ -6,43 +6,43 @@
 % File: 21_Fleet_Maintenance_Policy_and_Implementation.tex
 % =============================================================================
 \begin{document}
-\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 \section{Fleet Maintenance Policy and Implementation}
 \minibib
 
 \subsection{Policy Baseline}
 \begin{description}
-  \item[\textbf{OPNAVINST 4700.7M.}] Establishes the maintenance policy for United States Navy ships: maintain the fleet at the highest practical readiness, perform work at the lowest capable level, and apply Reliability-Centered Maintenance (\ac{rcm})/Condition-Based Maintenance (\ac{cbm}) methods to manage Total Ownership Cost.\autocite{OPNAVINST4700-7M}
-  \item[\textbf{OPNAVNOTE 4700.}] Publishes CNO availability intervals, durations, man-day targets, and Repair Days for each platform, providing the authoritative baseline for the Long-Range Maintenance Schedule (LRMS).\autocite{OPNAVNOTE4700-24}
-  \item[\textbf{JFMM and CBM+.}] COMUSFLTFORCOM/COMPACFLTINST~4790.3 (JFMM) assigns responsibilities to \ac{tycom}s, \ac{rmmco}s, and \ac{nsa}s, while OPNAVINST~4790.16 issues CBM+ policy so sensors and analytics can replace purely time-based maintenance when justified.\autocite{COMFLTFORCOMINST4790-3,OPNAVINST4790-16G}
+\item[\textbf{OPNAVINST 4700.7M.}] Establishes the maintenance policy for United States Navy ships: maintain the fleet at the highest practical readiness, perform work at the lowest capable level, and apply Reliability-Centered Maintenance (\ac{rcm})/Condition-Based Maintenance (\ac{cbm}) methods to manage Total Ownership Cost~\autocite{OPNAVINST4700-7M}.
+\item[\textbf{OPNAVNOTE 4700.}] Publishes CNO availability intervals, durations, man-day targets, and Repair Days for each platform, providing the authoritative baseline for the Long-Range Maintenance Schedule (LRMS)~\autocite{OPNAVNOTE4700-24}.
+\item[\textbf{JFMM and CBM+.}] COMUSFLTFORCOM/COMPACFLTINST~4790.3 (JFMM) assigns responsibilities to \ac{tycom}s, \ac{rmmco}s, and \ac{nsa}s, while OPNAVINST~4790.16 issues CBM+ policy so sensors and analytics can replace purely time-based maintenance when justified~\autocite{COMFLTFORCOMINST4790-3,OPNAVINST4790-16G}.
 \end{description}
 The entire maintenance enterprise hinges on tying ship assessments to these references; citing a different standard during a board (e.g., OEM manual) without reconciling it to the JFMM and policy hierarchy is a red flag.
 
 \subsection{Strategy Frameworks}
 \begin{description}
-  \item[\textbf{\ac{ofrp}.}] OPNAVINST~3000.15 drives Fleet Response Plans that align readiness, training, and maintenance phases; maintenance windows in the OFRP billet plan are how TYCOMs defend availability lengths and sequencing.\autocite{OPNAVINST3000-15K}
-  \item[\textbf{\ac{sfrm}.}] SURFLANT/SURFPAC 3502-series guidance aligns training milestones (Basic, Advanced, Integrated) with maintenance health metrics so a ship cannot progress if critical maintenance or material conditions remain open.\autocite{CNSP-CNSLINST3502-7C}
-  \item[\textbf{Naval Sustainment System—Shipyards (\ac{nsssy}).}] NSS-SY injects commercial best practices (Theory of Constraints, value-stream management, digital dashboards) into the four public yards with the goal of 80\% on-time SSN deliveries and no idle submarine backlog by FY26.\autocite{edo-4-1-3-fleet-maint-policy-2025}
+\item[\textbf{\ac{ofrp}.}] OPNAVINST~3000.15 drives Fleet Response Plans that align readiness, training, and maintenance phases; maintenance windows in the OFRP billet plan are how TYCOMs defend availability lengths and sequencing~\autocite{OPNAVINST3000-15K}.
+\item[\textbf{\ac{sfrm}.}] SURFLANT/SURFPAC 3502-series guidance aligns training milestones (Basic, Advanced, Integrated) with maintenance health metrics so a ship cannot progress if critical maintenance or material conditions remain open~\autocite{CNSP-CNSLINST3502-7C}.
+\item[\textbf{Naval Sustainment System—Shipyards (\ac{nsssy}).}] NSS-SY injects commercial best practices (Theory of Constraints, value-stream management, digital dashboards) into the four public yards with the goal of 80\% on-time SSN deliveries and no idle submarine backlog by FY26~\autocite{edo-4-1-3-fleet-maint-policy-2025}.
 \end{description}
 
 \subsection{Availability Approval and Execution Discipline}
 \begin{enumerate}
-  \item \textbf{Baseline work.} SURFMEPP/SUBMEPP compile \ac{cmp} work, TYCOM repairs, and modernization candidates into the Baseline Availability Work Package (\ac{bawp}) at A-36 months; work then flows through the CNO scheduling conference for final approval.\autocite{OPNAVNOTE4700-24,edo-4-1-3-fleet-maint-policy-2025}
-  \item \textbf{Directed vs.\ condition-based maintenance.} Directed Maintenance Tasks (DMT) must be executed regardless of condition (e.g., structural checks mandated by SUBSAFE), while \ac{cbm} tasks rely on evidence such as oil analysis, smart sensors, or TSRA discoveries to justify deferral.\autocite{OPNAVINST4700-7M,OPNAVINST4790-16G}
-  \item \textbf{Approval boards.} TYCOM Availability Work Package Reviews validate that all Departures from Specification (\ac{dfs}) and Temporary Standing Orders (\ac{tso}) have closure plans before endorsing the package for \ac{cno} approval.\autocite{COMFLTFORCOMINST4790-3}
-  \item \textbf{Metrics.} Schedule adherence, manday performance, and quality escape metrics (e.g., repeat maintenance, Objective Quality Evidence (OQE) rejects) appear in USFF/COMPACFLT readiness briefs and feed the next LRMS update.\autocite{edo-4-1-3-fleet-maint-policy-2025}
+\item \textbf{Baseline work.} SURFMEPP/SUBMEPP compile \ac{cmp} work, TYCOM repairs, and modernization candidates into the Baseline Availability Work Package (\ac{bawp}) at A-36 months; work then flows through the CNO scheduling conference for final approval~\autocite{OPNAVNOTE4700-24,edo-4-1-3-fleet-maint-policy-2025}.
+\item \textbf{Directed vs.\ condition-based maintenance.} Directed Maintenance Tasks (DMT) must be executed regardless of condition (e.g., structural checks mandated by SUBSAFE), while \ac{cbm} tasks rely on evidence such as oil analysis, smart sensors, or TSRA discoveries to justify deferral~\autocite{OPNAVINST4700-7M,OPNAVINST4790-16G}.
+\item \textbf{Approval boards.} TYCOM Availability Work Package Reviews validate that all Departures from Specification (\ac{dfs}) and Temporary Standing Orders (\ac{tso}) have closure plans before endorsing the package for \ac{cno} approval~\autocite{COMFLTFORCOMINST4790-3}.
+\item \textbf{Metrics.} Schedule adherence, manday performance, and quality escape metrics (e.g., repeat maintenance, Objective Quality Evidence (OQE) rejects) appear in USFF/COMPACFLT readiness briefs and feed the next LRMS update~\autocite{edo-4-1-3-fleet-maint-policy-2025}.
 \end{enumerate}
 
 \subsection{Trends, Risks, and Talking Points}
 \begin{itemize}
-  \item \textbf{Industrial base mix.} Navy policy seeks roughly a 50/50 public-private mix for surface depot work, with CVNs and SSNs/SSBNs remaining predominantly public-yard to retain nuclear competencies.\autocite{OPNAVINST4700-7M}
-  \item \textbf{Manpower constraints.} NSS-SY reviews highlight persistent shortages in key trades (nuclear welders, radiological controls, rigging) that drive docking delays; referencing NSS-SY corrective actions shows awareness of current risk mitigations.\autocite{edo-4-1-3-fleet-maint-policy-2025}
-  \item \textbf{Digital thread.} The Navy Data Environment (\ac{nde}) modernization module is now the authoritative source for installed configuration, allowing planners to reconcile modernization with maintenance data without resorting to ad-hoc spreadsheets.\autocite{TS9090-310}
-  \item \textbf{Fiscal discipline.} Maintenance execution must honor color-of-money boundaries (OC\&MF vs.\ \ac{opn}/\ac{scn}); unauthorized obligation adjustments are \ac{ada} violations.\autocite{DoDFMR-Vol3,FAR}
+\item \textbf{Industrial base mix.} Navy policy seeks roughly a 50/50 public-private mix for surface depot work, with CVNs and SSNs/SSBNs remaining predominantly public-yard to retain nuclear competencies~\autocite{OPNAVINST4700-7M}.
+\item \textbf{Manpower constraints.} NSS-SY reviews highlight persistent shortages in key trades (nuclear welders, radiological controls, rigging) that drive docking delays; referencing NSS-SY corrective actions shows awareness of current risk mitigations~\autocite{edo-4-1-3-fleet-maint-policy-2025}.
+\item \textbf{Digital thread.} The Navy Data Environment (\ac{nde}) modernization module is now the authoritative source for installed configuration, allowing planners to reconcile modernization with maintenance data without resorting to ad-hoc spreadsheets~\autocite{TS9090-310}.
+\item \textbf{Fiscal discipline.} Maintenance execution must honor color-of-money boundaries (OC\&MF vs.\ \ac{opn}/\ac{scn}); unauthorized obligation adjustments are \ac{ada} violations~\autocite{DoDFMR-Vol3,FAR}.
 \end{itemize}
 % TODO: Build a single-glance table that links each controlling policy (4700.7M, OPNAVNOTE 4700, JFMM, CBM+) to the board-ready talking points (who owns it, what decisions it drives, and how to defend compliance).
 
-\ifSubfilesClassLoaded{
+\IfSubfilesClassLoaded{
   \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
   \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
   \printnoidxglossary[

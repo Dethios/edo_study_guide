@@ -6,7 +6,7 @@
 % File: SECTION_FILE_NAME.tex
 %====================
 \begin{document}
-\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 % The section title is not used for regular content. The title is set in the main document.
 %====================
 % Contents
@@ -108,7 +108,7 @@ Track ROS and ROA against industry benchmarks, cash-on-hand, and debt loads to d
 %====================
 % End of file
 %====================
-\ifSubfilesClassLoaded{
+\IfSubfilesClassLoaded{
   \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
   \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
   \printnoidxglossary[

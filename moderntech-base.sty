@@ -449,13 +449,25 @@
 % =============================
 \ifmoderntech@ieeebib
   \RequirePackage{csquotes}
+  % Ensure hyperref is loaded before biblatex so citation links resolve.
+  \RequirePackage{hyperref}
+  % Suppress biblatex citation anchors when hyperlinking is disabled to avoid
+  % unreferenced PDF destinations.
+  \RenewDocumentCommand{\hyper@natanchorstart}{m}{}%
+  \RenewDocumentCommand{\hyper@natanchorend}{}{}%
+  \RenewDocumentCommand{\hyper@natlinkstart}{m}{\def\hyper@nat@current{#1}}%
+  \RenewDocumentCommand{\hyper@natlinkend}{}{}%
+  \RenewDocumentCommand{\hyper@natlinkbreak}{mm}{#1#2}%
   \RequirePackage[backend=biber,style=ieee,defernumbers=true,sorting=none]{biblatex}
   \ExecuteBibliographyOptions{
     giveninits=true,
     isbn=false, doi=true,
     url=true,
-    urldate=iso
+    urldate=iso,
+    hyperref=false
   }
+  % Numeric labels; cite macros add the surrounding brackets and formatting.
+  \DeclareFieldFormat{labelnumber}{#1}
   \addbibresource{\moderntech@bibresource}
 
   \RenewDocumentCommand{\bibfont}{}{\rmfamily\small}

@@ -12,7 +12,7 @@
 % =============================================================================
 
 \begin{document}
-\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 %====================
 % Contents here
 %====================
@@ -41,7 +41,7 @@
 \acp{ea} perform lifecycle engineering under \ac{ta} governance. They are \emph{not} \ac{ta} unless they hold a \ac{ta} warrant~\autocite{edo-2-1-5-technical-authority-2025}. Common EA roles include:
 \begin{description}
 	\item[\textbf{\ac{isea}.}] Lifecycle systems engineering for \emph{fielded} systems (e.g., fleet introduction, distance support, troubleshooting/\ac{casrep} support, maintenance planning, obsolescence, technical manuals/data, configuration of the in-service baseline).
-	\item[\textbf{\ac{da}.}] Develops detailed design and configuration documentation for a system or platform (e.g., ship detail design,\acp{icd}, drawings, \acp{tdp}) to \ac{ta}-approved standards.
+	\item[\textbf{\ac{da}.}] Develops detailed design and configuration documentation for a system or platform (e.g., ship detail design, \acp{icd}, drawings, \acp{tdp}) to \ac{ta}-approved standards.
 	\item[\textbf{\ac{aea}.}] Produces alteration packages (e.g., installation drawings, test procedures, logistics updates) and supports fleet introduction for ship or system changes.
 	\item[\textbf{\ac{sia}.}] Orchestrates system-of-systems integration (e.g., interfaces, interoperability, cybersecurity in the integration space) across combat system elements and platforms.
 	\item[\textbf{\ac{tda}.}] Issues and maintains technical work direction for installations and maintenance (e.g., \ac{twd}, local instructions) consistent with the \ac{ta}-approved baseline.
@@ -66,7 +66,7 @@
 %====================
 % End of file
 %====================
-\ifSubfilesClassLoaded{
+\IfSubfilesClassLoaded{
   \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
   \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
   \printnoidxglossary[

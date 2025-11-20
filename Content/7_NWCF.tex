@@ -11,7 +11,7 @@
 % =============================================================================
 
 \begin{document}
-\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 %====================
 % Contents here
 %====================
@@ -59,7 +59,7 @@
 \subsection{Stabilized Rates and SLR}
 \begin{description}
 	\item[\textbf{Stabilized Rates.}] Customer prices set in the budget build to recover expected full costs (labor, material, overhead, depreciation/C \ac{cip}) with a near-zero \ac{nor} goal~\autocite{DoDFMR-Vol3}.
-	\item[\textbf{\ac{slr}.}] Published labor \$/hr for a shop/code; recovers direct labor + fringe + overhead + G\&A + capital depreciation recovery~\autocite{DoDFMR-Vol3}:
+\item[\textbf{\ac{slr}.}] Published labor \$/hr for a shop/code; recovers direct labor + fringe + overhead + G\&A + capital depreciation recovery~\autocite{DoDFMR-Vol3}. The rate is:
       \[
         \text{\ac{slr}} = \frac{\text{Direct Labor} + \text{Fringe} + \text{OH} + \text{G\&A} + \text{Depreciation Recovery}}{\text{Direct Labor Hours}}
       \]
@@ -74,7 +74,7 @@ Military administration and leadership billets (CO/XO/Admin) are funded by \text
 \begin{enumerate}
 	\item \textbf{Business Case Development}: Sponsor (e.g., \ac{asnrdanda} or \ac{syscom}) prepares analytical justification showing workload, demand signal, and ability to operate on a revolving basis without violating purpose/time/amount~\autocite{DoDFMR-Vol3-Ch19}.
 	\item \textbf{\ac{don} Approval Chain}: \ac{secnav} (delegated to ASN (FM\&C)) endorses the concept and forwards to \ac{ouswc} while coordinating with Navy Comptroller to align \ac{ppbe} exhibits~\autocite{DoDFMR-Vol3-Ch19}.
-	\item \textbf{\ac{ouswc}/\ac{omb} Review}: \ac{dod} \ac{cfo} validates cash requirements, rate methodology, and capital plan, then seeks \ac{omb} alignment for the \ac{pb}~\autocite{DoDFMR-Vol3-Ch19}.
+	\item \textbf{\ac{ouswc}/\ac{omb} Review}: \ac{dow} \ac{cfo} validates cash requirements, rate methodology, and capital plan, then seeks \ac{omb} alignment for the \ac{pb}~\autocite{DoDFMR-Vol3-Ch19}.
 	\item \textbf{Congressional Notification}: Congress must be notified (and, when required, explicitly authorize in appropriations or authorizations) before execution; 10~U.S.C.~\S~2208~\autocite{USC-2208-NWCF} restricts creation of new \acp{wcf} without legislative awareness~\autocite{DoDFMR-Vol3-Ch19}.
 	\item \textbf{Implementation}: Once approved, the new business area is issued an \ac{nwcf} business unit code, begins \ac{ppbe} rate build two years out, and transitions legacy appropriated accounts via opening balance adjustments~\autocite{DoDFMR-Vol3-Ch19}.
 \end{enumerate}
@@ -104,7 +104,7 @@ Military administration and leadership billets (CO/XO/Admin) are funded by \text
 %====================
 % End of file
 %====================
-\ifSubfilesClassLoaded{
+\IfSubfilesClassLoaded{
   \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
   \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
   \printnoidxglossary[
