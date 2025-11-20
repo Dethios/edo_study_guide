@@ -61,18 +61,21 @@ exec "$LATEXMK" -pdf $engine_flag \
 EOF
 chmod +x "$shim"
 
-# Collect .tex targets; default to main.tex
+# Collect .tex targets; default to src/main.tex (repo layout)
 tex_targets=()
 for arg in "$@"; do
   [[ "$arg" == *.tex && -e "$arg" ]] && tex_targets+=("$arg")
 done
 if [[ ${#tex_targets[@]} -eq 0 ]]; then
-  [[ -e main.tex ]] || {
+  if [[ -e src/main.tex ]]; then
+    tex_targets=("src/main.tex")
+  elif [[ -e main.tex ]]; then
+    tex_targets=("main.tex")
+  else
     echo "Usage: $(basename "$0") [file1.tex ...]"
     rm -f "$shim"
     exit 2
-  }
-  tex_targets=("main.tex")
+  fi
 fi
 
 # Run: texliveonfly -c <shim> <file.tex>

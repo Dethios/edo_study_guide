@@ -17,8 +17,14 @@ if (-not $Doc.EndsWith(".tex")) {
 
 # Check if the file exists
 if (-not (Test-Path $Doc)) {
-    Write-Error "File not found: $Doc"
-    exit 1
+    $srcDoc = Join-Path "src" $Doc
+    if (Test-Path $srcDoc) {
+        $Doc = $srcDoc
+    }
+    else {
+        Write-Error "File not found: $Doc"
+        exit 1
+    }
 }
 
 # Define arguments for latexmk

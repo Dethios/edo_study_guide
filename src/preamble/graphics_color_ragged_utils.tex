@@ -1,0 +1,16 @@
+% =============================================================================
+% GRAPHICS AND UTILITY SETUP
+% =============================================================================
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}   % e.g., \includegraphics[width=\linewidth,frame]
+\usepackage{grffile}
+\usepackage[mode=buildnew]{standalone}
+\usepackage{subfiles}
+% When the main document (moderntech) loads these subfiles, provide a
+% no-op fallback so \IfSubfilesClassLoaded guards hold their second branch.
+\providecommand{\IfSubfilesClassLoaded}[2]{#2}
+\usepackage{xstring}
+
+% Graphics search paths for main + subfile contexts.
+\graphicspath{{../assets/images/}{../../assets/images/}{tikz/}{../tikz/}{tikz/out/}{../tikz/out/}}
+% =============================================================================

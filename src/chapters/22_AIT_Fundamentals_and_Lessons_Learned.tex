@@ -1,0 +1,53 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../../build/main}}}{}
+% =============================================================================
+% File: 22_AIT_Fundamentals_and_Lessons_Learned.tex
+% =============================================================================
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+\section{AIT Fundamentals and Lessons Learned}
+\minibib
+
+\subsection{Purpose and Advantages}
+\begin{itemize}
+\item \textbf{Concentrated expertise.} An \ac{ait} is a trained unit (government, contractor, or hybrid) directed by an AIT Manager to install specific modernization changes that require unique skills, tooling, or repetitive production-line execution~\autocite{TS9090-310,edo-4-1-4-ait-fundamentals-2025}.
+\item \textbf{Speed and repeatability.} Using the same team across hulls captures lessons learned, reduces quality escapes, and accelerates delivery of high-priority combat system upgrades (e.g., CANES, AWS, GPNTS) without overloading the shipyard workforce~\autocite{SL720-AA-MAN-030}.
+\item \textbf{Safety and configuration control.} Dedicated teams enforce technical work documents, boundary isolations, and logistics support for each alteration, reducing the risk of unauthorized changes that could violate SUBSAFE or Level I controls~\autocite{TS9090-310}.
+\end{itemize}
+
+\subsection{Roles and Responsibilities}
+\begin{description}
+\item[\textbf{Sponsor / \ac{parm}.}] Assigns and funds the AIT, prioritizes hulls, and ensures logistics (allowance updates, training, tech manuals) are resourced before work begins~\autocite{SL720-AA-MAN-030}.
+\item[\textbf{\ac{ait} Manager.}] Leads planning, safety, schedule integration, and quality execution; serves as the single point of contact for the Naval Supervising Activity and Ship's Force~\autocite{TS9090-310}.
+\item[\textbf{\ac{osic}.}] Coordinates day-to-day shipboard actions, manages tag-outs and system turnovers, and resolves emergent issues between the AIT, \ac{nsa}, and Ship's Force~\autocite{edo-4-1-4-ait-fundamentals-2025}.
+\item[\textbf{\ac{rmmco}.}] Screens alteration packages, aligns them with availability windows, and enforces waterfront integration and reporting requirements~\autocite{TS9090-310}.
+\item[\textbf{\ac{nsa}/\ac{lma}.}] Controls work authorization, boundary isolations, tests, and Objective Quality Evidence for work accomplished under the availability contract~\autocite{COMFLTFORCOMINST4790-3}.
+\end{description}
+
+\subsection{Planning Controls and MOA Discipline}
+\begin{enumerate}
+\item \textbf{\ac{moa}.} The \ac{moa} outlines scope, funding, schedule, safety, habitability, quality, testing, and turnover; it must be signed by the AIT sponsor, \ac{rmmco}, Ship's Commanding Officer, and \ac{nsa} before work starts~\autocite{TS9090-310}.
+\item \textbf{Installation planning.} Each alteration requires a ship check, logistics certification, and completion of prerequisite changes; the NMP databases confirm that planned work matches the approved Change Document~\autocite{SL720-AA-MAN-030}.
+\item \textbf{WAF/tag-out alignment.} Integration with the Work Authorization Form process and \ac{tum} prevents conflicting isolations between the AIT and shipyard trades~\autocite{S0400-AD-URM-010}.
+\item \textbf{Testing.} Entry/exit criteria, including pre-installation checkout, operational tests, and system certifications (e.g., Combat System Ship Qualification Test), are tailored per alteration and witnessed by \ac{nsa}~\autocite{TS9090-310}.
+\end{enumerate}
+
+\subsection{Lessons Learned for Board Prep}
+\begin{itemize}
+\item \textbf{Late drawing changes drive rework.} Lock engineers early—AITs report that late drawing revisions, missing Interface Control Documents, or mismatched configuration data cause most delays~\autocite{edo-4-1-4-ait-fundamentals-2025}.
+\item \textbf{Habitability and safety must be priced.} Many AITs arrive without berthing or industrial hygiene plans; ensuring the \ac{moa} captures services, hot work permits, and fall protection prevents emergent cost growth~\autocite{SL720-AA-MAN-030}.
+\item \textbf{Document close-out.} Uploading OQE, system configuration updates, and post-install logistics changes to the \ac{nde} is mandatory—omitting them erodes Fleet supply support~\autocite{TS9090-310}.
+\end{itemize}
+% TODO: Provide a swim-lane diagram that shows how the Sponsor, AIT Manager, \ac{rmmco}, and \ac{nsa} interact from screening through certification.
+
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+]}{}
+\end{document}

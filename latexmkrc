@@ -2,6 +2,12 @@
 $out_dir = 'out';
 $aux_dir = 'build';
 
+# Ensure LaTeX can see sources under src/ even when latexmk is run from repo root.
+my $texinputs_sep = ($^O =~ /mswin32|cygwin|msys/i) ? ';' : ':';
+$ENV{'TEXINPUTS'} = "src//$texinputs_sep" . ($ENV{'TEXINPUTS'} // '');
+$ENV{'BIBINPUTS'} = "src//$texinputs_sep" . ($ENV{'BIBINPUTS'} // '');
+$ENV{'BSTINPUTS'} = "src//$texinputs_sep" . ($ENV{'BSTINPUTS'} // '');
+
 # Tell latexmk this is a LuaLaTeX workflow
 $pdf_mode = 4;
 
