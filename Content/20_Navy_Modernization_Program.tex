@@ -1,0 +1,53 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% =============================================================================
+% File: 20_Navy_Modernization_Program.tex
+% =============================================================================
+\begin{document}
+\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+\section{Navy Modernization Program}
+\minibib
+
+\subsection{Modernization vs.\ Maintenance}
+\begin{description}
+  \item[\textbf{Modernization.}] Improves capability or readiness above the baseline by installing approved Ship Alterations (SHIPALT), Modernization Work Orders, and Fleet modernization program items that change the ship's configuration, safety posture, or mission systems.\autocite{edo-4-1-2-navy-modernization-2025,OPNAVINST4700-7M}
+  \item[\textbf{Maintenance.}] Restores the system to its original performance and reliability; it cannot change capability without an approved modernization directive.\autocite{edo-4-1-2-navy-modernization-2025,COMFLTFORCOMINST4790-3}
+  \item[\textbf{Repair.}] Corrects degradations to return the item to the current baseline; repairs that change form, fit, or function require an approved modernization document to avoid unauthorized configuration changes.\autocite{OPNAVINST4700-7M}
+\end{description}
+EDOs must articulate which work package element they are defending, because it dictates the funding source (e.g., FUNDS-D/ALT for modernization versus OC\&MF for maintenance) and who holds approval authority.
+
+\subsection{Governance, Roles, and Documentation}
+\begin{description}
+  \item[\textbf{Modernization governance.}] The Navy Modernization Program (\ac{nmp}) integrates \ac{opnav} resource sponsors, \acp{peo}, Participating Resource Managers (\acp{parm}), Warfare Centers, and Fleet forces through the NMP Executive Steering Group and Sub-Class Modernization Coordinating Groups; the process is codified in SL720-AA-MAN-030, TS9090.310, and the JFMM.\autocite{SL720-AA-MAN-030,TS9090-310,COMFLTFORCOMINST4790-3}
+  \item[\textbf{Key documents.}] Modernization Change Documents capture the requirement, Justification and Cost Forms allocate funding, SHIPALT Records (Record of Change) provide lifecycle traceability, installation drawings direct work, and the Alteration Equivalent to Repair (AER) process keeps urgent fixes legal.\autocite{TS9090-310,edo-4-1-2-navy-modernization-2025}
+  \item[\textbf{Execution agents.}] Alteration Installation Teams (\acp{ait}), Regional Maintenance and Modernization Coordination Offices (\ac{rmmco}), and \acp{supship} integrate modernization tasks into availabilities while Naval Supervising Activities verify that work followed the approved package.\autocite{SL720-AA-MAN-030,TS9090-310}
+\end{description}
+
+\subsection{Process Flow and Funding Integration}
+\begin{enumerate}
+  \item \textbf{Identify need.} Fleet feedback, reliability data, or new threats drive a Change Initiation Notice, which is screened for technical feasibility and logistics impacts.\autocite{edo-4-1-2-navy-modernization-2025}
+  \item \textbf{Engineer and budget.} The Alteration Engineering Agent develops Ship Check data, installation drawings, and metrics while the \ac{parm} aligns FUNDS-D (lifecycle engineering) and FUNDS-K (procurement) appropriations; pilot efforts now allow limited \ac{opn} use for private-yard execution when approved by \ac{opnav} N9/N83.\autocite{edo-4-1-2-navy-modernization-2025,SL720-AA-MAN-030}
+  \item \textbf{Select availability.} Modernization Work Package Integration (WPI) events match each change to a specific CNO availability, Continuous Maintenance availability, or pier-side AIT window based on lead time material and platform readiness.\autocite{TS9090-310}
+  \item \textbf{Install and certify.} AITs execute under a Memorandum of Agreement (MOA) that spells out safety, quality, and turnover requirements; completion data is entered into the Navy Data Environment (\ac{nde}) to update the authoritative configuration record.\autocite{SL720-AA-MAN-030,TS9090-310}
+\end{enumerate}
+Failure to follow this sequence is why unauthorized equipment has been discovered during Board of Inspection and Survey (INSURV) events---a career ender for the responsible EDO.
+
+\subsection{Execution Enablers and Lessons Learned}
+\begin{description}
+  \item[\textbf{Configuration management.}] Every modernization line item in the Availability Work Package must trace back to an approved change document, logistics support analysis, and allowance parts list to avoid sparing gaps.\autocite{COMFLTFORCOMINST4790-3}
+  \item[\textbf{MOA discipline.}] The MOA between the AIT, \ac{rmmco}, Naval Supervising Activity (\ac{nsa}), and Ship's Force defines boundary isolations, tag-out responsibilities, testing, and habitability; lessons learned from CANES and AWS installs show that unsigned MOAs invite production and safety conflicts.\autocite{TS9090-310,edo-4-1-2-navy-modernization-2025}
+  \item[\textbf{AIT employment.}] Use AITs when the task requires repeat installations across multiple hulls, unique OEM skills, or when it is more cost-effective to mobilize the capability than to train an entire shipyard trade.\autocite{SL720-AA-MAN-030}
+\end{description}
+% TODO: Create a table that maps modernization documents (Change Notice, JCF, SHIPALT record, installation drawing) to their owner, timing, and funding decision.
+
+\ifSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+]}{}
+\end{document}

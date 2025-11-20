@@ -433,6 +433,7 @@
 \newacronym{milpers}{MILPERS}{Military Personnel}
 \newacronym{nwcf}{NWCF}{Navy Working Capital Fund}
 \newacronym{wcf}{WCF}{Working Capital Fund}
+\newacronym{wpn}{WPN}{Weapons Procurement, Navy}
 \newacronym{cvn}{CVN}{Nuclear-Powered Aircraft Carrier}
 \newacronym{rcoh}{RCOH}{Refueling and Complex Overhaul}
 \newacronym{ctc}{CTC}{Cost-to-Complete}
@@ -472,6 +473,58 @@
 \newacronym{svr}{SVR}{System Verification Review}
 \newacronym{otrr}{OTRR}{Operational Test Readiness Review}
 \newacronym{prr}{PRR}{Production Readiness Review}
+
+% --- Maintenance & Modernization ---
+
+\newacronym{tycom}{TYCOM}{Type Commander}
+\newacronym{nsy}{NSY}{Naval Shipyard}
+\newacronym{rmc}{RMC}{Regional Maintenance Center}
+\newacronym{ima}{IMA}{Intermediate Maintenance Activity}
+\newacronym{namts}{NAMTS}{Navy Afloat Maintenance Training Strategy}
+\newacronym{nmp}{NMP}{Navy Modernization Program}
+\newacronym{cmp}{CMP}{Class Maintenance Plan}
+\newacronym{awp}{AWP}{Availability Work Package}
+\newacronym{bawp}{BAWP}{Baseline Availability Work Package}
+\newacronym{macmo}{MAC-MO}{Multiple Award Contract, Multi-Order}
+\newacronym{aim}{AIM}{Advanced Industrial Management}
+\newacronym{tsra}{TSRA}{Total Ship Readiness Assessment}
+\newacronym{pats}{PATS}{Pre-Availability Test}
+\newacronym{pots}{POTS}{Pre-Overhaul Test}
+\newacronym{dfs}{DFS}{Departure from Specification}
+\newacronym{tso}{TSO}{Temporary Standing Order}
+\newacronym{rmmco}{RMMCO}{Regional Maintenance and Modernization Coordination Office}
+\newacronym{nsa}{NSA}{Naval Supervising Activity}
+\newacronym{lma}{LMA}{Lead Maintenance Activity}
+\newacronym{ait}{AIT}{Alteration Installation Team}
+\newacronym{osic}{OSIC}{On-Site Installation Coordinator}
+\newacronym{moa}{MOA}{Memorandum of Agreement}
+\newacronym{nde}{NDE}{Navy Data Environment}
+\newacronym{nsssy}{NSS-SY}{Naval Sustainment System---Shipyards}
+\newacronym{sfrm}{SFRM}{Surface Force Readiness Manual}
+\newacronym{ofrp}{OFRP}{Optimized Fleet Response Plan}
+\newacronym{cbm}{CBM}{Condition-Based Maintenance}
+\newacronym{cbmp}{CBM+}{Condition-Based Maintenance Plus}
+\newacronym{rcm}{RCM}{Reliability-Centered Maintenance}
+\newacronym{nrro}{NRRO}{Naval Reactors Representative Office}
+\newacronym{rpco}{RPCO}{Reactor Plant Contractor's Office}
+\newacronym{navreact}{Naval Reactors}{Naval Nuclear Propulsion Program}
+\newacronym{subsafe}{SUBSAFE}{Submarine Safety Program}
+\newacronym{supsalv}{SUPSALV}{Supervisor of Salvage and Diving}
+\newacronym{ra}{R\&A}{Rescue and Assistance}
+\newacronym{msc}{MSC}{Military Sealift Command}
+\newacronym{mdsu}{MDSU}{Mobile Diving and Salvage Unit}
+\newacronym{fdsrt}{FDSRT}{Forward Deployed Ship Repair Team}
+\newacronym{emrf}{EMRF}{Expeditionary Maintenance and Repair Facility}
+\newacronym{sib}{SIB}{Shop-in-a-Box}
+\newacronym{msp}{MSP}{Maritime Support Plan}
+\newacronym{waf}{WAF}{Work Authorization Form}
+\newacronym{tgi}{TGI}{Task Group Instruction}
+\newacronym{tum}{TUM}{Tag-out Users Manual}
+\newacronym{loa}{LOA}{Light-Off Assessment}
+\newacronym{sovt}{SOVT}{Shipboard Operational Verification Test}
+\newacronym{cssqt}{CSSQT}{Combat System Ship Qualification Trial}
+\newacronym{pcd}{PCD}{Production Completion Date}
+\newacronym{oqe}{OQE}{Objective Quality Evidence}
 
 % --- Operational Test Agencies & Interop ---
 \newacronym{comoptevfor}{COMOPTEVFOR}{Commander, Operational Test and Evaluation Force}
