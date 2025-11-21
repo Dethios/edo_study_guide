@@ -85,7 +85,8 @@
 % (No hard-set here to avoid overriding user policy.)
 
 % ---------- Load the shared implementation ----------
-\RequirePackage{moderntech-base}
+% moderntech.sty wraps moderntech-base plus shared preamble utilities.
+\RequirePackage{moderntech}
 
 % ---------- Convenience message ----------
 \typeout{==============================================================}
