@@ -470,11 +470,17 @@
       \hyper@anchorend
     }%
   }
+  \ProvideDocumentCommand{\bibhyperref}{m}{#1}
   \RenewDocumentCommand{\bibhyperref}{m}{%
     \ifhyperref
       {\hyperlink{mtbib:\therefsection:\strfield{entrykey}}{#1}}%
       {#1}%
   }
+  \IfFileExists{./\moderntech@bibresource}{}{%
+    \IfFileExists{src/\moderntech@bibresource}{%
+      \renewcommand{\moderntech@bibresource}{src/\moderntech@bibresource}%
+    }{}%
+  }%
   \addbibresource{\moderntech@bibresource}
 
   \RenewDocumentCommand{\bibfont}{}{\rmfamily\small}
