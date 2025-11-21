@@ -30,7 +30,7 @@
 % Typography & bibliography
 \DeclareBoolOption[false]{sansbody}     % toggle sans body copy
 \DeclareStringOption[charter]{math}     % math font family selector
-\DeclareBoolOption[true]{ieeebib}       % IEEE-style biblatex settings
+\DeclareBoolOption[false]{ieeebib}      % IEEE-style biblatex settings (manual load recommended)
 \DeclareStringOption[edo.bib]{bibresource}
 
 % Code & diagrams
@@ -448,111 +448,22 @@
 % * Bibliography (biblatex/biber; IEEE numeric)
 % =============================
 \ifmoderntech@ieeebib
-  \RequirePackage{csquotes}
-  % Ensure hyperref is loaded before biblatex so citation links resolve.
-  \RequirePackage{hyperref}
   \RequirePackage[backend=biber,style=ieee,defernumbers=true,sorting=none]{biblatex}
-  \ExecuteBibliographyOptions{
-    giveninits=true,
-    isbn=false, doi=true,
-    url=true,
-    urldate=iso,
-    hyperref=true
-  }
-  % Explicit bibitem anchors (stable across refsegments) and hyperlink targets.
-  \AtEveryBibitem{%
-    \Hy@raisedlink{%
-      \hyper@anchorstart{cite.\therefsection@\strfield{entrykey}}%
-      \hyper@anchorend
-    }%
-    \Hy@raisedlink{%
-      \hyper@anchorstart{mtbib:\therefsection:\strfield{entrykey}}%
-      \hyper@anchorend
-    }%
-  }
-  \ProvideDocumentCommand{\bibhyperref}{m}{#1}
-  \RenewDocumentCommand{\bibhyperref}{m}{%
-    \ifhyperref
-      {\hyperlink{mtbib:\therefsection:\strfield{entrykey}}{#1}}%
-      {#1}%
-  }
   \IfFileExists{./\moderntech@bibresource}{}{%
     \IfFileExists{src/\moderntech@bibresource}{%
       \renewcommand{\moderntech@bibresource}{src/\moderntech@bibresource}%
     }{}%
   }%
   \addbibresource{\moderntech@bibresource}
-
-  \RenewDocumentCommand{\bibfont}{}{\rmfamily\small}
-  \defbibheading{subrefs}[\refname]{\paragraph*{#1}\nopagebreak}
-
-  \newbibmacro*{legTitle}{%
-    \printfield[title]{title}%
-    \setunit{\addcolon\addspace}%
-    \printfield[title]{subtitle}%
-  }
-  \DeclareBibliographyDriver{legislation}{%
-    \usebibmacro{bibindex}%
-    \usebibmacro{begentry}%
-    \printfield{shorttitle}%
-    \setunit{\addspace}%
-    \usebibmacro{legTitle}%
-    \newunit\newblock
-    \printlist{location}%
-    \setunit{\addcomma\addspace}%
-    \printfield{year}%
-    \newunit\newblock
-    \printfield{note}%
-    \newunit\newblock
-    \usebibmacro{finentry}%
-  }
-
   \NewDocumentCommand{\nbcite}{m}{\citeauthor{#1}~\autocite{#1}}
   \NewDocumentCommand{\srcCite}{m}{Source:~~\citetitle{#1},~\citeyear{#1}~\autocite{#1}}
   \NewDocumentCommand{\tabCite}{m}{\citetitle{#1},~\citeyear{#1}~\autocite{#1}}
-
-  \NewDocumentCommand{\minibib}{}{%
-    \begingroup
-      \renewbibmacro*{in:}{}%
-      \renewbibmacro*{author}{}%
-      \renewbibmacro*{editor+others}{}%
-      \renewbibmacro*{journal+issuetitle}{}%
-      \renewbibmacro*{booktitle}{}%
-      \renewbibmacro*{publisher+location+date}{\setunit{\addcomma\addspace}\usebibmacro{date}\newunit}%
-      \renewbibmacro*{volume+number+eid}{}%
-      \renewbibmacro*{pages}{}%
-      \renewbibmacro*{note+pages}{}%
-      \DeclareFieldFormat{note}{}%
-      \DeclareFieldFormat{type}{}%
-      \DeclareFieldFormat{number}{}%
-      \DeclareFieldFormat{version}{}%
-      \DeclareListFormat{organization}{}%
-      \DeclareFieldFormat{institution}{}%
-      \renewbibmacro*{url}{}%
-      \renewbibmacro*{url+urldate}{\usebibmacro{date}}%
-      \renewbibmacro*{doi+eprint+url}{}%
-      \renewbibmacro*{institution+location}{}%
-      \renewbibmacro*{title}{\iffieldundef{title}{}{\printfield[title]{title}}}%
-      \RenewDocumentCommand{\newunitpunct}{}{\addspace}%
-      \begin{table}[H]
-        \begin{tblr}{row{1}={font=\rmfamily}, colspec={@{}L X@{}}}
-          \textbf{Refs:} &
-          \begin{minipage}[t]{\linewidth}
-            \printbibliography[heading=none,segment=\therefsegment,resetnumbers=false]
-          \end{minipage}
-        \end{tblr}
-      \end{table}
-    \endgroup
-  }
 \fi
 
-\ExecuteBibliographyOptions{
-  seconds=true
-}
-
-\AtBeginDocument{%
-  \let\blx@warn@bibempty\relax
-}
+\ifmoderntech@ieeebib
+  \ExecuteBibliographyOptions{seconds=true}
+  \AtBeginDocument{\let\blx@warn@bibempty\relax}
+\fi
 
 % =============================
 % * Float placement preferences

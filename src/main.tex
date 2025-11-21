@@ -12,12 +12,33 @@
   letterpaper,
   headings=big,          % larger chapter/section heads
   numbers=noendperiod,   % no trailing dot in numbered headings
-  parskip=half           % block-style paragraphs (tune later if desired)
+  parskip=half,          % block-style paragraphs (tune later if desired)
+  ieeebib=false          % load biblatex manually to avoid class auto-load issues
 ]{moderntech}
 
 % --- Modular preambles (refactored for scrbook) ---
 \usepackage{shellesc}
 \input{preamble/fonts.tex}
+\usepackage[
+  backend=biber,
+  style=ieee,
+  defernumbers=true,
+  sorting=none,
+  giveninits=true,
+  isbn=false,
+  doi=true,
+  url=true,
+  urldate=iso,
+  hyperref=true
+]{biblatex}
+\ExecuteBibliographyOptions{seconds=true}
+\addbibresource{src/edo.bib}
+\RenewDocumentCommand{\bibfont}{}{\rmfamily\small}
+\defbibheading{subrefs}[\refname]{\paragraph*{#1}\nopagebreak}
+\NewDocumentCommand{\nbcite}{m}{\citeauthor{#1}~\autocite{#1}}
+\NewDocumentCommand{\srcCite}{m}{Source:~~\citetitle{#1},~\citeyear{#1}~\autocite{#1}}
+\NewDocumentCommand{\tabCite}{m}{\citetitle{#1},~\citeyear{#1}~\autocite{#1}}
+\AtBeginDocument{\let\blx@warn@bibempty\relax}
 
 % ============================================================
 % 12) TITLE / AUTHOR / METADATA HELPERS

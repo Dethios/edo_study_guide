@@ -6,7 +6,7 @@ $jobName = "main"
 
 latexmk -C -outdir=$outDir -auxdir=$auxDir $mainFile
 Remove-Item -Recurse -Force $outDir, $auxDir -ErrorAction SilentlyContinue
-New-Item -ItemType Directory -Force -Name $outDir, $auxDir | Out-Null
+@($outDir, $auxDir) | ForEach-Object { New-Item -ItemType Directory -Force -Name $_ | Out-Null }
 
 $latexmkArgs = @(
   "-lualatex"
