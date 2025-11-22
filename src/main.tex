@@ -1,4 +1,4 @@
-018% !TEX program = lualatex
+% !TEX program = lualatex
 % !TEX root    = main.tex
 % !TEX options = jobname = "EDO Study Guide"
 % !BIB program = biber
@@ -18,7 +18,6 @@
 
 % --- Modular preambles (refactored for scrbook) ---
 \usepackage{shellesc}
-\input{preamble/fonts.tex}
 \usepackage[
   backend=biber,
   style=ieee,
@@ -56,9 +55,11 @@
 }
 
 \NewDocumentCommand{\ChapterWithRefsAtStart}{m}{%
-  \begin{refsegment}%
+  \begin{refsegment}
+    %
     \subfile{chapters/#1}%
-  \end{refsegment}%
+  \end{refsegment}
+  %
   \HR%
 }
 
@@ -70,7 +71,8 @@
 
 % ----- TITLE -----
 \hypersetup{pageanchor=false}
-\begin{titlepage}%
+\begin{titlepage}
+  %
   \centering%
   \DTMsetdatestyle{iso}
   {\sffamily\bfseries\fontsize{24pt}{26pt}\selectfont%
@@ -86,7 +88,8 @@
     \textit{\color{CrimsonRed}EDO Coursebook Version: %
       \color{Modern}\DTMusedate{Coursebook_Version}}}%
   \DTMsetdatestyle{mydateformat}
-\end{titlepage}%
+\end{titlepage}
+%
 \hypersetup{pageanchor=true}
 \clearpage
 % ----- FRONTMATTER -----
@@ -153,9 +156,9 @@
 \addcontentsline{toc}{part}{Appendices}
 \StudySubfile{appendix_plat_card}
 \chapter{Key Roles in Acquisition and Modernization}
-  \StudySubfile{appendix_edo_flags}
-  \StudySubfile{appendix_key_roles}
-  \StudySubfile{appendix_combatant_commands}
+\StudySubfile{appendix_edo_flags}
+\StudySubfile{appendix_key_roles}
+\StudySubfile{appendix_combatant_commands}
 % New appendix chapter
 \StudySubfile{appendix_current_events}
 \clearpage\label{LastPageMain}

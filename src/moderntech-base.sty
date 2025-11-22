@@ -1,0 +1,810 @@
+% ============================
+% * moderntech-base.sty
+% ============================
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{moderntech-base}[2025/11/06 v1.1 Modern technical theme (shared base)]
+
+% =============================
+% * Requirements & options
+% =============================
+\RequirePackage{iftex}
+\ifPDFTeX
+  \PackageError{moderntech-base}{This package requires XeLaTeX or LuaLaTeX}{Use xelatex or lualatex with fontspec.}
+\fi
+
+\RequirePackage{etoolbox}
+\RequirePackage{kvoptions}
+\SetupKeyvalOptions{family=moderntech,prefix=moderntech@}
+\makeatletter
+
+% -------- Package options (DEFAULTS) --------
+% Layout & overlays
+\DeclareBoolOption[true]{tablesroman}   % use Roman numerals for tables
+\DeclareBoolOption[true]{smallcapsheads}
+\DeclareBoolOption[false]{justify}      % false = ragged-right; true = fully justified
+
+% Tables & tabularray helpers
+\DeclareBoolOption[true]{tblrpreset}
+\DeclareBoolOption[true]{tabularnums}
+
+% Typography & bibliography
+\DeclareBoolOption[false]{sansbody}     % toggle sans body copy
+\DeclareStringOption[charter]{math}     % math font family selector
+\DeclareBoolOption[false]{ieeebib}      % IEEE-style biblatex settings (manual load recommended)
+\DeclareStringOption[edo.bib]{bibresource}
+
+% Code & diagrams
+\DeclareBoolOption[true]{minted}
+\DeclareBoolOption[true]{tikzsmart}
+
+\ProcessKeyvalOptions* % finalize keyval ingest
+
+% =============================
+% * Core packages
+% =============================
+\RequirePackage{fontspec}
+\RequirePackage{unicode-math}
+\RequirePackage{xcolor}
+% \RequirePackage[final]{microtype}
+\RequirePackage{setspace}
+\RequirePackage{csquotes}
+\RequirePackage{siunitx}
+\RequirePackage{booktabs}
+\@ifundefined{caption@documentclass}{\def\caption@documentclass{standard}}{}
+\RequirePackage[compatibility=false]{caption}
+\RequirePackage{ragged2e}
+\RequirePackage{enumitem}
+\RequirePackage{tabularray}
+\IfFileExists{tblr-extras.sty}{%
+  \RequirePackage{tblr-extras}%
+}{%
+  \PackageWarning{moderntech-base}{tblr-extras.sty not found; advanced tabularray presets disabled}%
+}
+\UseTblrLibrary{booktabs}
+\UseTblrLibrary{siunitx}
+\UseTblrLibrary{varwidth}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{marginnote}
+\RequirePackage{ifoddpage}
+\RequirePackage{lastpage}
+\RequirePackage{xparse}
+
+% --- Class awareness (soft)
+\@ifclassloaded{scrbook}{}{%
+  \PackageWarning{moderntech-base}{KOMA-Script scrbook not detected. Theme is tuned for scrbook; continuing anyway.}%
+}
+\RequirePackage{scrlayer-scrpage}
+
+% =============================
+% * Color palette (WCAG-conscious)
+% =============================
+\definecolor{TextGray}{HTML}{1E1E1E}
+\definecolor{AccentBlue}{HTML}{264E86}
+\definecolor{AccentTeal}{HTML}{1B7870}
+\definecolor{AccentPurple}{HTML}{5A2D82}
+\definecolor{AccentOrange}{HTML}{A63D00}
+\definecolor{AccentGreen}{HTML}{245C24}
+\definecolor{Gray90}{HTML}{F7F7F7}
+\definecolor{Gray60}{gray}{0.4}
+\colorlet{BodyText}{TextGray}
+\colorlet{Modern}{AccentBlue}
+% Legacy color aliases (keeps existing documents compatible)
+\colorlet{NavyBlue}{AccentBlue}
+\colorlet{CrimsonRed}{AccentOrange}
+\colorlet{SkyBlue}{AccentBlue!35}
+\colorlet{DarkGray}{BodyText}
+\colorlet{LightGray}{Gray90}
+\colorlet{Green}{AccentGreen}
+\colorlet{text}{BodyText}
+\colorlet{bg}{Gray90}
+
+% =============================
+% * Fonts
+% =============================
+\NewDocumentCommand{\moderntech@setfonts}{}{%
+  % Defaults: XCharter + Fira Sans + Fira Code
+  \IfFontExistsTF{XCharter}{%
+    \ifmoderntech@sansbody
+      \setmainfont[Scale=MatchLowercase,Ligatures=TeX]{Fira Sans}%
+      \setsansfont[Scale=MatchLowercase,Ligatures=TeX]{Fira Sans}%
+    \else
+      \setmainfont[Scale=MatchLowercase,Ligatures=TeX]{XCharter}%
+      \setsansfont[Scale=MatchLowercase,Ligatures=TeX]{Fira Sans}%
+    \fi
+  }{%
+    \ifmoderntech@sansbody
+      \setmainfont[Scale=MatchLowercase,Ligatures=TeX]{Fira Sans}%
+      \setsansfont[Scale=MatchLowercase,Ligatures=TeX]{Fira Sans}%
+    \else
+      \setmainfont[Scale=MatchLowercase,Ligatures=TeX]{Cambria}%
+      \setsansfont[Scale=MatchLowercase,Ligatures=TeX]{Fira Sans}%
+    \fi
+  }%
+  \IfFontExistsTF{Fira Code}{%
+    \defaultfontfeatures[\ttfamily]{Scale=MatchLowercase,Contextuals=Alternate}%
+    \setmonofont[
+      Scale=MatchLowercase,
+      Contextuals=Alternate,
+      FontFace={m}{it}{Fira Code},
+      FontFace={m}{sl}{Fira Code},
+      FontFace={m}{sc}{Fira Code},
+      FontFace={m}{scit}{Fira Code},
+      FontFace={m}{ui}{Fira Code},
+      FontFace={m}{In}{Fira Code},
+      FontFace={b}{n}{Fira Code},
+      FontFace={b}{it}{Fira Code},
+      FontFace={b}{sl}{Fira Code},
+      FontFace={b}{sc}{Fira Code},
+      FontFace={b}{scit}{Fira Code},
+      FontFace={bx}{n}{Fira Code},
+      FontFace={bx}{it}{Fira Code},
+      FontFace={bx}{sl}{Fira Code},
+      FontFace={bx}{sc}{Fira Code},
+      FontFace={bx}{scit}{Fira Code},
+      FontFace={bx}{ui}{Fira Code},
+      FontFace={bc}{n}{Fira Code},
+      FontFace={bc}{it}{Fira Code},
+      FontFace={bc}{sl}{Fira Code},
+      FontFace={bc}{sc}{Fira Code},
+      FontFace={bc}{scit}{Fira Code},
+      FontFace={sb}{n}{Fira Code},
+      FontFace={sb}{it}{Fira Code},
+      FontFace={sb}{sl}{Fira Code},
+      FontFace={sb}{sc}{Fira Code},
+      FontFace={sb}{scit}{Fira Code},
+      FontFace={l}{n}{Fira Code},
+      FontFace={l}{it}{Fira Code},
+      FontFace={l}{sl}{Fira Code},
+      FontFace={l}{sc}{Fira Code},
+      FontFace={l}{scit}{Fira Code}
+    ]{Fira Code}%
+  }{%
+    \defaultfontfeatures[\ttfamily]{Scale=MatchLowercase,Contextuals=Alternate}%
+    \setmonofont[Scale=MatchLowercase,Contextuals=Alternate]{Cascadia Code}%
+  }%
+  \moderntech@setmath%
+}
+
+\newfontfamily\firasanssemibold[
+  Scale=MatchLowercase,
+  Ligatures=TeX,
+  UprightFont    = {Fira Sans SemiBold},
+  ItalicFont     = {Fira Sans SemiBold Italic},
+  BoldFont       = {Fira Sans SemiBold},
+  BoldItalicFont = {Fira Sans SemiBold Italic}
+]{Fira Sans SemiBold}
+
+% --- Math font selection helper (respects `math=` option) ------------
+\NewDocumentCommand{\moderntech@setmath}{}{%
+  \edef\moderntech@mathlower{\lowercase{\moderntech@math}}%
+  \moderntech@choosemath{\moderntech@mathlower}%
+}
+
+\NewDocumentCommand{\moderntech@choosemath}{m}{%
+  \ifdefstring{#1}{charter}{\moderntech@setmath@charter}{%
+    \ifdefstring{#1}{xcharter}{\moderntech@setmath@charter}{%
+      \ifdefstring{#1}{latinmodern}{\moderntech@setmath@latinmodern}{%
+        \ifdefstring{#1}{lm}{\moderntech@setmath@latinmodern}{%
+          \ifdefstring{#1}{libertinus}{\moderntech@setmath@libertinus}{%
+            \ifdefstring{#1}{stix}{\moderntech@setmath@stix}{%
+              \moderntech@setmath@charter
+            }%
+          }%
+        }%
+      }%
+    }%
+  }%
+}
+
+\NewDocumentCommand{\moderntech@setmath@charter}{}{%
+  \IfFontExistsTF{XCharter-Math.otf}{%
+    \setmathfont[Scale=MatchLowercase]{XCharter-Math}%
+  }{%
+    \moderntech@setmath@latinmodern
+  }%
+}
+
+\NewDocumentCommand{\moderntech@setmath@latinmodern}{}{%
+  \setmathfont{Latin Modern Math}%
+}
+
+\NewDocumentCommand{\moderntech@setmath@libertinus}{}{%
+  \IfFontExistsTF{Libertinus Math}{%
+    \setmathfont{Libertinus Math}%
+  }{%
+    \moderntech@setmath@latinmodern
+  }%
+}
+
+\NewDocumentCommand{\moderntech@setmath@stix}{}{%
+  \IfFontExistsTF{STIX Two Math}{%
+    \setmathfont{STIX Two Math}%
+  }{%
+    \moderntech@setmath@latinmodern
+  }%
+}
+
+\NewDocumentCommand{\headingfont}{}{\firasanssemibold\color{AccentBlue}\Large}
+\NewDocumentCommand{\sectionfont}{}{\firasanssemibold\color{AccentBlue}\Large}
+\NewDocumentCommand{\firasb}{}{\firasanssemibold}
+\NewDocumentCommand{\merriweatherblack}{}{\rmfamily\bfseries}
+\NewDocumentCommand{\sourcesansprofont}{}{\sffamily}
+\NewDocumentCommand{\textsb}{m}{{\firasanssemibold #1}}
+
+% Provide flag macros with defaults so the base can be used standalone
+\providebool{moderntech@sansbody}
+\providebool{moderntech@justify}
+\providebool{moderntech@tablesroman}
+\providebool{moderntech@smallcapsheads}
+\providebool{moderntech@minted}
+\providebool{moderntech@tikzsmart}
+
+% Mirror kvoptions booleans into \if... conditionals
+\newif\ifmoderntech@sansbody
+\newif\ifmoderntech@justify
+\newif\ifmoderntech@tablesroman
+\newif\ifmoderntech@smallcapsheads
+\newif\ifmoderntech@minted
+\newif\ifmoderntech@tikzsmart
+
+\csname moderntech@sansbody\ifmoderntech@sansbody true\else false\fi\endcsname
+\csname moderntech@justify\ifmoderntech@justify true\else false\fi\endcsname
+\csname moderntech@tablesroman\ifmoderntech@tablesroman true\else false\fi\endcsname
+\csname moderntech@smallcapsheads\ifmoderntech@smallcapsheads true\else false\fi\endcsname
+\csname moderntech@minted\ifmoderntech@minted true\else false\fi\endcsname
+\csname moderntech@tikzsmart\ifmoderntech@tikzsmart true\else false\fi\endcsname
+
+\providecommand\moderntech@math{charter}
+\providecommand\moderntech@bibresource{edo.bib}
+
+\moderntech@setfonts
+
+% =============================
+% * Small caps & caps policies
+% =============================
+\NewDocumentCommand{\SC}{m}{\textls[40]{\textsc{#1}}}
+\NewDocumentCommand{\Caps}{m}{\textls[60]{\MakeUppercase{#1}}}
+\NewDocumentCommand{\moderntechSectionNumbersSmallCaps}{}{%
+  \addtokomafont{section}{\scshape}%
+}
+
+% =============================
+% * Global text color & spacing
+% =============================
+\color{BodyText}
+\setstretch{1.15}
+
+\ifmoderntech@justify
+  \justifying
+  \AtBeginDocument{\justifying}
+\else
+  \RaggedRight
+  \AtBeginDocument{\RaggedRight}
+  % \setlength{\RaggedRightRightskip}{0pt plus .02\textwidth}
+  \setlength{\RaggedRightParindent}{\parindent}
+\fi
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\frenchspacing
+
+% =============================================================================
+% * PAGE GEOMETRY, SPACING, AND MICROTYPOGRAPHY — KOMA (scrbook)
+% =============================================================================
+
+% KOMA type area: target 0.5in margins on letterpaper
+\KOMAoptions{headinclude=true, footinclude=true}
+\newlength{\TargetMargin}
+\setlength{\TargetMargin}{0.5in}
+\areaset
+  {\dimexpr\paperwidth  - 2\TargetMargin\relax}
+  {\dimexpr\paperheight - 2\TargetMargin\relax}
+
+% Header / footer spacing
+\setlength{\headheight}{20pt}
+\setlength{\headsep}{12pt}
+\setlength{\footskip}{24pt}
+
+% =============================
+% * Headings
+% =============================
+\addtokomafont{disposition}{\sffamily\bfseries\color{AccentBlue}}
+\setkomafont{chapter}{\sffamily\bfseries\color{AccentBlue}\Huge}
+\setkomafont{section}{\firasanssemibold\color{AccentBlue}\Large}
+\setkomafont{subsection}{\sffamily\color{AccentBlue}\large}
+\setkomafont{subsubsection}{\sffamily\bfseries\color{TextGray}\normalsize}
+\setkomafont{paragraph}{\firasanssemibold\color{TextGray}\normalsize}
+\RedeclareSectionCommand[beforeskip=2.5ex plus .2ex minus .1ex, afterskip=1.0ex plus .2ex]{section}
+\RedeclareSectionCommand[beforeskip=2.0ex plus .2ex minus .1ex, afterskip=0.8ex plus .2ex]{subsection}
+\RedeclareSectionCommand[beforeskip=1.5ex plus .2ex minus .1ex, afterskip=0.5ex plus .2ex]{subsubsection}
+\setkomafont{caption}{\normalfont\sffamily\small\itshape\color{BodyText}}
+\setkomafont{captionlabel}{\normalfont\sffamily\bfseries\color{AccentBlue}}
+\DeclareCaptionLabelSeparator{periodtwospaces}{.~~}
+\captionsetup{
+  skip      = 6pt,
+  labelsep  = periodtwospaces,
+  labelfont = {normalfont,bf,sf,it,color=AccentBlue},
+  textfont  = {normalfont,sf,small,it,color=BodyText},
+  justification = RaggedRight
+}
+\captionsetup[table]{labelfont={normalfont,sf,sc,color=AccentBlue}, textfont={normalfont,sf,sc,small,color=BodyText}}
+\captionsetup[tblr]{ labelfont={normalfont,bf,sf,sc,color=AccentBlue}, textfont={normalfont,sf,sc,small,color=BodyText}}
+\captionsetup[talltblr]{labelfont={normalfont,bf,sf,sc,color=AccentBlue}, textfont={normalfont,sf,sc,small,color=BodyText}}
+\captionsetup[longtblr]{labelfont={normalfont,bf,sf,sc,color=AccentBlue}, textfont={normalfont,sf,sc,small,color=BodyText}}
+
+\ifmoderntech@smallcapsheads
+  \addtokomafont{subsubsection}{\scshape}
+  \addtokomafont{paragraph}{\scshape}
+  \addtokomafont{subparagraph}{\scshape}
+\fi
+
+\NewDocumentCommand{\HR}{}{%
+  \par\noindent\color{Gray90}\rule{\linewidth}{1pt}\par\color{BodyText}%
+}
+
+% =============================
+% * TOC styling (modern by default)
+% =============================
+\NewDocumentCommand{\moderntech@toc@chapter}{}{\normalfont\sffamily\scshape\bfseries\large\color{AccentBlue}}
+\NewDocumentCommand{\moderntech@toc@section}{}{\normalfont\firasanssemibold\color{AccentBlue}}
+\NewDocumentCommand{\moderntech@toc@subsection}{}{\normalfont\sffamily\itshape\small\color{BodyText}}
+
+\NewDocumentCommand{\moderntechsetupTOC}{}{%
+\KOMAoptions{toc=graduated}%
+  \DeclareTOCStyleEntry[
+    entryformat=\moderntech@toc@chapter,
+    pagenumberformat=\moderntech@toc@chapter
+  ]{tocline}{chapter}%
+  \DeclareTOCStyleEntry[
+    entryformat=\moderntech@toc@section,
+    pagenumberformat=\moderntech@toc@section
+  ]{tocline}{section}%
+  \DeclareTOCStyleEntry[
+    entryformat=\moderntech@toc@subsection,
+    pagenumberformat=\moderntech@toc@subsection
+  ]{tocline}{subsection}%
+}
+\AtBeginDocument{\moderntechsetupTOC}
+
+\providecommand{\MTTocTightDots}{%
+  \@ifpackageloaded{tocbasic}{%
+    \RedeclareSectionCommand[tocpagenumberformat=\normalfont\bfseries]{section}%
+  }{}%
+  \@ifpackageloaded{tocloft}{%
+    \RenewDocumentCommand{\cftdotsep}{}{\cftnodots}%
+  }{}%
+}
+
+% =============================
+% * Headers / Footers
+% =============================
+
+\clearpairofpagestyles
+\automark{section}
+\setkomafont{pagenumber}{\sffamily\itshape\color{gray}}%
+\ihead{\sffamily\itshape\color{gray}\leftmark}
+\ohead{\sffamily\color{gray}\pagemark}
+\pagestyle{scrheadings}
+
+\NewDocumentCommand{\SetFrontMatterStyle}{}{%
+  \clearpairofpagestyles
+  \automark{section}
+  \ihead{\sffamily\itshape\color{gray}\leftmark}
+  \ohead{\sffamily\color{gray}\pagemark}
+  \pagestyle{scrheadings}
+}
+\NewDocumentCommand{\SetMainMatterStyle}{}{%
+\clearpairofpagestyles
+\automark{section}
+\ihead{\sffamily\itshape\color{gray}\leftmark}
+\ohead{%
+  \sffamily\color{gray}%
+  \pagemark%
+}%
+\pagestyle{scrheadings}
+}
+
+\NewDocumentCommand{\SetBackMatterStyleA}{}{%
+  \clearpairofpagestyles
+  \automark{section}
+  \ohead{\sffamily\color{gray}\pagemark}
+  \pagestyle{scrheadings}
+}
+% =============================
+% * Lists
+% =============================
+\setlist{itemsep=4pt, topsep=4pt, left=1em, labelsep=0.5em}
+\setlist[itemize]{label=\textcolor{Modern}{\Large\textbullet}, leftmargin=*, itemsep=4pt, topsep=4pt}
+\setlist[enumerate]{leftmargin=*, itemsep=4pt, topsep=4pt}
+\setlist[description]{font=\bfseries, labelsep=0.5em, itemsep=4pt, topsep=4pt, leftmargin=1.5em}
+
+% =============================
+% * Tables: tabularray + siunitx + lining/tabular figures
+% =============================
+\ifmoderntech@tabularnums
+  \AtBeginDocument{%
+    \SetTblrDefault{cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}}}%
+    \SetTblrDefault[longtblr]{cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}}}%
+    \SetTblrDefault[talltblr]{cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}}}%
+  }%
+\fi
+
+\AtBeginEnvironment{figure}{\centering}
+\AtBeginEnvironment{table}{\centering}
+
+\sisetup{
+  detect-all,
+  group-separator = {,},
+  group-minimum-digits = 4,
+  table-number-alignment = center,
+  table-figures-integer = 4,
+  table-figures-decimal = 3
+}
+
+\NewDocumentCommand{\tnum}{m}{{\addfontfeatures{Numbers={Monospaced,Lining}}#1}}
+\RequirePackage{array}
+\newcolumntype{N}[1]{>{\addfontfeatures{Numbers={Monospaced,Lining}}}#1}
+
+\SetTblrStyle{caption-tag}{font=\normalfont\sffamily\scshape\bfseries\color{AccentBlue}}
+\SetTblrStyle{caption-text}{font=\normalfont\sffamily\small\scshape\color{BodyText}}
+\SetTblrStyle{caption-sep}{.\space\space}
+\SetTblrStyle{firsthead}{font=\small\sffamily\bfseries}
+\SetTblrStyle{head}{font=\small\sffamily}
+\SetTblrStyle{foot}{font=\small\sffamily}
+\SetTblrInner{rowsep=2pt, colsep=2pt}
+
+\NewDocumentCommand{\MTUseTblrPreset}{}{%
+  \SetTblrDefault{
+    width      = (\linewidth),
+    column{1}  = {leftsep=0pt},
+    column{Z}  = {rightsep=0pt},
+    row{1}     = {font=\sffamily\bfseries\scshape\color{AccentBlue}}
+  }%
+  \SetTblrDefault[longtblr]{
+    width      = (\linewidth),
+    rowhead    = 1,
+    column{1}  = {leftsep=0pt},
+    column{Z}  = {rightsep=0pt},
+    row{1}     = {font=\sffamily\bfseries\scshape\color{AccentBlue}}
+  }%
+  \SetTblrDefault[talltblr]{
+    width      = (\linewidth),
+    column{1}  = {leftsep=0pt},
+    column{Z}  = {rightsep=0pt},
+    row{1}     = {font=\sffamily\bfseries\scshape\color{AccentBlue}}
+  }%
+}
+\ifmoderntech@tblrpreset
+  \AtBeginDocument{\MTUseTblrPreset}
+\fi
+
+\newenvironment{mtblr}[1][]{\begin{tblr}[cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}},column{1}={leftsep=0pt},column{Z}={rightsep=0pt},#1]}{\end{tblr}}
+\newenvironment{mlongtblr}[1][]{\begin{longtblr}[cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}},column{1}={leftsep=0pt},column{Z}={rightsep=0pt},#1]}{\end{longtblr}}
+\newenvironment{mtalltblr}[1][]{\begin{talltblr}[cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}},column{1}={leftsep=0pt},column{Z}={rightsep=0pt},#1]}{\end{talltblr}}
+
+% --- New column types and helpers -----------------------------------
+\NewTblrColumnType{L}{X[-1,halign=l,cmd=\RaggedRight\color{BodyText}\small]}
+\NewTblrColumnType{C}{X[-1,halign=c,cmd=\Centering\color{BodyText}\small]}
+\NewTblrColumnType{R}{X[-1,halign=r,cmd=\RaggedLeft\color{BodyText}\small]}
+\NewTblrColumnType{F}{Q[halign=l,cmd=\merriweatherblack\RaggedRight\small]}
+\NewTblrColumnType{P}[1]{Q[wd=#1, halign=l, valign=t, cmd=\RaggedRight\color{BodyText}\small]}
+\NewTblrColumnType{M}[1]{Q[wd=#1, halign=l, valign=m, cmd=\RaggedRight\color{BodyText}\small]}
+\NewTblrColumnType{B}[1]{Q[wd=#1, halign=l, valign=b, cmd=\RaggedRight\color{BodyText}\small]}
+\NewTblrColumnType{W}[1][]{Q[cmd=\RaggedRight\color{BodyText}\small,#1]}
+
+\DeclareTblrTemplate{remark-sep}{default}{:\space\space}
+
+\NewDocumentCommand{\Fig}{m}{Figure~#1}
+\NewDocumentCommand{\Tab}{m}{Table~#1}
+
+% =============================
+% * Bibliography (biblatex/biber; IEEE numeric)
+% =============================
+\ifmoderntech@ieeebib
+  \RequirePackage[backend=biber,style=ieee,defernumbers=true,sorting=none]{biblatex}
+  \IfFileExists{./\moderntech@bibresource}{}{%
+    \IfFileExists{src/\moderntech@bibresource}{%
+      \renewcommand{\moderntech@bibresource}{src/\moderntech@bibresource}%
+    }{}%
+  }%
+  \addbibresource{\moderntech@bibresource}
+  \NewDocumentCommand{\nbcite}{m}{\citeauthor{#1}~\autocite{#1}}
+  \NewDocumentCommand{\srcCite}{m}{Source:~~\citetitle{#1},~\citeyear{#1}~\autocite{#1}}
+  \NewDocumentCommand{\tabCite}{m}{\citetitle{#1},~\citeyear{#1}~\autocite{#1}}
+\fi
+
+\ifmoderntech@ieeebib
+  \ExecuteBibliographyOptions{seconds=true}
+  \AtBeginDocument{\let\blx@warn@bibempty\relax}
+\fi
+
+\NewDocumentCommand{\minibib}{}{%
+\begingroup
+  \renewbibmacro*{in:}{}%
+  \renewbibmacro*{author}{}%
+  \renewbibmacro*{editor+others}{}%
+  \renewbibmacro*{journal+issuetitle}{}%
+  \renewbibmacro*{booktitle}{}%
+  \renewbibmacro*{publisher+location+date}{\setunit{\addcomma\addspace}\usebibmacro{date}\newunit}%
+  \renewbibmacro*{volume+number+eid}{}%
+  \renewbibmacro*{pages}{}%
+  \renewbibmacro*{note+pages}{}%
+  \DeclareFieldFormat{note}{}%
+  \DeclareFieldFormat{type}{}%
+  \DeclareFieldFormat{number}{}%
+  \DeclareFieldFormat{version}{}%
+  \DeclareListFormat{organization}{}%
+  \DeclareFieldFormat{institution}{}%
+  \renewbibmacro*{url}{}%
+  \renewbibmacro*{url+urldate}{\usebibmacro{date}}%
+  \renewbibmacro*{doi+eprint+url}{}%
+  \renewbibmacro*{institution+location}{}%
+  \renewbibmacro*{title}{\iffieldundef{title}{}{\printfield[title]{title}}}%
+  \RenewDocumentCommand{\newunitpunct}{}{\addspace}%
+  \begin{table}[H]
+    \begin{tblr}{row{1}={font=\rmfamily}, colspec={@{}L X@{}}}
+      \textbf{Refs:} &
+      \begin{minipage}[t]{\linewidth}
+        \printbibliography[heading=none,segment=\therefsegment,resetnumbers=false]
+      \end{minipage}
+    \end{tblr}
+  \end{table}
+\endgroup
+}
+
+% -- Custom biblatex driver: legislation -------------------------------------
+\AtBeginDocument{%
+  \@ifpackageloaded{biblatex}{%
+    \DeclareFieldFormat[legislation]{title}{#1}%
+    \DeclareFieldFormat[legislation]{subtitle}{#1}%
+    \DeclareFieldFormat[legislation]{jurisdiction}{\mkbibacro{#1}}%
+    \DeclareFieldFormat[legislation]{type}{#1}%
+    \DeclareFieldFormat[legislation]{number}{#1}%
+    \DeclareBibliographyDriver{legislation}{%
+      \usebibmacro{bibindex}%
+      \usebibmacro{begentry}%
+      \usebibmacro{title}%
+      \newunit
+      \printfield{type}%
+      \setunit*{\addspace}%
+      \printfield{number}%
+      \newunit
+      \printfield{jurisdiction}%
+      \newunit
+      \usebibmacro{date}%
+      \newunit
+      \printfield{note}%
+      \newunit\newblock
+      \usebibmacro{doi+eprint+url}%
+      \newunit\newblock
+      \usebibmacro{addendum+pubstate}%
+      \setunit{\bibpagerefpunct}\newblock
+      \usebibmacro{pageref}%
+      \newunit\newblock
+      \iftoggle{bbx:related}{\usebibmacro{related:init}\usebibmacro{related}}{}%
+      \usebibmacro{finentry}%
+    }%
+  }{}%
+}
+
+% =============================
+% * Float placement preferences
+% =============================
+\RequirePackage{float}
+\floatplacement{table}{H}
+\floatplacement{figure}{H}
+\floatplacement{talltblr}{H}
+\providecommand{\dblfloatplacement}[2]{}%
+\dblfloatplacement{figure}{H}%
+\captionsetup[figure]{position=below}
+\captionsetup[table]{position=above}
+
+% =============================
+% * Roman table numbering + no chapter reset (optional)
+% =============================
+\ifmoderntech@tablesroman
+  \RequirePackage{chngcntr}
+  \@ifundefined{c@chapter}{}{%
+    \counterwithout{table}{chapter}%
+  }%
+  \RenewDocumentCommand{\thetable}{}{\Roman{table}}
+\fi
+
+% =============================
+% * Code environments (minted/listings)
+% =============================
+% Portable shell-escape detection (pdfTeX/LuaTeX/XeTeX)
+\newif\ifmt@shellescape
+\begingroup
+  \ifcsname shellescape\endcsname
+    \ifnum\shellescape>0\relax \global\mt@shellescapetrue \else \global\mt@shellescapefalse \fi
+  \else
+    \ifcsname pdfshellescape\endcsname
+      \ifnum\pdfshellescape>0\relax \global\mt@shellescapetrue \else \global\mt@shellescapefalse \fi
+    \else
+      \global\mt@shellescapefalse
+    \fi
+  \fi
+\endgroup
+
+\NewDocumentCommand{\moderntech@enableminted}{}{%
+  \RequirePackage[cache=false]{minted}%
+  \definecolor{codebg}{HTML}{F7F7F7}%
+  \setminted{fontsize=\footnotesize, breaklines, autogobble, bgcolor=codebg}%
+  \NewDocumentCommand{\code}{m}{\mintinline{text}{##1}}%
+}
+
+\NewDocumentCommand{\moderntech@enablelistings}{}{%
+  \RequirePackage{listings}%
+  \lstset{
+    basicstyle=\ttfamily\footnotesize,
+    backgroundcolor=\color{Gray90},
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    rulecolor=\color{Gray90},
+    keywordstyle=\color{AccentBlue}\bfseries,
+    commentstyle=\color{AccentGreen}\itshape,
+    stringstyle=\color{AccentPurple},
+    numberstyle=\tiny,
+    numbers=left,
+    stepnumber=1,
+    numbersep=5pt,
+    tabsize=2,
+    captionpos=b,
+    escapeinside={(*@}{@*)}
+  }%
+  \NewDocumentCommand{\code}{m}{\lstinline!##1!}%
+}
+
+\NewDocumentCommand{\moderntech@setupcode}{}{%
+  \ifmoderntech@minted
+    \IfFileExists{minted.sty}{%
+      \ifmt@shellescape
+        \moderntech@enableminted
+      \else
+        \PackageWarning{moderntech-base}{minted requested but shell-escape is disabled; using listings instead}%
+        \moderntech@mintedfalse
+      \fi
+    }{%
+      \PackageWarning{moderntech-base}{minted.sty not found; using listings instead}%
+      \moderntech@mintedfalse
+    }%
+  \fi
+  \ifmoderntech@minted
+    % minted ready; no fallback
+  \else
+    \moderntech@enablelistings
+  \fi
+}
+\moderntech@setupcode
+
+% =============================
+% * Per-environment color boxes (notes, hints, warnings, info)
+% =============================
+\tcbset{
+  sharp corners,
+  boxsep=4pt, left=6pt, right=6pt, top=6pt, bottom=6pt,
+  colback=Gray90, colframe=Gray60, coltitle=BodyText,
+  fonttitle=\sffamily\bfseries
+}
+\newtcolorbox{noteBox}[1][]{colframe=AccentTeal,title={\color{white}Note},#1}
+\newtcolorbox{hintBox}[1][]{colframe=AccentBlue,title={\color{white}Hint},#1}
+\newtcolorbox{warnBox}[1][]{colframe=AccentOrange,title={\color{white}Warning},#1}
+\newtcolorbox{infoBox}[1][]{colframe=AccentPurple,title={\color{white}Info},#1}
+\NewDocumentCommand{\Hint}{m}{\begin{hintBox}#1\end{hintBox}}
+\NewDocumentCommand{\Note}{m}{\begin{noteBox}#1\end{noteBox}}
+\NewDocumentCommand{\Warn}{m}{\begin{warnBox}#1\end{warnBox}}
+\NewDocumentCommand{\Info}{m}{\begin{infoBox}#1\end{infoBox}}
+\NewDocumentCommand{\hint}{m}{\Hint{#1}}
+\NewDocumentCommand{\note}{m}{\Note{#1}}
+\NewDocumentCommand{\tHint}{}{\textbf{\textcolor{AccentPurple}{Hint}}}
+\NewDocumentCommand{\tNote}{}{\textbf{\textcolor{AccentTeal}{Note}}}
+\NewDocumentCommand{\tSource}{}{\textbf{\textcolor{AccentGreen}{Source}}}
+
+% Tufte-style margin notes via marginnote + themed tcolorbox
+\newtcolorbox{mt@sidenote}[1][]{enhanced, colback=Gray90, colframe=AccentBlue, boxrule=.5pt,
+  left=4pt, right=4pt, top=4pt, bottom=4pt, sharp corners, width=\marginparwidth, halign=left,
+  fontupper=\footnotesize\sffamily\color{BodyText}, coltitle=AccentBlue, fonttitle=\sffamily\bfseries, #1}
+\NewDocumentCommand{\sidenote}{O{} m}{\marginnote{\begin{mt@sidenote}[title={#1}]#2\end{mt@sidenote}}}
+\NewDocumentCommand{\sideinfo}{O{} m}{\marginnote{\begin{mt@sidenote}[title={#1},colframe=AccentTeal,coltitle=AccentTeal]#2\end{mt@sidenote}}}
+\NewDocumentCommand{\sidewarn}{O{} m}{\marginnote{\begin{mt@sidenote}[title={#1},colframe=AccentOrange,coltitle=AccentOrange]#2\end{mt@sidenote}}}
+\NewDocumentCommand{\sidehint}{O{} m}{\marginnote{\begin{mt@sidenote}[title={#1},colframe=AccentPurple,coltitle=AccentPurple]#2\end{mt@sidenote}}}
+
+% Outer-margin placement on twoside docs
+\NewDocumentCommand{\MT@outerplace}{m}{%
+  \checkoddpage
+  \if@twoside
+    \ifoddpage\reversemarginparfalse\else\reversemarginpartrue\fi
+  \else
+    \reversemarginparfalse
+  \fi
+  #1%
+}
+\RenewDocumentCommand{\sidenote}{O{} m}{\MT@outerplace{\marginnote{\begin{mt@sidenote}[title={#1}]#2\end{mt@sidenote}}}}
+\RenewDocumentCommand{\sideinfo}{O{} m}{\MT@outerplace{\marginnote{\begin{mt@sidenote}[title={#1},colframe=AccentTeal,coltitle=AccentTeal]#2\end{mt@sidenote}}}}
+\RenewDocumentCommand{\sidewarn}{O{} m}{\MT@outerplace{\marginnote{\begin{mt@sidenote}[title={#1},colframe=AccentOrange,coltitle=AccentOrange]#2\end{mt@sidenote}}}}
+\RenewDocumentCommand{\sidehint}{O{} m}{\MT@outerplace{\marginnote{\begin{mt@sidenote}[title={#1},colframe=AccentPurple,coltitle=AccentPurple]#2\end{mt@sidenote}}}}
+\NewDocumentCommand{\MTSetupMargins}{m}{\setlength{\marginparwidth}{#1}}
+
+% =============================
+% * TikZ & Smartdiagram (theme-aligned)
+% =============================
+\ifmoderntech@tikzsmart
+  \RequirePackage{tikz}
+  \usetikzlibrary{arrows.meta,shapes,positioning,calc,fit,backgrounds}
+  \tikzset{
+    every picture/.style = {>=Latex, line cap=round, line join=round},
+    mt node/.style = {font=\sffamily\small\color{BodyText}, draw=AccentBlue, rounded corners=2pt,
+                      inner xsep=6pt, inner ysep=4pt, align=left},
+    mt title/.style = {font=\sffamily\bfseries\color{AccentBlue}, draw=AccentBlue, rounded corners=3pt, fill=AccentBlue!10, inner xsep=8pt, inner ysep=6pt, align=center},
+    mt line/.style = {AccentBlue, very thick},
+    mt thin/.style = {AccentBlue, semithick},
+  }
+  \tikzset{
+    edo/.style = {
+      font=\sffamily\small\color{BodyText},
+      draw=Modern,
+      rounded corners=2pt,
+      inner xsep=6pt,
+      inner ysep=4pt,
+      align=left
+    },
+    edo-title/.style = {
+      font=\sffamily\bfseries\color{AccentBlue},
+      draw=Modern,
+      rounded corners=3pt,
+      fill=AccentBlue!12,
+      inner xsep=8pt,
+      inner ysep=6pt,
+      align=center
+    },
+    edo-line/.style = {Modern, very thick},
+    edo-thin/.style = {Modern, semithick},
+    belowx/.style  args={#1 of #2}{below=#1 of #2},
+    rightx/.style  args={#1 of #2}{right=#1 of #2},
+    leftx/.style   args={#1 of #2}{left=#1 of #2},
+    abovex/.style  args={#1 of #2}{above=#1 of #2},
+  }
+\fi
+\ifmoderntech@tikzsmart
+  \RequirePackage{smartdiagram}
+  \smartdiagramset{
+    font=\sffamily\small\color{BodyText},
+    text color=BodyText,
+    set color list = {AccentBlue!45, AccentTeal!45, AccentGreen!45, AccentPurple!35, AccentOrange!35},
+  }
+  \smartdiagramset{
+    font=\sffamily\small\color{BodyText},
+    text color=BodyText,
+    set color list = {AccentBlue!35, AccentTeal!40, AccentGreen!40, AccentPurple!35, AccentOrange!35},
+    uniform color list = AccentBlue!30 for 10 items,
+    module shape = rounded rectangle,
+    module x sep = 1.6cm,
+    module y sep = 1.0cm,
+    module minimum width = 2.8cm,
+    module minimum height = 1.0cm,
+    arrow tip = Latex,
+    arrow line width = 1.2pt,
+    arrow color = Modern
+  }
+\fi
+
+% =============================
+% * Misc.
+% =============================
+\hyphenpenalty=500
+\exhyphenpenalty=200
+\tolerance=2000
+\emergencystretch=3em
+\hbadness=10000
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\brokenpenalty=5000
+\hfuzz=0.5pt
+
+\interfootnotelinepenalty=1000 % limit breakage across pages
+
+\makeatother
+% End of package
