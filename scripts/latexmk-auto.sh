@@ -40,6 +40,10 @@ AUXDIR="build"
 VERBOSE="0"
 
 # --- Parse args ---
+usage() {
+  echo "Usage: $(basename "$0") [options] <file.tex>"
+}
+
 ARGS=()
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -94,12 +98,23 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-if [[ ${#ARGS[@]} -ne 1 ]]; then
-  echo "Usage: $(basename "$0") [options] <file.tex>"
+# Default to src/main.tex or main.tex if no explicit target provided
+if [[ ${#ARGS[@]} -eq 0 ]]; then
+  if [[ -f src/main.tex ]]; then
+    TEXFILE="src/main.tex"
+  elif [[ -f main.tex ]]; then
+    TEXFILE="main.tex"
+  else
+    usage
+    exit 2
+  fi
+elif [[ ${#ARGS[@]} -eq 1 ]]; then
+  TEXFILE="${ARGS[0]}"
+else
+  usage
   exit 2
 fi
 
-TEXFILE="${ARGS[0]}"
 [[ -f "$TEXFILE" ]] || {
   echo "File not found: $TEXFILE"
   exit 2
