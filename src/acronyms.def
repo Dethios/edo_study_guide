@@ -26,10 +26,17 @@
 \newacronym{uswas}{USW(A\&S)}{Under Secretary of War for Acquisition and Sustainment}
 \newacronym{uswre}{USW(R\&E)}{Under Secretary of War for Research and Engineering}
 \newacronym{uswc}{USW(C)}{Under Secretary of War (Comptroller)}
+\newacronym{usd}{USD}{Under Secretary of Defense}
+\newacronym{usdas}{USD(A\&S)}{Under Secretary of Defense for Acquisition and Sustainment}
+\newacronym{usdre}{USD(R\&E)}{Under Secretary of Defense for Research and Engineering}
+\newacronym{usdp}{USD(P)}{Under Secretary of Defense for Policy}
+\newacronym{usdc}{USD(C)}{Under Secretary of Defense (Comptroller)}
 \newacronym{ouswas}{OUSW(A\&S)}{Office of the Under Secretary of War for Acquisition and Sustainment}
 \newacronym{ouswre}{OUSW(R\&E)}{Office of the Under Secretary of War for Research and Engineering}
 \newacronym{ouswc}{OUSW(C)}{Office of the Under Secretary of War (Comptroller)}
 \newacronym{asnrdanda}{{ASN(RD\&A)}}{Assistant Secretary of the Navy for Research, Development and Acquisition}
+\newacronym{asn}{ASN}{Assistant Secretary of the Navy}
+\newacronym{asnfmc}{ASN(FM\&C)}{Assistant Secretary of the Navy (Financial Management and Comptroller)}
 \newacronym{dasnapb}{DASN (APB)}{Deputy Assistant Secretary of the Navy (Acquisition Policy and Budget)}
 \newacronym{cae}{CAE}{Component Acquisition Executive}
 \newacronym{sae}{SAE}{Service Acquisition Executive}
