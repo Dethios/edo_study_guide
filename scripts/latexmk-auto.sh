@@ -34,66 +34,129 @@ SHELL_ESCAPE="1"
 JOBS=""
 PREINSTALL="1"
 RETRY="1"
-BIB_MODE="biberap"   # auto|biber|bibtex
+BIB_MODE="biberap" # auto|biber|bibtex
 OUTDIR="out"
 AUXDIR="build"
 VERBOSE="0"
 
 # --- Parse args ---
+usage() {
+  echo "Usage: $(basename "$0") [options] <file.tex>"
+}
+
 ARGS=()
 while [[ $# -gt 0 ]]; do
   case "$1" in
-    --engine) ENGINE="${2:-}"; shift 2;;
-    --pvc) PVC="1"; shift;;
-    --shell-escape) SHELL_ESCAPE="1"; shift;;
-    --jobs) JOBS="${2:-}"; shift 2;;
-    --no-preinstall) PREINSTALL="0"; shift;;
-    --no-retry) RETRY="0"; shift;;
-    --bib) BIB_MODE="${2:-}"; shift 2;;
-    --outdir) OUTDIR="${2:-}"; shift 2;;
-    --auxdir) AUXDIR="${2:-}"; shift 2;;
-    -v|--verbose) VERBOSE="1"; shift;;
-    -h|--help)
-      sed -n '1,80p' "$0"; exit 0;;
-    *) ARGS+=("$1"); shift;;
+    --engine)
+      ENGINE="${2:-}"
+      shift 2
+      ;;
+    --pvc)
+      PVC="1"
+      shift
+      ;;
+    --shell-escape)
+      SHELL_ESCAPE="1"
+      shift
+      ;;
+    --jobs)
+      JOBS="${2:-}"
+      shift 2
+      ;;
+    --no-preinstall)
+      PREINSTALL="0"
+      shift
+      ;;
+    --no-retry)
+      RETRY="0"
+      shift
+      ;;
+    --bib)
+      BIB_MODE="${2:-}"
+      shift 2
+      ;;
+    --outdir)
+      OUTDIR="${2:-}"
+      shift 2
+      ;;
+    --auxdir)
+      AUXDIR="${2:-}"
+      shift 2
+      ;;
+    -v | --verbose)
+      VERBOSE="1"
+      shift
+      ;;
+    -h | --help)
+      sed -n '1,80p' "$0"
+      exit 0
+      ;;
+    *)
+      ARGS+=("$1")
+      shift
+      ;;
   esac
 done
 
-if [[ ${#ARGS[@]} -ne 1 ]]; then
-  echo "Usage: $(basename "$0") [options] <file.tex>"; exit 2
+# Default to src/main.tex or main.tex if no explicit target provided
+if [[ ${#ARGS[@]} -eq 0 ]]; then
+  if [[ -f src/main.tex ]]; then
+    TEXFILE="src/main.tex"
+  elif [[ -f main.tex ]]; then
+    TEXFILE="main.tex"
+  else
+    usage
+    exit 2
+  fi
+elif [[ ${#ARGS[@]} -eq 1 ]]; then
+  TEXFILE="${ARGS[0]}"
+else
+  usage
+  exit 2
 fi
 
-TEXFILE="${ARGS[0]}"
-[[ -f "$TEXFILE" ]] || { echo "File not found: $TEXFILE"; exit 2; }
+[[ -f "$TEXFILE" ]] || {
+  echo "File not found: $TEXFILE"
+  exit 2
+}
 
 # --- Normalize engine flags for latexmk ---
 case "$ENGINE" in
-  lualatex) ENGINE_SWITCH="-lualatex";;
-  xelatex)  ENGINE_SWITCH="-xelatex";;
-  pdflatex) ENGINE_SWITCH="-pdf";;  # pdflatex is default when using -pdf
-  *) echo "Unsupported engine: $ENGINE"; exit 2;;
+  lualatex) ENGINE_SWITCH="-lualatex" ;;
+  xelatex) ENGINE_SWITCH="-xelatex" ;;
+  pdflatex) ENGINE_SWITCH="-pdf" ;; # pdflatex is default when using -pdf
+  *)
+    echo "Unsupported engine: $ENGINE"
+    exit 2
+    ;;
 esac
 
 # --- Check tlmgr and latexmk availability ---
-command -v latexmk >/dev/null 2>&1 || { echo "latexmk not found in PATH."; exit 1; }
-command -v tlmgr   >/dev/null 2>&1 || { echo "tlmgr not found in PATH."; exit 1; }
+command -v latexmk > /dev/null 2>&1 || {
+  echo "latexmk not found in PATH."
+  exit 1
+}
+command -v tlmgr > /dev/null 2>&1 || {
+  echo "tlmgr not found in PATH."
+  exit 1
+}
 
 # --- Ensure texliveonfly (preinstall helper) if requested ---
 if [[ "$PREINSTALL" == "1" ]]; then
-  if ! command -v texliveonfly >/dev/null 2>&1; then
+  if ! command -v texliveonfly > /dev/null 2>&1; then
     log "Installing texliveonfly (once) to enable preinstall pass..."
-    sudo tlmgr install texliveonfly >/dev/null
+    sudo tlmgr install texliveonfly > /dev/null
   fi
 fi
 
 # --- Decide bibliography tool if not forced ---
 BIB_SWITCHES=()
 if [[ "$BIB_MODE" == "auto" ]]; then
-  if grep -qE '\\usepackage(\[[^]]*\])?{biblatex}' "$TEXFILE" 2>/dev/null; then
+  if grep -qE '\\usepackage(\[[^]]*\])?{biblatex}' "$TEXFILE" 2> /dev/null; then
     BIB_SWITCHES+=("-bibtex=no" "-usebiber")
   else
     # Assume natbib/bibtex workflow if .aux/.bib exist without biblatex
-    if compgen -G "*.bib" >/dev/null; then
+    if compgen -G "*.bib" > /dev/null; then
       BIB_SWITCHES+=("-bibtex")
     fi
   fi
@@ -105,7 +168,7 @@ fi
 
 # --- Build latexmk common args ---
 LMK_ARGS=(
-  "-pdf"                       # produce PDF
+  "-pdf" # produce PDF
   "$ENGINE_SWITCH"
   "-synctex=1"
   "-interaction=nonstopmode"
@@ -123,7 +186,7 @@ mkdir -p "$OUTDIR" "$AUXDIR"
 # --- Optional preinstall pass with texliveonfly ---
 preinstall() {
   if [[ "$PREINSTALL" == "1" ]]; then
-    if command -v texliveonfly >/dev/null 2>&1; then
+    if command -v texliveonfly > /dev/null 2>&1; then
       vecho "Running texliveonfly preinstall pass..."
       local compiler="$ENGINE"
       # latexmk-like args trimmed to what texliveonfly accepts
@@ -150,9 +213,9 @@ install_missing_from_log() {
   for f in "${FILES[@]}"; do
     # tlmgr search which package contains the file
     local pkg
-    pkg=$(tlmgr search --global --file "/$f" 2>/dev/null | awk -F: '/^texlive\..*/{next} /^[^ ]+:/ {print $1; exit}')
+    pkg=$(tlmgr search --global --file "/$f" 2> /dev/null | awk -F: '/^texlive\..*/{next} /^[^ ]+:/ {print $1; exit}')
     if [[ -z "$pkg" ]]; then
-      pkg=$(tlmgr search --global --file "/$f" 2>/dev/null | awk -F: 'NR==1{print $1}')
+      pkg=$(tlmgr search --global --file "/$f" 2> /dev/null | awk -F: 'NR==1{print $1}')
     fi
     if [[ -n "$pkg" ]]; then
       pkgs_to_install+=("$pkg")
@@ -167,7 +230,7 @@ install_missing_from_log() {
     mapfile -t pkgs_to_install < <(printf "%s\n" "${pkgs_to_install[@]}" | sort -u)
     log "Installing: ${pkgs_to_install[*]}"
     sudo tlmgr install "${pkgs_to_install[@]}" || true
-    sudo mktexlsr >/dev/null || true
+    sudo mktexlsr > /dev/null || true
   fi
 }
 
@@ -192,7 +255,7 @@ if [[ "$STATUS" -ne 0 && "$RETRY" == "1" && "$PVC" == "0" ]]; then
   # Try to resolve missing packages and retry once
   LOG_BASENAME="$(basename "${TEXFILE%.tex}").log"
   LOG_PATH="$OUTDIR/$LOG_BASENAME"
-  [[ -f "$LOG_PATH" ]] || LOG_PATH="$LOG_BASENAME"  # fallback if outdir not used by engine early
+  [[ -f "$LOG_PATH" ]] || LOG_PATH="$LOG_BASENAME" # fallback if outdir not used by engine early
 
   install_missing_from_log "$LOG_PATH"
 

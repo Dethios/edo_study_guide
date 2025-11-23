@@ -1,17 +1,29 @@
 # Clean & (re)create build/output folders
-latexmk -C
-Remove-Item -Recurse -Force out, build -ErrorAction SilentlyContinue
-New-Item -ItemType Directory -Force -Name out, build | Out-Null
+$outDir = "out"
+$auxDir = "build"
+$mainFile = "src/main.tex"
+$jobName = "main"
 
-# Variables
-$bld = "build"
-$main = "EDO_Qual_Study_Guide"
+latexmk -C -outdir=$outDir -auxdir=$auxDir $mainFile
+Remove-Item -Recurse -Force $outDir, $auxDir -ErrorAction SilentlyContinue
+@($outDir, $auxDir) | ForEach-Object { New-Item -ItemType Directory -Force -Name $_ | Out-Null }
+
+$latexmkArgs = @(
+  "-lualatex"
+  "-g"
+  "-f"
+  "-interaction=nonstopmode"
+  "-shell-escape"
+  "-outdir=$outDir"
+  "-auxdir=$auxDir"
+  $mainFile
+)
 
 # First LaTeX pass (creates .aux/.bcf, etc.)
-latexmk -lualatex -g -f -interaction=nonstopmode -cd -shell-escape $main
+latexmk @latexmkArgs
 
 # Biber pass
-biber --input-directory "$bld" --output-directory "$bld" $main
+biber --input-directory "$auxDir" --output-directory "$auxDir" $jobName
 
 # Final LaTeX pass to incorporate .bbl
-latexmk -lualatex -g -f -interaction=nonstopmode -cd -shell-escape $main
+latexmk @latexmkArgs

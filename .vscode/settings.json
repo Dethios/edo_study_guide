@@ -287,7 +287,7 @@
     "*.copilotmd": "vscode.markdown.preview.editor",
     "*.pdf": "latex-workshop-pdf-hook"
   },
-  "latex-workshop.latex.autoBuild.run": "onFileChange",
+  "latex-workshop.latex.autoBuild.run": "never",
   "latex-workshop.latex.autoBuild.interval": 5000,
   "latex-workshop.latex.build.forceRecipeUsage": true,
   "latex-workshop.latex.build.rootfileInStatus": true,
@@ -305,7 +305,7 @@
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk-wsl",
-      "command": "tools/latexmk-universal.sh",
+      "command": "/home/victor/projects/edo/main/tools/latexmk-universal.sh",
       "args": [
         "-lualatex",
         "-outdir=out",
@@ -366,7 +366,7 @@
   "latex-workshop.view.pdf.reload.transition": "none",
   "latex-workshop.view.outline.sync.viewer": true,
   "latex-workshop.view.pdf.internal.synctex.keybinding": "ctrl-click",
-  "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.synctex.afterBuild.enabled": false,
   "latex-workshop.latex.rootFile.useSubFile": true,
   "latex-workshop.latex.rootFile.doNotPrompt": true,
   "latex-workshop.latex.watch.usePolling": true,
@@ -457,10 +457,36 @@
   "ltex.enabled": true,
   "ltex.enabledTypes": ["sentence", "comment", "string"],
   "ltex.disabledRules": {
-    "en-US": ["MORFOLOGIK_RULE_EN_US"]
+    "en-US": [
+      "MORFOLOGIK_RULE_EN_US",
+      "EN_QUOTES",
+      "COMMA_PARENTHESIS_WHITESPACE",
+      "OXFORD_COMMA",
+      "WHITESPACE_RULE"
+    ]
   },
   "ltex.language": "en-US",
   "ltex.ltex-ls.java.path": "java",
+  "ltex.ignorePaths": ["**/main.tex", "**/build/**", "**/out/**", "**/figures/**"],
+  "ltex.latex.environments": {
+    "equation": "ignore",
+    "align": "ignore",
+    "lstlisting": "ignore",
+    "minted": "ignore",
+    "tikzpicture": "ignore"
+  },
+
+  "ltex.latex.commands": {
+    "\\gls{}": "dummy",
+    "\\Gls{}": "dummy",
+    "\\ac{}": "dummy",
+    "\\acrshort{}": "dummy",
+    "\\acrlong{}": "dummy",
+    "\\qty{}": "dummy",
+    "\\SI{}": "dummy",
+    "\\textcite{}": "dummy",
+    "\\parencite{}": "dummy"
+  },
 
   // ===================================================================
   // 7. TERMINAL - fonts, ligatures, and usability defaults
@@ -1088,5 +1114,6 @@
     "xelatex",
     "xindy"
   ],
-  "cSpell.words": ["JCIDS", "JROC"]
+  "cSpell.words": ["JCIDS", "JROC"],
+  "editor.fontSize": 13
 }

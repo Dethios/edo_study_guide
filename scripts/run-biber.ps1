@@ -20,7 +20,10 @@ try {
   if (Test-Path $runXml) {
     Copy-Item $runXml -Destination (Join-Path $tmpDir "$JobName.run.xml")
   }
-  Get-ChildItem -Path $root -Filter '*.bib' | ForEach-Object {
+  $bibRoot = Join-Path $root 'src'
+  if (-not (Test-Path $bibRoot)) { $bibRoot = $root }
+
+  Get-ChildItem -Path $bibRoot -Filter '*.bib' -Recurse | ForEach-Object {
     Copy-Item $_.FullName -Destination (Join-Path $tmpDir $_.Name)
   }
   Push-Location $root
