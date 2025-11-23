@@ -104,6 +104,7 @@
 	shortplural={UTAs},
 	longplural={Ultimate Technical Authorities}
 ]{uta}{UTA}{Ultimate Technical Authority}
+\newacronym{hme}{HM\&E}{Hull, Mechanical, and Electrical}
 \newacronym{twh}{TWH}{Technical Warrant Holder}
 \newacronym{ea}{EA}{Engineering Agent}
 \newacronym{aea}{AEA}{Alteration Engineering Agent}
