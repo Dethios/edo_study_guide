@@ -50,7 +50,12 @@ shim="$(mktemp -t texonfly-mk-XXXXXX.sh)"
 cat > "$shim" << EOF
 #!/usr/bin/env bash
 set -euo pipefail
-TEXFILE="\$1"
+# texliveonfly calls the compiler like: compiler <args> <file.tex>
+if [[ "\$#" -lt 1 ]]; then
+  echo "ERROR: No TeX file passed to latexmk shim"
+  exit 3
+fi
+TEXFILE="\${@: -1}" # last arg should be the .tex file
 exec "$LATEXMK" -pdf $engine_flag \
   -outdir="$OUTDIR" -auxdir="$AUXDIR" \
   -latexoption="-synctex=1" \

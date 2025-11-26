@@ -305,7 +305,7 @@
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk-wsl",
-      "command": "/home/victor/projects/edo/main/tools/latexmk-universal.sh",
+      "command": "tools/latexmk-universal.sh",
       "args": [
         "-lualatex",
         "-outdir=out",
