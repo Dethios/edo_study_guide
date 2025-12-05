@@ -321,26 +321,13 @@
     },
     {
       "name": "latexmk-win",
-      "command": "latexmk",
-      "args": [
-        "-lualatex",
-        "-outdir=%outDir%",
-        "-auxdir=%auxDir%",
-        "-f",
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "-shell-escape",
-        "%DOC%"
-      ]
+      "command": "scripts\\BuildLatex.ps1"
     },
     {
       "name": "latexmk-quiet",
       "command": "latexmk",
       "args": [
         "-lualatex",
-        "-outdir=%outDir%",
-        "-auxdir=%auxDir%",
         "-f",
         "-quiet",
         "-synctex=1",

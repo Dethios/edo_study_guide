@@ -10,20 +10,16 @@ Remove-Item -Recurse -Force $outDir, $auxDir -ErrorAction SilentlyContinue
 
 $latexmkArgs = @(
   "-lualatex"
-  "-g"
   "-f"
   "-interaction=nonstopmode"
+  "-file-line-error"
+  "-synctex=1"
+  "-quiet"
   "-shell-escape"
   "-outdir=$outDir"
   "-auxdir=$auxDir"
   $mainFile
 )
 
-# First LaTeX pass (creates .aux/.bcf, etc.)
-latexmk @latexmkArgs
-
-# Biber pass
-biber --input-directory "$auxDir" --output-directory "$auxDir" $jobName
-
-# Final LaTeX pass to incorporate .bbl
+# LaTeX pass (creates .aux/.bcf, etc.). latexmk will run again with biber as needed
 latexmk @latexmkArgs
