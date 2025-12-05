@@ -298,6 +298,7 @@
   "latex-workshop.latex.recipe.default": "lastUsed",
   "latex-workshop.latex.recipes": [
     { "name": "BUILD-WIN", "tools": ["latexmk-win"] },
+    { "name": "BUILD-QUIET", "tools": ["latexmk-quiet"] },
     { "name": "BUILD-WSL", "tools": ["latexmk-wsl"] },
     { "name": "AUTO", "tools": ["latexmk-pvc"] },
     { "name": "ON-THE-FLY", "tools": ["texliveonfly"] }
@@ -323,9 +324,25 @@
       "command": "latexmk",
       "args": [
         "-lualatex",
-        "-outdir=out",
-        "-auxdir=build",
+        "-outdir=%outDir%",
+        "-auxdir=%auxDir%",
         "-f",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-shell-escape",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "latexmk-quiet",
+      "command": "latexmk",
+      "args": [
+        "-lualatex",
+        "-outdir=%outDir%",
+        "-auxdir=%auxDir%",
+        "-f",
+        "-quiet",
         "-synctex=1",
         "-interaction=nonstopmode",
         "-file-line-error",
