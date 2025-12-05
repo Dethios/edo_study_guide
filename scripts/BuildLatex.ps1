@@ -2,7 +2,8 @@
 $outDir = "out"
 $auxDir = "build"
 $mainFile = "src/main.tex"
-$jobName = "main"
+$jobName = "EDO_Study_Guide"
+$dateStamp = Get-Date -Format 'yyyyMMdd'
 
 latexmk -C -outdir=$outDir -auxdir=$auxDir $mainFile
 Remove-Item -Recurse -Force $outDir, $auxDir -ErrorAction SilentlyContinue
@@ -18,6 +19,7 @@ $latexmkArgs = @(
   "-shell-escape"
   "-outdir=$outDir"
   "-auxdir=$auxDir"
+  "-jobname = $jobName-$dateStamp"
   $mainFile
 )
 
