@@ -9,6 +9,7 @@
 - A single visible file defines standards: the **Instruction Pack** (baseline coursebook current as of **2025-09-12**).
 - Study Guide production is active (LaTeX build/tooling threads); content gaps identified for **PPBE/fiscal law**, **NWCF v.s.\\ mission-funded**, **reprogramming**, and **definitions (AOR/NOR/SLR/IGT)**.
 - Next steps: populate Fast Cues & Common Board Pivots, compile NAVWAR PMW list with citations, and finalize glossary process.
+- Place every `\autocite{}` and related citation macro before sentence-ending punctuation (e.g., `...text\autocite{ref}.`), never after a period.
 
 ---
 

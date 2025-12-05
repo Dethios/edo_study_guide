@@ -1,6 +1,6 @@
 % ==========================================================
 % moderntech.cls  —  Unified class over KOMA-Script
-% Supports: [book|report|article] + passes options to moderntech-base
+% Supports: [book|report|article] and forwards theme options to moderntech-base
 % Requires: XeLaTeX or LuaLaTeX
 % Author: LCDR Victor Lee, USN, PMP
 % ----------------------------------------------------------
@@ -91,11 +91,11 @@
 % ---------- Convenience message ----------
 \typeout{==============================================================}
 \typeout{ moderntech.cls loaded as \mt@baseclass.}
-\typeout{ Examples:}
-\typeout{   \string\documentclass[book,justify,math=stix,bibresource=edo.bib]{moderntech}}
-\typeout{   \string\documentclass[report,parskip=full]{moderntech}}
-\typeout{   \string\documentclass[article,DIV=calc]{moderntech}}
-\typeout{ All non-class options are forwarded to moderntech-base and KOMA.}
+\typeout{   Examples:}
+\typeout{     \string\documentclass[book,justify,math=stix,bibresource=edo.bib]{moderntech}}
+\typeout{     \string\documentclass[report,parskip=full]{moderntech}}
+\typeout{     \string\documentclass[article,DIV=calc]{moderntech}}
+\typeout{   All non-class options are forwarded to moderntech-base and KOMA.}
 \typeout{==============================================================}
 
 \makeatother

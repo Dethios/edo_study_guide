@@ -3,7 +3,7 @@
 % !TEX options = jobname = "EDO Study Guide"
 % !BIB program = biber
 % =============================================================================
-% ROOT DOCUMENT FILE — KOMA-Script (scrbook)
+% Root document — KOMA-Script (scrbook)
 % =============================================================================
 % LTeX: off
 \documentclass[
@@ -12,11 +12,13 @@
   letterpaper,
   headings=big,          % larger chapter/section heads
   numbers=noendperiod,   % no trailing dot in numbered headings
-  parskip=half,          % block-style paragraphs (tune later if desired)
-  ieeebib=false          % load biblatex manually to avoid class auto-load issues
+  parskip=half,          % block-style paragraphs
+  ieeebib=false          % biblatex is loaded manually below
 ]{moderntech}
 
-% --- Modular preambles (refactored for scrbook) ---
+% =============================================================================
+% Bibliography (manual load keeps class auto-load out of the way)
+% =============================================================================
 \usepackage{shellesc}
 \usepackage[
   backend=biber,
@@ -37,18 +39,20 @@
 \NewDocumentCommand{\nbcite}{m}{\citeauthor{#1}~\autocite{#1}}
 \NewDocumentCommand{\srcCite}{m}{Source:~~\citetitle{#1},~\citeyear{#1}~\autocite{#1}}
 \NewDocumentCommand{\tabCite}{m}{\citetitle{#1},~\citeyear{#1}~\autocite{#1}}
-\AtBeginDocument{\let\blx@warn@bibempty\relax}
 
-% ============================================================
-% 12) TITLE / AUTHOR / METADATA HELPERS
-% ============================================================
+% =============================================================================
+% Metadata and helpers
+% =============================================================================
 \title{EDO Board Prep Study Guide}
 \author{LCDR Victor Lee, USN, PMP}
 \DTMsavedate{Coursebook_Version}{2025-09-19}
 
+% Title page art can be swapped without touching layout below.
 \NewDocumentCommand{\StudyTitleLogo}{}{NAVWAR LOGO.JPG}
 \NewDocumentCommand{\StudyTitleLogoWidth}{}{.7\linewidth}
 
+% Subfile helpers: keep every chapter inside a refsegment so the minibib macro
+% can print per-chapter references when desired.
 \NewDocumentCommand{\StudySubfile}{m}{%
   \subfile{chapters/#1}%
   \HR%
@@ -56,23 +60,20 @@
 
 \NewDocumentCommand{\ChapterWithRefsAtStart}{m}{%
   \begin{refsegment}
-    %
     \subfile{chapters/#1}%
   \end{refsegment}
-  %
   \HR%
 }
 
 \makeatletter
-%================
+% Silence biblatex's empty-bibliography warning in continuous builds.
+\AtBeginDocument{\@ifundefined{blx@warn@bibempty}{}{\let\blx@warn@bibempty\relax}}
 \begin{document}
-%================
 \DTMsetdatestyle{mydateformat}
 
 % ----- TITLE -----
 \hypersetup{pageanchor=false}
 \begin{titlepage}
-  %
   \centering%
   \DTMsetdatestyle{iso}
   {\sffamily\bfseries\fontsize{24pt}{26pt}\selectfont%
@@ -89,14 +90,13 @@
       \color{Modern}\DTMusedate{Coursebook_Version}}}%
   \DTMsetdatestyle{mydateformat}
 \end{titlepage}
-%
 \hypersetup{pageanchor=true}
 \clearpage
+
 % ----- FRONTMATTER -----
-% helper to pick the right ToC level
+% Helper to pick the right ToC level in subfiles or full builds.
 \NewDocumentCommand{\mtTOClevel}{}{\@ifundefined{chapter}{section}{chapter}}
 
-% --- FRONTMATTER ---
 \frontmatter%
 \SetFrontMatterStyle%
 \tableofcontents%
@@ -163,12 +163,11 @@
 \StudySubfile{appendix_current_events}
 \clearpage\label{LastPageMain}
 \phantomsection%
+
 % ----- BACKMATTER -----
 \backmatter%%
 \SetBackMatterStyleA%
-% --- Final Full Bibliography ---
 \printbibliography[heading=bibnumbered, title={References}]
-% --- Acronyms / Glossary ---
 \clearpage%
 
 % Acronym list headings
@@ -184,6 +183,4 @@
 ]
 
 \makeatother%
-%================
 \end{document}
-%================

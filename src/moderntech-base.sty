@@ -231,28 +231,15 @@
 \NewDocumentCommand{\sourcesansprofont}{}{\sffamily}
 \NewDocumentCommand{\textsb}{m}{{\firasanssemibold #1}}
 
-% Provide flag macros with defaults so the base can be used standalone
+% Bool options come from kvoptions; providebool keeps standalone loads safe.
 \providebool{moderntech@sansbody}
 \providebool{moderntech@justify}
 \providebool{moderntech@tablesroman}
 \providebool{moderntech@smallcapsheads}
+\providebool{moderntech@tblrpreset}
+\providebool{moderntech@tabularnums}
 \providebool{moderntech@minted}
 \providebool{moderntech@tikzsmart}
-
-% Mirror kvoptions booleans into \if... conditionals
-\newif\ifmoderntech@sansbody
-\newif\ifmoderntech@justify
-\newif\ifmoderntech@tablesroman
-\newif\ifmoderntech@smallcapsheads
-\newif\ifmoderntech@minted
-\newif\ifmoderntech@tikzsmart
-
-\csname moderntech@sansbody\ifmoderntech@sansbody true\else false\fi\endcsname
-\csname moderntech@justify\ifmoderntech@justify true\else false\fi\endcsname
-\csname moderntech@tablesroman\ifmoderntech@tablesroman true\else false\fi\endcsname
-\csname moderntech@smallcapsheads\ifmoderntech@smallcapsheads true\else false\fi\endcsname
-\csname moderntech@minted\ifmoderntech@minted true\else false\fi\endcsname
-\csname moderntech@tikzsmart\ifmoderntech@tikzsmart true\else false\fi\endcsname
 
 \providecommand\moderntech@math{charter}
 \providecommand\moderntech@bibresource{edo.bib}

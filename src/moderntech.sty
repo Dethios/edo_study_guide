@@ -76,7 +76,7 @@
 \NewDocumentCommand{\ImportAUX}{m}{%
   \IfFileExists{#1.aux}{\externaldocument*{#1}}{}%
 }
-
+% Pull the main document AUX into subfile builds so cross-references resolve.
 \@ifundefined{IfSubfilesClassLoaded}{}{%
   \IfSubfilesClassLoaded{%
     \ImportAUX{\subfix{../../build/main}}%
@@ -86,6 +86,7 @@
 \RequirePackage{bookmark}
 \urlstyle{tt}
 
+% Keep PDF metadata strings clean if color commands leak into bookmarks.
 \pdfstringdefDisableCommands{
   \def\color#1{}%
   \def\textcolor#1#2{#2}%
