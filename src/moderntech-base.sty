@@ -45,7 +45,23 @@
 \RequirePackage{fontspec}
 \RequirePackage{unicode-math}
 \RequirePackage{xcolor}
-% \RequirePackage[final]{microtype}
+\RequirePackage[
+  final,
+  tracking=false,
+  kerning=false,
+  spacing=false,
+  protrusion=true,
+  expansion=true
+]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath}
+\microtypesetup{
+  activate=true,
+  final=true,
+  factor=1000,
+  stretch=15,
+  shrink=15,
+  step=1
+}
 \RequirePackage{setspace}
 \RequirePackage{csquotes}
 \RequirePackage{siunitx}
@@ -665,6 +681,20 @@
   \fi
 }
 \moderntech@setupcode
+
+% Microtype: disable inside code/verbatim blocks to avoid spacing artifacts
+\@ifpackageloaded{microtype}{%
+  \AtBeginEnvironment{verbatim}{\microtypesetup{activate=false}}%
+  \AtEndEnvironment{verbatim}{\microtypesetup{activate=true}}%
+  \@ifpackageloaded{minted}{%
+    \AtBeginEnvironment{minted}{\microtypesetup{activate=false}}%
+    \AtEndEnvironment{minted}{\microtypesetup{activate=true}}%
+  }{}%
+  \@ifpackageloaded{listings}{%
+    \AtBeginEnvironment{lstlisting}{\microtypesetup{activate=false}}%
+    \AtEndEnvironment{lstlisting}{\microtypesetup{activate=true}}%
+  }{}%
+}{}%
 
 % =============================
 % * Per-environment color boxes (notes, hints, warnings, info)
