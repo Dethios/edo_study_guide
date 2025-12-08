@@ -7,5 +7,6 @@
 - When asked to update memory, output:
   1) a short rationale; and
   2) a JSON Merge Patch for `Other/project_export.json` in a fenced block labeled `json_patch`.
+1) 
 
 * Apply `json_patch` to `Other/project_export.json`.
