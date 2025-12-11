@@ -69,6 +69,7 @@
 \@ifundefined{caption@documentclass}{\def\caption@documentclass{standard}}{}
 \RequirePackage[compatibility=false]{caption}
 \RequirePackage{ragged2e}
+\setlength{\emergencystretch}{1em} % soften occasional overfull hboxes
 \RequirePackage{enumitem}
 \RequirePackage{tabularray}
 \IfFileExists{tblr-extras.sty}{%
@@ -369,6 +370,18 @@
 }
 \AtBeginDocument{\moderntechsetupTOC}
 
+\NewDocumentCommand{\moderntechsetupLists}{}{%
+  \DeclareTOCStyleEntry[
+    entryformat=\moderntech@toc@section,
+    pagenumberformat=\moderntech@toc@section
+  ]{tocline}{figure}%
+  \DeclareTOCStyleEntry[
+    entryformat=\moderntech@toc@section,
+    pagenumberformat=\moderntech@toc@section
+  ]{tocline}{table}%
+}
+\AtBeginDocument{\moderntechsetupLists}
+
 \providecommand{\MTTocTightDots}{%
   \@ifpackageloaded{tocbasic}{%
     \RedeclareSectionCommand[tocpagenumberformat=\normalfont\bfseries]{section}%
@@ -377,6 +390,7 @@
     \RenewDocumentCommand{\cftdotsep}{}{\cftnodots}%
   }{}%
 }
+\AtBeginDocument{\raggedbottom} % reduce overfull vbox warnings on dense pages
 
 % =============================
 % * Headers / Footers
@@ -434,6 +448,52 @@
 
 \AtBeginEnvironment{figure}{\centering}
 \AtBeginEnvironment{table}{\centering}
+\setlength{\textfloatsep}{10pt plus 4pt minus 6pt}
+\setlength{\floatsep}{8pt plus 4pt minus 4pt}
+\setlength{\intextsep}{10pt plus 4pt minus 6pt}
+
+% =============================
+% * Auto-label numbered divisions
+% =============================
+\let\moderntech@origchapter\chapter
+\RenewDocumentCommand{\chapter}{s o m}{%
+  \IfBooleanTF{#1}{%
+    \IfNoValueTF{#2}{\moderntech@origchapter*{#3}}{\moderntech@origchapter*[#2]{#3}}%
+  }{%
+    \IfNoValueTF{#2}{\moderntech@origchapter{#3}}{\moderntech@origchapter[#2]{#3}}%
+    \@ifundefined{r@chap:\thechapter}{\label{chap:\thechapter}}{}%
+  }%
+}
+
+\let\moderntech@origsection\section
+\RenewDocumentCommand{\section}{s o m}{%
+  \IfBooleanTF{#1}{%
+    \IfNoValueTF{#2}{\moderntech@origsection*{#3}}{\moderntech@origsection*[#2]{#3}}%
+  }{%
+    \IfNoValueTF{#2}{\moderntech@origsection{#3}}{\moderntech@origsection[#2]{#3}}%
+    \@ifundefined{r@sec:\thesection}{\label{sec:\thesection}}{}%
+  }%
+}
+
+\let\moderntech@origsubsection\subsection
+\RenewDocumentCommand{\subsection}{s o m}{%
+  \IfBooleanTF{#1}{%
+    \IfNoValueTF{#2}{\moderntech@origsubsection*{#3}}{\moderntech@origsubsection*[#2]{#3}}%
+  }{%
+    \IfNoValueTF{#2}{\moderntech@origsubsection{#3}}{\moderntech@origsubsection[#2]{#3}}%
+    \@ifundefined{r@subsec:\thesubsection}{\label{subsec:\thesubsection}}{}%
+  }%
+}
+
+\let\moderntech@origsubsubsection\subsubsection
+\RenewDocumentCommand{\subsubsection}{s o m}{%
+  \IfBooleanTF{#1}{%
+    \IfNoValueTF{#2}{\moderntech@origsubsubsection*{#3}}{\moderntech@origsubsubsection*[#2]{#3}}%
+  }{%
+    \IfNoValueTF{#2}{\moderntech@origsubsubsection{#3}}{\moderntech@origsubsubsection[#2]{#3}}%
+    \@ifundefined{r@subsubsec:\thesubsubsection}{\label{subsubsec:\thesubsubsection}}{}%
+  }%
+}
 
 \sisetup{
   detect-all,
@@ -504,7 +564,7 @@
 % * Bibliography (biblatex/biber; IEEE numeric)
 % =============================
 \ifmoderntech@ieeebib
-  \RequirePackage[backend=biber,style=ieee,defernumbers=true,sorting=none]{biblatex}
+\RequirePackage[backend=biber,style=ieee,defernumbers=true,sorting=none,hyperref=false,backref=false]{biblatex}
   \IfFileExists{./\moderntech@bibresource}{}{%
     \IfFileExists{src/\moderntech@bibresource}{%
       \renewcommand{\moderntech@bibresource}{src/\moderntech@bibresource}%
@@ -518,41 +578,65 @@
 
 \ifmoderntech@ieeebib
   \ExecuteBibliographyOptions{seconds=true}
+  \AtBeginDocument{%
+    \DeclareFieldFormat{labelnumber}{\mkbibhyperref{#1}}%
+    \DeclareFieldFormat{shorthand}{\mkbibhyperref{#1}}%
+  }%
   \AtBeginDocument{\let\blx@warn@bibempty\relax}
 \fi
 
 \NewDocumentCommand{\minibib}{}{%
-\begingroup
-  \renewbibmacro*{in:}{}%
-  \renewbibmacro*{author}{}%
-  \renewbibmacro*{editor+others}{}%
-  \renewbibmacro*{journal+issuetitle}{}%
-  \renewbibmacro*{booktitle}{}%
-  \renewbibmacro*{publisher+location+date}{\setunit{\addcomma\addspace}\usebibmacro{date}\newunit}%
-  \renewbibmacro*{volume+number+eid}{}%
-  \renewbibmacro*{pages}{}%
-  \renewbibmacro*{note+pages}{}%
-  \DeclareFieldFormat{note}{}%
-  \DeclareFieldFormat{type}{}%
-  \DeclareFieldFormat{number}{}%
-  \DeclareFieldFormat{version}{}%
-  \DeclareListFormat{organization}{}%
-  \DeclareFieldFormat{institution}{}%
-  \renewbibmacro*{url}{}%
-  \renewbibmacro*{url+urldate}{\usebibmacro{date}}%
-  \renewbibmacro*{doi+eprint+url}{}%
-  \renewbibmacro*{institution+location}{}%
-  \renewbibmacro*{title}{\iffieldundef{title}{}{\printfield[title]{title}}}%
-  \RenewDocumentCommand{\newunitpunct}{}{\addspace}%
-  \begin{table}[H]
-    \begin{tblr}{row{1}={font=\rmfamily}, colspec={@{}L X@{}}}
-      \textbf{Refs:} &
-      \begin{minipage}[t]{\linewidth}
-        \printbibliography[heading=none,segment=\therefsegment,resetnumbers=false]
-      \end{minipage}
-    \end{tblr}
-  \end{table}
-\endgroup
+  \begingroup
+    \begin{NoHyper}%
+      \renewbibmacro*{in:}{}%
+      \renewbibmacro*{author}{}%
+      \renewbibmacro*{editor+others}{}%
+      \renewbibmacro*{journal+issuetitle}{}%
+      \renewbibmacro*{booktitle}{}%
+      \renewbibmacro*{publisher+location+date}{\setunit{\addcomma\addspace}\usebibmacro{date}\newunit}%
+      \renewbibmacro*{volume+number+eid}{}%
+      \renewbibmacro*{pages}{}%
+      \renewbibmacro*{note+pages}{}%
+      \DeclareFieldFormat{note}{}%
+      \DeclareFieldFormat{type}{}%
+      \DeclareFieldFormat{number}{}%
+      \DeclareFieldFormat{version}{}%
+      \DeclareListFormat{organization}{}%
+      \DeclareFieldFormat{institution}{}%
+      \renewbibmacro*{url}{}%
+      \renewbibmacro*{url+urldate}{\usebibmacro{date}}%
+      \renewbibmacro*{doi+eprint+url}{}%
+      \renewbibmacro*{institution+location}{}%
+      \renewbibmacro*{title}{\iffieldundef{title}{}{\printfield[title]{title}}}%
+      \RenewDocumentCommand{\newunitpunct}{}{\addspace}%
+      \begin{table}[H]
+        \begin{tblr}{row{1}={font=\rmfamily}, colspec={@{}L X@{}}}
+          \textbf{Refs:} &
+          \begin{minipage}[t]{\linewidth}
+            \begingroup
+              \ifcsname ifblx@hyperref\endcsname
+                \let\mt@ifblx@hyperref\ifblx@hyperref
+                \boolfalse{blx@hyperref}%
+              \fi
+              \ifcsname blx@bibhyperref\endcsname
+                \let\mt@bibhyperref\blx@bibhyperref
+                \RenewDocumentCommand{\blx@bibhyperref}{m}{##1}%
+              \fi
+              \printbibliography[heading=none,segment=\therefsegment,resetnumbers=false]
+              \ifdefined\mt@bibhyperref
+                \let\blx@bibhyperref\mt@bibhyperref
+                \let\mt@bibhyperref\undefined
+              \fi
+              \ifdefined\mt@ifblx@hyperref
+                \let\ifblx@hyperref\mt@ifblx@hyperref
+                \let\mt@ifblx@hyperref\undefined
+              \fi
+            \endgroup
+          \end{minipage}
+        \end{tblr}
+      \end{table}
+    \end{NoHyper}%
+  \endgroup
 }
 
 % -- Custom biblatex driver: legislation -------------------------------------
@@ -594,11 +678,11 @@
 % * Float placement preferences
 % =============================
 \RequirePackage{float}
-\floatplacement{table}{H}
-\floatplacement{figure}{H}
-\floatplacement{talltblr}{H}
+\floatplacement{table}{htbp}
+\floatplacement{figure}{htbp}
+\floatplacement{talltblr}{htbp}
 \providecommand{\dblfloatplacement}[2]{}%
-\dblfloatplacement{figure}{H}%
+\dblfloatplacement{figure}{htbp}%
 \captionsetup[figure]{position=below}
 \captionsetup[table]{position=above}
 

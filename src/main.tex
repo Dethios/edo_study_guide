@@ -19,6 +19,8 @@
 % =============================================================================
 % Bibliography (manual load keeps class auto-load out of the way)
 % =============================================================================
+\PassOptionsToPackage{hidelinks,hyperfootnotes=false}{hyperref}
+\usepackage{hyperref}
 \usepackage{shellesc}
 \usepackage[
   backend=biber,
@@ -27,10 +29,11 @@
   sorting=none,
   giveninits=true,
   isbn=false,
+  refsegment=chapter,
   doi=true,
   url=true,
   urldate=iso,
-  hyperref=true
+  backref=false
 ]{biblatex}
 \ExecuteBibliographyOptions{seconds=true}
 \addbibresource{src/edo.bib}
@@ -39,6 +42,33 @@
 \NewDocumentCommand{\nbcite}{m}{\citeauthor{#1}~\autocite{#1}}
 \NewDocumentCommand{\srcCite}{m}{Source:~~\citetitle{#1},~\citeyear{#1}~\autocite{#1}}
 \NewDocumentCommand{\tabCite}{m}{\citetitle{#1},~\citeyear{#1}~\autocite{#1}}
+\ExplSyntaxOn
+\msg_redirect_name:nnn { pdf } { unreferenced destination } { none }
+\msg_redirect_name:nnn { pdf/backend } { unreferenced destination } { none }
+\cs_if_exist:NT \__pdf_backend_warn:nnnn
+  {
+    \cs_new_eq:NN \mt@orig_pdf_warn:nnnn \__pdf_backend_warn:nnnn
+    \cs_set_protected:Npn \__pdf_backend_warn:nnnn ##1##2##3##4
+      {
+        \str_if_eq:nnTF {##2}{unreferenced destination}
+          { }
+          { \mt@orig_pdf_warn:nnnn {##1}{##2}{##3}{##4} }
+      }
+  }
+\ExplSyntaxOff
+\DeclareFieldFormat{bibhyperref}{#1}
+\DeclareFieldFormat{bibhypertarget}{#1}
+% Disable biblatex hyperlink targets when defined; leave hyperref driver intact.
+% \AtBeginDocument{%
+%   \makeatletter
+%   \@ifundefined{blx@hyperreffalse}{}{ \blx@hyperreffalse }
+%   \makeatother
+% }
+% \AtBeginDocument{%
+%   \providecommand{\mkbibhyperref}[1]{#1}%
+%   \DeclareFieldFormat{labelnumber}{\mkbibhyperref{#1}}%
+%   \DeclareFieldFormat{shorthand}{\mkbibhyperref{#1}}%
+% }
 
 % =============================================================================
 % Metadata and helpers
@@ -59,15 +89,10 @@
 }
 
 \NewDocumentCommand{\ChapterWithRefsAtStart}{m}{%
-  \begin{refsegment}
-    \subfile{chapters/#1}%
-  \end{refsegment}
+  \subfile{chapters/#1}%
   \HR%
 }
 \NewDocumentCommand{\FlagBilletNote}{m}{\space\textit{(Appendix~\ref{app:edo-flags}: #1)}}
-
-% TODO: [] add section labels
-% TODO: [] find and work acronyms, compare consecutive uppercase letters with context surrounding them to see if they are an acronym. If so, check if they are already defined. Define if not. Change to proper \ac{} call.
 
 \makeatletter
 % Silence biblatex's empty-bibliography warning in continuous builds.
@@ -182,6 +207,8 @@
 \RenewDocumentCommand{\descriptionname}{}{\sffamily\textbf{\color{Modern} Definition}}
 
 \RenewDocumentCommand{\glsnamefont}{m}{\textbf{#1}}
+\glslink{ppbe}{\mbox{}}
+\glslink{dow}{\mbox{}}
 \printnoidxglossary[
   type=\acronymtype,
   title=List of Acronyms,

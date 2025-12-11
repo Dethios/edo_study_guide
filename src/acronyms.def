@@ -75,10 +75,23 @@
 \newacronym{navsup}{NAVSUP}{Naval Supply Systems Command}
 \newacronym{sea}{SEA}{NAVSEA headquarters staff code}
 \newacronym{supship}{SUPSHIP}{Supervisor of Shipbuilding}
-\newacronym{pmw}{PMW}{Program Management Warfare (NAVWAR PEO C4I/NAVAIR PMS series)}
+\newacronym[shortplural={PMWs},longplural={Program Management Warfare offices}]{pmw}{PMW}{Program Management Warfare (NAVWAR PEO C4I/NAVAIR PMS series)}
 \newacronym{surfmepp}{SURFMEPP}{Surface Maintenance Engineering Planning Program}
 \newacronym{submepp}{SUBMEPP}{Submarine Maintenance Engineering Planning Program}
 \newacronym{navseainst}{NAVSEAINST}{Naval Sea Systems Command Instruction}
+\newacronym{sea05b}{SEA 05B}{Office of the Chief Engineer}
+\newacronym{sea05c}{SEA 05C}{Cost Engineering and Industrial Analysis}
+\newacronym{sea05e}{SEA 05E}{Explosive Ordnance Engineering}
+\newacronym{sea05h}{SEA 05H}{Integrated Warfare Systems Engineering}
+\newacronym{sea05m}{SEA 05M}{Logistics and Maintenance Warfare Systems Engineering}
+\newacronym{sea05n}{SEA 05N}{Undersea Warfare Systems Engineering}
+\newacronym{sea05p}{SEA 05P}{Ship Integrity and Performance Engineering}
+\newacronym{sea05s}{SEA 05S}{Industrial Engineering, Technical Policy and Standards}
+\newacronym{sea05t}{SEA 05T}{Technology Office}
+\newacronym{sea05u}{SEA 05U}{Submarine/Submersible Design and Systems Engineering}
+\newacronym{sea05v}{SEA 05V}{Aircraft Carrier Design and Systems Engineering}
+\newacronym{sea05w}{SEA 05W}{Surface Warfare Systems Engineering}
+\newacronym{sea05z}{SEA 05Z}{Marine Engineering}
 \newacronym{syscom}{SYSCOM}{Systems Command}
 \newacronym{n8}{N8}{OPNAV Integration of Capabilities and Resources}
 \newacronym{n82}{N82}{OPNAV Programming Division}
@@ -96,9 +109,10 @@
 
 % --- Warfare Centers & Field Activities ---
 
-\newacronym{nwc}{NWC}{Naval Warfare Center}
-\newacronym{nswc}{NSWC}{Naval Surface Warfare Center}
-\newacronym{nuwc}{NUWC}{Naval Undersea Warfare Center}
+\newacronym[shortplural={NWCs},longplural={Naval Warfare Centers}]{nwc}{NWC}{Naval Warfare Center}
+\newacronym[shortplural={NSWCs},longplural={Naval Surface Warfare Centers}]{nswc}{NSWC}{Naval Surface Warfare Center}
+\newacronym[shortplural={NUWCs},longplural={Naval Undersea Warfare Centers}]{nuwc}{NUWC}{Naval Undersea Warfare Center}
+\newacronym{subtech}{SUBTECH}{Submarine/Undersea Warfare Technology}
 \newacronym{niwclant}{NIWC LANT}{Naval Information Warfare Center Atlantic}
 \newacronym{niwcpac}{NIWC PAC}{Naval Information Warfare Center Pacific}
 \newacronym{nsfa}{NSFA}{NAVWAR Space Field Activity}
@@ -146,21 +160,21 @@
 
 % --- Program Executive Offices & Portfolios ---
 
-\newacronym{peo}{PEO}{Program Executive Office}
+\newacronym[shortplural={PEOs},longplural={Program Executive Offices}]{peo}{PEO}{Program Executive Office}
 \newacronym{iws}{IWS}{Integrated Warfare Systems}
 \newacronym{peoc4i}{PEO C4I}{Program Executive Office, Command, Control, Communications, Computers, and Intelligence}
 \newacronym{peocolumbia}{PEO Columbia}{Program Executive Office, Columbia-Class Submarines}
-\newacronym{peocvn}{PEO CVN}{Program Executive Office, Aircraft Carriers}
+\newacronym[shortplural={PEO CVNs},longplural={Program Executive Offices, Aircraft Carriers}]{peocvn}{PEO CVN}{Program Executive Office, Aircraft Carriers}
 \newacronym{peodigital}{PEO Digital}{Program Executive Office, Digital and Enterprise Services}
 \newacronym{peoiws}{PEO IWS}{Program Executive Office, Integrated Warfare Systems}
 \newacronym{peomlb}{PEO MLB}{Program Executive Office, Manpower, Logistics and Business IT}
-\newacronym{peoships}{PEO Ships}{Program Executive Office, Ships}
-\newacronym{peossbn}{PEO SSBN}{Program Executive Office, SSBN}
-\newacronym{peossn}{PEO SSN}{Program Executive Office, Attack Submarines}
+\newacronym[shortplural={PEO Ships},longplural={Program Executive Offices, Ships}]{peoships}{PEO Ships}{Program Executive Office, Ships}
+\newacronym[shortplural={PEO SSBNs},longplural={Program Executive Offices, SSBN}]{peossbn}{PEO SSBN}{Program Executive Office, SSBN}
+\newacronym[shortplural={PEO SSNs},longplural={Program Executive Offices, Attack Submarines}]{peossn}{PEO SSN}{Program Executive Office, Attack Submarines}
 \newacronym{ssn}{SSN}{Attack Submarine, Nuclear}
 \newacronym{peosub}{PEO SUB}{Program Executive Office, Submarines}
-\newacronym{peousc}{PEO USC}{Program Executive Office, Unmanned and Small Combatants}
-\newacronym{peouws}{PEO UWS}{Program Executive Office, Undersea Warfare Systems}
+\newacronym[shortplural={PEO USCs},longplural={Program Executive Offices, Unmanned and Small Combatants}]{peousc}{PEO USC}{Program Executive Office, Unmanned and Small Combatants}
+\newacronym[shortplural={PEO UWSs},longplural={Program Executive Offices, Undersea Warfare Systems}]{peouws}{PEO UWS}{Program Executive Office, Undersea Warfare Systems}
 \newacronym{ssbn}{SSBN}{Ballistic Missile Submarine, Nuclear}
 
 % --- Program Leadership & Stakeholders ---
@@ -169,11 +183,11 @@
 	shortplural={PAs},
 	longplural={Program Authorities}
 ]{pa}{PA}{Program Authority}
-\newacronym{pm}{PM}{Program Manager}
+\newacronym[shortplural={PMs},longplural={Program Managers}]{pm}{PM}{Program Manager}
 \newacronym{parm}{PARM}{Participating Acquisition Resource Manager}
 \newacronym{shapm}{SHAPM}{Ship Acquisition Program Manager}
 \newacronym{slm}{SLM}{Ship Lifecycle Manager}
-\newacronym{spm}{SPM}{Ship Program Manager}
+\newacronym[shortplural={SPMs},longplural={Ship Program Managers}]{spm}{SPM}{Ship Program Manager}
 \newacronym[
 	shortplural={SPDs},
 	longplural={Ship Project Directors}
@@ -186,7 +200,7 @@
 	shortplural={PMOs},
 	longplural={Program Management Offices}
 ]{pmo}{PMO}{Program Management Office}
-\newacronym{pms}{PMS}{Program Manager, Ships}
+\newacronym[shortplural={PMSs},longplural={Program Managers, Ships}]{pms}{PMS}{Program Manager, Ships}
 \newacronym{drpm}{DRPM}{Direct Reporting Program Manager}
 
 % --- Acquisition Decision Framework ---
@@ -196,6 +210,7 @@
 	shortplural={ACATs},
 	longplural={Acquisition Categories}
 ]{acat}{ACAT}{Acquisition Category}
+\newacronym{iam}{IAM}{Major Automated Information System (legacy ACAT I equivalent)}
 \newacronym[
 	shortplural={ADMs},
 	longplural={Acquisition Decision Memoranda}
@@ -254,11 +269,14 @@
 	shortplural={APIs},
 	longplural={Application Programming Interfaces}
 ]{api}{API}{Application Programming Interface}
+\newacronym{dod}{DoW}{Department of War}
 \newacronym{dagir}{DAGIR}{Data and Applications Government-owned Interoperable Repositories}
 \newacronym{emd}{EMD}{Engineering and Manufacturing Development}
 \newacronym{ibr}{IBR}{Integrated Baseline Review}
 \newacronym{ipt}{IPT}{Integrated Product Team}
+\newacronym{wipt}{WIPT}{Working-level Integrated Product Team}
 \newacronym{lcsp}{LCSP}{Life-Cycle Sustainment Plan}
+\newacronym{poam}{POA\&M}{Plan of Action and Milestones}
 \newacronym{mca}{MCA}{Major Capability Acquisition}
 \newacronym[
 	shortplural={MDAs},
@@ -350,6 +368,8 @@
 \newacronym{far}{FAR}{Federal Acquisition Regulation}
 \newacronym{dfars}{DFARS}{Defense Federal Acquisition Regulation Supplement}
 \newacronym{nmcars}{NMCARS}{Navy Marine Corps Acquisition Regulation Supplement}
+\newacronym{secnavinst}{SECNAVINST}{Secretary of the Navy Instruction}
+\newacronym{sam}{SAM}{System for Award Management}
 \newacronym{som}{SOM}{SUPSHIP Operation Manual}
 \newacronym{sap}{SAP}{Simplified Acquisition Procedures}
 \newacronym{sat}{SAT}{Simplified Acquisition Threshold}
@@ -722,6 +742,8 @@
 \newacronym{d5le}{D5LE}{Trident II D5 Life Extension}
 \newacronym{slcmn}{SLCM-N}{Sea-Launched Cruise Missile (nuclear)}
 \newacronym{ddg}{DDG}{Guided Missile Destroyer}
+\newacronym{lcs}{LCS}{Littoral Combat Ship}
+\newacronym{ffg}{FFG}{Guided-Missile Frigate}
 \newacronym{rimpac}{RIMPAC}{Rim of the Pacific Exercise}
 \newacronym{fvey}{FVEY}{Five Eyes (Australia, Canada, New Zealand, United Kingdom, United States)}
 \newacronym{nasa}{NASA}{National Aeronautics and Space Administration}

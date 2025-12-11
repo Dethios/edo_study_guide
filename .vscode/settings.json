@@ -299,14 +299,13 @@
   "latex-workshop.latex.recipes": [
     { "name": "BUILD-WIN", "tools": ["latexmk-win"] },
     { "name": "BUILD-QUIET", "tools": ["latexmk-quiet"] },
-    { "name": "BUILD-WSL", "tools": ["latexmk-wsl"] },
-    { "name": "AUTO", "tools": ["latexmk-pvc"] },
-    { "name": "ON-THE-FLY", "tools": ["texliveonfly"] }
+    { "name": "BUILD-WSL", "tools": ["latexmk-wsl", "texliveonfly", "latexmk-wsl"] },
+    { "name": "AUTO", "tools": ["latexmk-pvc"] }
   ],
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk-wsl",
-      "command": "tools/latexmk-universal.sh",
+      "command": "latexmk",
       "args": [
         "-lualatex",
         "-outdir=out",
@@ -328,6 +327,8 @@
       "command": "latexmk",
       "args": [
         "-lualatex",
+        "-outdir=out",
+        "-auxdir=build",
         "-f",
         "-quiet",
         "-synctex=1",
@@ -352,11 +353,6 @@
         "-shell-escape",
         "%DOC%"
       ]
-    },
-    {
-      "name": "latexmk-auto",
-      "command": "/usr/local/texlive/2025/bin/aarch64-linux/latexmk-auto",
-      "args": ["%DOC%"]
     },
     {
       "name": "texliveonfly",
