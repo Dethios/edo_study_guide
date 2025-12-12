@@ -2,8 +2,8 @@
   "project": {
     "name": "EDO Acquisition Tutor",
     "slug": "edo-acquisition-tutor",
-    "exported_at": "2025-12-09T00:14:45-08:00",
-    "current_as_of": "2025-12-09",
+    "exported_at": "2025-12-11T11:14:43-08:00",
+    "current_as_of": "2025-12-11",
     "instruction_pack_baseline": "2025-09-12",
     "tags": [
       "EDO",
@@ -123,8 +123,9 @@
     ],
     "build": {
       "latexmk": {
-        "last_result": "success",
+        "last_result": "failure",
         "notes": [
+          "2025-12-11: latexmk -shell-escape src/main.tex failed after cleaning build/; longtblr runaway-argument error in 6_PPBE (tab:ppbe_key_terms) left build/main.bcf and build/main.bbl incomplete.",
           "2025-12-13: Updated NAVSEA leadership callouts (ADM Houston non-EDO; PEO IWS/MLB/Sub AP fills) and inserted Platinum Card PPBE figures; latexmk -shell-escape src/main.tex succeeds (minted fallback only).",
           "2025-12-13: Switched floatplacement defaults to htbp in moderntech-base and cleaned build artifacts; latexmk -shell-escape src/main.tex now completes without overfull box warnings (minted fallback remains).",
           "2025-12-12: Relaxed figure placement to [htbp] across chapters/appendix and tightened float spacing in moderntech-base; overfull \\vbox notices are smaller but still present on dense maintenance/policy pages; latexmk -shell-escape src/main.tex succeeds.",
@@ -187,6 +188,18 @@
       {
         "title": "Complete the remaining acronym audit in prose (avoid tables/headings) to ensure all uppercase runs are wrapped in \\ac{} where appropriate.",
         "status": "done"
+      },
+      {
+        "title": "Fix hyperlinks and hyperrefs so internal links are clickable.",
+        "status": "todo"
+      },
+      {
+        "title": "Resolve issue with too many subsection label references.",
+        "status": "todo"
+      },
+      {
+        "title": "Fix latexmk failure after clean build (longtblr runaway argument in 6_PPBE tab:ppbe_key_terms; regenerate bcf/bbl).",
+        "status": "todo"
       }
     ],
     "recommended_next_actions": []
@@ -311,7 +324,9 @@
       "2025-12-11: Added \\ac{} coverage in solicitation/cost evaluation (FAR/NMCARS/DFARS prose), LLTM, LOA/CSSQT, and opnavinst 4700.7M references; attempted pdf-backend warning redirection in main.tex\u2014build succeeds but unreferenced-destination warnings persist.",
       "2025-12-12: Added \\ac{subtech} and wrapped remaining Open \\ac{dagir} references in the current events appendix; latexmk -shell-escape src/main.tex remains clean aside from overfull boxes and minted fallback warnings.",
       "NAVSEA org chart Dec 2025: COMNAVSEA ADM William J. Houston is a Submarine officer (non-EDO); PEO IWS RDML Thomas J. Dickinson and PEO MLB RDML Kevin P. Biehn are Surface Warfare APs; NAVSEA 05 RDML Jay A. Seif is a Submarine AP; PEO USC is SES (RDML Kevin R. Smith relieved).",
-      "PPBE chapter now embeds Platinum Card graphics for the Planning phase and concurrent Program/Budget review alongside the existing timelines."
+      "PPBE chapter now embeds Platinum Card graphics for the Planning phase and concurrent Program/Budget review alongside the existing timelines.",
+      "Subfiles now set % !TEX root and \\documentclass options to ../src/main.tex across chapters/templates.",
+      "Latest latexmk -shell-escape src/main.tex (after cleaning build/) failed with a longtblr runaway-argument error in 6_PPBE (tab:ppbe_key_terms), leaving build/main.bcf and build/main.bbl incomplete."
     ]
   },
   "history": {

@@ -35,6 +35,10 @@
 - [x] Update to flag status: PEO UWS is https://www.navsea.navy.mil/Media/Biographies/Article-View/Article/3924018/rear-adm-douglas-j-adams/; PEO SSBN and NAVSEA 07 is https://www.navy.mil/Leadership/Flag-Officer-Biographies/BioDisplay/Article/3642900/rear-admiral-todd-weeks/; Both of those are not EDOs and should not be in EDO Flag appendix. They are Submarine APs. Rucker remains PEO SSN https://www.navy.mil/Leadership/Flag-Officer-Biographies/BioDisplay/Article/3052230/rear-admiral-jonathan-rucker/. The EDO Flag appendix and callouts in the study needs to be updated. PEO USC is no longer RDML Smith, it is an SES. RDML Smith was relieved of duties due to an IG complaint (https://www.stripes.com/branches/navy/2025-05-27/navy-rear-admiral-relieved-17929815.html)
 - [x] https://www.navsea.navy.mil/Portals/103/Documents/Command%20Org%20Charts/NAVSEA_Org_Chart_Dec2025.pdf shows all the DRPMs, PEOs, SEA and who is currently in those positions. Dickinson and Biehn is a SWO AP and SEIF is a Sub AP. ADM Houston is a Submarine Officer. Please update the Flag appendix and all call outs i the text appropriately.
 - [x] Add the PPBE graphics from platinum card into PPBE chapter. Should logically insert one for the Planning timline, insert one for the Programming/Budgeting dual process.
+- [ ] Fix hyperlinks and hyperrefs. They are no links within the text to click
+- [ ] Resolve issue with too many subsection label references.
+- [ ] Fix latexmk failure after clean build (longtblr runaway argument in 6\_PPBE tab:ppbe\_key\_terms; missing bcf/bbl).
+- [ ] I adjusted the default 1st column and default text font for my table themes. The custom column types listed below and defined in `moderntech-base.sty` are no longer required. Please systematically restore all columns in tables as follows: F → l, L → X, and W ⇾ X. Please make those changes and remove the columns that are no longer required.
 
 ## Session updates (2025-12-08)
 - Acronym audit: cleaned 10\_Cost\_Fundamentals, 12\_Solicitation, 15\_policy, 16\_Milestones; added COTS, COFC, IT, and IRB definitions.
@@ -60,8 +64,9 @@
 - Relaxed figure placement from `[H]` to `[htbp]` across chapters and Platinum Card appendix, and tightened float spacing in `moderntech-base`; overfull \vbox notices dropped slightly in the densest maintenance/policy sections.
 - Added auto-labeling for numbered chapters/sections/subsections, expanded plural forms/grouping in `acronyms.def`, and updated the EDO flag appendix to remove non-EDO PEO billets per Dec 2025 bios; `latexmk -shell-escape src/main.tex` now succeeds with only overfull boxes/minted fallback notices.
 
-## Session updates (2025-12-13)
+## Session updates (2025-12-11)
 - Changed global float placement defaults in `moderntech-base` to `htbp` to relax float anchoring; rebuilt to clear the remaining overfull \vbox warnings in maintenance/policy chapters and appendices.
 - Cleaned the build directory and reran `latexmk -shell-escape src/main.tex`; build now completes without overfull box warnings (minted fallback notices remain).
 - Updated NAVSEA billet callouts per the Dec 2025 org chart (COMNAVSEA ADM Houston is a Submarine officer; PEO IWS RDML Dickinson and PEO MLB RDML Biehn are SWO APs; NAVSEA 05 RDML Seif is a Submarine AP); adjusted EDO flag appendix and chain-of-command notes accordingly.
 - Added Platinum Card PPBE graphics (Planning phase and concurrent Program/Budget review) into Chapter 6.
+- Set all subfiles to point at `../src/main.tex` for both the `% !TEX root` directive and subfiles class option; cleaned `build/` and reran `latexmk -shell-escape src/main.tex`, which now fails with a longtblr runaway-argument error in 6\_PPBE (tab:ppbe\_key\_terms) and incomplete `build/main.bcf`/`build/main.bbl`.

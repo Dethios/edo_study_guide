@@ -19,7 +19,7 @@
 % =============================================================================
 % Bibliography (manual load keeps class auto-load out of the way)
 % =============================================================================
-\PassOptionsToPackage{hidelinks,hyperfootnotes=false}{hyperref}
+\PassOptionsToPackage{colorlinks=true,linktoc=all,hyperfootnotes=false}{hyperref}
 \usepackage{hyperref}
 \usepackage{shellesc}
 \usepackage[
@@ -56,8 +56,12 @@
       }
   }
 \ExplSyntaxOff
-\DeclareFieldFormat{bibhyperref}{#1}
-\DeclareFieldFormat{bibhypertarget}{#1}
+\hypersetup{
+  linkcolor=AccentBlue,
+  citecolor=AccentGreen,
+  urlcolor=AccentBlue,
+  filecolor=AccentPurple
+}
 % Disable biblatex hyperlink targets when defined; leave hyperref driver intact.
 % \AtBeginDocument{%
 %   \makeatletter
