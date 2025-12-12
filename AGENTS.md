@@ -41,7 +41,7 @@
 - [x] I adjusted the default 1st column and default text font for my table themes. The custom column types listed below and defined in `moderntech-base.sty` are no longer required. Please systematically restore all columns in tables as follows: F → l, L → X, and W ⇾ X. Please make those changes and remove the columns that are no longer required.
 - [x] Determine why the IfSubFileClass functions are not activating
 - [x] Update `subfile_template.tex` guidance to replace the removed placeholders (reading assignments, section development, and syntax/accuracy review notes).
-- [x] Adjust `\minibib` output to show only the reference label number and title.
+- [ ] Adjust `\minibib` output to show only the reference label number and title.
 - [x] Build a single-glance table linking \ac{opnavinst} 4700.7M, \ac{opnavnote} 4700, \ac{jfmm}, and \ac{cbmp} to owners, decision impacts, and compliance talking points.
 - [x] Add an \ac{opm} acronym definition and update CIVPERS guidance to use it.
 - [x] Develop a CNO Availability Execution phase table mapping phases to key deliverables, controlling documents, and responsible leaders.
@@ -65,7 +65,7 @@ Latexmk: ====Undefined refs and citations with line #s in .tex file:
   Label `tab:navsea-centers' multiply defined
  And 6 more --- see log file 'build/3_NAVSEA.log'
  ```
- - [x] The first table label is skipped. Please fix to make sure all table labels show up.
+ - [ ] The first table label is skipped. Please fix to make sure all table labels show up.
  - [x] Remember that for hyperref, `linkcolor=black`. Please do not use AccentBlue.
  - [x] Insert a NAVWAR enterprise structure graphic in Chapter 4 (NAVWAR) to replace the removed TODO note.
 

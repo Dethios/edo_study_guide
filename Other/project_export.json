@@ -216,7 +216,7 @@
       },
       {
         "title": "Adjust minibib output to show only the reference label number and title.",
-        "status": "done"
+        "status": "todo"
       },
       {
         "title": "Build a single-glance table linking OPNAVINST 4700.7M, OPNAVNOTE 4700, JFMM, and CBMP to owners, decisions, and compliance talking points.",
@@ -268,7 +268,7 @@
       },
       {
         "title": "Ensure the first table label renders; investigate skipped initial table labels.",
-        "status": "done"
+        "status": "todo"
       },
       {
         "title": "Insert a NAVWAR enterprise structure graphic in Chapter 4 (NAVWAR).",

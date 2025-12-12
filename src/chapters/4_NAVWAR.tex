@@ -23,15 +23,17 @@
     box/.style = {draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, minimum width=3.6cm, minimum height=0.9cm, align=center, font=\sffamily\small},
     link/.style = {->, line width=0.9pt, draw=Gray60}
   ]
-    \node[box] (navwar) {NAVWAR\\(SYSCOM)\\ RADM Kurt Rothenhaus (EDO)};
-    \node[box, below left=of navwar] (peoc4i) {PEO C4I\\C4I \& Space programs};
-    \node[box, below right=of navwar] (peomlb) {PEO MLB\\Business/IT programs};
-    \node[box, below=2.4cm of navwar] (hq) {NAVWAR HQ\\Codes 1.0--8.0\\FRD-100: Fleet Support\\FRD-200: Installations};
-    \node[box, below left=of hq] (niwclant) {NIWC Atlantic\\(Charleston)\\CAPT Matthew R. O'Neal (EDO)};
-    \node[box, below right=of hq] (niwcpac) {NIWC Pacific\\(San Diego)\\CAPT Patrick M. McKenna};
-    \node[box, below=of hq] (nsfa) {NSFA\\(NRO liaison)\\CAPT Andrew Gastrell};
+    \node[box] (navwar) {NAVWAR\\(SYSCOM)\\RADM Kurt Rothenhaus (EDO)};
+    \node[box, below=1.4cm of navwar, xshift=-2.2cm] (peoc4i) {PEO C4I\\C4I \& Space programs\\William H. Luebke (SES)};
+    \node[box, below=2.8cm of navwar, xshift=-2.2cm] (peomlb) {PEO MLB\\Business/IT programs\\Christine Rodriguez (SES)};
+    \node[box, below=4.2cm of navwar, xshift=-2.2cm] (peodigital) {PEO Digital\\Enterprise IT\\Louis Koplin (SES)};
+    \node[box, below=2.4cm of navwar, xshift=2.0cm] (hq) {NAVWAR HQ\\Codes 1.0--8.0\\FRD-100: Fleet Support\\FRD-200: Installations};
+    \node[box, below=1.6cm of hq, xshift=-2.2cm] (niwclant) {NIWC Atlantic\\(Charleston)\\CAPT Matthew R. O'Neal (EDO)};
+    \node[box, below=1.6cm of hq, xshift=2.2cm] (niwcpac) {NIWC Pacific\\(San Diego)\\CAPT Patrick M. McKenna};
+    \node[box, below=3.0cm of hq] (nsfa) {NSFA\\(NRO liaison)\\CAPT Andrew Gastrell};
     \draw[link] (navwar) -- (peoc4i);
     \draw[link] (navwar) -- (peomlb);
+    \draw[link] (navwar) -- (peodigital);
     \draw[link] (navwar) -- (hq);
     \draw[link] (hq) -- (niwclant);
     \draw[link] (hq) -- (niwcpac);
