@@ -18,6 +18,34 @@
   \item[\textbf{Specialists.}] Integrated Test Engineers, Project Support Engineers, Quality Assurance Specialists, Alteration Coordinators, and Administrative Contract Specialists provide focused oversight on testing, configuration, QA, and change management~\autocite{edo-4-2-2-cno-availability-execution-2025}.
 \end{description}
 
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+    node distance=1.9cm and 2.6cm,
+    role/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, align=center, inner sep=6pt},
+    oversight/.style={draw=AccentGreen, fill=AccentGreen!15, rounded corners=2pt, align=center, inner sep=6pt},
+    arrow/.style={-Latex, line width=0.9pt, draw=Gray60}
+  ]
+    \node[role] (ship) {Ship's Force\\CO / XO / CHENG};
+    \node[role, right=of ship] (contractor) {Prime Contractor\\PM / QA / Trades};
+    \node[oversight, above=of contractor] (nrro) {NRRO\\(nuclear oversight)};
+    \node[oversight, above right=0.4cm and 2.0cm of ship] (nsa) {NSA / LMA\\Waterfront authority};
+    \node[oversight, below=of contractor] (rpcp) {RPCO\\(cognizant engineer)};
+    \node[oversight, below right=0.4cm and 2.0cm of ship] (qa) {QA / Testing\\Chief Test Conductor};
+
+    \draw[arrow] (ship) -- node[above]{shift tests, tag-out} (contractor);
+    \draw[arrow] (contractor) -- node[below]{work control, turnover} (ship);
+    \draw[arrow] (nrro) -- node[right]{reactor oversight} (contractor);
+    \draw[arrow] (nrro) -- node[left]{line authority} (nsa);
+    \draw[arrow] (nsa) -- node[above]{work authorization} (contractor);
+    \draw[arrow] (rpcp) -- node[right]{tech direction} (contractor);
+    \draw[arrow] (qa) -- node[right]{TGI / trials} (contractor);
+    \draw[arrow] (qa) -- node[below]{witness / accept} (ship);
+  \end{tikzpicture}
+  \caption[Nuclear waterfront team]{Nuclear waterfront project-team interactions across NRRO, RPCO, NSA/LMA, Ship's Force, and the prime contractor.}
+  \label{fig:nuclear-waterfront-team}
+\end{figure}
+
 \subsection{Execution Phases}
 \begin{enumerate}
   \item \textbf{Nesting / Arrival.} Establish temporary services, fire watches, habitability, industrial hygiene controls, and turnover from Ship's Force to the Maintenance Activity; complete mandatory briefings (\ac{jfmm} Chapter 2, Tag-out Users Manual)~\autocite{edo-4-2-2-cno-availability-execution-2025}.
@@ -26,7 +54,23 @@
   \item \textbf{Repair \& Production.} Complete component tasks, manage new vs.\ growth work approvals, and track critical path milestones using \ac{tgi}~\autocite{edo-4-2-2-cno-availability-execution-2025}.
   \item \textbf{Testing, Trials, Certification.} Execute compartment turnover, \ac{loa}, \ac{sovt}, \ac{cssqt}, Builder's/Acceptance Trials, and Sea Trials before \ac{pcd}~\autocite{COMFLTFORCOMINST4790-3}.
 \end{enumerate}
-% TODO: Develop a table that maps each phase to key deliverables, controlling documents, and the leader responsible (Project Superintendent, Port Engineer, Ship's Force, etc.).
+
+\begin{longtblr}[
+    caption = {CNO availability execution phases},
+    label   = {tab:cno-availability-phases}
+  ]{
+    colspec = {@{} L L L L @{}}
+  }
+  \toprule
+  {Phase} & {Key Deliverables} & {Controlling Documents} & {Responsible Leads} \\
+  \midrule
+  Nesting / Arrival & Temporary services, fire watch plan, habitability, turnover briefs, tag-out baseline & JFMM Chapter 2; Tag-out Users Manual; local safety manuals & Project Superintendent, Safety Officer, Ship's Force Department Heads \\
+  Rip-out \& Access & Interference removal, WAF approvals, confined space/hazardous material plans & WAF/Tag-out procedures; hot work and gas-free engineering instructions & Zone Assistant Project Managers, Production Shop Leads, Gas Free Engineer \\
+  Open \& Inspect & Inspection reports, growth work candidates, material condition snapshots & Standard Item 009-01; QA/inspection instructions; class maintenance plans & Engineering \& Planning, Quality Assurance, Class Maintenance Planner \\
+  Repair \& Production & Completed work items, change control (JSNs/contract mods), schedule metrics, resource leveling & Contract/SOW; work package and change control processes; integrated master schedule standards & Project Manager, Port Engineer/KO, Business \& Planning, Contractor PM \\
+  Testing, Trials, Certification & Test agendas, TGI alignment, LOA/SOVT/CSSQT completion, sea trial cards, turnover certificates & JFMM testing chapters; platform test manuals; INSURV/Builder's trial requirements & Chief Test Conductor, Ship's Force Test Coordinator, NSA/LMA witnesses \\
+  \bottomrule
+\end{longtblr}
 
 \subsection{Governance, Quality, and Work Control}
 \begin{itemize}

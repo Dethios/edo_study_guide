@@ -244,7 +244,19 @@
 \NewDocumentCommand{\headingfont}{}{\firasanssemibold\color{AccentBlue}\Large}
 \NewDocumentCommand{\sectionfont}{}{\firasanssemibold\color{AccentBlue}\Large}
 \NewDocumentCommand{\firasb}{}{\firasanssemibold}
-\NewDocumentCommand{\merriweatherblack}{}{\rmfamily\bfseries}
+\IfFontExistsTF{Merriweather Black}{%
+  \newfontfamily\merriweatherblackfont[
+    Scale=MatchLowercase,
+    Ligatures=TeX,
+    UprightFont    = {Merriweather Black},
+    ItalicFont     = {Merriweather Black Italic},
+    BoldFont       = {Merriweather Black},
+    BoldItalicFont = {Merriweather Black Italic}
+  ]{Merriweather}%
+  \NewDocumentCommand{\merriweatherblack}{}{\merriweatherblackfont}%
+}{%
+  \NewDocumentCommand{\merriweatherblack}{}{\rmfamily\bfseries}%
+}
 \NewDocumentCommand{\sourcesansprofont}{}{\sffamily}
 \NewDocumentCommand{\textsb}{m}{{\firasanssemibold #1}}
 
@@ -455,13 +467,20 @@
 % =============================
 % * Auto-label numbered divisions
 % =============================
+\newif\ifMTSubfiles
+\NewDocumentCommand{\mt@ifsubfiles}{m m}{%
+  \ifMTSubfiles #1\else #2\fi
+}
+
 \let\moderntech@origchapter\chapter
 \RenewDocumentCommand{\chapter}{s o m}{%
   \IfBooleanTF{#1}{%
     \IfNoValueTF{#2}{\moderntech@origchapter*{#3}}{\moderntech@origchapter*[#2]{#3}}%
   }{%
     \IfNoValueTF{#2}{\moderntech@origchapter{#3}}{\moderntech@origchapter[#2]{#3}}%
-    \@ifundefined{r@chap:\thechapter}{\label{chap:\thechapter}}{}%
+    \if@mainmatter
+      \mt@ifsubfiles{\label{chap:\jobname:\thechapter}}{\label{chap:\thechapter}}%
+    \fi
   }%
 }
 
@@ -471,7 +490,7 @@
     \IfNoValueTF{#2}{\moderntech@origsection*{#3}}{\moderntech@origsection*[#2]{#3}}%
   }{%
     \IfNoValueTF{#2}{\moderntech@origsection{#3}}{\moderntech@origsection[#2]{#3}}%
-    \@ifundefined{r@sec:\thesection}{\label{sec:\thesection}}{}%
+    \mt@ifsubfiles{\label{sec:\jobname:\thesection}}{\label{sec:\thesection}}%
   }%
 }
 
@@ -481,7 +500,7 @@
     \IfNoValueTF{#2}{\moderntech@origsubsection*{#3}}{\moderntech@origsubsection*[#2]{#3}}%
   }{%
     \IfNoValueTF{#2}{\moderntech@origsubsection{#3}}{\moderntech@origsubsection[#2]{#3}}%
-    \@ifundefined{r@subsec:\thesubsection}{\label{subsec:\thesubsection}}{}%
+    \mt@ifsubfiles{\label{subsec:\jobname:\thesubsection}}{\label{subsec:\thesubsection}}%
   }%
 }
 
@@ -498,7 +517,7 @@
     \else
       \edef\moderntech@subsublabelname{\thesubsubsection}%
     \fi
-    \@ifundefined{r@subsubsec:\moderntech@subsublabelname}{\label{subsubsec:\moderntech@subsublabelname}}{}%
+    \mt@ifsubfiles{\label{subsubsec:\jobname:\moderntech@subsublabelname}}{\label{subsubsec:\moderntech@subsublabelname}}%
   }%
 }
 
@@ -518,35 +537,27 @@
 \SetTblrStyle{caption-tag}{font=\normalfont\sffamily\scshape\bfseries\color{AccentBlue}}
 \SetTblrStyle{caption-text}{font=\normalfont\sffamily\small\scshape\color{BodyText}}
 \SetTblrStyle{caption-sep}{.\space\space}
-\SetTblrStyle{firsthead}{font=\small\sffamily\bfseries}
-\SetTblrStyle{head}{font=\small\sffamily}
+\SetTblrStyle{firsthead}{font=\sffamily\bfseries\color{AccentBlue}\small}
+\SetTblrStyle{head}{font=\sffamily\bfseries\color{AccentBlue}\small}
 \SetTblrStyle{foot}{font=\small\sffamily}
 \SetTblrInner{rowsep=2pt, colsep=2pt}
 
 \NewDocumentCommand{\MTUseTblrPreset}{}{%
   \SetTblrDefault{%
-    width      = (\linewidth),%
-    column{1}  = {leftsep=0pt%
-                  font=\merriweatherblack\small},%
-    column{Z}  = {rightsep=0pt},%
-    row{1}     = {font=\sffamily\bfseries\scshape\color{AccentBlue}\small},%
-    font       = {\color{BodyText}\small}%
+    cells={font=\small\color{BodyText},halign=l},%
+    column{1}={font=\merriweatherblack\small,halign=l},%
+    row{1}={font=\sffamily\bfseries\color{AccentBlue}\small}%
   }%
   \SetTblrDefault[longtblr]{%
-    width      = (\linewidth),%
-    column{1}  = {leftsep=0pt%
-                  font=\merriweatherblack\small},%
-    column{Z}  = {rightsep=0pt},%
-    row{1}     = {font=\sffamily\bfseries\scshape\color{AccentBlue}\small},%
-    font       = {\color{BodyText}\small}%
+    cells={font=\small\color{BodyText},halign=l},%
+    column{1}={font=\merriweatherblack\small,halign=l},%
+    row{1}={font=\sffamily\bfseries\color{AccentBlue}\small},%
+    rowhead=1%
   }%
   \SetTblrDefault[talltblr]{%
-    width      = (\linewidth),%
-    column{1}  = {leftsep=0pt%
-                  font=\merriweatherblack\small},%
-    column{Z}  = {rightsep=0pt},%
-    row{1}     = {font=\sffamily\bfseries\scshape\color{AccentBlue}\small},%
-    font       = {\color{BodyText}\small}%
+    cells={font=\small\color{BodyText},halign=l},%
+    column{1}={font=\merriweatherblack\small,halign=l},%
+    row{1}={font=\sffamily\bfseries\color{AccentBlue}\small}%
   }%
 }
 \ifmoderntech@tblrpreset
@@ -558,14 +569,12 @@
 \newenvironment{mtalltblr}[1][]{\begin{talltblr}[cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}},column{1}={leftsep=0pt},column{Z}={rightsep=0pt},#1]}{\end{talltblr}}
 
 % --- New column types and helpers -----------------------------------
-\NewTblrColumnType{L}{X[-1,halign=l,cmd=\RaggedRight\color{BodyText}\small]}
-\NewTblrColumnType{C}{X[-1,halign=c,cmd=\Centering\color{BodyText}\small]}
-\NewTblrColumnType{R}{X[-1,halign=r,cmd=\RaggedLeft\color{BodyText}\small]}
-\NewTblrColumnType{F}{Q[halign=l,cmd=\merriweatherblack\RaggedRight\small]}
-\NewTblrColumnType{P}[1]{Q[wd=#1, halign=l, valign=t, cmd=\RaggedRight\color{BodyText}\small]}
-\NewTblrColumnType{M}[1]{Q[wd=#1, halign=l, valign=m, cmd=\RaggedRight\color{BodyText}\small]}
-\NewTblrColumnType{B}[1]{Q[wd=#1, halign=l, valign=b, cmd=\RaggedRight\color{BodyText}\small]}
-\NewTblrColumnType{W}[1][]{Q[cmd=\RaggedRight\color{BodyText}\small,#1]}
+\NewTblrColumnType{L}{X[-1]}
+\NewTblrColumnType{C}{X[-1,halign=c,cmd=\Centering]}
+\NewTblrColumnType{R}{X[-1,halign=r,cmd=\RaggedLeft]}
+\NewTblrColumnType{P}[1]{Q[wd=#1, halign=l, valign=t]}
+\NewTblrColumnType{M}[1]{Q[wd=#1, halign=l, valign=m]}
+\NewTblrColumnType{B}[1]{Q[wd=#1, halign=l, valign=b]}
 
 \DeclareTblrTemplate{remark-sep}{default}{:\space\space}
 
@@ -597,11 +606,32 @@
   \AtBeginDocument{\let\blx@warn@bibempty\relax}
 \fi
 
+\AtBeginDocument{%
+  \@ifpackageloaded{biblatex}{%
+    \defbibenvironment{minibibbrief}
+      {\list{}{%
+        \setlength{\leftmargin}{2em}%
+        \setlength{\labelwidth}{1.5em}%
+        \setlength{\labelsep}{0.6em}%
+        \setlength{\itemsep}{2pt}%
+        \setlength{\parsep}{0pt}%
+      }}%
+      {\endlist}%
+      {\item[\mkbibbrackets{\printfield{labelnumber}}]%
+        \printfield{title}%
+        \iffieldundef{subtitle}{}{:\space\printfield{subtitle}}%
+      }%
+  }{}%
+}
+
 \NewDocumentCommand{\minibib}{}{%
   \begingroup
-    \begin{NoHyper}%
-      \printbibliography[heading=none,segment=\therefsegment,resetnumbers=false]%
-    \end{NoHyper}%
+    \printbibliography[
+      heading=none,
+      segment=\therefsegment,
+      resetnumbers=false,
+      env=minibibbrief
+    ]%
   \endgroup
 }
 
@@ -765,6 +795,8 @@
 \NewDocumentCommand{\Info}{m}{\begin{infoBox}#1\end{infoBox}}
 \NewDocumentCommand{\hint}{m}{\Hint{#1}}
 \NewDocumentCommand{\note}{m}{\Note{#1}}
+\NewDocumentCommand{\warn}{m}{\Warn{#1}}
+\NewDocumentCommand{\info}{m}{\Info{#1}}
 \NewDocumentCommand{\tHint}{}{\textbf{\textcolor{AccentPurple}{Hint}}}
 \NewDocumentCommand{\tNote}{}{\textbf{\textcolor{AccentTeal}{Note}}}
 \NewDocumentCommand{\tSource}{}{\textbf{\textcolor{AccentGreen}{Source}}}

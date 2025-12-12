@@ -25,7 +25,33 @@
   \item \textbf{Final Planning (A-12 to A-3).} Results of pre-availability tests (\ac{pats}/\ac{pots}), \acp{dfs}, \acp{tso}, and new modernization approvals are adjudicated; the final \ac{awp} is issued no later than three months before A-0~\autocite{edo-4-2-1-cno-availability-planning-2025,OPNAVNOTE4700-24}.
   \item \textbf{Contracting.} For surface private-yard availabilities, \ac{macmo} constructs increase competition and flexibility; public yards rely on \ac{aim} processes~\autocite{edo-4-2-1-cno-availability-planning-2025}.
 \end{enumerate}
-% TODO: Build a timeline graphic showing A-36/A-21/A-12/A-3 milestones, major reviews, and key deliverables for the AWP.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+    x=3.2cm,
+    y=1cm,
+    >=Latex,
+    milestone/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, inner sep=4pt, align=center},
+    timeline/.style={line width=1pt, draw=Gray60}
+  ]
+    \draw[timeline] (0,0) -- (4.6,0);
+    \draw[timeline] (0,-0.15) -- (0,0.15);
+    \node[milestone, above=4pt] at (0,0.15) {\textbf{A-36}\\Baseline BAWP\\Ship checks, TSRA, CMP alignment};
+    \draw[timeline] (1.4,-0.15) -- (1.4,0.15);
+    \node[milestone, above=4pt] at (1.4,0.15) {\textbf{A-21}\\Initial AWP\\Class Plan and LRMS sync};
+    \draw[timeline] (2.8,-0.15) -- (2.8,0.15);
+    \node[milestone, above=4pt] at (2.8,0.15) {\textbf{A-12}\\PATS/POTS results\\DFS/TSO adjudication};
+    \draw[timeline] (3.8,-0.15) -- (3.8,0.15);
+    \node[milestone, above=4pt] at (3.8,0.15) {\textbf{A-3}\\Final AWP\\Contract package / AIM};
+    \draw[timeline] (4.6,-0.15) -- (4.6,0.15);
+    \node[milestone, above=4pt] at (4.6,0.15) {\textbf{A-0}\\Award / start\\Ready to execute};
+    \node[below=6pt, align=center, text=AccentBlue] at (2.3,-0.15)
+      {\small Reviews: Readiness/Integration Summits, AWI, Planning Yard gates, CNO scheduling conference};
+  \end{tikzpicture}
+  \caption[CNO availability planning timeline]{CNO availability planning timeline (A-36 through A-0) with key reviews and deliverables.}
+  \label{fig:cno-planning-timeline}
+\end{figure}
 
 \subsection{Planning Teams and Integration Forums}
 \begin{itemize}

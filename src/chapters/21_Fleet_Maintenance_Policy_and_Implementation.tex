@@ -16,6 +16,23 @@
 \item[\textbf{\ac{opnavnote} 4700.}] Publishes \ac{cno} availability intervals, durations, man-day targets, and Repair Days for each platform, providing the authoritative baseline for the Long-Range Maintenance Schedule (\ac{lrms})~\autocite{OPNAVNOTE4700-24}.
 \item[\textbf{\ac{jfmm} and \ac{cbmp}.}] \ac{usff}/\ac{pacflt}INST~4790.3 (\ac{jfmm}) assigns responsibilities to \ac{tycom}s, \ac{rmmco}s, and \ac{nsa}s, while \ac{opnavinst}~4790.16 issues \ac{cbmp} policy so sensors and analytics can replace purely time-based maintenance when justified~\autocite{COMFLTFORCOMINST4790-3,OPNAVINST4790-16G}.
 \end{description}
+
+\begin{longtblr}[
+    caption = {Maintenance policy map at a glance},
+    label   = {tab:maintenance_policy_map}
+  ]{
+    colspec = {@{} L L L L @{}}
+  }
+  \toprule
+  {Document} & {Owner} & {Decisions Touched} & {Compliance Talking Points} \\
+  \midrule
+  OPNAVINST 4700.7M & CNO (N9) & Sets fleet maintenance policy baseline (lowest capable level, RCM/CBM, color-of-money discipline) & Use as the anchor for deferral justifications, craft risk acceptance to its hierarchy, and cite when defending public/private yard mix and maintenance levels \\
+  OPNAVNOTE 4700 & CNO (N9) & Publishes class-by-class availability intervals, durations, manday targets, and repair days that drive the Long-Range Maintenance Schedule & Treat as the authoritative schedule baseline; deviations require TYCOM/CNO alignment and supporting maintenance metrics \\
+  JFMM (COMFLTFORCOMINST 4790.3) & USFF/PACFLT & Defines execution standards for work control, assessments, certifications, and availability gate reviews & Align DFS/TSO closure, QA evidence, and RMMCO coordination to JFMM chapters; reference for watch team and AIT roles \\
+  CBMP (OPNAVINST 4790.16) & CNO (N4) & Governs condition-based maintenance approvals, data pedigree, and sensor analytics used to replace time-directed tasks & Document the analytics package (sensor health, thresholds, reliability data) and secure CBMP authority approval before removing directed tasks \\
+  \bottomrule
+\end{longtblr}
+
 The entire maintenance enterprise hinges on tying ship assessments to these references; citing a different standard during a board (e.g., \ac{oem} manual) without reconciling it to the \ac{jfmm} and policy hierarchy is a red flag.
 
 \subsection{Strategy Frameworks}
@@ -40,7 +57,6 @@ The entire maintenance enterprise hinges on tying ship assessments to these refe
 \item \textbf{Digital thread.} The \ac{nde} modernization module is now the authoritative source for installed configuration, allowing planners to reconcile modernization with maintenance data without resorting to ad-hoc spreadsheets~\autocite{TS9090-310}.
 \item \textbf{Fiscal discipline.} Maintenance execution must honor color-of-money boundaries (\ac{ocmf} vs.\ \ac{opn}/\ac{scn}); unauthorized obligation adjustments are \ac{ada} violations~\autocite{DoDFMR-Vol3,FAR}.
 \end{itemize}
-% TODO: Build a single-glance table that links each controlling policy (\ac{opnavinst} 4700.7M, \ac{opnavnote} 4700, \ac{jfmm}, \ac{cbmp}) to the board-ready talking points (who owns it, what decisions it drives, and how to defend compliance).
 
 \IfSubfilesClassLoaded{
   \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}

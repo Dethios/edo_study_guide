@@ -19,8 +19,6 @@
 % =============================================================================
 % Bibliography (manual load keeps class auto-load out of the way)
 % =============================================================================
-\PassOptionsToPackage{colorlinks=true,linktoc=all,hyperfootnotes=false}{hyperref}
-\usepackage{hyperref}
 \usepackage{shellesc}
 \usepackage[
   backend=biber,
@@ -56,12 +54,6 @@
       }
   }
 \ExplSyntaxOff
-\hypersetup{
-  linkcolor=AccentBlue,
-  citecolor=AccentGreen,
-  urlcolor=AccentBlue,
-  filecolor=AccentPurple
-}
 % Disable biblatex hyperlink targets when defined; leave hyperref driver intact.
 % \AtBeginDocument{%
 %   \makeatletter
@@ -129,7 +121,7 @@
 % ----- FRONTMATTER -----
 % Helper to pick the right ToC level in subfiles or full builds.
 \NewDocumentCommand{\mtTOClevel}{}{\@ifundefined{chapter}{section}{chapter}}
-
+\MTUseTblrPreset
 \frontmatter%
 \SetFrontMatterStyle%
 \tableofcontents%

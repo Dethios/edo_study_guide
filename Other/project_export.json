@@ -3,7 +3,7 @@
     "name": "EDO Acquisition Tutor",
     "slug": "edo-acquisition-tutor",
     "exported_at": "2025-12-11T11:14:43-08:00",
-    "current_as_of": "2025-12-11",
+    "current_as_of": "2025-12-12",
     "instruction_pack_baseline": "2025-09-12",
     "tags": [
       "EDO",
@@ -123,8 +123,9 @@
     ],
     "build": {
       "latexmk": {
-        "last_result": "failure",
+        "last_result": "success",
         "notes": [
+          "2025-12-12: Clean rebuild after tabular defaults and NAVWAR enterprise graphic; latexmk -shell-escape src/main.tex succeeds (minted fallback warnings only).",
           "2025-12-11: latexmk -shell-escape src/main.tex failed after cleaning build/; longtblr runaway-argument error in 6_PPBE (tab:ppbe_key_terms) left build/main.bcf and build/main.bbl incomplete.",
           "2025-12-13: Updated NAVSEA leadership callouts (ADM Houston non-EDO; PEO IWS/MLB/Sub AP fills) and inserted Platinum Card PPBE figures; latexmk -shell-escape src/main.tex succeeds (minted fallback only).",
           "2025-12-13: Switched floatplacement defaults to htbp in moderntech-base and cleaned build artifacts; latexmk -shell-escape src/main.tex now completes without overfull box warnings (minted fallback remains).",
@@ -191,15 +192,91 @@
       },
       {
         "title": "Fix hyperlinks and hyperrefs so internal links are clickable.",
-        "status": "todo"
+        "status": "done"
       },
       {
         "title": "Resolve issue with too many subsection label references.",
-        "status": "todo"
+        "status": "done"
       },
       {
         "title": "Fix latexmk failure after clean build (longtblr runaway argument in 6_PPBE tab:ppbe_key_terms; regenerate bcf/bbl).",
-        "status": "todo"
+        "status": "done"
+      },
+      {
+        "title": "Restore table column specifications after removing custom F/L/W column types in moderntech-base.",
+        "status": "done"
+      },
+      {
+        "title": "Determine why the IfSubFileClass functions are not activating.",
+        "status": "done"
+      },
+      {
+        "title": "Update subfile_template.tex guidance to replace removed placeholders (reading assignments, section development, syntax/accuracy review).",
+        "status": "done"
+      },
+      {
+        "title": "Adjust minibib output to show only the reference label number and title.",
+        "status": "done"
+      },
+      {
+        "title": "Build a single-glance table linking OPNAVINST 4700.7M, OPNAVNOTE 4700, JFMM, and CBMP to owners, decisions, and compliance talking points.",
+        "status": "done"
+      },
+      {
+        "title": "Add an OPM acronym definition and update CIVPERS guidance to use it.",
+        "status": "done"
+      },
+      {
+        "title": "Develop a CNO Availability Execution phase table mapping phases to key deliverables, controlling documents, and responsible leaders.",
+        "status": "done"
+      },
+      {
+        "title": "Build an A-36/A-21/A-12/A-3 availability planning timeline graphic with reviews and deliverables.",
+        "status": "done"
+      },
+      {
+        "title": "Add a nuclear waterfront project-team schematic (NRRO, RPCO, NSA/LMA, Ship's Force, contractor interactions).",
+        "status": "done"
+      },
+      {
+        "title": "Insert a BDAR continuum figure showing the transition from Damage Control through Expeditionary and Depot repair with responsible organizations.",
+        "status": "done"
+      },
+      {
+        "title": "Add a maintenance-level coverage figure mapping O-/I-/Depot-level tasks to NSYs, RMCs, SUPSHIPs, and private yards.",
+        "status": "done"
+      },
+      {
+        "title": "Insert a DoW-wide test and evaluation organization graphic (OSD DOTE, DASD TE, Service OTAs, warfare centers).",
+        "status": "done"
+      },
+      {
+        "title": "Create a modernization document ownership/timing/funding table (Change Notice, JCF, SHIPALT record, installation drawing).",
+        "status": "done"
+      },
+      {
+        "title": "Provide an AIT swim-lane diagram showing Sponsor, AIT Manager, RMMCO, and NSA interactions from screening through certification.",
+        "status": "done"
+      },
+      {
+        "title": "Add a NAVSEA Org Chart Dec 2025 bibliography entry and cite it in the NWC map figure caption.",
+        "status": "done"
+      },
+      {
+        "title": "Resolve automatic section label duplication in subfile builds (unique labels without collisions).",
+        "status": "done"
+      },
+      {
+        "title": "Ensure the first table label renders; investigate skipped initial table labels.",
+        "status": "done"
+      },
+      {
+        "title": "Insert a NAVWAR enterprise structure graphic in Chapter 4 (NAVWAR).",
+        "status": "done"
+      },
+      {
+        "title": "Keep hyperref linkcolor set to black (no AccentBlue).",
+        "status": "done"
       }
     ],
     "recommended_next_actions": []
@@ -326,7 +403,7 @@
       "NAVSEA org chart Dec 2025: COMNAVSEA ADM William J. Houston is a Submarine officer (non-EDO); PEO IWS RDML Thomas J. Dickinson and PEO MLB RDML Kevin P. Biehn are Surface Warfare APs; NAVSEA 05 RDML Jay A. Seif is a Submarine AP; PEO USC is SES (RDML Kevin R. Smith relieved).",
       "PPBE chapter now embeds Platinum Card graphics for the Planning phase and concurrent Program/Budget review alongside the existing timelines.",
       "Subfiles now set % !TEX root and \\documentclass options to ../src/main.tex across chapters/templates.",
-      "Latest latexmk -shell-escape src/main.tex (after cleaning build/) failed with a longtblr runaway-argument error in 6_PPBE (tab:ppbe_key_terms), leaving build/main.bcf and build/main.bbl incomplete."
+      "2025-12-12: Rebuilt after tabular defaults/Navwar graphic updates; latexmk -shell-escape src/main.tex now succeeds (minted fallback warnings only)."
     ]
   },
   "history": {

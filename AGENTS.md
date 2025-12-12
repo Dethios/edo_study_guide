@@ -35,10 +35,39 @@
 - [x] Update to flag status: PEO UWS is https://www.navsea.navy.mil/Media/Biographies/Article-View/Article/3924018/rear-adm-douglas-j-adams/; PEO SSBN and NAVSEA 07 is https://www.navy.mil/Leadership/Flag-Officer-Biographies/BioDisplay/Article/3642900/rear-admiral-todd-weeks/; Both of those are not EDOs and should not be in EDO Flag appendix. They are Submarine APs. Rucker remains PEO SSN https://www.navy.mil/Leadership/Flag-Officer-Biographies/BioDisplay/Article/3052230/rear-admiral-jonathan-rucker/. The EDO Flag appendix and callouts in the study needs to be updated. PEO USC is no longer RDML Smith, it is an SES. RDML Smith was relieved of duties due to an IG complaint (https://www.stripes.com/branches/navy/2025-05-27/navy-rear-admiral-relieved-17929815.html)
 - [x] https://www.navsea.navy.mil/Portals/103/Documents/Command%20Org%20Charts/NAVSEA_Org_Chart_Dec2025.pdf shows all the DRPMs, PEOs, SEA and who is currently in those positions. Dickinson and Biehn is a SWO AP and SEIF is a Sub AP. ADM Houston is a Submarine Officer. Please update the Flag appendix and all call outs i the text appropriately.
 - [x] Add the PPBE graphics from platinum card into PPBE chapter. Should logically insert one for the Planning timline, insert one for the Programming/Budgeting dual process.
-- [ ] Fix hyperlinks and hyperrefs. They are no links within the text to click
-- [ ] Resolve issue with too many subsection label references.
-- [ ] Fix latexmk failure after clean build (longtblr runaway argument in 6\_PPBE tab:ppbe\_key\_terms; missing bcf/bbl).
-- [ ] I adjusted the default 1st column and default text font for my table themes. The custom column types listed below and defined in `moderntech-base.sty` are no longer required. Please systematically restore all columns in tables as follows: F → l, L → X, and W ⇾ X. Please make those changes and remove the columns that are no longer required.
+- [x] Fix hyperlinks and hyperrefs. They are no links within the text to click
+- [x] Resolve issue with too many subsection label references.
+- [x] Fix latexmk failure after clean build (longtblr runaway argument in 6\_PPBE tab:ppbe\_key\_terms; missing bcf/bbl).
+- [x] I adjusted the default 1st column and default text font for my table themes. The custom column types listed below and defined in `moderntech-base.sty` are no longer required. Please systematically restore all columns in tables as follows: F → l, L → X, and W ⇾ X. Please make those changes and remove the columns that are no longer required.
+- [x] Determine why the IfSubFileClass functions are not activating
+- [x] Update `subfile_template.tex` guidance to replace the removed placeholders (reading assignments, section development, and syntax/accuracy review notes).
+- [x] Adjust `\minibib` output to show only the reference label number and title.
+- [x] Build a single-glance table linking \ac{opnavinst} 4700.7M, \ac{opnavnote} 4700, \ac{jfmm}, and \ac{cbmp} to owners, decision impacts, and compliance talking points.
+- [x] Add an \ac{opm} acronym definition and update CIVPERS guidance to use it.
+- [x] Develop a CNO Availability Execution phase table mapping phases to key deliverables, controlling documents, and responsible leaders.
+- [x] Build an A-36/A-21/A-12/A-3 availability planning timeline graphic with reviews and deliverables.
+- [x] Add a nuclear waterfront project-team schematic (NRRO, RPCO, NSA/LMA, Ship's Force, contractor interactions).
+- [x] Insert a BDAR continuum figure showing the transition from Damage Control through Expeditionary and Depot repair with responsible organizations.
+- [x] Add a maintenance-level coverage figure mapping O-/I-/Depot-level tasks to NSYs, RMCs, \ac{supship}s, and private yards.
+- [x] Insert a DoW-wide test and evaluation organization graphic (\ac{osd} \ac{dote}, \ac{dasdte}, Service OTAs, warfare centers).
+- [x] Create a modernization document ownership/timing/funding table (Change Notice, JCF, SHIPALT record, installation drawing).
+- [x] Provide an AIT swim-lane diagram showing Sponsor, AIT Manager, \ac{rmmco}, and \ac{nsa} interactions from screening through certification.
+- [x] Add a NAVSEA Org Chart Dec~2025 bibliography entry and cite it in the NWC map figure caption.
+- [x] Resolve the following errors produced by the automatic section label generation creating the same label multiple times for each subfile. There should be a way to make them reference the actual section title instead of the section number.
+```md
+Latexmk: ====Undefined refs and citations with line #s in .tex file:
+  Label `refsegment:01' multiply defined
+  Label `chap:1' multiply defined
+  Label `sec:1.1' multiply defined
+  Label `subsec:1.1.1' multiply defined
+  Label `fig:navsea-org-chart' multiply defined
+  Label `subsec:1.1.2' multiply defined
+  Label `tab:navsea-centers' multiply defined
+ And 6 more --- see log file 'build/3_NAVSEA.log'
+ ```
+ - [x] The first table label is skipped. Please fix to make sure all table labels show up.
+ - [x] Remember that for hyperref, `linkcolor=black`. Please do not use AccentBlue.
+ - [x] Insert a NAVWAR enterprise structure graphic in Chapter 4 (NAVWAR) to replace the removed TODO note.
 
 ## Session updates (2025-12-08)
 - Acronym audit: cleaned 10\_Cost\_Fundamentals, 12\_Solicitation, 15\_policy, 16\_Milestones; added COTS, COFC, IT, and IRB definitions.
@@ -70,3 +99,8 @@
 - Updated NAVSEA billet callouts per the Dec 2025 org chart (COMNAVSEA ADM Houston is a Submarine officer; PEO IWS RDML Dickinson and PEO MLB RDML Biehn are SWO APs; NAVSEA 05 RDML Seif is a Submarine AP); adjusted EDO flag appendix and chain-of-command notes accordingly.
 - Added Platinum Card PPBE graphics (Planning phase and concurrent Program/Budget review) into Chapter 6.
 - Set all subfiles to point at `../src/main.tex` for both the `% !TEX root` directive and subfiles class option; cleaned `build/` and reran `latexmk -shell-escape src/main.tex`, which now fails with a longtblr runaway-argument error in 6\_PPBE (tab:ppbe\_key\_terms) and incomplete `build/main.bcf`/`build/main.bbl`.
+
+## Session updates (2025-12-12)
+- Corrected tabularray defaults (header row/first column styling, ragged body text) and ensured Merriweather Black is used for bold serif cells; aligned defaults so `L` columns cover former `l/X` usage.
+- Inserted a NAVWAR enterprise structure graphic (HQ, PEO C4I/MLB, FRDs, NIWC LANT/PAC, NSFA) in Chapter~4 and replaced the A-36/A-0 timeline loop with explicit nodes to avoid TikZ errors.
+- Switched `graphicspath` entries to `\subfix{}` for reliable subfile and main builds; cleaned build artifacts and reran `latexmk -shell-escape src/main.tex` successfully (minted fallback warnings only).

@@ -16,6 +16,31 @@
 % === NAVWAR ===
 \section{NAVWAR Enterprise and Warfare Centers}
 \minibib
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+    node distance = 1.1cm and 2cm,
+    box/.style = {draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, minimum width=3.6cm, minimum height=0.9cm, align=center, font=\sffamily\small},
+    link/.style = {->, line width=0.9pt, draw=Gray60}
+  ]
+    \node[box] (navwar) {NAVWAR\\(SYSCOM)\\ RADM Kurt Rothenhaus (EDO)};
+    \node[box, below left=of navwar] (peoc4i) {PEO C4I\\C4I \& Space programs};
+    \node[box, below right=of navwar] (peomlb) {PEO MLB\\Business/IT programs};
+    \node[box, below=2.4cm of navwar] (hq) {NAVWAR HQ\\Codes 1.0--8.0\\FRD-100: Fleet Support\\FRD-200: Installations};
+    \node[box, below left=of hq] (niwclant) {NIWC Atlantic\\(Charleston)\\CAPT Matthew R. O'Neal (EDO)};
+    \node[box, below right=of hq] (niwcpac) {NIWC Pacific\\(San Diego)\\CAPT Patrick M. McKenna};
+    \node[box, below=of hq] (nsfa) {NSFA\\(NRO liaison)\\CAPT Andrew Gastrell};
+    \draw[link] (navwar) -- (peoc4i);
+    \draw[link] (navwar) -- (peomlb);
+    \draw[link] (navwar) -- (hq);
+    \draw[link] (hq) -- (niwclant);
+    \draw[link] (hq) -- (niwcpac);
+    \draw[link] (hq) -- (nsfa);
+  \end{tikzpicture}
+  \caption[NAVWAR enterprise structure]{NAVWAR enterprise structure showing the SYSCOM commander with PEO portfolios, headquarters directorates, Field Readiness Directorates, and warfare centers.}
+  \label{fig:navwar-enterprise}
+\end{figure}
+
 \subsection{HQ Directorates and FRD}
 \Tab{\ref{tab:navwar-offices}} lists \ac{navwar} HQ directorates and \acp{frd} with one-line roles.
 
@@ -25,7 +50,7 @@
   label   = {tab:navwar-offices},%
   entry   = {NAVWAR HQ Directorates and FRDs},%
   remark{\tSource} = {\tabCite{edo-2-1-3-navwar-enterprise-2024}}
-  ]{colspec = {@{} F L L @{}}}
+  ]{colspec = {@{} L L L @{}}}
   \toprule
   {Code}  & {Office}                    & {One-liner}                                                                                                                               \\
   \midrule
@@ -33,7 +58,7 @@
   2.0     & Contracts                   & Contracting policy/oversight; acquisition strategy; award/administration of instruments.                                                  \\
   3.0     & Counsel                     & Legal counsel for acquisition/ethics; protests, claims, agreements, and compliance.                                                       \\
   4.0     & Logistics \& Fleet Support  & Life-cycle logistics; sustainment planning; supply/tech data; fleet support integration.                                                  \\
-  5.0     & Chief Engineer / TA (Cyber) & Technical standards/architecture; interoperability; cyber TA; certification/air-gapping where required.                                   \\
+  5.0     & Chief Engineer / (TA for IT \& Cyber) & Technical standards/architecture; interoperability; cyber TA; certification/air-gapping where required.                                   \\
   6.0     & Program Management          & Program governance; milestone readiness; portfolio integration; interface with PEOs.                                                      \\
   7.0     & Science \& Technology       & S\&T portfolio; experimentation/prototyping; tech transition to programs of record.                                                       \\
   8.0     & Corporate Operations        & Workforce, security, facilities, enterprise information-technology/chief-information-officer services, PAO, and other corporate enablers. \\
@@ -53,14 +78,15 @@
   entry   = {NAVWAR Warfare Centers},%
   remark{\tSource} = {\tabCite{edo-2-1-3-navwar-enterprise-2024}}%
   ]{%
-  colspec = {@{} F L L @{}}%
+  colspec = {@{} L L L @{}},%
+  width   = {0.7\linewidth}%
   }
   \toprule
   {Center}  & {Location}     & {Description}                                                       \\
   \midrule
-  NIWC LANT & Charleston, SC & Enterprise information-technology solutions; cradle-to-grave C4ISR. \\
-  NIWC PAC  & San Diego, CA  & C4ISR RDT\&E; Navy/Joint/Allied support.                            \\
-  NSFA      & Chantilly, VA  & Navy link to the NRO; space research and development coordination.  \\
+  NIWC LANT & Charleston, SC & Conduct research, development, prototyping, engineering, test and evaluation, installation, and sustainment of integrated information warfare capabilities and services across all warfighting domains with an emphasis on \textbf{Expeditionary Tactical Capabilities \& Enterprise IT and Business Systems} in order to drive innovation and warfighter information advantage \\
+  NIWC PAC  & San Diego, CA  & Conduct research, development, prototyping, engineering, test and evaluation, installation, and sustainment of integrated information warfare capabilities and services across all warfighting domains with emphasis on \textbf{Basic and Applied Research and Tactical Systems Afloat and Ashore} in order to drive innovation and warfighter information advantage.  \\
+  NSFA      & Chantilly, VA  & Navy link to the NRO; Provide naval warfare and acquisition expertise to national reconnaissance programs; Coordinate naval space research, development, and acquisition activities with national reconnaissance programs; Provide and coordinate training and tools to enable the fleet to use national space capabilities; Conducts intelligence‐related activities essential for US national security.  \\
   \bottomrule
 \end{longtblr}
 
@@ -68,19 +94,36 @@
 \begin{itemize}
   \item \textbf{HQ:} Charleston, SC.
   \item New Orleans, LA.
-\item Norfolk, Virginia.
+  \item Norfolk, VA.
+  \item Tampa, FL.
+  \item Washington, DC.
+  \item Stuttgart, Germany.
   \item Naples, Italy.
+  \item Rota, Spain.
   \item Manama, Bahrain.
 \end{itemize}
+
+\begin{figure}
+  \includegraphics[width=.7\linewidth]{assets/images/NIWC_LANT_LOC.jpg}
+  \caption{NIWC LANT Locations}
+  \label{fig:niwc-lant-locations}
+\end{figure}
 
 \paragraph{NIWC PAC detachments}
 \begin{itemize}
   \item \textbf{HQ:} San Diego, CA.
   \item Everett, WA.
+  \item Philadelphia, PA.
   \item Pearl City, HI.
   \item Santa Rita, Guam.
   \item Yokosuka, Japan.
 \end{itemize}
+
+\begin{figure}
+  \includegraphics[width=.7\linewidth]{assets/images/NIWC_PAC_LOC.jpg}
+  \caption{NIWC PAC Locations}
+  \label{fig:niwc-pac-locations}
+\end{figure}
 
 \subsection{Project Overmatch}
 \begin{description}[style=nextline,labelsep=0.5em,font=\bfseries]

@@ -56,11 +56,31 @@
   \item[\textbf{Operational Test Agencies.}] \ac{comoptevfor}, \ac{afotec}, \ac{atec}, and \ac{mcotea} plan and execute \ac{ote} \ac{mda} record~\autocite{edo-3-5-6-test-eval-part-ii-2025}.
 \end{description}
 
-% TODO: Insert DoW-wide test and evaluation organization graphic (\ac{osd} \ac{dote}, \ac{dasdte}, Service operational test agencies, warfare centers).
-\begin{figure}
+\begin{figure}[htbp]
   \centering
-  \fbox{\parbox{0.9\linewidth}{\centering To-do: Insert \ac{dow}-wide test and evaluation organization graphic (\ac{osd} \ac{dote}, \ac{dasdte}, Service operational test agencies, warfare centers).}}
-  \caption{Notional \ac{dow} test and evaluation governance chain.}
+  \begin{tikzpicture}[
+    node distance=1.5cm and 2.8cm,
+    org/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, align=center, inner sep=6pt, minimum width=4.2cm},
+    arrow/.style={-Latex, line width=1pt, draw=Gray60}
+  ]
+    \node[org] (dote) {OSD DOT\&E\\Statutory adequacy oversight};
+    \node[org, right=of dote] (dasdte) {DASD(T\&E)\\Policy, resources, test infrastructure};
+    \node[org, below left=0.4cm and 1.4cm of dote] (otas) {Service OTAs\\COMOPTEVFOR / AFOTEC / ATEC / MCOTEA};
+    \node[org, below right=0.4cm and 1.4cm of dote] (exec) {Service T\&E executors\\Warfare centers, ranges, labs, M\&S};
+    \node[org, below=of otas] (programs) {Component acquisition chain\\PEO / PM / Chief Dev Tester / LDTO};
+    \node[org, below=of exec] (fleet) {Warfighter users\\Type commanders / Fleet sponsors};
+
+    \draw[arrow] (dote) -- node[above left]{OT adequacy reports} (otas);
+    \draw[arrow] (dasdte) -- node[above right]{T\&E policy / resources} (exec);
+    \draw[arrow] (dote) -- node[above]{Congress reports} (programs);
+    \draw[arrow] (dasdte) -- node[above]{CDT / LDTO charters} (programs);
+    \draw[arrow] (otas) -- node[left]{OT results / suitability} (programs);
+    \draw[arrow] (exec) -- node[right]{DT data / certifications} (programs);
+    \draw[arrow] (programs) -- node[left]{fielding recommendations} (fleet);
+    \draw[arrow] (fleet) -- node[right]{user feedback / mission threads} (programs);
+  \end{tikzpicture}
+  \caption[DoW T\&E organization]{DoW test and evaluation governance chain linking OSD oversight, Service OTAs, warfare centers/ranges, and program-level test leadership.}
+  \label{fig:dow-te-org}
 \end{figure}
 
 \subsection{Developmental Test Activities}

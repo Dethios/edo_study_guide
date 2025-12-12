@@ -25,6 +25,22 @@
   \item[\textbf{Execution agents.}] \acp{ait}, \acp{rmmco}, and \acp{supship} integrate modernization tasks into availabilities while Naval Supervising Activities verify that work followed the approved package\FlagBilletNote{\ac{supship} is led by \ac{rdml} Jonathan J.\ Jett-Parmer with \ac{rdml} Robert J.\ Dodson (\ac{usnr}) as reserve deputy (Appendix~\ref{app:edo-flags})}\autocite{SL720-AA-MAN-030,TS9090-310}.
 \end{description}
 
+\begin{longtblr}[
+    caption = {Modernization document ownership and funding tie points},
+    label   = {tab:modernization-doc-map}
+  ]{
+    colspec = {@{} L L L L @{}}
+  }
+  \toprule
+  {Document} & {Primary Owner} & {When Used} & {Funding / Approval Tie} \\
+  \midrule
+  Change Initiation Notice & Fleet sponsor or PARM & Starts the change process; screens technical need and logistics impacts before engineering begins & Drives resource sponsor endorsement and PARM tasking; no funding commitment yet \\
+  Justification and Cost Form (JCF) & PARM and resource sponsor & Allocates modernization dollars and prioritizes hulls; accompanies Change Install planning & Aligns FUNDS-D (engineering) and FUNDS-K (procurement); documents budget line and phasing \\
+  ShipAlt Record of Change & Alteration Engineering Agent & Provides authoritative configuration record across hulls and life of the change & Required for configuration audits, warranty, and to show work stayed within authorized scope \\
+  Installation Drawing / LAR & Alteration Engineering Agent and installer & Directs production work and testing during the scheduled availability or pier-side install & Must match funded scope; links to MOA/RMMCO package and turn-over tests before closeout \\
+  \bottomrule
+\end{longtblr}
+
 \subsection{Process Flow and Funding Integration}
 \begin{enumerate}
   \item \textbf{Identify need.} Fleet feedback, reliability data, or new threats drive a Change Initiation Notice, which is screened for technical feasibility and logistics impacts~\autocite{edo-4-1-2-navy-modernization-2025}.
@@ -40,7 +56,6 @@ Failure to follow this sequence is why unauthorized equipment has been discovere
   \item[\textbf{\ac{moa} discipline.}] The \ac{moa} between the \ac{ait}, \ac{rmmco}, the \ac{nsa}, and Ship's Force defines boundary isolations, tag-out responsibilities, testing, and habitability; lessons learned from \ac{canes} and \ac{aws} installs show that unsigned \acp{moa} invite production and safety conflicts~\autocite{TS9090-310,edo-4-1-2-navy-modernization-2025}.
   \item[\textbf{AIT employment.}] Use AITs when the task requires repeat installations across multiple hulls, unique \ac{oem} skills, or when it is more cost-effective to mobilize the capability than to train an entire shipyard trade~\autocite{SL720-AA-MAN-030}.
 \end{description}
-% TODO: Create a table that maps modernization documents (Change Notice, JCF, SHIPALT record, installation drawing) to their owner, timing, and funding decision.
 
 \IfSubfilesClassLoaded{
   \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}

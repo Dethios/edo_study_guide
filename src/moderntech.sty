@@ -34,27 +34,33 @@
 \RequirePackage{grffile}
 \RequirePackage[mode=buildnew]{standalone}
 \RequirePackage{subfiles}
-% When the main document (moderntech) loads these subfiles, provide a
-% no-op fallback so \IfSubfilesClassLoaded guards hold their second branch.
-\providecommand{\IfSubfilesClassLoaded}[2]{#2}
+\@ifclassloaded{subfiles}{\MTSubfilestrue}{\MTSubfilesfalse}
+\providecommand{\IfSubfilesClassLoaded}[2]{%
+  \ifMTSubfiles
+    #1%
+  \else
+    #2%
+  \fi
+}
 \RequirePackage{xstring}
 
 % Graphics search paths for main + subfile contexts (root, src/, chapters/).
 \graphicspath{%
-  {assets/images/}%
-  {../assets/images/}%
-  {../../assets/images/}%
-  {src/tikz/}%
-  {tikz/}%
-  {../tikz/}%
-  {src/tikz/out/}%
-  {tikz/out/}%
-  {../tikz/out/}%
+  {\subfix{assets/images/}}%
+  {\subfix{../assets/images/}}%
+  {\subfix{../../assets/images/}}%
+  {\subfix{src/tikz/}}%
+  {\subfix{tikz/}}%
+  {\subfix{../tikz/}}%
+  {\subfix{src/tikz/out/}}%
+  {\subfix{tikz/out/}}%
+  {\subfix{../tikz/out/}}%
 }
 
 % =============================================================================
 % HYPERREF EXTENSIONS
 % =============================================================================
+\PassOptionsToPackage{colorlinks=true,linktoc=all,hyperfootnotes=false}{hyperref}
 \@ifpackageloaded{hyperref}{}{%
   \RequirePackage{hyperref}%
 }
@@ -191,7 +197,6 @@
 % LOW-LEVEL TWEAKS AND MACROS (reserved)
 % =============================================================================
 % Placeholder for future tweaks; kept to mirror prior modular preamble slot.
-
 
 \makeatother
 % End of package

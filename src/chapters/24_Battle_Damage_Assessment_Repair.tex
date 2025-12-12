@@ -25,7 +25,28 @@
   \item[\textbf{Expeditionary Repair.}] \ac{fdsrt} and \ac{emrf} deploy with \ac{sib} sets to restore mobility or key mission systems without returning to a depot~\autocite{CPF-MSP-PLANORD-2023,edo-4-1-6-bdar-2025}.
 \item[\textbf{Depot Repair / Disposition.}] \acp{nsy}, \ac{rmc}s, and private yards perform major repairs, partial restorations, or decide to scrap; choices depend on threat, capability needs, cost, and industrial capacity~\autocite{edo-4-1-6-bdar-2025}.
 \end{description}
-% TODO: Insert a BDAR continuum figure that visualizes the transition from Damage Control through Expeditionary Repair and Depot Repair with responsible organizations.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+    node distance=1.8cm and 2.2cm,
+    phase/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, align=center, minimum width=2.9cm, minimum height=1.4cm},
+    arrow/.style={-Latex, line width=1pt, draw=Gray60}
+  ]
+    \node[phase] (dc) {Damage Control\\Ship's Force};
+    \node[phase, right=of dc] (ra) {Rapid Response\\MSC tugs / MDSU / SUPSALV};
+    \node[phase, right=of ra] (assess) {Damage Assessment\\RMC/NSY/SEA 21 teams};
+    \node[phase, right=of assess] (exped) {Expeditionary Repair\\FDSRT / EMRF with SIB};
+    \node[phase, right=of exped] (depot) {Depot Repair / Disposition\\NSY / RMC / private yard};
+
+    \draw[arrow] (dc) -- node[below]{stabilize} (ra);
+    \draw[arrow] (ra) -- node[below]{tow, patch, dewater} (assess);
+    \draw[arrow] (assess) -- node[below]{recommend actions} (exped);
+    \draw[arrow] (exped) -- node[below]{restore mobility} (depot);
+  \end{tikzpicture}
+  \caption[BDAR continuum]{BDAR continuum from damage control through expeditionary repair to depot-level recovery, with primary responsible organizations at each step.}
+  \label{fig:bdar-continuum}
+\end{figure}
 
 \subsection{Command, Control, and Technical Authority}
 \begin{itemize}

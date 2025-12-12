@@ -16,6 +16,23 @@
   \item[\textbf{Intermediate-level.}] \acp{ima} and tenders augment the crew with certified artisans (e.g., welders, riggers, calibration labs) who can disassemble components, correct corrosion, and return equipment to specification without docking the ship; \ac{namts} builds those \acp{nec}, and so strike groups can recover faster when forward~\autocite{OPNAVINST4700-7M,edo-4-1-1-fleet-maint-assets-2025}.
   \item[\textbf{Depot-level.}] \acp{nsy}, private yards, and \acp{supship} conduct heavy industrial work such as reactor refueling, shaft and underwater body repairs, and major modernizations that exceed shipboard capability; every task is tied to the \ac{cmp} and engineered work instructions~\autocite{NAVSEAINST5450-14D,NAVSEAINST5450-145A,edo-4-1-1-fleet-maint-assets-2025}.
 \end{description}
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+    node distance=1.5cm,
+    levelbox/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, align=left, inner sep=6pt, minimum width=6.5cm},
+    arrow/.style={-Latex, line width=0.9pt, draw=Gray60}
+  ]
+    \node[levelbox] (o) {\textbf{O-level}\\Ship's Force\\Battle damage control, preventive checks, light repairs with shipboard tools};
+    \node[levelbox, below=of o] (i) {\textbf{I-level}\\IMAs, tenders, RMC production shops\\Component repairs, calibration, welding/rigging, corrosion control};
+    \node[levelbox, below=of i] (d) {\textbf{Depot-level}\\NSYs, SUPSHIP-admin private yards, major private shipyards\\Docking, reactor work, shaft/propulsion repair, major modernizations tied to CMP};
+
+    \draw[arrow] (o) -- (i);
+    \draw[arrow] (i) -- (d);
+  \end{tikzpicture}
+  \caption[Maintenance echelon coverage]{Maintenance echelon coverage and typical executing organizations from O-level through depot-level work.}
+  \label{fig:maintenance-echelons-coverage}
+\end{figure}
 \note{Board cue: reference at least one example task in each echelon (e.g., \ac{ima} balancing pump rotors vs.\ depot replacement of a main reduction gear) to show command of maintenance depth.}
 
 \subsection{Shore Maintenance Organizations and Roles}
@@ -25,7 +42,6 @@
 \item[\textbf{\ac{supship}.}] Supervisors of Shipbuilding administer new construction and conversion/modernization contracts as \acp{aco}, coordinate budget execution, and provide technical oversight for nuclear refueling overhauls (e.g., \ac{cvn} \ac{rcoh})\FlagBilletNote{\ac{rdml} Jonathan J.\ Jett-Parmer serves as \ac{navsea} Deputy Commander, Supervisor of Shipbuilding; \ac{rdml} Robert J.\ Dodson (\ac{usnr}) is the reserve deputy; \ac{comnavsea} is ADM William J.\ Houston (Submarine officer, non-\ac{edo})}\autocite{NAVSEAINST5450-145A,edo-4-1-1-fleet-maint-assets-2025,navsea-org-chart-2025}.
   \item[\textbf{Private shipyards.}] Huntington Ingalls, Bath Iron Works, General Dynamics NASSCO/Electric Boat, Fincantieri Marinette Marine, and Austal execute modernization packages, submarine maintenance, and surge depot work as part of the industrial base portfolio directed by \ac{opnav} and \ac{peo} contracts~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
 \end{description}
-% TODO: Add figure that maps O-/I-/Depot-level maintenance tasks to NSYs, RMCs, SUPSHIPs, and private shipyards.
 
 \clearpage
 \subsection{Regional Maintenance Command Structure}
