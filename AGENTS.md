@@ -27,7 +27,7 @@
 
 ## Lookups
 
-- [ ] Review ADM Caudle's message to the fleet
+- [X] Review ADM Caudle's message to the fleet
 - [ ] Specifics of CAPE's duties and responsibilities
 - [ ] What are the execution limits as prescribed by OMB
 - [ ] What are OMB's Roles and Responsbilities
@@ -50,37 +50,38 @@
 
 ## Current jobs
 
-- [x] Review entire scope of project, including every file in all folders and update `Other/project_export.json` to current project status.
-- [x] Check every project section for three or more consecutive capital letters. Assume that would be an acronym. Check `acronyms.def` and add missing entries; replace with `\ac{<lab>}` in prose (skip tables/headings).
-- [x] Refactor all sectional tables to be a formatted `longtblr` in the current house style.
-- [x] Add the CIVPERs coursebook content to the study guide in a new section following the subfile template; ensure all learning topics are covered.
-- [x] Adjust the List of Tables and List of Figures formatting to match the Table of Contents.
-- [x] Resolve the unreferenced citation warnings emitted by `latexmk` (see current build log) to clean the PDF cross-references.
-- [x] Complete the remaining acronym audit in prose (avoid tables/headings) to ensure all uppercase runs are covered by `\ac{}` where appropriate.
-- [x] Add labels to all chapters, sections, and subsections
-- [x] Audit `acronyms.def`, refactor to organize the acronyms into logical groups, ensure that appropriate plural forms are added for the short and long forms if they are required based on proper Egnlish grammar rules
-- [x] Update to flag status: PEO UWS is https://www.navsea.navy.mil/Media/Biographies/Article-View/Article/3924018/rear-adm-douglas-j-adams/; PEO SSBN and NAVSEA 07 is https://www.navy.mil/Leadership/Flag-Officer-Biographies/BioDisplay/Article/3642900/rear-admiral-todd-weeks/; Both of those are not EDOs and should not be in EDO Flag appendix. They are Submarine APs. Rucker remains PEO SSN https://www.navy.mil/Leadership/Flag-Officer-Biographies/BioDisplay/Article/3052230/rear-admiral-jonathan-rucker/. The EDO Flag appendix and callouts in the study needs to be updated. PEO USC is no longer RDML Smith, it is an SES. RDML Smith was relieved of duties due to an IG complaint (https://www.stripes.com/branches/navy/2025-05-27/navy-rear-admiral-relieved-17929815.html)
-- [x] https://www.navsea.navy.mil/Portals/103/Documents/Command%20Org%20Charts/NAVSEA_Org_Chart_Dec2025.pdf shows all the DRPMs, PEOs, SEA and who is currently in those positions. Dickinson and Biehn is a SWO AP and SEIF is a Sub AP. ADM Houston is a Submarine Officer. Please update the Flag appendix and all call outs i the text appropriately.
-- [x] Add the PPBE graphics from platinum card into PPBE chapter. Should logically insert one for the Planning timline, insert one for the Programming/Budgeting dual process.
-- [x] Fix hyperlinks and hyperrefs. They are no links within the text to click
-- [x] Resolve issue with too many subsection label references.
-- [x] Fix latexmk failure after clean build (longtblr runaway argument in 6\_PPBE tab:ppbe\_key\_terms; missing bcf/bbl).
-- [x] I adjusted the default 1st column and default text font for my table themes. The custom column types listed below and defined in `moderntech-base.sty` are no longer required. Please systematically restore all columns in tables as follows: F → l, L → X, and W ⇾ X. Please make those changes and remove the columns that are no longer required.
-- [x] Determine why the IfSubFileClass functions are not activating
-- [x] Update `subfile_template.tex` guidance to replace the removed placeholders (reading assignments, section development, and syntax/accuracy review notes).
+- [X] Review entire scope of project, including every file in all folders and update `Other/project_export.json` to current project status.
+- [X] Check every project section for three or more consecutive capital letters. Assume that would be an acronym. Check `acronyms.def` and add missing entries; replace with `\ac{<lab>}` in prose (skip tables/headings).
+- [X] Refactor all sectional tables to be a formatted `longtblr` in the current house style.
+- [X] Add the CIVPERs coursebook content to the study guide in a new section following the subfile template; ensure all learning topics are covered.
+- [X] Adjust the List of Tables and List of Figures formatting to match the Table of Contents.
+- [X] Resolve the unreferenced citation warnings emitted by `latexmk` (see current build log) to clean the PDF cross-references.
+- [X] Complete the remaining acronym audit in prose (avoid tables/headings) to ensure all uppercase runs are covered by `\ac{}` where appropriate.
+- [X] Add labels to all chapters, sections, and subsections
+- [X] Audit `acronyms.def`, refactor to organize the acronyms into logical groups, ensure that appropriate plural forms are added for the short and long forms if they are required based on proper Egnlish grammar rules
+- [X] Update to flag status: PEO UWS is https://www.navsea.navy.mil/Media/Biographies/Article-View/Article/3924018/rear-adm-douglas-j-adams/; PEO SSBN and NAVSEA 07 is https://www.navy.mil/Leadership/Flag-Officer-Biographies/BioDisplay/Article/3642900/rear-admiral-todd-weeks/; Both of those are not EDOs and should not be in EDO Flag appendix. They are Submarine APs. Rucker remains PEO SSN https://www.navy.mil/Leadership/Flag-Officer-Biographies/BioDisplay/Article/3052230/rear-admiral-jonathan-rucker/. The EDO Flag appendix and callouts in the study needs to be updated. PEO USC is no longer RDML Smith, it is an SES. RDML Smith was relieved of duties due to an IG complaint (https://www.stripes.com/branches/navy/2025-05-27/navy-rear-admiral-relieved-17929815.html)
+- [X] https://www.navsea.navy.mil/Portals/103/Documents/Command%20Org%20Charts/NAVSEA_Org_Chart_Dec2025.pdf shows all the DRPMs, PEOs, SEA and who is currently in those positions. Dickinson and Biehn is a SWO AP and SEIF is a Sub AP. ADM Houston is a Submarine Officer. Please update the Flag appendix and all call outs i the text appropriately.
+- [X] Add the PPBE graphics from platinum card into PPBE chapter. Should logically insert one for the Planning timline, insert one for the Programming/Budgeting dual process.
+- [X] Fix hyperlinks and hyperrefs. They are no links within the text to click
+- [X] Resolve issue with too many subsection label references.
+- [X] Fix latexmk failure after clean build (longtblr runaway argument in 6\_PPBE tab:ppbe\_key\_terms; missing bcf/bbl).
+- [X] I adjusted the default 1st column and default text font for my table themes. The custom column types listed below and defined in `moderntech-base.sty` are no longer required. Please systematically restore all columns in tables as follows: F → l, L → X, and W ⇾ X. Please make those changes and remove the columns that are no longer required.
+- [X] Determine why the IfSubFileClass functions are not activating
+- [X] Update `subfile_template.tex` guidance to replace the removed placeholders (reading assignments, section development, and syntax/accuracy review notes).
 - [ ] Adjust `\minibib` output to show only the reference label number and title.
-- [x] Build a single-glance table linking \ac{opnavinst} 4700.7M, \ac{opnavnote} 4700, \ac{jfmm}, and \ac{cbmp} to owners, decision impacts, and compliance talking points.
-- [x] Add an \ac{opm} acronym definition and update CIVPERS guidance to use it.
-- [x] Develop a CNO Availability Execution phase table mapping phases to key deliverables, controlling documents, and responsible leaders.
-- [x] Build an A-36/A-21/A-12/A-3 availability planning timeline graphic with reviews and deliverables.
-- [x] Add a nuclear waterfront project-team schematic (NRRO, RPCO, NSA/LMA, Ship's Force, contractor interactions).
-- [x] Insert a BDAR continuum figure showing the transition from Damage Control through Expeditionary and Depot repair with responsible organizations.
-- [x] Add a maintenance-level coverage figure mapping O-/I-/Depot-level tasks to NSYs, RMCs, \ac{supship}s, and private yards.
-- [x] Insert a DoW-wide test and evaluation organization graphic (\ac{osd} \ac{dote}, \ac{dasdte}, Service OTAs, warfare centers).
-- [x] Create a modernization document ownership/timing/funding table (Change Notice, JCF, SHIPALT record, installation drawing).
-- [x] Provide an AIT swim-lane diagram showing Sponsor, AIT Manager, \ac{rmmco}, and \ac{nsa} interactions from screening through certification.
-- [x] Add a NAVSEA Org Chart Dec~2025 bibliography entry and cite it in the NWC map figure caption.
-- [x] Resolve the following errors produced by the automatic section label generation creating the same label multiple times for each subfile. There should be a way to make them reference the actual section title instead of the section number.
+- [X] Build a single-glance table linking \ac{opnavinst} 4700.7M, \ac{opnavnote} 4700, \ac{jfmm}, and \ac{cbmp} to owners, decision impacts, and compliance talking points.
+- [X] Add an \ac{opm} acronym definition and update CIVPERS guidance to use it.
+- [X] Develop a CNO Availability Execution phase table mapping phases to key deliverables, controlling documents, and responsible leaders.
+- [X] Build an A-36/A-21/A-12/A-3 availability planning timeline graphic with reviews and deliverables.
+- [X] Add a nuclear waterfront project-team schematic (NRRO, RPCO, NSA/LMA, Ship's Force, contractor interactions).
+- [X] Insert a BDAR continuum figure showing the transition from Damage Control through Expeditionary and Depot repair with responsible organizations.
+- [X] Add a maintenance-level coverage figure mapping O-/I-/Depot-level tasks to NSYs, RMCs, \ac{supship}s, and private yards.
+- [X] Insert a DoW-wide test and evaluation organization graphic (\ac{osd} \ac{dote}, \ac{dasdte}, Service OTAs, warfare centers).
+- [X] Create a modernization document ownership/timing/funding table (Change Notice, JCF, SHIPALT record, installation drawing).
+- [X] Provide an AIT swim-lane diagram showing Sponsor, AIT Manager, \ac{rmmco}, and \ac{nsa} interactions from screening through certification.
+- [X] Add a NAVSEA Org Chart Dec~2025 bibliography entry and cite it in the NWC map figure caption.
+- [X] Resolve the following errors produced by the automatic section label generation creating the same label multiple times for each subfile. There should be a way to make them reference the actual section title instead of the section number.
+
 ```md
 Latexmk: ====Undefined refs and citations with line #s in .tex file:
   Label `refsegment:01' multiply defined
@@ -91,10 +92,11 @@ Latexmk: ====Undefined refs and citations with line #s in .tex file:
   Label `subsec:1.1.2' multiply defined
   Label `tab:navsea-centers' multiply defined
  And 6 more --- see log file 'build/3_NAVSEA.log'
- ```
- - [ ] The first table label is skipped. Please fix to make sure all table labels show up.
- - [x] Remember that for hyperref, `linkcolor=black`. Please do not use AccentBlue.
- - [x] Insert a NAVWAR enterprise structure graphic in Chapter 4 (NAVWAR) to replace the removed TODO note.
+```
+
+- [ ] The first table label is skipped. Please fix to make sure all table labels show up.
+- [X] Remember that for hyperref, `linkcolor=black`. Please do not use AccentBlue.
+- [X] Insert a NAVWAR enterprise structure graphic in Chapter 4 (NAVWAR) to replace the removed TODO note.
 
 ## Session updates (2025-12-08)
 
@@ -136,3 +138,4 @@ Latexmk: ====Undefined refs and citations with line #s in .tex file:
 - Corrected tabularray defaults (header row/first column styling, ragged body text) and ensured Merriweather Black is used for bold serif cells; aligned defaults so `L` columns cover former `l/X` usage.
 - Inserted a NAVWAR enterprise structure graphic (HQ, PEO C4I/MLB, FRDs, NIWC LANT/PAC, NSFA) in Chapter~4 and replaced the A-36/A-0 timeline loop with explicit nodes to avoid TikZ errors.
 - Switched `graphicspath` entries to `\subfix{}` for reliable subfile and main builds; cleaned build artifacts and reran `latexmk -shell-escape src/main.tex` successfully (minted fallback warnings only).
+- Added Appendix~C (CNO~34 Day One Message: Foundry--Fleet--Fight) with full mission/vision/priorities/theory-of-victory transcription and NAVADMIN citation; added a \ac{c3} acronym entry; `latexmk -shell-escape src/main.tex` succeeds (minted fallback and existing overfull-box notices only).

@@ -125,6 +125,7 @@
       "latexmk": {
         "last_result": "success",
         "notes": [
+          "2025-12-12: Added Appendix CNO 34 Day One Message (Foundry--Fleet--Fight) with NAVADMIN citation and C3 acronym; latexmk -shell-escape src/main.tex succeeds (minted fallback and overfull-box notices remain).",
           "2025-12-12: Clean rebuild after tabular defaults and NAVWAR enterprise graphic; latexmk -shell-escape src/main.tex succeeds (minted fallback warnings only).",
           "2025-12-11: latexmk -shell-escape src/main.tex failed after cleaning build/; longtblr runaway-argument error in 6_PPBE (tab:ppbe_key_terms) left build/main.bcf and build/main.bbl incomplete.",
           "2025-12-13: Updated NAVSEA leadership callouts (ADM Houston non-EDO; PEO IWS/MLB/Sub AP fills) and inserted Platinum Card PPBE figures; latexmk -shell-escape src/main.tex succeeds (minted fallback only).",
@@ -403,7 +404,8 @@
       "NAVSEA org chart Dec 2025: COMNAVSEA ADM William J. Houston is a Submarine officer (non-EDO); PEO IWS RDML Thomas J. Dickinson and PEO MLB RDML Kevin P. Biehn are Surface Warfare APs; NAVSEA 05 RDML Jay A. Seif is a Submarine AP; PEO USC is SES (RDML Kevin R. Smith relieved).",
       "PPBE chapter now embeds Platinum Card graphics for the Planning phase and concurrent Program/Budget review alongside the existing timelines.",
       "Subfiles now set % !TEX root and \\documentclass options to ../src/main.tex across chapters/templates.",
-      "2025-12-12: Rebuilt after tabular defaults/Navwar graphic updates; latexmk -shell-escape src/main.tex now succeeds (minted fallback warnings only)."
+      "2025-12-12: Rebuilt after tabular defaults/Navwar graphic updates; latexmk -shell-escape src/main.tex now succeeds (minted fallback warnings only).",
+      "2025-12-12: Added Appendix CNO 34 Day One Message (Foundry--Fleet--Fight) with full mission/vision/priorities/theory-of-victory transcription and NAVADMIN citation; added a C3 acronym entry; latexmk -shell-escape src/main.tex succeeds (minted fallback/overfull-box notices remain)."
     ]
   },
   "history": {
