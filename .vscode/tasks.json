@@ -41,6 +41,17 @@
       "command": "git pull --ff-only",
       "presentation": { "reveal": "silent" },
       "runOptions": { "runOn": "folderOpen" }
+    },
+    // ---------------------------------------------------------------
+    // Auto update WSL
+    // ---------------------------------------------------------------
+    {
+      "label": "Update WSL on Open",
+      "type": "shell",
+      "command": "sudo /usr/bin/apt-get update && sudo /usr/bin/apt-get -y upgrade",
+      "presentation": { "reveal": "silent" },
+      "runOptions": { "runOn": "folderOpen" }
     }
+
   ]
 }

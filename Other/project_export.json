@@ -125,7 +125,11 @@
       "latexmk": {
         "last_result": "success",
         "notes": [
+<<<<<<< HEAD
           "2025-12-13: Minibib entries now display only label numbers and titles via per-bibliography field clearing; latexmk -shell-escape src/main.tex succeeds but pdf backend reports ~537 unreferenced destination warnings (minted fallback warnings also present).",
+=======
+          "2025-12-12: Added Appendix CNO 34 Day One Message (Foundry--Fleet--Fight) with NAVADMIN citation and C3 acronym; latexmk -shell-escape src/main.tex succeeds (minted fallback and overfull-box notices remain).",
+>>>>>>> 601dda1296f98a0bdcd5114c194006ba0cd5bc3f
           "2025-12-12: Clean rebuild after tabular defaults and NAVWAR enterprise graphic; latexmk -shell-escape src/main.tex succeeds (minted fallback warnings only).",
           "2025-12-11: latexmk -shell-escape src/main.tex failed after cleaning build/; longtblr runaway-argument error in 6_PPBE (tab:ppbe_key_terms) left build/main.bcf and build/main.bbl incomplete.",
           "2025-12-13: Updated NAVSEA leadership callouts (ADM Houston non-EDO; PEO IWS/MLB/Sub AP fills) and inserted Platinum Card PPBE figures; latexmk -shell-escape src/main.tex succeeds (minted fallback only).",
@@ -405,7 +409,11 @@
       "PPBE chapter now embeds Platinum Card graphics for the Planning phase and concurrent Program/Budget review alongside the existing timelines.",
       "Subfiles now set % !TEX root and \\documentclass options to ../src/main.tex across chapters/templates.",
       "2025-12-12: Rebuilt after tabular defaults/Navwar graphic updates; latexmk -shell-escape src/main.tex now succeeds (minted fallback warnings only).",
+<<<<<<< HEAD
       "2025-12-13: Minibib now strips entries to label number plus title by clearing non-title fields/macros per print; latexmk -shell-escape src/main.tex succeeds but pdf backend now reports unreferenced destination warnings (~537 glossary anchors)."
+=======
+      "2025-12-12: Added Appendix CNO 34 Day One Message (Foundry--Fleet--Fight) with full mission/vision/priorities/theory-of-victory transcription and NAVADMIN citation; added a C3 acronym entry; latexmk -shell-escape src/main.tex succeeds (minted fallback/overfull-box notices remain)."
+>>>>>>> 601dda1296f98a0bdcd5114c194006ba0cd5bc3f
     ]
   },
   "history": {
