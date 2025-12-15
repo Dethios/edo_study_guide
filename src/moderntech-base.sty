@@ -617,15 +617,58 @@
         \setlength{\parsep}{0pt}%
       }}%
       {\endlist}%
-      {\item[\mkbibbrackets{\printfield{labelnumber}}]%
-        \printfield{title}%
-        \iffieldundef{subtitle}{}{:\space\printfield{subtitle}}%
-      }%
+      {\item[\mkbibbrackets{\printfield{labelnumber}}]}%
   }{}%
 }
 
 \NewDocumentCommand{\minibib}{}{%
   \begingroup
+    \AtNextBibliography{%
+      \renewbibmacro*{author/editor+others/translator+others}{}%
+      \renewbibmacro*{in:}{}%
+      \renewbibmacro*{journal+issuetitle}{}%
+      \renewbibmacro*{publisher+location+date}{}%
+      \renewbibmacro*{organization+location+date}{}%
+      \renewbibmacro*{institution+location+date}{}%
+      \renewbibmacro*{doi+eprint+url}{}%
+      \renewbibmacro*{addendum+pubstate}{}%
+      \renewbibmacro*{note+pages}{}%
+      \renewbibmacro*{date}{}%
+      \renewbibmacro*{title}{\printfield{title}}%
+      \AtEveryBibitem{%
+        \clearname{author}%
+        \clearname{editor}%
+        \clearname{translator}%
+        \clearname{institution}%
+        \clearfield{subtitle}%
+        \clearfield{titleaddon}%
+        \clearfield{maintitle}%
+        \clearfield{booktitle}%
+        \clearfield{journaltitle}%
+        \clearfield{issuetitle}%
+        \clearfield{series}%
+        \clearlist{location}%
+        \clearlist{publisher}%
+        \clearfield{address}%
+        \clearfield{year}%
+        \clearfield{month}%
+        \clearfield{date}%
+        \clearfield{volume}%
+        \clearfield{number}%
+        \clearfield{issue}%
+        \clearfield{pages}%
+        \clearfield{pagetotal}%
+        \clearfield{edition}%
+        \clearfield{version}%
+        \clearfield{note}%
+        \clearfield{url}%
+        \clearfield{urldate}%
+        \clearfield{doi}%
+        \clearfield{isbn}%
+        \clearfield{issn}%
+        \clearfield{eprint}%
+      }%
+    }%
     \printbibliography[
       heading=none,
       segment=\therefsegment,

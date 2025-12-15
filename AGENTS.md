@@ -68,7 +68,7 @@
 - [x] I adjusted the default 1st column and default text font for my table themes. The custom column types listed below and defined in `moderntech-base.sty` are no longer required. Please systematically restore all columns in tables as follows: F → l, L → X, and W ⇾ X. Please make those changes and remove the columns that are no longer required.
 - [x] Determine why the IfSubFileClass functions are not activating
 - [x] Update `subfile_template.tex` guidance to replace the removed placeholders (reading assignments, section development, and syntax/accuracy review notes).
-- [ ] Adjust `\minibib` output to show only the reference label number and title.
+- [x] Adjust `\minibib` output to show only the reference label number and title.
 - [x] Build a single-glance table linking \ac{opnavinst} 4700.7M, \ac{opnavnote} 4700, \ac{jfmm}, and \ac{cbmp} to owners, decision impacts, and compliance talking points.
 - [x] Add an \ac{opm} acronym definition and update CIVPERS guidance to use it.
 - [x] Develop a CNO Availability Execution phase table mapping phases to key deliverables, controlling documents, and responsible leaders.
@@ -136,3 +136,7 @@ Latexmk: ====Undefined refs and citations with line #s in .tex file:
 - Corrected tabularray defaults (header row/first column styling, ragged body text) and ensured Merriweather Black is used for bold serif cells; aligned defaults so `L` columns cover former `l/X` usage.
 - Inserted a NAVWAR enterprise structure graphic (HQ, PEO C4I/MLB, FRDs, NIWC LANT/PAC, NSFA) in Chapter~4 and replaced the A-36/A-0 timeline loop with explicit nodes to avoid TikZ errors.
 - Switched `graphicspath` entries to `\subfix{}` for reliable subfile and main builds; cleaned build artifacts and reran `latexmk -shell-escape src/main.tex` successfully (minted fallback warnings only).
+
+## Session updates (2025-12-13)
+
+- Minibib now prints only the label number and cited title by clearing non-title fields/macros per bibliography call while retaining refsegment numbering; `latexmk -shell-escape src/main.tex` succeeds after the update (pdf-backend still emits unreferenced destination warnings alongside minted fallback notices).
