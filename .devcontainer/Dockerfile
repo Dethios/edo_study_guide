@@ -8,7 +8,7 @@ COPY .devcontainer/texlive.profile /tmp/texlive.profile
 
 # Install minimal tools needed for the TL installer
 RUN apt-get update && \
-  apt-get install -y wget perl && \
+  apt-get install -y wget perl python3 python3-pygments && \
   rm -rf /var/lib/apt/lists/*
 
 # Install TeX Live 2025 noninteractively using the profile
@@ -16,8 +16,8 @@ RUN mkdir -p /tmp/install-tl && \
   cd /tmp/install-tl && \
   wget -qO- https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz | \
     tar xz --strip-components=1 && \
-  ./install-tl -profile=/tmp/texlive.profile && \
-  rm -rf /tmp/install-tl /tmp/texlive.profile
+  ./install-tl && \
+  rm -rf /tmp/install-tl
 
 # Prefer TL2025 binaries
 ENV PATH=/usr/local/texlive/2025/bin/x86_64-linux:$PATH
@@ -82,9 +82,9 @@ RUN tlmgr option repository https://mirror.ctan.org/systems/texlive/tlnet && \
 # Include Python
 RUN ln -s /usr/bin/python3 /usr/bin/python || true
 
-# Install Fira Code system font via apt
+# Install system fonts (fontspec) via apt
 RUN apt-get update && \
-  apt-get install -y fonts-firacode && \
+  apt-get install -y fonts-firacode fonts-fira && \
   rm -rf /var/lib/apt/lists/* && \
   fc-cache -f -v
 

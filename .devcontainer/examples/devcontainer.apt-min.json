@@ -1,0 +1,10 @@
+{
+  "name": "EDO Acquisition Tutor (apt-min example)",
+  "build": {
+    "dockerfile": "examples/Dockerfile.apt-min",
+    "context": ".."
+  },
+  "remoteUser": "vscode",
+  "postCreateCommand": "latexmk -shell-escape src/main.tex"
+}
+
