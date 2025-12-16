@@ -2,7 +2,7 @@
   "project": {
     "name": "EDO Acquisition Tutor",
     "slug": "edo-acquisition-tutor",
-    "exported_at": "2025-12-16T09:27:10-05:00",
+    "exported_at": "2025-12-16T09:51:44-05:00",
     "current_as_of": "2025-12-16",
     "instruction_pack_baseline": "2025-09-12",
     "tags": [
@@ -126,6 +126,7 @@
         "last_result": "success",
         "notes": [
           "2025-12-16: Added appendix with Cannon Cocker and IWE rosters/job pyramids (assets/information); latexmk -shell-escape -interaction=nonstopmode src/main.tex succeeds (PDF inclusion warnings for IWE Round-Up PDF version 1.7).",
+          "2025-12-16: Integrated Lookups1 topics (CAPE, OMB execution controls, N8/N9 subcodes, marks vs reclamas, execution tracking) into Chapters 6/8/9 and Key Roles appendix; added OMB A-11 and 10/31 U.S.C. citations; latexmk -shell-escape src/main.tex succeeds (overfull hbox and PDF inclusion warnings remain).",
           "2025-12-15: Removed minibib from templates and chapters; latexmk -shell-escape src/main.tex succeeds (overfull hbox warnings remain).",
           "2025-12-15: Added Codex Cloud setup/maintenance scripts (.codex/) and devcontainer minimum docs/examples for TeX Live tooling (apt-based; includes texlive-pictures and texlive-bibtex-extra).",
           "2025-12-13: Minibib entries now display only label numbers and titles via per-bibliography field clearing; latexmk -shell-escape src/main.tex succeeds but pdf backend reports ~537 unreferenced destination warnings (minted fallback warnings also present).",
@@ -678,6 +679,37 @@
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Contains personnel rosters; treat as sensitive and distribute responsibly."
+      },
+      {
+        "title_or_slug": "Lookups1 integration into study guide",
+        "date_range": "2025-12-16 to 2025-12-16",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Integrate Lookups1.md research into the LaTeX study guide and align acronyms/citations.",
+        "summary": "Integrated CAPE duties, OMB apportionment/execution controls, OPNAV N8/N9 subcodes, marks v.s. reclamas, and execution tracking guidance into PPBE, Congressional Enactment, Program Funding/Execution, and Key Roles appendix; added missing acronyms and primary-source citations (OMB Circular A-11, 10 U.S.C. 139c, 31 U.S.C. 1512); verified full build with latexmk.",
+        "key_decisions": [
+          "Use OMB Circular A-11 and controlling U.S.C. sections for apportionment/execution limits, and clearly distinguish internal marks/reclamas from congressional marks and post-enactment reprogramming."
+        ],
+        "action_items": [
+          "Complete the remaining OMB roles/responsibilities lookup and add POM/BES document examples with citations when available."
+        ],
+        "linked_files": [
+          "src/chapters/6_PPBE.tex",
+          "src/chapters/8_Congressional_Enactment.tex",
+          "src/chapters/9_Program_Funding_and_Execution.tex",
+          "src/chapters/appendix_key_roles.tex",
+          "src/acronyms.def",
+          "src/edo.bib",
+          "AGENTS.md"
+        ],
+        "notable_citations": [
+          "OMB-A11",
+          "USC-139c-CAPE",
+          "USC-1512-Apportionment"
+        ],
+        "bias_or_quality_notes": "N-code org structures can churn; validate subcode labels week-of."
       }
     ]
   },

@@ -7,6 +7,7 @@ Read order: 1) `AGENTS.md` (instructions/tasks), 2) `Other/project_export.json` 
 - Primary-source verification with dates is mandatory (FAR/DFARS/DoDI/SECNAV/OPNAV, FMR, GAO). Place `\autocite{}` inside sentences before punctuation; use `\ac{}` in prose (lowercase keys), not in headings or tables. Default tables to `longtblr`.
 - Instruction Pack is the standard (coursebook baseline current as of 2025-09-12).
 - Study Guide LaTeX build is active; `latexmk -shell-escape` completes with lingering unreferenced-citation warnings to resolve.
+- Lookups1 integrated into the Study Guide (CAPE, OMB execution controls via A-11, OPNAV N8/N9 subcodes, marks v.s. reclamas, execution tracking via EVM).
 - Content gaps identified: PPBE/fiscal law; NWCF v.s.\ mission-funded; reprogramming; definitions (AOR/NOR/SLR/IGT); Fast Cues/Common Board Pivots refresh; NAVWAR PMW list with citations; glossary process.
 
 ## Scope check
@@ -29,11 +30,11 @@ Read order: 1) `AGENTS.md` (instructions/tasks), 2) `Other/project_export.json` 
 - Open questions: which overlay instructions control today (SECNAV/OPNAV/NAVSEA)? PMW update cadence (e.g., quarterly)? Any command-specific “must-cover” board pivots beyond current map?
 
 ## Action plan (owners/due)
-- No recommended next actions at this time (per user update 2025-12-08).
+- Next: finish OMB roles/responsibilities; add POM/BES document examples; capture ATR windows for reprogramming.
 
 ## Indices
 - Entities: DoW, U.S. Navy, SECNAV, OPNAV, NAVSEA, DAU.
 - Concepts/products: Mermaid; AAF pathways (MCA, SWP, MTA, Urgent); SCN/WPN; PPBE; FAR/DFARS/PGI; DoDI 5000; FMR; GAO Red Book; JCIDS.
 - Citations (framework-level): Titles 10 & 41 U.S.C.; FAR/DFARS/DFARS PGI; DoDI 5000 series; DoW FMR 7000.14-R; GAO Red Book; SECNAV/OPNAV/NAVSEA instructions; EDO coursebook (baseline 2025-09-12).
 
-**Current as of:** 2025-12-08
+**Current as of:** 2025-12-16

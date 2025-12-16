@@ -28,18 +28,18 @@
 ## Lookups
 
 - [X] Review ADM Caudle's message to the fleet
-- [ ] Specifics of CAPE's duties and responsibilities
-- [ ] What are the execution limits as prescribed by OMB
+- [x] Specifics of CAPE's duties and responsibilities
+- [x] What are the execution limits as prescribed by OMB
 - [ ] What are OMB's Roles and Responsbilities
 - [ ] Find and review exmaples of POM and BES documents
-- [ ] Find all OPNAV N codes for N8 and N9, provide description of what each of them do
-- [ ] Provide a description of the Marks and Reclama Process
+- [ ] Find all OPNAV N codes for N8 and N9, provide description of what each of them do (partial: N80/N81/N82, N9I, N95--N98)
+- [x] Provide a description of the Marks and Reclama Process
 - [ ] For CIVPERs, how are conduct and performance issues handled? How are they different?
 - [ ] GS Steps: What is the timing between each step that makes steps 1 to 10 take 18 years?
 - [ ] What are the NRO specifics for promotion in GS Ranks?
 - [ ] When a COC occurs, how long does the new OIC have to make changes before the Unions consider old actions permanement rules
 - [ ] What are the current proposed changes to streamline the GS payscales
-- [ ] How do we track expenditures and how do we know that we are on track with out spending?
+- [x] How do we track expenditures and how do we know that we are on track with out spending?
 - [ ] What are the two ATR windows to request for reprogramming?
 - [ ] Who finalizes and writes the NDAA? Appropriations Bills?
 - [ ] What other items are in the NDAA beyond basic authorizations for spending?
@@ -144,3 +144,5 @@
 - Added Appendix `appendix_community_rosters` with Cannon Cocker roster/pyramid, IWE job pyramid, and IWE roster pages from IWE Round-Up (12 Sep 2025).
 - LaTeX: extended `\graphicspath` to include `assets/information/` and added a `.jfif` graphics rule for LuaLaTeX/PDF builds.
 - Build: `latexmk -shell-escape -interaction=nonstopmode src/main.tex` succeeds; warnings include PDF inclusion version (IWE Round-Up PDF 1.7 > 1.5 allowed) and existing overfull hbox notices.
+- Lookups integration: added CAPE/OMB execution controls, N8/N9 subcodes (N80/N81/N82/N9I/N95--N98), and marks/reclamas content into PPBE/Congressional Enactment/Execution sections; updated Key Roles appendix to match.
+- Acronyms/citations: added `OMB Circular A-11` and 10/31 U.S.C. entries; expanded `acronyms.def` for new OPNAV/board/OLA terms.
