@@ -94,9 +94,18 @@
 \newacronym{sea05z}{SEA 05Z}{Marine Engineering}
 \newacronym{syscom}{SYSCOM}{Systems Command}
 \newacronym{n8}{N8}{OPNAV Integration of Capabilities and Resources}
-\newacronym{n82}{N82}{OPNAV Programming Division}
+\newacronym{n80}{N80}{OPNAV Programming Division}
+\newacronym{n81}{N81}{OPNAV Assessment Division}
+\newacronym{n82}{N82}{OPNAV Fiscal Management Division}
 \newacronym{n9}{N9}{OPNAV Warfare Systems}
 \newacronym{n91}{N91}{Warfare Integration Directorate}
+\newacronym{n9i}{N9I}{Integrated Warfare Directorate}
+\newacronym{n95}{N95}{Expeditionary Warfare Directorate}
+\newacronym{n96}{N96}{Surface Warfare Directorate}
+\newacronym{n97}{N97}{Undersea Warfare Directorate}
+\newacronym{n98}{N98}{Air Warfare Directorate}
+\newacronym{r3b}{R3B}{Resources and Requirements Review Board}
+\newacronym{ncb}{NCB}{Naval Capabilities Board}
 \newacronym{pao}{PAO}{Public Affairs Officer}
 \newacronym{opnavnote}{OPNAVNOTE}{Office of the Chief of Naval Operations Notice}
 \newacronym{c3}{C3}{Command, Control, and Communications}
@@ -452,6 +461,7 @@
 \newacronym{gao}{GAO}{Government Accountability Office}
 \newacronym{crs}{CRS}{Congressional Research Service}
 \newacronym{cr}{CR}{Continuing Resolution}
+\newacronym{ola}{OLA}{Office of Legislative Affairs}
 
 % --- Congressional Engagement & Statutes ---
 

@@ -83,6 +83,7 @@
 - [x] Insert a NAVWAR enterprise structure graphic in Chapter 4 to replace the removed TODO note.
 - [x] Codex Cloud: add startup scripts to install TeX Live and required binaries.
 - [x] Remove minibib code from templates and the study guide.
+- [x] Add appendix with Cannon Cocker and IWE rosters/pyramids.
 
 ## Session updates (2025-12-08)
 
@@ -137,3 +138,9 @@
 - LaTeX: removed all minibib code from templates/chapters and removed the minibib macro from `src/moderntech-base.sty`; `latexmk -shell-escape src/main.tex` succeeds (overfull hbox warnings remain).
 - Codex Cloud/Devcontainer: `fonts-fira` is now distro-aware (setup and devcontainer scripts auto-detect available Fira font packages); `latexmk -shell-escape src/main.tex` still succeeds (overfull \hbox warnings remain in 18_test_eval and 24_Battle_Damage_Assessment_Repair).
 - TODO scan: `rg TODO src` has no hits.
+
+## Session updates (2025-12-16)
+
+- Added Appendix `appendix_community_rosters` with Cannon Cocker roster/pyramid, IWE job pyramid, and IWE roster pages from IWE Round-Up (12 Sep 2025).
+- LaTeX: extended `\graphicspath` to include `assets/information/` and added a `.jfif` graphics rule for LuaLaTeX/PDF builds.
+- Build: `latexmk -shell-escape -interaction=nonstopmode src/main.tex` succeeds; warnings include PDF inclusion version (IWE Round-Up PDF 1.7 > 1.5 allowed) and existing overfull hbox notices.
