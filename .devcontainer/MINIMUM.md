@@ -18,7 +18,7 @@ This is a practical minimum set that supports the current document (tables, mint
 sudo apt-get update
 sudo apt-get install -y --no-install-recommends \
   biber latexmk make perl python3 python3-pygments \
-  fontconfig fonts-fira fonts-firacode \
+  fontconfig fonts-firacode fonts-fira-sans fonts-fira-mono \
   texlive-bibtex-extra texlive-pictures \
   texlive-luatex texlive-latex-extra texlive-extra-utils \
   texlive-fonts-recommended texlive-fonts-extra \

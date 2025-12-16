@@ -22,25 +22,51 @@ fi
 
 echo "Installing system packages (TeX Live + helpers)..."
 $sudo_cmd apt-get update
-$sudo_cmd apt-get install -y --no-install-recommends \
-  biber \
-  fontconfig \
-  fonts-fira \
-  fonts-firacode \
-  latexmk \
-  make \
-  perl \
-  python3 \
-  python3-pygments \
-  texlive-bibtex-extra \
-  texlive-extra-utils \
-  texlive-fonts-extra \
-  texlive-fonts-recommended \
-  texlive-lang-english \
-  texlive-latex-extra \
-  texlive-luatex \
-  texlive-pictures \
+
+required_pkgs=(
+  biber
+  fontconfig
+  latexmk
+  make
+  perl
+  python3
+  python3-pygments
+  texlive-bibtex-extra
+  texlive-extra-utils
+  texlive-fonts-extra
+  texlive-fonts-recommended
+  texlive-lang-english
+  texlive-latex-extra
+  texlive-luatex
+  texlive-pictures
   texlive-science
+)
+
+# Font packages vary across Debian/Ubuntu releases.
+optional_font_pkgs=(
+  fonts-firacode
+  fonts-fira-code
+  fonts-fira-sans
+  fonts-fira-mono
+  fonts-fira
+)
+
+available_font_pkgs=()
+for pkg in "${optional_font_pkgs[@]}"; do
+  if apt-cache show "$pkg" >/dev/null 2>&1; then
+    available_font_pkgs+=("$pkg")
+  fi
+done
+
+if [ "${#available_font_pkgs[@]}" -gt 0 ]; then
+  echo "Installing optional font packages: ${available_font_pkgs[*]}"
+else
+  echo "WARNING: no optional font packages found (Fira Sans/Code); continuing."
+fi
+
+$sudo_cmd apt-get install -y --no-install-recommends \
+  "${required_pkgs[@]}" \
+  "${available_font_pkgs[@]}"
 
 $sudo_cmd rm -rf /var/lib/apt/lists/* >/dev/null 2>&1 || true
 

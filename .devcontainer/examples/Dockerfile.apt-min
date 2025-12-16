@@ -5,8 +5,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
     biber \
     fontconfig \
-    fonts-fira \
     fonts-firacode \
+    fonts-fira-mono \
+    fonts-fira-sans \
     latexmk \
     make \
     perl \

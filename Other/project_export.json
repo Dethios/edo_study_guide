@@ -2,7 +2,7 @@
   "project": {
     "name": "EDO Acquisition Tutor",
     "slug": "edo-acquisition-tutor",
-    "exported_at": "2025-12-15T13:57:26-05:00",
+    "exported_at": "2025-12-15T21:43:16-05:00",
     "current_as_of": "2025-12-15",
     "instruction_pack_baseline": "2025-09-12",
     "tags": [
@@ -625,6 +625,30 @@
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Production pipeline setup."
+      },
+      {
+        "title_or_slug": "Codex Cloud setup: fonts-fira missing",
+        "date_range": "2025-12-15 to 2025-12-15",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Fix Codex Cloud setup failure where apt package fonts-fira is unavailable; align devcontainer docs/scripts.",
+        "summary": "Updated `.codex/setup.sh` to detect and install whichever Fira font packages exist on the base image (e.g., fonts-fira-sans/fonts-fira-mono) instead of hard-requiring fonts-fira; mirrored the change in devcontainer Dockerfiles and minimum apt package docs; verified `latexmk -shell-escape src/main.tex` still builds successfully (overfull hbox warnings remain).",
+        "key_decisions": [
+          "Treat distro-specific font packages as optional and discoverable via apt-cache to keep Codex Cloud setup portable across Debian/Ubuntu releases."
+        ],
+        "action_items": [
+          "If a future base image drops Fira font packages entirely, consider adding a fontspec fallback for missing Fira Sans in `src/moderntech-base.sty`."
+        ],
+        "linked_files": [
+          ".codex/setup.sh",
+          ".devcontainer/Dockerfile",
+          ".devcontainer/examples/Dockerfile.apt-min",
+          ".devcontainer/MINIMUM.md"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling maintenance; improves environment portability."
       }
     ]
   },

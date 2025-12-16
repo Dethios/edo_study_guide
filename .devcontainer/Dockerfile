@@ -84,7 +84,18 @@ RUN ln -s /usr/bin/python3 /usr/bin/python || true
 
 # Install system fonts (fontspec) via apt
 RUN apt-get update && \
-  apt-get install -y fonts-firacode fonts-fira && \
+  font_pkgs="" && \
+  for p in fonts-firacode fonts-fira-code; do \
+    if apt-cache show "$p" >/dev/null 2>&1; then font_pkgs="$font_pkgs $p"; break; fi; \
+  done && \
+  for p in fonts-fira-sans fonts-fira-mono fonts-fira; do \
+    if apt-cache show "$p" >/dev/null 2>&1; then font_pkgs="$font_pkgs $p"; fi; \
+  done && \
+  if [ -z "$(echo "$font_pkgs" | tr -d '[:space:]')" ]; then \
+    echo "ERROR: no suitable Fira font packages found via apt." >&2; exit 1; \
+  fi && \
+  echo "Installing system font packages:$font_pkgs" && \
+  apt-get install -y $font_pkgs && \
   rm -rf /var/lib/apt/lists/* && \
   fc-cache -f -v
 
