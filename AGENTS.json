@@ -1,0 +1,1213 @@
+{
+  "schema_version": "edo-agents-export@1",
+  "generated_at": "2025-12-17T01:12:16+00:00",
+  "source": {
+    "path": "AGENTS.md",
+    "sha256": "93b00b10b0f3363b0a4d1bb977cbd768f7422efee62c6aab90637a3632a6b91f",
+    "line_count": 156
+  },
+  "title": "AGENTS Operating Guide",
+  "derived": {
+    "read_first": [
+      "Always read this file and `Other/project_export.json` before starting any task. Use `Other/project_export.md` as a quick snapshot only.",
+      "`AGENTS.md` is the authoritative instruction + task list; `Other/project_export.json` is the canonical project database/context. Keep them in sync after every task.",
+      "Add new user directives and agent-recommended tasks here; mirror context changes in `Other/project_export.json`."
+    ],
+    "mission_and_doctrine": {
+      "items": [
+        "Role: Navy EDO Acquisition Tutor for board prep (default) with optional Mastery depth on request.",
+        "Style: layered brief -> Navy overlays -> fiscal/PPBE with SCN/WPN nuance -> Decision Trace -> citations with dates -> assumptions -> self-score. Use Mermaid decision flows when requested; otherwise favor concise textual logic plus Decision Trace.",
+        "Sources and recency: verify controlling statutes/regulations/policy (10/41 U.S.C., FAR/DFARS/PGI, DoDI 5000 series, SECNAV/OPNAV/NAVSEA overlays, DoW FMR, GAO Red Book) and EDO coursebook baseline (current as of 2025-09-12). Stamp deliverables with \"Current as of [YYYY-MM-DD]\".",
+        "Citation/formatting: place `\\autocite{}` inside sentences before punctuation; use `\\ac{}` in prose (lowercase keys), not in headings or tables; default tables to `longtblr`; prefer `description` for term/definition lists; keep ASCII.",
+        "Safety: not legal advice; respect OPSEC/CUI and procurement integrity."
+      ],
+      "fields": {
+        "Role": "Navy EDO Acquisition Tutor for board prep (default) with optional Mastery depth on request.",
+        "Style": "layered brief -> Navy overlays -> fiscal/PPBE with SCN/WPN nuance -> Decision Trace -> citations with dates -> assumptions -> self-score. Use Mermaid decision flows when requested; otherwise favor concise textual logic plus Decision Trace.",
+        "Sources and recency": "verify controlling statutes/regulations/policy (10/41 U.S.C., FAR/DFARS/PGI, DoDI 5000 series, SECNAV/OPNAV/NAVSEA overlays, DoW FMR, GAO Red Book) and EDO coursebook baseline (current as of 2025-09-12). Stamp deliverables with \"Current as of [YYYY-MM-DD]\".",
+        "Citation/formatting": "place `\\autocite{}` inside sentences before punctuation; use `\\ac{}` in prose (lowercase keys), not in headings or tables; default tables to `longtblr`; prefer `description` for term/definition lists; keep ASCII.",
+        "Safety": "not legal advice; respect OPSEC/CUI and procurement integrity."
+      }
+    },
+    "workflow": {
+      "items": [
+        {
+          "text": "Start: read `AGENTS.md` and `Other/project_export.json`; skim `Other/project_export.md` if you need the snapshot. Note assumptions.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Finish:",
+          "checked": null,
+          "children": [
+            {
+              "text": "Write a short summary of completed work and the context of the current chat.",
+              "checked": null,
+              "children": []
+            },
+            {
+              "text": "Update `Other/project_export.json` with new context/instructions/status.",
+              "checked": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "text": "Update this file with task status changes and any new/recommended tasks or directives.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Run `python3 scripts/export_agents_json.py --root .` to refresh `AGENTS.json` (machine-readable export).",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Run `latexmk -shell-escape` (project `latexmkrc` handles targets) and record warnings/errors.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Check off any TODOs you completed; search `src` for outstanding TODO comments that can be addressed.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Proceed with next recommended tasks automatically; if three next steps exist, execute all three.",
+          "checked": null,
+          "children": []
+        }
+      ],
+      "start": "read `AGENTS.md` and `Other/project_export.json`; skim `Other/project_export.md` if you need the snapshot. Note assumptions.",
+      "finish": [
+        "Write a short summary of completed work and the context of the current chat.",
+        "Update `Other/project_export.json` with new context/instructions/status."
+      ],
+      "post_finish_steps": [
+        "Update this file with task status changes and any new/recommended tasks or directives.",
+        "Run `python3 scripts/export_agents_json.py --root .` to refresh `AGENTS.json` (machine-readable export).",
+        "Run `latexmk -shell-escape` (project `latexmkrc` handles targets) and record warnings/errors.",
+        "Check off any TODOs you completed; search `src` for outstanding TODO comments that can be addressed.",
+        "Proceed with next recommended tasks automatically; if three next steps exist, execute all three."
+      ]
+    }
+  },
+  "sections": [
+    {
+      "heading": "Read first",
+      "level": 2,
+      "kind": "bullets",
+      "items": [
+        {
+          "text": "Always read this file and `Other/project_export.json` before starting any task. Use `Other/project_export.md` as a quick snapshot only.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "`AGENTS.md` is the authoritative instruction + task list; `Other/project_export.json` is the canonical project database/context. Keep them in sync after every task.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Add new user directives and agent-recommended tasks here; mirror context changes in `Other/project_export.json`.",
+          "checked": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "heading": "Mission and doctrine (high-level)",
+      "level": 2,
+      "kind": "bullets",
+      "items": [
+        {
+          "text": "Role: Navy EDO Acquisition Tutor for board prep (default) with optional Mastery depth on request.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Style: layered brief -> Navy overlays -> fiscal/PPBE with SCN/WPN nuance -> Decision Trace -> citations with dates -> assumptions -> self-score. Use Mermaid decision flows when requested; otherwise favor concise textual logic plus Decision Trace.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Sources and recency: verify controlling statutes/regulations/policy (10/41 U.S.C., FAR/DFARS/PGI, DoDI 5000 series, SECNAV/OPNAV/NAVSEA overlays, DoW FMR, GAO Red Book) and EDO coursebook baseline (current as of 2025-09-12). Stamp deliverables with \"Current as of [YYYY-MM-DD]\".",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Citation/formatting: place `\\autocite{}` inside sentences before punctuation; use `\\ac{}` in prose (lowercase keys), not in headings or tables; default tables to `longtblr`; prefer `description` for term/definition lists; keep ASCII.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Safety: not legal advice; respect OPSEC/CUI and procurement integrity.",
+          "checked": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "heading": "Workflow for every task",
+      "level": 2,
+      "kind": "bullets",
+      "items": [
+        {
+          "text": "Start: read `AGENTS.md` and `Other/project_export.json`; skim `Other/project_export.md` if you need the snapshot. Note assumptions.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Finish:",
+          "checked": null,
+          "children": [
+            {
+              "text": "Write a short summary of completed work and the context of the current chat.",
+              "checked": null,
+              "children": []
+            },
+            {
+              "text": "Update `Other/project_export.json` with new context/instructions/status.",
+              "checked": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "text": "Update this file with task status changes and any new/recommended tasks or directives.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Run `python3 scripts/export_agents_json.py --root .` to refresh `AGENTS.json` (machine-readable export).",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Run `latexmk -shell-escape` (project `latexmkrc` handles targets) and record warnings/errors.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Check off any TODOs you completed; search `src` for outstanding TODO comments that can be addressed.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Proceed with next recommended tasks automatically; if three next steps exist, execute all three.",
+          "checked": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "heading": "Lookups",
+      "level": 2,
+      "kind": "checklist",
+      "items": [
+        {
+          "text": "Review ADM Caudle's message to the fleet",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Specifics of CAPE's duties and responsibilities",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "What are the execution limits as prescribed by OMB",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "What are OMB's Roles and Responsbilities",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "Find and review exmaples of POM and BES documents",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "Find all OPNAV N codes for N8 and N9, provide description of what each of them do (partial: N80/N81/N82, N9I, N95--N98)",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "Provide a description of the Marks and Reclama Process",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "For CIVPERs, how are conduct and performance issues handled? How are they different?",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "GS Steps: What is the timing between each step that makes steps 1 to 10 take 18 years?",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "What are the NRO specifics for promotion in GS Ranks?",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "When a COC occurs, how long does the new OIC have to make changes before the Unions consider old actions permanement rules",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "What are the current proposed changes to streamline the GS payscales",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "How do we track expenditures and how do we know that we are on track with out spending?",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "What are the two ATR windows to request for reprogramming?",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "Who finalizes and writes the NDAA? Appropriations Bills?",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "What other items are in the NDAA beyond basic authorizations for spending?",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "Read the current (new) NDAA and NSS",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "How does IWS test terminal defense weapons such as CIWS",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "What is the ASN(RD&A) office structure. What are their job titles and fundtions?",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "More review of flags.",
+          "checked": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "heading": "Current jobs",
+      "level": 2,
+      "kind": "checklist",
+      "items": [
+        {
+          "text": "Review entire scope of project; update `Other/project_export.json` to current project status.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Acronym audit: replace uppercase runs with `\\ac{}` in prose; add missing entries to `acronyms.def` (skip tables/headings).",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Refactor sectional tables to `longtblr` in house style.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Add CIVPERs coursebook content as a new section using the subfile template.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Adjust List of Tables and List of Figures formatting to match the ToC.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Resolve unreferenced citation warnings emitted by `latexmk`.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Add labels to all chapters, sections, and subsections.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Audit `acronyms.def` grouping and plural forms.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Update flag appendix and billet callouts per Dec 2025 org chart/bios; remove non-EDO PEO billets (and note PEO USC is SES; RDML Smith relieved).",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Add PPBE graphics from Platinum Card into Chapter 6.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Fix hyperlinks and hyperrefs (clickable links in PDF).",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Resolve excessive subsection label reference noise.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Fix latexmk failure after clean build (longtblr runaway argument; missing bcf/bbl).",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Restore table column types: F -> l, L -> X, W -> X; remove no-longer-needed custom column types.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Determine why IfSubFileClass functions were not activating.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Update `src/templates/subfile_template.tex` guidance (remove stale placeholders).",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Build a single-glance table linking \\ac{opnavinst} 4700.7M, \\ac{opnavnote} 4700, \\ac{jfmm}, and \\ac{cbmp} to owners/impacts/talking points.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Add an `\\ac{opm}` acronym definition and update CIVPERS guidance to use it.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Develop a CNO Availability Execution phase table mapping phases to deliverables/docs/leaders.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Build an A-36/A-21/A-12/A-3 availability planning timeline graphic with reviews/deliverables.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Add a nuclear waterfront project-team schematic (NRRO, RPCO, NSA/LMA, Ship's Force, contractor interactions).",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Insert a BDAR continuum figure (Damage Control -> Expeditionary -> Depot repair) with responsible orgs.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Add a maintenance-level coverage figure mapping O-/I-/Depot-level tasks to NSYs, RMCs, \\ac{supship}s, and private yards.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Insert a DoW-wide test and evaluation organization graphic (\\ac{osd} \\ac{dote}, \\ac{dasdte}, Service OTAs, warfare centers).",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Create a modernization document ownership/timing/funding table (Change Notice, JCF, SHIPALT record, installation drawing).",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Provide an AIT swim-lane diagram (Sponsor, AIT Manager, \\ac{rmmco}, \\ac{nsa}) from screening through certification.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Add a NAVSEA Org Chart Dec 2025 bibliography entry and cite it in the NWC map figure caption.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Resolve duplicate labels from automatic section label generation in subfiles.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "The first table label is skipped. Fix to ensure all table labels show up.",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "Hyperref: use `linkcolor=black` (do not use AccentBlue).",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Insert a NAVWAR enterprise structure graphic in Chapter 4 to replace the removed TODO note.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Codex Cloud: add startup scripts to install TeX Live and required binaries.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Remove minibib code from templates and the study guide.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Add appendix with Cannon Cocker and IWE rosters/pyramids.",
+          "checked": true,
+          "children": []
+        }
+      ]
+    },
+    {
+      "heading": "Session updates (2025-12-08)",
+      "level": 2,
+      "kind": "bullets",
+      "items": [
+        {
+          "text": "Acronym audit: cleaned 10_Cost_Fundamentals, 12_Solicitation, 15_policy, 16_Milestones; added COTS, COFC, IT, and IRB definitions.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Added \\ac{navseainst} and \\ac{opnavnote} definitions; wrapped fleet maintenance policy items and modernization TSRA reference with \\ac{} usage; updated Fast Cues (\\ac{pta}, \\ac{supship}/\\ac{navsea}).",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "NAVWAR/Modernization touch-ups: wrapped \\ac{opnavinst} 3040.2B reference in BDAR; reduced uppercase runs in modernization governance (\\ac{nmp}, \\ac{jfmm}).",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Build: `latexmk -shell-escape src/main.tex` succeeded after updates; many unreferenced citation warnings remain (see log).",
+          "checked": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "heading": "Session updates (2025-12-09)",
+      "level": 2,
+      "kind": "bullets",
+      "items": [
+        {
+          "text": "Acronym audit continued: waterfront SUBSAFE/work-control bullets now use \\ac{navsea}, \\ac{navsup}, \\ac{ss800}, \\ac{waf}, and \\ac{oqe}; AIT section aligns to \\ac{ait} roles and \\ac{nmp} references; NWCF cash-flow step now uses \\ac{eft} and \\ac{fmr}.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "New acronyms added: \\ac{ss800} (Submergence Systems Certification manual series) and \\ac{eft} (Electronic Funds Transfer).",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Build: `latexmk -shell-escape src/main.tex` successful.",
+          "checked": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "heading": "Session updates (2025-12-10)",
+      "level": 2,
+      "kind": "bullets",
+      "items": [
+        {
+          "text": "Resolved PDF backend unreferenced-destination warnings by suppressing per-chapter minibib output in main builds; `latexmk -shell-escape src/main.tex` is clean of those warnings.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Added biblatex hyperlink formatting for citation labels/shorthands to tackle unreferenced destination warnings; full `latexmk -shell-escape src/main.tex` still succeeds but the pdf backend continues to report unreferenced citation/glossary destinations (needs follow-up).",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Continued acronym sweep in contracting and funding chapters (FAR/NMCARS/DFARS prose, LOA/CSSQT, LLTM, opnavinst 4700.7M references) and added \\ac{} coverage to solicitation and cost/price evaluation checklists.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Added message redirection in `main.tex` to suppress pdf-backend \"unreferenced destination\" warnings; warnings still emit and need further suppression/tuning.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Kept per-chapter minibib active with hyperref disabled around entries; full `latexmk -shell-escape src/main.tex` builds succeed (out/main.pdf) with unreferenced-destination warnings remaining.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Silenced pdf-backend \"unreferenced destination\" spam by disabling bibitem hypertargets (`\\DeclareFieldFormat{bibhyperref}` / `bibhypertarget` as identity) and adding hidden glossary links for \\ac{ppbe} and \\ac{dow}; pdf backend warnings now clean on `latexmk -shell-escape src/main.tex`.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "`latexmk -shell-escape src/main.tex` now completes without unreferenced destination warnings (overfull boxes remain).",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Added \\ac{subtech} definition and wrapped remaining Open \\ac{dagir} references in the current events appendix; `latexmk -shell-escape src/main.tex` still succeeds (only overfull boxes/minted fallback warnings).",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Softened layout warnings by setting `\\emergencystretch` to 1em and enabling `\\raggedbottom` in `moderntech-base`; overfull \\vbox notices persist in dense figure/table sections but no other regressions observed.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Relaxed figure placement from `[H]` to `[htbp]` across chapters and Platinum Card appendix, and tightened float spacing in `moderntech-base`; overfull \\vbox notices dropped slightly in dense maintenance/policy sections.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Added auto-labeling for numbered chapters/sections/subsections, expanded plural forms/grouping in `acronyms.def`, and updated the EDO flag appendix to remove non-EDO PEO billets per Dec 2025 bios; `latexmk -shell-escape src/main.tex` succeeds with only overfull boxes/minted fallback warnings.",
+          "checked": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "heading": "Session updates (2025-12-11)",
+      "level": 2,
+      "kind": "bullets",
+      "items": [
+        {
+          "text": "Changed global float placement defaults in `moderntech-base` to `htbp` to relax float anchoring; rebuilt to clear remaining overfull \\vbox warnings in maintenance/policy chapters and appendices.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Cleaned the build directory and reran `latexmk -shell-escape src/main.tex`; build completes without overfull box warnings (minted fallback notices remain).",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Updated NAVSEA billet callouts per the Dec 2025 org chart (COMNAVSEA ADM Houston is a Submarine officer; PEO IWS RDML Dickinson and PEO MLB RDML Biehn are SWO APs; NAVSEA 05 RDML Seif is a Submarine AP); adjusted EDO flag appendix and chain-of-command notes accordingly.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Added Platinum Card PPBE graphics (Planning phase and concurrent Program/Budget review) into Chapter 6.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Set all subfiles to point at `../src/main.tex` for both the `% !TEX root` directive and subfiles class option; cleaned `build/` and reran `latexmk -shell-escape src/main.tex`, which then failed with a longtblr runaway-argument error in 6_PPBE (tab:ppbe_key_terms) and incomplete `build/main.bcf`/`build/main.bbl`.",
+          "checked": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "heading": "Session updates (2025-12-12)",
+      "level": 2,
+      "kind": "bullets",
+      "items": [
+        {
+          "text": "Corrected tabularray defaults (header row/first column styling, ragged body text) and ensured Merriweather Black is used for bold serif cells; aligned defaults so L columns cover former l/X usage.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Inserted a NAVWAR enterprise structure graphic (HQ, PEO C4I/MLB, FRDs, NIWC LANT/PAC, NSFA) in Chapter 4 and replaced the A-36/A-0 timeline loop with explicit nodes to avoid TikZ errors.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Switched `graphicspath` entries to `\\subfix{}` for reliable subfile and main builds; cleaned build artifacts and reran `latexmk -shell-escape src/main.tex` successfully (minted fallback warnings only).",
+          "checked": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "heading": "Session updates (2025-12-13)",
+      "level": 2,
+      "kind": "bullets",
+      "items": [
+        {
+          "text": "Minibib now prints only the label number and cited title by clearing non-title fields/macros per bibliography call while retaining refsegment numbering; `latexmk -shell-escape src/main.tex` succeeds after the update (pdf-backend still emits unreferenced destination warnings alongside minted fallback notices).",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Added Appendix C (CNO 34 Day One Message: Foundry--Fleet--Fight) with full mission/vision/priorities/theory-of-victory transcription and NAVADMIN citation; added a \\ac{c3} acronym entry; `latexmk -shell-escape src/main.tex` succeeds (minted fallback and existing overfull-box notices only).",
+          "checked": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "heading": "Session updates (2025-12-15)",
+      "level": 2,
+      "kind": "bullets",
+      "items": [
+        {
+          "text": "Codex Cloud: added `.codex/setup.sh` + `.codex/maintenance.sh` (apt-based TeX Live install) and `.codex/README.md` with environment configuration guidance.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Devcontainer: added `.devcontainer/MINIMUM.md` and `.devcontainer/examples/` (apt-min) listing the minimum binaries/packages to build; updated the list to include `texlive-pictures` + `texlive-bibtex-extra`.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "LaTeX: removed all minibib code from templates/chapters and removed the minibib macro from `src/moderntech-base.sty`; `latexmk -shell-escape src/main.tex` succeeds (overfull hbox warnings remain).",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Codex Cloud/Devcontainer: `fonts-fira` is now distro-aware (setup and devcontainer scripts auto-detect available Fira font packages); `latexmk -shell-escape src/main.tex` still succeeds (overfull \\hbox warnings remain in 18_test_eval and 24_Battle_Damage_Assessment_Repair).",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "TODO scan: `rg TODO src` has no hits.",
+          "checked": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "heading": "Session updates (2025-12-16)",
+      "level": 2,
+      "kind": "bullets",
+      "items": [
+        {
+          "text": "Added Appendix `appendix_community_rosters` with Cannon Cocker roster/pyramid, IWE job pyramid, and IWE roster pages from IWE Round-Up (12 Sep 2025).",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "LaTeX: extended `\\graphicspath` to include `assets/information/` and added a `.jfif` graphics rule for LuaLaTeX/PDF builds.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Build: `latexmk -shell-escape -interaction=nonstopmode src/main.tex` succeeds; warnings include PDF inclusion version (IWE Round-Up PDF 1.7 > 1.5 allowed) and existing overfull hbox notices.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Lookups integration: added CAPE/OMB execution controls, N8/N9 subcodes (N80/N81/N82/N9I/N95--N98), and marks/reclamas content into PPBE/Congressional Enactment/Execution sections; updated Key Roles appendix to match.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Acronyms/citations: added `OMB Circular A-11` and 10/31 U.S.C. entries; expanded `acronyms.def` for new OPNAV/board/OLA terms.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Added an appendix summarizing November 2025 EDO billets by community, location, and billet rank, sourced from `assets/information/EDO Main Slate November 2025.xlsx`; linked the new subfile into `src/main.tex`. Installed pandas/openpyxl locally to regenerate the grouping.",
+          "checked": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "heading": "Session updates (2025-12-17)",
+      "level": 2,
+      "kind": "bullets",
+      "items": [
+        {
+          "text": "Tooling: added `scripts/export_agents_json.py` and generated `AGENTS.json` (structured export of this file with checklist stats and derived fields).",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Build: fixed LuaLaTeX sandbox cache failures by setting `TEXMFVAR`/`TEXMFCACHE` in `latexmkrc` and rebuilding the `lualatex` format via `fmtutil-user`; `latexmk -shell-escape -interaction=nonstopmode src/main.tex` succeeds (overfull \\hbox warnings remain in 18_test_eval and 24_Battle_Damage_Assessment_Repair).",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "PDF: rebuilt `out/main.pdf` to include the November 2025 EDO billet summary appendix; removed a thin-space in the section title to avoid hyperref bookmark warnings.",
+          "checked": null,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "task_lists": {
+    "Lookups": {
+      "items": [
+        {
+          "text": "Review ADM Caudle's message to the fleet",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Specifics of CAPE's duties and responsibilities",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "What are the execution limits as prescribed by OMB",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "What are OMB's Roles and Responsbilities",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "Find and review exmaples of POM and BES documents",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "Find all OPNAV N codes for N8 and N9, provide description of what each of them do (partial: N80/N81/N82, N9I, N95--N98)",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "Provide a description of the Marks and Reclama Process",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "For CIVPERs, how are conduct and performance issues handled? How are they different?",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "GS Steps: What is the timing between each step that makes steps 1 to 10 take 18 years?",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "What are the NRO specifics for promotion in GS Ranks?",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "When a COC occurs, how long does the new OIC have to make changes before the Unions consider old actions permanement rules",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "What are the current proposed changes to streamline the GS payscales",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "How do we track expenditures and how do we know that we are on track with out spending?",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "What are the two ATR windows to request for reprogramming?",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "Who finalizes and writes the NDAA? Appropriations Bills?",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "What other items are in the NDAA beyond basic authorizations for spending?",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "Read the current (new) NDAA and NSS",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "How does IWS test terminal defense weapons such as CIWS",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "What is the ASN(RD&A) office structure. What are their job titles and fundtions?",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "More review of flags.",
+          "checked": false,
+          "children": []
+        }
+      ],
+      "stats": {
+        "total": 20,
+        "checked": 5,
+        "open": 15
+      }
+    },
+    "Current jobs": {
+      "items": [
+        {
+          "text": "Review entire scope of project; update `Other/project_export.json` to current project status.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Acronym audit: replace uppercase runs with `\\ac{}` in prose; add missing entries to `acronyms.def` (skip tables/headings).",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Refactor sectional tables to `longtblr` in house style.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Add CIVPERs coursebook content as a new section using the subfile template.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Adjust List of Tables and List of Figures formatting to match the ToC.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Resolve unreferenced citation warnings emitted by `latexmk`.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Add labels to all chapters, sections, and subsections.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Audit `acronyms.def` grouping and plural forms.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Update flag appendix and billet callouts per Dec 2025 org chart/bios; remove non-EDO PEO billets (and note PEO USC is SES; RDML Smith relieved).",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Add PPBE graphics from Platinum Card into Chapter 6.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Fix hyperlinks and hyperrefs (clickable links in PDF).",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Resolve excessive subsection label reference noise.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Fix latexmk failure after clean build (longtblr runaway argument; missing bcf/bbl).",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Restore table column types: F -> l, L -> X, W -> X; remove no-longer-needed custom column types.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Determine why IfSubFileClass functions were not activating.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Update `src/templates/subfile_template.tex` guidance (remove stale placeholders).",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Build a single-glance table linking \\ac{opnavinst} 4700.7M, \\ac{opnavnote} 4700, \\ac{jfmm}, and \\ac{cbmp} to owners/impacts/talking points.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Add an `\\ac{opm}` acronym definition and update CIVPERS guidance to use it.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Develop a CNO Availability Execution phase table mapping phases to deliverables/docs/leaders.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Build an A-36/A-21/A-12/A-3 availability planning timeline graphic with reviews/deliverables.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Add a nuclear waterfront project-team schematic (NRRO, RPCO, NSA/LMA, Ship's Force, contractor interactions).",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Insert a BDAR continuum figure (Damage Control -> Expeditionary -> Depot repair) with responsible orgs.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Add a maintenance-level coverage figure mapping O-/I-/Depot-level tasks to NSYs, RMCs, \\ac{supship}s, and private yards.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Insert a DoW-wide test and evaluation organization graphic (\\ac{osd} \\ac{dote}, \\ac{dasdte}, Service OTAs, warfare centers).",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Create a modernization document ownership/timing/funding table (Change Notice, JCF, SHIPALT record, installation drawing).",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Provide an AIT swim-lane diagram (Sponsor, AIT Manager, \\ac{rmmco}, \\ac{nsa}) from screening through certification.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Add a NAVSEA Org Chart Dec 2025 bibliography entry and cite it in the NWC map figure caption.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Resolve duplicate labels from automatic section label generation in subfiles.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "The first table label is skipped. Fix to ensure all table labels show up.",
+          "checked": false,
+          "children": []
+        },
+        {
+          "text": "Hyperref: use `linkcolor=black` (do not use AccentBlue).",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Insert a NAVWAR enterprise structure graphic in Chapter 4 to replace the removed TODO note.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Codex Cloud: add startup scripts to install TeX Live and required binaries.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Remove minibib code from templates and the study guide.",
+          "checked": true,
+          "children": []
+        },
+        {
+          "text": "Add appendix with Cannon Cocker and IWE rosters/pyramids.",
+          "checked": true,
+          "children": []
+        }
+      ],
+      "stats": {
+        "total": 34,
+        "checked": 33,
+        "open": 1
+      }
+    }
+  },
+  "session_updates": [
+    {
+      "date": "2025-12-08",
+      "items": [
+        "Acronym audit: cleaned 10_Cost_Fundamentals, 12_Solicitation, 15_policy, 16_Milestones; added COTS, COFC, IT, and IRB definitions.",
+        "Added \\ac{navseainst} and \\ac{opnavnote} definitions; wrapped fleet maintenance policy items and modernization TSRA reference with \\ac{} usage; updated Fast Cues (\\ac{pta}, \\ac{supship}/\\ac{navsea}).",
+        "NAVWAR/Modernization touch-ups: wrapped \\ac{opnavinst} 3040.2B reference in BDAR; reduced uppercase runs in modernization governance (\\ac{nmp}, \\ac{jfmm}).",
+        "Build: `latexmk -shell-escape src/main.tex` succeeded after updates; many unreferenced citation warnings remain (see log)."
+      ]
+    },
+    {
+      "date": "2025-12-09",
+      "items": [
+        "Acronym audit continued: waterfront SUBSAFE/work-control bullets now use \\ac{navsea}, \\ac{navsup}, \\ac{ss800}, \\ac{waf}, and \\ac{oqe}; AIT section aligns to \\ac{ait} roles and \\ac{nmp} references; NWCF cash-flow step now uses \\ac{eft} and \\ac{fmr}.",
+        "New acronyms added: \\ac{ss800} (Submergence Systems Certification manual series) and \\ac{eft} (Electronic Funds Transfer).",
+        "Build: `latexmk -shell-escape src/main.tex` successful."
+      ]
+    },
+    {
+      "date": "2025-12-10",
+      "items": [
+        "Resolved PDF backend unreferenced-destination warnings by suppressing per-chapter minibib output in main builds; `latexmk -shell-escape src/main.tex` is clean of those warnings.",
+        "Added biblatex hyperlink formatting for citation labels/shorthands to tackle unreferenced destination warnings; full `latexmk -shell-escape src/main.tex` still succeeds but the pdf backend continues to report unreferenced citation/glossary destinations (needs follow-up).",
+        "Continued acronym sweep in contracting and funding chapters (FAR/NMCARS/DFARS prose, LOA/CSSQT, LLTM, opnavinst 4700.7M references) and added \\ac{} coverage to solicitation and cost/price evaluation checklists.",
+        "Added message redirection in `main.tex` to suppress pdf-backend \"unreferenced destination\" warnings; warnings still emit and need further suppression/tuning.",
+        "Kept per-chapter minibib active with hyperref disabled around entries; full `latexmk -shell-escape src/main.tex` builds succeed (out/main.pdf) with unreferenced-destination warnings remaining.",
+        "Silenced pdf-backend \"unreferenced destination\" spam by disabling bibitem hypertargets (`\\DeclareFieldFormat{bibhyperref}` / `bibhypertarget` as identity) and adding hidden glossary links for \\ac{ppbe} and \\ac{dow}; pdf backend warnings now clean on `latexmk -shell-escape src/main.tex`.",
+        "`latexmk -shell-escape src/main.tex` now completes without unreferenced destination warnings (overfull boxes remain).",
+        "Added \\ac{subtech} definition and wrapped remaining Open \\ac{dagir} references in the current events appendix; `latexmk -shell-escape src/main.tex` still succeeds (only overfull boxes/minted fallback warnings).",
+        "Softened layout warnings by setting `\\emergencystretch` to 1em and enabling `\\raggedbottom` in `moderntech-base`; overfull \\vbox notices persist in dense figure/table sections but no other regressions observed.",
+        "Relaxed figure placement from `[H]` to `[htbp]` across chapters and Platinum Card appendix, and tightened float spacing in `moderntech-base`; overfull \\vbox notices dropped slightly in dense maintenance/policy sections.",
+        "Added auto-labeling for numbered chapters/sections/subsections, expanded plural forms/grouping in `acronyms.def`, and updated the EDO flag appendix to remove non-EDO PEO billets per Dec 2025 bios; `latexmk -shell-escape src/main.tex` succeeds with only overfull boxes/minted fallback warnings."
+      ]
+    },
+    {
+      "date": "2025-12-11",
+      "items": [
+        "Changed global float placement defaults in `moderntech-base` to `htbp` to relax float anchoring; rebuilt to clear remaining overfull \\vbox warnings in maintenance/policy chapters and appendices.",
+        "Cleaned the build directory and reran `latexmk -shell-escape src/main.tex`; build completes without overfull box warnings (minted fallback notices remain).",
+        "Updated NAVSEA billet callouts per the Dec 2025 org chart (COMNAVSEA ADM Houston is a Submarine officer; PEO IWS RDML Dickinson and PEO MLB RDML Biehn are SWO APs; NAVSEA 05 RDML Seif is a Submarine AP); adjusted EDO flag appendix and chain-of-command notes accordingly.",
+        "Added Platinum Card PPBE graphics (Planning phase and concurrent Program/Budget review) into Chapter 6.",
+        "Set all subfiles to point at `../src/main.tex` for both the `% !TEX root` directive and subfiles class option; cleaned `build/` and reran `latexmk -shell-escape src/main.tex`, which then failed with a longtblr runaway-argument error in 6_PPBE (tab:ppbe_key_terms) and incomplete `build/main.bcf`/`build/main.bbl`."
+      ]
+    },
+    {
+      "date": "2025-12-12",
+      "items": [
+        "Corrected tabularray defaults (header row/first column styling, ragged body text) and ensured Merriweather Black is used for bold serif cells; aligned defaults so L columns cover former l/X usage.",
+        "Inserted a NAVWAR enterprise structure graphic (HQ, PEO C4I/MLB, FRDs, NIWC LANT/PAC, NSFA) in Chapter 4 and replaced the A-36/A-0 timeline loop with explicit nodes to avoid TikZ errors.",
+        "Switched `graphicspath` entries to `\\subfix{}` for reliable subfile and main builds; cleaned build artifacts and reran `latexmk -shell-escape src/main.tex` successfully (minted fallback warnings only)."
+      ]
+    },
+    {
+      "date": "2025-12-13",
+      "items": [
+        "Minibib now prints only the label number and cited title by clearing non-title fields/macros per bibliography call while retaining refsegment numbering; `latexmk -shell-escape src/main.tex` succeeds after the update (pdf-backend still emits unreferenced destination warnings alongside minted fallback notices).",
+        "Added Appendix C (CNO 34 Day One Message: Foundry--Fleet--Fight) with full mission/vision/priorities/theory-of-victory transcription and NAVADMIN citation; added a \\ac{c3} acronym entry; `latexmk -shell-escape src/main.tex` succeeds (minted fallback and existing overfull-box notices only)."
+      ]
+    },
+    {
+      "date": "2025-12-15",
+      "items": [
+        "Codex Cloud: added `.codex/setup.sh` + `.codex/maintenance.sh` (apt-based TeX Live install) and `.codex/README.md` with environment configuration guidance.",
+        "Devcontainer: added `.devcontainer/MINIMUM.md` and `.devcontainer/examples/` (apt-min) listing the minimum binaries/packages to build; updated the list to include `texlive-pictures` + `texlive-bibtex-extra`.",
+        "LaTeX: removed all minibib code from templates/chapters and removed the minibib macro from `src/moderntech-base.sty`; `latexmk -shell-escape src/main.tex` succeeds (overfull hbox warnings remain).",
+        "Codex Cloud/Devcontainer: `fonts-fira` is now distro-aware (setup and devcontainer scripts auto-detect available Fira font packages); `latexmk -shell-escape src/main.tex` still succeeds (overfull \\hbox warnings remain in 18_test_eval and 24_Battle_Damage_Assessment_Repair).",
+        "TODO scan: `rg TODO src` has no hits."
+      ]
+    },
+    {
+      "date": "2025-12-16",
+      "items": [
+        "Added Appendix `appendix_community_rosters` with Cannon Cocker roster/pyramid, IWE job pyramid, and IWE roster pages from IWE Round-Up (12 Sep 2025).",
+        "LaTeX: extended `\\graphicspath` to include `assets/information/` and added a `.jfif` graphics rule for LuaLaTeX/PDF builds.",
+        "Build: `latexmk -shell-escape -interaction=nonstopmode src/main.tex` succeeds; warnings include PDF inclusion version (IWE Round-Up PDF 1.7 > 1.5 allowed) and existing overfull hbox notices.",
+        "Lookups integration: added CAPE/OMB execution controls, N8/N9 subcodes (N80/N81/N82/N9I/N95--N98), and marks/reclamas content into PPBE/Congressional Enactment/Execution sections; updated Key Roles appendix to match.",
+        "Acronyms/citations: added `OMB Circular A-11` and 10/31 U.S.C. entries; expanded `acronyms.def` for new OPNAV/board/OLA terms.",
+        "Added an appendix summarizing November 2025 EDO billets by community, location, and billet rank, sourced from `assets/information/EDO Main Slate November 2025.xlsx`; linked the new subfile into `src/main.tex`. Installed pandas/openpyxl locally to regenerate the grouping."
+      ]
+    },
+    {
+      "date": "2025-12-17",
+      "items": [
+        "Tooling: added `scripts/export_agents_json.py` and generated `AGENTS.json` (structured export of this file with checklist stats and derived fields).",
+        "Build: fixed LuaLaTeX sandbox cache failures by setting `TEXMFVAR`/`TEXMFCACHE` in `latexmkrc` and rebuilding the `lualatex` format via `fmtutil-user`; `latexmk -shell-escape -interaction=nonstopmode src/main.tex` succeeds (overfull \\hbox warnings remain in 18_test_eval and 24_Battle_Damage_Assessment_Repair).",
+        "PDF: rebuilt `out/main.pdf` to include the November 2025 EDO billet summary appendix; removed a thin-space in the section title to avoid hyperref bookmark warnings."
+      ]
+    }
+  ],
+  "open_tasks": [
+    {
+      "list": "Lookups",
+      "text": "What are OMB's Roles and Responsbilities"
+    },
+    {
+      "list": "Lookups",
+      "text": "Find and review exmaples of POM and BES documents"
+    },
+    {
+      "list": "Lookups",
+      "text": "Find all OPNAV N codes for N8 and N9, provide description of what each of them do (partial: N80/N81/N82, N9I, N95--N98)"
+    },
+    {
+      "list": "Lookups",
+      "text": "For CIVPERs, how are conduct and performance issues handled? How are they different?"
+    },
+    {
+      "list": "Lookups",
+      "text": "GS Steps: What is the timing between each step that makes steps 1 to 10 take 18 years?"
+    },
+    {
+      "list": "Lookups",
+      "text": "What are the NRO specifics for promotion in GS Ranks?"
+    },
+    {
+      "list": "Lookups",
+      "text": "When a COC occurs, how long does the new OIC have to make changes before the Unions consider old actions permanement rules"
+    },
+    {
+      "list": "Lookups",
+      "text": "What are the current proposed changes to streamline the GS payscales"
+    },
+    {
+      "list": "Lookups",
+      "text": "What are the two ATR windows to request for reprogramming?"
+    },
+    {
+      "list": "Lookups",
+      "text": "Who finalizes and writes the NDAA? Appropriations Bills?"
+    },
+    {
+      "list": "Lookups",
+      "text": "What other items are in the NDAA beyond basic authorizations for spending?"
+    },
+    {
+      "list": "Lookups",
+      "text": "Read the current (new) NDAA and NSS"
+    },
+    {
+      "list": "Lookups",
+      "text": "How does IWS test terminal defense weapons such as CIWS"
+    },
+    {
+      "list": "Lookups",
+      "text": "What is the ASN(RD&A) office structure. What are their job titles and fundtions?"
+    },
+    {
+      "list": "Lookups",
+      "text": "More review of flags."
+    },
+    {
+      "list": "Current jobs",
+      "text": "The first table label is skipped. Fix to ensure all table labels show up."
+    }
+  ],
+  "task_stats": {
+    "overall": {
+      "total": 54,
+      "checked": 38,
+      "open": 16
+    }
+  }
+}

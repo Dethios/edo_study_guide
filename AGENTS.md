@@ -21,6 +21,7 @@
   - Write a short summary of completed work and the context of the current chat.
   - Update `Other/project_export.json` with new context/instructions/status.
 - Update this file with task status changes and any new/recommended tasks or directives.
+- Run `python3 scripts/export_agents_json.py --root .` to refresh `AGENTS.json` (machine-readable export).
 - Run `latexmk -shell-escape` (project `latexmkrc` handles targets) and record warnings/errors.
 - Check off any TODOs you completed; search `src` for outstanding TODO comments that can be addressed.
 - Proceed with next recommended tasks automatically; if three next steps exist, execute all three.
@@ -147,3 +148,9 @@
 - Lookups integration: added CAPE/OMB execution controls, N8/N9 subcodes (N80/N81/N82/N9I/N95--N98), and marks/reclamas content into PPBE/Congressional Enactment/Execution sections; updated Key Roles appendix to match.
 - Acronyms/citations: added `OMB Circular A-11` and 10/31 U.S.C. entries; expanded `acronyms.def` for new OPNAV/board/OLA terms.
 - Added an appendix summarizing November 2025 EDO billets by community, location, and billet rank, sourced from `assets/information/EDO Main Slate November 2025.xlsx`; linked the new subfile into `src/main.tex`. Installed pandas/openpyxl locally to regenerate the grouping.
+
+## Session updates (2025-12-17)
+
+- Tooling: added `scripts/export_agents_json.py` and generated `AGENTS.json` (structured export of this file with checklist stats and derived fields).
+- Build: fixed LuaLaTeX sandbox cache failures by setting `TEXMFVAR`/`TEXMFCACHE` in `latexmkrc` and rebuilding the `lualatex` format via `fmtutil-user`; `latexmk -shell-escape -interaction=nonstopmode src/main.tex` succeeds (overfull \hbox warnings remain in 18_test_eval and 24_Battle_Damage_Assessment_Repair).
+- PDF: rebuilt `out/main.pdf` to include the November 2025 EDO billet summary appendix; removed a thin-space in the section title to avoid hyperref bookmark warnings.

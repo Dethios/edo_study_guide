@@ -2,8 +2,8 @@
   "project": {
     "name": "EDO Acquisition Tutor",
     "slug": "edo-acquisition-tutor",
-    "exported_at": "2025-12-16T12:55:19+00:00",
-    "current_as_of": "2025-12-16",
+    "exported_at": "2025-12-17T01:13:01+00:00",
+    "current_as_of": "2025-12-17",
     "instruction_pack_baseline": "2025-09-12",
     "tags": [
       "EDO",
@@ -36,6 +36,7 @@
       "Write a short summary of work and current chat context.",
       "Update Other/project_export.json with new context, instructions, or status.",
       "Update AGENTS.md with task status changes and any new/recommended tasks or directives.",
+      "Run python3 scripts/export_agents_json.py --root . to refresh AGENTS.json (machine-readable export of AGENTS.md).",
       "Run latexmk -shell-escape (project latexmkrc chooses targets) and capture warnings/errors.",
       "Check off completed TODOs; search src for outstanding TODO comments that can be addressed.",
       "Proceed with next recommended tasks automatically; if three next steps exist, execute all three."
@@ -125,6 +126,7 @@
       "latexmk": {
         "last_result": "success",
         "notes": [
+          "2025-12-17: Rebuilt out/main.pdf after merging the Nov 2025 EDO billet appendix; updated latexmkrc to set TEXMFVAR/TEXMFCACHE under build/ and regenerated the lualatex format via fmtutil-user to fix sandbox cache/support-file issues; latexmk -shell-escape src/main.tex succeeds (overfull \\hbox warnings remain).",
           "2025-12-16: Added appendix with Cannon Cocker and IWE rosters/job pyramids (assets/information); latexmk -shell-escape -interaction=nonstopmode src/main.tex succeeds (PDF inclusion warnings for IWE Round-Up PDF version 1.7).",
           "2025-12-16: Integrated Lookups1 topics (CAPE, OMB execution controls, N8/N9 subcodes, marks vs reclamas, execution tracking) into Chapters 6/8/9 and Key Roles appendix; added OMB A-11 and 10/31 U.S.C. citations; latexmk -shell-escape src/main.tex succeeds (overfull hbox and PDF inclusion warnings remain).",
           "2025-12-15: Removed minibib from templates and chapters; latexmk -shell-escape src/main.tex succeeds (overfull hbox warnings remain).",
@@ -397,6 +399,7 @@
       "SECDEF references retargeted to SECWAR (chain of command, PPBE, JCIDS, key roles); SECDEF glossary entry removed accordingly; latexmk -shell-escape succeeds (out/main.pdf).",
       "Acronym audit continued in appendix_current_events: wrapped NAVWAR/USFF/PACFLT/SYSCOM and added DIU and RIMPAC definitions; SECWAR/OMB phrasing aligned; latexmk -shell-escape still succeeds (out/main.pdf).",
       "AGENTS.md jobs updated: CIVPERS task marked complete; added follow-on jobs to clear unreferenced citation warnings and finish the remaining acronym audit.",
+      "AGENTS.md is exported to AGENTS.json via scripts/export_agents_json.py for machine-readable workflow/task tracking; regenerate after editing AGENTS.md.",
       "Acronym sweep expanded: new definitions for ANSI/EIA, EVMS, SHIPALT/AER/WPI, CANES/AWS/GPNTS, BDAR/WARP/MSP/OPCON, PRC/DPRK; wrapped corresponding prose in EVM, Milestones (FMS/DCS, OPNAV N8/N9), Modernization, AIT, and BDAR chapters.",
       "latexmk -shell-escape rebuild succeeds; unreferenced citation warnings remain (to be resolved per AGENTS.md jobs).",
       "Per 2025-12-08 user directive, recommended next actions were cleared; AGENTS.md now holds only the standing jobs, and project_export.json recommended_next_actions is empty. Acronym audit progressed in CNO Availability Planning (wrapped CNO-directed and EDOs with \\ac{}).",
@@ -734,6 +737,55 @@
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Data-driven summary; rerun grouping if billet file changes."
+      },
+      {
+        "title_or_slug": "AGENTS.md JSON export",
+        "date_range": "2025-12-17 to 2025-12-17",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Create a machine-readable JSON export of AGENTS.md instructions and task lists.",
+        "summary": "Added scripts/export_agents_json.py to parse AGENTS.md headings, checklists, and session updates into AGENTS.json (including derived fields and checklist stats); updated AGENTS.md workflow to regenerate the export and logged a new session update; updated project_export.json to reflect the new tooling.",
+        "key_decisions": [
+          "Keep AGENTS.md as the authoritative instruction source; treat AGENTS.json as a generated export for automation."
+        ],
+        "action_items": [
+          "Run python3 scripts/export_agents_json.py --root . after editing AGENTS.md."
+        ],
+        "linked_files": [
+          "AGENTS.md",
+          "AGENTS.json",
+          "scripts/export_agents_json.py",
+          "Other/project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling-only change; no acquisition content."
+      },
+      {
+        "title_or_slug": "Rebuild main.pdf after merge",
+        "date_range": "2025-12-17 to 2025-12-17",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Rebuild the tracked PDF output after merging the EDO billet appendix changes and ensure sandbox-friendly LuaLaTeX builds.",
+        "summary": "Updated latexmkrc to force TEXMFVAR/TEXMFCACHE into build/ so luaotfload/fontspec can write caches under sandbox; regenerated the lualatex format with fmtutil-user to resolve mismatched LaTeX support file errors; rebuilt out/main.pdf so it includes the November 2025 EDO billet distribution appendix (and removed a thin-space from the appendix section title to avoid hyperref bookmark warnings).",
+        "key_decisions": [
+          "Keep TeX runtime caches in build/ for portability across sandboxed environments."
+        ],
+        "action_items": [
+          "If a fresh TeX install shows 'Mismatched LaTeX support files', rerun fmtutil-user --byfmt lualatex (with TEXMFVAR pointing to a writable directory)."
+        ],
+        "linked_files": [
+          "latexmkrc",
+          "src/chapters/appendix_edo_billet_summary.tex",
+          "out/main.pdf",
+          "AGENTS.md",
+          "Other/project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Build/tooling update; PDF output may differ slightly across TeX installations."
       }
     ]
   },
