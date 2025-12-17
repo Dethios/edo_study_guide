@@ -1,0 +1,171 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../../build/main}}}{}
+% =============================================================================
+% APPENDIX: EDO BILLET SUMMARY
+% DESCRIPTION: Location and rank distribution from the November 2025 EDO main slate.
+% =============================================================================
+
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+
+\chapter{EDO Billet Distribution Summary}
+
+\section{EDO Billet Distribution (Nov\,2025 Main Slate)}\label{app:edo-billet-distribution}
+\begin{description}[style=nextline, labelsep=0.5em, font=\bfseries]
+  \item[\textbf{Purpose.}] Quick reference to where \acp{edo} have billets on the November~2025 main slate, grouped by community and sorted by location with billet counts by rank. Current as of 2025-11-01.
+  \item[\textbf{Method.}] Parsed the ``SLATE\_EDO\_MAIN'' worksheet in \emph{EDO Main Slate November 2025.xlsx} by mentor group (community), location (AHPORT), and billet rank (BRANK); rank order follows flag to junior officer seniority (\acs{vadm}, \acs{radm}, \acs{rdml}, CAPT, CDR, LCDR, LT, LTJG).
+\end{description}
+
+\begin{longtblr}[
+  caption = {EDO billet distribution by community, location, and billet rank (November~2025 main slate)},
+  label = {tab:edo-billet-distribution}
+]{
+  colspec = {llX},
+  rowhead = 1
+}
+\toprule
+\textbf{Community} & \textbf{Location} & \textbf{Billet ranks (count)} \\
+\midrule
+ANY & ANNAP & CAPT~1 / CDR~1 / LCDR~2 / LT~4 \\
+ANY & CAMBRI & CAPT~1 / LCDR~1 \\
+ANY & CRANE & CAPT~1 \\
+ANY & MACDIL & CAPT~1 / CDR~1 \\
+ANY & MILLIN & CAPT~1 / LCDR~3 \\
+ANY & MONTEY & CDR~1 \\
+ANY & P HUEN & CAPT~1 / CDR~1 / LCDR~2 \\
+CC & ADELAI & CDR~1 \\
+CC & ARLING & CDR~1 \\
+CC & BATH & LCDR~1 \\
+CC & CHINLA & LCDR~1 \\
+CC & D NECK & CDR~1 \\
+CC & DAHGRN & CAPT~4 / CDR~6 / LCDR~7 \\
+CC & FT MCN & CDR~1 \\
+CC & MOORES & CAPT~2 \\
+CC & NAV YD & LCDR~2 \\
+CC & NORVA & CDR~3 / LCDR~2 / LT~3 \\
+CC & P HUEN & CAPT~1 / CDR~4 / LCDR~3 / LT~2 \\
+CC & PASCAG & LCDR~1 \\
+CC & PEARL & CDR~1 \\
+CC & PNT & CAPT~1 / CDR~2 \\
+CC & SDGO & LCDR~1 \\
+CC & TUCSON & CDR~1 / LCDR~1 / LT~1 \\
+CC & WALLOS & CAPT~2 \\
+CC & WASHDC & CAPT~12 / CDR~8 / LCDR~9 / LT~1 \\
+CC & WSANDS & CDR~1 \\
+CVN-C & N NEWS & CAPT~1 / CDR~4 / LCDR~5 / LT~5 \\
+CVN-C & NORTI & CAPT~1 / CDR~3 / LCDR~1 \\
+CVN-C & NORVA & CAPT~1 / CDR~3 / LCDR~3 \\
+CVN-C & PNT & CAPT~1 / CDR~1 \\
+CVN-C & PTS VA & CAPT~1 \\
+CVN-C & SDGO & CAPT~2 / CDR~5 / LCDR~3 \\
+CVN-C & WASHDC & CAPT~4 / CDR~4 / LCDR~3 \\
+CVN-C & YOKSKA & LCDR~1 \\
+DIVER & L CRK & LCDR~1 \\
+DIVER & MANAMA & CDR~1 / LT~1 \\
+DIVER & NORTI & LCDR~1 \\
+DIVER & PANFLA & CDR~1 / LT~1 \\
+DIVER & PEARL & CDR~1 / LCDR~1 \\
+DIVER & ROTA & LT~1 \\
+DIVER & WASHDC & CAPT~1 / LCDR~4 / LT~1 \\
+FLAG & NAV YD & \acs{vadm}~1 \\
+FLAG & PEARL & \acs{rdml}~1 \\
+FLAG & SDGO & \acs{rdml}~1 \\
+FLAG & WASHDC & \acs{vadm}~1 / \acs{radm}~2 / \acs{rdml}~5 / LCDR~1 \\
+IMG & AGANA & CDR~3 \\
+IMG & APRA & CDR~1 \\
+IMG & BANGOR & CDR~1 \\
+IMG & BREM & CAPT~4 / CDR~5 / LCDR~6 / LT~13 \\
+IMG & FTMONR & CAPT~1 \\
+IMG & GROTON & CDR~1 \\
+IMG & K BAY & CDR~2 \\
+IMG & KEYPRT & CAPT~1 \\
+IMG & NORVA & \acs{radm}~1 / CAPT~2 / CDR~3 / LCDR~2 / LT~1 \\
+IMG & PEARL & CAPT~6 / CDR~5 / LCDR~6 / LT~10 \\
+IMG & PERTH & LCDR~1 \\
+IMG & PNT & CAPT~1 / CDR~1 \\
+IMG & PTLOMO & CDR~1 \\
+IMG & PTS NH & CAPT~4 / CDR~3 / LCDR~8 / LT~8 \\
+IMG & PTS VA & CAPT~4 / CDR~5 / LCDR~5 / LT~11 \\
+IMG & WASHDC & CAPT~3 / CDR~2 / LCDR~1 \\
+IWE & AGANA & LCDR~1 \\
+IWE & BREM & LCDR~1 \\
+IWE & CHARLE & CAPT~1 / CDR~1 / LCDR~1 / LT~3 \\
+IWE & CHNTIL & CDR~1 / LCDR~6 / LT~7 \\
+IWE & CORNDO & LCDR~1 \\
+IWE & F CHCH & CAPT~1 \\
+IWE & F MEAD & LT~1 \\
+IWE & MANAMA & LCDR~1 \\
+IWE & NAPLES & CDR~1 \\
+IWE & NAV YD & CDR~1 \\
+IWE & NORVA & CAPT~1 / CDR~1 / LCDR~2 \\
+IWE & ORLEAN & CDR~1 \\
+IWE & PEARL & CAPT~1 \\
+IWE & PNT & LCDR~1 \\
+IWE & PTS VA & LCDR~4 / LT~2 \\
+IWE & SDGO & \acs{radm}~1 / CAPT~7 / CDR~14 / LCDR~21 / LT~5 \\
+IWE & SUFFLK & LT~1 \\
+IWE & WASHDC & CDR~2 / LCDR~3 \\
+IWE & YOKSKA & CDR~1 / LCDR~2 \\
+NR & ARLING & CAPT~4 / CDR~4 / LCDR~9 / LT~9 / LTJG~1 \\
+NR & BREM & LT~1 \\
+NR & GROTON & LCDR~1 \\
+NR & PEARL & LCDR~2 \\
+NR & WASHDC & CDR~1 \\
+NR & YOKSKA & LCDR~1 \\
+RESERVE & BREM & LCDR~1 \\
+RESERVE & PEARL & LCDR~1 \\
+RESERVE & PTS VA & LT~1 \\
+RESERVE & WASHDC & CAPT~1 / LT~1 \\
+SMMR & ALJUBA & LCDR~1 \\
+SMMR & ARLING & CAPT~1 \\
+SMMR & CORNDO & CAPT~1 / CDR~2 / LCDR~6 / LT~2 \\
+SMMR & EVERET & CAPT~1 / CDR~1 / LT~3 \\
+SMMR & L CRK & LCDR~1 \\
+SMMR & MANAMA & CDR~2 / LCDR~1 / LT~1 \\
+SMMR & MAYPRT & CAPT~2 / CDR~2 / LCDR~6 / LT~2 \\
+SMMR & NAPLES & CAPT~2 \\
+SMMR & NORVA & CAPT~6 / CDR~9 / LCDR~10 / LT~9 \\
+SMMR & PEARL & CAPT~1 / LCDR~2 \\
+SMMR & PNT & CDR~1 \\
+SMMR & RIYADH & CDR~1 \\
+SMMR & ROTA & CDR~1 / LT~1 \\
+SMMR & SASEBO & CDR~2 / LCDR~1 / LT~3 \\
+SMMR & SDGO & CAPT~4 / CDR~5 / LCDR~5 / LT~6 \\
+SMMR & SINGAP & CDR~1 \\
+SMMR & WASHDC & LCDR~3 \\
+SMMR & YOKSKA & CAPT~1 / CDR~3 / LCDR~4 / LT~5 / LTJG~1 \\
+SSP & CP CAN & CDR~1 \\
+SSP & K BAY & CAPT~1 / CDR~1 / LCDR~1 / LT~1 \\
+SSP & LITTLE & CAPT~1 / CDR~1 / LCDR~2 / LT~1 \\
+SSP & MAGNA & CDR~1 \\
+SSP & NAV YD & CAPT~5 / CDR~8 / LCDR~7 / LT~2 \\
+SSP & PITFLD & CAPT~1 / LCDR~1 \\
+SSP & SIVDLE & CAPT~1 / CDR~1 / LCDR~1 / LT~1 \\
+SSP & SUNVAL & LCDR~1 \\
+SSP & TITUSV & LCDR~1 \\
+SSP & UNDALE & LT~1 \\
+SURFPK & BATH & CAPT~1 / CDR~1 / LCDR~1 \\
+SURFPK & BETHES & CAPT~1 \\
+SURFPK & MARINE & CDR~2 / LCDR~3 / LT~2 \\
+SURFPK & MOBILE & CDR~1 / LCDR~2 \\
+SURFPK & NORVA & LCDR~2 \\
+SURFPK & ORLEAN & CDR~2 / LCDR~1 / LT~1 \\
+SURFPK & PASCAG & CAPT~2 / CDR~6 / LCDR~4 / LT~4 \\
+SURFPK & PHILA & CAPT~1 / LCDR~1 \\
+SURFPK & PNT & CDR~1 / LCDR~1 \\
+SURFPK & SDGO & CDR~1 / LCDR~1 / LT~1 \\
+SURFPK & WASHDC & CAPT~10 / CDR~22 / LCDR~7 \\
+UEDO & ARLING & LCDR~1 \\
+UEDO & GROTON & CAPT~1 / CDR~4 / LCDR~10 / LT~4 \\
+UEDO & N NEWS & CDR~2 / LCDR~3 / LT~5 \\
+UEDO & NORVA & LCDR~1 \\
+UEDO & PNT & CDR~1 \\
+UEDO & PTS NH & CAPT~1 \\
+UEDO & SDGO & LCDR~1 \\
+UEDO & WASHDC & CAPT~7 / CDR~9 / LCDR~18 \\
+\bottomrule
+\end{longtblr}
+
+\end{document}

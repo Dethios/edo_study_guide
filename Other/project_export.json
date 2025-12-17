@@ -2,7 +2,7 @@
   "project": {
     "name": "EDO Acquisition Tutor",
     "slug": "edo-acquisition-tutor",
-    "exported_at": "2025-12-16T09:51:44-05:00",
+    "exported_at": "2025-12-16T12:55:19+00:00",
     "current_as_of": "2025-12-16",
     "instruction_pack_baseline": "2025-09-12",
     "tags": [
@@ -710,6 +710,30 @@
           "USC-1512-Apportionment"
         ],
         "bias_or_quality_notes": "N-code org structures can churn; validate subcode labels week-of."
+      },
+      {
+        "title_or_slug": "EDO billet appendix from Nov 2025 slate",
+        "date_range": "2025-12-16 to 2025-12-16",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Add an appendix summarizing November 2025 EDO billets by community, location, and billet rank.",
+        "summary": "Built a tabular appendix grouping the November 2025 EDO main slate by community, sorted locations, and billet rank counts; linked the new subfile into the appendices.",
+        "key_decisions": [
+          "Sort billets by community then location with flag-to-junior rank ordering for counts.",
+          "Document data lineage to the SLATE_EDO_MAIN worksheet in the November 2025 slate workbook."
+        ],
+        "action_items": [
+          "Refresh counts if a newer slate is released; update appendix date stamp accordingly."
+        ],
+        "linked_files": [
+          "assets/information/EDO Main Slate November 2025.xlsx",
+          "src/chapters/appendix_edo_billet_summary.tex",
+          "src/main.tex"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Data-driven summary; rerun grouping if billet file changes."
       }
     ]
   },
