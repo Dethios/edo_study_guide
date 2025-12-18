@@ -28,18 +28,18 @@
 ## Lookups
 
 - [X] Review ADM Caudle's message to the fleet
-- [ ] Specifics of CAPE's duties and responsibilities
-- [ ] What are the execution limits as prescribed by OMB
+- [x] Specifics of CAPE's duties and responsibilities
+- [x] What are the execution limits as prescribed by OMB
 - [ ] What are OMB's Roles and Responsbilities
 - [ ] Find and review exmaples of POM and BES documents
-- [ ] Find all OPNAV N codes for N8 and N9, provide description of what each of them do
-- [ ] Provide a description of the Marks and Reclama Process
-- [ ] For CIVPERs, how are conduct and performance issues handled? How are they different?
-- [ ] GS Steps: What is the timing between each step that makes steps 1 to 10 take 18 years?
+- [ ] Find all OPNAV N codes for N8 and N9, provide description of what each of them do (partial: N80/N81/N82, N9I, N95--N98)
+- [x] Provide a description of the Marks and Reclama Process
+- [x] For CIVPERs, how are conduct and performance issues handled? How are they different?
+- [x] GS Steps: What is the timing between each step that makes steps 1 to 10 take 18 years?
 - [ ] What are the NRO specifics for promotion in GS Ranks?
-- [ ] When a COC occurs, how long does the new OIC have to make changes before the Unions consider old actions permanement rules
+- [x] When a COC occurs, how long does the new OIC have to make changes before the Unions consider old actions permanement rules
 - [ ] What are the current proposed changes to streamline the GS payscales
-- [ ] How do we track expenditures and how do we know that we are on track with out spending?
+- [x] How do we track expenditures and how do we know that we are on track with out spending?
 - [ ] What are the two ATR windows to request for reprogramming?
 - [ ] Who finalizes and writes the NDAA? Appropriations Bills?
 - [ ] What other items are in the NDAA beyond basic authorizations for spending?
@@ -83,6 +83,7 @@
 - [x] Insert a NAVWAR enterprise structure graphic in Chapter 4 to replace the removed TODO note.
 - [x] Codex Cloud: add startup scripts to install TeX Live and required binaries.
 - [x] Remove minibib code from templates and the study guide.
+- [x] Add appendix with Cannon Cocker and IWE rosters/pyramids.
 
 ## Session updates (2025-12-08)
 
@@ -140,6 +141,11 @@
 
 ## Session updates (2025-12-16)
 
+- Added Appendix `appendix_community_rosters` with Cannon Cocker roster/pyramid, IWE job pyramid, and IWE roster pages from IWE Round-Up (12 Sep 2025).
+- LaTeX: extended `\graphicspath` to include `assets/information/` and added a `.jfif` graphics rule for LuaLaTeX/PDF builds.
+- Build: `latexmk -shell-escape -interaction=nonstopmode src/main.tex` succeeds; warnings include PDF inclusion version (IWE Round-Up PDF 1.7 > 1.5 allowed) and existing overfull hbox notices.
+- Lookups integration: added CAPE/OMB execution controls, N8/N9 subcodes (N80/N81/N82/N9I/N95--N98), and marks/reclamas content into PPBE/Congressional Enactment/Execution sections; updated Key Roles appendix to match.
+- Acronyms/citations: added `OMB Circular A-11` and 10/31 U.S.C. entries; expanded `acronyms.def` for new OPNAV/board/OLA terms.
 - Added an appendix summarizing November 2025 EDO billets by community, location, and billet rank, sourced from `assets/information/EDO Main Slate November 2025.xlsx`; linked the new subfile into `src/main.tex`. Installed pandas/openpyxl locally to regenerate the grouping.
 
 ## Session updates (2025-12-17)
@@ -149,3 +155,13 @@
 ## Session updates (2025-12-18)
 
 - Removed the tracked `out/main.pdf` build artifact and ignored the `out/` directory to keep binaries out of future commits.
+- Added a labor-relations research note on change of command timing, emphasizing that no formal grace period exists and highlighting past-practice bargaining obligations and the 90-day CCA assessment window.
+
+## Session updates (2025-12-18)
+
+- Integrated the past-practice change-of-command guidance into the CIVPERS labor relations section with \ac{oic}/\ac{cca} acronyms and FLRA/OPNAVINST citations.
+- CIVPERS: added \ac{gs} within-grade waiting periods (1/2/3-year tiers) and 18-year Step 1--10 timeline with \ac{qsi} note.
+- CIVPERS: expanded performance v.s.\ conduct guidance with comparison table, action ladders, and Weingarten/\ac{eeo} rights reminders.
+- Acronyms/bib: defined \ac{wgi}/\ac{qsi} and added \ac{opm} fact sheet and National Guard Technician Handbook citations.
+- CIVPERS tables: removed \ac{} in headings/captions and spelled out terms (AWOL, PIP) to meet house style; `latexmk -shell-escape -interaction=nonstopmode src/main.tex` hit max reruns with unresolved citations after repeated compilation attempts.
+- Removed stray log/build artifacts (latexindent log, scratch acronym test outputs, generated PDFs) to keep the repository free of backup/error files.

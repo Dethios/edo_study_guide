@@ -29,6 +29,7 @@
 \RequirePackage{graphicx}
 \RequirePackage[export]{adjustbox}   % e.g., \includegraphics[width=\linewidth,frame]
 \RequirePackage{grffile}
+\DeclareGraphicsRule{.jfif}{jpg}{.jfif}{}
 \RequirePackage[mode=buildnew]{standalone}
 \RequirePackage{subfiles}
 \@ifclassloaded{subfiles}{\MTSubfilestrue}{\MTSubfilesfalse}
@@ -46,6 +47,9 @@
   {\subfix{assets/images/}}%
   {\subfix{../assets/images/}}%
   {\subfix{../../assets/images/}}%
+  {\subfix{assets/information/}}%
+  {\subfix{../assets/information/}}%
+  {\subfix{../../assets/information/}}%
   {\subfix{src/tikz/}}%
   {\subfix{tikz/}}%
   {\subfix{../tikz/}}%
