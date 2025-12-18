@@ -2,7 +2,7 @@
   "project": {
     "name": "EDO Acquisition Tutor",
     "slug": "edo-acquisition-tutor",
-    "exported_at": "2025-12-18T14:10:15.309467+00:00"
+    "exported_at": "2025-12-18T14:10:15.309467+00:00",
     "current_as_of": "2025-12-17",
     "instruction_pack_baseline": "2025-09-12",
     "tags": [
@@ -123,11 +123,8 @@
     ],
     "build": {
       "latexmk": {
-        "last_result": "failure",
+        "last_result": "success",
         "notes": [
-          "2025-12-17: latexmk -shell-escape -interaction=nonstopmode src/main.tex ran to max lualatex passes with unresolved citations after repeated interrupts; build stopped with incomplete bcf/bbl and many undefined references (see build/main.log).",
-          "2025-12-16: Added appendix with Cannon Cocker and IWE rosters/job pyramids (assets/information); latexmk -shell-escape -interaction=nonstopmode src/main.tex succeeds (PDF inclusion warnings for IWE Round-Up PDF version 1.7).",
-          "2025-12-16: Integrated Lookups1 topics (CAPE, OMB execution controls, N8/N9 subcodes, marks vs reclamas, execution tracking) into Chapters 6/8/9 and Key Roles appendix; added OMB A-11 and 10/31 U.S.C. citations; latexmk -shell-escape src/main.tex succeeds (overfull hbox and PDF inclusion warnings remain).",
           "2025-12-15: Removed minibib from templates and chapters; latexmk -shell-escape src/main.tex succeeds (overfull hbox warnings remain).",
           "2025-12-15: Added Codex Cloud setup/maintenance scripts (.codex/) and devcontainer minimum docs/examples for TeX Live tooling (apt-based; includes texlive-pictures and texlive-bibtex-extra).",
           "2025-12-13: Minibib entries now display only label numbers and titles via per-bibliography field clearing; latexmk -shell-escape src/main.tex succeeds but pdf backend reports ~537 unreferenced destination warnings (minted fallback warnings also present).",
@@ -147,7 +144,8 @@
           "Full build of src/main.tex completes in ~106s to out/main.pdf.",
           "moderntech-base reports shell-escape disabled for minted and falls back to listings.",
           "2025-12-08: latexmk -shell-escape src/main.tex succeeded after adding missing acronym definitions; numerous unreferenced citations still present (see build/main.log).",
-          "2025-12-09: latexmk -shell-escape src/main.tex succeeded after extending acronym coverage (SS800, EFT, AIT/NWCF updates); unreferenced citation warnings persist (build/main.log)."
+          "2025-12-09: latexmk -shell-escape src/main.tex succeeded after extending acronym coverage (SS800, EFT, AIT/NWCF updates); unreferenced citation warnings persist (build/main.log).",
+          "2025-12-18: Forced latexmk -shell-escape -interaction=nonstopmode -gg src/main.tex completed after an extended run; numerous pre-existing undefined citation warnings remain (see build/main.log)."
         ],
         "command": "latexmk -shell-escape"
       }
@@ -288,6 +286,10 @@
       {
         "title": "Add appendix with Cannon Cocker and IWE rosters/pyramids.",
         "status": "done"
+      },
+      {
+        "title": "Lookups1 integration into study guide.",
+        "status": "done"
       }
     ],
     "recommended_next_actions": []
@@ -417,8 +419,7 @@
       "2025-12-12: Rebuilt after tabular defaults/Navwar graphic updates; latexmk -shell-escape src/main.tex now succeeds (minted fallback warnings only).",
       "2025-12-13: Minibib now strips entries to label number plus title by clearing non-title fields/macros per print; latexmk -shell-escape src/main.tex succeeds but pdf backend now reports unreferenced destination warnings (~537 glossary anchors).",
       "2025-12-13: Added Appendix CNO 34 Day One Message (Foundry--Fleet--Fight) with full mission/vision/priorities/theory-of-victory transcription and NAVADMIN citation; added a C3 acronym entry; latexmk -shell-escape src/main.tex succeeds (minted fallback/overfull-box notices remain).",
-      "2025-12-15: Added Codex Cloud setup/maintenance scripts (.codex/) and devcontainer minimum docs/examples for TeX Live tooling (apt-based; includes texlive-pictures and texlive-bibtex-extra); removed minibib from LaTeX sources; latexmk -shell-escape src/main.tex succeeds.",
-      "2025-12-16: Added appendix with Cannon Cocker and IWE rosters/job pyramids (assets/information); updated LaTeX graphics handling for .jfif and information assets."
+      "2025-12-15: Added Codex Cloud setup/maintenance scripts (.codex/) and devcontainer minimum docs/examples for TeX Live tooling (apt-based; includes texlive-pictures and texlive-bibtex-extra); removed minibib from LaTeX sources; latexmk -shell-escape src/main.tex succeeds."
     ]
   },
   "history": {
@@ -659,6 +660,77 @@
         "bias_or_quality_notes": "Tooling maintenance; improves environment portability."
       },
       {
+        "title_or_slug": "EDO billet appendix from Nov 2025 slate",
+        "date_range": "2025-12-16 to 2025-12-16",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Add an appendix summarizing November 2025 EDO billets by community, location, and billet rank.",
+        "summary": "Built a tabular appendix grouping the November 2025 EDO main slate by community, sorted locations, and billet rank counts; linked the new subfile into the appendices.",
+        "key_decisions": [
+          "Sort billets by community then location with flag-to-junior rank ordering for counts.",
+          "Document data lineage to the SLATE_EDO_MAIN worksheet in the November 2025 slate workbook."
+        ],
+        "action_items": [
+          "Refresh counts if a newer slate is released; update appendix date stamp accordingly."
+        ],
+        "linked_files": [
+          "assets/information/EDO Main Slate November 2025.xlsx",
+          "src/chapters/appendix_edo_billet_summary.tex",
+          "src/main.tex"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Data-driven summary; rerun grouping if billet file changes."
+      },
+      {
+        "title_or_slug": "EDO billet location expansions",
+        "date_range": "2025-12-17 to 2025-12-17",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Expand abbreviated AHPORT locations in the EDO billet appendix and flag unclear codes for follow-up.",
+        "summary": "Mapped AHPORT location codes to best-effort city/state/country names in the billet appendix and added a note requesting confirmation of ambiguous codes.",
+        "key_decisions": [
+          "Normalize BRANK RDMU entries to RADM for count ordering.",
+          "Sort communities by expanded location names rather than abbreviations."
+        ],
+        "action_items": [
+          "Confirm or correct ambiguous location codes: ALJUBA, CAMBRI, FINEGA, LITTLE, MAGNA, MARINE, NHPA, PNT, UNDALE."
+        ],
+        "linked_files": [
+          "assets/information/EDO Main Slate November 2025.xlsx",
+          "src/chapters/appendix_edo_billet_summary.tex",
+          "AGENTS.md"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Best-effort expansions based on billet context; awaiting user confirmation for listed codes."
+      },
+      {
+        "title_or_slug": "Removed tracked PDF artifact",
+        "date_range": "2025-12-18 to 2025-12-18",
+        "participants": [
+          "assistant"
+        ],
+        "purpose": "Stop committing generated PDFs that block PR tooling.",
+        "summary": "Deleted the tracked out/main.pdf build artifact and added the out/ directory to .gitignore to prevent future binary commits.",
+        "key_decisions": [
+          "Ignore the LaTeX out/ directory in git.",
+          "Remove existing built PDFs from version control."
+        ],
+        "action_items": [
+          "Regenerate PDFs locally when needed; do not commit them."
+        ],
+        "linked_files": [
+          "out/main.pdf",
+          ".gitignore",
+          "AGENTS.md"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Repository hygiene; removes binary from PR diff."
+      },
+      {
         "title_or_slug": "Appendix: Cannon Cocker and IWE rosters",
         "date_range": "2025-12-16 to 2025-12-16",
         "participants": [
@@ -711,115 +783,6 @@
           "USC-1512-Apportionment"
         ],
         "bias_or_quality_notes": "N-code org structures can churn; validate subcode labels week-of."
-      },
-      {
-        "title_or_slug": "EDO billet appendix from Nov 2025 slate",
-        "date_range": "2025-12-16 to 2025-12-16",
-        "participants": [
-          "user",
-          "assistant"
-        ],
-        "purpose": "Add an appendix summarizing November 2025 EDO billets by community, location, and billet rank.",
-        "summary": "Built a tabular appendix grouping the November 2025 EDO main slate by community, sorted locations, and billet rank counts; linked the new subfile into the appendices.",
-        "key_decisions": [
-          "Sort billets by community then location with flag-to-junior rank ordering for counts.",
-          "Document data lineage to the SLATE_EDO_MAIN worksheet in the November 2025 slate workbook."
-        ],
-        "action_items": [
-          "Refresh counts if a newer slate is released; update appendix date stamp accordingly."
-        ],
-        "linked_files": [
-          "assets/information/EDO Main Slate November 2025.xlsx",
-          "src/chapters/appendix_edo_billet_summary.tex",
-          "src/main.tex"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "Data-driven summary; rerun grouping if billet file changes."
-      },
-      {
-        "title_or_slug": "EDO billet location expansions",
-        "purpose": "Expand abbreviated AHPORT locations in the EDO billet appendix and flag unclear codes for follow-up.",
-        "summary": "Mapped AHPORT location codes to best-effort city/state/country names in the billet appendix and added a note requesting confirmation of ambiguous codes.",
-        "key_decisions": [
-          "Normalize BRANK RDMU entries to RADM for count ordering.",
-          "Sort communities by expanded location names rather than abbreviations."
-        ],
-        "action_items": [
-          "Confirm or correct ambiguous location codes: ALJUBA, CAMBRI, FINEGA, LITTLE, MAGNA, MARINE, NHPA, PNT, UNDALE."
-        ],
-        "linked_files": [
-          "assets/information/EDO Main Slate November 2025.xlsx",
-          "src/chapters/appendix_edo_billet_summary.tex",
-          "AGENTS.md"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "Best-effort expansions based on billet context; awaiting user confirmation for listed codes."
-      },
-      {
-        "title_or_slug": "Removed tracked PDF artifact",
-        "date_range": "2025-12-18 to 2025-12-18",
-        "participants": [
-          "assistant"
-        ],
-        "purpose": "Stop committing generated PDFs that block PR tooling.",
-        "summary": "Deleted the tracked out/main.pdf build artifact and added the out/ directory to .gitignore to prevent future binary commits.",
-        "key_decisions": [
-          "Ignore the LaTeX out/ directory in git.",
-          "Remove existing built PDFs from version control."
-        ],
-        "action_items": [
-          "Regenerate PDFs locally when needed; do not commit them."
-        ],
-        "linked_files": [
-          "out/main.pdf",
-          ".gitignore",
-          "AGENTS.md"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "Repository hygiene; removes binary from PR diff."
-        "date_range": "2025-12-17 to 2025-12-17",
-        "participants": [
-          "user",
-          "assistant"
-        ],
-        "purpose": "Capture \ac{gs} step timing, \ac{wgi}/\ac{qsi} rules, and the distinction between performance and conduct actions for supervisors.",
-        "summary": "Documented \ac{gs} \ac{wgi} waiting periods (1/2/3-year tiers) with the 18-year Step 1--10 timeline and \ac{qsi} exception; added performance-versus-conduct comparison table, action ladders for coaching/discipline, and reminders on Weingarten and \ac{eeo} protections.",
-        "key_decisions": [
-          "Use the \ac{opm} within-grade fact sheet and National Guard Technician Handbook as the baseline for \ac{wgi}/\ac{qsi} timing.",
-          "Present performance and conduct pathways side-by-side to emphasize standards of proof and progressive discipline expectations."
-        ],
-        "action_items": [
-          "Refresh \ac{wgi}/\ac{qsi} timing if \ac{opm} updates the fact sheet or DoN issues new guidance."
-        ],
-        "linked_files": [
-          "AGENTS.md",
-          "src/chapters/27_CIVPERS.tex",
-          "src/acronyms.def",
-          "src/edo.bib"
-        ],
-        "notable_citations": [
-          "opm-wgi-factsheet-2024",
-          "national-guard-technician-handbook-2023"
-        ],
-        "bias_or_quality_notes": "Policy may change; verify waiting periods and Douglas-factor applications with \ac{hro} counsel."
-        "title_or_slug": "Repository cleanup: remove stray artifacts",
-        "date_range": "2025-12-17 to 2025-12-17",
-        "participants": [
-          "assistant"
-        ],
-        "purpose": "Purge tracked backup/error outputs and generated PDFs to keep the repo clean.",
-        "summary": "Deleted latexindent log output, scratch acronym test build products, and the compiled out/main.pdf artifact so the repository only tracks source materials.",
-        "key_decisions": [
-          "Remove transient build/log/test files from version control to prevent backup/error clutter."
-        ],
-        "action_items": [
-          "If latexmk is rerun locally, ensure out/ remains untracked or cleaned before committing."
-        ],
-        "linked_files": [
-          "AGENTS.md"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "Cleanup only; no content changes."
       }
     ]
   },
@@ -874,13 +837,13 @@
           "assistant"
         ],
         "purpose": "Integrate past-practice/CCA change-of-command guidance into the CIVPERS labor relations section.",
-          "summary": "Added an \\ac{oic} past-practice reminder to CIVPERS labor relations with FLRA case law and OPNAVINST 5354.1H citations; defined \\ac{oic}/\\ac{cca} acronyms and noted the within-90-day assessment window as the best time to engage counsel and unions before altering practices.",
+        "summary": "Added an \\ac{oic} past-practice reminder to CIVPERS labor relations with FLRA case law and OPNAVINST 5354.1H citations; defined \\ac{oic}/\\ac{cca} acronyms and noted the within-90-day assessment window as the best time to engage counsel and unions before altering practices.",
         "key_decisions": [
           "Reinforce FLRA past-practice criteria and clarify that no grace period exists for new OICs when changing civilian conditions of employment.",
-            "Use the required within-90-day command climate assessment to surface changes early with \\ac{hro}/union partners instead of implying acceptance."
+          "Use the required within-90-day command climate assessment to surface changes early with \\ac{hro}/union partners instead of implying acceptance."
         ],
         "action_items": [
-            "Coordinate early with \\ac{hro} and union representatives before adjusting established civilian practices during command transition."
+          "Coordinate early with \\ac{hro} and union representatives before adjusting established civilian practices during command transition."
         ],
         "linked_files": [
           "src/chapters/27_CIVPERS.tex",
@@ -894,6 +857,33 @@
           "OPNAVINST-5354-1H"
         ],
         "bias_or_quality_notes": "Labor-relations guidance; verify local CBAs and legal counsel."
+      },
+      {
+        "title_or_slug": "CNO C-Notes appendix integration",
+        "date_range": "2025-12-18 to 2025-12-18",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Add CNO 34 C-Notes/Charge of Command content to the appendix and refresh supporting references/export metadata.",
+        "summary": "Inserted a consolidated CNO 34 C-Notes and Charge of Command section with executive summary plus full NAVADMIN verbatim texts, added bibliography entries for the messages, repaired project_export.json formatting, and verified a full latexmk rebuild (warnings for existing undefined citations remain).",
+        "key_decisions": [
+          "Aligned C-Notes and Charge of Command content within the existing Day One appendix using verbatim NAVADMIN text.",
+          "Added NAVADMIN bibliography stubs for C-Notes #1-#3 and the Charge of Command.",
+          "Kept project_export.json sessions/history structure intact while restoring valid JSON."
+        ],
+        "action_items": [
+          "Clean remaining undefined citation warnings from the LaTeX build.",
+          "Spot-check NAVADMIN verbatim formatting for line-break artifacts."
+        ],
+        "linked_files": [
+          "src/chapters/appendix_cno34_day_one_message.tex",
+          "src/edo.bib",
+          "Other/project_export.json",
+          "AGENTS.md"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Verbatim NAVADMIN text transcribed; ensure official formatting/line breaks are preserved."
       }
     ]
   }
