@@ -2,8 +2,8 @@
   "project": {
     "name": "EDO Acquisition Tutor",
     "slug": "edo-acquisition-tutor",
-    "exported_at": "2025-12-16T12:55:19+00:00",
-    "current_as_of": "2025-12-16",
+    "exported_at": "2025-12-17T12:00:00+00:00",
+    "current_as_of": "2025-12-17",
     "instruction_pack_baseline": "2025-09-12",
     "tags": [
       "EDO",
@@ -123,8 +123,9 @@
     ],
     "build": {
       "latexmk": {
-        "last_result": "success",
+        "last_result": "failure",
         "notes": [
+          "2025-12-17: latexmk -shell-escape -interaction=nonstopmode src/main.tex ran to max lualatex passes with unresolved citations after repeated interrupts; build stopped with incomplete bcf/bbl and many undefined references (see build/main.log).",
           "2025-12-16: Added appendix with Cannon Cocker and IWE rosters/job pyramids (assets/information); latexmk -shell-escape -interaction=nonstopmode src/main.tex succeeds (PDF inclusion warnings for IWE Round-Up PDF version 1.7).",
           "2025-12-16: Integrated Lookups1 topics (CAPE, OMB execution controls, N8/N9 subcodes, marks vs reclamas, execution tracking) into Chapters 6/8/9 and Key Roles appendix; added OMB A-11 and 10/31 U.S.C. citations; latexmk -shell-escape src/main.tex succeeds (overfull hbox and PDF inclusion warnings remain).",
           "2025-12-15: Removed minibib from templates and chapters; latexmk -shell-escape src/main.tex succeeds (overfull hbox warnings remain).",
@@ -736,6 +737,32 @@
         "bias_or_quality_notes": "Data-driven summary; rerun grouping if billet file changes."
       },
       {
+        "title_or_slug": "CIVPERS step timing and conduct/performance pathways",
+        "date_range": "2025-12-17 to 2025-12-17",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Capture \ac{gs} step timing, \ac{wgi}/\ac{qsi} rules, and the distinction between performance and conduct actions for supervisors.",
+        "summary": "Documented \ac{gs} \ac{wgi} waiting periods (1/2/3-year tiers) with the 18-year Step 1--10 timeline and \ac{qsi} exception; added performance-versus-conduct comparison table, action ladders for coaching/discipline, and reminders on Weingarten and \ac{eeo} protections.",
+        "key_decisions": [
+          "Use the \ac{opm} within-grade fact sheet and National Guard Technician Handbook as the baseline for \ac{wgi}/\ac{qsi} timing.",
+          "Present performance and conduct pathways side-by-side to emphasize standards of proof and progressive discipline expectations."
+        ],
+        "action_items": [
+          "Refresh \ac{wgi}/\ac{qsi} timing if \ac{opm} updates the fact sheet or DoN issues new guidance."
+        ],
+        "linked_files": [
+          "AGENTS.md",
+          "src/chapters/27_CIVPERS.tex",
+          "src/acronyms.def",
+          "src/edo.bib"
+        ],
+        "notable_citations": [
+          "opm-wgi-factsheet-2024",
+          "national-guard-technician-handbook-2023"
+        ],
+        "bias_or_quality_notes": "Policy may change; verify waiting periods and Douglas-factor applications with \ac{hro} counsel."
         "title_or_slug": "Repository cleanup: remove stray artifacts",
         "date_range": "2025-12-17 to 2025-12-17",
         "participants": [
