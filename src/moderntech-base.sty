@@ -569,6 +569,7 @@
 \newenvironment{mtalltblr}[1][]{\begin{talltblr}[cells={font=\addfontfeatures{Numbers={Monospaced,Lining}}},column{1}={leftsep=0pt},column{Z}={rightsep=0pt},#1]}{\end{talltblr}}
 
 % --- New column types and helpers -----------------------------------
+\providecommand{\NewTblrColumnType}{\NewColumnType}
 \NewTblrColumnType{L}{X[-1]}
 \NewTblrColumnType{C}{X[-1,halign=c,cmd=\Centering]}
 \NewTblrColumnType{R}{X[-1,halign=r,cmd=\RaggedLeft]}
