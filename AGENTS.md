@@ -154,3 +154,4 @@
 - CIVPERS: expanded performance v.s.\ conduct guidance with comparison table, action ladders, and Weingarten/\ac{eeo} rights reminders.
 - Acronyms/bib: defined \ac{wgi}/\ac{qsi} and added \ac{opm} fact sheet and National Guard Technician Handbook citations.
 - CIVPERS tables: removed \ac{} in headings/captions and spelled out terms (AWOL, PIP) to meet house style; `latexmk -shell-escape -interaction=nonstopmode src/main.tex` hit max reruns with unresolved citations after repeated compilation attempts.
+- Removed stray log/build artifacts (latexindent log, scratch acronym test outputs, generated PDFs) to keep the repository free of backup/error files.
