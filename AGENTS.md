@@ -150,6 +150,11 @@
 
 ## Session updates (2025-12-17)
 
+- Expanded EDO billet appendix locations (best-effort city/state/country) and noted ambiguous location codes needing confirmation (ALJUBA, CAMBRI, FINEGA, LITTLE, MAGNA, MARINE, NHPA, PNT, UNDALE).
+
+## Session updates (2025-12-18)
+
+- Removed the tracked `out/main.pdf` build artifact and ignored the `out/` directory to keep binaries out of future commits.
 - Added a labor-relations research note on change of command timing, emphasizing that no formal grace period exists and highlighting past-practice bargaining obligations and the 90-day CCA assessment window.
 
 ## Session updates (2025-12-18)

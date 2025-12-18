@@ -737,7 +737,46 @@
         "bias_or_quality_notes": "Data-driven summary; rerun grouping if billet file changes."
       },
       {
-        "title_or_slug": "CIVPERS step timing and conduct/performance pathways",
+        "title_or_slug": "EDO billet location expansions",
+        "purpose": "Expand abbreviated AHPORT locations in the EDO billet appendix and flag unclear codes for follow-up.",
+        "summary": "Mapped AHPORT location codes to best-effort city/state/country names in the billet appendix and added a note requesting confirmation of ambiguous codes.",
+        "key_decisions": [
+          "Normalize BRANK RDMU entries to RADM for count ordering.",
+          "Sort communities by expanded location names rather than abbreviations."
+        ],
+        "action_items": [
+          "Confirm or correct ambiguous location codes: ALJUBA, CAMBRI, FINEGA, LITTLE, MAGNA, MARINE, NHPA, PNT, UNDALE."
+        ],
+        "linked_files": [
+          "assets/information/EDO Main Slate November 2025.xlsx",
+          "src/chapters/appendix_edo_billet_summary.tex",
+          "AGENTS.md"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Best-effort expansions based on billet context; awaiting user confirmation for listed codes."
+      },
+      {
+        "title_or_slug": "Removed tracked PDF artifact",
+        "date_range": "2025-12-18 to 2025-12-18",
+        "participants": [
+          "assistant"
+        ],
+        "purpose": "Stop committing generated PDFs that block PR tooling.",
+        "summary": "Deleted the tracked out/main.pdf build artifact and added the out/ directory to .gitignore to prevent future binary commits.",
+        "key_decisions": [
+          "Ignore the LaTeX out/ directory in git.",
+          "Remove existing built PDFs from version control."
+        ],
+        "action_items": [
+          "Regenerate PDFs locally when needed; do not commit them."
+        ],
+        "linked_files": [
+          "out/main.pdf",
+          ".gitignore",
+          "AGENTS.md"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Repository hygiene; removes binary from PR diff."
         "date_range": "2025-12-17 to 2025-12-17",
         "participants": [
           "user",
