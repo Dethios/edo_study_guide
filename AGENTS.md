@@ -34,8 +34,8 @@
 - [ ] Find and review exmaples of POM and BES documents
 - [ ] Find all OPNAV N codes for N8 and N9, provide description of what each of them do (partial: N80/N81/N82, N9I, N95--N98)
 - [x] Provide a description of the Marks and Reclama Process
-- [ ] For CIVPERs, how are conduct and performance issues handled? How are they different?
-- [ ] GS Steps: What is the timing between each step that makes steps 1 to 10 take 18 years?
+- [x] For CIVPERs, how are conduct and performance issues handled? How are they different?
+- [x] GS Steps: What is the timing between each step that makes steps 1 to 10 take 18 years?
 - [ ] What are the NRO specifics for promotion in GS Ranks?
 - [x] When a COC occurs, how long does the new OIC have to make changes before the Unions consider old actions permanement rules
 - [ ] What are the current proposed changes to streamline the GS payscales
@@ -155,4 +155,8 @@
 ## Session updates (2025-12-18)
 
 - Integrated the past-practice change-of-command guidance into the CIVPERS labor relations section with \ac{oic}/\ac{cca} acronyms and FLRA/OPNAVINST citations.
+- CIVPERS: added \ac{gs} within-grade waiting periods (1/2/3-year tiers) and 18-year Step 1--10 timeline with \ac{qsi} note.
+- CIVPERS: expanded performance v.s.\ conduct guidance with comparison table, action ladders, and Weingarten/\ac{eeo} rights reminders.
+- Acronyms/bib: defined \ac{wgi}/\ac{qsi} and added \ac{opm} fact sheet and National Guard Technician Handbook citations.
+- CIVPERS tables: removed \ac{} in headings/captions and spelled out terms (AWOL, PIP) to meet house style; `latexmk -shell-escape -interaction=nonstopmode src/main.tex` hit max reruns with unresolved citations after repeated compilation attempts.
 - Removed stray log/build artifacts (latexindent log, scratch acronym test outputs, generated PDFs) to keep the repository free of backup/error files.
