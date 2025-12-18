@@ -155,3 +155,4 @@
 ## Session updates (2025-12-18)
 
 - Integrated the past-practice change-of-command guidance into the CIVPERS labor relations section with \ac{oic}/\ac{cca} acronyms and FLRA/OPNAVINST citations.
+- Removed stray log/build artifacts (latexindent log, scratch acronym test outputs, generated PDFs) to keep the repository free of backup/error files.
