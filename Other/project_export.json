@@ -788,13 +788,13 @@
           "assistant"
         ],
         "purpose": "Integrate past-practice/CCA change-of-command guidance into the CIVPERS labor relations section.",
-        "summary": "Added an \ac{oic} past-practice reminder to CIVPERS labor relations with FLRA case law and OPNAVINST 5354.1H citations; defined \ac{oic}/\ac{cca} acronyms and noted the within-90-day assessment window as the best time to engage counsel and unions before altering practices.",
+          "summary": "Added an \\ac{oic} past-practice reminder to CIVPERS labor relations with FLRA case law and OPNAVINST 5354.1H citations; defined \\ac{oic}/\\ac{cca} acronyms and noted the within-90-day assessment window as the best time to engage counsel and unions before altering practices.",
         "key_decisions": [
           "Reinforce FLRA past-practice criteria and clarify that no grace period exists for new OICs when changing civilian conditions of employment.",
-          "Use the required within-90-day command climate assessment to surface changes early with \ac{hro}/union partners instead of implying acceptance."
+            "Use the required within-90-day command climate assessment to surface changes early with \\ac{hro}/union partners instead of implying acceptance."
         ],
         "action_items": [
-          "Coordinate early with \ac{hro} and union representatives before adjusting established civilian practices during command transition."
+            "Coordinate early with \\ac{hro} and union representatives before adjusting established civilian practices during command transition."
         ],
         "linked_files": [
           "src/chapters/27_CIVPERS.tex",
