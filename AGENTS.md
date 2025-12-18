@@ -37,7 +37,7 @@
 - [x] For CIVPERs, how are conduct and performance issues handled? How are they different?
 - [x] GS Steps: What is the timing between each step that makes steps 1 to 10 take 18 years?
 - [ ] What are the NRO specifics for promotion in GS Ranks?
-- [ ] When a COC occurs, how long does the new OIC have to make changes before the Unions consider old actions permanement rules
+- [x] When a COC occurs, how long does the new OIC have to make changes before the Unions consider old actions permanement rules
 - [ ] What are the current proposed changes to streamline the GS payscales
 - [x] How do we track expenditures and how do we know that we are on track with out spending?
 - [ ] What are the two ATR windows to request for reprogramming?
@@ -150,6 +150,11 @@
 
 ## Session updates (2025-12-17)
 
+- Added a labor-relations research note on change of command timing, emphasizing that no formal grace period exists and highlighting past-practice bargaining obligations and the 90-day CCA assessment window.
+
+## Session updates (2025-12-18)
+
+- Integrated the past-practice change-of-command guidance into the CIVPERS labor relations section with \ac{oic}/\ac{cca} acronyms and FLRA/OPNAVINST citations.
 - CIVPERS: added \ac{gs} within-grade waiting periods (1/2/3-year tiers) and 18-year Step 1--10 timeline with \ac{qsi} note.
 - CIVPERS: expanded performance v.s.\ conduct guidance with comparison table, action ladders, and Weingarten/\ac{eeo} rights reminders.
 - Acronyms/bib: defined \ac{wgi}/\ac{qsi} and added \ac{opm} fact sheet and National Guard Technician Handbook citations.
