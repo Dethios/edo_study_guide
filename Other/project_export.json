@@ -2,7 +2,7 @@
   "project": {
     "name": "EDO Acquisition Tutor",
     "slug": "edo-acquisition-tutor",
-    "exported_at": "2025-12-16T12:55:19+00:00",
+    "exported_at": "2025-12-18T14:10:15.309467+00:00",
     "current_as_of": "2025-12-16",
     "instruction_pack_baseline": "2025-09-12",
     "tags": [
@@ -753,5 +753,62 @@
         "asset_prefix": "edo-at"
       }
     }
+  },
+  "sessions": {
+    "entries": [
+      {
+        "title_or_slug": "COC past practice research note",
+        "date_range": "2025-12-17 to 2025-12-17",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Capture guidance on change-of-command authority and union past practice obligations.",
+        "summary": "Documented that no formal grace period exists for a new OIC; explained FLRA past-practice criteria, bargaining obligations before altering established practices, and the 90-day CCA assessment context.",
+        "key_decisions": [
+          "Clarify that past-practice factors drive bargaining obligations regardless of time-in-seat for the new OIC.",
+          "Highlight the 90-day Command Climate Assessment as an assessment window, not a waiver of bargaining duties."
+        ],
+        "action_items": [
+          "Coordinate with local labor counsel before implementing changes to established civilian practices."
+        ],
+        "linked_files": [
+          "assets/research/Lookups1.md",
+          "AGENTS.md",
+          "Other/project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Labor-relations guidance; verify with updated FLRA/union agreements."
+      },
+      {
+        "title_or_slug": "CIVPERS past practice integration",
+        "date_range": "2025-12-18 to 2025-12-18",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Integrate past-practice/CCA change-of-command guidance into the CIVPERS labor relations section.",
+        "summary": "Added an \ac{oic} past-practice reminder to CIVPERS labor relations with FLRA case law and OPNAVINST 5354.1H citations; defined \ac{oic}/\ac{cca} acronyms and noted the within-90-day assessment window as the best time to engage counsel and unions before altering practices.",
+        "key_decisions": [
+          "Reinforce FLRA past-practice criteria and clarify that no grace period exists for new OICs when changing civilian conditions of employment.",
+          "Use the required within-90-day command climate assessment to surface changes early with \ac{hro}/union partners instead of implying acceptance."
+        ],
+        "action_items": [
+          "Coordinate early with \ac{hro} and union representatives before adjusting established civilian practices during command transition."
+        ],
+        "linked_files": [
+          "src/chapters/27_CIVPERS.tex",
+          "src/acronyms.def",
+          "src/edo.bib",
+          "AGENTS.md",
+          "Other/project_export.json"
+        ],
+        "notable_citations": [
+          "FLRA-IRS-3-FLRA-513",
+          "OPNAVINST-5354-1H"
+        ],
+        "bias_or_quality_notes": "Labor-relations guidance; verify local CBAs and legal counsel."
+      }
+    ]
   }
 }
