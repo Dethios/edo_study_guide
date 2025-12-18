@@ -734,6 +734,26 @@
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Data-driven summary; rerun grouping if billet file changes."
+      },
+      {
+        "title_or_slug": "Repository cleanup: remove stray artifacts",
+        "date_range": "2025-12-17 to 2025-12-17",
+        "participants": [
+          "assistant"
+        ],
+        "purpose": "Purge tracked backup/error outputs and generated PDFs to keep the repo clean.",
+        "summary": "Deleted latexindent log output, scratch acronym test build products, and the compiled out/main.pdf artifact so the repository only tracks source materials.",
+        "key_decisions": [
+          "Remove transient build/log/test files from version control to prevent backup/error clutter."
+        ],
+        "action_items": [
+          "If latexmk is rerun locally, ensure out/ remains untracked or cleaned before committing."
+        ],
+        "linked_files": [
+          "AGENTS.md"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Cleanup only; no content changes."
       }
     ]
   },
