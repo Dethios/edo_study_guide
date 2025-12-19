@@ -35,10 +35,10 @@
 - [ ] Find and review exmaples of POM and BES documents
 - [ ] Find all OPNAV N codes for N8 and N9, provide description of what each of them do (partial: N80/N81/N82, N9I, N95--N98)
 - [x] Provide a description of the Marks and Reclama Process
-- [ ] For CIVPERs, how are conduct and performance issues handled? How are they different?
-- [ ] GS Steps: What is the timing between each step that makes steps 1 to 10 take 18 years?
+- [x] For CIVPERs, how are conduct and performance issues handled? How are they different?
+- [x] GS Steps: What is the timing between each step that makes steps 1 to 10 take 18 years?
 - [ ] What are the NRO specifics for promotion in GS Ranks?
-- [ ] When a COC occurs, how long does the new OIC have to make changes before the Unions consider old actions permanement rules
+- [x] When a COC occurs, how long does the new OIC have to make changes before the Unions consider old actions permanement rules
 - [ ] What are the current proposed changes to streamline the GS payscales
 - [x] How do we track expenditures and how do we know that we are on track with out spending?
 - [ ] What are the two ATR windows to request for reprogramming?
@@ -154,3 +154,18 @@
 - Tooling: added `scripts/export_agents_json.py` and generated `AGENTS.json` (structured export of this file with checklist stats and derived fields).
 - Build: fixed LuaLaTeX sandbox cache failures by setting `TEXMFVAR`/`TEXMFCACHE` in `latexmkrc` and rebuilding the `lualatex` format via `fmtutil-user`; `latexmk -shell-escape -interaction=nonstopmode src/main.tex` succeeds (overfull \hbox warnings remain in 18_test_eval and 24_Battle_Damage_Assessment_Repair).
 - PDF: rebuilt `out/main.pdf` to include the November 2025 EDO billet summary appendix; removed a thin-space in the section title to avoid hyperref bookmark warnings.
+- Expanded EDO billet appendix locations (best-effort city/state/country) and noted ambiguous location codes needing confirmation (ALJUBA, CAMBRI, FINEGA, LITTLE, MAGNA, MARINE, NHPA, PNT, UNDALE).
+
+## Session updates (2025-12-18)
+
+- Removed the tracked `out/main.pdf` build artifact and ignored the `out/` directory to keep binaries out of future commits.
+- Added a labor-relations research note on change of command timing, emphasizing that no formal grace period exists and highlighting past-practice bargaining obligations and the 90-day CCA assessment window.
+
+## Session updates (2025-12-18)
+
+- Integrated the past-practice change-of-command guidance into the CIVPERS labor relations section with \ac{oic}/\ac{cca} acronyms and FLRA/OPNAVINST citations.
+- CIVPERS: added \ac{gs} within-grade waiting periods (1/2/3-year tiers) and 18-year Step 1--10 timeline with \ac{qsi} note.
+- CIVPERS: expanded performance v.s.\ conduct guidance with comparison table, action ladders, and Weingarten/\ac{eeo} rights reminders.
+- Acronyms/bib: defined \ac{wgi}/\ac{qsi} and added \ac{opm} fact sheet and National Guard Technician Handbook citations.
+- CIVPERS tables: removed \ac{} in headings/captions and spelled out terms (AWOL, PIP) to meet house style; `latexmk -shell-escape -interaction=nonstopmode src/main.tex` hit max reruns with unresolved citations after repeated compilation attempts.
+- Removed stray log/build artifacts (latexindent log, scratch acronym test outputs, generated PDFs) to keep the repository free of backup/error files.

@@ -2,7 +2,7 @@
 # LaTeX build products
 # ======================
 # Directories (your layout)
-# out/
+out/
 build/
 scratch/
 
