@@ -32,7 +32,7 @@
 - [x] What are the execution limits as prescribed by OMB
 - [ ] What are OMB's Roles and Responsbilities
 - [ ] Find and review exmaples of POM and BES documents
-- [ ] Find all OPNAV N codes for N8 and N9, provide description of what each of them do (partial: N80/N81/N82, N9I, N95--N98)
+- [x] Find all OPNAV N codes for N8 and N9, provide description of what each of them do
 - [x] Provide a description of the Marks and Reclama Process
 - [ ] For CIVPERs, how are conduct and performance issues handled? How are they different?
 - [ ] GS Steps: What is the timing between each step that makes steps 1 to 10 take 18 years?
@@ -144,5 +144,6 @@
 - Added Appendix `appendix_community_rosters` with Cannon Cocker roster/pyramid, IWE job pyramid, and IWE roster pages from IWE Round-Up (12 Sep 2025).
 - LaTeX: extended `\graphicspath` to include `assets/information/` and added a `.jfif` graphics rule for LuaLaTeX/PDF builds.
 - Build: `latexmk -shell-escape -interaction=nonstopmode src/main.tex` succeeds; warnings include PDF inclusion version (IWE Round-Up PDF 1.7 > 1.5 allowed) and existing overfull hbox notices.
+- Lookups1: completed OPNAV N8/N9 subcode coverage by adding N83/N84/N89 to PPBE and Key Roles; updated `acronyms.def` accordingly; `latexmk -shell-escape src/main.tex` succeeds (warnings unchanged).
 - Lookups integration: added CAPE/OMB execution controls, N8/N9 subcodes (N80/N81/N82/N9I/N95--N98), and marks/reclamas content into PPBE/Congressional Enactment/Execution sections; updated Key Roles appendix to match.
 - Acronyms/citations: added `OMB Circular A-11` and 10/31 U.S.C. entries; expanded `acronyms.def` for new OPNAV/board/OLA terms.

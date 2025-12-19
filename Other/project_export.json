@@ -2,7 +2,7 @@
   "project": {
     "name": "EDO Acquisition Tutor",
     "slug": "edo-acquisition-tutor",
-    "exported_at": "2025-12-16T09:51:44-05:00",
+    "exported_at": "2025-12-16T10:47:20-05:00",
     "current_as_of": "2025-12-16",
     "instruction_pack_baseline": "2025-09-12",
     "tags": [
@@ -126,7 +126,7 @@
         "last_result": "success",
         "notes": [
           "2025-12-16: Added appendix with Cannon Cocker and IWE rosters/job pyramids (assets/information); latexmk -shell-escape -interaction=nonstopmode src/main.tex succeeds (PDF inclusion warnings for IWE Round-Up PDF version 1.7).",
-          "2025-12-16: Integrated Lookups1 topics (CAPE, OMB execution controls, N8/N9 subcodes, marks vs reclamas, execution tracking) into Chapters 6/8/9 and Key Roles appendix; added OMB A-11 and 10/31 U.S.C. citations; latexmk -shell-escape src/main.tex succeeds (overfull hbox and PDF inclusion warnings remain).",
+          "2025-12-16: Integrated Lookups1 topics (CAPE, OMB execution controls, N8/N9 subcodes: N80/N81/N82/N83/N84 and N9I/N89/N95--N98, marks vs reclamas, execution tracking) into Chapters 6/8/9 and Key Roles appendix; added OMB A-11 and 10/31 U.S.C. citations; latexmk -shell-escape src/main.tex succeeds (overfull hbox and PDF inclusion warnings remain).",
           "2025-12-15: Removed minibib from templates and chapters; latexmk -shell-escape src/main.tex succeeds (overfull hbox warnings remain).",
           "2025-12-15: Added Codex Cloud setup/maintenance scripts (.codex/) and devcontainer minimum docs/examples for TeX Live tooling (apt-based; includes texlive-pictures and texlive-bibtex-extra).",
           "2025-12-13: Minibib entries now display only label numbers and titles via per-bibliography field clearing; latexmk -shell-escape src/main.tex succeeds but pdf backend reports ~537 unreferenced destination warnings (minted fallback warnings also present).",
