@@ -1,10 +1,10 @@
 {
   "schema_version": "edo-agents-export@1",
-  "generated_at": "2025-12-17T01:12:16+00:00",
+  "generated_at": "2025-12-19T03:08:25+00:00",
   "source": {
     "path": "AGENTS.md",
-    "sha256": "93b00b10b0f3363b0a4d1bb977cbd768f7422efee62c6aab90637a3632a6b91f",
-    "line_count": 156
+    "sha256": "1eaec81bbcf19413ca35c69174ef4c0c7aa99fd5194e9eefbc5540668bab3257",
+    "line_count": 179
   },
   "title": "AGENTS Operating Guide",
   "derived": {
@@ -242,12 +242,12 @@
         },
         {
           "text": "For CIVPERs, how are conduct and performance issues handled? How are they different?",
-          "checked": false,
+          "checked": true,
           "children": []
         },
         {
           "text": "GS Steps: What is the timing between each step that makes steps 1 to 10 take 18 years?",
-          "checked": false,
+          "checked": true,
           "children": []
         },
         {
@@ -257,7 +257,7 @@
         },
         {
           "text": "When a COC occurs, how long does the new OIC have to make changes before the Unions consider old actions permanement rules",
-          "checked": false,
+          "checked": true,
           "children": []
         },
         {
@@ -454,7 +454,7 @@
         },
         {
           "text": "The first table label is skipped. Fix to ensure all table labels show up.",
-          "checked": false,
+          "checked": true,
           "children": []
         },
         {
@@ -754,6 +754,97 @@
           "text": "PDF: rebuilt `out/main.pdf` to include the November 2025 EDO billet summary appendix; removed a thin-space in the section title to avoid hyperref bookmark warnings.",
           "checked": null,
           "children": []
+        },
+        {
+          "text": "Expanded EDO billet appendix locations (best-effort city/state/country) and noted ambiguous location codes needing confirmation (ALJUBA, CAMBRI, FINEGA, LITTLE, MAGNA, MARINE, NHPA, PNT, UNDALE).",
+          "checked": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "heading": "Session updates (2025-12-18)",
+      "level": 2,
+      "kind": "bullets",
+      "items": [
+        {
+          "text": "Removed the tracked `out/main.pdf` build artifact and ignored the `out/` directory to keep binaries out of future commits.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Added a labor-relations research note on change of command timing, emphasizing that no formal grace period exists and highlighting past-practice bargaining obligations and the 90-day CCA assessment window.",
+          "checked": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "heading": "Session updates (2025-12-18)",
+      "level": 2,
+      "kind": "bullets",
+      "items": [
+        {
+          "text": "Integrated the past-practice change-of-command guidance into the CIVPERS labor relations section with \\ac{oic}/\\ac{cca} acronyms and FLRA/OPNAVINST citations.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "CIVPERS: added \\ac{gs} within-grade waiting periods (1/2/3-year tiers) and 18-year Step 1--10 timeline with \\ac{qsi} note.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "CIVPERS: expanded performance v.s.\\ conduct guidance with comparison table, action ladders, and Weingarten/\\ac{eeo} rights reminders.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Acronyms/bib: defined \\ac{wgi}/\\ac{qsi} and added \\ac{opm} fact sheet and National Guard Technician Handbook citations.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "CIVPERS tables: removed \\ac{} in headings/captions and spelled out terms (AWOL, PIP) to meet house style; `latexmk -shell-escape -interaction=nonstopmode src/main.tex` hit max reruns with unresolved citations after repeated compilation attempts.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Removed stray log/build artifacts (latexindent log, scratch acronym test outputs, generated PDFs) to keep the repository free of backup/error files.",
+          "checked": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "heading": "Session updates (2025-12-19)",
+      "level": 2,
+      "kind": "bullets",
+      "items": [
+        {
+          "text": "Resolved the merge conflicts in `6_PPBE.tex` and `appendix_key_roles.tex`, standardizing the \\ac{n89} entry formatting and placement.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Fixed table label expansion by redefining `\\thetable` as a non-robust macro so table numbers populate the list of tables and refs correctly.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Build: `latexmk -shell-escape src/main.tex` succeeds; warnings remain for minted fallback and overfull \\hbox in 18_test_eval and 24_Battle_Damage_Assessment_Repair.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Fixed overfull \\hbox warnings by tightening TikZ node widths/spacing in 18_test_eval and the BDAR continuum figure.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Build: `latexmk -shell-escape src/main.tex` succeeds; only minted fallback warning remains.",
+          "checked": null,
+          "children": []
         }
       ]
     }
@@ -798,12 +889,12 @@
         },
         {
           "text": "For CIVPERs, how are conduct and performance issues handled? How are they different?",
-          "checked": false,
+          "checked": true,
           "children": []
         },
         {
           "text": "GS Steps: What is the timing between each step that makes steps 1 to 10 take 18 years?",
-          "checked": false,
+          "checked": true,
           "children": []
         },
         {
@@ -813,7 +904,7 @@
         },
         {
           "text": "When a COC occurs, how long does the new OIC have to make changes before the Unions consider old actions permanement rules",
-          "checked": false,
+          "checked": true,
           "children": []
         },
         {
@@ -864,8 +955,8 @@
       ],
       "stats": {
         "total": 20,
-        "checked": 5,
-        "open": 15
+        "checked": 8,
+        "open": 12
       }
     },
     "Current jobs": {
@@ -1012,7 +1103,7 @@
         },
         {
           "text": "The first table label is skipped. Fix to ensure all table labels show up.",
-          "checked": false,
+          "checked": true,
           "children": []
         },
         {
@@ -1043,8 +1134,8 @@
       ],
       "stats": {
         "total": 34,
-        "checked": 33,
-        "open": 1
+        "checked": 34,
+        "open": 0
       }
     }
   },
@@ -1133,7 +1224,36 @@
       "items": [
         "Tooling: added `scripts/export_agents_json.py` and generated `AGENTS.json` (structured export of this file with checklist stats and derived fields).",
         "Build: fixed LuaLaTeX sandbox cache failures by setting `TEXMFVAR`/`TEXMFCACHE` in `latexmkrc` and rebuilding the `lualatex` format via `fmtutil-user`; `latexmk -shell-escape -interaction=nonstopmode src/main.tex` succeeds (overfull \\hbox warnings remain in 18_test_eval and 24_Battle_Damage_Assessment_Repair).",
-        "PDF: rebuilt `out/main.pdf` to include the November 2025 EDO billet summary appendix; removed a thin-space in the section title to avoid hyperref bookmark warnings."
+        "PDF: rebuilt `out/main.pdf` to include the November 2025 EDO billet summary appendix; removed a thin-space in the section title to avoid hyperref bookmark warnings.",
+        "Expanded EDO billet appendix locations (best-effort city/state/country) and noted ambiguous location codes needing confirmation (ALJUBA, CAMBRI, FINEGA, LITTLE, MAGNA, MARINE, NHPA, PNT, UNDALE)."
+      ]
+    },
+    {
+      "date": "2025-12-18",
+      "items": [
+        "Removed the tracked `out/main.pdf` build artifact and ignored the `out/` directory to keep binaries out of future commits.",
+        "Added a labor-relations research note on change of command timing, emphasizing that no formal grace period exists and highlighting past-practice bargaining obligations and the 90-day CCA assessment window."
+      ]
+    },
+    {
+      "date": "2025-12-18",
+      "items": [
+        "Integrated the past-practice change-of-command guidance into the CIVPERS labor relations section with \\ac{oic}/\\ac{cca} acronyms and FLRA/OPNAVINST citations.",
+        "CIVPERS: added \\ac{gs} within-grade waiting periods (1/2/3-year tiers) and 18-year Step 1--10 timeline with \\ac{qsi} note.",
+        "CIVPERS: expanded performance v.s.\\ conduct guidance with comparison table, action ladders, and Weingarten/\\ac{eeo} rights reminders.",
+        "Acronyms/bib: defined \\ac{wgi}/\\ac{qsi} and added \\ac{opm} fact sheet and National Guard Technician Handbook citations.",
+        "CIVPERS tables: removed \\ac{} in headings/captions and spelled out terms (AWOL, PIP) to meet house style; `latexmk -shell-escape -interaction=nonstopmode src/main.tex` hit max reruns with unresolved citations after repeated compilation attempts.",
+        "Removed stray log/build artifacts (latexindent log, scratch acronym test outputs, generated PDFs) to keep the repository free of backup/error files."
+      ]
+    },
+    {
+      "date": "2025-12-19",
+      "items": [
+        "Resolved the merge conflicts in `6_PPBE.tex` and `appendix_key_roles.tex`, standardizing the \\ac{n89} entry formatting and placement.",
+        "Fixed table label expansion by redefining `\\thetable` as a non-robust macro so table numbers populate the list of tables and refs correctly.",
+        "Build: `latexmk -shell-escape src/main.tex` succeeds; warnings remain for minted fallback and overfull \\hbox in 18_test_eval and 24_Battle_Damage_Assessment_Repair.",
+        "Fixed overfull \\hbox warnings by tightening TikZ node widths/spacing in 18_test_eval and the BDAR continuum figure.",
+        "Build: `latexmk -shell-escape src/main.tex` succeeds; only minted fallback warning remains."
       ]
     }
   ],
@@ -1152,19 +1272,7 @@
     },
     {
       "list": "Lookups",
-      "text": "For CIVPERs, how are conduct and performance issues handled? How are they different?"
-    },
-    {
-      "list": "Lookups",
-      "text": "GS Steps: What is the timing between each step that makes steps 1 to 10 take 18 years?"
-    },
-    {
-      "list": "Lookups",
       "text": "What are the NRO specifics for promotion in GS Ranks?"
-    },
-    {
-      "list": "Lookups",
-      "text": "When a COC occurs, how long does the new OIC have to make changes before the Unions consider old actions permanement rules"
     },
     {
       "list": "Lookups",
@@ -1197,17 +1305,13 @@
     {
       "list": "Lookups",
       "text": "More review of flags."
-    },
-    {
-      "list": "Current jobs",
-      "text": "The first table label is skipped. Fix to ensure all table labels show up."
     }
   ],
   "task_stats": {
     "overall": {
       "total": 54,
-      "checked": 38,
-      "open": 16
+      "checked": 42,
+      "open": 12
     }
   }
 }

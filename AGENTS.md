@@ -79,7 +79,7 @@
 - [x] Provide an AIT swim-lane diagram (Sponsor, AIT Manager, \ac{rmmco}, \ac{nsa}) from screening through certification.
 - [x] Add a NAVSEA Org Chart Dec 2025 bibliography entry and cite it in the NWC map figure caption.
 - [x] Resolve duplicate labels from automatic section label generation in subfiles.
-- [ ] The first table label is skipped. Fix to ensure all table labels show up.
+- [x] The first table label is skipped. Fix to ensure all table labels show up.
 - [x] Hyperref: use `linkcolor=black` (do not use AccentBlue).
 - [x] Insert a NAVWAR enterprise structure graphic in Chapter 4 to replace the removed TODO note.
 - [x] Codex Cloud: add startup scripts to install TeX Live and required binaries.
@@ -169,3 +169,11 @@
 - Acronyms/bib: defined \ac{wgi}/\ac{qsi} and added \ac{opm} fact sheet and National Guard Technician Handbook citations.
 - CIVPERS tables: removed \ac{} in headings/captions and spelled out terms (AWOL, PIP) to meet house style; `latexmk -shell-escape -interaction=nonstopmode src/main.tex` hit max reruns with unresolved citations after repeated compilation attempts.
 - Removed stray log/build artifacts (latexindent log, scratch acronym test outputs, generated PDFs) to keep the repository free of backup/error files.
+
+## Session updates (2025-12-19)
+
+- Resolved the merge conflicts in `6_PPBE.tex` and `appendix_key_roles.tex`, standardizing the \ac{n89} entry formatting and placement.
+- Fixed table label expansion by redefining `\thetable` as a non-robust macro so table numbers populate the list of tables and refs correctly.
+- Build: `latexmk -shell-escape src/main.tex` succeeds; warnings remain for minted fallback and overfull \hbox in 18_test_eval and 24_Battle_Damage_Assessment_Repair.
+- Fixed overfull \hbox warnings by tightening TikZ node widths/spacing in 18_test_eval and the BDAR continuum figure.
+- Build: `latexmk -shell-escape src/main.tex` succeeds; only minted fallback warning remains.

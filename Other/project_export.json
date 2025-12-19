@@ -1,7 +1,7 @@
 {
   "project_metadata": {
     "project_name": "EDO Acquisition Tutor",
-    "export_timestamp_iso": "2025-12-18T20:56:17+00:00",
+    "export_timestamp_iso": "2025-12-19T03:08:20+00:00",
     "project_instructions_raw": "ROLE & MISSION\nYou are a Navy EDO Acquisition Tutor. Teach, test, and clarify U.S. Navy/DoW acquisition for EDO qualification boards (primary) and general mastery (secondary). Explain the full breadth clearly, tie assertions to current primary sources, and emphasize Navy-unique overlays.\n\nAUDIENCE\nEngineering Duty Officers preparing for boards and practicing program/technical authority roles. Assume motivated learners who may be new to acquisition jargon.\n\nCANONICAL SOURCES (teach-from-truth)\nStatute: Titles 10 & 41 U.S.C.; relevant NDAA provisions.\nRegulation: FAR, DFARS, DFARS PGI; NMCARS if applicable.\nPolicy/Framework: DoDI 5000 series (MCA, SWP, MTA, Urgent), plus JCIDS artifacts as needed.\nFiscal: DoW FMR 7000.14-R; GAO Red Book.\nNavy overlays: SECNAV/OPNAV/NAVSEA instructions; PEO/TA guidance; shipbuilding nuances (SCN/WPN).\nCourseware: EDO-specific coursebook PDFs (baseline current as of 2025-09-12).\nRule: When facts can change (thresholds, definitions, authorities), verify the current controlling document and cite title + section (if known) + publication date.\n\nRECENCY POLICY\nStamp every deliverable with \"Current as of [YYYY-MM-DD]\". Re-verify for NDAA/FAR/DFARS/DoDI/SECNAV changes and PPBE shifts. If recency cannot be confirmed (e.g., offline excerpt), label Recency check pending and state assumptions.\n\nDEFAULTS & MODES\nDefault Mode: EDO Board Prep (concise, decision-focused). Optional Mode: Mastery (full exposition, examples, deeper context). Diagrams: Provide Mermaid visuals only when explicitly requested; otherwise default to textual decision logic.\n\nTEACHING STYLE (layered structure)\nPlain-language brief; Navy overlays & authority touchpoints; Fiscal/PPBE & colors of money (SCN/WPN nuance); Decision Trace; Citations; Assumptions & uncertainties; Self-score.\n\nINTERACTION RULES\nAsk 2-3 targeted clarifying questions for substantial tasks; if no reply, proceed best-effort and state assumptions. Offer an opposing view/edge case where professional judgment could differ. Avoid flashcards by default.\n\nDEFAULT OUTPUT TEMPLATE\nSummary; Navy Overlays; Fiscal/PPBE; Decision Trace; Citations; Current as of; Assumptions & Uncertainties; Self-Score.\n\nCOVERAGE MAP (breadth over time)\nAAF pathways & artifacts; JCIDS; governance reviews; contracting fundamentals; fiscal law & PPBE (SCN/WPN); cost/schedule/performance; SE & T&E; logistics & sustainment; software & data; rapid authorities; Navy-unique overlays & authority boundaries.\n\nQUALITY ASSURANCE\nSelf-score every answer (Accuracy, Completeness, Clarity, Relevance, Practical usefulness). If any <8, revise and note the fix.\n\nTOOLING & CITATION BEHAVIOR\nVerify rules/thresholds with current primary sources and cite exact dates; prefer official/public sources. Call out Navy overlay deltas vs generic DAU guidance.\n\nSAFETY & COMPLIANCE\nNot legal advice. Respect OPSEC/CUI and procurement integrity. Use only unclassified, publicly releasable sources.\n\nCODE ARGUMENTS\n `-latexindent` to format LaTeX sources without backups,ARGS: `wd, -s, -m, -l=.latexindent.yaml, -c=%TEMP%/latexindent, -y=defaultIndent:'  ' `; `-latexmk` for continuous build with LuaLaTeX, ARGS: `-lualatex, -pdf, -dvi-, -ps-, -outdir=out, -auxdir=build, -f, -shell-escape, -interaction=nonstopmode, -synctex=1, -file-line-error, %DOC%`; `-fontspec` for custom fonts (Merriweather, Montserrat, Source Sans Pro).",
     "project_memory_highlights": [
       "LaTeX-based EDO Board Prep Study Guide with diagrams, tables, and citations.",
@@ -14,7 +14,9 @@
       "latexmk -shell-escape src/main.tex builds succeed with occasional overfull box or minted fallback warnings.",
       "Use scratch folder for experiments; minted falls back when shell-escape is disabled.",
       "Default fonts: Merriweather, Montserrat, and Source Sans Pro via fontspec.",
-      "Added missing OPNAV N-code titles/functions (N80-84, N89, N91, N95-99) into PPBE and Key Roles sections."
+      "Added missing OPNAV N-code titles/functions (N80-84, N89, N91, N95-99) into PPBE and Key Roles sections.",
+      "Fixed table label expansion by redefining \\thetable to ensure list-of-tables numbering and refs render correctly.",
+      "Resolved overfull hbox warnings by tightening TikZ node widths/spacing in test/eval and BDAR figures."
     ],
     "known_limits": {
       "files_visible": 1,
@@ -272,6 +274,56 @@
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Build/tooling update; PDF output may differ slightly across TeX installations."
+      },
+      {
+        "title_or_slug": "Merge conflicts and table label fix",
+        "date_range": "2025-12-19 to 2025-12-19",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Resolve merge conflicts for N-code updates, fix table label numbering, and rebuild main.pdf.",
+        "summary": "Merged PPBE and key roles updates with standardized N89 entry formatting, fixed \\thetable so list-of-tables entries and refs render correctly, and rebuilt the main PDF; build warnings remain for minted fallback and two overfull hbox locations.",
+        "key_decisions": [
+          "Use \\renewcommand for \\thetable so table numbers expand in aux/lot files.",
+          "Keep the N89 resource sponsor entry adjacent to other N8 subcodes for consistent ordering."
+        ],
+        "action_items": [
+          "Optional: investigate minted shell-escape detection and address remaining overfull hbox warnings."
+        ],
+        "linked_files": [
+          "src/chapters/6_PPBE.tex",
+          "src/chapters/appendix_key_roles.tex",
+          "src/moderntech-base.sty",
+          "AGENTS.md",
+          "Other/project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Build completed; minted fallback and overfull hbox warnings persist."
+      },
+      {
+        "title_or_slug": "Fix overfull hbox warnings",
+        "date_range": "2025-12-19 to 2025-12-19",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Remove remaining overfull hbox warnings in the test/eval and BDAR figures and rebuild the PDF.",
+        "summary": "Tightened TikZ node widths/spacing in the DoW T&E org chart and BDAR continuum figure so they fit within the text width; rebuilt the document with only the minted fallback warning remaining.",
+        "key_decisions": [
+          "Constrain TikZ node text width/min width and reduce horizontal node distance to avoid overfull boxes."
+        ],
+        "action_items": [
+          "Optional: investigate why minted reports shell-escape disabled despite build flags."
+        ],
+        "linked_files": [
+          "src/chapters/18_test_eval.tex",
+          "src/chapters/24_Battle_Damage_Assessment_Repair.tex",
+          "AGENTS.md",
+          "Other/project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Build completed; minted fallback warning persists."
       }
     ]
   },
@@ -287,18 +339,7 @@
       "Board-Prep",
       "Final"
     ],
-    "recommended_next_actions": [
-      {
-        "owner": "you",
-        "action": "Investigate why the first table label is skipped and ensure all table labels render in builds.",
-        "due": "2025-12-22"
-      },
-      {
-        "owner": "you",
-        "action": "Resolve remaining unresolved citation warnings noted in latexmk logs after the December 17 build attempts.",
-        "due": "2025-12-22"
-      }
-    ],
+    "recommended_next_actions": [],
     "integration_hints_for_custom_gpts": {
       "ideal_knowledge_chunks": "Chunk by chapter/appendix summary, PPBE/contracting decision flows, and recurring acronym definitions.",
       "suggested_embeddings_fields": [
