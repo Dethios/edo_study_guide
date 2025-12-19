@@ -45,7 +45,7 @@
 - [ ] What other items are in the NDAA beyond basic authorizations for spending?
 - [ ] Read the current (new) NDAA and NSS
 - [ ] How does IWS test terminal defense weapons such as CIWS
-- [ ] What is the ASN(RD&A) office structure. What are their job titles and fundtions?
+- [x] What is the ASN(RD&A) office structure. What are their job titles and fundtions?
 - [ ] More review of flags.
 
 ## Current jobs
@@ -165,3 +165,7 @@
 - Acronyms/bib: defined \ac{wgi}/\ac{qsi} and added \ac{opm} fact sheet and National Guard Technician Handbook citations.
 - CIVPERS tables: removed \ac{} in headings/captions and spelled out terms (AWOL, PIP) to meet house style; `latexmk -shell-escape -interaction=nonstopmode src/main.tex` hit max reruns with unresolved citations after repeated compilation attempts.
 - Removed stray log/build artifacts (latexindent log, scratch acronym test outputs, generated PDFs) to keep the repository free of backup/error files.
+
+## Session updates (2025-12-19)
+
+- Added an \ac{asnrdanda} organization chart plus leadership and \ac{dasn} responsibility tables (current as of 2025-12-18); cited SECNAV ASN (RDA) and \ac{dasn} portfolio pages.
