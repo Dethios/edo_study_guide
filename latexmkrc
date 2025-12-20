@@ -2,6 +2,14 @@
 $out_dir = 'out';
 $aux_dir = 'build';
 
+# Ensure LuaLaTeX has a writable cache dir for luaotfload/fontspec (important in
+# sandboxed environments where $HOME may not be writeable).
+use File::Path qw(make_path);
+$ENV{'TEXMFVAR'}   = "$aux_dir/texmf-var";
+$ENV{'TEXMFCACHE'} = "$aux_dir/texmf-cache";
+make_path($ENV{'TEXMFVAR'});
+make_path($ENV{'TEXMFCACHE'});
+
 # Ensure LaTeX can see sources under src/ even when latexmk is run from repo root.
 my $texinputs_sep = ($^O =~ /mswin32|cygwin|msys/i) ? ';' : ':';
 $ENV{'TEXINPUTS'} = "src//$texinputs_sep" . ($ENV{'TEXINPUTS'} // '');

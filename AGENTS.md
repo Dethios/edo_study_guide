@@ -21,6 +21,7 @@
   - Write a short summary of completed work and the context of the current chat.
   - Update `Other/project_export.json` with new context/instructions/status.
 - Update this file with task status changes and any new/recommended tasks or directives.
+- Run `python3 scripts/export_agents_json.py --root .` to refresh `AGENTS.json` (machine-readable export).
 - Run `latexmk -shell-escape` (project `latexmkrc` handles targets) and record warnings/errors.
 - Check off any TODOs you completed; search `src` for outstanding TODO comments that can be addressed.
 - Proceed with next recommended tasks automatically; if three next steps exist, execute all three.
@@ -78,7 +79,7 @@
 - [x] Provide an AIT swim-lane diagram (Sponsor, AIT Manager, \ac{rmmco}, \ac{nsa}) from screening through certification.
 - [x] Add a NAVSEA Org Chart Dec 2025 bibliography entry and cite it in the NWC map figure caption.
 - [x] Resolve duplicate labels from automatic section label generation in subfiles.
-- [ ] The first table label is skipped. Fix to ensure all table labels show up.
+- [x] The first table label is skipped. Fix to ensure all table labels show up.
 - [x] Hyperref: use `linkcolor=black` (do not use AccentBlue).
 - [x] Insert a NAVWAR enterprise structure graphic in Chapter 4 to replace the removed TODO note.
 - [x] Codex Cloud: add startup scripts to install TeX Live and required binaries.
@@ -150,6 +151,9 @@
 
 ## Session updates (2025-12-17)
 
+- Tooling: added `scripts/export_agents_json.py` and generated `AGENTS.json` (structured export of this file with checklist stats and derived fields).
+- Build: fixed LuaLaTeX sandbox cache failures by setting `TEXMFVAR`/`TEXMFCACHE` in `latexmkrc` and rebuilding the `lualatex` format via `fmtutil-user`; `latexmk -shell-escape -interaction=nonstopmode src/main.tex` succeeds (overfull \hbox warnings remain in 18_test_eval and 24_Battle_Damage_Assessment_Repair).
+- PDF: rebuilt `out/main.pdf` to include the November 2025 EDO billet summary appendix; removed a thin-space in the section title to avoid hyperref bookmark warnings.
 - Expanded EDO billet appendix locations (best-effort city/state/country) and noted ambiguous location codes needing confirmation (ALJUBA, CAMBRI, FINEGA, LITTLE, MAGNA, MARINE, NHPA, PNT, UNDALE).
 
 ## Session updates (2025-12-18)
@@ -169,3 +173,8 @@
 ## Session updates (2025-12-19)
 
 - Added an \ac{asnrdanda} organization chart plus leadership and \ac{dasn} responsibility tables (current as of 2025-12-18); cited SECNAV ASN (RDA) and \ac{dasn} portfolio pages.
+- Resolved the merge conflicts in `6_PPBE.tex` and `appendix_key_roles.tex`, standardizing the \ac{n89} entry formatting and placement.
+- Fixed table label expansion by redefining `\thetable` as a non-robust macro so table numbers populate the list of tables and refs correctly.
+- Build: `latexmk -shell-escape src/main.tex` succeeds; warnings remain for minted fallback and overfull \hbox in 18_test_eval and 24_Battle_Damage_Assessment_Repair.
+- Fixed overfull \hbox warnings by tightening TikZ node widths/spacing in 18_test_eval and the BDAR continuum figure.
+- Build: `latexmk -shell-escape src/main.tex` succeeds; only minted fallback warning remains.

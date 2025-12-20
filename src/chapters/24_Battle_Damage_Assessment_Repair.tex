@@ -28,13 +28,13 @@
 \begin{figure}[htbp]
   \centering
   \begin{tikzpicture}[
-    node distance=1.8cm and 2.2cm,
-    phase/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, align=center, minimum width=2.9cm, minimum height=1.4cm},
+    node distance=1.2cm and 1.2cm,
+    phase/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, align=center, inner sep=4pt, minimum width=2.2cm, text width=2.2cm, minimum height=1.4cm},
     arrow/.style={-Latex, line width=1pt, draw=Gray60}
   ]
     \node[phase] (dc) {Damage Control\\Ship's Force};
     \node[phase, right=of dc] (ra) {Rapid Response\\MSC tugs / MDSU / SUPSALV};
-    \node[phase, right=of ra] (assess) {Damage Assessment\\RMC/NSY/SEA 21 teams};
+    \node[phase, right=of ra] (assess) {Damage Assessment\\RMC / NSY / SEA 21 teams};
     \node[phase, right=of assess] (exped) {Expeditionary Repair\\FDSRT / EMRF with SIB};
     \node[phase, right=of exped] (depot) {Depot Repair / Disposition\\NSY / RMC / private yard};
 

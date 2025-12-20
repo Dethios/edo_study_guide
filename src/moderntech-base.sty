@@ -662,7 +662,7 @@
   \@ifundefined{c@chapter}{}{%
     \counterwithout{table}{chapter}%
   }%
-  \RenewDocumentCommand{\thetable}{}{\Roman{table}}
+  \renewcommand{\thetable}{\Roman{table}}
 \fi
 
 % =============================
