@@ -46,7 +46,7 @@
 - [ ] What other items are in the NDAA beyond basic authorizations for spending?
 - [ ] Read the current (new) NDAA and NSS
 - [ ] How does IWS test terminal defense weapons such as CIWS
-- [ ] What is the ASN(RD&A) office structure. What are their job titles and fundtions?
+- [x] What is the ASN(RD&A) office structure. What are their job titles and fundtions?
 - [ ] More review of flags.
 
 ## Current jobs
@@ -172,6 +172,7 @@
 
 ## Session updates (2025-12-19)
 
+- Added an \ac{asnrdanda} organization chart plus leadership and \ac{dasn} responsibility tables (current as of 2025-12-18); cited SECNAV ASN (RDA) and \ac{dasn} portfolio pages.
 - Resolved the merge conflicts in `6_PPBE.tex` and `appendix_key_roles.tex`, standardizing the \ac{n89} entry formatting and placement.
 - Fixed table label expansion by redefining `\thetable` as a non-robust macro so table numbers populate the list of tables and refs correctly.
 - Build: `latexmk -shell-escape src/main.tex` succeeds; warnings remain for minted fallback and overfull \hbox in 18_test_eval and 24_Battle_Damage_Assessment_Repair.

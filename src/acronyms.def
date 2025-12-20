@@ -35,6 +35,7 @@
 \newacronym{ouswc}{OUSW(C)}{Office of the Under Secretary of War (Comptroller)}
 \newacronym{asnrdanda}{{ASN(RD\&A)}}{Assistant Secretary of the Navy for Research, Development and Acquisition}
 \newacronym{asn}{ASN}{Assistant Secretary of the Navy}
+\newacronym{dasn}{DASN}{Deputy Assistant Secretary of the Navy}
 \newacronym{asnfmc}{ASN(FM\&C)}{Assistant Secretary of the Navy (Financial Management and Comptroller)}
 \newacronym{dasnapb}{DASN (APB)}{Deputy Assistant Secretary of the Navy (Acquisition Policy and Budget)}
 \newacronym{cae}{CAE}{Component Acquisition Executive}
@@ -439,9 +440,10 @@
 	longplural={Foreign Military Sales}
 ]{fms}{FMS}{Foreign Military Sales}
 \newacronym[
-	shortplural={DCS},
-	longplural={Direct Commercial Sales}
+        shortplural={DCS},
+        longplural={Direct Commercial Sales}
 ]{dcs}{DCS}{Direct Commercial Sales}
+\newacronym{nipo}{NIPO}{Navy International Programs Office}
 
 % --- Budget Formulation & Decision ---
 

@@ -14,6 +14,7 @@
       "latexmk -shell-escape src/main.tex builds succeed with occasional overfull box or minted fallback warnings.",
       "Use scratch folder for experiments; minted falls back when shell-escape is disabled.",
       "Default fonts: Merriweather, Montserrat, and Source Sans Pro via fontspec.",
+      "Added ASN (RD&A) organization chart plus leadership and DASN responsibility tables (current as of 2025-12-18) with SECNAV source citations."
       "Added missing OPNAV N-code titles/functions (N80-84, N89, N91, N95-99) into PPBE and Key Roles sections.",
       "Fixed table label expansion by redefining \\thetable to ensure list-of-tables numbering and refs render correctly.",
       "Resolved overfull hbox warnings by tightening TikZ node widths/spacing in test/eval and BDAR figures."
