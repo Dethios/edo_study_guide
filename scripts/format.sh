@@ -27,9 +27,13 @@ else
 fi
 
 for f in "${targets[@]}"; do
-  if [[ ! -f "$f" ]]; then
-    echo "Skipping missing file: $f" >&2
+  resolved="$f"
+  if [[ ! -f "$resolved" && -f "$ROOT/tex/$resolved" ]]; then
+    resolved="$ROOT/tex/$resolved"
+  fi
+  if [[ ! -f "$resolved" ]]; then
+    echo "Skipping missing file: $resolved" >&2
     continue
   fi
-  latexindent -w -s -m -l="$CONFIG" --overwriteIfDifferent --outputdir=/dev/null "$f"
+  latexindent -w -s -m -l="$CONFIG" --overwriteIfDifferent --outputdir=/dev/null "$resolved"
 done

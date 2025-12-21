@@ -293,8 +293,8 @@
   "latex-workshop.latex.build.rootfileInStatus": true,
   "latex-workshop.latex.clean.subfolder.enabled": true,
   "latex-workshop.latex.autoClean.run": "never",
-  "latex-workshop.latex.outDir": "../out",
-  "latex-workshop.latex.auxDir": "../build",
+  "latex-workshop.latex.outDir": "${workspaceFolder}/out",
+  "latex-workshop.latex.auxDir": "${workspaceFolder}/build",
   "latex-workshop.latex.recipe.default": "lastUsed",
   "latex-workshop.latex.recipes": [
     { "name": "BUILD-WIN", "tools": ["build-win"] },
@@ -330,8 +330,8 @@
       "command": "latexmk",
       "args": [
         "-lualatex",
-        "-outdir=../out",
-        "-auxdir=../build",
+        "-outdir=${workspaceFolder}/out",
+        "-auxdir=${workspaceFolder}/build",
         "-f",
         "-quiet",
         "-synctex=1",
@@ -366,7 +366,7 @@
     "-w",
     "-s",
     "-m",
-    "-l=../latexindent.yaml",
+    "-l=${workspaceFolder}/latexindent.yaml",
     "--overwriteIfDifferent"
   ],
 
@@ -412,7 +412,7 @@
     "%DOCFILE%.vrb"
   ],
   "latex-workshop.linting.chktex.enabled": true,
-  "latex-workshop.chktex.configFile": "../.chktexrc",
+  "latex-workshop.chktex.configFile": "${workspaceFolder}/.chktexrc",
   "latex-workshop.linting.lacheck.enabled": false,
   "latex-workshop.mathpreviewpanel.cursor.enabled": true,
   "latex-workshop.view.autoFocus.enabled": true,

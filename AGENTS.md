@@ -5,6 +5,7 @@
 - Always read this file and `Other/project_export.json` before starting any task. Use `Other/project_export.md` as a quick snapshot only.
 - `AGENTS.md` is the authoritative instruction + task list; `Other/project_export.json` is the canonical project database/context. Keep them in sync after every task.
 - Add new user directives and agent-recommended tasks here; mirror context changes in `Other/project_export.json`.
+- Do not track `out/main.pdf`; use it only for verification. Release PDFs stay gitignored in `release/`, and the release script tags and uploads the PDF to GitHub Releases.
 
 ## Mission and doctrine (high-level)
 
@@ -23,7 +24,8 @@
 - Update this file with task status changes and any new/recommended tasks or directives.
 - Run `python3 scripts/export_agents_json.py --root .` to refresh `AGENTS.json` (machine-readable export).
 - Run `latexmk -shell-escape` (project `latexmkrc` handles targets) and record warnings/errors.
-- Check off any TODOs you completed; search the LaTeX sources (`main.tex`, `chapters/`, `tikz/`, `templates/`) for outstanding TODO comments that can be addressed.
+- After every test/build, scrub and remove SAVE-ERROR files, temp files, and lock files (including *.lock/*.lck/*.auxlock).
+- Check off any TODOs you completed; search the LaTeX sources (`tex/main.tex`, `tex/chapters/`, `tex/tikz/`, `tex/templates/`) for outstanding TODO comments that can be addressed.
 - Proceed with next recommended tasks automatically; if three next steps exist, execute all three.
 
 ## Lookups
@@ -66,7 +68,7 @@
 - [x] Fix latexmk failure after clean build (longtblr runaway argument; missing bcf/bbl).
 - [x] Restore table column types: F -> l, L -> X, W -> X; remove no-longer-needed custom column types.
 - [x] Determine why IfSubFileClass functions were not activating.
-- [x] Update `src/templates/subfile_template.tex` guidance (remove stale placeholders).
+- [x] Update `tex/templates/subfile_template.tex` guidance (remove stale placeholders).
 - [x] Build a single-glance table linking \ac{opnavinst} 4700.7M, \ac{opnavnote} 4700, \ac{jfmm}, and \ac{cbmp} to owners/impacts/talking points.
 - [x] Add an `\ac{opm}` acronym definition and update CIVPERS guidance to use it.
 - [x] Develop a CNO Availability Execution phase table mapping phases to deliverables/docs/leaders.
@@ -85,7 +87,7 @@
 - [x] Codex Cloud: add startup scripts to install TeX Live and required binaries.
 - [x] Remove minibib code from templates and the study guide.
 - [x] Add appendix with Cannon Cocker and IWE rosters/pyramids.
-- [x] Refactor repo layout so LaTeX sources live at the repo root; align build outputs, scripts, and tooling configs.
+- [x] Refactor repo layout so LaTeX sources live under `tex/`; align build outputs, scripts, and tooling configs.
 
 ## Session updates (2025-12-08)
 
@@ -196,3 +198,21 @@
 - Refreshed VS Code LaTeX Workshop config to use new build script, updated latexindent args, and aligned image/tikz path mappings.
 - Build: `latexmk -shell-escape main.tex` succeeds; no new warnings observed in the latexmk output.
 - Renamed CNO messaging PDFs in `assets/information` to descriptive filenames (CNOTE 1–3, Day One Message, Charge of Command).
+- Moved LaTeX sources and assets into `tex/`, keeping build artifacts in root `out/` + `build/`; updated `latexmkrc`, `moderntech.sty`, and bib notes to match.
+- Updated build/format scripts for `tex/main.tex` defaults, added post-build scrub of SAVE-ERROR/temp/lock files, and removed `scripts/Path.ps1`.
+- Refreshed VS Code LaTeX Workshop recipes for WSL/Windows and updated image/bib path mappings for the new `tex/` layout.
+- Build: `latexmk -shell-escape tex/main.tex` succeeds; output written to `out/main.pdf`.
+- Removed `tex/chapters/latexmkrc` so subfile builds rely on the root `latexmkrc` and keep outputs in `out/` + `build/`.
+- WSL tooling: switched to a systemd-managed user `ssh-agent` and simplified `~/.bashrc` to export `SSH_AUTH_SOCK` only.
+- Added `scripts/scrub.sh` + `scripts/scrub.ps1` and a VS Code task to remove SAVE-ERROR/temp/lock artifacts; build scripts now call the scrub helper.
+- Updated `scripts/release.*` to copy the dated PDF and then commit/push; `scripts/push.*` no longer create release files.
+- LaTeX Workshop now points to root `latexindent.yaml`/`.chktexrc` and uses absolute `out/` + `build/` paths.
+- Release workflow: ignore `release/*.pdf`, tag with `release-YYYYMMDD`, and publish assets via GitHub CLI; added VS Code tasks for release and AI context bundling; removed `scripts/manage.sh`.
+- Release notes now pull from `CHANGELOG.md` (tag section) with git-log fallback; added README/CHANGELOG/LICENSE + standard community files.
+- Set dual licensing: CC BY-NC 4.0 for document content (`LICENSE`) and MIT for scripts (`LICENSE-CODE`); added CONTRIBUTING guidance for PR-based derivative submissions.
+- Added and tracked `tex/assets/information/2025-National-Security-Strategy.pdf`.
+- Added `scripts/ai-context.sh` + `scripts/ai-context.ps1` to build `scratch/ai_context.zip` (diffs, log excerpt, selected files) and a VS Code task to generate the bundle for Gemini uploads.
+- Build: `latexmk -shell-escape` required `tex/main.tex` (no default targets); `latexmk -shell-escape tex/main.tex` reports up-to-date output.
+- TODO scan: `rg TODO tex/main.tex tex/chapters tex/tikz tex/templates` found no matches.
+- Context: user asked for Gemini 3 Pro workflow guidance and a one-step AI context zip for drag/drop.
+- Generated `scratch/settings_diff.md` comparing VS Code settings across Windows user, WSL machine, and project workspaces.

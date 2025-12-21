@@ -23,6 +23,8 @@ $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 
 $root = Split-Path -Parent $PSScriptRoot
+$exitCode = 0
+$skipBuild = $false
 
 if (-not $Doc) {
     if (Test-Path (Join-Path $root "tex/main.tex")) {
@@ -39,7 +41,12 @@ if (-not (Test-Path $Doc)) {
     if (Test-Path $candidate) {
         $Doc = $candidate
     } else {
-        throw "File not found: $Doc"
+        $texCandidate = Join-Path $root "tex\$Doc"
+        if (Test-Path $texCandidate) {
+            $Doc = $texCandidate
+        } else {
+            throw "File not found: $Doc"
+        }
     }
 }
 
@@ -50,13 +57,11 @@ try {
 
     if ($Clean) {
         & latexmk -C "-outdir=$OutDir" "-auxdir=$AuxDir" $Doc
-        if (-not $NoScrub) {
-            Remove-TempArtifacts -Root $root
-        }
-        return
+        $exitCode = $LASTEXITCODE
+        $skipBuild = $true
     }
 
-    if ($Preflight) {
+    if (-not $skipBuild -and $Preflight) {
         $texliveonfly = Get-Command texliveonfly -ErrorAction SilentlyContinue
         if ($texliveonfly) {
             & $texliveonfly.Source --compiler=$Engine `
@@ -67,59 +72,47 @@ try {
         }
     }
 
-    $args = @(
-        "-pdf",
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "-outdir=$OutDir",
-        "-auxdir=$AuxDir",
-        "-f"
-    )
+    if (-not $skipBuild) {
+        $args = @(
+            "-pdf",
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-outdir=$OutDir",
+            "-auxdir=$AuxDir",
+            "-f"
+        )
 
-    switch ($Engine) {
-        "lualatex" { $args += "-lualatex" }
-        "xelatex" { $args += "-xelatex" }
-        "pdflatex" { }
+        switch ($Engine) {
+            "lualatex" { $args += "-lualatex" }
+            "xelatex" { $args += "-xelatex" }
+            "pdflatex" { }
+        }
+
+        if (-not $NoShellEscape) { $args += "-shell-escape" }
+        if ($Jobs) { $args += "-jobs=$Jobs" }
+        if ($Quiet) { $args += "-quiet" }
+        if ($Watch) { $args += "-pvc" }
+
+        & latexmk @args $Doc
+        $exitCode = $LASTEXITCODE
     }
-
-    if (-not $NoShellEscape) { $args += "-shell-escape" }
-    if ($Jobs) { $args += "-jobs=$Jobs" }
-    if ($Quiet) { $args += "-quiet" }
-    if ($Watch) { $args += "-pvc" }
-
-    & latexmk @args $Doc
 }
 finally {
     Pop-Location
 }
 
-function Remove-TempArtifacts {
-    param([string]$Root)
-    $patterns = @(
-        '*SAVE-ERROR*',
-        '*.tmp',
-        '*.temp',
-        '*.lock',
-        '*.lck',
-        '*.auxlock',
-        '*.synctex(busy)',
-        '*.synctex.gz(busy)'
-    )
-    Get-ChildItem -Path $Root -Recurse -File -Force -ErrorAction SilentlyContinue |
-        Where-Object { $_.FullName -notmatch '\\.git\\' } |
-        Where-Object {
-            $name = $_.Name
-            foreach ($pattern in $patterns) {
-                if ($name -like $pattern) { return $true }
-            }
-            return $false
-        } |
-        ForEach-Object {
-            Remove-Item -LiteralPath $_.FullName -Force -ErrorAction SilentlyContinue
+if (-not $NoScrub) {
+    $scrubScript = Join-Path $root 'scripts\scrub.ps1'
+    if (Test-Path $scrubScript) {
+        try {
+            & $scrubScript
+        } catch {
+            Write-Warning "Scrub failed: $($_.Exception.Message)"
         }
+    }
 }
 
-if (-not $NoScrub) {
-    Remove-TempArtifacts -Root $root
+if ($exitCode -ne 0) {
+    exit $exitCode
 }

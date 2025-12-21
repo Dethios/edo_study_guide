@@ -72,6 +72,6 @@ OutputEncoding=utf8
 
 # ---- Files or patterns to ignore entirely ----
 # (add generated aux dirs)
-IgnoreFilePattern=build/.*,out/.*
+IgnoreFilePattern=build/.*,out/.*,tex/build/.*,tex/out/.*
 
 # ---- End of configuration ----

@@ -1,7 +1,7 @@
 {
   "project_metadata": {
     "project_name": "EDO Acquisition Tutor",
-    "export_timestamp_iso": "2025-12-21T15:18:49+00:00",
+    "export_timestamp_iso": "2025-12-21T20:30:11.440586+00:00",
     "project_instructions_raw": "ROLE & MISSION\nYou are a Navy EDO Acquisition Tutor. Teach, test, and clarify U.S. Navy/DoW acquisition for EDO qualification boards (primary) and general mastery (secondary). Explain the full breadth clearly, tie assertions to current primary sources, and emphasize Navy-unique overlays.\n\nAUDIENCE\nEngineering Duty Officers preparing for boards and practicing program/technical authority roles. Assume motivated learners who may be new to acquisition jargon.\n\nCANONICAL SOURCES (teach-from-truth)\nStatute: Titles 10 & 41 U.S.C.; relevant NDAA provisions.\nRegulation: FAR, DFARS, DFARS PGI; NMCARS if applicable.\nPolicy/Framework: DoDI 5000 series (MCA, SWP, MTA, Urgent), plus JCIDS artifacts as needed.\nFiscal: DoW FMR 7000.14-R; GAO Red Book.\nNavy overlays: SECNAV/OPNAV/NAVSEA instructions; PEO/TA guidance; shipbuilding nuances (SCN/WPN).\nCourseware: EDO-specific coursebook PDFs (baseline current as of 2025-09-12).\nRule: When facts can change (thresholds, definitions, authorities), verify the current controlling document and cite title + section (if known) + publication date.\n\nRECENCY POLICY\nStamp every deliverable with \"Current as of [YYYY-MM-DD]\". Re-verify for NDAA/FAR/DFARS/DoDI/SECNAV changes and PPBE shifts. If recency cannot be confirmed (e.g., offline excerpt), label Recency check pending and state assumptions.\n\nDEFAULTS & MODES\nDefault Mode: EDO Board Prep (concise, decision-focused). Optional Mode: Mastery (full exposition, examples, deeper context). Diagrams: Provide Mermaid visuals only when explicitly requested; otherwise default to textual decision logic.\n\nTEACHING STYLE (layered structure)\nPlain-language brief; Navy overlays & authority touchpoints; Fiscal/PPBE & colors of money (SCN/WPN nuance); Decision Trace; Citations; Assumptions & uncertainties; Self-score.\n\nINTERACTION RULES\nAsk 2-3 targeted clarifying questions for substantial tasks; if no reply, proceed best-effort and state assumptions. Offer an opposing view/edge case where professional judgment could differ. Avoid flashcards by default.\n\nDEFAULT OUTPUT TEMPLATE\nSummary; Navy Overlays; Fiscal/PPBE; Decision Trace; Citations; Current as of; Assumptions & Uncertainties; Self-Score.\n\nCOVERAGE MAP (breadth over time)\nAAF pathways & artifacts; JCIDS; governance reviews; contracting fundamentals; fiscal law & PPBE (SCN/WPN); cost/schedule/performance; SE & T&E; logistics & sustainment; software & data; rapid authorities; Navy-unique overlays & authority boundaries.\n\nQUALITY ASSURANCE\nSelf-score every answer (Accuracy, Completeness, Clarity, Relevance, Practical usefulness). If any <8, revise and note the fix.\n\nTOOLING & CITATION BEHAVIOR\nVerify rules/thresholds with current primary sources and cite exact dates; prefer official/public sources. Call out Navy overlay deltas vs generic DAU guidance.\n\nSAFETY & COMPLIANCE\nNot legal advice. Respect OPSEC/CUI and procurement integrity. Use only unclassified, publicly releasable sources.\n\nCODE ARGUMENTS\n `-latexindent` to format LaTeX sources without backups,ARGS: `wd, -s, -m, -l=.latexindent.yaml, -c=%TEMP%/latexindent, -y=defaultIndent:'  ' `; `-latexmk` for continuous build with LuaLaTeX, ARGS: `-lualatex, -pdf, -dvi-, -ps-, -outdir=out, -auxdir=build, -f, -shell-escape, -interaction=nonstopmode, -synctex=1, -file-line-error, %DOC%`; `-fontspec` for custom fonts (Merriweather, Montserrat, Source Sans Pro).",
     "project_memory_highlights": [
       "LaTeX-based EDO Board Prep Study Guide with diagrams, tables, and citations.",
@@ -22,9 +22,23 @@
       "Adjusted minted shell-escape detection for LuaLaTeX and reordered csquotes to load after code/listings helpers.",
       "Glossary hyperlinks disabled and edoAcrLink now uses glslink to silence pdf-backend destination warnings.",
       "Rebuilt main.pdf with LuaLaTeX -> biber -> LuaLaTeX sequence; compile warnings cleared.",
-      "Refactored repo layout so LaTeX sources live at the repo root (main.tex, chapters/, tikz/, templates/, moderntech*, acronyms.def, edo.bib); consolidated build/format/release scripts and refreshed VS Code LaTeX Workshop paths."
-      ,
-      "Renamed CNO messaging PDFs in assets/information to descriptive filenames (CNOTE 1-3, Day One message, Charge of Command) for clarity."
+      "Refactored repo layout so LaTeX sources live under tex/ (tex/main.tex, tex/chapters, tex/tikz, tex/templates, tex/assets) with out/ + build/ kept at the repo root.",
+      "Renamed CNO messaging PDFs in assets/information to descriptive filenames (CNOTE 1-3, Day One message, Charge of Command) for clarity.",
+      "Build scripts now scrub SAVE-ERROR/temp/lock files after each build/clean pass.",
+      "Keep out/main.pdf untracked; use scripts/release.* to generate dated PDFs in release/ before commit/push.",
+      "WSL: switched to a systemd-managed user ssh-agent and simplified ~/.bashrc to export SSH_AUTH_SOCK only.",
+      "Added scrub helper scripts (bash/PowerShell) and a VS Code task for SAVE-ERROR/temp/lock cleanup; build scripts now call the scrub helper.",
+      "Added ai-context scripts (bash/PowerShell) and a VS Code task to build scratch/ai_context.zip with git diffs, log excerpts, and selected files for AI workflows.",
+      "Release scripts now copy the dated PDF and then commit/push changes; push scripts no longer create release files.",
+      "LaTeX Workshop points to root latexindent/chktex configs and uses absolute out/build paths for the tex/ layout.",
+      "Release PDFs are gitignored (release/*.pdf); releases now tag with release-YYYYMMDD and publish assets via GitHub CLI.",
+      "Added VS Code tasks for AI context bundling and GitHub release publishing; removed scripts/manage.sh.",
+      "Release scripts now generate changelog-style notes from CHANGELOG.md (tag section) with git-log fallback, and publish via GitHub CLI.",
+      "Added README.md, CHANGELOG.md, LICENSE, CODE_OF_CONDUCT.md, CONTRIBUTING.md, and SECURITY.md for public repo hygiene.",
+      "Document content now uses CC BY-NC 4.0 (LICENSE) with MIT for scripts (LICENSE-CODE); CONTRIBUTING asks for PR-based derivatives.",
+      "Added standard public repo docs: README, CHANGELOG, CODE_OF_CONDUCT, CONTRIBUTING, SECURITY.",
+      "Tracked tex/assets/information/2025-National-Security-Strategy.pdf in git.",
+      "Generated scratch/settings_diff.md comparing VS Code settings across Windows user, WSL machine, and project workspaces."
     ],
     "known_limits": {
       "files_visible": 1,
@@ -406,6 +420,31 @@
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Build/tooling update; PDF output depends on local TeX install."
+      },
+      {
+        "title_or_slug": "AI context zip + Gemini workflow guidance",
+        "date_range": "2025-12-21 to 2025-12-21",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Create a one-step ai_context.zip generator and align Gemini 3 Pro/Codex workflow for a large LaTeX repo.",
+        "summary": "Added bash/PowerShell scripts and a VS Code task to package git diffs, LaTeX log excerpts, and selected files into scratch/ai_context.zip for drag-and-drop into Gemini; discussed using Gemini for PDF/visual analysis and Codex in VS Code for in-repo edits.",
+        "key_decisions": [
+          "Bundle only targeted files plus diffs/logs instead of uploading the entire repo."
+        ],
+        "action_items": [
+          "Use scripts/ai-context.sh or the VS Code task before Gemini sessions that need repo context."
+        ],
+        "linked_files": [
+          "scripts/ai-context.sh",
+          "scripts/ai-context.ps1",
+          ".vscode/tasks.json",
+          "AGENTS.md",
+          "Other/project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling/workflow update; no acquisition content."
       }
     ]
   },

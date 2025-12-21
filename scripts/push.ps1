@@ -17,10 +17,6 @@ $blockPatterns = @(
     'token|apikey|secret'
 )
 
-# 0) Optional create a release file
-Write-Host 'Creating release file...'
-& (Join-Path $PSScriptRoot 'release.ps1')
-
 # 1) Refuse if patterns present in staged or untracked
 $changedFiles = git ls-files -o -m --exclude-standard
 $combinedPattern = ($blockPatterns -join '|')

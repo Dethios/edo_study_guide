@@ -1,17 +1,18 @@
 {
   "schema_version": "edo-agents-export@1",
-  "generated_at": "2025-12-21T15:19:08+00:00",
+  "generated_at": "2025-12-21T20:30:14+00:00",
   "source": {
     "path": "AGENTS.md",
-    "sha256": "caa9343858542b7efb3e7eece30e8fe35dce772305caf51eeab0bdcbd06dd38b",
-    "line_count": 198
+    "sha256": "7040899dbd253f08998acac16f99e4771f5b9916ed06deb38e712f3d66eb48d4",
+    "line_count": 218
   },
   "title": "AGENTS Operating Guide",
   "derived": {
     "read_first": [
       "Always read this file and `Other/project_export.json` before starting any task. Use `Other/project_export.md` as a quick snapshot only.",
       "`AGENTS.md` is the authoritative instruction + task list; `Other/project_export.json` is the canonical project database/context. Keep them in sync after every task.",
-      "Add new user directives and agent-recommended tasks here; mirror context changes in `Other/project_export.json`."
+      "Add new user directives and agent-recommended tasks here; mirror context changes in `Other/project_export.json`.",
+      "Do not track `out/main.pdf`; use it only for verification. Release PDFs stay gitignored in `release/`, and the release script tags and uploads the PDF to GitHub Releases."
     ],
     "mission_and_doctrine": {
       "items": [
@@ -68,7 +69,12 @@
           "children": []
         },
         {
-          "text": "Check off any TODOs you completed; search the LaTeX sources (`main.tex`, `chapters/`, `tikz/`, `templates/`) for outstanding TODO comments that can be addressed.",
+          "text": "After every test/build, scrub and remove SAVE-ERROR files, temp files, and lock files (including *.lock/*.lck/*.auxlock).",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Check off any TODOs you completed; search the LaTeX sources (`tex/main.tex`, `tex/chapters/`, `tex/tikz/`, `tex/templates/`) for outstanding TODO comments that can be addressed.",
           "checked": null,
           "children": []
         },
@@ -87,7 +93,8 @@
         "Update this file with task status changes and any new/recommended tasks or directives.",
         "Run `python3 scripts/export_agents_json.py --root .` to refresh `AGENTS.json` (machine-readable export).",
         "Run `latexmk -shell-escape` (project `latexmkrc` handles targets) and record warnings/errors.",
-        "Check off any TODOs you completed; search the LaTeX sources (`main.tex`, `chapters/`, `tikz/`, `templates/`) for outstanding TODO comments that can be addressed.",
+        "After every test/build, scrub and remove SAVE-ERROR files, temp files, and lock files (including *.lock/*.lck/*.auxlock).",
+        "Check off any TODOs you completed; search the LaTeX sources (`tex/main.tex`, `tex/chapters/`, `tex/tikz/`, `tex/templates/`) for outstanding TODO comments that can be addressed.",
         "Proceed with next recommended tasks automatically; if three next steps exist, execute all three."
       ]
     }
@@ -110,6 +117,11 @@
         },
         {
           "text": "Add new user directives and agent-recommended tasks here; mirror context changes in `Other/project_export.json`.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Do not track `out/main.pdf`; use it only for verification. Release PDFs stay gitignored in `release/`, and the release script tags and uploads the PDF to GitHub Releases.",
           "checked": null,
           "children": []
         }
@@ -189,7 +201,12 @@
           "children": []
         },
         {
-          "text": "Check off any TODOs you completed; search the LaTeX sources (`main.tex`, `chapters/`, `tikz/`, `templates/`) for outstanding TODO comments that can be addressed.",
+          "text": "After every test/build, scrub and remove SAVE-ERROR files, temp files, and lock files (including *.lock/*.lck/*.auxlock).",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Check off any TODOs you completed; search the LaTeX sources (`tex/main.tex`, `tex/chapters/`, `tex/tikz/`, `tex/templates/`) for outstanding TODO comments that can be addressed.",
           "checked": null,
           "children": []
         },
@@ -388,7 +405,7 @@
           "children": []
         },
         {
-          "text": "Update `src/templates/subfile_template.tex` guidance (remove stale placeholders).",
+          "text": "Update `tex/templates/subfile_template.tex` guidance (remove stale placeholders).",
           "checked": true,
           "children": []
         },
@@ -483,7 +500,7 @@
           "children": []
         },
         {
-          "text": "Refactor repo layout so LaTeX sources live at the repo root; align build outputs, scripts, and tooling configs.",
+          "text": "Refactor repo layout so LaTeX sources live under `tex/`; align build outputs, scripts, and tooling configs.",
           "checked": true,
           "children": []
         }
@@ -924,6 +941,96 @@
           "text": "Renamed CNO messaging PDFs in `assets/information` to descriptive filenames (CNOTE 1\u20133, Day One Message, Charge of Command).",
           "checked": null,
           "children": []
+        },
+        {
+          "text": "Moved LaTeX sources and assets into `tex/`, keeping build artifacts in root `out/` + `build/`; updated `latexmkrc`, `moderntech.sty`, and bib notes to match.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Updated build/format scripts for `tex/main.tex` defaults, added post-build scrub of SAVE-ERROR/temp/lock files, and removed `scripts/Path.ps1`.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Refreshed VS Code LaTeX Workshop recipes for WSL/Windows and updated image/bib path mappings for the new `tex/` layout.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Build: `latexmk -shell-escape tex/main.tex` succeeds; output written to `out/main.pdf`.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Removed `tex/chapters/latexmkrc` so subfile builds rely on the root `latexmkrc` and keep outputs in `out/` + `build/`.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "WSL tooling: switched to a systemd-managed user `ssh-agent` and simplified `~/.bashrc` to export `SSH_AUTH_SOCK` only.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Added `scripts/scrub.sh` + `scripts/scrub.ps1` and a VS Code task to remove SAVE-ERROR/temp/lock artifacts; build scripts now call the scrub helper.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Updated `scripts/release.*` to copy the dated PDF and then commit/push; `scripts/push.*` no longer create release files.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "LaTeX Workshop now points to root `latexindent.yaml`/`.chktexrc` and uses absolute `out/` + `build/` paths.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Release workflow: ignore `release/*.pdf`, tag with `release-YYYYMMDD`, and publish assets via GitHub CLI; added VS Code tasks for release and AI context bundling; removed `scripts/manage.sh`.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Release notes now pull from `CHANGELOG.md` (tag section) with git-log fallback; added README/CHANGELOG/LICENSE + standard community files.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Set dual licensing: CC BY-NC 4.0 for document content (`LICENSE`) and MIT for scripts (`LICENSE-CODE`); added CONTRIBUTING guidance for PR-based derivative submissions.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Added and tracked `tex/assets/information/2025-National-Security-Strategy.pdf`.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Added `scripts/ai-context.sh` + `scripts/ai-context.ps1` to build `scratch/ai_context.zip` (diffs, log excerpt, selected files) and a VS Code task to generate the bundle for Gemini uploads.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Build: `latexmk -shell-escape` required `tex/main.tex` (no default targets); `latexmk -shell-escape tex/main.tex` reports up-to-date output.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "TODO scan: `rg TODO tex/main.tex tex/chapters tex/tikz tex/templates` found no matches.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Context: user asked for Gemini 3 Pro workflow guidance and a one-step AI context zip for drag/drop.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Generated `scratch/settings_diff.md` comparing VS Code settings across Windows user, WSL machine, and project workspaces.",
+          "checked": null,
+          "children": []
         }
       ]
     }
@@ -1116,7 +1223,7 @@
           "children": []
         },
         {
-          "text": "Update `src/templates/subfile_template.tex` guidance (remove stale placeholders).",
+          "text": "Update `tex/templates/subfile_template.tex` guidance (remove stale placeholders).",
           "checked": true,
           "children": []
         },
@@ -1211,7 +1318,7 @@
           "children": []
         },
         {
-          "text": "Refactor repo layout so LaTeX sources live at the repo root; align build outputs, scripts, and tooling configs.",
+          "text": "Refactor repo layout so LaTeX sources live under `tex/`; align build outputs, scripts, and tooling configs.",
           "checked": true,
           "children": []
         }
@@ -1359,7 +1466,25 @@
         "Consolidated scripts into build/format/release pairs for bash + PowerShell; removed legacy latexmk/copy_release/watch helpers and empty `tools/`.",
         "Refreshed VS Code LaTeX Workshop config to use new build script, updated latexindent args, and aligned image/tikz path mappings.",
         "Build: `latexmk -shell-escape main.tex` succeeds; no new warnings observed in the latexmk output.",
-        "Renamed CNO messaging PDFs in `assets/information` to descriptive filenames (CNOTE 1\u20133, Day One Message, Charge of Command)."
+        "Renamed CNO messaging PDFs in `assets/information` to descriptive filenames (CNOTE 1\u20133, Day One Message, Charge of Command).",
+        "Moved LaTeX sources and assets into `tex/`, keeping build artifacts in root `out/` + `build/`; updated `latexmkrc`, `moderntech.sty`, and bib notes to match.",
+        "Updated build/format scripts for `tex/main.tex` defaults, added post-build scrub of SAVE-ERROR/temp/lock files, and removed `scripts/Path.ps1`.",
+        "Refreshed VS Code LaTeX Workshop recipes for WSL/Windows and updated image/bib path mappings for the new `tex/` layout.",
+        "Build: `latexmk -shell-escape tex/main.tex` succeeds; output written to `out/main.pdf`.",
+        "Removed `tex/chapters/latexmkrc` so subfile builds rely on the root `latexmkrc` and keep outputs in `out/` + `build/`.",
+        "WSL tooling: switched to a systemd-managed user `ssh-agent` and simplified `~/.bashrc` to export `SSH_AUTH_SOCK` only.",
+        "Added `scripts/scrub.sh` + `scripts/scrub.ps1` and a VS Code task to remove SAVE-ERROR/temp/lock artifacts; build scripts now call the scrub helper.",
+        "Updated `scripts/release.*` to copy the dated PDF and then commit/push; `scripts/push.*` no longer create release files.",
+        "LaTeX Workshop now points to root `latexindent.yaml`/`.chktexrc` and uses absolute `out/` + `build/` paths.",
+        "Release workflow: ignore `release/*.pdf`, tag with `release-YYYYMMDD`, and publish assets via GitHub CLI; added VS Code tasks for release and AI context bundling; removed `scripts/manage.sh`.",
+        "Release notes now pull from `CHANGELOG.md` (tag section) with git-log fallback; added README/CHANGELOG/LICENSE + standard community files.",
+        "Set dual licensing: CC BY-NC 4.0 for document content (`LICENSE`) and MIT for scripts (`LICENSE-CODE`); added CONTRIBUTING guidance for PR-based derivative submissions.",
+        "Added and tracked `tex/assets/information/2025-National-Security-Strategy.pdf`.",
+        "Added `scripts/ai-context.sh` + `scripts/ai-context.ps1` to build `scratch/ai_context.zip` (diffs, log excerpt, selected files) and a VS Code task to generate the bundle for Gemini uploads.",
+        "Build: `latexmk -shell-escape` required `tex/main.tex` (no default targets); `latexmk -shell-escape tex/main.tex` reports up-to-date output.",
+        "TODO scan: `rg TODO tex/main.tex tex/chapters tex/tikz tex/templates` found no matches.",
+        "Context: user asked for Gemini 3 Pro workflow guidance and a one-step AI context zip for drag/drop.",
+        "Generated `scratch/settings_diff.md` comparing VS Code settings across Windows user, WSL machine, and project workspaces."
       ]
     }
   ],

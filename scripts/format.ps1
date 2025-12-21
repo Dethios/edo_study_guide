@@ -25,6 +25,12 @@ if ($All) {
 } else {
     foreach ($entry in $Path) {
         $resolved = if (Test-Path $entry) { $entry } else { Join-Path $root $entry }
+        if (-not (Test-Path $resolved)) {
+            $texCandidate = Join-Path $root "tex\$entry"
+            if (Test-Path $texCandidate) {
+                $resolved = $texCandidate
+            }
+        }
         if (Test-Path $resolved -PathType Container) {
             $targets += Get-ChildItem -Path $resolved -Recurse -Filter *.tex | Select-Object -ExpandProperty FullName
         } else {

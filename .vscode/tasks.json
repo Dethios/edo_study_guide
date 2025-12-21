@@ -5,16 +5,6 @@
   "version": "2.0.0",
   "tasks": [
     // ---------------------------------------------------------------
-    // JSON patch helper (merges clipboard JSON into project export)
-    // ---------------------------------------------------------------
-    {
-      "label": "Apply JSON patch from clipboard",
-      "type": "shell",
-      "command": "python3 - << 'PY'\nimport json,sys,pyperclip,os\np=json.loads(pyperclip.paste())\nwith open('Other/project_export.json','r',encoding='utf-8') as f: base=json.load(f)\ndef merge(a,b):\n  for k,v in b.items():\n    if v is None: a.pop(k,None)\n    elif isinstance(v,dict) and isinstance(a.get(k),dict): merge(a[k],v)\n    else: a[k]=v\n  return a\nwith open('Other/project_export.json','w',encoding='utf-8') as f: json.dump(merge(base,p),f,indent=2,ensure_ascii=False)\nprint('✅ Patched Other/project_export.json')\nPY",
-      "problemMatcher": []
-    },
-
-    // ---------------------------------------------------------------
     // Safe Git auto-push (runs ./scripts/push.sh)
     // ---------------------------------------------------------------
     {
@@ -29,6 +19,118 @@
         "reveal": "always",
         "panel": "dedicated",
         "clear": true
+      }
+    },
+
+    // ---------------------------------------------------------------
+    // Scrub SAVE-ERROR/temp/lock artifacts
+    // ---------------------------------------------------------------
+    {
+      "label": "Scrub temp artifacts",
+      "type": "shell",
+      "command": "./scripts/scrub.sh",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "windows": {
+        "command": "pwsh",
+        "args": [
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "scripts\\scrub.ps1"
+        ]
+      }
+    },
+
+    // ---------------------------------------------------------------
+    // AI context bundle (diffs, logs, selected files)
+    // ---------------------------------------------------------------
+    {
+      "label": "AI: Build context bundle",
+      "type": "shell",
+      "command": "./scripts/ai-context.sh",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "windows": {
+        "command": "pwsh",
+        "args": [
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "scripts\\ai-context.ps1"
+        ]
+      }
+    },
+
+    // ---------------------------------------------------------------
+    // Release: tag + upload PDF via GitHub CLI
+    // ---------------------------------------------------------------
+    {
+      "label": "Release: Tag + Upload (GitHub)",
+      "type": "shell",
+      "command": "./scripts/release.sh",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "windows": {
+        "command": "pwsh",
+        "args": [
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "scripts\\release.ps1"
+        ]
+      }
+    },
+
+    // ---------------------------------------------------------------
+    // Build an AI context zip (diff + log excerpt + selected files)
+    // ---------------------------------------------------------------
+    {
+      "label": "AI: Build context zip",
+      "type": "shell",
+      "command": "./scripts/ai-context.sh",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "windows": {
+        "command": "pwsh",
+        "args": [
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "scripts\\ai-context.ps1"
+        ]
       }
     },
 

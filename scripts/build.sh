@@ -104,6 +104,8 @@ else
   if [[ ! -f "$TEXFILE" ]]; then
     if [[ -f "$ROOT/$TEXFILE" ]]; then
       TEXFILE="$ROOT/$TEXFILE"
+    elif [[ -f "$ROOT/tex/$TEXFILE" ]]; then
+      TEXFILE="$ROOT/tex/$TEXFILE"
     else
       echo "File not found: $TEXFILE" >&2
       exit 2
@@ -115,28 +117,22 @@ cd "$ROOT"
 
 mkdir -p "$OUTDIR" "$AUXDIR"
 
-scrub_artifacts() {
-  local patterns=(
-    "*SAVE-ERROR*"
-    "*.tmp"
-    "*.temp"
-    "*.lock"
-    "*.lck"
-    "*.auxlock"
-    "*.synctex(busy)"
-    "*.synctex.gz(busy)"
-  )
-  for pattern in "${patterns[@]}"; do
-    find "$ROOT" -path "$ROOT/.git" -prune -o -type f -name "$pattern" -print -delete
-  done
+run_scrub() {
+  local scrub="$ROOT/scripts/scrub.sh"
+  if [[ -x "$scrub" ]]; then
+    "$scrub" || true
+  fi
 }
 
 if [[ "$CLEAN" == "1" ]]; then
+  set +e
   latexmk -C -outdir="$OUTDIR" -auxdir="$AUXDIR" "$TEXFILE"
+  status=$?
+  set -e
   if [[ "$SCRUB" == "1" ]]; then
-    scrub_artifacts
+    run_scrub
   fi
-  exit 0
+  exit "$status"
 fi
 
 if [[ "$PREFLIGHT" == "1" ]]; then
@@ -174,8 +170,13 @@ LMK_ARGS=(
 [[ "$QUIET" == "1" ]] && LMK_ARGS+=("-quiet")
 [[ "$WATCH" == "1" ]] && LMK_ARGS+=("-pvc")
 
+set +e
 latexmk "${LMK_ARGS[@]}" "$TEXFILE"
+status=$?
+set -e
 
 if [[ "$SCRUB" == "1" ]]; then
-  scrub_artifacts
+  run_scrub
 fi
+
+exit "$status"
