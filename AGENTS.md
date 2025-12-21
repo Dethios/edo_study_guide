@@ -23,7 +23,7 @@
 - Update this file with task status changes and any new/recommended tasks or directives.
 - Run `python3 scripts/export_agents_json.py --root .` to refresh `AGENTS.json` (machine-readable export).
 - Run `latexmk -shell-escape` (project `latexmkrc` handles targets) and record warnings/errors.
-- Check off any TODOs you completed; search `src` for outstanding TODO comments that can be addressed.
+- Check off any TODOs you completed; search the LaTeX sources (`main.tex`, `chapters/`, `tikz/`, `templates/`) for outstanding TODO comments that can be addressed.
 - Proceed with next recommended tasks automatically; if three next steps exist, execute all three.
 
 ## Lookups
@@ -85,6 +85,7 @@
 - [x] Codex Cloud: add startup scripts to install TeX Live and required binaries.
 - [x] Remove minibib code from templates and the study guide.
 - [x] Add appendix with Cannon Cocker and IWE rosters/pyramids.
+- [x] Refactor repo layout so LaTeX sources live at the repo root; align build outputs, scripts, and tooling configs.
 
 ## Session updates (2025-12-08)
 
@@ -178,3 +179,20 @@
 - Build: `latexmk -shell-escape src/main.tex` succeeds; warnings remain for minted fallback and overfull \hbox in 18_test_eval and 24_Battle_Damage_Assessment_Repair.
 - Fixed overfull \hbox warnings by tightening TikZ node widths/spacing in 18_test_eval and the BDAR continuum figure.
 - Build: `latexmk -shell-escape src/main.tex` succeeds; only minted fallback warning remains.
+
+## Session updates (2025-12-20)
+
+- Installed Codex CLI via npm using a user-level prefix (`/home/victor`) after a global install hit EACCES; verified `codex-cli 0.76.0` is on PATH.
+- Build tooling: set absolute out/build dirs, stop recursive `src//` TEXINPUTS, and keep latexmk in repo root (`$do_cd = 0`) so LaTeX stops picking up stale aux files under `src/build`.
+- LaTeX: fixed shell-escape detection for minted under LuaLaTeX and reordered `csquotes` to load after code/listings helpers.
+- Glossaries: switched `\edoAcrLink` to `\glslink`, disabled noidx rerun check, and disabled glossary hyperlink targets to eliminate pdf-backend destination warnings.
+- Build: ran LuaLaTeX -> biber -> LuaLaTeX pass sequence with absolute output paths; warnings cleared and `out/main.pdf` refreshed.
+
+## Session updates (2025-12-21)
+
+- Moved LaTeX sources from `src/` to repo root (`main.tex`, `chapters/`, `tikz/`, `templates/`, `moderntech*`, `acronyms.def`, `edo.bib`); removed stale `src/build` and `src/out` artifacts.
+- Updated graphics paths and subfile aux references for the new layout; cleaned image includes to rely on `\graphicspath`.
+- Consolidated scripts into build/format/release pairs for bash + PowerShell; removed legacy latexmk/copy_release/watch helpers and empty `tools/`.
+- Refreshed VS Code LaTeX Workshop config to use new build script, updated latexindent args, and aligned image/tikz path mappings.
+- Build: `latexmk -shell-escape main.tex` succeeds; no new warnings observed in the latexmk output.
+- Renamed CNO messaging PDFs in `assets/information` to descriptive filenames (CNOTE 1–3, Day One Message, Charge of Command).

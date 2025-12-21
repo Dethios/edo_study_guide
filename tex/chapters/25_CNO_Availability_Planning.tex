@@ -1,0 +1,79 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% =============================================================================
+% File: 25_CNO_Availability_Planning.tex
+% =============================================================================
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+\section{CNO Availability Planning}
+
+\subsection{Balancing Requirements, Resources, and Readiness}
+\begin{description}
+  \item[\textbf{Customers.}] Fleet commanders and \ac{tycom}s drive capability requirements and availability length based on the Optimized Fleet Response Plan and readiness gaps~\autocite{OPNAVINST3000-15K,edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Planners.}] Shipyards, \acp{rmc}, and planning activities must sequence work, tooling, infrastructure, and \ac{lltm} so the schedule is executable~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+\item[\textbf{Resources.}] Budgets (\ac{ocmf}, \ac{opn}, \ac{funds-d}/\ac{funds-k}), workforce, and pier/dock capacity must align with \ac{cno}-directed Repair Days~\autocite{OPNAVNOTE4700-24}.
+\end{description}
+\acp{edo} should articulate how they reconcile conflicting demands—for example, deferring a lower-criticality modernization so mandatory \ac{subsafe} work fits within the allotted man-days.
+
+\subsection{Availability Work Package Development}
+\begin{enumerate}
+  \item \textbf{Baseline (A-36 to A-24).} \ac{surfmepp}/\ac{submepp} derive the \ac{bawp} from the \ac{cmp}, \acp{tycom} repairs, and modernization candidates; Ship Checks, Condition Found Reports, and \ac{tsra} results refine the package~\autocite{edo-4-2-1-cno-availability-planning-2025,COMFLTFORCOMINST4790-3}.
+  \item \textbf{Initial Planning (A-21).} Planning Activities (Carrier Planning Activity, Submarine Planning Activity, \acp{rmc}) reconcile the \ac{bawp} with Class Plan priorities and issue the Initial Availability Work Package (\ac{awp})~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item \textbf{Final Planning (A-12 to A-3).} Results of pre-availability tests (\ac{pats}/\ac{pots}), \acp{dfs}, \acp{tso}, and new modernization approvals are adjudicated; the final \ac{awp} is issued no later than three months before A-0~\autocite{edo-4-2-1-cno-availability-planning-2025,OPNAVNOTE4700-24}.
+  \item \textbf{Contracting.} For surface private-yard availabilities, \ac{macmo} constructs increase competition and flexibility; public yards rely on \ac{aim} processes~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+\end{enumerate}
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+    x=3.2cm,
+    y=1cm,
+    >=Latex,
+    milestone/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, inner sep=4pt, align=center},
+    timeline/.style={line width=1pt, draw=Gray60}
+  ]
+    \draw[timeline] (0,0) -- (4.6,0);
+    \draw[timeline] (0,-0.15) -- (0,0.15);
+    \node[milestone, above=4pt] at (0,0.15) {\textbf{A-36}\\Baseline BAWP\\Ship checks, TSRA, CMP alignment};
+    \draw[timeline] (1.4,-0.15) -- (1.4,0.15);
+    \node[milestone, above=4pt] at (1.4,0.15) {\textbf{A-21}\\Initial AWP\\Class Plan and LRMS sync};
+    \draw[timeline] (2.8,-0.15) -- (2.8,0.15);
+    \node[milestone, above=4pt] at (2.8,0.15) {\textbf{A-12}\\PATS/POTS results\\DFS/TSO adjudication};
+    \draw[timeline] (3.8,-0.15) -- (3.8,0.15);
+    \node[milestone, above=4pt] at (3.8,0.15) {\textbf{A-3}\\Final AWP\\Contract package / AIM};
+    \draw[timeline] (4.6,-0.15) -- (4.6,0.15);
+    \node[milestone, above=4pt] at (4.6,0.15) {\textbf{A-0}\\Award / start\\Ready to execute};
+    \node[below=6pt, align=center, text=AccentBlue] at (2.3,-0.15)
+      {\small Reviews: Readiness/Integration Summits, AWI, Planning Yard gates, CNO scheduling conference};
+  \end{tikzpicture}
+  \caption[CNO availability planning timeline]{CNO availability planning timeline (A-36 through A-0) with key reviews and deliverables.}
+  \label{fig:cno-planning-timeline}
+\end{figure}
+
+\subsection{Planning Teams and Integration Forums}
+\begin{itemize}
+  \item \textbf{Carrier Team One.} Aligns \ac{navsea} 08/04/21, \ac{navair}, Newport News Shipbuilding, and Fleet stakeholders to drive aircraft carrier availability excellence~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item \textbf{Surface Team One.} Unites \ac{sea}~21, \ac{sea}~05, \ac{surfmepp}, \acp{tycom}, and \acp{peo} to tackle systemic issues (e.g., late drawings, material delays) across destroyer/cruiser/amphibious availabilities~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item \textbf{Submarine Team One.} Led by \ac{pms}~392/\ac{submepp}, integrates \ac{cnrmc}, \ac{navsea}~08/21, and public yards to sustain \acp{ssn}/\acp{ssbn} availabilities and implement \ac{nsssy} initiatives\FlagBilletNote{\ac{rdml} Dan L.\ Lannamann holds the \ac{cnrmc} billet}\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item \textbf{Planning summits.} Readiness Summits, Availability Work Integration (\ac{awi}) events, and Integrated Production Planning (\ac{ipp}) meetings synchronize modernization, maintenance, logistics, and testing products~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+\end{itemize}
+
+\subsection{Risk Controls and Board-Ready Talking Points}
+\begin{description}
+  \item[\textbf{Critical path management.}] Identify the top three critical path evolutions (e.g., tank blasting/coating, propulsion plant maintenance, combat system rip-outs) and ensure early start requirements—barge services, \ac{lltm}, training—are executable before A-0~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Material readiness.}] Demand 100\% receipt of \ac{lltm} and government-furnished material before award; highlight mitigation plans for supply-chain risk (dual sources, cannibalization, additive manufacturing)~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Growth vs.\ new work.}] Explain how your team budgets anticipated growth work (historical allowances) versus truly new work (unique casualty), as well as the screening process for adding either to the contract~\autocite{COMFLTFORCOMINST4790-3}.
+  \item[\textbf{Metrics.}] Use \ac{nsssy} dashboards (Earned Value, manday burn, schedule adherence) and weekly risk reviews to show how you keep leadership informed and trigger help early~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+\end{description}
+
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
+\end{document}

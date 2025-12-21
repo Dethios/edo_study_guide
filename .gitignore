@@ -5,6 +5,8 @@
 out/
 build/
 scratch/
+tex/out/
+tex/build/
 
 # Common aux/logs across engines & tools
 *.aux
@@ -67,6 +69,9 @@ scratch/
 *_minted-*/
 *.pyg
 *.pygtex
+*-SAVE-ERROR*
+*.lock
+*.lck
 
 # pdfTeX/XeTeX/epstopdf helpers
 *-eps-converted-to.pdf

@@ -293,42 +293,45 @@
   "latex-workshop.latex.build.rootfileInStatus": true,
   "latex-workshop.latex.clean.subfolder.enabled": true,
   "latex-workshop.latex.autoClean.run": "never",
-  "latex-workshop.latex.outDir": "out",
-  "latex-workshop.latex.auxDir": "build",
+  "latex-workshop.latex.outDir": "../out",
+  "latex-workshop.latex.auxDir": "../build",
   "latex-workshop.latex.recipe.default": "lastUsed",
   "latex-workshop.latex.recipes": [
-    { "name": "BUILD-WIN", "tools": ["latexmk-win"] },
+    { "name": "BUILD-WIN", "tools": ["build-win"] },
+    { "name": "BUILD-WSL", "tools": ["build-wsl"] },
     { "name": "BUILD-QUIET", "tools": ["latexmk-quiet"] },
-    { "name": "BUILD-WSL", "tools": ["latexmk-wsl", "texliveonfly", "latexmk-wsl"] },
-    { "name": "AUTO", "tools": ["latexmk-pvc"] }
+    { "name": "AUTO", "tools": ["build-wsl-watch"] }
   ],
   "latex-workshop.latex.tools": [
     {
-      "name": "latexmk-wsl",
-      "command": "latexmk",
-      "args": [
-        "-lualatex",
-        "-outdir=out",
-        "-auxdir=build",
-        "-f",
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "-shell-escape",
-        "%DOC%"
-      ]
+      "name": "build-wsl",
+      "command": "bash",
+      "args": ["-lc", "scripts/build.sh \"%DOC%\""]
     },
     {
-      "name": "latexmk-win",
-      "command": "scripts\\BuildLatex.ps1"
+      "name": "build-wsl-watch",
+      "command": "bash",
+      "args": ["-lc", "scripts/build.sh --watch \"%DOC%\""]
+    },
+    {
+      "name": "build-win",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "scripts\\build.ps1",
+        "%DOC%"
+      ]
     },
     {
       "name": "latexmk-quiet",
       "command": "latexmk",
       "args": [
         "-lualatex",
-        "-outdir=out",
-        "-auxdir=build",
+        "-outdir=../out",
+        "-auxdir=../build",
         "-f",
         "-quiet",
         "-synctex=1",
@@ -337,27 +340,6 @@
         "-shell-escape",
         "%DOC%"
       ]
-    },
-    {
-      "name": "latexmk-pvc",
-      "command": "latexmk",
-      "args": [
-        "-lualatex",
-        "-outdir=out",
-        "-auxdir=build",
-        "-f",
-        "-pvc",
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "-shell-escape",
-        "%DOC%"
-      ]
-    },
-    {
-      "name": "texliveonfly",
-      "command": "/usr/local/texlive/2025/bin/aarch64-linux/texliveonfly",
-      "args": ["%DOC%"]
     }
   ],
   "latex-workshop.view.pdf.viewer": "tab",
@@ -380,7 +362,13 @@
   // latexindent matches the repo tooling, avoiding backup files.
   "latex-workshop.formatting.latex": "latexindent",
   "latex-workshop.formatting.latexindent.path": "latexindent",
-  "latex-workshop.formatting.latexindent.args": ["-w", "-s", "-m", "--overwriteIfDifferent"],
+  "latex-workshop.formatting.latexindent.args": [
+    "-w",
+    "-s",
+    "-m",
+    "-l=../latexindent.yaml",
+    "--overwriteIfDifferent"
+  ],
 
   // Convenience helpers around LaTeX authoring.
   "latex-utilities.liveReformat.enabled": true,
@@ -424,15 +412,15 @@
     "%DOCFILE%.vrb"
   ],
   "latex-workshop.linting.chktex.enabled": true,
-  "latex-workshop.chktex.configFile": ".chktexrc",
+  "latex-workshop.chktex.configFile": "../.chktexrc",
   "latex-workshop.linting.lacheck.enabled": false,
   "latex-workshop.mathpreviewpanel.cursor.enabled": true,
   "latex-workshop.view.autoFocus.enabled": true,
-  "latex-utilities.formattedPaste.imagePathOverride": "Images",
+  "latex-utilities.formattedPaste.imagePathOverride": "tex/assets/images",
   "latex-utilities.formattedPaste.image.template": "\\includegraphics[width=.8\\linewidth]{${imageFilePath}}",
   "latex-utilities.message.update.show": false,
   "latex-utilities.zotero.citeMethod": "vscode",
-  "PandocCiter.DefaultBib": "${workspaceFolder}/edo.bib",
+  "PandocCiter.DefaultBib": "${workspaceFolder}/tex/edo.bib",
 
   // ===================================================================
   // 6. MARKDOWN & NOTEBOOKS - preview, extensions, and typography
@@ -646,14 +634,14 @@
   "vscode-edge-devtools.webhintInstallNotification": true,
   "npm.fetchOnlinePackageInfo": false,
   "npm.runSilent": true,
-  "pasteImage.basePath": "edo_study_guide/Images",
+  "pasteImage.basePath": "tex/assets/images",
   "path-intellisense.autoSlashAfterDirectory": true,
   "path-intellisense.autoTriggerNextSuggestion": true,
   "path-intellisense.extensionOnImport": true,
   "path-intellisense.ignoreTsConfigBaseUrl": true,
   "path-intellisense.mappings": {
-    "Images": "${workspaceFolder}/Images",
-    "TikZ": "${workspaceFolder}/TikZ"
+    "Images": "${workspaceFolder}/tex/assets/images",
+    "TikZ": "${workspaceFolder}/tex/tikz"
   },
   "path-intellisense.showHiddenFiles": true,
   "better-comments.highlightPlainText": true,
@@ -1114,6 +1102,6 @@
     "xelatex",
     "xindy"
   ],
-  "cSpell.words": ["JCIDS", "JROC"],
+  "cSpell.words": ["CIVPERS", "JCIDS", "JROC"],
   "editor.fontSize": 13
 }

@@ -1,7 +1,7 @@
 {
   "project_metadata": {
     "project_name": "EDO Acquisition Tutor",
-    "export_timestamp_iso": "2025-12-19T03:08:20+00:00",
+    "export_timestamp_iso": "2025-12-21T15:18:49+00:00",
     "project_instructions_raw": "ROLE & MISSION\nYou are a Navy EDO Acquisition Tutor. Teach, test, and clarify U.S. Navy/DoW acquisition for EDO qualification boards (primary) and general mastery (secondary). Explain the full breadth clearly, tie assertions to current primary sources, and emphasize Navy-unique overlays.\n\nAUDIENCE\nEngineering Duty Officers preparing for boards and practicing program/technical authority roles. Assume motivated learners who may be new to acquisition jargon.\n\nCANONICAL SOURCES (teach-from-truth)\nStatute: Titles 10 & 41 U.S.C.; relevant NDAA provisions.\nRegulation: FAR, DFARS, DFARS PGI; NMCARS if applicable.\nPolicy/Framework: DoDI 5000 series (MCA, SWP, MTA, Urgent), plus JCIDS artifacts as needed.\nFiscal: DoW FMR 7000.14-R; GAO Red Book.\nNavy overlays: SECNAV/OPNAV/NAVSEA instructions; PEO/TA guidance; shipbuilding nuances (SCN/WPN).\nCourseware: EDO-specific coursebook PDFs (baseline current as of 2025-09-12).\nRule: When facts can change (thresholds, definitions, authorities), verify the current controlling document and cite title + section (if known) + publication date.\n\nRECENCY POLICY\nStamp every deliverable with \"Current as of [YYYY-MM-DD]\". Re-verify for NDAA/FAR/DFARS/DoDI/SECNAV changes and PPBE shifts. If recency cannot be confirmed (e.g., offline excerpt), label Recency check pending and state assumptions.\n\nDEFAULTS & MODES\nDefault Mode: EDO Board Prep (concise, decision-focused). Optional Mode: Mastery (full exposition, examples, deeper context). Diagrams: Provide Mermaid visuals only when explicitly requested; otherwise default to textual decision logic.\n\nTEACHING STYLE (layered structure)\nPlain-language brief; Navy overlays & authority touchpoints; Fiscal/PPBE & colors of money (SCN/WPN nuance); Decision Trace; Citations; Assumptions & uncertainties; Self-score.\n\nINTERACTION RULES\nAsk 2-3 targeted clarifying questions for substantial tasks; if no reply, proceed best-effort and state assumptions. Offer an opposing view/edge case where professional judgment could differ. Avoid flashcards by default.\n\nDEFAULT OUTPUT TEMPLATE\nSummary; Navy Overlays; Fiscal/PPBE; Decision Trace; Citations; Current as of; Assumptions & Uncertainties; Self-Score.\n\nCOVERAGE MAP (breadth over time)\nAAF pathways & artifacts; JCIDS; governance reviews; contracting fundamentals; fiscal law & PPBE (SCN/WPN); cost/schedule/performance; SE & T&E; logistics & sustainment; software & data; rapid authorities; Navy-unique overlays & authority boundaries.\n\nQUALITY ASSURANCE\nSelf-score every answer (Accuracy, Completeness, Clarity, Relevance, Practical usefulness). If any <8, revise and note the fix.\n\nTOOLING & CITATION BEHAVIOR\nVerify rules/thresholds with current primary sources and cite exact dates; prefer official/public sources. Call out Navy overlay deltas vs generic DAU guidance.\n\nSAFETY & COMPLIANCE\nNot legal advice. Respect OPSEC/CUI and procurement integrity. Use only unclassified, publicly releasable sources.\n\nCODE ARGUMENTS\n `-latexindent` to format LaTeX sources without backups,ARGS: `wd, -s, -m, -l=.latexindent.yaml, -c=%TEMP%/latexindent, -y=defaultIndent:'  ' `; `-latexmk` for continuous build with LuaLaTeX, ARGS: `-lualatex, -pdf, -dvi-, -ps-, -outdir=out, -auxdir=build, -f, -shell-escape, -interaction=nonstopmode, -synctex=1, -file-line-error, %DOC%`; `-fontspec` for custom fonts (Merriweather, Montserrat, Source Sans Pro).",
     "project_memory_highlights": [
       "LaTeX-based EDO Board Prep Study Guide with diagrams, tables, and citations.",
@@ -11,13 +11,20 @@
       "Use \\ac{} for acronyms in prose (lowercase keys) but avoid headings/tables; acronyms.def is sorted by section.",
       "Default tables to longtblr; prefer description environments for term/definition pairs; keep ASCII and use v.s.\\ in prose.",
       "Coursebook baseline current as of 2025-09-12; edo.bib grouped by category for maintenance.",
-      "latexmk -shell-escape src/main.tex builds succeed with occasional overfull box or minted fallback warnings.",
+      "latexmk -shell-escape main.tex builds succeed with occasional overfull box or minted fallback warnings.",
       "Use scratch folder for experiments; minted falls back when shell-escape is disabled.",
       "Default fonts: Merriweather, Montserrat, and Source Sans Pro via fontspec.",
-      "Added ASN (RD&A) organization chart plus leadership and DASN responsibility tables (current as of 2025-12-18) with SECNAV source citations."
+      "Added ASN (RD&A) organization chart plus leadership and DASN responsibility tables (current as of 2025-12-18) with SECNAV source citations.",
       "Added missing OPNAV N-code titles/functions (N80-84, N89, N91, N95-99) into PPBE and Key Roles sections.",
       "Fixed table label expansion by redefining \\thetable to ensure list-of-tables numbering and refs render correctly.",
-      "Resolved overfull hbox warnings by tightening TikZ node widths/spacing in test/eval and BDAR figures."
+      "Resolved overfull hbox warnings by tightening TikZ node widths/spacing in test/eval and BDAR figures.",
+      "Updated latexmkrc with absolute out/build paths, repo-root TEXINPUTS, and $do_cd = 0 so LaTeX/latexmk do not pick up stale aux files under build.",
+      "Adjusted minted shell-escape detection for LuaLaTeX and reordered csquotes to load after code/listings helpers.",
+      "Glossary hyperlinks disabled and edoAcrLink now uses glslink to silence pdf-backend destination warnings.",
+      "Rebuilt main.pdf with LuaLaTeX -> biber -> LuaLaTeX sequence; compile warnings cleared.",
+      "Refactored repo layout so LaTeX sources live at the repo root (main.tex, chapters/, tikz/, templates/, moderntech*, acronyms.def, edo.bib); consolidated build/format/release scripts and refreshed VS Code LaTeX Workshop paths."
+      ,
+      "Renamed CNO messaging PDFs in assets/information to descriptive filenames (CNOTE 1-3, Day One message, Charge of Command) for clarity."
     ],
     "known_limits": {
       "files_visible": 1,
@@ -188,12 +195,12 @@
           "Complete OMB roles/responsibilities lookup and add POM/BES document examples with citations when available."
         ],
         "linked_files": [
-          "src/chapters/6_PPBE.tex",
-          "src/chapters/8_Congressional_Enactment.tex",
-          "src/chapters/9_Program_Funding_and_Execution.tex",
-          "src/chapters/appendix_key_roles.tex",
-          "src/acronyms.def",
-          "src/edo.bib",
+          "chapters/6_PPBE.tex",
+          "chapters/8_Congressional_Enactment.tex",
+          "chapters/9_Program_Funding_and_Execution.tex",
+          "chapters/appendix_key_roles.tex",
+          "acronyms.def",
+          "edo.bib",
           "AGENTS.md"
         ],
         "notable_citations": [
@@ -221,8 +228,8 @@
         ],
         "linked_files": [
           "assets/information/EDO Main Slate November 2025.xlsx",
-          "src/chapters/appendix_edo_billet_summary.tex",
-          "src/main.tex"
+          "chapters/appendix_edo_billet_summary.tex",
+          "main.tex"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Data-driven summary; rerun grouping if billet file changes."
@@ -268,7 +275,7 @@
         ],
         "linked_files": [
           "latexmkrc",
-          "src/chapters/appendix_edo_billet_summary.tex",
+          "chapters/appendix_edo_billet_summary.tex",
           "out/main.pdf",
           "AGENTS.md",
           "Other/project_export.json"
@@ -293,9 +300,9 @@
           "Optional: investigate minted shell-escape detection and address remaining overfull hbox warnings."
         ],
         "linked_files": [
-          "src/chapters/6_PPBE.tex",
-          "src/chapters/appendix_key_roles.tex",
-          "src/moderntech-base.sty",
+          "chapters/6_PPBE.tex",
+          "chapters/appendix_key_roles.tex",
+          "moderntech-base.sty",
           "AGENTS.md",
           "Other/project_export.json"
         ],
@@ -318,13 +325,87 @@
           "Optional: investigate why minted reports shell-escape disabled despite build flags."
         ],
         "linked_files": [
-          "src/chapters/18_test_eval.tex",
-          "src/chapters/24_Battle_Damage_Assessment_Repair.tex",
+          "chapters/18_test_eval.tex",
+          "chapters/24_Battle_Damage_Assessment_Repair.tex",
           "AGENTS.md",
           "Other/project_export.json"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Build completed; minted fallback warning persists."
+      },
+      {
+        "title_or_slug": "SSH config for git and WSL",
+        "date_range": "2025-12-20 to 2025-12-20",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Configure SSH client settings to reduce git passphrase prompts and add a WSL host alias.",
+        "summary": "Added ~/.ssh/config entries for GitHub and a wsl alias, and added the local public key to ~/.ssh/authorized_keys to enable key-based login.",
+        "key_decisions": [
+          "Use explicit IdentityFile/IdentitiesOnly and AddKeysToAgent in ssh config to favor the ed25519 key.",
+          "Populate authorized_keys with the local public key for WSL SSH login."
+        ],
+        "action_items": [
+          "If needed, install and start openssh-server in WSL to accept SSH connections."
+        ],
+        "linked_files": [
+          "~/.ssh/config",
+          "~/.ssh/authorized_keys",
+          "AGENTS.md",
+          "Other/project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "System configuration task; no acquisition content."
+      },
+      {
+        "title_or_slug": "Codex CLI install",
+        "date_range": "2025-12-20 to 2025-12-20",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Install the Codex CLI in the working environment.",
+        "summary": "Installed the Codex CLI with npm using a user-level prefix to avoid global permission errors; verified the binary and version after install.",
+        "key_decisions": [
+          "Use a user-level npm prefix (/home/victor) so the binary lands in PATH without sudo."
+        ],
+        "action_items": [
+          "If PATH changes, ensure /home/victor/bin remains on PATH for the codex executable."
+        ],
+        "linked_files": [
+          "AGENTS.md",
+          "Other/project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling-only update; no acquisition content."
+      },
+      {
+        "title_or_slug": "Build main.pdf warning cleanup",
+        "date_range": "2025-12-20 to 2025-12-20",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Build main.pdf and resolve compile warnings.",
+        "summary": "Updated latexmkrc with absolute out/build paths, repo-root TEXINPUTS, and $do_cd = 0 so latexmk stays in repo root, fixed minted shell-escape detection under LuaLaTeX, adjusted glossaries hyperlink behavior, and rebuilt main.pdf using the LuaLaTeX -> biber -> LuaLaTeX sequence; warnings cleared.",
+        "key_decisions": [
+          "Use absolute out/build paths plus repo-root TEXINPUTS and $do_cd = 0 so LaTeX/latexmk stay in repo root and ignore stale aux files under build.",
+          "Detect shell-escape via LuaTeX status for minted and load csquotes after code/listings helpers.",
+          "Disable glossary hyperlink targets and switch edoAcrLink to glslink to suppress pdf-backend destination warnings."
+        ],
+        "action_items": [
+          "Run the LuaLaTeX -> biber -> LuaLaTeX sequence when forcing a clean rebuild to avoid biblatex rerun warnings."
+        ],
+        "linked_files": [
+          "latexmkrc",
+          "moderntech-base.sty",
+          "moderntech.sty",
+          "main.tex",
+          "out/main.pdf"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Build/tooling update; PDF output depends on local TeX install."
       }
     ]
   },

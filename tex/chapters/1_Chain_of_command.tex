@@ -1,0 +1,161 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% =============================================================================
+% CHAPTER 1: COMMAND CHAINS AND GOVERNANCE
+% DESCRIPTION: Operational v.s. acquisition chains, Title 10 distinctions, and governance.
+% =============================================================================
+
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+%====================
+% Contents here
+%====================
+% === COMMAND CHAINS & GOVERNANCE ===
+\section{Command Chains and Governance}
+\subsection{Operations Chain (Title 10)}
+
+\begin{description}
+  \item[\textbf{Chain flow.}] President $\to$ \ac{secwar} $\to$ \ac{ccdr}. The \ac{cjcs} is the principal military adviser; service chiefs are \emph{not} in the operational chain of Title 10.
+  \item[\textbf{Board cue.}] Boards love the contrast with acquisition authority; avoid conflating operational and acquisition chains.
+  \item[\textbf{Echelons.}] Counted from the \ac{cno} (e.g., \ac{cno} is Echelon I, \acp{syscom} are Echelon II, etc.).
+\end{description}
+
+Figure \ref{fig:chain_of_command_ops} shows the Title 10 chain of command. \Fig{\ref{fig:chain_of_command_org_chart}} shows the Chain of Command from the President to Echelon III commands.
+
+\begin{figure}[H]
+  \centering\color{DarkGray}
+  \includegraphics[width=\linewidth]{Command Structure.jpeg}
+  \caption[Title 10 Chain of Command]{Title 10 Chain of Command.~\srcCite{edo-2-1-1-command-structures-2025}.}
+  \label{fig:chain_of_command_ops}
+\end{figure}
+
+\begin{figure}[H]
+  \centering\color{DarkGray}
+  \includegraphics[width=\linewidth]{Org_Chart.pdf}
+  \caption{Organization Command Structure}
+  \label{fig:chain_of_command_org_chart}
+\end{figure}
+
+\subsection{Acquisition Governance (Department of the Navy)}
+
+\begin{description}
+  \item[\textbf{Policy authority.}] \ac{asnrdanda} is the \ac{sae} for the \ac{don} and sets policy for \acp{peo} and \acp{drpm}~\autocite{SECNAV5400-15D,SECNAV5000-2G}.
+  \item[\textbf{Matrix execution.}] \acp{peo} hold program authority; \acp{syscom} (\ac{navsea}, \ac{navwar}, \ac{navair}) provide the \ac{ta} warrants and workforce; \acp{nwc} deliver research, development, test, and engineering support~\autocite{SECNAV5400-15D}.
+  \item[\textbf{Flag/PEO billets (current).}]
+  \begin{itemize}
+    \item[] \textbf{EDO-led today:} \ac{asnrdanda}'s \ac{pmildep} (\ac{vadm} Seiko Okano), \ac{comnavwar} (\ac{radm} J.\ Kurt Rothenhaus), \ac{peoships} (\ac{radm} Brian Metcalf), \ac{peocvn} (\ac{radm} Casey Moton), and \ac{peossn} (\ac{radm} Jonathan Rucker) anchor \ac{ta} and acquisition governance for the community~\autocite{navy-okano-2025,navy-rothenhaus-2025, navy-metcalf-2025,navy-moton-2025,navy-rucker-2025}.
+    \item[] \textbf{Non-\ac{edo} leaders (awareness):} \ac{navsea}~08 is currently ADM William J.\ Houston (Submarine officer), \ac{peoiws} is RDML Thomas J.\ Dickinson (Surface Warfare Acquisition Professional), \ac{peomlb} is RDML Kevin P.\ Biehn (Surface Warfare Acquisition Professional), NAVSEA~05 is RDML Jay A.\ Seif (Submarine Acquisition Professional), and \ac{peousc} is filled by an SES (formerly RDML Kevin R.\ Smith)~\autocite{navsea-org-chart-2025}.
+  \end{itemize}
+  \FlagBilletNote{See Appendix~\ref{app:edo-flags} for the current flag billet roster and non-\ac{edo} billets.}
+\end{description}
+
+Figure \ref{fig:chain_of_command_acq_gov} shows the Navy acquisition governance chain of command.
+
+\begin{figure}[H]
+  \centering\color{DarkGray}
+  \includegraphics[width=0.7\linewidth]{Navy Acquisition Organization.jpeg}
+  \caption[Acquisition Governance Chain of Command]{Acquisition Governance Chain of Command.~\srcCite{edo-2-1-1-command-structures-2025}.}
+  \label{fig:chain_of_command_acq_gov}
+\end{figure}
+
+\subsection{ASN (RD\&A) Organization}
+
+Current as of 2025-12-18, the \ac{asnrdanda} team is led by Mr.\ Jason L.\ Potter (Performing the Duties) with \ac{pmildep} \ac{vadm} Seiko Okano supporting Department of the Navy acquisition governance. Figure~\ref{fig:asnrda_org_chart} shows the current office alignment, and Tables~\ref{tab:asnrda_leadership} and~\ref{tab:asnrda_dasns} capture roles and responsibilities for the \ac{asnrdanda}, \ac{pmildep}, and \acp{dasn}.
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[
+      node distance=1.5cm and 2cm,
+      main node/.style={rectangle, draw, fill=blue!20, text width=9em, text centered, minimum height=4em},
+      dasn node/.style={rectangle, draw, fill=green!20, text width=9em, text centered, minimum height=4em},
+      line/.style={draw, -{Stealth[length=2mm]}}
+    ]
+
+    \node[main node] (asn) {Performing the Duties of\\ ASN (RD\&A)\\ \textbf{Jason L. Potter} \\[0.5em] Principal Military Deputy\\ \textbf{\ac{vadm} Seiko Okano}};
+
+    \node[dasn node, below left=of asn, xshift=2.5cm] (sustainment) {DASN (Sustainment)\\ \textbf{Ms. Erica Plath}};
+    \node[dasn node, below=of sustainment] (ships) {DASN (Ships)\\ \textbf{Ms. Bilyana Anderson}};
+    \node[dasn node, below=of ships] (ag) {DASN (Air-Ground)\\ \textbf{Mr. Robert D. Kimble}};
+    \node[dasn node, below=of ag] (p) {DASN (Procurement)\\ \textbf{Mr. Michael L. Brown (PTDO)}};
+
+    \node[dasn node, below right=of asn, xshift=-2.5cm] (iwar) {DASN (Mission Systems)\\ \textbf{Mr. Jim Day}};
+    \node[dasn node, below=of iwar] (rdte) {DASN (RDT\&E)\\ \textbf{Mr. Peter C. Reddy}};
+    \node[dasn node, below=of rdte] (apb) {DASN (AP\&B)\\ \textbf{Ms. Maria Proestou}};
+
+    \node[dasn node, right=of iwar, xshift=3.5cm, fill=orange!20] (nipo) {Director, NIPO\\ \textbf{RDML Ray Owens}};
+
+    \path [line] (asn) -- (sustainment);
+    \path [line] (asn) -- (ships);
+    \path [line] (asn) -- (ag);
+    \path [line] (asn) -- (p);
+    \path [line] (asn) -- (iwar);
+    \path [line] (asn) -- (rdte);
+    \path [line] (asn) -- (apb);
+    \path [line] (asn) -- (nipo);
+  \end{tikzpicture}
+  \caption[ASN (RD\&A) organization chart]{ASN (RD\&A) organization chart (current as of 2025-12-18).~\srcCite{navy-asnrda-org-chart-2025}}
+  \label{fig:asnrda_org_chart}
+\end{figure}
+
+Table~\ref{tab:asnrda_leadership} lists the \ac{asnrdanda} and \ac{pmildep} roles.
+
+\begin{longtblr}[%
+    caption = {ASN (RD\&A) leadership roles},
+    label   = {tab:asnrda_leadership},
+    entry   = {ASN (RD\&A) leadership},
+    remark{Source} = {\tabCite{navy-asnrda-org-chart-2025}}
+  ]{colspec = {@{} L L X @{}}}
+  \toprule
+  {Role} & {Person} & {Roles and responsibilities} \\
+  \midrule
+  Performing the Duties of \ac{asnrdanda} & Jason L.\ Potter & Serves as the \ac{don} \ac{sae} with authority and accountability for acquisition functions, policy, and program oversight; represents the \ac{don} to \ac{osd} and Congress; and acts as Milestone Decision Authority for \ac{acat}~IC programs. \\
+  \ac{pmildep} & \ac{vadm} Seiko Okano & Provides senior military advice to the \ac{asnrdanda}, helping manage \ac{don} research, development, and acquisition activities and delivering operational perspective across the enterprise. \\
+  \bottomrule
+\end{longtblr}
+
+Table~\ref{tab:asnrda_dasns} summarizes the \acp{dasn} portfolio leads and their responsibilities.
+
+\begin{longtblr}[%
+    caption = {Deputy Assistant Secretaries of the Navy (ASN (RD\&A))},
+    label   = {tab:asnrda_dasns},
+    entry   = {ASN (RD\&A) DASNs},
+    remark{Source} = {\tabCite{navy-asnrda-org-chart-2025,navy-dasn-ships-2025,navy-dasn-rdte-2025,navy-dasn-air-ground-2025,navy-dasn-apb-2025,navy-dasn-nipo-2025,navy-dasn-iwar-2025,navy-dasn-procurement-2025,navy-dasn-sustainment-2025}}
+  ]{colspec = {@{} L L X @{}}}
+  \toprule
+  {Office} & {Person} & {Roles and responsibilities} \\
+  \midrule
+  DASN (Sustainment) & Ms.\ Erica Plath & Principal advisor on sustainment; leads the enterprise Naval Sustainment System framework, sets sustainment policy, reviews program performance, and modernizes infrastructure to reduce costs and strengthen the supply chain. \\
+  DASN (Ships) & Ms.\ Bilyana Anderson & Principal advisor for aircraft carriers, surface ships, and submarines; monitors \ac{navsea} and \acp{peo} for ships and submarines; and advises on the shipbuilding industrial base, ship disposal, and donation. \\
+  DASN (Air-Ground Programs) & Mr.\ Robert D.\ Kimble & Principal advisor for aircraft, ground systems, cruise missiles, and air-launched weapons; oversees programs managed by \ac{peo} (Air), Tactical Aircraft, Unmanned Aviation, Joint Strike Fighter, and Land Systems. \\
+  DASN (Procurement) & Mr.\ Michael L.\ Brown (PTDO) & Leads the \ac{don} contracting community; serves as the \ac{don} Competition Advocate General; establishes contracting, services acquisition, and government property policy; and drives improvements to the procurement system. \\
+  DASN (Mission Systems) & Mr.\ Jim Day & Principal advisor for \ac{c4i}, enterprise \ac{it}, and business systems; dual-hatted as the \ac{don} \ac{cio} Chief Technology Officer; and provides acquisition oversight for \ac{peoc4i}, \ac{peodigital}, and \ac{peomlb}. \\
+  DASN (RDT\&E) & Mr.\ Peter C.\ Reddy & Principal advisor for Navy science, technology, advanced \ac{rdte}, and system prototype programs; leads the Department Chief Systems Engineer and the Deputy for Test and Evaluation. \\
+  DASN (AP\&B) & Ms.\ Maria Proestou & Principal advisor for acquisition policy (including Earned Value Management), the \ac{ppbe} process, and Congressional affairs; directs Navy \ac{acat} program analyses; manages the \ac{asnrdanda} information system; and oversees corporate operations. \\
+  Director, Navy International Programs Office & RDML Ray Owens & Leads \ac{nipo} in managing and implementing international security assistance programs, cooperative development, and technology security policy to build integrated capability with allies and partners. \\
+  \bottomrule
+\end{longtblr}
+
+\subsection{Approving Authorities}
+
+\begin{figure}[H]
+  \centering\color{DarkGray}
+  \includegraphics[width=0.7\linewidth]{TA vs PA.png}
+  \caption[Technical Authority v.s.\ Program Authority]{Technical Authority v.s.\ Program Authority alignment.~\srcCite{edo-2-1-5-technical-authority-2025}}
+  \label{fig:chain_of_command_auth_roles}
+\end{figure}
+
+Figure \ref{fig:chain_of_command_auth_roles} contrasts the roles of \ac{ta} and \ac{pa} in Navy acquisition.
+%====================
+% End of file
+%====================
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
+\end{document}

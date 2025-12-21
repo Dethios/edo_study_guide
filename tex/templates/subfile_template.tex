@@ -1,0 +1,37 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+%====================
+% * File: ##_name.tex
+%====================
+\begin{document}
+\ifSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+% === Coursebook Section (X.X.X) ===
+\section{ }
+%====================
+% * Contents
+%====================
+
+% Section assembly checklist:
+% - Note the coursebook section and assigned reading that anchor this subfile.
+% - Capture the learning objectives and a brief outline before drafting prose.
+% - Mark figure/table placeholders where visuals will land.
+% - Update `acronyms.def` and `edo.bib` whenever new terms or sources appear.
+% - Run a quick syntax/accuracy review (citations inside sentences, no \ac{} in headings/tables).
+% - Confirm the narrative flows with adjacent chapters and appendices.
+
+% * Enter content here:
+
+%====================
+% * End of file
+%====================
+\ifSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
+\end{document}
