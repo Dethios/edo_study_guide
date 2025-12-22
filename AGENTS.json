@@ -1,10 +1,10 @@
 {
   "schema_version": "edo-agents-export@1",
-  "generated_at": "2025-12-21T21:08:02+00:00",
+  "generated_at": "2025-12-22T03:09:32+00:00",
   "source": {
     "path": "AGENTS.md",
-    "sha256": "cbc4ab98088261828febe0d3d1be58c0a473394a301be75721300356b2977312",
-    "line_count": 221
+    "sha256": "e29786157c52ab0af81618960772bd35b340b94c6939a0fd223de67082942baf",
+    "line_count": 226
   },
   "title": "AGENTS Operating Guide",
   "derived": {
@@ -1043,6 +1043,18 @@
           "text": "Generated `scratch/settings_diff.md` comparing VS Code settings across Windows user, WSL machine, and project workspaces.",
           "checked": null,
           "children": []
+        }
+      ]
+    },
+    {
+      "heading": "Session updates (2025-12-22)",
+      "level": 2,
+      "kind": "bullets",
+      "items": [
+        {
+          "text": "Merged VS Code settings across Windows user, WSL machine, and project workspaces; applied requested overrides, unified cSpell lists, and normalized LaTeX Workshop recipes/tools to `scripts/build.*` (settings files rewritten as canonical JSON).",
+          "checked": null,
+          "children": []
         },
         {
           "text": "Verified GitHub release notes match `CHANGELOG.md` for `release-20251221`; added `.gitattributes` to normalize LF endings; cleaned VS Code tasks (removed duplicate AI task, added Windows override for push, and prevented WSL update task on non-Linux).",
@@ -1051,6 +1063,11 @@
         },
         {
           "text": "Renormalized the repository after adding `.gitattributes` so line endings align across WSL/Windows.",
+          "checked": null,
+          "children": []
+        },
+        {
+          "text": "Restored comment scaffolding in `.vscode/settings.json`, forced `[latex].editor.tabSize = 4`, and regenerated `scratch/settings_diff.md` (no drift across settings files).",
           "checked": null,
           "children": []
         }
@@ -1506,9 +1523,16 @@
         "Build: `latexmk -shell-escape` required `tex/main.tex` (no default targets); `latexmk -shell-escape tex/main.tex` reports up-to-date output.",
         "TODO scan: `rg TODO tex/main.tex tex/chapters tex/tikz tex/templates` found no matches.",
         "Context: user asked for Gemini 3 Pro workflow guidance and a one-step AI context zip for drag/drop.",
-        "Generated `scratch/settings_diff.md` comparing VS Code settings across Windows user, WSL machine, and project workspaces.",
+        "Generated `scratch/settings_diff.md` comparing VS Code settings across Windows user, WSL machine, and project workspaces."
+      ]
+    },
+    {
+      "date": "2025-12-22",
+      "items": [
+        "Merged VS Code settings across Windows user, WSL machine, and project workspaces; applied requested overrides, unified cSpell lists, and normalized LaTeX Workshop recipes/tools to `scripts/build.*` (settings files rewritten as canonical JSON).",
         "Verified GitHub release notes match `CHANGELOG.md` for `release-20251221`; added `.gitattributes` to normalize LF endings; cleaned VS Code tasks (removed duplicate AI task, added Windows override for push, and prevented WSL update task on non-Linux).",
-        "Renormalized the repository after adding `.gitattributes` so line endings align across WSL/Windows."
+        "Renormalized the repository after adding `.gitattributes` so line endings align across WSL/Windows.",
+        "Restored comment scaffolding in `.vscode/settings.json`, forced `[latex].editor.tabSize = 4`, and regenerated `scratch/settings_diff.md` (no drift across settings files)."
       ]
     }
   ],

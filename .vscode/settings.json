@@ -44,7 +44,6 @@
     "foreground": "#E5E9F0",
     "focusBorder": "#8FB3D9",
     "selection.background": "#2A3140",
-
     "editor.background": "#000000",
     "editor.foreground": "#E5E9F0",
     "editor.lineHighlightBackground": "#0D0D0D",
@@ -54,33 +53,27 @@
     "editorCursor.foreground": "#E5E9F0",
     "editorWhitespace.foreground": "#333A47",
     "editorBracketMatch.border": "#8FB3D9",
-
     "diffEditor.insertedTextBackground": "#A7C79522",
     "diffEditor.removedTextBackground": "#E5737322",
     "editorGutter.addedBackground": "#A7C795",
     "editorGutter.modifiedBackground": "#8FB3D9",
     "editorGutter.deletedBackground": "#E57373",
-
     "activityBar.background": "#000000",
     "activityBar.foreground": "#E5E9F0",
     "sideBar.background": "#000000",
     "sideBar.foreground": "#E5E9F0",
-
     "editorGroupHeader.tabsBackground": "#000000",
     "tab.activeBorderTop": "#8FB3D9",
     "panel.background": "#000000",
     "panel.border": "#111111",
-
     "statusBar.background": "#000000",
     "statusBar.foreground": "#E5E9F0",
     "titleBar.activeBackground": "#000000",
     "titleBar.activeForeground": "#E5E9F0",
-
     "terminal.background": "#000000",
     "terminal.foreground": "#E5E9F0",
     "terminalCursor.foreground": "#E5E9F0",
     "terminal.selectionBackground": "#2A3140",
-
     "terminal.ansiBlack": "#000000",
     "terminal.ansiRed": "#E57373",
     "terminal.ansiGreen": "#A7C795",
@@ -110,28 +103,62 @@
     "types": "#94D0CC",
     "textMateRules": [
       {
-        "scope": ["comment", "punctuation.definition.comment"],
-        "settings": { "foreground": "#7E8591", "fontStyle": "italic" }
+        "scope": [
+          "comment",
+          "punctuation.definition.comment"
+        ],
+        "settings": {
+          "foreground": "#7E8591",
+          "fontStyle": "italic"
+        }
       },
       {
-        "scope": ["constant.numeric", "constant.language.boolean"],
-        "settings": { "foreground": "#F1D8A5" }
+        "scope": [
+          "constant.numeric",
+          "constant.language.boolean"
+        ],
+        "settings": {
+          "foreground": "#F1D8A5"
+        }
       },
       {
-        "scope": ["keyword", "storage.type", "storage.modifier"],
-        "settings": { "foreground": "#8FB3D9" }
+        "scope": [
+          "keyword",
+          "storage.type",
+          "storage.modifier"
+        ],
+        "settings": {
+          "foreground": "#8FB3D9"
+        }
       },
       {
-        "scope": ["entity.name.function", "support.function"],
-        "settings": { "foreground": "#8ED1E3" }
+        "scope": [
+          "entity.name.function",
+          "support.function"
+        ],
+        "settings": {
+          "foreground": "#8ED1E3"
+        }
       },
       {
-        "scope": ["string", "string.quoted", "string.template"],
-        "settings": { "foreground": "#A7C795" }
+        "scope": [
+          "string",
+          "string.quoted",
+          "string.template"
+        ],
+        "settings": {
+          "foreground": "#A7C795"
+        }
       },
       {
-        "scope": ["entity.name.type", "support.type", "support.class"],
-        "settings": { "foreground": "#94D0CC" }
+        "scope": [
+          "entity.name.type",
+          "support.type",
+          "support.class"
+        ],
+        "settings": {
+          "foreground": "#94D0CC"
+        }
       }
     ]
   },
@@ -154,7 +181,7 @@
   // ===================================================================
   // Indentation and whitespace discipline.
   "editor.detectIndentation": false,
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "editor.indentSize": "tabSize",
   "editor.insertSpaces": true,
   "editor.stickyTabStops": true,
@@ -247,15 +274,14 @@
   },
   "search.followSymlinks": false,
   "search.useIgnoreFiles": true,
-  "json.schemaDownload.enable": false,
 
   // ===================================================================
   // 4. FORMATTING DEFAULTS - Prettier plus language-specific overrides
   // ===================================================================
   // Global Prettier preferences.
   "prettier.useTabs": false,
-  "prettier.tabWidth": 2,
-  "prettier.printWidth": 100,
+  "prettier.tabWidth": 4,
+  "prettier.printWidth": 120,
   "prettier.proseWrap": "always",
   "prettier.singleAttributePerLine": true,
   "prettier.endOfLine": "lf",
@@ -267,11 +293,17 @@
     "editor.defaultFormatter": "James-Yu.latex-workshop",
     "editor.formatOnSave": false,
     "editor.insertSpaces": true,
-    "editor.tabSize": 2
+    "editor.tabSize": 4
   },
-  "[bibtex]": { "editor.defaultFormatter": "James-Yu.latex-workshop" },
-  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[bibtex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[latex-package]": {
     "editor.defaultFormatter": "James-Yu.latex-workshop"
   },
@@ -285,7 +317,15 @@
   // Keep PDFs in VS Code so synctex stays in one window.
   "workbench.editorAssociations": {
     "*.copilotmd": "vscode.markdown.preview.editor",
-    "*.pdf": "latex-workshop-pdf-hook"
+    "*.pdf": "latex-workshop-pdf-hook",
+    "*.md": "markdown-preview-enhanced",
+    "*.markdown": "markdown-preview-enhanced",
+    "*.mdown": "markdown-preview-enhanced",
+    "*.mkdn": "markdown-preview-enhanced",
+    "*.mkd": "markdown-preview-enhanced",
+    "*.rmd": "markdown-preview-enhanced",
+    "*.qmd": "markdown-preview-enhanced",
+    "*.mdx": "markdown-preview-enhanced"
   },
   "latex-workshop.latex.autoBuild.run": "never",
   "latex-workshop.latex.autoBuild.interval": 5000,
@@ -293,25 +333,57 @@
   "latex-workshop.latex.build.rootfileInStatus": true,
   "latex-workshop.latex.clean.subfolder.enabled": true,
   "latex-workshop.latex.autoClean.run": "never",
-  "latex-workshop.latex.outDir": "${workspaceFolder}/out",
-  "latex-workshop.latex.auxDir": "${workspaceFolder}/build",
+  "latex-workshop.latex.auxDir": "build",
   "latex-workshop.latex.recipe.default": "lastUsed",
   "latex-workshop.latex.recipes": [
-    { "name": "BUILD-WIN", "tools": ["build-win"] },
-    { "name": "BUILD-WSL", "tools": ["build-wsl"] },
-    { "name": "BUILD-QUIET", "tools": ["latexmk-quiet"] },
-    { "name": "AUTO", "tools": ["build-wsl-watch"] }
+    {
+      "name": "BUILD-WIN",
+      "tools": [
+        "build-win"
+      ]
+    },
+    {
+      "name": "BUILD-WSL",
+      "tools": [
+        "build-wsl"
+      ]
+    },
+    {
+      "name": "BUILD-QUIET",
+      "tools": [
+        "build-quiet"
+      ]
+    },
+    {
+      "name": "AUTO",
+      "tools": [
+        "build-wsl-watch"
+      ]
+    }
   ],
   "latex-workshop.latex.tools": [
     {
       "name": "build-wsl",
-      "command": "bash",
-      "args": ["-lc", "scripts/build.sh \"%DOC%\""]
+      "command": "scripts/build.sh",
+      "args": [
+        "%DOC%"
+      ]
     },
     {
       "name": "build-wsl-watch",
-      "command": "bash",
-      "args": ["-lc", "scripts/build.sh --watch \"%DOC%\""]
+      "command": "scripts/build.sh",
+      "args": [
+        "--watch",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "build-quiet",
+      "command": "scripts/build.sh",
+      "args": [
+        "--quiet",
+        "%DOC%"
+      ]
     },
     {
       "name": "build-win",
@@ -324,22 +396,6 @@
         "scripts\\build.ps1",
         "%DOC%"
       ]
-    },
-    {
-      "name": "latexmk-quiet",
-      "command": "latexmk",
-      "args": [
-        "-lualatex",
-        "-outdir=${workspaceFolder}/out",
-        "-auxdir=${workspaceFolder}/build",
-        "-f",
-        "-quiet",
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "-shell-escape",
-        "%DOC%"
-      ]
     }
   ],
   "latex-workshop.view.pdf.viewer": "tab",
@@ -348,7 +404,7 @@
   "latex-workshop.view.pdf.reload.transition": "none",
   "latex-workshop.view.outline.sync.viewer": true,
   "latex-workshop.view.pdf.internal.synctex.keybinding": "ctrl-click",
-  "latex-workshop.synctex.afterBuild.enabled": false,
+  "latex-workshop.synctex.afterBuild.enabled": true,
   "latex-workshop.latex.rootFile.useSubFile": true,
   "latex-workshop.latex.rootFile.doNotPrompt": true,
   "latex-workshop.latex.watch.usePolling": true,
@@ -366,13 +422,21 @@
     "-w",
     "-s",
     "-m",
-    "-l=${workspaceFolder}/latexindent.yaml",
-    "--overwriteIfDifferent"
+    "--overwriteIfDifferent",
+    "-l=latexindent.yaml"
   ],
+  "latex-utilities.formattedPaste.useAsDefault": true,
+  "latex-utilities.formattedPaste.maxLineLength": 100,
 
   // Convenience helpers around LaTeX authoring.
   "latex-utilities.liveReformat.enabled": true,
-  "latex-utilities.liveReformat.languages": ["tex", "doctex", "latex", "rsweave", "jlweave"],
+  "latex-utilities.liveReformat.languages": [
+    "tex",
+    "doctex",
+    "latex",
+    "rsweave",
+    "jlweave"
+  ],
   "latexPreview.latexFontDir": "C:\\Users\\vic-l\\AppData\\Local\\Programs\\MiKTeX\\fonts",
   "latexPreview.pageSize": "US Letter",
 
@@ -412,7 +476,7 @@
     "%DOCFILE%.vrb"
   ],
   "latex-workshop.linting.chktex.enabled": true,
-  "latex-workshop.chktex.configFile": "${workspaceFolder}/.chktexrc",
+  "latex-workshop.chktex.configFile": ".chktexrc",
   "latex-workshop.linting.lacheck.enabled": false,
   "latex-workshop.mathpreviewpanel.cursor.enabled": true,
   "latex-workshop.view.autoFocus.enabled": true,
@@ -420,7 +484,7 @@
   "latex-utilities.formattedPaste.image.template": "\\includegraphics[width=.8\\linewidth]{${imageFilePath}}",
   "latex-utilities.message.update.show": false,
   "latex-utilities.zotero.citeMethod": "vscode",
-  "PandocCiter.DefaultBib": "${workspaceFolder}/tex/edo.bib",
+  "PandocCiter.DefaultBib": "/home/victor/projects/edo/main/tex/edo.bib",
 
   // ===================================================================
   // 6. MARKDOWN & NOTEBOOKS - preview, extensions, and typography
@@ -439,42 +503,6 @@
   "markdown-preview-enhanced.enableTypographer": true,
   "markdown-preview-enhanced.latexEngine": "lualatex",
   "markdownPreviewEnhanced.previewTheme": "one-dark",
-  "ltex.additionalRules.motherTongue": "en-US",
-  "ltex.completion.enabled": true,
-  "ltex.dictionary": {},
-  "ltex.enabled": true,
-  "ltex.enabledTypes": ["sentence", "comment", "string"],
-  "ltex.disabledRules": {
-    "en-US": [
-      "MORFOLOGIK_RULE_EN_US",
-      "EN_QUOTES",
-      "COMMA_PARENTHESIS_WHITESPACE",
-      "OXFORD_COMMA",
-      "WHITESPACE_RULE"
-    ]
-  },
-  "ltex.language": "en-US",
-  "ltex.ltex-ls.java.path": "java",
-  "ltex.ignorePaths": ["**/main.tex", "**/build/**", "**/out/**", "**/figures/**"],
-  "ltex.latex.environments": {
-    "equation": "ignore",
-    "align": "ignore",
-    "lstlisting": "ignore",
-    "minted": "ignore",
-    "tikzpicture": "ignore"
-  },
-
-  "ltex.latex.commands": {
-    "\\gls{}": "dummy",
-    "\\Gls{}": "dummy",
-    "\\ac{}": "dummy",
-    "\\acrshort{}": "dummy",
-    "\\acrlong{}": "dummy",
-    "\\qty{}": "dummy",
-    "\\SI{}": "dummy",
-    "\\textcite{}": "dummy",
-    "\\parencite{}": "dummy"
-  },
 
   // ===================================================================
   // 7. TERMINAL - fonts, ligatures, and usability defaults
@@ -565,7 +593,7 @@
   "git.mergeEditor": true,
   "git.pruneOnFetch": true,
   "git.replaceTagsWhenPull": true,
-  "git.repositoryScanMaxDepth": 2,
+  "git.repositoryScanMaxDepth": -1,
   "git.allowNoVerifyCommit": true,
   "git.useCommitInputAsStashMessage": true,
   "git.useEditorAsCommitInput": false,
@@ -588,10 +616,6 @@
   "typescript.implementationsCodeLens.showOnInterfaceMethods": true,
   "typescript.referencesCodeLens.enabled": true,
   "typescript.referencesCodeLens.showOnAllFunctions": true,
-  "C_Cpp.files.exclude": {
-    "**/.vscode": true,
-    "**/.vs": true
-  },
   "evenBetterToml.formatter.allowedBlankLines": 1,
   "evenBetterToml.formatter.columnWidth": 100,
   "evenBetterToml.formatter.alignComments": true,
@@ -632,7 +656,6 @@
   "vscode-edge-devtools.useHttps": true,
   "vscode-edge-devtools.webhint": false,
   "vscode-edge-devtools.webhintInstallNotification": true,
-  "npm.fetchOnlinePackageInfo": false,
   "npm.runSilent": true,
   "pasteImage.basePath": "tex/assets/images",
   "path-intellisense.autoSlashAfterDirectory": true,
@@ -748,25 +771,17 @@
   "inlineChat.hideOnRequest": true,
   "inlineChat.lineEmptyHint": true,
   "inlineChat.notebookAgent": true,
-
-  // ===================================================================
-  // 12. SECURITY & UPDATES - reduce noise and keep releases predictable
-  // ===================================================================
-  "security.allowedUNCHosts": ["wsl.localhost"],
   "security.workspace.trust.untrustedFiles": "open",
   "telemetry.telemetryLevel": "off",
   "extensions.verifySignature": false,
   "update.mode": "default",
   "update.enableWindowsBackgroundUpdates": true,
   "update.showReleaseNotes": false,
-
-  // ===================================================================
-  // 13. SPELLCHECK & DICTIONARIES - tuned for LaTeX acquisition jargon
-  // ===================================================================
-  "cSpell.allowCompoundWords": true,
   "cSpell.autoFormatConfigFile": true,
-  "cSpell.customDictionaries": { "custom": true, "internal-terms": true },
-  "cSpell.enabled": true,
+  "cSpell.customDictionaries": {
+    "custom": true,
+    "internal-terms": true
+  },
   "cSpell.enabledFileTypes": {
     "json": false,
     "log": true,
@@ -775,7 +790,6 @@
   },
   "cSpell.diagnosticLevel": "Hint",
   "cSpell.hideIssuesWhileTyping": "Line",
-  "cSpell.language": "en-US",
   "cSpell.maxNumberOfProblems": 250,
   "cSpell.suggestionMenuType": "quickFix",
   "cSpell.checkVSCodeSystemFiles": true,
@@ -870,7 +884,6 @@
     "defernumbers",
     "definecolor",
     "DFARS",
-    "DoDI",
     "dpth",
     "DTMsavedate",
     "DTMsetdatestyle",
@@ -983,7 +996,6 @@
     "normalsize",
     "nouppercase",
     "NWCF",
-    "OPNAV",
     "operationalizes",
     "outerplace",
     "pagenumber",
@@ -1011,7 +1023,6 @@
     "rowhead",
     "rowsep",
     "rulecolor",
-    "SECNAV",
     "sansbody",
     "scrartcl",
     "scrheadings",
@@ -1100,8 +1111,252 @@
     "WCAG",
     "xcolor",
     "xelatex",
-    "xindy"
+    "xindy",
+    "DoDI",
+    "OPNAV",
+    "SECNAV"
   ],
-  "cSpell.words": ["CIVPERS", "JCIDS", "JROC"],
+  "geminicodeassist.project": "amazing-seer-x4fs3",
+  "remote.autoForwardPortsSource": "hybrid",
+  "git.confirmSync": false,
+
+  // ===================================================================
+  // 12. SECURITY & UPDATES - reduce noise and keep releases predictable
+  // ===================================================================
+  "security.allowedUNCHosts": [
+    "TRUENAS",
+    "wsl.localhost"
+  ],
+  "gitlens.currentLine.enabled": false,
+  "gitlens.currentLine.pullRequests.enabled": false,
+  "git.confirmNoVerifyCommit": false,
+  "git.confirmForcePush": false,
+  "git.confirmEmptyCommits": false,
+  "git.pullBeforeCheckout": true,
+  "git.terminalGitEditor": true,
+  "github.gitProtocol": "ssh",
+  "github.copilot.chat.alternateGptPrompt.enabled": true,
+  "github.copilot.chat.anthropic.thinking.enabled": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "ltex.completionEnabled": true,
+  "dev.containers.executeInWSL": true,
+  "chatgpt.openOnStartup": true,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "markdown-preview-enhanced.previewTheme": "none.css",
+  "markdown-preview-enhanced.revealjsTheme": "none.css",
+  "geminicodeassist.inlineSuggestions.nextEditPredictions": true,
+  "geminicodeassist.inlineSuggestions.suggestionSpeed": "Fast",
+  "geminicodeassist.updateChannel": "Insiders",
+  "vscode-office.editorTheme": "Auto",
+  "vscode-office.previewCodeHighlight.style": "monokai",
+  "vscode-office.quickOpen": true,
+  "todo-tree.general.periodicRefreshInterval": 5,
+  "todo-tree.tree.showCountsInTree": true,
+  "diffEditor.experimental.useTrueInlineView": true,
+  "diffEditor.experimental.showMoves": true,
+  "diffEditor.wordWrap": "on",
+  "git.closeDiffOnOperation": true,
+  "errorLens.enableOnDiffView": true,
+  "diffEditor.renderSideBySide": false,
+  "markdown-preview-enhanced.codeBlockTheme": "atom-dark.css",
+  "markdown.occurrencesHighlight.enabled": true,
+  "markdown.preview.typographer": true,
+  "markdown.updateLinksOnFileMove.enabled": "always",
+  "markdown.extension.showActionButtons": true,
+  "markdown.extension.tableFormatter.normalizeIndentation": true,
+  "markdown.extension.theming.decoration.renderLink": true,
+  "markdown.extension.theming.decoration.renderParagraph": true,
+  "markdown.extension.theming.decoration.renderHardLineBreak": true,
+  "markdown.extension.theming.decoration.renderTrailingSpace": true,
+  "markdown-preview-enhanced.HTML5EmbedIsAllowedHttp": true,
+  "markdown-preview-enhanced.HTML5EmbedUseLinkSyntax": true,
+  "markdown-preview-enhanced.liveUpdateDebounceMs": 100,
+  "markdown-preview-enhanced.mermaidTheme": "dark",
+  "markdown-preview-enhanced.previewColorScheme": "editorColorScheme",
+  "markdown-preview-enhanced.usePandocParser": true,
+  "markdown-preview-enhanced.previewMode": "Previews Only",
+  "chat.agentSessionsViewLocation": "view",
+  "vscode-office.openOutline": false,
+  "github.copilot.chat.customAgents.showOrganizationAndEnterpriseAgents": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.experimentalGpuAcceleration": "on",
+  "editor.renderRichScreenReaderContent": true,
+  "editor.selectionHighlightMultiline": true,
+  "files.readonlyFromPermissions": true,
+  "workbench.commandPalette.preserveInput": true,
+  "workbench.editor.enablePreview": false,
+  "explorer.confirmDelete": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.incrementalNaming": "smart",
+  "explorer.sortOrder": "type",
+  "scm.alwaysShowRepositories": true,
+  "scm.alwaysShowActions": true,
+  "scm.diffDecorationsGutterPattern": {
+    "added": true
+  },
+  "terminal.explorerKind": "both",
+  "terminal.integrated.enableImages": true,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.suggest.insertTrailingSpace": true,
+  "chat.customAgentInSubagent.enabled": true,
+  "chat.renderRelatedFiles": true,
+  "chat.tools.terminal.blockDetectedFileWrites": "never",
+  "chat.useClaudeSkills": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.useInlineCompletions": true,
+  "errorLens.codeLensEnabled": true,
+  "errorLens.fontStyleItalic": true,
+  "errorLens.gutterIconSet": "emoji",
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.statusBarColorsEnabled": true,
+  "errorLens.statusBarIconsEnabled": true,
+  "evenBetterToml.formatter.compactArrays": false,
+  "evenBetterToml.formatter.compactEntries": false,
+  "evenBetterToml.formatter.compactInlineTables": false,
+  "evenBetterToml.formatter.crlf": true,
+  "evenBetterToml.formatter.inlineTableExpand": true,
+  "git.allowForcePush": true,
+  "git.fetchOnPull": true,
+  "git.followTagsWhenSync": true,
+  "git.rememberPostCommitCommand": true,
+  "git.showPushSuccessNotification": true,
+  "github.codespaces.showPerformanceExplorer": true,
+  "github.copilot.chat.alternateGeminiModelFPrompt.enabled": true,
+  "github.copilot.chat.anthropic.tools.websearch.enabled": true,
+  "github.copilot.chat.codesearch.enabled": true,
+  "github.copilot.chat.notebook.enhancedNextEditSuggestions.enabled": true,
+  "github.copilot.chat.notebook.followCellExecution.enabled": true,
+  "github.copilot.chat.tools.memory.enabled": true,
+  "grunt.autoDetect": "on",
+  "gulp.autoDetect": "on",
+  "mermaid-chat.enabled": true,
+  "npm.enableRunFromFolder": true,
+  "code-runner.runInTerminal": true,
+  "todo-tree.general.automaticGitRefreshInterval": 120,
+  "todo-tree.filtering.ignoreGitSubmodules": true,
+  "todo-tree.tree.expanded": true,
+  "editor.fontWeight": "normal",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "editor.inlineSuggest.triggerCommandOnProviderChange": true,
+  "editor.suggestFontSize": 12,
+  "files.enableTrash": false,
+  "workbench.list.smoothScrolling": true,
+  "workbench.quickOpen.preserveInput": true,
+  "workbench.editor.autoLockGroups": {
+    "cweijan.markdownViewer.optional": true,
+    "latex-workshop-pdf-hook": true,
+    "cweijan.officeViewer": true,
+    "cweijan.markdownViewer": true,
+    "markdown-preview-enhanced": true,
+    "mainThreadWebview-markdown.preview": true
+  },
+  "workbench.editor.preferHistoryBasedLanguageDetection": true,
+  "workbench.editor.sharedViewState": true,
+  "workbench.settings.openDefaultSettings": true,
+  "window.openFoldersInNewWindow": "off",
+  "editor.unusualLineTerminators": "auto",
+  "editor.wrappingStrategy": "advanced",
+  "scm.repositories.sortOrder": "name",
+  "scm.workingSets.enabled": true,
+  "extensions.experimental.deferredStartupFinishedActivation": true,
+  "extensions.supportNodeGlobalNavigator": true,
+  "terminal.integrated.shellIntegration.environmentReporting": true,
+  "terminal.integrated.windowsUseConptyDll": true,
+  "notebook.output.wordWrap": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "typescript.format.insertSpaceAfterConstructor": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+  "typescript.format.insertSpaceAfterTypeAssertion": true,
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "pythonIndent.trimLinesWithOnlyWhitespace": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "C_Cpp.files.exclude": {
+    "**/.vscode": true,
+    "**/.vs": true
+  },
+
+  // ===================================================================
+  // 13. SPELLCHECK & DICTIONARIES - tuned for LaTeX acquisition jargon
+  // ===================================================================
+  "cSpell.allowCompoundWords": true,
+  "cSpell.enabled": true,
+  "cSpell.language": "en-US",
+  "ltex.additionalRules.motherTongue": "en-US",
+  "ltex.completion.enabled": true,
+  "ltex.dictionary": {},
+  "ltex.enabled": true,
+  "ltex.enabledTypes": [
+    "sentence",
+    "comment",
+    "string"
+  ],
+  "ltex.disabledRules": {
+    "en-US": [
+      "MORFOLOGIK_RULE_EN_US",
+      "EN_QUOTES",
+      "COMMA_PARENTHESIS_WHITESPACE",
+      "OXFORD_COMMA",
+      "WHITESPACE_RULE"
+    ]
+  },
+  "ltex.language": "en-US",
+  "ltex.ltex-ls.java.path": "java",
+  "json.schemaDownload.enable": false,
+  "latex-workshop.latex.outDir": "out",
+  "ltex.ignorePaths": [
+    "**/main.tex",
+    "**/build/**",
+    "**/out/**",
+    "**/figures/**"
+  ],
+  "ltex.latex.environments": {
+    "equation": "ignore",
+    "align": "ignore",
+    "lstlisting": "ignore",
+    "minted": "ignore",
+    "tikzpicture": "ignore"
+  },
+
+  "ltex.latex.commands": {
+    "\\gls{}": "dummy",
+    "\\Gls{}": "dummy",
+    "\\ac{}": "dummy",
+    "\\acrshort{}": "dummy",
+    "\\acrlong{}": "dummy",
+    "\\qty{}": "dummy",
+    "\\SI{}": "dummy",
+    "\\textcite{}": "dummy",
+    "\\parencite{}": "dummy"
+  },
+  "npm.fetchOnlinePackageInfo": false,
+  "cSpell.words": [
+    "CIVPERS",
+    "JCIDS",
+    "JROC",
+    "Adderall",
+    "catastrophizing",
+    "FSIQ",
+    "Intuniv",
+    "journaling",
+    "Lexapro",
+    "PTSD",
+    "Wellbutrin"
+  ],
   "editor.fontSize": 13
 }

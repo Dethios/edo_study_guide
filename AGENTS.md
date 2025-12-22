@@ -217,5 +217,10 @@
 - TODO scan: `rg TODO tex/main.tex tex/chapters tex/tikz tex/templates` found no matches.
 - Context: user asked for Gemini 3 Pro workflow guidance and a one-step AI context zip for drag/drop.
 - Generated `scratch/settings_diff.md` comparing VS Code settings across Windows user, WSL machine, and project workspaces.
+
+## Session updates (2025-12-22)
+
+- Merged VS Code settings across Windows user, WSL machine, and project workspaces; applied requested overrides, unified cSpell lists, and normalized LaTeX Workshop recipes/tools to `scripts/build.*` (settings files rewritten as canonical JSON).
 - Verified GitHub release notes match `CHANGELOG.md` for `release-20251221`; added `.gitattributes` to normalize LF endings; cleaned VS Code tasks (removed duplicate AI task, added Windows override for push, and prevented WSL update task on non-Linux).
 - Renormalized the repository after adding `.gitattributes` so line endings align across WSL/Windows.
+- Restored comment scaffolding in `.vscode/settings.json`, forced `[latex].editor.tabSize = 4`, and regenerated `scratch/settings_diff.md` (no drift across settings files).
