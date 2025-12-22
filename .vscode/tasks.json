@@ -19,6 +19,16 @@
         "reveal": "always",
         "panel": "dedicated",
         "clear": true
+      },
+      "windows": {
+        "command": "pwsh",
+        "args": [
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "scripts\\push.ps1"
+        ]
       }
     },
 
@@ -107,34 +117,6 @@
     },
 
     // ---------------------------------------------------------------
-    // Build an AI context zip (diff + log excerpt + selected files)
-    // ---------------------------------------------------------------
-    {
-      "label": "AI: Build context zip",
-      "type": "shell",
-      "command": "./scripts/ai-context.sh",
-      "options": {
-        "cwd": "${workspaceFolder}"
-      },
-      "problemMatcher": [],
-      "presentation": {
-        "reveal": "always",
-        "panel": "dedicated",
-        "clear": true
-      },
-      "windows": {
-        "command": "pwsh",
-        "args": [
-          "-NoProfile",
-          "-ExecutionPolicy",
-          "Bypass",
-          "-File",
-          "scripts\\ai-context.ps1"
-        ]
-      }
-    },
-
-    // ---------------------------------------------------------------
     // Auto pull when project is opened in VS Code
     // ---------------------------------------------------------------
     {
@@ -152,7 +134,9 @@
       "type": "shell",
       "command": "sudo /usr/bin/apt-get update && sudo /usr/bin/apt-get -y upgrade",
       "presentation": { "reveal": "silent" },
-      "runOptions": { "runOn": "folderOpen" }
+      "runOptions": { "runOn": "folderOpen" },
+      "windows": { "command": "echo WSL update skipped on Windows." },
+      "osx": { "command": "echo WSL update skipped on macOS." }
     }
 
   ]

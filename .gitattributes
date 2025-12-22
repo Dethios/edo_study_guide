@@ -1,36 +1,27 @@
-# Text defaults
+# Normalize line endings across OSes.
 * text=auto eol=lf
 
-# Windows scripts that should stay CRLF
-*.bat text eol=crlf
-*.cmd text eol=crlf
-*.ps1 text eol=crlf
+# Shell and PowerShell scripts should stay LF.
+*.sh text eol=lf
+*.ps1 text eol=lf
 
-# Build artifacts
-out/**  -text
-build/** -text
-
-# Treat TeX-related files as text with better diff
-*.tex text diff=tex
-*.sty text
-*.cls text
-*.bib text
-*.bbx text
-*.cbx text
-*.lbx text
-*.texlua text
-*.mkiv text
-*.mkii text
-
-# Ensure these are stored as binary (no diffs/CRLF conversions)
+# Common binaries.
 *.pdf binary
 *.png binary
 *.jpg binary
 *.jpeg binary
 *.gif binary
-*.svg binary
-*.eps binary
-*.ttf binary
-*.otf binary
-*.woff binary
-*.woff2 binary
+*.bmp binary
+*.tif binary
+*.tiff binary
+*.ico binary
+*.zip binary
+*.7z binary
+*.gz binary
+*.xz binary
+*.bz2 binary
+*.tar binary
+*.xlsx binary
+*.xls binary
+*.docx binary
+*.pptx binary

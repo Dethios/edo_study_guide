@@ -22,8 +22,9 @@
   - Write a short summary of completed work and the context of the current chat.
   - Update `Other/project_export.json` with new context/instructions/status.
 - Update this file with task status changes and any new/recommended tasks or directives.
+- If the task updates any files in `tex` folder or affects of the tooling config files for the latex build:
 - Run `python3 scripts/export_agents_json.py --root .` to refresh `AGENTS.json` (machine-readable export).
-- Run `latexmk -shell-escape` (project `latexmkrc` handles targets) and record warnings/errors.
+  - Run `latexmk -shell-escape` (project `latexmkrc` handles targets) and record warnings/errors.
 - After every test/build, scrub and remove SAVE-ERROR files, temp files, and lock files (including *.lock/*.lck/*.auxlock).
 - Check off any TODOs you completed; search the LaTeX sources (`tex/main.tex`, `tex/chapters/`, `tex/tikz/`, `tex/templates/`) for outstanding TODO comments that can be addressed.
 - Proceed with next recommended tasks automatically; if three next steps exist, execute all three.
@@ -31,63 +32,63 @@
 ## Lookups
 
 - [X] Review ADM Caudle's message to the fleet
-- [x] Specifics of CAPE's duties and responsibilities
-- [x] What are the execution limits as prescribed by OMB
+- [X] Specifics of CAPE's duties and responsibilities
+- [X] What are the execution limits as prescribed by OMB
 - [ ] What are OMB's Roles and Responsbilities
 - [ ] Find and review exmaples of POM and BES documents
-- [ ] Find all OPNAV N codes for N8 and N9, provide description of what each of them do (partial: N80/N81/N82, N9I, N95--N98)
-- [x] Provide a description of the Marks and Reclama Process
-- [x] For CIVPERs, how are conduct and performance issues handled? How are they different?
-- [x] GS Steps: What is the timing between each step that makes steps 1 to 10 take 18 years?
+- [X] Find all OPNAV N codes for N8 and N9, provide description of what each of them do (partial: N80/N81/N82, N9I, N95--N98)
+- [X] Provide a description of the Marks and Reclama Process
+- [X] For CIVPERs, how are conduct and performance issues handled? How are they different?
+- [X] GS Steps: What is the timing between each step that makes steps 1 to 10 take 18 years?
 - [ ] What are the NRO specifics for promotion in GS Ranks?
-- [x] When a COC occurs, how long does the new OIC have to make changes before the Unions consider old actions permanement rules
+- [X] When a COC occurs, how long does the new OIC have to make changes before the Unions consider old actions permanement rules
 - [ ] What are the current proposed changes to streamline the GS payscales
-- [x] How do we track expenditures and how do we know that we are on track with out spending?
+- [X] How do we track expenditures and how do we know that we are on track with out spending?
 - [ ] What are the two ATR windows to request for reprogramming?
-- [ ] Who finalizes and writes the NDAA? Appropriations Bills?
-- [ ] What other items are in the NDAA beyond basic authorizations for spending?
-- [ ] Read the current (new) NDAA and NSS
+- [X] Who finalizes and writes the NDAA? Appropriations Bills?
+- [X] What other items are in the NDAA beyond basic authorizations for spending?
+- [X] Read the current (new) NDAA and NSS
 - [ ] How does IWS test terminal defense weapons such as CIWS
-- [x] What is the ASN(RD&A) office structure. What are their job titles and fundtions?
-- [ ] More review of flags.
+- [X] What is the ASN(RD&A) office structure. What are their job titles and fundtions?
+- [X] More review of flags.
 
 ## Current jobs
 
-- [x] Review entire scope of project; update `Other/project_export.json` to current project status.
-- [x] Acronym audit: replace uppercase runs with `\ac{}` in prose; add missing entries to `acronyms.def` (skip tables/headings).
-- [x] Refactor sectional tables to `longtblr` in house style.
-- [x] Add CIVPERs coursebook content as a new section using the subfile template.
-- [x] Adjust List of Tables and List of Figures formatting to match the ToC.
-- [x] Resolve unreferenced citation warnings emitted by `latexmk`.
-- [x] Add labels to all chapters, sections, and subsections.
-- [x] Audit `acronyms.def` grouping and plural forms.
-- [x] Update flag appendix and billet callouts per Dec 2025 org chart/bios; remove non-EDO PEO billets (and note PEO USC is SES; RDML Smith relieved).
-- [x] Add PPBE graphics from Platinum Card into Chapter 6.
-- [x] Fix hyperlinks and hyperrefs (clickable links in PDF).
-- [x] Resolve excessive subsection label reference noise.
-- [x] Fix latexmk failure after clean build (longtblr runaway argument; missing bcf/bbl).
-- [x] Restore table column types: F -> l, L -> X, W -> X; remove no-longer-needed custom column types.
-- [x] Determine why IfSubFileClass functions were not activating.
-- [x] Update `tex/templates/subfile_template.tex` guidance (remove stale placeholders).
-- [x] Build a single-glance table linking \ac{opnavinst} 4700.7M, \ac{opnavnote} 4700, \ac{jfmm}, and \ac{cbmp} to owners/impacts/talking points.
-- [x] Add an `\ac{opm}` acronym definition and update CIVPERS guidance to use it.
-- [x] Develop a CNO Availability Execution phase table mapping phases to deliverables/docs/leaders.
-- [x] Build an A-36/A-21/A-12/A-3 availability planning timeline graphic with reviews/deliverables.
-- [x] Add a nuclear waterfront project-team schematic (NRRO, RPCO, NSA/LMA, Ship's Force, contractor interactions).
-- [x] Insert a BDAR continuum figure (Damage Control -> Expeditionary -> Depot repair) with responsible orgs.
-- [x] Add a maintenance-level coverage figure mapping O-/I-/Depot-level tasks to NSYs, RMCs, \ac{supship}s, and private yards.
-- [x] Insert a DoW-wide test and evaluation organization graphic (\ac{osd} \ac{dote}, \ac{dasdte}, Service OTAs, warfare centers).
-- [x] Create a modernization document ownership/timing/funding table (Change Notice, JCF, SHIPALT record, installation drawing).
-- [x] Provide an AIT swim-lane diagram (Sponsor, AIT Manager, \ac{rmmco}, \ac{nsa}) from screening through certification.
-- [x] Add a NAVSEA Org Chart Dec 2025 bibliography entry and cite it in the NWC map figure caption.
-- [x] Resolve duplicate labels from automatic section label generation in subfiles.
-- [x] The first table label is skipped. Fix to ensure all table labels show up.
-- [x] Hyperref: use `linkcolor=black` (do not use AccentBlue).
-- [x] Insert a NAVWAR enterprise structure graphic in Chapter 4 to replace the removed TODO note.
-- [x] Codex Cloud: add startup scripts to install TeX Live and required binaries.
-- [x] Remove minibib code from templates and the study guide.
-- [x] Add appendix with Cannon Cocker and IWE rosters/pyramids.
-- [x] Refactor repo layout so LaTeX sources live under `tex/`; align build outputs, scripts, and tooling configs.
+- [X] Review entire scope of project; update `Other/project_export.json` to current project status.
+- [X] Acronym audit: replace uppercase runs with `\ac{}` in prose; add missing entries to `acronyms.def` (skip tables/headings).
+- [X] Refactor sectional tables to `longtblr` in house style.
+- [X] Add CIVPERs coursebook content as a new section using the subfile template.
+- [X] Adjust List of Tables and List of Figures formatting to match the ToC.
+- [X] Resolve unreferenced citation warnings emitted by `latexmk`.
+- [X] Add labels to all chapters, sections, and subsections.
+- [X] Audit `acronyms.def` grouping and plural forms.
+- [X] Update flag appendix and billet callouts per Dec 2025 org chart/bios; remove non-EDO PEO billets (and note PEO USC is SES; RDML Smith relieved).
+- [X] Add PPBE graphics from Platinum Card into Chapter 6.
+- [X] Fix hyperlinks and hyperrefs (clickable links in PDF).
+- [X] Resolve excessive subsection label reference noise.
+- [X] Fix latexmk failure after clean build (longtblr runaway argument; missing bcf/bbl).
+- [X] Restore table column types: F -> l, L -> X, W -> X; remove no-longer-needed custom column types.
+- [X] Determine why IfSubFileClass functions were not activating.
+- [X] Update `tex/templates/subfile_template.tex` guidance (remove stale placeholders).
+- [X] Build a single-glance table linking \ac{opnavinst} 4700.7M, \ac{opnavnote} 4700, \ac{jfmm}, and \ac{cbmp} to owners/impacts/talking points.
+- [X] Add an `\ac{opm}` acronym definition and update CIVPERS guidance to use it.
+- [X] Develop a CNO Availability Execution phase table mapping phases to deliverables/docs/leaders.
+- [X] Build an A-36/A-21/A-12/A-3 availability planning timeline graphic with reviews/deliverables.
+- [X] Add a nuclear waterfront project-team schematic (NRRO, RPCO, NSA/LMA, Ship's Force, contractor interactions).
+- [X] Insert a BDAR continuum figure (Damage Control -> Expeditionary -> Depot repair) with responsible orgs.
+- [X] Add a maintenance-level coverage figure mapping O-/I-/Depot-level tasks to NSYs, RMCs, \ac{supship}s, and private yards.
+- [X] Insert a DoW-wide test and evaluation organization graphic (\ac{osd} \ac{dote}, \ac{dasdte}, Service OTAs, warfare centers).
+- [X] Create a modernization document ownership/timing/funding table (Change Notice, JCF, SHIPALT record, installation drawing).
+- [X] Provide an AIT swim-lane diagram (Sponsor, AIT Manager, \ac{rmmco}, \ac{nsa}) from screening through certification.
+- [X] Add a NAVSEA Org Chart Dec 2025 bibliography entry and cite it in the NWC map figure caption.
+- [X] Resolve duplicate labels from automatic section label generation in subfiles.
+- [X] The first table label is skipped. Fix to ensure all table labels show up.
+- [X] Hyperref: use `linkcolor=black` (do not use AccentBlue).
+- [X] Insert a NAVWAR enterprise structure graphic in Chapter 4 to replace the removed TODO note.
+- [X] Codex Cloud: add startup scripts to install TeX Live and required binaries.
+- [X] Remove minibib code from templates and the study guide.
+- [X] Add appendix with Cannon Cocker and IWE rosters/pyramids.
+- [X] Refactor repo layout so LaTeX sources live under `tex/`; align build outputs, scripts, and tooling configs.
 
 ## Session updates (2025-12-08)
 
@@ -216,3 +217,5 @@
 - TODO scan: `rg TODO tex/main.tex tex/chapters tex/tikz tex/templates` found no matches.
 - Context: user asked for Gemini 3 Pro workflow guidance and a one-step AI context zip for drag/drop.
 - Generated `scratch/settings_diff.md` comparing VS Code settings across Windows user, WSL machine, and project workspaces.
+- Verified GitHub release notes match `CHANGELOG.md` for `release-20251221`; added `.gitattributes` to normalize LF endings; cleaned VS Code tasks (removed duplicate AI task, added Windows override for push, and prevented WSL update task on non-Linux).
+- Renormalized the repository after adding `.gitattributes` so line endings align across WSL/Windows.
