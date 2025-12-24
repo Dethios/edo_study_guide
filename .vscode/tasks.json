@@ -120,6 +120,29 @@
     // Auto pull when project is opened in VS Code
     // ---------------------------------------------------------------
     {
+      "label": "Settings: Sync on Open",
+      "type": "shell",
+      "command": "python3 ./scripts/settings_manager.py sync",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": { "reveal": "silent" },
+      "runOptions": { "runOn": "folderOpen" },
+      "windows": {
+        "command": "py",
+        "args": [
+          "-3",
+          "scripts\\settings_manager.py",
+          "sync"
+        ]
+      }
+    },
+
+    // ---------------------------------------------------------------
+    // Auto pull when project is opened in VS Code
+    // ---------------------------------------------------------------
+    {
       "label": "Git: Pull on Open",
       "type": "shell",
       "command": "git pull --ff-only",

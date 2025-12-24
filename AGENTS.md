@@ -136,4 +136,7 @@
 - [X] Optimize AGENTS.md with GPT-5.2 prompting guidance (2025-12-24)
 - [X] Integrate memory_update.md into AGENTS.md and remove the file (2025-12-24)
 - [X] Inventory instruction sources and account for them in AGENTS.md (2025-12-24)
+- [X] Add settings_master.json and automate settings sync/merge (VS Code open + git push)
 - [X] Create WSL/VS Code replication notebook with optional devcontainer scaffold (2025-12-24)
+- [X] Commit devcontainer files for Ubuntu WSL replication (2025-12-24)
+- [X] Sync .codex settings from WSL to Windows CLI profile (2025-12-24)
