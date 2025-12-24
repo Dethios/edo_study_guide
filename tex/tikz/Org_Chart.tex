@@ -58,9 +58,9 @@
   \end{scope}
 
   % Draw the connector "bus" from CNO to the Echelon II nodes
-\coordinate (cno_bus) at ($(cno.south)+(0,-.75cm)$);
-\draw[thick] (cno.south) -- (cno_bus);
-% Invisible anchor point below the CNO node
+  \coordinate (cno_bus) at ($(cno.south)+(0,-.75cm)$);
+  \draw[thick] (cno.south) -- (cno_bus);
+  % Invisible anchor point below the CNO node
   \foreach \child in {navwar, navsea, navfac, navair, navsup, oni, onr, ssp} {
       \draw[thick] (cno_bus) -| (\child.north); % Draw right-angled line to each child
     }

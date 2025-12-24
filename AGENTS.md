@@ -224,3 +224,24 @@
 - Verified GitHub release notes match `CHANGELOG.md` for `release-20251221`; added `.gitattributes` to normalize LF endings; cleaned VS Code tasks (removed duplicate AI task, added Windows override for push, and prevented WSL update task on non-Linux).
 - Renormalized the repository after adding `.gitattributes` so line endings align across WSL/Windows.
 - Restored comment scaffolding in `.vscode/settings.json`, forced `[latex].editor.tabSize = 4`, and regenerated `scratch/settings_diff.md` (no drift across settings files).
+- Clarified that the `shfmt` not found message indicates the formatter is missing and offers snap (newer) or apt (older) install options with version differences.
+- Outlined additional `shfmt` installation paths (Go install, package managers, or prebuilt binaries) beyond apt/snap.
+- Acronyms: wrapped `\glslink` usage to suppress `glossaries-extra` post-link hooks and switched acronym command definitions to `\DeclareDocumentCommand` to avoid shortcut conflicts.
+- Tooling: regenerated `AGENTS.json`.
+- Build: `latexmk -shell-escape tex/main.tex` succeeded after acronym macro tweaks.
+- Acronyms: bypassed `\glslink` in `\ac` rendering (use `\@glslink` + boxed `\glsadd`) to eliminate the leading space; added fallback `\theglsentrycounter`/`\theHglsentrycounter` definitions for noidx writes.
+- Build: `latexmk -shell-escape tex/main.tex` succeeded; biber not run, so 1265 undefined citation warnings remain (missing `build/main.bbl`).
+
+## Session updates (2025-12-23)
+
+- Indentation guidance: recommend 4 spaces for general coding; confirmed `.vscode/settings.json` already uses 4 for tab/indent settings (no changes needed in repo settings).
+- WSL inventory: confirmed Ubuntu 24.04.3 on WSL2 with apt + snap, upstream TeX Live 2025 at `/usr/local/texlive/2025` (root-owned), NVM-managed Node v25.2.1 plus apt-installed `nodejs`/`npm` and 373 `node-*` packages, Docker CE from the Docker repo, snapd installed with no snaps, MiKTeX apt repo present but no MiKTeX packages, and PATH duplication/Windows toolchain entries; queued follow-up questions before optimization recommendations.
+- WSL deep-dive: captured npm/pnpm globals (corepack/npm; @openai/codex), confirmed no Python user-site packages, noted Docker build cache ~5.6 GB with no images/containers, and identified ~389 auto-installed npm deps plus 17 nodejs deps via apt; preparing cleanup recommendations (snapd, apt node stack, Docker cache) pending user preferences.
+- Docker cache: pruned Docker build cache (`docker builder prune -a -f`); `docker system df -v` now reports 0B cache and no images/containers.
+- PATH interop: attempted to set `/etc/wsl.conf` `[interop] appendWindowsPath=false` but sudo password is required; pending user execution of the provided command.
+- User cleanup confirmation: user reports binaries now resolve to NVM Node and TeX Live, with TeX Live at ~11 GB, NVM at ~234 MB, and pnpm store at ~328 MB; Python user site path absent (no user packages).
+- VS Code outside-repo settings: checked `/home/victor/.vscode-server/data/Machine/settings.json` and verified indent/tab widths already set to 4; no external settings changes required.
+- Windows VS Code settings: verified `/mnt/c/Users/vic-l/AppData/Roaming/Code/User/settings.json` already uses 4-space tab/indent values; no edits required.
+- Explained the latexindent failure when the `File::HomeDir` Perl module is missing and suggested installing the distro package or CPAN module.
+- Ran latexindent across all `*.tex` files with the requested flags, removed the no-extension backup files it created, and confirmed no remaining TODO markers in LaTeX sources.
+- Build: `latexmk -shell-escape` failed without a target; `latexmk -shell-escape tex/main.tex` succeeded but still emits pdf-backend unreferenced glossary destination warnings; scrubbed temp/lock artifacts.

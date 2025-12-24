@@ -18,9 +18,9 @@
 
 % Compact display: "DD Mon YYYY"
 \DTMnewdatestyle{mydateformat}{%
-  \RenewDocumentCommand{\DTMdisplaydate}{m m m m}{%
-    \DTMtwodigits{##3}~\DTMshortmonthname{##2}~\number##1%
-  }%
+    \RenewDocumentCommand{\DTMdisplaydate}{m m m m}{%
+        \DTMtwodigits{##3}~\DTMshortmonthname{##2}~\number##1%
+    }%
 }
 
 % =============================================================================
@@ -34,22 +34,22 @@
 \RequirePackage{subfiles}
 \@ifclassloaded{subfiles}{\MTSubfilestrue}{\MTSubfilesfalse}
 \providecommand{\IfSubfilesClassLoaded}[2]{%
-  \ifMTSubfiles
-    #1%
-  \else
-    #2%
-  \fi
+    \ifMTSubfiles
+        #1%
+    \else
+        #2%
+    \fi
 }
 \RequirePackage{xstring}
 
 % Graphics search paths for main + subfile contexts (tex/ root + chapters/).
 \graphicspath{%
-  {\subfix{assets/images/}}%
-  {\subfix{assets/information/}}%
-  {\subfix{assets/information/EDO/}}%
-  {\subfix{assets/coursebook/}}%
-  {\subfix{tikz/}}%
-  {\subfix{tikz/out/}}%
+    {\subfix{assets/images/}}%
+    {\subfix{assets/information/}}%
+    {\subfix{assets/information/EDO/}}%
+    {\subfix{assets/coursebook/}}%
+    {\subfix{tikz/}}%
+    {\subfix{tikz/out/}}%
 }
 
 % =============================================================================
@@ -57,31 +57,31 @@
 % =============================================================================
 \PassOptionsToPackage{colorlinks=true,linktoc=all,hyperfootnotes=false}{hyperref}
 \@ifpackageloaded{hyperref}{}{%
-  \RequirePackage{hyperref}%
+    \RequirePackage{hyperref}%
 }
 \RequirePackage{xurl}              % richer URL breakpoints
 \RequirePackage{etoolbox}          % hooks for post-package adjustments
 \Urlmuskip=0mu plus 2mu
 \hypersetup{
-  breaklinks=true,
-  colorlinks=true,
-  hypertexnames=false, % avoid duplicate anchor names misrouting links
-  linkcolor=black,
-  citecolor=AccentGreen,
-  urlcolor=AccentBlue,
-  filecolor=AccentPurple
+    breaklinks=true,
+    colorlinks=true,
+    hypertexnames=false, % avoid duplicate anchor names misrouting links
+    linkcolor=black,
+    citecolor=AccentGreen,
+    urlcolor=AccentBlue,
+    filecolor=AccentPurple
 }
 
 \RequirePackage{xr-hyper}
 \providecommand{\subfix}[1]{#1}
 \NewDocumentCommand{\ImportAUX}{m}{%
-  \IfFileExists{#1.aux}{\externaldocument*{#1}}{}%
+    \IfFileExists{#1.aux}{\externaldocument*{#1}}{}%
 }
 % Pull the main document AUX into subfile builds so cross-references resolve.
 \@ifundefined{IfSubfilesClassLoaded}{}{%
-  \IfSubfilesClassLoaded{%
-    \ImportAUX{\subfix{../build/main}}%
-  }{}%
+    \IfSubfilesClassLoaded{%
+        \ImportAUX{\subfix{../build/main}}%
+    }{}%
 }
 
 \RequirePackage{bookmark}
@@ -89,18 +89,19 @@
 
 % Keep PDF metadata strings clean if color commands leak into bookmarks.
 \pdfstringdefDisableCommands{
-  \def\color#1{}%
-  \def\textcolor#1#2{#2}%
+    \def\color#1{}%
+    \def\textcolor#1#2{#2}%
 }
 
 % =============================================================================
 % GLOSSARIES AND ACRONYMS (scrbook-friendly)
 % =============================================================================
 \RequirePackage[
-  stylemods=all,
-  acronym,
-  nonumberlist,
-  nogroupskip,
+    stylemods=all,
+    acronym,
+    nonumberlist,
+    nogroupskip,
+%   shortcuts=ac, % Revert to 'ac' for shortcuts
   nopostdot,
   toc             % add entries to the Table of Contents (KOMA-friendly)
 ]{glossaries-extra}
@@ -110,21 +111,26 @@
 % --- Build mode: no external indexing (fast, good for continuous writing) ---
 % Kill auto "smart space" in old glossaries/glossaries-extra
 \@ifundefined{gls@autospacingfalse}{}{%
-  \gls@autospacingfalse % old/new releases that have the flag
+    \gls@autospacingfalse % old/new releases that have the flag
 }%
 % In older releases, \glsdoautoinsert performs the lookahead; neutralize it.
 \@ifundefined{glsdoautoinsert}{}{%
-  \let\glsdoautoinsert\@gobble % swallow its argument(s) and do nothing
+    \let\glsdoautoinsert\@gobble % swallow its argument(s) and do nothing
 }%
 % Ensure the final space emitter does nothing.
 \@ifundefined{gls@insertspace}{}{%
-  \renewcommand*{\gls@insertspace}{}%
+    \renewcommand*{\gls@insertspace}{}%
 }%
+% NOTE: glossaries-extra emits a stray leading space in \glslink; avoid it.
+% We link via \@glslink and manually add glossary usage.
 
 % --- Load your acronym definitions ------------------------------------------
 \loadglsentries{acronyms.def}
 \makenoidxglossaries
 \renewcommand*{\GlsNoIdxDoRerunCheck}{}
+% Fallbacks for noidx writes when glossaries doesn't set counters yet.
+\providecommand*{\theglsentrycounter}{\thepage}
+\providecommand*{\theHglsentrycounter}{\thepage}
 % \glsdisablehyper
 
 % =========================
@@ -132,39 +138,30 @@
 % =========================
 % Shared helpers for linked acronym output and smart spacing
 \DeclareRobustCommand{\silentglsadd}[1]{%
-  \@bsphack
-  \glsadd{#1}%
-  \@esphack
-  \futurelet\@let@token\silentglsadd@i
-}
-\def\silentglsadd@i{%
-  \ifx\@let@token\space
-    \expandafter\silentglsadd@gobble
-  \else
-    \ignorespaces
-  \fi
-}
-\def\silentglsadd@gobble#1{}%
+    \begingroup%
+        \setbox\@tempboxa=\hbox{\glsadd{#1}}%
+    \endgroup%
+}%
 
-\NewDocumentCommand{\edoAcrLink}{m m}{\glslink{#1}{#2}}%
-  \AtBeginDocument{\let\@gls@adjustmode\@empty}%
+\DeclareDocumentCommand{\edoAcrLink}{m m}{%
+\@ifundefined{@glslink}{#2}{\@glslink{\glolinkprefix#1}{#2}}%
+}%
+\AtBeginDocument{\let\@gls@adjustmode\@empty}%
 \NewDocumentCommand{\edoAcrRender}{m m m m}{%
-  \IfBooleanTF{#1}{%
-    \edoAcrLink{#2}{#3{#2}}%
-  }{%
-    \ifglsused{#2}{%
-      \edoAcrLink{#2}{#3{#2}}%
+    \IfBooleanTF{#1}{%
+        \edoAcrLink{#2}{#3{#2}}%
     }{%
-      \edoAcrLink{#2}{#4{#2}\silentglsadd{#2}(#3{#2})}\glsunset{#2}%
+        \ifglsused{#2}{%
+            \edoAcrLink{#2}{#3{#2}}%
+        }{%
+            \edoAcrLink{#2}{#4{#2}\silentglsadd{#2}~(#3{#2})}\glsunset{#2}%
+        }%
     }%
-  }%
 }%
 
 % \ac{<lab>}  : first use -> long (SHORT), later -> SHORT; linked; usage tracked
 % \ac*{<lab>} : always SHORT; linked; no usage change
-\NewDocumentCommand{\ac}{s m}{%
-  \edoAcrRender{#1}{#2}{\glsentryshort}{\glsentrylong}%
-}%
+\DeclareDocumentCommand{\ac}{s m}{\edoAcrRender{#1}{#2}{\glsentryshort}{\glsentrylong}}%
 
 % Compatibility shims for legacy shortcut macros (short forms only)
 \providecommand{\acs}[1]{\glsxtrshort{#1}}%
@@ -173,22 +170,14 @@
 \providecommand{\Acsp}[1]{\Glsxtrshortpl{#1}}%
 
 % Plural
-\NewDocumentCommand{\acp}{s m}{%
-  \edoAcrRender{#1}{#2}{\glsentryshortpl}{\glsentrylongpl}%
-}%
+\DeclareDocumentCommand{\acp}{s m}{\edoAcrRender{#1}{#2}{\glsentryshortpl}{\glsentrylongpl}}%
 
 % Capitalized variants
-\NewDocumentCommand{\Ac}{s m}{%
-  \edoAcrRender{#1}{#2}{\Glsentryshort}{\Glsentrylong}%
-}%
-\NewDocumentCommand{\Acp}{s m}{%
-  \edoAcrRender{#1}{#2}{\Glsentryshortpl}{\Glsentrylongpl}%
-}%
+\DeclareDocumentCommand{\Ac}{s m}{\edoAcrRender{#1}{#2}{\Glsentryshort}{\Glsentrylong}}%
+\DeclareDocumentCommand{\Acp}{s m}{\edoAcrRender{#1}{#2}{\Glsentryshortpl}{\Glsentrylongpl}}%
 
 % For list labels / moving args (optional; linked)
-\NewDocumentCommand{\aclabel}{m}{%
-  \hyperlink{glo:#1}{\glsentryshort{#1}}%
-}%
+\NewDocumentCommand{\aclabel}{m}{\hyperlink{glo:#1}{\glsentryshort{#1}}}%
 
 % =============================================================================
 % LOW-LEVEL TWEAKS AND MACROS (reserved)

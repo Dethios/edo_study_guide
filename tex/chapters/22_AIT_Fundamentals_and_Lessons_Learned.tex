@@ -28,17 +28,17 @@
 \begin{figure}[htbp]
   \centering
   \begin{tikzpicture}[
-    x=2.9cm,
-    y=1.1cm,
-    >=Latex,
-    lane/.style={draw=Gray60, line width=0.6pt},
-    swimstep/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, align=center, inner sep=4pt, minimum width=2.6cm},
-    arrow/.style={-Latex, line width=0.9pt, draw=Gray60}
-  ]
+      x=2.9cm,
+      y=1.1cm,
+      >=Latex,
+      lane/.style={draw=Gray60, line width=0.6pt},
+      swimstep/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, align=center, inner sep=4pt, minimum width=2.6cm},
+      arrow/.style={-Latex, line width=0.9pt, draw=Gray60}
+    ]
     \foreach \y/\name in {0/Sponsor / PARM,-1/AIT Manager,-2/RMMCO,-3/NSA / LMA,-4/Ship's Force}{
-      \draw[lane] (-0.4,\y) -- (4.3,\y);
-      \node[left=3pt, align=right] at (-0.4,\y) {\small \name};
-    }
+        \draw[lane] (-0.4,\y) -- (4.3,\y);
+        \node[left=3pt, align=right] at (-0.4,\y) {\small \name};
+      }
 
     \node[swimstep] (need) at (0.6,0) {Screen need\\funding vector};
     \node[swimstep] (rmmco1) at (0.6,-2) {Package screen\\schedule slot};

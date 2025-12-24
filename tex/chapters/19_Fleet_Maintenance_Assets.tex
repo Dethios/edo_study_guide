@@ -18,10 +18,10 @@
 \begin{figure}[htbp]
   \centering
   \begin{tikzpicture}[
-    node distance=1.5cm,
-    levelbox/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, align=left, inner sep=6pt, minimum width=6.5cm},
-    arrow/.style={-Latex, line width=0.9pt, draw=Gray60}
-  ]
+      node distance=1.5cm,
+      levelbox/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, align=left, inner sep=6pt, minimum width=6.5cm},
+      arrow/.style={-Latex, line width=0.9pt, draw=Gray60}
+    ]
     \node[levelbox] (o) {\textbf{O-level}\\Ship's Force\\Battle damage control, preventive checks, light repairs with shipboard tools};
     \node[levelbox, below=of o] (i) {\textbf{I-level}\\IMAs, tenders, RMC production shops\\Component repairs, calibration, welding/rigging, corrosion control};
     \node[levelbox, below=of i] (d) {\textbf{Depot-level}\\NSYs, SUPSHIP-admin private yards, major private shipyards\\Docking, reactor work, shaft/propulsion repair, major modernizations tied to CMP};
@@ -38,16 +38,16 @@
 \begin{description}
   \item[\textbf{\acp{nsy}.}] Public yards (e.g., Norfolk, Pearl Harbor, Puget, Portsmouth) report to \ac{navsea}~04 and integrate nuclear workforces, planning codes, and lifting/handling departments that mirror \ac{navseainst}~5450.14D standard organization~\autocite{NAVSEAINST5450-14D}.
   \item[\textbf{\acp{rmc}.}] Regional Maintenance Centers deliver voyage repairs, execute \ac{cmp} work, and act as the local \ac{ta} for availabilities; they synchronize contracting, production shops, and \ac{tsra} under \ac{cnrmc}~\autocite{NAVSEAINST5450-145A,edo-4-1-1-fleet-maint-assets-2025}.
-\item[\textbf{\ac{supship}.}] Supervisors of Shipbuilding administer new construction and conversion/modernization contracts as \acp{aco}, coordinate budget execution, and provide technical oversight for nuclear refueling overhauls (e.g., \ac{cvn} \ac{rcoh})\FlagBilletNote{\ac{rdml} Jonathan J.\ Jett-Parmer serves as \ac{navsea} Deputy Commander, Supervisor of Shipbuilding; \ac{rdml} Robert J.\ Dodson (\ac{usnr}) is the reserve deputy; \ac{comnavsea} is ADM William J.\ Houston (Submarine officer, non-\ac{edo})}\autocite{NAVSEAINST5450-145A,edo-4-1-1-fleet-maint-assets-2025,navsea-org-chart-2025}.
+  \item[\textbf{\ac{supship}.}] Supervisors of Shipbuilding administer new construction and conversion/modernization contracts as \acp{aco}, coordinate budget execution, and provide technical oversight for nuclear refueling overhauls (e.g., \ac{cvn} \ac{rcoh})\FlagBilletNote{\ac{rdml} Jonathan J.\ Jett-Parmer serves as \ac{navsea} Deputy Commander, Supervisor of Shipbuilding; \ac{rdml} Robert J.\ Dodson (\ac{usnr}) is the reserve deputy; \ac{comnavsea} is ADM William J.\ Houston (Submarine officer, non-\ac{edo})}\autocite{NAVSEAINST5450-145A,edo-4-1-1-fleet-maint-assets-2025,navsea-org-chart-2025}.
   \item[\textbf{Private shipyards.}] Huntington Ingalls, Bath Iron Works, General Dynamics NASSCO/Electric Boat, Fincantieri Marinette Marine, and Austal execute modernization packages, submarine maintenance, and surge depot work as part of the industrial base portfolio directed by \ac{opnav} and \ac{peo} contracts~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
 \end{description}
 
 \clearpage
 \subsection{Regional Maintenance Command Structure}
 \begin{description}
-\item[\textbf{Flag oversight (\ac{edo}).}] \ac{cnrmc} is an \ac{edo} flag billet (\ac{rdml} Dan L.\ Lannamann) reporting to \ac{comnavsea}; \ac{cnrmc} sets standards and performance goals for all \acp{rmc} and aligns with \ac{tycom} production priorities\FlagBilletNote{\ac{comnavsea} is \ac{vadm} James P.\ Downey; \ac{cnrmc} is \ac{rdml} Dan L.\ Lannamann}\autocite{navy-lannamann-2025,NAVSEAINST5450-145A}.
-\item[\textbf{RMC reporting.}] \acp{rmc} (e.g., Mid-Atlantic, Southeast, Southwest, Japan, and Puget Sound Naval Shipyard and \ac{imf} detachments) report administratively to \ac{cnrmc} and operationally to the supported \ac{tycom}, with competency-aligned codes (100 fleet support, 200 availability management, 300 production shops, 400 quality assurance/technical authority) to standardize execution\autocite{NAVSEAINST5450-145A}.
-\item[\textbf{Work control touchpoints.}] \ac{rmmco}, availability work package managers, and contracting officers integrate with ship's force, Port Engineers, and \ac{tycom} maintenance officers; \ac{edo} Port Engineers and \ac{rmc} production officers bridge technical authority to the \ac{tycom} readiness owner\autocite{NAVSEAINST5450-145A,edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Flag oversight (\ac{edo}).}] \ac{cnrmc} is an \ac{edo} flag billet (\ac{rdml} Dan L.\ Lannamann) reporting to \ac{comnavsea}; \ac{cnrmc} sets standards and performance goals for all \acp{rmc} and aligns with \ac{tycom} production priorities\FlagBilletNote{\ac{comnavsea} is \ac{vadm} James P.\ Downey; \ac{cnrmc} is \ac{rdml} Dan L.\ Lannamann}\autocite{navy-lannamann-2025,NAVSEAINST5450-145A}.
+  \item[\textbf{RMC reporting.}] \acp{rmc} (e.g., Mid-Atlantic, Southeast, Southwest, Japan, and Puget Sound Naval Shipyard and \ac{imf} detachments) report administratively to \ac{cnrmc} and operationally to the supported \ac{tycom}, with competency-aligned codes (100 fleet support, 200 availability management, 300 production shops, 400 quality assurance/technical authority) to standardize execution\autocite{NAVSEAINST5450-145A}.
+  \item[\textbf{Work control touchpoints.}] \ac{rmmco}, availability work package managers, and contracting officers integrate with ship's force, Port Engineers, and \ac{tycom} maintenance officers; \ac{edo} Port Engineers and \ac{rmc} production officers bridge technical authority to the \ac{tycom} readiness owner\autocite{NAVSEAINST5450-145A,edo-4-1-1-fleet-maint-assets-2025}.
 \end{description}
 
 \clearpage

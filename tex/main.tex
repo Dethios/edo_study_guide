@@ -34,7 +34,7 @@
   backref=false
 ]{biblatex}
 \ExecuteBibliographyOptions{seconds=true}
-\addbibresource{edo.bib}
+\addbibresource{tex/edo.bib}
 \RenewDocumentCommand{\bibfont}{}{\rmfamily\small}
 \defbibheading{subrefs}[\refname]{\paragraph*{#1}\nopagebreak}
 \NewDocumentCommand{\nbcite}{m}{\citeauthor{#1}~\autocite{#1}}
@@ -44,15 +44,15 @@
 \msg_redirect_name:nnn { pdf } { unreferenced destination } { none }
 \msg_redirect_name:nnn { pdf/backend } { unreferenced destination } { none }
 \cs_if_exist:NT \__pdf_backend_warn:nnnn
+{
+  \cs_new_eq:NN \mt@orig_pdf_warn:nnnn \__pdf_backend_warn:nnnn
+  \cs_set_protected:Npn \__pdf_backend_warn:nnnn ##1##2##3##4
   {
-    \cs_new_eq:NN \mt@orig_pdf_warn:nnnn \__pdf_backend_warn:nnnn
-    \cs_set_protected:Npn \__pdf_backend_warn:nnnn ##1##2##3##4
-      {
-        \str_if_eq:nnTF {##2}{unreferenced destination}
-          { }
-          { \mt@orig_pdf_warn:nnnn {##1}{##2}{##3}{##4} }
-      }
+    \str_if_eq:nnTF {##2}{unreferenced destination}
+    { }
+    { \mt@orig_pdf_warn:nnnn {##1}{##2}{##3}{##4} }
   }
+}
 \ExplSyntaxOff
 % Disable biblatex hyperlink targets when defined; leave hyperref driver intact.
 % \AtBeginDocument{%

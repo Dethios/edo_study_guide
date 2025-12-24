@@ -13,7 +13,7 @@
 \begin{description}
   \item[\textbf{Customers.}] Fleet commanders and \ac{tycom}s drive capability requirements and availability length based on the Optimized Fleet Response Plan and readiness gaps~\autocite{OPNAVINST3000-15K,edo-4-2-1-cno-availability-planning-2025}.
   \item[\textbf{Planners.}] Shipyards, \acp{rmc}, and planning activities must sequence work, tooling, infrastructure, and \ac{lltm} so the schedule is executable~\autocite{edo-4-2-1-cno-availability-planning-2025}.
-\item[\textbf{Resources.}] Budgets (\ac{ocmf}, \ac{opn}, \ac{funds-d}/\ac{funds-k}), workforce, and pier/dock capacity must align with \ac{cno}-directed Repair Days~\autocite{OPNAVNOTE4700-24}.
+  \item[\textbf{Resources.}] Budgets (\ac{ocmf}, \ac{opn}, \ac{funds-d}/\ac{funds-k}), workforce, and pier/dock capacity must align with \ac{cno}-directed Repair Days~\autocite{OPNAVNOTE4700-24}.
 \end{description}
 \acp{edo} should articulate how they reconcile conflicting demands—for example, deferring a lower-criticality modernization so mandatory \ac{subsafe} work fits within the allotted man-days.
 
@@ -28,12 +28,12 @@
 \begin{figure}[htbp]
   \centering
   \begin{tikzpicture}[
-    x=3.2cm,
-    y=1cm,
-    >=Latex,
-    milestone/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, inner sep=4pt, align=center},
-    timeline/.style={line width=1pt, draw=Gray60}
-  ]
+      x=3.2cm,
+      y=1cm,
+      >=Latex,
+      milestone/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, inner sep=4pt, align=center},
+      timeline/.style={line width=1pt, draw=Gray60}
+    ]
     \draw[timeline] (0,0) -- (4.6,0);
     \draw[timeline] (0,-0.15) -- (0,0.15);
     \node[milestone, above=4pt] at (0,0.15) {\textbf{A-36}\\Baseline BAWP\\Ship checks, TSRA, CMP alignment};
@@ -46,7 +46,7 @@
     \draw[timeline] (4.6,-0.15) -- (4.6,0.15);
     \node[milestone, above=4pt] at (4.6,0.15) {\textbf{A-0}\\Award / start\\Ready to execute};
     \node[below=6pt, align=center, text=AccentBlue] at (2.3,-0.15)
-      {\small Reviews: Readiness/Integration Summits, AWI, Planning Yard gates, CNO scheduling conference};
+    {\small Reviews: Readiness/Integration Summits, AWI, Planning Yard gates, CNO scheduling conference};
   \end{tikzpicture}
   \caption[CNO availability planning timeline]{CNO availability planning timeline (A-36 through A-0) with key reviews and deliverables.}
   \label{fig:cno-planning-timeline}

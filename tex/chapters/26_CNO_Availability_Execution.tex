@@ -20,11 +20,11 @@
 \begin{figure}[htbp]
   \centering
   \begin{tikzpicture}[
-    node distance=1.9cm and 2.6cm,
-    role/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, align=center, inner sep=6pt},
-    oversight/.style={draw=AccentGreen, fill=AccentGreen!15, rounded corners=2pt, align=center, inner sep=6pt},
-    arrow/.style={-Latex, line width=0.9pt, draw=Gray60}
-  ]
+      node distance=1.9cm and 2.6cm,
+      role/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, align=center, inner sep=6pt},
+      oversight/.style={draw=AccentGreen, fill=AccentGreen!15, rounded corners=2pt, align=center, inner sep=6pt},
+      arrow/.style={-Latex, line width=0.9pt, draw=Gray60}
+    ]
     \node[role] (ship) {Ship's Force\\CO / XO / CHENG};
     \node[role, right=of ship] (contractor) {Prime Contractor\\PM / QA / Trades};
     \node[oversight, above=of contractor] (nrro) {NRRO\\(nuclear oversight)};
@@ -61,13 +61,13 @@
     colspec = {@{} L L L L @{}}
   }
   \toprule
-  {Phase} & {Key Deliverables} & {Controlling Documents} & {Responsible Leads} \\
+  {Phase}                        & {Key Deliverables}                                                                             & {Controlling Documents}                                                                       & {Responsible Leads}                                                       \\
   \midrule
-  Nesting / Arrival & Temporary services, fire watch plan, habitability, turnover briefs, tag-out baseline & JFMM Chapter 2; Tag-out Users Manual; local safety manuals & Project Superintendent, Safety Officer, Ship's Force Department Heads \\
-  Rip-out \& Access & Interference removal, WAF approvals, confined space/hazardous material plans & WAF/Tag-out procedures; hot work and gas-free engineering instructions & Zone Assistant Project Managers, Production Shop Leads, Gas Free Engineer \\
-  Open \& Inspect & Inspection reports, growth work candidates, material condition snapshots & Standard Item 009-01; QA/inspection instructions; class maintenance plans & Engineering \& Planning, Quality Assurance, Class Maintenance Planner \\
-  Repair \& Production & Completed work items, change control (JSNs/contract mods), schedule metrics, resource leveling & Contract/SOW; work package and change control processes; integrated master schedule standards & Project Manager, Port Engineer/KO, Business \& Planning, Contractor PM \\
-  Testing, Trials, Certification & Test agendas, TGI alignment, LOA/SOVT/CSSQT completion, sea trial cards, turnover certificates & JFMM testing chapters; platform test manuals; INSURV/Builder's trial requirements & Chief Test Conductor, Ship's Force Test Coordinator, NSA/LMA witnesses \\
+  Nesting / Arrival              & Temporary services, fire watch plan, habitability, turnover briefs, tag-out baseline           & JFMM Chapter 2; Tag-out Users Manual; local safety manuals                                    & Project Superintendent, Safety Officer, Ship's Force Department Heads     \\
+  Rip-out \& Access              & Interference removal, WAF approvals, confined space/hazardous material plans                   & WAF/Tag-out procedures; hot work and gas-free engineering instructions                        & Zone Assistant Project Managers, Production Shop Leads, Gas Free Engineer \\
+  Open \& Inspect                & Inspection reports, growth work candidates, material condition snapshots                       & Standard Item 009-01; QA/inspection instructions; class maintenance plans                     & Engineering \& Planning, Quality Assurance, Class Maintenance Planner     \\
+  Repair \& Production           & Completed work items, change control (JSNs/contract mods), schedule metrics, resource leveling & Contract/SOW; work package and change control processes; integrated master schedule standards & Project Manager, Port Engineer/KO, Business \& Planning, Contractor PM    \\
+  Testing, Trials, Certification & Test agendas, TGI alignment, LOA/SOVT/CSSQT completion, sea trial cards, turnover certificates & JFMM testing chapters; platform test manuals; INSURV/Builder's trial requirements             & Chief Test Conductor, Ship's Force Test Coordinator, NSA/LMA witnesses    \\
   \bottomrule
 \end{longtblr}
 
