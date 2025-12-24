@@ -1,4 +1,3 @@
-
 # AGENTS.md — EDO Acquisition Tutor
 
 ## Read First
@@ -29,7 +28,6 @@
   - Update `Other/project_export.json` with new context, added instructions, and current status.
 - Update this file with status changes and new/recommended tasks or directives.
 - If the task changes any `tex/` files or tooling config for the LaTeX build:
-  - Run `python3 scripts/export_agents_json.py --root .` to refresh `AGENTS.json`.
   - Run `latexmk -shell-escape` (using project `latexmkrc`); record warnings/errors.
 - After each test/build, delete SAVE-ERROR files, temp files, and lock files (`*.lock`, `*.lck`, `*.auxlock`).
 - Mark off completed TODOs; search LaTeX sources (`tex/main.tex`, `tex/chapters/`, `tex/tikz/`, `tex/templates/`) for outstanding TODOs.
@@ -40,8 +38,8 @@
 - [X] Review ADM Caudle's message to the fleet
 - [X] Specifics of CAPE duties and responsibilities
 - [X] OMB execution limits
-- [ ] OMB Roles and Responsibilities
-- [ ] POM and BES document examples
+- [X] OMB Roles and Responsibilities
+- [X] POM and BES document examples
 - [X] All OPNAV N codes for N8 and N9, describe each (partial: N80/N81/N82, N9I, N95–N98)
 - [X] Description of Marks and Reclama Process
 - [X] CIVPERs: conduct/performance issue handling and differences
@@ -95,3 +93,4 @@
 - [X] Remove minibib from templates/study guide
 - [X] Appendix with Cannon Cocker/IWE rosters/pyramids
 - [X] Repo layout: move LaTeX sources under `tex/`; align output/scripts/tool config.
+- [X] Merge Current Events chapter into appendix and remove the redundant chapter file

@@ -1,7 +1,7 @@
 {
   "project_metadata": {
     "project_name": "EDO Acquisition Tutor",
-    "export_timestamp_iso": "2025-12-24T04:59:03-05:00",
+    "export_timestamp_iso": "2025-12-24T09:15:18-05:00",
     "project_instructions_raw": "ROLE & MISSION\nYou are a Navy EDO Acquisition Tutor. Teach, test, and clarify U.S. Navy/DoW acquisition for EDO qualification boards (primary) and general mastery (secondary). Explain the full breadth clearly, tie assertions to current primary sources, and emphasize Navy-unique overlays.\n\nAUDIENCE\nEngineering Duty Officers preparing for boards and practicing program/technical authority roles. Assume motivated learners who may be new to acquisition jargon.\n\nCANONICAL SOURCES (teach-from-truth)\nStatute: Titles 10 & 41 U.S.C.; relevant NDAA provisions.\nRegulation: FAR, DFARS, DFARS PGI; NMCARS if applicable.\nPolicy/Framework: DoDI 5000 series (MCA, SWP, MTA, Urgent), plus JCIDS artifacts as needed.\nFiscal: DoW FMR 7000.14-R; GAO Red Book.\nNavy overlays: SECNAV/OPNAV/NAVSEA instructions; PEO/TA guidance; shipbuilding nuances (SCN/WPN).\nCourseware: EDO-specific coursebook PDFs (baseline current as of 2025-09-12).\nRule: When facts can change (thresholds, definitions, authorities), verify the current controlling document and cite title + section (if known) + publication date.\n\nRECENCY POLICY\nStamp every deliverable with \"Current as of [YYYY-MM-DD]\". Re-verify for NDAA/FAR/DFARS/DoDI/SECNAV changes and PPBE shifts. If recency cannot be confirmed (e.g., offline excerpt), label Recency check pending and state assumptions.\n\nDEFAULTS & MODES\nDefault Mode: EDO Board Prep (concise, decision-focused). Optional Mode: Mastery (full exposition, examples, deeper context). Diagrams: Provide Mermaid visuals only when explicitly requested; otherwise default to textual decision logic.\n\nTEACHING STYLE (layered structure)\nPlain-language brief; Navy overlays & authority touchpoints; Fiscal/PPBE & colors of money (SCN/WPN nuance); Decision Trace; Citations; Assumptions & uncertainties; Self-score.\n\nINTERACTION RULES\nAsk 2-3 targeted clarifying questions for substantial tasks; if no reply, proceed best-effort and state assumptions. Offer an opposing view/edge case where professional judgment could differ. Avoid flashcards by default.\n\nDEFAULT OUTPUT TEMPLATE\nSummary; Navy Overlays; Fiscal/PPBE; Decision Trace; Citations; Current as of; Assumptions & Uncertainties; Self-Score.\n\nCOVERAGE MAP (breadth over time)\nAAF pathways & artifacts; JCIDS; governance reviews; contracting fundamentals; fiscal law & PPBE (SCN/WPN); cost/schedule/performance; SE & T&E; logistics & sustainment; software & data; rapid authorities; Navy-unique overlays & authority boundaries.\n\nQUALITY ASSURANCE\nSelf-score every answer (Accuracy, Completeness, Clarity, Relevance, Practical usefulness). If any <8, revise and note the fix.\n\nTOOLING & CITATION BEHAVIOR\nVerify rules/thresholds with current primary sources and cite exact dates; prefer official/public sources. Call out Navy overlay deltas vs generic DAU guidance.\n\nSAFETY & COMPLIANCE\nNot legal advice. Respect OPSEC/CUI and procurement integrity. Use only unclassified, publicly releasable sources.\n\nCODE ARGUMENTS\n `-latexindent` to format LaTeX sources without backups,ARGS: `wd, -s, -m, -l=.latexindent.yaml, -c=%TEMP%/latexindent, -y=defaultIndent:'  ' `; `-latexmk` for continuous build with LuaLaTeX, ARGS: `-lualatex, -pdf, -dvi-, -ps-, -outdir=out, -auxdir=build, -f, -shell-escape, -interaction=nonstopmode, -synctex=1, -file-line-error, %DOC%`; `-fontspec` for custom fonts (Merriweather, Montserrat, Source Sans Pro).",
     "project_memory_highlights": [
       "LaTeX-based EDO Board Prep Study Guide with diagrams, tables, and citations.",
@@ -47,7 +47,6 @@
       "Clarified the shfmt not found message and the difference between snap versus apt installation options and versions.",
       "Outlined additional shfmt installation paths beyond apt/snap (Go install, other package managers, or prebuilt binaries).",
       "Acronym linking: edoAcrLink now suppresses glossaries-extra post-link hooks; acronym commands are defined with DeclareDocumentCommand to avoid shortcut conflicts.",
-      "Regenerated AGENTS.json after updating AGENTS.md.",
       "Build: latexmk -shell-escape tex/main.tex succeeded after acronym macro tweaks.",
       "Patched glossaries-extra \\@gls@link to remove the stray space token after \\leavevmode, fixing extra space in \\ac/\\glslink output.",
       "Build: latexmk -shell-escape tex/main.tex succeeded after the \\@gls@link spacing patch.",
@@ -66,7 +65,9 @@
       "Verified codex launcher uses the pnpm global store for @openai/codex 0.77.0.",
       "Documented how to add the GitHub MCP server to ~/.codex/config.toml, including OAuth vs bearer-token options.",
       "Optimized AGENTS.md for Codex guidelines (condensed instructions and removed session update history).",
-      "Added GEMINI.md shim to mirror AGENTS.md instructions for Gemini tools."
+      "Added GEMINI.md shim to mirror AGENTS.md instructions for Gemini tools.",
+      "Removed AGENTS export artifact and related tooling; AGENTS.md workflow no longer includes an export step.",
+      "Merged current events chapter into appendix_current_events.tex, added current_events.bib to the appendix, and removed the redundant 26_Current_Events.tex file."
     ],
     "known_limits": {
       "files_visible": 1,
@@ -321,30 +322,6 @@
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Data-driven summary; rerun grouping if billet file changes."
-      },
-      {
-        "title_or_slug": "AGENTS.md JSON export",
-        "date_range": "2025-12-17 to 2025-12-17",
-        "participants": [
-          "user",
-          "assistant"
-        ],
-        "purpose": "Create a machine-readable JSON export of AGENTS.md instructions and task lists.",
-        "summary": "Added scripts/export_agents_json.py to parse AGENTS.md headings, checklists, and session updates into AGENTS.json (including derived fields and checklist stats); updated AGENTS.md workflow to regenerate the export and logged a new session update; updated project_export.json to reflect the new tooling.",
-        "key_decisions": [
-          "Keep AGENTS.md as the authoritative instruction source; treat AGENTS.json as a generated export for automation."
-        ],
-        "action_items": [
-          "Run python3 scripts/export_agents_json.py --root . after editing AGENTS.md."
-        ],
-        "linked_files": [
-          "AGENTS.md",
-          "AGENTS.json",
-          "scripts/export_agents_json.py",
-          "Other/project_export.json"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "Tooling-only change; no acquisition content."
       },
       {
         "title_or_slug": "Rebuild main.pdf after merge",
@@ -665,6 +642,52 @@
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Tooling verification only; no acquisition content changes."
+      },
+      {
+        "title_or_slug": "Remove AGENTS export artifacts",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Remove AGENTS export artifacts and workflow references.",
+        "summary": "Deleted the AGENTS export artifact and exporter script, and removed the export step from AGENTS.md workflow instructions.",
+        "key_decisions": [
+          "Drop AGENTS export tooling and keep AGENTS.md as the sole authoritative instruction source."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "AGENTS.md",
+          "Other/project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling cleanup; no acquisition content changes."
+      },
+      {
+        "title_or_slug": "Merge current events into appendix",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Move the standalone Current Events chapter content into the appendix and audit acronyms.",
+        "summary": "Merged the 2025 current-events content into the appendix, added the current_events.bib resource there, adjusted acronym usage in prose, and deleted the standalone chapter file. latexmk failed due to an undefined glossary entry (ofpp) in 11_Contracting_Fundamentals.tex.",
+        "key_decisions": [
+          "Keep current-events content consolidated in the appendix and include current_events.bib locally."
+        ],
+        "action_items": [
+          "Define the ofpp acronym in acronyms.def to resolve the glossary error, then rerun latexmk.",
+          "Restore or locate scripts/export_agents_json.py so AGENTS.json can be regenerated after AGENTS.md edits."
+        ],
+        "linked_files": [
+          "tex/chapters/appendix_current_events.tex",
+          "current_events.bib",
+          "tex/chapters/26_Current_Events.tex",
+          "AGENTS.md",
+          "Other/project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Content move plus acronym audit; build blocked by missing glossary entry."
       }
     ]
   },
