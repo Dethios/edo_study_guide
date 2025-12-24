@@ -368,6 +368,10 @@
     // ===================================================================
     // Files - File handling, auto-save, and excludes.
     // ===================================================================
+    // files.associations: Define object/map for files associations. Edit the value to change behavior.
+    "files.associations": {
+        "*.json": "jsonc"
+    },
     // files.autoGuessEncoding: Enable or disable files auto Guess Encoding. Edit the value to change behavior.
     "files.autoGuessEncoding": true,
     // files.autoSave: Set files auto Save. Edit the value to change behavior.
