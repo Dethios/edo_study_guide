@@ -1,7 +1,7 @@
 {
   "project_metadata": {
     "project_name": "EDO Acquisition Tutor",
-    "export_timestamp_iso": "2025-12-24T09:26:25-05:00",
+    "export_timestamp_iso": "2025-12-24T11:04:17-05:00",
     "project_instructions_raw": "ROLE & MISSION\nYou are a Navy EDO Acquisition Tutor. Teach, test, and clarify U.S. Navy/DoW acquisition for EDO qualification boards (primary) and general mastery (secondary). Explain the full breadth clearly, tie assertions to current primary sources, and emphasize Navy-unique overlays.\n\nAUDIENCE\nEngineering Duty Officers preparing for boards and practicing program/technical authority roles. Assume motivated learners who may be new to acquisition jargon.\n\nCANONICAL SOURCES (teach-from-truth)\nStatute: Titles 10 & 41 U.S.C.; relevant NDAA provisions.\nRegulation: FAR, DFARS, DFARS PGI; NMCARS if applicable.\nPolicy/Framework: DoDI 5000 series (MCA, SWP, MTA, Urgent), plus JCIDS artifacts as needed.\nFiscal: DoW FMR 7000.14-R; GAO Red Book.\nNavy overlays: SECNAV/OPNAV/NAVSEA instructions; PEO/TA guidance; shipbuilding nuances (SCN/WPN).\nCourseware: EDO-specific coursebook PDFs (baseline current as of 2025-09-12).\nRule: When facts can change (thresholds, definitions, authorities), verify the current controlling document and cite title + section (if known) + publication date.\n\nRECENCY POLICY\nStamp every deliverable with \"Current as of [YYYY-MM-DD]\". Re-verify for NDAA/FAR/DFARS/DoDI/SECNAV changes and PPBE shifts. If recency cannot be confirmed (e.g., offline excerpt), label Recency check pending and state assumptions.\n\nDEFAULTS & MODES\nDefault Mode: EDO Board Prep (concise, decision-focused). Optional Mode: Mastery (full exposition, examples, deeper context). Diagrams: Provide Mermaid visuals only when explicitly requested; otherwise default to textual decision logic.\n\nTEACHING STYLE (layered structure)\nPlain-language brief; Navy overlays & authority touchpoints; Fiscal/PPBE & colors of money (SCN/WPN nuance); Decision Trace; Citations; Assumptions & uncertainties; Self-score.\n\nINTERACTION RULES\nAsk 2-3 targeted clarifying questions for substantial tasks; if no reply, proceed best-effort and state assumptions. Offer an opposing view/edge case where professional judgment could differ. Avoid flashcards by default.\n\nDEFAULT OUTPUT TEMPLATE\nSummary; Navy Overlays; Fiscal/PPBE; Decision Trace; Citations; Current as of; Assumptions & Uncertainties; Self-Score.\n\nCOVERAGE MAP (breadth over time)\nAAF pathways & artifacts; JCIDS; governance reviews; contracting fundamentals; fiscal law & PPBE (SCN/WPN); cost/schedule/performance; SE & T&E; logistics & sustainment; software & data; rapid authorities; Navy-unique overlays & authority boundaries.\n\nQUALITY ASSURANCE\nSelf-score every answer (Accuracy, Completeness, Clarity, Relevance, Practical usefulness). If any <8, revise and note the fix.\n\nTOOLING & CITATION BEHAVIOR\nVerify rules/thresholds with current primary sources and cite exact dates; prefer official/public sources. Call out Navy overlay deltas vs generic DAU guidance.\n\nSAFETY & COMPLIANCE\nNot legal advice. Respect OPSEC/CUI and procurement integrity. Use only unclassified, publicly releasable sources.\n\nCODE ARGUMENTS\n `-latexindent` to format LaTeX sources without backups,ARGS: `wd, -s, -m, -l=.latexindent.yaml, -c=%TEMP%/latexindent, -y=defaultIndent:'  ' `; `-latexmk` for continuous build with LuaLaTeX, ARGS: `-lualatex, -pdf, -dvi-, -ps-, -outdir=out, -auxdir=build, -f, -shell-escape, -interaction=nonstopmode, -synctex=1, -file-line-error, %DOC%`; `-fontspec` for custom fonts (Merriweather, Montserrat, Source Sans Pro).",
     "project_memory_highlights": [
       "LaTeX-based EDO Board Prep Study Guide with diagrams, tables, and citations.",
@@ -69,7 +69,16 @@
       "Removed AGENTS export artifact and related tooling; AGENTS.md workflow no longer includes an export step.",
       "Merged current events chapter into appendix_current_events.tex, added current_events.bib to the appendix, and removed the redundant 26_Current_Events.tex file.",
       "Moved current_events.bib under tex/, updated appendix_current_events bibresource, added OFPP acronym, and removed the AGENTS.json export requirement.",
-      "Added OFPP and OIRA acronyms; latexmk now fails at 17_JCIDS.tex because \\addbibresource is used in the document body (preamble-only), with many existing undefined citation warnings."
+      "Added OFPP and OIRA acronyms; latexmk now fails at 17_JCIDS.tex because \\addbibresource is used in the document body (preamble-only), with many existing undefined citation warnings.",
+      "Ran a forced latexmk rebuild; build stops at tex/chapters/17_JCIDS.tex because \\addbibresource is used in the document body (preamble-only), with many existing undefined citation warnings.",
+      "Moved was_refs.bib to tex/ and centralized bib resources in the main preamble; removed subfile addbibresource calls. latexmk now fails at 17_JCIDS.tex due to an incomplete \\autocite command (\\autoc) and existing undefined citations.",
+      "Moved project_export.json to the repo root and updated references in AGENTS.md, GEMINI.md, and memory_update.md.",
+      "Recommended placing the project_export schema under schemas/project_export.schema.json and correcting the filename typo.",
+      "Extracted remaining guidance from project_export.md into AGENTS.md (conflict handling and content gaps) and deleted project_export.md.",
+      "Updated AGENTS.md with GPT-5.2 response/verbosity, scope control, ambiguity handling, tool usage, and high-risk self-check guidance based on the prompting guide.",
+      "Integrated memory_update.md instructions into AGENTS.md, removed memory_update.md, and documented other instruction sources.",
+      "Moved the project export schema to schemas/project_export.schema.json and updated copilot instructions for the new project_export.json path.",
+      "Created scratch/wsl_vscode_setup.ipynb to export/import WSL tooling, VS Code settings/extensions, and optional devcontainer scaffold."
     ],
     "known_limits": {
       "files_visible": 1,
@@ -166,7 +175,7 @@
         ],
         "linked_files": [
           "AGENTS.md",
-          "Other/project_export.json"
+          "project_export.json"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Tooling guidance; no repo changes."
@@ -189,11 +198,35 @@
         ],
         "linked_files": [
           "AGENTS.md",
-          "Other/project_export.json",
+          "project_export.json",
           "tex/main.tex"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Formatting/tooling update; content unchanged."
+      },
+      {
+        "title_or_slug": "WSL/VS Code replication notebook",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Create a notebook to export/import WSL tooling, VS Code settings/extensions, and optional devcontainer scaffold.",
+        "summary": "Created scratch/wsl_vscode_setup.ipynb with export/import steps for apt packages, VS Code settings/extensions, TeX Live 2025, NVM Node, and optional devcontainer scaffold.",
+        "key_decisions": [
+          "Store the notebook under scratch/ to keep it separate from LaTeX sources.",
+          "Include optional devcontainer scaffolding rather than adding .devcontainer files directly."
+        ],
+        "action_items": [
+          "Confirm whether to generate and commit .devcontainer files or adjust package lists for other WSL distros."
+        ],
+        "linked_files": [
+          "scratch/wsl_vscode_setup.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Environment tooling note; no LaTeX content changes."
       }
     ],
     "project_instructions_analysis": {
@@ -345,7 +378,7 @@
           "chapters/appendix_edo_billet_summary.tex",
           "out/main.pdf",
           "AGENTS.md",
-          "Other/project_export.json"
+          "project_export.json"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Build/tooling update; PDF output may differ slightly across TeX installations."
@@ -371,7 +404,7 @@
           "chapters/appendix_key_roles.tex",
           "moderntech-base.sty",
           "AGENTS.md",
-          "Other/project_export.json"
+          "project_export.json"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Build completed; minted fallback and overfull hbox warnings persist."
@@ -395,7 +428,7 @@
           "chapters/18_test_eval.tex",
           "chapters/24_Battle_Damage_Assessment_Repair.tex",
           "AGENTS.md",
-          "Other/project_export.json"
+          "project_export.json"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Build completed; minted fallback warning persists."
@@ -420,7 +453,7 @@
           "~/.ssh/config",
           "~/.ssh/authorized_keys",
           "AGENTS.md",
-          "Other/project_export.json"
+          "project_export.json"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "System configuration task; no acquisition content."
@@ -442,7 +475,7 @@
         ],
         "linked_files": [
           "AGENTS.md",
-          "Other/project_export.json"
+          "project_export.json"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Tooling-only update; no acquisition content."
@@ -494,7 +527,7 @@
           "scripts/ai-context.ps1",
           ".vscode/tasks.json",
           "AGENTS.md",
-          "Other/project_export.json"
+          "project_export.json"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Tooling/workflow update; no acquisition content."
@@ -537,7 +570,7 @@
         ],
         "linked_files": [
           "AGENTS.md",
-          "Other/project_export.json"
+          "project_export.json"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Tooling/system-inventory task; recommendations pending user preferences."
@@ -559,7 +592,7 @@
         ],
         "linked_files": [
           "AGENTS.md",
-          "Other/project_export.json"
+          "project_export.json"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Tooling/system-inventory task; no repo code changes."
@@ -580,7 +613,7 @@
         ],
         "linked_files": [
           "AGENTS.md",
-          "Other/project_export.json"
+          "project_export.json"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "System config changes; requires sudo for wsl.conf edit."
@@ -600,7 +633,7 @@
         ],
         "linked_files": [
           "AGENTS.md",
-          "Other/project_export.json"
+          "project_export.json"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "User-reported measurements; no new system changes performed."
@@ -620,7 +653,7 @@
         "action_items": [],
         "linked_files": [
           "AGENTS.md",
-          "Other/project_export.json"
+          "project_export.json"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Tooling-only update; no acquisition content changes."
@@ -640,7 +673,7 @@
         "action_items": [],
         "linked_files": [
           "AGENTS.md",
-          "Other/project_export.json"
+          "project_export.json"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Tooling verification only; no acquisition content changes."
@@ -660,7 +693,7 @@
         "action_items": [],
         "linked_files": [
           "AGENTS.md",
-          "Other/project_export.json"
+          "project_export.json"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Tooling cleanup; no acquisition content changes."
@@ -685,7 +718,7 @@
           "current_events.bib",
           "tex/chapters/26_Current_Events.tex",
           "AGENTS.md",
-          "Other/project_export.json"
+          "project_export.json"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Content move plus acronym audit; build blocked by missing glossary entry."
@@ -710,7 +743,7 @@
           "tex/current_events.bib",
           "tex/acronyms.def",
           "AGENTS.md",
-          "Other/project_export.json"
+          "project_export.json"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Repo hygiene and glossary update; no content expansion."
@@ -733,10 +766,170 @@
         "linked_files": [
           "tex/acronyms.def",
           "tex/chapters/17_JCIDS.tex",
-          "Other/project_export.json"
+          "project_export.json"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Build error surfaced; citations were already unresolved."
+      },
+      {
+        "title_or_slug": "Force rebuild after current events bib move",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Confirm current_events.bib lives under tex/ and rerun latexmk after OFPP request.",
+        "summary": "Verified current_events.bib is under tex/ and appendix_current_events.tex points to it. OFPP was already defined in acronyms.def. Forced latexmk rebuild; it fails at 17_JCIDS.tex because \\addbibresource appears in the document body (preamble-only), with many pre-existing undefined citations; scrubbed SAVE-ERROR/lock artifacts.",
+        "key_decisions": [
+          "Do not move the JCIDS \\addbibresource without explicit direction."
+        ],
+        "action_items": [
+          "If desired, relocate the JCIDS bibresource into the main preamble or a shared bib list to clear the error."
+        ],
+        "linked_files": [
+          "tex/chapters/appendix_current_events.tex",
+          "tex/current_events.bib",
+          "tex/chapters/17_JCIDS.tex",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Build error captured; no content edits made in this pass."
+      },
+      {
+        "title_or_slug": "Move JCIDS bibresource to preamble",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Resolve the preamble-only bibresource error by moving JCIDS refs to the main preamble.",
+        "summary": "Moved was_refs.bib into tex/, added it (and current_events.bib) to the main preamble, and removed subfile-level addbibresource calls. Forced latexmk rebuild now advances past the prior error but fails in 17_JCIDS.tex due to an incomplete \\autocite token (\\autoc) around line 124, with many pre-existing undefined citation warnings; scrubbed SAVE-ERROR/lock files.",
+        "key_decisions": [
+          "Keep all .bib files under tex/ and load them from the main preamble."
+        ],
+        "action_items": [
+          "Fix the truncated \\autocite in tex/chapters/17_JCIDS.tex:124 and rerun latexmk if desired."
+        ],
+        "linked_files": [
+          "tex/main.tex",
+          "tex/chapters/17_JCIDS.tex",
+          "tex/chapters/appendix_current_events.tex",
+          "tex/was_refs.bib",
+          "tex/current_events.bib",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Build error surfaced; citation warnings pre-existed."
+      },
+      {
+        "title_or_slug": "Move project_export.json to repo root",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Relocate the canonical project export to the repo root and update references.",
+        "summary": "Moved project_export.json from Other/ to the repo root and updated references in AGENTS.md, GEMINI.md, memory_update.md, and existing linked_files entries.",
+        "key_decisions": [
+          "Keep project_export.json at the repo root as the canonical database location."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "project_export.json",
+          "AGENTS.md",
+          "GEMINI.md",
+          "memory_update.md"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Admin update; no content changes to study guide."
+      },
+      {
+        "title_or_slug": "Recommend project_export schema location",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Provide a recommended location for the project_export JSON schema.",
+        "summary": "Recommended storing the schema under schemas/project_export.schema.json (rename from project_export.shema.json) alongside project_export.json for discoverability and consistency, with $id updated if moved.",
+        "key_decisions": [
+          "Recommend a dedicated schemas/ directory and corrected schema filename."
+        ],
+        "action_items": [
+          "If adopting the recommendation, move/rename project_export.shema.json and update its $id."
+        ],
+        "linked_files": [
+          "project_export.shema.json",
+          "project_export.json",
+          "AGENTS.md"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Recommendation only; no file moves performed."
+      },
+      {
+        "title_or_slug": "Retire project_export.md and fold in gaps",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Extract any unique guidance from project_export.md and remove the snapshot file.",
+        "summary": "Reviewed project_export.md, added conflict-handling and content-gap directives to AGENTS.md, updated memory_update.md to remove references to the snapshot, and deleted Other/project_export.md.",
+        "key_decisions": [
+          "Retire project_export.md now that AGENTS.md and project_export.json are the authoritative sources."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "AGENTS.md",
+          "memory_update.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Admin cleanup; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Apply GPT-5.2 prompting guidance to AGENTS",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Optimize AGENTS.md using the GPT-5.2 prompting guide.",
+        "summary": "Reviewed gpt-5-2_prompting_guide.ipynb and added response verbosity clamps, scope discipline, ambiguity handling, long-context anchoring, high-risk self-check, and tool-usage guidance to AGENTS.md.",
+        "key_decisions": [
+          "Adopt explicit verbosity and scope control rules aligned to GPT-5.2 guidance."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "Other/gpt-5-2_prompting_guide.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Instruction update only; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Integrate memory_update and move schema",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Fold memory_update instructions into AGENTS, inventory instruction sources, and move the project export schema.",
+        "summary": "Integrated memory_update.md into AGENTS.md, added an instruction-source inventory, removed memory_update.md, updated .github/copilot-instructions.md for the new project_export.json path, and moved/renamed the schema to schemas/project_export.schema.json.",
+        "key_decisions": [
+          "Treat AGENTS.md as the single authoritative instruction hub and document other instruction sources there.",
+          "Standardize schema location under schemas/ with the corrected filename."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "AGENTS.md",
+          ".github/copilot-instructions.md",
+          "schemas/project_export.schema.json",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Instruction and schema housekeeping; no study guide content changes."
       }
     ]
   },
@@ -752,7 +945,9 @@
       "Board-Prep",
       "Final"
     ],
-    "recommended_next_actions": [],
+    "recommended_next_actions": [
+      "Decide whether to adopt and commit a .devcontainer for this repo or keep WSL-only setup."
+    ],
     "integration_hints_for_custom_gpts": {
       "ideal_knowledge_chunks": "Chunk by chapter/appendix summary, PPBE/contracting decision flows, and recurring acronym definitions.",
       "suggested_embeddings_fields": [

@@ -2,8 +2,8 @@
 
 ## Read First
 
-- Read this file and `Other/project_export.json` before starting any task. Use `Other/project_export.md` only as a brief reference.
-- `AGENTS.md` is the authoritative instruction/task list. `Other/project_export.json` is the canonical project database. After each task, keep them synchronized.
+- Read this file, `project_export.json`, and `.github/copilot-instructions.md` before starting any task.
+- `AGENTS.md` is the authoritative instruction/task list. `project_export.json` is the canonical project database. After each task, keep them synchronized.
 - Do not track Journal repo updates in EDO repo files.
 - Do not track `out/main.pdf`; use for verification only. Released PDFs are gitignored in `release/` and uploaded to GitHub Releases.
 
@@ -12,6 +12,7 @@
 - **Role:** Navy EDO Acquisition Master Instructor focused on developing a study guide for qualification board prep, with Mastery depth.
 - **Sources/Recency:** Verify current controlling statutes/regulations/policy (10/41 U.S.C., FAR/DFARS/PGI, DoDI 5000 series, SECNAV/OPNAV/NAVSEA overlays, DoW FMR, GAO Red Book) and the EDO coursebook (current as of 2025-09-12). Stamp deliverables as "Current as of [YYYY-MM-DD]".
 - **Safety:** Not legal advice; maintain OPSEC/CUI and procurement integrity.
+- **Conflict handling:** When sources conflict, state the hierarchy (statute > regulation > policy > local), prefer the most recent controlling doc, and note assumptions.
 
 ## Formatting Rules
 
@@ -20,18 +21,48 @@
 - **Tables:** Use `longtblr` by default; prefer `description` for term/definition lists.
 - **Encoding:** ASCII only.
 
+## Response and Scope Discipline (GPT-5.2)
+
+- **Verbosity clamp:** Default to 3–6 sentences or <=5 bullets. For complex multistep tasks: 1 short overview paragraph, then <=5 bullets labeled What changed, Where, Risks, Next steps, Open questions.
+- **Updates:** Only send brief updates (1–2 sentences) when starting a new major phase or when the plan changes; include at least one concrete outcome and avoid narrating routine tool calls.
+- **Scope control:** Implement exactly and only what the user asks. No extra features or embellishments; call out optional follow-ons instead of doing them.
+- **Ambiguity:** Ask up to 1–3 targeted clarifying questions or proceed with explicit assumptions and the simplest valid interpretation.
+- **Long context:** Restate key constraints and anchor claims to file paths or section names when inputs are long or dense.
+- **High-risk self-check:** For legal/financial/compliance outputs, re-scan for ungrounded claims or overly strong language and soften with stated assumptions.
+
+## Tool Usage
+
+- Prefer tools over assumptions for user-specific data, file state, and IDs; parallelize independent reads when possible.
+- After any write/update, restate what changed, where, and any validation performed.
+
 ## Workflow for Every Task
 
-- **Start:** Read `AGENTS.md` and `Other/project_export.json`; use `Other/project_export.md` if a quick snapshot is needed. Note assumptions.
+- **Start:** Read `AGENTS.md`, `project_export.json`, and `.github/copilot-instructions.md`. Note assumptions.
 - **Finish:**
   - Write a brief summary of completed work and current chat context.
-  - Update `Other/project_export.json` with new context, added instructions, and current status.
+  - Update `project_export.json` with new context, added instructions, and current status.
 - Update this file with status changes and new/recommended tasks or directives.
 - If the task changes any `tex/` files or tooling config for the LaTeX build:
   - Run `latexmk -shell-escape` (using project `latexmkrc`); record warnings/errors.
 - After each test/build, delete SAVE-ERROR files, temp files, and lock files (`*.lock`, `*.lck`, `*.auxlock`).
 - Mark off completed TODOs; search LaTeX sources (`tex/main.tex`, `tex/chapters/`, `tex/tikz/`, `tex/templates/`) for outstanding TODOs.
 - Proceed with all next recommended tasks, up to three at a time.
+- Keep task lists tidy: move completed items in Lookups and Current Jobs to the bottom so active/incomplete work is easy to see.
+
+## Memory Update Protocol
+
+- **Trigger:** User says `Update memory: <reason>`.
+- **Pre-read:** `.github/copilot-instructions.md`, `AGENTS.md`, `project_export.json`.
+- **Output only:**
+  1) One-sentence rationale.
+  2) JSON Merge Patch (RFC 7396) for `project_export.json` in a code block labeled `json_patch`.
+- Never rewrite the whole file; patch only changed leaves. Never invent sources.
+
+## Other Instruction Sources
+
+- `.github/copilot-instructions.md`: Repo-wide AI defaults (AGENTS remains authoritative).
+- `GEMINI.md`: Gemini-specific mirror of AGENTS for that toolchain.
+- `tex/chapters/TikZ/Coursebook_Ingest.md`: Chapter-specific style/content requirements when editing that material.
 
 ## Lookups
 
@@ -55,10 +86,15 @@
 - [ ] IWS test methods for terminal defense weapons (e.g., CIWS)
 - [X] ASN(RD&A) office structure, job titles, and functions
 - [X] Further flag review
+- [ ] NAVWAR PMW list with citations
+- [ ] Definitions: AOR/NOR/SLR/IGT
+- [ ] NWCF vs. mission-funded distinctions
+- [ ] Fast Cues/Common Board Pivots refresh
+- [ ] Glossary pipeline (IDs/chunking/cadence)
 
 ## Current Jobs
 
-- [X] Review project scope; update `Other/project_export.json` to current status
+- [X] Review project scope; update `project_export.json` to current status
 - [X] Acronym audit: run replacements with `\ac{}` in prose and fill acronyms.def (skip tables/headings)
 - [X] Refactor sectional tables to `longtblr`
 - [X] Add CIVPERs content as new section using subfile template
@@ -94,3 +130,10 @@
 - [X] Appendix with Cannon Cocker/IWE rosters/pyramids
 - [X] Repo layout: move LaTeX sources under `tex/`; align output/scripts/tool config.
 - [X] Merge Current Events chapter into appendix and remove the redundant chapter file
+- [X] Move project_export.json to repo root and update references (2025-12-24)
+- [X] Move project_export schema to `schemas/project_export.schema.json` and fix filename typo (2025-12-24)
+- [X] Retire project_export.md after extracting remaining guidance (2025-12-24)
+- [X] Optimize AGENTS.md with GPT-5.2 prompting guidance (2025-12-24)
+- [X] Integrate memory_update.md into AGENTS.md and remove the file (2025-12-24)
+- [X] Inventory instruction sources and account for them in AGENTS.md (2025-12-24)
+- [X] Create WSL/VS Code replication notebook with optional devcontainer scaffold (2025-12-24)

@@ -1,0 +1,30 @@
+{
+  "master": "settings_master.json",
+  "conflict_strategy": "prompt",
+  "sources": [
+    {
+      "name": "project",
+      "path": ".vscode/settings.json",
+      "kind": "settings_json",
+      "sync": true
+    },
+    {
+      "name": "wsl",
+      "path": "/home/victor/.vscode-server/data/Machine/settings.json",
+      "kind": "settings_json",
+      "sync": true
+    },
+    {
+      "name": "windows",
+      "path": "/mnt/c/Users/vic-l/AppData/Roaming/Code/User/settings.json",
+      "kind": "settings_json",
+      "sync": true
+    },
+    {
+      "name": "workspace",
+      "path": "edo_study_guide.code-workspace",
+      "kind": "workspace",
+      "sync": false
+    }
+  ]
+}
