@@ -21,10 +21,11 @@ BLOCK_PATTERNS=(
   'id_rsa|id_ed25519|_key$'
   'token|apikey|secret'
 )
+BLOCK_PATTERN="$(IFS='|'; echo "${BLOCK_PATTERNS[*]}")"
 # 1) Refuse if patterns present in staged or untracked
-if git ls-files -o -m --exclude-standard | grep -E "${BLOCK_PATTERNS[*]}" -iq; then
+if git ls-files -o -m --exclude-standard | grep -E "$BLOCK_PATTERN" -iq; then
   echo "⚠️  Potential secret-like files changed. Review before pushing."
-  git ls-files -o -m --exclude-standard | grep -E "${BLOCK_PATTERNS[*]}" -i || true
+  git ls-files -o -m --exclude-standard | grep -E "$BLOCK_PATTERN" -i || true
   exit 1
 fi
 

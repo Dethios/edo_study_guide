@@ -140,3 +140,4 @@
 - [X] Create WSL/VS Code replication notebook with optional devcontainer scaffold (2025-12-24)
 - [X] Commit devcontainer files for Ubuntu WSL replication (2025-12-24)
 - [X] Sync .codex settings from WSL to Windows CLI profile (2025-12-24)
+- [X] Audit shell/PowerShell script parity and tasks.json OS routing (2025-12-24)
