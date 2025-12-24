@@ -1,7 +1,7 @@
 {
   "project_metadata": {
     "project_name": "EDO Acquisition Tutor",
-    "export_timestamp_iso": "2025-12-24T09:15:18-05:00",
+    "export_timestamp_iso": "2025-12-24T09:26:25-05:00",
     "project_instructions_raw": "ROLE & MISSION\nYou are a Navy EDO Acquisition Tutor. Teach, test, and clarify U.S. Navy/DoW acquisition for EDO qualification boards (primary) and general mastery (secondary). Explain the full breadth clearly, tie assertions to current primary sources, and emphasize Navy-unique overlays.\n\nAUDIENCE\nEngineering Duty Officers preparing for boards and practicing program/technical authority roles. Assume motivated learners who may be new to acquisition jargon.\n\nCANONICAL SOURCES (teach-from-truth)\nStatute: Titles 10 & 41 U.S.C.; relevant NDAA provisions.\nRegulation: FAR, DFARS, DFARS PGI; NMCARS if applicable.\nPolicy/Framework: DoDI 5000 series (MCA, SWP, MTA, Urgent), plus JCIDS artifacts as needed.\nFiscal: DoW FMR 7000.14-R; GAO Red Book.\nNavy overlays: SECNAV/OPNAV/NAVSEA instructions; PEO/TA guidance; shipbuilding nuances (SCN/WPN).\nCourseware: EDO-specific coursebook PDFs (baseline current as of 2025-09-12).\nRule: When facts can change (thresholds, definitions, authorities), verify the current controlling document and cite title + section (if known) + publication date.\n\nRECENCY POLICY\nStamp every deliverable with \"Current as of [YYYY-MM-DD]\". Re-verify for NDAA/FAR/DFARS/DoDI/SECNAV changes and PPBE shifts. If recency cannot be confirmed (e.g., offline excerpt), label Recency check pending and state assumptions.\n\nDEFAULTS & MODES\nDefault Mode: EDO Board Prep (concise, decision-focused). Optional Mode: Mastery (full exposition, examples, deeper context). Diagrams: Provide Mermaid visuals only when explicitly requested; otherwise default to textual decision logic.\n\nTEACHING STYLE (layered structure)\nPlain-language brief; Navy overlays & authority touchpoints; Fiscal/PPBE & colors of money (SCN/WPN nuance); Decision Trace; Citations; Assumptions & uncertainties; Self-score.\n\nINTERACTION RULES\nAsk 2-3 targeted clarifying questions for substantial tasks; if no reply, proceed best-effort and state assumptions. Offer an opposing view/edge case where professional judgment could differ. Avoid flashcards by default.\n\nDEFAULT OUTPUT TEMPLATE\nSummary; Navy Overlays; Fiscal/PPBE; Decision Trace; Citations; Current as of; Assumptions & Uncertainties; Self-Score.\n\nCOVERAGE MAP (breadth over time)\nAAF pathways & artifacts; JCIDS; governance reviews; contracting fundamentals; fiscal law & PPBE (SCN/WPN); cost/schedule/performance; SE & T&E; logistics & sustainment; software & data; rapid authorities; Navy-unique overlays & authority boundaries.\n\nQUALITY ASSURANCE\nSelf-score every answer (Accuracy, Completeness, Clarity, Relevance, Practical usefulness). If any <8, revise and note the fix.\n\nTOOLING & CITATION BEHAVIOR\nVerify rules/thresholds with current primary sources and cite exact dates; prefer official/public sources. Call out Navy overlay deltas vs generic DAU guidance.\n\nSAFETY & COMPLIANCE\nNot legal advice. Respect OPSEC/CUI and procurement integrity. Use only unclassified, publicly releasable sources.\n\nCODE ARGUMENTS\n `-latexindent` to format LaTeX sources without backups,ARGS: `wd, -s, -m, -l=.latexindent.yaml, -c=%TEMP%/latexindent, -y=defaultIndent:'  ' `; `-latexmk` for continuous build with LuaLaTeX, ARGS: `-lualatex, -pdf, -dvi-, -ps-, -outdir=out, -auxdir=build, -f, -shell-escape, -interaction=nonstopmode, -synctex=1, -file-line-error, %DOC%`; `-fontspec` for custom fonts (Merriweather, Montserrat, Source Sans Pro).",
     "project_memory_highlights": [
       "LaTeX-based EDO Board Prep Study Guide with diagrams, tables, and citations.",
@@ -67,7 +67,9 @@
       "Optimized AGENTS.md for Codex guidelines (condensed instructions and removed session update history).",
       "Added GEMINI.md shim to mirror AGENTS.md instructions for Gemini tools.",
       "Removed AGENTS export artifact and related tooling; AGENTS.md workflow no longer includes an export step.",
-      "Merged current events chapter into appendix_current_events.tex, added current_events.bib to the appendix, and removed the redundant 26_Current_Events.tex file."
+      "Merged current events chapter into appendix_current_events.tex, added current_events.bib to the appendix, and removed the redundant 26_Current_Events.tex file.",
+      "Moved current_events.bib under tex/, updated appendix_current_events bibresource, added OFPP acronym, and removed the AGENTS.json export requirement.",
+      "Added OFPP and OIRA acronyms; latexmk now fails at 17_JCIDS.tex because \\addbibresource is used in the document body (preamble-only), with many existing undefined citation warnings."
     ],
     "known_limits": {
       "files_visible": 1,
@@ -676,8 +678,7 @@
           "Keep current-events content consolidated in the appendix and include current_events.bib locally."
         ],
         "action_items": [
-          "Define the ofpp acronym in acronyms.def to resolve the glossary error, then rerun latexmk.",
-          "Restore or locate scripts/export_agents_json.py so AGENTS.json can be regenerated after AGENTS.md edits."
+          "Define the ofpp acronym in acronyms.def to resolve the glossary error, then rerun latexmk."
         ],
         "linked_files": [
           "tex/chapters/appendix_current_events.tex",
@@ -688,6 +689,54 @@
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Content move plus acronym audit; build blocked by missing glossary entry."
+      },
+      {
+        "title_or_slug": "Relocate current events bib and add OFPP acronym",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Keep bibliography files under tex/, add the OFPP acronym, and remove AGENTS.json generation requirements.",
+        "summary": "Updated appendix_current_events.tex to load tex/current_events.bib, ensured the current events bibliography lives under tex/, added the OFPP acronym definition, and removed the AGENTS.json export requirement from instructions.",
+        "key_decisions": [
+          "Bibs live under tex/ alongside edo.bib; AGENTS.json export is no longer required."
+        ],
+        "action_items": [
+          "Run latexmk -shell-escape tex/main.tex to confirm the OFPP glossary fix and record any warnings."
+        ],
+        "linked_files": [
+          "tex/chapters/appendix_current_events.tex",
+          "tex/current_events.bib",
+          "tex/acronyms.def",
+          "AGENTS.md",
+          "Other/project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Repo hygiene and glossary update; no content expansion."
+      },
+      {
+        "title_or_slug": "Add OFPP/OIRA acronyms and rerun build",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Add missing acronyms for OFPP/OIRA and rerun latexmk after current events bib relocation.",
+        "summary": "Added OFPP and OIRA to acronyms.def. latexmk now stops at 17_JCIDS.tex because \\addbibresource appears in the document body, and the build reports many pre-existing undefined citation warnings.",
+        "key_decisions": [
+          "Record the build error and warnings; do not move \\addbibresource without user direction."
+        ],
+        "action_items": [
+          "If desired, move the JCIDS \\addbibresource into the main preamble or a shared bib list to clear the error."
+        ],
+        "linked_files": [
+          "tex/acronyms.def",
+          "tex/chapters/17_JCIDS.tex",
+          "Other/project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Build error surfaced; citations were already unresolved."
       }
     ]
   },
