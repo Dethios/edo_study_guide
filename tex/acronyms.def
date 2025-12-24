@@ -49,6 +49,7 @@
 \newacronym{pmildep}{PMILDEP}{Principal Military Deputy}
 \newacronym{was}{WAS}{Warfighting Acquisition System}
 \newacronym{nscf}{NSCF}{National Security Capital Forum}
+\newacronym{nds}{NDS}{National Defense Strategy}
 \newacronym{mda}{MDA}{Missile Defense Agency}
 \newacronym{ssp}{SSP}{Strategic Systems Program}
 \newacronym{omb}{OMB}{Office of Management and Budget}
@@ -78,6 +79,9 @@
 \newacronym{navsup}{NAVSUP}{Naval Supply Systems Command}
 \newacronym{sea}{SEA}{NAVSEA headquarters staff code}
 \newacronym{supship}{SUPSHIP}{Supervisor of Shipbuilding}
+\newacronym{uss}{USS}{United States Ship}
+\newacronym{hii}{HII}{Huntington Ingalls Industries}
+\newacronym{siop}{SIOP}{Shipyard Infrastructure Optimization Program}
 \newacronym[shortplural={PMWs},longplural={Program Management Warfare offices}]{pmw}{PMW}{Program Management Warfare (NAVWAR PEO C4I/NAVAIR PMS series)}
 \newacronym{surfmepp}{SURFMEPP}{Surface Maintenance Engineering Planning Program}
 \newacronym{submepp}{SUBMEPP}{Submarine Maintenance Engineering Planning Program}
@@ -115,10 +119,13 @@
 \newacronym{ncb}{NCB}{Naval Capabilities Board}
 \newacronym{pao}{PAO}{Public Affairs Officer}
 \newacronym{opnavnote}{OPNAVNOTE}{Office of the Chief of Naval Operations Notice}
+\newacronym{c2}{C2}{Command and Control}
 \newacronym{c3}{C3}{Command, Control, and Communications}
 \newacronym{c4i}{C4I}{Command, Control, Communications, Computers, and Intelligence}
 \newacronym{c4isr}{C4ISR}{Command, Control, Communications, Computers, Intelligence, Surveillance, and Reconnaissance}
+\newacronym{ai}{AI}{Artificial Intelligence}
 \newacronym{aiml}{AI/ML}{Artificial Intelligence and Machine Learning}
+\newacronym{ctf}{CTF}{Commander, Task Force}
 \newacronym{cio}{CIO}{Chief Information Officer}
 \newacronym{cnr}{CNR}{Chief of Naval Research}
 \newacronym{dsca}{DSCA}{Defense Security Cooperation Agency}
@@ -452,6 +459,7 @@
 \newacronym{ppbe}{PPBE}{Planning, Programming, Budgeting and Execution}
 \newacronym{pb}{PB}{President's Budget}
 \newacronym{pom}{POM}{Program Objective Memorandum}
+\newacronym{bes}{BES}{Budget Estimate Submission}
 \newacronym{fydp}{FYDP}{Future Years Defense Program}
 \newacronym{fy}{FY}{Fiscal Year}
 \newacronym{py}{PY}{Past Year}
@@ -502,6 +510,7 @@
 \newacronym{cvn}{CVN}{Nuclear-Powered Aircraft Carrier}
 \newacronym{lhd}{LHD}{Landing Helicopter Dock}
 \newacronym{lha}{LHA}{Landing Helicopter Assault}
+\newacronym{lpd}{LPD}{Landing Platform Dock}
 \newacronym{rcoh}{RCOH}{Refueling and Complex Overhaul}
 \newacronym{ctc}{CTC}{Cost-to-Complete}
 \newacronym{eoq}{EOQ}{Economic Order Quantity}

@@ -141,3 +141,5 @@
 - [X] Commit devcontainer files for Ubuntu WSL replication (2025-12-24)
 - [X] Sync .codex settings from WSL to Windows CLI profile (2025-12-24)
 - [X] Audit shell/PowerShell script parity and tasks.json OS routing (2025-12-24)
+- [X] Tidy settings_manager.py spacing (2025-12-24)
+- [X] Add NDS, C2, AI, CTF, and BES acronyms (2025-12-24)
