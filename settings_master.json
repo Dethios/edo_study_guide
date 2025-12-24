@@ -111,7 +111,9 @@
     // workbench.quickOpen.preserveInput: Enable or disable workbench quick Open preserve Input. Edit the value to change behavior.
     "workbench.quickOpen.preserveInput": true,
     // workbench.settings.applyToAllProfiles: Define list for workbench settings apply To All Profiles. Edit the value to change behavior.
-    "workbench.settings.applyToAllProfiles": ["prettier.endOfLine"],
+    "workbench.settings.applyToAllProfiles": [
+        "prettier.endOfLine"
+    ],
     // workbench.settings.openDefaultSettings: Enable or disable workbench settings open Default Settings. Edit the value to change behavior.
     "workbench.settings.openDefaultSettings": true,
     // workbench.tree.indent: Set numeric value for workbench tree indent. Edit the value to change behavior.
@@ -283,38 +285,59 @@
         "strings": "#A7C795",
         "textMateRules": [
             {
-                "scope": ["comment", "punctuation.definition.comment"],
+                "scope": [
+                    "comment",
+                    "punctuation.definition.comment"
+                ],
                 "settings": {
                     "fontStyle": "italic",
                     "foreground": "#7E8591"
                 }
             },
             {
-                "scope": ["constant.numeric", "constant.language.boolean"],
+                "scope": [
+                    "constant.numeric",
+                    "constant.language.boolean"
+                ],
                 "settings": {
                     "foreground": "#F1D8A5"
                 }
             },
             {
-                "scope": ["keyword", "storage.type", "storage.modifier"],
+                "scope": [
+                    "keyword",
+                    "storage.type",
+                    "storage.modifier"
+                ],
                 "settings": {
                     "foreground": "#8FB3D9"
                 }
             },
             {
-                "scope": ["entity.name.function", "support.function"],
+                "scope": [
+                    "entity.name.function",
+                    "support.function"
+                ],
                 "settings": {
                     "foreground": "#8ED1E3"
                 }
             },
             {
-                "scope": ["string", "string.quoted", "string.template"],
+                "scope": [
+                    "string",
+                    "string.quoted",
+                    "string.template"
+                ],
                 "settings": {
                     "foreground": "#A7C795"
                 }
             },
             {
-                "scope": ["entity.name.type", "support.type", "support.class"],
+                "scope": [
+                    "entity.name.type",
+                    "support.type",
+                    "support.class"
+                ],
                 "settings": {
                     "foreground": "#94D0CC"
                 }
@@ -345,6 +368,10 @@
     // ===================================================================
     // Files - File handling, auto-save, and excludes.
     // ===================================================================
+    // files.associations: Define object/map for files associations. Edit the value to change behavior.
+    "files.associations": {
+        "*.json": "jsonc"
+    },
     // files.autoGuessEncoding: Enable or disable files auto Guess Encoding. Edit the value to change behavior.
     "files.autoGuessEncoding": true,
     // files.autoSave: Set files auto Save. Edit the value to change behavior.
@@ -719,19 +746,27 @@
     "latex-workshop.latex.recipes": [
         {
             "name": "BUILD-WIN",
-            "tools": ["build-win"]
+            "tools": [
+                "build-win"
+            ]
         },
         {
             "name": "BUILD-WSL",
-            "tools": ["build-wsl"]
+            "tools": [
+                "build-wsl"
+            ]
         },
         {
             "name": "BUILD-QUIET",
-            "tools": ["build-quiet"]
+            "tools": [
+                "build-quiet"
+            ]
         },
         {
             "name": "AUTO",
-            "tools": ["build-wsl-watch"]
+            "tools": [
+                "build-wsl-watch"
+            ]
         }
     ],
     // latex-workshop.latex.rootFile.doNotPrompt: Enable or disable latex workshop latex root File do Not Prompt. Edit the value to change behavior.
@@ -741,17 +776,25 @@
     // latex-workshop.latex.tools: Define list for latex workshop latex tools. Edit the value to change behavior.
     "latex-workshop.latex.tools": [
         {
-            "args": ["%DOC%"],
+            "args": [
+                "%DOC%"
+            ],
             "command": "scripts/build.sh",
             "name": "build-wsl"
         },
         {
-            "args": ["--watch", "%DOC%"],
+            "args": [
+                "--watch",
+                "%DOC%"
+            ],
             "command": "scripts/build.sh",
             "name": "build-wsl-watch"
         },
         {
-            "args": ["--quiet", "%DOC%"],
+            "args": [
+                "--quiet",
+                "%DOC%"
+            ],
             "command": "scripts/build.sh",
             "name": "build-quiet"
         },
@@ -825,7 +868,11 @@
     // ltex.enabled: Enable or disable ltex enabled. Edit the value to change behavior.
     "ltex.enabled": true,
     // ltex.enabledTypes: Enable or disable ltex enabled Types. Edit the value to change behavior.
-    "ltex.enabledTypes": ["sentence", "comment", "string"],
+    "ltex.enabledTypes": [
+        "sentence",
+        "comment",
+        "string"
+    ],
     // ltex.ignorePaths: Define list for ltex ignore Paths. Edit the value to change behavior.
     "ltex.ignorePaths": [
         "**/main.tex",
@@ -1761,7 +1808,10 @@
     // search.useIgnoreFiles: Enable or disable search use Ignore Files. Edit the value to change behavior.
     "search.useIgnoreFiles": true,
     // security.allowedUNCHosts: Define list for security allowed UNC Hosts. Edit the value to change behavior.
-    "security.allowedUNCHosts": ["TRUENAS", "wsl.localhost"],
+    "security.allowedUNCHosts": [
+        "TRUENAS",
+        "wsl.localhost"
+    ],
     // security.workspace.trust.untrustedFiles: Set security workspace trust untrusted Files. Edit the value to change behavior.
     "security.workspace.trust.untrustedFiles": "open",
     // telemetry.telemetryLevel: Set telemetry telemetry Level. Edit the value to change behavior.
