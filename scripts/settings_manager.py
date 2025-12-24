@@ -7,7 +7,6 @@ from pathlib import Path
 
 CONFIG_DEFAULT = "settings_sources.json"
 
-
 def strip_jsonc_comments(text: str) -> str:
     """Remove // and /* */ comments while preserving string literals."""
     result = []
@@ -60,12 +59,10 @@ def strip_jsonc_comments(text: str) -> str:
         i += 1
     return "".join(result)
 
-
 def load_jsonc(path: Path) -> dict:
     text = path.read_text(encoding="utf-8")
     stripped = strip_jsonc_comments(text)
     return json.loads(stripped)
-
 
 def write_text_if_changed(path: Path, content: str) -> bool:
     existing = path.read_text(encoding="utf-8") if path.exists() else None
@@ -74,20 +71,17 @@ def write_text_if_changed(path: Path, content: str) -> bool:
     path.write_text(content, encoding="utf-8")
     return True
 
-
 def load_config(path: Path) -> dict:
     config = load_jsonc(path)
     if "master" not in config or "sources" not in config:
         raise ValueError("Config must include 'master' and 'sources'.")
     return config
 
-
 def read_settings(path: Path, kind: str) -> dict:
     if kind == "workspace":
         data = load_jsonc(path)
         return data.get("settings", {})
     return load_jsonc(path)
-
 
 def split_camel(token: str) -> str:
     result = []
@@ -102,7 +96,6 @@ def split_camel(token: str) -> str:
         result.append(buf)
     return " ".join(result)
 
-
 def humanize_key(key: str) -> str:
     if key.startswith("["):
         return f"language overrides for {key}"
@@ -111,7 +104,6 @@ def humanize_key(key: str) -> str:
     text = " ".join(tokens)
     text = text.replace("C Cpp", "C/C++")
     return text.strip()
-
 
 def describe_key(key: str, value) -> str:
     if key.startswith("["):
@@ -141,7 +133,6 @@ def describe_key(key: str, value) -> str:
     else:
         action = f"Set {name}"
     return f"{action}. Edit the value to change behavior."
-
 
 def group_definitions():
     return [
@@ -180,7 +171,6 @@ def group_definitions():
         ("Language Overrides", "Per-language override blocks.", []),
     ]
 
-
 def assign_groups(keys):
     remaining = set(keys)
     grouped = []
@@ -196,10 +186,8 @@ def assign_groups(keys):
         grouped.append(("Other", "Settings that do not match a primary group.", sorted(remaining)))
     return grouped
 
-
 def format_value(value, indent_level=4):
     return json.dumps(value, indent=4, sort_keys=True, ensure_ascii=True)
-
 
 def render_master(settings: dict) -> str:
     lines = ["{"]
@@ -232,7 +220,6 @@ def render_master(settings: dict) -> str:
                     lines[-1] = lines[-1] + ","
     lines.append("}")
     return "\n".join(lines) + "\n"
-
 
 def merge_settings(config: dict, strategy: str, allow_prompt: bool) -> dict:
     sources = config.get("sources", [])
@@ -273,7 +260,6 @@ def merge_settings(config: dict, strategy: str, allow_prompt: bool) -> dict:
 
     return merged
 
-
 def resolve_conflict(key: str, values: dict, master_value, strategy: str, allow_prompt: bool):
     if strategy == "prefer-master" and master_value is not None:
         return master_value
@@ -291,7 +277,6 @@ def resolve_conflict(key: str, values: dict, master_value, strategy: str, allow_
             )
         return prompt_for_conflict(key, values, master_value)
     raise RuntimeError(f"Unknown conflict strategy: {strategy}")
-
 
 def prompt_for_conflict(key: str, values: dict, master_value):
     print(f"Conflict for setting: {key}")
@@ -314,7 +299,6 @@ def prompt_for_conflict(key: str, values: dict, master_value):
         raise RuntimeError("Invalid selection.") from exc
     return options[selected - 1][1]
 
-
 def sync_settings(config: dict, strategy: str, allow_prompt: bool) -> int:
     master_path = Path(config["master"]).expanduser()
     if not master_path.exists():
@@ -333,7 +317,6 @@ def sync_settings(config: dict, strategy: str, allow_prompt: bool) -> int:
         content = render_master(master_data)
         write_text_if_changed(path, content)
     return 0
-
 
 def main():
     parser = argparse.ArgumentParser(description="Manage VS Code settings sync and merge.")
@@ -363,7 +346,6 @@ def main():
         return_code = sync_settings(config, strategy, allow_prompt)
         if return_code != 0:
             raise SystemExit(return_code)
-
 
 if __name__ == "__main__":
     main()
