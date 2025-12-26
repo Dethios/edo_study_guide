@@ -1,7 +1,7 @@
 {
   "project_metadata": {
     "project_name": "EDO Acquisition Tutor",
-    "export_timestamp_iso": "2025-12-25T20:04:21-05:00",
+    "export_timestamp_iso": "2025-12-25T21:42:22-05:00",
     "project_instructions_raw": "ROLE & MISSION\nYou are a Navy EDO Acquisition Tutor. Teach, test, and clarify U.S. Navy/DoW acquisition for EDO qualification boards (primary) and general mastery (secondary). Explain the full breadth clearly, tie assertions to current primary sources, and emphasize Navy-unique overlays.\n\nAUDIENCE\nEngineering Duty Officers preparing for boards and practicing program/technical authority roles. Assume motivated learners who may be new to acquisition jargon.\n\nCANONICAL SOURCES (teach-from-truth)\nStatute: Titles 10 & 41 U.S.C.; relevant NDAA provisions.\nRegulation: FAR, DFARS, DFARS PGI; NMCARS if applicable.\nPolicy/Framework: DoDI 5000 series (MCA, SWP, MTA, Urgent), plus JCIDS artifacts as needed.\nFiscal: DoW FMR 7000.14-R; GAO Red Book.\nNavy overlays: SECNAV/OPNAV/NAVSEA instructions; PEO/TA guidance; shipbuilding nuances (SCN/WPN).\nCourseware: EDO-specific coursebook PDFs (baseline current as of 2025-09-12).\nRule: When facts can change (thresholds, definitions, authorities), verify the current controlling document and cite title + section (if known) + publication date.\n\nRECENCY POLICY\nStamp every deliverable with \"Current as of [YYYY-MM-DD]\". Re-verify for NDAA/FAR/DFARS/DoDI/SECNAV changes and PPBE shifts. If recency cannot be confirmed (e.g., offline excerpt), label Recency check pending and state assumptions.\n\nDEFAULTS & MODES\nDefault Mode: EDO Board Prep (concise, decision-focused). Optional Mode: Mastery (full exposition, examples, deeper context). Diagrams: Provide Mermaid visuals only when explicitly requested; otherwise default to textual decision logic.\n\nTEACHING STYLE (layered structure)\nPlain-language brief; Navy overlays & authority touchpoints; Fiscal/PPBE & colors of money (SCN/WPN nuance); Decision Trace; Citations; Assumptions & uncertainties; Self-score.\n\nINTERACTION RULES\nAsk 2-3 targeted clarifying questions for substantial tasks; if no reply, proceed best-effort and state assumptions. Offer an opposing view/edge case where professional judgment could differ. Avoid flashcards by default.\n\nDEFAULT OUTPUT TEMPLATE\nSummary; Navy Overlays; Fiscal/PPBE; Decision Trace; Citations; Current as of; Assumptions & Uncertainties; Self-Score.\n\nCOVERAGE MAP (breadth over time)\nAAF pathways & artifacts; JCIDS; governance reviews; contracting fundamentals; fiscal law & PPBE (SCN/WPN); cost/schedule/performance; SE & T&E; logistics & sustainment; software & data; rapid authorities; Navy-unique overlays & authority boundaries.\n\nQUALITY ASSURANCE\nSelf-score every answer (Accuracy, Completeness, Clarity, Relevance, Practical usefulness). If any <8, revise and note the fix.\n\nTOOLING & CITATION BEHAVIOR\nVerify rules/thresholds with current primary sources and cite exact dates; prefer official/public sources. Call out Navy overlay deltas vs generic DAU guidance.\n\nSAFETY & COMPLIANCE\nNot legal advice. Respect OPSEC/CUI and procurement integrity. Use only unclassified, publicly releasable sources.\n\nCODE ARGUMENTS\n `-latexindent` to format LaTeX sources without backups,ARGS: `wd, -s, -m, -l=.latexindent.yaml, -c=%TEMP%/latexindent, -y=defaultIndent:'  ' `; `-latexmk` for continuous build with LuaLaTeX, ARGS: `-lualatex, -pdf, -dvi-, -ps-, -outdir=out, -auxdir=build, -f, -shell-escape, -interaction=nonstopmode, -synctex=1, -file-line-error, %DOC%`; `-fontspec` for custom fonts (Merriweather, Montserrat, Source Sans Pro).",
     "project_memory_highlights": [
       "LaTeX-based EDO Board Prep Study Guide with diagrams, tables, and citations.",
@@ -481,6 +481,214 @@
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Tooling guidance only; no code or study guide content changes."
+      },
+      {
+        "title_or_slug": "Add sudo -n guard to shell runner",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Prevent sudo password prompts from hanging the shell_runner notebook by adding a non-interactive guard.",
+        "summary": "Inserted a sudo -n credential check in scripts/shell_runner.ipynb so the cell fails fast with a clear message if sudo needs a password.",
+        "key_decisions": [
+          "Add a guard block only; leave existing commands unchanged."
+        ],
+        "action_items": [
+          "If desired, convert subsequent sudo commands to sudo -n to avoid hangs if the timestamp expires mid-cell."
+        ],
+        "linked_files": [
+          "scripts/shell_runner.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling change only; no study guide content edits."
+      },
+      {
+        "title_or_slug": "WSL VS Code terminal vs Jupyter terminal guidance",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Clarify terminal options when using Jupyter notebooks in VS Code on WSL.",
+        "summary": "Explained that VS Code uses the integrated terminal (full TTY) alongside notebooks, while JupyterLab's built-in Terminal exists only in the JupyterLab web UI; recommended using the VS Code integrated terminal for interactive commands under WSL.",
+        "key_decisions": [
+          "Provide guidance only; no repo changes requested."
+        ],
+        "action_items": [
+          "If desired, share the exact Jupyter setup (local/remote/WSL) to provide step-by-step instructions."
+        ],
+        "linked_files": [
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "General tooling guidance; no content edits."
+      },
+      {
+        "title_or_slug": "Merge on-open tasks with sudo -v precheck",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Combine on-open tasks into a single task and ensure sudo credentials are warmed up first.",
+        "summary": "Merged settings sync, git pull, and WSL update into one folderOpen task in .vscode/tasks.json and added sudo -v at the start of the Linux command.",
+        "key_decisions": [
+          "Preserve platform-specific behavior by skipping WSL update on Windows/macOS."
+        ],
+        "action_items": [
+          "If desired, adjust Windows/macOS command wording or split tasks again if sudo prompts become intrusive."
+        ],
+        "linked_files": [
+          ".vscode/tasks.json",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling change only; no study guide content edits."
+      },
+      {
+        "title_or_slug": "Sudo timestamp not shared with notebook",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Explain why sudo -n in a notebook fails even after sudo -v in a terminal.",
+        "summary": "Explained that sudo timestamps are typically tied to a TTY, so a notebook cell without a TTY cannot reuse the cached credential from the integrated terminal; suggested running privileged steps in a real terminal or adjusting sudoers if desired.",
+        "key_decisions": [
+          "Provide guidance only; no code changes requested."
+        ],
+        "action_items": [
+          "If desired, update the notebook to instruct running privileged commands in the VS Code integrated terminal."
+        ],
+        "linked_files": [
+          "AGENTS.md",
+          "project_export.json",
+          "scripts/shell_runner.ipynb"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Operational guidance only; no content edits."
+      },
+      {
+        "title_or_slug": "Devcontainer TeX Live setup summary",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Summarize how TeX Live is installed in the devcontainer.",
+        "summary": "Explained that the devcontainer Dockerfile installs TeX Live 2025 from CTAN using .devcontainer/texlive.profile (scheme-small + selected collections), then uses tlmgr to install additional packages and installs Fira fonts via apt; post-create script only performs sanity checks.",
+        "key_decisions": [
+          "Provide guidance only; no repo changes requested."
+        ],
+        "action_items": [
+          "If desired, align the WSL notebook installer with the devcontainer profile or switch to apt-based installs for speed."
+        ],
+        "linked_files": [
+          ".devcontainer/Dockerfile",
+          ".devcontainer/texlive.profile",
+          ".devcontainer/post-create.sh",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling guidance only; no content edits."
+      },
+      {
+        "title_or_slug": "Align WSL TeX Live install with devcontainer and add audit",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Update the WSL setup notebook to match devcontainer TeX Live installs and verify required packages/fonts.",
+        "summary": "Replaced the scheme-full TeX Live profile in scripts/Environment/wsl_vscode_setup.ipynb with the devcontainer-aligned scheme-small profile, added tlmgr installs for required packages, optional font installs via apt, and post-install checks for required TeX packages and fonts.",
+        "key_decisions": [
+          "Keep CTAN-based TeX Live install and add verification warnings instead of hard failures."
+        ],
+        "action_items": [
+          "Run the updated notebook cell to validate package/font checks in the WSL environment."
+        ],
+        "linked_files": [
+          "scripts/Environment/wsl_vscode_setup.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling change only; no study guide content edits."
+      },
+      {
+        "title_or_slug": "WSL installer installs missing fonts",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Ensure required and optional fonts are installed when missing in the WSL setup notebook.",
+        "summary": "Added font detection and conditional installs in scripts/Environment/wsl_vscode_setup.ipynb, mapping missing fonts to apt packages or tlmgr font packages and re-running font cache updates.",
+        "key_decisions": [
+          "Install fonts only when luaotfload-tool reports them missing."
+        ],
+        "action_items": [
+          "Run the updated notebook cell to verify that required fonts resolve without warnings."
+        ],
+        "linked_files": [
+          "scripts/Environment/wsl_vscode_setup.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling change only; no study guide content edits."
+      },
+      {
+        "title_or_slug": "WSL notebook: ssh backup/restore, sudoers, codex/gemini",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Extend the WSL setup notebook with CLI installs, SSH backup/restore, and sudoers automation.",
+        "summary": "Added SSH backup/restore to the WSL environment notebook, configured sudoers rules for apt-get automation, and installed Codex and Gemini CLIs via pnpm after Node setup; verification now checks codex/gemini versions.",
+        "key_decisions": [
+          "Place Codex/Gemini installs in the Node + pnpm section and perform SSH backup/restore alongside VS Code export/import."
+        ],
+        "action_items": [
+          "Run the updated notebook cells and confirm sudoers/SSH restores behave as expected."
+        ],
+        "linked_files": [
+          "scripts/Environment/wsl_vscode_setup.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling update only; no study guide content edits."
+      },
+      {
+        "title_or_slug": "WSL sudoers uses $USER",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Avoid hard-coded usernames in sudoers automation for WSL setup.",
+        "summary": "Updated the WSL setup notebook sudoers block to write the current $USER instead of a fixed username.",
+        "key_decisions": [
+          "Keep sudoers content otherwise unchanged; still validate with visudo."
+        ],
+        "action_items": [
+          "Run the updated notebook cell to ensure the sudoers file writes and validates successfully."
+        ],
+        "linked_files": [
+          "scripts/Environment/wsl_vscode_setup.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling update only; no study guide content edits."
       }
     ],
     "project_instructions_analysis": {

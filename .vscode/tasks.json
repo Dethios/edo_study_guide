@@ -1,192 +1,170 @@
 {
-  // ===================================================================
-  // VS Code Tasks Configuration
-  // ===================================================================
-  "version": "2.0.0",
-  "tasks": [
-    // ---------------------------------------------------------------
-    // Safe Git auto-push (runs ./scripts/push.sh)
-    // ---------------------------------------------------------------
-    {
-      "label": "Git: Push (safe auto)",
-      "type": "shell",
-      "command": "./scripts/push.sh",
-    //   "options": {
-    //     "cwd": "${workspaceFolder}"
-      },
-      "problemMatcher": [],
-      "presentation": {
-        "reveal": "always",
-        "panel": "dedicated",
-        "clear": true
-      },
-      "windows": {
-        "command": "pwsh",
-        "args": [
-          "-NoProfile",
-          "-ExecutionPolicy",
-          "Bypass",
-          "-File",
-          "scripts\\push.ps1"
-        ]
-      }
-    },
+    // ===================================================================
+    // VS Code Tasks Configuration
+    // ===================================================================
+    "version": "2.0.0",
+    "tasks": [
+        // ---------------------------------------------------------------
+        // Safe Git auto-push and Ai context bundle
+        // ---------------------------------------------------------------
+        {
+            "label": "Git: Push (safe auto)",
+            "type": "shell",
+            "command": "./scripts/push.sh && ./scripts/ai-context.sh && ./scripts/scrub.sh",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true
+            },
+            "windows": {
+                "command": "pwsh",
+                "args": [
+                    "-NoProfile",
+                    "-ExecutionPolicy",
+                    "Bypass",
+                    "-File",
+                    "scripts\\push.ps1",
+                    "&&",
+                    "-File",
+                    "scripts\\ai-context.ps1",
+                    "&&",
+                    "-File",
+                    "scripts\\scrub.ps1"
+                ]
+            }
+        },
 
-    // ---------------------------------------------------------------
-    // Scrub SAVE-ERROR/temp/lock artifacts
-    // ---------------------------------------------------------------
-    {
-      "label": "Scrub temp artifacts",
-      "type": "shell",
-      "command": "./scripts/scrub.sh",
-      "options": {
-        "cwd": "${workspaceFolder}"
-      },
-      "problemMatcher": [],
-      "presentation": {
-        "reveal": "always",
-        "panel": "dedicated",
-        "clear": true
-      },
-      "windows": {
-        "command": "pwsh",
-        "args": [
-          "-NoProfile",
-          "-ExecutionPolicy",
-          "Bypass",
-          "-File",
-          "scripts\\scrub.ps1"
-        ]
-      }
-    },
+        // ---------------------------------------------------------------
+        // Scrub SAVE-ERROR/temp/lock artifacts
+        // ---------------------------------------------------------------
+        {
+            "label": "Scrub temp artifacts",
+            "type": "shell",
+            "command": "./scripts/scrub.sh",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true
+            },
+            "windows": {
+                "command": "pwsh",
+                "args": [
+                    "-NoProfile",
+                    "-ExecutionPolicy",
+                    "Bypass",
+                    "-File",
+                    "scripts\\scrub.ps1"
+                ]
+            }
+        },
 
-    // ---------------------------------------------------------------
-    // AI context bundle (diffs, logs, selected files)
-    // ---------------------------------------------------------------
-    {
-      "label": "AI: Build context bundle",
-      "type": "shell",
-      "command": "./scripts/ai-context.sh",
-      "options": {
-        "cwd": "${workspaceFolder}"
-      },
-      "problemMatcher": [],
-      "presentation": {
-        "reveal": "always",
-        "panel": "dedicated",
-        "clear": true
-      },
-      "windows": {
-        "command": "pwsh",
-        "args": [
-          "-NoProfile",
-          "-ExecutionPolicy",
-          "Bypass",
-          "-File",
-          "scripts\\ai-context.ps1"
-        ]
-      }
-    },
+        // ---------------------------------------------------------------
+        // AI context bundle (diffs, logs, selected files)
+        // ---------------------------------------------------------------
+        {
+            "label": "AI: Build context bundle",
+            "type": "shell",
+            "command": "./scripts/ai-context.sh",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true
+            },
+            "windows": {
+                "command": "pwsh",
+                "args": [
+                    "-NoProfile",
+                    "-ExecutionPolicy",
+                    "Bypass",
+                    "-File",
+                    "scripts\\ai-context.ps1"
+                ]
+            }
+        },
 
-    // ---------------------------------------------------------------
-    // Release: tag + upload PDF via GitHub CLI
-    // ---------------------------------------------------------------
-    {
-      "label": "Release: Tag + Upload (GitHub)",
-      "type": "shell",
-      "command": "./scripts/release.sh",
-      "options": {
-        "cwd": "${workspaceFolder}"
-      },
-      "problemMatcher": [],
-      "presentation": {
-        "reveal": "always",
-        "panel": "dedicated",
-        "clear": true
-      },
-      "windows": {
-        "command": "pwsh",
-        "args": [
-          "-NoProfile",
-          "-ExecutionPolicy",
-          "Bypass",
-          "-File",
-          "scripts\\release.ps1"
-        ]
-      }
-    },
+        // ---------------------------------------------------------------
+        // Release: tag + upload PDF via GitHub CLI
+        // ---------------------------------------------------------------
+        {
+            "label": "Release: Tag + Upload (GitHub)",
+            "type": "shell",
+            "command": "./scripts/release.sh && ./scripts/ai-context.sh && ./scripts/scrub.sh",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true
+            },
+            "windows": {
+                "command": "pwsh",
+                "args": [
+                    "-NoProfile",
+                    "-ExecutionPolicy",
+                    "Bypass",
+                    "-File",
+                    "scripts\\release.ps1",
+                    "&&",
+                    "-File",
+                    "scripts\\ai-context.ps1",
+                    "&&",
+                    "-File",
+                    "scripts\\scrub.ps1"
+                ]
+            }
+        },
 
-    // ---------------------------------------------------------------
-    // Settings merge (manual)
-    // ---------------------------------------------------------------
-    {
-      "label": "Settings: Merge sources",
-      "type": "shell",
-      "command": "python3 ./scripts/settings_manager.py merge",
-      "options": {
-        "cwd": "${workspaceFolder}"
-      },
-      "problemMatcher": [],
-      "presentation": {
-        "reveal": "always",
-        "panel": "dedicated",
-        "clear": true
-      },
-      "windows": {
-        "command": "py",
-        "args": [
-          "-3",
-          "scripts\\settings_manager.py",
-          "merge"
-        ]
-      }
-    },
+        // ---------------------------------------------------------------
+        // Settings merge (manual)
+        // ---------------------------------------------------------------
+        {
+            "label": "Settings: Merge sources",
+            "type": "shell",
+            "command": "python3 ./scripts/settings_manager.py merge",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true
+            },
+            "windows": {
+                "command": "py",
+                "args": ["-3", "scripts\\settings_manager.py", "merge"]
+            }
+        },
 
-    // ---------------------------------------------------------------
-    // Auto pull when project is opened in VS Code
-    // ---------------------------------------------------------------
-    {
-      "label": "Settings: Sync on Open",
-      "type": "shell",
-      "command": "python3 ./scripts/settings_manager.py sync",
-      "options": {
-        "cwd": "${workspaceFolder}"
-      },
-      "problemMatcher": [],
-      "presentation": { "reveal": "silent" },
-      "runOptions": { "runOn": "folderOpen" },
-      "windows": {
-        "command": "py",
-        "args": [
-          "-3",
-          "scripts\\settings_manager.py",
-          "sync"
-        ]
-      }
-    },
-
-    // ---------------------------------------------------------------
-    // Auto pull when project is opened in VS Code
-    // ---------------------------------------------------------------
-    {
-      "label": "Git: Pull on Open",
-      "type": "shell",
-      "command": "git pull --ff-only",
-      "presentation": { "reveal": "silent" },
-      "runOptions": { "runOn": "folderOpen" }
-    },
-    // ---------------------------------------------------------------
-    // Auto update WSL
-    // ---------------------------------------------------------------
-    {
-      "label": "Update WSL on Open",
-      "type": "shell",
-      "command": "sudo /usr/bin/apt-get update && sudo /usr/bin/apt-get -y upgrade",
-      "presentation": { "reveal": "silent" },
-      "runOptions": { "runOn": "folderOpen" },
-      "windows": { "command": "echo WSL update skipped on Windows." },
-      "osx": { "command": "echo WSL update skipped on macOS." }
-    }
-
-  ]
+        // ---------------------------------------------------------------
+        // On open: sudo warmup, settings sync, git pull, WSL update
+        // ---------------------------------------------------------------
+        {
+            "label": "On Open: Sync + Pull + Update + Scrub",
+            "type": "shell",
+            "command": "sudo -v && python3 ./scripts/settings_manager.py sync && git pull --ff-only && sudo /usr/bin/apt-get update && sudo /usr/bin/apt-get -y upgrade && sudo /usr/local/texlive/2025/bin/x86_64-linux/tlmgr update --self --all && ./scripts/scrub.sh",
+            "problemMatcher": [],
+            "presentation": { "reveal": "silent" },
+            "runOptions": { "runOn": "folderOpen" },
+            "windows": {
+                "command": "py",
+                "args": [
+                    "-3",
+                    "scripts\\settings_manager.py",
+                    "sync",
+                    "&&",
+                    "git",
+                    "pull",
+                    "--ff-only",
+                    "&&",
+                    "scripts\\scrub.sh",
+                    "&&",
+                    "echo",
+                    "WSL and TexLive update skipped on Windows."
+                ]
+            },
+            "osx": {
+                "command": "python3 ./scripts/settings_manager.py sync && git pull --ff-only && ./scripts/scrub.sh && echo WSL and TexLiveupdate skipped on macOS."
+            }
+        }
+    ]
 }

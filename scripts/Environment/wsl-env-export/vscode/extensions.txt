@@ -1,6 +1,7 @@
 Extensions installed on WSL: Ubuntu:
 aaron-bond.better-comments@3.0.2
 alefragnani.project-manager@13.0.1
+charliermarsh.ruff@2025.32.0
 christian-kohler.path-intellisense@2.10.0
 cweijan.vscode-office@3.5.4
 ecmel.vscode-html-css@2.0.13
