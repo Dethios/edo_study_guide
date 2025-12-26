@@ -70,7 +70,7 @@
         "markdown-preview-enhanced": true
     },
     // workbench.editor.enablePreview: Enable or disable workbench editor enable Preview. Edit the value to change behavior.
-    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreview": true,
     // workbench.editor.highlightModifiedTabs: Enable or disable workbench editor highlight Modified Tabs. Edit the value to change behavior.
     "workbench.editor.highlightModifiedTabs": true,
     // workbench.editor.preferHistoryBasedLanguageDetection: Enable or disable workbench editor prefer History Based Language Detection. Edit the value to change behavior.
@@ -83,9 +83,10 @@
     "workbench.editor.wrapTabs": true,
     // workbench.editorAssociations: Define object/map for workbench editor Associations. Edit the value to change behavior.
     "workbench.editorAssociations": {
-        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.copilotmd": "cweijan.markdownViewer.optional",
+        "*.ipynb": "jupyter-notebook",
         "*.markdown": "markdown-preview-enhanced",
-        "*.md": "cweijan.markdownViewer.optional",
+        "*.md": "markdown-preview-enhanced",
         "*.mdown": "markdown-preview-enhanced",
         "*.mdx": "markdown-preview-enhanced",
         "*.mkd": "markdown-preview-enhanced",
@@ -115,7 +116,7 @@
         "prettier.endOfLine"
     ],
     // workbench.settings.openDefaultSettings: Enable or disable workbench settings open Default Settings. Edit the value to change behavior.
-    "workbench.settings.openDefaultSettings": true,
+    "workbench.settings.openDefaultSettings": false,
     // workbench.tree.indent: Set numeric value for workbench tree indent. Edit the value to change behavior.
     "workbench.tree.indent": 4,
     // workbench.view.showQuietly: Define object/map for workbench view show Quietly. Edit the value to change behavior.
@@ -589,8 +590,20 @@
     // ===================================================================
     // Notebook - Notebook UI behavior.
     // ===================================================================
+    // notebook.formatOnCellExecution: Enable or disable notebook format On Cell Execution. Edit the value to change behavior.
+    "notebook.formatOnCellExecution": true,
+    // notebook.formatOnSave.enabled: Enable or disable notebook format On Save enabled. Edit the value to change behavior.
+    "notebook.formatOnSave.enabled": true,
+    // notebook.insertFinalNewline: Enable or disable notebook insert Final Newline. Edit the value to change behavior.
+    "notebook.insertFinalNewline": true,
+    // notebook.lineNumbers: Set notebook line Numbers. Edit the value to change behavior.
+    "notebook.lineNumbers": "on",
+    // notebook.output.scrolling: Enable or disable notebook output scrolling. Edit the value to change behavior.
+    "notebook.output.scrolling": true,
     // notebook.output.wordWrap: Enable or disable notebook output word Wrap. Edit the value to change behavior.
     "notebook.output.wordWrap": true,
+    // notebook.stickyScroll.enabled: Enable or disable notebook sticky Scroll enabled. Edit the value to change behavior.
+    "notebook.stickyScroll.enabled": true,
 
     // ===================================================================
     // Markdown - Markdown preview and extensions.
@@ -611,6 +624,10 @@
     "markdown-preview-enhanced.enableHTML5Embed": true,
     // markdown-preview-enhanced.enableTypographer: Enable or disable markdown preview enhanced enable Typographer. Edit the value to change behavior.
     "markdown-preview-enhanced.enableTypographer": true,
+    // markdown-preview-enhanced.frontMatterRenderingOption: Set markdown preview enhanced front Matter Rendering Option. Edit the value to change behavior.
+    "markdown-preview-enhanced.frontMatterRenderingOption": "code block",
+    // markdown-preview-enhanced.imageFolderPath: Set markdown preview enhanced image Folder Path. Edit the value to change behavior.
+    "markdown-preview-enhanced.imageFolderPath": "/tex/assets/images",
     // markdown-preview-enhanced.latexEngine: Set markdown preview enhanced latex Engine. Edit the value to change behavior.
     "markdown-preview-enhanced.latexEngine": "lualatex",
     // markdown-preview-enhanced.liveUpdateDebounceMs: Set numeric value for markdown preview enhanced live Update Debounce Ms. Edit the value to change behavior.
@@ -625,6 +642,8 @@
     "markdown-preview-enhanced.previewTheme": "none.css",
     // markdown-preview-enhanced.revealjsTheme: Set markdown preview enhanced revealjs Theme. Edit the value to change behavior.
     "markdown-preview-enhanced.revealjsTheme": "none.css",
+    // markdown-preview-enhanced.useGitHubStylePipedLink: Enable or disable markdown preview enhanced use Git Hub Style Piped Link. Edit the value to change behavior.
+    "markdown-preview-enhanced.useGitHubStylePipedLink": true,
     // markdown-preview-enhanced.usePandocParser: Enable or disable markdown preview enhanced use Pandoc Parser. Edit the value to change behavior.
     "markdown-preview-enhanced.usePandocParser": true,
     // markdown.copyFiles.overwriteBehavior: Set markdown copy Files overwrite Behavior. Edit the value to change behavior.
@@ -777,25 +796,28 @@
     "latex-workshop.latex.tools": [
         {
             "args": [
-                "%DOC%"
+                "%WORKSPACE_FOLDER%/scripts/build.sh",
+                "%DOC_EXT%"
             ],
-            "command": "scripts/build.sh",
+            "command": "/bin/bash",
             "name": "build-wsl"
         },
         {
             "args": [
+                "%WORKSPACE_FOLDER%/scripts/build.sh",
                 "--watch",
-                "%DOC%"
+                "%DOC_EXT%"
             ],
-            "command": "scripts/build.sh",
+            "command": "/bin/bash",
             "name": "build-wsl-watch"
         },
         {
             "args": [
+                "%WORKSPACE_FOLDER%/scripts/build.sh",
                 "--quiet",
-                "%DOC%"
+                "%DOC_EXT%"
             ],
-            "command": "scripts/build.sh",
+            "command": "/bin/bash",
             "name": "build-quiet"
         },
         {
@@ -1262,16 +1284,25 @@
     ],
     // cSpell.words: Define list for c Spell words. Edit the value to change behavior.
     "cSpell.words": [
-        "CIVPERS",
-        "JCIDS",
-        "JROC",
         "Adderall",
+        "BDAR",
         "catastrophizing",
+        "CIVPERS",
+        "CIWS",
         "FSIQ",
         "Intuniv",
+        "JCIDS",
+        "jfmm",
         "journaling",
+        "JROC",
+        "latexmkrc",
         "Lexapro",
+        "NDAA",
+        "opnavinst",
+        "opnavnote",
+        "OPSEC",
         "PTSD",
+        "RDML",
         "Wellbutrin"
     ],
 
@@ -1595,6 +1626,10 @@
     "[tex]": {
         "editor.defaultFormatter": "James-Yu.latex-workshop"
     },
+    // [toml]: Language-specific overrides for [toml]. Update the settings inside this object to change behavior.
+    "[toml]": {
+        "editor.defaultFormatter": "tamasfe.even-better-toml"
+    },
 
     // ===================================================================
     // Other - Settings that do not match a primary group.
@@ -1690,6 +1725,8 @@
     "chatgpt.runCodexInWindowsSubsystemForLinux": true,
     // dev.containers.executeInWSL: Enable or disable dev containers execute In WSL. Edit the value to change behavior.
     "dev.containers.executeInWSL": true,
+    // dotnetAcquisitionExtension.enablePreviewFeatures: Enable or disable dotnet Acquisition Extension enable Preview Features. Edit the value to change behavior.
+    "dotnetAcquisitionExtension.enablePreviewFeatures": true,
     // gitlens.ai.model: Set gitlens ai model. Edit the value to change behavior.
     "gitlens.ai.model": "gemini:gemini-2.5-pro",
     // gitlens.ai.vscode.model: Set gitlens ai vscode model. Edit the value to change behavior.
@@ -1722,6 +1759,22 @@
     "invisibleAiChartDetector.doubleBlankThreshold": 3,
     // jake.autoDetect: Set jake auto Detect. Edit the value to change behavior.
     "jake.autoDetect": "on",
+    // jupyter.askForKernelRestart: Enable or disable jupyter ask For Kernel Restart. Edit the value to change behavior.
+    "jupyter.askForKernelRestart": false,
+    // jupyter.contextualHelp.detailLevel: Set jupyter contextual Help detail Level. Edit the value to change behavior.
+    "jupyter.contextualHelp.detailLevel": "verbose",
+    // jupyter.enableExtendedPythonKernelCompletions: Enable or disable jupyter enable Extended Python Kernel Completions. Edit the value to change behavior.
+    "jupyter.enableExtendedPythonKernelCompletions": true,
+    // jupyter.executionAnalysis.enabled: Enable or disable jupyter execution Analysis enabled. Edit the value to change behavior.
+    "jupyter.executionAnalysis.enabled": true,
+    // jupyter.inspectKernelMessages.enabled: Enable or disable jupyter inspect Kernel Messages enabled. Edit the value to change behavior.
+    "jupyter.inspectKernelMessages.enabled": true,
+    // jupyter.interactiveWindow.notebookRepl: Enable or disable jupyter interactive Window notebook Repl. Edit the value to change behavior.
+    "jupyter.interactiveWindow.notebookRepl": true,
+    // jupyter.logKernelOutputSeparately: Enable or disable jupyter log Kernel Output Separately. Edit the value to change behavior.
+    "jupyter.logKernelOutputSeparately": true,
+    // jupyter.themeMatplotlibPlots: Enable or disable jupyter theme Matplotlib Plots. Edit the value to change behavior.
+    "jupyter.themeMatplotlibPlots": true,
     // latex-utilities.formattedPaste.image.template: Set latex utilities formatted Paste image template. Edit the value to change behavior.
     "latex-utilities.formattedPaste.image.template": "\\includegraphics[width=.8\\linewidth]{${imageFilePath}}",
     // latex-utilities.formattedPaste.imagePathOverride: Set latex utilities formatted Paste image Path Override. Edit the value to change behavior.
@@ -1791,6 +1844,8 @@
     "powershell.promptToUpdatePowerShell": false,
     // powershell.startAsLoginShell.linux: Enable or disable powershell start As Login Shell linux. Edit the value to change behavior.
     "powershell.startAsLoginShell.linux": true,
+    // powershell.suppressAdditionalExeNotFoundWarning: Enable or disable powershell suppress Additional Exe Not Found Warning. Edit the value to change behavior.
+    "powershell.suppressAdditionalExeNotFoundWarning": true,
     // remote.autoForwardPortsSource: Set remote auto Forward Ports Source. Edit the value to change behavior.
     "remote.autoForwardPortsSource": "hybrid",
     // runInPowerShell.PowershellCoreLocation: Set run In Power Shell Powershell Core Location. Edit the value to change behavior.

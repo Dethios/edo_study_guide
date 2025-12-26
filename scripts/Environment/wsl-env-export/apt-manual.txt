@@ -43,11 +43,14 @@ lsb-release
 ncurses-base
 ncurses-bin
 openssh-client
+packages-microsoft-prod
 pandoc
 perl
+powershell
 python3
 python3-ipykernel
 python3-pip
+software-properties-common
 ubuntu-minimal
 ubuntu-wsl
 util-linux

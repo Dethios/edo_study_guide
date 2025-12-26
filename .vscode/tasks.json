@@ -117,6 +117,32 @@
     },
 
     // ---------------------------------------------------------------
+    // Settings merge (manual)
+    // ---------------------------------------------------------------
+    {
+      "label": "Settings: Merge sources",
+      "type": "shell",
+      "command": "python3 ./scripts/settings_manager.py merge",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "windows": {
+        "command": "py",
+        "args": [
+          "-3",
+          "scripts\\settings_manager.py",
+          "merge"
+        ]
+      }
+    },
+
+    // ---------------------------------------------------------------
     // Auto pull when project is opened in VS Code
     // ---------------------------------------------------------------
     {

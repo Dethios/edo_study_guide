@@ -70,7 +70,7 @@
         "markdown-preview-enhanced": true
     },
     // workbench.editor.enablePreview: Enable or disable workbench editor enable Preview. Edit the value to change behavior.
-    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreview": true,
     // workbench.editor.highlightModifiedTabs: Enable or disable workbench editor highlight Modified Tabs. Edit the value to change behavior.
     "workbench.editor.highlightModifiedTabs": true,
     // workbench.editor.preferHistoryBasedLanguageDetection: Enable or disable workbench editor prefer History Based Language Detection. Edit the value to change behavior.
@@ -83,16 +83,16 @@
     "workbench.editor.wrapTabs": true,
     // workbench.editorAssociations: Define object/map for workbench editor Associations. Edit the value to change behavior.
     "workbench.editorAssociations": {
-        "*.copilotmd": "vscode.markdown.preview.editor",
-        "*.markdown": "markdown-preview-enhanced",
+        "*.copilotmd": "cweijan.markdownViewer.optional",
+        "*.markdown": "cweijan.markdownViewer.optional",
         "*.md": "cweijan.markdownViewer.optional",
-        "*.mdown": "markdown-preview-enhanced",
-        "*.mdx": "markdown-preview-enhanced",
-        "*.mkd": "markdown-preview-enhanced",
-        "*.mkdn": "markdown-preview-enhanced",
+        "*.mdown": "cweijan.markdownViewer.optional",
+        "*.mdx": "cweijan.markdownViewer.optional",
+        "*.mkd": "cweijan.markdownViewer.optional",
+        "*.mkdn": "cweijan.markdownViewer.optional",
         "*.pdf": "latex-workshop-pdf-hook",
-        "*.qmd": "markdown-preview-enhanced",
-        "*.rmd": "markdown-preview-enhanced"
+        "*.qmd": "cweijan.markdownViewer.optional",
+        "*.rmd": "cweijan.markdownViewer.optional"
     },
     // workbench.enableExperiments: Enable or disable workbench enable Experiments. Edit the value to change behavior.
     "workbench.enableExperiments": true,
@@ -115,7 +115,7 @@
         "prettier.endOfLine"
     ],
     // workbench.settings.openDefaultSettings: Enable or disable workbench settings open Default Settings. Edit the value to change behavior.
-    "workbench.settings.openDefaultSettings": true,
+    "workbench.settings.openDefaultSettings": false,
     // workbench.tree.indent: Set numeric value for workbench tree indent. Edit the value to change behavior.
     "workbench.tree.indent": 4,
     // workbench.view.showQuietly: Define object/map for workbench view show Quietly. Edit the value to change behavior.
@@ -368,6 +368,10 @@
     // ===================================================================
     // Files - File handling, auto-save, and excludes.
     // ===================================================================
+    // files.associations: Define object/map for files associations. Edit the value to change behavior.
+    "files.associations": {
+        "*.json": "jsonc"
+    },
     // files.autoGuessEncoding: Enable or disable files auto Guess Encoding. Edit the value to change behavior.
     "files.autoGuessEncoding": true,
     // files.autoSave: Set files auto Save. Edit the value to change behavior.
@@ -607,6 +611,10 @@
     "markdown-preview-enhanced.enableHTML5Embed": true,
     // markdown-preview-enhanced.enableTypographer: Enable or disable markdown preview enhanced enable Typographer. Edit the value to change behavior.
     "markdown-preview-enhanced.enableTypographer": true,
+    // markdown-preview-enhanced.frontMatterRenderingOption: Set markdown preview enhanced front Matter Rendering Option. Edit the value to change behavior.
+    "markdown-preview-enhanced.frontMatterRenderingOption": "code block",
+    // markdown-preview-enhanced.imageFolderPath: Set markdown preview enhanced image Folder Path. Edit the value to change behavior.
+    "markdown-preview-enhanced.imageFolderPath": "/tex/assets/images",
     // markdown-preview-enhanced.latexEngine: Set markdown preview enhanced latex Engine. Edit the value to change behavior.
     "markdown-preview-enhanced.latexEngine": "lualatex",
     // markdown-preview-enhanced.liveUpdateDebounceMs: Set numeric value for markdown preview enhanced live Update Debounce Ms. Edit the value to change behavior.
@@ -621,6 +629,8 @@
     "markdown-preview-enhanced.previewTheme": "none.css",
     // markdown-preview-enhanced.revealjsTheme: Set markdown preview enhanced revealjs Theme. Edit the value to change behavior.
     "markdown-preview-enhanced.revealjsTheme": "none.css",
+    // markdown-preview-enhanced.useGitHubStylePipedLink: Enable or disable markdown preview enhanced use Git Hub Style Piped Link. Edit the value to change behavior.
+    "markdown-preview-enhanced.useGitHubStylePipedLink": true,
     // markdown-preview-enhanced.usePandocParser: Enable or disable markdown preview enhanced use Pandoc Parser. Edit the value to change behavior.
     "markdown-preview-enhanced.usePandocParser": true,
     // markdown.copyFiles.overwriteBehavior: Set markdown copy Files overwrite Behavior. Edit the value to change behavior.
@@ -773,25 +783,28 @@
     "latex-workshop.latex.tools": [
         {
             "args": [
-                "%DOC%"
+                "%WORKSPACE_FOLDER%/scripts/build.sh",
+                "%DOC_EXT%"
             ],
-            "command": "scripts/build.sh",
+            "command": "/bin/bash",
             "name": "build-wsl"
         },
         {
             "args": [
+                "%WORKSPACE_FOLDER%/scripts/build.sh",
                 "--watch",
-                "%DOC%"
+                "%DOC_EXT%"
             ],
-            "command": "scripts/build.sh",
+            "command": "/bin/bash",
             "name": "build-wsl-watch"
         },
         {
             "args": [
+                "%WORKSPACE_FOLDER%/scripts/build.sh",
                 "--quiet",
-                "%DOC%"
+                "%DOC_EXT%"
             ],
-            "command": "scripts/build.sh",
+            "command": "/bin/bash",
             "name": "build-quiet"
         },
         {
@@ -1258,16 +1271,25 @@
     ],
     // cSpell.words: Define list for c Spell words. Edit the value to change behavior.
     "cSpell.words": [
-        "CIVPERS",
-        "JCIDS",
-        "JROC",
         "Adderall",
+        "BDAR",
         "catastrophizing",
+        "CIVPERS",
+        "CIWS",
         "FSIQ",
         "Intuniv",
+        "JCIDS",
+        "jfmm",
         "journaling",
+        "JROC",
+        "latexmkrc",
         "Lexapro",
+        "NDAA",
+        "opnavinst",
+        "opnavnote",
+        "OPSEC",
         "PTSD",
+        "RDML",
         "Wellbutrin"
     ],
 
@@ -1591,6 +1613,10 @@
     "[tex]": {
         "editor.defaultFormatter": "James-Yu.latex-workshop"
     },
+    // [toml]: Language-specific overrides for [toml]. Update the settings inside this object to change behavior.
+    "[toml]": {
+        "editor.defaultFormatter": "tamasfe.even-better-toml"
+    },
 
     // ===================================================================
     // Other - Settings that do not match a primary group.
@@ -1686,6 +1712,8 @@
     "chatgpt.runCodexInWindowsSubsystemForLinux": true,
     // dev.containers.executeInWSL: Enable or disable dev containers execute In WSL. Edit the value to change behavior.
     "dev.containers.executeInWSL": true,
+    // dotnetAcquisitionExtension.enablePreviewFeatures: Enable or disable dotnet Acquisition Extension enable Preview Features. Edit the value to change behavior.
+    "dotnetAcquisitionExtension.enablePreviewFeatures": true,
     // gitlens.ai.model: Set gitlens ai model. Edit the value to change behavior.
     "gitlens.ai.model": "gemini:gemini-2.5-pro",
     // gitlens.ai.vscode.model: Set gitlens ai vscode model. Edit the value to change behavior.
@@ -1787,6 +1815,8 @@
     "powershell.promptToUpdatePowerShell": false,
     // powershell.startAsLoginShell.linux: Enable or disable powershell start As Login Shell linux. Edit the value to change behavior.
     "powershell.startAsLoginShell.linux": true,
+    // powershell.suppressAdditionalExeNotFoundWarning: Enable or disable powershell suppress Additional Exe Not Found Warning. Edit the value to change behavior.
+    "powershell.suppressAdditionalExeNotFoundWarning": true,
     // remote.autoForwardPortsSource: Set remote auto Forward Ports Source. Edit the value to change behavior.
     "remote.autoForwardPortsSource": "hybrid",
     // runInPowerShell.PowershellCoreLocation: Set run In Power Shell Powershell Core Location. Edit the value to change behavior.

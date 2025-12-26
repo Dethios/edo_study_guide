@@ -69,7 +69,7 @@ Current as of 2025-12-18, the \ac{asnrdanda} team is led by Mr.\ Jason L.\ Potte
   \begin{tikzpicture}
     [
     node distance=1.5cm and 2cm,
-    main node/.style={rectangle, draw, fill=blue!20, text width=9em, text centered, minimum height=4em},
+    main node/.style={rectangle, draw, fill= , text width=9em, text centered, minimum height=4em},
     dasn node/.style={rectangle, draw, fill=green!20, text width=9em, text centered, minimum height=4em},
     line/.style={draw, -{Stealth[length=2mm]}}
     ]
@@ -87,14 +87,14 @@ Current as of 2025-12-18, the \ac{asnrdanda} team is led by Mr.\ Jason L.\ Potte
 
     \node[dasn node, right=of iwar, xshift=3.5cm, fill=orange!20] (nipo) {Director, NIPO\\ \textbf{RDML Ray Owens}};
 
-    \path [line] (asn) -- (sustainment);
-    \path [line] (asn) -- (ships);
-    \path [line] (asn) -- (ag);
-    \path [line] (asn) -- (p);
-    \path [line] (asn) -- (iwar);
-    \path [line] (asn) -- (rdte);
-    \path [line] (asn) -- (apb);
-    \path [line] (asn) -- (nipo);
+    \path [line] (asn) |- (sustainment);
+    \path [line] (asn) |- (ships);
+    \path [line] (asn) |- (ag);
+    \path [line] (asn) |- (p);
+    \path [line] (asn) |- (iwar);
+    \path [line] (asn) |- (rdte);
+    \path [line] (asn) |- (apb);
+    \path [line] (asn) -| (nipo);
   \end{tikzpicture}
   \caption[ASN (RD\&A) organization chart]{ASN (RD\&A) organization chart (current as of 2025-12-18).~\srcCite{navy-asnrda-org-chart-2025}}
   \label{fig:asnrda_org_chart}

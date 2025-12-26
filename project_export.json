@@ -1,7 +1,7 @@
 {
   "project_metadata": {
     "project_name": "EDO Acquisition Tutor",
-    "export_timestamp_iso": "2025-12-24T18:28:52-05:00",
+    "export_timestamp_iso": "2025-12-25T20:04:21-05:00",
     "project_instructions_raw": "ROLE & MISSION\nYou are a Navy EDO Acquisition Tutor. Teach, test, and clarify U.S. Navy/DoW acquisition for EDO qualification boards (primary) and general mastery (secondary). Explain the full breadth clearly, tie assertions to current primary sources, and emphasize Navy-unique overlays.\n\nAUDIENCE\nEngineering Duty Officers preparing for boards and practicing program/technical authority roles. Assume motivated learners who may be new to acquisition jargon.\n\nCANONICAL SOURCES (teach-from-truth)\nStatute: Titles 10 & 41 U.S.C.; relevant NDAA provisions.\nRegulation: FAR, DFARS, DFARS PGI; NMCARS if applicable.\nPolicy/Framework: DoDI 5000 series (MCA, SWP, MTA, Urgent), plus JCIDS artifacts as needed.\nFiscal: DoW FMR 7000.14-R; GAO Red Book.\nNavy overlays: SECNAV/OPNAV/NAVSEA instructions; PEO/TA guidance; shipbuilding nuances (SCN/WPN).\nCourseware: EDO-specific coursebook PDFs (baseline current as of 2025-09-12).\nRule: When facts can change (thresholds, definitions, authorities), verify the current controlling document and cite title + section (if known) + publication date.\n\nRECENCY POLICY\nStamp every deliverable with \"Current as of [YYYY-MM-DD]\". Re-verify for NDAA/FAR/DFARS/DoDI/SECNAV changes and PPBE shifts. If recency cannot be confirmed (e.g., offline excerpt), label Recency check pending and state assumptions.\n\nDEFAULTS & MODES\nDefault Mode: EDO Board Prep (concise, decision-focused). Optional Mode: Mastery (full exposition, examples, deeper context). Diagrams: Provide Mermaid visuals only when explicitly requested; otherwise default to textual decision logic.\n\nTEACHING STYLE (layered structure)\nPlain-language brief; Navy overlays & authority touchpoints; Fiscal/PPBE & colors of money (SCN/WPN nuance); Decision Trace; Citations; Assumptions & uncertainties; Self-score.\n\nINTERACTION RULES\nAsk 2-3 targeted clarifying questions for substantial tasks; if no reply, proceed best-effort and state assumptions. Offer an opposing view/edge case where professional judgment could differ. Avoid flashcards by default.\n\nDEFAULT OUTPUT TEMPLATE\nSummary; Navy Overlays; Fiscal/PPBE; Decision Trace; Citations; Current as of; Assumptions & Uncertainties; Self-Score.\n\nCOVERAGE MAP (breadth over time)\nAAF pathways & artifacts; JCIDS; governance reviews; contracting fundamentals; fiscal law & PPBE (SCN/WPN); cost/schedule/performance; SE & T&E; logistics & sustainment; software & data; rapid authorities; Navy-unique overlays & authority boundaries.\n\nQUALITY ASSURANCE\nSelf-score every answer (Accuracy, Completeness, Clarity, Relevance, Practical usefulness). If any <8, revise and note the fix.\n\nTOOLING & CITATION BEHAVIOR\nVerify rules/thresholds with current primary sources and cite exact dates; prefer official/public sources. Call out Navy overlay deltas vs generic DAU guidance.\n\nSAFETY & COMPLIANCE\nNot legal advice. Respect OPSEC/CUI and procurement integrity. Use only unclassified, publicly releasable sources.\n\nCODE ARGUMENTS\n `-latexindent` to format LaTeX sources without backups,ARGS: `wd, -s, -m, -l=.latexindent.yaml, -c=%TEMP%/latexindent, -y=defaultIndent:'  ' `; `-latexmk` for continuous build with LuaLaTeX, ARGS: `-lualatex, -pdf, -dvi-, -ps-, -outdir=out, -auxdir=build, -f, -shell-escape, -interaction=nonstopmode, -synctex=1, -file-line-error, %DOC%`; `-fontspec` for custom fonts (Merriweather, Montserrat, Source Sans Pro).",
     "project_memory_highlights": [
       "LaTeX-based EDO Board Prep Study Guide with diagrams, tables, and citations.",
@@ -83,7 +83,14 @@
       "Updated .devcontainer/devcontainer.json extensions to match the current WSL install; Dockerfile kept as existing TeX Live image.",
       "Updated scratch/wsl_vscode_setup.ipynb to target Ubuntu WSL and note Windows user settings sync.",
       "Aligned push/release secret-guard regex joins in scripts/push.sh and scripts/release.sh; PowerShell parity confirmed; tasks.json already routes to OS-specific scripts.",
-      "Tidied scripts/settings_manager.py spacing and added NDS, C2, AI, CTF, and BES acronyms."
+      "Tidied scripts/settings_manager.py spacing and added NDS, C2, AI, CTF, and BES acronyms.",
+      "Added missing glossary acronyms (BES, NDS, C2, AI, CTF, USS, HII, LPD, SIOP) and normalized the Columbia-class title in current_events.bib to avoid percent parsing; latexmk -shell-escape tex/main.tex now completes with undefined citation warnings remaining.",
+      "Added scripts/shell_runner.ipynb Jupyter notebook for running shell scripts, seeded with a PowerShell install script.",
+      "Confirmed build/main.log has no undefined citation warnings after biber; remaining biber warnings are duplicate keys and legacy month fields.",
+      "Removed duplicate bib keys from tex/was_refs.bib and refactored AGENTS task lists into Outstanding/Resolved Lookups and Current/Completed Jobs with an instruction to maintain them.",
+      "Added a VS Code task to merge settings via scripts/settings_manager.py merge.",
+      "Updated LaTeX Workshop BUILD-WSL tools to invoke /bin/bash with workspace-root script paths and %DOC_EXT% to avoid ENOENT when building from tex/.",
+      "Uninstalled Windows pnpm global @openai/codex shims and package directory; WSL install retained."
     ],
     "known_limits": {
       "files_visible": 1,
@@ -303,6 +310,177 @@
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Repo hygiene and glossary update; no acquisition content changes."
+      },
+      {
+        "title_or_slug": "Shell script runner notebook",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Create a Jupyter notebook in scripts/ to run shell scripts without copying into a terminal.",
+        "summary": "Added scripts/shell_runner.ipynb with a bash cell that installs PowerShell from the Microsoft repo and starts pwsh.",
+        "key_decisions": [
+          "Use a Jupyter notebook under scripts/ with a %%bash cell for shell execution."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "scripts/shell_runner.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling addition only; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Gemini Code Assist agent mode toggle error",
+        "date_range": "2025-12-25 to 2025-12-25",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Explain Gemini Code Assist agent mode and troubleshoot the toggle error.",
+        "summary": "Explained what Gemini Code Assist agent mode adds beyond standard chat, and outlined troubleshooting steps for the toggle error and multi-root warning using official documentation.",
+        "key_decisions": [
+          "Use official Gemini Code Assist documentation and Gemini CLI references to describe agent mode behavior and dependencies."
+        ],
+        "action_items": [
+          "If the error persists, capture the Gemini Code Assist extension version/channel, verify Gemini CLI runs locally, and share the Gemini Code Assist log output."
+        ],
+        "linked_files": [
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling support response; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Verify Gemini CLI install method",
+        "date_range": "2025-12-25 to 2025-12-25",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Confirm Gemini CLI installation and advise on installation method.",
+        "summary": "Verified gemini CLI is installed and reported its path and version; provided guidance on pnpm vs documented install methods based on official docs.",
+        "key_decisions": [
+          "Use official Gemini CLI documentation to anchor recommended install methods and note pnpm is not explicitly listed."
+        ],
+        "action_items": [
+          "If you want a fully supported path, reinstall via the documented npm or npx method and confirm the version matches."
+        ],
+        "linked_files": [
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling support response; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Explain ExplSyntaxOn/ExplSyntaxOff",
+        "date_range": "2025-12-25 to 2025-12-25",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Explain LaTeX expl3 syntax toggles.",
+        "summary": "Explained that \\\\ExplSyntaxOn and \\\\ExplSyntaxOff toggle expl3 catcode conventions (notably making '_' and ':' letters) to allow LaTeX3-style control sequence names, and then restore standard LaTeX2e catcodes.",
+        "key_decisions": [
+          "No repo changes required; informational response only."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Informational explanation only; no study guide edits."
+      },
+      {
+        "title_or_slug": "Explain expl3-style code blocks",
+        "date_range": "2025-12-25 to 2025-12-25",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Explain what expl3-style code blocks are and why they are used.",
+        "summary": "Explained that expl3-style blocks use LaTeX3 naming and syntax conventions (via \\ExplSyntaxOn/Off) to access structured programming utilities, and are used for clarity, robustness, and namespace hygiene in LaTeX package/macro development.",
+        "key_decisions": [
+          "No repo changes required; informational response only."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Informational explanation only; no study guide edits."
+      },
+      {
+        "title_or_slug": "Explain pdf backend warning suppression snippet",
+        "date_range": "2025-12-25 to 2025-12-25",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Explain the expl3 snippet that redirects pdf backend warnings.",
+        "summary": "Explained that the snippet suppresses the 'unreferenced destination' warning from the pdf/pdf-backend message system by redirecting that message to none and, if present, wrapping \\__pdf_backend_warn:nnnn to filter that warning while passing all others through.",
+        "key_decisions": [
+          "No repo changes required; informational response only."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Informational explanation only; no study guide edits."
+      },
+      {
+        "title_or_slug": "Uninstall Windows Codex CLI",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Remove the Windows Codex CLI install so only the WSL install remains.",
+        "summary": "Removed Windows pnpm global Codex shims (codex, codex.CMD, codex.ps1) and deleted the pnpm global package directory; left pnpm store/cache and Windows .codex config untouched.",
+        "key_decisions": [
+          "Limit removal to the executable shims and global package directory to avoid deleting user config or caches without request."
+        ],
+        "action_items": [
+          "If desired, delete /mnt/c/Users/vic-l/.codex and pnpm store/cache entries for a full cleanup."
+        ],
+        "linked_files": [
+          "/mnt/c/Users/vic-l/AppData/Local/pnpm/codex",
+          "/mnt/c/Users/vic-l/AppData/Local/pnpm/codex.CMD",
+          "/mnt/c/Users/vic-l/AppData/Local/pnpm/codex.ps1",
+          "/mnt/c/Users/vic-l/AppData/Local/pnpm/global/5",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling cleanup only; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Shell runner sudo apt-get hang guidance",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Explain why sudo apt-get update appears to hang in a notebook and how to run shell_runner.ipynb like a terminal.",
+        "summary": "Explained that notebook cells do not provide an interactive TTY and sudo waits for a password, so apt-get update appears frozen. Suggested pre-authenticating with sudo -v in a real terminal and using sudo -n guards, or running installs in a terminal; noted passwordless sudo or sudo -S as noninteractive alternatives.",
+        "key_decisions": [
+          "Provide guidance only; do not modify scripts/shell_runner.ipynb without an explicit request."
+        ],
+        "action_items": [
+          "If desired, update scripts/shell_runner.ipynb to check sudo -n and prompt the user to run sudo -v in a terminal before rerunning."
+        ],
+        "linked_files": [
+          "scripts/shell_runner.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling guidance only; no code or study guide content changes."
       }
     ],
     "project_instructions_analysis": {
@@ -1073,6 +1251,149 @@
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Repo hygiene only; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Resolve glossary and biber errors for merge",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Clear LaTeX build-stopping glossary and bibliography errors to enable a clean merge.",
+        "summary": "Added missing glossary acronyms (BES, NDS, C2, AI, CTF, USS, HII, LPD, SIOP) and updated the Columbia-class current-events title to remove a percent sign that corrupted the bbl. Forced latexmk with biber to complete; build succeeds while reporting many pre-existing undefined citation warnings.",
+        "key_decisions": [
+          "Define missing acronyms in tex/acronyms.def rather than editing prose to avoid glossary errors.",
+          "Normalize the Columbia-class title to avoid percent parsing in biber output."
+        ],
+        "action_items": [
+          "Review build/main.log and add missing bibliography entries to clear undefined citation warnings."
+        ],
+        "linked_files": [
+          "tex/acronyms.def",
+          "tex/current_events.bib",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Build troubleshooting and glossary maintenance; no content expansion."
+      },
+      {
+        "title_or_slug": "Resolve undefined citations",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Clear undefined citation warnings prior to merge.",
+        "summary": "Verified the latest build log shows no undefined citation warnings after biber ran; remaining warnings are limited to duplicate keys and legacy month fields in biber output.",
+        "key_decisions": [
+          "Treat undefined citations as resolved once build/main.log contains no citation warnings."
+        ],
+        "action_items": [
+          "If desired, clean up duplicate bib keys and legacy month fields reported in build/main.blg."
+        ],
+        "linked_files": [
+          "AGENTS.md",
+          "project_export.json",
+          "build/main.log",
+          "build/main.blg"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Log-based verification only; no content changes beyond task tracking."
+      },
+      {
+        "title_or_slug": "Clean duplicate bib keys and refactor task lists",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Remove duplicate bibliography keys and reorganize AGENTS task sections for clarity.",
+        "summary": "Removed duplicate bib entries from tex/was_refs.bib to clear biber duplicate-key warnings and refactored AGENTS.md to separate Outstanding/Resolved Lookups and Current/Completed Jobs, adding an instruction to maintain this structure.",
+        "key_decisions": [
+          "Keep secwar-was-memo-2025 and secwar-jcids-reform-2025 in tex/edo.bib and remove duplicates from tex/was_refs.bib.",
+          "Move completed items into Resolved Lookups and Completed Jobs sections at the bottom of AGENTS.md."
+        ],
+        "action_items": [
+          "(Optional) Convert legacy month fields to numeric values to remove remaining biber warnings."
+        ],
+        "linked_files": [
+          "tex/was_refs.bib",
+          "AGENTS.md",
+          "project_export.json",
+          "build/main.blg"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Admin and bibliography maintenance; no content expansion."
+      },
+      {
+        "title_or_slug": "Verify duplicate keys and shell_runner",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Confirm duplicate keys are cleaned, keep shell_runner, and ensure AGENTS task sections are refactored.",
+        "summary": "Verified no duplicate keys in JSONC settings and confirmed duplicate bib keys were already removed. AGENTS.md already separates Outstanding/Resolved Lookups and Current/Completed Jobs with a maintenance instruction. shell_runner notebook remains present; it is currently untracked.",
+        "key_decisions": [
+          "No additional deduplication needed after checking settings and bibliography keys.",
+          "Leave shell_runner.ipynb in place and ask whether it should be added to git."
+        ],
+        "action_items": [
+          "Confirm whether to add scripts/shell_runner.ipynb to version control."
+        ],
+        "linked_files": [
+          "scripts/shell_runner.ipynb",
+          "AGENTS.md",
+          "tex/was_refs.bib",
+          "project_export.json",
+          ".vscode/settings.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Verification and admin checks only; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Add settings merge VS Code task",
+        "date_range": "2025-12-25 to 2025-12-25",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Add a VS Code task to run the settings merge command on demand.",
+        "summary": "Added a VS Code task that runs scripts/settings_manager.py merge for manual settings merges.",
+        "key_decisions": [
+          "Use python3/py -3 to keep parity with existing settings tasks."
+        ],
+        "action_items": [],
+        "linked_files": [
+          ".vscode/tasks.json",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling update only; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Fix BUILD-WSL LaTeX Workshop ENOENT",
+        "date_range": "2025-12-25 to 2025-12-25",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Resolve LaTeX Workshop BUILD-WSL spawn scripts/build.sh ENOENT error in VS Code.",
+        "summary": "Updated LaTeX Workshop tool definitions to call /bin/bash with a workspace-root script path and pass %DOC_EXT% so the build script is found and receives a .tex file.",
+        "key_decisions": [
+          "Use /bin/bash with %WORKSPACE_FOLDER%/scripts/build.sh in tool args because LaTeX Workshop does not expand placeholders in command."
+        ],
+        "action_items": [],
+        "linked_files": [
+          ".vscode/settings.json",
+          "settings_master.json",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling configuration update only; no study guide content changes."
       }
     ]
   },

@@ -47,7 +47,7 @@
 - After each test/build, delete SAVE-ERROR files, temp files, and lock files (`*.lock`, `*.lck`, `*.auxlock`).
 - Mark off completed TODOs; search LaTeX sources (`tex/main.tex`, `tex/chapters/`, `tex/tikz/`, `tex/templates/`) for outstanding TODOs.
 - Proceed with all next recommended tasks, up to three at a time.
-- Keep task lists tidy: move completed items in Lookups and Current Jobs to the bottom so active/incomplete work is easy to see.
+- Keep task lists tidy: maintain Outstanding Lookups and Current Jobs above, and move completed items into Resolved Lookups and Completed Jobs at the bottom whenever Lookups or Current Jobs are updated.
 
 ## Memory Update Protocol
 
@@ -64,7 +64,23 @@
 - `GEMINI.md`: Gemini-specific mirror of AGENTS for that toolchain.
 - `tex/chapters/TikZ/Coursebook_Ingest.md`: Chapter-specific style/content requirements when editing that material.
 
-## Lookups
+## Outstanding Lookups
+
+- [ ] NRO specifics for promotion in GS ranks
+- [ ] Proposed changes to streamline GS pay scales
+- [ ] ATR windows to request reprogramming
+- [ ] IWS test methods for terminal defense weapons (e.g., CIWS)
+- [ ] NAVWAR PMW list with citations
+- [ ] Definitions: AOR/NOR/SLR/IGT
+- [ ] NWCF vs. mission-funded distinctions
+- [ ] Fast Cues/Common Board Pivots refresh
+- [ ] Glossary pipeline (IDs/chunking/cadence)
+
+## Current Jobs
+
+- [ ] (none)
+
+## Resolved Lookups
 
 - [X] Review ADM Caudle's message to the fleet
 - [X] Specifics of CAPE duties and responsibilities
@@ -75,24 +91,15 @@
 - [X] Description of Marks and Reclama Process
 - [X] CIVPERs: conduct/performance issue handling and differences
 - [X] GS Steps: timeline for 1–10 to take 18 years
-- [ ] NRO specifics for promotion in GS ranks
 - [X] COC: new OIC time to make changes before union actions become permanent
-- [ ] Proposed changes to streamline GS pay scales
 - [X] Expenditure tracking and spending pace
-- [ ] ATR windows to request reprogramming
 - [X] Who finalizes/writes NDAA and Appropriations Bills
 - [X] Items in NDAA beyond spending authorizations
 - [X] Current NDAA and NSS
-- [ ] IWS test methods for terminal defense weapons (e.g., CIWS)
 - [X] ASN(RD&A) office structure, job titles, and functions
 - [X] Further flag review
-- [ ] NAVWAR PMW list with citations
-- [ ] Definitions: AOR/NOR/SLR/IGT
-- [ ] NWCF vs. mission-funded distinctions
-- [ ] Fast Cues/Common Board Pivots refresh
-- [ ] Glossary pipeline (IDs/chunking/cadence)
 
-## Current Jobs
+## Completed Jobs
 
 - [X] Review project scope; update `project_export.json` to current status
 - [X] Acronym audit: run replacements with `\ac{}` in prose and fill acronyms.def (skip tables/headings)
@@ -143,3 +150,11 @@
 - [X] Audit shell/PowerShell script parity and tasks.json OS routing (2025-12-24)
 - [X] Tidy settings_manager.py spacing (2025-12-24)
 - [X] Add NDS, C2, AI, CTF, and BES acronyms (2025-12-24)
+- [X] Add shell script runner Jupyter notebook under scripts (2025-12-24)
+- [X] Resolve remaining undefined citation warnings in `build/main.log` after biber runs
+- [X] Explain Gemini Code Assist agent mode toggle and error troubleshooting (2025-12-25)
+- [X] Verify Gemini CLI install path/version and guidance on install method (2025-12-25)
+- [X] Add VS Code task to merge settings (2025-12-25)
+- [X] Fix BUILD-WSL LaTeX Workshop command path to avoid ENOENT (2025-12-25)
+- [X] Uninstall Windows Codex CLI (remove pnpm global shims and package dir) (2025-12-26)
+- [X] Guidance: shell_runner.ipynb sudo apt-get hang and notebook TTY limits (2025-12-26)

@@ -8,6 +8,7 @@
 \newacronym{ccdr}{CCDR}{Combatant Commander}
 \newacronym{ccmd}{CCMD}{Combatant Command}
 \newacronym{cjcs}{CJCS}{Chairman of the Joint Chiefs of Staff}
+\newacronym{cjcsi}{CJCSI}{Chairman of the Joint Chiefs of Staff Instruction}
 \newacronym{vcjcs}{VCJCS}{Vice-Chairman of the Joint Chiefs of Staff}
 \newacronym{jroc}{JROC}{Joint Requirements Oversight Council}
 \newacronym{jcb}{JCB}{Joint Capabilities Board}
@@ -81,6 +82,7 @@
 \newacronym{supship}{SUPSHIP}{Supervisor of Shipbuilding}
 \newacronym{uss}{USS}{United States Ship}
 \newacronym{hii}{HII}{Huntington Ingalls Industries}
+\newacronym{nassco}{NASSCO}{National Steel and Shipbuilding Company}
 \newacronym{siop}{SIOP}{Shipyard Infrastructure Optimization Program}
 \newacronym[shortplural={PMWs},longplural={Program Management Warfare offices}]{pmw}{PMW}{Program Management Warfare (NAVWAR PEO C4I/NAVAIR PMS series)}
 \newacronym{surfmepp}{SURFMEPP}{Surface Maintenance Engineering Planning Program}
@@ -270,6 +272,7 @@
 	longplural={Defense Acquisition Executive Summaries}
 ]{daes}{DAES}{Defense Acquisition Executive Summary}
 \newacronym{dag}{DAG}{Defense Acquisition Guidebook}
+\newacronym{dau}{DAU}{Defense Acquisition University}
 \newacronym{das}{DAS}{Defense Acquisition System}
 \newacronym{dbs}{DBS}{Defense Business System}
 \newacronym{cpa}{CPA}{Chairman's Program Assessment}
@@ -294,6 +297,8 @@
 	longplural={Application Programming Interfaces}
 ]{api}{API}{Application Programming Interface}
 \newacronym{dod}{DoW}{Department of War}
+\newacronym{dodd}{DoDD}{Department of War Directive}
+\newacronym{dodi}{DoDI}{Department of War Instruction}
 \newacronym{dagir}{DAGIR}{Data and Applications Government-owned Interoperable Repositories}
 \newacronym{emd}{EMD}{Engineering and Manufacturing Development}
 \newacronym{ibr}{IBR}{Integrated Baseline Review}
@@ -307,6 +312,7 @@
 	longplural={Milestone Decision Authorities}
 ]{mdauthority}{MDA}{Milestone Decision Authority}
 \newacronym{mdd}{MDD}{Materiel Development Decision}
+\newacronym{ms}{MS}{Milestone}
 \newacronym{msa}{MSA}{Materiel Solution Analysis}
 \newacronym{mta}{MTA}{Middle Tier of Acquisition}
 \newacronym{sar}{SAR}{Selected Acquisition Report}
@@ -411,6 +417,7 @@
 \newacronym{uca}{UCA}{Undefinitized Contract Action}
 \newacronym{rfi}{RFI}{Request for Information}
 \newacronym{rfp}{RFP}{Request for Proposal}
+\newacronym{qa}{Q\&A}{Questions and Answers}
 \newacronym{sow}{SOW}{Statement of Work}
 \newacronym{oci}{OCI}{Organizational Conflict of Interest}
 \newacronym{arc}{ARC}{Acquisition Research Center}
@@ -496,6 +503,7 @@
 
 % --- Appropriations & Funding Accounts ---
 
+\newacronym{rnd}{R\&D}{Research and Development}
 \newacronym{rdte}{RDT\&E}{Research, Development, Test, and Evaluation}
 \newacronym{opn}{OPN}{Other Procurement, Navy}
 \newacronym{omn}{OMN}{Operation and Maintenance, Navy}
@@ -738,6 +746,7 @@
 \newacronym{rdml}{RDML}{Rear Admiral (Lower Half)}
 \newacronym{radm}{RADM}{Rear Admiral (Upper Half)}
 \newacronym{vadm}{VADM}{Vice Admiral}
+\newacronym{adm}{ADM}{Admiral}
 
 % --- Extended Reference (optional) ---
 
@@ -749,6 +758,7 @@
 \newacronym{nrl}{NRL}{Naval Research Laboratory}
 \newacronym{nsc}{NSC}{National Security Council}
 \newacronym{onr}{ONR}{Office of Naval Research}
+\newacronym{us}{U.S.}{United States}
 \newacronym{usaf}{USAF}{United States Air Force}
 \newacronym{usafricom}{USAFRICOM}{United States Africa Command}
 \newacronym{uscentcom}{USCENTCOM}{United States Central Command}
