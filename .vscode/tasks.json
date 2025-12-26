@@ -11,8 +11,8 @@
       "label": "Git: Push (safe auto)",
       "type": "shell",
       "command": "./scripts/push.sh",
-      "options": {
-        "cwd": "${workspaceFolder}"
+    //   "options": {
+    //     "cwd": "${workspaceFolder}"
       },
       "problemMatcher": [],
       "presentation": {
