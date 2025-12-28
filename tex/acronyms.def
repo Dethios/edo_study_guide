@@ -31,9 +31,12 @@
 \newacronym{usdre}{USD(R\&E)}{Under Secretary of Defense for Research and Engineering}
 \newacronym{usdp}{USD(P)}{Under Secretary of Defense for Policy}
 \newacronym{usdc}{USD(C)}{Under Secretary of Defense (Comptroller)}
+\newacronym{usdins}{USD(I\&S)}{Under Secretary of Defense for Intelligence and Security}
 \newacronym{ouswas}{OUSW(A\&S)}{Office of the Under Secretary of War for Acquisition and Sustainment}
 \newacronym{ouswre}{OUSW(R\&E)}{Office of the Under Secretary of War for Research and Engineering}
 \newacronym{ouswc}{OUSW(C)}{Office of the Under Secretary of War (Comptroller)}
+\newacronym{dni}{DNI}{Director of National Intelligence}
+\newacronym{odni}{ODNI}{Office of the Director of National Intelligence}
 \newacronym{asnrdanda}{{ASN(RD\&A)}}{Assistant Secretary of the Navy for Research, Development and Acquisition}
 \newacronym{asn}{ASN}{Assistant Secretary of the Navy}
 \newacronym{dasn}{DASN}{Deputy Assistant Secretary of the Navy}
@@ -486,6 +489,14 @@
 \newacronym{cr}{CR}{Continuing Resolution}
 \newacronym{ola}{OLA}{Office of Legislative Affairs}
 
+% --- Intelligence Budgeting ---
+
+\newacronym{dia}{DIA}{Defense Intelligence Agency}
+\newacronym{nga}{NGA}{National Geospatial-Intelligence Agency}
+\newacronym{ic}{IC}{Intelligence Community}
+\newacronym{nip}{NIP}{National Intelligence Program}
+\newacronym{mip}{MIP}{Military Intelligence Program}
+
 % --- Congressional Engagement & Statutes ---
 
 \newacronym{ndaa}{NDAA}{National Defense Authorization Act}
@@ -746,7 +757,7 @@
 \newacronym{rdml}{RDML}{Rear Admiral (Lower Half)}
 \newacronym{radm}{RADM}{Rear Admiral (Upper Half)}
 \newacronym{vadm}{VADM}{Vice Admiral}
-\newacronym{adm}{ADM}{Admiral}
+\newacronym{admr}{ADM}{Admiral}
 
 % --- Extended Reference (optional) ---
 
