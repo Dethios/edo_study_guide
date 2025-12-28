@@ -49,6 +49,7 @@
 \newacronym{meia}{MEIA}{Mission Engineering and Integration Activity}
 \newacronym{pmildep}{PMILDEP}{Principal Military Deputy}
 \newacronym{was}{WAS}{Warfighting Acquisition System}
+\newacronym{mosa}{MOSA}{Modular Open Systems Approach}
 \newacronym{nscf}{NSCF}{National Security Capital Forum}
 \newacronym{nds}{NDS}{National Defense Strategy}
 \newacronym{mda}{MDA}{Missile Defense Agency}
@@ -754,7 +755,7 @@
 \newacronym{rdml}{RDML}{Rear Admiral (Lower Half)}
 \newacronym{radm}{RADM}{Rear Admiral (Upper Half)}
 \newacronym{vadm}{VADM}{Vice Admiral}
-\newacronym{adm}{ADM}{Admiral}
+\newacronym{admiral}{ADM}{Admiral}
 
 % --- Extended Reference (optional) ---
 
