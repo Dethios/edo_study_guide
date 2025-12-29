@@ -1294,8 +1294,28 @@
           ".vscode/settings.json",
           "settings_master.json",
           "AGENTS.md",
-          "project_export.json"
+        "project_export.json"
+      ],
+      "notable_citations": [],
+      "bias_or_quality_notes": "Tooling configuration update only; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Add NIP/MIP NRO funding explainer",
+        "date_range": "2025-12-27 to 2025-12-27",
+        "participants": [
+          "user",
+          "assistant"
         ],
+        "purpose": "Add an NRO-focused overview of NIP v.s. MIP funding lanes and refresh supporting sources.",
+        "summary": "Inserted a NIP/MIP funding subsection in Program Funding and Execution that covers NRO’s dual oversight, governance chains, reprogramming deltas, and recent toplines; added related acronyms, source citations, and guarded the glossaries rerun check for TeX Live 2023; added ICD 104, DoDD 5205.12, and ODNI/DoD topline releases to the bibliography.",
+        "key_decisions": [
+          "Place the NIP/MIP explainer alongside colors-of-money and reprogramming content to keep fiscal guidance together.",
+          "Define needed acronyms (DNI/ODNI/IC/NIP/MIP/USD(I&S)/NGA/DIA) and cite ICD 104, DoDD 5205.12, and recent ODNI/DoD topline releases.",
+          "Provide+renew the glossaries no-idx rerun check so the build works on TeX Live 2023."
+        ],
+        "action_items": [
+          "Convert legacy month fields to numeric values to clear biber month warnings.",
+          "Undefined citation/reference warnings elsewhere in the document remain and should be resolved separately."
         "notable_citations": [],
         "bias_or_quality_notes": "Tooling configuration update only; no study guide content changes."
       },
@@ -1320,6 +1340,18 @@
           "tex/chapters/9_Program_Funding_and_Execution.tex",
           "tex/acronyms.def",
           "tex/edo.bib",
+          "tex/moderntech.sty",
+          "project_export.json",
+          "AGENTS.md"
+        ],
+        "notable_citations": [
+          "ICD-104",
+          "DoDD-5205-12",
+          "ODNI-NIP-FY25",
+          "DoD-MIP-FY24",
+          "DoD-MIP-FY25-Request"
+        ],
+        "bias_or_quality_notes": "Content focuses on fiscal/oversight mechanics; board-prep depth only and not legal advice."
           "AGENTS.md",
           "project_export.json",
           "build/main.log"
