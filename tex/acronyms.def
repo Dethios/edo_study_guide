@@ -57,6 +57,14 @@
 \newacronym{mda}{MDA}{Missile Defense Agency}
 \newacronym{ssp}{SSP}{Strategic Systems Program}
 \newacronym{omb}{OMB}{Office of Management and Budget}
+\newacronym{dni}{DNI}{Director of National Intelligence}
+\newacronym{odni}{ODNI}{Office of the Director of National Intelligence}
+\newacronym{ic}{IC}{Intelligence Community}
+\newacronym{nip}{NIP}{National Intelligence Program}
+\newacronym{mip}{MIP}{Military Intelligence Program}
+\newacronym{usdis}{{USD(I\&S)}}{Under Secretary of Defense for Intelligence and Security}
+\newacronym{dia}{DIA}{Defense Intelligence Agency}
+\newacronym{nga}{NGA}{National Geospatial-Intelligence Agency}
 \newacronym{ofpp}{OFPP}{Office of Federal Procurement Policy}
 \newacronym{oira}{OIRA}{Office of Information and Regulatory Affairs}
 \newacronym{doe}{DOE}{Department of Energy}
@@ -757,7 +765,7 @@
 \newacronym{rdml}{RDML}{Rear Admiral (Lower Half)}
 \newacronym{radm}{RADM}{Rear Admiral (Upper Half)}
 \newacronym{vadm}{VADM}{Vice Admiral}
-\newacronym{admr}{ADM}{Admiral}
+\newacronym{admiral}{ADM}{Admiral}
 
 % --- Extended Reference (optional) ---
 

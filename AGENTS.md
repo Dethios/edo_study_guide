@@ -3,8 +3,7 @@
 ## Read First
 
 - Read this file, `project_export.json`, and `.github/copilot-instructions.md` before starting any task.
-- `AGENTS.md` is the authoritative instruction/task list. `project_export.json` is the canonical project database. After each task, keep them synchronized.
-- Do not track Journal repo updates in EDO repo files.
+- `AGENTS.md` is the authoritative instruction/task list. `project_export.json` is the canonical project database. Only update these files when files under `/home/victor/projects/edo/main` are modified; when you update either file, keep them synchronized.
 - Do not track `out/main.pdf`; use for verification only. Released PDFs are gitignored in `release/` and uploaded to GitHub Releases.
 
 ## Mission and Doctrine (High Level)
@@ -38,10 +37,10 @@
 ## Workflow for Every Task
 
 - **Start:** Read `AGENTS.md`, `project_export.json`, and `.github/copilot-instructions.md`. Note assumptions.
-- **Finish:**
+- **Finish (only if files under `/home/victor/projects/edo/main` were modified):**
   - Write a brief summary of completed work and current chat context.
   - Update `project_export.json` with new context, added instructions, and current status.
-- Update this file with status changes and new/recommended tasks or directives.
+- Update this file with status changes and new/recommended tasks or directives only when files under `/home/victor/projects/edo/main` were modified.
 - If the task changes any `tex/` files or tooling config for the LaTeX build:
   - Run `latexmk -shell-escape` (using project `latexmkrc`); record warnings/errors.
 - After each test/build, delete SAVE-ERROR files, temp files, and lock files (`*.lock`, `*.lck`, `*.auxlock`).
@@ -146,15 +145,21 @@
 - [X] Add settings_master.json and automate settings sync/merge (VS Code open + git push)
 - [X] Create WSL/VS Code replication notebook with optional devcontainer scaffold (2025-12-24)
 - [X] Commit devcontainer files for Ubuntu WSL replication (2025-12-24)
-- [X] Sync .codex settings from WSL to Windows CLI profile (2025-12-24)
 - [X] Audit shell/PowerShell script parity and tasks.json OS routing (2025-12-24)
 - [X] Tidy settings_manager.py spacing (2025-12-24)
 - [X] Add NDS, C2, AI, CTF, and BES acronyms (2025-12-24)
 - [X] Add shell script runner Jupyter notebook under scripts (2025-12-24)
 - [X] Resolve remaining undefined citation warnings in `build/main.log` after biber runs
-- [X] Explain Gemini Code Assist agent mode toggle and error troubleshooting (2025-12-25)
-- [X] Verify Gemini CLI install path/version and guidance on install method (2025-12-25)
 - [X] Add VS Code task to merge settings (2025-12-25)
 - [X] Fix BUILD-WSL LaTeX Workshop command path to avoid ENOENT (2025-12-25)
-- [X] Uninstall Windows Codex CLI (remove pnpm global shims and package dir) (2025-12-26)
 - [X] Guidance: shell_runner.ipynb sudo apt-get hang and notebook TTY limits (2025-12-26)
+- [X] Add sudo -n guard to shell_runner.ipynb (2025-12-26)
+- [X] Guidance: WSL + VS Code terminal vs Jupyter terminal behavior (2025-12-26)
+- [X] Merge on-open tasks with sudo -v precheck (2025-12-26)
+- [X] Guidance: sudo timestamp not shared with notebook (2025-12-26)
+- [X] Guidance: devcontainer TeX Live setup summary (2025-12-26)
+- [X] Align WSL TeX Live install with devcontainer and add package/font audit (2025-12-26)
+- [X] WSL installer: install missing required/optional fonts (2025-12-26)
+- [X] WSL notebook: add ssh backup/restore and sudoers guidance (2025-12-26)
+- [X] WSL sudoers: use $USER instead of hard-coded name (2025-12-26)
+- [X] Add NIP/MIP funding subsection (NRO context) with citations and acronyms (2025-12-28)

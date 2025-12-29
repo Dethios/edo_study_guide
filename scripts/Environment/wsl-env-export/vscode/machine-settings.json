@@ -84,16 +84,16 @@
     // workbench.editorAssociations: Define object/map for workbench editor Associations. Edit the value to change behavior.
     "workbench.editorAssociations": {
         "*.copilotmd": "cweijan.markdownViewer.optional",
+        "*.ipynb": "jupyter-notebook",
         "*.markdown": "markdown-preview-enhanced",
-        "*.md": "markdown-preview-enhanced",
+        "*.md": "cweijan.markdownViewer.optional",
         "*.mdown": "markdown-preview-enhanced",
         "*.mdx": "markdown-preview-enhanced",
         "*.mkd": "markdown-preview-enhanced",
         "*.mkdn": "markdown-preview-enhanced",
         "*.pdf": "latex-workshop-pdf-hook",
         "*.qmd": "markdown-preview-enhanced",
-        "*.rmd": "markdown-preview-enhanced",
-        "*.ipynb": "jupyter-notebook"
+        "*.rmd": "markdown-preview-enhanced"
     },
     // workbench.enableExperiments: Enable or disable workbench enable Experiments. Edit the value to change behavior.
     "workbench.enableExperiments": true,
@@ -567,8 +567,20 @@
     // ===================================================================
     // Notebook - Notebook UI behavior.
     // ===================================================================
+    // notebook.formatOnCellExecution: Enable or disable notebook format On Cell Execution. Edit the value to change behavior.
+    "notebook.formatOnCellExecution": true,
+    // notebook.formatOnSave.enabled: Enable or disable notebook format On Save enabled. Edit the value to change behavior.
+    "notebook.formatOnSave.enabled": true,
+    // notebook.insertFinalNewline: Enable or disable notebook insert Final Newline. Edit the value to change behavior.
+    "notebook.insertFinalNewline": true,
+    // notebook.lineNumbers: Set notebook line Numbers. Edit the value to change behavior.
+    "notebook.lineNumbers": "on",
+    // notebook.output.scrolling: Enable or disable notebook output scrolling. Edit the value to change behavior.
+    "notebook.output.scrolling": true,
     // notebook.output.wordWrap: Enable or disable notebook output word Wrap. Edit the value to change behavior.
     "notebook.output.wordWrap": true,
+    // notebook.stickyScroll.enabled: Enable or disable notebook sticky Scroll enabled. Edit the value to change behavior.
+    "notebook.stickyScroll.enabled": true,
 
     // ===================================================================
     // Markdown - Markdown preview and extensions.
@@ -1709,6 +1721,22 @@
     "invisibleAiChartDetector.doubleBlankThreshold": 3,
     // jake.autoDetect: Set jake auto Detect. Edit the value to change behavior.
     "jake.autoDetect": "on",
+    // jupyter.askForKernelRestart: Enable or disable jupyter ask For Kernel Restart. Edit the value to change behavior.
+    "jupyter.askForKernelRestart": false,
+    // jupyter.contextualHelp.detailLevel: Set jupyter contextual Help detail Level. Edit the value to change behavior.
+    "jupyter.contextualHelp.detailLevel": "verbose",
+    // jupyter.enableExtendedPythonKernelCompletions: Enable or disable jupyter enable Extended Python Kernel Completions. Edit the value to change behavior.
+    "jupyter.enableExtendedPythonKernelCompletions": true,
+    // jupyter.executionAnalysis.enabled: Enable or disable jupyter execution Analysis enabled. Edit the value to change behavior.
+    "jupyter.executionAnalysis.enabled": true,
+    // jupyter.inspectKernelMessages.enabled: Enable or disable jupyter inspect Kernel Messages enabled. Edit the value to change behavior.
+    "jupyter.inspectKernelMessages.enabled": true,
+    // jupyter.interactiveWindow.notebookRepl: Enable or disable jupyter interactive Window notebook Repl. Edit the value to change behavior.
+    "jupyter.interactiveWindow.notebookRepl": true,
+    // jupyter.logKernelOutputSeparately: Enable or disable jupyter log Kernel Output Separately. Edit the value to change behavior.
+    "jupyter.logKernelOutputSeparately": true,
+    // jupyter.themeMatplotlibPlots: Enable or disable jupyter theme Matplotlib Plots. Edit the value to change behavior.
+    "jupyter.themeMatplotlibPlots": true,
     // latex-utilities.formattedPaste.image.template: Set latex utilities formatted Paste image template. Edit the value to change behavior.
     "latex-utilities.formattedPaste.image.template": "\\includegraphics[width=.8\\linewidth]{${imageFilePath}}",
     // latex-utilities.formattedPaste.imagePathOverride: Set latex utilities formatted Paste image Path Override. Edit the value to change behavior.

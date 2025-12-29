@@ -85,15 +85,15 @@
     "workbench.editorAssociations": {
         "*.copilotmd": "cweijan.markdownViewer.optional",
         "*.ipynb": "jupyter-notebook",
-        "*.markdown": "markdown-preview-enhanced",
-        "*.md": "markdown-preview-enhanced",
-        "*.mdown": "markdown-preview-enhanced",
-        "*.mdx": "markdown-preview-enhanced",
-        "*.mkd": "markdown-preview-enhanced",
-        "*.mkdn": "markdown-preview-enhanced",
+        "*.markdown": "cweijan.markdownViewer.optional",
+        "*.md": "cweijan.markdownViewer.optional",
+        "*.mdown": "cweijan.markdownViewer.optional",
+        "*.mdx": "cweijan.markdownViewer.optional",
+        "*.mkd": "cweijan.markdownViewer.optional",
+        "*.mkdn": "cweijan.markdownViewer.optional",
         "*.pdf": "latex-workshop-pdf-hook",
-        "*.qmd": "markdown-preview-enhanced",
-        "*.rmd": "markdown-preview-enhanced"
+        "*.qmd": "cweijan.markdownViewer.optional",
+        "*.rmd": "cweijan.markdownViewer.optional"
     },
     // workbench.enableExperiments: Enable or disable workbench enable Experiments. Edit the value to change behavior.
     "workbench.enableExperiments": true,
@@ -592,6 +592,8 @@
     // ===================================================================
     // notebook.formatOnCellExecution: Enable or disable notebook format On Cell Execution. Edit the value to change behavior.
     "notebook.formatOnCellExecution": true,
+    // notebook.formatOnSave: Enable or disable notebook format On Save. Edit the value to change behavior.
+    "notebook.formatOnSave": true,
     // notebook.formatOnSave.enabled: Enable or disable notebook format On Save enabled. Edit the value to change behavior.
     "notebook.formatOnSave.enabled": true,
     // notebook.insertFinalNewline: Enable or disable notebook insert Final Newline. Edit the value to change behavior.
@@ -1621,6 +1623,11 @@
         "editor.formatOnSave": false,
         "editor.insertSpaces": true,
         "editor.tabSize": 4
+    },
+    // [python]: Language-specific overrides for [python]. Update the settings inside this object to change behavior.
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true
     },
     // [tex]: Language-specific overrides for [tex]. Update the settings inside this object to change behavior.
     "[tex]": {

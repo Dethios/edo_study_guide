@@ -84,6 +84,7 @@
     // workbench.editorAssociations: Define object/map for workbench editor Associations. Edit the value to change behavior.
     "workbench.editorAssociations": {
         "*.copilotmd": "cweijan.markdownViewer.optional",
+        "*.ipynb": "jupyter-notebook",
         "*.markdown": "cweijan.markdownViewer.optional",
         "*.md": "cweijan.markdownViewer.optional",
         "*.mdown": "cweijan.markdownViewer.optional",
@@ -111,7 +112,9 @@
     // workbench.quickOpen.preserveInput: Enable or disable workbench quick Open preserve Input. Edit the value to change behavior.
     "workbench.quickOpen.preserveInput": true,
     // workbench.settings.applyToAllProfiles: Define list for workbench settings apply To All Profiles. Edit the value to change behavior.
-    "workbench.settings.applyToAllProfiles": ["prettier.endOfLine"],
+    "workbench.settings.applyToAllProfiles": [
+        "prettier.endOfLine"
+    ],
     // workbench.settings.openDefaultSettings: Enable or disable workbench settings open Default Settings. Edit the value to change behavior.
     "workbench.settings.openDefaultSettings": false,
     // workbench.tree.indent: Set numeric value for workbench tree indent. Edit the value to change behavior.
@@ -283,38 +286,59 @@
         "strings": "#A7C795",
         "textMateRules": [
             {
-                "scope": ["comment", "punctuation.definition.comment"],
+                "scope": [
+                    "comment",
+                    "punctuation.definition.comment"
+                ],
                 "settings": {
                     "fontStyle": "italic",
                     "foreground": "#7E8591"
                 }
             },
             {
-                "scope": ["constant.numeric", "constant.language.boolean"],
+                "scope": [
+                    "constant.numeric",
+                    "constant.language.boolean"
+                ],
                 "settings": {
                     "foreground": "#F1D8A5"
                 }
             },
             {
-                "scope": ["keyword", "storage.type", "storage.modifier"],
+                "scope": [
+                    "keyword",
+                    "storage.type",
+                    "storage.modifier"
+                ],
                 "settings": {
                     "foreground": "#8FB3D9"
                 }
             },
             {
-                "scope": ["entity.name.function", "support.function"],
+                "scope": [
+                    "entity.name.function",
+                    "support.function"
+                ],
                 "settings": {
                     "foreground": "#8ED1E3"
                 }
             },
             {
-                "scope": ["string", "string.quoted", "string.template"],
+                "scope": [
+                    "string",
+                    "string.quoted",
+                    "string.template"
+                ],
                 "settings": {
                     "foreground": "#A7C795"
                 }
             },
             {
-                "scope": ["entity.name.type", "support.type", "support.class"],
+                "scope": [
+                    "entity.name.type",
+                    "support.type",
+                    "support.class"
+                ],
                 "settings": {
                     "foreground": "#94D0CC"
                 }
@@ -566,8 +590,20 @@
     // ===================================================================
     // Notebook - Notebook UI behavior.
     // ===================================================================
+    // notebook.formatOnCellExecution: Enable or disable notebook format On Cell Execution. Edit the value to change behavior.
+    "notebook.formatOnCellExecution": true,
+    // notebook.formatOnSave.enabled: Enable or disable notebook format On Save enabled. Edit the value to change behavior.
+    "notebook.formatOnSave.enabled": true,
+    // notebook.insertFinalNewline: Enable or disable notebook insert Final Newline. Edit the value to change behavior.
+    "notebook.insertFinalNewline": true,
+    // notebook.lineNumbers: Set notebook line Numbers. Edit the value to change behavior.
+    "notebook.lineNumbers": "on",
+    // notebook.output.scrolling: Enable or disable notebook output scrolling. Edit the value to change behavior.
+    "notebook.output.scrolling": true,
     // notebook.output.wordWrap: Enable or disable notebook output word Wrap. Edit the value to change behavior.
     "notebook.output.wordWrap": true,
+    // notebook.stickyScroll.enabled: Enable or disable notebook sticky Scroll enabled. Edit the value to change behavior.
+    "notebook.stickyScroll.enabled": true,
 
     // ===================================================================
     // Markdown - Markdown preview and extensions.
@@ -729,19 +765,27 @@
     "latex-workshop.latex.recipes": [
         {
             "name": "BUILD-WIN",
-            "tools": ["build-win"]
+            "tools": [
+                "build-win"
+            ]
         },
         {
             "name": "BUILD-WSL",
-            "tools": ["build-wsl"]
+            "tools": [
+                "build-wsl"
+            ]
         },
         {
             "name": "BUILD-QUIET",
-            "tools": ["build-quiet"]
+            "tools": [
+                "build-quiet"
+            ]
         },
         {
             "name": "AUTO",
-            "tools": ["build-wsl-watch"]
+            "tools": [
+                "build-wsl-watch"
+            ]
         }
     ],
     // latex-workshop.latex.rootFile.doNotPrompt: Enable or disable latex workshop latex root File do Not Prompt. Edit the value to change behavior.
@@ -751,7 +795,10 @@
     // latex-workshop.latex.tools: Define list for latex workshop latex tools. Edit the value to change behavior.
     "latex-workshop.latex.tools": [
         {
-            "args": ["%WORKSPACE_FOLDER%/scripts/build.sh", "%DOC_EXT%"],
+            "args": [
+                "%WORKSPACE_FOLDER%/scripts/build.sh",
+                "%DOC_EXT%"
+            ],
             "command": "/bin/bash",
             "name": "build-wsl"
         },
@@ -843,7 +890,11 @@
     // ltex.enabled: Enable or disable ltex enabled. Edit the value to change behavior.
     "ltex.enabled": true,
     // ltex.enabledTypes: Enable or disable ltex enabled Types. Edit the value to change behavior.
-    "ltex.enabledTypes": ["sentence", "comment", "string"],
+    "ltex.enabledTypes": [
+        "sentence",
+        "comment",
+        "string"
+    ],
     // ltex.ignorePaths: Define list for ltex ignore Paths. Edit the value to change behavior.
     "ltex.ignorePaths": [
         "**/main.tex",
@@ -1708,6 +1759,22 @@
     "invisibleAiChartDetector.doubleBlankThreshold": 3,
     // jake.autoDetect: Set jake auto Detect. Edit the value to change behavior.
     "jake.autoDetect": "on",
+    // jupyter.askForKernelRestart: Enable or disable jupyter ask For Kernel Restart. Edit the value to change behavior.
+    "jupyter.askForKernelRestart": false,
+    // jupyter.contextualHelp.detailLevel: Set jupyter contextual Help detail Level. Edit the value to change behavior.
+    "jupyter.contextualHelp.detailLevel": "verbose",
+    // jupyter.enableExtendedPythonKernelCompletions: Enable or disable jupyter enable Extended Python Kernel Completions. Edit the value to change behavior.
+    "jupyter.enableExtendedPythonKernelCompletions": true,
+    // jupyter.executionAnalysis.enabled: Enable or disable jupyter execution Analysis enabled. Edit the value to change behavior.
+    "jupyter.executionAnalysis.enabled": true,
+    // jupyter.inspectKernelMessages.enabled: Enable or disable jupyter inspect Kernel Messages enabled. Edit the value to change behavior.
+    "jupyter.inspectKernelMessages.enabled": true,
+    // jupyter.interactiveWindow.notebookRepl: Enable or disable jupyter interactive Window notebook Repl. Edit the value to change behavior.
+    "jupyter.interactiveWindow.notebookRepl": true,
+    // jupyter.logKernelOutputSeparately: Enable or disable jupyter log Kernel Output Separately. Edit the value to change behavior.
+    "jupyter.logKernelOutputSeparately": true,
+    // jupyter.themeMatplotlibPlots: Enable or disable jupyter theme Matplotlib Plots. Edit the value to change behavior.
+    "jupyter.themeMatplotlibPlots": true,
     // latex-utilities.formattedPaste.image.template: Set latex utilities formatted Paste image template. Edit the value to change behavior.
     "latex-utilities.formattedPaste.image.template": "\\includegraphics[width=.8\\linewidth]{${imageFilePath}}",
     // latex-utilities.formattedPaste.imagePathOverride: Set latex utilities formatted Paste image Path Override. Edit the value to change behavior.
@@ -1796,7 +1863,10 @@
     // search.useIgnoreFiles: Enable or disable search use Ignore Files. Edit the value to change behavior.
     "search.useIgnoreFiles": true,
     // security.allowedUNCHosts: Define list for security allowed UNC Hosts. Edit the value to change behavior.
-    "security.allowedUNCHosts": ["TRUENAS", "wsl.localhost"],
+    "security.allowedUNCHosts": [
+        "TRUENAS",
+        "wsl.localhost"
+    ],
     // security.workspace.trust.untrustedFiles: Set security workspace trust untrusted Files. Edit the value to change behavior.
     "security.workspace.trust.untrustedFiles": "open",
     // telemetry.telemetryLevel: Set telemetry telemetry Level. Edit the value to change behavior.
@@ -1818,19 +1888,5 @@
     // yaml.format.proseWrap: Set yaml format prose Wrap. Edit the value to change behavior.
     "yaml.format.proseWrap": "always",
     // yaml.keyOrdering: Enable or disable yaml key Ordering. Edit the value to change behavior.
-    "yaml.keyOrdering": false,
-    "jupyter.enableExtendedPythonKernelCompletions": true,
-    "jupyter.executionAnalysis.enabled": true,
-    "jupyter.interactiveWindow.notebookRepl": true,
-    "jupyter.logKernelOutputSeparately": true,
-    "jupyter.themeMatplotlibPlots": true,
-    "notebook.formatOnCellExecution": true,
-    "notebook.formatOnSave.enabled": true,
-    "notebook.insertFinalNewline": true,
-    "notebook.lineNumbers": "on",
-    "notebook.output.scrolling": true,
-    "notebook.stickyScroll.enabled": true,
-    "jupyter.contextualHelp.detailLevel": "verbose",
-    "jupyter.inspectKernelMessages.enabled": true,
-    "jupyter.askForKernelRestart": false
+    "yaml.keyOrdering": false
 }

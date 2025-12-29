@@ -1,7 +1,7 @@
 {
   "project_metadata": {
     "project_name": "EDO Acquisition Tutor",
-    "export_timestamp_iso": "2025-12-25T20:04:21-05:00",
+    "export_timestamp_iso": "2025-12-27T22:15:18-05:00",
     "project_instructions_raw": "ROLE & MISSION\nYou are a Navy EDO Acquisition Tutor. Teach, test, and clarify U.S. Navy/DoW acquisition for EDO qualification boards (primary) and general mastery (secondary). Explain the full breadth clearly, tie assertions to current primary sources, and emphasize Navy-unique overlays.\n\nAUDIENCE\nEngineering Duty Officers preparing for boards and practicing program/technical authority roles. Assume motivated learners who may be new to acquisition jargon.\n\nCANONICAL SOURCES (teach-from-truth)\nStatute: Titles 10 & 41 U.S.C.; relevant NDAA provisions.\nRegulation: FAR, DFARS, DFARS PGI; NMCARS if applicable.\nPolicy/Framework: DoDI 5000 series (MCA, SWP, MTA, Urgent), plus JCIDS artifacts as needed.\nFiscal: DoW FMR 7000.14-R; GAO Red Book.\nNavy overlays: SECNAV/OPNAV/NAVSEA instructions; PEO/TA guidance; shipbuilding nuances (SCN/WPN).\nCourseware: EDO-specific coursebook PDFs (baseline current as of 2025-09-12).\nRule: When facts can change (thresholds, definitions, authorities), verify the current controlling document and cite title + section (if known) + publication date.\n\nRECENCY POLICY\nStamp every deliverable with \"Current as of [YYYY-MM-DD]\". Re-verify for NDAA/FAR/DFARS/DoDI/SECNAV changes and PPBE shifts. If recency cannot be confirmed (e.g., offline excerpt), label Recency check pending and state assumptions.\n\nDEFAULTS & MODES\nDefault Mode: EDO Board Prep (concise, decision-focused). Optional Mode: Mastery (full exposition, examples, deeper context). Diagrams: Provide Mermaid visuals only when explicitly requested; otherwise default to textual decision logic.\n\nTEACHING STYLE (layered structure)\nPlain-language brief; Navy overlays & authority touchpoints; Fiscal/PPBE & colors of money (SCN/WPN nuance); Decision Trace; Citations; Assumptions & uncertainties; Self-score.\n\nINTERACTION RULES\nAsk 2-3 targeted clarifying questions for substantial tasks; if no reply, proceed best-effort and state assumptions. Offer an opposing view/edge case where professional judgment could differ. Avoid flashcards by default.\n\nDEFAULT OUTPUT TEMPLATE\nSummary; Navy Overlays; Fiscal/PPBE; Decision Trace; Citations; Current as of; Assumptions & Uncertainties; Self-Score.\n\nCOVERAGE MAP (breadth over time)\nAAF pathways & artifacts; JCIDS; governance reviews; contracting fundamentals; fiscal law & PPBE (SCN/WPN); cost/schedule/performance; SE & T&E; logistics & sustainment; software & data; rapid authorities; Navy-unique overlays & authority boundaries.\n\nQUALITY ASSURANCE\nSelf-score every answer (Accuracy, Completeness, Clarity, Relevance, Practical usefulness). If any <8, revise and note the fix.\n\nTOOLING & CITATION BEHAVIOR\nVerify rules/thresholds with current primary sources and cite exact dates; prefer official/public sources. Call out Navy overlay deltas vs generic DAU guidance.\n\nSAFETY & COMPLIANCE\nNot legal advice. Respect OPSEC/CUI and procurement integrity. Use only unclassified, publicly releasable sources.\n\nCODE ARGUMENTS\n `-latexindent` to format LaTeX sources without backups,ARGS: `wd, -s, -m, -l=.latexindent.yaml, -c=%TEMP%/latexindent, -y=defaultIndent:'  ' `; `-latexmk` for continuous build with LuaLaTeX, ARGS: `-lualatex, -pdf, -dvi-, -ps-, -outdir=out, -auxdir=build, -f, -shell-escape, -interaction=nonstopmode, -synctex=1, -file-line-error, %DOC%`; `-fontspec` for custom fonts (Merriweather, Montserrat, Source Sans Pro).",
     "project_memory_highlights": [
       "LaTeX-based EDO Board Prep Study Guide with diagrams, tables, and citations.",
@@ -26,7 +26,6 @@
       "Renamed CNO messaging PDFs in assets/information to descriptive filenames (CNOTE 1-3, Day One message, Charge of Command) for clarity.",
       "Build scripts now scrub SAVE-ERROR/temp/lock files after each build/clean pass.",
       "Keep out/main.pdf untracked; use scripts/release.* to generate dated PDFs in release/ before commit/push.",
-      "WSL: switched to a systemd-managed user ssh-agent and simplified ~/.bashrc to export SSH_AUTH_SOCK only.",
       "Added scrub helper scripts (bash/PowerShell) and a VS Code task for SAVE-ERROR/temp/lock cleanup; build scripts now call the scrub helper.",
       "Added ai-context scripts (bash/PowerShell) and a VS Code task to build scratch/ai_context.zip with git diffs, log excerpts, and selected files for AI workflows.",
       "Release scripts now copy the dated PDF and then commit/push changes; push scripts no longer create release files.",
@@ -38,11 +37,11 @@
       "Document content now uses CC BY-NC 4.0 (LICENSE) with MIT for scripts (LICENSE-CODE); CONTRIBUTING asks for PR-based derivatives.",
       "Added standard public repo docs: README, CHANGELOG, CODE_OF_CONDUCT, CONTRIBUTING, SECURITY.",
       "Tracked tex/assets/information/2025-National-Security-Strategy.pdf in git.",
-      "Generated scratch/settings_diff.md comparing VS Code settings across Windows user, WSL machine, and project workspaces.",
+      "Generated scratch/settings_diff.md comparing VS Code settings sources.",
       "Verified GitHub release notes match CHANGELOG.md for release-20251221.",
-      "Added .gitattributes to normalize LF line endings and mark common binary assets; cleaned VS Code tasks (removed duplicate AI task, added Windows override for push, and skipped WSL update on non-Linux).",
-      "Renormalized the repo after adding .gitattributes so line endings are consistent across WSL/Windows.",
-      "Merged VS Code settings across Windows user, WSL machine, and project workspaces; applied requested overrides, unified cSpell lists, and normalized LaTeX Workshop recipes/tools to scripts/build.*.",
+      "Added .gitattributes to normalize LF line endings and mark common binary assets; cleaned VS Code tasks (removed duplicate AI task and added OS-specific overrides).",
+      "Renormalized the repo after adding .gitattributes so line endings are consistent across platforms.",
+      "Merged VS Code settings across configured sources; applied requested overrides, unified cSpell lists, and normalized LaTeX Workshop recipes/tools to scripts/build.*.",
       "Restored comment scaffolding in .vscode/settings.json, forced [latex].editor.tabSize = 4, and regenerated scratch/settings_diff.md with zero drift across settings files.",
       "Clarified the shfmt not found message and the difference between snap versus apt installation options and versions.",
       "Outlined additional shfmt installation paths beyond apt/snap (Go install, other package managers, or prebuilt binaries).",
@@ -51,19 +50,10 @@
       "Patched glossaries-extra \\@gls@link to remove the stray space token after \\leavevmode, fixing extra space in \\ac/\\glslink output.",
       "Build: latexmk -shell-escape tex/main.tex succeeded after the \\@gls@link spacing patch.",
       "Indentation: recommend 4 spaces for general coding; workspace .vscode/settings.json already set to 4 for tab/indent widths.",
-      "Verified external VS Code machine settings at /home/victor/.vscode-server/data/Machine/settings.json already use 4-space tab/indent widths; no changes needed.",
-      "WSL inventory for optimization: Ubuntu 24.04.3 on WSL2 with apt + snap; TeX Live 2025 installed system-wide at /usr/local/texlive/2025 (root-owned); NVM-managed Node v25.2.1 plus apt-installed nodejs/npm and 373 node-* packages; Docker CE from the Docker repo; snapd installed with no snaps; MiKTeX apt repo present but no MiKTeX packages; PATH contains duplicate entries and Windows toolchain paths (MiKTeX/Strawberry Perl).",
-      "Verified Windows VS Code settings at /mnt/c/Users/vic-l/AppData/Roaming/Code/User/settings.json already use 4-space tab/indent widths; no changes needed.",
-      "WSL inventory deep-dive: npm globals are corepack/npm; pnpm global has @openai/codex; no Python user-site packages; Docker has no images/containers but ~5.6 GB build cache; apt shows ~389 auto-installed npm deps and 17 nodejs deps (node-* bloat tied to apt npm).",
       "Acronym spacing fix: edoAcrLink now uses \\@glslink and silentglsadd boxes \\glsadd; added fallback \\theglsentrycounter/\\theHglsentrycounter for noidx writes.",
       "Build: latexmk -shell-escape tex/main.tex succeeded; biber not run, leaving undefined citations (missing build/main.bbl).",
-      "Docker build cache pruned to 0B (no images/containers); wsl.conf update to disable Windows PATH injection pending sudo access (needs appendWindowsPath=false under [interop]).",
-      "User confirmed post-cleanup binary paths: node/npm/pnpm from NVM, latexmk/lualatex from TeX Live; size check shows /usr/local/texlive/2025 ~11 GB, ~/.nvm ~234 MB, and pnpm store ~328 MB; no Python user-site directory present.",
       "Explained latexindent error caused by missing Perl module File::HomeDir and how to install it (e.g., libfile-homedir-perl or CPAN).",
       "Ran latexindent over all .tex files with the specified flags, removed the no-extension backup files it created, and rebuilt with latexmk; build succeeds but pdf-backend unreferenced glossary destination warnings remain.",
-      "Updated global pnpm install of @openai/codex to 0.77.0.",
-      "Verified codex launcher uses the pnpm global store for @openai/codex 0.77.0.",
-      "Documented how to add the GitHub MCP server to ~/.codex/config.toml, including OAuth vs bearer-token options.",
       "Optimized AGENTS.md for Codex guidelines (condensed instructions and removed session update history).",
       "Added GEMINI.md shim to mirror AGENTS.md instructions for Gemini tools.",
       "Removed AGENTS export artifact and related tooling; AGENTS.md workflow no longer includes an export step.",
@@ -78,10 +68,10 @@
       "Updated AGENTS.md with GPT-5.2 response/verbosity, scope control, ambiguity handling, tool usage, and high-risk self-check guidance based on the prompting guide.",
       "Integrated memory_update.md instructions into AGENTS.md, removed memory_update.md, and documented other instruction sources.",
       "Moved the project export schema to schemas/project_export.schema.json and updated copilot instructions for the new project_export.json path.",
-      "Created scratch/wsl_vscode_setup.ipynb to export/import WSL tooling, VS Code settings/extensions, and optional devcontainer scaffold.",
+      "Created scratch/wsl_vscode_setup.ipynb to document VS Code settings/extensions export/import and optional devcontainer scaffold.",
       "Added settings_master.json with grouped comments, plus VS Code folder-open sync task, pre-push settings merge hook, and push scripts that merge settings before commit.",
-      "Updated .devcontainer/devcontainer.json extensions to match the current WSL install; Dockerfile kept as existing TeX Live image.",
-      "Updated scratch/wsl_vscode_setup.ipynb to target Ubuntu WSL and note Windows user settings sync.",
+      "Updated .devcontainer/devcontainer.json extensions to match the current tooling set; Dockerfile kept as existing TeX Live image.",
+      "Updated scratch/wsl_vscode_setup.ipynb with platform sync notes.",
       "Aligned push/release secret-guard regex joins in scripts/push.sh and scripts/release.sh; PowerShell parity confirmed; tasks.json already routes to OS-specific scripts.",
       "Tidied scripts/settings_manager.py spacing and added NDS, C2, AI, CTF, and BES acronyms.",
       "Added missing glossary acronyms (BES, NDS, C2, AI, CTF, USS, HII, LPD, SIOP) and normalized the Columbia-class title in current_events.bib to avoid percent parsing; latexmk -shell-escape tex/main.tex now completes with undefined citation warnings remaining.",
@@ -89,8 +79,8 @@
       "Confirmed build/main.log has no undefined citation warnings after biber; remaining biber warnings are duplicate keys and legacy month fields.",
       "Removed duplicate bib keys from tex/was_refs.bib and refactored AGENTS task lists into Outstanding/Resolved Lookups and Current/Completed Jobs with an instruction to maintain them.",
       "Added a VS Code task to merge settings via scripts/settings_manager.py merge.",
-      "Updated LaTeX Workshop BUILD-WSL tools to invoke /bin/bash with workspace-root script paths and %DOC_EXT% to avoid ENOENT when building from tex/.",
-      "Uninstalled Windows pnpm global @openai/codex shims and package directory; WSL install retained."
+      "Updated LaTeX Workshop build tools to invoke /bin/bash with workspace-root script paths and %DOC_EXT% to avoid ENOENT when building from tex/.",
+      "Instruction policy: only update AGENTS.md and project_export.json when files under /home/victor/projects/edo/main are modified; removed external-change references from the project export."
     ],
     "known_limits": {
       "files_visible": 1,
@@ -333,50 +323,6 @@
         "bias_or_quality_notes": "Tooling addition only; no study guide content changes."
       },
       {
-        "title_or_slug": "Gemini Code Assist agent mode toggle error",
-        "date_range": "2025-12-25 to 2025-12-25",
-        "participants": [
-          "user",
-          "assistant"
-        ],
-        "purpose": "Explain Gemini Code Assist agent mode and troubleshoot the toggle error.",
-        "summary": "Explained what Gemini Code Assist agent mode adds beyond standard chat, and outlined troubleshooting steps for the toggle error and multi-root warning using official documentation.",
-        "key_decisions": [
-          "Use official Gemini Code Assist documentation and Gemini CLI references to describe agent mode behavior and dependencies."
-        ],
-        "action_items": [
-          "If the error persists, capture the Gemini Code Assist extension version/channel, verify Gemini CLI runs locally, and share the Gemini Code Assist log output."
-        ],
-        "linked_files": [
-          "AGENTS.md",
-          "project_export.json"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "Tooling support response; no study guide content changes."
-      },
-      {
-        "title_or_slug": "Verify Gemini CLI install method",
-        "date_range": "2025-12-25 to 2025-12-25",
-        "participants": [
-          "user",
-          "assistant"
-        ],
-        "purpose": "Confirm Gemini CLI installation and advise on installation method.",
-        "summary": "Verified gemini CLI is installed and reported its path and version; provided guidance on pnpm vs documented install methods based on official docs.",
-        "key_decisions": [
-          "Use official Gemini CLI documentation to anchor recommended install methods and note pnpm is not explicitly listed."
-        ],
-        "action_items": [
-          "If you want a fully supported path, reinstall via the documented npm or npx method and confirm the version matches."
-        ],
-        "linked_files": [
-          "AGENTS.md",
-          "project_export.json"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "Tooling support response; no study guide content changes."
-      },
-      {
         "title_or_slug": "Explain ExplSyntaxOn/ExplSyntaxOff",
         "date_range": "2025-12-25 to 2025-12-25",
         "participants": [
@@ -434,32 +380,6 @@
         "bias_or_quality_notes": "Informational explanation only; no study guide edits."
       },
       {
-        "title_or_slug": "Uninstall Windows Codex CLI",
-        "date_range": "2025-12-26 to 2025-12-26",
-        "participants": [
-          "user",
-          "assistant"
-        ],
-        "purpose": "Remove the Windows Codex CLI install so only the WSL install remains.",
-        "summary": "Removed Windows pnpm global Codex shims (codex, codex.CMD, codex.ps1) and deleted the pnpm global package directory; left pnpm store/cache and Windows .codex config untouched.",
-        "key_decisions": [
-          "Limit removal to the executable shims and global package directory to avoid deleting user config or caches without request."
-        ],
-        "action_items": [
-          "If desired, delete /mnt/c/Users/vic-l/.codex and pnpm store/cache entries for a full cleanup."
-        ],
-        "linked_files": [
-          "/mnt/c/Users/vic-l/AppData/Local/pnpm/codex",
-          "/mnt/c/Users/vic-l/AppData/Local/pnpm/codex.CMD",
-          "/mnt/c/Users/vic-l/AppData/Local/pnpm/codex.ps1",
-          "/mnt/c/Users/vic-l/AppData/Local/pnpm/global/5",
-          "AGENTS.md",
-          "project_export.json"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "Tooling cleanup only; no study guide content changes."
-      },
-      {
         "title_or_slug": "Shell runner sudo apt-get hang guidance",
         "date_range": "2025-12-26 to 2025-12-26",
         "participants": [
@@ -481,6 +401,214 @@
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Tooling guidance only; no code or study guide content changes."
+      },
+      {
+        "title_or_slug": "Add sudo -n guard to shell runner",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Prevent sudo password prompts from hanging the shell_runner notebook by adding a non-interactive guard.",
+        "summary": "Inserted a sudo -n credential check in scripts/shell_runner.ipynb so the cell fails fast with a clear message if sudo needs a password.",
+        "key_decisions": [
+          "Add a guard block only; leave existing commands unchanged."
+        ],
+        "action_items": [
+          "If desired, convert subsequent sudo commands to sudo -n to avoid hangs if the timestamp expires mid-cell."
+        ],
+        "linked_files": [
+          "scripts/shell_runner.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling change only; no study guide content edits."
+      },
+      {
+        "title_or_slug": "WSL VS Code terminal vs Jupyter terminal guidance",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Clarify terminal options when using Jupyter notebooks in VS Code on WSL.",
+        "summary": "Explained that VS Code uses the integrated terminal (full TTY) alongside notebooks, while JupyterLab's built-in Terminal exists only in the JupyterLab web UI; recommended using the VS Code integrated terminal for interactive commands under WSL.",
+        "key_decisions": [
+          "Provide guidance only; no repo changes requested."
+        ],
+        "action_items": [
+          "If desired, share the exact Jupyter setup (local/remote/WSL) to provide step-by-step instructions."
+        ],
+        "linked_files": [
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "General tooling guidance; no content edits."
+      },
+      {
+        "title_or_slug": "Merge on-open tasks with sudo -v precheck",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Combine on-open tasks into a single task and ensure sudo credentials are warmed up first.",
+        "summary": "Merged settings sync, git pull, and WSL update into one folderOpen task in .vscode/tasks.json and added sudo -v at the start of the Linux command.",
+        "key_decisions": [
+          "Preserve platform-specific behavior by skipping WSL update on Windows/macOS."
+        ],
+        "action_items": [
+          "If desired, adjust Windows/macOS command wording or split tasks again if sudo prompts become intrusive."
+        ],
+        "linked_files": [
+          ".vscode/tasks.json",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling change only; no study guide content edits."
+      },
+      {
+        "title_or_slug": "Sudo timestamp not shared with notebook",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Explain why sudo -n in a notebook fails even after sudo -v in a terminal.",
+        "summary": "Explained that sudo timestamps are typically tied to a TTY, so a notebook cell without a TTY cannot reuse the cached credential from the integrated terminal; suggested running privileged steps in a real terminal or adjusting sudoers if desired.",
+        "key_decisions": [
+          "Provide guidance only; no code changes requested."
+        ],
+        "action_items": [
+          "If desired, update the notebook to instruct running privileged commands in the VS Code integrated terminal."
+        ],
+        "linked_files": [
+          "AGENTS.md",
+          "project_export.json",
+          "scripts/shell_runner.ipynb"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Operational guidance only; no content edits."
+      },
+      {
+        "title_or_slug": "Devcontainer TeX Live setup summary",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Summarize how TeX Live is installed in the devcontainer.",
+        "summary": "Explained that the devcontainer Dockerfile installs TeX Live 2025 from CTAN using .devcontainer/texlive.profile (scheme-small + selected collections), then uses tlmgr to install additional packages and installs Fira fonts via apt; post-create script only performs sanity checks.",
+        "key_decisions": [
+          "Provide guidance only; no repo changes requested."
+        ],
+        "action_items": [
+          "If desired, align the WSL notebook installer with the devcontainer profile or switch to apt-based installs for speed."
+        ],
+        "linked_files": [
+          ".devcontainer/Dockerfile",
+          ".devcontainer/texlive.profile",
+          ".devcontainer/post-create.sh",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling guidance only; no content edits."
+      },
+      {
+        "title_or_slug": "Align WSL TeX Live install with devcontainer and add audit",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Update the WSL setup notebook to match devcontainer TeX Live installs and verify required packages/fonts.",
+        "summary": "Replaced the scheme-full TeX Live profile in scripts/Environment/wsl_vscode_setup.ipynb with the devcontainer-aligned scheme-small profile, added tlmgr installs for required packages, optional font installs via apt, and post-install checks for required TeX packages and fonts.",
+        "key_decisions": [
+          "Keep CTAN-based TeX Live install and add verification warnings instead of hard failures."
+        ],
+        "action_items": [
+          "Run the updated notebook cell to validate package/font checks in the WSL environment."
+        ],
+        "linked_files": [
+          "scripts/Environment/wsl_vscode_setup.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling change only; no study guide content edits."
+      },
+      {
+        "title_or_slug": "WSL installer installs missing fonts",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Ensure required and optional fonts are installed when missing in the WSL setup notebook.",
+        "summary": "Added font detection and conditional installs in scripts/Environment/wsl_vscode_setup.ipynb, mapping missing fonts to apt packages or tlmgr font packages and re-running font cache updates.",
+        "key_decisions": [
+          "Install fonts only when luaotfload-tool reports them missing."
+        ],
+        "action_items": [
+          "Run the updated notebook cell to verify that required fonts resolve without warnings."
+        ],
+        "linked_files": [
+          "scripts/Environment/wsl_vscode_setup.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling change only; no study guide content edits."
+      },
+      {
+        "title_or_slug": "Environment notebook: ssh backup/restore and sudoers",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Extend the environment setup notebook with SSH backup/restore and sudoers automation.",
+        "summary": "Added SSH backup/restore steps to the environment notebook and configured sudoers rules for apt-get automation; updated verification steps.",
+        "key_decisions": [
+          "Keep SSH backup/restore alongside VS Code export/import in the environment notebook."
+        ],
+        "action_items": [
+          "Run the updated notebook cells and confirm sudoers/SSH restores behave as expected."
+        ],
+        "linked_files": [
+          "scripts/Environment/wsl_vscode_setup.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling update only; no study guide content edits."
+      },
+      {
+        "title_or_slug": "WSL sudoers uses $USER",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Avoid hard-coded usernames in sudoers automation for WSL setup.",
+        "summary": "Updated the WSL setup notebook sudoers block to write the current $USER instead of a fixed username.",
+        "key_decisions": [
+          "Keep sudoers content otherwise unchanged; still validate with visudo."
+        ],
+        "action_items": [
+          "Run the updated notebook cell to ensure the sudoers file writes and validates successfully."
+        ],
+        "linked_files": [
+          "scripts/Environment/wsl_vscode_setup.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling update only; no study guide content edits."
       }
     ],
     "project_instructions_analysis": {
@@ -688,53 +816,6 @@
         "bias_or_quality_notes": "Build completed; minted fallback warning persists."
       },
       {
-        "title_or_slug": "SSH config for git and WSL",
-        "date_range": "2025-12-20 to 2025-12-20",
-        "participants": [
-          "user",
-          "assistant"
-        ],
-        "purpose": "Configure SSH client settings to reduce git passphrase prompts and add a WSL host alias.",
-        "summary": "Added ~/.ssh/config entries for GitHub and a wsl alias, and added the local public key to ~/.ssh/authorized_keys to enable key-based login.",
-        "key_decisions": [
-          "Use explicit IdentityFile/IdentitiesOnly and AddKeysToAgent in ssh config to favor the ed25519 key.",
-          "Populate authorized_keys with the local public key for WSL SSH login."
-        ],
-        "action_items": [
-          "If needed, install and start openssh-server in WSL to accept SSH connections."
-        ],
-        "linked_files": [
-          "~/.ssh/config",
-          "~/.ssh/authorized_keys",
-          "AGENTS.md",
-          "project_export.json"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "System configuration task; no acquisition content."
-      },
-      {
-        "title_or_slug": "Codex CLI install",
-        "date_range": "2025-12-20 to 2025-12-20",
-        "participants": [
-          "user",
-          "assistant"
-        ],
-        "purpose": "Install the Codex CLI in the working environment.",
-        "summary": "Installed the Codex CLI with npm using a user-level prefix to avoid global permission errors; verified the binary and version after install.",
-        "key_decisions": [
-          "Use a user-level npm prefix (/home/victor) so the binary lands in PATH without sudo."
-        ],
-        "action_items": [
-          "If PATH changes, ensure /home/victor/bin remains on PATH for the codex executable."
-        ],
-        "linked_files": [
-          "AGENTS.md",
-          "project_export.json"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "Tooling-only update; no acquisition content."
-      },
-      {
         "title_or_slug": "Build main.pdf warning cleanup",
         "date_range": "2025-12-20 to 2025-12-20",
         "participants": [
@@ -762,31 +843,6 @@
         "bias_or_quality_notes": "Build/tooling update; PDF output depends on local TeX install."
       },
       {
-        "title_or_slug": "AI context zip + Gemini workflow guidance",
-        "date_range": "2025-12-21 to 2025-12-21",
-        "participants": [
-          "user",
-          "assistant"
-        ],
-        "purpose": "Create a one-step ai_context.zip generator and align Gemini 3 Pro/Codex workflow for a large LaTeX repo.",
-        "summary": "Added bash/PowerShell scripts and a VS Code task to package git diffs, LaTeX log excerpts, and selected files into scratch/ai_context.zip for drag-and-drop into Gemini; discussed using Gemini for PDF/visual analysis and Codex in VS Code for in-repo edits.",
-        "key_decisions": [
-          "Bundle only targeted files plus diffs/logs instead of uploading the entire repo."
-        ],
-        "action_items": [
-          "Use scripts/ai-context.sh or the VS Code task before Gemini sessions that need repo context."
-        ],
-        "linked_files": [
-          "scripts/ai-context.sh",
-          "scripts/ai-context.ps1",
-          ".vscode/tasks.json",
-          "AGENTS.md",
-          "project_export.json"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "Tooling/workflow update; no acquisition content."
-      },
-      {
         "title_or_slug": "shfmt not found message",
         "date_range": "2025-12-22 to 2025-12-22",
         "participants": [
@@ -805,132 +861,6 @@
         "linked_files": [],
         "notable_citations": [],
         "bias_or_quality_notes": "Tooling guidance; no repo changes."
-      },
-      {
-        "title_or_slug": "WSL install optimization analysis",
-        "date_range": "2025-12-23 to 2025-12-23",
-        "participants": [
-          "user",
-          "assistant"
-        ],
-        "purpose": "Inventory WSL binaries/package managers and identify duplication/bloat before recommending optimizations.",
-        "summary": "Collected WSL inventory (Ubuntu 24.04.3, apt + snap, TeX Live 2025 in /usr/local, NVM Node v25.2.1, Docker CE, snapd installed with no snaps, MiKTeX apt repo configured but unused) and flagged large packages, apt node-module bloat, and PATH duplication/Windows toolchain leakage; prepared clarifying questions before proposing cleanup steps.",
-        "key_decisions": [],
-        "action_items": [
-          "Confirm whether to keep Docker Engine in WSL vs Docker Desktop integration.",
-          "Decide whether to standardize on NVM Node and remove apt nodejs/npm packages.",
-          "Confirm whether snapd or the MiKTeX apt repo should be removed.",
-          "Choose system-wide vs user-local TeX Live updates and how to handle tlmgr sudo PATH."
-        ],
-        "linked_files": [
-          "AGENTS.md",
-          "project_export.json"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "Tooling/system-inventory task; recommendations pending user preferences."
-      },
-      {
-        "title_or_slug": "WSL package inventory details",
-        "date_range": "2025-12-23 to 2025-12-23",
-        "participants": [
-          "user",
-          "assistant"
-        ],
-        "purpose": "Collect detailed package inventories (npm/pnpm globals, Python user site, Docker sizes, apt node dependency tree) for WSL optimization.",
-        "summary": "Enumerated npm/pnpm globals (corepack/npm; @openai/codex), confirmed empty Python user-site packages, found no Docker images/containers but ~5.6 GB build cache and an empty vscode volume, and identified ~389 auto-installed npm deps plus 17 nodejs deps via apt for the distro Node stack.",
-        "key_decisions": [],
-        "action_items": [
-          "Decide whether to purge apt nodejs/npm to remove the node-* dependency tree.",
-          "Decide whether to prune Docker build cache or remove Docker CE entirely.",
-          "Decide whether to remove snapd and the unused MiKTeX apt repo to reduce update overhead."
-        ],
-        "linked_files": [
-          "AGENTS.md",
-          "project_export.json"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "Tooling/system-inventory task; no repo code changes."
-      },
-      {
-        "title_or_slug": "Docker prune and wsl.conf update pending",
-        "date_range": "2025-12-23 to 2025-12-23",
-        "participants": [
-          "user",
-          "assistant"
-        ],
-        "purpose": "Prune Docker cache and attempt to disable Windows PATH injection in WSL.",
-        "summary": "Pruned Docker builder cache to zero; wsl.conf change to set appendWindowsPath=false requires sudo password and is pending user execution.",
-        "key_decisions": [],
-        "action_items": [
-          "Run sudo edit to add [interop]\nappendWindowsPath=false to /etc/wsl.conf and restart WSL.",
-          "(Optional) Proceed with removing apt nodejs/npm stack and snapd per earlier plan."
-        ],
-        "linked_files": [
-          "AGENTS.md",
-          "project_export.json"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "System config changes; requires sudo for wsl.conf edit."
-      },
-      {
-        "title_or_slug": "Post-cleanup binary paths and sizes",
-        "date_range": "2025-12-23 to 2025-12-23",
-        "participants": [
-          "user",
-          "assistant"
-        ],
-        "purpose": "Confirm post-purge binary locations and size footprint for consolidation planning.",
-        "summary": "User verified node/npm/pnpm from NVM and TeX Live binaries, with TeX Live ~11 GB, NVM ~234 MB, pnpm store ~328 MB, and no Python user-site directory; requested further consolidation guidance.",
-        "key_decisions": [],
-        "action_items": [
-          "Provide consolidation strategy for remaining tools/caches and confirm wsl.conf PATH interop status."
-        ],
-        "linked_files": [
-          "AGENTS.md",
-          "project_export.json"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "User-reported measurements; no new system changes performed."
-      },
-      {
-        "title_or_slug": "Codex CLI update via pnpm",
-        "date_range": "2025-12-24 to 2025-12-24",
-        "participants": [
-          "user",
-          "assistant"
-        ],
-        "purpose": "Update the global @openai/codex package with pnpm.",
-        "summary": "Ran `pnpm install -g @openai/codex` to update the global install to 0.77.0.",
-        "key_decisions": [
-          "Use pnpm global install to refresh the Codex CLI package."
-        ],
-        "action_items": [],
-        "linked_files": [
-          "AGENTS.md",
-          "project_export.json"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "Tooling-only update; no acquisition content changes."
-      },
-      {
-        "title_or_slug": "Codex binary source check",
-        "date_range": "2025-12-24 to 2025-12-24",
-        "participants": [
-          "user",
-          "assistant"
-        ],
-        "purpose": "Confirm whether the codex binary is sourced from pnpm or npm.",
-        "summary": "Checked /home/victor/bin/codex and found it points into the pnpm global store for @openai/codex 0.77.0; codex-cli reports 0.77.0.",
-        "key_decisions": [
-          "Inspect the launcher script to identify the package manager store in use."
-        ],
-        "action_items": [],
-        "linked_files": [
-          "AGENTS.md",
-          "project_export.json"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "Tooling verification only; no acquisition content changes."
       },
       {
         "title_or_slug": "Remove AGENTS export artifacts",
@@ -1186,32 +1116,6 @@
         "bias_or_quality_notes": "Instruction and schema housekeeping; no study guide content changes."
       },
       {
-        "title_or_slug": "Sync Codex CLI settings to Windows profile",
-        "date_range": "2025-12-24 to 2025-12-24",
-        "participants": [
-          "user",
-          "assistant"
-        ],
-        "purpose": "Copy WSL Codex CLI settings into the Windows .codex profile.",
-        "summary": "Copied config.toml, auth.json, and version.json from /home/victor/.codex to /mnt/c/Users/vic-l/.codex to align Windows CLI settings with WSL; left history, sessions, and logs untouched.",
-        "key_decisions": [
-          "Treat settings as config.toml, auth.json, and version.json only; do not overwrite history or session data."
-        ],
-        "action_items": [],
-        "linked_files": [
-          "/home/victor/.codex/config.toml",
-          "/home/victor/.codex/auth.json",
-          "/home/victor/.codex/version.json",
-          "/mnt/c/Users/vic-l/.codex/config.toml",
-          "/mnt/c/Users/vic-l/.codex/auth.json",
-          "/mnt/c/Users/vic-l/.codex/version.json",
-          "AGENTS.md",
-          "project_export.json"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "Tooling sync only; no study guide content changes."
-      },
-      {
         "title_or_slug": "Resolve settings merge conflict and push",
         "date_range": "2025-12-24 to 2025-12-24",
         "participants": [
@@ -1412,6 +1316,25 @@
         "action_items": [
           "Convert legacy month fields to numeric values to clear biber month warnings.",
           "Undefined citation/reference warnings elsewhere in the document remain and should be resolved separately."
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling configuration update only; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Add NIP/MIP funding overview (NRO context)",
+        "date_range": "2025-12-28 to 2025-12-28",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Insert NIP and MIP funding context into Program Funding and Execution with citations and acronyms.",
+        "summary": "Added a NIP/MIP funding subsection covering dual oversight, governing guidance, reprogramming paths, and FY 2025 toplines; defined DNI/ODNI/IC/NIP/MIP/USD(I&S)/DIA/NGA acronyms and added ICD 104, DoDD 5205.12, CRS R44381, and ODNI/DoD topline sources. latexmk failed due to a mismatched expl3 support file version (format 2025-11-14 vs tree requiring 2025-12-24).",
+        "key_decisions": [
+          "Use CRS R44381 for NRO dual-hat roles and requested toplines; use ODNI and DoD press releases for FY 2025 appropriated toplines.",
+          "Avoid NSA acronym conflict by referencing DIA and NGA only."
+        ],
+        "action_items": [
+          "Resolve the expl3 version mismatch (update TeX Live or rebuild formats) and rerun latexmk.",
+          "Verify the current DoDD 5205.12 revision; public copy reflects Change 2 effective 2020-10-01."
         ],
         "linked_files": [
           "tex/chapters/9_Program_Funding_and_Execution.tex",
@@ -1429,6 +1352,33 @@
           "DoD-MIP-FY25-Request"
         ],
         "bias_or_quality_notes": "Content focuses on fiscal/oversight mechanics; board-prep depth only and not legal advice."
+          "AGENTS.md",
+          "project_export.json",
+          "build/main.log"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Toplines sourced from ODNI/DoD press releases and a CRS mirror; directive revision should be re-verified."
+      },
+      {
+        "title_or_slug": "Prune external-change references from project instructions",
+        "date_range": "2025-12-28 to 2025-12-28",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Ensure AGENTS/project_export updates are gated to in-repo changes and remove external-change references from the project export.",
+        "summary": "Updated AGENTS.md to gate AGENTS/project_export updates to changes under /home/victor/projects/edo/main and removed external-change references from project_export.json; refreshed memory highlights and task logs accordingly.",
+        "key_decisions": [
+          "Treat updates outside the repo as out-of-scope for AGENTS.md and project_export.json tracking.",
+          "Remove or redact entries that referenced external system changes while preserving in-repo change history."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Instruction cleanup only; no study guide content edits."
       }
     ]
   },
