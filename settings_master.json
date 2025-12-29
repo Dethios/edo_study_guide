@@ -1361,6 +1361,8 @@
     // ===================================================================
     // python.analysis.autoFormatStrings: Enable or disable python analysis auto Format Strings. Edit the value to change behavior.
     "python.analysis.autoFormatStrings": true,
+    // python.analysis.typeCheckingMode: Set python analysis type Checking Mode. Edit the value to change behavior.
+    "python.analysis.typeCheckingMode": "strict",
     // pythonIndent.trimLinesWithOnlyWhitespace: Enable or disable python Indent trim Lines With Only Whitespace. Edit the value to change behavior.
     "pythonIndent.trimLinesWithOnlyWhitespace": true,
 
