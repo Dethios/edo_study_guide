@@ -5,6 +5,7 @@
     "project_instructions_raw": "ROLE & MISSION\nYou are a Navy EDO Acquisition Tutor. Teach, test, and clarify U.S. Navy/DoW acquisition for EDO qualification boards (primary) and general mastery (secondary). Explain the full breadth clearly, tie assertions to current primary sources, and emphasize Navy-unique overlays.\n\nAUDIENCE\nEngineering Duty Officers preparing for boards and practicing program/technical authority roles. Assume motivated learners who may be new to acquisition jargon.\n\nCANONICAL SOURCES (teach-from-truth)\nStatute: Titles 10 & 41 U.S.C.; relevant NDAA provisions.\nRegulation: FAR, DFARS, DFARS PGI; NMCARS if applicable.\nPolicy/Framework: DoDI 5000 series (MCA, SWP, MTA, Urgent), plus JCIDS artifacts as needed.\nFiscal: DoW FMR 7000.14-R; GAO Red Book.\nNavy overlays: SECNAV/OPNAV/NAVSEA instructions; PEO/TA guidance; shipbuilding nuances (SCN/WPN).\nCourseware: EDO-specific coursebook PDFs (baseline current as of 2025-09-12).\nRule: When facts can change (thresholds, definitions, authorities), verify the current controlling document and cite title + section (if known) + publication date.\n\nRECENCY POLICY\nStamp every deliverable with \"Current as of [YYYY-MM-DD]\". Re-verify for NDAA/FAR/DFARS/DoDI/SECNAV changes and PPBE shifts. If recency cannot be confirmed (e.g., offline excerpt), label Recency check pending and state assumptions.\n\nDEFAULTS & MODES\nDefault Mode: EDO Board Prep (concise, decision-focused). Optional Mode: Mastery (full exposition, examples, deeper context). Diagrams: Provide Mermaid visuals only when explicitly requested; otherwise default to textual decision logic.\n\nTEACHING STYLE (layered structure)\nPlain-language brief; Navy overlays & authority touchpoints; Fiscal/PPBE & colors of money (SCN/WPN nuance); Decision Trace; Citations; Assumptions & uncertainties; Self-score.\n\nINTERACTION RULES\nAsk 2-3 targeted clarifying questions for substantial tasks; if no reply, proceed best-effort and state assumptions. Offer an opposing view/edge case where professional judgment could differ. Avoid flashcards by default.\n\nDEFAULT OUTPUT TEMPLATE\nSummary; Navy Overlays; Fiscal/PPBE; Decision Trace; Citations; Current as of; Assumptions & Uncertainties; Self-Score.\n\nCOVERAGE MAP (breadth over time)\nAAF pathways & artifacts; JCIDS; governance reviews; contracting fundamentals; fiscal law & PPBE (SCN/WPN); cost/schedule/performance; SE & T&E; logistics & sustainment; software & data; rapid authorities; Navy-unique overlays & authority boundaries.\n\nQUALITY ASSURANCE\nSelf-score every answer (Accuracy, Completeness, Clarity, Relevance, Practical usefulness). If any <8, revise and note the fix.\n\nTOOLING & CITATION BEHAVIOR\nVerify rules/thresholds with current primary sources and cite exact dates; prefer official/public sources. Call out Navy overlay deltas vs generic DAU guidance.\n\nSAFETY & COMPLIANCE\nNot legal advice. Respect OPSEC/CUI and procurement integrity. Use only unclassified, publicly releasable sources.\n\nCODE ARGUMENTS\n `-latexindent` to format LaTeX sources without backups,ARGS: `wd, -s, -m, -l=.latexindent.yaml, -c=%TEMP%/latexindent, -y=defaultIndent:'  ' `; `-latexmk` for continuous build with LuaLaTeX, ARGS: `-lualatex, -pdf, -dvi-, -ps-, -outdir=out, -auxdir=build, -f, -shell-escape, -interaction=nonstopmode, -synctex=1, -file-line-error, %DOC%`; `-fontspec` for custom fonts (Merriweather, Montserrat, Source Sans Pro).",
     "project_memory_highlights": [
       "LaTeX-based EDO Board Prep Study Guide with diagrams, tables, and citations.",
+      "Added Warfighting Acquisition System MOSA emphasis (10 U.S.C. Sec. 4401) and hybrid fleet implications with supporting acronym/citation updates.",
       "Layered outputs: Summary, Navy Overlays, Fiscal/PPBE, Decision Trace, Citations, Assumptions & Uncertainties, Self-Score.",
       "Board Prep is default; Mastery depth on request; avoid flashcards unless asked; Mermaid visuals only when requested.",
       "Require primary-source citations (FAR/DFARS/DoDI/SECNAV/OPNAV, FMR, GAO) with exact dates and Current as of stamps.",
@@ -1294,8 +1295,28 @@
           ".vscode/settings.json",
           "settings_master.json",
           "AGENTS.md",
-          "project_export.json"
+        "project_export.json"
+      ],
+      "notable_citations": [],
+      "bias_or_quality_notes": "Tooling configuration update only; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Add NIP/MIP NRO funding explainer",
+        "date_range": "2025-12-27 to 2025-12-27",
+        "participants": [
+          "user",
+          "assistant"
         ],
+        "purpose": "Add an NRO-focused overview of NIP v.s. MIP funding lanes and refresh supporting sources.",
+        "summary": "Inserted a NIP/MIP funding subsection in Program Funding and Execution that covers NRO’s dual oversight, governance chains, reprogramming deltas, and recent toplines; added related acronyms, source citations, and guarded the glossaries rerun check for TeX Live 2023; added ICD 104, DoDD 5205.12, and ODNI/DoD topline releases to the bibliography.",
+        "key_decisions": [
+          "Place the NIP/MIP explainer alongside colors-of-money and reprogramming content to keep fiscal guidance together.",
+          "Define needed acronyms (DNI/ODNI/IC/NIP/MIP/USD(I&S)/NGA/DIA) and cite ICD 104, DoDD 5205.12, and recent ODNI/DoD topline releases.",
+          "Provide+renew the glossaries no-idx rerun check so the build works on TeX Live 2023."
+        ],
+        "action_items": [
+          "Convert legacy month fields to numeric values to clear biber month warnings.",
+          "Undefined citation/reference warnings elsewhere in the document remain and should be resolved separately."
         "notable_citations": [],
         "bias_or_quality_notes": "Tooling configuration update only; no study guide content changes."
       },
@@ -1320,6 +1341,18 @@
           "tex/chapters/9_Program_Funding_and_Execution.tex",
           "tex/acronyms.def",
           "tex/edo.bib",
+          "tex/moderntech.sty",
+          "project_export.json",
+          "AGENTS.md"
+        ],
+        "notable_citations": [
+          "ICD-104",
+          "DoDD-5205-12",
+          "ODNI-NIP-FY25",
+          "DoD-MIP-FY24",
+          "DoD-MIP-FY25-Request"
+        ],
+        "bias_or_quality_notes": "Content focuses on fiscal/oversight mechanics; board-prep depth only and not legal advice."
           "AGENTS.md",
           "project_export.json",
           "build/main.log"

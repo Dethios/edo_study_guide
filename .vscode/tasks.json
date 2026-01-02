@@ -141,7 +141,7 @@
         {
             "label": "On Open: Sync + Pull + Update + Scrub",
             "type": "shell",
-            "command": "sudo -v && python3 ./scripts/settings_manager.py sync && git pull --ff-only && sudo /usr/bin/apt-get update && sudo /usr/bin/apt-get -y upgrade && sudo /usr/local/texlive/2025/bin/x86_64-linux/tlmgr update --self --all && ./scripts/scrub.sh",
+            "command": "sudo -v && python3 ./scripts/settings_manager.py sync && git pull --ff-only && sudo /usr/bin/apt-get update && sudo /usr/bin/apt-get -y upgrade && (TLMGR=\"$(command -v tlmgr 2>/dev/null || true)\"; if [ -z \"$TLMGR\" ]; then for cand in /usr/local/texlive/*/bin/*/tlmgr; do if [ -x \"$cand\" ]; then TLMGR=\"$cand\"; fi; done; fi; if [ -n \"$TLMGR\" ]; then sudo \"$TLMGR\" update --self --all || echo \"tlmgr update failed; continuing.\"; else echo \"tlmgr not found; skipping TeX Live update.\"; fi) && ./scripts/scrub.sh",
             "problemMatcher": [],
             "presentation": { "reveal": "silent" },
             "runOptions": { "runOn": "folderOpen" },
