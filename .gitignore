@@ -112,3 +112,6 @@ Thumbs.db
 # Keep release PDFs in a dedicated folder if you ignore PDFs globally:
 # !Releases/*.pdf
 # Releases/
+
+.gemini/
+gha-creds-*.json
