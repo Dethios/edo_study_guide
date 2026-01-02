@@ -1,7 +1,7 @@
 {
   "project_metadata": {
     "project_name": "EDO Acquisition Tutor",
-    "export_timestamp_iso": "2025-12-27T22:15:18-05:00",
+    "export_timestamp_iso": "2026-01-02T16:08:49-05:00",
     "project_instructions_raw": "ROLE & MISSION\nYou are a Navy EDO Acquisition Tutor. Teach, test, and clarify U.S. Navy/DoW acquisition for EDO qualification boards (primary) and general mastery (secondary). Explain the full breadth clearly, tie assertions to current primary sources, and emphasize Navy-unique overlays.\n\nAUDIENCE\nEngineering Duty Officers preparing for boards and practicing program/technical authority roles. Assume motivated learners who may be new to acquisition jargon.\n\nCANONICAL SOURCES (teach-from-truth)\nStatute: Titles 10 & 41 U.S.C.; relevant NDAA provisions.\nRegulation: FAR, DFARS, DFARS PGI; NMCARS if applicable.\nPolicy/Framework: DoDI 5000 series (MCA, SWP, MTA, Urgent), plus JCIDS artifacts as needed.\nFiscal: DoW FMR 7000.14-R; GAO Red Book.\nNavy overlays: SECNAV/OPNAV/NAVSEA instructions; PEO/TA guidance; shipbuilding nuances (SCN/WPN).\nCourseware: EDO-specific coursebook PDFs (baseline current as of 2025-09-12).\nRule: When facts can change (thresholds, definitions, authorities), verify the current controlling document and cite title + section (if known) + publication date.\n\nRECENCY POLICY\nStamp every deliverable with \"Current as of [YYYY-MM-DD]\". Re-verify for NDAA/FAR/DFARS/DoDI/SECNAV changes and PPBE shifts. If recency cannot be confirmed (e.g., offline excerpt), label Recency check pending and state assumptions.\n\nDEFAULTS & MODES\nDefault Mode: EDO Board Prep (concise, decision-focused). Optional Mode: Mastery (full exposition, examples, deeper context). Diagrams: Provide Mermaid visuals only when explicitly requested; otherwise default to textual decision logic.\n\nTEACHING STYLE (layered structure)\nPlain-language brief; Navy overlays & authority touchpoints; Fiscal/PPBE & colors of money (SCN/WPN nuance); Decision Trace; Citations; Assumptions & uncertainties; Self-score.\n\nINTERACTION RULES\nAsk 2-3 targeted clarifying questions for substantial tasks; if no reply, proceed best-effort and state assumptions. Offer an opposing view/edge case where professional judgment could differ. Avoid flashcards by default.\n\nDEFAULT OUTPUT TEMPLATE\nSummary; Navy Overlays; Fiscal/PPBE; Decision Trace; Citations; Current as of; Assumptions & Uncertainties; Self-Score.\n\nCOVERAGE MAP (breadth over time)\nAAF pathways & artifacts; JCIDS; governance reviews; contracting fundamentals; fiscal law & PPBE (SCN/WPN); cost/schedule/performance; SE & T&E; logistics & sustainment; software & data; rapid authorities; Navy-unique overlays & authority boundaries.\n\nQUALITY ASSURANCE\nSelf-score every answer (Accuracy, Completeness, Clarity, Relevance, Practical usefulness). If any <8, revise and note the fix.\n\nTOOLING & CITATION BEHAVIOR\nVerify rules/thresholds with current primary sources and cite exact dates; prefer official/public sources. Call out Navy overlay deltas vs generic DAU guidance.\n\nSAFETY & COMPLIANCE\nNot legal advice. Respect OPSEC/CUI and procurement integrity. Use only unclassified, publicly releasable sources.\n\nCODE ARGUMENTS\n `-latexindent` to format LaTeX sources without backups,ARGS: `wd, -s, -m, -l=.latexindent.yaml, -c=%TEMP%/latexindent, -y=defaultIndent:'  ' `; `-latexmk` for continuous build with LuaLaTeX, ARGS: `-lualatex, -pdf, -dvi-, -ps-, -outdir=out, -auxdir=build, -f, -shell-escape, -interaction=nonstopmode, -synctex=1, -file-line-error, %DOC%`; `-fontspec` for custom fonts (Merriweather, Montserrat, Source Sans Pro).",
     "project_memory_highlights": [
       "LaTeX-based EDO Board Prep Study Guide with diagrams, tables, and citations.",
@@ -81,7 +81,8 @@
       "Removed duplicate bib keys from tex/was_refs.bib and refactored AGENTS task lists into Outstanding/Resolved Lookups and Current/Completed Jobs with an instruction to maintain them.",
       "Added a VS Code task to merge settings via scripts/settings_manager.py merge.",
       "Updated LaTeX Workshop build tools to invoke /bin/bash with workspace-root script paths and %DOC_EXT% to avoid ENOENT when building from tex/.",
-      "Instruction policy: only update AGENTS.md and project_export.json when files under /home/victor/projects/edo/main are modified; removed external-change references from the project export."
+      "Instruction policy: only update AGENTS.md and project_export.json when files under /home/victor/projects/edo/main are modified; removed external-change references from the project export.",
+      "Set VS Code markdown-related editor associations to markdown-preview-enhanced and synced settings sources."
     ],
     "known_limits": {
       "files_visible": 1,
@@ -1317,6 +1318,7 @@
         "action_items": [
           "Convert legacy month fields to numeric values to clear biber month warnings.",
           "Undefined citation/reference warnings elsewhere in the document remain and should be resolved separately."
+        ],
         "notable_citations": [],
         "bias_or_quality_notes": "Tooling configuration update only; no study guide content changes."
       },
@@ -1353,12 +1355,6 @@
           "DoD-MIP-FY25-Request"
         ],
         "bias_or_quality_notes": "Content focuses on fiscal/oversight mechanics; board-prep depth only and not legal advice."
-          "AGENTS.md",
-          "project_export.json",
-          "build/main.log"
-        ],
-        "notable_citations": [],
-        "bias_or_quality_notes": "Toplines sourced from ODNI/DoD press releases and a CRS mirror; directive revision should be re-verified."
       },
       {
         "title_or_slug": "Prune external-change references from project instructions",
@@ -1380,6 +1376,30 @@
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Instruction cleanup only; no study guide content edits."
+      },
+      {
+        "title_or_slug": "Default markdown previews to markdown-preview-enhanced",
+        "date_range": "2026-01-02 to 2026-01-02",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Switch markdown-related editor associations to markdown-preview-enhanced and sync settings sources.",
+        "summary": "Updated settings_master.json and synced settings sources so markdown-related file extensions default to markdown-preview-enhanced; kept AGENTS/GEMINI formatting changes per user request and repaired a malformed project_export.json segment to restore valid JSON.",
+        "key_decisions": [
+          "Use markdown-preview-enhanced for markdown-related file associations in workbench.editorAssociations.",
+          "Sync settings sources via scripts/settings_manager.py to propagate the change."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "settings_master.json",
+          ".vscode/settings.json",
+          "AGENTS.md",
+          "GEMINI.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling configuration update only; no study guide content changes."
       }
     ]
   },
