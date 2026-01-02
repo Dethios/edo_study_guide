@@ -615,7 +615,7 @@
     // markdown-preview-enhanced.HTML5EmbedUseLinkSyntax: Enable or disable markdown preview enhanced HTML5 Embed Use Link Syntax. Edit the value to change behavior.
     "markdown-preview-enhanced.HTML5EmbedUseLinkSyntax": true,
     // markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited: Enable or disable markdown preview enhanced automatically Show Preview Of Markdown Being Edited. Edit the value to change behavior.
-    "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+    "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": false,
     // markdown-preview-enhanced.codeBlockTheme: Set markdown preview enhanced code Block Theme. Edit the value to change behavior.
     "markdown-preview-enhanced.codeBlockTheme": "auto.css",
     // markdown-preview-enhanced.enableCriticMarkupSyntax: Enable or disable markdown preview enhanced enable Critic Markup Syntax. Edit the value to change behavior.

@@ -615,15 +615,17 @@
     // markdown-preview-enhanced.HTML5EmbedUseLinkSyntax: Enable or disable markdown preview enhanced HTML5 Embed Use Link Syntax. Edit the value to change behavior.
     "markdown-preview-enhanced.HTML5EmbedUseLinkSyntax": true,
     // markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited: Enable or disable markdown preview enhanced automatically Show Preview Of Markdown Being Edited. Edit the value to change behavior.
-    "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+    "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": false,
     // markdown-preview-enhanced.codeBlockTheme: Set markdown preview enhanced code Block Theme. Edit the value to change behavior.
-    "markdown-preview-enhanced.codeBlockTheme": "atom-dark.css",
+    "markdown-preview-enhanced.codeBlockTheme": "auto.css",
     // markdown-preview-enhanced.enableCriticMarkupSyntax: Enable or disable markdown preview enhanced enable Critic Markup Syntax. Edit the value to change behavior.
     "markdown-preview-enhanced.enableCriticMarkupSyntax": true,
     // markdown-preview-enhanced.enableExtendedTableSyntax: Enable or disable markdown preview enhanced enable Extended Table Syntax. Edit the value to change behavior.
     "markdown-preview-enhanced.enableExtendedTableSyntax": true,
     // markdown-preview-enhanced.enableHTML5Embed: Enable or disable markdown preview enhanced enable HTML5 Embed. Edit the value to change behavior.
     "markdown-preview-enhanced.enableHTML5Embed": true,
+    // markdown-preview-enhanced.enablePreviewZenMode: Enable or disable markdown preview enhanced enable Preview Zen Mode. Edit the value to change behavior.
+    "markdown-preview-enhanced.enablePreviewZenMode": false,
     // markdown-preview-enhanced.enableTypographer: Enable or disable markdown preview enhanced enable Typographer. Edit the value to change behavior.
     "markdown-preview-enhanced.enableTypographer": true,
     // markdown-preview-enhanced.frontMatterRenderingOption: Set markdown preview enhanced front Matter Rendering Option. Edit the value to change behavior.
