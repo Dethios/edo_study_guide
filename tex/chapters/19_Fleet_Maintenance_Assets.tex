@@ -1,0 +1,77 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% =============================================================================
+% File: 19_Fleet_Maintenance_Assets.tex
+% =============================================================================
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+\section{Fleet Maintenance Assets}
+
+\subsection{Echeloned Maintenance Levels}
+\begin{description}
+  \item[\textbf{Organizational-level.}] Ship's force keeps the hull, mechanical, and electrical plants safe and combat-ready by executing preventative checks, battle damage control, and light repairs with organic tools, allowing the platform to remain as self-sufficient as possible while deployed~\autocite{OPNAVINST4700-7M,edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Intermediate-level.}] \acp{ima} and tenders augment the crew with certified artisans (e.g., welders, riggers, calibration labs) who can disassemble components, correct corrosion, and return equipment to specification without docking the ship; \ac{namts} builds those \acp{nec}, and so strike groups can recover faster when forward~\autocite{OPNAVINST4700-7M,edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Depot-level.}] \acp{nsy}, private yards, and \acp{supship} conduct heavy industrial work such as reactor refueling, shaft and underwater body repairs, and major modernizations that exceed shipboard capability; every task is tied to the \ac{cmp} and engineered work instructions~\autocite{NAVSEAINST5450-14D,NAVSEAINST5450-145A,edo-4-1-1-fleet-maint-assets-2025}.
+\end{description}
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+      node distance=1.5cm,
+      levelbox/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, align=left, inner sep=6pt, minimum width=6.5cm},
+      arrow/.style={-Latex, line width=0.9pt, draw=Gray60}
+    ]
+    \node[levelbox] (o) {\textbf{O-level}\\Ship's Force\\Battle damage control, preventive checks, light repairs with shipboard tools};
+    \node[levelbox, below=of o] (i) {\textbf{I-level}\\IMAs, tenders, RMC production shops\\Component repairs, calibration, welding/rigging, corrosion control};
+    \node[levelbox, below=of i] (d) {\textbf{Depot-level}\\NSYs, SUPSHIP-admin private yards, major private shipyards\\Docking, reactor work, shaft/propulsion repair, major modernizations tied to CMP};
+
+    \draw[arrow] (o) -- (i);
+    \draw[arrow] (i) -- (d);
+  \end{tikzpicture}
+  \caption[Maintenance echelon coverage]{Maintenance echelon coverage and typical executing organizations from organizational-level through depot-level work.}
+  \label{fig:maintenance-echelons-coverage}
+\end{figure}
+\note{Board cue: reference at least one example task in each echelon (e.g., \ac{ima} balancing pump rotors vs.\ depot replacement of a main reduction gear) to show command of maintenance depth.}
+
+\subsection{Shore Maintenance Organizations and Roles}
+\begin{description}
+  \item[\textbf{\acp{nsy}.}] Public yards (e.g., Norfolk, Pearl Harbor, Puget, Portsmouth) report to \ac{navsea}~04 and integrate nuclear workforces, planning codes, and lifting/handling departments that mirror \ac{navseainst}~5450.14D standard organization~\autocite{NAVSEAINST5450-14D}.
+  \item[\textbf{\acp{rmc}.}] Regional Maintenance Centers deliver voyage repairs, execute \ac{cmp} work, and act as the local \ac{ta} for availabilities; they synchronize contracting, production shops, and \ac{tsra} under \ac{cnrmc}~\autocite{NAVSEAINST5450-145A,edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{\ac{supship}.}] Supervisors of Shipbuilding administer new construction and conversion/modernization contracts as \acp{aco}, coordinate budget execution, and provide technical oversight for nuclear refueling overhauls (e.g., \ac{cvn} \ac{rcoh})\FlagBilletNote{\ac{rdml} Jonathan J.\ Jett-Parmer serves as \ac{navsea} Deputy Commander, Supervisor of Shipbuilding; \ac{rdml} Robert J.\ Dodson (\ac{usnr}) is the reserve deputy; \ac{comnavsea} is \ac{adm} William J.\ Houston (Submarine officer, non-\ac{edo})}\autocite{NAVSEAINST5450-145A,edo-4-1-1-fleet-maint-assets-2025,navsea-org-chart-2025}.
+  \item[\textbf{Private shipyards.}] Huntington Ingalls, Bath Iron Works, General Dynamics \ac{nassco}/Electric Boat, Fincantieri Marinette Marine, and Austal execute modernization packages, submarine maintenance, and surge depot work as part of the industrial base portfolio directed by \ac{opnav} and \ac{peo} contracts~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+\end{description}
+
+\clearpage
+\subsection{Regional Maintenance Command Structure}
+\begin{description}
+  \item[\textbf{Flag oversight (\ac{edo}).}] \ac{cnrmc} is an \ac{edo} flag billet (\ac{rdml} Dan L.\ Lannamann) reporting to \ac{comnavsea}; \ac{cnrmc} sets standards and performance goals for all \acp{rmc} and aligns with \ac{tycom} production priorities\FlagBilletNote{\ac{comnavsea} is \ac{vadm} James P.\ Downey; \ac{cnrmc} is \ac{rdml} Dan L.\ Lannamann}\autocite{navy-lannamann-2025,NAVSEAINST5450-145A}.
+  \item[\textbf{\ac{rmc} reporting.}] \acp{rmc} (e.g., Mid-Atlantic, Southeast, Southwest, Japan, and Puget Sound Naval Shipyard and \ac{imf} detachments) report administratively to \ac{cnrmc} and operationally to the supported \ac{tycom}, with competency-aligned codes (100 fleet support, 200 availability management, 300 production shops, 400 quality assurance/technical authority) to standardize execution\autocite{NAVSEAINST5450-145A}.
+  \item[\textbf{Work control touchpoints.}] \ac{rmmco}, availability work package managers, and contracting officers integrate with ship's force, Port Engineers, and \ac{tycom} maintenance officers; \ac{edo} Port Engineers and \ac{rmc} production officers bridge technical authority to the \ac{tycom} readiness owner\autocite{NAVSEAINST5450-145A,edo-4-1-1-fleet-maint-assets-2025}.
+\end{description}
+
+\clearpage
+\subsection{Command, Funding, and Technical Authority Chains}
+\begin{description}
+  \item[\textbf{Operational chain.}] \ac{cno} delegates readiness to \ac{usff} and \ac{pacflt}, who assign Type Commanders to own production schedules and risk acceptance for their forces~\autocite{OPNAVINST4700-7M}.
+  \item[\textbf{Technical chain.}] \ac{navsea} 21/04 issue modernization and maintenance standards, while warfare centers and \acp{ta} publish \ac{cmp}-derived work packages; disputes escalate through the Technical Authority chain independent of the operational chain~\autocite{OPNAVINST4700-7M,NAVSEAINST5450-145A}.
+  \item[\textbf{Funding chain.}] Fleet maintenance (\ac{ocmf}) flows from \ac{opnav} \ac{n82} to \ac{bso}s and on to execution activities, while modernization is forecast via \ac{funds-d}/\ac{funds-alt}/\ac{funds-k} and, in limited pilots, \ac{opn} funds for selected private-yard availabilities to accelerate contract awards~\autocite{edo-4-1-1-fleet-maint-assets-2025,DoDFMR-Vol3}.
+\end{description}
+Maintaining clarity between supported/supporting chains prevents the common failure mode where operational priorities outpace technical warrant approvals or funding authority, triggering rework and availability churn.
+
+\subsection{Workforce Readiness and Assessments}
+\begin{description}
+  \item[\textbf{Readiness assessments.}] \ac{tsra} events and Condition Found Reports feed the Current Ship's Maintenance Project (\ac{csmp}) so planners can refresh the \ac{cmp} and future availability work packages~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Training pipelines.}] Programs such as \ac{namts}, SurgeMain reservists, and civilian apprentice pipelines grow targeted skills (e.g., non-skid application, inside machinist) to close gaps identified in Fleet readiness reviews~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Digital enablers.}] Class maintenance databases, \ac{nde} instances, and tool control systems give \ac{rmc}s and \acp{nsy} shared configuration visibility that underpins quality assurance and auditability~\autocite{NAVSEAINST5450-145A}.
+\end{description}
+Timely feedback from these mechanisms is what allows \ac{surfmepp}/\ac{submepp} to rebalance work between the organizational-, intermediate-, and depot echelons before a ship misses a \ac{cno} availability window.
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
+\end{document}

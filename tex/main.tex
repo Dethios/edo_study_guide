@@ -1,0 +1,218 @@
+% !TEX program = lualatex
+% !TEX root    = main.tex
+% !TEX options = jobname = "EDO Study Guide"
+% !BIB program = biber
+% =============================================================================
+% Root document — KOMA-Script (scrbook)
+% =============================================================================
+% LTeX: off
+\documentclass[
+  11pt,
+  oneside,
+  letterpaper,
+  headings=big,          % larger chapter/section heads
+  numbers=noendperiod,   % no trailing dot in numbered headings
+  parskip=half,          % block-style paragraphs
+  ieeebib=false          % biblatex is loaded manually below
+]{moderntech}
+
+% =============================================================================
+% Bibliography (manual load keeps class auto-load out of the way)
+% =============================================================================
+\usepackage{shellesc}
+\usepackage[
+  backend=biber,
+  style=ieee,
+  defernumbers=true,
+  sorting=none,
+  giveninits=true,
+  isbn=false,
+  refsegment=chapter,
+  doi=true,
+  url=true,
+  urldate=iso,
+  backref=false
+]{biblatex}
+\ExecuteBibliographyOptions{seconds=true}
+\addbibresource{tex/edo.bib}
+\addbibresource{tex/was_refs.bib}
+\addbibresource{tex/current_events.bib}
+\RenewDocumentCommand{\bibfont}{}{\rmfamily\small}
+\defbibheading{subrefs}[\refname]{\paragraph*{#1}\nopagebreak}
+\NewDocumentCommand{\nbcite}{m}{\citeauthor{#1}~\autocite{#1}}
+\NewDocumentCommand{\srcCite}{m}{Source:~~\citetitle{#1},~\citeyear{#1}~\autocite{#1}}
+\NewDocumentCommand{\tabCite}{m}{\citetitle{#1},~\citeyear{#1}~\autocite{#1}}
+\ExplSyntaxOn
+\msg_redirect_name:nnn { pdf } { unreferenced destination } { none }
+\msg_redirect_name:nnn { pdf/backend } { unreferenced destination } { none }
+\cs_if_exist:NT \__pdf_backend_warn:nnnn
+{
+  \cs_new_eq:NN \mt@orig_pdf_warn:nnnn \__pdf_backend_warn:nnnn
+  \cs_set_protected:Npn \__pdf_backend_warn:nnnn ##1##2##3##4
+  {
+    \str_if_eq:nnTF {##2}{unreferenced destination}
+    { }
+    { \mt@orig_pdf_warn:nnnn {##1}{##2}{##3}{##4} }
+  }
+}
+\ExplSyntaxOff
+% Disable biblatex hyperlink targets when defined; leave hyperref driver intact.
+% \AtBeginDocument{%
+%   \makeatletter
+%   \@ifundefined{blx@hyperreffalse}{}{ \blx@hyperreffalse }
+%   \makeatother
+% }
+% \AtBeginDocument{%
+%   \providecommand{\mkbibhyperref}[1]{#1}%
+%   \DeclareFieldFormat{labelnumber}{\mkbibhyperref{#1}}%
+%   \DeclareFieldFormat{shorthand}{\mkbibhyperref{#1}}%
+% }
+
+% =============================================================================
+% Metadata and helpers
+% =============================================================================
+\title{EDO Board Prep Study Guide}
+\author{LCDR Victor Lee, USN, PMP}
+\DTMsavedate{Coursebook_Version}{2025-09-19}
+
+% Title page art can be swapped without touching layout below.
+\NewDocumentCommand{\StudyTitleLogo}{}{NAVWAR LOGO.JPG}
+\NewDocumentCommand{\StudyTitleLogoWidth}{}{.7\linewidth}
+
+% Subfile helpers: keep chapter subfiles consistent in main builds.
+\NewDocumentCommand{\StudySubfile}{m}{%
+  \subfile{chapters/#1}%
+  \HR%
+}
+
+\NewDocumentCommand{\ChapterWithRefsAtStart}{m}{%
+  \subfile{chapters/#1}%
+  \HR%
+}
+\NewDocumentCommand{\FlagBilletNote}{m}{\space\textit{(Appendix~\ref{app:edo-flags}: #1)}}
+
+\makeatletter
+% Silence biblatex's empty-bibliography warning in continuous builds.
+\AtBeginDocument{\@ifundefined{blx@warn@bibempty}{}{\let\blx@warn@bibempty\relax}}
+\begin{document}
+\DTMsetdatestyle{mydateformat}
+
+% ----- TITLE -----
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+  \centering%
+  \DTMsetdatestyle{iso}
+  {\sffamily\bfseries\fontsize{24pt}{26pt}\selectfont%
+    \color{NavyBlue}\@title\par}%
+  \vspace{6pt}%
+  \includegraphics[width=\StudyTitleLogoWidth]{\StudyTitleLogo}\par%
+  \vspace{6pt}%
+  {\fontsize{16pt}{18pt}\selectfont%
+    \firasb\color{NavyBlue}\@author\par}%
+  {\fontsize{12pt}{14pt}\selectfont%
+    \textit{\color{CrimsonRed}Guide Updated: \color{Modern}\today}\par}%
+  {\fontsize{12pt}{14pt}\selectfont%
+    \textit{\color{CrimsonRed}EDO Coursebook Version: %
+      \color{Modern}\DTMusedate{Coursebook_Version}}}%
+  \DTMsetdatestyle{mydateformat}
+\end{titlepage}
+\hypersetup{pageanchor=true}
+\clearpage
+
+% ----- FRONTMATTER -----
+% Helper to pick the right ToC level in subfiles or full builds.
+\NewDocumentCommand{\mtTOClevel}{}{\@ifundefined{chapter}{section}{chapter}}
+\MTUseTblrPreset
+\frontmatter%
+\SetFrontMatterStyle%
+\tableofcontents%
+\HR%
+
+\listoffigures%
+\HR%
+
+\listoftables%
+\HR%
+
+\clearpage%
+% ----- MAINMATTER -----
+\mainmatter%
+\SetMainMatterStyle%
+\chapter{Organization}
+\ChapterWithRefsAtStart{1_Chain_of_command}
+\ChapterWithRefsAtStart{2_TA_EA}
+\ChapterWithRefsAtStart{3_NAVSEA}
+\ChapterWithRefsAtStart{4_NAVWAR}
+\StudySubfile{5_NAVAIR_and_PEOs}
+
+\chapter{PPBE}
+\ChapterWithRefsAtStart{6_PPBE}
+\ChapterWithRefsAtStart{7_NWCF}
+\ChapterWithRefsAtStart{8_Congressional_Enactment}
+\ChapterWithRefsAtStart{9_Program_Funding_and_Execution}
+\ChapterWithRefsAtStart{10_Cost_Fundamentals}
+
+\chapter{Contracting and Solicitation}
+\ChapterWithRefsAtStart{11_Contracting_Fundamentals}
+\ChapterWithRefsAtStart{12_Solicitation}
+\ChapterWithRefsAtStart{13_cost_price_eval}
+\ChapterWithRefsAtStart{14_EVM}
+
+\chapter{Defense Acquisitions}
+\ChapterWithRefsAtStart{15_policy}
+\ChapterWithRefsAtStart{16_Milestones}
+
+\chapter{Requirements}
+\ChapterWithRefsAtStart{17_JCIDS}
+\ChapterWithRefsAtStart{18_test_eval}
+
+\chapter{Maintenance}
+\ChapterWithRefsAtStart{19_Fleet_Maintenance_Assets}
+\ChapterWithRefsAtStart{20_Navy_Modernization_Program}
+\ChapterWithRefsAtStart{21_Fleet_Maintenance_Policy_and_Implementation}
+\ChapterWithRefsAtStart{22_AIT_Fundamentals_and_Lessons_Learned}
+\ChapterWithRefsAtStart{23_Waterfront_Organization_Work_Control_Safety}
+\ChapterWithRefsAtStart{24_Battle_Damage_Assessment_Repair}
+\ChapterWithRefsAtStart{25_CNO_Availability_Planning}
+\ChapterWithRefsAtStart{26_CNO_Availability_Execution}
+
+\chapter{Civilian Personnel}
+\ChapterWithRefsAtStart{27_CIVPERS}
+
+\appendix%
+% Optional TOC divider line "Appendices"
+\addpart*{Appendices}
+\addcontentsline{toc}{part}{Appendices}
+\StudySubfile{appendix_plat_card}
+\chapter{Key Roles in Acquisition and Modernization}
+\StudySubfile{appendix_key_roles}
+\StudySubfile{appendix_combatant_commands}
+\StudySubfile{appendix_edo_billet_summary}
+\StudySubfile{appendix_edo_flags}
+\StudySubfile{appendix_community_rosters}
+\StudySubfile{appendix_cno34_day_one_message}
+\StudySubfile{appendix_current_events}
+
+\clearpage\label{LastPageMain}
+\phantomsection%
+
+% ----- BACKMATTER -----
+\backmatter%%
+\SetBackMatterStyleA%
+\printbibliography[heading=bibnumbered, title={References}]
+\clearpage%
+
+% Acronym list headings
+\RenewDocumentCommand{\entryname}{}{\sffamily\textbf{\color{Modern} Acronym}}
+\RenewDocumentCommand{\descriptionname}{}{\sffamily\textbf{\color{Modern} Definition}}
+
+\RenewDocumentCommand{\glsnamefont}{m}{\textbf{#1}}
+\printnoidxglossary[
+  type=\acronymtype,
+  title=List of Acronyms,
+  numberedsection,
+  style=long-booktabs
+]
+
+\makeatother%
+\end{document}

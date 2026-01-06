@@ -1,12 +1,26 @@
-# Keep PDF in repo; put aux where LaTeX/biber agree
-$out_dir = 'out';
-$aux_dir = 'build';
+# Keep PDF in repo; put aux where LaTeX/biber agree.
+use Cwd qw(abs_path);
+use File::Basename qw(dirname);
+my $root_dir = abs_path(dirname(__FILE__));
+$out_dir = "$root_dir/out";
+$aux_dir = "$root_dir/build";
+# Stay in repo root so out/build resolve consistently when compiling tex/main.tex.
+$do_cd = 0;
 
-# Ensure LaTeX can see sources under src/ even when latexmk is run from repo root.
+# Ensure LuaLaTeX has a writable cache dir for luaotfload/fontspec (important in
+# sandboxed environments where $HOME may not be writeable).
+use File::Path qw(make_path);
+$ENV{'TEXMFVAR'}   = "$aux_dir/texmf-var";
+$ENV{'TEXMFCACHE'} = "$aux_dir/texmf-cache";
+make_path($ENV{'TEXMFVAR'});
+make_path($ENV{'TEXMFCACHE'});
+
+# Ensure LaTeX can see tex/ sources even when latexmk is run from elsewhere.
+# Keep search paths shallow to avoid picking up stale aux files.
 my $texinputs_sep = ($^O =~ /mswin32|cygwin|msys/i) ? ';' : ':';
-$ENV{'TEXINPUTS'} = "src//$texinputs_sep" . ($ENV{'TEXINPUTS'} // '');
-$ENV{'BIBINPUTS'} = "src//$texinputs_sep" . ($ENV{'BIBINPUTS'} // '');
-$ENV{'BSTINPUTS'} = "src//$texinputs_sep" . ($ENV{'BSTINPUTS'} // '');
+$ENV{'TEXINPUTS'} = "$root_dir/tex$texinputs_sep" . ($ENV{'TEXINPUTS'} // '');
+$ENV{'BIBINPUTS'} = "$root_dir/tex$texinputs_sep" . ($ENV{'BIBINPUTS'} // '');
+$ENV{'BSTINPUTS'} = "$root_dir/tex$texinputs_sep" . ($ENV{'BSTINPUTS'} // '');
 
 # Tell latexmk this is a LuaLaTeX workflow
 $pdf_mode = 4;

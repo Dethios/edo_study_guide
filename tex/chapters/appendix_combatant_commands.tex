@@ -1,0 +1,45 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% =============================================================================
+% APPENDIX: COMBATANT COMMANDS
+% DESCRIPTION: Geographic and functional combatant commands (CCMDs) reference.
+% =============================================================================
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+%====================
+% Contents here
+%====================
+\section{Combatant Commands (Reference)}
+\noindent\textbf{\ac{aor}:} The geographic (or astrographic) area assigned to a \ac{ccdr} for missions and forces. (Title~10) % cite earlier laws in main refs if desired
+
+\textbf{Geographic (7):}
+\begin{itemize}
+  \item \ac{usafricom}
+  \item \ac{uscentcom}
+  \item \ac{useucom}
+  \item \ac{usindopacom}
+  \item \ac{usnorthcom}
+  \item \ac{ussouthcom}
+  \item \ac{usspacecom}\footnote{\ac{usspacecom} is treated by \ac{dow} as a \textbf{geographic (astrographic)} command with an \ac{aor} beginning at the K\'{a}rm\'{a}n line ($\sim$100\,km)}
+\end{itemize}
+\textbf{Functional (4):}
+\begin{itemize}
+  \item \ac{uscybercom}
+  \item \ac{ussocom}
+  \item \ac{usstratcom}
+  \item \ac{ustranscom}
+\end{itemize}
+%====================
+% End of file
+%====================
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
+\end{document}

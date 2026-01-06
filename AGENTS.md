@@ -1,138 +1,106 @@
-# AGENTS Operating Guide
+# AGENTS.md — EDO Acquisition Tutor
 
-## Read first
+## Read First
 
-- Always read this file and `Other/project_export.json` before starting any task. Use `Other/project_export.md` as a quick snapshot only.
-- `AGENTS.md` is the authoritative instruction + task list; `Other/project_export.json` is the canonical project database/context. Keep them in sync after every task.
-- Add new user directives and agent-recommended tasks here; mirror context changes in `Other/project_export.json`.
+-   Read this file, `project_export.json`, and `.github/copilot-instructions.md` before starting any task.
+-   `AGENTS.md` is the authoritative instruction/task list. `project_export.json` is the canonical project database. Only update these files when files under `/home/victor/projects/edo/main` are modified; when you update either file, keep them synchronized.
+-   Do not track `out/main.pdf`; use for verification only. Released PDFs are gitignored in `release/` and uploaded to GitHub Releases.
 
-## Mission and doctrine (high-level)
+## Mission and Doctrine (High Level)
 
-- Role: Navy EDO Acquisition Tutor for board prep (default) with optional Mastery depth on request.
-- Style: layered brief -> Navy overlays -> fiscal/PPBE with SCN/WPN nuance -> Decision Trace -> citations with dates -> assumptions -> self-score. Use Mermaid decision flows when requested; otherwise favor concise textual logic plus Decision Trace.
-- Sources and recency: verify controlling statutes/regulations/policy (10/41 U.S.C., FAR/DFARS/PGI, DoDI 5000 series, SECNAV/OPNAV/NAVSEA overlays, DoW FMR, GAO Red Book) and EDO coursebook baseline (current as of 2025-09-12). Stamp deliverables with "Current as of [YYYY-MM-DD]".
-- Citation/formatting: place `\autocite{}` inside sentences before punctuation; use `\ac{}` in prose (lowercase keys), not in headings or tables; default tables to `longtblr`; prefer `description` for term/definition lists; keep ASCII.
-- Safety: not legal advice; respect OPSEC/CUI and procurement integrity.
+-   **Role:** Navy EDO Acquisition Master Instructor focused on developing a study guide for qualification board prep, with Mastery depth.
+-   **Sources/Recency:** Verify current controlling statutes/regulations/policy (10/41 U.S.C., FAR/DFARS/PGI, DoDI 5000 series, SECNAV/OPNAV/NAVSEA overlays, DoW FMR, GAO Red Book) and the EDO coursebook (current as of 2025-09-12). Stamp deliverables as "Current as of [YYYY-MM-DD]".
+-   **Safety:** Not legal advice; maintain OPSEC/CUI and procurement integrity.
+-   **Conflict handling:** When sources conflict, state the hierarchy (statute > regulation > policy > local), prefer the most recent controlling doc, and note assumptions.
 
-## Workflow for every task
+## Formatting Rules
 
-- Start: read `AGENTS.md` and `Other/project_export.json`; skim `Other/project_export.md` if you need the snapshot. Note assumptions.
-- Finish:
-  - Write a short summary of completed work and the context of the current chat.
-  - Update `Other/project_export.json` with new context/instructions/status.
-- Update this file with task status changes and any new/recommended tasks or directives.
-- Run `latexmk -shell-escape` (project `latexmkrc` handles targets) and record warnings/errors.
-- Check off any TODOs you completed; search `src` for outstanding TODO comments that can be addressed.
-- Proceed with next recommended tasks automatically; if three next steps exist, execute all three.
+-   **Citations:** Use `\autocite{}` inside sentences, before punctuation.
+-   **Acronyms:** Use `\ac{}` in prose (lowercase keys) only; not in headings or tables.
+-   **Tables:** Use `longtblr` by default; prefer `description` for term/definition lists.
+-   **Encoding:** ASCII only.
 
-## Lookups
+## Response and Scope Discipline (GPT-5.2)
 
-- [X] Review ADM Caudle's message to the fleet
-- [x] Specifics of CAPE's duties and responsibilities
-- [x] What are the execution limits as prescribed by OMB
-- [ ] What are OMB's Roles and Responsbilities
-- [ ] Find and review exmaples of POM and BES documents
-- [x] Find all OPNAV N codes for N8 and N9, provide description of what each of them do
-- [x] Provide a description of the Marks and Reclama Process
-- [ ] For CIVPERs, how are conduct and performance issues handled? How are they different?
-- [ ] GS Steps: What is the timing between each step that makes steps 1 to 10 take 18 years?
-- [ ] What are the NRO specifics for promotion in GS Ranks?
-- [ ] When a COC occurs, how long does the new OIC have to make changes before the Unions consider old actions permanement rules
-- [ ] What are the current proposed changes to streamline the GS payscales
-- [x] How do we track expenditures and how do we know that we are on track with out spending?
-- [ ] What are the two ATR windows to request for reprogramming?
-- [ ] Who finalizes and writes the NDAA? Appropriations Bills?
-- [ ] What other items are in the NDAA beyond basic authorizations for spending?
-- [ ] Read the current (new) NDAA and NSS
-- [ ] How does IWS test terminal defense weapons such as CIWS
-- [ ] What is the ASN(RD&A) office structure. What are their job titles and fundtions?
-- [ ] More review of flags.
+-   **Verbosity clamp:** Default to 3–6 sentences or <=5 bullets. For complex multistep tasks: 1 short overview paragraph, then <=5 bullets labeled What changed, Where, Risks, Next steps, Open questions.
+-   **Updates:** Only send brief updates (1–2 sentences) when starting a new major phase or when the plan changes; include at least one concrete outcome and avoid narrating routine tool calls.
+-   **Scope control:** Implement exactly and only what the user asks. No extra features or embellishments; call out optional follow-ons instead of doing them.
+-   **Ambiguity:** Ask up to 1–3 targeted clarifying questions or proceed with explicit assumptions and the simplest valid interpretation.
+-   **Long context:** Restate key constraints and anchor claims to file paths or section names when inputs are long or dense.
+-   **High-risk self-check:** For legal/financial/compliance outputs, re-scan for ungrounded claims or overly strong language and soften with stated assumptions.
 
-## Current jobs
+## Tool Usage
 
-- [x] Review entire scope of project; update `Other/project_export.json` to current project status.
-- [x] Acronym audit: replace uppercase runs with `\ac{}` in prose; add missing entries to `acronyms.def` (skip tables/headings).
-- [x] Refactor sectional tables to `longtblr` in house style.
-- [x] Add CIVPERs coursebook content as a new section using the subfile template.
-- [x] Adjust List of Tables and List of Figures formatting to match the ToC.
-- [x] Resolve unreferenced citation warnings emitted by `latexmk`.
-- [x] Add labels to all chapters, sections, and subsections.
-- [x] Audit `acronyms.def` grouping and plural forms.
-- [x] Update flag appendix and billet callouts per Dec 2025 org chart/bios; remove non-EDO PEO billets (and note PEO USC is SES; RDML Smith relieved).
-- [x] Add PPBE graphics from Platinum Card into Chapter 6.
-- [x] Fix hyperlinks and hyperrefs (clickable links in PDF).
-- [x] Resolve excessive subsection label reference noise.
-- [x] Fix latexmk failure after clean build (longtblr runaway argument; missing bcf/bbl).
-- [x] Restore table column types: F -> l, L -> X, W -> X; remove no-longer-needed custom column types.
-- [x] Determine why IfSubFileClass functions were not activating.
-- [x] Update `src/templates/subfile_template.tex` guidance (remove stale placeholders).
-- [x] Build a single-glance table linking \ac{opnavinst} 4700.7M, \ac{opnavnote} 4700, \ac{jfmm}, and \ac{cbmp} to owners/impacts/talking points.
-- [x] Add an `\ac{opm}` acronym definition and update CIVPERS guidance to use it.
-- [x] Develop a CNO Availability Execution phase table mapping phases to deliverables/docs/leaders.
-- [x] Build an A-36/A-21/A-12/A-3 availability planning timeline graphic with reviews/deliverables.
-- [x] Add a nuclear waterfront project-team schematic (NRRO, RPCO, NSA/LMA, Ship's Force, contractor interactions).
-- [x] Insert a BDAR continuum figure (Damage Control -> Expeditionary -> Depot repair) with responsible orgs.
-- [x] Add a maintenance-level coverage figure mapping O-/I-/Depot-level tasks to NSYs, RMCs, \ac{supship}s, and private yards.
-- [x] Insert a DoW-wide test and evaluation organization graphic (\ac{osd} \ac{dote}, \ac{dasdte}, Service OTAs, warfare centers).
-- [x] Create a modernization document ownership/timing/funding table (Change Notice, JCF, SHIPALT record, installation drawing).
-- [x] Provide an AIT swim-lane diagram (Sponsor, AIT Manager, \ac{rmmco}, \ac{nsa}) from screening through certification.
-- [x] Add a NAVSEA Org Chart Dec 2025 bibliography entry and cite it in the NWC map figure caption.
-- [x] Resolve duplicate labels from automatic section label generation in subfiles.
-- [ ] The first table label is skipped. Fix to ensure all table labels show up.
-- [x] Hyperref: use `linkcolor=black` (do not use AccentBlue).
-- [x] Insert a NAVWAR enterprise structure graphic in Chapter 4 to replace the removed TODO note.
-- [x] Codex Cloud: add startup scripts to install TeX Live and required binaries.
-- [x] Remove minibib code from templates and the study guide.
-- [x] Add appendix with Cannon Cocker and IWE rosters/pyramids.
+-   Prefer tools over assumptions for user-specific data, file state, and IDs; parallelize independent reads when possible.
+-   After any write/update, restate what changed, where, and any validation performed.
 
-## Session updates (2025-12-08)
+## Workflow for Every Task
 
-- Acronym audit: cleaned 10_Cost_Fundamentals, 12_Solicitation, 15_policy, 16_Milestones; added COTS, COFC, IT, and IRB definitions.
-- Added \ac{navseainst} and \ac{opnavnote} definitions; wrapped fleet maintenance policy items and modernization TSRA reference with \ac{} usage; updated Fast Cues (\ac{pta}, \ac{supship}/\ac{navsea}).
-- NAVWAR/Modernization touch-ups: wrapped \ac{opnavinst} 3040.2B reference in BDAR; reduced uppercase runs in modernization governance (\ac{nmp}, \ac{jfmm}).
-- Build: `latexmk -shell-escape src/main.tex` succeeded after updates; many unreferenced citation warnings remain (see log).
+-   **Start:** Read `AGENTS.md`, `project_export.json`, and `.github/copilot-instructions.md`. Note assumptions.
+-   **Finish (only if files under `/home/victor/projects/edo/main` were modified):**
+    -   Write a brief summary of completed work and current chat context.
+    -   Update `project_export.json` with new context, added instructions, and current status.
+-   Update this file with status changes and new/recommended tasks or directives only when files under `/home/victor/projects/edo/main` were modified.
+-   If the task changes any `tex/` files or tooling config for the LaTeX build:
+    -   Run `latexmk -shell-escape` (using project `latexmkrc`); record warnings/errors.
+-   After each test/build, delete SAVE-ERROR files, temp files, and lock files (`*.lock`, `*.lck`, `*.auxlock`).
+-   Mark off completed TODOs; search LaTeX sources (`tex/main.tex`, `tex/chapters/`, `tex/tikz/`, `tex/templates/`) for outstanding TODOs.
+-   Proceed with all next recommended tasks, up to three at a time.
+-   Keep task lists tidy: maintain Outstanding Lookups and Current Jobs above, and move completed items into Resolved Lookups and Completed Jobs at the bottom whenever Lookups or Current Jobs are updated.
 
-## Session updates (2025-12-09)
+## Memory Update Protocol
 
-- Acronym audit continued: waterfront SUBSAFE/work-control bullets now use \ac{navsea}, \ac{navsup}, \ac{ss800}, \ac{waf}, and \ac{oqe}; AIT section aligns to \ac{ait} roles and \ac{nmp} references; NWCF cash-flow step now uses \ac{eft} and \ac{fmr}.
-- New acronyms added: \ac{ss800} (Submergence Systems Certification manual series) and \ac{eft} (Electronic Funds Transfer).
-- Build: `latexmk -shell-escape src/main.tex` successful.
+-   **Trigger:** User says `Update memory: <reason>`.
+-   **Pre-read:** `.github/copilot-instructions.md`, `AGENTS.md`, `project_export.json`.
+-   **Output only:**
+    1. One-sentence rationale.
+    2. JSON Merge Patch (RFC 7396) for `project_export.json` in a code block labeled `json_patch`.
+-   Never rewrite the whole file; patch only changed leaves. Never invent sources.
 
-## Session updates (2025-12-10)
+## Other Instruction Sources
 
-- Resolved PDF backend unreferenced-destination warnings by suppressing per-chapter minibib output in main builds; `latexmk -shell-escape src/main.tex` is clean of those warnings.
-- Added biblatex hyperlink formatting for citation labels/shorthands to tackle unreferenced destination warnings; full `latexmk -shell-escape src/main.tex` still succeeds but the pdf backend continues to report unreferenced citation/glossary destinations (needs follow-up).
-- Continued acronym sweep in contracting and funding chapters (FAR/NMCARS/DFARS prose, LOA/CSSQT, LLTM, opnavinst 4700.7M references) and added \ac{} coverage to solicitation and cost/price evaluation checklists.
-- Added message redirection in `main.tex` to suppress pdf-backend "unreferenced destination" warnings; warnings still emit and need further suppression/tuning.
-- Kept per-chapter minibib active with hyperref disabled around entries; full `latexmk -shell-escape src/main.tex` builds succeed (out/main.pdf) with unreferenced-destination warnings remaining.
-- Silenced pdf-backend "unreferenced destination" spam by disabling bibitem hypertargets (`\DeclareFieldFormat{bibhyperref}` / `bibhypertarget` as identity) and adding hidden glossary links for \ac{ppbe} and \ac{dow}; pdf backend warnings now clean on `latexmk -shell-escape src/main.tex`.
-- `latexmk -shell-escape src/main.tex` now completes without unreferenced destination warnings (overfull boxes remain).
-- Added \ac{subtech} definition and wrapped remaining Open \ac{dagir} references in the current events appendix; `latexmk -shell-escape src/main.tex` still succeeds (only overfull boxes/minted fallback warnings).
-- Softened layout warnings by setting `\emergencystretch` to 1em and enabling `\raggedbottom` in `moderntech-base`; overfull \vbox notices persist in dense figure/table sections but no other regressions observed.
-- Relaxed figure placement from `[H]` to `[htbp]` across chapters and Platinum Card appendix, and tightened float spacing in `moderntech-base`; overfull \vbox notices dropped slightly in dense maintenance/policy sections.
-- Added auto-labeling for numbered chapters/sections/subsections, expanded plural forms/grouping in `acronyms.def`, and updated the EDO flag appendix to remove non-EDO PEO billets per Dec 2025 bios; `latexmk -shell-escape src/main.tex` succeeds with only overfull boxes/minted fallback warnings.
+-   `.github/copilot-instructions.md`: Repo-wide AI defaults (AGENTS remains authoritative).
+-   `GEMINI.md`: Gemini-specific mirror of AGENTS for that toolchain.
+-   `tex/chapters/TikZ/Coursebook_Ingest.md`: Chapter-specific style/content requirements when editing that material.
 
-## Session updates (2025-12-11)
+## Outstanding Lookups
 
-- Changed global float placement defaults in `moderntech-base` to `htbp` to relax float anchoring; rebuilt to clear remaining overfull \vbox warnings in maintenance/policy chapters and appendices.
-- Cleaned the build directory and reran `latexmk -shell-escape src/main.tex`; build completes without overfull box warnings (minted fallback notices remain).
-- Updated NAVSEA billet callouts per the Dec 2025 org chart (COMNAVSEA ADM Houston is a Submarine officer; PEO IWS RDML Dickinson and PEO MLB RDML Biehn are SWO APs; NAVSEA 05 RDML Seif is a Submarine AP); adjusted EDO flag appendix and chain-of-command notes accordingly.
-- Added Platinum Card PPBE graphics (Planning phase and concurrent Program/Budget review) into Chapter 6.
-- Set all subfiles to point at `../src/main.tex` for both the `% !TEX root` directive and subfiles class option; cleaned `build/` and reran `latexmk -shell-escape src/main.tex`, which then failed with a longtblr runaway-argument error in 6_PPBE (tab:ppbe_key_terms) and incomplete `build/main.bcf`/`build/main.bbl`.
+-   [ ] NRO specifics for promotion in GS ranks
+-   [ ] Proposed changes to streamline GS pay scales
+-   [ ] ATR windows to request reprogramming
+-   [ ] IWS test methods for terminal defense weapons (e.g., CIWS)
+-   [ ] NAVWAR PMW list with citations
+-   [ ] Definitions: AOR/NOR/SLR/IGT
+-   [ ] NWCF vs. mission-funded distinctions
+-   [ ] Fast Cues/Common Board Pivots refresh
+-   [ ] Glossary pipeline (IDs/chunking/cadence)
 
-## Session updates (2025-12-12)
+## Current Jobs
 
-- Corrected tabularray defaults (header row/first column styling, ragged body text) and ensured Merriweather Black is used for bold serif cells; aligned defaults so L columns cover former l/X usage.
-- Inserted a NAVWAR enterprise structure graphic (HQ, PEO C4I/MLB, FRDs, NIWC LANT/PAC, NSFA) in Chapter 4 and replaced the A-36/A-0 timeline loop with explicit nodes to avoid TikZ errors.
-- Switched `graphicspath` entries to `\subfix{}` for reliable subfile and main builds; cleaned build artifacts and reran `latexmk -shell-escape src/main.tex` successfully (minted fallback warnings only).
+-   [ ] (none)
 
-## Session updates (2025-12-13)
+## Resolved Lookups
 
-- Minibib now prints only the label number and cited title by clearing non-title fields/macros per bibliography call while retaining refsegment numbering; `latexmk -shell-escape src/main.tex` succeeds after the update (pdf-backend still emits unreferenced destination warnings alongside minted fallback notices).
-- Added Appendix C (CNO 34 Day One Message: Foundry--Fleet--Fight) with full mission/vision/priorities/theory-of-victory transcription and NAVADMIN citation; added a \ac{c3} acronym entry; `latexmk -shell-escape src/main.tex` succeeds (minted fallback and existing overfull-box notices only).
+-   [x] Review ADM Caudle's message to the fleet
+-   [x] Specifics of CAPE duties and responsibilities
+-   [x] OMB execution limits
+-   [x] OMB Roles and Responsibilities
+-   [x] POM and BES document examples
+-   [x] All OPNAV N codes for N8 and N9, describe each (partial: N80/N81/N82, N9I, N95–N98)
+-   [x] Description of Marks and Reclama Process
+-   [x] CIVPERs: conduct/performance issue handling and differences
+-   [x] GS Steps: timeline for 1–10 to take 18 years
+-   [x] COC: new OIC time to make changes before union actions become permanent
+-   [x] Expenditure tracking and spending pace
+-   [x] Who finalizes/writes NDAA and Appropriations Bills
+-   [x] Items in NDAA beyond spending authorizations
+-   [x] Current NDAA and NSS
+-   [x] ASN(RD&A) office structure, job titles, and functions
+-   [x] Further flag review
 
-## Session updates (2025-12-15)
+## Completed Jobs
 
+<<<<<<< HEAD
 - Codex Cloud: added `.codex/setup.sh` + `.codex/maintenance.sh` (apt-based TeX Live install) and `.codex/README.md` with environment configuration guidance.
 - Devcontainer: added `.devcontainer/MINIMUM.md` and `.devcontainer/examples/` (apt-min) listing the minimum binaries/packages to build; updated the list to include `texlive-pictures` + `texlive-bibtex-extra`.
 - LaTeX: removed all minibib code from templates/chapters and removed the minibib macro from `src/moderntech-base.sty`; `latexmk -shell-escape src/main.tex` succeeds (overfull hbox warnings remain).
@@ -147,3 +115,69 @@
 - Lookups1: completed OPNAV N8/N9 subcode coverage by adding N83/N84/N89 to PPBE and Key Roles; updated `acronyms.def` accordingly; `latexmk -shell-escape src/main.tex` succeeds (warnings unchanged).
 - Lookups integration: added CAPE/OMB execution controls, N8/N9 subcodes (N80/N81/N82/N9I/N95--N98), and marks/reclamas content into PPBE/Congressional Enactment/Execution sections; updated Key Roles appendix to match.
 - Acronyms/citations: added `OMB Circular A-11` and 10/31 U.S.C. entries; expanded `acronyms.def` for new OPNAV/board/OLA terms.
+=======
+-   [x] Review project scope; update `project_export.json` to current status
+-   [x] Acronym audit: run replacements with `\ac{}` in prose and fill acronyms.def (skip tables/headings)
+-   [x] Refactor sectional tables to `longtblr`
+-   [x] Add CIVPERs content as new section using subfile template
+-   [x] Adjust List of Tables/Figures formatting to match ToC
+-   [x] Resolve latexmk unreferenced citation warnings
+-   [x] Add labels to all chapters/sections/subsections
+-   [x] Audit acronyms.def grouping/plurals
+-   [x] Update flag appendix and billet callouts per Dec 2025 org chart; remove non-EDO PEO billets (note PEO USC is SES; RDML Smith relieved)
+-   [x] Add PPBE graphics (Platinum Card) into Chapter 6
+-   [x] Fix hyperlinks/hyperrefs for clickable PDF links
+-   [x] Resolve excess subsection label reference noise
+-   [x] Fix latexmk failure after clean build (longtblr runaway arg, missing bcf/bbl)
+-   [x] Restore table column types: F→l, L/W→X; remove unused custom types
+-   [x] Determine why IfSubFileClass functions didn't activate
+-   [x] Update subfile_template.tex guidance (remove stale placeholders)
+-   [x] Table: link \ac{opnavinst} 4700.7M, \ac{opnavnote} 4700, \ac{jfmm}, \ac{cbmp} w/ owners, impacts, talking points
+-   [x] Add `\ac{opm}` acronym and update CIVPERS guidance
+-   [x] CNO Availability Execution phase table: phases → deliverables/docs/leads
+-   [x] Build A-36/A-21/A-12/A-3 availability timeline graphic
+-   [x] Add nuclear waterfront project-team schematic
+-   [x] BDAR continuum figure with orgs
+-   [x] Maintenance level coverage figure mapping orgs and tasks
+-   [x] DoW-wide test and eval org graphic
+-   [x] Modernization doc ownership/timing/funding table
+-   [x] AIT swim-lane diagram: Sponsor, AIT Manager, \ac{rmmco}, \ac{nsa}
+-   [x] NAVSEA Org Chart Dec 2025 cite and bibliography
+-   [x] Resolve duplicate labels from subfile-generated labels
+-   [x] Ensure first table label is present
+-   [x] Set `linkcolor=black` for hyperref, not AccentBlue
+-   [x] Insert NAVWAR enterprise structure graphic in Chapter 4
+-   [x] Codex Cloud: add TeX Live/bin install scripts
+-   [x] Remove minibib from templates/study guide
+-   [x] Appendix with Cannon Cocker/IWE rosters/pyramids
+-   [x] Repo layout: move LaTeX sources under `tex/`; align output/scripts/tool config.
+-   [x] Merge Current Events chapter into appendix and remove the redundant chapter file
+-   [x] Move project_export.json to repo root and update references (2025-12-24)
+-   [x] Move project_export schema to `schemas/project_export.schema.json` and fix filename typo (2025-12-24)
+-   [x] Retire project_export.md after extracting remaining guidance (2025-12-24)
+-   [x] Optimize AGENTS.md with GPT-5.2 prompting guidance (2025-12-24)
+-   [x] Integrate memory_update.md into AGENTS.md and remove the file (2025-12-24)
+-   [x] Inventory instruction sources and account for them in AGENTS.md (2025-12-24)
+-   [x] Add settings_master.json and automate settings sync/merge (VS Code open + git push)
+-   [x] Create WSL/VS Code replication notebook with optional devcontainer scaffold (2025-12-24)
+-   [x] Commit devcontainer files for Ubuntu WSL replication (2025-12-24)
+-   [x] Audit shell/PowerShell script parity and tasks.json OS routing (2025-12-24)
+-   [x] Tidy settings_manager.py spacing (2025-12-24)
+-   [x] Add NDS, C2, AI, CTF, and BES acronyms (2025-12-24)
+-   [x] Add shell script runner Jupyter notebook under scripts (2025-12-24)
+-   [x] Resolve remaining undefined citation warnings in `build/main.log` after biber runs
+-   [x] Add VS Code task to merge settings (2025-12-25)
+-   [x] Fix BUILD-WSL LaTeX Workshop command path to avoid ENOENT (2025-12-25)
+-   [x] Guidance: shell_runner.ipynb sudo apt-get hang and notebook TTY limits (2025-12-26)
+-   [x] Add sudo -n guard to shell_runner.ipynb (2025-12-26)
+-   [x] Guidance: WSL + VS Code terminal vs Jupyter terminal behavior (2025-12-26)
+-   [x] Merge on-open tasks with sudo -v precheck (2025-12-26)
+-   [x] Guidance: sudo timestamp not shared with notebook (2025-12-26)
+-   [x] Guidance: devcontainer TeX Live setup summary (2025-12-26)
+-   [x] Align WSL TeX Live install with devcontainer and add package/font audit (2025-12-26)
+-   [x] WSL installer: install missing required/optional fonts (2025-12-26)
+-   [x] WSL notebook: add ssh backup/restore and sudoers guidance (2025-12-26)
+-   [x] WSL sudoers: use $USER instead of hard-coded name (2025-12-26)
+-   [x] Add NIP/MIP funding subsection (NRO context) with citations and acronyms (2025-12-28)
+-   [x] Default markdown-related files to markdown-preview-enhanced and sync settings (2026-01-02)
+>>>>>>> 2c8325c950bf425138843fea73e7b1d900b1d9e2

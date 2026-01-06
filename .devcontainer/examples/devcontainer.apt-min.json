@@ -5,6 +5,5 @@
     "context": ".."
   },
   "remoteUser": "vscode",
-  "postCreateCommand": "latexmk -shell-escape src/main.tex"
+  "postCreateCommand": "latexmk -shell-escape tex/main.tex"
 }
-

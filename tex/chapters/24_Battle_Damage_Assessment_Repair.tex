@@ -1,0 +1,81 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% =============================================================================
+% File: 24_Battle_Damage_Assessment_Repair.tex
+% =============================================================================
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+\section{Battle Damage Assessment and Repair}
+
+\subsection{Strategic Context}
+\begin{itemize}
+  \item \textbf{Global competition.} Renewed great-power competition with the \ac{prc} and Russia (plus persistent \ac{dprk} provocations) means distributed maritime operations must survive massed fires and cyber/electromagnetic attacks~\autocite{NAVPLAN2024,edo-4-1-6-bdar-2025}.
+  \item \textbf{Wartime Acquisition Response Plan (\ac{warp}).} \ac{secnav}'s \ac{warp} memo directs every \ac{syscom}/\ac{peo} to maintain plans, contracts, and trained people to pivot from peacetime acquisition to wartime recovery of ships and systems~\autocite{SECNAV-WARP-2021}.
+  \item \textbf{\ac{gao} findings.} \ac{gao}-21-246 warns that current \ac{bdar} capabilities are insufficient for contested logistics, highlighting gaps in expeditionary repair, pre-positioned materiel, and command-and-control~\autocite{GAO-21-246}.
+\end{itemize}
+
+\subsection{BDAR Continuum}
+\begin{description}
+  \item[\textbf{Damage Control.}] Ship's Force fights fires, floods, and casualties to stabilize the platform, preserve combat power, or keep it afloat until assistance arrives~\autocite{edo-4-1-6-bdar-2025}.
+  \item[\textbf{\ac{ra}.}] Military Sealift Command (\ac{msc}) tugs, Mobile Diving and Salvage Units (\ac{mdsu}), and \ac{supsalv} assets conduct emergency towing, underwater repairs, object retrieval, and environmental mitigation~\autocite{NAVSEA-4740-2H}.
+  \item[\textbf{Damage Assessment.}] Ship's Force, salvage teams, and ashore Damage Assessment Teams from \ac{rmc}s, \acp{nsy}, or \ac{sea}~21 analyze hull integrity, stability, and mission systems to recommend disposition~\autocite{edo-4-1-6-bdar-2025}.
+  \item[\textbf{Expeditionary Repair.}] \ac{fdsrt} and \ac{emrf} deploy with \ac{sib} sets to restore mobility or key mission systems without returning to a depot~\autocite{CPF-MSP-PLANORD-2023,edo-4-1-6-bdar-2025}.
+  \item[\textbf{Depot Repair / Disposition.}] \acp{nsy}, \ac{rmc}s, and private yards perform major repairs, partial restorations, or decide to scrap; choices depend on threat, capability needs, cost, and industrial capacity~\autocite{edo-4-1-6-bdar-2025}.
+\end{description}
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+      node distance=1.2cm and 1.2cm,
+      phase/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, align=center, inner sep=4pt, minimum width=2.2cm, text width=2.2cm, minimum height=1.4cm},
+      arrow/.style={-Latex, line width=1pt, draw=Gray60}
+    ]
+    \node[phase] (dc) {Damage Control\\Ship's Force};
+    \node[phase, right=of dc] (ra) {Rapid Response\\MSC tugs / MDSU / SUPSALV};
+    \node[phase, right=of ra] (assess) {Damage Assessment\\RMC / NSY / SEA 21 teams};
+    \node[phase, right=of assess] (exped) {Expeditionary Repair\\FDSRT / EMRF with SIB};
+    \node[phase, right=of exped] (depot) {Depot Repair / Disposition\\NSY / RMC / private yard};
+
+    \draw[arrow] (dc) -- node[below]{stabilize} (ra);
+    \draw[arrow] (ra) -- node[below]{tow, patch, dewater} (assess);
+    \draw[arrow] (assess) -- node[below]{recommend actions} (exped);
+    \draw[arrow] (exped) -- node[below]{restore mobility} (depot);
+  \end{tikzpicture}
+  \caption[BDAR continuum]{BDAR continuum from damage control through expeditionary repair to depot-level recovery, with primary responsible organizations at each step.}
+  \label{fig:bdar-continuum}
+\end{figure}
+
+\subsection{Command, Control, and Technical Authority}
+\begin{itemize}
+  \item \textbf{Operational control.} Fleet commanders designate \ac{bdar} task forces; Task Force logistics commanders orchestrate salvage, \ac{fdsrt}, and \ac{emrf} employment while coordinating with theater Joint Logistics Enterprise nodes~\autocite{NWP3-32,NWP4-12}.
+  \item \textbf{Technical authority.} Wartime does not suspend Technical Authority—\ac{navsea}, Naval Reactors, and Warfare Centers still adjudicate waivers; however, \ac{warp} allows pre-planned delegated authorities and acceptance of graded risk when documented~\autocite{SECNAV-WARP-2021}.
+  \item \textbf{Reporting.} \ac{casrep} 4.0 timelines and Battle Damage Assessment reports flow through \ac{opnavinst}~3040.2B to inform reconstitution priorities and Congressional notifications~\autocite{OPNAVINST3040-2B}.
+\end{itemize}
+
+\subsection{Logistics, Contracting, and Fiscal Readiness}
+\begin{description}
+  \item[\textbf{Prepositioned materiel.}] \ac{msp} force packages require pre-kitted \acp{sib}, hull patches, and mobile power kits staged throughout the Indo-Pacific, \ac{useucom}, and \ac{uscentcom} theaters~\autocite{CPF-MSP-PLANORD-2023}.
+  \item[\textbf{Contracting.}] \ac{far}~Part~18 and \ac{dfars}~Part~218 emergency authorities (e.g., oral solicitations, undefinitized contract actions, Defense Priorities and Allocations System ratings) enable rapid award, but commands must still document justification and maintain traceability for later definitization~\autocite{FAR,DFARS}.
+  \item[\textbf{Funding.}] \ac{bdar} relies on \ac{omn} for emergent repairs, \ac{scn} for major restorations, and \ac{wpn} when combat system replacement constitutes procurement; \ac{dod} \ac{fmr} Volume~3 prescribes reprogramming thresholds~\autocite{DoDFMR-Vol3}.
+  \item[\textbf{Supply chain resilience.}] The Resilient Maritime Logistics initiative (Project 33) aligns \ac{opnav} N4, Fleet Logistics Centers, and Defense Logistics Agency to keep people, parts, and processes flowing under contested logistics~\autocite{NAVPLAN2024,edo-4-1-6-bdar-2025}.
+\end{description}
+
+\subsection{Maritime Support Plan Force Packages}
+\begin{enumerate}
+  \item \textbf{Afloat Augmentation.} 25--50 artisans augment the shipboard \ac{ima} to enable 24/7 casualty response within a strike group~\autocite{CPF-MSP-PLANORD-2023}.
+  \item \textbf{Afloat Independent Maintenance Activity.} Tender-like capability distributed across vessels of opportunity that integrates \ac{emrf}, \ac{fdsrt}, and logistics cells under Task Force \ac{opcon}~\autocite{CPF-MSP-PLANORD-2023}.
+  \item \textbf{Ashore Lean / Robust / Austere.} Scalable shore nodes that combine contractor oversight teams, \ac{navsea} contracting cells, and host-nation support to execute depot-equivalent work forward~\autocite{CPF-MSP-PLANORD-2023}.
+\end{enumerate}
+\acp{edo} should be ready to explain which force package they would recommend for a given scenario, how long it takes to activate, and how technical authority, contracts, and funding are synchronized.
+
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
+\end{document}

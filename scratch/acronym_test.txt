@@ -1,7 +1,0 @@
-DoW leading paragraph.
-Next paragraph starts with DoW again.
-DoW after explicit noindent.
-
-1
-
-

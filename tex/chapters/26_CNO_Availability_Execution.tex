@@ -1,0 +1,97 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% =============================================================================
+% File: 26_CNO_Availability_Execution.tex
+% =============================================================================
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+\section{CNO Availability Execution}
+
+\subsection{Project Teams and Responsibilities}
+\begin{description}
+  \item[\textbf{Shipyard team.}] The Project Superintendent (overall cost/schedule/safety owner), Project Manager (budget, earned value, planning integration), Assistant Project Superintendents (zone leads), Engineering \& Planning (technical work documents, boundaries), and Business \& Planning (funding, schedule coordination) form the core team~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{\ac{rmc}/private-yard team.}] The Port Engineer, Ship's Maintenance Manager (\ac{smm}), Ship's Force Maintenance Officer, \ac{tycom} representative, Contracting Officer, and contractor Project Manager manage planning yard availabilities~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Ship's Force.}] \ac{co}/\ac{xo}/\ac{cheng} maintain safety, tag-out, and configuration control; Combat Systems and Supply Officers coordinate tests, \acp{sovt}, and material receipt~\autocite{COMFLTFORCOMINST4790-3}.
+  \item[\textbf{Specialists.}] Integrated Test Engineers, Project Support Engineers, Quality Assurance Specialists, Alteration Coordinators, and Administrative Contract Specialists provide focused oversight on testing, configuration, QA, and change management~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+\end{description}
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+      node distance=1.9cm and 2.6cm,
+      role/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, align=center, inner sep=6pt},
+      oversight/.style={draw=AccentGreen, fill=AccentGreen!15, rounded corners=2pt, align=center, inner sep=6pt},
+      arrow/.style={-Latex, line width=0.9pt, draw=Gray60}
+    ]
+    \node[role] (ship) {Ship's Force\\CO / XO / CHENG};
+    \node[role, right=of ship] (contractor) {Prime Contractor\\PM / QA / Trades};
+    \node[oversight, above=of contractor] (nrro) {NRRO\\(nuclear oversight)};
+    \node[oversight, above right=0.4cm and 2.0cm of ship] (nsa) {NSA / LMA\\Waterfront authority};
+    \node[oversight, below=of contractor] (rpcp) {RPCO\\(cognizant engineer)};
+    \node[oversight, below right=0.4cm and 2.0cm of ship] (qa) {QA / Testing\\Chief Test Conductor};
+
+    \draw[arrow] (ship) -- node[above]{shift tests, tag-out} (contractor);
+    \draw[arrow] (contractor) -- node[below]{work control, turnover} (ship);
+    \draw[arrow] (nrro) -- node[right]{reactor oversight} (contractor);
+    \draw[arrow] (nrro) -- node[left]{line authority} (nsa);
+    \draw[arrow] (nsa) -- node[above]{work authorization} (contractor);
+    \draw[arrow] (rpcp) -- node[right]{tech direction} (contractor);
+    \draw[arrow] (qa) -- node[right]{TGI / trials} (contractor);
+    \draw[arrow] (qa) -- node[below]{witness / accept} (ship);
+  \end{tikzpicture}
+  \caption[Nuclear waterfront team]{Nuclear waterfront project-team interactions across NRRO, RPCO, NSA/LMA, Ship's Force, and the prime contractor.}
+  \label{fig:nuclear-waterfront-team}
+\end{figure}
+
+\subsection{Execution Phases}
+\begin{enumerate}
+  \item \textbf{Nesting / Arrival.} Establish temporary services, fire watches, habitability, industrial hygiene controls, and turnover from Ship's Force to the Maintenance Activity; complete mandatory briefings (\ac{jfmm} Chapter 2, Tag-out Users Manual)~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item \textbf{Rip-out \& Access.} Remove interferences, open systems, and conduct initial \ac{waf} reviews; late identification of hazardous material and access conflicts is a top schedule killer~\autocite{COMFLTFORCOMINST4790-3}.
+  \item \textbf{Open \& Inspect.} Execute inspections (tank, structural, piping) and document growth work; per \ac{navsea} Standard Item 009-01, inspections should be 100\% complete by A+20\% to preserve schedule margin~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item \textbf{Repair \& Production.} Complete component tasks, manage new vs.\ growth work approvals, and track critical path milestones using \ac{tgi}~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item \textbf{Testing, Trials, Certification.} Execute compartment turnover, \ac{loa}, \ac{sovt}, \ac{cssqt}, Builder's/Acceptance Trials, and Sea Trials before \ac{pcd}~\autocite{COMFLTFORCOMINST4790-3}.
+\end{enumerate}
+
+\begin{longtblr}[
+    caption = {CNO availability execution phases},
+    label   = {tab:cno-availability-phases}
+  ]{
+    colspec = {@{} L L L L @{}}
+  }
+  \toprule
+  {Phase}                        & {Key Deliverables}                                                                             & {Controlling Documents}                                                                       & {Responsible Leads}                                                       \\
+  \midrule
+  Nesting / Arrival              & Temporary services, fire watch plan, habitability, turnover briefs, tag-out baseline           & JFMM Chapter 2; Tag-out Users Manual; local safety manuals                                    & Project Superintendent, Safety Officer, Ship's Force Department Heads     \\
+  Rip-out \& Access              & Interference removal, WAF approvals, confined space/hazardous material plans                   & WAF/Tag-out procedures; hot work and gas-free engineering instructions                        & Zone Assistant Project Managers, Production Shop Leads, Gas Free Engineer \\
+  Open \& Inspect                & Inspection reports, growth work candidates, material condition snapshots                       & Standard Item 009-01; QA/inspection instructions; class maintenance plans                     & Engineering \& Planning, Quality Assurance, Class Maintenance Planner     \\
+  Repair \& Production           & Completed work items, change control (JSNs/contract mods), schedule metrics, resource leveling & Contract/SOW; work package and change control processes; integrated master schedule standards & Project Manager, Port Engineer/KO, Business \& Planning, Contractor PM    \\
+  Testing, Trials, Certification & Test agendas, TGI alignment, LOA/SOVT/CSSQT completion, sea trial cards, turnover certificates & JFMM testing chapters; platform test manuals; INSURV/Builder's trial requirements             & Chief Test Conductor, Ship's Force Test Coordinator, NSA/LMA witnesses    \\
+  \bottomrule
+\end{longtblr}
+
+\subsection{Governance, Quality, and Work Control}
+\begin{itemize}
+  \item \textbf{\ac{nsa} / \ac{lma}.} Certifies that work is authorized, technically compliant, and properly tested before acceptance; reviews \ac{oqe} prior to signing completion certificates~\autocite{COMFLTFORCOMINST4790-3}.
+  \item \textbf{Work control.} \acp{waf}, \ac{tgi} sequencing, and boundary tags must remain synchronized; growth work requires screening panels (Ship's Force, \ac{tycom}, KO) to verify funding, schedule, and technical impacts~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item \textbf{New vs.\ growth work.} New work is undiscovered scope added post-award; growth work expands existing items. Both demand \ac{tycom} approval, funding source identification, and contract mods (or \ac{jsn} adjustments for public yards)~\autocite{COMFLTFORCOMINST4790-3}.
+  \item \textbf{Testing governance.} Chief Test Conductors manage test agendas; engineering agents and Ship's Force witness tests, and discrepancies must be adjudicated before certification events (e.g., \ac{loa}, \ac{cssqt})~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+\end{itemize}
+
+\subsection{Lessons Learned}
+\begin{itemize}
+  \item \textbf{Momentum matters.} Availability performance often collapses after undocking; maintain daily production meetings, emphasize housekeeping/safety, and enforce material staging to avoid second-half slumps~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item \textbf{Communication is a weapon system.} Cross-functional representatives (yard, Ship's Force, \ac{tycom}, QA, Supply) must keep each other informed about configuration, testing, and material risks; unresolved disconnects manifest as trial failures~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item \textbf{Document everything.} Capture change incorporation, OQE, and lessons in the \ac{nde} immediately—waiting until the end invites errors and delays closeout~\autocite{COMFLTFORCOMINST4790-3}.
+\end{itemize}
+
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
+\end{document}

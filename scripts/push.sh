@@ -5,20 +5,27 @@ set -euo pipefail
 DEFAULT_MSG="Auto-commit: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
 BRANCH="$(git rev-parse --abbrev-ref HEAD 2> /dev/null || echo main)"
 
+# Keep settings_master in sync before staging/commit
+if command -v python3 >/dev/null 2>&1; then
+  python3 scripts/settings_manager.py merge
+elif command -v python >/dev/null 2>&1; then
+  python scripts/settings_manager.py merge
+else
+  echo "settings merge skipped: python not found" >&2
+  exit 1
+fi
+
 # Guardrails: block obvious secrets by pattern (edit as needed)
 BLOCK_PATTERNS=(
   '\.env'
   'id_rsa|id_ed25519|_key$'
   'token|apikey|secret'
 )
-# 0) Optional create a release file
-echo "Creating release file..."
-./scripts/copy_release_linux.sh
-
+BLOCK_PATTERN="$(IFS='|'; echo "${BLOCK_PATTERNS[*]}")"
 # 1) Refuse if patterns present in staged or untracked
-if git ls-files -o -m --exclude-standard | grep -E "${BLOCK_PATTERNS[*]}" -iq; then
+if git ls-files -o -m --exclude-standard | grep -E "$BLOCK_PATTERN" -iq; then
   echo "⚠️  Potential secret-like files changed. Review before pushing."
-  git ls-files -o -m --exclude-standard | grep -E "${BLOCK_PATTERNS[*]}" -i || true
+  git ls-files -o -m --exclude-standard | grep -E "$BLOCK_PATTERN" -i || true
   exit 1
 fi
 

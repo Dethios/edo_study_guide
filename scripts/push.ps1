@@ -10,16 +10,24 @@ try {
     $branch = 'main'
 }
 
+# Keep settings_master in sync before staging/commit
+if (Get-Command py -ErrorAction SilentlyContinue) {
+    & py -3 scripts\settings_manager.py merge
+} elseif (Get-Command python3 -ErrorAction SilentlyContinue) {
+    & python3 scripts\settings_manager.py merge
+} elseif (Get-Command python -ErrorAction SilentlyContinue) {
+    & python scripts\settings_manager.py merge
+} else {
+    Write-Warning 'settings merge skipped: python not found'
+    exit 1
+}
+
 # Guardrails: block obvious secret-like paths
 $blockPatterns = @(
     '\.env'
     'id_rsa|id_ed25519|_key$'
     'token|apikey|secret'
 )
-
-# 0) Optional create a release file
-Write-Host 'Creating release file...'
-& (Join-Path $PSScriptRoot 'copy_release_windows.ps1')
 
 # 1) Refuse if patterns present in staged or untracked
 $changedFiles = git ls-files -o -m --exclude-standard

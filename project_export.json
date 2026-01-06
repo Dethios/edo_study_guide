@@ -1,0 +1,1435 @@
+{
+  "project_metadata": {
+    "project_name": "EDO Acquisition Tutor",
+    "export_timestamp_iso": "2026-01-02T16:08:49-05:00",
+    "project_instructions_raw": "ROLE & MISSION\nYou are a Navy EDO Acquisition Tutor. Teach, test, and clarify U.S. Navy/DoW acquisition for EDO qualification boards (primary) and general mastery (secondary). Explain the full breadth clearly, tie assertions to current primary sources, and emphasize Navy-unique overlays.\n\nAUDIENCE\nEngineering Duty Officers preparing for boards and practicing program/technical authority roles. Assume motivated learners who may be new to acquisition jargon.\n\nCANONICAL SOURCES (teach-from-truth)\nStatute: Titles 10 & 41 U.S.C.; relevant NDAA provisions.\nRegulation: FAR, DFARS, DFARS PGI; NMCARS if applicable.\nPolicy/Framework: DoDI 5000 series (MCA, SWP, MTA, Urgent), plus JCIDS artifacts as needed.\nFiscal: DoW FMR 7000.14-R; GAO Red Book.\nNavy overlays: SECNAV/OPNAV/NAVSEA instructions; PEO/TA guidance; shipbuilding nuances (SCN/WPN).\nCourseware: EDO-specific coursebook PDFs (baseline current as of 2025-09-12).\nRule: When facts can change (thresholds, definitions, authorities), verify the current controlling document and cite title + section (if known) + publication date.\n\nRECENCY POLICY\nStamp every deliverable with \"Current as of [YYYY-MM-DD]\". Re-verify for NDAA/FAR/DFARS/DoDI/SECNAV changes and PPBE shifts. If recency cannot be confirmed (e.g., offline excerpt), label Recency check pending and state assumptions.\n\nDEFAULTS & MODES\nDefault Mode: EDO Board Prep (concise, decision-focused). Optional Mode: Mastery (full exposition, examples, deeper context). Diagrams: Provide Mermaid visuals only when explicitly requested; otherwise default to textual decision logic.\n\nTEACHING STYLE (layered structure)\nPlain-language brief; Navy overlays & authority touchpoints; Fiscal/PPBE & colors of money (SCN/WPN nuance); Decision Trace; Citations; Assumptions & uncertainties; Self-score.\n\nINTERACTION RULES\nAsk 2-3 targeted clarifying questions for substantial tasks; if no reply, proceed best-effort and state assumptions. Offer an opposing view/edge case where professional judgment could differ. Avoid flashcards by default.\n\nDEFAULT OUTPUT TEMPLATE\nSummary; Navy Overlays; Fiscal/PPBE; Decision Trace; Citations; Current as of; Assumptions & Uncertainties; Self-Score.\n\nCOVERAGE MAP (breadth over time)\nAAF pathways & artifacts; JCIDS; governance reviews; contracting fundamentals; fiscal law & PPBE (SCN/WPN); cost/schedule/performance; SE & T&E; logistics & sustainment; software & data; rapid authorities; Navy-unique overlays & authority boundaries.\n\nQUALITY ASSURANCE\nSelf-score every answer (Accuracy, Completeness, Clarity, Relevance, Practical usefulness). If any <8, revise and note the fix.\n\nTOOLING & CITATION BEHAVIOR\nVerify rules/thresholds with current primary sources and cite exact dates; prefer official/public sources. Call out Navy overlay deltas vs generic DAU guidance.\n\nSAFETY & COMPLIANCE\nNot legal advice. Respect OPSEC/CUI and procurement integrity. Use only unclassified, publicly releasable sources.\n\nCODE ARGUMENTS\n `-latexindent` to format LaTeX sources without backups,ARGS: `wd, -s, -m, -l=.latexindent.yaml, -c=%TEMP%/latexindent, -y=defaultIndent:'  ' `; `-latexmk` for continuous build with LuaLaTeX, ARGS: `-lualatex, -pdf, -dvi-, -ps-, -outdir=out, -auxdir=build, -f, -shell-escape, -interaction=nonstopmode, -synctex=1, -file-line-error, %DOC%`; `-fontspec` for custom fonts (Merriweather, Montserrat, Source Sans Pro).",
+    "project_memory_highlights": [
+      "LaTeX-based EDO Board Prep Study Guide with diagrams, tables, and citations.",
+      "Added Warfighting Acquisition System MOSA emphasis (10 U.S.C. Sec. 4401) and hybrid fleet implications with supporting acronym/citation updates.",
+      "Layered outputs: Summary, Navy Overlays, Fiscal/PPBE, Decision Trace, Citations, Assumptions & Uncertainties, Self-Score.",
+      "Board Prep is default; Mastery depth on request; avoid flashcards unless asked; Mermaid visuals only when requested.",
+      "Require primary-source citations (FAR/DFARS/DoDI/SECNAV/OPNAV, FMR, GAO) with exact dates and Current as of stamps.",
+      "Use \\ac{} for acronyms in prose (lowercase keys) but avoid headings/tables; acronyms.def is sorted by section.",
+      "Default tables to longtblr; prefer description environments for term/definition pairs; keep ASCII and use v.s.\\ in prose.",
+      "Coursebook baseline current as of 2025-09-12; edo.bib grouped by category for maintenance.",
+      "latexmk -shell-escape main.tex builds succeed with occasional overfull box or minted fallback warnings.",
+      "Use scratch folder for experiments; minted falls back when shell-escape is disabled.",
+      "Default fonts: Merriweather, Montserrat, and Source Sans Pro via fontspec.",
+      "Added ASN (RD&A) organization chart plus leadership and DASN responsibility tables (current as of 2025-12-18) with SECNAV source citations.",
+      "Added missing OPNAV N-code titles/functions (N80-84, N89, N91, N95-99) into PPBE and Key Roles sections.",
+      "Fixed table label expansion by redefining \\thetable to ensure list-of-tables numbering and refs render correctly.",
+      "Resolved overfull hbox warnings by tightening TikZ node widths/spacing in test/eval and BDAR figures.",
+      "Updated latexmkrc with absolute out/build paths, repo-root TEXINPUTS, and $do_cd = 0 so LaTeX/latexmk do not pick up stale aux files under build.",
+      "Adjusted minted shell-escape detection for LuaLaTeX and reordered csquotes to load after code/listings helpers.",
+      "Glossary hyperlinks disabled and edoAcrLink now uses glslink to silence pdf-backend destination warnings.",
+      "Rebuilt main.pdf with LuaLaTeX -> biber -> LuaLaTeX sequence; compile warnings cleared.",
+      "Refactored repo layout so LaTeX sources live under tex/ (tex/main.tex, tex/chapters, tex/tikz, tex/templates, tex/assets) with out/ + build/ kept at the repo root.",
+      "Renamed CNO messaging PDFs in assets/information to descriptive filenames (CNOTE 1-3, Day One message, Charge of Command) for clarity.",
+      "Build scripts now scrub SAVE-ERROR/temp/lock files after each build/clean pass.",
+      "Keep out/main.pdf untracked; use scripts/release.* to generate dated PDFs in release/ before commit/push.",
+      "Added scrub helper scripts (bash/PowerShell) and a VS Code task for SAVE-ERROR/temp/lock cleanup; build scripts now call the scrub helper.",
+      "Added ai-context scripts (bash/PowerShell) and a VS Code task to build scratch/ai_context.zip with git diffs, log excerpts, and selected files for AI workflows.",
+      "Release scripts now copy the dated PDF and then commit/push changes; push scripts no longer create release files.",
+      "LaTeX Workshop points to root latexindent/chktex configs and uses absolute out/build paths for the tex/ layout.",
+      "Release PDFs are gitignored (release/*.pdf); releases now tag with release-YYYYMMDD and publish assets via GitHub CLI.",
+      "Added VS Code tasks for AI context bundling and GitHub release publishing; removed scripts/manage.sh.",
+      "Release scripts now generate changelog-style notes from CHANGELOG.md (tag section) with git-log fallback, and publish via GitHub CLI.",
+      "Added README.md, CHANGELOG.md, LICENSE, CODE_OF_CONDUCT.md, CONTRIBUTING.md, and SECURITY.md for public repo hygiene.",
+      "Document content now uses CC BY-NC 4.0 (LICENSE) with MIT for scripts (LICENSE-CODE); CONTRIBUTING asks for PR-based derivatives.",
+      "Added standard public repo docs: README, CHANGELOG, CODE_OF_CONDUCT, CONTRIBUTING, SECURITY.",
+      "Tracked tex/assets/information/2025-National-Security-Strategy.pdf in git.",
+      "Generated scratch/settings_diff.md comparing VS Code settings sources.",
+      "Verified GitHub release notes match CHANGELOG.md for release-20251221.",
+      "Added .gitattributes to normalize LF line endings and mark common binary assets; cleaned VS Code tasks (removed duplicate AI task and added OS-specific overrides).",
+      "Renormalized the repo after adding .gitattributes so line endings are consistent across platforms.",
+      "Merged VS Code settings across configured sources; applied requested overrides, unified cSpell lists, and normalized LaTeX Workshop recipes/tools to scripts/build.*.",
+      "Restored comment scaffolding in .vscode/settings.json, forced [latex].editor.tabSize = 4, and regenerated scratch/settings_diff.md with zero drift across settings files.",
+      "Clarified the shfmt not found message and the difference between snap versus apt installation options and versions.",
+      "Outlined additional shfmt installation paths beyond apt/snap (Go install, other package managers, or prebuilt binaries).",
+      "Acronym linking: edoAcrLink now suppresses glossaries-extra post-link hooks; acronym commands are defined with DeclareDocumentCommand to avoid shortcut conflicts.",
+      "Build: latexmk -shell-escape tex/main.tex succeeded after acronym macro tweaks.",
+      "Patched glossaries-extra \\@gls@link to remove the stray space token after \\leavevmode, fixing extra space in \\ac/\\glslink output.",
+      "Build: latexmk -shell-escape tex/main.tex succeeded after the \\@gls@link spacing patch.",
+      "Indentation: recommend 4 spaces for general coding; workspace .vscode/settings.json already set to 4 for tab/indent widths.",
+      "Acronym spacing fix: edoAcrLink now uses \\@glslink and silentglsadd boxes \\glsadd; added fallback \\theglsentrycounter/\\theHglsentrycounter for noidx writes.",
+      "Build: latexmk -shell-escape tex/main.tex succeeded; biber not run, leaving undefined citations (missing build/main.bbl).",
+      "Explained latexindent error caused by missing Perl module File::HomeDir and how to install it (e.g., libfile-homedir-perl or CPAN).",
+      "Ran latexindent over all .tex files with the specified flags, removed the no-extension backup files it created, and rebuilt with latexmk; build succeeds but pdf-backend unreferenced glossary destination warnings remain.",
+      "Optimized AGENTS.md for Codex guidelines (condensed instructions and removed session update history).",
+      "Added GEMINI.md shim to mirror AGENTS.md instructions for Gemini tools.",
+      "Removed AGENTS export artifact and related tooling; AGENTS.md workflow no longer includes an export step.",
+      "Merged current events chapter into appendix_current_events.tex, added current_events.bib to the appendix, and removed the redundant 26_Current_Events.tex file.",
+      "Moved current_events.bib under tex/, updated appendix_current_events bibresource, added OFPP acronym, and removed the AGENTS.json export requirement.",
+      "Added OFPP and OIRA acronyms; latexmk now fails at 17_JCIDS.tex because \\addbibresource is used in the document body (preamble-only), with many existing undefined citation warnings.",
+      "Ran a forced latexmk rebuild; build stops at tex/chapters/17_JCIDS.tex because \\addbibresource is used in the document body (preamble-only), with many existing undefined citation warnings.",
+      "Moved was_refs.bib to tex/ and centralized bib resources in the main preamble; removed subfile addbibresource calls. latexmk now fails at 17_JCIDS.tex due to an incomplete \\autocite command (\\autoc) and existing undefined citations.",
+      "Moved project_export.json to the repo root and updated references in AGENTS.md, GEMINI.md, and memory_update.md.",
+      "Recommended placing the project_export schema under schemas/project_export.schema.json and correcting the filename typo.",
+      "Extracted remaining guidance from project_export.md into AGENTS.md (conflict handling and content gaps) and deleted project_export.md.",
+      "Updated AGENTS.md with GPT-5.2 response/verbosity, scope control, ambiguity handling, tool usage, and high-risk self-check guidance based on the prompting guide.",
+      "Integrated memory_update.md instructions into AGENTS.md, removed memory_update.md, and documented other instruction sources.",
+      "Moved the project export schema to schemas/project_export.schema.json and updated copilot instructions for the new project_export.json path.",
+      "Created scratch/wsl_vscode_setup.ipynb to document VS Code settings/extensions export/import and optional devcontainer scaffold.",
+      "Added settings_master.json with grouped comments, plus VS Code folder-open sync task, pre-push settings merge hook, and push scripts that merge settings before commit.",
+      "Updated .devcontainer/devcontainer.json extensions to match the current tooling set; Dockerfile kept as existing TeX Live image.",
+      "Updated scratch/wsl_vscode_setup.ipynb with platform sync notes.",
+      "Aligned push/release secret-guard regex joins in scripts/push.sh and scripts/release.sh; PowerShell parity confirmed; tasks.json already routes to OS-specific scripts.",
+      "Tidied scripts/settings_manager.py spacing and added NDS, C2, AI, CTF, and BES acronyms.",
+      "Added missing glossary acronyms (BES, NDS, C2, AI, CTF, USS, HII, LPD, SIOP) and normalized the Columbia-class title in current_events.bib to avoid percent parsing; latexmk -shell-escape tex/main.tex now completes with undefined citation warnings remaining.",
+      "Added scripts/shell_runner.ipynb Jupyter notebook for running shell scripts, seeded with a PowerShell install script.",
+      "Confirmed build/main.log has no undefined citation warnings after biber; remaining biber warnings are duplicate keys and legacy month fields.",
+      "Removed duplicate bib keys from tex/was_refs.bib and refactored AGENTS task lists into Outstanding/Resolved Lookups and Current/Completed Jobs with an instruction to maintain them.",
+      "Added a VS Code task to merge settings via scripts/settings_manager.py merge.",
+      "Updated LaTeX Workshop build tools to invoke /bin/bash with workspace-root script paths and %DOC_EXT% to avoid ENOENT when building from tex/.",
+      "Instruction policy: only update AGENTS.md and project_export.json when files under /home/victor/projects/edo/main are modified; removed external-change references from the project export.",
+      "Set VS Code markdown-related editor associations to markdown-preview-enhanced and synced settings sources."
+    ],
+    "known_limits": {
+      "files_visible": 1,
+      "can_list_past_chats": true,
+      "notes": "Past chats are visible as summaries in this Project context. Raw attachments from other Projects are not accessible. Some long chats are truncated."
+    }
+  },
+  "assets": {
+    "files": [
+      {
+        "filename": "navy_edo_acquisition_tutor_instruction_pack_v_0.md",
+        "filetype": "md",
+        "approx_pages_or_rows": "unknown",
+        "summary": "Defines how the EDO Acquisition Tutor should teach and verify U.S. Navy/DoW acquisition content. Sets Board Prep as default, mandates primary-source citations with dates, and prescribes layered teaching (brief, Navy overlays, fiscal/PPBE with SCN/WPN nuance, Decision Trace, citations, assumptions, self-score). Enumerates canonical sources and coverage map; includes output templates, recency and QA policies, chunking/ingestion guidance, and safety/compliance notes. Baseline coursebook recency is 2025-09-12; every deliverable must be stamped with a current-as-of date.",
+        "key_points": [
+          "Board Prep default; Mastery on request.",
+          "Cite primary sources with exact dates; verify thresholds/definitions.",
+          "Use Mermaid for decision flows when needed and include a Decision Trace.",
+          "Explicitly integrate Navy overlays and SCN/WPN fiscal nuances.",
+          "Self-score each deliverable; revise if any dimension <8."
+        ],
+        "entities": {
+          "people": [],
+          "orgs": [
+            "DoW",
+            "U.S. Navy",
+            "SECNAV",
+            "OPNAV",
+            "NAVSEA",
+            "DAU"
+          ],
+          "products": [
+            "Mermaid"
+          ],
+          "locations": []
+        },
+        "dates": [
+          "2025-09-12"
+        ],
+        "decisions": [
+          "Set Board Prep as default delivery style.",
+          "Mandate primary-source verification with dates for changing facts.",
+          "Require Mermaid flows and Decision Trace in standard outputs.",
+          "Adopt strict recency policy: stamp 'Current as of' and re-verify policy changes."
+        ],
+        "assumptions": [
+          "Learners are motivated EDOs who may be new to acquisition jargon.",
+          "Public, official sources are accessible for verification.",
+          "Coursebook baseline (2025-09-12) remains valid until superseded."
+        ],
+        "risks": [
+          "Policy drift (NDAA/FAR/DFARS/DoDI updates) can invalidate prior content.",
+          "Overemphasis on Navy overlays may underweight joint/OSD nuances.",
+          "Scope creep into CUI or procurement-sensitive areas if not monitored."
+        ],
+        "open_questions": [
+          "Will the instruction pack be versioned beyond v0; change log needed?",
+          "Which SECNAV/OPNAV/NAVSEA instructions are most current for 5000-series overlays?",
+          "What authoritative list of PEO/PMW updates should be tracked quarterly?"
+        ],
+        "sources_or_citations": [
+          "Statute: 10 & 41 U.S.C.",
+          "FAR/DFARS/PGI",
+          "DoDI 5000 series",
+          "SECNAV/OPNAV/NAVSEA policies",
+          "DoW FMR 7000.14-R",
+          "GAO Red Book",
+          "JCIDS guidance"
+        ],
+        "quality_bias_notes": {
+          "recency": "fresh",
+          "completeness": "high",
+          "author_biases": [
+            "Navy overlay emphasis",
+            "Board-prep orientation"
+          ],
+          "conflicts_of_interest": []
+        }
+      },
+      {
+        "title_or_slug": "latexindent File::HomeDir module missing",
+        "date_range": "2025-12-23 to 2025-12-23",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Explain latexindent failure when the File::HomeDir Perl module is missing.",
+        "summary": "Identified the error as a missing Perl dependency for latexindent (File::HomeDir) and pointed to installing the distro package or CPAN module.",
+        "key_decisions": [
+          "Recommend installing the system package (libfile-homedir-perl) or CPAN module to satisfy latexindent's Perl dependency."
+        ],
+        "action_items": [
+          "Install File::HomeDir via apt (libfile-homedir-perl) or CPAN if latexindent continues to fail."
+        ],
+        "linked_files": [
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling guidance; no repo changes."
+      },
+      {
+        "title_or_slug": "latexindent batch format and rebuild",
+        "date_range": "2025-12-23 to 2025-12-23",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Run latexindent across all repo .tex files and verify the build.",
+        "summary": "Formatted all .tex files with latexindent using the requested flags, removed the no-extension backup files it created, ran latexmk (explicit tex/main.tex target after a no-target error), and scrubbed temp/lock artifacts; build still reports pdf-backend unreferenced glossary destination warnings.",
+        "key_decisions": [
+          "Removed the no-extension latexindent backup files to keep the repo clean.",
+          "Used latexmk with tex/main.tex after the default invocation had no target."
+        ],
+        "action_items": [
+          "If desired, investigate or suppress remaining pdf-backend unreferenced glossary destination warnings."
+        ],
+        "linked_files": [
+          "AGENTS.md",
+          "project_export.json",
+          "tex/main.tex"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Formatting/tooling update; content unchanged."
+      },
+      {
+        "title_or_slug": "WSL/VS Code replication notebook",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Create a notebook to export/import WSL tooling, VS Code settings/extensions, and optional devcontainer scaffold.",
+        "summary": "Created scratch/wsl_vscode_setup.ipynb with export/import steps for apt packages, VS Code settings/extensions, TeX Live 2025, NVM Node, and optional devcontainer scaffold.",
+        "key_decisions": [
+          "Store the notebook under scratch/ to keep it separate from LaTeX sources.",
+          "Include optional devcontainer scaffolding rather than adding .devcontainer files directly."
+        ],
+        "action_items": [
+          "Confirm whether to generate and commit .devcontainer files or adjust package lists for other WSL distros."
+        ],
+        "linked_files": [
+          "scratch/wsl_vscode_setup.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Environment tooling note; no LaTeX content changes."
+      },
+      {
+        "title_or_slug": "Devcontainer commit and Ubuntu WSL scope",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Commit devcontainer files and scope the replication notebook to Ubuntu WSL with Windows settings sync.",
+        "summary": "Updated .devcontainer/devcontainer.json to match the current WSL extension list, kept the existing TeX Live-focused Dockerfile, and updated scratch/wsl_vscode_setup.ipynb to target Ubuntu WSL with Windows user settings sync.",
+        "key_decisions": [
+          "Keep the existing TeX Live-focused Dockerfile to preserve the LaTeX build environment.",
+          "Sync devcontainer extensions to the current WSL install."
+        ],
+        "action_items": [],
+        "linked_files": [
+          ".devcontainer/devcontainer.json",
+          ".devcontainer/Dockerfile",
+          "scratch/wsl_vscode_setup.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Environment tooling update; no LaTeX content changes."
+      },
+      {
+        "title_or_slug": "Audit script parity and task OS routing",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Verify shell/PowerShell script parity, fix guardrail regex joining, and confirm tasks.json uses OS-specific scripts.",
+        "summary": "Aligned push.sh and release.sh secret-guard regex joins with PowerShell behavior, confirmed parity across script pairs, and verified tasks.json Windows overrides route to the .ps1 scripts.",
+        "key_decisions": [
+          "Use a joined regex pattern for secret guardrails in the bash scripts to match PowerShell behavior."
+        ],
+        "action_items": [
+          "If desired, include the pre-existing uncommitted changes in scripts/settings_manager.py and tex/acronyms.def in a separate commit."
+        ],
+        "linked_files": [
+          "scripts/push.sh",
+          "scripts/release.sh",
+          ".vscode/tasks.json",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling audit; no acquisition content changes."
+      },
+      {
+        "title_or_slug": "Commit settings manager cleanup and new acronyms",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Commit the settings_manager.py spacing cleanup and add several new acronyms in separate commits.",
+        "summary": "Committed the settings_manager.py spacing cleanup separately and added NDS, C2, AI, CTF, and BES acronyms to acronyms.def.",
+        "key_decisions": [
+          "Keep settings_manager.py and acronyms.def changes in separate commits as requested."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "scripts/settings_manager.py",
+          "tex/acronyms.def",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Repo hygiene and glossary update; no acquisition content changes."
+      },
+      {
+        "title_or_slug": "Shell script runner notebook",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Create a Jupyter notebook in scripts/ to run shell scripts without copying into a terminal.",
+        "summary": "Added scripts/shell_runner.ipynb with a bash cell that installs PowerShell from the Microsoft repo and starts pwsh.",
+        "key_decisions": [
+          "Use a Jupyter notebook under scripts/ with a %%bash cell for shell execution."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "scripts/shell_runner.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling addition only; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Explain ExplSyntaxOn/ExplSyntaxOff",
+        "date_range": "2025-12-25 to 2025-12-25",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Explain LaTeX expl3 syntax toggles.",
+        "summary": "Explained that \\\\ExplSyntaxOn and \\\\ExplSyntaxOff toggle expl3 catcode conventions (notably making '_' and ':' letters) to allow LaTeX3-style control sequence names, and then restore standard LaTeX2e catcodes.",
+        "key_decisions": [
+          "No repo changes required; informational response only."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Informational explanation only; no study guide edits."
+      },
+      {
+        "title_or_slug": "Explain expl3-style code blocks",
+        "date_range": "2025-12-25 to 2025-12-25",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Explain what expl3-style code blocks are and why they are used.",
+        "summary": "Explained that expl3-style blocks use LaTeX3 naming and syntax conventions (via \\ExplSyntaxOn/Off) to access structured programming utilities, and are used for clarity, robustness, and namespace hygiene in LaTeX package/macro development.",
+        "key_decisions": [
+          "No repo changes required; informational response only."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Informational explanation only; no study guide edits."
+      },
+      {
+        "title_or_slug": "Explain pdf backend warning suppression snippet",
+        "date_range": "2025-12-25 to 2025-12-25",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Explain the expl3 snippet that redirects pdf backend warnings.",
+        "summary": "Explained that the snippet suppresses the 'unreferenced destination' warning from the pdf/pdf-backend message system by redirecting that message to none and, if present, wrapping \\__pdf_backend_warn:nnnn to filter that warning while passing all others through.",
+        "key_decisions": [
+          "No repo changes required; informational response only."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Informational explanation only; no study guide edits."
+      },
+      {
+        "title_or_slug": "Shell runner sudo apt-get hang guidance",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Explain why sudo apt-get update appears to hang in a notebook and how to run shell_runner.ipynb like a terminal.",
+        "summary": "Explained that notebook cells do not provide an interactive TTY and sudo waits for a password, so apt-get update appears frozen. Suggested pre-authenticating with sudo -v in a real terminal and using sudo -n guards, or running installs in a terminal; noted passwordless sudo or sudo -S as noninteractive alternatives.",
+        "key_decisions": [
+          "Provide guidance only; do not modify scripts/shell_runner.ipynb without an explicit request."
+        ],
+        "action_items": [
+          "If desired, update scripts/shell_runner.ipynb to check sudo -n and prompt the user to run sudo -v in a terminal before rerunning."
+        ],
+        "linked_files": [
+          "scripts/shell_runner.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling guidance only; no code or study guide content changes."
+      },
+      {
+        "title_or_slug": "Add sudo -n guard to shell runner",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Prevent sudo password prompts from hanging the shell_runner notebook by adding a non-interactive guard.",
+        "summary": "Inserted a sudo -n credential check in scripts/shell_runner.ipynb so the cell fails fast with a clear message if sudo needs a password.",
+        "key_decisions": [
+          "Add a guard block only; leave existing commands unchanged."
+        ],
+        "action_items": [
+          "If desired, convert subsequent sudo commands to sudo -n to avoid hangs if the timestamp expires mid-cell."
+        ],
+        "linked_files": [
+          "scripts/shell_runner.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling change only; no study guide content edits."
+      },
+      {
+        "title_or_slug": "WSL VS Code terminal vs Jupyter terminal guidance",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Clarify terminal options when using Jupyter notebooks in VS Code on WSL.",
+        "summary": "Explained that VS Code uses the integrated terminal (full TTY) alongside notebooks, while JupyterLab's built-in Terminal exists only in the JupyterLab web UI; recommended using the VS Code integrated terminal for interactive commands under WSL.",
+        "key_decisions": [
+          "Provide guidance only; no repo changes requested."
+        ],
+        "action_items": [
+          "If desired, share the exact Jupyter setup (local/remote/WSL) to provide step-by-step instructions."
+        ],
+        "linked_files": [
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "General tooling guidance; no content edits."
+      },
+      {
+        "title_or_slug": "Merge on-open tasks with sudo -v precheck",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Combine on-open tasks into a single task and ensure sudo credentials are warmed up first.",
+        "summary": "Merged settings sync, git pull, and WSL update into one folderOpen task in .vscode/tasks.json and added sudo -v at the start of the Linux command.",
+        "key_decisions": [
+          "Preserve platform-specific behavior by skipping WSL update on Windows/macOS."
+        ],
+        "action_items": [
+          "If desired, adjust Windows/macOS command wording or split tasks again if sudo prompts become intrusive."
+        ],
+        "linked_files": [
+          ".vscode/tasks.json",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling change only; no study guide content edits."
+      },
+      {
+        "title_or_slug": "Sudo timestamp not shared with notebook",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Explain why sudo -n in a notebook fails even after sudo -v in a terminal.",
+        "summary": "Explained that sudo timestamps are typically tied to a TTY, so a notebook cell without a TTY cannot reuse the cached credential from the integrated terminal; suggested running privileged steps in a real terminal or adjusting sudoers if desired.",
+        "key_decisions": [
+          "Provide guidance only; no code changes requested."
+        ],
+        "action_items": [
+          "If desired, update the notebook to instruct running privileged commands in the VS Code integrated terminal."
+        ],
+        "linked_files": [
+          "AGENTS.md",
+          "project_export.json",
+          "scripts/shell_runner.ipynb"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Operational guidance only; no content edits."
+      },
+      {
+        "title_or_slug": "Devcontainer TeX Live setup summary",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Summarize how TeX Live is installed in the devcontainer.",
+        "summary": "Explained that the devcontainer Dockerfile installs TeX Live 2025 from CTAN using .devcontainer/texlive.profile (scheme-small + selected collections), then uses tlmgr to install additional packages and installs Fira fonts via apt; post-create script only performs sanity checks.",
+        "key_decisions": [
+          "Provide guidance only; no repo changes requested."
+        ],
+        "action_items": [
+          "If desired, align the WSL notebook installer with the devcontainer profile or switch to apt-based installs for speed."
+        ],
+        "linked_files": [
+          ".devcontainer/Dockerfile",
+          ".devcontainer/texlive.profile",
+          ".devcontainer/post-create.sh",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling guidance only; no content edits."
+      },
+      {
+        "title_or_slug": "Align WSL TeX Live install with devcontainer and add audit",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Update the WSL setup notebook to match devcontainer TeX Live installs and verify required packages/fonts.",
+        "summary": "Replaced the scheme-full TeX Live profile in scripts/Environment/wsl_vscode_setup.ipynb with the devcontainer-aligned scheme-small profile, added tlmgr installs for required packages, optional font installs via apt, and post-install checks for required TeX packages and fonts.",
+        "key_decisions": [
+          "Keep CTAN-based TeX Live install and add verification warnings instead of hard failures."
+        ],
+        "action_items": [
+          "Run the updated notebook cell to validate package/font checks in the WSL environment."
+        ],
+        "linked_files": [
+          "scripts/Environment/wsl_vscode_setup.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling change only; no study guide content edits."
+      },
+      {
+        "title_or_slug": "WSL installer installs missing fonts",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Ensure required and optional fonts are installed when missing in the WSL setup notebook.",
+        "summary": "Added font detection and conditional installs in scripts/Environment/wsl_vscode_setup.ipynb, mapping missing fonts to apt packages or tlmgr font packages and re-running font cache updates.",
+        "key_decisions": [
+          "Install fonts only when luaotfload-tool reports them missing."
+        ],
+        "action_items": [
+          "Run the updated notebook cell to verify that required fonts resolve without warnings."
+        ],
+        "linked_files": [
+          "scripts/Environment/wsl_vscode_setup.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling change only; no study guide content edits."
+      },
+      {
+        "title_or_slug": "Environment notebook: ssh backup/restore and sudoers",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Extend the environment setup notebook with SSH backup/restore and sudoers automation.",
+        "summary": "Added SSH backup/restore steps to the environment notebook and configured sudoers rules for apt-get automation; updated verification steps.",
+        "key_decisions": [
+          "Keep SSH backup/restore alongside VS Code export/import in the environment notebook."
+        ],
+        "action_items": [
+          "Run the updated notebook cells and confirm sudoers/SSH restores behave as expected."
+        ],
+        "linked_files": [
+          "scripts/Environment/wsl_vscode_setup.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling update only; no study guide content edits."
+      },
+      {
+        "title_or_slug": "WSL sudoers uses $USER",
+        "date_range": "2025-12-26 to 2025-12-26",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Avoid hard-coded usernames in sudoers automation for WSL setup.",
+        "summary": "Updated the WSL setup notebook sudoers block to write the current $USER instead of a fixed username.",
+        "key_decisions": [
+          "Keep sudoers content otherwise unchanged; still validate with visudo."
+        ],
+        "action_items": [
+          "Run the updated notebook cell to ensure the sudoers file writes and validates successfully."
+        ],
+        "linked_files": [
+          "scripts/Environment/wsl_vscode_setup.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling update only; no study guide content edits."
+      }
+    ],
+    "project_instructions_analysis": {
+      "role": "Navy EDO Acquisition Tutor",
+      "tone_style": "Concise, decision-focused, citation-forward; switches to deeper Mastery mode on request.",
+      "constraints": [
+        "Cite controlling sources with exact dates for any changeable fact.",
+        "Decision Trace is expected; Mermaid flows when requested.",
+        "Stamp outputs with 'Current as of [DATE]'.",
+        "Avoid flashcards unless asked; respect OPSEC/CUI; no legal advice."
+      ],
+      "alignment_with_goals": "Strong alignment with EDO board needs: emphasizes decisions, Navy overlays, fiscal nuance, and verification rigor.",
+      "gaps_or_conflicts": [
+        "Instruction pack references many sources but does not list specific sections/links (requires browsing during answers).",
+        "No explicit policy for handling contradictory service-level memos vs OSD policy; needs tie-break rule.",
+        "Glossary process is specified but no canonical acronym table is included yet."
+      ]
+    },
+    "referencable_chats": [
+      {
+        "title_or_slug": "LuaTeX package error fix / Fonts",
+        "date_range": "2025-10-08 to 2025-10-08",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Resolve LaTeX font setup (Merriweather, Montserrat, Source Sans Pro) and TikZ vs forest choices.",
+        "summary": "Configured LuaLaTeX fontspec blocks for multiple families and discussed when to use TikZ trees versus the forest package for org charts.",
+        "key_decisions": [
+          "Prefer clear fontspec blocks per family; consider forest for complex org hierarchies."
+        ],
+        "action_items": [
+          "Provide portable fontspec snippets and org chart templates."
+        ],
+        "linked_files": [],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling-oriented; high clarity; no acquisition content."
+      },
+      {
+        "title_or_slug": "PPBE 3-star vs 4-star reviews",
+        "date_range": "2025-10-09 to 2025-10-09",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Clarify PPBE programming process distinctions between 3-star and 4-star group reviews of the POM leading to PDM/RMD.",
+        "summary": "Mapped governance intent, timing, and artifacts for 3-star versus 4-star boards during POM build and how they feed Program/Budget decisions.",
+        "key_decisions": [
+          "Trace decision authorities and outputs from 3-star to 4-star gates for board prep."
+        ],
+        "action_items": [
+          "Draft Mermaid flow of PPBE reviews and add citations to OSD/DoN PPBE directives."
+        ],
+        "linked_files": [],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Acquisition-fiscal governance; needs current citations."
+      },
+      {
+        "title_or_slug": "uniquecounter.sty & latexindent / latexmk",
+        "date_range": "2025-10-07 to 2025-10-07",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Fix build workflow and indentation/backup settings with latexindent and latexmk.",
+        "summary": "Removed extra line skips, chose nonstopmode for latexmk, and clarified how to run latexindent without backups while overwriting sources.",
+        "key_decisions": [
+          "Adopt clean latexmk/latexindent configuration for reproducible builds."
+        ],
+        "action_items": [
+          "Share a minimal latexmkrc and latexindent.yaml."
+        ],
+        "linked_files": [],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Build tooling; high utility."
+      },
+      {
+        "title_or_slug": "Integrate Lookups1 research",
+        "date_range": "2025-12-16 to 2025-12-16",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Integrate CAPE duties, OMB execution controls, N8/N9 subcodes, marks vs reclamas, and execution tracking guidance into the study guide.",
+        "summary": "Added CAPE/OMB execution controls and N8/N9 subcodes to PPBE and Congressional Enactment chapters, refreshed acronyms, and verified latexmk builds with citations noted for follow-up.",
+        "key_decisions": [
+          "Use OMB Circular A-11 and controlling U.S.C. sections for apportionment/execution limits and distinguish marks/reclamas from congressional marks."
+        ],
+        "action_items": [
+          "Complete OMB roles/responsibilities lookup and add POM/BES document examples with citations when available."
+        ],
+        "linked_files": [
+          "chapters/6_PPBE.tex",
+          "chapters/8_Congressional_Enactment.tex",
+          "chapters/9_Program_Funding_and_Execution.tex",
+          "chapters/appendix_key_roles.tex",
+          "acronyms.def",
+          "edo.bib",
+          "AGENTS.md"
+        ],
+        "notable_citations": [
+          "OMB-A11",
+          "USC-139c-CAPE",
+          "USC-1512-Apportionment"
+        ],
+        "bias_or_quality_notes": "N-code org structures can churn; validate subcode labels near use."
+      },
+      {
+        "title_or_slug": "EDO billet appendix from Nov 2025 slate",
+        "date_range": "2025-12-16 to 2025-12-16",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Add an appendix summarizing November 2025 EDO billets by community, location, and billet rank.",
+        "summary": "Built a tabular appendix grouping the November 2025 EDO main slate by community with expanded locations and billet rank ordering; linked the new subfile into the appendices.",
+        "key_decisions": [
+          "Sort billets by community then location with flag-to-junior rank ordering for counts.",
+          "Document data lineage to the SLATE_EDO_MAIN worksheet in the November 2025 slate workbook."
+        ],
+        "action_items": [
+          "Refresh counts if a newer slate is released and update the appendix date stamp accordingly."
+        ],
+        "linked_files": [
+          "assets/information/EDO Main Slate November 2025.xlsx",
+          "chapters/appendix_edo_billet_summary.tex",
+          "main.tex"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Data-driven summary; rerun grouping if billet file changes."
+      },
+      {
+        "title_or_slug": "Rebuild main.pdf after merge",
+        "date_range": "2025-12-17 to 2025-12-17",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Rebuild the tracked PDF output after merging the EDO billet appendix changes and ensure sandbox-friendly LuaLaTeX builds.",
+        "summary": "Updated latexmkrc to force TEXMFVAR/TEXMFCACHE into build/ so luaotfload/fontspec can write caches under sandbox; regenerated the lualatex format with fmtutil-user to resolve mismatched LaTeX support file errors; rebuilt out/main.pdf so it includes the November 2025 EDO billet distribution appendix (and removed a thin-space from the appendix section title to avoid hyperref bookmark warnings).",
+        "key_decisions": [
+          "Keep TeX runtime caches in build/ for portability across sandboxed environments."
+        ],
+        "action_items": [
+          "If a fresh TeX install shows 'Mismatched LaTeX support files', rerun fmtutil-user --byfmt lualatex (with TEXMFVAR pointing to a writable directory)."
+        ],
+        "linked_files": [
+          "latexmkrc",
+          "chapters/appendix_edo_billet_summary.tex",
+          "out/main.pdf",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Build/tooling update; PDF output may differ slightly across TeX installations."
+      },
+      {
+        "title_or_slug": "Merge conflicts and table label fix",
+        "date_range": "2025-12-19 to 2025-12-19",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Resolve merge conflicts for N-code updates, fix table label numbering, and rebuild main.pdf.",
+        "summary": "Merged PPBE and key roles updates with standardized N89 entry formatting, fixed \\thetable so list-of-tables entries and refs render correctly, and rebuilt the main PDF; build warnings remain for minted fallback and two overfull hbox locations.",
+        "key_decisions": [
+          "Use \\renewcommand for \\thetable so table numbers expand in aux/lot files.",
+          "Keep the N89 resource sponsor entry adjacent to other N8 subcodes for consistent ordering."
+        ],
+        "action_items": [
+          "Optional: investigate minted shell-escape detection and address remaining overfull hbox warnings."
+        ],
+        "linked_files": [
+          "chapters/6_PPBE.tex",
+          "chapters/appendix_key_roles.tex",
+          "moderntech-base.sty",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Build completed; minted fallback and overfull hbox warnings persist."
+      },
+      {
+        "title_or_slug": "Fix overfull hbox warnings",
+        "date_range": "2025-12-19 to 2025-12-19",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Remove remaining overfull hbox warnings in the test/eval and BDAR figures and rebuild the PDF.",
+        "summary": "Tightened TikZ node widths/spacing in the DoW T&E org chart and BDAR continuum figure so they fit within the text width; rebuilt the document with only the minted fallback warning remaining.",
+        "key_decisions": [
+          "Constrain TikZ node text width/min width and reduce horizontal node distance to avoid overfull boxes."
+        ],
+        "action_items": [
+          "Optional: investigate why minted reports shell-escape disabled despite build flags."
+        ],
+        "linked_files": [
+          "chapters/18_test_eval.tex",
+          "chapters/24_Battle_Damage_Assessment_Repair.tex",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Build completed; minted fallback warning persists."
+      },
+      {
+        "title_or_slug": "Build main.pdf warning cleanup",
+        "date_range": "2025-12-20 to 2025-12-20",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Build main.pdf and resolve compile warnings.",
+        "summary": "Updated latexmkrc with absolute out/build paths, repo-root TEXINPUTS, and $do_cd = 0 so latexmk stays in repo root, fixed minted shell-escape detection under LuaLaTeX, adjusted glossaries hyperlink behavior, and rebuilt main.pdf using the LuaLaTeX -> biber -> LuaLaTeX sequence; warnings cleared.",
+        "key_decisions": [
+          "Use absolute out/build paths plus repo-root TEXINPUTS and $do_cd = 0 so LaTeX/latexmk stay in repo root and ignore stale aux files under build.",
+          "Detect shell-escape via LuaTeX status for minted and load csquotes after code/listings helpers.",
+          "Disable glossary hyperlink targets and switch edoAcrLink to glslink to suppress pdf-backend destination warnings."
+        ],
+        "action_items": [
+          "Run the LuaLaTeX -> biber -> LuaLaTeX sequence when forcing a clean rebuild to avoid biblatex rerun warnings."
+        ],
+        "linked_files": [
+          "latexmkrc",
+          "moderntech-base.sty",
+          "moderntech.sty",
+          "main.tex",
+          "out/main.pdf"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Build/tooling update; PDF output depends on local TeX install."
+      },
+      {
+        "title_or_slug": "shfmt not found message",
+        "date_range": "2025-12-22 to 2025-12-22",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Clarify the shfmt not found message and installation suggestions.",
+        "summary": "Explained that the message indicates shfmt is missing, noted the snap (newer) vs apt (older) options, and listed additional install paths (Go install, other package managers, or prebuilt binaries).",
+        "key_decisions": [
+          "Use snap for a newer shfmt release when acceptable, or apt for the distro-managed package.",
+          "Use Go install or a prebuilt binary when distro packages are unavailable."
+        ],
+        "action_items": [
+          "Install shfmt via apt/snap, Go install, or a prebuilt binary if the formatter is needed."
+        ],
+        "linked_files": [],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling guidance; no repo changes."
+      },
+      {
+        "title_or_slug": "Remove AGENTS export artifacts",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Remove AGENTS export artifacts and workflow references.",
+        "summary": "Deleted the AGENTS export artifact and exporter script, and removed the export step from AGENTS.md workflow instructions.",
+        "key_decisions": [
+          "Drop AGENTS export tooling and keep AGENTS.md as the sole authoritative instruction source."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling cleanup; no acquisition content changes."
+      },
+      {
+        "title_or_slug": "Merge current events into appendix",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Move the standalone Current Events chapter content into the appendix and audit acronyms.",
+        "summary": "Merged the 2025 current-events content into the appendix, added the current_events.bib resource there, adjusted acronym usage in prose, and deleted the standalone chapter file. latexmk failed due to an undefined glossary entry (ofpp) in 11_Contracting_Fundamentals.tex.",
+        "key_decisions": [
+          "Keep current-events content consolidated in the appendix and include current_events.bib locally."
+        ],
+        "action_items": [
+          "Define the ofpp acronym in acronyms.def to resolve the glossary error, then rerun latexmk."
+        ],
+        "linked_files": [
+          "tex/chapters/appendix_current_events.tex",
+          "current_events.bib",
+          "tex/chapters/26_Current_Events.tex",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Content move plus acronym audit; build blocked by missing glossary entry."
+      },
+      {
+        "title_or_slug": "Relocate current events bib and add OFPP acronym",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Keep bibliography files under tex/, add the OFPP acronym, and remove AGENTS.json generation requirements.",
+        "summary": "Updated appendix_current_events.tex to load tex/current_events.bib, ensured the current events bibliography lives under tex/, added the OFPP acronym definition, and removed the AGENTS.json export requirement from instructions.",
+        "key_decisions": [
+          "Bibs live under tex/ alongside edo.bib; AGENTS.json export is no longer required."
+        ],
+        "action_items": [
+          "Run latexmk -shell-escape tex/main.tex to confirm the OFPP glossary fix and record any warnings."
+        ],
+        "linked_files": [
+          "tex/chapters/appendix_current_events.tex",
+          "tex/current_events.bib",
+          "tex/acronyms.def",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Repo hygiene and glossary update; no content expansion."
+      },
+      {
+        "title_or_slug": "Add OFPP/OIRA acronyms and rerun build",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Add missing acronyms for OFPP/OIRA and rerun latexmk after current events bib relocation.",
+        "summary": "Added OFPP and OIRA to acronyms.def. latexmk now stops at 17_JCIDS.tex because \\addbibresource appears in the document body, and the build reports many pre-existing undefined citation warnings.",
+        "key_decisions": [
+          "Record the build error and warnings; do not move \\addbibresource without user direction."
+        ],
+        "action_items": [
+          "If desired, move the JCIDS \\addbibresource into the main preamble or a shared bib list to clear the error."
+        ],
+        "linked_files": [
+          "tex/acronyms.def",
+          "tex/chapters/17_JCIDS.tex",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Build error surfaced; citations were already unresolved."
+      },
+      {
+        "title_or_slug": "Force rebuild after current events bib move",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Confirm current_events.bib lives under tex/ and rerun latexmk after OFPP request.",
+        "summary": "Verified current_events.bib is under tex/ and appendix_current_events.tex points to it. OFPP was already defined in acronyms.def. Forced latexmk rebuild; it fails at 17_JCIDS.tex because \\addbibresource appears in the document body (preamble-only), with many pre-existing undefined citations; scrubbed SAVE-ERROR/lock artifacts.",
+        "key_decisions": [
+          "Do not move the JCIDS \\addbibresource without explicit direction."
+        ],
+        "action_items": [
+          "If desired, relocate the JCIDS bibresource into the main preamble or a shared bib list to clear the error."
+        ],
+        "linked_files": [
+          "tex/chapters/appendix_current_events.tex",
+          "tex/current_events.bib",
+          "tex/chapters/17_JCIDS.tex",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Build error captured; no content edits made in this pass."
+      },
+      {
+        "title_or_slug": "Move JCIDS bibresource to preamble",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Resolve the preamble-only bibresource error by moving JCIDS refs to the main preamble.",
+        "summary": "Moved was_refs.bib into tex/, added it (and current_events.bib) to the main preamble, and removed subfile-level addbibresource calls. Forced latexmk rebuild now advances past the prior error but fails in 17_JCIDS.tex due to an incomplete \\autocite token (\\autoc) around line 124, with many pre-existing undefined citation warnings; scrubbed SAVE-ERROR/lock files.",
+        "key_decisions": [
+          "Keep all .bib files under tex/ and load them from the main preamble."
+        ],
+        "action_items": [
+          "Fix the truncated \\autocite in tex/chapters/17_JCIDS.tex:124 and rerun latexmk if desired."
+        ],
+        "linked_files": [
+          "tex/main.tex",
+          "tex/chapters/17_JCIDS.tex",
+          "tex/chapters/appendix_current_events.tex",
+          "tex/was_refs.bib",
+          "tex/current_events.bib",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Build error surfaced; citation warnings pre-existed."
+      },
+      {
+        "title_or_slug": "Move project_export.json to repo root",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Relocate the canonical project export to the repo root and update references.",
+        "summary": "Moved project_export.json from Other/ to the repo root and updated references in AGENTS.md, GEMINI.md, memory_update.md, and existing linked_files entries.",
+        "key_decisions": [
+          "Keep project_export.json at the repo root as the canonical database location."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "project_export.json",
+          "AGENTS.md",
+          "GEMINI.md",
+          "memory_update.md"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Admin update; no content changes to study guide."
+      },
+      {
+        "title_or_slug": "Recommend project_export schema location",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Provide a recommended location for the project_export JSON schema.",
+        "summary": "Recommended storing the schema under schemas/project_export.schema.json (rename from project_export.shema.json) alongside project_export.json for discoverability and consistency, with $id updated if moved.",
+        "key_decisions": [
+          "Recommend a dedicated schemas/ directory and corrected schema filename."
+        ],
+        "action_items": [
+          "If adopting the recommendation, move/rename project_export.shema.json and update its $id."
+        ],
+        "linked_files": [
+          "project_export.shema.json",
+          "project_export.json",
+          "AGENTS.md"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Recommendation only; no file moves performed."
+      },
+      {
+        "title_or_slug": "Retire project_export.md and fold in gaps",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Extract any unique guidance from project_export.md and remove the snapshot file.",
+        "summary": "Reviewed project_export.md, added conflict-handling and content-gap directives to AGENTS.md, updated memory_update.md to remove references to the snapshot, and deleted Other/project_export.md.",
+        "key_decisions": [
+          "Retire project_export.md now that AGENTS.md and project_export.json are the authoritative sources."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "AGENTS.md",
+          "memory_update.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Admin cleanup; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Apply GPT-5.2 prompting guidance to AGENTS",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Optimize AGENTS.md using the GPT-5.2 prompting guide.",
+        "summary": "Reviewed gpt-5-2_prompting_guide.ipynb and added response verbosity clamps, scope discipline, ambiguity handling, long-context anchoring, high-risk self-check, and tool-usage guidance to AGENTS.md.",
+        "key_decisions": [
+          "Adopt explicit verbosity and scope control rules aligned to GPT-5.2 guidance."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "Other/gpt-5-2_prompting_guide.ipynb",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Instruction update only; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Integrate memory_update and move schema",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Fold memory_update instructions into AGENTS, inventory instruction sources, and move the project export schema.",
+        "summary": "Integrated memory_update.md into AGENTS.md, added an instruction-source inventory, removed memory_update.md, updated .github/copilot-instructions.md for the new project_export.json path, and moved/renamed the schema to schemas/project_export.schema.json.",
+        "key_decisions": [
+          "Treat AGENTS.md as the single authoritative instruction hub and document other instruction sources there.",
+          "Standardize schema location under schemas/ with the corrected filename."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "AGENTS.md",
+          ".github/copilot-instructions.md",
+          "schemas/project_export.schema.json",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Instruction and schema housekeeping; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Resolve settings merge conflict and push",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Complete git push after resolving VS Code settings merge conflict.",
+        "summary": "Resolved pre-push merge conflict on workbench.editorAssociations by syncing settings_master.json to configured sources, then successfully pushed main to origin.",
+        "key_decisions": [
+          "Use settings_manager.py sync to align sources with settings_master.json and avoid interactive conflicts."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "scripts/settings_manager.py",
+          "settings_master.json",
+          "settings_sources.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling workflow only; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Commit settings sync artifacts",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Commit and push the settings sync and project export updates.",
+        "summary": "Staged and committed the settings sync change in .vscode/settings.json plus the updated project_export.json log entry, then pushed to origin.",
+        "key_decisions": [
+          "Include the settings sync output and project export update in a single commit."
+        ],
+        "action_items": [],
+        "linked_files": [
+          ".vscode/settings.json",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Repo hygiene only; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Resolve glossary and biber errors for merge",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Clear LaTeX build-stopping glossary and bibliography errors to enable a clean merge.",
+        "summary": "Added missing glossary acronyms (BES, NDS, C2, AI, CTF, USS, HII, LPD, SIOP) and updated the Columbia-class current-events title to remove a percent sign that corrupted the bbl. Forced latexmk with biber to complete; build succeeds while reporting many pre-existing undefined citation warnings.",
+        "key_decisions": [
+          "Define missing acronyms in tex/acronyms.def rather than editing prose to avoid glossary errors.",
+          "Normalize the Columbia-class title to avoid percent parsing in biber output."
+        ],
+        "action_items": [
+          "Review build/main.log and add missing bibliography entries to clear undefined citation warnings."
+        ],
+        "linked_files": [
+          "tex/acronyms.def",
+          "tex/current_events.bib",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Build troubleshooting and glossary maintenance; no content expansion."
+      },
+      {
+        "title_or_slug": "Resolve undefined citations",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Clear undefined citation warnings prior to merge.",
+        "summary": "Verified the latest build log shows no undefined citation warnings after biber ran; remaining warnings are limited to duplicate keys and legacy month fields in biber output.",
+        "key_decisions": [
+          "Treat undefined citations as resolved once build/main.log contains no citation warnings."
+        ],
+        "action_items": [
+          "If desired, clean up duplicate bib keys and legacy month fields reported in build/main.blg."
+        ],
+        "linked_files": [
+          "AGENTS.md",
+          "project_export.json",
+          "build/main.log",
+          "build/main.blg"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Log-based verification only; no content changes beyond task tracking."
+      },
+      {
+        "title_or_slug": "Clean duplicate bib keys and refactor task lists",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Remove duplicate bibliography keys and reorganize AGENTS task sections for clarity.",
+        "summary": "Removed duplicate bib entries from tex/was_refs.bib to clear biber duplicate-key warnings and refactored AGENTS.md to separate Outstanding/Resolved Lookups and Current/Completed Jobs, adding an instruction to maintain this structure.",
+        "key_decisions": [
+          "Keep secwar-was-memo-2025 and secwar-jcids-reform-2025 in tex/edo.bib and remove duplicates from tex/was_refs.bib.",
+          "Move completed items into Resolved Lookups and Completed Jobs sections at the bottom of AGENTS.md."
+        ],
+        "action_items": [
+          "(Optional) Convert legacy month fields to numeric values to remove remaining biber warnings."
+        ],
+        "linked_files": [
+          "tex/was_refs.bib",
+          "AGENTS.md",
+          "project_export.json",
+          "build/main.blg"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Admin and bibliography maintenance; no content expansion."
+      },
+      {
+        "title_or_slug": "Verify duplicate keys and shell_runner",
+        "date_range": "2025-12-24 to 2025-12-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Confirm duplicate keys are cleaned, keep shell_runner, and ensure AGENTS task sections are refactored.",
+        "summary": "Verified no duplicate keys in JSONC settings and confirmed duplicate bib keys were already removed. AGENTS.md already separates Outstanding/Resolved Lookups and Current/Completed Jobs with a maintenance instruction. shell_runner notebook remains present; it is currently untracked.",
+        "key_decisions": [
+          "No additional deduplication needed after checking settings and bibliography keys.",
+          "Leave shell_runner.ipynb in place and ask whether it should be added to git."
+        ],
+        "action_items": [
+          "Confirm whether to add scripts/shell_runner.ipynb to version control."
+        ],
+        "linked_files": [
+          "scripts/shell_runner.ipynb",
+          "AGENTS.md",
+          "tex/was_refs.bib",
+          "project_export.json",
+          ".vscode/settings.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Verification and admin checks only; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Add settings merge VS Code task",
+        "date_range": "2025-12-25 to 2025-12-25",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Add a VS Code task to run the settings merge command on demand.",
+        "summary": "Added a VS Code task that runs scripts/settings_manager.py merge for manual settings merges.",
+        "key_decisions": [
+          "Use python3/py -3 to keep parity with existing settings tasks."
+        ],
+        "action_items": [],
+        "linked_files": [
+          ".vscode/tasks.json",
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling update only; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Fix BUILD-WSL LaTeX Workshop ENOENT",
+        "date_range": "2025-12-25 to 2025-12-25",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Resolve LaTeX Workshop BUILD-WSL spawn scripts/build.sh ENOENT error in VS Code.",
+        "summary": "Updated LaTeX Workshop tool definitions to call /bin/bash with a workspace-root script path and pass %DOC_EXT% so the build script is found and receives a .tex file.",
+        "key_decisions": [
+          "Use /bin/bash with %WORKSPACE_FOLDER%/scripts/build.sh in tool args because LaTeX Workshop does not expand placeholders in command."
+        ],
+        "action_items": [],
+        "linked_files": [
+          ".vscode/settings.json",
+          "settings_master.json",
+          "AGENTS.md",
+        "project_export.json"
+      ],
+      "notable_citations": [],
+      "bias_or_quality_notes": "Tooling configuration update only; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Add NIP/MIP NRO funding explainer",
+        "date_range": "2025-12-27 to 2025-12-27",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Add an NRO-focused overview of NIP v.s. MIP funding lanes and refresh supporting sources.",
+        "summary": "Inserted a NIP/MIP funding subsection in Program Funding and Execution that covers NRO’s dual oversight, governance chains, reprogramming deltas, and recent toplines; added related acronyms, source citations, and guarded the glossaries rerun check for TeX Live 2023; added ICD 104, DoDD 5205.12, and ODNI/DoD topline releases to the bibliography.",
+        "key_decisions": [
+          "Place the NIP/MIP explainer alongside colors-of-money and reprogramming content to keep fiscal guidance together.",
+          "Define needed acronyms (DNI/ODNI/IC/NIP/MIP/USD(I&S)/NGA/DIA) and cite ICD 104, DoDD 5205.12, and recent ODNI/DoD topline releases.",
+          "Provide+renew the glossaries no-idx rerun check so the build works on TeX Live 2023."
+        ],
+        "action_items": [
+          "Convert legacy month fields to numeric values to clear biber month warnings.",
+          "Undefined citation/reference warnings elsewhere in the document remain and should be resolved separately."
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling configuration update only; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Add NIP/MIP funding overview (NRO context)",
+        "date_range": "2025-12-28 to 2025-12-28",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Insert NIP and MIP funding context into Program Funding and Execution with citations and acronyms.",
+        "summary": "Added a NIP/MIP funding subsection covering dual oversight, governing guidance, reprogramming paths, and FY 2025 toplines; defined DNI/ODNI/IC/NIP/MIP/USD(I&S)/DIA/NGA acronyms and added ICD 104, DoDD 5205.12, CRS R44381, and ODNI/DoD topline sources. latexmk failed due to a mismatched expl3 support file version (format 2025-11-14 vs tree requiring 2025-12-24).",
+        "key_decisions": [
+          "Use CRS R44381 for NRO dual-hat roles and requested toplines; use ODNI and DoD press releases for FY 2025 appropriated toplines.",
+          "Avoid NSA acronym conflict by referencing DIA and NGA only."
+        ],
+        "action_items": [
+          "Resolve the expl3 version mismatch (update TeX Live or rebuild formats) and rerun latexmk.",
+          "Verify the current DoDD 5205.12 revision; public copy reflects Change 2 effective 2020-10-01."
+        ],
+        "linked_files": [
+          "tex/chapters/9_Program_Funding_and_Execution.tex",
+          "tex/acronyms.def",
+          "tex/edo.bib",
+          "tex/moderntech.sty",
+          "project_export.json",
+          "AGENTS.md"
+        ],
+        "notable_citations": [
+          "ICD-104",
+          "DoDD-5205-12",
+          "ODNI-NIP-FY25",
+          "DoD-MIP-FY24",
+          "DoD-MIP-FY25-Request"
+        ],
+        "bias_or_quality_notes": "Content focuses on fiscal/oversight mechanics; board-prep depth only and not legal advice."
+      },
+      {
+        "title_or_slug": "Prune external-change references from project instructions",
+        "date_range": "2025-12-28 to 2025-12-28",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Ensure AGENTS/project_export updates are gated to in-repo changes and remove external-change references from the project export.",
+        "summary": "Updated AGENTS.md to gate AGENTS/project_export updates to changes under /home/victor/projects/edo/main and removed external-change references from project_export.json; refreshed memory highlights and task logs accordingly.",
+        "key_decisions": [
+          "Treat updates outside the repo as out-of-scope for AGENTS.md and project_export.json tracking.",
+          "Remove or redact entries that referenced external system changes while preserving in-repo change history."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "AGENTS.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Instruction cleanup only; no study guide content edits."
+      },
+      {
+        "title_or_slug": "Default markdown previews to markdown-preview-enhanced",
+        "date_range": "2026-01-02 to 2026-01-02",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Switch markdown-related editor associations to markdown-preview-enhanced and sync settings sources.",
+        "summary": "Updated settings_master.json and synced settings sources so markdown-related file extensions default to markdown-preview-enhanced; kept AGENTS/GEMINI formatting changes per user request and repaired a malformed project_export.json segment to restore valid JSON.",
+        "key_decisions": [
+          "Use markdown-preview-enhanced for markdown-related file associations in workbench.editorAssociations.",
+          "Sync settings sources via scripts/settings_manager.py to propagate the change."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "settings_master.json",
+          ".vscode/settings.json",
+          "AGENTS.md",
+          "GEMINI.md",
+          "project_export.json"
+        ],
+        "notable_citations": [],
+        "bias_or_quality_notes": "Tooling configuration update only; no study guide content changes."
+      }
+    ]
+  },
+  "handoff": {
+    "tags": [
+      "EDO",
+      "Acquisition",
+      "Navy",
+      "PPBE",
+      "FAR/DFARS",
+      "Study-Guide",
+      "LaTeX",
+      "Board-Prep",
+      "Final"
+    ],
+    "recommended_next_actions": [],
+    "integration_hints_for_custom_gpts": {
+      "ideal_knowledge_chunks": "Chunk by chapter/appendix summary, PPBE/contracting decision flows, and recurring acronym definitions.",
+      "suggested_embeddings_fields": [
+        "summary",
+        "key_points",
+        "decisions",
+        "risks",
+        "entities",
+        "dates"
+      ],
+      "canonical_ids": {
+        "project_slug": "edo-acquisition-tutor",
+        "asset_prefix": "edo-guide"
+      }
+    }
+  }
+}
