@@ -1,9 +1,10 @@
 # ===== General =====
 backupExtension: ""
-defaultIndent: "  "
+defaultIndent: "    "
 indentPreamble: 1
 onlyOneBackUp: 1
 preserveBlankLines: 1
+trailingComments: 1
 
 # The VS Code schema expects an object here (not a bare 0/1).
 # You can independently toggle pre/post whitespace trimming if you like.
@@ -52,6 +53,7 @@ lookForAlignDelims:
   tabular:
     alignDoubleBackSlash: 1
     spacesBeforeDoubleBackSlash: 1
+    delims: 1
   tabularx:
     alignDoubleBackSlash: 1
     spacesBeforeDoubleBackSlash: 1
@@ -63,11 +65,8 @@ modifyLineBreaks:
     BodyStartsOnOwnLine: 1
     EndStartsOnOwnLine: 1
     EndFinishesWithLineBreak: 1
-
-# ===== Soft wrap guard for long prose =====
-textWrapOptions:
-  wrap: 0
-  columns: 100
+  textWrapOptions:
+    columns: 0
 
 # ===== Verbatim-like environments (schema prefers object mapping) =====
 verbatimEnvironments:

@@ -1,0 +1,7 @@
+# Keep Prettier away from LaTeX and build artifacts
+**/*.tex
+**/*.cls
+**/*.sty
+**/*.bib
+**/out/**
+**/build/**
