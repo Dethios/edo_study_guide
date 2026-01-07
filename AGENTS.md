@@ -100,22 +100,11 @@
 
 ## Completed Jobs
 
-<<<<<<< HEAD
 - Codex Cloud: added `.codex/setup.sh` + `.codex/maintenance.sh` (apt-based TeX Live install) and `.codex/README.md` with environment configuration guidance.
 - Devcontainer: added `.devcontainer/MINIMUM.md` and `.devcontainer/examples/` (apt-min) listing the minimum binaries/packages to build; updated the list to include `texlive-pictures` + `texlive-bibtex-extra`.
 - LaTeX: removed all minibib code from templates/chapters and removed the minibib macro from `src/moderntech-base.sty`; `latexmk -shell-escape src/main.tex` succeeds (overfull hbox warnings remain).
 - Codex Cloud/Devcontainer: `fonts-fira` is now distro-aware (setup and devcontainer scripts auto-detect available Fira font packages); `latexmk -shell-escape src/main.tex` still succeeds (overfull \hbox warnings remain in 18_test_eval and 24_Battle_Damage_Assessment_Repair).
 - TODO scan: `rg TODO src` has no hits.
-
-## Session updates (2025-12-16)
-
-- Added Appendix `appendix_community_rosters` with Cannon Cocker roster/pyramid, IWE job pyramid, and IWE roster pages from IWE Round-Up (12 Sep 2025).
-- LaTeX: extended `\graphicspath` to include `assets/information/` and added a `.jfif` graphics rule for LuaLaTeX/PDF builds.
-- Build: `latexmk -shell-escape -interaction=nonstopmode src/main.tex` succeeds; warnings include PDF inclusion version (IWE Round-Up PDF 1.7 > 1.5 allowed) and existing overfull hbox notices.
-- Lookups1: completed OPNAV N8/N9 subcode coverage by adding N83/N84/N89 to PPBE and Key Roles; updated `acronyms.def` accordingly; `latexmk -shell-escape src/main.tex` succeeds (warnings unchanged).
-- Lookups integration: added CAPE/OMB execution controls, N8/N9 subcodes (N80/N81/N82/N9I/N95--N98), and marks/reclamas content into PPBE/Congressional Enactment/Execution sections; updated Key Roles appendix to match.
-- Acronyms/citations: added `OMB Circular A-11` and 10/31 U.S.C. entries; expanded `acronyms.def` for new OPNAV/board/OLA terms.
-=======
 -   [x] Review project scope; update `project_export.json` to current status
 -   [x] Acronym audit: run replacements with `\ac{}` in prose and fill acronyms.def (skip tables/headings)
 -   [x] Refactor sectional tables to `longtblr`
@@ -180,4 +169,12 @@
 -   [x] WSL sudoers: use $USER instead of hard-coded name (2025-12-26)
 -   [x] Add NIP/MIP funding subsection (NRO context) with citations and acronyms (2025-12-28)
 -   [x] Default markdown-related files to markdown-preview-enhanced and sync settings (2026-01-02)
->>>>>>> 2c8325c950bf425138843fea73e7b1d900b1d9e2
+
+## Session updates (2025-12-16)
+
+- Added Appendix `appendix_community_rosters` with Cannon Cocker roster/pyramid, IWE job pyramid, and IWE roster pages from IWE Round-Up (12 Sep 2025).
+- LaTeX: extended `\graphicspath` to include `assets/information/` and added a `.jfif` graphics rule for LuaLaTeX/PDF builds.
+- Build: `latexmk -shell-escape -interaction=nonstopmode src/main.tex` succeeds; warnings include PDF inclusion version (IWE Round-Up PDF 1.7 > 1.5 allowed) and existing overfull hbox notices.
+- Lookups1: completed OPNAV N8/N9 subcode coverage by adding N83/N84/N89 to PPBE and Key Roles; updated `acronyms.def` accordingly; `latexmk -shell-escape src/main.tex` succeeds (warnings unchanged).
+- Lookups integration: added CAPE/OMB execution controls, N8/N9 subcodes (N80/N81/N82/N9I/N95--N98), and marks/reclamas content into PPBE/Congressional Enactment/Execution sections; updated Key Roles appendix to match.
+- Acronyms/citations: added `OMB Circular A-11` and 10/31 U.S.C. entries; expanded `acronyms.def` for new OPNAV/board/OLA terms.

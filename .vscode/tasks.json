@@ -5,12 +5,12 @@
     "version": "2.0.0",
     "tasks": [
         // ---------------------------------------------------------------
-        // Safe Git auto-push and Ai context bundle
+        // Safe Git auto-push and AI context bundle (workspace tools)
         // ---------------------------------------------------------------
         {
             "label": "Git: Push (safe auto)",
             "type": "shell",
-            "command": "./scripts/push.sh && ./scripts/ai-context.sh && ./scripts/scrub.sh",
+            "command": "${workspaceFolder:workspace}/tools/scripts/push.sh --root ${workspaceFolder} && ${workspaceFolder:workspace}/tools/scripts/ai-context.sh --root ${workspaceFolder} && ${workspaceFolder:workspace}/tools/scripts/scrub.sh --root ${workspaceFolder}",
             "problemMatcher": [],
             "presentation": {
                 "reveal": "always",
@@ -23,14 +23,8 @@
                     "-NoProfile",
                     "-ExecutionPolicy",
                     "Bypass",
-                    "-File",
-                    "scripts\\push.ps1",
-                    "&&",
-                    "-File",
-                    "scripts\\ai-context.ps1",
-                    "&&",
-                    "-File",
-                    "scripts\\scrub.ps1"
+                    "-Command",
+                    "& '${workspaceFolder:workspace}\\tools\\scripts\\push.ps1' --root '${workspaceFolder}'; & '${workspaceFolder:workspace}\\tools\\scripts\\ai-context.ps1' -Root '${workspaceFolder}'; & '${workspaceFolder:workspace}\\tools\\scripts\\scrub.ps1' -Root '${workspaceFolder}'"
                 ]
             }
         },
@@ -41,7 +35,7 @@
         {
             "label": "Scrub temp artifacts",
             "type": "shell",
-            "command": "./scripts/scrub.sh",
+            "command": "${workspaceFolder:workspace}/tools/scripts/scrub.sh --root ${workspaceFolder}",
             "problemMatcher": [],
             "presentation": {
                 "reveal": "always",
@@ -55,7 +49,9 @@
                     "-ExecutionPolicy",
                     "Bypass",
                     "-File",
-                    "scripts\\scrub.ps1"
+                    "${workspaceFolder:workspace}\\tools\\scripts\\scrub.ps1",
+                    "-Root",
+                    "${workspaceFolder}"
                 ]
             }
         },
@@ -66,7 +62,7 @@
         {
             "label": "AI: Build context bundle",
             "type": "shell",
-            "command": "./scripts/ai-context.sh",
+            "command": "${workspaceFolder:workspace}/tools/scripts/ai-context.sh --root ${workspaceFolder}",
             "problemMatcher": [],
             "presentation": {
                 "reveal": "always",
@@ -80,7 +76,9 @@
                     "-ExecutionPolicy",
                     "Bypass",
                     "-File",
-                    "scripts\\ai-context.ps1"
+                    "${workspaceFolder:workspace}\\tools\\scripts\\ai-context.ps1",
+                    "-Root",
+                    "${workspaceFolder}"
                 ]
             }
         },
@@ -91,7 +89,7 @@
         {
             "label": "Release: Tag + Upload (GitHub)",
             "type": "shell",
-            "command": "./scripts/release.sh && ./scripts/ai-context.sh && ./scripts/scrub.sh",
+            "command": "./scripts/release.sh && ${workspaceFolder:workspace}/tools/scripts/ai-context.sh --root ${workspaceFolder} && ${workspaceFolder:workspace}/tools/scripts/scrub.sh --root ${workspaceFolder}",
             "problemMatcher": [],
             "presentation": {
                 "reveal": "always",
@@ -104,14 +102,8 @@
                     "-NoProfile",
                     "-ExecutionPolicy",
                     "Bypass",
-                    "-File",
-                    "scripts\\release.ps1",
-                    "&&",
-                    "-File",
-                    "scripts\\ai-context.ps1",
-                    "&&",
-                    "-File",
-                    "scripts\\scrub.ps1"
+                    "-Command",
+                    "& 'scripts\\release.ps1'; & '${workspaceFolder:workspace}\\tools\\scripts\\ai-context.ps1' -Root '${workspaceFolder}'; & '${workspaceFolder:workspace}\\tools\\scripts\\scrub.ps1' -Root '${workspaceFolder}'"
                 ]
             }
         },
@@ -122,7 +114,7 @@
         {
             "label": "Settings: Merge sources",
             "type": "shell",
-            "command": "python3 ./scripts/settings_manager.py merge",
+            "command": "python3 ${workspaceFolder:workspace}/tools/scripts/settings_manager.py --config ${workspaceFolder}/settings_sources.json merge",
             "problemMatcher": [],
             "presentation": {
                 "reveal": "always",
@@ -131,39 +123,13 @@
             },
             "windows": {
                 "command": "py",
-                "args": ["-3", "scripts\\settings_manager.py", "merge"]
-            }
-        },
-
-        // ---------------------------------------------------------------
-        // On open: sudo warmup, settings sync, git pull, WSL update
-        // ---------------------------------------------------------------
-        {
-            "label": "On Open: Sync + Pull + Update + Scrub",
-            "type": "shell",
-            "command": "sudo -v && python3 ./scripts/settings_manager.py sync && git pull --ff-only && sudo /usr/bin/apt-get update && sudo /usr/bin/apt-get -y upgrade && (TLMGR=\"$(command -v tlmgr 2>/dev/null || true)\"; if [ -z \"$TLMGR\" ]; then for cand in /usr/local/texlive/*/bin/*/tlmgr; do if [ -x \"$cand\" ]; then TLMGR=\"$cand\"; fi; done; fi; if [ -n \"$TLMGR\" ]; then sudo \"$TLMGR\" update --self --all || echo \"tlmgr update failed; continuing.\"; else echo \"tlmgr not found; skipping TeX Live update.\"; fi) && ./scripts/scrub.sh",
-            "problemMatcher": [],
-            "presentation": { "reveal": "silent" },
-            "runOptions": { "runOn": "folderOpen" },
-            "windows": {
-                "command": "py",
                 "args": [
                     "-3",
-                    "scripts\\settings_manager.py",
-                    "sync",
-                    "&&",
-                    "git",
-                    "pull",
-                    "--ff-only",
-                    "&&",
-                    "scripts\\scrub.sh",
-                    "&&",
-                    "echo",
-                    "WSL and TexLive update skipped on Windows."
+                    "${workspaceFolder:workspace}\\tools\\scripts\\settings_manager.py",
+                    "--config",
+                    "${workspaceFolder}\\settings_sources.json",
+                    "merge"
                 ]
-            },
-            "osx": {
-                "command": "python3 ./scripts/settings_manager.py sync && git pull --ff-only && ./scripts/scrub.sh && echo WSL and TexLiveupdate skipped on macOS."
             }
         }
     ]
