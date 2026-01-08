@@ -31,6 +31,7 @@ required_pkgs=(
   perl
   python3
   python3-pygments
+  ripgrep
   texlive-bibtex-extra
   texlive-extra-utils
   texlive-fonts-extra

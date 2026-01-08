@@ -1658,6 +1658,7 @@
     // [shellscript]: Language-specific overrides for [shellscript]. Update the settings inside this object to change behavior.
     "[shellscript]": {
         "editor.defaultFormatter": "foxundermoon.shell-format",
+        "editor.formatOnSave": true,
         "files.eol": "\n"
     },
     // [tex]: Language-specific overrides for [tex]. Update the settings inside this object to change behavior.
