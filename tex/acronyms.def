@@ -273,15 +273,25 @@
 	longplural={Cost Assessments and Program Evaluations}
 ]{cape}{CAPE}{Cost Assessment and Program Evaluation}
 \newacronym{cots}{COTS}{Commercial Off-the-Shelf}
+\newacronym{actd}{ACTD}{Advanced Concept Technology Demonstration}
+\newacronym{bbp}{BBP}{Better Buying Power}
+\newacronym{btb}{BtB}{Back to Basics}
+\newacronym{caiv}{CAIV}{Cost as an Independent Variable}
 \newacronym{dab}{DAB}{Defense Acquisition Board}
 \newacronym[
 	shortplural={DAESes},
 	longplural={Defense Acquisition Executive Summaries}
 ]{daes}{DAES}{Defense Acquisition Executive Summary}
+\newacronym{dave}{DAVE}{Defense Acquisition Visibility Environment}
 \newacronym{dag}{DAG}{Defense Acquisition Guidebook}
 \newacronym{dau}{DAU}{Defense Acquisition University}
 \newacronym{das}{DAS}{Defense Acquisition System}
 \newacronym{dbs}{DBS}{Defense Business System}
+\newacronym{esoh}{ESOH}{Environmental, Safety, and Occupational Health}
+\newacronym{ippd}{IPPD}{Integrated Product and Process Development}
+\newacronym{osa}{OSA}{Open Systems Architecture}
+\newacronym{rdais}{RDAIS}{Research, Development, and Acquisition Information System}
+\newacronym{ucr}{UCR}{Unit Cost Report}
 \newacronym{cpa}{CPA}{Chairman's Program Assessment}
 \newacronym{dcape}{DCAPE}{Director, CAPE}
 \newacronym{drfprd}{DRFPRD}{Development Request for Proposal Release Decision}
@@ -807,6 +817,7 @@
 	short={\glsentryshort{wiu}},
 	long={\glsentrylong{wiu}}
 ]{diu}{DIU}{Defense Innovation Unit}
+\newacronym{darpa}{DARPA}{Defense Advanced Research Projects Agency}
 \newacronym{nato}{NATO}{North Atlantic Treaty Organization}
 \newacronym{usnorthcom}{USNORTHCOM}{United States Northern Command}
 \newacronym{ussocom}{USSOCOM}{United States Special Operations Command}
