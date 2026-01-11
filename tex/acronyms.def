@@ -74,6 +74,8 @@
 \newacronym{comnavairfor}{COMNAVAIRFOR}{Commander, Naval Air Forces}
 \newacronym{comsubfor}{COMSUBFOR}{Commander, Submarine Forces}
 \newacronym{bso}{BSO}{Budget Submitting Office}
+\newacronym{eob}{EOB}{Expense Operating Budget}
+\newacronym{optar}{OPTAR}{Operating Target}
 \newacronym{frd}{FRD}{Fleet Readiness Directorate}
 \newacronym{cnrmc}{CNRMC}{Commander, Navy Regional Maintenance Center}
 \newacronym{comnavsea}{COMNAVSEA}{Commander, Naval Sea Systems Command}
@@ -554,6 +556,8 @@
 \newacronym{pa-reprog}{PA Reprog}{Prior Approval Reprogramming}
 \newacronym{lt}{LT}{Letter Transfer}
 \newacronym{mipr}{MIPR}{Military Interdepartmental Purchase Request}
+\newacronym{ipr}{IPR}{Interdepartmental Purchase Request}
+\newacronym{po}{PO}{Project Order}
 \newacronym{pr}{PR}{Purchase Request}
 \newacronym{rca}{RCA}{Request for Contract Action}
 \newacronym{igt}{IGT}{Intragovernmental Transaction}

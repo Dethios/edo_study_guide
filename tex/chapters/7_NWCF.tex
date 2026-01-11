@@ -3,8 +3,8 @@
 \documentclass[../main.tex]{subfiles}
 \IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
 % =============================================================================
-% CHAPTER 7:\acs{nwcf} ESSENTIALS
-% DESCRIPTION: NWCF basics—definitions, metrics, and operating cycle.
+% CHAPTER 7: FIELD ACTIVITY FINANCIAL MANAGEMENT
+% DESCRIPTION: Cost categories, General Fund vs NWCF operations, and funding documents.
 % =============================================================================
 
 \begin{document}
@@ -12,90 +12,143 @@
 %====================
 % Contents here
 %====================
-% === WORKING CAPITAL FUND (NWCF) ESSENTIALS ===
-\section{NWCF Essentials: Rates, Results, and Execution}
-\subsection{Key Definitions (Execution)}
+% === FIELD ACTIVITY FINANCIAL MANAGEMENT ===
+\section{Field Activity Financial Management}
+
+\subsection{Cost categories}
 \begin{description}
-  \item[\textbf{Commitment.}] Administrative reservation of funds in anticipation of an obligation; reduces available authority but is not yet a legal liability~\autocite{DoDFMR-Vol3} (e.g., \ac{nro}'s \ac{rca} process).
-  \item[\textbf{Obligation.}] Legal liability incurred that encumbers funds~\autocite{DoDFMR-Vol3} (e.g., award of a contract, acceptance of an \ac{igt} order).
-  \item[\textbf{Expenditure/Expense.}] Recording of cost when goods/services are received/accepted (accrual basis)~\autocite{DoDFMR-Vol3} (e.g., sending check to pay an invoice).
-  \item[\textbf{Outlay/Disbursement.}] Treasury cash payment to a vendor or performing activity~\autocite{DoDFMR-Vol3} (e.g., payment check is cashed in).
+  \item[\textbf{Direct costs.}] Costs directly attributable to a project (for example, materials, labor, and travel tied to a specific job).\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{Indirect costs.}] Costs that cannot be attributed to a single project (for example, security, executive salaries, and shared services).\autocite{edo-3-1-5-field-activity-fm-2025}
 \end{description}
 
-\subsection{Flow: PMO Purchase Request to Treasury Payment}
+\note{Direct costs typically include labor, material, and \ac{odc}; indirect costs include overhead and \ac{ganda}.\autocite{edo-3-1-5-field-activity-fm-2025}.}
+
+\subsection{Financial management systems}
+\begin{description}
+  \item[\textbf{Mission funded (General Fund).}] Appropriated funds flow down the chain of command to execute mission needs; the goal is to budget adequate resources without excess.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{Working capital funded (NWCF).}] A reimbursable system where activities are not directly appropriated; they recover costs from customers and aim to break even over time.\autocite{edo-3-1-5-field-activity-fm-2025}
+\end{description}
+
+\note{General Fund activity management is a \textit{``checking account''} model; \ac{nwcf} is a \textit{``credit card''} model. Some \ac{nwcf} commands have mission-funded units, but funds cannot be mixed.\autocite{edo-3-1-5-field-activity-fm-2025}.}
+
+\subsection{Activity examples}
+\begin{longtblr}[
+    label   = {tab:activity_examples},
+    caption = {Mission-funded vs NWCF activity examples},
+    entry   = {Activity Examples},
+    remark{Source} = {\tabCite{edo-3-1-5-field-activity-fm-2025}}
+  ]
+  {colspec = {@{} X X @{}}}
+  \toprule
+  {Mission funded (General Fund)} & {NWCF activities} \\
+  \midrule
+  \textbullet\ Naval Shipyards, Regional Maintenance Centers, Ship Repair Facilities \newline
+  \textbullet\ Supervisors of Shipbuilding, Program Executive Offices \newline
+  \textbullet\ Systems commands (HQ only) \newline
+  \textbullet\ Operating forces (fleet commanders, TYCOMs, ships) \newline
+  \textbullet\ Most other activities (e.g., EDO School)
+  &
+  \textbullet\ SYSCOM Echelon III activities (NAVSUP FLCs; NAVAIR/NAVSEA/NAVWAR warfare centers; NAVFAC facility engineering commands and expeditionary warfare centers; Naval Research Laboratory) \newline
+  \textbullet\ Military Sealift Command \newline
+  \textbullet\ Depot maintenance (non-ship): Fleet Readiness Centers (aircraft), Marine Corps depots \\
+  \bottomrule
+\end{longtblr}
+
+\subsection{General Fund operations}
+\begin{description}
+  \item[\textbf{Appropriation flow.}] \ac{asnfmc} (Echelon I) allocates funds to Echelon II \acp{bso}; BSOs distribute allotments and \acp{eob}. Echelon III field activities issue allowances and \acp{optar} to subordinate units at Echelon IV.\autocite{edo-3-1-5-field-activity-fm-2025}
+\end{description}
+
+\subsection{Appropriated vs reimbursable funds for mission-funded activities}
+\begin{description}
+  \item[\textbf{Appropriated funds.}] Pay for mission labor (civilian salaries), mission non-labor (materials, travel, contracts), and all indirect costs (overhead).\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{Reimbursable funds.}] Used when a mission-funded activity performs work for a customer; reimbursements cover direct labor and other direct costs, but not indirect costs.\autocite{edo-3-1-5-field-activity-fm-2025}
+\end{description}
+
+\subsection{General Fund budgeting cycle (EOB)}
 \begin{enumerate}
-  \item \ac{pmo} \emph{commits} funds (approved in the \ac{erp} system). % commitment
-  \item Contract award or \ac{igt} order acceptance creates the \emph{obligation}~\autocite{DoDFMR-Vol3,Treasury-GInvoicing}.
-  \item Performance/acceptance posts \emph{expense} (accrual). % expenditure
-  \item \ac{dfas} schedules the invoice for payment; Treasury disburses (\emph{outlay}) via \ac{ipac} (for \ac{igt}) or commercial \ac{eft}~\autocite{Treasury-GInvoicing}.
+  \item Mid-year review of the current year budget.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item Answer budget data calls.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item Submit next year's (future) budget.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item Marks and reclamas (summer review).\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item Sept/Oct: end of current FY, start of next FY; receive \ac{eob} and execute.\autocite{edo-3-1-5-field-activity-fm-2025}
 \end{enumerate}
 
-\subsection{NWCF Metrics and Equations}
+\subsection{What is the NWCF?}
 \begin{description}
-  \item[\textbf{\ac{nor} (annual profit/loss).}]
-        \[
-          \text{\ac{nor}} = \text{Revenue} - \text{Total Expenses}
-        \]
-        Target performance remains near break-even over time (small \ac{nor})~\autocite{DoDFMR-Vol3}.
-  \item[\textbf{\ac{aor} (retained earnings/equity over time).}]
-        \[
-          \text{\ac{aor}}_{t} = \text{\ac{aor}}_{t-1} + \text{\ac{nor}}_{t} \pm \text{Other Adjustments}
-        \]
-        Represents the \emph{corpus} (net position) of the fund~\autocite{DoDFMR-Vol3}.
+  \item[\textbf{Definition.}] \ac{nwcf} is a reimbursable operation that provides goods or services to customers and recovers the full cost of output.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{Criteria to join.}] Output costs must be identifiable, customers must be known, and the advantages and disadvantages of the buyer-seller relationship must be evaluated.\autocite{edo-3-1-5-field-activity-fm-2025}
 \end{description}
 
-\subsection{NWCF Corpus v.s.\ Appropriations}
-\begin{description}
-  \item[\textbf{\ac{aor} (working capital).}] Revolving cash and retained earnings authorized under 10~U.S.C.~\S~2208~\autocite{USC-2208-NWCF}; remains available without fiscal year limitation to finance operations until recovered through stabilized rates~\autocite{DoDFMR-Vol3-Ch19}.
-  \item[\textbf{Customer Appropriations.}] Mission-funded (e.g., \ac{omn}, \ac{rdte}, \ac{scn}) dollars obligated by the customer when a project order or inter/intra-governmental order is accepted; purpose, time, and amount statutes still apply to the customer~\autocite{DoDFMR-Vol3}.
-  \item[\textbf{\ac{cip}.}] Financed by \ac{nwcf} corpus but budgeted in the capital budget exhibit; used for plant/equipment modernization and amortized back through rates, not through a separate appropriation~\autocite{DoDFMR-Vol3-Ch19}.
-  \item[\textbf{No Augmentation.}] \ac{nwcf} activities cannot augment customer appropriations; corpus only bridges cash timing between expense recognition and reimbursement~\autocite{DoDFMR-Vol3-Ch19}.
-\end{description}
-
-\subsection{Stabilized Rates and SLR}
-\begin{description}
-  \item[\textbf{Stabilized Rates.}] Customer prices set in the budget build to recover expected full costs (labor, material, overhead, depreciation/C \ac{cip}) with a near-zero \ac{nor} goal~\autocite{DoDFMR-Vol3}.
-  \item[\textbf{\ac{slr}.}] Published labor \$/hr for a shop/code; recovers direct labor + fringe + overhead + G\&A + capital depreciation recovery~\autocite{DoDFMR-Vol3}. The rate is:
-        \[
-          \text{\ac{slr}} = \frac{\text{Direct Labor} + \text{Fringe} + \text{OH} + \text{G\&A} + \text{Depreciation Recovery}}{\text{Direct Labor Hours}}
-        \]
-  \item[\textbf{Adjustment Battle Rhythm.}] Rates are established two years ahead during the PPBE budget build and held constant throughout budget year execution; mid-year changes require \ac{ousdc} approval when earned rates diverge materially from planned costs, and Navy \acp{bso} typically review \ac{slr} accuracy monthly/quarterly to recommend any out-of-cycle adjustments~\autocite{DoDFMR-Vol3-Ch19}.
-\end{description}
-
-\subsection{NWCF v.s.\ Mission-Funded (Appropriation) Commands}
-\paragraph*{Which billets at \ac{nwcf} are mission-funded.}
-Military administration and leadership billets (CO/XO/Admin) are funded by \textbf{\ac{milpers}} and treated as mission-funded within \ac{nwcf}; certain command/HQ oversight billets may also be \ac{omn} funded by policy, so verify locally. These costs are not recovered in stabilized rates. Others that are assigned to \ac{nwcf} will bill hours towards work and the \ac{nwcf} will reimburse \ac{milpers}~\autocite{DoDFMR-Vol3}.
-
-\subsection{Standing Up or Modifying a NWCF Business Area}
+\subsection{NWCF cycle of operations}
 \begin{enumerate}
-  \item \textbf{Business Case Development}: Sponsor (e.g., \ac{asnrdanda} or \ac{syscom}) prepares analytical justification showing workload, demand signal, and ability to operate on a revolving basis without violating purpose/time/amount~\autocite{DoDFMR-Vol3-Ch19}.
-  \item \textbf{\ac{don} Approval Chain}: \ac{secnav} (delegated to \ac{asnfmc}) endorses the concept and forwards to \ac{ousdc} while coordinating with Navy Comptroller to align \ac{ppbe} exhibits~\autocite{DoDFMR-Vol3-Ch19}.
-  \item \textbf{\ac{ousdc}/\ac{omb} Review}: \ac{dod} \ac{cfo} validates cash requirements, rate methodology, and capital plan, then seeks \ac{omb} alignment for the \ac{pb}~\autocite{DoDFMR-Vol3-Ch19}.
-  \item \textbf{Congressional Notification}: Congress must be notified (and, when required, explicitly authorize in appropriations or authorizations) before execution; 10~U.S.C.~\S~2208~\autocite{USC-2208-NWCF} restricts creation of new \acp{wcf} without legislative awareness~\autocite{DoDFMR-Vol3-Ch19}.
-  \item \textbf{Implementation}: Once approved, the new business area is issued a \ac{nwcf} business unit code, begins \ac{ppbe} rate build two years out, and transitions legacy appropriated accounts via opening balance adjustments~\autocite{DoDFMR-Vol3-Ch19}.
+  \item Congress provides corpus to begin operations.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item The \ac{nwcf} activity receives a reimbursable work request via a funding document.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item The activity performs work; direct and indirect costs are financed by the corpus.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item Costs are priced using stabilized rates held constant during execution.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item The customer is billed for costs incurred; payment reimburses the corpus.\autocite{edo-3-1-5-field-activity-fm-2025}
 \end{enumerate}
 
-\subsection{NWCF Cycle of Operations (Order to Cash)}
-\begin{enumerate}
-  \item \textbf{Customer order.} \ac{igt} 7600A or project order is received and \emph{accepted}, creating the customer's obligation.
-  \item \textbf{Work in process.} Labor and material are applied; costs accumulate; billing events are scheduled per percent complete or delivery.
-  \item \textbf{Revenue recognition and billing.} The \ac{nwcf} recognizes revenue and bills via \ac{ipac} (\ac{igt}) or a commercial invoice if authorized.
-  \item \textbf{Collection (cash).} Treasury \ac{ipac}/electronic funds transfer posts; \ac{nwcf} cash increases; \ac{nor}/\ac{aor} update through the period close~\autocite{DoDFMR-Vol3,Treasury-GInvoicing}.
-\end{enumerate}
-
-\subsection{Operating During a Continuing Resolution}
+\subsection{Stabilized labor rates (SLR)}
 \begin{description}
-  \item[\textbf{Customer Funding Limits.}] Appropriated customers remain bound by prior-year obligation rates and anti-deficiency constraints; \ac{nwcf} orders cannot exceed apportioned \ac{cr} amounts until an appropriations act is passed~\autocite{CRS-CR}.
-  \item[\textbf{Cash Cushion.}] Existing \ac{nwcf} corpus allows Warfare Centers to keep executing accepted orders (labor continues, suppliers paid) even if reimbursements lag, provided cash balances stay within the \ac{fmr}'s upper/lower operating limits~\autocite{DoDFMR-Vol3-Ch19}.
-  \item[\textbf{No New Starts.}] \ac{cr} guidance prohibits new start projects, major capital investments, or rate changes absent explicit exception; \ac{nwcf} managers defer new workloads that would obligate customer funds beyond \ac{cr} allowances~\autocite{CRS-CR}.
-  \item[\textbf{Rate Discipline.}] Stabilized rates remain frozen; only emergency \ac{ousdc}-approved rate adjustments may occur, so \acp{bso} focus on expense control to avoid large \ac{nor} swings during the \ac{cr} period~\autocite{DoDFMR-Vol3-Ch19}.
+  \item[\textbf{Purpose.}] \ac{slr} reimburses \ac{nwcf} activities for work performed and is established during the budget process to recover full costs, prior period gains/losses, and approved capital surcharges.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{Formula.}]
+        \[
+          \text{SLR} = \frac{\text{Direct labor} + \text{Indirect (overhead/G\&A)} + \text{AOR recoupment}}{\text{Direct hours}}
+        \]
+  \item[\textbf{Components.}] Direct labor, indirect expenses (including \ac{ganda}), and \ac{aor} recoupment to achieve break-even.\autocite{edo-3-1-5-field-activity-fm-2025}
 \end{description}
 
-\subsection{Why Use a Warfare Center (Organic)}
+\subsection{Operating results: NOR and AOR}
 \begin{description}
-  \item[\textbf{Things \acp{pmo}/industry \emph{can't} do.}] Inherently governmental \ac{ta} warrants, certification authority, certain safety releases; highly classified or nuclear workspaces.
-  \item[\textbf{Things they \emph{shouldn't} do.}] Independent test/assessment, spec adjudication, tech baseline control, blue-\&-gold separation to avoid \ac{oci}.
-  \item[\textbf{Things they \emph{won't} do.}] Sustainment engineering at scale, depot-level organic repair, fleet distance support.
+  \item[\textbf{\ac{nor}.}] Current-year profit or loss based on revenue minus expenses.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{\ac{aor}.}] Cumulative gains and losses since inception; \ac{aor} is managed at Navy level and used to set rates.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{Rate adjustment.}] Gains reduce rates two years out; losses increase rates two years out to drive \ac{aor} toward zero in the budget year.\autocite{edo-3-1-5-field-activity-fm-2025}
+\end{description}
+
+\subsection{NWCF budget timeline}
+\begin{description}
+  \item[\textbf{Feb--Apr.}] Internal budget formation at the activity level.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{Apr--May.}] Activity budgets consolidate to activity group and submit to the \ac{bso}.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{May--Jun.}] \ac{bso} submits the activity group budget to \ac{fmb}.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{Jul--Aug.}] \ac{fmb} submits the activity group budget to \ac{dod} for the \ac{bes}.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{Sep.}] \ac{dod} submits to Congress.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{Feb.}] President signs the budget (first Monday in February); rates are set 18--24 months in advance.\autocite{edo-3-1-5-field-activity-fm-2025}
+\end{description}
+
+\subsection{Funding documents and cost stages}
+\begin{description}
+  \item[\textbf{Reimbursable vs direct cite.}] Reimbursable work charges costs to the \ac{nwcf} corpus and then bills the customer; direct cite (commercial contracts only) charges the customer's line of accounting directly.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{Cost stages.}] Committed (funding document received), obligated (contract awarded), costed (work performed/material received).\autocite{edo-3-1-5-field-activity-fm-2025}
+\end{description}
+
+\subsection{Carryover}
+\begin{description}
+  \item[\textbf{Definition.}] Dollar value of reimbursable work ordered and funded but not yet completed at FY end.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{Formula.}] Carryover = Available balance (cash) + commitments + obligations (costed transactions excluded).\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{Rules.}] Some carryover is required to start the new FY; excess carryover can trigger congressional marks and future budget reductions.\autocite{edo-3-1-5-field-activity-fm-2025}
+\end{description}
+
+\subsection{Project orders (PO)}
+\begin{description}
+  \item[\textbf{Specificity.}] Description of work and period of performance must be specific and produce a tangible end product.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{Timing.}] Work may extend past fund expiration but not beyond cancellation; \acp{po} cannot be issued solely to extend funds and scope cannot expand after expiration.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{51/49 rule.}] At least 51\% of reimbursable work must be performed in-house; no more than 49\% can be out-house.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{Restrictions.}] \acp{po} are reimbursable only and limited to \ac{dod} activities; they extend the cited funds beyond expiration and carry additional restrictions.\autocite{edo-3-1-5-field-activity-fm-2025}
+\end{description}
+
+\subsection{Other funding documents}
+\begin{description}
+  \item[\textbf{\ac{mipr}.}] Transfers funds between military organizations for supplies or services; can be accepted on a direct cite or reimbursable basis.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{\ac{ipr}.}] Used when requiring and performing activities are from different departments (outside \ac{dod}); cannot cite the Project Order statute but may cite Economy Act or other statutory authorities.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{FS Form 7600B.}] Treasury G-Invoicing form for reimbursable \acp{igt}; applicable to manual or electronic submissions and not limited to Economy Act or Project Order authorities.\autocite{edo-3-1-5-field-activity-fm-2025}
+\end{description}
+
+\subsection{Summary check}
+\begin{description}
+  \item[\textbf{NWCF success.}] Financial success means revenue and expenses break even over time (\ac{aor} near zero) and pricing remains affordable.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{SLR components.}] Direct labor, indirect costs, and \ac{aor} recoupment.\autocite{edo-3-1-5-field-activity-fm-2025}
+  \item[\textbf{Document choice.}] A mission-funded activity using \ac{omn} in August for work starting in September should use a \ac{po} because the work completes after fund expiration.\autocite{edo-3-1-5-field-activity-fm-2025}
 \end{description}
 %====================
 % End of file
