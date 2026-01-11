@@ -65,6 +65,7 @@
 % --- Navy Enterprise Commands ---
 
 \newacronym{cno}{CNO}{Chief of Naval Operations}
+\newacronym{cmc}{CMC}{Commandant of the Marine Corps}
 \newacronym{opnav}{OPNAV}{Office of the Chief of Naval Operations}
 \newacronym{pacflt}{PACFLT}{U.S. Pacific Fleet}
 \newacronym{usff}{USFF}{U.S. Fleet Forces}
@@ -288,6 +289,7 @@
 \newacronym{das}{DAS}{Defense Acquisition System}
 \newacronym{dbs}{DBS}{Defense Business System}
 \newacronym{esoh}{ESOH}{Environmental, Safety, and Occupational Health}
+\newacronym{peshe}{PESHE}{Programmatic Environmental, Safety, and Occupational Health Evaluation}
 \newacronym{ippd}{IPPD}{Integrated Product and Process Development}
 \newacronym{osa}{OSA}{Open Systems Architecture}
 \newacronym{rdais}{RDAIS}{Research, Development, and Acquisition Information System}
@@ -345,6 +347,9 @@
 	shortplural={TRLs},
 	longplural={Technology Readiness Levels}
 ]{trl}{TRL}{Technology Readiness Level}
+\newacronym{tra}{TRA}{Technology Readiness Assessment}
+\newacronym{ramc}{RAM-C}{Reliability, Availability, and Maintainability Cost Rationale}
+\newacronym{volt}{VOLT}{Validated Online Life-cycle Threat}
 \newacronym[
 	shortplural={UCAs},
 	longplural={Urgent Capability Acquisitions}

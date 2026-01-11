@@ -8,198 +8,220 @@
 \begin{document}
 \IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 % === MILESTONES (EDO 3.3.2) ===
-\section{Milestones and Phases}
+\section{Acquisition Milestones and Phases}
 
-\subsection{Defense Acquisition System Overview}
-The \ac{das} is the governance framework that aligns requirements, resourcing, and acquisition execution to deliver warfighter capability. It is policy-driven by DoWD~5000.01 and process-enabled through DoWI~5000.02, using the \ac{aaf} to tailor pathways while preserving statutory oversight and Navy-unique controls~\autocite{DoDD5000-01,DoDI5000-02}.
-
-\subsection{Adaptive Acquisition Framework Pathways (Board Snapshot)}
+\subsection{Summary}
 \begin{description}
-  \item[\textbf{\ac{mca}.}] Default for complex weapon systems; uses phased milestones with mandatory statutory certifications; emphasizes affordability trades, test rigor, and Navy two-pass / seven-gate touchpoints~\autocite{DoDI5000-85}.
-  \item[\textbf{\ac{mta}.}] Rapid prototyping or rapid fielding to deliver an operational capability within five years; minimizes documentation, but demands robust transition planning to \ac{mca} or sustainment funding~\autocite{DoDI5000-80}.
-  \item[\textbf{\ac{ucaacq}.}] Accelerated path to field urgent capability within 2~years or provide an interim solution in less than 5; leverages tailored test, streamlined acquisition decision memoranda, and dedicated senior oversight~\autocite{DoDI5000-81}.
-  \item[\textbf{Software Acquisition Pathway.}] Iterative, \ac{devsecops}-focused delivery of software increments with continuous integration, enterprise cloud alignment, and recurring user feedback cadences~\autocite{DoDI5000-87}.
-  \item[\textbf{Acquisition of Services Pathway.}] Structures service requirements, performance metrics, and contracting strategies to assure mission outcomes and oversight thresholds (e.g., Multi-Functional \ac{ipt} requirements review)~\autocite{DoDI5000-74}.
-  \item[\textbf{Defense Business Systems Pathway.}] Rationalizes business processes, data standards, and \ac{bcac} to unlock enterprise interoperability before investing in solutions~\autocite{DoDI5000-75}.
-\end{description}
-\note{Pathways are not exclusive---an \ac{edo} may begin in \ac{mta} for prototyping, then transition to \ac{mca} for production once requirements and sustainment plans stabilize. Programs can also leverage \ac{ucaacq} for an initial bridge while planning a transition to \ac{mca}.}
-
-\subsection{Baseline Discipline: Acquisition Program Baselines, Deviations, and Nunn--McCurdy}
-\begin{description}
-  \item[\textbf{\ac{apb}.}] The cost-schedule-performance contract between the \ac{mdauthority}, resource sponsor, and \ac{peo}; defines objective and threshold values that bound trade space~\autocite{DoDI5000-85}.
-  \item[\textbf{Program Deviations.}] Triggered when performance, schedule, or cost thresholds breach; the Program Manager must notify the \ac{mdauthority} within 30~days and submit a corrective action plan within 60~\autocite{DoDI5000-85}.
-  \item[\textbf{Nunn--McCurdy Act.}] Statutory reporting when \ac{pauc} or \ac{apuc} breaches significant ($\geq$15\% current / 30\% original) or critical ($\geq$25\% current / 50\% original) thresholds; critical breaches require certification to Congress within 60~days or program termination~\autocite{USC-4371-NunnMcCurdy}.
+  \item[\textbf{DAS structure.}] The \ac{das} uses Milestones~A/B/C, five phases, and decision points (\ac{mdd}, \ac{cddv}, \ac{drfprd}, \ac{frp}) to pace major capability acquisitions~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Baseline discipline.}] The \ac{apb} sets cost, schedule, and performance thresholds/objectives that define the program trade space and trigger deviation actions~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Pre-systems acquisition.}] The \ac{mdd}, \ac{msa}, and \ac{aoa} converge on a validated materiel solution, initial acquisition strategy, and draft requirements~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Systems acquisition.}] \ac{tmrr} and \ac{emd} reduce risk and mature designs before \ac{pd.phase}; \ac{ms}~B/C decisions commit the program to development and production~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Navy overlays.}] Ships, \ac{scn} timing, and the Navy 2-pass/7-gate review shape milestone execution and resourcing expectations~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
 \end{description}
 
-\subsection{JCIDS Flow into the Defense Acquisition System}
+\subsection{Introduction: DAS and Urgent Needs}
+The \ac{das} supports the National Defense Strategy through the \ac{aaf}, tailoring acquisition to program urgency and risk~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
 \begin{description}
-  \item[\textbf{\ac{icd}.}] Supports the \ac{mdd} with validated capability needs and initial attributes~\autocite{CJCSI5123-01H}.
-  \item[\textbf{\ac{cdd}.}] Provides \acp{kpp} and \acp{ksa} to anchor Milestone~B and the Technical Requirements Baseline~\autocite{CJCSI5123-01H}.
-  \item[\textbf{\ac{cpd}.}] Updates \ac{kpp}/\ac{ksa} values for production decisions and sustainment planning at Milestone~C~\autocite{CJCSI5123-01H}.
-\end{description}
-\note{Maintain requirements traceability matrices linking \ac{kpp} thresholds to test plans and \ac{apb} values for board discussions.}
-
-\subsection{KPPs v.s. KSAs (Know the Difference)}
-\begin{description}
-  \item[\textbf{\ac{kpp}.}] A performance attribute of a system critical to mission success. Each \ac{kpp} has a threshold (minimally acceptable) and objective (desired) value. Failure to meet a \emph{threshold} normally triggers program reassessment or revalidation of the requirement. \emph{Why it matters:} Drives design trades, tempers requirement creep, and is reportable in baselines and decision reviews~\autocite{CJCSI5123-01H}.
-  \item[\textbf{\ac{ksa}.}] Important performance attribute not critical enough to be a \ac{kpp}. \acp{ksa} are managed and traded to balance cost/schedule/performance without jeopardizing mission effectiveness. \emph{Why it matters:} Provides disciplined trade-space for the Program Manager and requirements sponsor~\autocite{CJCSI5123-01H}.
-  \item[\textbf{Difference.}] \acp{kpp} are mission-critical and tightly controlled; \acp{ksa} are important but offer more flexibility. Both appear in the \ac{cdd}/\ac{cpd} with threshold/objective values, but \acp{kpp} carry higher visibility and risk if breached.
+  \item[\textbf{UON.}] \ac{uon} addresses capability gaps impacting ongoing or anticipated contingency operations; when validated by a single \ac{dod} Component it is a Component \ac{uon}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{JEON.}] \ac{jeon} is a joint requirement identified by \ac{ccmd}, \ac{cjcs}, or \ac{vcjcs} for an anticipated contingency~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{JUON.}] \ac{juon} is a joint requirement identified by \ac{ccmd}, \ac{cjcs}, or \ac{vcjcs} for an ongoing contingency~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
 \end{description}
 
-\subsection{Acquisition Strategy Essentials}
-\begin{description}
-  \item[\textbf{Purpose.}] Documents tailored acquisition approach, contract strategy, intellectual property posture, and affordability constraints for \ac{mdauthority} approval~\autocite{DoDI5000-85}.
-  \item[\textbf{Key Contents.}] Pathway selection, phasing plan, incentive structure, test and evaluation strategy, risk burn-down, sustainment concept, cybersecurity, international cooperation, and business case for software/data management~\autocite{DoDI5000-85,DoDD5000-01}.
-  \item[\textbf{Approval Event.}] \ac{mdauthority} concurrence at Milestone~A (initial) with updates prior to Milestone~B and significant re-baselines; Navy 2-pass/7-gate integrates resource validation before signature~\autocite{OPNAVINST5000-42E}.
-\end{description}
-
-\subsection{International Acquisition Objectives}
-\begin{description}
-  \item[\textbf{Foreign Military Sales (\ac{fms}).}] Strengthen partner capability while leveraging U.S. economies of scale; requires disclosure review and Letter of Offer and Acceptance alignment~\autocite{DoDI5000-85}.
-  \item[\textbf{Direct Commercial Sales (\ac{dcs}).}] Contractor-led exports; Program Office ensures configuration control and technology-security compliance~\autocite{DoDI5000-85}.
-  \item[\textbf{Cooperative Development.}] Shared investment with allies (e.g., Memoranda of Understanding) to reduce life-cycle cost and enhance interoperability~\autocite{DoDI5000-85}.
-  \item[\textbf{Armaments Cooperation / International Programs Security.}] Integrates disclosure, export licensing, and technology protection plans into the Acquisition Strategy~\autocite{DoDI5000-85}.
-\end{description}
-
-\subsection{Navy Two-Pass / Seven-Gate Review}
-\begin{description}
-  \item[\textbf{Pass 1 -- Capability.}] Led by \ac{opnav}~\ac{n9} to mature the requirement: Gate~1 validates the capability gap, Gate~2 refines solutions and mission analysis, Gate~3 assesses affordability and alignment with Navy enterprises, and Gate~4 authorizes program initiation (supports \ac{mdd})~\autocite{OPNAVINST5000-42E}.
-  \item[\textbf{Pass 2 -- Resourcing.}] Led by \ac{opnav}~\ac{n8} to align budgeting: Gate~5 verifies contracting/test readiness before Milestone~B (often synchronized with the Development \ac{rfp} Release Decision), Gate~6 confirms production and sustainment resources prior to Milestone~C, and Gate~7 evaluates sustainment performance and modernization plans~\autocite{OPNAVINST5000-42E}.
-\end{description}
-\note{For board prep, highlight where \ac{secnav} Gate Reviews or Defense Acquisition Board touchpoints overlay Navy gates to demonstrate cross-tier synchronization.}
-
-\subsection{Technology Readiness Levels}
-\Tab{\ref{tab:trl}} summarizes \ac{trl} definitions with representative naval examples.
-
-\begin{longtblr}
-  [
-  caption = {Technology Readiness Levels with representative naval examples.},
-  label   = {tab:trl},
-  entry   = {TRL reference},
-  remark{\tSource} = {\tabCite{USDRE-TRA-2020}},
-  remark{\tHint} = {Match \acp{trl} to \ac{tmrr} exit criteria: critical technologies should be $\geq$~\ac{trl}~6 before Milestone~B.}
-  ]{
-  colspec = {@{} L L L @{}}}
-  \toprule
-  {TRL} & {Definition}                                       & {Example (EDO context)}                                                        \\
-  \midrule
-  TRL~1 & Basic principles observed                          & Novel corrosion-resistant alloy proven in laboratory                           \\
-  TRL~2 & Technology concept formulated                      & Hypothesis for integrating alloy into hull structures                          \\
-  TRL~3 & Analytical and experimental proof-of-concept       & Coupon tests validating stress performance in relevant environment             \\
-  TRL~4 & Component validation in laboratory                 & Scale panel fabrication and testing under controlled loads                     \\
-  TRL~5 & Component validation in relevant environment       & Module integrated into land-based test site with salt-fog exposure             \\
-  TRL~6 & System/subsystem prototype in relevant environment & Full-scale hull section installed on test article or surrogate vessel          \\
-  TRL~7 & System prototype in operational environment        & Prototype hull segment installed on operational ship during limited sea trials \\
-  TRL~8 & Actual system completed and qualified              & Final production drawings released, inspections passed for lead ship           \\
-  TRL~9 & Actual system proven in mission operations         & Sustained operational deployment meeting performance metrics                   \\
-  \bottomrule
-\end{longtblr}
-
-\note{Operational environment testing typically begins at \textbf{\ac{trl}~7} (system prototype in an operational environment). \textbf{\ac{trl}~8} means the actual system is completed and qualified (e.g., qualification/acceptance testing, certifications). \textbf{\ac{trl}~9} means the actual system is \emph{proven in mission operations} (e.g., successful fleet employment meeting mission metrics).}
-
-\subsection{T\&E Organizations and Roles}
-\begin{description}
-  \item[\textbf{\ac{osd} \ac{dote}.}] Independent oversight of operational test adequacy, approves/concurs in \ac{temp} for covered programs, and reports to Congress on operational suitability and effectiveness.
-  \item[\textbf{Service Operational Test Agencies.}] Navy \emph{\ac{comoptevfor} (\acs{cotf})}, \emph{\ac{afotec}}, \emph{\ac{atec}}, \emph{\ac{mcotea}}. Plan/execute \ac{iote} and report independent findings to the Service and \ac{dote}.
-  \item[\textbf{\ac{dt}.}] Program Offices with \ac{syscom} Warfare Centers (e.g., \ac{nawcad}, \ac{nawcwd}, \ac{nswc}, \ac{nuwc}) plan and run \ac{dt} to verify requirements, qualify designs, and feed \ac{otrr}.
-  \item[\textbf{Interoperability/Joint.}] \emph{\ac{jitc}} assesses joint interoperability/Net-Ready \ac{kpp} compliance where applicable.
-  \item[\textbf{Ranges/Land-based sites.}] Service ranges and land-based engineering/test sites provide representative and operational environments to support \ac{dt}/\ac{optest}.
-  \item[\textbf{Artifacts.}] \ac{temp} aligns \ac{dt}/\ac{optest} scope and phases; \ac{otrr} certifies readiness for \ac{iote}; \ac{sar} / \ac{daes} capture results for governance~\autocite{DoDI5000-85}.
-\end{description}
-
-\subsection{Major Capability Acquisition Lifecycle Overview}
-\begin{description}
-  \item[\textbf{\ac{msa}.}] Shape the trade space and select a preferred materiel solution; conclude with an \ac{aoa} recommendation and technology maturation plan~\autocite{DoDI5000-85}.
-  \item[\textbf{\ac{tmrr}.}] Mature technologies, refine requirements, and reduce integration risk to enter \ac{emd}; manage competitive prototyping where feasible~\autocite{DoDI5000-85}.
-  \item[\textbf{\ac{emd}.}] Complete detailed design, verify system performance, and prepare for production and deployment decisions~\autocite{DoDI5000-85}.
-  \item[\textbf{\ac{pd.phase}.}] Produce capability, conduct \ac{iote}, field initial units, and decide on \ac{frp}~\autocite{DoDI5000-85}.
-  \item[\textbf{\ac{os.phase}.}] Sustain readiness, execute modernization, and plan for disposal while feeding affordability back into \ac{ppbe} cycles~\autocite{DoDI5000-85}.
-\end{description}
-
-\Fig{\ref{fig:mca_schedule_placeholder}} Shows the major phases, review and decision points within \acp{mca}. The following are the reviews that occur during the phases:
-\begin{description}
-  \item[\textbf{\ac{asr}.}] Validates the preferred materiel solution and technology maturation approach emerging from the \ac{aoa}; inputs include threat assessments, cost-schedule trades, draft system concepts, and updated Technology Development Strategy / \ac{sep} outlines, and the primary output is an \ac{asr} report that authorizes drafting authoritative system-level requirements for the upcoming \ac{srr}~\autocite{DoDI5000-85,DoDAcqGuidebook}.
-  \item[\textbf{\ac{srr}.}] Confirms that system-level performance, interface, cyber, and logistics requirements trace to the validated \ac{icd} / \ac{cdd} and are testable; requires a draft System Specification, mission threads, interface control documentation, and technical performance measures, and produces a baselined system requirements set and updated verification strategy feeding \ac{sfr} planning~\autocite{DoDI5000-85,DoDAcqGuidebook}.
-  \item[\textbf{\ac{sfr}.}] Demonstrates that the functional architecture and allocated requirements can satisfy the mission needs within cost/schedule constraints; leverages functional allocation matrices, preliminary hazard analyses, and draft reliability growth plans, and yields an approved functional baseline plus a risk/opportunity burn-down plan ahead of \ac{pdr}~\autocite{DoDI5000-85,DoDAcqGuidebook}.
-  \item[\textbf{\ac{pdr}.}] Assesses whether the allocated baseline and preliminary design (drawings, models, manufacturability assessments, support concepts) are mature enough to enter detailed design; the review outputs include an approved allocated baseline, configuration-controlled action list, and direction for completing qualification hardware prior to \ac{cdr}~\autocite{DoDI5000-85,DoDAcqGuidebook}.
-  \item[\textbf{\ac{cdr}.}] Confirms the detailed design meets all requirements with acceptable technical risk; inputs include product baseline technical data packages, qualification/analysis results, producibility assessments, and cybersecurity artifacts, and the decision produces an approved product baseline plus direction to release build-to packages and procure long-lead items~\autocite{DoDI5000-85,DoDAcqGuidebook}.
-  \item[\textbf{\ac{trr}.}] Evaluates readiness to execute a specific test event by reviewing test articles, instrumentation, facilities, procedures, safety releases, and deficiency dispositions; a successful \ac{trr} outputs an authorization to start test with documented entrance/exit criteria and risk mitigations~\autocite{DoDI5000-85,DoDAcqGuidebook}.
-  \item[\textbf{\ac{svr}.}] Verifies the integrated system meets the product baseline and is ready for production decision reviews; it uses completed verification cross-reference matrices, configuration audits, and qualification / \ac{dt} results to produce a verified system baseline, deficiency adjudication list, and recommendation for \ac{frpdr} preparation~\autocite{DoDI5000-85,DoDAcqGuidebook}.
-  \item[\textbf{\ac{otrr}.}] Certifies that production-representative assets, training, logistics products, safety artifacts, and test ranges are ready to support initial operational test; the review outputs the operational test readiness certification and any restrictions or corrective actions before \ac{dote} concurrence~\autocite{DoDI5000-85,DoDAcqGuidebook}.
-  \item[\textbf{\ac{prr}.}] Determines whether manufacturing processes, supply chain, quality systems, and sustainment enablers can support \ac{lrip} / \ac{frp} quantities; requires control plans, process capability data, staffing/budget burn rates, and yields a decision to proceed into production along with corrective actions for any shortfalls~\autocite{DoDI5000-85,DoDAcqGuidebook}.
-\end{description}
+\subsection{DAS Structure: Milestones, Phases, Decision Points}
+\begin{itemize}
+  \item Milestones: Milestone~A initiates technology maturation and risk reduction; Milestone~B initiates engineering and manufacturing development; Milestone~C initiates production and deployment~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item Phases: \ac{msa}, \ac{tmrr}, \ac{emd}, \ac{pd.phase}, and \ac{os.phase}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item Decision points: \ac{mdd}, \ac{cddv}, \ac{drfprd}, and \ac{frp}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+\end{itemize}
 
 \begin{figure}[H]
+  \centering
   \includegraphics[width=\linewidth]{MCA_lifecycle_view.png}
-  \caption[\ac{mca} Lifecycle View]{Lifecycle view for a \ac{mca} showing all functions and activities for each phase.\srcCite{DoDI5000-85}}
+  \caption[Major Capability Acquisition Phases]{Major Capability Acquisition phases and decision points. \srcCite{edo-3-3-2-acq-milestones-phases-2025}.}
   \label{fig:mca_schedule_placeholder}
 \end{figure}
 
-\subsection{Materiel Development Decision}
+\subsection{Milestone Review Information Requirements}
+Information for milestone reviews is tailored by the \ac{mdauthority} and must align with DoWI~5000.85 requirements; it should cover program progress/risk, affordability, trade-offs, acquisition strategy updates, and exit criteria for the next phase~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+
+\subsection{Entrance and Exit Criteria}
 \begin{description}
-  \item[\textbf{Inputs.}] Validated \ac{icd}, initial affordability analysis, preliminary acquisition strategy, and resource sponsor endorsement~\autocite{DoDI5000-02}.
-  \item[\textbf{Decision.}] \ac{mdauthority} authorizes entry into \ac{msa} (or an alternate pathway) and designates the lead \ac{peo}/\ac{pm}~\autocite{DoDI5000-85}.
-  \item[\textbf{Outputs.}] \ac{adm}, competitive \ac{aoa} guidance, and direction to form the \ac{ipt} structure~\autocite{DoDI5000-85}.
+  \item[\textbf{Entrance criteria.}] Minimum accomplishments required before entering a phase; documented in DoWI~5000.85 and required for all programs~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Exit criteria.}] Program-specific technical, schedule, or management risk areas proposed by the \ac{pm} and approved by the \ac{mdauthority}; recorded in the \ac{adm} and must be specific and demonstrable~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Risk linkage.}] Programs must meet exit criteria for the current phase and entrance criteria for the next phase before transition; the \ac{mdauthority} uses exit criteria to confirm risk reduction~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
 \end{description}
 
-\subsection{Materiel Solution Analysis Phase Essentials}
+\subsection{Acquisition Program Baseline (APB) and Trade Space}
 \begin{description}
-  \item[\textbf{Purpose.}] Analyze alternatives, define the preferred materiel solution, and scope technology maturity and risk reduction tasks~\autocite{DoDI5000-85}.
-  \item[\textbf{Key Activities.}] Conduct \ac{aoa}, establish initial system performance metrics, develop early test strategies, and plan technology maturation for critical subsystems~\autocite{DoDI5000-85}.
-  \item[\textbf{Entrance Criteria.}] Approved \ac{mdd}, resourced \ac{aoa} study guidance, and draft acquisition strategy~\autocite{DoDI5000-02}.
-  \item[\textbf{Exit Criteria.}] Approved \ac{tmrr} acquisition strategy update, technology risk assessments (i.e., \ac{trl}~$\geq$~3--4), and draft \ac{cdd} inputs for Joint staffing~\autocite{DoDI5000-85}.
+  \item[\textbf{Purpose.}] The \ac{apb} documents cost, schedule, and performance thresholds/objectives and defines the trade space for the program~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Thresholds.}] Minimum acceptable values; exceeding schedule, cost, or performance thresholds constitutes a deviation and requires \ac{mdauthority} involvement~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Objectives.}] Desired values that represent meaningful improvements beyond thresholds and guide \ac{pm} trade decisions~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Default thresholds.}] Unless specified, performance threshold equals objective, cost threshold equals objective plus 10\%, and schedule threshold equals objective plus 6~months~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
 \end{description}
 
-\subsection{Milestone~A Focus Areas}
+\subsection{Program Deviations}
 \begin{description}
-  \item[\textbf{Purpose.}] Authorize entry into \ac{tmrr} and approve the initial Acquisition Strategy and \ac{apb}~\autocite{DoDI5000-85}.
-  \item[\textbf{Board Topics.}] \ac{aoa} results, technology maturation plans, affordability caps, cost estimates, and early test strategies~\autocite{DoDI5000-85}.
-  \item[\textbf{Outputs.}] \ac{adm}, approved initial \ac{apb}, direction for competitive prototyping, and signed Technology Development Strategy if required~\autocite{DoDI5000-85}.
+  \item[\textbf{Deviation definition.}] A program deviation occurs when the current estimate exceeds \ac{apb} thresholds for cost, schedule, or performance; early indicators are set by the \ac{mdauthority} (e.g., 10\% schedule slip)~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Nunn--McCurdy.}] Significant breaches are 15\% growth from the current baseline or 30\% from the original baseline; critical breaches are 25\% current or 50\% original, and are subject to termination review; significant breaches require congressional notification within 45 days after the Program Deviation Report~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
 \end{description}
 
-\subsection{Technology Maturation and Risk Reduction Phase Essentials}
+\subsection{Program Deviation Actions}
+\begin{itemize}
+  \item Immediately notify the \ac{mdauthority} through appropriate management channels~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item Within 30~days, submit a Program Deviation Report describing the cause and corrective actions~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item Within 90~days, either return the program within \ac{apb} parameters or submit information to the Overarching \ac{ipt} for an \ac{mdauthority} decision on \ac{apb} revision~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+\end{itemize}
+
+\subsection{JCIDS Relationship to the DAS}
+\ac{jcids} is the requirements generation process that identifies warfighter capability gaps, develops joint concepts, and produces a validated \ac{icd} through the Capability Based Assessment that feeds the acquisition framework~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+
+\subsection{Materiel Development Decision (MDD)}
 \begin{description}
-  \item[\textbf{Purpose.}] Reduce integration risk, mature the Technical Baseline, and prepare for Engineering \& Manufacturing Development source selection~\autocite{DoDI5000-85}.
-  \item[\textbf{Key Activities.}] Competitive prototyping (if directed), systems engineering trade studies, reliability growth, cyber-resilience planning, and \ac{cddv}~\autocite{DoDI5000-85}.
-  \item[\textbf{Entrance Criteria.}] Approved Milestone~A \ac{adm}, funded risk-reduction plan, and established \ac{ims} aligned to Navy Gate~5 timeline~\autocite{DoDI5000-85,OPNAVINST5000-42E}.
-  \item[\textbf{Exit Criteria.}] Technology Readiness Assessments showing \ac{trl}~$\geq$~6, draft Milestone~B documentation (e.g., \ac{sep}, \ac{temp}), and configured product baseline ready for the \ac{drfprd}~\autocite{DoDI5000-85}.
+  \item[\textbf{Purpose.}] Confirms a materiel solution is required and triggers the \ac{aoa}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{MDA inputs.}] Validated \ac{icd}, evidence of technical foundation, \ac{aoa} study guidance and plan, and a Capstone Threat Assessment~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{MDA decisions.}] Designate the lead \ac{dod} Component and the phase entry point; entry may occur at any point that meets entrance criteria and statutory requirements~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
 \end{description}
 
-\subsection{Milestone~B Focus Areas}
+\subsection{Materiel Solution Analysis (MSA)}
 \begin{description}
-  \item[\textbf{Purpose.}] Authorize entry into \ac{emd} and establish the program as a major defense acquisition program with formal reporting~\autocite{DoDI5000-85}.
-  \item[\textbf{Board Topics.}] Affordability caps, independent cost estimates, \ac{temp} approval, \ac{lrip} planning, and production-representative prototype evidence~\autocite{DoDI5000-85}.
-  \item[\textbf{Outputs.}] Updated \ac{apb}, approved Acquisition Strategy revision, and contractual authority to release \ac{emd} \glspl{rfp}~\autocite{DoDI5000-85}.
+  \item[\textbf{Purpose.}] Assess candidate materiel solutions and prepare for Milestone~A~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Guided by.}] Validated \ac{icd}, \ac{aoa} study guidance, and \ac{aoa} plan~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Major activities.}] Establish \ac{pm}/\ac{pmo}, conduct \ac{aoa}, develop initial Acquisition Strategy, \ac{temp}, \ac{sep}, \ac{lcsp}, and cybersecurity strategy; the user writes a draft \ac{cdd}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Minimum funding.}] Funding supports all phase activities and the Milestone~A decision~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Exit.}] \ac{mdauthority} approves the materiel solution and Acquisition Strategy~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
 \end{description}
 
-\subsection{Engineering and Manufacturing Development Phase Essentials}
+\subsection{Analysis of Alternatives (AoA)}
 \begin{description}
-  \item[\textbf{Purpose.}] Complete detailed design, build and test engineering development models, and validate manufacturing processes~\autocite{DoDI5000-85}.
-  \item[\textbf{Key Activities.}] \ac{cdr}, system verification, developmental test events, cybersecurity accreditations, and sustainment baseline development~\autocite{DoDI5000-85}.
-  \item[\textbf{Entrance Criteria.}] Approved Milestone~B \ac{adm} with resourced contracts, finalized technical baseline, and product-support planning aligned to Navy Gate~6~\autocite{DoDI5000-85}.
-  \item[\textbf{Exit Criteria.}] Successful \ac{iote} readiness, manufacturing readiness $\geq$~\ac{trl}~8, and validated sustainment strategies supporting Milestone~C~\autocite{DoDI5000-85}.
+  \item[\textbf{Focus.}] Materiel solution, mission effectiveness, key cost/capability trades, schedule, \ac{conops}, risk, producibility, and total life-cycle cost~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Innovation/competition.}] Emphasizes competition and encourages industry to surface candidate solutions to sponsors and stakeholders~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Hierarchy of alternatives.}] Commercial solutions first, then existing U.S./allied systems, international cooperative development, joint/government agency development, and finally \ac{dod}-unique development~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Approval.}] \ac{cape} approves the \ac{aoa}; results inform the Acquisition Strategy and industry competition~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
 \end{description}
 
-\subsection{Milestone~C Focus Areas}
+\subsection{Acquisition Strategy}
 \begin{description}
-  \item[\textbf{Purpose.}] Authorize production and deployment following demonstration of operational effectiveness and suitability~\autocite{DoDI5000-85}.
-  \item[\textbf{Board Topics.}] \ac{iote} results, sustainment and supply-chain readiness, affordability assessments, and updated manpower/training plans~\autocite{DoDI5000-85}.
-  \item[\textbf{Outputs.}] \ac{frpdr} plan, updated \ac{apb}, and authority to obligate procurement funding for production lots~\autocite{DoDI5000-85}.
+  \item[\textbf{Requirement.}] The \ac{pm} prepares and the \ac{mdauthority} approves an Acquisition Strategy at Milestone~A~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{What it does.}] Tailors the acquisition framework, sets the master schedule, and provides the basis for plans such as \ac{temp}, contract awards, and \ac{sep}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Affordability.}] The strategy must maximize affordability from initiation through post-production support~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
 \end{description}
 
-\subsection{Production and Deployment Phase Essentials}
+\subsection{International Acquisition and Exportability}
 \begin{description}
-  \item[\textbf{Purpose.}] Produce and deliver the system while validating operational performance and support concepts~\autocite{DoDI5000-85}.
-  \item[\textbf{Key Activities.}] \ac{lrip} execution, \ac{iote}, \ac{csb} governance, and ramp to Full-Rate Production~\autocite{DoDI5000-85}.
-  \item[\textbf{Exit Criteria.}] \ac{frp} approval, attainment of \ac{ioc}, and sustainment plans ready for fleet release~\autocite{DoDI5000-85}.
+  \item[\textbf{Drivers.}] U.S. strategy and DoWI~5000.02 require international cooperation, sales, and exportability to be considered in acquisition strategies~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{IA\&E objectives.}] Operational interoperability, economic cost-sharing, technical access, political alliance strength, and industrial base health; additional considerations include security risk and foreign dependency~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Common forms.}] International cooperative programs, \ac{fms}, building partner capacity initiatives, and \ac{dcs} arrangements (do not confuse with program ownership and contract privity roles)~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
 \end{description}
 
-\subsection{Operations and Support Phase Essentials}
+\subsection{Evolutionary v.s.\ Single-Step Acquisition}
 \begin{description}
-  \item[\textbf{Purpose.}] Sustain mission effectiveness, execute modernization, and manage total ownership cost until disposal~\autocite{DoDI5000-85}.
-  \item[\textbf{Key Activities.}] Performance-Based Logistics execution, Depot maintenance planning, Post-Deployment reviews, and \acp{csb} for major updates~\autocite{DoDI5000-85}.
-  \item[\textbf{Milestones.}] \ac{foc}, disposal decision documentation, and updates to capability requirements feeding future planning cycles~\autocite{DoDI5000-85}.
+  \item[\textbf{Evolutionary.}] Time-phased increments that define the current increment and subsequent evolutions to meet full capability needs~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Single-step.}] Full capability delivered in one step before Milestone~C; major modifications of sufficient cost/complexity are managed as separate efforts~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Preference.}] Evolutionary acquisition is preferred when rapidly fielding mature technology~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
 \end{description}
+
+\subsection{Key Performance Parameters}
+\begin{description}
+  \item[\textbf{Definition.}] \acp{kpp} are system attributes critical to delivering effective capability and are documented in the \ac{cdd} and \ac{apb}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Validation.}] \ac{jroc} validates \acp{kpp} for major defense programs; the Joint Capabilities Board or \ac{dod} Components validate for others~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Mandatory.}] Force Protection, System Survivability, Sustainment, and Energy; Net-Ready remains required but can be treated as a \ac{kpp} or performance attribute~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+\end{description}
+
+\subsection{Milestone A}
+\begin{description}
+  \item[\textbf{PM inputs.}] Proposed materiel solution, Acquisition Strategy, \ac{sep}/\ac{temp}, \ac{cdd}/\ac{conops}, \ac{lcsp}/\ac{ice}, risk assessment, and should-cost targets~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Component inputs.}] Affordability analysis, cost estimate, and evidence the program is fully funded in the \ac{fydp}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{MDA decisions.}] Approves materiel solution, authorizes \ac{tmrr} \ac{rfp} release, and sets \ac{tmrr} exit criteria in the \ac{adm}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Certification.}] 10~U.S.C.\ 2366a requires \ac{icd} alignment, \ac{aoa}-validated solution, cost estimate with CAPE concurrence, \ac{jroc} priority, and \ac{dia}-validated \ac{volt} report~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+\end{description}
+
+\subsection{Technology Maturation and Risk Reduction (TMRR)}
+\begin{description}
+  \item[\textbf{Purpose.}] Reduce technology, engineering, integration, and life-cycle cost risks; demonstrate critical technologies; complete preliminary design~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Guided by.}] \ac{icd}, Acquisition Strategy, draft \ac{cdd}, and \ac{sep}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Basis for entry.}] \ac{mdauthority}-approved materiel solution and Acquisition Strategy~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Activities.}] Competitive prototyping, \ac{pdr}, \ac{cddv}, sustainment planning, \ac{drfprd}, \ac{tra}, and \ac{ramc} report~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Exit criteria.}] Affordable increment identified, technology demonstrated in relevant environment (\ac{trl}~6), \ac{pdr} completed before Milestone~B (unless waived), validated requirements, full \ac{fydp} funding, and affordability compliance for production/sustainment~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+\end{description}
+
+\subsection{Capability Development Document Validation}
+\begin{description}
+  \item[\textbf{Authority.}] The validation authority (\ac{jroc} for \acp{mdap}) validates the \ac{cdd}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Focus.}] Confirms cost-performance trades, affordability, testability, and alignment with user priorities; \acp{kpp}/\acp{ksa} guide \ac{pdr} and \ac{drfprd}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+\end{description}
+
+\subsection{Configuration Steering Boards}
+\begin{description}
+  \item[\textbf{Authority.}] Chaired by the \ac{cae} with \ac{usdas} and Joint Staff participation; formed after \ac{cddv}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Responsibilities.}] Review requirement changes for \ac{acat}~I/IA programs, propose adjustments to meet affordability, and evaluate cost/schedule impacts; changes require identified funds and mitigated schedule impacts~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Cadence.}] Meets at least annually and recommends de-scope options to the \ac{mdauthority}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+\end{description}
+
+\subsection{Development RFP Release Decision}
+The \ac{drfprd} authorizes release of the \ac{rfp} for \ac{emd} (often with \ac{lrip} options), confirms affordability/executability, and is the last point for major changes without program disruption; the \ac{mdauthority} determines preliminary \ac{lrip} quantities~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+
+\subsection{Milestone B}
+\begin{description}
+  \item[\textbf{Purpose.}] Development decision authorizing entry into \ac{emd} and formal program initiation~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{MDA approvals.}] \ac{emd} entry, Acquisition Strategy, \ac{apb}, \ac{lrip} quantities, contract type, exit criteria, and Milestone~B certification/determination with \ac{adm} issuance~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Shipbuilding.}] Milestone~B triggers \ac{scn} funding for shipbuilding programs~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+\end{description}
+
+\subsection{Engineering and Manufacturing Development}
+\begin{description}
+  \item[\textbf{Purpose.}] Develop, build, and test the product to verify all requirements and support production decisions~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Guided by.}] Acquisition Strategy, \ac{cdd}, \ac{temp}, and \ac{sep}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Activities.}] Complete design, retire risks, build/test prototypes, establish product baselines, conduct \ac{cdr}, and perform operational assessments~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Exit.}] Design stability, requirements met via \ac{dt} and early \ac{optest}, and all \ac{emd} exit criteria met before Milestone~C~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+\end{description}
+
+\subsection{Milestone C}
+At Milestone~C the \ac{mdauthority} reviews cost estimates, validated life-cycle threat reporting, environmental issues, design stability, \ac{oa} results, software maturity, manufacturing risk, validated \ac{cdd}, supportability, interoperability, affordability, and phased production ramp-up before committing to production~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+
+\subsection{Production and Deployment}
+\begin{description}
+  \item[\textbf{Purpose.}] Produce and deliver requirements-compliant systems~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Guided by.}] Acquisition Strategy, \ac{temp}, \ac{cdd}, \ac{sep}, and \ac{lcsp}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Activities.}] \ac{lrip}, \ac{optest} in realistic threat conditions, Beyond \ac{lrip} report, \ac{frpdr}, fielding, \ac{ioc}, and \ac{foc}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Exit.}] \ac{ioc} achieved and deployment in full swing~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+\end{description}
+
+\subsection{Operations and Support}
+\begin{description}
+  \item[\textbf{Purpose.}] Execute the support strategy, sustain readiness, and plan disposal~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Guided by.}] Product Support Strategy and \ac{peshe}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Activities.}] Life-cycle sustainment resourcing, technical data/tooling planning, and disposal in accordance with safety, security, and environmental requirements; phase completes when assets are disposed~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+\end{description}
+
+\subsection{Ships Are Different}
+\begin{itemize}
+  \item The \ac{pm} is designated as early as possible, often before the \ac{mdd}~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item Initial Acquisition Strategy and \ac{temp} set the long-term context and gain early leadership alignment~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item Between Milestone~A and Milestone~B/C, \ac{rfp} and specification development is for the ship, not an engineering development model~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+\end{itemize}
+
+\subsection{Navy 2-Pass / 7-Gate Review}
+\begin{description}
+  \item[\textbf{Gates 1--4 (requirements).}] Led by the \ac{cno} or \ac{cmc}; starts before \ac{mdd} and leads to approved \ac{icd}, \ac{aoa} guidance, a selected \ac{aoa} alternative, approved \ac{cdd}, \ac{conops}, and a System Design Specification development plan~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Gates 5--7 (acquisition/sustainment).}] Led by \ac{asnrdanda}; starts after Gate~4 and continues through Milestone~B; approves System Design Specification, \ac{rfp} release, and production readiness (including \ac{evms} and \ac{ibr} checks), with Gate~6 pre/post Milestone~C and \ac{frpdr} follow-on~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+\end{description}
+
+\subsection{Scenario Drills (Entry-Point Decisions)}
+Use the following vignettes to select the most appropriate entry point into the acquisition framework~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+\begin{enumerate}
+  \item \textbf{Situation 1.} Joint mid-course interceptor capability; validated \ac{icd}; multiple materiel approaches; \ac{aoa} guidance and plan approved; MDA wants a lead \ac{dod} Component and an evolutionary strategy. \emph{Question:} best entry point?
+  \item \textbf{Situation 2.} Validated \ac{cdd} for a new side-arm with proven commercial options; field evaluations meet thresholds; full procurement funding. \emph{Question:} best entry point?
+  \item \textbf{Situation 3.} Validated \ac{icd}; \ac{aoa} and Acquisition Strategy complete; promising but immature technology; significant performance risk; draft \ac{cdd}. \emph{Question:} best entry point?
+  \item \textbf{Situation 4.} Mature lab eye-protection technology; validated \ac{icd}/\ac{cdd}; full funding offsets identified; technology not yet tested outside the lab and not integrated with helmet systems. \emph{Question:} best entry point?
+\end{enumerate}
+
+\subsection{Quick Review}
+\begin{itemize}
+  \item Which entry point requires a validated \ac{icd}, \ac{aoa} study guidance, and \ac{aoa} plan~\autocite{edo-3-3-2-acq-milestones-phases-2025}?
+  \item Which milestone authorizes entry into \ac{pd.phase}~\autocite{edo-3-3-2-acq-milestones-phases-2025}?
+  \item Which milestone requires all sources of program risk to be adequately mitigated~\autocite{edo-3-3-2-acq-milestones-phases-2025}?
+  \item In \ac{msa}, which two artifacts are approved by the \ac{mdauthority}~\autocite{edo-3-3-2-acq-milestones-phases-2025}?
+\end{itemize}
 
 %====================
 % End of file
