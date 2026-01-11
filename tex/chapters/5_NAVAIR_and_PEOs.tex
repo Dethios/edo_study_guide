@@ -3,8 +3,8 @@
 \documentclass[../main.tex]{subfiles}
 \IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
 % =============================================================================
-% CHAPTER 5: NAVAIR AND PEOs
-% DESCRIPTION: NAVAIR warfare centers and PEO roles/interaction models.
+% CHAPTER 5: NAVAL WARFARE CENTERS
+% DESCRIPTION: Roles, reporting relationships, missions, leadership areas, and customers.
 % =============================================================================
 
 \begin{document}
@@ -12,106 +12,286 @@
 %====================
 % Contents here
 %====================
-% === NAVAIR WARFARE CENTERS ===
-\section{NAVAIR Warfare Centers}
-\Tab{\ref{tab:navair-centers}} lists \ac{navair} Warfare Centers with locations and descriptions. This is an optional item to know for the \ac{edo} board, not as critical as \ac{navsea}/\ac{navwar}.
+% === NAVAL WARFARE CENTERS ===
+\section{Naval Warfare Centers}
+Warfare centers provide critical technical expertise to ensure current and future program success and fleet readiness.\autocite{edo-2-1-4-warfare-centers-2024}
+
+\subsection{Roles of the Warfare Centers}
+\begin{description}
+  \item[\textbf{Industry will not do.}] Not profitable or accepts too much liability.
+  \item[\textbf{Industry should not do.}] Technical authority and certification work (for example, shock tests).
+  \item[\textbf{Industry cannot do.}] Specialized facilities such as ranges and unique equipment.
+\end{description}
+
+\begin{description}
+  \item[\textbf{Program success.}] Provide technical advice and engineering leadership to make naval technical programs successful.
+  \item[\textbf{Capability development.}] Help determine and develop the capabilities the Navy and Marine Corps need as trusted technical advisors.
+  \item[\textbf{Quality and safety.}] Verify quality, safety, and effectiveness of platforms and systems through rigorous systems engineering.
+  \item[\textbf{Urgent needs.}] Design, develop, and field solutions for urgent operational fleet needs.
+  \item[\textbf{Warfighter bridge.}] Translate warfighter needs into technical requirements.
+\end{description}
+
+\subsection{Reporting relationships}
+Warfare centers and divisions align under the Secretary of War and Under Secretary for Acquisition through the CNO (acquisition and fleet support) and the Navy Acquisition Executive ASN(RD\&A) (tech base).\autocite{edo-2-1-4-warfare-centers-2024}
 
 \begin{longtblr}
   [%
-  caption = {NAVAIR Warfare Centers with locations and descriptions.},
-  label   = {tab:navair-centers},
-  entry   = {NAVAIR Warfare Centers},
-  remark{\tSource} = {\tabCite{edo-2-1-4-warfare-centers-2024}}%
-  ]{colspec = {@{} L L L @{}}}
+  caption = {Warfare center reporting relationships by organization.},%
+  label   = {tab:warfare-center-reporting},%
+  entry   = {Warfare Center Reporting Relationships},%
+  remark{\tSource} = {\tabCite{edo-2-1-4-warfare-centers-2024}}
+  ]{colspec = {@{} L X @{}}}
   \toprule
-  {Center} & {Location}                  & {Description}                                        \\
+  {Organization} & {Reporting units} \\
   \midrule
-  NAWCAD   & Patuxent River, MD          & Aircraft/engines/avionics RDT\&E; Test Pilot School. \\
-  NAWCWD   & China Lake / Point Mugu, CA & Weapons systems, ranges, guided-missle integration.  \\
+  NAVWAR (Naval Information Warfare Systems Command) & NIWC Atlantic, NIWC Pacific, NAVWAR Space Field Activity (NSFA). \\
+  NAVAIR (Naval Air Systems Command) & Naval Air Warfare Center Aircraft Division (NAWCAD); Naval Air Warfare Center Weapons Division (NAWCWD). \\
+  NAVSEA (Naval Sea Systems Command) & Naval Surface Warfare Center (NSWC) divisions: Dahlgren, Corona, Crane, Carderock, Port Hueneme, Philadelphia, Panama City, Indian Head EOD Technology; Naval Undersea Warfare Center (NUWC) divisions: Keyport, Newport; Naval Sea Logistics Center (NSLC). \\
+  NAVFAC (Naval Facilities Engineering Systems Command) & Engineering and Expeditionary Warfare Center (EXWC). \\
+  Office of Naval Research (ONR) & Naval Research Laboratory (NRL). \\
   \bottomrule
 \end{longtblr}
-\HR
-% === PEOs ===
-\section{Navy Program Executive Offices (PEOs)}
+
+\subsection{Warfare center missions}
 \begin{description}
-  \item[\textbf{\ac{peocvn}.}] Designs, builds, delivers, and sustains nuclear-powered aircraft carriers. \FlagBilletNote{\ac{radm} Casey J.\ Moton holds the \ac{peocvn} billet}
-        \begin{description}
-          \item[\textbf{\ac{pms}~312}.] In-service aircraft carrier program management.
-          \item[\textbf{\ac{pms}~378}.] \ac{cvn}-78 class program management.
-          \item[\textbf{\ac{pms}~379}.] \ac{cvn}-79/80 program management.
-        \end{description}
-  \item[\textbf{\ac{peoiws}.}] Develops and sustains ship and submarine combat systems. \note{\ac{rdml} T.\ Dickinson is currently \ac{peoiws}. He is a Surface Warfare Acquisition Professional, not a \ac{edo}.}
-        \begin{description}
-          \item[\textbf{\ac{iws}~1.0}.] Aegis combat system lead.
-          \item[\textbf{\ac{iws}~1.0F}.] Aegis fleet readiness.
-          \item[\textbf{\ac{iws}~2.0}.] Above-water sensors portfolio.
-          \item[\textbf{\ac{iws}~3.0}.] Surface ship weapons integration.
-          \item[\textbf{\ac{iws}~4.0}.] International and foreign military sales.
-          \item[\textbf{\ac{iws}~5.0}.] Undersea systems.
-          \item[\textbf{\ac{iws}~6.0}.] Command-and-control systems.
-          \item[\textbf{\ac{iws}~9.0}.] \ac{ddg}-1000, littoral combat ship, and patrol craft combat systems.
-          \item[\textbf{\ac{iws}~11.0}.] Terminal defense systems.
-          \item[\textbf{\ac{iws}~12.0}.] \ac{nato} Seasparrow programs.
-          \item[\textbf{\ac{iws}~80.0}.] Atalanta combat systems.
-          \item[\textbf{\ac{iws}~X}.] Integrated combat-system document center.
-        \end{description}
-  \item[\textbf{\ac{peoships}.}] Oversees surface combatant and amphibious ship construction and modernization.\FlagBilletNote{\ac{radm} Brian A.\ Metcalf serves as \ac{peoships}}
-  \item[\textbf{\ac{peousc}.}] Manages littoral combat ships, frigates, expeditionary platforms, and unmanned surface/undersea portfolios.\FlagBilletNote{\ac{rdml} Kevin R.\ Smith serves as \ac{peousc}}
-  \item[\textbf{Team Submarines.}] Integrates strategic and attack submarine acquisition and sustainment.
-        \begin{description}
-          \item[\textbf{\ac{peossn}.}] Attack submarine programs.\FlagBilletNote{\ac{radm} Jonathan E.\ Rucker serves as \ac{peossn}}
-                \begin{description}
-                  \item[\textbf{\ac{pms}~351}.] New attack submarine acquisition.
-                  \item[\textbf{\ac{pms}~390}.] Undersea special mission systems.
-                  \item[\textbf{\ac{pms}~391}.] In-service submarine sustainment.
-                  \item[\textbf{\ac{pms}~394}.] Advanced undersea system's development.
-                  \item[\textbf{\ac{pms}~450}.] Virginia class program management.
-                \end{description}
-          \item[\textbf{\ac{peossbn}.}] Strategic deterrent submarine portfolio.
-                \begin{description}
-                  \item[\textbf{\ac{pms}~396}.] In-service \ac{ssbn} sustainment.
-                  \item[\textbf{\ac{pms}~397}.] Columbia class program management.
-                  \item[\textbf{\ac{submepp}}.] Surface maintenance engineering planning program support to ballistic submarine availabilities.
-                \end{description}
-          \item[\textbf{\ac{peouws}}.] Submarine combat, cyber, and sensor systems.
-                \begin{description}
-                  \item[\textbf{\ac{pms}~401}.] Submarine acoustic systems.
-                  \item[\textbf{\ac{pms}~404}.] Undersea weapons.
-                  \item[\textbf{\ac{pms}~415}.] Undersea defensive warfare systems.
-                  \item[\textbf{\ac{pms}~425}.] Combat and weapon control systems.
-                  \item[\textbf{\ac{pms}~435}.] Electromagnetic systems.
-                  \item[\textbf{\ac{pms}~485}.] Maritime surveillance systems.
-                \end{description}
-        \end{description}
-  \item[\textbf{\ac{peoc4i}.}] Delivers fleet \ac{c4i} capabilities.
-        \begin{description}
-          \item[\textbf{\ac{pmw}~120}.] Battlespace awareness and information operations.
-          \item[\textbf{\ac{pmw}~130}.] \ac{ia} and cybersecurity programs.
-          \item[\textbf{\ac{pmw}~150}.] Navy command-and-control systems.
-          \item[\textbf{\ac{pmw}~160}.] Tactical networks.
-          \item[\textbf{\ac{pmw}~170}.] Communications and \ac{gps} navigation.
-          \item[\textbf{\ac{pmw}~740}.] International \ac{c4i} integration.
-          \item[\textbf{\ac{pmw}~750}.] Carrier strike and air integration.
-          \item[\textbf{\ac{pmw}~760}.] Ship integration.
-          \item[\textbf{\ac{pmw}~770}.] Undersea integration.
-          \item[\textbf{\ac{pmw}~790}.] Shore and expeditionary integration.
-        \end{description}
-  \item[\textbf{\ac{pmw} series focus.}] Two \ac{pmw} series within \ac{peoc4i} have distinct roles:
-        \begin{description}
-          \item[\textbf{\ac{pmw}~1XX}.] Major capability development portfolios (new platforms and end-to-end networks) where \ac{peoc4i} owns the baseline capabilities document, acquisition strategy, and milestone execution; Warfare Centers supply lead systems integration, test ranges, and engineering agents via tailored project orders~\autocite{SECNAV5400-15D,edo-2-1-4-warfare-centers-2024}.
-          \item[\textbf{\ac{pmw}~7XX}.] Fleet integration portfolios synchronizing new capabilities into existing hulls, aircraft, and shore nodes; emphasizes installation planning, logistics, and interoperability packages coordinated through regional Warfare Centers and type commanders~\autocite{SECNAV5400-15D,edo-3-1-5-field-activity-fm-2025}.
-        \end{description}
-  \item[\textbf{\ac{peodigital}.}] Provides enterprise digital services (e.g., Flank Speed collaboration environment).
-  \item[\textbf{\ac{peomlb}.}] Modernizes manpower, logistics, and business information-technology systems.
+  \item[\textbf{Full-spectrum role.}] The Navy's full-spectrum \ac{rdte}, engineering, and fleet support centers for platforms, vehicles, systems, and facilities associated with a particular warfare area.
+  \item[\textbf{NAVWAR.}] \ac{c4i} systems and information assurance.
+  \item[\textbf{NAVAIR.}] Aircraft and aircraft systems.
+  \item[\textbf{NAVSEA.}] Ships and ship systems.
+  \item[\textbf{NAVFAC.}] Facilities.
 \end{description}
 
-\subsection{PEO/Warfare Center Interaction Model}
+\subsection{NAVWAR activities}
+\subsubsection{NIWC Pacific}
 \begin{description}
-  \item[\textbf{Role Designation.}] \acp{peo} charter Warfare Centers as \acp{ea} (\ac{isea}, \ac{da}, \ac{sia}) via technical direction letters aligned with~\autocite{SECNAV5400-15D}; the Warfare Center executes under \ac{nwcf} funding while reporting performance to the \ac{pm}~\autocite{edo-2-1-4-warfare-centers-2024}.
-  \item[\textbf{Requirements Translation.}] \ac{pm} \acp{ipt} decompose \acp{cdd} into technical requirements that Warfare Center \ac{ta} holders validate and flow down through alteration packages, interface control documents, and test plans~\autocite{edo-2-1-4-warfare-centers-2024}.
-  \item[\textbf{Funding Mechanisms.}] \ac{peo} \acp{pmo} issue project orders or Economy Act orders using their appropriations; Warfare Centers accept into \ac{nwcf}, schedule \acp{wbs}, and recover rates through \acp{slr} while keeping the \ac{pm} apprised of burn rates and \ac{nor} impacts~\autocite{edo-3-1-5-field-activity-fm-2025}.
-  \item[\textbf{Governance Rhythm.}] Monthly technical reviews focus on requirements churn, test results, and configuration control; quarterly business reviews reconcile execution to \ac{slr} assumptions and assess workforce mix, drawing on Warfare Center cost visibility~\autocite{SECNAV5400-15D,edo-3-1-5-field-activity-fm-2025}.
-  \item[\textbf{Acquisition Decision Events.}] Warfare Centers provide independent readiness assessments (test status, technical risk) for \ac{peo} milestone decisions, often serving as certifying authorities for safety releases or flight clearances prior to fielding~\autocite{SECNAV5400-15D,edo-2-1-4-warfare-centers-2024}.
+  \item[\textbf{Locations.}] Everett, WA, with activity in Italy and Bahrain.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Mission.}] Navy's premier \ac{rdte} laboratory supporting \ac{c4isr}; supports the development, acquisition, and fielding of leading-edge \ac{c4isr} systems for Navy, joint, and allied customers.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsubsection{NIWC Atlantic}
+\begin{description}
+  \item[\textbf{Mission.}] Primary \ac{navwar} provider for joint and homeland security \ac{c4isr} solutions; developer and employer of life-cycle logistics support solutions in a web-enabled portal environment; Navy provider of critical engineering and acquisition expertise for Navy and joint commands; rapid integrator of \ac{c4isr} technology providing interoperability to the Navy, federal agencies, and the joint warfighter.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Other locations.}] CONUS: Fayetteville, NC; Pax River, MD; Kings Bay, GA; Mayport, FL; Groton, CT; National Capital Region; Hampton Roads, VA; Charleston, SC (HQ); Tampa, FL; New Orleans, LA (SOCOM focus). OCONUS: Stuttgart, Germany; Naples, Italy; Bahrain.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Focus.}] Enterprise \ac{it} solutions and cradle-to-grave support of \ac{c4isr} systems.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsubsection{NAVWAR Space Field Activity (NSFA)}
+\begin{description}
+  \item[\textbf{Background.}] Established to coordinate naval space research activities within the \ac{nro}.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Mission.}] Provide line management staffing of naval space research at \ac{nro}.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Responsibilities.}] Facilitate interaction between the \ac{don} and \ac{nro}; coordinate all naval space research, development, and acquisition functions and activities.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsection{NAVAIR warfare centers and divisions}
+\subsubsection{NAWC Aircraft Division (NAWCAD)}
+\begin{description}
+  \item[\textbf{Location.}] Patuxent River, MD; detachments at Lakehurst, NJ and Orlando, FL.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Mission.}] The Navy's principal \ac{rdte}, engineering, and fleet support activity for naval aircraft, engines, avionics, aircraft support systems, aircraft launch and recovery, and ship, shore, and air operation.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Technical leadership areas.}] Airworthiness and engineering analysis; trainers and training development; Test Pilot School; test ranges; carrier support and aircraft launch and recovery equipment (ALRE); propulsion systems.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsubsection{NAWC Weapons Division (NAWCWD)}
+\begin{description}
+  \item[\textbf{Location.}] China Lake and Point Mugu, CA.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Mission.}] Provide Navy and Marine Corps warriors with effective, affordable, integrated warfare systems and life-cycle support to ensure battlespace dominance.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Technical leadership areas.}] Perform \ac{rdte}, logistics, and in-service support for guided missiles, free-fall weapons, targets, support equipment, crew systems, and electronic warfare; operate the Navy's western land and sea range test and evaluation complex; integrate weapons and avionics on tactical aircraft.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsection{NAVSEA warfare centers and divisions}
+\subsubsection{Naval Surface Warfare Center (NSWC)}
+\begin{description}
+  \item[\textbf{Location.}] Headquarters at Washington, DC.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Mission.}] Provide the right technology, the right capabilities, and the specialized research and development facilities to support all aspects of surface warfare.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Technical leadership areas.}] Ships and ship systems; surface ship combat systems; littoral warfare systems; Navy strategic weapon systems; ordnance; homeland and force protection; surface warfare logistics and maintenance; force level warfare systems.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsubsection{NSWC Carderock Division}
+\begin{description}
+  \item[\textbf{Location.}] West Bethesda, MD.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Mission.}] Provides \ac{rdte}, fleet support, and in-service engineering for surface and undersea vehicle hull, mechanical and electrical systems (HM\&E) and propulsors; provides logistics R\&D.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Technical leadership areas.}] Hydromechanics (hull form, resistance measurement, prop design, maneuvering, seakeeping analysis); surface and submarine survivability; ship and submarine electromagnetic and optical signatures.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Life-cycle focus.}] Early life-cycle.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsubsection{NSWC Corona Division}
+\begin{description}
+  \item[\textbf{Location.}] Corona, CA.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Mission.}] Gauges the warfighting capacity of ships and aircraft, from unit to battlegroup level, by assessing the suitability of design, the performance of equipment and weapons, and the adequacy of training.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Technical leadership areas.}] Fleet exercise assessments; weapons and combat systems performance analysis; missile flight analysis; data collection, processing, reduction and display; trend and failure pattern analysis; test systems availability assessment; metrology systems engineering; material readiness assessment.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Life-cycle focus.}] Entire life-cycle.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsubsection{NSWC Crane Division}
+\begin{description}
+  \item[\textbf{Location.}] Crane, IN.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Mission.}] Advance multi-domain systems within electronic warfare, strategic systems hardware, and special and expeditionary warfare; conduct \ac{rdte}, acquisition, and in-service engineering across the entire life-cycle.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Technical leadership areas.}] Electronic warfare systems \ac{rdte}, acquisition, and sustainment; special warfare and expeditionary system hardware; strategic systems hardware; infrared countermeasures, pyrotechnic \ac{rdte}, and life-cycle support; advanced electronics and energy systems; sensors and surveillance systems.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Life-cycle focus.}] Entire life-cycle.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsubsection{NSWC Dahlgren Division}
+\begin{description}
+  \item[\textbf{Location.}] Dahlgren, VA.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Mission.}] Research, develop, test and evaluate, analyze, engineer, integrate, and certify complex naval warfare systems related to surface warfare, strategic systems, combat and weapons systems.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Technical leadership areas.}] Surface ship combat systems software engineering (theater air defense, Aegis combat system, DDG 1000); certifies each strike group for interoperability; develop and certify targeting and fire control systems for Trident submarines.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Life-cycle focus.}] Early life-cycle.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsubsection{NSWC Dahlgren Division Dam Neck Activity}
+\begin{description}
+  \item[\textbf{Location.}] Dam Neck, VA.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Reporting.}] Echelon V command reporting to NSWC Dahlgren.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Command.}] EDO CDR command; O-5 command.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Technical leadership areas.}] Software development and maintenance for surface combat systems (non-Aegis); joint testing and training through links with Norfolk Naval Base, Dahlgren, Pax River, and Wallops Island.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Life-cycle focus.}] Post-production. Formerly CDSA Dam Neck.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsubsection{NSWC Indian Head Explosive Ordnance Disposal Technology Division (IHEODTECHD)}
+\begin{description}
+  \item[\textbf{Location.}] Indian Head, MD.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Mission.}] Research, develop, test, evaluate, manufacture, and provide in-service support of energetics and energetic systems; provide warfighters with technology to detect, locate, access, identify, render safe, recover, exploit, and dispose of explosive threats.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Technical leadership areas.}] Energetics research, detonation science, chemical and physical characterization; weapons product development; ordnance test and evaluation; NAVSEA lead for weapon and combat systems packaging, handling, storage, and transportation; support the Joint \ac{eod} technician; counter radio-controlled improvised explosive device electronic warfare (CREW) science and technology; only US source and \ac{dod} facility for many types of propellant and high-energy chemicals; one of two solvent-less extrusion plants in the US; model and scale-up warheads.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Life-cycle focus.}] Entire life-cycle.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsubsection{NSWC Panama City Division}
+\begin{description}
+  \item[\textbf{Location.}] Panama City, FL.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Mission.}] Conduct \ac{rdte} and in-service support of mine countermeasure systems, naval sea mine systems, naval special warfare systems, diving and life support systems, amphibious and expeditionary maneuver warfare systems, and other systems that occur primarily in coastal (littoral) regions.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Technical leadership areas.}] Mine warfare; LCS mission packages; expeditionary maneuver warfare; assault craft vehicles; diving and life support systems; unmanned systems (air and ground); chemical and biological individual protection; special warfare.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Life-cycle focus.}] Entire life-cycle.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsubsection{NSWC Philadelphia Division}
+\begin{description}
+  \item[\textbf{Location.}] Philadelphia, PA.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Mission.}] Provides \ac{rdte}, fleet support, and in-service engineering for surface and undersea vehicle hull, mechanical and electrical systems (HM\&E) and propulsors; provides logistics R\&D.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Technical leadership areas.}] Surface and submarine machinery R\&D (power systems, ship automation control, dynamics and silencing, shipboard energy availability and conservation, and electrical machinery integration); machinery \ac{isea} for propulsion, electric and mechanical systems; Integrated Propulsion System (IPS) development; control systems and HM\&E cybersecurity.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Life-cycle focus.}] Post-production.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsubsection{NSWC Port Hueneme Division}
+\begin{description}
+  \item[\textbf{Location.}] Port Hueneme, CA.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Mission.}] Provide test and evaluation, in-service engineering, and integrated logistics support for surface warfare combat systems and ordnance of the Navy surface fleet.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Technical leadership areas.}] Surface missile launcher systems; UNREP test site and fleet support; Self Defense Test Ship (SDTS); surface ship combat systems; land-based and at-sea \ac{te}.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Life-cycle focus.}] Post-production.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsubsection{Naval Undersea Warfare Center (NUWC)}
+\begin{description}
+  \item[\textbf{Location.}] Headquarters in Newport, RI.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Mission.}] The Navy's full-spectrum \ac{rdte}, engineering, and fleet support center for submarines, autonomous underwater systems, and offensive and defensive weapons systems associated with undersea warfare.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Technical leadership areas.}] Undersea warfare modeling and analysis; submarine combat and combat control systems; surface ship and submarine sonar systems; submarine electronic warfare; submarine unique on-board communication systems and communication nodes; undersea ranges; submarine electromagnetic, electro-optic and non-acoustic effects reconnaissance, and search and tracking systems; undersea vehicle active and passive signatures (except HM\&E); submarine vulnerability and survivability (except HM\&E); torpedoes and torpedo countermeasures.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsubsection{NUWC Keyport Division}
+\begin{description}
+  \item[\textbf{Location.}] Keyport, WA.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Mission.}] Provide advanced technical capabilities for test and evaluation, in-service engineering, maintenance and industrial base support, fleet material readiness, and obsolescence management for undersea warfare.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Technical leadership areas.}] Test and evaluation and training (National UUV Test and Evaluation Center (NUTEC), 3D undersea warfare tracking range, range alternatives); life-cycle systems supportability (fielded equipment, systems, subsystems); fleet material readiness (material support, modernization, prototype development, testing); depot level torpedo repair and product proofing.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Life-cycle focus.}] Post-production.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsubsection{NUWC Newport Division}
+\begin{description}
+  \item[\textbf{Location.}] Newport, RI.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Mission.}] Provide the technical foundation which enables the conceptualization, \ac{rdte}, fielding, modernization, and maintenance of systems that ensure the Navy's undersea superiority.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Technical leadership areas.}] Product-oriented research and advanced development; undersea warfare modeling and analysis; unmanned underwater vehicles (UUVs); torpedoes, torpedo launchers, and torpedo countermeasures (submarine and surface) as in-service engineering agent and design agent; operational testing support (OPTEVFOR, Combat Systems Ship's Qualification Trials (CSSQT)) -- Atlantic ranges; operate Atlantic Undersea Test and Evaluation Center (AUTEC); submarine cybersecurity.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Life-cycle focus.}] Early life-cycle.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsection{Technical capability focus by division}
+\begin{longtblr}
+  [%
+  caption = {Technical capabilities by warfare center division.},%
+  label   = {tab:warfare-center-tech-capabilities},%
+  entry   = {Warfare Center Technical Capabilities},%
+  remark{\tSource} = {\tabCite{edo-2-1-4-warfare-centers-2024}}
+  ]{colspec = {@{} L X @{}}}
+  \toprule
+  {Division} & {Technical capability focus} \\
+  \midrule
+  NSWC Carderock & 17 TCs in naval architecture and marine engineering for surface and undersea vehicles and associated ship systems. \\
+  NSWC Corona & 8 TCs in performance assessment of weapons and combat systems from unit to force level. \\
+  NSWC Crane & 10 TCs in electronic warfare, special warfare weapons and devices, and strategic systems components and hardware. \\
+  NSWC Dahlgren & 29 TCs in surface ship weapons system development and integration, missile defense, strategic systems, and joint and homeland defense. \\
+  NSWC Indian Head & 10 TCs in energetic systems and energetic materials focused on ordnance disposal technology and counter-IED tools. \\
+  NSWC Panama City & 12 TCs for mine warfare systems and other littoral warfare systems, including mines, special warfare systems, and diving and life support systems. \\
+  NSWC Philadelphia & 13 TCs for surface and undersea vehicle machinery, ship systems, equipment and material, including cybersecurity and life-cycle commonality. \\
+  NSWC Port Hueneme & 10 TCs for surface ship T\&E, in-service engineering and logistics, and integration of weapons and combat systems as primary interface with the surface fleet. \\
+  NUWC Keyport & 16 TCs for undersea warfare test and evaluation, in-service systems integration and supportability, and industrial base maintenance and material support. \\
+  NUWC Newport & 20 TCs for undersea warfare systems development and integration for sensors, weapons, vehicles, payloads, communications, training, and combat systems. \\
+  \bottomrule
+\end{longtblr}
+
+\subsection{Warfare center organization}
+\begin{description}
+  \item[\textbf{Leadership.}] Warfare Center Board of Directors; NSWC and NUWC Commander and Executive Director; NSWC and NUWC staff.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Division leadership.}] Each NSWC/NUWC division has a Commanding Officer, Technical Director, and Senior Civilian.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Dam Neck Activity.}] NSWC Dahlgren Dam Neck Activity includes a Commanding Officer and Senior Civilian; O-5 command.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{NSLC.}] Naval Sea Logistics Center (Mechanicsburg) reports within the warfare center enterprise.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsection{NAVSEA warfare center customers, products, and services}
+\begin{description}
+  \item[\textbf{Science and Technology (S\&T).}] Basic research; national and global scientific leadership; patents.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Research and Development (R\&D).}] Applied research; modeling and simulation; technical risk assessments; rapid prototyping; analysis of alternatives; human systems integration.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Test and Evaluation (T\&E).}] Sensor, system, and missile performance; quality, reliability, and evaluation; environmental testing; tests at ranges and major facilities; comparative testing; metrology and test, measurement and diagnostic equipment (TDME).\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Product delivery.}] Technology refresh; modernization and alterations; technology and obsolescence management; product assembly; integrated logistics support; information assurance and cyber security.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Fleet support.}] Element and combat system certification; systems training; distance support; onboard tech assists; depot maintenance repairs; quantitative fleet feedback and pre-deployment certification.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+FY21 reimbursable funding mix: Fleet support 42\%, product delivery 28\%, \ac{rdte} 26\%, and S\&T 4\%.\autocite{edo-2-1-4-warfare-centers-2024}
+
+\begin{longtblr}
+  [%
+  caption = {NAVSEA warfare center reimbursable funding by customer (FY21, current year dollars).},%
+  label   = {tab:navsea-wc-reimbursable},%
+  entry   = {NAVSEA Warfare Center Reimbursable Funding},%
+  remark{\tSource} = {\tabCite{edo-2-1-4-warfare-centers-2024}}
+  ]{colspec = {@{} L r @{}}}
+  \toprule
+  {Customer category} & {FY21 reimbursable ($M)} \\
+  \midrule
+  Naval (includes USCG) & 6,182 \\
+  Other DoD & 851 \\
+  Other Federal & 32 \\
+  Non-Federal (WFPP) & 37 \\
+  \bottomrule
+\end{longtblr}
+
+\begin{description}
+  \item[\textbf{Other DoD examples.}] Missile Defense Agency (MDA) Navy and AEGIS integration; COCOM naval systems integration; SOCOM naval capabilities; joint range operations (Navy ranges); battleforce interoperability; joint EO/IR (Navy joint lead); CBRD (Navy joint lead); joint counter-IED (Navy joint lead); nuclear deterrence (naval integration); Army/Navy watercraft (Navy joint lead); Army/Air Force energetics JPEO.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Other Federal examples.}] DHS insensitive munitions (Navy cognizant); NASA global and ballistics interoperability; DOE nuclear reactor integration.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Non-Federal examples.}] Work with private parties -- direct government-furnished equipment and material, and \ac{te} for Navy OEMs and primes.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+Navy Other includes OPNAV/CNO, NAVSUP, NETWARCOM, NELO, ONI, MSC, CNSWC, and multiple small-dollar Navy customer tasking; NAVSEA Other includes SEA08, Diving and Salvage, NEBO, SEA03, and small-dollar reimbursable support.\autocite{edo-2-1-4-warfare-centers-2024}
+
+\subsection{Office of Naval Research and Naval Research Laboratory}
+\subsubsection{Office of Naval Research (ONR)}
+\begin{description}
+  \item[\textbf{Leadership.}] Typically headed by a Navy two-star; mostly civilian staff; reports to ASN (RD\&A).\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Research channels.}] Science and technology; Naval Research Laboratory; ONR Global (fleet, international, and S\&T community information sharing); Naval Reserve S\&T Program; Commercial Technology Transition Office (CTTO) for rapid transitions.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsubsection{Naval Research Laboratory (NRL)}
+\begin{description}
+  \item[\textbf{Location and reporting.}] Washington, DC; headed by an O-6; reports to ONR.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Mission.}] The Navy's full-spectrum corporate laboratory to conduct broad-based multi-disciplined scientific research and advanced technology development for maritime applications of new and improved materials, techniques, equipment, systems, and ocean, atmospheric, and space sciences.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Technical leadership areas.}] Primary in-house research for physical, engineering, space, and environmental sciences; broad-based exploratory and advanced development for anticipated Navy needs; broad multi-disciplinary support to the Naval Warfare Centers.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Life-cycle focus.}] Early life-cycle.\autocite{edo-2-1-4-warfare-centers-2024}
+\end{description}
+
+\subsection{Summary check}
+\begin{description}
+  \item[\textbf{Warfare centers report to.}] Respective SYSCOMs (NAVWAR, NAVAIR, NAVSEA, NAVFAC).\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{Warfare center divisions report to.}] Respective warfare centers (NSWC and NUWC).\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{NRL mission.}] Research and advanced technology development for future Navy and maritime applications.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{NRL reports to.}] ONR.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{NUWC Keyport leadership areas.}] USW life-cycle support, fleet material readiness, and UUV test and evaluation.\autocite{edo-2-1-4-warfare-centers-2024}
+  \item[\textbf{NSWC Port Hueneme leadership areas.}] Surface missile and launcher systems and UNREP technology.\autocite{edo-2-1-4-warfare-centers-2024}
 \end{description}
 %====================
 % End of file
