@@ -42,9 +42,9 @@ WarnLevel=normal
 
 # Disable only those that create false positives
 
-Ignore 8 # \mainmatter and \frontmatter line breaks
+Ignore 8  # \mainmatter and \frontmatter line breaks
 Ignore 12 # Ignore interword spacing at punctuation due to \frenchspacing
-Ignore 9 # after macros like \emph or \textbf
+Ignore 9  # after macros like \emph or \textbf
 Ignore 11 # \protect warnings for section titles (Xe/LuaLaTeX safe)
 Ignore 16
 Ignore 17

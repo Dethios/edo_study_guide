@@ -221,8 +221,8 @@
 \newacronym[shortplural={SPMs},longplural={Ship Program Managers}]{spm}{SPM}{Ship Program Manager}
 \newacronym[
 	shortplural={SPDs},
-	longplural={Ship Project Directors}
-]{spd}{SPD}{Ship Project Director}
+	longplural={Ship Project Directives}
+]{spd}{SPD}{Ship Project Directive}
 \newacronym[
 	shortplural={PAEs},
 	longplural={Portfolio Acquisition Executives}
@@ -801,6 +801,7 @@
 \newacronym{lcs}{LCS}{Littoral Combat Ship}
 \newacronym{ffg}{FFG}{Guided-Missile Frigate}
 \newacronym{rimpac}{RIMPAC}{Rim of the Pacific Exercise}
+\newacronym{aukus}{AUKUS}{Australia, United Kingdom, and United States security partnership}
 \newacronym{fvey}{FVEY}{Five Eyes (Australia, Canada, New Zealand, United Kingdom, United States)}
 \newacronym{nasa}{NASA}{National Aeronautics and Space Administration}
 

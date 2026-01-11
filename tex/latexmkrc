@@ -33,7 +33,7 @@ $interaction  = 'nonstopmode';
 $pvc_timeout  = 600;
 
 # --- Modified pdflatex command ---
-$pdflatex = 'lualatex -file-line-error %O %S';
+$pdflatex = 'lualatex -file-line-error -interaction=nonstopmode %O %S';
 
 # Glossaries
 add_cus_dep('glo','gls',0,'makeglossaries');
