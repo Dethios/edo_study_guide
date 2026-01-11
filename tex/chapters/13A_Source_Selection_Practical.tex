@@ -1,0 +1,130 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% ====================
+% File: 13A_Source_Selection_Practical.tex
+% ====================
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+
+% === SOURCE SELECTION PRACTICAL (EDO 3.2.5) ===
+\section{Source Selection Practical}
+
+\subsection{Summary}
+\begin{description}
+  \item[\textbf{SSP development.}] As an \ac{ipt} member, build portions of the \ac{ssplan} that rank factors and subfactors and translate them into evaluation criteria that support best-value decisions~\autocite{edo-3-2-5-source-selection-practical-2025}.
+  \item[\textbf{Evaluation criteria.}] Criteria must discriminate among offerors, be tailored to the acquisition, and be communicated in \ac{rfp} Section M with clear statements of relative importance~\autocite{edo-3-2-5-source-selection-practical-2025}.
+  \item[\textbf{Team roles.}] The \ac{ssa}, \ac{ssac}, and \ac{sseb} execute a team-based source selection using standards defined in the \ac{ssplan}~\autocite{edo-3-2-5-source-selection-practical-2025}.
+  \item[\textbf{Best value trade-off.}] Apply evaluation standards to proposals and test results to select the best value contractor and compare outcomes to \ac{lpta} logic~\autocite{edo-3-2-5-source-selection-practical-2025}.
+\end{description}
+
+\subsection{Request for Proposal Format}
+\begin{longtblr}
+  [
+  caption = {Standard RFP organization (Parts I--IV, Sections A--M).},
+  label   = {tab:rfp-format},
+  entry   = {RFP Format Overview},
+  remark{\tSource} = {\tabCite{edo-3-2-5-source-selection-practical-2025}}
+  ]{colspec = {@{} L L X @{} }}
+  \toprule
+  {Part} & {Section(s)} & {Purpose} \\
+  \midrule
+  Part I -- Schedule & A--H & Solicitation/contract form; supplies or services and prices/costs; description/specifications/work statement; packaging/marking; inspection/acceptance; deliveries/performance; contract administration; special contract requirements. \\
+  Part II -- Contract Clauses & I & Contract clauses. \\
+  Part III -- List of Documents, Exhibits, and Attachments & J & Attachments. \\
+  Part IV -- Representations and Instructions & K--M & Representations/certifications; instructions/conditions/notices to offerors; evaluation factors for award. \\
+  \bottomrule
+\end{longtblr}
+
+\subsection{DoW Source Selection Process}
+\begin{description}
+  \item[\textbf{Uniform procedures.}] \ac{dod} source selection procedures standardize rating criteria for technical and past performance factors and streamline DoW-wide reviews~\autocite{edo-3-2-5-source-selection-practical-2025}.
+  \item[\textbf{SSAC threshold.}] An \ac{ssac} is required for source selections valued over \$100M under the DoW procedures cited in the coursebook~\autocite{edo-3-2-5-source-selection-practical-2025}.
+\end{description}
+
+\subsection{Source Selection Plan}
+\begin{description}
+  \item[\textbf{Purpose and content.}] The \ac{ssplan} defines team structure, the conduct of source selection, and proposal evaluation criteria to ensure a structured, fair, and impartial evaluation that supports competition and best-value selection~\autocite{edo-3-2-5-source-selection-practical-2025}.
+  \item[\textbf{Ownership.}] Prepared by the \ac{ko}/\ac{ipt} and approved by the \ac{ssa}~\autocite{edo-3-2-5-source-selection-practical-2025}.
+\end{description}
+
+\subsection{Program Manager Roles}
+\begin{itemize}
+  \item Ensure technical requirements are approved and stable.
+  \item Establish technical specifications and develop the \ac{sow}, \ac{soo}, or \ac{pws}.
+  \item Allocate resources to support the \ac{ssplan} and help form the source selection team.
+  \item Assist in development of evaluation criteria and standards~\autocite{edo-3-2-5-source-selection-practical-2025}.
+\end{itemize}
+
+\subsection{Evaluation Factors, Subfactors, and Standards}
+\begin{description}
+  \item[\textbf{Good factors.}] Factors should discriminate among offerors, reflect the relative importance of the program's needs, and be tailored to the acquisition (examples: cost, technical, past performance, small business participation)~\autocite{edo-3-2-5-source-selection-practical-2025}.
+  \item[\textbf{Section M requirement.}] The \ac{rfp} must state the relative importance of all factors and significant subfactors, and specify how non-cost factors compare to cost/price (significantly more important, approximately equal, or significantly less important)~\autocite{edo-3-2-5-source-selection-practical-2025}.
+\end{description}
+
+\subsection{Evaluation Standards and Rating Scales}
+\begin{description}
+  \item[\textbf{Standards.}] Standards are developed for each factor/subfactor, use words/numbers/colors, and must be clearly defined for the \ac{sseb}; they are not included in the \ac{rfp}~\autocite{edo-3-2-5-source-selection-practical-2025}.
+  \item[\textbf{Sample factor.}] Reliability can be evaluated with metrics such as mean time between critical failure (\ac{mtbcf}); the course exercise applies a color scale (Blue, Purple, Green, Yellow, Red) to defined standards~\autocite{edo-3-2-5-source-selection-practical-2025}.
+\end{description}
+
+\subsection{Exercise: CGW(X) Source Selection}
+\subsubsection{Part 1: Background}
+\begin{itemize}
+  \item Scenario: CGW(X) ship program preparing for \ac{ms} A approval.
+  \item The team has developed trade-off opportunities, a Government preliminary contract design, and an \ac{rfp} draft.
+  \item A team is writing the \ac{ssplan} for full and open competition for the \ac{ddc} contract~\autocite{edo-3-2-5-source-selection-practical-2025}.
+\end{itemize}
+
+\subsubsection{Part 1a: Subfactor Ranking}
+Rank the following technical subfactors by relative importance (use terms such as ``significantly more important than'' or ``approximately equal to''):
+\begin{itemize}
+  \item Sprint speed.
+  \item Mission payload.
+  \item Troop delivery.
+  \item Aviation capability.
+  \item Endurance (unrefueled range at 20 kts).
+  \item Energy efficiency (fuel consumption at endurance speed)~\autocite{edo-3-2-5-source-selection-practical-2025}.
+\end{itemize}
+
+\subsubsection{Part 1b: Thresholds and Objectives}
+\begin{longtblr}
+  [
+  caption = {Subfactor thresholds and objectives for the CGW(X) exercise.},
+  label   = {tab:cgwx-thresholds},
+  entry   = {CGW(X) Subfactor Standards},
+  remark{\tSource} = {\tabCite{edo-3-2-5-source-selection-practical-2025}}
+  ]{colspec = {@{} L L L @{} }}
+  \toprule
+  {Subfactor} & {Threshold} & {Objective} \\
+  \midrule
+  Sprint speed at 90 percent max continuous rating in sea state 3 & 30 kts & 40 kts \\
+  Mission payload & 600 ST & 1000 ST \\
+  Troop delivery & Offload in 5 hours & Offload in 1 hour \\
+  Aviation capability & Deck and hangar for 1 SH-60 (rotors folded) & Deck and hangar for 2 SH-60s (rotors folded) \\
+  Endurance (unrefueled range at endurance speed) & 2500 NM & 3500 NM \\
+  Energy efficiency (fuel consumption at endurance speed) & 600 gallons/hour & 400 gallons/hour \\
+  \bottomrule
+\end{longtblr}
+
+\subsubsection{Part 2: Down-Select}
+\begin{itemize}
+  \item Shipyard A proposal: sprint speed 35 kts; mission payload 850 tons; troop delivery 4 hours; aviation capability deck for 2 SH-60s/hangar for 1 SH-60; endurance 3000 NM at 20 kts; efficiency 450 gallons/hour at 20 kts.
+  \item Shipyard B proposal: sprint speed 42 kts; mission payload 600 tons; troop delivery 2 hours; aviation capability deck for 1 SH-60/hangar for 2 SH-60s; endurance 2500 NM at 20 kts; efficiency 500 gallons/hour at 20 kts.
+  \item As the \ac{sseb}, rate each shipyard against the standards and develop an overall rating based on the relative importance of the subfactors.
+  \item As the \ac{ssac}, recommend a contractor to the \ac{ssa} using a best-value trade-off; note whether the decision would change under \ac{lpta}~\autocite{edo-3-2-5-source-selection-practical-2025}.
+\end{itemize}
+
+%====================
+% End of file
+%====================
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
+\end{document}

@@ -362,11 +362,14 @@
 	longplural={Head Contracting Activities}
 ]{hca}{HCA}{Head Contracting Activity}
 \newacronym{ssac}{SSAC}{Source Selection Advisory Council}
+\newacronym{ssplan}{SSP}{Source Selection Plan}
+\newacronym{ddc}{DD\&C}{Detailed Design and Construction}
 \newacronym[
 	shortplural={SSAs},
 	longplural={Source Selection Authorities}
 ]{ssa}{SSA}{Source Selection Authority}
 \newacronym{sseb}{SSEB}{Source Selection Evaluation Board}
+\newacronym{mtbcf}{MTBCF}{Mean Time Between Critical Failure}
 \newacronym{dcaa}{DCAA}{Defense Contract Audit Agency}
 \newacronym{dcma}{DCMA}{Defense Contract Management Agency}
 \newacronym{pbl}{PBL}{Performance-Based Logistics}
@@ -851,4 +854,3 @@
 \newacronym{ioc}{IOC}{Initial Operational Capability}
 \newacronym{foc}{FOC}{Full Operational Capability}
 \newacronym{os.phase}{O\&S}{Operations and Support Phase}
-\newacronym{ssplan}{SSP}{Source Selection Plan}
