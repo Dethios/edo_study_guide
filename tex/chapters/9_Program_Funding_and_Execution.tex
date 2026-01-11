@@ -4,7 +4,7 @@
 \IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
 % =============================================================================
 % CHAPTER 9: PROGRAM FUNDING AND EXECUTION
-% DESCRIPTION: Appropriation categories, funding policies, and execution mechanics.
+% DESCRIPTION: Appropriation categories, funding policies, and obligation windows.
 % =============================================================================
 \begin{document}
 \IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
@@ -14,153 +14,202 @@
 
 % === PROGRAM FUNDING & EXECUTION ===
 \section{Program Funding and Execution}
-\subsection{BA, commitment, obligation, expenditure, outlay}
-\begin{enumerate}
-  \item \emph{\ac{ba}} available (legal authority).
-  \item \emph{Commitment} (administrative reservation).
-  \item \emph{Obligation} (legal liability via contract/order).
-  \item \emph{Expenditure} (payment recorded).
-  \item \emph{Outlay} (cash disbursed/Treasury).
-  \item[] Source references~\autocite{DoDFMR-Vol3,Treasury-GInvoicing}.
-\end{enumerate}
 
-\subsection{Execution tracking (program manager view)}
+\subsection{Program Funding}
+\subsubsection{Financial terms}
 \begin{description}
-  \item[\textbf{Time-phased plan.}] Track commitments/obligations/expenditures against a time-phased spend plan by \ac{wbs}/work package; execution is constrained by \ac{omb} apportionment and internal allotments, not just total appropriated \ac{ba}~\autocite{DoDFMR-Vol3,OMB-A11,edo-3-1-4-budget-execution-2025}.
-  \item[\textbf{Contract performance.}] Use \ac{evm} to determine whether cost/schedule performance supports the funding plan: \ac{cpi}/\ac{spi}, \ac{cv}/\ac{sv}, and \ac{eac} trends; reconcile contractor \ac{ipmdar} data with finance reports (e.g., \ac{csfr})~\autocite{edo-3-6-1-evm-intro-2025,edo-3-6-2-evm-analysis-2025}.
-  \item[\textbf{Board cue.}] A program can be ``green'' on obligations while still trending to an overrun if \ac{eac} rises or schedule slips; pair budget execution with \ac{evm} and technical risk indicators~\autocite{edo-3-6-2-evm-analysis-2025}.
+  \item[\textbf{Budget authority.}] \ac{ba} is authority granted by appropriation law to enter obligations that will result in immediate or future outlays.\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Commitment.}] Administrative reservation of funds (usually by the local comptroller) in anticipation of a future obligation.\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Obligation.}] Legal reservation of funds to make a future payment of money.\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Expenditure.}] Charge against available funds resulting from a voucher, claim, or other document approved by competent authority.\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Outlay.}] Occurs when the vendor cashes the expenditure check and money flows from the Treasury to the vendor or supplier.\autocite{edo-3-1-3-program-funding-2025}
 \end{description}
 
-\subsection{Appropriation categories, scope, obligation windows}
-\Tab{\ref{tab:appropriation_categories}} shows the Colors of Money with their spending categories and obligation windows.  Figure~\ref{fig:ppbe_approps_lifecycle} from \S~\ref{sec:colors_of_money} visually shows when each category is Current, Expired, or Cancelled.
+\begin{description}
+  \item[\textbf{Credit-card analogy.}] \ac{ba} is the line of credit, commitment is the intent to purchase, obligation is the charge slip, expenditure is the bill/check, and outlay is the cash transfer from Treasury.\autocite{edo-3-1-3-program-funding-2025}
+\end{description}
+
+\subsubsection{Appropriation categories and obligation windows}
+\begin{longtblr}[
+    note{a} = {\footnotesize SCN is a procurement appropriation with a 5-year obligation window.},
+    label   = {tab:appropriation_categories},
+    caption = {Appropriation categories, typical uses, and obligation windows},
+    entry   = {Appropriations},
+    remark{Source} = {\tabCite{edo-3-1-3-program-funding-2025}}
+  ]
+  {colspec = {@{} L X L @{}}}
+  \toprule
+  {Category} & {Typical use} & {Obligation window} \\
+  \midrule
+  RDT\&E & Research, development, test, and evaluation & 2 years \\
+  Procurement & End items, modernization, and spares (e.g., APN/WPN/OPN)\TblrNote{a} & 3 years \\
+  O\&M & Operations, maintenance, training, minor construction, travel & 1 year \\
+  MILPERS & Military personnel pay and allowances & 1 year \\
+  MILCON & Facilities design and construction & 5 years \\
+  \bottomrule
+\end{longtblr}
+
+\subsubsection{DoW appropriation accounts (DoN examples)}
+\begin{longtblr}[
+    label   = {tab:don_appropriation_accounts},
+    caption = {DoN appropriation accounts (examples)},
+    entry   = {Appropriation Accounts},
+    remark{Source} = {\tabCite{edo-3-1-3-program-funding-2025}}
+  ]
+  {colspec = {@{} L X @{}}}
+  \toprule
+  {Appropriation} & {Accounts} \\
+  \midrule
+  Military Personnel & MPN; RPN; MPMC \\
+  Operation and Maintenance & O\&M,N; O\&MNR; O\&MMC \\
+  Research, Development, Test \& Evaluation & RDT\&E,N \\
+  Procurement & APN; WPN; SCN; OPN; PMC \\
+  Military Construction & MCN; Family Housing, Navy and Marine Corps (FH,N\&MC) \\
+  \bottomrule
+\end{longtblr}
+
+\subsubsection{Appropriation life-cycle and expired funds}
+\begin{description}
+  \item[\textbf{Current.}] Funds are available for new obligations during the appropriation's obligation window (1--5 years depending on category).\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Expired.}] A 5-year period where funds are no longer available for new obligations but may be used for obligation adjustments, expenditures, and outlays.\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Canceled.}] Funds are closed; remaining balances return to Treasury.\autocite{edo-3-1-3-program-funding-2025}
+\end{description}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\linewidth]{Appropriations Life-cycle.png}
+  \caption[Appropriations life-cycle]{Appropriations life-cycle (Current, Expired, Canceled). \srcCite{edo-3-1-3-program-funding-2025}}
+  \label{fig:appropriation_lifecycle}
+\end{figure}
+
+\begin{description}
+  \item[\textbf{Expired funds example 1.}] In Aug 2025, FY22 \ac{opn} funds are expired (FY22--FY24 obligation window), so a \ac{pco} cannot sign a new contract; the funds are limited to obligation adjustments, expenditures, and outlays.\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Expired funds example 2.}] In Jan 2025, FY24 \ac{rdte} funds are still current (FY24--FY25), so a \ac{pco} may sign a new contract for work starting in FY25.\autocite{edo-3-1-3-program-funding-2025}
+\end{description}
+
+\note{Obligation windows: \ac{milpers} and \ac{omn} are 1 year; \ac{rdte} is 2 years; procurement is 3 years (\ac{scn} is 5); \ac{milcon} is 5 years.\autocite{edo-3-1-3-program-funding-2025}.}
+
+\subsubsection{Funding policies}
+\begin{description}
+  \item[\textbf{Annual funding.}] Applies to expense appropriations (\ac{omn}, \ac{milpers}); request \ac{ba} only for the goods or services needed in a given fiscal year, with a major exception for non-severable service contracts that cross fiscal years.\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Incremental funding.}] Applies to \ac{rdte}; request funding only for work expected to be performed in the given fiscal year. The Navy is authorized to use incremental funding for \ac{scn} on certain ship programs (\ac{cvn}, \ac{ssbn}, \ac{lha}/\ac{lhd}).\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Full funding.}] Applies to procurement and \ac{milcon}; annual budget requests must cover the total cost of complete, usable end items delivered within a 12-month period. If multiple end items are bought, do not budget for more items than can be delivered within 12 months; options can extend procurement across years.\autocite{edo-3-1-3-program-funding-2025}
+\end{description}
+
+\note{Incremental funding example: A 28-month, \$260M \ac{rdte} effort with FY24--FY26 costs of 35\%/45\%/20\% would request \$91M (FY24), \$117M (FY25), and \$52M (FY26).\autocite{edo-3-1-3-program-funding-2025}.}
+
+\note{Full funding practical: A \ac{wpn} contract with deliveries accepted over two years violates full funding; fix by structuring lots or options so each lot delivers within 12 months and is funded with the year-of-delivery appropriation.\autocite{edo-3-1-3-program-funding-2025}.}
 
 \begin{longtblr}[
-    note{a} = {\footnotesize \ac{scn} is a specific procurement with a 5-year obligation window.},
-    label   = {tab:appropriation_categories},
-    caption = {Appropriation categories, scope, obligation windows},
-    entry   = {Colors of Money},
-    remark{Source} = {\tabCite{DoDFMR-Vol3}}
+    label   = {tab:funding_policy_summary},
+    caption = {Funding policy summary},
+    entry   = {Funding Policies},
+    remark{Source} = {\tabCite{edo-3-1-3-program-funding-2025}}
+  ]
+  {colspec = {@{} L L @{}}}
+  \toprule
+  {Appropriation} & {Policy} \\
+  \midrule
+  RDT\&E & Incremental (select SCN with congressional approval) \\
+  Procurement & Full \\
+  O\&M & Annual \\
+  MILPERS & Annual \\
+  MILCON & Full \\
+  \bottomrule
+\end{longtblr}
+
+\subsubsection{Program funding profiles by acquisition phase}
+\begin{longtblr}[
+    label   = {tab:phase_appropriations},
+    caption = {Primary appropriations by acquisition phase},
+    entry   = {Appropriations by Phase},
+    remark{Source} = {\tabCite{edo-3-1-3-program-funding-2025}}
+  ]
+  {colspec = {@{} L X @{}}}
+  \toprule
+  {Phase} & {Primary appropriations} \\
+  \midrule
+  MSA & RDT\&E (analysis and early prototypes) \\
+  TMRR & RDT\&E (risk reduction, development, test) \\
+  EMD & RDT\&E (build/test/qualify) \\
+  Production \& Deployment & Procurement (WPN/OPN/APN/SCN) \\
+  Operations \& Support & O\&M \\
+  \bottomrule
+\end{longtblr}
+
+\subsubsection{Exceptions to full funding}
+\begin{description}
+  \item[\textbf{Advance procurement (long lead items).}] An exception to full funding for long-lead components; documented in the acquisition strategy, approved at milestone, and funded as a separate line item to protect schedules or critical skills.\autocite{edo-3-1-3-program-funding-2025}
+\end{description}
+
+\begin{description}
+  \item[\textbf{Multiyear procurement (\ac{myp}).}] A single contract for a specific quantity of usable end items delivered over more than one year (no more than five). Congress authorizes the full contract scope at award (NDAA), but funding and appropriations remain annual.\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Benefits.}] Stability in acquisition and budgeting, productivity gains, cost growth reduction, \ac{eoq} opportunities, and reluctance to cancel once in place.\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Challenges.}] Termination liability if funding is not provided, inability to budget for termination liability, and political controversy (Congress and \ac{osd}).\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Required criteria.}] Savings relative to annual contracting (guidance ~10\%), stable requirements/design, confidence in cost estimates and production capability, and commitment to funding by Service, \ac{osd}, and Congress.\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Initiation.}] Proposed in the President's Budget; if approved, authorized by the NDAA and funded through annual appropriations on a year-by-year basis.\autocite{edo-3-1-3-program-funding-2025}
+\end{description}
+
+\note{DDG-51 \ac{myp} example: The FY98--FY01 and FY02--FY05 \ac{myp} contracts saved over \$1B; the FY13--FY17 \ac{myp} saved about \$1.5B and enabled a 10th ship option.\autocite{edo-3-1-3-program-funding-2025}.}
+
+\begin{description}
+  \item[\textbf{Other exceptions.}] \ac{bb} (fewer restrictions than \ac{myp}), cost-to-complete (prior-year completion), and incremental funding for \ac{rcoh}.\autocite{edo-3-1-3-program-funding-2025}
+\end{description}
+
+\subsubsection{Funding product improvements}
+\begin{description}
+  \item[\textbf{Phase 1: Development and testing.}] \ac{rdte} when the modification enhances performance or requires independent \ac{dt}/\ac{iote}; otherwise Procurement for in-production systems, or \ac{omn} if the system is no longer in production.\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Phase 2: Fabrication.}] Procurement.\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Phase 3: Installation.}] Procurement.\autocite{edo-3-1-3-program-funding-2025}
+\end{description}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\linewidth]{Platinum Card Funding for Product Improvements.png}
+  \caption[Product improvement funding decision tree]{Product improvement funding decision tree. \srcCite{edo-3-1-3-program-funding-2025}}
+  \label{fig:product_improvement_funding}
+\end{figure}
+
+\subsubsection{MILCON funding}
+\begin{description}
+  \item[\textbf{Program.}] The acquisition budget culminates in the annual Military Construction Program submitted to Congress for authorization and appropriation.\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Threshold.}] \ac{milcon} is the acquisition (design and/or construction) of facilities costing more than \$4,000,000 in support of active and reserve requirements.\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Sustainment.}] Maintenance and repair activities funded with \ac{omn}.\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Modernization.}] Alteration or replacement of facilities to implement new standards, new functions, or components with 50+ year service life; funded with OPN.\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Rule.}] It is expressly forbidden to incrementally fund a project to avoid \ac{milcon} triggers.\autocite{edo-3-1-3-program-funding-2025}
+\end{description}
+
+\subsubsection{Appropriation summary}
+\begin{longtblr}[
+    label   = {tab:appropriation_summary},
+    caption = {Appropriation abbreviations and obligation windows},
+    entry   = {Appropriation Summary},
+    remark{Source} = {\tabCite{edo-3-1-3-program-funding-2025}}
   ]
   {colspec = {@{} L L L @{}}}
   \toprule
-  {Category}      & {Typical Scope}                                        & {Obligation Window} \\
+  {Appropriation} & {Abbreviation} & {Obligation window (years)} \\
   \midrule
-  RDT\&E          & Science \& technology; development; test \& evaluation & 2 years             \\
-  OPN\TblrNote{a} & End items/modernization and spares                     & 3 years             \\
-  OMN             & Operations, maintenance, training, minor mods          & 1 year              \\
-  MILCON          & Facilities construction and real property              & 5 years             \\
-  MILPERS         & Personnel pay                                          & 1 year              \\
+  Military Construction, Navy & MCN & 5 \\
+  Military Construction, Naval Reserve & MCNR & 5 \\
+  Shipbuilding \& Conversion, Navy & SCN & 5 \\
+  Aircraft Procurement, Navy & APN & 3 \\
+  Weapons Procurement, Navy & WPN & 3 \\
+  Other Procurement, Navy & OPN & 3 \\
+  Research, Development, Test \& Evaluation, Navy & RDT\&EN & 2 \\
+  Operations \& Maintenance, Navy & O\&MN & 1 \\
+  Operations \& Maintenance, Naval Reserve & O\&MNR & 1 \\
+  Military Pay, Navy & MPN & 1 \\
+  Reserve Pay, Navy & RPN & 1 \\
   \bottomrule
 \end{longtblr}
 
-\subsection{National Intelligence Program v.s.\ Military Intelligence Program (NIP/MIP) funding}
+\subsubsection{Summary check}
 \begin{description}
-  \item[\textbf{Two pots of intel money.}] The \ac{nip} funds national/strategic \ac{ic} priorities under the \ac{dni}, while the \ac{mip} covers defense/tactical intelligence under \ac{usdins}; both run in parallel to support different oversight aims~\autocite{ICD-104,DoWD-5205-12}.
-  \item[\textbf{\ac{nro} straddles both.}] Like \ac{nga} and \ac{dia}, the \ac{nro} Director is simultaneously a \ac{nip} Program Manager and a \ac{mip} Component Manager, so the same organization plans and executes dollars under two oversight regimes~\autocite{ICD-104,DoWD-5205-12}.
-  \item[\textbf{Governance chains.}] The \ac{dni} governs \ac{nip} through the IC planning/budgeting cycle (ICD-104), while \ac{usdins} governs \ac{mip} via DoW PPBE and DoW \ac{fmr} rules (DoWD 5205.12 + FMR Volume 3); expect separate exhibits, reviews, and timelines~\autocite{ICD-104,DoWD-5205-12,DoDFMR-Vol3}.
-  \item[\textbf{Different rules by ``color'' and oversight.}] \ac{mip} reprogramming follows DoW thresholds/notifications and congressional defense committees, while \ac{nip} appeals/reviews route through \ac{odni} processes and intel committees; integration work must reconcile distinct paperwork and approval paths~\autocite{ICD-104,DoWD-5205-12,DoDFMR-Vol3}.
-  \item[\textbf{Why it matters.}] Joint \ac{nip}/\ac{mip} efforts need aligned baselines (e.g., joint DNI/DoW integration guidance), reprogramming paths differ (\ac{mip} moves via DoW channels that may not satisfy \ac{nip} oversight), and senior roles/reporting must keep both the \ac{secdef} and \ac{dni} informed with synchronized inputs.
-  \item[\textbf{Recent toplines (context).}] ODNI reported a \$73.3B FY~2025 \ac{nip} appropriation; DoW reported about \$30.0B for the FY~2024 \ac{mip} appropriation and requested \$28.0B for FY~2025~\autocite{ODNI-NIP-FY25,DoW-MIP-FY24,DoW-MIP-FY25-Request}.
-\end{description}
-
-\subsection{Funding policies}
-\begin{description}
-  \item[\textbf{Annual \ac{omn}/\ac{milpers}.}] Fund only bona fide needs of the fiscal year.
-  \item[\textbf{\ac{rdte}.}] Fund work as it occurs by fiscal year.
-  \item[\textbf{Full-funding. (Procurement/\ac{milcon}).}] Fund the total usable end-item at award.\footnote{Exceptions to Full funding are select \ac{scn} programs (e.g., \acp{cvn}, \acp{ssbn}, and \acp{lhd}/\acp{lha}) with Congressional approval.}
-\end{description}
-
-\emph{Common techniques/exceptions:} Advance Procurement (long-lead items), Multiyear Procurement, Economic Order Quantity, Cost-to-Complete when provided in law.
-
-\subsubsection{Exceptions to the Full Funding Policy}
-\label{sec:full-funding-exceptions}
-Below is the list of the key exceptions to the Full Funding Policy, what they allow, and the must-know rules/approvals (Table~\ref{tab:full_funding_exceptions} shows full details).
-
-\begin{longtblr}
-  [
-  caption = {Key exceptions to the Full Funding Policy: what they allow and what to remember},
-  entry   = {Exceptions to Full Funding},
-  label   = {tab:full_funding_exceptions},
-  remark{\tNote} = {                                                                                                                                                                                                                                                                                                                                                                                                                    \\%
-  (i) \ac{eoq} purchases are commonly approved within \ac{myp} or other explicit multi-year constructs;                                                                                                                                                                                                                                                                                                                                 \\%
-  (ii) Block Buy resembles \ac{myp} in intent (savings) but uses program-specific authorization;                                                                                                                                                                                                                                                                                                                                        \\%
-      (iii) Plan for cancellation liability under \ac{myp} when required.},%
-  remark{\tSource} = {\tabCite{USC-3501,DFARS217-172,DoDFMR-Vol3}}
-  ]
-  {
-  colspec = {@{} Q[wd=.15\linewidth,cmd=\merriweatherblack\RaggedRight\small] P{.15\linewidth} L L @{}}
-  }
-  \toprule
-  {Exception}                          & {Typical Appropriation}              & {What it allows}                                                                                                                                               & {Must-know rules / approvals}                                                                                                                                                          \\
-  \midrule
-  MYP                                  & APN, OPN, SCN                        & Single contract covering multiple fiscal years of buys to achieve predictable demand and unit-cost savings; may include EOQ purchases common across years.     & Requires specific congressional authorization; stable requirements/design; credible savings; low technical risk; term generally up to 5 years; plan/budget any cancellation liability. \\
-  Advance Procurement (incl. LLTM/EOQ) & APN, OPN, SCN                        & Limited \emph{early} funding (often 1--2 years before the main ``buy'' year) for long-lead components or EOQ lots to protect schedule or achieve price breaks. & Narrow and part-specific; must be justified in budget docs; EOQ commonly tied to MYP (or explicit block authority); does \emph{not} equal full funding of the end item.                \\
-  BB                                   & Primarily SCN                        & A single contract buying multiple ships (or end items) across fiscal years to gain tooling/learning-curve efficiencies.                                        & Requires explicit congressional authorization; funds still obligated year-by-year; not under the MYP statute, so oversight mechanics differ.                                           \\
-  CTC                                  & SCN                                  & Additional funds in a later FY to finish an item (e.g., ship) when matured estimates exceed prior appropriations.                                              & Completes original approved scope (not added capability); appears as a distinct request/justification; common in long-duration shipbuilding.                                           \\
-  RCOH for CVN                         & SCN (with prior Advance Procurement) & Mid-life refueling and major overhaul funded incrementally over multiple years; early procurement of nuclear fuel/critical components.                         & Recognized exception due to size/complexity; incremental SCN with advance procurement years ahead of the principal execution.                                                          \\
-  \bottomrule
-\end{longtblr}
-
-\subsection{Navy Sustainment Funding: TYCOM v.s. Fleet (O\&S)}
-\begin{description}
-  \item[\textbf{Who holds O\&M,N.}] \ac{tycom} leaders (\emph{\acp{tycom}}; e.g., \ac{comnavsurfor}, \ac{comnavairfor}, \ac{comsubfor}) are the primary executors of \ac{omn} for unit readiness: flying hours, steaming days, intermediate-level maintenance, training, and afloat/ashore support.
-  \item[\textbf{Fleet Commanders.}] \ac{pacflt} and \ac{usff} set operational priorities and readiness goals, adjudicate contingencies, and may centrally manage certain Fleet-wide initiatives; they influence \ac{tycom} allocations but most execution occurs at the \ac{tycom}.
-  \item[\textbf{Program Office (\ac{syscom}/\ac{peo}).}] Funds in-service engineering, tech data, Diminishing Manufacturing Sources, and modernization using \ac{opn}/\ac{apn} (end items/kits) and \ac{rdte}/\ac{omn} (installation, trials) as appropriate; manages sustainment \acp{idiq}/\ac{pbl} with color-of-money compliance.
-  \item[\textbf{Who pays what.}] \ac{opn}/\ac{apn}: hardware/software upgrade kits, initial spares; \ac{omn}: installs, fleet introduction/training, minor mods, repair parts consumption; \ac{rdte}: development/test of engineering changes. \ac{navsup}/\ac{nwcf} activities recover costs via rates for supply/repair.
-  \item[\textbf{Board cue.}] In operations and support, \acp{tycom} execute most \ac{omn}; Program Managers fund modernization and in-service support from \ac{opn}/\ac{apn}/\ac{rdte}. Align funding lines with the \ac{wbs} and the Colors-of-Money rules to avoid Anti-Deficiency Act risk.
-\end{description}
-
-% Optional quick bullets (kept minimal and consistent with your style)
-Quick information regarding exceptions to the full funding policy:
-\begin{description}
-  \item[\textbf{\ac{myp}.}] Up to 5 years; stable design; verifiable savings; cancellation liability planned.
-  \item[\textbf{Advance Procurement \ac{lltm}/\ac{eoq}.}] Focused early buys for schedule/savings; not full funding.
-  \item[\textbf{\ac{bb}.}] Congressionally authorized multi-ship buys; obligate by \ac{fy}; not the \ac{myp} statute.
-  \item[\textbf{\ac{ctc}.}] Complete original scope when estimates mature upward; separate \ac{scn} request.
-  \item[\textbf{\ac{rcoh}.}] Planned midlife overhaul; incremental \ac{scn} with advance procurement of cores/critical material.
-\end{description}
-
-\subsection{National and Military Intelligence Program funding (National Reconnaissance Office context)}
-\begin{description}
-  \item[\textbf{Two budget programs, two authorities.}] The intelligence budget is split between the \ac{nip} (strategic, cross-\ac{ic} priorities) and the \ac{mip} (defense operational and tactical requirements); the \ac{dni} manages the \ac{nip} and the \ac{usdis} manages the \ac{mip} under distinct authorities and review chains.\autocite{CRS-R44381}
-  \item[\textbf{NRO and peers straddle both.}] The \ac{nro} (along with \ac{dia} and \ac{nga}) executes both \ac{nip} and \ac{mip} dollars; their directors serve as \ac{nip} program managers and \ac{mip} component managers, driving dual oversight and reporting requirements.\autocite{CRS-R44381}
-  \item[\textbf{Governing guidance.}] \ac{nip} budget formulation/execution follows \ac{odni} policy in \textit{ICD 104} and the \ac{ic} planning, programming, budgeting, and evaluation system, while \ac{mip} policy follows \textit{DoWD 5205.12} and DoW FMR execution rules; expect separate guidance, exhibits, and reviews.\autocite{ICD-104,DoDD5205-12,DoDFMR-Vol3}
-  \item[\textbf{Reprogramming and oversight.}] \ac{nip} adjustments route through \ac{odni} processes and intelligence committee review paths; \ac{mip} reprogramming follows DoW FMR thresholds and DoW congressional notifications, so integration work must reconcile paperwork, actors, and timelines.\autocite{ICD-104,DoDFMR-Vol3}
-  \item[\textbf{Recent toplines (context).}] FY 2025 appropriated toplines: $73.3B for \ac{nip} and $27.8B for \ac{mip}; FY 2025 requested toplines: $73.4B (\ac{nip}) and $28.2B (\ac{mip}). Current as of 2025-12-28.\autocite{ODNI-NIP-2025,DoW-MIP-2025,CRS-R44381}
-\end{description}
-
-\subsection{Which money when (by acquisition phase)}
-Table~\ref{tab:msa_phase_approp} shows the nominal types of appropriation used for \ac{msa}, \ac{tmrr}, \ac{emd}, \ac{pd.phase}, and \ac{os.phase}
-
-\begin{longtblr}[
-    caption = {Appropriation types per phase},
-    entry   = {Appropriations per Phase},
-    label   = {tab:msa_phase_approp},
-  ]
-  {
-    colspec = {L L},
-    stretch = 1.2
-  }
-  \toprule
-  {Phase} & {Typical appropriation(s)}                                                                    \\
-  \midrule
-  MSA     & RDT\&E (analyses, prototyping); small OMN for studies                                         \\
-  TMRR    & RDT\&E (risk reduction, development, test)                                                    \\
-  EMD     & RDT\&E (develop/build/test/qualify); selected long-lead/AP/EOQ in Procurement when authorized \\
-  PD      & Procurement (e.g., OPN); limited RDT\&E for fixes                                             \\
-  OS      & OMN sustainment; spares via Procurement as applicable                                         \\
-  \bottomrule
-\end{longtblr}
-
-\subsection{MILCON v.s.\ O\&M sustainment v.s.\ OPN modernization}
-\emph{Rule of thumb:} Real property construction $\Rightarrow$ \ac{milcon}; keeping systems running (repair/overhaul, services) $\Rightarrow$ \ac{omn}; new capability/end-item upgrades $\Rightarrow$ Procurement (e.g., \ac{opn}).
-
-\subsection{Field Activity Financial Management (NWCF quick hits)}
-\begin{description}
-  \item[\textbf{Goal.}] \ac{nwcf} activities price to \emph{break even over time}; in-year result is \textbf{\ac{nor}}, cumulative is \textbf{\ac{aor}}.
-  \item[\textbf{\ac{slr}.}] Recover direct labor + overhead + G\&A; shocks flow to \ac{nor}/\ac{aor} and are managed over time.
-  \item[\textbf{Carryover.}] Unfilled orders at \ac{fy} end; subject to limits/management.
-  \item[\textbf{\ac{igt} via G-Invoicing.}] Treasury-mandated platform for intra-gov orders/settlement; apportionment/availability rules still govern customer funds.
+  \item[\textbf{Policies.}] Annual (\ac{omn}, \ac{milpers}); Incremental (\ac{rdte}, select \ac{scn}); Full Funding (Procurement, \ac{milcon}).\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Full funding exceptions.}] Advance Procurement and \ac{myp} are the primary exceptions; \ac{bb}, cost-to-complete, and \ac{rcoh} are additional cases.\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Product improvements.}] Phase 1 uses \ac{rdte}/Procurement/\ac{omn} depending on testing and production status; Phases 2--3 use Procurement.\autocite{edo-3-1-3-program-funding-2025}
+  \item[\textbf{Expired funds rule.}] Expired funds cannot create new obligations; they are limited to obligation adjustments, expenditures, and outlays.\autocite{edo-3-1-3-program-funding-2025}
 \end{description}
 %====================
 % End of file
