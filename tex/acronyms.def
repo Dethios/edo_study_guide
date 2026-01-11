@@ -407,7 +407,9 @@
 \newacronym{sap}{SAP}{Simplified Acquisition Procedures}
 \newacronym{sat}{SAT}{Simplified Acquisition Threshold}
 \newacronym{ucf}{UCF}{Uniform Contract Format}
+\newacronym{clin}{CLIN}{Contract Line Item Number}
 \newacronym{gfe}{GFE}{Government-Furnished Equipment}
+\newacronym{iddq}{IDDQ}{Indefinite-Delivery, Definite-Quantity}
 \newacronym{idiq}{IDIQ}{Indefinite-Delivery, Indefinite-Quantity}
 \newacronym{ot}{OT}{Other Transaction}
 \newacronym{hubzone}{HUBZone}{Historically Underutilized Business Zone}
@@ -424,6 +426,8 @@
 \newacronym{ifb}{IFB}{Invitation for Bids}
 \newacronym{qa}{Q\&A}{Questions and Answers}
 \newacronym{sow}{SOW}{Statement of Work}
+\newacronym{soo}{SOO}{Statement of Objectives}
+\newacronym{pws}{PWS}{Performance Work Statement}
 \newacronym{oci}{OCI}{Organizational Conflict of Interest}
 \newacronym{arc}{ARC}{Acquisition Research Center}
 \newacronym{wawf}{WAWF}{Wide Area Workflow}
