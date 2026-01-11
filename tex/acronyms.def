@@ -462,11 +462,18 @@
 % --- Budget Formulation & Decision ---
 
 \newacronym{ppbe}{PPBE}{Planning, Programming, Budgeting and Execution}
+\newacronym{cpr}{CPR}{Chairman's Program Recommendation}
+\newacronym{dpg}{DPG}{Defense Planning Guidance}
 \newacronym{pb}{PB}{President's Budget}
 \newacronym{pom}{POM}{Program Objective Memorandum}
 \newacronym{bes}{BES}{Budget Estimate Submission}
+\newacronym{pbd}{PBD}{Program Budget Decision}
+\newacronym{mbi}{MBI}{Major Budget Issue}
 \newacronym{cip}{CIP}{Capital Investment Program}
 \newacronym{fydp}{FYDP}{Future Years Defense Program}
+\newacronym{mfp}{MFP}{Major Force Program}
+\newacronym{pe}{PE}{Program Element}
+\newacronym{pbis}{PBIS}{Program Budget Information System}
 \newacronym{fy}{FY}{Fiscal Year}
 \newacronym{py}{PY}{Past Year}
 \newacronym{cy}{CY}{Current Year}
