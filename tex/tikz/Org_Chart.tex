@@ -34,13 +34,13 @@
   % == 1. ECHELON I HIERARCHY ==
   % Place the main vertical chain
   \node[orgchart node] (potus) {POTUS};
-  \node[orgchart node, below=1cm of potus] (secwar) {SECWAR};
-  \node[orgchart node, below=1cm of secwar] (secnav) {SECNAV};
+  \node[orgchart node, below=1cm of potus] (secdef) {SECDEF};
+  \node[orgchart node, below=1cm of secdef] (secnav) {SECNAV};
   \node[orgchart node, below=1cm of secnav] (cno) {CNO};
 
   % Draw connections for the main chain
-  \draw[thick] (potus) -- (secwar);
-  \draw[thick] (secwar) -- (secnav);
+  \draw[thick] (potus) -- (secdef);
+  \draw[thick] (secdef) -- (secnav);
   \draw[thick] (secnav) -- (cno);
 
   % == 2. ECHELON II NODES (Horizontal Row) ==

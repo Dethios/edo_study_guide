@@ -15,7 +15,7 @@
 %   - Define T&E. Difference between a test and an evauluation?
 %   - Relationship to verification and validation
 %   - What are the statuartory requirements? Which key roles did they make and what do they do?
-%   - Describe and define the DoW T&E Organization
+%   - Describe and define the DoD T&E Organization
 %   - Detailed description of Developmental T&Es. Define each one.
 %   - Detailed description of Live Fire T&E
 %   - Detailed description of Operational T&E (Ininclude EOA, OA, IOT&RE, and FOT&E)
@@ -23,7 +23,7 @@
 %   - Describe CTPs and how do they relate to TPMs, ICD, CDD, APB, etc.
 %   - Detailed description of the \ac{temp}
 %   - Describe Modeling and Simulation. When and why is it used?
-% 2. Include placeholders for figures at appropriate spots: (1) Test and Evaluation graphic for MCA; (2) DoW T&E Org
+% 2. Include placeholders for figures at appropriate spots: (1) Test and Evaluation graphic for MCA; (2) DoD T&E Org
 % 3. Update `acronyms.def` and `edo.bib` with new entries as needed. Verify no duplicate acronym labels
 % 4. Coursebook is the first source document, but relevant sources from the Coursebook, DAU, and other resources should also be used.
 % 5. Cross-verify that the information from this section flows logically with the rest of the study guide.
@@ -47,7 +47,7 @@
 
 \subsection{Statutory Requirements and Key Roles}
 \begin{description}
-  \item[\textbf{10~U.S.C.~\S~139.}] Establishes the \ac{dote} as an independent advisor to \ac{secwar} and Congress; \ac{dote} approves operational test plans, monitors execution, and must issue a public report for covered programs~\autocite{USC-10-139}.
+  \item[\textbf{10~U.S.C.~\S~139.}] Establishes the \ac{dote} as an independent advisor to \ac{secdef} and Congress; \ac{dote} approves operational test plans, monitors execution, and must issue a public report for covered programs~\autocite{USC-10-139}.
   \item[\textbf{10~U.S.C.~\S~2399.}] Prohibits a program from proceeding beyond \ac{lrip} or requesting Full-Rate Production approval until \ac{dote} and the lead Operational Test Agency submit their independent reports to Congress~\autocite{USC-10-2399}.
   \item[\textbf{10~U.S.C.~\S~2366.}] Requires \ac{lfte} or an approved waiver for covered systems (personnel, platform, and munitions lethality/survivability) before beyond-\ac{lrip} decisions; it also directs reporting of vulnerability/lethality findings to defense committees~\autocite{USC-10-2366}.
   \item[\textbf{\ac{dasdte}.}] Serves as the \ac{osd} focal point for test resources, designates \acp{cdt} for \ac{acat}~I programs, charters \acp{ldto}, and co-chairs Defense-level \ac{te} Working Integrated Product Teams~\autocite{DoDI5000-89}.
@@ -78,7 +78,7 @@
     \draw[arrow] (programs) -- node[left]{fielding recommendations} (fleet);
     \draw[arrow] (fleet) -- node[right]{user feedback / mission threads} (programs);
   \end{tikzpicture}
-  \caption[\ac{dow} \ac{te} organization]{\ac{dow} test and evaluation governance chain linking \ac{osd} oversight, Service Operational Test Agencies, warfare centers/ranges, and program-level test leadership.}
+  \caption[\ac{dod} \ac{te} organization]{\ac{dod} test and evaluation governance chain linking \ac{osd} oversight, Service Operational Test Agencies, warfare centers/ranges, and program-level test leadership.}
   \label{fig:dow-te-org}
 \end{figure}
 
@@ -95,7 +95,7 @@
 \subsection{Live Fire Test and Evaluation}
 \begin{description}[style=nextline,labelsep=0.5em,font=\bfseries]
   \item[\textbf{When required.}] Title~10 demands \ac{lfte} for every new or significantly upgraded crew-occupied platform, combat vehicle, major munitions program, or missile defense component that will face threat lethality; full-up system-level shots must be realistically stressed prior to requesting Full-Rate Production approval \autocite{USC-10-2366,DoDI5000-89}.
-  \item[\textbf{When waived.}] Only the \ac{secwar} can waive full-up \ac{lfte} when the system is unmanned, when destructive testing would be unreasonably expensive or impractical, or when alternative testing (component shots, validated modeling, allied data) provides equivalent insights; Congress must be notified of the rationale and the alternative plan \autocite{USC-10-2366,DoDI5000-89}.
+  \item[\textbf{When waived.}] Only the \ac{secdef} can waive full-up \ac{lfte} when the system is unmanned, when destructive testing would be unreasonably expensive or impractical, or when alternative testing (component shots, validated modeling, allied data) provides equivalent insights; Congress must be notified of the rationale and the alternative plan \autocite{USC-10-2366,DoDI5000-89}.
   \item[\textbf{Execution and use.}] Programs plan vulnerability and lethality events in the \ac{temp}, employ full-up articles plus critical subsystems and surrogates, and collect battle damage, crew survivability, and cascading-effect data to inform design hardening, tactics, and survivability equipment upgrades; the results become an annex to the \ac{dote} report before the \ac{frpdr} \autocite{DoDI5000-89,DoDI5000-85}.
 \end{description}
 

@@ -17,61 +17,22 @@
 \newacronym{cjadc2}{CJADC2}{Combined Joint All-Domain Command and Control}
 \newacronym{jsd}{JSD}{Joint Staffing Designator}
 \newacronym{fcb}{FCB}{Functional Capabilities Board}
-\newacronym{dow}{DoW}{Department of War}
-\newacronym[
-	short={\glsentryshort{dow}},
-	long={\glsentrylong{dow}}
-]{dod}{DoD}{Department of Defense}
-\newacronym{osw}{OSW}{Office of the Secretary of War}
-\newacronym[
-	short={\glsentryshort{osw}},
-	long={\glsentrylong{osw}}
-]{osd}{OSD}{Office of the Secretary of Defense}
-\newacronym{wae}{WAE}{War Acquisition Executive}
-\newacronym[
-	short={\glsentryshort{wae}},
-	long={\glsentrylong{wae}}
-]{dae}{DAE}{Defense Acquisition Executive}
+\newacronym{dod}{DoD}{Department of Defense}
+\newacronym{osd}{OSD}{Office of the Secretary of Defense}
+\newacronym{dae}{DAE}{Defense Acquisition Executive}
 \newacronym{don}{DON}{Department of the Navy}
 \newacronym{secnav}{SECNAV}{Secretary of the Navy}
-\newacronym{secwar}{SECWAR}{Secretary of War}
-\newacronym{usw}{USW}{Under Secretary of War}
-\newacronym[
-	short={\glsentryshort{usw}},
-	long={\glsentrylong{usw}}
-]{usd}{USD}{Under Secretary of Defense}
-\newacronym{uswas}{USW(A\&S)}{Under Secretary of War for Acquisition and Sustainment}
-\newacronym[
-	short={\glsentryshort{uswas}},
-	long={\glsentrylong{uswas}}
-]{usdas}{USD(A\&S)}{Under Secretary of Defense for Acquisition and Sustainment}
-\newacronym{uswre}{USW(R\&E)}{Under Secretary of War for Research and Engineering}
-\newacronym[
-	short={\glsentryshort{uswre}},
-	long={\glsentrylong{uswre}}
-]{usdre}{USD(R\&E)}{Under Secretary of Defense for Research and Engineering}
-\newacronym{uswp}{USW(P)}{Under Secretary of War for Policy}
-\newacronym[
-	short={\glsentryshort{uswp}},
-	long={\glsentrylong{uswp}}
-]{usdp}{USD(P)}{Under Secretary of Defense for Policy}
-\newacronym{uswc}{USW(C)}{Under Secretary of War (Comptroller)}
-\newacronym[
-	short={\glsentryshort{uswc}},
-	long={\glsentrylong{uswc}}
-]{usdc}{USD(C)}{Under Secretary of Defense (Comptroller)}
-\newacronym{uswins}{USW(I\&S)}{Under Secretary of War for Intelligence and Security}
-\newacronym[
-	short={\glsentryshort{uswins}},
-	long={\glsentrylong{uswins}}
-]{usdins}{USD(I\&S)}{Under Secretary of Defense for Intelligence and Security}
-\newacronym[
-	short={\glsentryshort{uswins}},
-	long={\glsentrylong{uswins}}
-]{usdis}{{USD(I\&S)}}{Under Secretary of Defense for Intelligence and Security}
-\newacronym{ouswas}{OUSW(A\&S)}{Office of the Under Secretary of War for Acquisition and Sustainment}
-\newacronym{ouswre}{OUSW(R\&E)}{Office of the Under Secretary of War for Research and Engineering}
-\newacronym{ouswc}{OUSW(C)}{Office of the Under Secretary of War (Comptroller)}
+\newacronym{secdef}{SECDEF}{Secretary of Defense}
+\newacronym{usd}{USD}{Under Secretary of Defense}
+\newacronym{usdas}{USD(A\&S)}{Under Secretary of Defense for Acquisition and Sustainment}
+\newacronym{usdre}{USD(R\&E)}{Under Secretary of Defense for Research and Engineering}
+\newacronym{usdp}{USD(P)}{Under Secretary of Defense for Policy}
+\newacronym{usdc}{USD(C)}{Under Secretary of Defense (Comptroller)}
+\newacronym{usdins}{USD(I\&S)}{Under Secretary of Defense for Intelligence and Security}
+\newacronym{usdis}{{USD(I\&S)}}{Under Secretary of Defense for Intelligence and Security}
+\newacronym{ousdas}{OUSD(A\&S)}{Office of the Under Secretary of Defense for Acquisition and Sustainment}
+\newacronym{ousdre}{OUSD(R\&E)}{Office of the Under Secretary of Defense for Research and Engineering}
+\newacronym{ousdc}{OUSD(C)}{Office of the Under Secretary of Defense (Comptroller)}
 \newacronym{asnrdanda}{{ASN(RD\&A)}}{Assistant Secretary of the Navy for Research, Development and Acquisition}
 \newacronym{asn}{ASN}{Assistant Secretary of the Navy}
 \newacronym{dasn}{DASN}{Deputy Assistant Secretary of the Navy}
@@ -91,16 +52,9 @@
 \newacronym{ota}{OTA}{Other Transaction Authority}
 \newacronym{cso}{CSO}{Commercial Solutions Opening}
 \newacronym{nscf}{NSCF}{National Security Capital Forum}
-\newacronym{nws}{NWS}{National War Strategy}
-\newacronym[
-	short={\glsentryshort{nws}},
-	long={\glsentrylong{nws}}
-]{nds}{NDS}{National Defense Strategy}
-\newacronym{mwa}{MWA}{Missile War Agency}
-\newacronym[
-	short={\glsentryshort{mwa}},
-	long={\glsentrylong{mwa}}
-]{mda}{MDA}{Missile Defense Agency}
+\newacronym{nss}{NSS}{National Security Strategy}
+\newacronym{nds}{NDS}{National Defense Strategy}
+\newacronym{mda}{MDA}{Missile Defense Agency}
 \newacronym{ssp}{SSP}{Strategic Systems Program}
 \newacronym{omb}{OMB}{Office of Management and Budget}
 \newacronym{cfo}{CFO}{Chief Financial Officer}
@@ -180,16 +134,8 @@
 \newacronym{ctf}{CTF}{Commander, Task Force}
 \newacronym{cio}{CIO}{Chief Information Officer}
 \newacronym{cnr}{CNR}{Chief of Naval Research}
-\newacronym{wsca}{WSCA}{War Security Cooperation Agency}
-\newacronym[
-	short={\glsentryshort{wsca}},
-	long={\glsentrylong{wsca}}
-]{dsca}{DSCA}{Defense Security Cooperation Agency}
-\newacronym{wtsa}{WTSA}{War Technology Security Administration}
-\newacronym[
-	short={\glsentryshort{wtsa}},
-	long={\glsentrylong{wtsa}}
-]{dtsa}{DTSA}{Defense Technology Security Administration}
+\newacronym{dsca}{DSCA}{Defense Security Cooperation Agency}
+\newacronym{dtsa}{DTSA}{Defense Technology Security Administration}
 
 % --- Warfare Centers & Field Activities ---
 
@@ -325,57 +271,25 @@
 	longplural={Cost Assessments and Program Evaluations}
 ]{cape}{CAPE}{Cost Assessment and Program Evaluation}
 \newacronym{cots}{COTS}{Commercial Off-the-Shelf}
-\newacronym{wab}{WAB}{War Acquisition Board}
+\newacronym{dab}{DAB}{Defense Acquisition Board}
 \newacronym[
-	short={\glsentryshort{wab}},
-	long={\glsentrylong{wab}}
-]{dab}{DAB}{Defense Acquisition Board}
-\newacronym[
-	shortplural={WAESes},
-	longplural={War Acquisition Executive Summaries}
-]{waes}{WAES}{War Acquisition Executive Summary}
-\newacronym[
-	short={\glsentryshort{waes}},
-	long={\glsentrylong{waes}}
+	shortplural={DAESes},
+	longplural={Defense Acquisition Executive Summaries}
 ]{daes}{DAES}{Defense Acquisition Executive Summary}
-\newacronym{wag}{WAG}{War Acquisition Guidebook}
-\newacronym[
-	short={\glsentryshort{wag}},
-	long={\glsentrylong{wag}}
-]{dag}{DAG}{Defense Acquisition Guidebook}
-\newacronym{wau}{WAU}{War Acquisition University}
-\newacronym[
-	short={\glsentryshort{wau}},
-	long={\glsentrylong{wau}}
-]{dau}{DAU}{Defense Acquisition University}
-\newacronym{wasys}{WASys}{War Acquisition System}
-\newacronym[
-	short={\glsentryshort{wasys}},
-	long={\glsentrylong{wasys}}
-]{das}{DAS}{Defense Acquisition System}
-\newacronym{wbsys}{WBSys}{War Business System}
-\newacronym[
-	short={\glsentryshort{wbsys}},
-	long={\glsentrylong{wbsys}}
-]{dbs}{DBS}{Defense Business System}
+\newacronym{dag}{DAG}{Defense Acquisition Guidebook}
+\newacronym{dau}{DAU}{Defense Acquisition University}
+\newacronym{das}{DAS}{Defense Acquisition System}
+\newacronym{dbs}{DBS}{Defense Business System}
 \newacronym{cpa}{CPA}{Chairman's Program Assessment}
 \newacronym{dcape}{DCAPE}{Director, CAPE}
 \newacronym{drfprd}{DRFPRD}{Development Request for Proposal Release Decision}
-\newacronym{mwap}{MWAP}{Major War Acquisition Program}
-\newacronym[
-	short={\glsentryshort{mwap}},
-	long={\glsentrylong{mwap}}
-]{mdap}{MDAP}{Major Defense Acquisition Program}
+\newacronym{mdap}{MDAP}{Major Defense Acquisition Program}
 
 % --- Requirements Systems & Data ---
 
 \newacronym{km-ds}{KM/DS}{Knowledge Management and Decision Support}
 \newacronym{conops}{CONOPS}{Concept of Operations}
-\newacronym{dowaf}{DoWAF}{Department of War Architecture Framework}
-\newacronym[
-	short={\glsentryshort{dowaf}},
-	long={\glsentrylong{dowaf}}
-]{dodaf}{DoDAF}{Department of Defense Architecture Framework}
+\newacronym{dodaf}{DoDAF}{Department of Defense Architecture Framework}
 \newacronym{is}{IS}{Information System}
 \newacronym{it}{IT}{Information Technology}
 \newacronym{avview}{AV}{All Viewpoint}
@@ -387,16 +301,8 @@
 	shortplural={APIs},
 	longplural={Application Programming Interfaces}
 ]{api}{API}{Application Programming Interface}
-\newacronym{dowd}{DoWD}{Department of War Directive}
-\newacronym[
-	short={\glsentryshort{dowd}},
-	long={\glsentrylong{dowd}}
-]{dodd}{DoDD}{Department of Defense Directive}
-\newacronym{dowi}{DoWI}{Department of War Instruction}
-\newacronym[
-	short={\glsentryshort{dowi}},
-	long={\glsentrylong{dowi}}
-]{dodi}{DoDI}{Department of Defense Instruction}
+\newacronym{dodd}{DoDD}{Department of Defense Directive}
+\newacronym{dodi}{DoDI}{Department of Defense Instruction}
 \newacronym{dagir}{DAGIR}{Data and Applications Government-owned Interoperable Repositories}
 \newacronym{emd}{EMD}{Engineering and Manufacturing Development}
 \newacronym{ibr}{IBR}{Integrated Baseline Review}
@@ -446,22 +352,8 @@
 	longplural={Source Selection Authorities}
 ]{ssa}{SSA}{Source Selection Authority}
 \newacronym{sseb}{SSEB}{Source Selection Evaluation Board}
-\newacronym[
-	shortplural={WCAAs},
-	longplural={War Contract Audit Agencies}
-]{wcaa}{WCAA}{War Contract Audit Agency}
-\newacronym[
-	short={\glsentryshort{wcaa}},
-	long={\glsentrylong{wcaa}}
-]{dcaa}{DCAA}{Defense Contract Audit Agency}
-\newacronym[
-	shortplural={WCMAs},
-	longplural={War Contract Management Agencies}
-]{wcma}{WCMA}{War Contract Management Agency}
-\newacronym[
-	short={\glsentryshort{wcma}},
-	long={\glsentrylong{wcma}}
-]{dcma}{DCMA}{Defense Contract Management Agency}
+\newacronym{dcaa}{DCAA}{Defense Contract Audit Agency}
+\newacronym{dcma}{DCMA}{Defense Contract Management Agency}
 \newacronym{pbl}{PBL}{Performance-Based Logistics}
 \newacronym{pv}{PV}{Planned Value}
 \newacronym{ev}{EV}{Earned Value}
@@ -502,11 +394,7 @@
 % --- Contracting Policies & Instruments ---
 
 \newacronym{far}{FAR}{Federal Acquisition Regulation}
-\newacronym{wfars}{WFARS}{War Federal Acquisition Regulation Supplement}
-\newacronym[
-	short={\glsentryshort{wfars}},
-	long={\glsentrylong{wfars}}
-]{dfars}{DFARS}{Defense Federal Acquisition Regulation Supplement}
+\newacronym{dfars}{DFARS}{Defense Federal Acquisition Regulation Supplement}
 \newacronym{nmcars}{NMCARS}{Navy Marine Corps Acquisition Regulation Supplement}
 \newacronym{secnavinst}{SECNAVINST}{Secretary of the Navy Instruction}
 \newacronym{sam}{SAM}{System for Award Management}
@@ -578,11 +466,7 @@
 \newacronym{pom}{POM}{Program Objective Memorandum}
 \newacronym{bes}{BES}{Budget Estimate Submission}
 \newacronym{cip}{CIP}{Capital Investment Program}
-\newacronym{fywp}{FYWP}{Future Years War Program}
-\newacronym[
-	short={\glsentryshort{fywp}},
-	long={\glsentrylong{fywp}}
-]{fydp}{FYDP}{Future Years Defense Program}
+\newacronym{fydp}{FYDP}{Future Years Defense Program}
 \newacronym{fy}{FY}{Fiscal Year}
 \newacronym{py}{PY}{Past Year}
 \newacronym{cy}{CY}{Current Year}
@@ -608,20 +492,12 @@
 \newacronym{ic}{IC}{Intelligence Community}
 \newacronym{nip}{NIP}{National Intelligence Program}
 \newacronym{mip}{MIP}{Military Intelligence Program}
-\newacronym{wia}{WIA}{War Intelligence Agency}
-\newacronym[
-	short={\glsentryshort{wia}},
-	long={\glsentrylong{wia}}
-]{dia}{DIA}{Defense Intelligence Agency}
+\newacronym{dia}{DIA}{Defense Intelligence Agency}
 \newacronym{nga}{NGA}{National Geospatial-Intelligence Agency}
 
 % --- Congressional Engagement & Statutes ---
 
-\newacronym{nwaa}{NWAA}{National War Authorization Act}
-\newacronym[
-	short={\glsentryshort{nwaa}},
-	long={\glsentrylong{nwaa}}
-]{ndaa}{NDAA}{National Defense Authorization Act}
+\newacronym{ndaa}{NDAA}{National Defense Authorization Act}
 \newacronym{hac}{HAC}{House Appropriations Committee}
 \newacronym{hbc}{HBC}{House Budget Committee}
 \newacronym{hasc}{HASC}{House Armed Services Committee}
@@ -663,12 +539,8 @@
 \newacronym{aor}{AOR}{Accumulated Operating Result}
 \newacronym{nor}{NOR}{Net Operating Result}
 \newacronym{slr}{SLR}{Stabilized Labor Rate}
-\newacronym{wfas}{WFAS}{War Finance and Accounting Service}
-\newacronym[
-	short={\glsentryshort{wfas}},
-	long={\glsentrylong{wfas}}
-]{dfas}{DFAS}{Defense Finance and Accounting Service}
-\newacronym{dodfmr}{DoW FMR}{Department of War Financial Management Regulation}
+\newacronym{dfas}{DFAS}{Defense Finance and Accounting Service}
+\newacronym{dodfmr}{DoD FMR}{Department of Defense Financial Management Regulation}
 \newacronym{fmr}{FMR}{Financial Management Regulation}
 \newacronym{btr}{BTR}{Below-Threshold Reprogramming}
 \newacronym{ir}{IR}{Internal Reprogramming}
@@ -760,6 +632,7 @@
 \newacronym{ait}{AIT}{Alteration Installation Team}
 \newacronym{osic}{OSIC}{On-Site Installation Coordinator}
 \newacronym{moa}{MOA}{Memorandum of Agreement}
+\newacronym{adcon}{ADCON}{Administrative Control}
 \newacronym{opcon}{OPCON}{Operational Control}
 \newacronym{canes}{CANES}{Consolidated Afloat Networks and Enterprise Services}
 \newacronym{aws}{AWS}{Aegis Weapon System}
@@ -818,7 +691,7 @@
 \newacronym{optest}{OT}{Operational Test}
 \newacronym{techeval}{TECHEVAL}{Technical Evaluation}
 \newacronym{opeval}{OPEVAL}{Operational Evaluation}
-\newacronym{dasdte}{DASW(T\&E)}{Deputy Assistant Secretary of War for Test and Evaluation}
+\newacronym{dasdte}{DASD(T\&E)}{Deputy Assistant Secretary of Defense for Test and Evaluation}
 \newacronym{cdt}{CDT}{Chief Developmental Tester}
 \newacronym{ldto}{LDTO}{Lead Developmental Test and Evaluation Organization}
 \newacronym{ctp}{CTP}{Critical Technical Parameter}
@@ -909,7 +782,6 @@
 \newacronym{usmc}{USMC}{United States Marine Corps}
 \newacronym{usn}{USN}{United States Navy}
 \newacronym{usnr}{USNR}{United States Navy Reserve}
-\newacronym{wiu}{WIU}{War Innovation Unit}
 \newacronym[
 	short={\glsentryshort{wiu}},
 	long={\glsentrylong{wiu}}
