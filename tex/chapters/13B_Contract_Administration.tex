@@ -1,0 +1,128 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% ====================
+% File: 13B_Contract_Administration.tex
+% ====================
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+
+% === CONTRACT ADMINISTRATION (EDO 3.2.6) ===
+\section{Contract Administration}
+
+\subsection{Summary}
+\begin{description}
+  \item[\textbf{Role in the process.}] Contract administration is a post-award function that protects Government interests, monitors contractor performance, manages changes, resolves disputes, and closes out contracts~\autocite{edo-3-2-6-contract-administration-2025}.
+  \item[\textbf{Key organizations.}] \ac{dcma}, \ac{dcaa}, and \ac{dfas} provide contract management, audit, and payment support to keep contracts compliant and funded~\autocite{edo-3-2-6-contract-administration-2025}.
+  \item[\textbf{Key personnel.}] The \ac{pco}, \ac{aco}, \ac{cor}, and \ac{tco} coordinate with the \ac{pmo} and program integrator to manage contract execution~\autocite{edo-3-2-6-contract-administration-2025}.
+  \item[\textbf{Changes and commitments.}] Distinguish change orders from supplemental agreements, track NECP/ECP actions, and avoid constructive changes and unauthorized commitments~\autocite{edo-3-2-6-contract-administration-2025}.
+  \item[\textbf{Disputes and termination.}] Use \ac{adr} and the disputes process, and apply termination for convenience, cause, or default based on commercial/noncommercial context~\autocite{edo-3-2-6-contract-administration-2025}.
+\end{description}
+
+\subsection{Role in the Contracting Process}
+\begin{itemize}
+  \item Manage Government interests and monitor contractor quality, cost, and performance.
+  \item Ensure contractor payment, administer contract modifications, and verify compliance with terms.
+  \item Resolve disputes and execute contract close-out activities~\autocite{edo-3-2-6-contract-administration-2025}.
+\end{itemize}
+
+\subsection{Administration Organizations}
+\begin{description}
+  \item[\textbf{\ac{dcma}.}] Provides worldwide contract administration for non-shipbuilding contracts; functions include contract management, quality assurance, engineering/production oversight, property management, and program support~\autocite[\S~42.302]{FAR}~\autocite{edo-3-2-6-contract-administration-2025}.
+  \item[\textbf{\ac{dcaa}.}] Performs contract audit services and financial advisory support before and after award to inform negotiation, administration, and close-out actions~\autocite{edo-3-2-6-contract-administration-2025}.
+  \item[\textbf{\ac{dfas}.}] Executes contract payments and must meet Prompt Payment Act timelines to protect contractor cash flow, especially for small businesses~\autocite{edo-3-2-6-contract-administration-2025}.
+\end{description}
+
+\begin{longtblr}
+  [
+  caption = {Contract administration organizations and services.},
+  label   = {tab:contract-admin-orgs},
+  entry   = {Contract Administration Organizations},
+  remark{\tSource} = {\tabCite{edo-3-2-6-contract-administration-2025}}
+  ]{colspec = {@{} L L L L @{} }}
+  \toprule
+  {Organization} & {Program contract support} & {Financial support} & {Relationship to program} \\
+  \midrule
+  DCMA & Full spectrum of contract support & Transaction processing & Assistance \\
+  DCAA & Contract audit & Transaction processing & Audit \\
+  DFAS & Contract payments & Transaction processing & Functional \\
+  \bottomrule
+\end{longtblr}
+
+\subsection{Key Personnel and Relationships}
+\begin{description}
+  \item[\textbf{\ac{aco} and \ac{cao}.}] \ac{aco}s perform contract administration functions assigned by the \ac{pco} and operate within the \ac{cao}; \ac{supship} and \ac{rmc} equivalents perform \ac{aco} roles for shipbuilding and overhaul work~\autocite[\S~42.302]{FAR}~\autocite{edo-3-2-6-contract-administration-2025}.
+  \item[\textbf{Program integrator.}] The program integrator serves as the \ac{cao} focal point for the program, leads the program support team, and provides status updates to the \ac{pmo} and \ac{dcma} chain of command~\autocite{edo-3-2-6-contract-administration-2025}.
+  \item[\textbf{\ac{cor}.}] The \ac{co} appoints qualified personnel as \ac{cor}s with written authority; unauthorized acts can create personal liability~\autocite{edo-3-2-6-contract-administration-2025}.
+  \item[\textbf{\ac{tco}.}] After a termination notice, the \ac{tco} negotiates an equitable settlement with the contractor~\autocite{edo-3-2-6-contract-administration-2025}.
+\end{description}
+
+\subsection{PMO and CAO Coordination}
+\begin{itemize}
+  \item Involve the \ac{cao} early, establish a \ac{moa}, and conduct a combined post-award conference.
+  \item Inform the \ac{cao} of program developments, reviews (e.g., \ac{dab}), and funding issues; notify the \ac{cao} of planned visits~\autocite[\S~42.402]{FAR}~\autocite{edo-3-2-6-contract-administration-2025}.
+\end{itemize}
+
+\subsection{Cash Flow}
+Timely Government payments drive contractor cash flow needed for materials, payroll, and subcontractor bills; late payments increase financing costs and can degrade performance, especially for small businesses~\autocite{edo-3-2-6-contract-administration-2025}.
+
+\subsection{Contract Changes and Modifications}
+\begin{description}
+  \item[\textbf{Change proposals.}] \ac{necp} and \ac{ecp} proposals modify scope, cost, or configuration; value engineering changes save money and share savings with the contractor~\autocite{edo-3-2-6-contract-administration-2025}.
+  \item[\textbf{Deviations and waivers.}] Deviations authorize pre-manufacture nonconformance; waivers accept nonconformance during or after manufacture as suitable-as-is, often with reduced cost~\autocite{edo-3-2-6-contract-administration-2025}.
+  \item[\textbf{Modification requests.}] \acp{fmrmod} and \acp{hmr} authorize \ac{aco}-approved contract modifications based on supporting \ac{necp}/\ac{ecp} packages~\autocite{edo-3-2-6-contract-administration-2025}.
+  \item[\textbf{Contract changes.}] Supplemental agreements are bilateral modifications with equitable adjustments; change orders are unilateral and increase Government risk (undefinitized liabilities) while performance continues~\autocite{edo-3-2-6-contract-administration-2025}.
+\end{description}
+
+\subsection{NECP/ECP Approval Levels}
+\begin{description}
+  \item[\textbf{Level 1 (OPNAV).}] Changes to military characteristics, technical specifications exceeding the CNO ship cost adjustment, schedule slips beyond contract delivery, and changes with reclamas by the \ac{spm} or \ac{ccb} sponsor.
+  \item[\textbf{Level 2 (SYSCOM).}] Changes affecting multiple program managers where a common decision cannot be reached.
+  \item[\textbf{Level 3 (\ac{spm}).}] Field-activity or contractor changes affecting dates, guarantees, incentives, hull strength or safety, interfaces, or significant cost impacts.
+  \item[\textbf{Level 4 (Field Activity).}] Changes not requiring higher approval~\autocite{edo-3-2-6-contract-administration-2025}.
+\end{description}
+
+\subsection{Constructive Changes and Unauthorized Commitments}
+\begin{description}
+  \item[\textbf{Constructive change.}] An authorized Government act (or failure to act) interpreted as a change order, requiring ratification and equitable adjustment when performance goes beyond minimum requirements~\autocite{edo-3-2-6-contract-administration-2025}.
+  \item[\textbf{Unauthorized commitment.}] An agreement made by a Government representative without authority; only the \ac{ko} can bind the Government, and ratification is required~\autocite[\S~1.602-3]{FAR}~\autocite{edo-3-2-6-contract-administration-2025}.
+\end{description}
+
+\subsection{Privity of Contract}
+The Government has a direct contractual relationship with the prime contractor, not subcontractors; administration actions must respect this privity~\autocite{edo-3-2-6-contract-administration-2025}.
+
+\subsection{Disputes and Alternative Dispute Resolution}
+\begin{description}
+  \item[\textbf{ADR.}] \ac{adr} promotes early, principled settlement of disputes and is preferred before formal processes~\autocite[\S~33.204]{FAR}~\autocite{edo-3-2-6-contract-administration-2025}.
+  \item[\textbf{Disputes process.}] If unresolved at the contracting officer level, contractors may use the disputes process under the Contract Disputes Act~\autocite[\S~33.202]{FAR}~\autocite{edo-3-2-6-contract-administration-2025}.
+\end{description}
+
+\subsection{Termination Types and Notices}
+\begin{description}
+  \item[\textbf{Convenience.}] Used when requirements change, funds are insufficient, quantities shrink, or Government needs evolve; it is a unique Government right~\autocite{edo-3-2-6-contract-administration-2025}.
+  \item[\textbf{Cause v.s.\ default.}] Termination for cause applies to commercial contracts; termination for default applies to noncommercial contracts when performance fails~\autocite[\S~52.212-4]{FAR}~\autocite{edo-3-2-6-contract-administration-2025}.
+  \item[\textbf{Notices.}] Cure notices provide 10 days to remedy failures; show-cause notices apply when time is insufficient or cure fails; termination notices explain consequences~\autocite{edo-3-2-6-contract-administration-2025}.
+\end{description}
+
+\subsection{Commercial Item Definitions}
+\begin{description}
+  \item[\textbf{Commercial products and services.}] FAR 2.101 definitions cover products, services, and non-developmental items available in the commercial marketplace, including customary or minor modifications~\autocite[\S~2.101]{FAR}~\autocite{edo-3-2-6-contract-administration-2025}.
+  \item[\textbf{\ac{cots}.}] \ac{cots} items are sold in substantial quantities in the commercial marketplace and offered to the Government without modification~\autocite[\S~2.101]{FAR}~\autocite{edo-3-2-6-contract-administration-2025}.
+\end{description}
+
+\subsection{Government Obligation to Pay}
+For cost-reimbursement contracts, the Government pays allowable costs incurred before termination, costs necessary after termination for default, approved subcontractor settlements, and prorated fees; excusable delays include epidemics, strikes, floods, Government actions, freight embargoes, fire, and unusually severe weather~\autocite{edo-3-2-6-contract-administration-2025}.
+
+%====================
+% End of file
+%====================
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
+\end{document}

@@ -355,12 +355,19 @@
 \newacronym{ko}{KO}{Contracting Officer}
 \newacronym{pco}{PCO}{Procuring Contracting Officer}
 \newacronym{aco}{ACO}{Administrative Contracting Officer}
+\newacronym{cao}{CAO}{Contract Administration Office}
 \newacronym{tco}{TCO}{Termination Contracting Officer}
 \newacronym{cor}{COR}{Contracting Officer's Representative}
 \newacronym[
 	shortplural={HCAs},
 	longplural={Head Contracting Activities}
 ]{hca}{HCA}{Head Contracting Activity}
+\newacronym{adr}{ADR}{Alternative Dispute Resolution}
+\newacronym{ccb}{CCB}{Configuration Control Board}
+\newacronym{ecp}{ECP}{Engineering Change Proposal}
+\newacronym{fmrmod}{FMR}{Field Modification Request}
+\newacronym{hmr}{HMR}{Headquarters Modification Request}
+\newacronym{necp}{NECP}{Non-Engineering Change Proposal}
 \newacronym{ssac}{SSAC}{Source Selection Advisory Council}
 \newacronym{ssplan}{SSP}{Source Selection Plan}
 \newacronym{ddc}{DD\&C}{Detailed Design and Construction}
