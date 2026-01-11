@@ -1,0 +1,141 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% ====================
+% File: 17D_Software_Acquisition_Environment.tex
+% ====================
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+% === Software Acquisition Environment (EDO 3.4.1) ===
+\section{Software Acquisition Environment}
+
+\subsection{Summary}
+\begin{description}
+  \item[\textbf{Computer fundamentals.}] A computer receives input, processes data, stores it, and produces outputs; software provides the instructions that make the system operate~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{Software importance.}] Software drives risk for many programs, requires continuous updates, and continues to grow in size and complexity across modern weapon systems~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{Software-intensive systems.}] A system is software-intensive when software is a major risk driver for development cost, process, time, or functionality~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{System domains.}] DoW software domains include weapon systems, \ac{c4isr} systems, and \ac{dbs} systems, each with distinct architecture, data latency, and mission focus~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{Policy environment.}] The Clinger-Cohen Act and \ac{dodi}~5000.02, \ac{dodi}~5000.75, and \ac{dodi}~5000.87 set expectations for software acquisition, modular delivery, and interoperability~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+\end{description}
+
+\subsection{Computer Basics}
+\begin{description}
+  \item[\textbf{Computer.}] A device that receives data through inputs, processes it, stores it, and provides outputs; inputs include sensors such as pressure, temperature, radar, or electronic warfare sensors~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{Software.}] Instructions that allow computer components to operate and communicate; includes system software (operating systems) and application software written in programming languages~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+\end{description}
+
+\subsection{Programming Language Categories}
+\begin{description}
+  \item[\textbf{Machine language.}] Binary code (0s and 1s) that computers directly execute~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{Assembly language.}] Mnemonics translated to machine code by an assembler~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{Higher-order languages.}] Languages such as C++ or Java compiled into machine code, enabling programmers to work without detailed hardware knowledge~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{Fourth-generation languages.}] Higher-level languages closer to human language (for example, SQL or LabVIEW)~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+\end{description}
+
+\subsection{The Importance of Software}
+\begin{description}
+  \item[\textbf{Mission dependence.}] Software is a crucial and growing part of weapon systems and the national security mission~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{Risk driver.}] Software challenges drive risk across a large share of acquisition programs~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{Continuous updates.}] Software does not end at delivery; it requires continuous updates and sustainment~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{Growing complexity.}] Source lines of code have grown dramatically across successive aircraft generations, highlighting the scale of software growth~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+\end{description}
+
+\subsection{Software-Intensive System Definition}
+\begin{description}
+  \item[\textbf{Definition.}] A software-intensive system is one where software has essential influence on system design, construction, deployment, and evolution~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{DoW threshold.}] In DoW, software is considered intensive when it is a major risk driver for development cost, process, time, or system functionality~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+\end{description}
+
+\subsection{Classifications of Software-Intensive Systems}
+\begin{description}
+  \item[\textbf{Weapon systems.}] Purpose-built software, embedded hardware, unique or proprietary architecture, safety as the primary design feature, and real-time data measured in nanoseconds~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{\ac{c4isr} systems.}] Mix of proprietary and \ac{cots} architecture with security as the primary design feature and data lifespans measured in seconds (near real-time)~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{\ac{dbs} systems.}] Routine administrative systems built on \ac{cots} architecture with privacy as the primary design feature and data lifespans measured in hours or longer~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+\end{description}
+
+\subsection{Software-Intensive System Summary}
+\begin{description}
+  \item[\textbf{Weapons.}] Safety and performance driven, real-time sensor-to-shooter environment~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{\ac{c4isr}.}] Security and decision support driven, near real-time tactical and strategic command environments~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{\ac{dbs}.}] Privacy and administrative driven, data-intensive business environments with non-real-time data~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+\end{description}
+
+\subsection{Software Management Policies and Practices}
+\begin{itemize}
+  \item Use robust systems engineering, open architectures, and \ac{cots} products where practicable~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item Exploit software reuse opportunities and select contractors with relevant domain experience and mature development processes~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item Plan early for transition to support activities, including documentation, host systems, test beds, and tools needed for life-cycle support~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+\end{itemize}
+
+\subsection{Clinger-Cohen Act (CCA) of 1996}
+\begin{description}
+  \item[\textbf{Structure.}] Combines the Federal Acquisition Reform Act and the Information Technology Management Reform Act~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{ITMRA focus.}] Sets \ac{dod} policy for software acquisition with life-cycle management and accountability through \acp{cio}~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{Key themes.}] Capital planning and investment control via \ac{omb}, performance-based management, incremental and modular acquisitions, and \ac{cots} preference~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{National security systems.}] Defines national security systems as intelligence, cryptologic, command and control systems, or software integral to weapon systems~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{Overall impact.}] The Clinger-Cohen Act governs acquisition of software-intensive systems across the federal government~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+\end{description}
+
+\subsection{Clinger-Cohen Act Requirements}
+\begin{itemize}
+  \item Conduct an analysis of alternatives and an economic analysis (or life-cycle cost estimate for non-automated information systems)~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item Verify the acquisition supports core DoW functions and no better source exists in the private or public sector~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item Establish clear accountability, outcome-based performance measures, and program metrics linked to strategic goals~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item Ensure consistency with DoW information enterprise architecture and standards, including a cybersecurity strategy aligned to policy and architecture~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item Use modular contracting and phased, successive increments that deliver measurable benefit and redesign processes to maximize \ac{cots} use~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item Register mission-critical and mission-essential systems with the DoW CIO~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+\end{itemize}
+
+\subsection{Commercial Off-The-Shelf Software}
+\begin{description}
+  \item[\textbf{Benefits.}] Can save design and development cost, reduce risk, enable rapid prototyping, and leverage industry expertise~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{Tradeoffs.}] Still requires integration and qualification, has configuration-management challenges, and introduces vendor-driven release schedules and licensing costs~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{Security.}] Security characteristics of \ac{cots} solutions may be poorly understood and require additional testing~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+\end{description}
+
+\subsection{DoW Instruction Provisions}
+\begin{description}
+  \item[\textbf{\ac{dodi}~5000.02.}] Covers acquisition categories, systems engineering, program management, test and evaluation, acquisition of \ac{it}, human systems integration, and cybersecurity~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{\ac{dodi}~5000.75.}] Implements Clinger-Cohen requirements for business systems, minimizes \ac{cots} customization, and uses a tailorable \ac{bcac} with authority-to-proceed decision points~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{\ac{dodi}~5000.87.}] Establishes the Software Acquisition Pathway, exempts software programs from \ac{mdap} treatment and \ac{jcids}, streamlines requirements and budgeting, and integrates Agile, DevSecOps, Lean, and user-centered design~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+\end{description}
+
+\subsection{Business Capability Acquisition Cycle}
+\begin{itemize}
+  \item Streamlines activities to align with rapid, frequent, and measurable deliveries~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item Brings the user closer to the acquisition community~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item Delivers meaningful capability early and often~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+\end{itemize}
+
+\subsection{Software Items}
+\begin{description}
+  \item[\textbf{Building blocks.}] Software items are smaller software building blocks used to manage requirements, test qualification, control interfaces, ensure configuration management, and mitigate risk~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{Decomposition.}] Software items can be broken into smaller software units for programming, and lack of control increases risk and vulnerability~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+\end{description}
+
+\subsection{Interoperability and Architecture}
+\begin{description}
+  \item[\textbf{Net-ready.}] DoW systems must be \ac{nr} and interoperable in compliance with enterprise architecture; net-ready certification follows \ac{dodi}~8330.01~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item[\textbf{Architecture framework.}] \ac{dodaf} provides the overarching framework for interoperability and architecture descriptions, with tailored views selected by the sponsor~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+\end{description}
+
+\subsection{Quick Review}
+\begin{itemize}
+  \item A software-intensive system is one in which software is a major risk driver for development cost, time, process, or functionality~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item Software-intensive system classifications include weapon systems, \ac{c4isr} systems, and \ac{dbs} systems~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
+  \item Which law drives DoW software acquisition policy~\autocite{edo-3-4-1-software-acquisition-environment-2025}? \textbf{Answer:} The Clinger-Cohen Act.
+\end{itemize}
+
+%====================
+% End of file
+%====================
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
+\end{document}
