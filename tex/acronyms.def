@@ -286,6 +286,9 @@
 \newacronym{dcape}{DCAPE}{Director, CAPE}
 \newacronym{drfprd}{DRFPRD}{Development Request for Proposal Release Decision}
 \newacronym{mdap}{MDAP}{Major Defense Acquisition Program}
+\newacronym{mais}{MAIS}{Major Automated Information System}
+\newacronym{cce}{CCE}{Component Cost Estimate}
+\newacronym{ccp}{CCP}{Component Cost Position}
 
 % --- Requirements Systems & Data ---
 
@@ -404,6 +407,7 @@
 \newacronym{sap}{SAP}{Simplified Acquisition Procedures}
 \newacronym{sat}{SAT}{Simplified Acquisition Threshold}
 \newacronym{ucf}{UCF}{Uniform Contract Format}
+\newacronym{gfe}{GFE}{Government-Furnished Equipment}
 \newacronym{idiq}{IDIQ}{Indefinite-Delivery, Indefinite-Quantity}
 \newacronym{ot}{OT}{Other Transaction}
 \newacronym{hubzone}{HUBZone}{Historically Underutilized Business Zone}
