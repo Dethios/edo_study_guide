@@ -275,6 +275,7 @@
 ]{cape}{CAPE}{Cost Assessment and Program Evaluation}
 \newacronym{cots}{COTS}{Commercial Off-the-Shelf}
 \newacronym{actd}{ACTD}{Advanced Concept Technology Demonstration}
+\newacronym{atd}{ATD}{Advanced Technology Demonstration}
 \newacronym{bbp}{BBP}{Better Buying Power}
 \newacronym{btb}{BtB}{Back to Basics}
 \newacronym{caiv}{CAIV}{Cost as an Independent Variable}
@@ -292,6 +293,14 @@
 \newacronym{peshe}{PESHE}{Programmatic Environmental, Safety, and Occupational Health Evaluation}
 \newacronym{ippd}{IPPD}{Integrated Product and Process Development}
 \newacronym{osa}{OSA}{Open Systems Architecture}
+\newacronym{duap}{DUAP}{Dual Use Applications Program}
+\newacronym{ird}{IR\&D}{Independent Research and Development}
+\newacronym{mantech}{ManTech}{Manufacturing Technology}
+\newacronym{t2}{T2}{Technology Transfer}
+\newacronym{ffrdc}{FFRDC}{Federally Funded Research and Development Center}
+\newacronym{uarc}{UARC}{University Affiliated Research Center}
+\newacronym{jctd}{JCTD}{Joint Concept Technology Demonstration}
+\newacronym{mua}{MUA}{Military Utility Assessment}
 \newacronym{rdais}{RDAIS}{Research, Development, and Acquisition Information System}
 \newacronym{ucr}{UCR}{Unit Cost Report}
 \newacronym{cpa}{CPA}{Chairman's Program Assessment}
@@ -348,6 +357,8 @@
 	shortplural={TRLs},
 	longplural={Technology Readiness Levels}
 ]{trl}{TRL}{Technology Readiness Level}
+\newacronym{irl}{IRL}{Integration Readiness Level}
+\newacronym{srl}{SRL}{System Readiness Level}
 \newacronym{tra}{TRA}{Technology Readiness Assessment}
 \newacronym{ramc}{RAM-C}{Reliability, Availability, and Maintainability Cost Rationale}
 \newacronym{volt}{VOLT}{Validated Online Life-cycle Threat}
