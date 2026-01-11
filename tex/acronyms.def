@@ -17,22 +17,22 @@
 \newacronym{cjadc2}{CJADC2}{Combined Joint All-Domain Command and Control}
 \newacronym{jsd}{JSD}{Joint Staffing Designator}
 \newacronym{fcb}{FCB}{Functional Capabilities Board}
-\newacronym{dod}{DoD}{Department of Defense}
-\newacronym{osd}{OSD}{Office of the Secretary of Defense}
+\newacronym{dod}{DoW}{Department of War}
+\newacronym{osd}{OSW}{Office of the Secretary of War}
 \newacronym{dae}{DAE}{Defense Acquisition Executive}
 \newacronym{don}{DON}{Department of the Navy}
 \newacronym{secnav}{SECNAV}{Secretary of the Navy}
-\newacronym{secdef}{SECDEF}{Secretary of Defense}
-\newacronym{usd}{USD}{Under Secretary of Defense}
-\newacronym{usdas}{USD(A\&S)}{Under Secretary of Defense for Acquisition and Sustainment}
-\newacronym{usdre}{USD(R\&E)}{Under Secretary of Defense for Research and Engineering}
-\newacronym{usdp}{USD(P)}{Under Secretary of Defense for Policy}
-\newacronym{usdc}{USD(C)}{Under Secretary of Defense (Comptroller)}
-\newacronym{usdins}{USD(I\&S)}{Under Secretary of Defense for Intelligence and Security}
-\newacronym{usdis}{{USD(I\&S)}}{Under Secretary of Defense for Intelligence and Security}
-\newacronym{ousdas}{OUSD(A\&S)}{Office of the Under Secretary of Defense for Acquisition and Sustainment}
-\newacronym{ousdre}{OUSD(R\&E)}{Office of the Under Secretary of Defense for Research and Engineering}
-\newacronym{ousdc}{OUSD(C)}{Office of the Under Secretary of Defense (Comptroller)}
+\newacronym{secdef}{SECWAR}{Secretary of War}
+\newacronym{usd}{USW}{Under Secretary of War}
+\newacronym{usdas}{USW(A\&S)}{Under Secretary of War for Acquisition and Sustainment}
+\newacronym{usdre}{USW(R\&E)}{Under Secretary of War for Research and Engineering}
+\newacronym{usdp}{USW(P)}{Under Secretary of War for Policy}
+\newacronym{usdc}{USW(C)}{Under Secretary of War (Comptroller)}
+\newacronym{usdins}{USW(I\&S)}{Under Secretary of War for Intelligence and Security}
+\newacronym{usdis}{{USW(I\&S)}}{Under Secretary of War for Intelligence and Security}
+\newacronym{ousdas}{OUSW(A\&S)}{Office of the Under Secretary of War for Acquisition and Sustainment}
+\newacronym{ousdre}{OUSW(R\&E)}{Office of the Under Secretary of War for Research and Engineering}
+\newacronym{ousdc}{OUSW(C)}{Office of the Under Secretary of War (Comptroller)}
 \newacronym{asnrdanda}{{ASN(RD\&A)}}{Assistant Secretary of the Navy for Research, Development and Acquisition}
 \newacronym{asn}{ASN}{Assistant Secretary of the Navy}
 \newacronym{dasn}{DASN}{Deputy Assistant Secretary of the Navy}
@@ -289,7 +289,7 @@
 
 \newacronym{km-ds}{KM/DS}{Knowledge Management and Decision Support}
 \newacronym{conops}{CONOPS}{Concept of Operations}
-\newacronym{dodaf}{DoDAF}{Department of Defense Architecture Framework}
+\newacronym{dodaf}{DoWAF}{Department of War Architecture Framework}
 \newacronym{is}{IS}{Information System}
 \newacronym{it}{IT}{Information Technology}
 \newacronym{avview}{AV}{All Viewpoint}
@@ -301,8 +301,8 @@
 	shortplural={APIs},
 	longplural={Application Programming Interfaces}
 ]{api}{API}{Application Programming Interface}
-\newacronym{dodd}{DoDD}{Department of Defense Directive}
-\newacronym{dodi}{DoDI}{Department of Defense Instruction}
+\newacronym{dodd}{DoWD}{Department of War Directive}
+\newacronym{dodi}{DoWI}{Department of War Instruction}
 \newacronym{dagir}{DAGIR}{Data and Applications Government-owned Interoperable Repositories}
 \newacronym{emd}{EMD}{Engineering and Manufacturing Development}
 \newacronym{ibr}{IBR}{Integrated Baseline Review}
@@ -540,7 +540,7 @@
 \newacronym{nor}{NOR}{Net Operating Result}
 \newacronym{slr}{SLR}{Stabilized Labor Rate}
 \newacronym{dfas}{DFAS}{Defense Finance and Accounting Service}
-\newacronym{dodfmr}{DoD FMR}{Department of Defense Financial Management Regulation}
+\newacronym{dodfmr}{DoW FMR}{Department of War Financial Management Regulation}
 \newacronym{fmr}{FMR}{Financial Management Regulation}
 \newacronym{btr}{BTR}{Below-Threshold Reprogramming}
 \newacronym{ir}{IR}{Internal Reprogramming}
@@ -691,7 +691,7 @@
 \newacronym{optest}{OT}{Operational Test}
 \newacronym{techeval}{TECHEVAL}{Technical Evaluation}
 \newacronym{opeval}{OPEVAL}{Operational Evaluation}
-\newacronym{dasdte}{DASD(T\&E)}{Deputy Assistant Secretary of Defense for Test and Evaluation}
+\newacronym{dasdte}{DASW(T\&E)}{Deputy Assistant Secretary of War for Test and Evaluation}
 \newacronym{cdt}{CDT}{Chief Developmental Tester}
 \newacronym{ldto}{LDTO}{Lead Developmental Test and Evaluation Organization}
 \newacronym{ctp}{CTP}{Critical Technical Parameter}

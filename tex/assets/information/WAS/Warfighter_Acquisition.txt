@@ -1,9 +1,9 @@
 Warfighter Acquisition System: Replacing JCIDS in Requirements and Acquisition
-In 2025, the Department of Defense undertook sweeping reform to accelerate capability development by replacing the Joint Capabilities Integration and Development System (JCIDS) with a streamlined, warfighter-centric framework. This shift emphasizes solving operational problems quickly and efficiently, leveraging experimentation, direct service-level authority, and agile acquisition practices.
+In 2025, the Department of War undertook sweeping reform to accelerate capability development by replacing the Joint Capabilities Integration and Development System (JCIDS) with a streamlined, warfighter-centric framework. This shift emphasizes solving operational problems quickly and efficiently, leveraging experimentation, direct service-level authority, and agile acquisition practices.
 Governing Policies and Official Guidance
-Executive Order 14265 and DoD-level memoranda issued in 2025 ordered the JCIDS sunset and the transition to a new framework.
+Executive Order 14265 and DoW-level memoranda issued in 2025 ordered the JCIDS sunset and the transition to a new framework.
 JROC Role Reduction: The Joint Requirements Oversight Council (JROC) now focuses only on a short list of joint “Key Operational Problems” (KOPs).
-Requirements and Resourcing Alignment Board (RRAB): New high-level board co-chaired by the Deputy Secretary of Defense and the Vice Chairman of the Joint Chiefs to align problem-solving with funding.
+Requirements and Resourcing Alignment Board (RRAB): New high-level board co-chaired by the Deputy Secretary of War and the Vice Chairman of the Joint Chiefs to align problem-solving with funding.
 Joint Acceleration Reserve (JAR): New rapid-reaction fund to bridge the “valley of death” in prototyping.
 Mission Engineering and Integration Activity (MEIA): Cross-service experiments to define needs through demonstration and prototyping.
 Portfolio Acquisition Executives (PAEs): Service-led portfolios with direct accountability and authority for tailoring and delivery.
@@ -61,10 +61,10 @@ Faster authority pathways and less HQ review.
 Portfolio ownership and time-based metrics are becoming standard.
 Training and DAU courses will focus on agility, not compliance.
 Primary Sources
-DoD Memorandum: “Reforming the Joint Requirements Process to Accelerate Fielding of Warfighting Capabilities” (Aug/Nov 2025)
+DoW Memorandum: “Reforming the Joint Requirements Process to Accelerate Fielding of Warfighting Capabilities” (Aug/Nov 2025)
 USD(A&S)/USD(R&E) Joint Directive on Mission Engineering
 Executive Order 14265
 JCIDS Rescission Guidance
-RRAB and JAR implementation memos (DoD CAPE)
-This summary distills key structural changes for use in formal DoD acquisition training, internal EDO guides, or as briefers for senior military leadership.
+RRAB and JAR implementation memos (DoW CAPE)
+This summary distills key structural changes for use in formal DoW acquisition training, internal EDO guides, or as briefers for senior military leadership.
 For citation format in LaTeX or reference management, consult the IEEE-formatted .tex version available upon request.
