@@ -739,11 +739,16 @@
 \newacronym{shipalt}{SHIPALT}{Ship Alteration}
 \newacronym{aer}{AER}{Alteration Equivalent to Repair}
 \newacronym{cmp}{CMP}{Class Maintenance Plan}
+\newacronym{icmp}{ICMP}{Integrated Class Maintenance Plan}
+\newacronym{tfp}{TFP}{Technical Foundation Paper}
 \newacronym{csmp}{CSMP}{Current Ship's Maintenance Project}
 \newacronym{oem}{OEM}{Original Equipment Manufacturer}
 \newacronym{awp}{AWP}{Availability Work Package}
 \newacronym{bawp}{BAWP}{Baseline Availability Work Package}
 \newacronym{lrms}{LRMS}{Long-Range Maintenance Schedule}
+\newacronym{fast}{FAST}{Fleet Availability Scheduling Team}
+\newacronym{fmbod}{FMBOD}{Fleet Maintenance Board of Directors}
+\newacronym{warr}{WARR}{Workload and Resource Report}
 \newacronym{wpi}{WPI}{Work Package Integration}
 \newacronym{macmo}{MAC-MO}{Multiple Award Contract, Multi-Order}
 \newacronym{awi}{AWI}{Availability Work Integration}
@@ -776,11 +781,32 @@
 \newacronym{aws}{AWS}{Aegis Weapon System}
 \newacronym{gpnts}{GPNTS}{GPS-based Positioning, Navigation, and Timing Service}
 \newacronym{nde}{NDE}{Navy Data Environment}
+\newacronym{ndenm}{NDE-NM}{Navy Data Environment - Navy Modernization}
 \newacronym{nsssy}{NSS-SY}{Naval Sustainment System---Shipyards}
 \newacronym{sfrm}{SFRM}{Surface Force Readiness Manual}
 \newacronym{ofrp}{OFRP}{Optimized Fleet Response Plan}
+\newacronym{eoc}{EOC}{Engineered Operating Cycle}
+\newacronym{prog}{PROG}{Progressive Maintenance}
+\newacronym{imp}{IMP}{Incremental Maintenance Plan}
 \newacronym{cbm}{CBM}{Condition-Based Maintenance}
 \newacronym{cbmp}{CBM+}{Condition-Based Maintenance Plus}
+\newacronym{tdm}{TDM}{Time Directed Maintenance}
+\newacronym{roh}{ROH}{Regular Overhaul}
+\newacronym{coh}{COH}{Complex Overhaul}
+\newacronym{ero}{ERO}{Engineered Refueling Overhaul}
+\newacronym{pma}{PMA}{Phased Maintenance Availability}
+\newacronym{dmp}{DMP}{Depot Modernization Period}
+\newacronym{pia}{PIA}{Planned Incremental Availability}
+\newacronym{dpia}{DPIA}{Docking Planned Incremental Availability}
+\newacronym{sra}{SRA}{Selected Restricted Availability}
+\newacronym{dsra}{DSRA}{Docking Selected Restricted Availability}
+\newacronym{cia}{CIA}{Continuous Incremental Availability}
+\newacronym{tav}{TAV}{Technical Availability}
+\newacronym{rav}{RAV}{Restricted Availability}
+\newacronym{fmav}{FMAV}{Fleet Maintenance Availability}
+\newacronym{cmav}{CMAV}{Continuous Maintenance Period}
+\newacronym{vr}{VR}{Voyage Repair}
+\newacronym{eoh}{EOH}{Engineered Overhaul}
 \newacronym{bdar}{BDAR}{Battle Damage Assessment and Repair}
 \newacronym{ocmf}{OC\&MF}{Operations and Maintenance, Fleet}
 \newacronym{funds-d}{FUNDS-D}{Fleet Modernization Design (engineering) funding}
