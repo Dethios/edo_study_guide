@@ -1,0 +1,149 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% ====================
+% File: 17G_Systems_Engineering_Overview.tex
+% ====================
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+% === Systems Engineering Overview (EDO 3.5.1) ===
+\section{Systems Engineering Overview}
+
+\subsection{Summary}
+\begin{description}
+  \item[\textbf{SE definition.}] Systems engineering is an interdisciplinary management process that evolves and verifies balanced, integrated system solutions to satisfy customer needs across the life cycle~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{DoW policy.}] \ac{dag} and \ac{dodi}~5000.88 position systems engineering as the technical framework that balances cost, schedule, performance, and risk for delivery of capability~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Good design traits.}] Supportability, mission performance, producibility, testability, cost efficiency, integrated software, and technology transition define good design~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{SE process model.}] Eight technical processes and eight technical management processes guide decomposition, realization, and management across the life cycle~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{SEP anchor.}] The \ac{sep} documents the program's technical approach and is required at each milestone review starting at Milestone~A~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+\end{description}
+
+\subsection{Introduction to Systems Engineering}
+\begin{description}
+  \item[\textbf{Purpose.}] Systems engineering provides the technical framework for delivering materiel capability to the warfighter and supports program success~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Approach.}] A methodical, disciplined approach to specification, design, development, realization, management, operations, and retirement~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Lifecycle relevance.}] Systems engineering applies continuously and iteratively across the entire product life cycle~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+\end{description}
+
+\subsection{DoW Policy on Systems Engineering}
+\begin{description}
+  \item[\textbf{Defense Acquisition Guidebook.}] \ac{dag} Chapter~3 frames systems engineering as foundational to balanced cost, schedule, performance, and risk across the program life cycle~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{DoDI 5000.88.}] Emphasizes a structured, multidisciplinary approach that balances cost, schedule, and performance while maintaining acceptable risk~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Best practices.}] Military services, \acp{pm}, and engineering leaders implement concept exploration, mission engineering, technical baselines, reviews, test and evaluation, risk and configuration management, and secure technical decisions~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Documentation.}] The systems engineering approach and processes are documented in the \ac{sep} and updated as programs evolve~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+\end{description}
+
+\subsection{Characteristics of Good Design}
+\begin{itemize}
+  \item Supportability: hardware and software can be sustained across the life cycle~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item Mission performance: meets required performance thresholds~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item Producibility: can be manufactured efficiently~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item Testability: requirements can be verified~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item Cost efficiency: reduces total ownership cost~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item Integrated software: software and hardware integration is planned and verified~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item Technology transition: incorporates technology refresh and transition~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+\end{itemize}
+
+\subsection{Integrated Product and Process Development}
+\begin{description}
+  \item[\textbf{Definition.}] \ac{ippd} integrates acquisition activities using multidisciplinary teams to optimize design, manufacturing, business, and supportability~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Role of \acp{ipt}.}] \acp{ipt} plan, execute, and implement life-cycle decisions~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Key tenets.}] Customer focus, concurrent product and process development, early life-cycle planning, flexible optimization, robust design, event-driven scheduling, multidisciplinary teamwork, empowerment, and proactive risk management~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+\end{description}
+
+\subsection{Systems Engineering Disciplines}
+\begin{description}
+  \item[\textbf{Core disciplines.}] Systems engineering, test and evaluation, life-cycle logistics, science and technology, production and manufacturing, hardware/software engineering, and cybersecurity~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{EDO roles.}] EDOs perform jobs across all of these disciplines~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+\end{description}
+
+\subsection{System Engineering Plan}
+\begin{description}
+  \item[\textbf{Purpose.}] Program office engineers develop the \ac{sep} to communicate and manage the technical approach guiding all program technical activities~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Content.}] Describes technical risks, processes, resources, metrics, products, organizations, and design considerations; updated as the program evolves~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Scope.}] Defines the who, what, where, when, why, and how of the systems engineering approach, including review criteria and tools~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Approval.}] Submitted at each milestone review beginning at Milestone~A and approved by the \ac{mdauthority}~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+\end{description}
+
+\subsection{Systems Engineering Process Model}
+The systems engineering process model includes eight technical management processes and eight technical processes (three decomposition and five realization processes)~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+
+\subsection{Systems Engineering "V" Model}
+\begin{description}
+  \item[\textbf{Iterative application.}] Processes are applied iteratively, recursively, and in parallel across the life cycle~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Left side.}] Decomposition processes translate stakeholder needs into requirements and architecture~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Right side.}] Realization processes build, integrate, verify, validate, and transition the system~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+\end{description}
+
+\subsection{Eight Technical Processes}
+\begin{description}
+  \item[\textbf{Stakeholder requirements definition.}] Translate stakeholder needs into technical requirements~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Requirements analysis.}] Decompose user needs into clear, achievable, verifiable requirements and system functions~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Architecture design.}] Develop alternative design solutions and establish candidate architectures~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Implementation.}] Produce detailed designs and fabrication or software build procedures~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Integration.}] Assemble lower-level elements into higher-level system elements~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Verification.}] Provide evidence the system meets performance requirements; involves developmental testing~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Validation.}] Provide evidence the system meets stakeholder performance in the intended environment (effectiveness, suitability, sustainability, survivability)~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Transition.}] Move system elements to the next level; for end-items, field the system to the user~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+\end{description}
+
+\subsection{Eight Technical Management Processes}
+\begin{description}
+  \item[\textbf{Technical planning.}] Define scope of technical effort and provide inputs to program planning and life-cycle cost~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Decision analysis.}] Convert decision opportunities into traceable, actionable plans~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Technical assessment.}] Compare results to criteria to assess technical maturity, status, and risk~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Requirements management.}] Maintain traceability from user needs to performance specs and delivered capability~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Risk management.}] Identify, analyze, mitigate, and monitor risks to meet cost, schedule, and performance goals~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Configuration management.}] Establish and control baselines and manage technical change across reviews and audits~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Technical data management.}] Identify and manage technical data and software needed to support the system~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Interface management.}] Ensure interface definition and compliance among system elements and external systems~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+\end{description}
+
+\subsection{Systems Engineering Process Inputs and Outputs}
+\begin{description}
+  \item[\textbf{Inputs.}] Customer needs (missions, \acp{kpp}, \acp{moe}, environments, constraints), technology base, prior SE outputs, program decisions, and commercial standards~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Outputs.}] Decision database, \ac{wbs}, system and configuration item architectures, operational and technical architectures, and program-unique specifications and baselines~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+\end{description}
+
+\subsection{Standards and Specifications}
+\begin{description}
+  \item[\textbf{Standard.}] A description of a process and recommended practices to achieve objectives with sufficient quality~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Specification.}] A technical description of a product or service that documents design and production details~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+\end{description}
+
+\subsection{Program-Unique Specifications}
+\begin{description}
+  \item[\textbf{System specification.}] Describes what the entire system will do; derived from \ac{cdd} \acp{kpp} and includes verification approach~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Item performance specification.}] Defines performance requirements for major subsystems (design-to requirements)~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Item detail specification.}] Defines specific design parameters or build-to requirements~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Item process specification.}] Defines fabrication processes such as welding, soldering, or bonding~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Item material specification.}] Defines raw or semi-fabricated materials such as copper pipe or aluminum wire~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+\end{description}
+
+\subsection{Government and Contractor Roles}
+\begin{description}
+  \item[\textbf{Government.}] Manage total program, set user requirements, ensure responsible design/testing/manufacturing, manage technical risks, and verify solutions meet customer needs~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Contractor.}] Use SE processes for planning, design, and internal testing to meet contractual requirements~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item[\textbf{Shared.}] Translate, define, monitor, ensure quality of, and test the design together~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+\end{description}
+
+\subsection{Quick Review}
+\begin{itemize}
+  \item Systems engineering is a translation and feedback process from operational needs to system requirements~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item The SE process includes eight technical processes and eight technical management processes~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+  \item The \ac{sep} documents the program technical approach and is approved at each milestone review~\autocite{edo-3-5-1-systems-engineering-overview-2025}.
+\end{itemize}
+
+%====================
+% End of file
+%====================
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
+\end{document}
