@@ -1,0 +1,253 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% ====================
+% File: 17J_Acquisition_Logistics.tex
+% ====================
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+% === Acquisition Logistics (EDO 3.5.4) ===
+\section{Acquisition Logistics}
+
+\subsection{Summary}
+\begin{description}
+  \item[\textbf{Discipline.}] Acquisition logistics is a multi-functional technical management discipline spanning design through sustainment and modernization to ensure supportability across the life cycle~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Supportability focus.}] Acquisition logisticians ensure the system is designed for supportability and that the support infrastructure is ready when the system is fielded~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Readiness metrics.}] Readiness is measured through \ac{ram} parameters; early RAM focus improves operational effectiveness and reduces cost~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Cost impact.}] \ac{os} costs often account for roughly 70--80\% of \ac{lcc}, so early design decisions drive long-term affordability~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Product support.}] Product support strategy, \ac{pbl}, \ac{lcsp}, and the 12 \ac{ips} elements integrate sustainment across the life cycle~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{Defining Acquisition Logistics}
+\begin{description}
+  \item[\textbf{Scope.}] A discipline associated with design, development, testing, production, fielding, sustainment, and modernization~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Life-cycle lens.}] Technical and management activities ensure supportability implications are considered early and throughout acquisition~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Goal.}] Field cost-effective systems that achieve peacetime and wartime readiness needs~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{Role of Acquisition Logistics}
+\begin{itemize}
+  \item Ensure the system is designed for supportability~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Design the support infrastructure and support structure required at fielding~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Measure supportability using \ac{ram} readiness parameters~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{itemize}
+
+\subsection{Acquisition Logistics Policy}
+\begin{description}
+  \item[\textbf{PM accountability.}] \ac{dod} policy makes the \ac{pm} accountable for life-cycle management, including early \ac{os} planning and balancing supportability with cost, schedule, and performance~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Design fundamentals.}] \acp{pm} implement design and manufacturing fundamentals that yield reliable and maintainable systems across the service life~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Product support strategy.}] \acp{pm} design an enduring, affordable \ac{pss} with metrics and the best mix of public and private capabilities~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{Policy Implementation: PSM and LCSP}
+\begin{description}
+  \item[\textbf{PSM requirement.}] \ac{mdap} programs require a \ac{psm} per 10~U.S.C.~4324~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{DoW guidance.}] \ac{dodi}~5000.91 states the \ac{pm} is the single point of accountability and the \ac{psm} supports a performance-based \ac{pss} for all covered systems~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Strategy delivery.}] The \ac{psm} develops, plans, and implements a comprehensive \ac{pss}; the \ac{lcsp} is required to capture it~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Business model.}] The \ac{psbm} and 12-step product support strategy process are operationalized through the \ac{lcsp}~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{RAM Definitions}
+Readiness is measured through \ac{ram} parameters~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\begin{description}
+  \item[\textbf{Reliability.}] Ability to perform the mission without failure, degradation, or demand on the support system~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Availability.}] Degree to which an item is operable and committable at mission start for an unknown time~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Maintainability.}] Ability to retain or restore an item to required condition with specified skills, procedures, and resources at prescribed maintenance levels~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{Acquisition Logistics and RAM}
+\begin{description}
+  \item[\textbf{Early objectives.}] \acp{pm} establish RAM objectives early and treat them as design parameters throughout acquisition~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Requirement basis.}] RAM system requirements are derived from capability documents and \ac{toc} considerations, expressed in quantifiable operational terms and measured in test~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{System-wide scope.}] RAM requirements include support and training equipment, manuals, spares, and tools~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{RAM Metrics}
+\begin{description}
+  \item[\textbf{Sustainment KPP.}] For \ac{acat}~I programs, the sustainment \ac{kpp} includes \ac{amavail} and \ac{aoavail}~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Supporting KSAs.}] Reliability (e.g., \ac{mtbf}), maintainability (e.g., \ac{mttr}), and \ac{toc} are mandatory sustainment \acp{ksa} for \ac{acat}~I programs~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Lower ACAT.}] For \ac{acat}~II and below, the sponsor determines sustainment \ac{kpp}/\ac{ksa} applicability~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{RAM Techniques}
+\begin{itemize}
+  \item Design for human engineering, accessibility, visibility, testability, standardization, simplicity, and minimized failures~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Consider \ac{navsup} support, \ac{rcm} analysis, skill requirements, maintenance levels, tools, and test equipment~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{itemize}
+
+\subsection{Design to Minimize Failures}
+\begin{itemize}
+  \item Address mission, environmental, and life-profile demands~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Use stress and worst-case analysis, \ac{fmeca}, and \ac{fta}~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Apply allocation, part/material selection, derating, simplification, and design reviews~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{itemize}
+
+\subsection{Support Costs and Life-Cycle Cost}
+\begin{description}
+  \item[\textbf{Cost share.}] \ac{os} costs are about 70--80\% of total \ac{lcc} for typical programs~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Ship O\&S examples.}] Cost categories include mission personnel, unit-level consumption, intermediate maintenance, depot maintenance, contractor support, sustaining support, and indirect support~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Early influence.}] Early analyses and decisions lock in most life-cycle cost outcomes~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{Logistics-Related Concepts}
+\begin{itemize}
+  \item \ac{ippd}/\acp{ipt} integration and continuous \ac{lcc} consideration~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item \ac{cots}/\ac{ndi} reduce development risk but can increase long-term support risk~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Maintain organic core depot capability and avoid overuse of \ac{cls}~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item \ac{ram} as a force effectiveness multiplier and open systems to enable upgrades~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Cradle-to-grave program management for sustainment outcomes~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{itemize}
+
+\subsection{Performance-Based Logistics}
+\begin{description}
+  \item[\textbf{Definition.}] \ac{pbl} is outcome-based, performance-focused product support through performance-based arrangements~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Not transactional.}] Transactional support purchases parts or repairs as needed; \ac{pbl} focuses on outcomes across the life cycle~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Preferred approach.}] \ac{pbl} is the preferred \ac{dod} approach for product support~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{PBL Metrics and Contracting Strategy}
+\begin{description}
+  \item[\textbf{Metric design.}] Metrics should be defined so outcomes can be tracked, measured, and revalidated; they should drive improvement, efficiency, and innovation~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Contract attributes.}] Effective \ac{pbl} contracts specify requirements, parameters, incentives, and risk mitigation; successful contracts are often fixed-price, multiyear, and align with \ac{far} Part~12~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Funding strategy.}] Funding stability, time, scope, and appropriation category shape \ac{pbl} contract funding~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{Supportability Analysis}
+\begin{description}
+  \item[\textbf{Definition.}] \ac{psa} is a body of procedures used to define system performance and supportability goals~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Methods.}] Common analyses include \ac{fmeca}, \ac{fta}, \ac{rcm}, \ac{lora}, and maintenance task analysis~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{SE integration.}] Supportability analysis is conducted as part of the systems engineering process to ensure supportability is a system performance requirement~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Timing.}] Must occur early in the life cycle to influence design; assessment continues throughout the life cycle~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{Product Support Analysis}
+\begin{description}
+  \item[\textbf{Requirement.}] \ac{psa} is required to create the product support package and is guided by MIL-HDBK-502A~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{System-level start.}] Analysis begins at the system level to shape design and operational concepts~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Cost leverage.}] Early analysis is less costly because it can influence design decisions up front~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{Supportability and the Acquisition Life Cycle}
+\begin{description}
+  \item[\textbf{Milestone A.}] Ensure support considerations are integral to system design requirements and reduce \ac{lcc} early~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Milestone B.}] Identify, develop, and acquire infrastructure for initial fielding and operational support~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Milestone C.}] Ensure the system can be cost-effectively supported across its life cycle~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{Supportability Issues and Impact}
+\begin{itemize}
+  \item Operating requirements, readiness metrics (\ac{aoavail}, \ac{mtbf}, \ac{mttr}), and manpower/skill requirements including \acp{nec}~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Maintenance requirements, repair-vs.-discard decisions, self-diagnostics, and battle damage reparability~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Environment, safety, health, and transportability constraints~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Failure to resolve supportability issues increases \ac{lcc} and degrades readiness; reliability and maintainability must be contract performance parameters~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{itemize}
+
+\subsection{Product Support Business Model}
+\begin{description}
+  \item[\textbf{Framework.}] \ac{psbm} defines how product support is accomplished across components, subsystems, and platforms to balance availability and affordability~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Roles.}] \ac{tlcsm} responsibility lies with the \ac{pm}; life-cycle product support management lies with the \ac{psm}~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Integration.}] \acp{psp} provide support and are integrated by one or more \acp{psi}~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{12-Step Product Support Strategy Process}
+\begin{enumerate}
+  \item Integrate warfighter requirements and support~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Form the product support management \ac{ipt}~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Baseline the system~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Identify and refine performance outcomes~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Conduct business case analysis~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Perform product support value analysis~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Determine support acquisition method(s)~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Designate product support integrator(s)~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Designate product support provider(s)~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Identify and refine financial enablers~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Establish and refine product support agreements~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Implement and provide oversight~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{enumerate}
+
+\subsection{Life-Cycle Sustainment Plan}
+\begin{description}
+  \item[\textbf{Purpose.}] The \ac{lcsp} documents how the program will implement its product support strategy across the life cycle~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Management tool.}] The \ac{lcsp} is a living document that communicates the sustainment approach, resources, and roles~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Not a checklist.}] The \ac{lcsp} is not a static rehash of policy or a milestone-only artifact~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{LCSP Development by Milestone}
+\begin{description}
+  \item[\textbf{Milestone A.}] Focus on sustainment metrics and actions prior to Milestone~B to reduce future \ac{os} costs~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{DRFPRD and Milestone B.}] Finalize sustainment metrics, integrate sustainment with design activities, and refine execution plans for acquisition, fielding, and sustainment competition~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Milestone C.}] Ensure operational supportability and include a comprehensive product support package description, competition plan, and fielding plan~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{12 Integrated Product Support Elements}
+\begin{itemize}
+  \item Product support management~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Design interface~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Sustaining engineering~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Supply support~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Maintenance planning and management~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item \ac{phst}~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Technical data~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Support equipment~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Training and training support~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Manpower and personnel~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Facilities and infrastructure~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Computer resources~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{itemize}
+
+\subsection{IPS Element Highlights}
+\begin{description}
+  \item[\textbf{Product support management.}] Integrates all IPS activities to achieve \acp{kpp} and \acp{ksa} and begins at Milestone~A~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Design interface.}] Ensures RAM parameters are incorporated early and aligned with operational effectiveness and suitability~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Sustaining engineering.}] Minimizes downtime, lowers risk, and drives design and infrastructure changes when needed~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Supply support.}] Establish provisioning and replenishment, including \ac{apl} and \ac{cosal} development~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Maintenance planning.}] Establishes maintenance concept, repair levels, \ac{pmsplan} interface, tools, and facilities~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Packaging and transport.}] Defines resources and methods for preservation, storage, and shipment, including environmental and \ac{phst} considerations~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Technical data.}] Identify minimum technical data needs, documented through the \ac{cdrl}, with special care for software-intensive systems~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Support equipment.}] Identify required test and support equipment and develop the \ac{ael}~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Training.}] Define individual and crew training, develop the \ac{ntp}, and select delivery methods~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Manpower.}] Identify military and civilian skills and minimize manning impacts on \ac{lcc}~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Facilities.}] Identify facility requirements early because major projects have long lead times~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Computer resources.}] Define software life-cycle support plans, configuration management, support agents, and licensing~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{Logistics and Program Planning}
+\begin{description}
+  \item[\textbf{Start point.}] Supportability planning begins in \ac{msa}~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Common issues.}] Training and technical data, manpower, supply support, facilities, and \ac{phst} gaps can derail fielding~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{Fielding and Deployment}
+\begin{description}
+  \item[\textbf{Deployment planning.}] Coordinated by the \ac{pmo} in support of operational commanders; milestones include trained users, deployed teams, spares, and technical data~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Materiel release.}] Certification that logistics deficiencies from OT\&E are corrected and initial fielding resources are available~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{IOC linkage.}] Initial fielding activities culminate in materiel release and \ac{ioc}~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{Post-Production Support}
+\begin{description}
+  \item[\textbf{Activities.}] \ac{cls}, component redesign, \ac{p3i}, data management, multiple sources, open systems, life-of-type buys, spares modernization, training infrastructure, and funded \ac{isea} support~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item[\textbf{Challenges.}] Long life spans, uneconomic order quantities, high spares usage, \ac{dmsms}, proprietary technical data, and technology obsolescence~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{description}
+
+\subsection{Quick Review}
+\begin{itemize}
+  \item Acquisition logistics ensures supportability across the life cycle and is measured by \ac{ram} readiness parameters~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item \ac{os} costs dominate \ac{lcc}; early analysis and design decisions shape affordability~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item \ac{psa}, \ac{psbm}, \ac{pbl}, and \ac{lcsp} integrate product support planning and execution~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+  \item Fielding without infrastructure degrades readiness; post-production support requires proactive risk management~\autocite{edo-3-5-4-acquisition-logistics-2025}.
+\end{itemize}
+
+%====================
+% End of file
+%====================
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
+\end{document}

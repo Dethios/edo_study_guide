@@ -293,6 +293,7 @@
 	longplural={Cost Assessments and Program Evaluations}
 ]{cape}{CAPE}{Cost Assessment and Program Evaluation}
 \newacronym{cots}{COTS}{Commercial Off-the-Shelf}
+\newacronym{ndi}{NDI}{Non-Developmental Item}
 \newacronym{actd}{ACTD}{Advanced Concept Technology Demonstration}
 \newacronym{atd}{ATD}{Advanced Technology Demonstration}
 \newacronym{bbp}{BBP}{Better Buying Power}
@@ -382,6 +383,14 @@
 \newacronym{ipt}{IPT}{Integrated Product Team}
 \newacronym{wipt}{WIPT}{Working-level Integrated Product Team}
 \newacronym{lcsp}{LCSP}{Life-Cycle Sustainment Plan}
+\newacronym{tlcsm}{TLCSM}{Total Life-Cycle Systems Management}
+\newacronym{psm}{PSM}{Product Support Manager}
+\newacronym{pss}{PSS}{Product Support Strategy}
+\newacronym{psbm}{PSBM}{Product Support Business Model}
+\newacronym{psa}{PSA}{Product Support Analysis}
+\newacronym{ips}{IPS}{Integrated Product Support}
+\newacronym{psi}{PSI}{Product Support Integrator}
+\newacronym{psp}{PSP}{Product Support Provider}
 \newacronym{poam}{POA\&M}{Plan of Action and Milestones}
 \newacronym{mca}{MCA}{Major Capability Acquisition}
 \newacronym[
@@ -407,6 +416,10 @@
 \newacronym{srl}{SRL}{System Readiness Level}
 \newacronym{tra}{TRA}{Technology Readiness Assessment}
 \newacronym{ramc}{RAM-C}{Reliability, Availability, and Maintainability Cost Rationale}
+\newacronym{amavail}{Am}{Material Availability}
+\newacronym{aoavail}{Ao}{Operational Availability}
+\newacronym{mtbf}{MTBF}{Mean Time Between Failures}
+\newacronym{mttr}{MTTR}{Mean Time To Repair}
 \newacronym{volt}{VOLT}{Validated Online Life-cycle Threat}
 \newacronym{cta}{CTA}{Capstone Threat Assessment}
 \newacronym[
@@ -484,7 +497,7 @@
 \newacronym{acwp}{ACWP}{Actual Cost of Work Performed}
 \newacronym{ada.acq}{ADA}{Acquisition Data and Analytics}
 \newacronym{cam}{CAM}{Control Account Manager}
-\newacronym{ram}{RAM}{Responsibility Assignment Matrix}
+\newacronym{ram}{RAM}{Reliability, Availability, and Maintainability}
 \newacronym{tcpi}{TCPI}{Total Cost Performance Index}
 \newacronym{vac}{VAC}{Variance at Complete}
 
@@ -766,6 +779,17 @@
 \newacronym{funds-k}{FUNDS-K}{Fleet Modernization Procurement funding}
 \newacronym{warp}{WARP}{Wartime Acquisition Response Plan}
 \newacronym{rcm}{RCM}{Reliability-Centered Maintenance}
+\newacronym{fmeca}{FMECA}{Failure Mode, Effects and Criticality Analysis}
+\newacronym{fta}{FTA}{Fault Tree Analysis}
+\newacronym{lora}{LORA}{Level of Repair Analysis}
+\newacronym{phst}{PHS\&T}{Packaging, Handling, Storage, and Transportation}
+\newacronym{pmsplan}{PMS}{Planned Maintenance System}
+\newacronym{ael}{AEL}{Allowance Equipage List}
+\newacronym{apl}{APL}{Allowance Parts List}
+\newacronym{cosal}{COSAL}{Coordinated Shipboard Allowance List}
+\newacronym{ntp}{NTP}{Navy Training Plan}
+\newacronym{cls}{CLS}{Contractor Logistics Support}
+\newacronym{dmsms}{DMSMS}{Diminishing Manufacturing Sources and Material Shortages}
 \newacronym{nrro}{NRRO}{Naval Reactors Representative Office}
 \newacronym{rpco}{RPCO}{Reactor Plant Contractor's Office}
 \newacronym{navreact}{Naval Reactors}{Naval Nuclear Propulsion Program}
@@ -832,6 +856,7 @@
 % --- Cost Estimation & Analysis ---
 
 \newacronym{lcc}{LCC}{Life-Cycle Cost}
+\newacronym{os}{O\&S}{Operations and Support}
 \newacronym{lcce}{LCCE}{Life-Cycle Cost Estimate}
 \newacronym{ice}{ICE}{Independent Cost Estimate}
 \newacronym{igce}{IGCE}{Independent Government Cost Estimate}
