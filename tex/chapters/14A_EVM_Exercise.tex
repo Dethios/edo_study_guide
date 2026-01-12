@@ -1,0 +1,52 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% ====================
+% File: 14A_EVM_Exercise.tex
+% ====================
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+% === EVM Exercise (EDO 3.6.3) ===
+\section{EVM Exercise}
+
+\subsection{Summary}
+\begin{description}
+  \item[\textbf{Purpose.}] Apply earned value calculations to a two-period data set to diagnose cost and schedule status~\autocite{edo-3-6-3-evm-exercise-2025}.
+  \item[\textbf{Focus.}] Compute performance indicators, interpret trends, and project cost outcomes~\autocite{edo-3-6-3-evm-exercise-2025}.
+\end{description}
+
+\subsection{Exercise Inputs}
+\begin{itemize}
+  \item Two-period summary data for planned value, earned value, and actual cost~\autocite{edo-3-6-3-evm-exercise-2025}.
+  \item Program budget targets and any stated profit or funding assumptions~\autocite{edo-3-6-3-evm-exercise-2025}.
+\end{itemize}
+
+\subsection{Calculation Checklist}
+\begin{itemize}
+  \item \ac{sv} and \ac{spi}, period and cumulative~\autocite{edo-3-6-3-evm-exercise-2025}.
+  \item \ac{cv} and \ac{cpi}, period and cumulative~\autocite{edo-3-6-3-evm-exercise-2025}.
+  \item \ac{tcpi} to budget~\autocite{edo-3-6-3-evm-exercise-2025}.
+  \item \ac{eac} forecast and estimated overrun/underrun~\autocite{edo-3-6-3-evm-exercise-2025}.
+  \item Estimated contractor profit, government cost, and \ac{pom} request impact~\autocite{edo-3-6-3-evm-exercise-2025}.
+\end{itemize}
+
+\subsection{Interpretation Prompts}
+\begin{description}
+  \item[\textbf{Status.}] Explain the program's cost and schedule health using \ac{sv}/\ac{cv} and \ac{spi}/\ac{cpi} trends~\autocite{edo-3-6-3-evm-exercise-2025}.
+  \item[\textbf{Drivers.}] Identify the likely sources of variance and whether corrective action is required~\autocite{edo-3-6-3-evm-exercise-2025}.
+  \item[\textbf{Projection.}] Describe the likely end-state cost using \ac{eac} and resulting profit or funding impacts~\autocite{edo-3-6-3-evm-exercise-2025}.
+\end{description}
+
+%====================
+% End of file
+%====================
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
+\end{document}
