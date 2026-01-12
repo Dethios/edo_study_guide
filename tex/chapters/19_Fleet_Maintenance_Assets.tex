@@ -9,63 +9,133 @@
 \IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 \section{Fleet Maintenance Assets}
 
-\subsection{Echeloned Maintenance Levels}
+\subsection{Summary}
 \begin{description}
-  \item[\textbf{Organizational-level.}] Ship's force keeps the hull, mechanical, and electrical plants safe and combat-ready by executing preventative checks, battle damage control, and light repairs with organic tools, allowing the platform to remain as self-sufficient as possible while deployed~\autocite{OPNAVINST4700-7M,edo-4-1-1-fleet-maint-assets-2025}.
-  \item[\textbf{Intermediate-level.}] \acp{ima} and tenders augment the crew with certified artisans (e.g., welders, riggers, calibration labs) who can disassemble components, correct corrosion, and return equipment to specification without docking the ship; \ac{namts} builds those \acp{nec}, and so strike groups can recover faster when forward~\autocite{OPNAVINST4700-7M,edo-4-1-1-fleet-maint-assets-2025}.
-  \item[\textbf{Depot-level.}] \acp{nsy}, private yards, and \acp{supship} conduct heavy industrial work such as reactor refueling, shaft and underwater body repairs, and major modernizations that exceed shipboard capability; every task is tied to the \ac{cmp} and engineered work instructions~\autocite{NAVSEAINST5450-14D,NAVSEAINST5450-145A,edo-4-1-1-fleet-maint-assets-2025}.
-\end{description}
-\begin{figure}[htbp]
-  \centering
-  \begin{tikzpicture}[
-      node distance=1.5cm,
-      levelbox/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, align=left, inner sep=6pt, minimum width=6.5cm},
-      arrow/.style={-Latex, line width=0.9pt, draw=Gray60}
-    ]
-    \node[levelbox] (o) {\textbf{O-level}\\Ship's Force\\Battle damage control, preventive checks, light repairs with shipboard tools};
-    \node[levelbox, below=of o] (i) {\textbf{I-level}\\IMAs, tenders, RMC production shops\\Component repairs, calibration, welding/rigging, corrosion control};
-    \node[levelbox, below=of i] (d) {\textbf{Depot-level}\\NSYs, SUPSHIP-admin private yards, major private shipyards\\Docking, reactor work, shaft/propulsion repair, major modernizations tied to CMP};
-
-    \draw[arrow] (o) -- (i);
-    \draw[arrow] (i) -- (d);
-  \end{tikzpicture}
-  \caption[Maintenance echelon coverage]{Maintenance echelon coverage and typical executing organizations from organizational-level through depot-level work.}
-  \label{fig:maintenance-echelons-coverage}
-\end{figure}
-\note{Board cue: reference at least one example task in each echelon (e.g., \ac{ima} balancing pump rotors vs.\ depot replacement of a main reduction gear) to show command of maintenance depth.}
-
-\subsection{Shore Maintenance Organizations and Roles}
-\begin{description}
-  \item[\textbf{\acp{nsy}.}] Public yards (e.g., Norfolk, Pearl Harbor, Puget, Portsmouth) report to \ac{navsea}~04 and integrate nuclear workforces, planning codes, and lifting/handling departments that mirror \ac{navseainst}~5450.14D standard organization~\autocite{NAVSEAINST5450-14D}.
-  \item[\textbf{\acp{rmc}.}] Regional Maintenance Centers deliver voyage repairs, execute \ac{cmp} work, and act as the local \ac{ta} for availabilities; they synchronize contracting, production shops, and \ac{tsra} under \ac{cnrmc}~\autocite{NAVSEAINST5450-145A,edo-4-1-1-fleet-maint-assets-2025}.
-  \item[\textbf{\ac{supship}.}] Supervisors of Shipbuilding administer new construction and conversion/modernization contracts as \acp{aco}, coordinate budget execution, and provide technical oversight for nuclear refueling overhauls (e.g., \ac{cvn} \ac{rcoh})\FlagBilletNote{\ac{rdml} Jonathan J.\ Jett-Parmer serves as \ac{navsea} Deputy Commander, Supervisor of Shipbuilding; \ac{rdml} Robert J.\ Dodson (\ac{usnr}) is the reserve deputy; \ac{comnavsea} is \ac{adm} William J.\ Houston (Submarine officer, non-\ac{edo})}~\autocite{NAVSEAINST5450-145A,edo-4-1-1-fleet-maint-assets-2025,navsea-org-chart-2025}.
-  \item[\textbf{Private shipyards.}] Huntington Ingalls, Bath Iron Works, General Dynamics \ac{nassco}/Electric Boat, Fincantieri Marinette Marine, and Austal execute modernization packages, submarine maintenance, and surge depot work as part of the industrial base portfolio directed by \ac{opnav} and \ac{peo} contracts~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Levels.}] Fleet maintenance is organized into organizational (O), intermediate (I), and depot (D) levels, each matched to increasing complexity, equipment, and workforce specialization~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Activities.}] O-level is ship's force; I-level includes tenders and shore intermediate facilities; D-level includes public and private shipyards, regional maintenance centers, and ship repair facilities~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{SUPSHIP and RMCs.}] SUPSHIPs administer new construction and modernization contracts, while RMCs manage depot projects and provide I-level support and training~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Chains and funding.}] Reporting chains and funding streams differ across organizations and must be aligned for effective maintenance execution~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Workforce.}] Maintenance activities rely on blended military, civilian, and contractor workforces with structured training pipelines and significant early-career demographics at shipyards~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
 \end{description}
 
-\clearpage
-\subsection{Regional Maintenance Command Structure}
+\subsection{Organizational (O) Level Maintenance}
 \begin{description}
-  \item[\textbf{Flag oversight (\ac{edo}).}] \ac{cnrmc} is an \ac{edo} flag billet (\ac{rdml} Dan L.\ Lannamann) reporting to \ac{comnavsea}; \ac{cnrmc} sets standards and performance goals for all \acp{rmc} and aligns with \ac{tycom} production priorities\FlagBilletNote{\ac{comnavsea} is \ac{vadm} James P.\ Downey; \ac{cnrmc} is \ac{rdml} Dan L.\ Lannamann}~\autocite{navy-lannamann-2025,NAVSEAINST5450-145A}.
-  \item[\textbf{\ac{rmc} reporting.}] \acp{rmc} (e.g., Mid-Atlantic, Southeast, Southwest, Japan, and Puget Sound Naval Shipyard and \ac{imf} detachments) report administratively to \ac{cnrmc} and operationally to the supported \ac{tycom}, with competency-aligned codes (100 fleet support, 200 availability management, 300 production shops, 400 quality assurance/technical authority) to standardize execution~\autocite{NAVSEAINST5450-145A}.
-  \item[\textbf{Work control touchpoints.}] \ac{rmmco}, availability work package managers, and contracting officers integrate with ship's force, Port Engineers, and \ac{tycom} maintenance officers; \ac{edo} Port Engineers and \ac{rmc} production officers bridge technical authority to the \ac{tycom} readiness owner~\autocite{NAVSEAINST5450-145A,edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Definition.}] Planned maintenance from the \ac{pmsplan} and limited repair performed by ship's force~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Typical work.}] Tasks range from simple lubrication to modular change-outs and valve overhauls~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Purpose.}] Leverages operator experience to keep the ship as self-sufficient as possible~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
 \end{description}
 
-\clearpage
-\subsection{Command, Funding, and Technical Authority Chains}
+\subsection{Intermediate (I) Level Maintenance}
 \begin{description}
-  \item[\textbf{Operational chain.}] \ac{cno} delegates readiness to \ac{usff} and \ac{pacflt}, who assign Type Commanders to own production schedules and risk acceptance for their forces~\autocite{OPNAVINST4700-7M}.
-  \item[\textbf{Technical chain.}] \ac{navsea} 21/04 issue modernization and maintenance standards, while warfare centers and \acp{ta} publish \ac{cmp}-derived work packages; disputes escalate through the Technical Authority chain independent of the operational chain~\autocite{OPNAVINST4700-7M,NAVSEAINST5450-145A}.
-  \item[\textbf{Funding chain.}] Fleet maintenance (\ac{ocmf}) flows from \ac{opnav} \ac{n82} to \ac{bso}s and on to execution activities, while modernization is forecast via \ac{funds-d}/\ac{funds-alt}/\ac{funds-k} and, in limited pilots, \ac{opn} funds for selected private-yard availabilities to accelerate contract awards~\autocite{edo-4-1-1-fleet-maint-assets-2025,DoDFMR-Vol3}.
+  \item[\textbf{Definition.}] Planned and corrective maintenance on shipboard hull, mechanical, and electrical systems and components~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Typical work.}] Routine calibration, gas turbine change-outs, pump and engine overhauls, corrosion control, and rigging/weight testing~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Workforce.}] Sailors and civilians at \ac{ima}/\ac{imf} sites gain \ac{nec} qualifications through OJT-driven repair work~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
 \end{description}
-Maintaining clarity between supported/supporting chains prevents the common failure mode where operational priorities outpace technical warrant approvals or funding authority, triggering rework and availability churn.
 
-\subsection{Workforce Readiness and Assessments}
+\subsection{Depot (D) Level Maintenance}
 \begin{description}
-  \item[\textbf{Readiness assessments.}] \ac{tsra} events and Condition Found Reports feed the Current Ship's Maintenance Project (\ac{csmp}) so planners can refresh the \ac{cmp} and future availability work packages~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
-  \item[\textbf{Training pipelines.}] Programs such as \ac{namts}, SurgeMain reservists, and civilian apprentice pipelines grow targeted skills (e.g., non-skid application, inside machinist) to close gaps identified in Fleet readiness reviews~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
-  \item[\textbf{Digital enablers.}] Class maintenance databases, \ac{nde} instances, and tool control systems give \ac{rmc}s and \acp{nsy} shared configuration visibility that underpins quality assurance and auditability~\autocite{NAVSEAINST5450-145A}.
+  \item[\textbf{Definition.}] Major industrial work requiring specialized equipment, machinery, and skill sets~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Typical work.}] Docking and underwater hull work, shaft repairs, engine rebuilds, modernization and ship alteration installation, and array resurfacing~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Workforce.}] Executes with skilled civilian and private-sector workforces beyond I-level capability or capacity~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
 \end{description}
-Timely feedback from these mechanisms is what allows \ac{surfmepp}/\ac{submepp} to rebalance work between the organizational-, intermediate-, and depot echelons before a ship misses a \ac{cno} availability window.
+
+\subsection{Maintenance Trends}
+\begin{itemize}
+  \item O-level tasking shifted ashore for some platforms (e.g., \ac{lcs} and DDG-1000), with crews regaining some checks over time~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item Regional consolidation of I- and D-level work led to integrated shipyard and intermediate facilities at Puget Sound and Pearl Harbor~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item A 2020 GAO review highlighted workforce capacity, unplanned work, planning adherence, facility condition, and IT constraints in surface maintenance~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+\end{itemize}
+
+\subsection{Maintenance Organizations}
+\begin{description}
+  \item[\textbf{O-level.}] Ship's force~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{I-level.}] Submarine tenders, \ac{sfima}, \ac{nssf}, and \ac{trf}~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{D/I-level.}] Naval shipyards and \acp{imf}, U.S. Naval Ship Repair Facility, \acp{rmc}, \ac{supship} (minor repair role), private shipyards, and some warfare center divisions~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+\end{description}
+
+\subsection{Afloat Maintenance Activities}
+\begin{description}
+  \item[\textbf{Submarine tenders.}] Provide deployable I-level maintenance to submarines, conduct casualty repair, and support Indo-Asia-Pacific sustainment (e.g., USS Emory S. Land and USS Frank Cable in Guam)~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{\ac{sfima}.}] Afloat \ac{ima} capability using carrier and amphibious platforms to maximize battle force self-sustainment while deployed~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+\end{description}
+
+\subsection{Tender Repair Organization (Typical)}
+\begin{description}
+  \item[\textbf{Repair officer.}] Leads the tender repair organization; an \ac{edo} O-5 billet in many organizations~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Divisions.}] Hull (R-1), Mechanical (R-2), Electrical (R-3), Electronic (R-4), Radiological Controls (R-5), Repair Services (R-6), Planning (R-7), Outside Machinery (R-8), Quality Assurance (R-9), and Tender Maintenance (R-T)~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Support.}] Repair administration, ship superintendent, and technical library functions align under repair leadership~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+\end{description}
+
+\subsection{Submarine Support Facilities}
+\begin{description}
+  \item[\textbf{\ac{nssf}.}] Provides I-level maintenance to fast-attack submarines and support craft; works closely with \ac{rsg} and \ac{nrmd}; based in Groton, CT~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{\ac{trf}.}] Provides industrial support for incremental overhaul and refits of ballistic- and guided-missile submarines; conducts I-level maintenance during refit cycles in Kings Bay, GA and Bangor, WA~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{\ac{triper}.}] \ac{trf} supports equipment replacement using a rotatable pool concept under \ac{triper}~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+\end{description}
+
+\subsection{Naval Shipyards}
+\begin{description}
+  \item[\textbf{Mission.}] Provide affordable, timely, and quality depot-level maintenance, modernization, inactivation, disposal, and emergency repair of carriers and submarines~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Capabilities.}] Maintain dry docks, piers, and production shops; sustain a skilled workforce; provide organic nuclear and conventional repair capacity~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Product lines.}] Submarine availabilities/defueling/refueling; \ac{cvn} availabilities; and combined inactivation, reactor compartment disposal, and hull recycling at specific yards~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+\end{description}
+
+\subsection{Ship Repair Facility (Japan)}
+\begin{description}
+  \item[\textbf{\ac{srf}/\ac{jrmc}.}] A non-nuclear depot facility that executes I- and D-level availabilities and provides fleet technical assistance and assessments for Seventh Fleet support~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Services.}] Planning/execution of availabilities by organic workforce (Yokosuka) and contract oversight (Sasebo), plus dive locker and underwater husbandry services~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Product lines.}] Homeported ship support in Yokosuka and Sasebo, plus emergent repair brokered by \ac{tycom}~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+\end{description}
+
+\subsection{Supervisor of Shipbuilding (SUPSHIP)}
+\begin{description}
+  \item[\textbf{Primary mission.}] Administer Navy new construction, nuclear repair, and modernization contracts~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Key roles.}] Acts as \ac{aco} for shipbuilding/conversion contracts, manages schedules, conducts technical oversight, administers funds, and coordinates logistics support~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{RCOH.}] Conducts \ac{cvn} \ac{rcoh} at Newport News Shipbuilding and is expanding repair responsibilities at nuclear SUPSHIPs~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+\end{description}
+
+\subsection{Major Platform Private Shipyards}
+\begin{itemize}
+  \item Huntington Ingalls Industries (Newport News Shipbuilding, Ingalls Shipbuilding)~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item General Dynamics (NASSCO, Bath Iron Works, Electric Boat)~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item Fincantieri Marinette Marine, Austal USA~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+\end{itemize}
+
+\subsection{Regional Maintenance Centers}
+\begin{description}
+  \item[\textbf{Mission.}] Provide D-level project/contract management, I-level repairs and training, fleet technical assistance, \ac{tsra}, underwater ship husbandry, regional calibration, and logistics support~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Organization.}] RMCs organize around contracts, logistics, financial, corporate operations, environmental safety, engineering and planning, waterfront operations, quality assurance, and production resources~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+\end{description}
+
+\subsection{Funding and Reporting Chains}
+\begin{description}
+  \item[\textbf{Modernization funds.}] Maintenance and modernization use separate funding streams, including D-Alt and K-Alt modernization accounts; an \ac{opn} pilot supports some private contracted availabilities~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Operational chain.}] \ac{cno} delegates readiness through fleet commanders and \acp{tycom} who authorize work and manage maintenance budgets~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Technical chain.}] \ac{navsea} provides engineering standards and technical authority for maintenance execution at \acp{rmc} and \acp{nsy}~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+\end{description}
+
+\subsection{Responsibilities by Organization}
+\begin{description}
+  \item[\textbf{OPNAV N83B.}] Establishes ship maintenance policy and procedures, allocates shipyard man-days, and publishes depot availability schedules~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Fleet commanders.}] Assess material readiness and resource maintenance funding through Fleet Maintenance Officers~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{TYCOM.}] Acts as fleet commander agent for assigned platforms; authorizes work and screens maintenance requirements to \acp{rmc} and depots~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{NAVSEA 04/05.}] Develop technical requirements and engineering standards, approve maintenance strategies, and set industrial activity policy~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{SEA 21 and \ac{cnrmc}.}] Integrate maintenance strategies, modernization plans, training, and in-service life-cycle management for surface ships~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+\end{description}
+
+\subsection{Workforce Composition and Training}
+\begin{description}
+  \item[\textbf{Workforce mix.}] Maintenance activities employ military, civilian, and contractor workforces, with \ac{ima} and \ac{imf} pipelines providing OJT-based skill development~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item[\textbf{Shipyard demographics.}] FY17 Q1 data show a large early-career workforce: Portsmouth 40.7\%, Norfolk 46.2\%, Puget Sound 43.3\%, and Pearl Harbor 35.8\% with five years or less experience~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+\end{description}
+
+\subsection{Quick Review}
+\begin{itemize}
+  \item Maintenance levels are O, I, and D; each level increases in complexity and industrial capability~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item I-level activities include tenders, \ac{sfima}, \ac{nssf}, and \ac{trf}; D-level includes shipyards, \ac{srf}, \acp{rmc}, and private yards~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+  \item SUPSHIPs administer new construction and modernization contracts and hold a minor repair role~\autocite{edo-4-1-1-fleet-maint-assets-2025}.
+\end{itemize}
+
 \IfSubfilesClassLoaded{
   \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
   \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
