@@ -378,6 +378,7 @@
 \newacronym{dagir}{DAGIR}{Data and Applications Government-owned Interoperable Repositories}
 \newacronym{emd}{EMD}{Engineering and Manufacturing Development}
 \newacronym{ibr}{IBR}{Integrated Baseline Review}
+\newacronym{ci}{CI}{Configuration Item}
 \newacronym{ipt}{IPT}{Integrated Product Team}
 \newacronym{wipt}{WIPT}{Working-level Integrated Product Team}
 \newacronym{lcsp}{LCSP}{Life-Cycle Sustainment Plan}

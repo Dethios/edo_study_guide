@@ -1,0 +1,100 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% ====================
+% File: 17H_WBS_SE_Analysis_and_Control.tex
+% ====================
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+% === SE Analysis & Control: Work Breakdown Structure (EDO 3.5.2) ===
+\section{SE Analysis \& Control: Work Breakdown Structure}
+
+\subsection{Summary}
+\begin{description}
+  \item[\textbf{Product-oriented hierarchy.}] The \ac{wbs} is a product-oriented hierarchy and a core output of the systems engineering process~\autocite{edo-3-5-2-wbs-2025}.
+  \item[\textbf{Program management tool.}] The \ac{wbs} supports planning, scheduling, cost estimating, logistics, progress reporting, and \ac{evm} baselines across the life cycle~\autocite{edo-3-5-2-wbs-2025}.
+  \item[\textbf{SE linkage.}] The \ac{wbs} supports \ac{ipt} organization, system specifications, technical reviews, \acp{ecp}, and interface and risk management~\autocite{edo-3-5-2-wbs-2025}.
+  \item[\textbf{Standards.}] MIL-STD-881 provides the DoW format and guidance for standardized \ac{wbs} development~\autocite{edo-3-5-2-wbs-2025}.
+  \item[\textbf{Types.}] Program \ac{wbs} is owned by the \ac{pmo}; contract \ac{wbs} is owned by the contractor and extends the program structure to lower levels~\autocite{edo-3-5-2-wbs-2025}.
+\end{description}
+
+\subsection{Introduction}
+\begin{description}
+  \item[\textbf{Purpose.}] The \ac{wbs} breaks large projects into manageable parts using a DoW-standard format~\autocite{edo-3-5-2-wbs-2025}.
+  \item[\textbf{Lifecycle use.}] The \ac{wbs} is used across life-cycle phases and disciplines including program management, contracting, logistics, finance, and budgeting~\autocite{edo-3-5-2-wbs-2025}.
+\end{description}
+
+\subsection{Basic Role of the WBS}
+\begin{itemize}
+  \item Establishes the foundation for program and technical plans through the systems engineering process~\autocite{edo-3-5-2-wbs-2025}.
+  \item Supports acquisition strategy, contracting documents, schedules, and cost and budget formulation~\autocite{edo-3-5-2-wbs-2025}.
+  \item Supports logistics planning, progress tracking, and problem analysis~\autocite{edo-3-5-2-wbs-2025}.
+  \item Enables \ac{pmb} establishment for \ac{evm}~\autocite{edo-3-5-2-wbs-2025}.
+\end{itemize}
+
+\subsection{WBS as a Management Tool}
+\begin{description}
+  \item[\textbf{PM focus.}] \acp{pm} use the \ac{wbs} as a roadmap for integrated product and process development~\autocite{edo-3-5-2-wbs-2025}.
+  \item[\textbf{Tradeoffs.}] The \ac{wbs} supports monitoring cost, schedule, performance, manufacturing, life-cycle support, testing, and risk~\autocite{edo-3-5-2-wbs-2025}.
+\end{description}
+
+\subsection{WBS and the SE Process}
+\begin{description}
+  \item[\textbf{SE outputs.}] The \ac{wbs} is an output of the systems engineering process, alongside decision databases, architectures, and baselines~\autocite{edo-3-5-2-wbs-2025}.
+  \item[\textbf{SE support.}] The \ac{wbs} helps organize \acp{ipt}, group specifications, structure technical reviews, analyze \acp{ecp}, manage interfaces, and focus risk management on high-impact items~\autocite{edo-3-5-2-wbs-2025}.
+\end{description}
+
+\subsection{WBS Hierarchy}
+\begin{description}
+  \item[\textbf{Product orientation.}] A hierarchical, product-oriented structure that defines the product or service to be developed and relates elements of work to the end product~\autocite{edo-3-5-2-wbs-2025}.
+  \item[\textbf{System elements.}] Represent product parts of the \ac{wbs} (subsystems, components, assemblies, parts) and align to \acp{ci}~\autocite{edo-3-5-2-wbs-2025}.
+  \item[\textbf{Enabling system elements.}] Common elements that provide the means to realize the product (processes, equipment, facilities), shared across programs~\autocite{edo-3-5-2-wbs-2025}.
+\end{description}
+
+\subsection{WBS Guidance}
+\begin{description}
+  \item[\textbf{MIL-STD-881.}] Provides the principal guidance and standardized formats for \ac{wbs} development across system types~\autocite{edo-3-5-2-wbs-2025}.
+  \item[\textbf{System types.}] Formats include aircraft, electronic, missile, ordnance, sea, space, surface vehicle, unmanned air, unmanned maritime, launch vehicle, and automated information systems~\autocite{edo-3-5-2-wbs-2025}.
+\end{description}
+
+\subsection{WBS Types}
+\begin{description}
+  \item[\textbf{Program WBS.}] Controlled and maintained by the \ac{pmo}, encompasses the entire program, and provides the basis for the contract \ac{wbs}~\autocite{edo-3-5-2-wbs-2025}.
+  \item[\textbf{Contract WBS.}] Controlled and maintained by the contractor; extends the program \ac{wbs} to lower levels to manage cost and schedule data~\autocite{edo-3-5-2-wbs-2025}.
+\end{description}
+
+\subsection{Program WBS}
+\begin{description}
+  \item[\textbf{Scope.}] Encompasses the entire program, including contract \ac{wbs} and government elements such as operations, manpower, government-furnished equipment, and testing~\autocite{edo-3-5-2-wbs-2025}.
+  \item[\textbf{Ownership.}] Prepared and maintained by the program office and tailored from MIL-STD-881~\autocite{edo-3-5-2-wbs-2025}.
+  \item[\textbf{Levels.}] Typically includes Levels~1--3 and serves as the framework for program objectives, technical reviews, and cost and schedule performance~\autocite{edo-3-5-2-wbs-2025}.
+\end{description}
+
+\subsection{Contract WBS}
+\begin{description}
+  \item[\textbf{Purpose.}] Defines the portion produced by a contractor and is the basis for collecting contract cost and schedule data~\autocite{edo-3-5-2-wbs-2025}.
+  \item[\textbf{Structure.}] Extends the program \ac{wbs} below Level~3 (beginning at Level~4) and includes all elements for hardware, software, data, or services~\autocite{edo-3-5-2-wbs-2025}.
+  \item[\textbf{Responsibility.}] Prepared by the prime contractor and should include subcontractor inputs~\autocite{edo-3-5-2-wbs-2025}.
+\end{description}
+
+\subsection{Quick Review}
+\begin{itemize}
+  \item The \ac{wbs} is a product-oriented hierarchy and an output of the systems engineering process~\autocite{edo-3-5-2-wbs-2025}.
+  \item MIL-STD-881 provides guidance for developing a \ac{wbs}~\autocite{edo-3-5-2-wbs-2025}.
+  \item Program \ac{wbs} includes Levels~1--3; contract \ac{wbs} extends the program \ac{wbs} to Levels~4 and below~\autocite{edo-3-5-2-wbs-2025}.
+  \item Program \ac{wbs} is maintained by the Government; contract \ac{wbs} is maintained by the contractor~\autocite{edo-3-5-2-wbs-2025}.
+\end{itemize}
+
+%====================
+% End of file
+%====================
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
+\end{document}
