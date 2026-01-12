@@ -1,0 +1,165 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% ====================
+% File: 17F_Cybersecurity_Awareness.tex
+% ====================
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+% === Cybersecurity Awareness (EDO 3.4.3) ===
+\section{Cybersecurity Awareness}
+
+\subsection{Summary}
+\begin{description}
+  \item[\textbf{Definition.}] \ac{dodi}~8500.01 defines cybersecurity as preventing, protecting against, and restoring damage to communications and information systems to preserve confidentiality, integrity, availability, non-repudiation, and authentication~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Threat evolution.}] Events from Solar Sunrise through ransomware campaigns and major breaches show escalating sophistication and impact~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Acquisition integration.}] The \ac{pm} owns cybersecurity across the life cycle; the cybersecurity strategy annex is part of the \ac{ppp} starting at Milestone~A and updated each milestone~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{RMF backbone.}] The \ac{rmf} is a six-step process that bakes cybersecurity into acquisition for \ac{is} and \ac{pit} systems and drives continuous monitoring~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Navy frameworks.}] CYBERSAFE and \ac{dfia} standardize defense-in-depth across the enterprise and prioritize mission assurance~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{description}
+
+\subsection{What Is Cybersecurity?}
+\begin{description}
+  \item[\textbf{Confidentiality.}] Protect information from unauthorized disclosure~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Integrity.}] Protect information from unauthorized modification or destruction~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Availability.}] Ensure information and systems are accessible when needed~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Non-repudiation.}] Prevent parties from denying they sent or received information~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Authentication.}] Verify the identity of users or systems~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{description}
+
+\subsection{Consequences of Cybersecurity Failure}
+\begin{description}
+  \item[\textbf{Loss of confidentiality.}] Unauthorized disclosure of \ac{pii} or classified data (for example, exfiltration from \ac{siprnet})~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Loss of integrity.}] Unauthorized modification of \ac{gps} navigation data or destruction of \ac{pii} on a \ac{dbs}~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Loss of availability.}] \ac{dos} attacks on \ac{nc3} networks, logistics ordering systems, or unmanned system \ac{c2} links~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{description}
+
+\subsection{Driving Emphasis for Cybersecurity}
+\begin{itemize}
+  \item 1998: Solar Sunrise network intrusion on \ac{dod} networks~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item 2006: State Department networks hacked by unknown foreign intruders~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item 2008: Agent.btz \ac{usb} intrusion on \ac{dod} computers~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item 2008: Supply chain attack on China-made credit card readers~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item 2009: Conficker worm infects military databases and grounds French naval aircraft~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item 2013: Operation Rolling Tide in response to adversary intrusions on Navy networks~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item 2015: \ac{opm} data breach~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item 2017: Equifax data breach~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item 2018--2020: Ransomware attacks on U.S. cities and hospitals~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{itemize}
+
+\subsection{Cyber-Related Organizations}
+\begin{description}
+  \item[\textbf{DoN CIO.}] Provides policy and guidance, evaluates security of \ac{it} systems, and shapes network architecture and interoperability~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{\ac{uscybercom}.}] Combatant command for global cyber operations; sets enterprise policy~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Fleet Cyber Command/U.S. 10th Fleet.}] Navy component commander to \ac{uscybercom}; responsible for operations, maintenance, and defense of Navy networks~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{\ac{ncdoc}.}] \ac{cssp} performing defense, incident response, and forensics; threat focused~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{\ac{navnetwarcom}.}] Tactical command and control of Navy networks; directs, operates, maintains, and secures communications and networks~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{\ac{navifor}.}] Cyber \ac{tycom} that organizes, mans, trains, and equips the cyber workforce~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{\ac{navwar}.}] Navy cybersecurity technical authority; sets standards, tools, and protocols and warrants cybersecurity technical warrant holders within SYSCOMs~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{description}
+
+\subsection{Intelligence Community Support}
+\begin{description}
+  \item[\textbf{Threat inputs.}] \acp{pm} must use cyber threat information from the Intelligence Community to shape cybersecurity strategy and risk assessments~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Products.}] \ac{volt} reports, \ac{cta}, and technology targeting risk assessments support acquisition programs~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{description}
+
+\subsection{Cybersecurity in the Acquisition Process}
+\begin{description}
+  \item[\textbf{PM accountability.}] The \ac{pm} is responsible for cybersecurity requirements throughout the program life cycle~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Program protection.}] The cybersecurity strategy annex is documented in the \ac{ppp} and describes how the system operates in a cyber-contested environment and the consequences of breach~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{RMF requirement.}] The \ac{rmf} is required for all acquisitions containing \ac{it} and is updated each milestone starting at Milestone~A~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{description}
+
+\subsection{Risk Management Framework Overview}
+\begin{description}
+  \item[\textbf{Purpose.}] Integrates security and risk management into the acquisition life cycle and emphasizes continuous monitoring and timely correction~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Applicability.}] Applies to \ac{is}, \ac{pit}, and DoW partnered systems~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Goals.}] Perform risk assessment throughout the life cycle, bake in cybersecurity, and improve understanding of risks to Navy systems and missions~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{description}
+
+\subsection{RMF Step 1: Categorize the System}
+\begin{description}
+  \item[\textbf{Categorization.}] Identify information types, select confidentiality, integrity, and availability objectives, and assign impact levels (low, moderate, high)~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Documentation.}] Record the security category in the \ac{ppp}, initiate the security plan, register the system with the component cybersecurity program, and assign qualified personnel~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{description}
+
+\subsection{RMF Step 2: Select Security Controls}
+\begin{description}
+  \item[\textbf{Control selection.}] Select controls based on categorization and \ac{cnssi}~1253, then tailor or supplement based on system risk~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Monitoring plan.}] Develop the system-level continuous monitoring strategy and approve the security plan~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{description}
+
+\subsection{RMF Step 3: Implement Security}
+\begin{description}
+  \item[\textbf{Implementation.}] Implement controls consistent with component cybersecurity architectures and integrate them into system design specifications~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Documentation.}] Record control implementation in the security plan~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{description}
+
+\subsection{RMF Step 4: Assess Security Controls}
+\begin{description}
+  \item[\textbf{Assessment plan.}] Develop and approve the security assessment plan and assess controls for proper implementation~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Assessment outputs.}] The \ac{sca} prepares a \ac{sar} and recommends cybersecurity risk acceptance or denial; conduct initial remediation~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{description}
+
+\subsection{RMF Step 5: Authorize the System}
+\begin{description}
+  \item[\textbf{Authorization package.}] Prepare \ac{poam} based on vulnerabilities and submit the security plan, \ac{sar}, and \ac{poam} to the \ac{ao}~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Decision.}] The \ac{ao} issues an \ac{ato}, \ac{iatt}, or \ac{dato} based on risk determination~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{description}
+
+\subsection{RMF Step 6: Monitor Security Controls}
+\begin{description}
+  \item[\textbf{Continuous monitoring.}] Assess controls annually, conduct remediation, update the security plan, \ac{sar}, and \ac{poam}, and report status to the \ac{ao}~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Lifecycle closeout.}] Implement a system decommissioning strategy when required~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{description}
+
+\subsection{Cyber Hygiene}
+\begin{itemize}
+  \item Install and maintain firewalls and review logs for signs of intrusion~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item Perform routine scans for malware and known vulnerabilities; mitigate findings quickly~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item Use whitelisting to allow only authorized programs to run~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item Maintain approved baseline images and follow configuration management policies~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{itemize}
+
+\subsection{EDO Role in Cybersecurity}
+\begin{description}
+  \item[\textbf{PM responsibility.}] \acp{pm} are responsible for cybersecurity across programs and life-cycle stages~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{EDO leadership.}] EDOs must be accountable leaders who embed cybersecurity into programmatic, engineering, and acquisition processes and involve cyber professionals~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Workforce duty.}] Cybersecurity responsibility extends to all members of the acquisition workforce~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{description}
+
+\subsection{CYBERSAFE Program}
+\begin{description}
+  \item[\textbf{Purpose.}] \ac{cybersafe} hardens mission-critical systems and components to provide mission assurance and resiliency~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Approach.}] Assesses mission risk across system-of-systems and applies elevated controls to a subset of systems and components~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Certifications.}] System design certification, enclave design certification, and platform certification~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{description}
+
+\subsection{Defense-in-Depth Functional Implementation Architecture}
+\begin{description}
+  \item[\textbf{Definition.}] \ac{dfia} provides a Navy defense-in-depth \ac{ia} approach across SYSCOM boundaries, enabling inheritance and improving interoperability and cyber situational awareness~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Goals.}] Provide a uniform security framework to support interoperability, reduce cost, improve cybersecurity, and eliminate duplication~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item[\textbf{Integration.}] \ac{dfia} standardizes implementation of security controls through \ac{rmf}, \ac{cybersafe}, and acquisition processes~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{description}
+
+\subsection{Quick Review}
+\begin{itemize}
+  \item The cyber \ac{tycom} is \ac{navifor}~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item The Navy component commander to \ac{uscybercom} is Fleet Cyber Command/U.S. 10th Fleet~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+  \item The process used to bake cybersecurity into acquisition programs is the \ac{rmf}~\autocite{edo-3-4-3-cybersecurity-awareness-2025}.
+\end{itemize}
+
+%====================
+% End of file
+%====================
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
+\end{document}

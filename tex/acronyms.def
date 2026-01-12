@@ -83,6 +83,11 @@
 \newacronym{comnavwar}{COMNAVWAR}{Commander, Naval Information Warfare Systems Command}
 \newacronym{navsea}{NAVSEA}{Naval Sea Systems Command}
 \newacronym{navwar}{NAVWAR}{Naval Information Warfare Systems Command}
+\newacronym{navnetwarcom}{NAVNETWARCOM}{Naval Network Warfare Command}
+\newacronym{navifor}{NAVIFOR}{Naval Information Forces Command}
+\newacronym{fcc}{FCC}{Fleet Cyber Command}
+\newacronym{ncdoc}{NCDOC}{Navy Cyber Defense Operations Command}
+\newacronym{cssp}{CSSP}{Cyber Security Service Provider}
 \newacronym{navair}{NAVAIR}{Naval Air Systems Command}
 \newacronym{navsup}{NAVSUP}{Naval Supply Systems Command}
 \newacronym{sea}{SEA}{NAVSEA headquarters staff code}
@@ -191,6 +196,20 @@
 \newacronym{rmf}{RMF}{Risk Management Framework}
 \newacronym{ia}{IA}{Information Assurance}
 \newacronym{devsecops}{DevSecOps}{Development, Security, and Operations}
+\newacronym{pii}{PII}{Personally Identifiable Information}
+\newacronym{siprnet}{SIPRNet}{Secret Internet Protocol Router Network}
+\newacronym{dos}{DoS}{Denial of Service}
+\newacronym{nc3}{NC3}{Nuclear Command, Control, and Communications}
+\newacronym{ppp}{PPP}{Program Protection Plan}
+\newacronym{pit}{PIT}{Platform Information Technology}
+\newacronym{cnssi}{CNSSI}{Committee on National Security Systems Instruction}
+\newacronym{sca}{SCA}{Security Control Assessor}
+\newacronym{ato}{ATO}{Authorization to Operate}
+\newacronym{iatt}{IATT}{Interim Authorization to Test}
+\newacronym{dato}{DATO}{Denial of Authorization to Operate}
+\newacronym{dfia}{DFIA}{Defense-in-Depth Functional Implementation Architecture}
+\newacronym{cybersafe}{CYBERSAFE}{Navy Cyber Safety Program}
+\newacronym{usb}{USB}{Universal Serial Bus}
 
 % --- Program Executive Offices & Portfolios ---
 
@@ -388,6 +407,7 @@
 \newacronym{tra}{TRA}{Technology Readiness Assessment}
 \newacronym{ramc}{RAM-C}{Reliability, Availability, and Maintainability Cost Rationale}
 \newacronym{volt}{VOLT}{Validated Online Life-cycle Threat}
+\newacronym{cta}{CTA}{Capstone Threat Assessment}
 \newacronym[
 	shortplural={UCAs},
 	longplural={Urgent Capability Acquisitions}
