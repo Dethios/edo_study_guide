@@ -679,6 +679,10 @@
 \newacronym{svr}{SVR}{System Verification Review}
 \newacronym{otrr}{OTRR}{Operational Test Readiness Review}
 \newacronym{prr}{PRR}{Production Readiness Review}
+\newacronym{fca}{FCA}{Functional Configuration Audit}
+\newacronym{pca}{PCA}{Physical Configuration Audit}
+\newacronym{trb}{TRB}{Technical Review Board}
+\newacronym{icwg}{ICWG}{Interface Control Working Group}
 \newacronym{opnavinst}{OPNAVINST}{Office of the Chief of Naval Operations Instruction}
 \newacronym{insurv}{INSURV}{Board of Inspection and Survey}
 

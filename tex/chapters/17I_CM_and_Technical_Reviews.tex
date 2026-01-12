@@ -1,0 +1,175 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% ====================
+% File: 17I_CM_and_Technical_Reviews.tex
+% ====================
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+% === SE Analysis & Control: CM & Technical Reviews (EDO 3.5.3) ===
+\section{SE Analysis \& Control: Configuration Management \& Technical Reviews}
+
+\subsection{Summary}
+\begin{description}
+  \item[\textbf{CM purpose.}] Configuration management establishes and maintains consistency between requirements, the product, and configuration information across the life cycle~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{CI control.}] Designating \acp{ci} enables separate control, documentation, reviews, and qualification testing~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Baselines.}] Functional, allocated, and product baselines connect specifications to technical reviews and change control~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Interfaces and data.}] Interface control and technical data management preserve configuration discipline across government and contractor boundaries~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Technical reviews.}] Reviews assess design maturity, readiness, compliance, and risk at key points in the acquisition life cycle~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{description}
+
+\subsection{Configuration Management}
+\begin{description}
+  \item[\textbf{Definition.}] A technical and management process that maintains consistency between product requirements, the product, and configuration information across baselines~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Implementation.}] Technical and administrative direction to identify and document \acp{ci}, control changes, and record change status to provide an audit trail~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{description}
+
+\subsection{Why CM Matters}
+\begin{itemize}
+  \item Provides measurable performance parameters and a common basis for acquisition and use~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item Ensures correct, current information for change decisions and minimizes avoidable cost~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item Correlates products with requirements, design, and product information to avoid guesswork~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item Verifies configuration against required attributes and increases confidence in product information~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{itemize}
+
+\subsection{Configuration Items}
+\begin{description}
+  \item[\textbf{CI definition.}] A hardware/software aggregation treated as a single entity for configuration management and uniquely identified at a reference point~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Designation impacts.}] Separate control, documentation, formal approval of changes, individual design reviews, and qualification tests~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{description}
+
+\subsection{Considerations for Designating CIs}
+\begin{itemize}
+  \item Qualification level, integration of tested/untested components, and interfaces with other controlled \acp{ci}~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item Need to know exact configuration during the life cycle, high-risk or safety concerns, and new technology~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item Each development contract should designate at least one \ac{ci}; cost alone is not a valid consideration~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{itemize}
+
+\subsection{CM Functional Components}
+\begin{description}
+  \item[\textbf{Identification.}] Identify and document functional and physical characteristics of \acp{ci}~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Status accounting.}] Record and report all configuration changes~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Control.}] Manage \acp{ci} and documentation throughout the life cycle~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Verification and audits.}] Verify conformance to requirements, specifications, drawings, and interface documents~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{description}
+
+\subsection{IPPD and CM}
+\begin{description}
+  \item[\textbf{Baseline linkage.}] CM ties requirements and specifications to baselines and supports \ac{ippd} across disciplines~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Cross-discipline impact.}] Configuration changes affect test and evaluation, manufacturing, logistics, software development, and technical data management~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{description}
+
+\subsection{Commercial Item Impacts}
+\begin{description}
+  \item[\textbf{Government control limits.}] Design details and full \ac{tdp} may not be available, complicating manuals and sustainment~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Interfaces and support.}] Interfaces must be carefully defined and support strategies must address commercial repair and updates~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Test strategy.}] Tests must ensure performance at both item and integrated levels~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{description}
+
+\subsection{Configuration Control}
+\begin{description}
+  \item[\textbf{Engineering change.}] Modifies, adds, deletes, or supersedes original parts~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Deviation.}] Written authorization before manufacture to depart from requirements for specific units or time~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Waiver.}] Written authorization during or after manufacture to accept a nonconforming item as-is or after rework~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Approved configuration.}] Approved baseline plus approved changes~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{description}
+
+\subsection{Configuration Baselines}
+\begin{description}
+  \item[\textbf{Functional baseline.}] Defines overall system performance and functional characteristics~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Allocated baseline.}] Defines performance requirements for \acp{ci} that make up a system~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Product baseline.}] Defines functional and physical characteristics of \acp{ci}~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{description}
+
+\subsection{Specifications, CM Planning, and Baselines}
+\begin{description}
+  \item[\textbf{System specification.}] Establishes mission performance requirements and interfaces tied to the functional baseline~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Performance specification.}] Defines form, fit, and function of \acp{ci} and supports the allocated baseline~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Detail/process/material specifications.}] Define build-to requirements and fabrication processes that support the product baseline~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{description}
+
+\subsection{Interface Control}
+\begin{description}
+  \item[\textbf{Interfaces.}] Boundaries between \acp{ci} or between contractor and \ac{gfe} requiring mechanical, electrical, operational, or software alignment~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{ICWG.}] The \ac{icwg} identifies, documents, and controls interface characteristics and produces interface control documents~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Government role.}] Government sets interface standards; contractors design to meet interface specifications~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{description}
+
+\subsection{Technical Data Management}
+\begin{description}
+  \item[\textbf{Purpose.}] Processes to plan, acquire, manage, and use technical data to support the system life cycle~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Data requirements.}] Documented in the \ac{cdrl}; only minimum required data should be procured in contractor format~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{TDP support.}] \acp{tdp} support technical reviews, including \ac{fca} and \ac{pca}~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{description}
+
+\subsection{Configuration Management Strategy}
+\begin{description}
+  \item[\textbf{Government-controlled.}] Functional baseline, system-level specs, external interfaces, and system or major subsystem reviews~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Contractor-controlled.}] Allocated and product baselines, item performance/detail specs, internal interfaces, and component/vendor reviews~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Benefits.}] Promotes design flexibility, reduces government burden for low-level \acp{ecp}, and supports smaller program offices~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{description}
+
+\subsection{Technical Reviews Purpose}
+\begin{itemize}
+  \item Check design maturity and readiness for the next development level~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item Assess compliance with requirements and review technical risk~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item Provide visibility into contractor implementation of the statement of work~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{itemize}
+
+\subsection{Major Technical Reviews}
+\begin{description}
+  \item[\textbf{\ac{srr}.}] Confirms system technical requirements and shared understanding~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{\ac{sfr}.}] Confirms the design can meet requirements and establishes the functional baseline~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{\ac{pdr}.}] Confirms readiness for detailed design and usually establishes the allocated baseline~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{\ac{cdr}.}] Confirms readiness for fabrication/coding, demonstration, and test; establishes the product baseline~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{\ac{trr}.}] Confirms readiness to enter formal test~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{\ac{prr}.}] Confirms production readiness and acceptable production risk~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{\ac{fca}.}] Confirms the system meets functional requirements and supports \ac{lrip}/\ac{frp} decisions~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{\ac{otrr}.}] Confirms production configuration readiness for operational test~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{\ac{pca}.}] Verifies production configuration matches design documentation and manufacturing controls~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{description}
+
+\subsection{Specifications, Baselines, and Reviews}
+\begin{description}
+  \item[\textbf{System specifications.}] Link to the functional baseline and \ac{srr}/\ac{sfr}~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Performance specifications.}] Link to the allocated baseline and \ac{pdr}~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Detail/process/material specifications.}] Link to the product baseline and \ac{cdr}/\ac{fca}/\ac{pca}~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{description}
+
+\subsection{General Principles for Reviews}
+\begin{description}
+  \item[\textbf{Why.}] Assess design maturity and program risk; not a check-the-box event~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{When.}] Driven by the \ac{sep}, baseline completion, operational test prep, and upcoming milestone reviews~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Who.}] Led by a \ac{trb} with \ac{pm} representation, engineers, independent reviewers, logistics, cost, legal, contracting, sponsors, and users~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{description}
+
+\subsection{Steps to Effective Design Reviews}
+\begin{itemize}
+  \item Plan the review and scope~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item Familiarize participants with data and requirements~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item Conduct individual reviews before team review~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item Hold team review and resolve issues~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item Follow up to close actions~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{itemize}
+
+\subsection{Quick Review}
+\begin{itemize}
+  \item CM avoids cost, reduces risk, and controls design changes~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item CM functions are identification, status accounting, control, and verification/audits~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item Baselines are functional, allocated, and product; changes are engineering changes, deviations, and waivers~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item Commercial items reduce Government control of design details and \ac{tdp} access, increasing interface and support planning needs~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+\end{itemize}
+
+%====================
+% End of file
+%====================
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
+\end{document}
