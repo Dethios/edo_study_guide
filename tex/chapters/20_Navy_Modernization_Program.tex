@@ -9,52 +9,121 @@
 \IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 \section{Navy Modernization Program}
 
-\subsection{Modernization vs.\ Maintenance}
+\subsection{Summary}
 \begin{description}
-  \item[\textbf{Modernization.}] Improves capability or readiness above the baseline by installing approved \acp{shipalt}, Modernization Work Orders, and Fleet modernization program items that change the ship's configuration, safety posture, or mission systems~\autocite{edo-4-1-2-navy-modernization-2025,OPNAVINST4700-7M}.
-  \item[\textbf{Maintenance.}] Restores the system to its original performance and reliability; it cannot change capability without an approved modernization directive per \ac{opnavinst}~4700.7M~\autocite{edo-4-1-2-navy-modernization-2025,COMFLTFORCOMINST4790-3}.
-  \item[\textbf{Repair.}] Corrects degradations to return the item to the current baseline; repairs that change form, fit, or function require an approved modernization document to avoid unauthorized configuration changes under \ac{opnavinst}~4700.7M~\autocite{OPNAVINST4700-7M}.
-\end{description}
-\acp{edo} must articulate which work package element they are defending, because it dictates the funding source (e.g., \ac{funds-d}/\ac{funds-alt} for modernization versus \ac{ocmf} for maintenance) and who holds approval authority.
-
-\subsection{Governance, Roles, and Documentation}
-\begin{description}
-  \item[\textbf{Modernization governance.}] The \ac{nmp} integrates \ac{opnav} resource sponsors, \acp{peo}, \acp{parm}, Warfare Centers, and Fleet forces through the \ac{nmp} Executive Steering Group and Sub-Class Modernization Coordinating Groups; the process is codified in SL720-AA-MAN-030, TS9090.310, and the \ac{jfmm}~\autocite{SL720-AA-MAN-030,TS9090-310,COMFLTFORCOMINST4790-3}.
-  \item[\textbf{Key documents.}] Modernization Change Documents capture the requirement, Justification and Cost Forms allocate funding, \ac{shipalt} Records (Record of Change) provide lifecycle traceability, installation drawings direct work, and the Alteration Equivalent to Repair (\ac{aer}) process keeps urgent fixes legal~\autocite{TS9090-310,edo-4-1-2-navy-modernization-2025}.
-  \item[\textbf{Execution agents.}] \acp{ait}, \acp{rmmco}, and \acp{supship} integrate modernization tasks into availabilities while Naval Supervising Activities verify that work followed the approved package\FlagBilletNote{\ac{supship} is led by \ac{rdml} Jonathan J.\ Jett-Parmer with \ac{rdml} Robert J.\ Dodson (\ac{usnr}) as reserve deputy (Appendix~\ref{app:edo-flags})}~\autocite{SL720-AA-MAN-030,TS9090-310}.
+  \item[\textbf{Purpose.}] \ac{nmp} manages ship modernization so alterations are properly engineered, approved, funded, and installed with configuration control and logistics support~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Goals.}] Modernization improves capability, safety, reliability, and fleet readiness; maintenance sustains current performance; repair returns equipment to baseline performance~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Governance.}] \ac{nmp} provides the authoritative process and data environment for ship change approval, prioritization, and scheduling~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Documentation.}] The Ship Change Document is the single authorized record for ship changes under the NDE entitled process~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Policy.}] Public Law 102-396 limits modernization for ships scheduled for retirement within five years, with national security waiver provisions~\autocite{edo-4-1-2-navy-modernization-2025}.
 \end{description}
 
-\begin{longtblr}[
-    caption = {Modernization document ownership and funding tie points},
-    label   = {tab:modernization-doc-map}
-  ]{
-    colspec = {@{} L L L L @{}}
-  }
-  \toprule
-  {Document}                        & {Primary Owner}                            & {When Used}                                                                                       & {Funding / Approval Tie}                                                                     \\
-  \midrule
-  Change Initiation Notice          & Fleet sponsor or PARM                      & Starts the change process; screens technical need and logistics impacts before engineering begins & Drives resource sponsor endorsement and PARM tasking; no funding commitment yet              \\
-  Justification and Cost Form (JCF) & PARM and resource sponsor                  & Allocates modernization dollars and prioritizes hulls; accompanies Change Install planning        & Aligns FUNDS-D (engineering) and FUNDS-K (procurement); documents budget line and phasing    \\
-  ShipAlt Record of Change          & Alteration Engineering Agent               & Provides authoritative configuration record across hulls and life of the change                   & Required for configuration audits, warranty, and to show work stayed within authorized scope \\
-  Installation Drawing / LAR        & Alteration Engineering Agent and installer & Directs production work and testing during the scheduled availability or pier-side install        & Must match funded scope; links to MOA/RMMCO package and turn-over tests before closeout      \\
-  \bottomrule
-\end{longtblr}
+\subsection{Background and Need for Modernization}
+\begin{itemize}
+  \item \ac{nmp} began in 2002 to transform maintenance and modernization planning into a more efficient, enterprise-aligned process~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item The program addresses emerging threats and new technology while ensuring engineering rigor, configuration control, interoperability, and logistics support~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item \ac{nmp} supports an \ac{ofrp}-ready fleet by aligning modernization with regional maintenance integration~\autocite{edo-4-1-2-navy-modernization-2025}.
+\end{itemize}
 
-\subsection{Process Flow and Funding Integration}
-\begin{enumerate}
-  \item \textbf{Identify need.} Fleet feedback, reliability data, or new threats drive a Change Initiation Notice, which is screened for technical feasibility and logistics impacts~\autocite{edo-4-1-2-navy-modernization-2025}.
-  \item \textbf{Engineer and budget.} The Alteration Engineering Agent develops Ship Check data, installation drawings, and metrics while the \ac{parm} aligns \ac{funds-d} (lifecycle engineering) and \ac{funds-k} (procurement) appropriations; pilot efforts now allow limited \ac{opn} use for private-yard execution when approved by \ac{opnav} \ac{n9}/\ac{n83}~\autocite{edo-4-1-2-navy-modernization-2025,SL720-AA-MAN-030}.
-  \item \textbf{Select availability.} Modernization Work Package Integration (\ac{wpi}) events match each change to a specific \ac{cno} availability, Continuous Maintenance availability, or pier-side \ac{ait} window based on lead time material and platform readiness~\autocite{TS9090-310}.
-  \item \textbf{Install and certify.} \acp{ait} execute under a \ac{moa} that spells out safety, quality, and turnover requirements; completion data is entered into the \ac{nde} to update the authoritative configuration record~\autocite{SL720-AA-MAN-030,TS9090-310}.
-\end{enumerate}
-Failure to follow this sequence is why unauthorized equipment has been discovered during Board of Inspection and Survey (\ac{insurv}) events---a career ender for the responsible \ac{edo}.
-
-\subsection{Execution Enablers and Lessons Learned}
+\subsection{Goals of Modernization and Definitions}
 \begin{description}
-  \item[\textbf{Configuration management.}] Every modernization line item in the \ac{awp} must trace back to an approved change document, logistics support analysis, and allowance parts list to avoid sparing gaps~\autocite{COMFLTFORCOMINST4790-3}.
-  \item[\textbf{\ac{moa} discipline.}] The \ac{moa} between the \ac{ait}, \ac{rmmco}, the \ac{nsa}, and Ship's Force defines boundary isolations, tag-out responsibilities, testing, and habitability; lessons learned from \ac{canes} and \ac{aws} installs show that unsigned \acp{moa} invite production and safety conflicts~\autocite{TS9090-310,edo-4-1-2-navy-modernization-2025}.
-  \item[\textbf{AIT employment.}] Use \acp{ait} when the task requires repeat installations across multiple hulls, unique \ac{oem} skills, or when it is more cost-effective to mobilize the capability than to train an entire shipyard trade~\autocite{SL720-AA-MAN-030}.
+  \item[\textbf{Modernization goals.}] Improve capability and material condition through approved alterations; improve safety, reliability, maintainability, habitability, and environmental compliance; and increase fleet readiness through timely warfighting support~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Modernization.}] Improves capability above the initial configuration~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Maintenance.}] Allows a ship to continue operating to its current design reliability and performance characteristics~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Repair.}] Returns a ship to its current design reliability and performance characteristics~\autocite{edo-4-1-2-navy-modernization-2025}.
 \end{description}
+
+\subsection{Goals and Attributes of the NMP}
+\begin{description}
+  \item[\textbf{Program goals.}] Maintain modernization policy and guidance, provide SME support, enable ship change review and approval, and ensure authoritative alteration scheduling~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Process discipline.}] \ac{nmp} structures identification, planning, design, approval, funding, and installation while maintaining configuration control and supportability~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Risk control.}] Prevents unauthorized, non-supported ship changes and selects funded changes based on technical, readiness, and cost benefits~\autocite{edo-4-1-2-navy-modernization-2025}.
+\end{description}
+
+\subsection{Modernization Funding}
+\begin{itemize}
+  \item Modernization funding is divided into D-Alt and K-Alt accounts~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item A pilot program allows limited \ac{opn} use for ship maintenance, repair, and modernization in private contracted availabilities (started FY20)~\autocite{edo-4-1-2-navy-modernization-2025}.
+\end{itemize}
+
+\subsection{Legacy Alterations and SHIPALT}
+\begin{description}
+  \item[\textbf{Legacy alteration types.}] \ac{shipalt} titles, \ac{aer}, equipment alterations (ordnance, machinery, engineering changes, software deliveries, field changes, nuclear alterations, Trident alterations, stand-alone removals, crossdeck alterations), and temporary alterations~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Temporary alterations.}] Temporary ship and equipment alterations require a corresponding removal alteration~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{SHIPALT definition.}] Any change in hull, machinery, equipment, or fittings that changes design, materials, number, location, or relationships of component parts; modernization is any change from approved class plans or configuration~\autocite{edo-4-1-2-navy-modernization-2025}.
+\end{description}
+
+\subsection{Legacy SHIPALT Funding (FMP)}
+\begin{description}
+  \item[\textbf{K- and KP-alts.}] Funded by \ac{syscom}; require centrally procured material; installed at depot or by ship/AIT depending on title~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{D- and F-alts.}] Funded by \acp{tycom}; D-alts may require centrally procured material and depot or \ac{ima} installation; F-alts are installed by ship or \ac{ima} without centrally procured material~\autocite{edo-4-1-2-navy-modernization-2025}.
+\end{description}
+
+\subsection{Alteration Equivalent to Repair (AER)}
+\begin{description}
+  \item[\textbf{Approval.}] Technical alteration approved by \ac{navsea}~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Characteristics.}] Uses improved materials from standard stock, replaces obsolete or damaged parts with efficient designs, strengthens parts to improve reliability, or implements minor modifications to prevent recurrence of deficiencies~\autocite{edo-4-1-2-navy-modernization-2025}.
+\end{description}
+
+\subsection{Legacy Documentation}
+\begin{description}
+  \item[\textbf{Justification/Cost Form.}] Prepared by \ac{navsea}~05 or \ac{syscom} engineering; approved by the \ac{spm}; defines purpose, applicable ships, design/installation/integrated logistics support requirements, and cost~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{SHIPALT Record.}] Typically prepared by the planning yard and approved by the \ac{spm}; provides detailed materials, test equipment, design/installation/ILS requirements, and cost~\autocite{edo-4-1-2-navy-modernization-2025}.
+\end{description}
+
+\subsection{Planning Yards}
+\begin{description}
+  \item[\textbf{Role.}] Provide engineering for alteration development, conduct ship checks, prepare drawings and installation data, validate alteration packages, and provide on-site availability support~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Relationship.}] Responsible to the program manager for development engineering and to the installing activity during execution~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Examples.}] Planning yards include Bath Iron Works (DDG-51/1000), Electric Boat (SSBN/SSGN/SSN classes), Huntington Ingalls (LCS, amphibious classes), Newport News (CVN/SSN classes), Naval Shipyards, MSC, and MARAD for specific hull families~\autocite{edo-4-1-2-navy-modernization-2025}.
+\end{description}
+
+\subsection{NMP Enhancements}
+\begin{description}
+  \item[\textbf{Two change categories.}] Program (K-Alt) and Fleet (D-Alt) alterations replace dozens of legacy types; funding source determines category~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Single database.}] \ac{nde} provides the authoritative ship change database with prioritized change lists~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Decision hierarchy.}] O-6, 1--2 star, and 3-star boards approve changes by threshold and priority~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Installation alignment.}] Installation activities are determined by complexity and assigned to O-, I-, or D-level organizations~\autocite{edo-4-1-2-navy-modernization-2025}.
+\end{description}
+
+\subsection{NDE Entitled Process and Ship Change Document}
+\begin{description}
+  \item[\textbf{NDE-EP.}] The entitled process supports \ac{nmp} by collapsing alteration categories, providing a workflow, and enforcing hierarchical decision-making~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{SCD purpose.}] The \ac{scd} replaces the Justification/Cost Form, SHIPALT Record, and \ac{ecp}; it is the single authorized document for ship changes in \ac{nde}~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Authorization.}] An \ac{scd} becomes a ship change after procurement and installation authorization at Decision Point~3~\autocite{edo-4-1-2-navy-modernization-2025}.
+\end{description}
+
+\subsection{SCD Initiation and Submission}
+\begin{description}
+  \item[\textbf{Initiators.}] Any user with an \ac{nde} account may initiate an idea, including program offices, port engineers, \acp{isea}, group staffs, \acp{tycom}, \acp{rmc}, and government planning yards~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Authorized submitters.}] Only authorized submitters can forward ideas for board review (about 130 submitters), designated across stakeholder organizations and trained in \ac{nmp}/SCD processes~\autocite{edo-4-1-2-navy-modernization-2025}.
+\end{description}
+
+\subsection{Approval Thresholds}
+\begin{description}
+  \item[\textbf{Program alterations.}] Approved based on \ac{acat} designation and monetary thresholds~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Fleet alterations.}] O-6 board approves changes under \$50M; 1--2 star board approves \$50M--\$200M; 3-star board sets priorities, approves Surface Ship Modernization Plan \ac{pom} submissions, and approves changes over \$200M~\autocite{edo-4-1-2-navy-modernization-2025}.
+\end{description}
+
+\subsection{NDE-NM Capabilities}
+\begin{itemize}
+  \item Tracks alteration development by category, ship class, and hull; planning and budgeting for programmed alterations; and estimated/actual man-days and costs~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item Tracks logistics status, alteration maturity, Ship Installation Drawing status, execution schedules, and which ships have which alterations~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item Serves as the authoritative source for all \ac{cno} availability dates~\autocite{edo-4-1-2-navy-modernization-2025}.
+\end{itemize}
+
+\subsection{Public Law 102-396}
+\begin{description}
+  \item[\textbf{Restriction.}] Prohibits modernization funding for ships planned for retirement within five years of the scheduled completion of the modification~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item[\textbf{Exceptions.}] Safety modifications are exempt; \ac{secnav} may waive in the national security interest with written notification to congressional defense committees~\autocite{edo-4-1-2-navy-modernization-2025}.
+\end{description}
+
+\subsection{Quick Review}
+\begin{itemize}
+  \item Modernization improves capability and readiness; maintenance sustains baseline performance; repair returns to baseline performance~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item Legacy FMP funding: SYSCOM funds K/KP; \acp{tycom} fund D/F; NMP uses Program vs Fleet categories~\autocite{edo-4-1-2-navy-modernization-2025}.
+  \item The \ac{scd} replaces JCF, SHIPALT Record, and \ac{ecp} as the single authorized ship change document~\autocite{edo-4-1-2-navy-modernization-2025}.
+\end{itemize}
 
 \IfSubfilesClassLoaded{
   \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
