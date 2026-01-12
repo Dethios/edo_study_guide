@@ -788,6 +788,16 @@
 \newacronym{apl}{APL}{Allowance Parts List}
 \newacronym{cosal}{COSAL}{Coordinated Shipboard Allowance List}
 \newacronym{ntp}{NTP}{Navy Training Plan}
+\newacronym{bdt}{BDT}{Builder's Dock Trials}
+\newacronym{bst}{BST}{Builder's Sea Trials}
+\newacronym{at}{AT}{Acceptance Trials}
+\newacronym{iat}{IAT}{Integrated Acceptance Trials}
+\newacronym{pdtt}{PDT\&T}{Post Delivery Test and Trials}
+\newacronym{fct}{FCT}{Final Contract Trials}
+\newacronym{st}{ST}{Shock Trials}
+\newacronym{owld}{OWLD}{Obligation Work Limiting Date}
+\newacronym{gmi}{GMI}{Guarantee Material Inspection}
+\newacronym{uro}{URO}{Unrestricted Operations}
 \newacronym{cls}{CLS}{Contractor Logistics Support}
 \newacronym{dmsms}{DMSMS}{Diminishing Manufacturing Sources and Material Shortages}
 \newacronym{nrro}{NRRO}{Naval Reactors Representative Office}
