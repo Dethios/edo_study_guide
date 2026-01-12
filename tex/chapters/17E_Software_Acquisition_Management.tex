@@ -1,0 +1,202 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% ====================
+% File: 17E_Software_Acquisition_Management.tex
+% ====================
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+% === Software Acquisition Management (EDO 3.4.2) ===
+\section{Software Acquisition Management}
+
+\subsection{Summary}
+\begin{description}
+  \item[\textbf{Common trouble sources.}] Software-intensive programs struggle when requirements are weak, users are not engaged, architectures and interfaces are unclear, hardware deficiencies are overlooked, or integrated teams are not maintained~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Best practices.}] Manage risk continuously, estimate cost and schedule empirically, implement strong configuration control, and plan early for life-cycle support~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Life-cycle costs.}] Software costs peak late in the life cycle while early decisions drive those costs, making up-front planning decisive~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Execution focus.}] Execution emphasizes rapid, iterative design, development, testing, and delivery supported by a product roadmap and program backlog~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Support share.}] Post-deployment software support dominates total life-cycle cost and must be planned early~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{description}
+
+\subsection{Common Issues in Software-Intensive Systems}
+\begin{description}
+  \item[\textbf{Root causes.}] Poor requirements, limited user involvement, unclear architecture and interfaces, overlooked hardware deficiencies, and weak integrated teams drive software problems~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Mission impacts.}] Software delays can delay ship or boat delivery, and upgrade delays can trigger stop-work when software access is blocked~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{description}
+
+\subsection{Best Practices}
+\begin{description}
+  \item[\textbf{Risk.}] Identify and manage risk continuously, use metrics to monitor risk, and address risks from reusing existing software (commercial or non-developmental)~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Cost.}] Estimate cost and schedule empirically and track earned value~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Configuration control.}] Implement configuration management and formally inspect requirements and design products~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Life-cycle planning.}] Plan early for software changes and enhancements; establish support concepts and acquire \ac{pdss} resources~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Other focus areas.}] Trace requirements to the lowest level, ensure data interoperability, conduct continuous testing, and account for end-of-service and licensing considerations~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{description}
+
+\subsection{Software Cost Distribution}
+Software costs peak late in the program life cycle, while early decisions drive those eventual costs~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+
+\subsection{Planning Phase}
+\begin{description}
+  \item[\textbf{Purpose.}] Understand user and system needs and plan the approach to deliver capabilities~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Entry information.}] Requires an \ac{adm} and a draft capability needs statement that captures mission deficiencies, interoperability needs, and legacy interfaces~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Artifacts before execution.}] Capability needs statement, user agreement, cost estimates and \ac{card}, acquisition strategy, test strategy, cybersecurity strategy, contracting strategy, intellectual property strategy, and program support strategy~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{description}
+
+\subsection{Acquisition Strategy Planning}
+\begin{itemize}
+  \item Address data rights, security, system integration, open systems architecture, software reuse, logistics support, software support and licensing, and software modification for emerging missions~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Intellectual property strategy and information support planning address these issues~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{itemize}
+
+\subsection{Contracting and Solicitation Planning}
+\begin{description}
+  \item[\textbf{Software quality.}] The program office works with end users to generate requirements~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Development environment.}] Require an automated software life-cycle development and support environment for the contractor~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Data rights.}] Determine the amount of data rights to be purchased~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Contracting approach.}] Support small, frequent releases that are responsive to change (modular contracting)~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{description}
+
+\subsection{Cost Estimating}
+\begin{description}
+  \item[\textbf{Timing and updates.}] Estimates are required before execution and updated annually~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Attributes.}] Estimates should be timely, iterative, informative, flexible, and credible~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Approaches.}] Analogy, parametric, engineering build-up, and actuals are common methods; teams also select top-down, bottom-up, or Delphi approaches depending on data and program context~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{description}
+
+\subsection{Execution Phase}
+\begin{description}
+  \item[\textbf{Purpose.}] Rapidly and iteratively design, develop, integrate, test, deliver, and operate resilient software capabilities that meet user priorities~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Artifacts.}] Periodic updates to planning artifacts, systems architecture, product roadmap, program backlog, value assessment, Clinger-Cohen compliance, test plans, and program metrics~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{description}
+
+\subsection{Systems Engineering Linkage}
+\begin{description}
+  \item[\textbf{Definition.}] Systems engineering transforms operational needs into system performance parameters and a preferred system configuration~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Policy.}] \ac{dod} policy requires \ac{pm} use of systems engineering principles in software design and development~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{description}
+
+\subsection{Software Development Activities}
+\begin{description}
+  \item[\textbf{System requirements and design.}] Develop top-level specifications and determine which requirements are best performed through software~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Requirements analysis.}] Select \acp{si} and define detailed requirements for each~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Software design.}] Build detailed designs for each \ac{si} and verify requirements are met (not applicable to Agile development)~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Coding and implementation.}] Developers code each software unit and test units stand-alone; each \ac{si} may include multiple software units~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Unit integration and testing.}] Progressively integrate software units and test internal interfaces~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Software item qualification.}] Qualify each \ac{si} as an entity, documented in the \ac{srs}~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Software item integration.}] Integrate \acp{si} (and hardware items) into subsystems~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Subsystem qualification.}] Integrate, test, and qualify subsystems~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{description}
+
+\subsection{Software Development Models}
+\begin{description}
+  \item[\textbf{Selection.}] The model depends on acquisition strategy and system type~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Preferred approach.}] \ac{dod} prefers empirical (Agile) development because it supports continuous inspection and adaptation to emerging threats~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{description}
+
+\subsection{Agile Overview}
+\begin{description}
+  \item[\textbf{Agile definition.}] Requirements and solutions evolve through collaboration between cross-functional teams and users, enabling adaptive planning, early delivery, and continuous improvement~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Agile vs traditional.}] Empirical Agile emphasizes frequent inspect-adapt points and delivery of priority features; traditional approaches plan and manage to full requirements up front~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{description}
+
+\subsection{Project Management Methodologies}
+\begin{description}
+  \item[\textbf{Scrum.}] Framework for complex projects using cross-functional teams and time-boxed sprints (typically 1--4 weeks)~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Kanban.}] Visual workflow management with to-do, in-progress, and completed tasks~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Minimum viable product.}] An \ac{mvp} is an early version of software provided to users for feedback~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Minimum viable capability release.}] An \ac{mvcr} is an initial set of features suitable to be fielded as a completed product~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Lean.}] Tools that help teams improve processes~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{description}
+
+\subsection{Software Process and Maturity}
+\begin{description}
+  \item[\textbf{Process.}] Activities, methods, and practices used to develop and maintain software products (requirements, code, test cases, manuals)~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Process maturity.}] The extent a process is documented, managed, measured, controlled, and continually improved~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{description}
+
+\subsection{Selecting a Software Developer}
+\begin{description}
+  \item[\textbf{Key discriminators.}] Organization and resource management, software and systems engineering process management, tools and techniques, development expertise, domain experience, and \ac{cmmi} accreditation~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{CMMI appraisal.}] Programs can evaluate capability using \ac{scampi} even if a contractor is not \ac{cmmi}-rated~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Common practices.}] Use measurement to plan and track development, use mature development processes, develop architectures that support open systems, exploit commercial products, and train personnel on tools and environments~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{description}
+
+\subsection{CMMI Maturity Levels}
+\begin{itemize}
+  \item Level 5 (Optimizing): focus on process improvement~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Level 4 (Quantitatively Managed): process measured and controlled~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Level 3 (Defined): process characterized for the organization; projects tailor from organizational standards~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Level 2 (Managed): process characterized for projects and often reactive~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Level 1 (Initial): processes unpredictable, poorly controlled, and reactive~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{itemize}
+
+\subsection{Defense Innovation Board Ten Commandments of Software}
+\begin{enumerate}
+  \item Make computing, storage, and bandwidth abundant to \ac{dod} developers and users~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Start software procurement programs small, iterate, and build on success or terminate quickly~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Ensure acquisition processes support the full iterative life cycle of software~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Adopt a \ac{devsecops} culture for software systems~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Automate testing to deploy critical updates in days to weeks, not months~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Include source code as a deliverable for purpose-built \ac{dod} software systems~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Ensure local \ac{dod} software experts can modify or extend software through source code or \ac{api} access~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Only run operating systems receiving and using security updates for new vulnerabilities~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Make security a first-order consideration and encrypt data unless it is part of active computation~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Store, mine, and make available all data generated by \ac{dod} systems for machine learning~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{enumerate}
+
+\subsection{Metrics Selection Considerations}
+\begin{itemize}
+  \item Identify the risks being tracked, required measures, data definitions, collection costs and cadence, and system architecture~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Use a minimal set of metrics that are understandable, economical, field tested, leveraged, useful at multiple levels, and timely~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Tailor metrics to management needs, collect across the life cycle, and use metrics to identify risks, improve process, and evaluate practices~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Use automated collection where possible~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{itemize}
+
+\subsection{Software Measurement Metrics Categories}
+\begin{description}
+  \item[\textbf{Process.}] Maturity and robustness of organizational processes, including productivity, rework, and technology impacts~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Quality.}] Attributes affecting performance, user satisfaction, supportability, and ease of change~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Management.}] Compare actual progress against plans to detect trouble early and adjust plans~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{description}
+
+\subsection{Software Support}
+\begin{description}
+  \item[\textbf{Definition.}] Software support includes activities, resources, and infrastructure to keep software performing its intended role and to modify design for new or changed requirements~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Maintenance.}] Modification after delivery to correct faults, improve performance, or adapt to a changed environment~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{description}
+
+\subsection{Post-Deployment Software Support}
+\begin{description}
+  \item[\textbf{Dominant activities.}] Improve performance, adapt to new hardware, add features, improve efficiency and reliability, and correct errors~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item[\textbf{Cost share.}] \ac{pdss} accounts for approximately 67 percent of total software life-cycle cost~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{description}
+
+\subsection{PDSS Best Practices}
+\begin{itemize}
+  \item Plan early for changes and enhancements and account for cost, schedule, and performance~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Establish software support concepts and acquire resources, including support for \ac{cots} systems~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item Include \ac{pdss} planning in program documentation~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{itemize}
+
+\subsection{Quick Review}
+\begin{itemize}
+  \item The engineering build-up cost estimating approach is used when a detailed analysis of work packages is required~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item The three categories of software metrics are process, quality, and management~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item The preferred software development model is empirical (Agile)~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+  \item \ac{pdss} is approximately 67 percent of total software life-cycle cost~\autocite{edo-3-4-2-software-acquisition-management-2025}.
+\end{itemize}
+
+%====================
+% End of file
+%====================
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
+\end{document}
