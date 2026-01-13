@@ -9,81 +9,95 @@
 \IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 \section{CNO Availability Execution}
 
-\subsection{Project Teams and Responsibilities}
+\subsection{Summary}
 \begin{description}
-  \item[\textbf{Shipyard team.}] The Project Superintendent (overall cost/schedule/safety owner), Project Manager (budget, earned value, planning integration), Assistant Project Superintendents (zone leads), Engineering \& Planning (technical work documents, boundaries), and Business \& Planning (funding, schedule coordination) form the core team~\autocite{edo-4-2-2-cno-availability-execution-2025}.
-  \item[\textbf{\ac{rmc}/private-yard team.}] The Port Engineer, Ship's Maintenance Manager (\ac{smm}), Ship's Force Maintenance Officer, \ac{tycom} representative, Contracting Officer, and contractor Project Manager manage planning yard availabilities~\autocite{edo-4-2-2-cno-availability-execution-2025}.
-  \item[\textbf{Ship's Force.}] \ac{co}/\ac{xo}/\ac{cheng} maintain safety, tag-out, and configuration control; Combat Systems and Supply Officers coordinate tests, \acp{sovt}, and material receipt~\autocite{COMFLTFORCOMINST4790-3}.
-  \item[\textbf{Specialists.}] Integrated Test Engineers, Project Support Engineers, Quality Assurance Specialists, Alteration Coordinators, and Administrative Contract Specialists provide focused oversight on testing, configuration, QA, and change management~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Project teams.}] Public shipyard and \ac{rmc} teams define roles from superintendent and manager through zone execution, with Ship's Force and contractor coordination embedded in the team~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Execution flow.}] \ac{cno} availability execution moves through nesting/ship arrival, rip-out and repair, open and inspect, progress assessment, and testing, trials, and certification~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Schedule language.}] Key events, milestones, \acp{tgi}, and work items frame schedule progress against the critical path~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{NSA/LMA.}] The \ac{nsa} certifies completion while the \ac{lma} integrates execution and work control, including \acp{waf}, tag-outs, and test sequencing for \ac{cno} availabilities~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Certification discipline.}] \ac{nsa} certification depends on executing activity qualifications, integrated test planning, and \ac{oqe} review and approval~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Momentum.}] Second-half performance hinges on documentation quality, staffing continuity, and coordinated testing and trials~\autocite{edo-4-2-2-cno-availability-execution-2025}.
 \end{description}
 
-\begin{figure}[htbp]
-  \centering
-  \begin{tikzpicture}[
-      node distance=1.9cm and 2.6cm,
-      role/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, align=center, inner sep=6pt},
-      oversight/.style={draw=AccentGreen, fill=AccentGreen!15, rounded corners=2pt, align=center, inner sep=6pt},
-      arrow/.style={-Latex, line width=0.9pt, draw=Gray60}
-    ]
-    \node[role] (ship) {Ship's Force\\CO / XO / CHENG};
-    \node[role, right=of ship] (contractor) {Prime Contractor\\PM / QA / Trades};
-    \node[oversight, above=of contractor] (nrro) {NRRO\\(nuclear oversight)};
-    \node[oversight, above right=0.4cm and 2.0cm of ship] (nsa) {NSA / LMA\\Waterfront authority};
-    \node[oversight, below=of contractor] (rpcp) {RPCO\\(cognizant engineer)};
-    \node[oversight, below right=0.4cm and 2.0cm of ship] (qa) {QA / Testing\\Chief Test Conductor};
+\subsection{Public Shipyard Project Management Team}
+\begin{description}
+  \item[\textbf{Project superintendent.}] Equivalent to the \ac{co} in the chain of command, with total responsibility for cost, schedule, safety, and quality; assembles the project team, develops the project management plan and execution strategy, and serves as the single shipyard point of contact with the ship \ac{co}~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Deputy project superintendent (DPS).}] The \ac{dps} is equivalent to the \ac{xo}; assigned for large, complex projects or those with significant nuclear work, and performs duties assigned by the project superintendent~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Assistant project superintendents (APS).}] The \ac{aps} role is equivalent to a department head; \acp{aps} are experienced in all phases of their assigned area with delegated authority for non-technical decisions and recommendations. The Ship's Force representative on the project team may be titled an \ac{aps} or overhaul coordinator; a nuclear-trained limited duty officer may fill the role for nuclear availabilities~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Project engineering and planning manager.}] The \ac{pepm} reports to the project superintendent; directs project planning and management, job planning, and job sequencing/scheduling, develops the planning budget, and defines \ac{js} boundaries~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Business and strategic planning office.}] The \ac{bspo} reports to the project superintendent; obtains project funding, identifies authorized work, authorizes the expenditure of funds, and works directly with the customer on cost and schedule~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Zone managers (ZM).}] \acp{zm} are equivalent to division officers; they report to the appropriate \ac{aps}, control execution within their zone, supervise first-line supervisors, and develop daily production schedules~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+\end{description}
 
-    \draw[arrow] (ship) -- node[above]{shift tests, tag-out} (contractor);
-    \draw[arrow] (contractor) -- node[below]{work control, turnover} (ship);
-    \draw[arrow] (nrro) -- node[right]{reactor oversight} (contractor);
-    \draw[arrow] (nrro) -- node[left]{line authority} (nsa);
-    \draw[arrow] (nsa) -- node[above]{work authorization} (contractor);
-    \draw[arrow] (rpcp) -- node[right]{tech direction} (contractor);
-    \draw[arrow] (qa) -- node[right]{TGI / trials} (contractor);
-    \draw[arrow] (qa) -- node[below]{witness / accept} (ship);
-  \end{tikzpicture}
-  \caption[Nuclear waterfront team]{Nuclear waterfront project-team interactions across NRRO, RPCO, NSA/LMA, Ship's Force, and the prime contractor.}
-  \label{fig:nuclear-waterfront-team}
-\end{figure}
+\subsection{RMC Project Management Team}
+\begin{description}
+  \item[\textbf{Port engineer.}] Maintenance team leader, \ac{tycom} representative, and resident expert in ship maintenance~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Project manager.}] \ac{rmc} organization lead responsible for the entire availability; ensures work is certified after completion, approves changes to the availability contract with the \ac{ko}, screens work to the \ac{lma} contractor, and manages funding~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Ship superintendent.}] Manages \ac{rmc} production work at the intermediate level and assists in work sequencing and deconfliction~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Ship's commanding officer.}] Responsible for overall ship material condition, the ship's annual maintenance budget, and coordination of the maintenance team~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Ship's maintenance and material officer.}] The \ac{smmo} is the Ship's Force point of contact for maintenance items; liaison between ship, maintenance activity, and \ac{rmc}; assists in screening work and work package development; coordinates with the project manager~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Contractor program manager.}] Point of contact between the maintenance team and contractor workforce; assists in work sequencing and deconfliction and coordinates with the project manager~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Support specialists.}] Project officer (if assigned), shipbuilding specialists, project support engineer, administrative contract specialist, quality assurance specialist, financial and material specialists, government property manager, integrated test engineer, alteration coordination engineer, and \ac{awp} manager provide focused support and may be shared across projects~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+\end{description}
 
 \subsection{Execution Phases}
-\begin{enumerate}
-  \item \textbf{Nesting / Arrival.} Establish temporary services, fire watches, habitability, industrial hygiene controls, and turnover from Ship's Force to the Maintenance Activity; complete mandatory briefings (\ac{jfmm} Chapter 2, Tag-out Users Manual)~\autocite{edo-4-2-2-cno-availability-execution-2025}.
-  \item \textbf{Rip-out \& Access.} Remove interferences, open systems, and conduct initial \ac{waf} reviews; late identification of hazardous material and access conflicts is a top schedule killer~\autocite{COMFLTFORCOMINST4790-3}.
-  \item \textbf{Open \& Inspect.} Execute inspections (tank, structural, piping) and document growth work; per \ac{navsea} Standard Item 009-01, inspections should be 100\% complete by A+20\% to preserve schedule margin~\autocite{edo-4-2-2-cno-availability-execution-2025}.
-  \item \textbf{Repair \& Production.} Complete component tasks, manage new vs.\ growth work approvals, and track critical path milestones using \ac{tgi}~\autocite{edo-4-2-2-cno-availability-execution-2025}.
-  \item \textbf{Testing, Trials, Certification.} Execute compartment turnover, \ac{loa}, \ac{sovt}, \ac{cssqt}, Builder's/Acceptance Trials, and Sea Trials before \ac{pcd}~\autocite{COMFLTFORCOMINST4790-3}.
-\end{enumerate}
+\begin{description}
+  \item[\textbf{Nesting/ship arrival.}] Welcome Ship's Force as a member of the project team; train the crew on fire watch, tag-outs, work control (\ac{jfmm}), and shipyard procedures; explain access and temporary services plans; coordinate berthing barge arrangements; execute availability agreements (\ac{moa}) and the 8010 fire drill; and begin system turnover from Ship's Force to the shipyard. The ship becomes an industrial site (public shipyard codes 246 and 2340, safety office code 106), so training, temporary services, and safety dominate early execution~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Rip-out \& repair.}] Start as soon as possible; expect access issues, unexpected hazardous material, and tag-outs as common roadblocks. Push equipment to shops early to uncover surprises, recognize that "last off ship" often means "first back on ship," and manage labor intensity so activity translates into progress~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Open \& inspect.}] Conduct inspections onboard, inside shops, and on Ship's Force work items; complete inspections by A+20\% per \ac{navsea} Standard Item 009-01. Use inspection reports to authorize work, capture new and growth work, place growth/new work on contract no later than the A+60\% point for contracted availabilities, adjust anticipated repair quantities, and report schedule and cost impacts to financial customers (\ac{tycom}/fleet)~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Progress assessment.}] Monitor the critical path continuously because slippage or new work can change it at any point; assess progress at the key event, milestone, \ac{tgi} (public shipyards), and work item/task levels~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Testing, trials, \& certification.}] Enter the testing phase only after meeting the \ac{pcd}; coordinate tests and trials with Ship's Force, the shipyard, and the customer so test scope aligns to the work performed and certification requirements~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+\end{description}
 
-\begin{longtblr}[
-    caption = {CNO availability execution phases},
-    label   = {tab:cno-availability-phases}
-  ]{
-    colspec = {@{} L L L L @{}}
-  }
-  \toprule
-  {Phase}                        & {Key Deliverables}                                                                             & {Controlling Documents}                                                                       & {Responsible Leads}                                                       \\
-  \midrule
-  Nesting / Arrival              & Temporary services, fire watch plan, habitability, turnover briefs, tag-out baseline           & JFMM Chapter 2; Tag-out Users Manual; local safety manuals                                    & Project Superintendent, Safety Officer, Ship's Force Department Heads     \\
-  Rip-out \& Access              & Interference removal, WAF approvals, confined space/hazardous material plans                   & WAF/Tag-out procedures; hot work and gas-free engineering instructions                        & Zone Assistant Project Managers, Production Shop Leads, Gas Free Engineer \\
-  Open \& Inspect                & Inspection reports, growth work candidates, material condition snapshots                       & Standard Item 009-01; QA/inspection instructions; class maintenance plans                     & Engineering \& Planning, Quality Assurance, Class Maintenance Planner     \\
-  Repair \& Production           & Completed work items, change control (JSNs/contract mods), schedule metrics, resource leveling & Contract/SOW; work package and change control processes; integrated master schedule standards & Project Manager, Port Engineer/KO, Business \& Planning, Contractor PM    \\
-  Testing, Trials, Certification & Test agendas, TGI alignment, LOA/SOVT/CSSQT completion, sea trial cards, turnover certificates & JFMM testing chapters; platform test manuals; INSURV/Builder's trial requirements             & Chief Test Conductor, Ship's Force Test Coordinator, NSA/LMA witnesses    \\
-  \bottomrule
-\end{longtblr}
+\subsection{New Work, Growth Work, and Anticipated Repairs}
+\begin{description}
+  \item[\textbf{New work.}] Additional work identified or authorized after contract award that is not related to a work item in the original contract; may be discovered when equipment fails or deficiencies are found post-award~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Growth work.}] Additional work identified or authorized after contract award that expands a work item already in the original contract; often expected where work is difficult to scope fully before inspection (for example, tanks)~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Anticipated repairs.}] Work not fully quantifiable before the availability starts but expected based on historical lessons and planned for in budget, resources, and schedule before inspection~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+\end{description}
+New and growth work are common sources of schedule delay and must be reviewed and agreed to by the maintenance/project team; in some cases the \ac{tycom} (or other government representative) must authorize work before it begins based on requirements, risk assessment, and schedule impact~\autocite{edo-4-2-2-cno-availability-execution-2025}.
 
-\subsection{Governance, Quality, and Work Control}
+\subsection{Schedule Terminology}
+\begin{description}
+  \item[\textbf{Key event.}] High-level breakdown of principal activities with hard dates set for completion~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Milestone.}] Lower-level event that supports higher-level key events~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Task group instruction (TGI).}] \ac{tgi} are used in public shipyards to manage discrete work packages and execution control~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Work item or task.}] The smallest execution unit used to track progress and assess schedule performance~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+\end{description}
+
+\subsection{Testing, Trials, and Certification Details}
 \begin{itemize}
-  \item \textbf{\ac{nsa} / \ac{lma}.} Certifies that work is authorized, technically compliant, and properly tested before acceptance; reviews \ac{oqe} prior to signing completion certificates~\autocite{COMFLTFORCOMINST4790-3}.
-  \item \textbf{Work control.} \acp{waf}, \ac{tgi} sequencing, and boundary tags must remain synchronized; growth work requires screening panels (Ship's Force, \ac{tycom}, KO) to verify funding, schedule, and technical impacts~\autocite{edo-4-2-2-cno-availability-execution-2025}.
-  \item \textbf{New vs.\ growth work.} New work is undiscovered scope added post-award; growth work expands existing items. Both demand \ac{tycom} approval, funding source identification, and contract mods (or \ac{jsn} adjustments for public yards)~\autocite{COMFLTFORCOMINST4790-3}.
-  \item \textbf{Testing governance.} Chief Test Conductors manage test agendas; engineering agents and Ship's Force witness tests, and discrepancies must be adjudicated before certification events (e.g., \ac{loa}, \ac{cssqt})~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item \textbf{\ac{pcd} definitions vary.} Clarify the project definition of \ac{pcd} early because it must be met before the testing phase begins~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item \textbf{Testing governance.} Public shipyard testing is supervised by the chief test engineer; tests are grouped for efficiency, scope depends on the work performed, and early testing mitigates schedule impacts from deficiencies. Ship's Force operates equipment during shipyard-administered tests, requiring tight coordination~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item \textbf{Trials and certification.} The need for sea trials, crew certification, \ac{loa}, \ac{cssqt}, and (preliminary) operational reactor safeguards exams depends on the scope and length of work and the platform; the exact plan is determined ahead of time with Ship's Force, the shipyard, and the customer~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+\end{itemize}
+
+\subsection{NSA and LMA Roles}
+\begin{description}
+  \item[\textbf{Naval Supervising Activity.}] The \ac{nsa} is responsible for certification of work accomplished during any type of availability and may be a \ac{nsy}, \ac{supship}, or \ac{rmc}. The \ac{nsa} ensures work is authorized and completed in accordance with applicable technical requirements and maintenance policy and must possess a \ac{navsea} technical warrant~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item[\textbf{Lead Maintenance Activity.}] The \ac{lma} is responsible for work being accomplished during any type of availability; coordinates work and testing controls including \acp{waf}, tag-outs, and test sequencing (\ac{cno} availabilities only), integrates the work of all activities, tracks progress of maintenance execution, and provides the sea trials agenda for \ac{cno} availabilities~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+\end{description}
+
+\subsection{Availability Work Certification}
+\begin{itemize}
+  \item \textbf{Certification plan.} The \ac{nsa} certification plan verifies work is completed and technically correct by confirming executing activity qualifications, \ac{nsa} approval of mandatory technical requirements, an integrated test plan, and adequate \ac{nsa} oversight of all availability work~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item \textbf{\ac{oqe}.} Each executing activity must provide \ac{oqe} showing technically correct completion of work~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item \textbf{Waivers and deviations.} \ac{nsa} review and approval of waivers and deviations ensures exceptions do not adversely impact key event completion, providing maximum reasonable assurance the availability is complete and technically correct~\autocite{edo-4-2-2-cno-availability-execution-2025}.
 \end{itemize}
 
 \subsection{Lessons Learned}
 \begin{itemize}
-  \item \textbf{Momentum matters.} Availability performance often collapses after undocking; maintain daily production meetings, emphasize housekeeping/safety, and enforce material staging to avoid second-half slumps~\autocite{edo-4-2-2-cno-availability-execution-2025}.
-  \item \textbf{Communication is a weapon system.} Cross-functional representatives (yard, Ship's Force, \ac{tycom}, QA, Supply) must keep each other informed about configuration, testing, and material risks; unresolved disconnects manifest as trial failures~\autocite{edo-4-2-2-cno-availability-execution-2025}.
-  \item \textbf{Document everything.} Capture change incorporation, OQE, and lessons in the \ac{nde} immediately—waiting until the end invites errors and delays closeout~\autocite{COMFLTFORCOMINST4790-3}.
+  \item \textbf{Keep momentum.} First-half enthusiasm fades as undocking approaches, equipment installation peaks, and new work emerges; the test program accelerates at the same time~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item \textbf{Second-half obstacles.} Documentation deficiencies, daily critical path changes, \ac{sovt} test deficiencies, Ship's Force manning shortfalls and turnover, inspection team scheduling, and material failures during waterborne testing can derail execution~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item \textbf{Second-half helpers.} Maintain strong communication, build project team links across engineering/planning, planning yard, test engineering, supply, and the ship's \ac{cheng}, keep Ship's Force trained for testing, ensure habitability is ready for move aboard, keep supply informed on material needs, track completion risks, address fast cruise discrepancies early, and maximize sea trial effectiveness~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+\end{itemize}
+
+\subsection{Quick Review}
+\begin{itemize}
+  \item The \ac{pepm} directs project planning and management, job planning, and job sequencing and scheduling for public shipyard availabilities~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item The \ac{bspo} obtains funding, identifies authorized work, and works directly with the customer on cost and schedule~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item The port engineer serves as the \ac{rmc} maintenance team leader~\autocite{edo-4-2-2-cno-availability-execution-2025}.
+  \item Typical execution phases are nesting/arrival, rip-out and repair, open and inspect, progress assessment, and testing, trials, and certification~\autocite{edo-4-2-2-cno-availability-execution-2025}.
 \end{itemize}
 
 \IfSubfilesClassLoaded{
