@@ -699,6 +699,31 @@
 \newacronym{opnavinst}{OPNAVINST}{Office of the Chief of Naval Operations Instruction}
 \newacronym{insurv}{INSURV}{Board of Inspection and Survey}
 
+% --- Legal, Ethics, and Discipline ---
+
+\newacronym{adsep}{ADSEP}{Administrative Separation}
+\newacronym{cass}{CASS}{Command Authorized Search and Seizure}
+\newacronym{cfc}{CFC}{Combined Federal Campaign}
+\newacronym{dso}{DSO}{Defense Service Office}
+\newacronym{drb}{DRB}{Disciplinary Review Board}
+\newacronym{gcmca}{GCMCA}{General Court-Martial Convening Authority}
+\newacronym{jagman}{JAGMAN}{Manual of the Judge Advocate General}
+\newacronym{jer}{JER}{Joint Ethics Regulation}
+\newacronym{lsss}{LSSS}{Legal Services Support Section}
+\newacronym{loac}{LOAC}{Law of Armed Conflict}
+\newacronym{mcm}{MCM}{Manual for Courts-Martial}
+\newacronym{ncis}{NCIS}{Naval Criminal Investigative Service}
+\newacronym{njp}{NJP}{Non-Judicial Punishment}
+\newacronym{nmcrs}{NMCRS}{Navy-Marine Corps Relief Society}
+\newacronym{pass}{PASS}{Permissive Authorized Search and Seizure}
+\newacronym{quickman}{QUICKMAN}{Commander's Quick Reference Legal Handbook}
+\newacronym{rlso}{RLSO}{Regional Legal Service Office}
+\newacronym{sarc}{SARC}{Sexual Assault Response Coordinator}
+\newacronym{sja}{SJA}{Staff Judge Advocate}
+\newacronym{ucmj}{UCMJ}{Uniform Code of Military Justice}
+\newacronym{vlc}{VLC}{Victims' Legal Counsel}
+\newacronym{xoi}{XOI}{Executive Officer Inquiry}
+
 % --- Civilian Workforce & Labor Relations ---
 
 \newacronym{civpers}{CIVPERS}{Civilian Personnel}
