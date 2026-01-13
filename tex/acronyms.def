@@ -745,6 +745,12 @@
 \newacronym{oem}{OEM}{Original Equipment Manufacturer}
 \newacronym{awp}{AWP}{Availability Work Package}
 \newacronym{bawp}{BAWP}{Baseline Availability Work Package}
+\newacronym{bpmp}{BPMP}{Baseline Project Management Plan}
+\newacronym{bspo}{BSPO}{Business and Strategic Planning Office}
+\newacronym{pepm}{PEPM}{Project Engineering and Planning Manager}
+\newacronym{js}{JS}{Job Summary}
+\newacronym{cu}{CU}{Component Unit}
+\newacronym{cpaact}{CPA}{Carrier Planning Activity}
 \newacronym{lrms}{LRMS}{Long-Range Maintenance Schedule}
 \newacronym{fast}{FAST}{Fleet Availability Scheduling Team}
 \newacronym{fmbod}{FMBOD}{Fleet Maintenance Board of Directors}
@@ -766,6 +772,9 @@
 \newacronym{dmt}{DMT}{Directed Maintenance Task}
 \newacronym{ait}{AIT}{Alteration Installation Team}
 \newacronym{osic}{OSIC}{On-Site Installation Coordinator}
+\newacronym{sdaes}{SDAES}{Specification Development and Availability Execution Support}
+\newacronym{ipm}{IPM}{Initial Planning Meeting}
+\newacronym{smmo}{SMMO}{Ship's Maintenance and Material Officer}
 \newacronym{sfima}{SFIMA}{Strike Force Intermediate Maintenance Activity}
 \newacronym{nssf}{NSSF}{Naval Submarine Support Facility}
 \newacronym{trf}{TRF}{Trident Refit Facility}

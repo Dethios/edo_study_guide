@@ -9,64 +9,112 @@
 \IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 \section{CNO Availability Planning}
 
-\subsection{Balancing Requirements, Resources, and Readiness}
+\subsection{Summary}
 \begin{description}
-  \item[\textbf{Customers.}] Fleet commanders and \ac{tycom}s drive capability requirements and availability length based on the Optimized Fleet Response Plan and readiness gaps~\autocite{OPNAVINST3000-15K,edo-4-2-1-cno-availability-planning-2025}.
-  \item[\textbf{Planners.}] Shipyards, \acp{rmc}, and planning activities must sequence work, tooling, infrastructure, and \ac{lltm} so the schedule is executable~\autocite{edo-4-2-1-cno-availability-planning-2025}.
-  \item[\textbf{Resources.}] Budgets (\ac{ocmf}, \ac{opn}, \ac{funds-d}/\ac{funds-k}), workforce, and pier/dock capacity must align with \ac{cno}-directed Repair Days~\autocite{OPNAVNOTE4700-24}.
+  \item[\textbf{Planning balance.}] Availability planning balances flexible requirements with stable early planning to execute within schedule and resources~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{AWP sources.}] \ac{awp} work candidates come from \ac{cmp}/\ac{icmp}, authorized alterations, \ac{tycom} repairs (\acp{dfs}/\acp{tso}), pre-availability tests, and \ac{csmp}~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{AWP timeline.}] Baseline planning starts at A-36, initial \ac{awp} at A-21, proposed \ac{awp} refinement at mid-planning, post-final \ac{awp} at A-3, and completed \ac{awp} within six months of availability completion~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Work definition.}] Public shipyards use job summaries, component unit phases, and task group instructions; surface availabilities use 4E work item specifications~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Planning guidance.}] \ac{bpmp} and \ac{aim} processes guide baseline project management and industrial planning~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Pre-start goals.}] \ac{lltm}, tooling, early start requirements, critical path, logistics, training, and on-time contract award or definitization must be ready before A-0~\autocite{edo-4-2-1-cno-availability-planning-2025}.
 \end{description}
-\acp{edo} should articulate how they reconcile conflicting demands—for example, deferring a lower-criticality modernization so mandatory \ac{subsafe} work fits within the allotted man-days.
 
-\subsection{Availability Work Package Development}
-\begin{enumerate}
-  \item \textbf{Baseline (A-36 to A-24).} \ac{surfmepp}/\ac{submepp} derive the \ac{bawp} from the \ac{cmp}, \acp{tycom} repairs, and modernization candidates; Ship Checks, Condition Found Reports, and \ac{tsra} results refine the package~\autocite{edo-4-2-1-cno-availability-planning-2025,COMFLTFORCOMINST4790-3}.
-  \item \textbf{Initial Planning (A-21).} Planning Activities (Carrier Planning Activity, Submarine Planning Activity, \acp{rmc}) reconcile the \ac{bawp} with Class Plan priorities and issue the Initial Availability Work Package (\ac{awp})~\autocite{edo-4-2-1-cno-availability-planning-2025}.
-  \item \textbf{Final Planning (A-12 to A-3).} Results of pre-availability tests (\ac{pats}/\ac{pots}), \acp{dfs}, \acp{tso}, and new modernization approvals are adjudicated; the final \ac{awp} is issued no later than three months before A-0~\autocite{edo-4-2-1-cno-availability-planning-2025,OPNAVNOTE4700-24}.
-  \item \textbf{Contracting.} For surface private-yard availabilities, \ac{macmo} constructs increase competition and flexibility; public yards rely on \ac{aim} processes~\autocite{edo-4-2-1-cno-availability-planning-2025}.
-\end{enumerate}
-
-\begin{figure}[htbp]
-  \centering
-  \begin{tikzpicture}[
-      x=3.2cm,
-      y=1cm,
-      >=Latex,
-      milestone/.style={draw=AccentBlue, fill=AccentBlue!10, rounded corners=2pt, inner sep=4pt, align=center},
-      timeline/.style={line width=1pt, draw=Gray60}
-    ]
-    \draw[timeline] (0,0) -- (4.6,0);
-    \draw[timeline] (0,-0.15) -- (0,0.15);
-    \node[milestone, above=4pt] at (0,0.15) {\textbf{A-36}\\Baseline BAWP\\Ship checks, TSRA, CMP alignment};
-    \draw[timeline] (1.4,-0.15) -- (1.4,0.15);
-    \node[milestone, above=4pt] at (1.4,0.15) {\textbf{A-21}\\Initial AWP\\Class Plan and LRMS sync};
-    \draw[timeline] (2.8,-0.15) -- (2.8,0.15);
-    \node[milestone, above=4pt] at (2.8,0.15) {\textbf{A-12}\\PATS/POTS results\\DFS/TSO adjudication};
-    \draw[timeline] (3.8,-0.15) -- (3.8,0.15);
-    \node[milestone, above=4pt] at (3.8,0.15) {\textbf{A-3}\\Final AWP\\Contract package / AIM};
-    \draw[timeline] (4.6,-0.15) -- (4.6,0.15);
-    \node[milestone, above=4pt] at (4.6,0.15) {\textbf{A-0}\\Award / start\\Ready to execute};
-    \node[below=6pt, align=center, text=AccentBlue] at (2.3,-0.15)
-    {\small Reviews: Readiness/Integration Summits, AWI, Planning Yard gates, CNO scheduling conference};
-  \end{tikzpicture}
-  \caption[CNO availability planning timeline]{CNO availability planning timeline (A-36 through A-0) with key reviews and deliverables.}
-  \label{fig:cno-planning-timeline}
-\end{figure}
-
-\subsection{Planning Teams and Integration Forums}
+\subsection{Sources of AWP Work Candidates}
 \begin{itemize}
-  \item \textbf{Carrier Team One.} Aligns \ac{navsea} 08/04/21, \ac{navair}, Newport News Shipbuilding, and Fleet stakeholders to drive aircraft carrier availability excellence~\autocite{edo-4-2-1-cno-availability-planning-2025}.
-  \item \textbf{Surface Team One.} Unites \ac{sea}~21, \ac{sea}~05, \ac{surfmepp}, \acp{tycom}, and \acp{peo} to tackle systemic issues (e.g., late drawings, material delays) across destroyer/cruiser/amphibious availabilities~\autocite{edo-4-2-1-cno-availability-planning-2025}.
-  \item \textbf{Submarine Team One.} Led by \ac{pms}~392/\ac{submepp}, integrates \ac{cnrmc}, \ac{navsea}~08/21, and public yards to sustain \acp{ssn}/\acp{ssbn} availabilities and implement \ac{nsssy} initiatives\FlagBilletNote{\ac{rdml} Dan L.\ Lannamann holds the \ac{cnrmc} billet}~\autocite{edo-4-2-1-cno-availability-planning-2025}.
-  \item \textbf{Planning summits.} Readiness Summits, Availability Work Integration (\ac{awi}) events, and Integrated Production Planning (\ac{ipp}) meetings synchronize modernization, maintenance, logistics, and testing products~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item \ac{cmp}/\ac{icmp} routine maintenance and inspections~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item Authorized alterations (program and fleet)~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item \ac{tycom} repairs, including \acp{dfs} and \acp{tso} closures~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item Pre-availability tests and inspections (\ac{tsra}, \ac{pots}/\ac{pats})~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item \ac{csmp} items~\autocite{edo-4-2-1-cno-availability-planning-2025}.
 \end{itemize}
 
-\subsection{Risk Controls and Board-Ready Talking Points}
+\subsection{Pre-Start Planning Goals}
+\begin{itemize}
+  \item Order \ac{lltm}, have special tooling on-site, and complete early start requirements~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item Define critical path and key events in the integrated schedule~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item Resolve logistics and infrastructure needs (power, berthing, galley, force protection, LAN migration)~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item Train the crew on shipyard procedures and secure on-time contract award or definitization~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+\end{itemize}
+The most important planning output is a fully integrated schedule of all availability work~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+
+\subsection{Public Shipyard AWP Development}
 \begin{description}
-  \item[\textbf{Critical path management.}] Identify the top three critical path evolutions (e.g., tank blasting/coating, propulsion plant maintenance, combat system rip-outs) and ensure early start requirements—barge services, \ac{lltm}, training—are executable before A-0~\autocite{edo-4-2-1-cno-availability-planning-2025}.
-  \item[\textbf{Material readiness.}] Demand 100\% receipt of \ac{lltm} and government-furnished material before award; highlight mitigation plans for supply-chain risk (dual sources, cannibalization, additive manufacturing)~\autocite{edo-4-2-1-cno-availability-planning-2025}.
-  \item[\textbf{Growth vs.\ new work.}] Explain how your team budgets anticipated growth work (historical allowances) versus truly new work (unique casualty), as well as the screening process for adding either to the contract~\autocite{COMFLTFORCOMINST4790-3}.
-  \item[\textbf{Metrics.}] Use \ac{nsssy} dashboards (Earned Value, manday burn, schedule adherence) and weekly risk reviews to show how you keep leadership informed and trigger help early~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Baseline AWP (A-36).}] Planning requirements from \ac{submepp} (submarines) or \ac{cpaact} (carriers)~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Initial AWP (A-21).}] Consolidates baseline \ac{awp}, authorized alterations, and repairs~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Proposed AWP.}] \ac{tycom} review of pre-availability tests and inspections; \ac{ipm} for submarines and A-12 planning meeting for carriers~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Post-final AWP (A-3).}] \ac{tycom} approval after final planning meeting updates~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Completed AWP.}] Issued within six months of availability completion as requirements gain fidelity over time~\autocite{edo-4-2-1-cno-availability-planning-2025}.
 \end{description}
+
+\subsection{RMC AWP Development}
+\begin{description}
+  \item[\textbf{Baseline AWP (BAWP).}] Developed by \ac{surfmepp} using \ac{cmp}, \ac{tfp}, and ship sheets~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Availability Work Package.}] Refines \ac{bawp} at A-360 with assessment results, \ac{csmp}, and modernization to balance life-cycle maintenance and readiness~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+\end{description}
+
+\subsection{Public Shipyard Work Definition}
+\begin{description}
+  \item[\textbf{Job Summary (JS).}] Groups work into logical evolutions with task lists, material, trades, and man-hour estimates~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Component Unit Phase (CU Phase).}] A specific phase of work for a specific \ac{cu}~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Task Group Instruction (TGI).}] Detailed instructions for tasks within a \ac{cu} phase~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Component Unit (CU).}] The physical unit of work control~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+\end{description}
+\begin{itemize}
+  \item \textbf{CU phases.} A (repair onboard), C (calibrate/align), D (open/inspect), E (restore prior to test), F (fabricate), H (repair off-ship), I (inspect), K (clean/prepare), M (maintain), P (paint/preserve), R (reinstall/reassemble), S (stage/prepare), T (test), U (unship/remove)~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+\end{itemize}
+
+\subsection{Integrated Schedule (Public Shipyard)}
+\begin{enumerate}
+  \item Define the authorized \ac{awp} and establish key events and milestones~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item Develop job summaries and sequence \ac{cu} phases~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item Build the network diagram (PERT), integrate Ship's Force/contractor/\ac{ait} work, and estimate resources, time, and cost~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item Determine the critical path and produce the integrated schedule~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+\end{enumerate}
+
+\subsection{Critical and Controlling Paths}
+\begin{description}
+  \item[\textbf{Critical path.}] Longest duration sequence of work with the least float that sets minimum project length~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Controlling path.}] Near-critical activities with slightly more float that can still drive key events due to scope, material, or complexity~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+\end{description}
+
+\subsection{RMC Work Definition and Schedule}
+\begin{description}
+  \item[\textbf{4E work item specifications.}] Contractual statements of work defining repair or alteration requirements in standard format for Master Ship Repair Agreement or Agreement for Boat Repair~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Integrated schedule.}] Defines \ac{awp}, phases, key events, milestones, network sequence, and critical path; \ac{lma} generates the schedule, contracted through \ac{navsea} Standard Item 009-60, with \ac{rmc} review and acceptance~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+\end{description}
+
+\subsection{Platform Differences}
+\begin{description}
+  \item[\textbf{Baseline planning owners.}] \ac{submepp} (submarines), \ac{cpaact} (carriers), and \ac{surfmepp} (surface) maintain the baseline \ac{awp}~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Planning organizations.}] Submarines and carriers rely on public/private shipyard planning products; surface ships use contractor or third-party \ac{sdaes} planning with 4E specifications~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Common sources.}] All platforms use the same work candidate sources, but planning timelines differ across platforms~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+\end{description}
+
+\subsection{Planning Team Roles}
+\begin{description}
+  \item[\textbf{\ac{bspo}.}] Customer interface and funding authority; processes new work and funding~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Project superintendent.}] Leads cost, schedule, and performance; oversees project planning and sequencing~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{\ac{pepm}.}] Principal planner who directs \ac{js} boundaries, planning products, and schedule development~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Project engineers/test engineers.}] Support planning, sequencing, and technical oversight~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Port engineer.}] \ac{tycom} representative who screens work to the proper maintenance organization~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{RMC project manager.}] Leads the RMC project team, ensures funding for planning, and screens work to contractor execution~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{\ac{lma} project manager.}] Contractor \ac{lma} point of contact who leads integrated schedule development and coordinates with the \ac{rmc}~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{\ac{smmo}.}] Ship's Force point of contact for maintenance; assists with screening and 2K development~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+\end{description}
+
+\subsection{RMC Contracting Strategy (MACMO)}
+\begin{description}
+  \item[\textbf{\ac{macmo}.}] Firm-fixed-price surface ship repair contracts that separate planning from execution (\ac{sdaes} or organic planning), maximize competition, and balance risk between Navy and industry~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item[\textbf{Award approach.}] \ac{cno} availabilities of 10+ months compete coast-wide; under 10 months award in homeport; continuous maintenance uses homeport competition; emergent work uses existing contractor, competition if time allows, or rotational \ac{idiq} awards if immediate~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+\end{description}
+
+\subsection{Quick Review}
+\begin{itemize}
+  \item Five \ac{awp} sources: \ac{cmp}/\ac{icmp}, authorized alterations, \ac{tycom} repairs, pre-availability tests, and \ac{csmp}~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item Baseline \ac{awp} producers: \ac{submepp} (subs), \ac{cpaact} (carriers), \ac{surfmepp} (surface)~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item The most important planning product is the integrated schedule~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+  \item \ac{macmo} uses fixed-price competition to drive cost down and improve accountability~\autocite{edo-4-2-1-cno-availability-planning-2025}.
+\end{itemize}
 
 \IfSubfilesClassLoaded{
   \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
