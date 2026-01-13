@@ -116,6 +116,10 @@ fi
 cd "$ROOT"
 
 mkdir -p "$OUTDIR" "$AUXDIR"
+# Ensure TeX can locate class/style/bib files when latexmk runs from repo root.
+export TEXINPUTS="$ROOT/tex:${TEXINPUTS:-}"
+export BIBINPUTS="$ROOT/tex:${BIBINPUTS:-}"
+export BSTINPUTS="$ROOT/tex:${BSTINPUTS:-}"
 
 run_scrub() {
     local scrub="$ROOT/scripts/scrub.sh"
@@ -156,6 +160,7 @@ case "$ENGINE" in
 esac
 
 LMK_ARGS=(
+    "-r" "$ROOT/tex/latexmkrc"
     "-pdf"
     "-synctex=1"
     "-interaction=nonstopmode"

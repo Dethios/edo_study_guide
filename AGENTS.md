@@ -33,10 +33,12 @@
 
 -   Prefer tools over assumptions for user-specific data, file state, and IDs; parallelize independent reads when possible.
 -   After any write/update, restate what changed, where, and any validation performed.
+-   **multi_reasoning_mcp:** For multi-step tasks, use `mcp__multi_reasoning_mcp__repo_scan_tool` to orient, then `mcp__multi_reasoning_mcp__orchestrate_task` with `plan_only=true` for the plan. Execute scoped work via `mcp__multi_reasoning_mcp__run_subtask`; apply edits through `mcp__multi_reasoning_mcp__apply_patch` and honor confirmation tokens/safety levels. Skip only for trivial single-step work.
+-   **Memory bridge:** Use `mcp__multi_reasoning_mcp__memory_search` when prior context or stable facts are needed; use `mcp__multi_reasoning_mcp__memory_remember` to store durable preferences, conventions, or project state. Treat memory like ChatGPT web memory: helpful, minimal, privacy-aware, and explicit; do not store secrets, credentials, or sensitive data; avoid ephemeral or speculative notes; confirm before storing if uncertain.
 
 ## Workflow for Every Task
 
--   **Start:** Read `AGENTS.md`, `project_export.json`, and `.github/copilot-instructions.md`. Note assumptions.
+-   **Start:** Read `AGENTS.md`, and `project_export.json`. Note assumptions.
 -   **Finish (only if files under `/home/victor/projects/edo/main` were modified):**
     -   Write a brief summary of completed work and current chat context.
     -   Update `project_export.json` with new context, added instructions, and current status.
@@ -47,15 +49,6 @@
 -   Mark off completed TODOs; search LaTeX sources (`tex/main.tex`, `tex/chapters/`, `tex/tikz/`, `tex/templates/`) for outstanding TODOs.
 -   Proceed with all next recommended tasks, up to three at a time.
 -   Keep task lists tidy: maintain Outstanding Lookups and Current Jobs above, and move completed items into Resolved Lookups and Completed Jobs at the bottom whenever Lookups or Current Jobs are updated.
-
-## Memory Update Protocol
-
--   **Trigger:** User says `Update memory: <reason>`.
--   **Pre-read:** `.github/copilot-instructions.md`, `AGENTS.md`, `project_export.json`.
--   **Output only:**
-    1. One-sentence rationale.
-    2. JSON Merge Patch (RFC 7396) for `project_export.json` in a code block labeled `json_patch`.
--   Never rewrite the whole file; patch only changed leaves. Never invent sources.
 
 ## Other Instruction Sources
 

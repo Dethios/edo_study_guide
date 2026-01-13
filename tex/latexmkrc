@@ -1,7 +1,8 @@
 # Keep PDF in repo; put aux where LaTeX/biber agree.
 use Cwd qw(abs_path);
 use File::Basename qw(dirname);
-my $root_dir = abs_path(dirname(__FILE__));
+# Anchor to the working directory (build.sh cd's to repo root).
+my $root_dir = abs_path('.');
 $out_dir = "$root_dir/out";
 $aux_dir = "$root_dir/build";
 # Stay in repo root so out/build resolve consistently when compiling tex/main.tex.
@@ -24,6 +25,8 @@ $ENV{'BSTINPUTS'} = "$root_dir/tex$texinputs_sep" . ($ENV{'BSTINPUTS'} // '');
 
 # Tell latexmk this is a LuaLaTeX workflow
 $pdf_mode = 4;
+# Silence previewer in -pvc/-view modes (no acroread/xdg-open).
+$pdf_previewer = 'none';
 
 # Enable shell-escape, synctex, etc.
 $force_mode   = 1;

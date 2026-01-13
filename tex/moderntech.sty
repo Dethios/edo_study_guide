@@ -102,8 +102,8 @@
     nonumberlist,
     nogroupskip,
 %   shortcuts=ac, % Revert to 'ac' for shortcuts
-  nopostdot,
-  toc             % add entries to the Table of Contents (KOMA-friendly)
+    nopostdot,
+    toc             % add entries to the Table of Contents (KOMA-friendly)
 ]{glossaries-extra}
 
 \setabbreviationstyle[acronym]{long-short}
@@ -138,11 +138,7 @@
 % Hyperlinked, no-space acronyms
 % =========================
 % Shared helpers for linked acronym output and smart spacing
-\DeclareRobustCommand{\silentglsadd}[1]{%
-    \begingroup%
-        \setbox\@tempboxa=\hbox{\glsadd{#1}}%
-    \endgroup%
-}%
+\DeclareRobustCommand{\silentglsadd}[1]{\glsadd{#1}}%
 
 \DeclareDocumentCommand{\edoAcrLink}{m m}{%
 \@ifundefined{@glslink}{#2}{\@glslink{\glolinkprefix#1}{#2}}%
@@ -155,7 +151,9 @@
         \ifglsused{#2}{%
             \edoAcrLink{#2}{#3{#2}}%
         }{%
-            \edoAcrLink{#2}{#4{#2}\silentglsadd{#2}~(#3{#2})}\glsunset{#2}%
+            \silentglsadd{#2}%
+            \edoAcrLink{#2}{#4{#2}~(#3{#2})}%
+            \glsunset{#2}%
         }%
     }%
 }%

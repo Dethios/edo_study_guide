@@ -111,6 +111,8 @@
     "workbench.preferredDarkColorTheme": "Abyss",
     // workbench.quickOpen.preserveInput: Enable or disable workbench quick Open preserve Input. Edit the value to change behavior.
     "workbench.quickOpen.preserveInput": true,
+    // workbench.secondarySideBar.showLabels: Enable or disable workbench secondary Side Bar show Labels. Edit the value to change behavior.
+    "workbench.secondarySideBar.showLabels": false,
     // workbench.settings.applyToAllProfiles: Define list for workbench settings apply To All Profiles. Edit the value to change behavior.
     "workbench.settings.applyToAllProfiles": [
         "prettier.endOfLine"
@@ -696,12 +698,16 @@
     "latex-workshop.bibtex-fields.sort.enabled": true,
     // latex-workshop.bibtex-format.sort.enabled: Enable or disable latex workshop bibtex format sort enabled. Edit the value to change behavior.
     "latex-workshop.bibtex-format.sort.enabled": true,
+    // latex-workshop.bibtex-format.tab: Set latex workshop bibtex format tab. Edit the value to change behavior.
+    "latex-workshop.bibtex-format.tab": "4",
     // latex-workshop.bibtex-format.trailingComma: Enable or disable latex workshop bibtex format trailing Comma. Edit the value to change behavior.
     "latex-workshop.bibtex-format.trailingComma": true,
     // latex-workshop.bind.altKeymap.enabled: Enable or disable latex workshop bind alt Keymap enabled. Edit the value to change behavior.
     "latex-workshop.bind.altKeymap.enabled": true,
     // latex-workshop.chktex.configFile: Set latex workshop chktex config File. Edit the value to change behavior.
     "latex-workshop.chktex.configFile": ".chktexrc",
+    // latex-workshop.format.fixMath.enabled: Enable or disable latex workshop format fix Math enabled. Edit the value to change behavior.
+    "latex-workshop.format.fixMath.enabled": true,
     // latex-workshop.format.fixQuotes.enabled: Enable or disable latex workshop format fix Quotes enabled. Edit the value to change behavior.
     "latex-workshop.format.fixQuotes.enabled": true,
     // latex-workshop.formatting.latex: Set latex workshop formatting latex. Edit the value to change behavior.
@@ -730,7 +736,7 @@
     // latex-workshop.latex.autoBuild.interval: Set numeric value for latex workshop latex auto Build interval. Edit the value to change behavior.
     "latex-workshop.latex.autoBuild.interval": 5000,
     // latex-workshop.latex.autoBuild.run: Set latex workshop latex auto Build run. Edit the value to change behavior.
-    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.autoBuild.run": "onFileChange",
     // latex-workshop.latex.autoClean.run: Set latex workshop latex auto Clean run. Edit the value to change behavior.
     "latex-workshop.latex.autoClean.run": "never",
     // latex-workshop.latex.auxDir: Set latex workshop latex aux Dir. Edit the value to change behavior.
@@ -767,7 +773,7 @@
     // latex-workshop.latex.clean.subfolder.enabled: Enable or disable latex workshop latex clean subfolder enabled. Edit the value to change behavior.
     "latex-workshop.latex.clean.subfolder.enabled": true,
     // latex-workshop.latex.outDir: Set latex workshop latex out Dir. Edit the value to change behavior.
-    "latex-workshop.latex.outDir": "out",
+    "latex-workshop.latex.outDir": "/home/victor/dev-workspace/projects/edo_study_guide/out",
     // latex-workshop.latex.recipe.default: Set latex workshop latex recipe default. Edit the value to change behavior.
     "latex-workshop.latex.recipe.default": "lastUsed",
     // latex-workshop.latex.recipes: Define list for latex workshop latex recipes. Edit the value to change behavior.
@@ -805,7 +811,7 @@
     "latex-workshop.latex.tools": [
         {
             "args": [
-                "%WORKSPACE_FOLDER%/scripts/build.sh",
+                "%WORKSPACE_FOLDER%/projects/edo_study_guide/scripts/build.sh",
                 "%DOC_EXT%"
             ],
             "command": "/bin/bash",
@@ -813,7 +819,7 @@
         },
         {
             "args": [
-                "%WORKSPACE_FOLDER%/scripts/build.sh",
+                "%WORKSPACE_FOLDER%/projects/edo_study_guide/scripts/build.sh",
                 "--watch",
                 "%DOC_EXT%"
             ],
@@ -822,7 +828,7 @@
         },
         {
             "args": [
-                "%WORKSPACE_FOLDER%/scripts/build.sh",
+                "%WORKSPACE_FOLDER%/projects/edo_study_guide/scripts/build.sh",
                 "--quiet",
                 "%DOC_EXT%"
             ],
@@ -835,7 +841,7 @@
                 "-ExecutionPolicy",
                 "Bypass",
                 "-File",
-                "scripts\\build.ps1",
+                "projects\\edo_study_guide\\scripts\\build.ps1",
                 "%DOC%"
             ],
             "command": "pwsh",
@@ -1537,6 +1543,8 @@
     "chat.checkpoints.showFileChanges": true,
     // chat.customAgentInSubagent.enabled: Enable or disable chat custom Agent In Subagent enabled. Edit the value to change behavior.
     "chat.customAgentInSubagent.enabled": true,
+    // chat.disableAIFeatures: Enable or disable chat disable AI Features. Edit the value to change behavior.
+    "chat.disableAIFeatures": true,
     // chat.editor.fontFamily: Set chat editor font Family font family. Edit the value to change behavior.
     "chat.editor.fontFamily": "'Fira Code'",
     // chat.editor.wordWrap: Set chat editor word Wrap. Edit the value to change behavior.
@@ -1930,6 +1938,8 @@
     "shellformat.useEditorConfig": true,
     // shfmt.executablePath: Set shfmt executable Path. Edit the value to change behavior.
     "shfmt.executablePath": "/home/victor/go/bin/shfmt",
+    // telemetry.editStats.enabled: Enable or disable telemetry edit Stats enabled. Edit the value to change behavior.
+    "telemetry.editStats.enabled": false,
     // telemetry.telemetryLevel: Set telemetry telemetry Level. Edit the value to change behavior.
     "telemetry.telemetryLevel": "off",
     // update.enableWindowsBackgroundUpdates: Enable or disable update enable Windows Background Updates. Edit the value to change behavior.
