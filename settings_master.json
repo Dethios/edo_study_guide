@@ -777,7 +777,7 @@
     // latex-workshop.latex.outDir: Set latex workshop latex out Dir. Edit the value to change behavior.
     "latex-workshop.latex.outDir": "/home/victor/dev-workspace/projects/edo_study_guide/out",
     // latex-workshop.latex.recipe.default: Set latex workshop latex recipe default. Edit the value to change behavior.
-    "latex-workshop.latex.recipe.default": "lastUsed",
+    "latex-workshop.latex.recipe.default": "BUILD-WSL",
     // latex-workshop.latex.recipes: Define list for latex workshop latex recipes. Edit the value to change behavior.
     "latex-workshop.latex.recipes": [
         {
