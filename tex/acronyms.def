@@ -381,6 +381,8 @@
 \newacronym{ibr}{IBR}{Integrated Baseline Review}
 \newacronym{ci}{CI}{Configuration Item}
 \newacronym{ipt}{IPT}{Integrated Product Team}
+\newacronym{oipt}{OIPT}{Overarching Integrated Product Team}
+\newacronym{pipt}{PIPT}{Program Integrated Product Team}
 \newacronym{wipt}{WIPT}{Working-level Integrated Product Team}
 \newacronym{lcsp}{LCSP}{Life-Cycle Sustainment Plan}
 \newacronym{tlcsm}{TLCSM}{Total Life-Cycle Systems Management}
