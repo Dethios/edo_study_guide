@@ -554,6 +554,8 @@
     "git.fetchOnPull": true,
     // git.followTagsWhenSync: Enable or disable git follow Tags When Sync. Edit the value to change behavior.
     "git.followTagsWhenSync": true,
+    // git.ignoreLimitWarning: Enable or disable git ignore Limit Warning. Edit the value to change behavior.
+    "git.ignoreLimitWarning": true,
     // git.mergeEditor: Enable or disable git merge Editor. Edit the value to change behavior.
     "git.mergeEditor": true,
     // git.openRepositoryInParentFolders: Set git open Repository In Parent Folders. Edit the value to change behavior.
@@ -810,41 +812,28 @@
     // latex-workshop.latex.tools: Define list for latex workshop latex tools. Edit the value to change behavior.
     "latex-workshop.latex.tools": [
         {
-            "args": [
-                "%WORKSPACE_FOLDER%/projects/edo_study_guide/scripts/build.sh",
-                "%DOC_EXT%"
-            ],
-            "command": "/bin/bash",
+            "command": "projects/edo_study_guide/scripts/build.sh",
             "name": "build-wsl"
         },
         {
             "args": [
-                "%WORKSPACE_FOLDER%/projects/edo_study_guide/scripts/build.sh",
-                "--watch",
-                "%DOC_EXT%"
+                "-w"
             ],
-            "command": "/bin/bash",
+            "command": "projects/edo_study_guide/scripts/build.sh",
             "name": "build-wsl-watch"
         },
         {
             "args": [
-                "%WORKSPACE_FOLDER%/projects/edo_study_guide/scripts/build.sh",
-                "--quiet",
-                "%DOC_EXT%"
+                "-q"
             ],
-            "command": "/bin/bash",
+            "command": "projects/edo_study_guide/scripts/build.sh",
             "name": "build-quiet"
         },
         {
             "args": [
-                "-NoProfile",
-                "-ExecutionPolicy",
-                "Bypass",
-                "-File",
-                "projects\\edo_study_guide\\scripts\\build.ps1",
                 "%DOC%"
             ],
-            "command": "pwsh",
+            "command": "projects\\edo_study_guide\\scripts\\build.ps1",
             "name": "build-win"
         }
     ],
@@ -1636,7 +1625,7 @@
     },
     // [jsonc]: Language-specific overrides for [jsonc]. Update the settings inside this object to change behavior.
     "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     // [latex-class]: Language-specific overrides for [latex-class]. Update the settings inside this object to change behavior.
     "[latex-class]": {
@@ -1888,7 +1877,7 @@
     // powershell.integratedConsole.showOnStartup: Enable or disable powershell integrated Console show On Startup. Edit the value to change behavior.
     "powershell.integratedConsole.showOnStartup": false,
     // powershell.integratedConsole.startLocation: Set powershell integrated Console start Location. Edit the value to change behavior.
-    "powershell.integratedConsole.startLocation": "Editor",
+    "powershell.integratedConsole.startLocation": "Panel",
     // powershell.promptToUpdatePowerShell: Enable or disable powershell prompt To Update Power Shell. Edit the value to change behavior.
     "powershell.promptToUpdatePowerShell": false,
     // powershell.startAsLoginShell.linux: Enable or disable powershell start As Login Shell linux. Edit the value to change behavior.
