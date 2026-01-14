@@ -789,7 +789,7 @@
 \newacronym{dpmap}{DPMAP}{Defense Performance Management and Appraisal Program}
 \newacronym{ulp}{ULP}{Unfair Labor Practice}
 \newacronym{flra}{FLRA}{Federal Labor Relations Authority}
-\newacronym{cba}{CBA}{Collective Bargaining Agreement}
+\newacronym{cba-lr}{CBA}{Collective Bargaining Agreement}
 
 % --- Maintenance & Modernization ---
 
@@ -928,7 +928,6 @@
 \newacronym{sib}{SIB}{Shop-in-a-Box}
 \newacronym{msp}{MSP}{Maritime Support Plan}
 \newacronym{waf}{WAF}{Work Authorization Form}
-\newacronym{twd}{TWD}{Technical Work Document}
 \newacronym{tgi}{TGI}{Task Group Instruction}
 \newacronym{tum}{TUM}{Tag-out Users Manual}
 \newacronym{jfmm}{JFMM}{Joint Fleet Maintenance Manual}
