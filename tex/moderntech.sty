@@ -141,7 +141,7 @@
 \DeclareRobustCommand{\silentglsadd}[1]{\glsadd{#1}}%
 
 \DeclareDocumentCommand{\edoAcrLink}{m m}{%
-\@ifundefined{@glslink}{#2}{\@glslink{\glolinkprefix#1}{#2}}%
+\@ifundefined{hyperlink}{#2}{\hyperlink{glo:#1}{#2}}%
 }%
 \AtBeginDocument{\let\@gls@adjustmode\@empty}%
 \NewDocumentCommand{\edoAcrRender}{m m m m}{%
