@@ -812,28 +812,28 @@
     // latex-workshop.latex.tools: Define list for latex workshop latex tools. Edit the value to change behavior.
     "latex-workshop.latex.tools": [
         {
-            "command": "projects/edo_study_guide/scripts/build.sh",
+            "command": "${workspaceFolder}/scripts/build.sh",
             "name": "build-wsl"
         },
         {
             "args": [
                 "-w"
             ],
-            "command": "projects/edo_study_guide/scripts/build.sh",
+            "command": "${workspaceFolder}/scripts/build.sh",
             "name": "build-wsl-watch"
         },
         {
             "args": [
                 "-q"
             ],
-            "command": "projects/edo_study_guide/scripts/build.sh",
+            "command": "${workspaceFolder}/scripts/build.sh",
             "name": "build-quiet"
         },
         {
             "args": [
                 "%DOC%"
             ],
-            "command": "projects\\edo_study_guide\\scripts\\build.ps1",
+            "command": "${workspaceFolder}\\scripts\\build.ps1",
             "name": "build-win"
         }
     ],

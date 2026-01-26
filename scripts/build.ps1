@@ -54,9 +54,15 @@ Push-Location $root
 try {
     New-Item -ItemType Directory -Force -Path $OutDir | Out-Null
     New-Item -ItemType Directory -Force -Path $AuxDir | Out-Null
+    $auxDirFull = if ([IO.Path]::IsPathRooted($AuxDir)) { $AuxDir } else { Join-Path $root $AuxDir }
+    $env:TEXMFVAR = Join-Path $auxDirFull "texmf-var"
+    $env:TEXMFCACHE = Join-Path $auxDirFull "texmf-cache"
+    New-Item -ItemType Directory -Force -Path $env:TEXMFVAR | Out-Null
+    New-Item -ItemType Directory -Force -Path $env:TEXMFCACHE | Out-Null
+    $latexmkRc = Join-Path $root "tex/latexmkrc"
 
     if ($Clean) {
-        & latexmk -C "-outdir=$OutDir" "-auxdir=$AuxDir" $Doc
+        & latexmk -C "-r" $latexmkRc "-outdir=$OutDir" "-auxdir=$AuxDir" $Doc
         $exitCode = $LASTEXITCODE
         $skipBuild = $true
     }
@@ -74,6 +80,7 @@ try {
 
     if (-not $skipBuild) {
         $args = @(
+            "-r", $latexmkRc,
             "-pdf",
             "-synctex=1",
             "-interaction=nonstopmode",

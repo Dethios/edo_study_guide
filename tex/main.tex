@@ -44,6 +44,8 @@
 \NewDocumentCommand{\tabCite}{m}{\citetitle{#1},~\citeyear{#1}~\autocite{#1}}
 \ExplSyntaxOn%
 \msg_redirect_name:nnn { pdf } { unreferenced destination } { none }
+\msg_redirect_name:nnn { pdf backend } { unreferenced destination } { none }
+\msg_redirect_name:nnn { pdf_backend } { unreferenced destination } { none }
 \msg_redirect_name:nnn { pdf/backend } { unreferenced destination } { none }
 \cs_if_exist:NT \__pdf_backend_warn:nnnn
 {

@@ -116,6 +116,15 @@ fi
 cd "$ROOT"
 
 mkdir -p "$OUTDIR" "$AUXDIR"
+# Ensure luaotfload/fontspec cache paths are writable (helps sandboxed runs).
+if [[ "$AUXDIR" = /* ]]; then
+    AUXDIR_ABS="$AUXDIR"
+else
+    AUXDIR_ABS="$ROOT/$AUXDIR"
+fi
+export TEXMFVAR="$AUXDIR_ABS/texmf-var"
+export TEXMFCACHE="$AUXDIR_ABS/texmf-cache"
+mkdir -p "$TEXMFVAR" "$TEXMFCACHE"
 # Ensure TeX can locate class/style/bib files when latexmk runs from repo root.
 export TEXINPUTS="$ROOT/tex:${TEXINPUTS:-}"
 export BIBINPUTS="$ROOT/tex:${BIBINPUTS:-}"

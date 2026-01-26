@@ -118,24 +118,34 @@
 % * Fonts
 % =============================
 \NewDocumentCommand{\moderntech@setfonts}{}{%
-  % Defaults: XCharter + Fira Sans + Fira Code
-  \IfFontExistsTF{XCharter}{%
-    \ifmoderntech@sansbody
-      \setmainfont[Scale=MatchLowercase,Ligatures=TeX]{Fira Sans}%
-      \setsansfont[Scale=MatchLowercase,Ligatures=TeX]{Fira Sans}%
-    \else
-      \setmainfont[Scale=MatchLowercase,Ligatures=TeX]{XCharter}%
-      \setsansfont[Scale=MatchLowercase,Ligatures=TeX]{Fira Sans}%
-    \fi
-  }{%
-    \ifmoderntech@sansbody
-      \setmainfont[Scale=MatchLowercase,Ligatures=TeX]{Fira Sans}%
-      \setsansfont[Scale=MatchLowercase,Ligatures=TeX]{Fira Sans}%
-    \else
-      \setmainfont[Scale=MatchLowercase,Ligatures=TeX]{Cambria}%
-      \setsansfont[Scale=MatchLowercase,Ligatures=TeX]{Fira Sans}%
-    \fi
+  % Defaults: XCharter + Fira Sans + Fira Code (fallbacks for missing system fonts)
+  \def\moderntech@serif{XCharter}%
+  \def\moderntech@sans{Fira Sans}%
+
+  \IfFontExistsTF{Fira Sans}{}{%
+    \IfFontExistsTF{TeX Gyre Heros}{%
+      \def\moderntech@sans{TeX Gyre Heros}%
+    }{%
+      \def\moderntech@sans{Latin Modern Sans}%
+    }%
   }%
+
+  \IfFontExistsTF{XCharter}{}{%
+    \IfFontExistsTF{TeX Gyre Pagella}{%
+      \def\moderntech@serif{TeX Gyre Pagella}%
+    }{%
+      \def\moderntech@serif{Latin Modern Roman}%
+    }%
+  }%
+
+  \ifmoderntech@sansbody
+    \setmainfont[Scale=MatchLowercase,Ligatures=TeX]{\moderntech@sans}%
+    \setsansfont[Scale=MatchLowercase,Ligatures=TeX]{\moderntech@sans}%
+  \else
+    \setmainfont[Scale=MatchLowercase,Ligatures=TeX]{\moderntech@serif}%
+    \setsansfont[Scale=MatchLowercase,Ligatures=TeX]{\moderntech@sans}%
+  \fi
+
   \IfFontExistsTF{Fira Code}{%
     \defaultfontfeatures[\ttfamily]{Scale=MatchLowercase,Contextuals=Alternate}%
     \setmonofont[
@@ -176,19 +186,27 @@
     ]{Fira Code}%
   }{%
     \defaultfontfeatures[\ttfamily]{Scale=MatchLowercase,Contextuals=Alternate}%
-    \setmonofont[Scale=MatchLowercase,Contextuals=Alternate]{Cascadia Code}%
+    \IfFontExistsTF{Latin Modern Mono}{%
+      \setmonofont[Scale=MatchLowercase,Contextuals=Alternate]{Latin Modern Mono}%
+    }{%
+      \setmonofont[Scale=MatchLowercase,Contextuals=Alternate]{TeX Gyre Cursor}%
+    }%
   }%
   \moderntech@setmath%
 }
 
-\newfontfamily\firasanssemibold[
-  Scale=MatchLowercase,
-  Ligatures=TeX,
-  UprightFont    = {Fira Sans SemiBold},
-  ItalicFont     = {Fira Sans SemiBold Italic},
-  BoldFont       = {Fira Sans SemiBold},
-  BoldItalicFont = {Fira Sans SemiBold Italic}
-]{Fira Sans SemiBold}
+\IfFontExistsTF{Fira Sans SemiBold}{%
+  \newfontfamily\firasanssemibold[
+    Scale=MatchLowercase,
+    Ligatures=TeX,
+    UprightFont    = {Fira Sans SemiBold},
+    ItalicFont     = {Fira Sans SemiBold Italic},
+    BoldFont       = {Fira Sans SemiBold},
+    BoldItalicFont = {Fira Sans SemiBold Italic}
+  ]{Fira Sans SemiBold}%
+}{%
+  \providecommand{\firasanssemibold}{\sffamily\bfseries}%
+}
 
 % --- Math font selection helper (respects `math=` option) ------------
 \NewDocumentCommand{\moderntech@setmath}{}{%
