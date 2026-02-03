@@ -25,7 +25,7 @@ PowerShell (Windows):
 
 Direct latexmk:
 ```
-latexmk -shell-escape tex/main.tex
+latexmk -r tex/latexmkrc -shell-escape -outdir=out -auxdir=build tex/main.tex
 ```
 
 ## Format
@@ -54,9 +54,10 @@ PowerShell:
 
 ## Release (GitHub Releases only)
 
-Release PDFs are not tracked in Git. The release script copies `out/main.pdf`
-into `release/` (still gitignored), tags the commit as `release-YYYYMMDD`, and
-uploads the PDF as a GitHub Release asset using the GitHub CLI.
+Release PDFs are not tracked in Git. The release script expects `out/main.pdf`
+to exist, copies it into `release/` (still gitignored), commits any staged
+changes, tags the commit as `release-YYYYMMDD`, pushes, and uploads the PDF as a
+GitHub Release asset using the GitHub CLI.
 
 Bash:
 ```
