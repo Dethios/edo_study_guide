@@ -28,8 +28,10 @@ so changes can be reviewed and incorporated into the main guide.
 
 ## Releases
 
-Release PDFs are published through GitHub Releases only. The release scripts
-create a dated PDF, tag the commit, and upload the asset via the GitHub CLI.
+Release PDFs are published through GitHub Releases only. Run a build first so
+`out/main.pdf` exists. The release scripts copy the PDF into the gitignored
+`release/` directory, commit any staged changes, tag the commit, push, and
+upload the asset via the GitHub CLI.
 
 ## Security
 
