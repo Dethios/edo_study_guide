@@ -15,6 +15,8 @@ $ENV{'TEXMFVAR'}   = "$aux_dir/texmf-var";
 $ENV{'TEXMFCACHE'} = "$aux_dir/texmf-cache";
 make_path($ENV{'TEXMFVAR'});
 make_path($ENV{'TEXMFCACHE'});
+make_path("$root_dir/build/tikz");
+make_path("$root_dir/.build/tikz");
 
 # Ensure LaTeX can see tex/ sources even when latexmk is run from elsewhere.
 # Keep search paths shallow to avoid picking up stale aux files.
@@ -22,6 +24,10 @@ my $texinputs_sep = ($^O =~ /mswin32|cygwin|msys/i) ? ';' : ':';
 $ENV{'TEXINPUTS'} = "$root_dir/tex$texinputs_sep" . ($ENV{'TEXINPUTS'} // '');
 $ENV{'BIBINPUTS'} = "$root_dir/tex$texinputs_sep" . ($ENV{'BIBINPUTS'} // '');
 $ENV{'BSTINPUTS'} = "$root_dir/tex$texinputs_sep" . ($ENV{'BSTINPUTS'} // '');
+$ENV{'TEXMFCNF'} = "$root_dir:$root_dir/tex:$root_dir/texmf-dist:" . ($ENV{'TEXMFCNF'} // '');
+
+# Allow TikZ externalization writes under .build/ (hidden path) in trusted builds.
+$ENV{'openout_any'} = 'a';
 
 # Tell latexmk this is a LuaLaTeX workflow
 $pdf_mode = 4;
@@ -35,8 +41,12 @@ $synctex      = 1;
 $interaction  = 'nonstopmode';
 $pvc_timeout  = 600;
 
-# --- Modified pdflatex command ---
-$pdflatex = 'lualatex -file-line-error -interaction=nonstopmode %O %S';
+# Engine commands used by latexmk. Keep shell-escape enabled for trusted builds
+# that use TikZ externalization.
+$lualatex = 'lualatex --cnf-line=openout_any=a -shell-escape -halt-on-error -interaction=nonstopmode %O %S';
+$pdflatex = 'pdflatex --cnf-line=openout_any=a -shell-escape -halt-on-error -interaction=nonstopmode %O %S';
+# In this repo, -lualatex is the primary mode; map latex runs to lualatex.
+$pdflatex = $lualatex if $pdf_mode == 4;
 
 # Glossaries
 add_cus_dep('glo','gls',0,'makeglossaries');

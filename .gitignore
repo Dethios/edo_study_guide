@@ -4,6 +4,7 @@
 # Directories (your layout)
 out/
 build/
+.build/*
 scratch/
 tex/out/
 tex/build/
@@ -115,3 +116,8 @@ Thumbs.db
 
 .gemini/
 gha-creds-*.json
+
+# Keep a placeholder so .build/tikz mount paths exist in devcontainers.
+!.build/
+!.build/tikz/
+!.build/tikz/.gitkeep
