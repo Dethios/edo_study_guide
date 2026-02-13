@@ -131,6 +131,14 @@
                     "merge"
                 ]
             }
+        },
+        {
+            "label": "latexmk (LuaLaTeX, externalized)",
+            "type": "shell",
+            "command": "latexmk -lualatex -shell-escape -halt-on-error -interaction=nonstopmode -file-line-error -pdf tex/main.tex",
+            "group": "build",
+            "problemMatcher": []
         }
+
     ]
 }

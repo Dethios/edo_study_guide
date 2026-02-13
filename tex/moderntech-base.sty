@@ -832,6 +832,22 @@
 \ifmoderntech@tikzsmart
   \RequirePackage{tikz}
   \usetikzlibrary{arrows.meta,shapes,positioning,calc,fit,backgrounds}
+  % --- TikZ externalization (cache figures to disk) ---
+  % Requires -shell-escape in trusted builds; keep lint jobs shell-escape-free.
+  % Cache artifacts are generated in build/tikz/ (mirrored to .build/tikz/ for persistent mounts) and can be invalidated with
+  % `make force-rebuild-tikz` from the repo root.
+  % Use \tikzsetnextfilename{...} to stabilize externalized artifact names.
+  \usetikzlibrary{external}
+  \tikzexternalize[prefix=../../build/tikz/]
+  % LuaLaTeX worker compile; inherits shell-escape check from parent build.
+  \tikzset{
+    external/system call={
+      lualatex --cnf-line=openout_any=a \tikzexternalcheckshellescape
+      -halt-on-error -interaction=batchmode
+      -jobname "\image" "\texsource"
+    }
+  }
+  % --- end TikZ externalization ---
   \tikzset{
     every picture/.style = {>=Latex, line cap=round, line join=round},
     mt node/.style = {font=\sffamily\small\color{BodyText}, draw=AccentBlue, rounded corners=2pt,

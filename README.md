@@ -28,6 +28,11 @@ Direct latexmk:
 latexmk -r tex/latexmkrc -shell-escape -outdir=out -auxdir=build tex/main.tex
 ```
 
+TikZ cache invalidation:
+```
+make force-rebuild-tikz
+```
+
 ## Format
 
 Bash:
@@ -85,3 +90,10 @@ files, run:
 Document content (study guide text/figures/LaTeX under `tex/`) is licensed
 under CC BY-NC 4.0 (see `LICENSE`). Code/scripts are licensed under the MIT
 License (see `LICENSE-CODE`).
+
+## TikZ externalization security note
+
+TikZ externalization requires `-shell-escape`. Use it only in trusted builds or an isolated CI job. Keep lint/analysis jobs shell-escape-free.
+
+
+Note: some TeX Live environments block hidden output directories (`openout_any = p`). In that case, TikZ externalization writes to `build/tikz/`; keep `.build/tikz/` as the persistent host-mounted mirror for cache reuse.
