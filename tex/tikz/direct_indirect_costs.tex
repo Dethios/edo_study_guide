@@ -2,9 +2,8 @@
 \documentclass[tikz,border=6pt]{standalone}
 \usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric}
 
-% Palette (use your own if already defined)
-\definecolor{Modern}{HTML}{1F6AA5}   % Navy blue
-\definecolor{CrimsonRed}{HTML}{B22222}
+% Palette
+\usepackage{../moderntech-colors}
 
 \begin{document}
 \begin{tikzpicture}
@@ -26,9 +25,9 @@
   hub/.style     ={
       diamond,
       aspect=2.1,
-      draw=CrimsonRed!70!black,
+      draw=Red,
       very thick,
-      fill=yellow!12,
+      fill=Gold!20,
       align=center,
       inner xsep=8pt,
       inner ysep=7pt,
@@ -50,11 +49,11 @@
   card/.style    ={
       rectangle,
       rounded corners=4pt,
-      draw=Modern!60!black,
+      draw=SteelGray,
       very thick,
-      fill=white,align=left,
+      fill=White,align=left,
       inner xsep=9pt,
-      nner ysep=7pt,
+      inner ysep=7pt,
       text width=58mm
     },
   rightcard/.style={

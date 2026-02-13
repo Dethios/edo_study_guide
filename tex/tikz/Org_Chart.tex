@@ -9,15 +9,16 @@
 \documentclass[tikz]{standalone}
 \usetikzlibrary{shapes,arrows.meta,positioning,calc}
 \usepackage{smartdiagram} % Uses TikZ; keep after tikz
+\usepackage{../moderntech-colors}
 
 \begin{document}
 \begin{tikzpicture}[
     % Style for the main organization boxes
     orgchart node/.style={
         Rectangle,
-        draw=black,
+        draw=BlueInk,
         thick,
-        fill=blue!10,
+        fill=Vapor,
         text width=3cm,
         align=center,
         font=\sffamily\small,
