@@ -19,6 +19,11 @@
   "postCreateCommand": "bash .devcontainer/post-create.sh",
   "remoteUser": "vscode",
 
+  "mounts": [
+    "source=${localWorkspaceFolder}/.build/tikz,target=/workspaces/${localWorkspaceFolderBasename}/.build/tikz,type=bind"
+  ],
+
+
   "customizations": {
     "vscode": {
       "extensions": [

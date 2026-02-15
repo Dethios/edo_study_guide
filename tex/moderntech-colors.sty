@@ -1,0 +1,41 @@
+% ============================
+% * moderntech-colors.sty
+% ============================
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{moderntech-colors}[2026/02/10 v1.0 ModernTech palette definitions]
+
+% Primary palette
+\definecolor{Blue}{RGB}{0,61,113}
+\definecolor{Gold}{RGB}{231,178,34}
+\definecolor{White}{RGB}{255,255,255}
+
+% Secondary palette
+\definecolor{Meridian}{RGB}{19,119,173}
+\definecolor{LightGold}{RGB}{241,233,207}
+\definecolor{SteelGray}{RGB}{98,120,137}
+
+% Tertiary palette
+\definecolor{Vapor}{RGB}{205,230,243}
+\definecolor{Nimbus}{RGB}{181,187,192}
+\definecolor{Green}{RGB}{141,170,91}
+\definecolor{Red}{RGB}{196,20,37}
+
+% Derived shades for accessibility/contrast
+\definecolor{BlueDeep}{RGB}{0,43,79}
+\definecolor{BlueInk}{RGB}{18,31,43}
+\definecolor{SteelDeep}{RGB}{70,88,103}
+\definecolor{VaporLight}{RGB}{233,244,249}
+
+% Semantic aliases used across moderntech
+\colorlet{BodyText}{BlueInk}
+\colorlet{Modern}{Blue}
+\colorlet{text}{BodyText}
+\colorlet{bg}{VaporLight}
+\colorlet{codebg}{VaporLight}
+
+% Legacy aliases (compatibility)
+\colorlet{NavyBlue}{Blue}
+\colorlet{CrimsonRed}{Red}
+\colorlet{SkyBlue}{Vapor}
+\colorlet{DarkGray}{SteelDeep}
+\colorlet{LightGray}{VaporLight}

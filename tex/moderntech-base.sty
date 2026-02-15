@@ -94,25 +94,7 @@
 % =============================
 % * Color palette (WCAG-conscious)
 % =============================
-\definecolor{TextGray}{HTML}{1E1E1E}
-\definecolor{AccentBlue}{HTML}{264E86}
-\definecolor{AccentTeal}{HTML}{1B7870}
-\definecolor{AccentPurple}{HTML}{5A2D82}
-\definecolor{AccentOrange}{HTML}{A63D00}
-\definecolor{AccentGreen}{HTML}{245C24}
-\definecolor{Gray90}{HTML}{F7F7F7}
-\definecolor{Gray60}{gray}{0.4}
-\colorlet{BodyText}{TextGray}
-\colorlet{Modern}{AccentBlue}
-% Legacy color aliases (keeps existing documents compatible)
-\colorlet{NavyBlue}{AccentBlue}
-\colorlet{CrimsonRed}{AccentOrange}
-\colorlet{SkyBlue}{AccentBlue!35}
-\colorlet{DarkGray}{BodyText}
-\colorlet{LightGray}{Gray90}
-\colorlet{Green}{AccentGreen}
-\colorlet{text}{BodyText}
-\colorlet{bg}{Gray90}
+\RequirePackage{moderntech-colors}
 
 % =============================
 % * Fonts
@@ -258,8 +240,8 @@
   }%
 }
 
-\NewDocumentCommand{\headingfont}{}{\firasanssemibold\color{AccentBlue}\Large}
-\NewDocumentCommand{\sectionfont}{}{\firasanssemibold\color{AccentBlue}\Large}
+\NewDocumentCommand{\headingfont}{}{\firasanssemibold\color{Blue}\Large}
+\NewDocumentCommand{\sectionfont}{}{\firasanssemibold\color{Blue}\Large}
 \NewDocumentCommand{\firasb}{}{\firasanssemibold}
 \IfFontExistsTF{Merriweather Black}{%
   \newfontfamily\merriweatherblackfont[
@@ -341,29 +323,29 @@
 % =============================
 % * Headings
 % =============================
-\addtokomafont{disposition}{\sffamily\bfseries\color{AccentBlue}}
-\setkomafont{chapter}{\sffamily\bfseries\color{AccentBlue}\Huge}
-\setkomafont{section}{\firasanssemibold\color{AccentBlue}\Large}
-\setkomafont{subsection}{\sffamily\color{AccentBlue}\large}
-\setkomafont{subsubsection}{\sffamily\bfseries\color{TextGray}\normalsize}
-\setkomafont{paragraph}{\firasanssemibold\color{TextGray}\normalsize}
+\addtokomafont{disposition}{\sffamily\bfseries\color{Blue}}
+\setkomafont{chapter}{\sffamily\bfseries\color{Blue}\Huge}
+\setkomafont{section}{\firasanssemibold\color{Blue}\Large}
+\setkomafont{subsection}{\sffamily\color{Blue}\large}
+\setkomafont{subsubsection}{\sffamily\bfseries\color{BodyText}\normalsize}
+\setkomafont{paragraph}{\firasanssemibold\color{BodyText}\normalsize}
 \RedeclareSectionCommand[beforeskip=2.5ex plus .2ex minus .1ex, afterskip=1.0ex plus .2ex]{section}
 \RedeclareSectionCommand[beforeskip=2.0ex plus .2ex minus .1ex, afterskip=0.8ex plus .2ex]{subsection}
 \RedeclareSectionCommand[beforeskip=1.5ex plus .2ex minus .1ex, afterskip=0.5ex plus .2ex]{subsubsection}
 \setkomafont{caption}{\normalfont\sffamily\small\itshape\color{BodyText}}
-\setkomafont{captionlabel}{\normalfont\sffamily\bfseries\color{AccentBlue}}
+\setkomafont{captionlabel}{\normalfont\sffamily\bfseries\color{Blue}}
 \DeclareCaptionLabelSeparator{periodtwospaces}{.~~}
 \captionsetup{
   skip      = 6pt,
   labelsep  = periodtwospaces,
-  labelfont = {normalfont,bf,sf,it,color=AccentBlue},
+  labelfont = {normalfont,bf,sf,it,color=Blue},
   textfont  = {normalfont,sf,small,it,color=BodyText},
   justification = RaggedRight
 }
-\captionsetup[table]{labelfont={normalfont,sf,sc,color=AccentBlue}, textfont={normalfont,sf,sc,small,color=BodyText}}
-\captionsetup[tblr]{ labelfont={normalfont,bf,sf,sc,color=AccentBlue}, textfont={normalfont,sf,sc,small,color=BodyText}}
-\captionsetup[talltblr]{labelfont={normalfont,bf,sf,sc,color=AccentBlue}, textfont={normalfont,sf,sc,small,color=BodyText}}
-\captionsetup[longtblr]{labelfont={normalfont,bf,sf,sc,color=AccentBlue}, textfont={normalfont,sf,sc,small,color=BodyText}}
+\captionsetup[table]{labelfont={normalfont,sf,sc,color=Blue}, textfont={normalfont,sf,sc,small,color=BodyText}}
+\captionsetup[tblr]{ labelfont={normalfont,bf,sf,sc,color=Blue}, textfont={normalfont,sf,sc,small,color=BodyText}}
+\captionsetup[talltblr]{labelfont={normalfont,bf,sf,sc,color=Blue}, textfont={normalfont,sf,sc,small,color=BodyText}}
+\captionsetup[longtblr]{labelfont={normalfont,bf,sf,sc,color=Blue}, textfont={normalfont,sf,sc,small,color=BodyText}}
 
 \ifmoderntech@smallcapsheads
   \addtokomafont{subsubsection}{\scshape}
@@ -372,14 +354,14 @@
 \fi
 
 \NewDocumentCommand{\HR}{}{%
-  \par\noindent\color{Gray90}\rule{\linewidth}{1pt}\par\color{BodyText}%
+  \par\noindent\color{Vapor}\rule{\linewidth}{1pt}\par\color{BodyText}%
 }
 
 % =============================
 % * TOC styling (modern by default)
 % =============================
-\NewDocumentCommand{\moderntech@toc@chapter}{}{\normalfont\sffamily\scshape\bfseries\large\color{AccentBlue}}
-\NewDocumentCommand{\moderntech@toc@section}{}{\normalfont\firasanssemibold\color{AccentBlue}}
+\NewDocumentCommand{\moderntech@toc@chapter}{}{\normalfont\sffamily\scshape\bfseries\large\color{Blue}}
+\NewDocumentCommand{\moderntech@toc@section}{}{\normalfont\firasanssemibold\color{Blue}}
 \NewDocumentCommand{\moderntech@toc@subsection}{}{\normalfont\sffamily\itshape\small\color{BodyText}}
 
 \NewDocumentCommand{\moderntechsetupTOC}{}{%
@@ -428,24 +410,24 @@
 
 \clearpairofpagestyles
 \automark{section}
-\setkomafont{pagenumber}{\sffamily\itshape\color{gray}}%
-\ihead{\sffamily\itshape\color{gray}\leftmark}
-\ohead{\sffamily\color{gray}\pagemark}
+\setkomafont{pagenumber}{\sffamily\itshape\color{SteelGray}}%
+\ihead{\sffamily\itshape\color{SteelGray}\leftmark}
+\ohead{\sffamily\color{SteelGray}\pagemark}
 \pagestyle{scrheadings}
 
 \NewDocumentCommand{\SetFrontMatterStyle}{}{%
   \clearpairofpagestyles
   \automark{section}
-  \ihead{\sffamily\itshape\color{gray}\leftmark}
-  \ohead{\sffamily\color{gray}\pagemark}
+  \ihead{\sffamily\itshape\color{SteelGray}\leftmark}
+  \ohead{\sffamily\color{SteelGray}\pagemark}
   \pagestyle{scrheadings}
 }
 \NewDocumentCommand{\SetMainMatterStyle}{}{%
 \clearpairofpagestyles
 \automark{section}
-\ihead{\sffamily\itshape\color{gray}\leftmark}
+\ihead{\sffamily\itshape\color{SteelGray}\leftmark}
 \ohead{%
-  \sffamily\color{gray}%
+  \sffamily\color{SteelGray}%
   \pagemark%
 }%
 \pagestyle{scrheadings}
@@ -454,7 +436,7 @@
 \NewDocumentCommand{\SetBackMatterStyleA}{}{%
   \clearpairofpagestyles
   \automark{section}
-  \ohead{\sffamily\color{gray}\pagemark}
+  \ohead{\sffamily\color{SteelGray}\pagemark}
   \pagestyle{scrheadings}
 }
 % =============================
@@ -552,11 +534,11 @@
 \RequirePackage{array}
 \newcolumntype{N}[1]{>{\addfontfeatures{Numbers={Monospaced,Lining}}}#1}
 
-\SetTblrStyle{caption-tag}{font=\normalfont\sffamily\scshape\bfseries\color{AccentBlue}}
+\SetTblrStyle{caption-tag}{font=\normalfont\sffamily\scshape\bfseries\color{Blue}}
 \SetTblrStyle{caption-text}{font=\normalfont\sffamily\small\scshape\color{BodyText}}
 \SetTblrStyle{caption-sep}{.\space\space}
-\SetTblrStyle{firsthead}{font=\sffamily\bfseries\color{AccentBlue}\small}
-\SetTblrStyle{head}{font=\sffamily\bfseries\color{AccentBlue}\small}
+\SetTblrStyle{firsthead}{font=\sffamily\bfseries\color{Blue}\small}
+\SetTblrStyle{head}{font=\sffamily\bfseries\color{Blue}\small}
 \SetTblrStyle{foot}{font=\small\sffamily}
 \SetTblrInner{rowsep=2pt, colsep=2pt}
 
@@ -564,18 +546,18 @@
   \SetTblrDefault{%
     cells={font=\small\color{BodyText},halign=l},%
     column{1}={font=\merriweatherblack\small,halign=l},%
-    row{1}={font=\sffamily\bfseries\color{AccentBlue}\small}%
+    row{1}={font=\sffamily\bfseries\color{Blue}\small}%
   }%
   \SetTblrDefault[longtblr]{%
     cells={font=\small\color{BodyText},halign=l},%
     column{1}={font=\merriweatherblack\small,halign=l},%
-    row{1}={font=\sffamily\bfseries\color{AccentBlue}\small},%
+    row{1}={font=\sffamily\bfseries\color{Blue}\small},%
     rowhead=1%
   }%
   \SetTblrDefault[talltblr]{%
     cells={font=\small\color{BodyText},halign=l},%
     column{1}={font=\merriweatherblack\small,halign=l},%
-    row{1}={font=\sffamily\bfseries\color{AccentBlue}\small}%
+    row{1}={font=\sffamily\bfseries\color{Blue}\small}%
   }%
 }
 \ifmoderntech@tblrpreset
@@ -710,7 +692,6 @@
 
 \NewDocumentCommand{\moderntech@enableminted}{}{%
   \RequirePackage[cache=false]{minted}%
-  \definecolor{codebg}{HTML}{F7F7F7}%
   \setminted{fontsize=\footnotesize, breaklines, autogobble, bgcolor=codebg}%
   \NewDocumentCommand{\code}{m}{\mintinline{text}{##1}}%
 }
@@ -719,14 +700,14 @@
   \RequirePackage{listings}%
   \lstset{
     basicstyle=\ttfamily\footnotesize,
-    backgroundcolor=\color{Gray90},
+    backgroundcolor=\color{Vapor},
     showstringspaces=false,
     breaklines=true,
     frame=single,
-    rulecolor=\color{Gray90},
-    keywordstyle=\color{AccentBlue}\bfseries,
-    commentstyle=\color{AccentGreen}\itshape,
-    stringstyle=\color{AccentPurple},
+    rulecolor=\color{Vapor},
+    keywordstyle=\color{Blue}\bfseries,
+    commentstyle=\color{Green}\itshape,
+    stringstyle=\color{SteelGray},
     numberstyle=\tiny,
     numbers=left,
     stepnumber=1,
@@ -782,13 +763,13 @@
 \tcbset{
   sharp corners,
   boxsep=4pt, left=6pt, right=6pt, top=6pt, bottom=6pt,
-  colback=Gray90, colframe=Gray60, coltitle=BodyText,
+  colback=Vapor, colframe=Nimbus, coltitle=BodyText,
   fonttitle=\sffamily\bfseries
 }
-\newtcolorbox{noteBox}[1][]{colframe=AccentTeal,title={\color{white}Note},#1}
-\newtcolorbox{hintBox}[1][]{colframe=AccentBlue,title={\color{white}Hint},#1}
-\newtcolorbox{warnBox}[1][]{colframe=AccentOrange,title={\color{white}Warning},#1}
-\newtcolorbox{infoBox}[1][]{colframe=AccentPurple,title={\color{white}Info},#1}
+\newtcolorbox{noteBox}[1][]{colframe=Meridian,title={\color{White}Note},#1}
+\newtcolorbox{hintBox}[1][]{colframe=Blue,title={\color{White}Hint},#1}
+\newtcolorbox{warnBox}[1][]{colframe=Red,title={\color{White}Warning},#1}
+\newtcolorbox{infoBox}[1][]{colframe=SteelGray,title={\color{White}Info},#1}
 \NewDocumentCommand{\Hint}{m}{\begin{hintBox}#1\end{hintBox}}
 \NewDocumentCommand{\Note}{m}{\begin{noteBox}#1\end{noteBox}}
 \NewDocumentCommand{\Warn}{m}{\begin{warnBox}#1\end{warnBox}}
@@ -797,18 +778,18 @@
 \NewDocumentCommand{\note}{m}{\Note{#1}}
 \NewDocumentCommand{\warn}{m}{\Warn{#1}}
 \NewDocumentCommand{\info}{m}{\Info{#1}}
-\NewDocumentCommand{\tHint}{}{\textbf{\textcolor{AccentPurple}{Hint}}}
-\NewDocumentCommand{\tNote}{}{\textbf{\textcolor{AccentTeal}{Note}}}
-\NewDocumentCommand{\tSource}{}{\textbf{\textcolor{AccentGreen}{Source}}}
+\NewDocumentCommand{\tHint}{}{\textbf{\textcolor{SteelGray}{Hint}}}
+\NewDocumentCommand{\tNote}{}{\textbf{\textcolor{Meridian}{Note}}}
+\NewDocumentCommand{\tSource}{}{\textbf{\textcolor{Green}{Source}}}
 
 % Tufte-style margin notes via marginnote + themed tcolorbox
-\newtcolorbox{mt@sidenote}[1][]{enhanced, colback=Gray90, colframe=AccentBlue, boxrule=.5pt,
+\newtcolorbox{mt@sidenote}[1][]{enhanced, colback=Vapor, colframe=Blue, boxrule=.5pt,
   left=4pt, right=4pt, top=4pt, bottom=4pt, sharp corners, width=\marginparwidth, halign=left,
-  fontupper=\footnotesize\sffamily\color{BodyText}, coltitle=AccentBlue, fonttitle=\sffamily\bfseries, #1}
+  fontupper=\footnotesize\sffamily\color{BodyText}, coltitle=Blue, fonttitle=\sffamily\bfseries, #1}
 \NewDocumentCommand{\sidenote}{O{} m}{\marginnote{\begin{mt@sidenote}[title={#1}]#2\end{mt@sidenote}}}
-\NewDocumentCommand{\sideinfo}{O{} m}{\marginnote{\begin{mt@sidenote}[title={#1},colframe=AccentTeal,coltitle=AccentTeal]#2\end{mt@sidenote}}}
-\NewDocumentCommand{\sidewarn}{O{} m}{\marginnote{\begin{mt@sidenote}[title={#1},colframe=AccentOrange,coltitle=AccentOrange]#2\end{mt@sidenote}}}
-\NewDocumentCommand{\sidehint}{O{} m}{\marginnote{\begin{mt@sidenote}[title={#1},colframe=AccentPurple,coltitle=AccentPurple]#2\end{mt@sidenote}}}
+\NewDocumentCommand{\sideinfo}{O{} m}{\marginnote{\begin{mt@sidenote}[title={#1},colframe=Meridian,coltitle=Meridian]#2\end{mt@sidenote}}}
+\NewDocumentCommand{\sidewarn}{O{} m}{\marginnote{\begin{mt@sidenote}[title={#1},colframe=Red,coltitle=Red]#2\end{mt@sidenote}}}
+\NewDocumentCommand{\sidehint}{O{} m}{\marginnote{\begin{mt@sidenote}[title={#1},colframe=SteelGray,coltitle=SteelGray]#2\end{mt@sidenote}}}
 
 % Outer-margin placement on twoside docs
 \NewDocumentCommand{\MT@outerplace}{m}{%
@@ -821,9 +802,9 @@
   #1%
 }
 \RenewDocumentCommand{\sidenote}{O{} m}{\MT@outerplace{\marginnote{\begin{mt@sidenote}[title={#1}]#2\end{mt@sidenote}}}}
-\RenewDocumentCommand{\sideinfo}{O{} m}{\MT@outerplace{\marginnote{\begin{mt@sidenote}[title={#1},colframe=AccentTeal,coltitle=AccentTeal]#2\end{mt@sidenote}}}}
-\RenewDocumentCommand{\sidewarn}{O{} m}{\MT@outerplace{\marginnote{\begin{mt@sidenote}[title={#1},colframe=AccentOrange,coltitle=AccentOrange]#2\end{mt@sidenote}}}}
-\RenewDocumentCommand{\sidehint}{O{} m}{\MT@outerplace{\marginnote{\begin{mt@sidenote}[title={#1},colframe=AccentPurple,coltitle=AccentPurple]#2\end{mt@sidenote}}}}
+\RenewDocumentCommand{\sideinfo}{O{} m}{\MT@outerplace{\marginnote{\begin{mt@sidenote}[title={#1},colframe=Meridian,coltitle=Meridian]#2\end{mt@sidenote}}}}
+\RenewDocumentCommand{\sidewarn}{O{} m}{\MT@outerplace{\marginnote{\begin{mt@sidenote}[title={#1},colframe=Red,coltitle=Red]#2\end{mt@sidenote}}}}
+\RenewDocumentCommand{\sidehint}{O{} m}{\MT@outerplace{\marginnote{\begin{mt@sidenote}[title={#1},colframe=SteelGray,coltitle=SteelGray]#2\end{mt@sidenote}}}}
 \NewDocumentCommand{\MTSetupMargins}{m}{\setlength{\marginparwidth}{#1}}
 
 % =============================
@@ -832,13 +813,29 @@
 \ifmoderntech@tikzsmart
   \RequirePackage{tikz}
   \usetikzlibrary{arrows.meta,shapes,positioning,calc,fit,backgrounds}
+  % --- TikZ externalization (cache figures to disk) ---
+  % Requires -shell-escape in trusted builds; keep lint jobs shell-escape-free.
+  % Cache artifacts are generated in build/tikz/ (mirrored to .build/tikz/ for persistent mounts) and can be invalidated with
+  % `make force-rebuild-tikz` from the repo root.
+  % Use \tikzsetnextfilename{...} to stabilize externalized artifact names.
+  \usetikzlibrary{external}
+  \tikzexternalize[prefix=../../build/tikz/]
+  % LuaLaTeX worker compile; inherits shell-escape check from parent build.
+  \tikzset{
+    external/system call={
+      lualatex --cnf-line=openout_any=a \tikzexternalcheckshellescape
+      -halt-on-error -interaction=batchmode
+      -jobname "\image" "\texsource"
+    }
+  }
+  % --- end TikZ externalization ---
   \tikzset{
     every picture/.style = {>=Latex, line cap=round, line join=round},
-    mt node/.style = {font=\sffamily\small\color{BodyText}, draw=AccentBlue, rounded corners=2pt,
+    mt node/.style = {font=\sffamily\small\color{BodyText}, draw=Blue, rounded corners=2pt,
                       inner xsep=6pt, inner ysep=4pt, align=left},
-    mt title/.style = {font=\sffamily\bfseries\color{AccentBlue}, draw=AccentBlue, rounded corners=3pt, fill=AccentBlue!10, inner xsep=8pt, inner ysep=6pt, align=center},
-    mt line/.style = {AccentBlue, very thick},
-    mt thin/.style = {AccentBlue, semithick},
+    mt title/.style = {font=\sffamily\bfseries\color{Blue}, draw=Blue, rounded corners=3pt, fill=Blue!10, inner xsep=8pt, inner ysep=6pt, align=center},
+    mt line/.style = {Blue, very thick},
+    mt thin/.style = {Blue, semithick},
   }
   \tikzset{
     edo/.style = {
@@ -850,10 +847,10 @@
       align=left
     },
     edo-title/.style = {
-      font=\sffamily\bfseries\color{AccentBlue},
+      font=\sffamily\bfseries\color{Blue},
       draw=Modern,
       rounded corners=3pt,
-      fill=AccentBlue!12,
+      fill=Blue!12,
       inner xsep=8pt,
       inner ysep=6pt,
       align=center
@@ -871,13 +868,13 @@
   \smartdiagramset{
     font=\sffamily\small\color{BodyText},
     text color=BodyText,
-    set color list = {AccentBlue!45, AccentTeal!45, AccentGreen!45, AccentPurple!35, AccentOrange!35},
+    set color list = {Blue!45, Meridian!45, Green!45, SteelGray!35, Red!35},
   }
   \smartdiagramset{
     font=\sffamily\small\color{BodyText},
     text color=BodyText,
-    set color list = {AccentBlue!35, AccentTeal!40, AccentGreen!40, AccentPurple!35, AccentOrange!35},
-    uniform color list = AccentBlue!30 for 10 items,
+    set color list = {Blue!35, Meridian!40, Green!40, SteelGray!35, Red!35},
+    uniform color list = Blue!30 for 10 items,
     module shape = rounded rectangle,
     module x sep = 1.6cm,
     module y sep = 1.0cm,
