@@ -5,16 +5,6 @@ set -euo pipefail
 DEFAULT_MSG="Auto-commit: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
 BRANCH="$(git rev-parse --abbrev-ref HEAD 2> /dev/null || echo main)"
 
-# Keep settings_master in sync before staging/commit
-if command -v python3 >/dev/null 2>&1; then
-  python3 scripts/settings_manager.py merge
-elif command -v python >/dev/null 2>&1; then
-  python scripts/settings_manager.py merge
-else
-  echo "settings merge skipped: python not found" >&2
-  exit 1
-fi
-
 # Guardrails: block obvious secrets by pattern (edit as needed)
 BLOCK_PATTERNS=(
   '\.env'

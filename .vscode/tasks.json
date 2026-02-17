@@ -108,30 +108,6 @@
             }
         },
 
-        // ---------------------------------------------------------------
-        // Settings merge (manual)
-        // ---------------------------------------------------------------
-        {
-            "label": "Settings: Merge sources",
-            "type": "shell",
-            "command": "python3 ${workspaceFolder:workspace}/tools/scripts/settings_manager.py --config ${workspaceFolder}/settings_sources.json merge",
-            "problemMatcher": [],
-            "presentation": {
-                "reveal": "always",
-                "panel": "dedicated",
-                "clear": true
-            },
-            "windows": {
-                "command": "py",
-                "args": [
-                    "-3",
-                    "${workspaceFolder:workspace}\\tools\\scripts\\settings_manager.py",
-                    "--config",
-                    "${workspaceFolder}\\settings_sources.json",
-                    "merge"
-                ]
-            }
-        },
         {
             "label": "latexmk (LuaLaTeX, externalized)",
             "type": "shell",

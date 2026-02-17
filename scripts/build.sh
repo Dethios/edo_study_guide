@@ -2,6 +2,12 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+SUPER_ROOT="$(git -C "$ROOT" rev-parse --show-superproject-working-tree 2>/dev/null || true)"
+if [[ -n "$SUPER_ROOT" ]]; then
+    WORKSPACE_ROOT="${SUPER_ROOT%/}"
+else
+    WORKSPACE_ROOT="$ROOT"
+fi
 
 ENGINE="lualatex"
 WATCH=0
@@ -125,6 +131,15 @@ fi
 export TEXMFVAR="$AUXDIR_ABS/texmf-var"
 export TEXMFCACHE="$AUXDIR_ABS/texmf-cache"
 mkdir -p "$TEXMFVAR" "$TEXMFCACHE"
+
+if [[ -z "${MODERNTECH_TIKZ_EXTERNAL_PRIMARY:-}" ]]; then
+    export MODERNTECH_TIKZ_EXTERNAL_PRIMARY="$WORKSPACE_ROOT/.build/tikz"
+fi
+if [[ -z "${MODERNTECH_TIKZ_EXTERNAL_FALLBACK:-}" ]]; then
+    export MODERNTECH_TIKZ_EXTERNAL_FALLBACK="$WORKSPACE_ROOT/build/tikz"
+fi
+mkdir -p "$MODERNTECH_TIKZ_EXTERNAL_PRIMARY" "$MODERNTECH_TIKZ_EXTERNAL_FALLBACK"
+
 # Ensure TeX can locate class/style/bib files when latexmk runs from repo root.
 export TEXINPUTS="$ROOT/tex:${TEXINPUTS:-}"
 export BIBINPUTS="$ROOT/tex:${BIBINPUTS:-}"

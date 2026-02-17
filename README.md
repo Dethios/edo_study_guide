@@ -33,6 +33,11 @@ TikZ cache invalidation:
 make force-rebuild-tikz
 ```
 
+TikZ cache path validation:
+```
+make check-tikz-cache
+```
+
 ## Format
 
 Bash:
@@ -96,4 +101,8 @@ License (see `LICENSE-CODE`).
 TikZ externalization requires `-shell-escape`. Use it only in trusted builds or an isolated CI job. Keep lint/analysis jobs shell-escape-free.
 
 
-Note: some TeX Live environments block hidden output directories (`openout_any = p`). In that case, TikZ externalization writes to `build/tikz/`; keep `.build/tikz/` as the persistent host-mounted mirror for cache reuse.
+TikZ externalization uses one canonical cache directory:
+- `${superproject-root}/.build/tikz/` (preferred)
+- `${superproject-root}/build/tikz/` (automatic fallback when hidden output paths are blocked, e.g. `openout_any = p`)
+
+If this project is cloned standalone (not as a submodule), `superproject-root` is the project root.

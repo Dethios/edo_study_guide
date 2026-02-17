@@ -1,8 +1,24 @@
 # Keep PDF in repo; put aux where LaTeX/biber agree.
 use Cwd qw(abs_path);
 use File::Basename qw(dirname);
-# Anchor to the working directory (build.sh cd's to repo root).
-my $root_dir = abs_path('.');
+use File::Path qw(make_path);
+
+*moderntech_normalize_path = sub {
+    my ($path) = @_;
+    $path =~ s{\\}{/}g;
+    $path =~ s{/$}{} if $path ne '/';
+    return $path;
+} unless defined &moderntech_normalize_path;
+
+# Anchor to this rcfile's location so CWD never changes output paths.
+my $root_dir = abs_path(dirname(__FILE__) . '/..');
+my $super_dir = qx(git -C "$root_dir" rev-parse --show-superproject-working-tree 2>/dev/null);
+chomp $super_dir;
+my $workspace_dir = $super_dir ne '' ? abs_path($super_dir) : $root_dir;
+
+$root_dir = moderntech_normalize_path($root_dir);
+$workspace_dir = moderntech_normalize_path($workspace_dir);
+
 $out_dir = "$root_dir/out";
 $aux_dir = "$root_dir/build";
 # Stay in repo root so out/build resolve consistently when compiling tex/main.tex.
@@ -10,13 +26,17 @@ $do_cd = 0;
 
 # Ensure LuaLaTeX has a writable cache dir for luaotfload/fontspec (important in
 # sandboxed environments where $HOME may not be writeable).
-use File::Path qw(make_path);
 $ENV{'TEXMFVAR'}   = "$aux_dir/texmf-var";
 $ENV{'TEXMFCACHE'} = "$aux_dir/texmf-cache";
 make_path($ENV{'TEXMFVAR'});
 make_path($ENV{'TEXMFCACHE'});
-make_path("$root_dir/build/tikz");
-make_path("$root_dir/.build/tikz");
+
+# TikZ externalization cache: prefer workspace-level hidden cache, fallback to
+# non-hidden workspace build cache when openout policies block hidden writes.
+$ENV{'MODERNTECH_TIKZ_EXTERNAL_PRIMARY'} = moderntech_normalize_path("$workspace_dir/.build/tikz");
+$ENV{'MODERNTECH_TIKZ_EXTERNAL_FALLBACK'} = moderntech_normalize_path("$workspace_dir/build/tikz");
+make_path($ENV{'MODERNTECH_TIKZ_EXTERNAL_PRIMARY'});
+make_path($ENV{'MODERNTECH_TIKZ_EXTERNAL_FALLBACK'});
 
 # Ensure LaTeX can see tex/ sources even when latexmk is run from elsewhere.
 # Keep search paths shallow to avoid picking up stale aux files.
@@ -50,7 +70,7 @@ $pdflatex = $lualatex if $pdf_mode == 4;
 
 # Glossaries
 add_cus_dep('glo','gls',0,'makeglossaries');
-sub makeglossaries { system("makeglossaries \"$_[0]\""); }
+*makeglossaries = sub { system("makeglossaries \"$_[0]\""); } unless defined &makeglossaries;
 
 # Force biber to read/write the aux dir
 $bibtex = "biber --input-directory=\"$aux_dir\" --output-directory=\"$aux_dir\" %O %B";

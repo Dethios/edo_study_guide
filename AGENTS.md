@@ -140,15 +140,13 @@
 - [x] Optimize AGENTS.md with GPT-5.2 prompting guidance (2025-12-24)
 - [x] Integrate memory_update.md into AGENTS.md and remove the file (2025-12-24)
 - [x] Inventory instruction sources and account for them in AGENTS.md (2025-12-24)
-- [x] Add settings_master.json and automate settings sync/merge (VS Code open + git push)
 - [x] Create WSL/VS Code replication notebook with optional devcontainer scaffold (2025-12-24)
 - [x] Commit devcontainer files for Ubuntu WSL replication (2025-12-24)
 - [x] Audit shell/PowerShell script parity and tasks.json OS routing (2025-12-24)
-- [x] Tidy settings_manager.py spacing (2025-12-24)
 - [x] Add NDS, C2, AI, CTF, and BES acronyms (2025-12-24)
 - [x] Add shell script runner Jupyter notebook under scripts (2025-12-24)
 - [x] Resolve remaining undefined citation warnings in `build/main.log` after biber runs
-- [x] Add VS Code task to merge settings (2025-12-25)
+- [x] Add a VS Code task for configuration updates (2025-12-25)
 - [x] Fix BUILD-WSL LaTeX Workshop command path to avoid ENOENT (2025-12-25)
 - [x] Guidance: shell_runner.ipynb sudo apt-get hang and notebook TTY limits (2025-12-26)
 - [x] Add sudo -n guard to shell_runner.ipynb (2025-12-26)
@@ -161,7 +159,7 @@
 - [x] WSL notebook: add ssh backup/restore and sudoers guidance (2025-12-26)
 - [x] WSL sudoers: use $USER instead of hard-coded name (2025-12-26)
 - [x] Add NIP/MIP funding subsection (NRO context) with citations and acronyms (2025-12-28)
-- [x] Default markdown-related files to markdown-preview-enhanced and sync settings (2026-01-02)
+- [x] Default markdown-related files to markdown-preview-enhanced (2026-01-02)
 
 ## Session updates (2025-12-16)
 

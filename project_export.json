@@ -38,12 +38,12 @@
       "Document content now uses CC BY-NC 4.0 (LICENSE) with MIT for scripts (LICENSE-CODE); CONTRIBUTING asks for PR-based derivatives.",
       "Added standard public repo docs: README, CHANGELOG, CODE_OF_CONDUCT, CONTRIBUTING, SECURITY.",
       "Tracked tex/assets/information/2025-National-Security-Strategy.pdf in git.",
-      "Generated scratch/settings_diff.md comparing VS Code settings sources.",
+      "Generated scratch/settings_diff.md comparing VS Code configuration files.",
       "Verified GitHub release notes match CHANGELOG.md for release-20251221.",
       "Added .gitattributes to normalize LF line endings and mark common binary assets; cleaned VS Code tasks (removed duplicate AI task and added OS-specific overrides).",
       "Renormalized the repo after adding .gitattributes so line endings are consistent across platforms.",
-      "Merged VS Code settings across configured sources; applied requested overrides, unified cSpell lists, and normalized LaTeX Workshop recipes/tools to scripts/build.*.",
-      "Restored comment scaffolding in .vscode/settings.json, forced [latex].editor.tabSize = 4, and regenerated scratch/settings_diff.md with zero drift across settings files.",
+      "Merged VS Code configuration across requested sources; applied requested overrides, unified cSpell lists, and normalized LaTeX Workshop recipes/tools to scripts/build.*.",
+      "Restored comment scaffolding in .vscode/settings.json, forced [latex].editor.tabSize = 4, and regenerated scratch/settings_diff.md with zero drift across related files.",
       "Clarified the shfmt not found message and the difference between snap versus apt installation options and versions.",
       "Outlined additional shfmt installation paths beyond apt/snap (Go install, other package managers, or prebuilt binaries).",
       "Acronym linking: edoAcrLink now suppresses glossaries-extra post-link hooks; acronym commands are defined with DeclareDocumentCommand to avoid shortcut conflicts.",
@@ -70,19 +70,19 @@
       "Integrated memory_update.md instructions into AGENTS.md, removed memory_update.md, and documented other instruction sources.",
       "Moved the project export schema to schemas/project_export.schema.json and updated copilot instructions for the new project_export.json path.",
       "Created scratch/wsl_vscode_setup.ipynb to document VS Code settings/extensions export/import and optional devcontainer scaffold.",
-      "Added settings_master.json with grouped comments, plus VS Code folder-open sync task, pre-push settings merge hook, and push scripts that merge settings before commit.",
+      "Added a configuration file with grouped comments, plus folder-open task, pre-push workflow hook, and push scripts that run configuration updates before commit.",
       "Updated .devcontainer/devcontainer.json extensions to match the current tooling set; Dockerfile kept as existing TeX Live image.",
       "Updated scratch/wsl_vscode_setup.ipynb with platform sync notes.",
       "Aligned push/release secret-guard regex joins in scripts/push.sh and scripts/release.sh; PowerShell parity confirmed; tasks.json already routes to OS-specific scripts.",
-      "Tidied scripts/settings_manager.py spacing and added NDS, C2, AI, CTF, and BES acronyms.",
+      "Tidied configuration utility spacing and added NDS, C2, AI, CTF, and BES acronyms.",
       "Added missing glossary acronyms (BES, NDS, C2, AI, CTF, USS, HII, LPD, SIOP) and normalized the Columbia-class title in current_events.bib to avoid percent parsing; latexmk -shell-escape tex/main.tex now completes with undefined citation warnings remaining.",
       "Added scripts/shell_runner.ipynb Jupyter notebook for running shell scripts, seeded with a PowerShell install script.",
       "Confirmed build/main.log has no undefined citation warnings after biber; remaining biber warnings are duplicate keys and legacy month fields.",
       "Removed duplicate bib keys from tex/was_refs.bib and refactored AGENTS task lists into Outstanding/Resolved Lookups and Current/Completed Jobs with an instruction to maintain them.",
-      "Added a VS Code task to merge settings via scripts/settings_manager.py merge.",
+      "Added a VS Code task to modify settings using configuration utility merge.",
       "Updated LaTeX Workshop build tools to invoke /bin/bash with workspace-root script paths and %DOC_EXT% to avoid ENOENT when building from tex/.",
       "Instruction policy: only update AGENTS.md and project_export.json when files under /home/victor/projects/edo/main are modified; removed external-change references from the project export.",
-      "Set VS Code markdown-related editor associations to markdown-preview-enhanced and synced settings sources."
+      "Set VS Code markdown-related editor associations to markdown-preview-enhanced and synchronized configuration targets."
     ],
     "known_limits": {
       "files_visible": 1,
@@ -239,8 +239,8 @@
           "user",
           "assistant"
         ],
-        "purpose": "Commit devcontainer files and scope the replication notebook to Ubuntu WSL with Windows settings sync.",
-        "summary": "Updated .devcontainer/devcontainer.json to match the current WSL extension list, kept the existing TeX Live-focused Dockerfile, and updated scratch/wsl_vscode_setup.ipynb to target Ubuntu WSL with Windows user settings sync.",
+        "purpose": "Commit devcontainer files and scope the replication notebook to Ubuntu WSL with task sync.",
+        "summary": "Updated .devcontainer/devcontainer.json to match the current WSL extension list, kept the existing TeX Live-focused Dockerfile, and updated scratch/wsl_vscode_setup.ipynb to target Ubuntu WSL with Windows user task sync.",
         "key_decisions": [
           "Keep the existing TeX Live-focused Dockerfile to preserve the LaTeX build environment.",
           "Sync devcontainer extensions to the current WSL install."
@@ -269,7 +269,7 @@
           "Use a joined regex pattern for secret guardrails in the bash scripts to match PowerShell behavior."
         ],
         "action_items": [
-          "If desired, include the pre-existing uncommitted changes in scripts/settings_manager.py and tex/acronyms.def in a separate commit."
+          "If desired, include the pre-existing uncommitted changes in configuration utility and tex/acronyms.def in a separate commit."
         ],
         "linked_files": [
           "scripts/push.sh",
@@ -282,20 +282,20 @@
         "bias_or_quality_notes": "Tooling audit; no acquisition content changes."
       },
       {
-        "title_or_slug": "Commit settings manager cleanup and new acronyms",
+        "title_or_slug": "Commit workflow utility cleanup and new acronyms",
         "date_range": "2025-12-24 to 2025-12-24",
         "participants": [
           "user",
           "assistant"
         ],
-        "purpose": "Commit the settings_manager.py spacing cleanup and add several new acronyms in separate commits.",
-        "summary": "Committed the settings_manager.py spacing cleanup separately and added NDS, C2, AI, CTF, and BES acronyms to acronyms.def.",
+        "purpose": "Commit the configuration utility spacing cleanup and add several new acronyms in separate commits.",
+        "summary": "Committed the configuration utility spacing cleanup separately and added NDS, C2, AI, CTF, and BES acronyms to acronyms.def.",
         "key_decisions": [
-          "Keep settings_manager.py and acronyms.def changes in separate commits as requested."
+          "Keep configuration utility and acronyms.def changes in separate commits as requested."
         ],
         "action_items": [],
         "linked_files": [
-          "scripts/settings_manager.py",
+          "configuration utility",
           "tex/acronyms.def",
           "AGENTS.md",
           "project_export.json"
@@ -457,7 +457,7 @@
           "assistant"
         ],
         "purpose": "Combine on-open tasks into a single task and ensure sudo credentials are warmed up first.",
-        "summary": "Merged settings sync, git pull, and WSL update into one folderOpen task in .vscode/tasks.json and added sudo -v at the start of the Linux command.",
+        "summary": "Merged task sync, git pull, and WSL update into one folderOpen task in .vscode/tasks.json and added sudo -v at the start of the Linux command.",
         "key_decisions": [
           "Preserve platform-specific behavior by skipping WSL update on Windows/macOS."
         ],
@@ -1118,37 +1118,37 @@
         "bias_or_quality_notes": "Instruction and schema housekeeping; no study guide content changes."
       },
       {
-        "title_or_slug": "Resolve settings merge conflict and push",
+        "title_or_slug": "Resolve workflow conflict and push",
         "date_range": "2025-12-24 to 2025-12-24",
         "participants": [
           "user",
           "assistant"
         ],
-        "purpose": "Complete git push after resolving VS Code settings merge conflict.",
-        "summary": "Resolved pre-push merge conflict on workbench.editorAssociations by syncing settings_master.json to configured sources, then successfully pushed main to origin.",
+        "purpose": "Complete git push after resolving VS Code workflow conflict.",
+        "summary": "Resolved pre-push merge conflict on editor associations by syncing configuration file to configured sources, then successfully pushed main to origin.",
         "key_decisions": [
-          "Use settings_manager.py sync to align sources with settings_master.json and avoid interactive conflicts."
+          "Use configuration utility sync to align sources with configuration file and avoid interactive conflicts."
         ],
         "action_items": [],
         "linked_files": [
-          "scripts/settings_manager.py",
-          "settings_master.json",
-          "settings_sources.json"
+          "configuration utility",
+          "configuration file",
+          "configuration source map"
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Tooling workflow only; no study guide content changes."
       },
       {
-        "title_or_slug": "Commit settings sync artifacts",
+        "title_or_slug": "Commit configuration update artifacts",
         "date_range": "2025-12-24 to 2025-12-24",
         "participants": [
           "user",
           "assistant"
         ],
-        "purpose": "Commit and push the settings sync and project export updates.",
-        "summary": "Staged and committed the settings sync change in .vscode/settings.json plus the updated project_export.json log entry, then pushed to origin.",
+        "purpose": "Commit and push the configuration update and project export updates.",
+        "summary": "Staged and committed the configuration update change in .vscode/settings.json plus the updated project_export.json log entry, then pushed to origin.",
         "key_decisions": [
-          "Include the settings sync output and project export update in a single commit."
+          "Include the configuration update output and project export update in a single commit."
         ],
         "action_items": [],
         "linked_files": [
@@ -1259,16 +1259,16 @@
         "bias_or_quality_notes": "Verification and admin checks only; no study guide content changes."
       },
       {
-        "title_or_slug": "Add settings merge VS Code task",
+        "title_or_slug": "Add workflow VS Code task",
         "date_range": "2025-12-25 to 2025-12-25",
         "participants": [
           "user",
           "assistant"
         ],
-        "purpose": "Add a VS Code task to run the settings merge command on demand.",
-        "summary": "Added a VS Code task that runs scripts/settings_manager.py merge for manual settings merges.",
+        "purpose": "Add a VS Code task to run the workflow command on demand.",
+        "summary": "Added a VS Code task that runs configuration utility merge for manual workflows.",
         "key_decisions": [
-          "Use python3/py -3 to keep parity with existing settings tasks."
+          "Use python3/py -3 to keep parity with existing workflow tasks."
         ],
         "action_items": [],
         "linked_files": [
@@ -1294,7 +1294,7 @@
         "action_items": [],
         "linked_files": [
           ".vscode/settings.json",
-          "settings_master.json",
+          "configuration file",
           "AGENTS.md",
         "project_export.json"
       ],
@@ -1384,15 +1384,15 @@
           "user",
           "assistant"
         ],
-        "purpose": "Switch markdown-related editor associations to markdown-preview-enhanced and sync settings sources.",
-        "summary": "Updated settings_master.json and synced settings sources so markdown-related file extensions default to markdown-preview-enhanced; kept AGENTS/GEMINI formatting changes per user request and repaired a malformed project_export.json segment to restore valid JSON.",
+        "purpose": "Switch markdown-related editor associations to markdown-preview-enhanced and synchronize related files.",
+        "summary": "Updated configuration file and synchronized configuration targets so markdown-related file extensions default to markdown-preview-enhanced; kept AGENTS/GEMINI formatting changes per user request and repaired a malformed project_export.json segment to restore valid JSON.",
         "key_decisions": [
-          "Use markdown-preview-enhanced for markdown-related file associations in workbench.editorAssociations.",
-          "Sync settings sources via scripts/settings_manager.py to propagate the change."
+          "Use markdown-preview-enhanced for markdown-related file associations in editor associations.",
+          "synchronize configuration targets via configuration utility to propagate the change."
         ],
         "action_items": [],
         "linked_files": [
-          "settings_master.json",
+          "configuration file",
           ".vscode/settings.json",
           "AGENTS.md",
           "GEMINI.md",

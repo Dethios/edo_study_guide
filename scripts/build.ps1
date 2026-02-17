@@ -23,6 +23,13 @@ $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 
 $root = Split-Path -Parent $PSScriptRoot
+$superRoot = ""
+try {
+    $superRoot = (& git -C $root rev-parse --show-superproject-working-tree 2>$null).Trim()
+} catch {
+    $superRoot = ""
+}
+$workspaceRoot = if ($superRoot) { $superRoot } else { $root }
 $exitCode = 0
 $skipBuild = $false
 
@@ -59,6 +66,18 @@ try {
     $env:TEXMFCACHE = Join-Path $auxDirFull "texmf-cache"
     New-Item -ItemType Directory -Force -Path $env:TEXMFVAR | Out-Null
     New-Item -ItemType Directory -Force -Path $env:TEXMFCACHE | Out-Null
+
+    if (-not $env:MODERNTECH_TIKZ_EXTERNAL_PRIMARY) {
+        $env:MODERNTECH_TIKZ_EXTERNAL_PRIMARY = ((Join-Path $workspaceRoot ".build\\tikz") -replace '\\', '/')
+    }
+    if (-not $env:MODERNTECH_TIKZ_EXTERNAL_FALLBACK) {
+        $env:MODERNTECH_TIKZ_EXTERNAL_FALLBACK = ((Join-Path $workspaceRoot "build\\tikz") -replace '\\', '/')
+    }
+    $primaryFsPath = $env:MODERNTECH_TIKZ_EXTERNAL_PRIMARY -replace '/', [IO.Path]::DirectorySeparatorChar
+    $fallbackFsPath = $env:MODERNTECH_TIKZ_EXTERNAL_FALLBACK -replace '/', [IO.Path]::DirectorySeparatorChar
+    New-Item -ItemType Directory -Force -Path $primaryFsPath | Out-Null
+    New-Item -ItemType Directory -Force -Path $fallbackFsPath | Out-Null
+
     $latexmkRc = Join-Path $root "tex/latexmkrc"
 
     if ($Clean) {
