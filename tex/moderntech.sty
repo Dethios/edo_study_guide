@@ -32,13 +32,15 @@
 \DeclareGraphicsRule{.jfif}{jpg}{.jfif}{}
 \RequirePackage[mode=buildnew]{standalone}
 \RequirePackage{subfiles}
-\@ifclassloaded{subfiles}{\MTSubfilestrue}{\MTSubfilesfalse}
-\providecommand{\IfSubfilesClassLoaded}[2]{%
-    \ifMTSubfiles
-        #1%
-    \else
-        #2%
-    \fi
+\ifSubfilesClassLoaded{\MTSubfilestrue}{\MTSubfilesfalse}
+\@ifundefined{IfSubfilesClassLoaded}{%
+    \NewDocumentCommand{\IfSubfilesClassLoaded}{m m}{%
+        \ifSubfilesClassLoaded{#1}{#2}%
+    }%
+}{%
+    \RenewDocumentCommand{\IfSubfilesClassLoaded}{m m}{%
+        \ifSubfilesClassLoaded{#1}{#2}%
+    }%
 }
 \RequirePackage{xstring}
 
@@ -66,7 +68,7 @@
     breaklinks=true,
     colorlinks=true,
     hypertexnames=false, % avoid duplicate anchor names misrouting links
-    linkcolor=Meridian,
+    linkcolor=BlueDeep,
     citecolor=Green,
     urlcolor=Blue,
     filecolor=SteelGray
@@ -76,12 +78,6 @@
 \providecommand{\subfix}[1]{#1}
 \NewDocumentCommand{\ImportAUX}{m}{%
     \IfFileExists{#1.aux}{\externaldocument*{#1}}{}%
-}
-% Pull the main document AUX into subfile builds so cross-references resolve.
-\@ifundefined{IfSubfilesClassLoaded}{}{%
-    \IfSubfilesClassLoaded{%
-        \ImportAUX{\subfix{../build/main}}%
-    }{}%
 }
 
 \RequirePackage{bookmark}
@@ -121,8 +117,27 @@
 \@ifundefined{gls@insertspace}{}{%
     \renewcommand*{\gls@insertspace}{}%
 }%
+\@ifundefined{glsxtrfullsep}{}{\renewcommand*{\glsxtrfullsep}[1]{}}%
+% Keep noidx write side-effects, but execute write payload in a throwaway box
+% so it doesn't inject a visible leading interword glue node in \gls output.
+\AtBeginDocument{%
+    \@ifundefined{glsencapwrcontent}{}{%
+        \renewcommand*{\glsencapwrcontent}[1]{\setbox\z@=\hbox{$\m@th\null$#1}}%
+    }%
+}
 % NOTE: glossaries-extra emits a stray leading space in \glslink; avoid it.
 % We link via \@glslink and manually add glossary usage.
+\@ifundefined{@gls@link}{}{%
+    \patchcmd{\@gls@link}{\leavevmode }{\leavevmode}{}{}%
+}
+% Guard plain \gls path on older/variant internals by bypassing \@glo@text
+% indirection (which may carry a trailing space token in some variants).
+\@ifundefined{@gls@}{}{%
+    \patchcmd{\@gls@}
+    {\@gls@link[#1]{#2}{\@glo@text}}
+    {\@gls@link[#1]{#2}{\csname gls@\glstype @entryfmt\endcsname}}
+    {}{}%
+}
 
 % --- Load your acronym definitions ------------------------------------------
 \loadglsentries{acronyms.def}
@@ -132,17 +147,22 @@
 % Fallbacks for noidx writes when glossaries doesn't set counters yet.
 \providecommand*{\theglsentrycounter}{\thepage}
 \providecommand*{\theHglsentrycounter}{\thepage}
-% \glsdisablehyper
 
 % =========================
 % Hyperlinked, no-space acronyms
 % =========================
 % Shared helpers for linked acronym output and smart spacing
-\DeclareRobustCommand{\silentglsadd}[1]{\glsadd{#1}}%
+\DeclareRobustCommand{\silentglsadd}[1]{\begingroup\setbox\z@=\hbox{\glsadd{#1}}\endgroup}%
 
 \DeclareDocumentCommand{\edoAcrLink}{m m}{%
-\@ifundefined{hyperlink}{#2}{\hyperlink{glo:#1}{#2}}%
+\@ifundefined{@glslink}{\@ifundefined{glslink}{#2}{\glslink{#1}{#2}}}{\@glslink{\glolinkprefix\glsdetoklabel{#1}}{#2}}%
 }%
+% Guard against legacy/variant wrappers that may leak leading/trailing space
+% tokens in acronym short forms. Keep output stable as [DoW], not [ DoW ].
+\DeclareDocumentCommand{\edoAcrShortFmt}{m}{\ignorespaces\glsentryshort{#1}\unskip}%
+\DeclareDocumentCommand{\edoAcrShortPlFmt}{m}{\ignorespaces\glsentryshortpl{#1}\unskip}%
+\DeclareDocumentCommand{\edoAcrShortCapFmt}{m}{\ignorespaces\Glsentryshort{#1}\unskip}%
+\DeclareDocumentCommand{\edoAcrShortPlCapFmt}{m}{\ignorespaces\Glsentryshortpl{#1}\unskip}%
 \AtBeginDocument{\let\@gls@adjustmode\@empty}%
 \NewDocumentCommand{\edoAcrRender}{m m m m}{%
     \IfBooleanTF{#1}{%
@@ -160,7 +180,7 @@
 
 % \ac{<lab>}  : first use -> long (SHORT), later -> SHORT; linked; usage tracked
 % \ac*{<lab>} : always SHORT; linked; no usage change
-\DeclareDocumentCommand{\ac}{s m}{\edoAcrRender{#1}{#2}{\glsentryshort}{\glsentrylong}}%
+\DeclareDocumentCommand{\ac}{s m}{\edoAcrRender{#1}{#2}{\edoAcrShortFmt}{\glsentrylong}}%
 
 % Compatibility shims for legacy shortcut macros (short forms only)
 \providecommand{\acs}[1]{\glsxtrshort{#1}}%
@@ -169,11 +189,11 @@
 \providecommand{\Acsp}[1]{\Glsxtrshortpl{#1}}%
 
 % Plural
-\DeclareDocumentCommand{\acp}{s m}{\edoAcrRender{#1}{#2}{\glsentryshortpl}{\glsentrylongpl}}%
+\DeclareDocumentCommand{\acp}{s m}{\edoAcrRender{#1}{#2}{\edoAcrShortPlFmt}{\glsentrylongpl}}%
 
 % Capitalized variants
-\DeclareDocumentCommand{\Ac}{s m}{\edoAcrRender{#1}{#2}{\Glsentryshort}{\Glsentrylong}}%
-\DeclareDocumentCommand{\Acp}{s m}{\edoAcrRender{#1}{#2}{\Glsentryshortpl}{\Glsentrylongpl}}%
+\DeclareDocumentCommand{\Ac}{s m}{\edoAcrRender{#1}{#2}{\edoAcrShortCapFmt}{\Glsentrylong}}%
+\DeclareDocumentCommand{\Acp}{s m}{\edoAcrRender{#1}{#2}{\edoAcrShortPlCapFmt}{\Glsentrylongpl}}%
 
 % For list labels / moving args (optional; linked)
 \NewDocumentCommand{\aclabel}{m}{\hyperlink{glo:#1}{\glsentryshort{#1}}}%

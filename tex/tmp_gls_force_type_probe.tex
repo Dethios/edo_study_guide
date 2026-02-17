@@ -1,0 +1,15 @@
+\documentclass{moderntech}
+\makeatletter
+\AtBeginDocument{%
+  \let\MTorig@gls@link\@gls@link
+  \long\def\@gls@link[#1]#2#3{%
+    \edef\glslabel{\glsdetoklabel{#2}}%
+    \ifx\glstype\undefined
+      \protected@edef\glstype{\csname glo@\glslabel @type\endcsname}%
+    \fi
+    \MTorig@gls@link[#1]{#2}{#3}%
+  }%
+}
+\begin{document}
+[\gls{dod}] [\ac{dod}] [\gls{dod}] [\ac{dod}]
+\end{document}

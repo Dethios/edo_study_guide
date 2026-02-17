@@ -1,0 +1,8 @@
+\documentclass{moderntech}
+\makeatletter
+\AtBeginDocument{%
+  \renewcommand*{\glsentryfmt}{\typeout{MT-USED-QUERY label=[\glslabel]}\ifglshasshort{\glslabel}{\ifglsused{\glslabel}{\typeout{MT-USED:YES}\glsgenacfmt}{\typeout{MT-USED:NO}\glsgenentryfmt}}{\glsgenentryfmt}}%
+}
+\begin{document}
+[\gls{dod}] [\ac{dod}] [\gls{dod}] [\ac{dod}]
+\end{document}

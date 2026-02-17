@@ -2,7 +2,7 @@
 % !TEX root    = main.tex
 % !TEX options = jobname = "EDO Study Guide"
 % !BIB program = biber
-% =============================================================================
+% =====================================                                                 5/11/06=================================
 % Root document — KOMA-Script (scrbook)
 % =============================================================================
 % LTeX: off
@@ -34,30 +34,14 @@
   backref=false
 ]{biblatex}
 \ExecuteBibliographyOptions{seconds=true}
-\addbibresource{tex/edo.bib}
-\addbibresource{tex/was_refs.bib}
-\addbibresource{tex/current_events.bib}
+\addbibresource{edo.bib}
+\addbibresource{was_refs.bib}
+\addbibresource{current_events.bib}
 \RenewDocumentCommand{\bibfont}{}{\rmfamily\small}
 \defbibheading{subrefs}[\refname]{\paragraph*{#1}\nopagebreak}
 \NewDocumentCommand{\nbcite}{m}{\citeauthor{#1}~\autocite{#1}}
 \NewDocumentCommand{\srcCite}{m}{Source:~~\citetitle{#1},~\citeyear{#1}~\autocite{#1}}
 \NewDocumentCommand{\tabCite}{m}{\citetitle{#1},~\citeyear{#1}~\autocite{#1}}
-\ExplSyntaxOn%
-\msg_redirect_name:nnn { pdf } { unreferenced destination } { none }
-\msg_redirect_name:nnn { pdf backend } { unreferenced destination } { none }
-\msg_redirect_name:nnn { pdf_backend } { unreferenced destination } { none }
-\msg_redirect_name:nnn { pdf/backend } { unreferenced destination } { none }
-\cs_if_exist:NT \__pdf_backend_warn:nnnn
-{
-  \cs_new_eq:NN \mt@orig_pdf_warn:nnnn \__pdf_backend_warn:nnnn
-  \cs_set_protected:Npn \__pdf_backend_warn:nnnn ##1##2##3##4
-  {
-    \str_if_eq:nnTF {##2}{unreferenced destination}
-    { }
-    { \mt@orig_pdf_warn:nnnn {##1}{##2}{##3}{##4} }
-  }
-}
-\ExplSyntaxOff%
 % Disable biblatex hyperlink targets when defined; leave hyperref driver intact.
 % \AtBeginDocument{%
 %   \makeatletter
@@ -96,6 +80,8 @@
 \makeatletter
 % Silence biblatex's empty-bibliography warning in continuous builds.
 \AtBeginDocument{\@ifundefined{blx@warn@bibempty}{}{\let\blx@warn@bibempty\relax}}
+% Keep TikZ externalization disabled in the main study-guide build path.
+\AtBeginDocument{\tikzexternaldisable}
 \begin{document}
 \DTMsetdatestyle{mydateformat}
 
@@ -245,17 +231,6 @@
 \RenewDocumentCommand{\descriptionname}{}{\sffamily\textbf{\color{Modern} Definition}}
 
 \RenewDocumentCommand{\glsnamefont}{m}{\textbf{#1}}
-\newcommand{\MTGlossaryAnchorLinks}{%
-  \hyperlink{glo:n9i}{\phantom{0}}%
-  \hyperlink{glo:dod}{\phantom{0}}%
-  \hyperlink{glo:te}{\phantom{0}}%
-  \hyperlink{glo:mca}{\phantom{0}}%
-  \hyperlink{glo:das}{\phantom{0}}%
-  \hyperlink{glo:jcids}{\phantom{0}}%
-  \hyperlink{glo:evm}{\phantom{0}}%
-  \hyperlink{glo:pmb}{\phantom{0}}%
-}
-\MTGlossaryAnchorLinks
 \printnoidxglossary[
   type=\acronymtype,
   title=List of Acronyms,

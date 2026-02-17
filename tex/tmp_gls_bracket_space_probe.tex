@@ -1,0 +1,8 @@
+\documentclass{moderntech}
+\makeatletter
+\AtBeginDocument{%
+  \@ifundefined{glslinkwrcontent}{}{\renewcommand*{\glslinkwrcontent}[1]{#1}}%
+}
+\begin{document}
+[\gls{dod}] [\ac{dod}] [\gls{dod}] [\ac{dod}]
+\end{document}

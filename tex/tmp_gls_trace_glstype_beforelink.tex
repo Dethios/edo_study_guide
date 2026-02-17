@@ -1,0 +1,12 @@
+\documentclass{moderntech}
+\makeatletter
+\AtBeginDocument{%
+  \let\MTorig@gls@link\@gls@link
+  \long\def\@gls@link[#1]#2#3{%
+    \typeout{MT-BEFORE-LINK glstype=[\detokenize\expandafter{\meaning\glstype}] label=[\detokenize{#2}]}%
+    \MTorig@gls@link[#1]{#2}{#3}%
+  }%
+}
+\begin{document}
+[\gls{dod}] [\ac{dod}] [\gls{dod}] [\ac{dod}]
+\end{document}

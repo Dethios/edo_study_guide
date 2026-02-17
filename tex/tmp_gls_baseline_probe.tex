@@ -1,0 +1,9 @@
+\documentclass{moderntech}
+\makeatletter
+\AtBeginDocument{%
+  \let\MTorig@gls@link\@gls@link
+  \def\@gls@link[#1]#2#3{\leavevmode\protected@edef\glslabel{\glsdetoklabel{#2}}\setkeys{glslink}{#1}\@gls@saveentrycounter\@gls@setsort{\glslabel}\glsencapwrcontent{\@do@wrglossary{#2}}\ifKV@glslink@hyper\@glslink{\glolinkprefix\glslabel}{\glstextformat{#3}}\else\glsdonohyperlink{\glolinkprefix\glslabel}{\glstextformat{#3}}\fi}%
+}
+\begin{document}
+[\gls{dod}] [\ac{dod}] [\gls{dod}] [\ac{dod}]
+\end{document}

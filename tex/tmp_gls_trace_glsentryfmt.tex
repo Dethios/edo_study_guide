@@ -1,0 +1,8 @@
+\documentclass{moderntech}
+\makeatletter
+\AtBeginDocument{%
+  \renewcommand*{\glsentryfmt}{\typeout{MT-GLSENTRYFMT glstype=[\detokenize\expandafter{\meaning\glstype}] insert=[\detokenize\expandafter{\meaning\glsinsert}] custom=[\detokenize\expandafter{\meaning\glscustomtext}]}\ifglshasshort{\glslabel}{\ifglsused{\glslabel}{\glsgenacfmt}{\glsgenentryfmt}{\glsinsert}}{\glsgenentryfmt}{\glsinsert}}%
+}
+\begin{document}
+[\gls{dod}] [\ac{dod}] [\gls{dod}] [\ac{dod}]
+\end{document}

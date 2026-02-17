@@ -1,0 +1,13 @@
+\documentclass{moderntech}
+\makeatletter
+\AtBeginDocument{%
+  \let\MTorig@glslink\@glslink
+  \long\def\@glslink#1#2{%
+    \let\MTorig@glsxtr@textformat\@glsxtr@textformat
+    \def\@glsxtr@textformat##1{\typeout{MT-TEXTFORMAT-ARG:[\detokenize{##1}]}\MTorig@glsxtr@textformat{##1}}%
+    \MTorig@glslink{#1}{#2}%
+  }%
+}
+\begin{document}
+[\ac{dod}] [\ac{dod}] [\ac*{dod}] [\Ac{dod}] [\acp{dod}] [\Acp{dod}]
+\end{document}

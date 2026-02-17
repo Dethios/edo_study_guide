@@ -1,0 +1,9 @@
+\documentclass{moderntech}
+\makeatletter
+\AtBeginDocument{%
+  \let\MTorig@ifglsused\ifglsused
+  \renewcommand*{\ifglsused}[1]{\typeout{MT-IFGLSUSED-CALL:[#1]}\MTorig@ifglsused{#1}}%
+}
+\begin{document}
+[\gls{dod}] [\ac{dod}] [\gls{dod}] [\ac{dod}]
+\end{document}

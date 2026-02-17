@@ -1,0 +1,6 @@
+\documentclass{moderntech}
+\makeatletter
+\AtBeginDocument{\renewcommand*{\glsabbrvfont}[1]{\typeout{MT-GLSABBRVFONT-HIT:[\detokenize{#1}]}#1}}
+\begin{document}
+[\gls{dod}] [\ac{dod}] [\gls{dod}] [\ac{dod}]
+\end{document}

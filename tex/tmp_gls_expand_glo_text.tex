@@ -1,0 +1,13 @@
+\documentclass{moderntech}
+\makeatletter
+\AtBeginDocument{%
+  \let\MTorig@gls@link\@gls@link
+  \long\def\@gls@link[#1]#2#3{%
+    \edef\MTtmp{#3}%
+    \typeout{MT-EXPANDED-LINK-ARG:[\detokenize\expandafter{\MTtmp}]}%
+    \MTorig@gls@link[#1]{#2}{#3}%
+  }%
+}
+\begin{document}
+[\gls{dod}] [\ac{dod}] [\gls{dod}] [\ac{dod}]
+\end{document}

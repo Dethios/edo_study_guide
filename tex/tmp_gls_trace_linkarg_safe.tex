@@ -1,0 +1,16 @@
+\documentclass{moderntech}
+\makeatletter
+\AtBeginDocument{%
+  \let\MTorig@gls@link\@gls@link
+  \long\def\@gls@link[#1]#2#3{%
+    \ifx#3\@glo@text
+      \typeout{MT-LINK-ARG-IS-GLO-TEXT}%
+      \typeout{MT-GLO-TEXT-MEANING:[\detokenize\expandafter{\meaning\@glo@text}]}%
+      \typeout{MT-GLO-TYPE:[\detokenize\expandafter{\meaning\glstype}]}%
+    \fi
+    \MTorig@gls@link[#1]{#2}{#3}%
+  }%
+}
+\begin{document}
+[\gls{dod}] [\ac{dod}] [\gls{dod}] [\ac{dod}]
+\end{document}

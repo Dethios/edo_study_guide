@@ -1,0 +1,10 @@
+\documentclass{moderntech}
+\makeatletter
+\AtBeginDocument{%
+  \@ifundefined{@gls@}{}{%
+    \patchcmd{\@gls@}{\@gls@link[#1]{#2}{\@glo@text}}{\@gls@link[#1]{#2}{\csname gls@\glstype @entryfmt\endcsname}}{}{}%
+  }%
+}
+\begin{document}
+[\gls{dod}] [\ac{dod}] [\gls{dod}] [\ac{dod}]
+\end{document}
