@@ -34,7 +34,7 @@
 - Prefer tools over assumptions for user-specific data, file state, and IDs; parallelize independent reads when possible.
 - After any write/update, restate what changed, where, and any validation performed.
 - For multi-step work, use built-in modes to plan and execute: router/planner for triage and planning, code/debug/architect/ask for execution or investigation, executor for patch-only implementations, verifier for diff/test review, and task-review before completion.
-- Use native tools for repo analysis and edits (`codebase_search`, `list_files`, `search_files`, `read_file`, `apply_patch`, `execute_command`) and direct MCP servers when needed (`local/workspace_memory` for repo memory, `memory` for upstream graph, `context7` for docs, `github` for GitHub, `playwright` for browser automation).
+- Use native tools for repo analysis and edits (`codebase_search`, `list_files`, `search_files`, `read_file`, `apply_patch`, `execute_command`) and direct MCP servers when needed (`memory` for durable graph context, `context7` for docs, `github` for GitHub, `playwright` for browser automation).
 
 ## Workflow for Every Task
 
