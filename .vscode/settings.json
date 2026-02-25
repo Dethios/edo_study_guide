@@ -745,6 +745,8 @@
     "latex-workshop.latex.auxDir": "build",
     // latex-workshop.latex.build.clearLog.everyRecipeStep.enabled: Enable or disable latex workshop latex build clear Log every Recipe Step enabled. Edit the value to change behavior.
     "latex-workshop.latex.build.clearLog.everyRecipeStep.enabled": false,
+    // latex-workshop.latex.build.enableMagicComments: Enable or disable latex workshop latex build enable Magic Comments. Edit the value to change behavior.
+    "latex-workshop.latex.build.enableMagicComments": true,
     // latex-workshop.latex.build.forceRecipeUsage: Enable or disable latex workshop latex build force Recipe Usage. Edit the value to change behavior.
     "latex-workshop.latex.build.forceRecipeUsage": true,
     // latex-workshop.latex.build.rootfileInStatus: Enable or disable latex workshop latex build rootfile In Status. Edit the value to change behavior.
@@ -775,9 +777,9 @@
     // latex-workshop.latex.clean.subfolder.enabled: Enable or disable latex workshop latex clean subfolder enabled. Edit the value to change behavior.
     "latex-workshop.latex.clean.subfolder.enabled": true,
     // latex-workshop.latex.outDir: Set latex workshop latex out Dir. Edit the value to change behavior.
-    "latex-workshop.latex.outDir": "/home/victor/dev-workspace/projects/edo_study_guide/out",
+    "latex-workshop.latex.outDir": "out",
     // latex-workshop.latex.recipe.default: Set latex workshop latex recipe default. Edit the value to change behavior.
-    "latex-workshop.latex.recipe.default": "BUILD-WSL",
+    "latex-workshop.latex.recipe.default": "lastUsed",
     // latex-workshop.latex.recipes: Define list for latex workshop latex recipes. Edit the value to change behavior.
     "latex-workshop.latex.recipes": [
         {
@@ -812,28 +814,41 @@
     // latex-workshop.latex.tools: Define list for latex workshop latex tools. Edit the value to change behavior.
     "latex-workshop.latex.tools": [
         {
-            "command": "${workspaceFolder}/scripts/build.sh",
+            "args": [
+                "%WORKSPACE_FOLDER%/scripts/build.sh",
+                "%DOC_EXT%"
+            ],
+            "command": "/bin/bash",
             "name": "build-wsl"
         },
         {
             "args": [
-                "-w"
+                "%WORKSPACE_FOLDER%/scripts/build.sh",
+                "--watch",
+                "%DOC_EXT%"
             ],
-            "command": "${workspaceFolder}/scripts/build.sh",
+            "command": "/bin/bash",
             "name": "build-wsl-watch"
         },
         {
             "args": [
-                "-q"
+                "%WORKSPACE_FOLDER%/scripts/build.sh",
+                "--quiet",
+                "%DOC_EXT%"
             ],
-            "command": "${workspaceFolder}/scripts/build.sh",
+            "command": "/bin/bash",
             "name": "build-quiet"
         },
         {
             "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "scripts\\build.ps1",
                 "%DOC%"
             ],
-            "command": "${workspaceFolder}\\scripts\\build.ps1",
+            "command": "pwsh",
             "name": "build-win"
         }
     ],
@@ -844,7 +859,7 @@
     // latex-workshop.latexindent.modifyLineBreaks: Enable or disable latex workshop latexindent modify Line Breaks. Edit the value to change behavior.
     "latex-workshop.latexindent.modifyLineBreaks": true,
     // latex-workshop.linting.chktex.convertOutput.column.chktexrcTabSize: Set numeric value for latex workshop linting chktex convert Output column chktexrc Tab Size. Edit the value to change behavior.
-    "latex-workshop.linting.chktex.convertOutput.column.chktexrcTabSize": 4,
+    "latex-workshop.linting.chktex.convertOutput.column.chktexrcTabSize": 2,
     // latex-workshop.linting.chktex.enabled: Enable or disable latex workshop linting chktex enabled. Edit the value to change behavior.
     "latex-workshop.linting.chktex.enabled": true,
     // latex-workshop.linting.lacheck.enabled: Enable or disable latex workshop linting lacheck enabled. Edit the value to change behavior.

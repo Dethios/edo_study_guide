@@ -12,7 +12,8 @@ use File::Path qw(make_path);
 
 # Anchor to this rcfile's location so CWD never changes output paths.
 my $root_dir = abs_path(dirname(__FILE__) . '/..');
-my $super_dir = qx(git -C "$root_dir" rev-parse --show-superproject-working-tree 2>/dev/null);
+my $null_device = ($^O =~ /mswin32|cygwin|msys/i) ? 'NUL' : '/dev/null';
+my $super_dir = qx(git -C "$root_dir" rev-parse --show-superproject-working-tree 2>$null_device);
 chomp $super_dir;
 my $workspace_dir = $super_dir ne '' ? abs_path($super_dir) : $root_dir;
 
