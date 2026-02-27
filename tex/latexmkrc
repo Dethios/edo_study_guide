@@ -64,7 +64,7 @@ $pvc_timeout  = 600;
 
 # Engine commands used by latexmk. Keep shell-escape enabled for trusted builds
 # that use TikZ externalization.
-$lualatex = 'lualatex -shell-escape -file-line-error -synctex=1 -interaction=nonstopmode %S';
+$lualatex = 'lualatex -shell-escape -file-line-error -synctex=1 -interaction=nonstopmode -synctex=1 -interaction=nonstopmode -file-line-error -recorder -aux-dir="C:/Users/U47A74UA/dev-workspace/projects/edo_study_guide/build" -output-directory="C:/Users/U47A74UA/dev-workspace/projects/edo_study_guide/out" %S';
 $pdflatex = 'pdflatex -shell-escape -interaction=nonstopmode %S';
 # In this repo, -lualatex is the primary mode; map latex runs to lualatex.
 $pdflatex = $lualatex if $pdf_mode == 4;
