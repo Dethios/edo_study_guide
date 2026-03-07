@@ -1,0 +1,25 @@
+services:
+  latex:
+    # MiKTeX official image is currently amd64-only.
+    # Keep a single cross-host config by defaulting to linux/amd64:
+    # - Windows x64: native
+    # - Windows ARM64: runs via Docker Desktop amd64 emulation
+    # Override only if/when an arm64 image becomes available.
+    platform: ${LATEX_DOCKER_PLATFORM:-linux/amd64}
+    build:
+      context: .
+      dockerfile: Dockerfile.miktex
+    working_dir: /work
+    volumes:
+      - .:/work
+      - miktex-data:/var/lib/miktex
+    entrypoint:
+      - /bin/bash
+      - -lc
+      - ./scripts/docker-build.sh "$1"
+      - --
+    command:
+      - tex/main.tex
+
+volumes:
+  miktex-data:

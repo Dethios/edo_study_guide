@@ -738,7 +738,7 @@
     // latex-workshop.latex.autoBuild.interval: Set numeric value for latex workshop latex auto Build interval. Edit the value to change behavior.
     "latex-workshop.latex.autoBuild.interval": 5000,
     // latex-workshop.latex.autoBuild.run: Set latex workshop latex auto Build run. Edit the value to change behavior.
-    "latex-workshop.latex.autoBuild.run": "onFileChange",
+    "latex-workshop.latex.autoBuild.run": "never",
     // latex-workshop.latex.autoClean.run: Set latex workshop latex auto Clean run. Edit the value to change behavior.
     "latex-workshop.latex.autoClean.run": "never",
     // latex-workshop.latex.auxDir: Set latex workshop latex aux Dir. Edit the value to change behavior.
@@ -779,15 +779,23 @@
     // latex-workshop.latex.outDir: Set latex workshop latex out Dir. Edit the value to change behavior.
     "latex-workshop.latex.outDir": "out",
     // latex-workshop.latex.recipe.default: Set latex workshop latex recipe default. Edit the value to change behavior.
-    "latex-workshop.latex.recipe.default": "lastUsed",
+    "latex-workshop.latex.recipe.default": "BUILD-DOCKER",
     // latex-workshop.latex.recipes: Define list for latex workshop latex recipes. Edit the value to change behavior.
     "latex-workshop.latex.recipes": [
+        {
+            "name": "BUILD-DOCKER",
+            "tools": [
+                "docker-build"
+            ]
+        },
+        // Deprecated fallback recipe; retained for rollback.
         {
             "name": "BUILD-WIN",
             "tools": [
                 "build-win"
             ]
         },
+        // Deprecated fallback recipe; retained for rollback.
         {
             "name": "BUILD-WSL",
             "tools": [
@@ -815,6 +823,18 @@
     "latex-workshop.latex.tools": [
         {
             "args": [
+                "compose",
+                "run",
+                "--rm",
+                "latex",
+                "%DOC_EXT%"
+            ],
+            "command": "docker",
+            "name": "docker-build"
+        },
+        // Deprecated fallback tool; retained for rollback.
+        {
+            "args": [
                 "%WORKSPACE_FOLDER%/scripts/build.sh",
                 "%DOC_EXT%"
             ],
@@ -830,6 +850,7 @@
             "command": "/bin/bash",
             "name": "build-wsl-watch"
         },
+        // Deprecated fallback tool; retained for rollback.
         {
             "args": [
                 "%WORKSPACE_FOLDER%/scripts/build.sh",
@@ -839,6 +860,7 @@
             "command": "/bin/bash",
             "name": "build-quiet"
         },
+        // Deprecated fallback tool; retained for rollback.
         {
             "args": [
                 "-NoProfile",

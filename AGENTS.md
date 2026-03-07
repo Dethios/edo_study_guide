@@ -20,19 +20,24 @@
 - **Tables:** Use `longtblr` by default; prefer `description` for term/definition lists.
 - **Encoding:** ASCII only.
 
-## Response and Scope Discipline (GPT-5.2)
+## GPT-5.4 Execution Contract
 
-- **Verbosity clamp:** Default to 3–6 sentences or <=5 bullets. For complex multistep tasks: 1 short overview paragraph, then <=5 bullets labeled What changed, Where, Risks, Next steps, Open questions.
+- **Output contract:** Default to 3-6 sentences or <=5 bullets. For complex multistep tasks: 1 short overview paragraph, then <=5 bullets labeled What changed, Where, Validation, Risks, Open questions.
+- **Default follow-through:** If the request is clear and the next step is reversible and low-risk, proceed without asking. Ask only for irreversible actions, missing sensitive information, or a choice that materially changes the deliverable.
+- **Tool persistence:** Use tools to verify current statutes, regulations, policy, and date-sensitive claims. If a lookup is empty, partial, or suspiciously narrow, retry with a broader query or alternate authoritative source before concluding.
+- **Grounding:** Base claims on controlling sources or repository files only. Label assumptions and inferences explicitly, and state source conflicts and hierarchy directly.
 - **Updates:** Only send brief updates (1–2 sentences) when starting a new major phase or when the plan changes; include at least one concrete outcome and avoid narrating routine tool calls.
 - **Scope control:** Implement exactly and only what the user asks. No extra features or embellishments; call out optional follow-ons instead of doing them.
 - **Ambiguity:** Ask up to 1–3 targeted clarifying questions or proceed with explicit assumptions and the simplest valid interpretation.
 - **Long context:** Restate key constraints and anchor claims to file paths or section names when inputs are long or dense.
 - **High-risk self-check:** For legal/financial/compliance outputs, re-scan for ungrounded claims or overly strong language and soften with stated assumptions.
+- **Completion criteria:** The task is complete only when requested deliverables, source dating, citations, repository updates, and validation/build checks are complete or blocked items are stated explicitly.
 
 ## Tool Usage
 
 - Prefer tools over assumptions for user-specific data, file state, and IDs; parallelize independent reads when possible.
 - After any write/update, restate what changed, where, and any validation performed.
+- Use tools until correctness and validation checks pass; do not stop at the first plausible answer when a verification step is still outstanding.
 - For multi-step work, use built-in modes to plan and execute: router/planner for triage and planning, code/debug/architect/ask for execution or investigation, executor for patch-only implementations, verifier for diff/test review, and task-review before completion.
 - Use native tools for repo analysis and edits (`codebase_search`, `list_files`, `search_files`, `read_file`, `apply_patch`, `execute_command`) and direct MCP servers when needed (`memory` for durable graph context, `context7` for docs, `github` for GitHub, `playwright` for browser automation).
 
