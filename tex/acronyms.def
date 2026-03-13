@@ -168,19 +168,31 @@
 	longplural={Technical Authorities}
 ]{ta}{TA}{Technical Authority}
 \newacronym[
+	shortplural={STAs},
+	longplural={Senior Technical Authorities}
+]{sta}{STA}{Senior Technical Authority}
+\newacronym[
 	shortplural={UTAs},
 	longplural={Ultimate Technical Authorities}
 ]{uta}{UTA}{Ultimate Technical Authority}
 \newacronym{hme}{HM\&E}{Hull, Mechanical, and Electrical}
 \newacronym{twh}{TWH}{Technical Warrant Holder}
+\newacronym{cse}{CSE}{Chief Systems Engineer}
 \newacronym{ea}{EA}{Engineering Agent}
 \newacronym{aea}{AEA}{Alteration Engineering Agent}
 \newacronym{da}{DA}{Design Agent}
 \newacronym{sia}{SIA}{Systems Integration Agent}
 \newacronym{isea}{ISEA}{In-Service Engineering Agent}
+\newacronym{lta}{LTA}{Lead Technical Authority}
 \newacronym{tda}{TDA}{Technical Direction Agent}
 \newacronym{tdp}{TDP}{Technical Data Package}
+\newacronym{tae}{TAE}{Technical Area Expert}
+\newacronym{tpo}{TPO}{Technical Process Owner}
 \newacronym{twd}{TWD}{Technical Work Document}
+\newacronym{sdm}{SDM}{Ship Design Manager}
+\newacronym{sim}{SIM}{Systems Integration Manager}
+\newacronym{cem}{CEM}{Cost Engineering Manager}
+\newacronym{wfcheng}{WFCHENG}{Waterfront Chief Engineer}
 \newacronym{casrep}{CASREP}{Casualty Report}
 \newacronym{icd}{ICD}{Initial Capabilities Document}
 \newacronym{cba}{CBA}{Capability-Based Assessment}
@@ -808,6 +820,7 @@
 \newacronym{shipalt}{SHIPALT}{Ship Alteration}
 \newacronym{aer}{AER}{Alteration Equivalent to Repair}
 \newacronym{cmp}{CMP}{Class Maintenance Plan}
+\newacronym{mrc}{MRC}{Maintenance Requirement Card}
 \newacronym{icmp}{ICMP}{Integrated Class Maintenance Plan}
 \newacronym{tfp}{TFP}{Technical Foundation Paper}
 \newacronym{csmp}{CSMP}{Current Ship's Maintenance Project}
