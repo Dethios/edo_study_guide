@@ -12,7 +12,6 @@ fi
 ENGINE="lualatex"
 WATCH=0
 CLEAN=0
-PREFLIGHT=0
 SHELL_ESCAPE=1
 JOBS=""
 OUTDIR="out"
@@ -29,7 +28,6 @@ Options:
   --engine {lualatex|xelatex|pdflatex}  LaTeX engine (default: lualatex)
   -w, --watch                           Run latexmk in -pvc mode
   --clean                               Clean aux/output for the target and exit
-  --preflight                           Run texliveonfly preflight if available
   --no-shell-escape                     Disable shell-escape
   --jobs N                              Parallel jobs for latexmk
   --outdir DIR                          Output directory (default: out)
@@ -52,10 +50,6 @@ while [[ $# -gt 0 ]]; do
             ;;
         --clean)
             CLEAN=1
-            shift
-            ;;
-        --preflight)
-            PREFLIGHT=1
             shift
             ;;
         --no-shell-escape)
@@ -154,23 +148,13 @@ run_scrub() {
 
 if [[ "$CLEAN" == "1" ]]; then
     set +e
-    latexmk -C -outdir="$OUTDIR" -auxdir="$AUXDIR" "$TEXFILE"
+    latexmk -C -r "$ROOT/tex/latexmkrc" -outdir="$OUTDIR" -auxdir="$AUXDIR" "$TEXFILE"
     status=$?
     set -e
     if [[ "$SCRUB" == "1" ]]; then
         run_scrub
     fi
     exit "$status"
-fi
-
-if [[ "$PREFLIGHT" == "1" ]]; then
-    if command -v texliveonfly >/dev/null 2>&1; then
-        texliveonfly --compiler="$ENGINE" \
-        --arguments="-interaction=nonstopmode -halt-on-error -file-line-error" \
-        "$TEXFILE" || true
-    else
-        echo "texliveonfly not found; skipping preflight." >&2
-    fi
 fi
 
 case "$ENGINE" in
