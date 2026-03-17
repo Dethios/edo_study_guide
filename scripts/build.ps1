@@ -86,17 +86,6 @@ try {
         $skipBuild = $true
     }
 
-    if (-not $skipBuild -and $Preflight) {
-        $texliveonfly = Get-Command texliveonfly -ErrorAction SilentlyContinue
-        if ($texliveonfly) {
-            & $texliveonfly.Source --compiler=$Engine `
-                --arguments="-interaction=nonstopmode -halt-on-error -file-line-error" `
-                $Doc | Out-Host
-        } else {
-            Write-Warning "texliveonfly not found; skipping preflight."
-        }
-    }
-
     if (-not $skipBuild) {
         $args = @(
             "-r", $latexmkRc,

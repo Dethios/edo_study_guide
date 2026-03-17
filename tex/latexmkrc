@@ -50,30 +50,10 @@ $ENV{'TEXMFCNF'} = "$root_dir:$root_dir/tex:$root_dir/texmf-dist:" . ($ENV{'TEXM
 # Allow TikZ externalization writes under .build/ (hidden path) in trusted builds.
 $ENV{'openout_any'} = 'a';
 
-# Tell latexmk this is a LuaLaTeX workflow
-$pdf_mode = 4;
-# Silence previewer in -pvc/-view modes (no acroread/xdg-open).
-$pdf_previewer = 'none';
-
-# Enable shell-escape, synctex, etc.
-# $force_mode   = 1;
-$shell_escape = 1;
-$synctex      = 1;
-$interaction  = 'nonstopmode';
-$pvc_timeout  = 600;
-
-# Engine commands used by latexmk. Keep shell-escape enabled for trusted builds
-# that use TikZ externalization, and let latexmk supply engine-specific out/aux
-# flags so the rc works on both MiKTeX and TeX Live.
-$lualatex = 'lualatex -shell-escape -file-line-error -synctex=1 -interaction=nonstopmode %O %S';
-$pdflatex = 'pdflatex -shell-escape -interaction=nonstopmode %O %S';
-# In this repo, -lualatex is the primary mode; map latex runs to lualatex.
-$pdflatex = $lualatex if $pdf_mode == 4;
-
 # Glossaries
 add_cus_dep('glo','gls',0,'makeglossaries');
 *makeglossaries = sub { system("makeglossaries \"$_[0]\""); } unless defined &makeglossaries;
 
 # Force biber to read/write the aux dir
-$bibtex = "biber --input-directory=\"$aux_dir\" --output-directory=\"$aux_dir\" %O %B";
-$biber = "biber --input-directory=\"$aux_dir\" --output-directory=\"$aux_dir\" %O %B";
+$bibtex = "biber --input-directory=\"$aux_dir\" --output-directory=\"$aux_dir\" %B";
+$biber = "biber --input-directory=\"$aux_dir\" --output-directory=\"$aux_dir\" %B";
