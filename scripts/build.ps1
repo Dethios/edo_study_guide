@@ -23,13 +23,6 @@ $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 
 $root = Split-Path -Parent $PSScriptRoot
-$superRoot = ""
-try {
-    $superRoot = (& git -C $root rev-parse --show-superproject-working-tree 2>$null).Trim()
-} catch {
-    $superRoot = ""
-}
-$workspaceRoot = if ($superRoot) { $superRoot } else { $root }
 $exitCode = 0
 $skipBuild = $false
 
@@ -59,29 +52,33 @@ if (-not (Test-Path $Doc)) {
 
 Push-Location $root
 try {
-    New-Item -ItemType Directory -Force -Path $OutDir | Out-Null
-    New-Item -ItemType Directory -Force -Path $AuxDir | Out-Null
+    $outDirFull = if ([IO.Path]::IsPathRooted($OutDir)) { $OutDir } else { Join-Path $root $OutDir }
     $auxDirFull = if ([IO.Path]::IsPathRooted($AuxDir)) { $AuxDir } else { Join-Path $root $AuxDir }
+    New-Item -ItemType Directory -Force -Path $outDirFull | Out-Null
+    New-Item -ItemType Directory -Force -Path $auxDirFull | Out-Null
     $env:TEXMFVAR = Join-Path $auxDirFull "texmf-var"
     $env:TEXMFCACHE = Join-Path $auxDirFull "texmf-cache"
     New-Item -ItemType Directory -Force -Path $env:TEXMFVAR | Out-Null
     New-Item -ItemType Directory -Force -Path $env:TEXMFCACHE | Out-Null
 
+    $tikzCacheDir = Join-Path $auxDirFull "tikz"
     if (-not $env:MODERNTECH_TIKZ_EXTERNAL_PRIMARY) {
-        $env:MODERNTECH_TIKZ_EXTERNAL_PRIMARY = ((Join-Path $workspaceRoot ".build\\tikz") -replace '\\', '/')
+        $env:MODERNTECH_TIKZ_EXTERNAL_PRIMARY = ($tikzCacheDir -replace '\\', '/')
     }
     if (-not $env:MODERNTECH_TIKZ_EXTERNAL_FALLBACK) {
-        $env:MODERNTECH_TIKZ_EXTERNAL_FALLBACK = ((Join-Path $workspaceRoot "build\\tikz") -replace '\\', '/')
+        $env:MODERNTECH_TIKZ_EXTERNAL_FALLBACK = ($tikzCacheDir -replace '\\', '/')
     }
     $primaryFsPath = $env:MODERNTECH_TIKZ_EXTERNAL_PRIMARY -replace '/', [IO.Path]::DirectorySeparatorChar
     $fallbackFsPath = $env:MODERNTECH_TIKZ_EXTERNAL_FALLBACK -replace '/', [IO.Path]::DirectorySeparatorChar
     New-Item -ItemType Directory -Force -Path $primaryFsPath | Out-Null
-    New-Item -ItemType Directory -Force -Path $fallbackFsPath | Out-Null
+    if ($fallbackFsPath -ne $primaryFsPath) {
+        New-Item -ItemType Directory -Force -Path $fallbackFsPath | Out-Null
+    }
 
     $latexmkRc = Join-Path $root "tex/latexmkrc"
 
     if ($Clean) {
-        & latexmk -C "-r" $latexmkRc "-outdir=$OutDir" "-auxdir=$AuxDir" $Doc
+        & latexmk -C "-r" $latexmkRc "-outdir=$outDirFull" "-auxdir=$auxDirFull" $Doc
         $exitCode = $LASTEXITCODE
         $skipBuild = $true
     }
@@ -93,8 +90,8 @@ try {
             "-synctex=1",
             "-interaction=nonstopmode",
             "-file-line-error",
-            "-outdir=$OutDir",
-            "-auxdir=$AuxDir",
+            "-outdir=$outDirFull",
+            "-auxdir=$auxDirFull",
             "-f"
         )
 

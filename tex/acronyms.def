@@ -55,6 +55,7 @@
 \newacronym{nscf}{NSCF}{National Security Capital Forum}
 \newacronym{nss}{NSS}{National Security Strategy}
 \newacronym{nds}{NDS}{National Defense Strategy}
+\newacronym{nms}{NMS}{National Military Strategy}
 \newacronym{mda}{MDA}{Missile Defense Agency}
 \newacronym{ssp}{SSP}{Strategic Systems Program}
 \newacronym{omb}{OMB}{Office of Management and Budget}
@@ -153,6 +154,9 @@
 \newacronym[shortplural={NWCs},longplural={Naval Warfare Centers}]{nwc}{NWC}{Naval Warfare Center}
 \newacronym[shortplural={NSWCs},longplural={Naval Surface Warfare Centers}]{nswc}{NSWC}{Naval Surface Warfare Center}
 \newacronym[shortplural={NUWCs},longplural={Naval Undersea Warfare Centers}]{nuwc}{NUWC}{Naval Undersea Warfare Center}
+\newacronym{nutec}{NUTEC}{National UUV Test and Evaluation Center}
+\newacronym[shortplural={UUVs},longplural={unmanned underwater vehicles}]{uuv}{UUV}{unmanned underwater vehicle}
+\newacronym{autec}{AUTEC}{Atlantic Undersea Test and Evaluation Center}
 \newacronym{subtech}{SUBTECH}{Submarine/Undersea Warfare Technology}
 \newacronym{niwclant}{NIWC LANT}{Naval Information Warfare Center Atlantic}
 \newacronym{niwcpac}{NIWC PAC}{Naval Information Warfare Center Pacific}
@@ -944,17 +948,19 @@
 \newacronym{sib}{SIB}{Shop-in-a-Box}
 \newacronym{msp}{MSP}{Maritime Support Plan}
 \newacronym{waf}{WAF}{Work Authorization Form}
+\newacronym{wr}{WR}{Work Request}
 \newacronym{tgi}{TGI}{Task Group Instruction}
 \newacronym{tum}{TUM}{Tag-out Users Manual}
 \newacronym{jfmm}{JFMM}{Joint Fleet Maintenance Manual}
 \newacronym{loa}{LOA}{Light-Off Assessment}
 \newacronym{sovt}{SOVT}{Shipboard Operational Verification Test}
-\newacronym{cssqt}{CSSQT}{Combat System Ship Qualification Trial}
+\newacronym{cssqt}{CSSQT}{Combat Systems Ship's Qualification Trials}
 \newacronym{pcd}{PCD}{Production Completion Date}
 \newacronym{oqe}{OQE}{Objective Quality Evidence}
 \newacronym{jsn}{JSN}{Job Sequence Number}
 
 % --- Operational Test Agencies & Interop ---
+\newacronym{optevfor}{OPTEVFOR}{Operational Test and Evaluation Force}
 \newacronym{comoptevfor}{COMOPTEVFOR}{Commander, Operational Test and Evaluation Force}
 \newacronym{cotf}{COTF}{Commander, Operational Test Force}
 \newacronym{afotec}{AFOTEC}{Air Force Operational Test and Evaluation Center}

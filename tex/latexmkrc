@@ -12,13 +12,7 @@ use File::Path qw(make_path);
 
 # Anchor to this rcfile's location so CWD never changes output paths.
 my $root_dir = abs_path(dirname(__FILE__) . '/..');
-my $null_device = ($^O =~ /mswin32|cygwin|msys/i) ? 'NUL' : '/dev/null';
-my $super_dir = qx(git -C "$root_dir" rev-parse --show-superproject-working-tree 2>$null_device);
-chomp $super_dir;
-my $workspace_dir = $super_dir ne '' ? abs_path($super_dir) : $root_dir;
-
 $root_dir = moderntech_normalize_path($root_dir);
-$workspace_dir = moderntech_normalize_path($workspace_dir);
 
 $out_dir = "$root_dir/out";
 $aux_dir = "$root_dir/build";
@@ -32,20 +26,21 @@ $ENV{'TEXMFCACHE'} = "$aux_dir/texmf-cache";
 make_path($ENV{'TEXMFVAR'});
 make_path($ENV{'TEXMFCACHE'});
 
-# TikZ externalization cache: prefer workspace-level hidden cache, fallback to
-# non-hidden workspace build cache when openout policies block hidden writes.
-$ENV{'MODERNTECH_TIKZ_EXTERNAL_PRIMARY'} = moderntech_normalize_path("$workspace_dir/.build/tikz");
-$ENV{'MODERNTECH_TIKZ_EXTERNAL_FALLBACK'} = moderntech_normalize_path("$workspace_dir/build/tikz");
+# TikZ externalization cache: keep generated figures under the project's aux dir
+# by default. Build wrappers may still override these paths explicitly.
+my $default_tikz_dir = moderntech_normalize_path("$aux_dir/tikz");
+$ENV{'MODERNTECH_TIKZ_EXTERNAL_PRIMARY'} = moderntech_normalize_path($ENV{'MODERNTECH_TIKZ_EXTERNAL_PRIMARY'} // $default_tikz_dir);
+$ENV{'MODERNTECH_TIKZ_EXTERNAL_FALLBACK'} = moderntech_normalize_path($ENV{'MODERNTECH_TIKZ_EXTERNAL_FALLBACK'} // $default_tikz_dir);
 make_path($ENV{'MODERNTECH_TIKZ_EXTERNAL_PRIMARY'});
 make_path($ENV{'MODERNTECH_TIKZ_EXTERNAL_FALLBACK'});
 
 # Ensure LaTeX can see tex/ sources even when latexmk is run from elsewhere.
 # Keep search paths shallow to avoid picking up stale aux files.
-my $texinputs_sep = ($^O =~ /mswin32|cygwin|msys/i) ? ';' : ':';
-$ENV{'TEXINPUTS'} = "$root_dir/tex$texinputs_sep" . ($ENV{'TEXINPUTS'} // '');
-$ENV{'BIBINPUTS'} = "$root_dir/tex$texinputs_sep" . ($ENV{'BIBINPUTS'} // '');
-$ENV{'BSTINPUTS'} = "$root_dir/tex$texinputs_sep" . ($ENV{'BSTINPUTS'} // '');
-$ENV{'TEXMFCNF'} = "$root_dir:$root_dir/tex:$root_dir/texmf-dist:" . ($ENV{'TEXMFCNF'} // '');
+my $path_sep = ($^O =~ /mswin32|cygwin|msys/i) ? ';' : ':';
+$ENV{'TEXINPUTS'} = "$root_dir/tex$path_sep" . ($ENV{'TEXINPUTS'} // '');
+$ENV{'BIBINPUTS'} = "$root_dir/tex$path_sep" . ($ENV{'BIBINPUTS'} // '');
+$ENV{'BSTINPUTS'} = "$root_dir/tex$path_sep" . ($ENV{'BSTINPUTS'} // '');
+$ENV{'TEXMFCNF'} = "$root_dir$path_sep$root_dir/tex$path_sep$root_dir/texmf-dist$path_sep" . ($ENV{'TEXMFCNF'} // '');
 
 # Allow TikZ externalization writes under .build/ (hidden path) in trusted builds.
 $ENV{'openout_any'} = 'a';
@@ -54,6 +49,5 @@ $ENV{'openout_any'} = 'a';
 add_cus_dep('glo','gls',0,'makeglossaries');
 *makeglossaries = sub { system("makeglossaries \"$_[0]\""); } unless defined &makeglossaries;
 
-# Force biber to read/write the aux dir
-$bibtex = "biber --input-directory=\"$aux_dir\" --output-directory=\"$aux_dir\" %B";
-$biber = "biber --input-directory=\"$aux_dir\" --output-directory=\"$aux_dir\" %B";
+# Use latexmk's default bibtex/biber command templates. Custom %B path rewriting
+# here caused Windows builds to spill bibliography files outside the project aux dir.

@@ -810,9 +810,9 @@
   \usetikzlibrary{arrows.meta,shapes,positioning,calc,fit,backgrounds}
   % --- TikZ externalization (cache figures to disk) ---
   % Requires -shell-escape in trusted builds; keep lint jobs shell-escape-free.
-  % Cache artifacts are generated in one workspace-level folder:
-  %   primary:  .build/tikz/
-  %   fallback: build/tikz/ (for environments that block hidden output dirs)
+  % Cache artifacts default to the project's build folder:
+  %   primary:  build/tikz/
+  %   fallback: build/tikz/ (kept as a separate env var for overrides)
   % Paths are supplied by build wrappers/latexmkrc via environment variables:
   %   MODERNTECH_TIKZ_EXTERNAL_PRIMARY
   %   MODERNTECH_TIKZ_EXTERNAL_FALLBACK
@@ -832,8 +832,8 @@
 
       local primary = normalize(os.getenv("MODERNTECH_TIKZ_EXTERNAL_PRIMARY"))
       local fallback = normalize(os.getenv("MODERNTECH_TIKZ_EXTERNAL_FALLBACK"))
-      if primary == "" then primary = ".build/tikz" end
-      if fallback == "" then fallback = "build/tikz" end
+      if primary == "" then primary = "build/tikz" end
+      if fallback == "" then fallback = primary end
 
       local openout_any = ""
       if kpse and kpse.var_value then
@@ -848,7 +848,6 @@
 
       token.set_macro("moderntech@tikzexternalprefix", chosen .. "/")
     }%
-    \immediate\write18{mkdir -p "\moderntech@tikzexternalprefix"}%
     \tikzsetexternalprefix{\moderntech@tikzexternalprefix}%
   }
   % LuaLaTeX worker compile; inherits shell-escape check from parent build.
