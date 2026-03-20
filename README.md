@@ -5,6 +5,7 @@ study guide. The LaTeX sources live in `tex/`, while build outputs and aux files
 live in `out/` and `build/` at the repo root.
 
 ## Repo layout
+
 - `tex/` - LaTeX sources (chapters, templates, assets, TikZ)
 - `out/` - PDF output (gitignored)
 - `build/` - LaTeX aux files (gitignored)
@@ -14,51 +15,60 @@ live in `out/` and `build/` at the repo root.
 ## Build
 
 Bash (WSL/Linux/macOS):
-```
+
+```bash
 ./scripts/build.sh
 ```
 
 PowerShell (Windows):
-```
+
+```powershell
 ./scripts/build.ps1
 ```
 
 Direct latexmk:
-```
+
+```shell
 latexmk -r tex/latexmkrc -shell-escape -outdir=out -auxdir=build tex/main.tex
 ```
 
 TikZ cache invalidation:
-```
+
+```shell
 make force-rebuild-tikz
 ```
 
 TikZ cache path validation:
-```
+
+```shell
 make check-tikz-cache
 ```
 
 ## Format
 
 Bash:
-```
+
+```bash
 ./scripts/format.sh tex/main.tex
 ```
 
 PowerShell:
-```
+
+```powershell
 ./scripts/format.ps1 tex/main.tex
 ```
 
 ## Scrub temp artifacts
 
 Bash:
-```
+
+```bash
 ./scripts/scrub.sh
 ```
 
 PowerShell:
-```
+
+```powershell
 ./scripts/scrub.ps1
 ```
 
@@ -70,12 +80,14 @@ changes, tags the commit as `release-YYYYMMDD`, pushes, and uploads the PDF as a
 GitHub Release asset using the GitHub CLI.
 
 Bash:
-```
+
+```bash
 ./scripts/release.sh
 ```
 
 PowerShell:
-```
+
+```powershell
 ./scripts/release.ps1
 ```
 
@@ -86,7 +98,8 @@ matching tag section exists. If not, it falls back to recent git log entries.
 
 To generate an `ai_context.zip` bundle with diffs, log excerpts, and selected
 files, run:
-```
+
+```bash
 ./scripts/ai-context.sh
 ```
 
@@ -100,8 +113,8 @@ License (see `LICENSE-CODE`).
 
 TikZ externalization requires `-shell-escape`. Use it only in trusted builds or an isolated CI job. Keep lint/analysis jobs shell-escape-free.
 
-
 TikZ externalization uses one canonical cache directory:
+
 - `${superproject-root}/.build/tikz/` (preferred)
 - `${superproject-root}/build/tikz/` (automatic fallback when hidden output paths are blocked, e.g. `openout_any = p`)
 
