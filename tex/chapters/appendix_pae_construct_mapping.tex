@@ -1,0 +1,207 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+\documentclass[../main.tex]{subfiles}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
+% =============================================================================
+% APPENDIX: NAVY PAE CONSTRUCT MAPPING (ANALYST SUMMARY)
+% DESCRIPTION: Working map of PAE portfolios against legacy SYSCOM/PEO seams.
+% =============================================================================
+\begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+
+\section{PAE Construct Mapping (Working Appendix)}
+\label{app:pae-construct-mapping}
+\textbf{Current as of 2026-03-25.}
+
+\subsection{Executive Summary}
+\begin{itemize}
+  \item The Navy current \ac{pae} construct is not a 1:1 relabeling of \acp{syscom} or \acp{peo}; it is a portfolio-layer overlay that absorbs authority across both.
+  \item The six \acp{pae} map roughly across warfare domains plus industrial base, cutting across traditional \ac{syscom} seams.
+  \item Key shift: \acp{syscom} increasingly function as technical authorities and infrastructure owners, \acp{peo} as execution arms, and \acp{pae} as portfolio owners with decision authority.
+  \item The largest effects appear in cross-cutting portfolios (Undersea, Maritime, Industrial Operations) where multiple \acp{syscom}/\acp{peo} previously overlapped.
+  \item Expected outcomes include duplication removal, contracting consolidation, and fewer stovepipes, with near-term authority friction during transition.
+\end{itemize}
+
+\subsection{Mapping: PAEs to PEOs and SYSCOMs}
+
+\subsubsection{1) PAE Maritime}
+\textbf{Scope:} Surface ships, combatants, logistics vessels, amphibious ships.
+
+\textbf{Absorbing from SYSCOMs:}
+\begin{itemize}
+  \item Naval Sea Systems Command (primary).
+\end{itemize}
+
+\textbf{Absorbing from PEOs:}
+\begin{itemize}
+  \item \ac{peoships}.
+  \item \ac{peoiws} (surface combat systems portion).
+  \item \ac{peousc} (surface unmanned portion).
+\end{itemize}
+
+\textbf{What changes:}
+\begin{itemize}
+  \item Previously: hull (PEO Ships) and combat systems (IWS) split across authorities.
+  \item Now: one authority over full ship system (hull plus combat system).
+\end{itemize}
+
+\textbf{Impact:} reduces the classic hull versus combat-system integration boundary.
+
+\subsubsection{2) PAE Undersea}
+\textbf{Scope:} Submarines, undersea warfare systems, and \acp{uuv}.
+
+\textbf{Absorbing from SYSCOMs:}
+\begin{itemize}
+  \item Naval Sea Systems Command (submarine directorates).
+\end{itemize}
+
+\textbf{Absorbing from PEOs:}
+\begin{itemize}
+  \item Team Submarines elements (for platform portfolios).
+  \item \ac{peouws}.
+  \item \ac{peousc} (\ac{uuv} portion).
+\end{itemize}
+
+\textbf{What changes:}
+\begin{itemize}
+  \item Previously fragmented across platforms, payloads, and unmanned systems.
+  \item Now unified into one undersea kill-chain authority.
+\end{itemize}
+
+\textbf{Impact:} enables end-to-end undersea portfolio management across platform, weapons, and unmanned systems.
+
+\subsubsection{3) PAE Robotics and Autonomous Systems (RAS)}
+\textbf{Scope:} Cross-domain autonomy (air, surface, and subsurface).
+
+\textbf{Absorbing from SYSCOMs:}
+\begin{itemize}
+  \item Naval Air Systems Command.
+  \item Naval Sea Systems Command.
+  \item Space and Naval Warfare Systems Command / \ac{navwar} enterprise.
+\end{itemize}
+
+\textbf{Absorbing from PEOs:}
+\begin{itemize}
+  \item \ac{peousc}.
+  \item Unmanned aviation elements aligned under NAVAIR-led portfolios.
+  \item Autonomy software/control elements aligned under \ac{peoc4i}.
+\end{itemize}
+
+\textbf{What changes:}
+\begin{itemize}
+  \item Previously: unmanned capability split by domain.
+  \item Now: technology-centric portfolio around autonomy stack plus platforms.
+\end{itemize}
+
+\textbf{Impact:} centralizes \ac{ai}/autonomy integration and weakens domain stovepipes from platform-centric acquisition.
+
+\subsubsection{4) PAE Industrial Operations}
+\textbf{Scope:} Shipyards, depots, sustainment, and logistics infrastructure.
+
+\textbf{Absorbing from SYSCOMs:}
+\begin{itemize}
+  \item Naval Sea Systems Command (shipyards).
+  \item Naval Air Systems Command (depots).
+\end{itemize}
+
+\textbf{Absorbing from other organizations:}
+\begin{itemize}
+  \item Naval Shipyards.
+  \item Fleet Readiness Centers.
+\end{itemize}
+
+\textbf{What changes:}
+\begin{itemize}
+  \item Previously split among acquisition, sustainment, and industrial-base governance.
+  \item Now unified as industrial capacity managed like a portfolio.
+\end{itemize}
+
+\textbf{Impact:} enables integrated control of maintenance backlog, shipyard throughput, and depot readiness with lifecycle cost/readiness optimization.
+
+\subsubsection{5) PAE Strategic Systems Programs}
+\textbf{Scope:} Nuclear deterrent systems (for example, \ac{ssbn}s and missiles).
+
+\textbf{Absorbing from existing organization:}
+\begin{itemize}
+  \item Strategic Systems Programs.
+\end{itemize}
+
+\textbf{What changes:}
+\begin{itemize}
+  \item Minimal structural change because \ac{ssp} was already centralized.
+  \item Now formally aligned inside the \ac{pae} construct.
+\end{itemize}
+
+\textbf{Impact:} primarily governance alignment rather than operational disruption.
+
+\subsubsection{6) PAE Marine Corps}
+\textbf{Scope:} \ac{usmc} ground systems and expeditionary capabilities.
+
+\textbf{Absorbing from SYSCOMs:}
+\begin{itemize}
+  \item Marine Corps Systems Command.
+\end{itemize}
+
+\textbf{Absorbing from PEOs:}
+\begin{itemize}
+  \item PEO Land Systems (\ac{usmc}).
+  \item \ac{peoc4i} (\ac{usmc} portions).
+\end{itemize}
+
+\textbf{What changes:}
+\begin{itemize}
+  \item Consolidates Marine Corps acquisition under one Navy-aligned \ac{pae}.
+\end{itemize}
+
+\textbf{Impact:} improves Navy-Marine Corps expeditionary alignment, with potential friction where Marine Corps requirements autonomy intersects portfolio controls.
+
+\subsection{Cross-Cutting Changes (Most Important)}
+\subsubsection{1) Collapse of PEO Boundaries}
+\begin{quote}
+PEO Ships builds hulls.\\
+PEO IWS builds combat systems.\\
+Different chains of authority.
+\end{quote}
+
+\begin{quote}
+PAE Maritime owns both and can trade cost/performance internally.
+\end{quote}
+
+\textbf{Net effect:} lower inter-PEO coordination overhead.
+
+\subsubsection{2) SYSCOM Role Shift}
+\acp{syscom} are assessed to lose portions of decision authority while retaining engineering authority, technical standards, and infrastructure.
+
+\textbf{Transition vector:} owner/operator toward service-provider functions.
+
+\subsubsection{3) Portfolio-Level Trade Space}
+\acp{pae} are assessed to gain latitude to shift funding between programs, optimize procurement and sustainment jointly, and manage industrial-base effects at portfolio level.
+
+\textbf{Bottom line for reform:} the leverage is portfolio trade authority, not merely org-chart redraw.
+
+\subsection{Risks and Friction Points}
+\begin{description}[style=nextline, labelsep=0.5em, font=\bfseries]
+  \item[1) Authority conflicts.] Tension between \ac{syscom} technical authority and \ac{pae} decision authority may drive early-cycle delays.
+  \item[2) Workforce realignment.] \acp{peo} may lose decision scope and senior billets, creating talent migration risk.
+  \item[3) Contracting consolidation.] Transition from program contracts to portfolio contracts may disrupt prime and supply-chain behavior.
+\end{description}
+
+\subsection{Bottom Line}
+\begin{itemize}
+  \item \acp{pae} absorb authority across both \acp{syscom} and \acp{peo}, not just one layer.
+  \item The largest changes occur where multiple \acp{peo} historically split one system (Maritime, Undersea, RAS).
+  \item The reform direction is portfolio-centric acquisition, closer to capability product lines.
+\end{itemize}
+
+\textit{Assumption note: this appendix captures your provided construct as a working study aid and should be validated against any formal Navy implementation directives as they are published.}
+
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]
+}{}
+\end{document}
