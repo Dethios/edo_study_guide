@@ -47,13 +47,14 @@
 \RequirePackage{xcolor}
 \RequirePackage[
   final,
-  tracking=false,
+  tracking=true,
   kerning=false,
   spacing=false, % spacing not supported for LuaLaTeX/XeLaTeX
   protrusion=true,
   expansion=true
 ]{microtype}
 \UseMicrotypeSet[protrusion]{basicmath}
+\SetTracking{encoding=*}{40}
 \microtypesetup{
   activate=true,
   final=true,
@@ -122,11 +123,11 @@
   }%
 
   \ifmoderntech@sansbody
-    \setmainfont[Scale=MatchLowercase,Ligatures=TeX]{\moderntech@sans}%
-    \setsansfont[Scale=MatchLowercase,Ligatures=TeX]{\moderntech@sans}%
+    \setmainfont[Scale=MatchLowercase,Ligatures=TeX,OpticalSize=On]{\moderntech@sans}%
+    \setsansfont[Scale=MatchLowercase,Ligatures=TeX,OpticalSize=On]{\moderntech@sans}%
   \else
-    \setmainfont[Scale=MatchLowercase,Ligatures=TeX]{\moderntech@serif}%
-    \setsansfont[Scale=MatchLowercase,Ligatures=TeX]{\moderntech@sans}%
+    \setmainfont[Scale=MatchLowercase,Ligatures=TeX,OpticalSize=On]{\moderntech@serif}%
+    \setsansfont[Scale=MatchLowercase,Ligatures=TeX,OpticalSize=On]{\moderntech@sans}%
   \fi
 
   \IfFontExistsTF{Fira Code}{%
