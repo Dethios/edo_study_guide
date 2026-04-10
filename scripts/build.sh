@@ -109,6 +109,28 @@ fi
 
 cd "$ROOT"
 
+pick_writable_dir() {
+    local preferred="$1"
+    local fallback_leaf="$2"
+    local tmp_root="${TMPDIR:-/tmp}"
+    local fallback="$tmp_root/edo_study_guide/$fallback_leaf"
+    local probe
+
+    mkdir -p "$preferred" 2>/dev/null || true
+    probe="$preferred/.write-test-$$"
+    if : > "$probe" 2>/dev/null; then
+        rm -f "$probe"
+        printf '%s\n' "$preferred"
+        return 0
+    fi
+
+    mkdir -p "$fallback"
+    probe="$fallback/.write-test-$$"
+    : > "$probe"
+    rm -f "$probe"
+    printf '%s\n' "$fallback"
+}
+
 if [[ "$OUTDIR" = /* ]]; then
     OUTDIR_ABS="$OUTDIR"
 else
@@ -119,10 +141,13 @@ if [[ "$AUXDIR" = /* ]]; then
 else
     AUXDIR_ABS="$ROOT/$AUXDIR"
 fi
+OUTDIR_ABS="$(pick_writable_dir "$OUTDIR_ABS" out)"
+AUXDIR_ABS="$(pick_writable_dir "$AUXDIR_ABS" build)"
 mkdir -p "$OUTDIR_ABS" "$AUXDIR_ABS"
+
 # Ensure luaotfload/fontspec cache paths are writable (helps sandboxed runs).
-export TEXMFVAR="$AUXDIR_ABS/texmf-var"
-export TEXMFCACHE="$AUXDIR_ABS/texmf-cache"
+export TEXMFVAR="$(pick_writable_dir "$AUXDIR_ABS/texmf-var/codex" texmf-var)"
+export TEXMFCACHE="$(pick_writable_dir "$AUXDIR_ABS/texmf-cache/codex" texmf-cache)"
 mkdir -p "$TEXMFVAR" "$TEXMFCACHE"
 
 DEFAULT_TIKZ_CACHE="$AUXDIR_ABS/tikz"

@@ -10,19 +10,37 @@ use File::Path qw(make_path);
     return $path;
 } unless defined &moderntech_normalize_path;
 
+*moderntech_pick_writable_dir = sub {
+    my ($preferred, $fallback_leaf) = @_;
+    my $tmp_root = moderntech_normalize_path($ENV{'TMPDIR'} // '/tmp');
+    my $fallback = moderntech_normalize_path("$tmp_root/edo_study_guide/$fallback_leaf");
+
+    foreach my $candidate ($preferred, $fallback) {
+        eval { make_path($candidate); 1 } or next;
+        my $probe = "$candidate/.write-test-$$";
+        if (open(my $fh, '>', $probe)) {
+            close($fh);
+            unlink($probe);
+            return $candidate;
+        }
+    }
+
+    return $fallback;
+} unless defined &moderntech_pick_writable_dir;
+
 # Anchor to this rcfile's location so CWD never changes output paths.
 my $root_dir = abs_path(dirname(__FILE__) . '/..');
 $root_dir = moderntech_normalize_path($root_dir);
 
-$out_dir = "$root_dir/out";
-$aux_dir = "$root_dir/build";
+$out_dir = moderntech_pick_writable_dir("$root_dir/out", 'out');
+$aux_dir = moderntech_pick_writable_dir("$root_dir/build", 'build');
 # Stay in repo root so out/build resolve consistently when compiling tex/main.tex.
 $do_cd = 0;
 
 # Ensure LuaLaTeX has a writable cache dir for luaotfload/fontspec (important in
-# sandboxed environments where $HOME may not be writeable).
-$ENV{'TEXMFVAR'}   = "$aux_dir/texmf-var";
-$ENV{'TEXMFCACHE'} = "$aux_dir/texmf-cache";
+# sandboxed environments where repo-local cache trees may have stale ownership).
+$ENV{'TEXMFVAR'}   = moderntech_pick_writable_dir("$aux_dir/texmf-var/codex",   'texmf-var');
+$ENV{'TEXMFCACHE'} = moderntech_pick_writable_dir("$aux_dir/texmf-cache/codex", 'texmf-cache');
 make_path($ENV{'TEXMFVAR'});
 make_path($ENV{'TEXMFCACHE'});
 
