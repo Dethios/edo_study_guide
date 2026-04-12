@@ -20,11 +20,33 @@ Bash (WSL/Linux/macOS):
 ./scripts/build.sh
 ```
 
+Docker using the already-pulled `texlive/texlive` image:
+
+```bash
+./scripts/docker-build.sh
+```
+
+Direct `docker run` equivalent:
+
+```bash
+docker run --rm --init \
+  --user "$(id -u):$(id -g)" \
+  -e HOME=/tmp \
+  -v "$PWD:/workdir" \
+  -w /workdir \
+  texlive/texlive:latest \
+  ./scripts/build.sh
+```
+
 PowerShell (Windows):
 
 ```powershell
 ./scripts/build.ps1
 ```
+
+The Docker helper accepts the same trailing file argument as `scripts/build.sh`,
+for example `./scripts/docker-build.sh tex/main.tex` or
+`./scripts/docker-build.sh tex/chapters/27_CIVPERS.tex`.
 
 Direct latexmk:
 

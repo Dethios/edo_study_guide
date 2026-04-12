@@ -11,7 +11,7 @@ $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 
 $root = Split-Path -Parent $PSScriptRoot
-$config = Join-Path $root "latexindent.yaml"
+$config = Join-Path $root "tex/latexindent.yaml"
 
 if (-not (Get-Command latexindent -ErrorAction SilentlyContinue)) {
     throw "latexindent not found in PATH."

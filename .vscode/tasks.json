@@ -5,12 +5,12 @@
     "version": "2.0.0",
     "tasks": [
         // ---------------------------------------------------------------
-        // Safe Git auto-push and AI context bundle (workspace tools)
+        // Safe Git auto-push and AI context bundle (project scripts)
         // ---------------------------------------------------------------
         {
             "label": "Git: Push (safe auto)",
             "type": "shell",
-            "command": "${workspaceFolder:workspace}/tools/scripts/push.sh --root ${workspaceFolder} && ${workspaceFolder:workspace}/tools/scripts/ai-context.sh --root ${workspaceFolder} && ${workspaceFolder:workspace}/tools/scripts/scrub.sh --root ${workspaceFolder}",
+            "command": "./scripts/push.sh && ./scripts/ai-context.sh && ./scripts/scrub.sh",
             "problemMatcher": [],
             "presentation": {
                 "reveal": "always",
@@ -24,7 +24,7 @@
                     "-ExecutionPolicy",
                     "Bypass",
                     "-Command",
-                    "& '${workspaceFolder:workspace}\\tools\\scripts\\push.ps1' --root '${workspaceFolder}'; & '${workspaceFolder:workspace}\\tools\\scripts\\ai-context.ps1' -Root '${workspaceFolder}'; & '${workspaceFolder:workspace}\\tools\\scripts\\scrub.ps1' -Root '${workspaceFolder}'"
+                    "& 'scripts\\push.ps1'; & 'scripts\\ai-context.ps1'; & 'scripts\\scrub.ps1'"
                 ]
             }
         },
@@ -35,7 +35,7 @@
         {
             "label": "Scrub temp artifacts",
             "type": "shell",
-            "command": "${workspaceFolder:workspace}/tools/scripts/scrub.sh --root ${workspaceFolder}",
+            "command": "./scripts/scrub.sh",
             "problemMatcher": [],
             "presentation": {
                 "reveal": "always",
@@ -49,9 +49,7 @@
                     "-ExecutionPolicy",
                     "Bypass",
                     "-File",
-                    "${workspaceFolder:workspace}\\tools\\scripts\\scrub.ps1",
-                    "-Root",
-                    "${workspaceFolder}"
+                    "scripts\\scrub.ps1"
                 ]
             }
         },
@@ -62,7 +60,7 @@
         {
             "label": "AI: Build context bundle",
             "type": "shell",
-            "command": "${workspaceFolder:workspace}/tools/scripts/ai-context.sh --root ${workspaceFolder}",
+            "command": "./scripts/ai-context.sh",
             "problemMatcher": [],
             "presentation": {
                 "reveal": "always",
@@ -76,9 +74,7 @@
                     "-ExecutionPolicy",
                     "Bypass",
                     "-File",
-                    "${workspaceFolder:workspace}\\tools\\scripts\\ai-context.ps1",
-                    "-Root",
-                    "${workspaceFolder}"
+                    "scripts\\ai-context.ps1"
                 ]
             }
         },
@@ -89,7 +85,7 @@
         {
             "label": "Release: Tag + Upload (GitHub)",
             "type": "shell",
-            "command": "./scripts/release.sh && ${workspaceFolder:workspace}/tools/scripts/ai-context.sh --root ${workspaceFolder} && ${workspaceFolder:workspace}/tools/scripts/scrub.sh --root ${workspaceFolder}",
+            "command": "./scripts/release.sh && ./scripts/ai-context.sh && ./scripts/scrub.sh",
             "problemMatcher": [],
             "presentation": {
                 "reveal": "always",
@@ -103,7 +99,7 @@
                     "-ExecutionPolicy",
                     "Bypass",
                     "-Command",
-                    "& 'scripts\\release.ps1'; & '${workspaceFolder:workspace}\\tools\\scripts\\ai-context.ps1' -Root '${workspaceFolder}'; & '${workspaceFolder:workspace}\\tools\\scripts\\scrub.ps1' -Root '${workspaceFolder}'"
+                    "& 'scripts\\release.ps1'; & 'scripts\\ai-context.ps1'; & 'scripts\\scrub.ps1'"
                 ]
             }
         },

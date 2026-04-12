@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-CONFIG="$ROOT/latexindent.yaml"
+CONFIG="$ROOT/tex/latexindent.yaml"
 
 if ! command -v latexindent >/dev/null 2>&1; then
   echo "latexindent not found in PATH." >&2
