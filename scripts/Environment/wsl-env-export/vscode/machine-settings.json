@@ -1599,7 +1599,7 @@
     // JSON-zain.json.autorefresh: Enable or disable JSON zain json autorefresh. Edit the value to change behavior.
     "JSON-zain.json.autorefresh": true,
     // PandocCiter.DefaultBib: Set Pandoc Citer Default Bib. Edit the value to change behavior.
-    "PandocCiter.DefaultBib": "/home/victor/projects/edo/main/tex/edo.bib",
+    "PandocCiter.DefaultBib": "/home/victor/dev-workspace/projects/edo_study_guide/tex/edo.bib",
     // better-comments.highlightPlainText: Enable or disable better comments highlight Plain Text. Edit the value to change behavior.
     "better-comments.highlightPlainText": true,
     // better-comments.tags: Define list for better comments tags. Edit the value to change behavior.

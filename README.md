@@ -7,10 +7,14 @@ live in `out/` and `build/` at the repo root.
 ## Repo layout
 
 - `tex/` - LaTeX sources (chapters, templates, assets, TikZ)
+- `tex/assets/reference-docs/` - mirrored PDFs, notes, and source-support files used by the guide
 - `out/` - PDF output (gitignored)
 - `build/` - LaTeX aux files (gitignored)
 - `release/` - dated PDF artifacts (gitignored; published via GitHub Releases)
 - `scripts/` - build/format/release helpers (bash + PowerShell)
+- `docs/reference/` - imported manuals, style assets, and one-off supporting material
+- `docs/archive/` - historical setup and migration notes
+- `Other/` - compatibility alias to `docs/reference/legacy/`
 
 ## Build
 
