@@ -1402,6 +1402,38 @@
         ],
         "notable_citations": [],
         "bias_or_quality_notes": "Tooling configuration update only; no study guide content changes."
+      },
+      {
+        "title_or_slug": "Add operational v.s. developmental testing comparison",
+        "date_range": "2026-04-24 to 2026-04-24",
+        "participants": [
+          "user",
+          "assistant"
+        ],
+        "purpose": "Integrate a detailed board-prep comparison of operational and developmental testing into the T&E chapter and add TRL-to-MCA study context.",
+        "summary": "Added an Operational v.s. Developmental Testing subsection that distinguishes purpose, key question, timing/environment, leadership, evidence, and failure meaning. Added Technology Readiness Level context in the Milestones chapter to show how TRLs overlay Major Capability Acquisition phases. The update emphasizes that DT&E builds technical confidence while OT&E supports independent operational readiness decisions.",
+        "key_decisions": [
+          "Place the testing comparison in the Test & Evaluation chapter immediately after verification and validation.",
+          "Place TRL phase-overlay context in the Milestones chapter near TMRR and Milestone B discussion.",
+          "Use existing T&E citations and acronym entries rather than adding new bibliography or glossary items."
+        ],
+        "action_items": [],
+        "linked_files": [
+          "tex/chapters/16_Milestones.tex",
+          "tex/chapters/18B_test-eval.tex",
+          "project_export.json"
+        ],
+        "notable_citations": [
+          "DoDI5000-02",
+          "DoDI5000-85",
+          "DoDI5000-89",
+          "USDRE-TRA-2020",
+          "USC-10-139",
+          "USC-10-2399",
+          "edo-3-3-2-acq-milestones-phases-2025",
+          "edo-3-5-6-test-eval-part-ii-2025"
+        ],
+        "bias_or_quality_notes": "Board-prep content update; no new primary-source lookup performed because existing cited coursebook, DoDI, TRA, and Title 10 entries were reused."
       }
     ]
   },
