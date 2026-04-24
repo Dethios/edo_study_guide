@@ -117,18 +117,33 @@
   \item Provide visibility into contractor implementation of the statement of work~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
 \end{itemize}
 
-\subsection{Major Technical Reviews}
-\begin{description}
-  \item[\textbf{\ac{srr}.}] Confirms system technical requirements and shared understanding~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
-  \item[\textbf{\ac{sfr}.}] Confirms the design can meet requirements and establishes the functional baseline~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
-  \item[\textbf{\ac{pdr}.}] Confirms readiness for detailed design and usually establishes the allocated baseline~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
-  \item[\textbf{\ac{cdr}.}] Confirms readiness for fabrication/coding, demonstration, and test; establishes the product baseline~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
-  \item[\textbf{\ac{trr}.}] Confirms readiness to enter formal test~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
-  \item[\textbf{\ac{prr}.}] Confirms production readiness and acceptable production risk~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
-  \item[\textbf{\ac{fca}.}] Confirms the system meets functional requirements and supports \ac{lrip}/\ac{frp} decisions~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
-  \item[\textbf{\ac{otrr}.}] Confirms production configuration readiness for operational test~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
-  \item[\textbf{\ac{pca}.}] Verifies production configuration matches design documentation and manufacturing controls~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
-\end{description}
+\subsection{MCA Technical Reviews by Phase}
+\ac{mca} technical reviews are event-driven maturity points, not calendar ceremonies. Unless waived through the \ac{sep} approval process, \ac{dodi}~5000.88 requires the \ac{pm} to conduct system-level reviews or equivalents for requirements/functionality, preliminary design, critical design, verification/configuration audit, production readiness, and physical configuration audit; \ac{asr}, \ac{trr}, and \ac{otrr} remain important best-practice or test-readiness events that are tailored to the program and test strategy~\autocite{DoDI5000-88,DoD-EngineeringDefenseSystemsGuidebook-2024,DoD-TEEnterpriseGuidebook-2022}.
+
+\begin{longtblr}[
+    label   = {tab:mca-technical-reviews},
+    caption = {Major Capability Acquisition technical reviews by phase},
+    entry   = {MCA Technical Reviews by Phase},
+    remark{\tSource} = {\tabCite{DoDI5000-88,DoD-EngineeringDefenseSystemsGuidebook-2024,DoD-TEEnterpriseGuidebook-2022}}
+  ]
+  {colspec = {@{} X[0.7] X[1.15] X[1.25] X[3.2] @{}}}
+  \toprule
+  {Review} & {Typical MCA phase} & {Primary baseline/readiness focus} & {Board-prep purpose} \\
+  \midrule
+  ASR & Materiel Solution Analysis & Preferred materiel solution & Confirms the preferred materiel solution is technically feasible, affordable, and understood well enough to support a draft performance specification. \\
+  SRR & Technology Maturation and Risk Reduction & System requirements & Confirms the developer and government share a clear, testable, traceable understanding of system performance requirements. \\
+  SFR & Technology Maturation and Risk Reduction & Functional baseline & Confirms the functional architecture satisfies performance requirements and supports preliminary design with acceptable risk. \\
+  PDR & Technology Maturation and Risk Reduction, normally before Milestone B & Allocated baseline & Confirms the preliminary design and architecture are mature enough to proceed to detailed design and support the Milestone B decision. \\
+  CDR & Engineering and Manufacturing Development & Initial product baseline & Confirms detailed design stability, expected performance, affordability posture, and readiness to start coding, fabrication, integration, and test. \\
+  TRR & Engineering and Manufacturing Development, before major test events & Test readiness & Confirms the test article, procedures, instrumentation, resources, environment, safety posture, and success criteria are ready for the planned test. \\
+  SVR/FCA & Late Engineering and Manufacturing Development & Verification against functional or allocated baseline & Verifies the system or configuration item satisfies approved requirements and that discrepancies are understood before production or operational test decisions. \\
+  PRR & Late Engineering and Manufacturing Development before LRIP; repeated in Production and Deployment when needed & Production readiness & Confirms producibility, quality, manufacturing planning, supply chain, facilities, tooling, and production risk are acceptable for LRIP or FRP. \\
+  OTRR & Production and Deployment, before IOT\&E, OA, or FOT\&E & Operational test readiness & Certifies that the production-representative configuration, reliability, maintainability, supportability, hazards, resources, and test planning are ready for operational test. \\
+  PCA & Production and Deployment, after successful OT\&E and before FRP decision & Final product baseline & Audits the as-built production-representative item against its technical documentation, resolves discrepancies, and establishes the final product baseline. \\
+  \bottomrule
+\end{longtblr}
+
+\note{For a board answer, lead with the baseline progression: requirements/function first, allocated design at \ac{pdr}, product design at \ac{cdr}, verified configuration at \ac{svr}/\ac{fca}, production readiness at \ac{prr}, operational test readiness at \ac{otrr}, and final as-built product baseline at \ac{pca}.}
 
 \subsection{Specifications, Baselines, and Reviews}
 \begin{description}
@@ -159,6 +174,7 @@
   \item CM functions are identification, status accounting, control, and verification/audits~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
   \item Baselines are functional, allocated, and product; changes are engineering changes, deviations, and waivers~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
   \item Commercial items reduce Government control of design details and \ac{tdp} access, increasing interface and support planning needs~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item In \ac{mca}, technical reviews should be explained as risk-reduction gates tied to phase maturity: \ac{srr}/\ac{sfr} in \ac{tmrr}, \ac{pdr} before \ac{emd}, \ac{cdr} and verification reviews in \ac{emd}, and \ac{prr}/\ac{otrr}/\ac{pca} around production and operational test~\autocite{DoD-EngineeringDefenseSystemsGuidebook-2024,DoD-TEEnterpriseGuidebook-2022}.
 \end{itemize}
 
 %====================

@@ -735,6 +735,8 @@
     "latex-workshop.intellisense.update.aggressive.enabled": true,
     // latex-workshop.intellisense.update.delay: Set numeric value for latex workshop intellisense update delay. Edit the value to change behavior.
     "latex-workshop.intellisense.update.delay": 10,
+    // latex-workshop.docker.enabled: Keep LaTeX Workshop native Docker disabled; BUILD-DOCKER uses scripts/docker-build.sh.
+    "latex-workshop.docker.enabled": false,
     // latex-workshop.latex.autoBuild.interval: Set numeric value for latex workshop latex auto Build interval. Edit the value to change behavior.
     "latex-workshop.latex.autoBuild.interval": 5000,
     // latex-workshop.latex.autoBuild.run: Set latex workshop latex auto Build run. Edit the value to change behavior.
@@ -742,7 +744,7 @@
     // latex-workshop.latex.autoClean.run: Set latex workshop latex auto Clean run. Edit the value to change behavior.
     "latex-workshop.latex.autoClean.run": "never",
     // latex-workshop.latex.auxDir: Set latex workshop latex aux Dir. Edit the value to change behavior.
-    "latex-workshop.latex.auxDir": "build",
+    "latex-workshop.latex.auxDir": "%WORKSPACE_FOLDER%/build",
     // latex-workshop.latex.build.clearLog.everyRecipeStep.enabled: Enable or disable latex workshop latex build clear Log every Recipe Step enabled. Edit the value to change behavior.
     "latex-workshop.latex.build.clearLog.everyRecipeStep.enabled": false,
     // latex-workshop.latex.build.enableMagicComments: Enable or disable latex workshop latex build enable Magic Comments. Edit the value to change behavior.
@@ -777,7 +779,7 @@
     // latex-workshop.latex.clean.subfolder.enabled: Enable or disable latex workshop latex clean subfolder enabled. Edit the value to change behavior.
     "latex-workshop.latex.clean.subfolder.enabled": true,
     // latex-workshop.latex.outDir: Set latex workshop latex out Dir. Edit the value to change behavior.
-    "latex-workshop.latex.outDir": "out",
+    "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/out",
     // latex-workshop.latex.recipe.default: Set latex workshop latex recipe default. Edit the value to change behavior.
     "latex-workshop.latex.recipe.default": "BUILD-DOCKER",
     // latex-workshop.latex.recipes: Define list for latex workshop latex recipes. Edit the value to change behavior.
@@ -823,13 +825,10 @@
     "latex-workshop.latex.tools": [
         {
             "args": [
-                "compose",
-                "run",
-                "--rm",
-                "latex",
-                "%DOC_EXT%"
+                "%WORKSPACE_FOLDER%/scripts/docker-build.sh",
+                "%RELATIVE_DOC%"
             ],
-            "command": "docker",
+            "command": "/bin/bash",
             "name": "docker-build"
         },
         // Deprecated fallback tool; retained for rollback.
