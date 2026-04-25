@@ -15,8 +15,8 @@ param(
     [switch]$NoScrub,
 
     [int]$Jobs,
-    [string]$OutDir = "out",
-    [string]$AuxDir = "build"
+    [string]$OutDir = "artifacts/out",
+    [string]$AuxDir = "artifacts/build"
 )
 
 $ErrorActionPreference = 'Stop'
@@ -61,7 +61,7 @@ try {
     New-Item -ItemType Directory -Force -Path $env:TEXMFVAR | Out-Null
     New-Item -ItemType Directory -Force -Path $env:TEXMFCACHE | Out-Null
 
-    $tikzCacheDir = Join-Path $auxDirFull "tikz"
+    $tikzCacheDir = Join-Path $root "artifacts\tikz"
     if (-not $env:MODERNTECH_TIKZ_EXTERNAL_PRIMARY) {
         $env:MODERNTECH_TIKZ_EXTERNAL_PRIMARY = ($tikzCacheDir -replace '\\', '/')
     }

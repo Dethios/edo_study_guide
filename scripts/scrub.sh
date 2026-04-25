@@ -22,12 +22,12 @@ patterns=(
 cd "$ROOT"
 
 find_args=(.)
-find_args+=( -type f )
+find_args+=( -type f '(' )
 for pattern in "${patterns[@]}"; do
   find_args+=( -name "$pattern" -o )
 done
 unset 'find_args[${#find_args[@]}-1]'
-find_args+=( -not -path "./.git/*" )
+find_args+=( ')' -not -path "./.git/*" )
 
 if [[ "$DRY_RUN" == "1" ]]; then
   find "${find_args[@]}" -print

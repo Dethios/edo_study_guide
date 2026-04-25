@@ -3,7 +3,7 @@ set -euo pipefail
 
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
-APPROVED_DIR="$PROJECT_ROOT/build/tikz"
+APPROVED_DIR="$PROJECT_ROOT/artifacts/tikz"
 
 mapfile -t bad_files < <(
   find "$PROJECT_ROOT" -type f \

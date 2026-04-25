@@ -21,7 +21,7 @@ Build an ai_context.zip bundle with diffs, log excerpt, and selected files.
 
 Options:
   -o, --output PATH       Output zip path (default: scratch/ai_context.zip)
-  --log PATH              Log file to excerpt (default: build/main.log or newest build/out log)
+  --log PATH              Log file to excerpt (default: artifacts/build/main.log or newest build/out log)
   --log-lines N           Number of log lines to include (default: 300)
   --no-diff               Skip git working tree diff
   --no-staged             Skip git staged diff
@@ -135,12 +135,16 @@ if [[ "$INCLUDE_LOG" == "1" ]]; then
       LOG_FILE="$ROOT/$LOG_FILE"
     fi
   else
-    if [[ -f "$ROOT/build/main.log" ]]; then
+    if [[ -f "$ROOT/artifacts/build/main.log" ]]; then
+      LOG_FILE="$ROOT/artifacts/build/main.log"
+    elif [[ -f "$ROOT/build/main.log" ]]; then
       LOG_FILE="$ROOT/build/main.log"
+    elif [[ -f "$ROOT/artifacts/out/main.log" ]]; then
+      LOG_FILE="$ROOT/artifacts/out/main.log"
     elif [[ -f "$ROOT/out/main.log" ]]; then
       LOG_FILE="$ROOT/out/main.log"
     else
-      LOG_FILE="$(ls -t "$ROOT/build"/*.log "$ROOT/out"/*.log 2>/dev/null | head -n 1 || true)"
+      LOG_FILE="$(ls -t "$ROOT/artifacts/build"/*.log "$ROOT/build"/*.log "$ROOT/artifacts/out"/*.log "$ROOT/out"/*.log 2>/dev/null | head -n 1 || true)"
     fi
   fi
 

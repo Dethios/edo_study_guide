@@ -399,6 +399,7 @@
     "files.watcherExclude": {
         "**/.git/**": true,
         "**/.texlive202*/**": true,
+        "**/artifacts/**": true,
         "**/build/**": true,
         "**/node_modules/**": true,
         "**/out/**": true
@@ -744,7 +745,7 @@
     // latex-workshop.latex.autoClean.run: Set latex workshop latex auto Clean run. Edit the value to change behavior.
     "latex-workshop.latex.autoClean.run": "never",
     // latex-workshop.latex.auxDir: Set latex workshop latex aux Dir. Edit the value to change behavior.
-    "latex-workshop.latex.auxDir": "%WORKSPACE_FOLDER%/build",
+    "latex-workshop.latex.auxDir": "%WORKSPACE_FOLDER%/artifacts/build",
     // latex-workshop.latex.build.clearLog.everyRecipeStep.enabled: Enable or disable latex workshop latex build clear Log every Recipe Step enabled. Edit the value to change behavior.
     "latex-workshop.latex.build.clearLog.everyRecipeStep.enabled": false,
     // latex-workshop.latex.build.enableMagicComments: Enable or disable latex workshop latex build enable Magic Comments. Edit the value to change behavior.
@@ -779,7 +780,7 @@
     // latex-workshop.latex.clean.subfolder.enabled: Enable or disable latex workshop latex clean subfolder enabled. Edit the value to change behavior.
     "latex-workshop.latex.clean.subfolder.enabled": true,
     // latex-workshop.latex.outDir: Set latex workshop latex out Dir. Edit the value to change behavior.
-    "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/out",
+    "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/artifacts/out",
     // latex-workshop.latex.recipe.default: Set latex workshop latex recipe default. Edit the value to change behavior.
     "latex-workshop.latex.recipe.default": "BUILD-DOCKER",
     // latex-workshop.latex.recipes: Define list for latex workshop latex recipes. Edit the value to change behavior.
@@ -944,6 +945,7 @@
     // ltex.ignorePaths: Define list for ltex ignore Paths. Edit the value to change behavior.
     "ltex.ignorePaths": [
         "**/main.tex",
+        "**/artifacts/**",
         "**/build/**",
         "**/out/**",
         "**/figures/**"
@@ -1928,6 +1930,7 @@
     "search.exclude": {
         "**/.git/**": true,
         "**/.texlive202*/**": true,
+        "**/artifacts/**": true,
         "**/build/**": true,
         "**/node_modules/**": true,
         "**/out/**": true

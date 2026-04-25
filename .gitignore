@@ -2,12 +2,22 @@
 # LaTeX build products
 # ======================
 # Directories (your layout)
-out/
-build/
-.build/*
+artifacts/build/*
+artifacts/out/*
+artifacts/tikz/*
+!artifacts/
+!artifacts/build/
+!artifacts/build/.gitkeep
+!artifacts/out/
+!artifacts/out/.gitkeep
+!artifacts/tikz/
+!artifacts/tikz/.gitkeep
+/build/
+/out/
+/.build/*
 scratch/
-tex/out/
-tex/build/
+/tex/out/
+/tex/build/
 release/*.pdf
 
 # Common aux/logs across engines & tools
@@ -117,7 +127,4 @@ Thumbs.db
 .gemini/
 gha-creds-*.json
 
-# Keep a placeholder so .build/tikz mount paths exist in devcontainers.
-!.build/
-!.build/tikz/
-!.build/tikz/.gitkeep
+# Keep placeholders so artifact mount paths exist in devcontainers.

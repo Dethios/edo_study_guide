@@ -1,8 +1,6 @@
 {
   "name": "EDO Acquisition Tutor",
 
-  // Build a custom image from .devcontainer/Dockerfile,
-  // using the REPO ROOT (..) as the Docker build context.
   "build": {
     "dockerfile": "Dockerfile",
     "context": ".."
@@ -20,7 +18,7 @@
   "remoteUser": "vscode",
 
   "mounts": [
-    "source=${localWorkspaceFolder}/.build/tikz,target=/workspaces/${localWorkspaceFolderBasename}/.build/tikz,type=bind"
+    "source=${localWorkspaceFolder}/artifacts/tikz,target=/workspaces/${localWorkspaceFolderBasename}/artifacts/tikz,type=bind"
   ],
 
 

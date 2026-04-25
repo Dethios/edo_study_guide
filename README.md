@@ -2,19 +2,20 @@
 
 This repository builds the Navy Engineering Duty Officer (EDO) Acquisition Tutor
 study guide. The LaTeX sources live in `tex/`, while build outputs and aux files
-live in `out/` and `build/` at the repo root.
+live under `artifacts/` at the repo root.
 
 ## Repo layout
 
 - `tex/` - LaTeX sources (chapters, templates, assets, TikZ)
 - `tex/assets/reference-docs/` - mirrored PDFs, notes, and source-support files used by the guide
-- `out/` - PDF output (gitignored)
-- `build/` - LaTeX aux files (gitignored)
+- `artifacts/out/` - PDF output (gitignored)
+- `artifacts/build/` - LaTeX aux files (gitignored)
+- `artifacts/tikz/` - TikZ externalization cache (gitignored)
+- `out/` and `build/` - compatibility symlinks to `artifacts/out/` and `artifacts/build/`
 - `release/` - dated PDF artifacts (gitignored; published via GitHub Releases)
 - `scripts/` - build/format/release helpers (bash + PowerShell)
 - `docs/reference/` - imported manuals, style assets, and one-off supporting material
 - `docs/archive/` - historical setup and migration notes
-- `Other/` - compatibility alias to `docs/reference/legacy/`
 
 ## Build
 
@@ -55,7 +56,7 @@ for example `./scripts/docker-build.sh tex/main.tex` or
 Direct latexmk:
 
 ```shell
-latexmk -r tex/latexmkrc -shell-escape -outdir=out -auxdir=build tex/main.tex
+latexmk -r tex/latexmkrc -shell-escape -outdir=artifacts/out -auxdir=artifacts/build tex/main.tex
 ```
 
 TikZ cache invalidation:
@@ -100,7 +101,7 @@ PowerShell:
 
 ## Release (GitHub Releases only)
 
-Release PDFs are not tracked in Git. The release script expects `out/main.pdf`
+Release PDFs are not tracked in Git. The release script expects `artifacts/out/main.pdf`
 to exist, copies it into `release/` (still gitignored), commits any staged
 changes, tags the commit as `release-YYYYMMDD`, pushes, and uploads the PDF as a
 GitHub Release asset using the GitHub CLI.
@@ -141,7 +142,6 @@ TikZ externalization requires `-shell-escape`. Use it only in trusted builds or 
 
 TikZ externalization uses one canonical cache directory:
 
-- `${superproject-root}/.build/tikz/` (preferred)
-- `${superproject-root}/build/tikz/` (automatic fallback when hidden output paths are blocked, e.g. `openout_any = p`)
+- `${project-root}/artifacts/tikz/`
 
-If this project is cloned standalone (not as a submodule), `superproject-root` is the project root.
+When this project is used as a submodule, `project-root` is still the `projects/edo_study_guide` checkout.

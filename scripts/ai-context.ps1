@@ -61,19 +61,29 @@ try {
                 $Log = Join-Path $root $Log
             }
         } else {
-            $candidate = Join-Path $root "build/main.log"
+            $candidate = Join-Path $root "artifacts/build/main.log"
             if (Test-Path $candidate) {
                 $Log = $candidate
             } else {
-                $candidate = Join-Path $root "out/main.log"
+                $candidate = Join-Path $root "build/main.log"
                 if (Test-Path $candidate) {
                     $Log = $candidate
                 } else {
-                    $Log = Get-ChildItem -Path (Join-Path $root "build"), (Join-Path $root "out") `
-                        -Filter "*.log" -ErrorAction SilentlyContinue |
-                        Sort-Object LastWriteTime -Descending |
-                        Select-Object -First 1 |
-                        ForEach-Object { $_.FullName }
+                    $candidate = Join-Path $root "artifacts/out/main.log"
+                    if (Test-Path $candidate) {
+                        $Log = $candidate
+                    } else {
+                        $candidate = Join-Path $root "out/main.log"
+                        if (Test-Path $candidate) {
+                            $Log = $candidate
+                        } else {
+                            $Log = Get-ChildItem -Path (Join-Path $root "artifacts/build"), (Join-Path $root "build"), (Join-Path $root "artifacts/out"), (Join-Path $root "out") `
+                                -Filter "*.log" -ErrorAction SilentlyContinue |
+                                Sort-Object LastWriteTime -Descending |
+                                Select-Object -First 1 |
+                                ForEach-Object { $_.FullName }
+                        }
+                    }
                 }
             }
         }

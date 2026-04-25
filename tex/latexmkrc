@@ -1,4 +1,4 @@
-# Keep PDF in repo; put aux where LaTeX/biber agree.
+# Keep PDF and aux files under the project artifact root.
 use Cwd qw(abs_path);
 use File::Basename qw(dirname);
 use File::Path qw(make_path);
@@ -32,9 +32,9 @@ use File::Path qw(make_path);
 my $root_dir = abs_path(dirname(__FILE__) . '/..');
 $root_dir = moderntech_normalize_path($root_dir);
 
-$out_dir = moderntech_pick_writable_dir("$root_dir/out", 'out');
-$aux_dir = moderntech_pick_writable_dir("$root_dir/build", 'build');
-# Stay in repo root so out/build resolve consistently when compiling tex/main.tex.
+$out_dir = moderntech_pick_writable_dir("$root_dir/artifacts/out", 'out');
+$aux_dir = moderntech_pick_writable_dir("$root_dir/artifacts/build", 'build');
+# Stay in repo root so artifact paths resolve consistently when compiling tex/main.tex.
 $do_cd = 0;
 
 # Ensure LuaLaTeX has a writable cache dir for luaotfload/fontspec (important in
@@ -44,9 +44,9 @@ $ENV{'TEXMFCACHE'} = moderntech_pick_writable_dir("$aux_dir/texmf-cache/codex", 
 make_path($ENV{'TEXMFVAR'});
 make_path($ENV{'TEXMFCACHE'});
 
-# TikZ externalization cache: keep generated figures under the project's aux dir
-# by default. Build wrappers may still override these paths explicitly.
-my $default_tikz_dir = moderntech_normalize_path("$aux_dir/tikz");
+# TikZ externalization cache: keep generated figures under the project artifact
+# root by default. Build wrappers may still override these paths explicitly.
+my $default_tikz_dir = moderntech_normalize_path("$root_dir/artifacts/tikz");
 $ENV{'MODERNTECH_TIKZ_EXTERNAL_PRIMARY'} = moderntech_normalize_path($ENV{'MODERNTECH_TIKZ_EXTERNAL_PRIMARY'} // $default_tikz_dir);
 $ENV{'MODERNTECH_TIKZ_EXTERNAL_FALLBACK'} = moderntech_normalize_path($ENV{'MODERNTECH_TIKZ_EXTERNAL_FALLBACK'} // $default_tikz_dir);
 make_path($ENV{'MODERNTECH_TIKZ_EXTERNAL_PRIMARY'});
@@ -60,7 +60,7 @@ $ENV{'BIBINPUTS'} = "$root_dir/tex$path_sep" . ($ENV{'BIBINPUTS'} // '');
 $ENV{'BSTINPUTS'} = "$root_dir/tex$path_sep" . ($ENV{'BSTINPUTS'} // '');
 $ENV{'TEXMFCNF'} = "$root_dir$path_sep$root_dir/tex$path_sep$root_dir/texmf-dist$path_sep" . ($ENV{'TEXMFCNF'} // '');
 
-# Allow TikZ externalization writes under .build/ (hidden path) in trusted builds.
+# Allow TikZ externalization writes under artifact paths in trusted builds.
 $ENV{'openout_any'} = 'a';
 
 # Glossaries

@@ -1,4 +1,4 @@
-r#!/usr/bin/env bash
+#!/usr/bin/env bash
 set -euo pipefail
 
 echo "=== Codex Cloud maintenance: EDO Study Guide LaTeX toolchain ==="

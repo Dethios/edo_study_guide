@@ -5,7 +5,7 @@ Param(
 $ErrorActionPreference = 'Stop'
 
 $baseDir = Split-Path -Parent $PSScriptRoot
-$source = Join-Path $baseDir 'out\main.pdf'
+$source = Join-Path $baseDir 'artifacts\out\main.pdf'
 if (-not (Test-Path $source)) {
     Write-Error "Source PDF not found at $source"
     exit 1
@@ -30,7 +30,7 @@ $dateHuman = Get-Date -Format 'yyyy-MM-dd'
 $tag = "release-$dateStamp"
 $destination = Join-Path $releaseDir "EDO_Study_Guide_dtd_$dateStamp.pdf"
 $changelog = Join-Path $baseDir 'CHANGELOG.md'
-$notesFile = Join-Path $baseDir "build\\release_notes_$dateStamp.md"
+$notesFile = Join-Path $baseDir "artifacts\\build\\release_notes_$dateStamp.md"
 New-Item -ItemType Directory -Force -Path (Split-Path $notesFile -Parent) | Out-Null
 
 Copy-Item -Path $source -Destination $destination -Force

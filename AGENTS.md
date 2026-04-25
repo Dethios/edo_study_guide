@@ -4,7 +4,7 @@
 
 - Read this file, `project_export.json`, and `.github/copilot-instructions.md` before starting any task.
 - `AGENTS.md` is the authoritative instruction/task list. `project_export.json` is the canonical project database. When you update either file, keep them synchronized with the current repo state.
-- Do not track `out/main.pdf`; use for verification only. Released PDFs are gitignored in `release/` and uploaded to GitHub Releases.
+- Do not track `artifacts/out/main.pdf`; use for verification only. Released PDFs are gitignored in `release/` and uploaded to GitHub Releases.
 
 ## Mission and Doctrine (High Level)
 
@@ -20,7 +20,7 @@
 - **Tables:** Use `longtblr` by default; prefer `description` for term/definition lists.
 - **Encoding:** ASCII only.
 
-## GPT-5.4 Execution Contract
+## GPT-5.5 Execution Contract
 
 - **Output contract:** Default to 3-6 sentences or <=5 bullets. For complex multistep tasks: 1 short overview paragraph, then <=5 bullets labeled What changed, Where, Validation, Risks, Open questions.
 - **Default follow-through:** If the request is clear and the next step is reversible and low-risk, proceed without asking. Ask only for irreversible actions, missing sensitive information, or a choice that materially changes the deliverable.
@@ -66,7 +66,10 @@
 
 - `docs/reference/` is the canonical home for imported manuals, style assets, and supporting material.
 - `docs/archive/` is the canonical home for historical setup and migration notes.
-- `Other/` remains only as a compatibility alias to `docs/reference/legacy/`; do not add new material there.
+- `artifacts/out/` is the canonical PDF output path; `out/` may exist only as a compatibility symlink.
+- `artifacts/build/` is the canonical LaTeX aux/runtime-cache path; `build/` may exist only as a compatibility symlink.
+- `artifacts/tikz/` is the canonical TikZ externalization cache path.
+- `docs/reference/legacy/` is the canonical home for legacy reference material; do not recreate `Other/`.
 
 ## Outstanding Lookups
 
@@ -157,7 +160,7 @@
 - [x] Audit shell/PowerShell script parity and tasks.json OS routing (2025-12-24)
 - [x] Add NDS, C2, AI, CTF, and BES acronyms (2025-12-24)
 - [x] Add shell script runner Jupyter notebook under scripts (2025-12-24)
-- [x] Resolve remaining undefined citation warnings in `build/main.log` after biber runs
+- [x] Resolve remaining undefined citation warnings in `artifacts/build/main.log` after biber runs
 - [x] Add a VS Code task for configuration updates (2025-12-25)
 - [x] Fix BUILD-WSL LaTeX Workshop command path to avoid ENOENT (2025-12-25)
 - [x] Guidance: shell_runner.ipynb sudo apt-get hang and notebook TTY limits (2025-12-26)
@@ -172,6 +175,7 @@
 - [x] WSL sudoers: use $USER instead of hard-coded name (2025-12-26)
 - [x] Add NIP/MIP funding subsection (NRO context) with citations and acronyms (2025-12-28)
 - [x] Default markdown-related files to markdown-preview-enhanced (2026-01-02)
+- [x] Move generated build output policy to `artifacts/` with `build`/`out` compatibility symlinks and project Codex role configs (2026-04-25)
 
 ## Session updates (2025-12-16)
 

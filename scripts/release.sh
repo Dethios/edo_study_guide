@@ -3,7 +3,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
-SOURCE_PDF="$ROOT/out/main.pdf"
+SOURCE_PDF="$ROOT/artifacts/out/main.pdf"
 if [[ ! -f "$SOURCE_PDF" ]]; then
   echo "Source PDF not found at $SOURCE_PDF" >&2
   exit 1
@@ -25,8 +25,8 @@ date_human="$(date +%Y-%m-%d)"
 TAG="release-${today}"
 DEST_PDF="$RELEASE_DIR/EDO_Study_Guide_dtd_${today}.pdf"
 CHANGELOG="$ROOT/CHANGELOG.md"
-NOTES_FILE="$ROOT/build/release_notes_${today}.md"
-mkdir -p "$ROOT/build"
+NOTES_FILE="$ROOT/artifacts/build/release_notes_${today}.md"
+mkdir -p "$ROOT/artifacts/build"
 
 cp "$SOURCE_PDF" "$DEST_PDF"
 echo "Copied $SOURCE_PDF to $DEST_PDF"

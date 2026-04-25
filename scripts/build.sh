@@ -8,8 +8,8 @@ WATCH=0
 CLEAN=0
 SHELL_ESCAPE=1
 JOBS=""
-OUTDIR="out"
-AUXDIR="build"
+OUTDIR="artifacts/out"
+AUXDIR="artifacts/build"
 QUIET=0
 TEXFILE=""
 SCRUB=1
@@ -24,8 +24,8 @@ Options:
   --clean                               Clean aux/output for the target and exit
   --no-shell-escape                     Disable shell-escape
   --jobs N                              Parallel jobs for latexmk
-  --outdir DIR                          Output directory (default: out)
-  --auxdir DIR                          Aux directory (default: build)
+  --outdir DIR                          Output directory (default: artifacts/out)
+  --auxdir DIR                          Aux directory (default: artifacts/build)
   --quiet                               Quiet latexmk output
   --no-scrub                            Skip post-build scrub of temp/lock files
   -h, --help                            Show this help
@@ -150,7 +150,7 @@ export TEXMFVAR="$(pick_writable_dir "$AUXDIR_ABS/texmf-var/codex" texmf-var)"
 export TEXMFCACHE="$(pick_writable_dir "$AUXDIR_ABS/texmf-cache/codex" texmf-cache)"
 mkdir -p "$TEXMFVAR" "$TEXMFCACHE"
 
-DEFAULT_TIKZ_CACHE="$AUXDIR_ABS/tikz"
+DEFAULT_TIKZ_CACHE="$ROOT/artifacts/tikz"
 if [[ -z "${MODERNTECH_TIKZ_EXTERNAL_PRIMARY:-}" ]]; then
     export MODERNTECH_TIKZ_EXTERNAL_PRIMARY="$DEFAULT_TIKZ_CACHE"
 fi
