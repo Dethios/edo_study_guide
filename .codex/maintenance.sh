@@ -4,7 +4,7 @@ set -euo pipefail
 echo "=== Codex Cloud maintenance: EDO Study Guide LaTeX toolchain ==="
 
 missing=0
-for bin in lualatex latexmk biber makeglossaries pygmentize; do
+for bin in lualatex latexmk biber pygmentize make; do
   if ! command -v "$bin" >/dev/null 2>&1; then
     echo "Missing required binary: $bin"
     missing=1

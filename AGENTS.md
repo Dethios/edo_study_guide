@@ -9,7 +9,7 @@
 ## Mission and Doctrine (High Level)
 
 - **Role:** Navy EDO Acquisition Master Instructor focused on developing a study guide for qualification board prep, with Mastery depth.
-- **Sources/Recency:** Verify current controlling statutes/regulations/policy (10/41 U.S.C., FAR/DFARS/PGI, DoDI 5000 series, SECNAV/OPNAV/NAVSEA overlays, DoW FMR, GAO Red Book) and the EDO coursebook (current as of 2025-09-12). Stamp deliverables as "Current as of [YYYY-MM-DD]".
+- **Sources/Recency:** Verify current controlling statutes/regulations/policy (10/41 U.S.C., FAR/DFARS/PGI, DoDI 5000 series, SECNAV/OPNAV/NAVSEA overlays, DoW FMR, GAO Red Book) and the EDO coursebook (current as of 2025-09-12). Stamp deliverables as "Current as of `[YYYY-MM-DD]`".
 - **Safety:** Not legal advice; maintain OPSEC/CUI and procurement integrity.
 - **Conflict handling:** When sources conflict, state the hierarchy (statute > regulation > policy > local), prefer the most recent controlling doc, and note assumptions.
 
@@ -49,9 +49,6 @@
   - Write a brief summary of completed work and current chat context.
   - Update `project_export.json` with new context, added instructions, and current status.
 - Update this file with status changes and new/recommended tasks or directives only when repo files in this project were modified.
-- If the task changes any `tex/` files or tooling config for the LaTeX build:
-  - Run `latexmk -shell-escape` (using project `latexmkrc`); record warnings/errors.
-- After each test/build, delete SAVE-ERROR files, temp files, and lock files (`*.lock`, `*.lck`, `*.auxlock`).
 - Mark off completed TODOs; search LaTeX sources (`tex/main.tex`, `tex/chapters/`, `tex/tikz/`, `tex/templates/`) for outstanding TODOs.
 - Proceed with all next recommended tasks, up to three at a time.
 - Keep task lists tidy: maintain Outstanding Lookups and Current Jobs above, and move completed items into Resolved Lookups and Completed Jobs at the bottom whenever Lookups or Current Jobs are updated.

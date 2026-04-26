@@ -1,6 +1,6 @@
 # ===== General =====
 backupExtension: ""
-defaultIndent: "    "
+defaultIndent: "  "
 indentPreamble: 1
 onlyOneBackUp: 1
 preserveBlankLines: 1

@@ -79,7 +79,7 @@ The \ac{fydp} tracks funding for each military service and other \ac{dod} agenci
 
 \subsubsection{Program elements}
 \begin{description}
-  \item[\textbf{PE codes.}] Resources are assigned to an \ac{mfp} using unique \ac{pe} codes.
+  \item[\textbf{PE codes.}] Resources are assigned to a unique \ac{mfp} using \ac{pe} codes.
   \item[\textbf{Granularity.}] \acp{pe} can be as narrow as a single platform or as broad as strategic planning.
   \item[\textbf{Multiple appropriations.}] A single \ac{pe} can include multiple appropriation types (for example, procurement plus \ac{omn} for sustainment).
 \end{description}
@@ -148,14 +148,69 @@ The \ac{fydp} tracks funding for each military service and other \ac{dod} agenci
   label   = {tab:ppbe-n8-offices},%
   entry   = {N8 Offices Relevant to EDO PPBE},%
   remark{\tSource} = {\tabCite{edo-3-1-1-ppbe-2025,OPNAVINST3050-27A,OPNAVINST4700-7N}}
-  ]{colspec = {@{} ll @{}}}
+  ]{colspec = {@{} l X[l] X[l] X[l] @{}}}
   \toprule
-  {Office} & {Focus} \\
+  {Code} & {Office title / common label} & {Core function} & {Responsibilities / what to know} \\
   \midrule
-  N80 & Programming Division; builds and integrates the Navy program. \\
-  N81 & Assessment Division; force-structure and warfighting-capability assessments. \\
-  N82 & Fiscal Management Division/FMB; budget formulation, execution, and controls. \\
-  N83 & Fleet Readiness; ship maintenance and fleet-readiness point of contact in OPNAV. \\
+  N8 & Deputy Chief of Naval Operations, Integration of Capabilities and Resources & Navy-wide integration of capabilities, resources, assessments, and PPBE & N8 is the integrator, not a platform sponsor. In official laydown guidance, N8 provides the Navy Force Structure Assessment, POM planning memoranda, warfighting capability/capacity assessments, campaign analysis support, and independent assessment of approved COAs. \\
+  N80 & Programming Division & Builds and integrates the Navy program / POM & Treat N80 as the \textbf{programming engine}: sponsor inputs, fiscal controls, and priorities are reconciled into the Navy program. The study guide describes N8 as integrating sponsor submissions into the Navy tentative POM. \\
+  N81 & Assessment Division & Force-structure and warfighting-capability assessments & N81 is the analytic/assessment side: force mix, capability gaps, warfighting capacity/capability, and assessment products that inform POM choices. OPNAVINST 3111.17C assigns N8 warfighting capability and capacity assessment responsibilities. \\
+  N82 / FMB & Fiscal Management Division / FMB & Budget formulation, execution, and fiscal controls & N82 is closer to \textbf{budgeting/execution controls} than POM integration. An official OPNAV council membership list identifies ``Director, Fiscal Management Division (OPNAV N82/FMB).'' See Section~\ref{subsec:fmb} for detailed FMB responsibilities. \\
+  N83 & Fleet Readiness & Fleet readiness and readiness-related integration & The study guide calls N83 the OPNAV fleet-readiness point of contact; an official OPNAV listing identifies ``Director, Fleet Readiness (OPNAV N83).'' Be careful: older 2012 realignment language used N83 differently. \\
+  N84 & Historical / legacy in some sources: Innovation, T\&E, Technology Requirements & Legacy N8-era code; do not assume current unless source-specific & NAVADMIN 083/12 placed Innovation, T\&E, and Technology Requirements under N8 as N84, but more current source material and AMMG place \textbf{T\&E as N94} in the resource sponsor structure. Use N84 only when reading older documents. \\
+  N89 / N9SP & Special Programs & Special programs & Older realignment placed Special Programs under N8 as N89; a more recent official OPNAV membership list identifies ``Director, Special Programs (OPNAV N9SP).'' Treat this as source/date-sensitive. \\
+  \bottomrule
+\end{longtblr}
+
+\subsubsection{Fiscal Management Division (FMB, N82)}
+\label{subsec:fmb}
+\begin{description}
+  \item[\textbf{Role.}] \ac{fmb} is the budgeting and fiscal-control arm of \ac{opnav} N8, responsible for turning the Navy program (\ac{pom}) into an executable budget and managing its execution.
+  \item[\textbf{PPBE space.}] FMB operates in the \textbf{Budgeting + Execution} phases, distinct from N80's programming role.
+\end{description}
+~\srcCite{edo-3-1-1-ppbe-2025,OPNAVINST4700-7N}
+
+\begin{description}
+  \item[\textbf{Budget formulation.}] Translates the \ac{pom} into the \ac{bes}, aligns Navy funding with \ac{osd}/\ac{omb} guidance, and prepares and defends the Navy budget through \ac{osd} review, \ac{omb} review, and Congressional submission.
+  \item[\textbf{Fiscal controls and execution.}] Manages appropriation execution, enforces obligation/expenditure controls and reprogramming rules, and tracks whether programs are spending as planned or deviating from budget intent.
+  \item[\textbf{Budget defense.}] Leads Navy response to \acp{pbd} from \ac{osd} and Congressional marks by drafting reclamas, building business case and operational impact arguments, and coordinating with resource sponsors (N9, etc.).
+  \item[\textbf{Integration with resource sponsors.}] Works with N9 sponsors (N95--N99, N9I, N94) to refine budget submissions, adjust funding based on marks, and ensure affordability within constraints.
+  \item[\textbf{Appropriation structure.}] Operates heavily in appropriation categories (RDT\&E, Procurement, O\&M, MILPERS, etc.), \acp{pe}, and budget exhibits.
+\end{description}
+~\srcCite{edo-3-1-1-ppbe-2025,OPNAVINST4700-7N}
+
+\begin{description}
+  \item[\textbf{Key distinction.}] Programming (N80) = capability + trade space; Budgeting (FMB) = appropriation control + executable funding.
+\end{description}
+
+\subsubsection{FMB responsibilities (high-yield list)}
+For board answers, FMB (N82) is responsible for:
+\begin{itemize}
+  \item Budget formulation (\ac{bes})
+  \item Budget justification and defense (\ac{osd}, \ac{omb}, Congress)
+  \item Managing fiscal controls and execution
+  \item Responding to \acp{pbd} and Congressional marks
+  \item Ensuring compliance with appropriation law and policy
+  \item Translating Navy priorities into executable funding
+  \item Monitoring execution performance
+\end{itemize}
+~\srcCite{edo-3-1-1-ppbe-2025,OPNAVINST4700-7N}
+
+\subsubsection{FMB common traps}
+\begin{longtblr}[%
+    caption = {Common misconceptions about FMB (N82).},
+    label   = {tab:ppbe-fmb-traps},
+    entry   = {FMB Common Misconceptions},
+    remark{\tSource} = {\tabCite{edo-3-1-1-ppbe-2025,OPNAVINST4700-7N}}%
+  ]{colspec = {@{} lX[l] @{}}}
+  \toprule
+  {Incorrect assumption} & {Correction} \\
+  \midrule
+  FMB builds the POM & N80 builds the POM \\
+  FMB validates requirements & JCIDS / N9 sponsors validate requirements \\
+  FMB is a warfare sponsor & N9 sponsors are warfare sponsors \\
+  FMB owns force structure & N81 / N8 assessments own force structure \\
+  FMB is just accounting & FMB is strategic budget control + defense \\
   \bottomrule
 \end{longtblr}
 
@@ -171,17 +226,20 @@ The \ac{fydp} tracks funding for each military service and other \ac{dod} agenci
   label   = {tab:ppbe-n9-directorates},%
   entry   = {N9 Warfare Systems Directorates},%
   remark{\tSource} = {\tabCite{edo-3-1-1-ppbe-2025,NAVMAC-AMMG-2024,OPNAVINST3111-17C}}
-  ]{colspec = {@{} ll @{}}}
+  ]{colspec = {@{} l X[l] X[l] X[l] @{}}}
   \toprule
-  {Directorate} & {Focus} \\
+  {Code} & {Office title / resource sponsor description} & {Core function} & {Responsibilities / what to know} \\
   \midrule
-  N9I & Integrated Warfare / Warfare Integration. \\
-  N94 & Test and Evaluation. \\
-  N95 & Expeditionary Warfare. \\
-  N96 & Surface Warfare. \\
-  N97 & Undersea Warfare. \\
-  N98 & Air Warfare. \\
-  N99 & Unmanned Warfare Systems. \\
+  N9 & DCNO for Warfighting Requirements and Capabilities / Warfare Systems & Warfare-system requirements and resource sponsorship & Official excerpts say N9 establishes requirements, sets priorities, and directs planning/programming for expeditionary, surface, undersea, air, unmanned, and warfare systems, including associated manpower, support, training, and readiness. \\
+  N9B & Assistant DCNO for Warfighting Requirements and Capabilities & Senior civilian/assistant advisory role to N9 & A DON senior executive bio says N9B advises N9 on warfare requirements, naval warfare system integration, budget matters, and centralized coordination of Navy programs/plans. \\
+  N9I & Warfare Integration / Integrated Warfare & Cross-domain integration across warfare portfolios & NAVMAC AMMG lists RS code \textbf{9I = Warfare Integration}. N9I is the cross-domain integrator when the issue cuts across surface, air, undersea, expeditionary, and unmanned portfolios. \\
+  N9DW & Digital Warfare Office & Naval operational architecture, digital integration, kill-chain integration & OPNAVINST 5400.43C states that CNO N9 and CNO N2N6 maintain a cooperative \textbf{Director, Digital Warfare Office (OPNAV N9DW)} to lead naval operational architecture development/prototyping, drive digital integration, and identify requirements to close long-range kill chains. \\
+  N94 & Test \& Evaluation & T\&E resource sponsor & NAVMAC lists RS code \textbf{94 = Test \& Evaluation, org code N94}. OPNAVINST 5450.352B excerpt says CNO N9 is resource sponsor for S\&T, major range and test facility base infrastructure, Commander Operational Test and Evaluation Force personnel, and oversight of Navy T\&E programs. \\
+  N95 & Expeditionary Warfare & Expeditionary warfare resource sponsor & NAVMAC lists \textbf{95 = Expeditionary Warfare, org code N95}. NAVEDTRA 135D also maps N95 to expeditionary-related learning centers such as EOD/diving, security forces, Seabees/facilities engineering, and SEAL/SWCC training centers. \\
+  N96 & Surface Warfare & Surface warfare resource sponsor & NAVMAC lists \textbf{96 = Surface Warfare, org code N96}. NAVEDTRA 135D maps N96 to Center for Surface Combat Systems and Surface Warfare Officers School Command. \\
+  N97 & Undersea Warfare & Undersea warfare resource sponsor & NAVMAC lists \textbf{97 = Undersea Warfare, org code N97}. NAVEDTRA 135D maps N97 to the Submarine Learning Center. \\
+  N98 & Air Warfare & Air warfare resource sponsor & NAVMAC lists \textbf{98 = Air Warfare, org code N98}. NAVEDTRA 135D maps N98 to the Center for Naval Aviation Technical Training. \\
+  N99 & Unmanned Warfare Systems & Unmanned systems resource sponsor / early integration of unmanned capabilities & NAVMAC lists \textbf{99 = Unmanned Warfare Systems, org code N99}. NAVADMIN 255/15 established N99 to identify, develop, field, and integrate unmanned technologies, accelerate prototypes and experimentation, align unmanned investment strategy, and assess future unmanned warfighting capabilities. \\
   \bottomrule
 \end{longtblr}
 

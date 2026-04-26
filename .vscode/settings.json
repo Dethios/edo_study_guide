@@ -718,12 +718,14 @@
     // latex-workshop.formatting.latexindent.args: Define list for latex workshop formatting latexindent args. Edit the value to change behavior.
     "latex-workshop.formatting.latexindent.args": [
         "-g=/dev/null",
-        "-l=.",
+        "-l=tex/latexindent.yaml",
+        "-m",
+        "%TMPFILE%",
         "-y=defaultIndent:'    '",
         "--overwriteIfDifferent"
     ],
     // latex-workshop.formatting.latexindent.path: Set latex workshop formatting latexindent path. Edit the value to change behavior.
-    "latex-workshop.formatting.latexindent.path": "latexindent",
+    "latex-workshop.formatting.latexindent.path": "/home/vic-l/dev-workspace/projects/edo_study_guide/scripts/latexindent-docker.sh",
     // latex-workshop.intellisense.citation.backend: Set latex workshop intellisense citation backend. Edit the value to change behavior.
     "latex-workshop.intellisense.citation.backend": "biblatex",
     // latex-workshop.intellisense.file.base: Set latex workshop intellisense file base. Edit the value to change behavior.
@@ -880,6 +882,19 @@
     "latex-workshop.latex.watch.usePolling": true,
     // latex-workshop.latexindent.modifyLineBreaks: Enable or disable latex workshop latexindent modify Line Breaks. Edit the value to change behavior.
     "latex-workshop.latexindent.modifyLineBreaks": true,
+    // latex-workshop.texcount.autorun: Run TeXCount through the repo Docker wrapper when saving LaTeX files.
+    "latex-workshop.texcount.autorun": "onSave",
+    // latex-workshop.texcount.interval: Set numeric value for latex workshop texcount interval. Edit the value to change behavior.
+    "latex-workshop.texcount.interval": 1000,
+    // latex-workshop.texcount.path: Set latex workshop texcount path. Edit the value to change behavior.
+    "latex-workshop.texcount.path": "/home/vic-l/dev-workspace/projects/edo_study_guide/scripts/texcount-docker.sh",
+    // latex-workshop.texcount.args: Define list for latex workshop texcount args. Edit the value to change behavior.
+    "latex-workshop.texcount.args": [
+        "-relaxed",
+        "-merge",
+        "-inc",
+        "-total"
+    ],
     // latex-workshop.linting.chktex.convertOutput.column.chktexrcTabSize: Set numeric value for latex workshop linting chktex convert Output column chktexrc Tab Size. Edit the value to change behavior.
     "latex-workshop.linting.chktex.convertOutput.column.chktexrcTabSize": 2,
     // latex-workshop.linting.chktex.enabled: Enable or disable latex workshop linting chktex enabled. Edit the value to change behavior.

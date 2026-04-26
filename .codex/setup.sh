@@ -36,9 +36,13 @@ required_pkgs=(
   texlive-extra-utils
   texlive-fonts-extra
   texlive-fonts-recommended
+  texlive-generic-extra
+  texlive-humanities
+  texlive-koma-script
   texlive-lang-english
   texlive-latex-extra
   texlive-luatex
+  texlive-math-extra
   texlive-pictures
   texlive-science
 )

@@ -33,6 +33,7 @@
       "Added ai-context scripts (bash/PowerShell) and a VS Code task to build scratch/ai_context.zip with git diffs, log excerpts, and selected files for AI workflows.",
       "Release scripts now copy the dated PDF and then commit/push changes; push scripts no longer create release files.",
       "LaTeX Workshop points to root latexindent/chktex configs and uses absolute artifacts/out and artifacts/build paths for the tex/ layout.",
+      "2026-04-26: LaTeX Workshop formatting and word-count settings now invoke Docker-backed wrappers for latexindent and texcount using the local texlive/texlive image.",
       "Release PDFs are gitignored (release/*.pdf); releases now tag with release-YYYYMMDD and publish assets via GitHub CLI.",
       "Added VS Code tasks for AI context bundling and GitHub release publishing; removed scripts/manage.sh.",
       "Release scripts now generate changelog-style notes from CHANGELOG.md (tag section) with git-log fallback, and publish via GitHub CLI.",
