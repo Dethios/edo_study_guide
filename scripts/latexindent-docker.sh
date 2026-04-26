@@ -5,8 +5,8 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 IMAGE="${LATEX_DOCKER_IMAGE:-texlive/texlive:latest}"
 
 if ! command -v docker >/dev/null 2>&1; then
-    echo "[latexindent-docker] error: docker is not installed or not on PATH." >&2
-    exit 127
+    echo "[latexindent-docker] docker not available, falling back to native latexindent" >&2
+    exec latexindent "$@"
 fi
 
 if ! docker image inspect "$IMAGE" >/dev/null 2>&1; then

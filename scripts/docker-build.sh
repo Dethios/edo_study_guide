@@ -6,8 +6,8 @@ IMAGE="${LATEX_DOCKER_IMAGE:-texlive/texlive:latest}"
 CONTAINER_WORKDIR="/workdir"
 
 if ! command -v docker >/dev/null 2>&1; then
-    echo "[docker-build] error: docker is not installed or not on PATH." >&2
-    exit 127
+    echo "[docker-build] docker not available, falling back to native latex build" >&2
+    exec "$ROOT_DIR/scripts/build.sh" "$@"
 fi
 
 inspect_output=""

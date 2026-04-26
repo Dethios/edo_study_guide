@@ -6,8 +6,8 @@ IMAGE="${LATEX_DOCKER_IMAGE:-texlive/texlive:latest}"
 CALLER_DIR="$PWD"
 
 if ! command -v docker >/dev/null 2>&1; then
-    echo "[texcount-docker] error: docker is not installed or not on PATH." >&2
-    exit 127
+    echo "[texcount-docker] docker not available, falling back to native texcount" >&2
+    exec texcount "$@"
 fi
 
 if ! docker image inspect "$IMAGE" >/dev/null 2>&1; then
