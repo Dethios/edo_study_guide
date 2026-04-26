@@ -680,6 +680,39 @@
 \newacronym{lltm}{LLTM}{Long-Lead Time Material}
 \newacronym{fda}{FDA}{Food and Drug Administration}
 
+% --- Test and Evaluation ---
+
+\newacronym{te}{T\&E}{Test and Evaluation}
+\newacronym{dte}{DT\&E}{Developmental Test and Evaluation}
+\newacronym{ote}{OT\&E}{Operational Test and Evaluation}
+\newacronym{iote}{IOT\&E}{Initial Operational Test and Evaluation}
+\newacronym{fote}{FOT\&E}{Follow-on Operational Test and Evaluation}
+\newacronym{lfte}{LFT\&E}{Live Fire Test and Evaluation}
+\newacronym{optest}{OT}{Operational Test}
+\newacronym{dote}{DOT\&E}{Director, Operational Test and Evaluation}
+\newacronym{cvpa}{CVPA}{Cyber Vulnerability Penetration Assessment}
+\newacronym{vv}{V\&V}{Verification and Validation}
+\newacronym{vva}{VV\&A}{Verification, Validation and Accreditation}
+\newacronym{eoa}{EOA}{Early Operational Assessment}
+\newacronym{oa}{OA}{Operational Assessment}
+\newacronym{iotre}{IOT\&RE}{Initial Operational Test and Readiness Evaluation}
+\newacronym{coi}{COI}{Critical Operational Issue}
+\newacronym{moe}{MOE}{Measure of Effectiveness}
+\newacronym{mos}{MOS}{Measure of Suitability}
+\newacronym{mop}{MOP}{Measure of Performance}
+\newacronym{ctp}{CTP}{Critical Technical Parameter}
+\newacronym{tpm}{TPM}{Technical Performance Measure}
+\newacronym{cdt}{CDT}{Chief Developmental Tester}
+\newacronym{ldto}{LDTO}{Lead Developmental Test Organization}
+\newacronym{dasdte}{DASD(T\&E)}{Deputy Assistant Secretary of War for Test and Evaluation}
+\newacronym{comoptevfor}{COMOPTEVFOR}{Commander, Operational Test and Evaluation Force}
+\newacronym{afotec}{AFOTEC}{Air Force Operational Test and Evaluation Center}
+\newacronym{atec}{ATEC}{Army Test and Evaluation Command}
+\newacronym{mcotea}{MCOTEA}{Marine Corps Operational Test and Evaluation Activity}
+\newacronym{cotf}{COTF}{Commander, Operational Test and Evaluation Force}
+\newacronym{techeval}{TECHEVAL}{Technical Evaluation}
+\newacronym{opeval}{OPEVAL}{Operational Evaluation}
+
 % --- Execution & Reprogramming Controls ---
 
 \newacronym{aor}{AOR}{Accumulated Operating Result}

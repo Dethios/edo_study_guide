@@ -135,6 +135,192 @@ The \ac{temp} captures the integrated \ac{te} strategy, schedule, resources, and
 \subsection{Modeling and Simulation}
 Modeling and simulation provide the only practical way to explore the mission design space before hardware exists, rehearse high-risk scenarios (e.g., hypersonic raid defense), and extend sparse live-test data across the operational envelope~\autocite{edo-3-5-5-test-eval-part-i-2025}. Programs must document model purpose, pedigree, uncertainty, and \ac{vva} status in the \ac{temp}; accredited models can bound live-test needs, size instrumentation, and support decision-quality evaluations when safety, cost, or treaties limit destructive testing~\autocite{DoDI5000-89}. Mission engineering digital threads (system-of-systems simulations, campaign models) allow combined \ac{dt}/\ac{optest} teams to choreograph events, align data management plans, and feed statistical confidence calculations before and after live events.
 
+\subsection{MCA Testing Lifecycle}
+\ac{mca} programs must align \ac{te} activities with milestone decision points to provide defensible evidence for phase transitions~\autocite{DoDI5000-85}. DoDI~5000.98, effective December~9,~2024, consolidates \ac{ote} and \ac{lfte} policy previously in DoDI~5000.89, while DoDI~5000.89 remains the primary source for integrated \ac{te} and \ac{dte} policy~\autocite{DoDI5000-98,DoDI5000-89}. Cyber \ac{dte} policy is specified in DoDM~5000.103, effective February~25,~2026~\autocite{DoDM5000-103}.
+
+\begin{longtblr}[
+    label   = {tab:mca-te-lifecycle},
+    caption = {MCA Testing Lifecycle by Phase},
+    entry   = {MCA Testing Lifecycle by Phase},
+    remark{\tSource} = {\tabCite{DoDI5000-85,DoDI5000-98,DoDI5000-89,DoDM5000-103}}
+  ]
+  {colspec = {@{} X[0.85] X[1.6] X[1.4] X[1.1] X[1.3] @{}}}
+  \toprule
+  {Phase / Decision} & {Primary Test Emphasis} & {Evidence Needed} & {Decision Supported} & {Key Players} \\
+  \midrule
+  Pre-Milestone~A / \ac{msa} & Technology readiness, feasibility testing, early \ac{eoa} & \ac{trl}~6 evidence, \ac{aoa} data, initial \ac{temp} outline & \ac{mdd} approval, \ac{aoa} guidance & \ac{pm}, \ac{cdt}, warfare centers, \ac{ldto} \\
+  \midrule
+  \ac{tmrr} & Component and subsystem \ac{dte}, competitive prototyping, cyber \ac{dte} planning & \ac{pdr} completion, technology demonstration, \ac{cddv} inputs, \ac{temp} Part~I & Milestone~A / \ac{drfprd} & \ac{pm}, \ac{cdt}, \ac{ldto}, contractor, \ac{dasdte} \\
+  \midrule
+  Milestone~B / \ac{emd} entry & System-level \ac{dte}, integration testing, early \ac{oa}, cyber \ac{dte} execution & \ac{cdr} completion, \ac{temp} approval, \ac{apb} baselines, \ac{otrr} readiness & \ac{emd} authorization & \ac{mdauthority}, \ac{pm}, \ac{cdt}, OTA, \ac{dote} (covered programs) \\
+  \midrule
+  \ac{emd} & Full-up system \ac{dte}, \ac{lfte} planning, \ac{oa}, cyber \ac{dte} and \ac{ote} integration & Design stability, \ac{trr} success, \ac{oa} results, \ac{lfte} strategy, cyber accreditation & Milestone~C / \ac{lrip} decision & \ac{pm}, \ac{cdt}, OTA, \ac{dote}, \ac{ldto}, warfare centers \\
+  \midrule
+  Milestone~C / \ac{lrip} & \ac{iote}, \ac{lfte}, cyber \ac{ote}, interoperability certification & \ac{iote} adequacy, \ac{lfte} survivability/lethality, cyber resilience, JITC certification & \ac{frpdr} eligibility & \ac{mdauthority}, \ac{dote}, OTA, \ac{comoptevfor}, JITC, \ac{pm} \\
+  \midrule
+  \ac{iote} / \ac{lfte} & Independent operational evaluation, realistic threat testing, cyber adversarial assessment & Operational effectiveness/suitability, survivability/lethality, cyber mission assurance & Beyond-\ac{lrip} / \ac{frp} & \ac{dote}, OTA, \ac{comoptevfor}, \ac{pm}, \ac{mdauthority} \\
+  \midrule
+  \ac{frp} / Full Deployment & \ac{fote}, software increment testing, cyber update validation, sustainment verification & Corrective action validation, \ac{cpd} compliance, cyber resilience, supportability & Full deployment & \ac{mdauthority}, OTA, \ac{pm}, \ac{cdt} \\
+  \midrule
+  Post-fielding / \ac{fote} & \ac{fote}, software increments, cyber updates, reliability growth & Ongoing effectiveness, deficiency correction, cyber posture, fleet feedback & Sustainment decisions & \ac{pm}, OTA, \ac{cdt}, fleet users \\
+  \bottomrule
+\end{longtblr}
+
+\subsection{Test Type Matrix}
+Different test types answer distinct questions across the \ac{mca} lifecycle~\autocite{DoDI5000-89,DoDI5000-98,DoDM5000-103}.
+
+\begin{longtblr}[
+    label   = {tab:test-type-matrix},
+    caption = {Test Type Matrix for MCA Programs},
+    entry   = {Test Type Matrix for MCA Programs},
+    remark{\tSource} = {\tabCite{DoDI5000-89,DoDI5000-98,DoDM5000-103,DoDM5000-96}}
+  ]
+  {colspec = {@{} X[1.0] X[1.8] X[1.0] X[1.4] X[1.1] X[1.0] @{}}}
+  \toprule
+  {Test Type} & {Primary Question Answered} & {Typical Timing} & {Requirements / Planning Considerations} & {Major Players} & {MCA Decision Relevance} \\
+  \midrule
+  Contractor Test \& Evaluation (CT\&E) & Does the design meet contract specifications? & Continuous through \ac{emd} & Contract requirements, quality assurance, data rights & Contractor, \ac{pm} & Design maturity, risk reduction \\
+  \midrule
+  Developmental Test \& Evaluation (DT\&E) & Did we build the system right against technical requirements? & \ac{msa} through \ac{pd.phase} & \ac{temp} Part~II, \ac{sep}, \ac{ctp}/\ac{tpm} traceability & \ac{pm}, \ac{cdt}, \ac{ldto}, warfare centers & \ac{trr}, \ac{techeval}, \ac{otrr} readiness \\
+  \midrule
+  Integrated Testing & Can combined DT/OT data support multiple objectives efficiently? & \ac{emd} and \ac{pd.phase} & \ac{temp} integrated test plan, data sharing agreements, independence safeguards & \ac{cdt}, OTA, \ac{pm} & Schedule efficiency, data alignment \\
+  \midrule
+  Early Operational Assessment (EOA) & Is the operational concept viable for requirements refinement? & \ac{msa} / early \ac{tmrr} & \ac{eoa} plan, user involvement, representative scenarios & OTA, \ac{pm}, users & \ac{cdd} refinement, acquisition strategy \\
+  \midrule
+  Operational Assessment (OA) & Is the system operationally effective enough to proceed? & Late \ac{emd} / pre-\ac{lrip} & \ac{oa} plan, threat-representative environment, logistics support & OTA, \ac{pm}, fleet & Milestone~C / \ac{lrip} input \\
+  \midrule
+  Operational Test \& Evaluation (OT\&E) & Can warfighters accomplish missions with the system under realistic conditions? & \ac{pd.phase} / \ac{os.phase} & \ac{temp} OT annex, \ac{dote} approval (covered), operational realism & OTA, \ac{dote}, \ac{comoptevfor}, \ac{pm} & \ac{frp} decision, Title~10 adequacy \\
+  \midrule
+  Initial Operational Test \& Evaluation (IOT\&E) & Is the production-representative system ready for full deployment? & \ac{lrip} to \ac{frp} & \ac{iote} plan, \ac{dote} oversight, statistical confidence & OTA, \ac{dote}, \ac{comoptevfor} & Beyond-\ac{lrip} / \ac{frp} statutory gate \\
+  \midrule
+  Follow-on Operational Test \& Evaluation (FOT\&E) & Do corrective actions, software drops, or updates maintain operational effectiveness? & Post-\ac{frp} / major updates & \ac{fote} plan, deficiency validation, cyber update testing & OTA, \ac{pm}, fleet & Sustainment decisions, fielding authorization \\
+  \midrule
+  Live Fire Test \& Evaluation (LFT\&E) & Is the system survivable and lethal under realistic combat threats? & \ac{emd} through \ac{frp} & \ac{lfte} strategy, Title~10 waiver process, threat surrogates & \ac{dote}, \ac{pm}, test ranges & \ac{frp} statutory requirement (covered systems) \\
+  \midrule
+  Cybersecurity DT\&E & Is the system cyber-resilient against mission-focused threats throughout development? & Continuous \ac{dte} phases & DoDM~5000.103, \ac{cvpa}, \ac{rmf}, cyber \ac{temp} annex & \ac{pm}, cyber certifiers, \ac{cdt} & \ac{trr}, \ac{otrr}, ATO/CATO \\
+  \midrule
+  Cybersecurity OT\&E & Can the system maintain mission assurance under cyber attack in operational conditions? & \ac{iote} and \ac{fote} & Cyber \ac{ote} plan, adversarial assessment, mission thread testing & OTA, cyber certifiers, \ac{pm} & \ac{frp}, fielding, cyber accreditation \\
+  \midrule
+  Interoperability T\&E / JITC Certification & Can the system exchange and use information with joint/coalition/external systems? & \ac{emd} through \ac{frp} & Interface Control Documents, JITC test plan, certification timeline & JITC, \ac{pm}, interface owners & \ac{frp}, fielding, coalition operations \\
+  \midrule
+  Modeling \& Simulation / VV\&A & Can accredited models supplement or extend live-test evidence? & Lifecycle-wide, especially early and for \ac{lfte} & DoDM~5000.102, \ac{vva} plan, pedigree documentation & \ac{pm}, \ac{cdt}, \ac{dote}, model sponsors & \ac{lfte} waivers, \ac{ote} augmentation, cost savings \\
+  \bottomrule
+\end{longtblr}
+
+\subsection{ACAT-Level Differences}
+\ac{acat} level affects oversight intensity, \ac{mdauthority} level, required documentation, approval authority, and reporting pathways~\autocite{DoDI5000-85}. Non-\ac{dote} oversight does not eliminate the requirement for adequate tailored \ac{te}; statutory, cyber, interoperability, and \ac{lfte} requirements apply regardless of \ac{acat}~\autocite{USC-10-2399,USC-10-2366,DoDI5000-90}.
+
+\begin{longtblr}[
+    label   = {tab:acat-te-differences},
+    caption = {ACAT-Level Differences for Test and Evaluation},
+    entry   = {ACAT-Level Differences for Test and Evaluation},
+    remark{\tSource} = {\tabCite{DoDI5000-85,DoDI5000-89,DoDI5000-98}}
+  ]
+  {colspec = {@{} X[0.7] X[1.4] X[1.2] X[1.3] X[1.2] X[1.3] @{}}}
+  \toprule
+  {ACAT Level} & {Oversight Intensity} & {MDA Level} & {Required Documentation} & {Approval Authority} & {Reporting} \\
+  \midrule
+  ACAT~ID & Highest; \ac{dote} statutory oversight & \ac{dae} (USW(A\&S)) & Full \ac{temp}, \ac{dote} reports, SAR, UCR & \ac{dote} approves \ac{temp} and OT plans & Quarterly DAES, SAR, UCR, \ac{dote} reports to Congress \\
+  \midrule
+  ACAT~IC & High; \ac{dote} oversight for covered programs & \ac{cae} (ASN(RD\&A)) & Full \ac{temp}, \ac{dote} reports (if covered), SAR, UCR & \ac{cae} approves \ac{temp}; \ac{dote} approves OT (covered) & Quarterly DAES, SAR, UCR, \ac{dote} reports (if covered) \\
+  \midrule
+  ACAT~IB & Moderate; tailored \ac{dote} oversight & \ac{cae} or designee & Tailored \ac{temp}, DAES & \ac{cae} or designee approves \ac{temp} & DAES (if designated) \\
+  \midrule
+  ACAT~II & Moderate; Service/component oversight & \ac{cae} or PEO & Tailored \ac{temp} & Component Acquisition Executive or PEO & Component reporting \\
+  \midrule
+  ACAT~III / IV & Low; tailored oversight & \ac{cae}, PEO, or SYSCOM & Tailored \ac{temp} or T\&E Strategy & Designated \ac{mdauthority} & Minimal reporting \\
+  \midrule
+  Non-DOT&E oversight & Tailored; Service/component channels & Component \ac{mdauthority} & Tailored \ac{temp} or T\&E Strategy & Component Acquisition Executive or designee & Component reporting; statutory requirements still apply \\
+  \bottomrule
+\end{longtblr}
+
+\note{Board trap: Non-\ac{dote} oversight does not mean no formal \ac{te}. It means \ac{te} is tailored and approved through Service/component channels unless statutory, cyber, interoperability, \ac{lfte}, or other oversight requirements apply~\autocite{DoDI5000-85,DoDI5000-90}.}
+
+\subsection{Major Players and Responsibilities}
+\ac{te} success depends on clear role delineation and collaboration across the acquisition enterprise~\autocite{DoDI5000-89,DoDI5000-98}.
+
+\begin{longtblr}[
+    label   = {tab:te-players},
+    caption = {Major Test and Evaluation Players and Responsibilities},
+    entry   = {Major Test and Evaluation Players and Responsibilities},
+    remark{\tSource} = {\tabCite{DoDI5000-89,DoDI5000-98,DoDM5000-103,OPTEVFOR-official}}
+  ]
+  {colspec = {@{} X[1.0] X[1.6] X[1.2] X[1.5] @{}}}
+  \toprule
+  {Player} & {Role} & {Controls / Approves} & {Does Not Control} \\
+  \midrule
+  Program Manager (PM) & Overall program responsibility; integrates \ac{te} into acquisition strategy & \ac{temp}, test resources, contractor test plans, deficiency resolution & Independent OT judgments, \ac{dote} reports, statutory certification decisions \\
+  \midrule
+  Milestone Decision Authority (MDA) & Approves phase entry, \ac{temp}, and acquisition strategy & Milestone decisions, \ac{apb}, \ac{temp} approval, \ac{acat} designation & Test execution details, independent OT findings, technical baseline content \\
+  \midrule
+  Chief Developmental Tester (CDT) & Orchestrates integrated \ac{dte} schedule, data requirements, and deficiency resolution & Integrated test plan, \ac{dte} resource allocation, deficiency tracking & OT plans, OT execution, \ac{dote} oversight, certification authority \\
+  \midrule
+  T\&E WIPT / Integrated Test Team & Coordinates \ac{te} planning and execution across stakeholders & Test schedules, data sharing, cross-discipline coordination & Milestone decisions, budget authority, independent OT independence \\
+  \midrule
+  DOT&E & Independent statutory oversight for covered programs; reports to \ac{secdef} and Congress & OT plan approval, \ac{lfte} strategy approval, OT adequacy assessment & DT planning, \ac{dte} execution, certification decisions, program acquisition strategy \\
+  \midrule
+  USD(R\&E) / DTE\&A & Sets \ac{te} policy, designates \acp{cdt}, charters \acp{ldto} & \ac{te} policy, \ac{cdt} designations, \ac{ldto} charters, test infrastructure & Individual program \ac{temp} content, OT execution, milestone decisions \\
+  \midrule
+  Operational Test Agency (OTA) & Plans and executes independent \ac{ote} & OT plan, OT execution, OT report, \ac{otrr} certification & DT planning, contractor testing, program acquisition strategy, certification decisions \\
+  \midrule
+  OPTEVFOR (Navy) & Navy independent operational test agency for maritime systems & Navy OT plans, OT execution, OT reports, \ac{otrr} certification & DT planning, SYSCOM engineering decisions, certification decisions beyond OT \\
+  \midrule
+  JITC & Joint interoperability certification for information systems & Interoperability test plans, certification decisions & OT execution, DT planning, program acquisition strategy \\
+  \midrule
+  Requirements Sponsor / User Community / Fleet & Defines operational context, validates mission effectiveness & \ac{icd}/\ac{cdd}, \ac{conops}, operational scenarios, user feedback & Test planning, technical specifications, certification details \\
+  \midrule
+  SYSCOM Developmental Test Organizations & Executes \ac{dte}, provides labs/ranges/test infrastructure & DT execution, range scheduling, instrumentation, certification testing & OT planning, OT execution, acquisition strategy \\
+  \midrule
+  Contractor & Executes CT\&E, provides test articles, supports \ac{dte} & Contractor test plans, test article delivery, CT\&E data & OT plans, OT execution, independent OT judgments, \ac{dote} oversight \\
+  \midrule
+  Threat / Intelligence Community & Provides threat data, intelligence support, and threat-representative targets & Threat assessments, threat surrogates, intelligence products & Test planning, test execution, certification decisions \\
+  \midrule
+  Certification Authorities (Cyber, Interoperability, Safety, Airworthiness, Spectrum, Nuclear Surety) & Issue statutory or regulatory certifications & Certification criteria, certification decisions, ATO/CATO & Test planning, test execution, acquisition strategy \\
+  \bottomrule
+\end{longtblr}
+
+\subsection{Navy-Specific Test and Evaluation Context}
+Navy \ac{te} execution reflects maritime operational requirements, shipbuilding constraints, and the distributed nature of naval forces~\autocite{edo-3-5-6-test-eval-part-ii-2025,OPTEVFOR-official}.
+
+\begin{description}
+  \item[\textbf{\ac{comoptevfor} as Navy OTA.}] \ac{comoptevfor} is the Navy independent operational test agency, responsible for planning and executing \ac{ote} for maritime systems~\autocite{OPTEVFOR-official}. \ac{comoptevfor} provides independent operational effectiveness and suitability assessments to support \ac{frp} decisions and reports to \ac{dote} for covered programs. The \ac{comoptevfor} commander retains authority to recommend restricted Fleet release if Category~I deficiencies remain~\autocite{edo-3-5-6-test-eval-part-ii-2025}.
+  \item[\textbf{SYSCOM Support for DT.}] NAVSEA, NAVWAR, and NAVAIR SYSCOMs support \ac{dte} through warfare centers, engineering sites, labs, ranges, and test infrastructure~\autocite{edo-3-5-5-test-eval-part-i-2025}. SYSCOMs provide technical expertise, instrumentation, certification testing (airworthiness, safety, information assurance, weapon certification), and integration support. SYSCOM developmental test organizations execute \ac{dte} under \ac{cdt} and \ac{ldto} direction but do not replace independent OT.
+  \item[\textbf{OPNAV / Resource Sponsors.}] OPNAV N9 warfare-systems sponsors help define requirements, operational context, and portfolio tradeoffs but do not replace independent OT~\autocite{edo-3-5-6-test-eval-part-ii-2025}. N94 is the Test \& Evaluation office within the N9 warfare-systems sponsor family, but N94 is not the sole owner of all Navy testing. N94 coordinates \ac{te} policy and resource alignment across the Navy \ac{te} enterprise.
+  \item[\textbf{Interoperability Coordination.}] For systems requiring interoperability with joint or coalition partners, programs must coordinate early with JITC and interface owners to ensure certification timelines align with \ac{frp} decisions~\autocite{JITC-interoperability}. Navy-specific interface control working groups (ICWGs) support this coordination.
+  \item[\textbf{Cyber Testing Integration.}] For cyber-heavy systems, cyber \ac{dte} and cyber \ac{ote} must be integrated early in the lifecycle, not deferred until \ac{iote}~\autocite{DoDM5000-103,DoDI5000-90}. Navy cyber testing leverages NIWC Atlantic and Pacific, FCC, and NCDOC for cyber DT\&E and OT\&E support.
+\end{description}
+
+\subsection{Common Board Traps}
+Avoid these high-yield misconceptions when discussing \ac{mca} testing~\autocite{DoDI5000-85,DoDI5000-89,DoDI5000-98,DoDM5000-103}.
+
+\begin{longtblr}[
+    label   = {tab:te-traps},
+    caption = {Common Test and Evaluation Board Traps},
+    entry   = {Common Test and Evaluation Board Traps},
+    remark{\tSource} = {\tabCite{DoDI5000-85,DoDI5000-89,DoDI5000-98,DoDM5000-103}}
+  ]
+  {colspec = {@{} X[1.8] X[2.2] @{}}}
+  \toprule
+  {Trap} & {Correct Understanding} \\
+  \midrule
+  DT\&E proves technical performance; OT\&E proves operational mission performance & \ac{dte} answers ``did we build the system right'' against technical requirements; \ac{ote} answers ``did we build the right capability'' by validating mission effectiveness and suitability under realistic conditions~\autocite{DoDI5000-89,DoDI5000-98} \\
+  \midrule
+  Integrated testing erases IOT\&E & Combined testing can collect shared data and improve efficiency, but it does not eliminate the need for independent \ac{iote} with operational realism, adequate sample size, and statistical confidence before \ac{frp}~\autocite{DoDI5000-98} \\
+  \midrule
+  Contractor testing substitutes for independent operational testing & Contractor Test \& Evaluation (CT\&E) is essential for design maturity but is not independent OT; OTA must conduct \ac{iote} with operational users and threat-representative scenarios~\autocite{DoDI5000-89} \\
+  \midrule
+  ACAT level changes the need for adequate evidence & \ac{acat} level changes oversight intensity and approval pathways, but all programs require adequate \ac{te} evidence for milestone decisions; statutory, cyber, interoperability, and \ac{lfte} requirements apply regardless of \ac{acat}~\autocite{DoDI5000-85,DoDI5000-90} \\
+  \midrule
+  Cyber testing is a late checklist & Cyber \ac{dte} and cyber \ac{ote} must be integrated throughout the lifecycle, starting in \ac{msa} and continuing through \ac{emd}, \ac{iote}, and \ac{fote}; DoDM~5000.103 mandates lifecycle-wide cyber testing~\autocite{DoDM5000-103,DoDI5000-90} \\
+  \midrule
+  Interoperability testing is just paperwork certification & Interoperability must be demonstrated in representative operational context through JITC testing, not just documented through interface specifications; certification requires operational validation~\autocite{JITC-interoperability} \\
+  \midrule
+  LFT\&E applies only to specific systems & Title~10 requires \ac{lfte} for covered systems (crew-occupied platforms, combat vehicles, major munitions, missile defense components) before beyond-\ac{lrip} decisions; waivers require \ac{secdef} approval and congressional notification~\autocite{USC-10-2366,DoDI5000-98} \\
+  \midrule
+  Modeling and simulation requires no validation & Models used for decision-quality evaluations require appropriate \ac{vva} per DoDM~5000.102; unvalidated models cannot substitute for required live-test evidence without appropriate accreditation~\autocite{DoDM5000-102} \\
+  \bottomrule
+\end{longtblr}
+
 \subsection{Navy Overlays and Integration}
 \ac{opnavinst}~3960-series policy (captured in the coursebook) requires Navy programs to plan \ac{techeval} (led by the engineering agent) before \ac{opeval}, to obtain \ac{opnav} \ac{n9} concurrence on test objectives that bear on Fleet introduction risk, and to route \ac{otrr} packages through \ac{comoptevfor} for certification that logistics, training, and safety enablers are in place~\autocite{edo-3-5-6-test-eval-part-ii-2025}. First-of-class ships also execute Builder's and Acceptance Trials, \ac{insurv} events, and dedicated combat system Ship Qualification Trials that integrate with \ac{techeval}/\ac{opeval} data packages. Navy \ac{cotf} retains authority to recommend restricted Fleet release if Category~I deficiencies remain; those actions feed the Key Roles appendix update for \ac{dasdte}, \ac{cdt}, and \ac{cotf} responsibilities.
 
