@@ -4,6 +4,9 @@ This repository builds the Navy Engineering Duty Officer (EDO) Acquisition Tutor
 study guide. The LaTeX sources live in `tex/`, while build outputs and aux files
 live under `artifacts/` at the repo root.
 
+Read `AGENTS.md` before content or workflow edits. It contains the current
+source-recency, citation, acronym, and validation rules for this project.
+
 ## Repo layout
 
 - `tex/` - LaTeX sources (chapters, templates, assets, TikZ)
@@ -16,6 +19,7 @@ live under `artifacts/` at the repo root.
 - `scripts/` - build/format/release helpers (bash + PowerShell)
 - `docs/reference/` - imported manuals, style assets, and one-off supporting material
 - `docs/archive/` - historical setup and migration notes
+- `project_export.json` - project memory/database snapshot
 
 ## Build
 
@@ -28,7 +32,13 @@ Bash (WSL/Linux/macOS):
 Docker using the already-pulled `texlive/texlive` image:
 
 ```bash
-./scripts/docker-build.sh
+./scripts/docker-build.sh tex/main.tex
+```
+
+Clean Docker build:
+
+```bash
+./scripts/docker-build.sh --clean tex/main.tex
 ```
 
 Direct `docker run` equivalent:
