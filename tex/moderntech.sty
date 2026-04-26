@@ -112,7 +112,7 @@
     acronym,
     nonumberlist,
     nogroupskip,
-%   shortcuts=ac, % Revert to 'ac' for shortcuts
+    %   shortcuts=ac, % Revert to 'ac' for shortcuts
     nopostdot,
     toc             % add entries to the Table of Contents (KOMA-friendly)
 ]{glossaries-extra}
@@ -137,7 +137,7 @@
 % so it doesn't inject a visible leading interword glue node in \gls output.
 \AtBeginDocument{%
     \@ifundefined{glsencapwrcontent}{}{%
-        \renewcommand*{\glsencapwrcontent}[1]{\setbox\z@=\hbox{$\m@th\null$#1}}%
+        \renewcommand*{\glsencapwrcontent}[1]{\setbox\z@=\hbox{\(\m@th\null\)#1}}%
     }%
 }
 % NOTE: glossaries-extra emits a stray leading space in \glslink; avoid it.
@@ -170,7 +170,7 @@
 \DeclareRobustCommand{\silentglsadd}[1]{\begingroup\setbox\z@=\hbox{\glsadd{#1}}\endgroup}%
 
 \DeclareDocumentCommand{\edoAcrLink}{m m}{%
-\@ifundefined{@glslink}{\@ifundefined{glslink}{#2}{\glslink{#1}{#2}}}{\@glslink{\glolinkprefix\glsdetoklabel{#1}}{#2}}%
+    \@ifundefined{@glslink}{\@ifundefined{glslink}{#2}{\glslink{#1}{#2}}}{\@glslink{\glolinkprefix\glsdetoklabel{#1}}{#2}}%
 }%
 % Guard against legacy/variant wrappers that may leak leading/trailing space
 % tokens in acronym short forms. Keep output stable as [DoW], not [ DoW ].

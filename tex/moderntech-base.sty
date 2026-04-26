@@ -287,8 +287,8 @@
 \newlength{\TargetMargin}
 \setlength{\TargetMargin}{0.5in}
 \areaset
-  {\dimexpr\paperwidth  - 2\TargetMargin\relax}
-  {\dimexpr\paperheight - 2\TargetMargin\relax}
+{\dimexpr\paperwidth  - 2\TargetMargin\relax}
+{\dimexpr\paperheight - 2\TargetMargin\relax}
 
 % Header / footer spacing
 \setlength{\headheight}{20pt}
@@ -341,7 +341,7 @@
 \NewDocumentCommand{\moderntech@toc@pagenumber}{}{\normalfont\color{Blue}}
 
 \NewDocumentCommand{\moderntechsetupTOC}{}{%
-\KOMAoptions{toc=graduated}%
+  \KOMAoptions{toc=graduated}%
   \DeclareTOCStyleEntry[
     numwidth=4.4em,
     pagenumberbox=\mbox,
@@ -412,14 +412,14 @@
   \pagestyle{scrheadings}
 }
 \NewDocumentCommand{\SetMainMatterStyle}{}{%
-\clearpairofpagestyles
-\automark{section}
-\ihead{\sffamily\itshape\color{SteelGray}\leftmark}
-\ohead{%
-  \sffamily\color{SteelGray}%
-  \pagemark%
-}%
-\pagestyle{scrheadings}
+  \clearpairofpagestyles
+  \automark{section}
+  \ihead{\sffamily\itshape\color{SteelGray}\leftmark}
+  \ohead{%
+    \sffamily\color{SteelGray}%
+    \pagemark%
+  }%
+  \pagestyle{scrheadings}
 }
 
 \NewDocumentCommand{\SetBackMatterStyleA}{}{%
@@ -581,7 +581,7 @@
 % * Bibliography (biblatex/biber; IEEE numeric)
 % =============================
 \ifmoderntech@ieeebib
-\RequirePackage[backend=biber,style=ieee,defernumbers=true,sorting=none,hyperref=false,backref=false]{biblatex}
+  \RequirePackage[backend=biber,style=ieee,defernumbers=true,sorting=none,hyperref=false,backref=false]{biblatex}
   \IfFileExists{\moderntech@bibresource}{}{%
     \IfFileExists{bib/\moderntech@bibresource}{%
       \renewcommand{\moderntech@bibresource}{bib/\moderntech@bibresource}%
@@ -666,23 +666,23 @@
 % Portable shell-escape detection (pdfTeX/LuaTeX/XeTeX)
 \newif\ifmt@shellescape
 \begingroup
-  \ifcsname shellescape\endcsname
-    \ifnum\shellescape>0\relax \global\mt@shellescapetrue \else \global\mt@shellescapefalse \fi
+\ifcsname shellescape\endcsname
+  \ifnum\shellescape>0\relax \global\mt@shellescapetrue \else \global\mt@shellescapefalse \fi
+\else
+  \ifcsname pdfshellescape\endcsname
+    \ifnum\pdfshellescape>0\relax \global\mt@shellescapetrue \else \global\mt@shellescapefalse \fi
   \else
-    \ifcsname pdfshellescape\endcsname
-      \ifnum\pdfshellescape>0\relax \global\mt@shellescapetrue \else \global\mt@shellescapefalse \fi
-    \else
-      \ifdefined\directlua
-        \ifnum\directlua{tex.print(status.shell_escape or 0)} > 0\relax
-          \global\mt@shellescapetrue
-        \else
-          \global\mt@shellescapefalse
-        \fi
+    \ifdefined\directlua
+      \ifnum\directlua{tex.print(status.shell_escape or 0)} > 0\relax
+        \global\mt@shellescapetrue
       \else
         \global\mt@shellescapefalse
       \fi
+    \else
+      \global\mt@shellescapefalse
     \fi
   \fi
+\fi
 \endgroup
 
 \NewDocumentCommand{\moderntech@enableminted}{}{%
@@ -853,38 +853,38 @@
   % LuaLaTeX worker compile; inherits shell-escape check from parent build.
   \tikzset{
     external/system call={
-      lualatex --cnf-line=openout_any=a \tikzexternalcheckshellescape
-      -halt-on-error -interaction=batchmode
-      -jobname "\image" "\texsource"
-    }
+        lualatex --cnf-line=openout_any=a \tikzexternalcheckshellescape
+        -halt-on-error -interaction=batchmode
+        -jobname "\image" "\texsource"
+      }
   }
   % --- end TikZ externalization ---
   \tikzset{
     every picture/.style = {>=Latex, line cap=round, line join=round},
     mt node/.style = {font=\sffamily\small\color{BodyText}, draw=Blue, rounded corners=2pt,
-                      inner xsep=6pt, inner ysep=4pt, align=left},
+        inner xsep=6pt, inner ysep=4pt, align=left},
     mt title/.style = {font=\sffamily\bfseries\color{Blue}, draw=Blue, rounded corners=3pt, fill=Blue!10, inner xsep=8pt, inner ysep=6pt, align=center},
     mt line/.style = {Blue, very thick},
     mt thin/.style = {Blue, semithick},
   }
   \tikzset{
     edo/.style = {
-      font=\sffamily\small\color{BodyText},
-      draw=Modern,
-      rounded corners=2pt,
-      inner xsep=6pt,
-      inner ysep=4pt,
-      align=left
-    },
+        font=\sffamily\small\color{BodyText},
+        draw=Modern,
+        rounded corners=2pt,
+        inner xsep=6pt,
+        inner ysep=4pt,
+        align=left
+      },
     edo-title/.style = {
-      font=\sffamily\bfseries\color{Blue},
-      draw=Modern,
-      rounded corners=3pt,
-      fill=Blue!12,
-      inner xsep=8pt,
-      inner ysep=6pt,
-      align=center
-    },
+        font=\sffamily\bfseries\color{Blue},
+        draw=Modern,
+        rounded corners=3pt,
+        fill=Blue!12,
+        inner xsep=8pt,
+        inner ysep=6pt,
+        align=center
+      },
     edo-line/.style = {Modern, very thick},
     edo-thin/.style = {Modern, semithick},
     belowx/.style  args={#1 of #2}{below=#1 of #2},
