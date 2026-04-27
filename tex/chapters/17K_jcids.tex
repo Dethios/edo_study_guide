@@ -13,6 +13,7 @@
 \subsection{Summary}
 \begin{description}
   \item[\textbf{Decision support triad.}] \ac{jcids} (requirements), \ac{ppbe} (funding), and the \ac{das} (materiel) operate continuously and must stay aligned to enable timely decisions~\autocite{edo-3-3-3-jcids-2025}.
+  \item[\textbf{Current JFRP note.}] Current Joint Staff guidance cancels the 2021 \ac{jcids} manual and rescinds/replaces the \ac{jcids} process with the Joint Force Requirements Process (JFRP); this section preserves \ac{jcids} terminology for legacy EDO lecture context and calls out current JFRP governance where it changes the answer~\autocite{CJCSM5123-01}.
   \item[\textbf{Purpose.}] \ac{jcids} ensures the joint warfighter receives required capabilities, institutionalizes joint needs, and initiates the acquisition management process~\autocite{edo-3-3-3-jcids-2025}.
   \item[\textbf{CBA foundation.}] \acp{cba} identify capability gaps and recommend materiel or non-materiel solutions based on operational risk and feasibility~\autocite{edo-3-3-3-jcids-2025}.
   \item[\textbf{Capability documents.}] \ac{icd} and \ac{cdd} (with \ac{cdd} updates) align to acquisition phases and provide validated requirements for program execution~\autocite{edo-3-3-3-jcids-2025}.
@@ -89,10 +90,12 @@
   \item[\textbf{Updates.}] Can be updated near end of development to refine production attributes, quantities, and subsequent increments~\autocite{edo-3-3-3-jcids-2025}.
 \end{description}
 
-\subsection{CDD Update and Legacy CPD}
+\subsection{CDD Update and Production Requirements}
 \begin{description}
   \item[\textbf{Policy change.}] The 2018 \ac{jcids} manual removed the requirement for a separate \ac{cpd}; a \ac{cdd} update supports production needs~\autocite{edo-3-3-3-jcids-2025}.
   \item[\textbf{Legacy CPD intent.}] Defined capabilities for Production and Deployment, refined \ac{cdd} thresholds/objectives, and was approved before Milestone~C after \ac{cdr}~\autocite{edo-3-3-3-jcids-2025}.
+  \item[\textbf{Legacy production role.}] A legacy \ac{cpd} defined the production baseline requirements used for test and evaluation, establishing the threshold performance attributes that had to be demonstrated before Milestone~C~\autocite{DoDI5000-85,edo-3-3-3-jcids-2025}.
+  \item[\textbf{CDD update function.}] Modern \ac{cdd} updates incorporate production attributes, quantities, and supportability considerations that traditionally appeared in separate \ac{cpd} documents~\autocite{edo-3-3-3-jcids-2025}.
 \end{description}
 
 \subsection{JCIDS Within the Acquisition Framework}
@@ -125,6 +128,38 @@
   \item[\textbf{Interoperability certification.}] Performs IT and national security system interoperability and supportability certifications; \ac{jitc} issues certification before full-rate production~\autocite{edo-3-3-3-jcids-2025}.
 \end{description}
 
+\subsection{Key Performance Parameters and Performance Attributes}
+\begin{description}
+  \item[\textbf{Definition.}] \acp{kpp} and related performance attributes are system attributes critical to delivering effective capability and are documented in the \ac{cdd} and \ac{apb}~\autocite{DoDI5000-85,edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Current governance.}] Under the current JFRP, the \ac{jroc} remains the senior joint requirements body, but Joint Staff review is focused on Joint Force Design, Joint Capability Integration, Combatant Command requirements, and by-exception reviews; Service and Component requirements are not automatically held for legacy \ac{jcids} validation before acquisition execution~\autocite{CJCSM5123-01}.
+  \item[\textbf{Traceability.}] Programs still need clean traceability from validated capability needs to \acp{kpp}, \acp{ksa}, other performance attributes, verification methods, and decision evidence~\autocite{DoDI5000-85,edo-3-3-3-jcids-2025}.
+\end{description}
+
+\subsection{KPP vs KSA vs APA Comparison}
+\begin{longtblr}[
+    label   = {tab:kpp-ksa-apa-comparison},
+    caption = {KPP vs KSA vs APA Comparison},
+    entry   = {KPP vs KSA vs APA Comparison},
+    remark{\tSource} = {\tabCite{CJCSM5123-01,DoDI5000-85,edo-3-3-3-jcids-2025}}
+  ]
+  {colspec = {@{} X[1.2] X[2.0] X[1.8] X[2.2] X[1.8] @{}}}
+  \toprule
+  {Parameter Type} & {Definition} & {Governance Level} & {Impact if Unmet} & {Navy Example} \\
+  \midrule
+  \textbf{Key Performance Parameter (KPP)} & Critical capability attribute tied to the validated capability need and acquisition baseline & JROC/JFRP review when tied to joint-force requirements or by-exception joint impact; Component validation for Service-specific programs & Program stoppage; statutory reporting required; Milestone decisions blocked & Illustrative Aegis Weapon System example: defended-area detection coverage sufficient to support raid engagement timelines \\
+  \midrule
+  \textbf{Key System Attribute (KSA)} & Important performance attribute that supports KPP achievement and operational suitability & Joint Staff or functional review where the attribute has joint/interoperability impact; Component validation for program-specific attributes & Interoperability certification delays; reduced operational effectiveness; potential re-baseline & Illustrative Aegis Weapon System example: identification data exchange responsive enough to support engagement coordination \\
+  \midrule
+  \textbf{Additional Performance Attribute (APA)} & Performance attribute required for full system capability but not critical enough for KPP & Component validation; documented in CDD/APB & Reduced test priority; capability gaps if not met; schedule impacts & Illustrative Aegis Weapon System example: electronic-protection behavior that preserves mission effectiveness in representative threat environments \\
+  \bottomrule
+\end{longtblr}
+
+\subsection{IT Acquisition Requirements}
+\begin{description}
+  \item[\textbf{Net-Ready attribute.}] Documented as a \ac{kpp} or \ac{ksa} to ensure IT supports operations, is manageable on networks, and exchanges information effectively~\autocite{edo-3-3-3-jcids-2025}.
+  \item[\textbf{Architecture compliance.}] Systems must align to \ac{dodaf}; architecture views are mandatory parts of the \ac{cdd} and must be consistent with \ac{disr} standards~\autocite{edo-3-3-3-jcids-2025}.
+\end{description}
+
 \subsection{Importance of Interoperability}
 \begin{description}
   \item[\textbf{Definition.}] Ability of systems, units, or forces to provide and accept services and operate effectively with U.S. and coalition partners~\autocite{edo-3-3-3-jcids-2025}.
@@ -132,11 +167,6 @@
   \item[\textbf{Cost discipline.}] Stovepiped systems are costly and hinder joint operations; interoperability is a core \ac{jcids} validation priority~\autocite{edo-3-3-3-jcids-2025}.
 \end{description}
 
-\subsection{IT Acquisition Requirements}
-\begin{description}
-  \item[\textbf{Net-Ready attribute.}] Documented as a \ac{kpp} or \ac{ksa} to ensure IT supports operations, is manageable on networks, and exchanges information effectively~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Architecture compliance.}] Systems must align to \ac{dodaf}; architecture views are mandatory parts of the \ac{cdd} and must be consistent with \ac{disr} standards~\autocite{edo-3-3-3-jcids-2025}.
-\end{description}
 
 \subsection{Validation Authority}
 \begin{description}
