@@ -63,7 +63,7 @@
 \subsection{Commercial Item Impacts}
 \begin{description}
   \item[\textbf{Government control limits.}] Design details and full \ac{tdp} may not be available, complicating manuals and sustainment~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
-  \item[\textbf{Interfaces and support.}] Interfaces must be carefully defined and support strategies must address commercial repair and updates~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Interfaces and support.}] Interfaces must be carefully defined, and support strategies must address commercial repair and updates~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
   \item[\textbf{Test strategy.}] Tests must ensure performance at both item and integrated levels~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
 \end{description}
 
@@ -126,22 +126,24 @@
     entry   = {MCA Technical Reviews by Phase},
     remark{\tSource} = {\tabCite{DoDI5000-88,DoD-EngineeringDefenseSystemsGuidebook-2024,DoD-TEEnterpriseGuidebook-2022}}
   ]
-  {colspec = {@{} X[0.7] X[1.15] X[1.25] X[3.2] @{}}}
+  {colspec = {@{} l X[1.15] X[1.25] X[3.2] @{}}}
   \toprule
-  {Review} & {Typical MCA phase} & {Primary baseline/readiness focus} & {Board-prep purpose} \\
+  {Review} & {Typical MCA phase}                                  & {Primary baseline/readiness focus}                    & {Board-prep purpose}                                                                                                                                                            \\
   \midrule
-  ASR & Materiel Solution Analysis & Preferred materiel solution & Confirms the preferred materiel solution is technically feasible, affordable, and understood well enough to support a draft performance specification. \\
-  SRR & Technology Maturation and Risk Reduction & System requirements & Confirms the developer and government share a clear, testable, traceable understanding of system performance requirements. \\
-  SFR & Technology Maturation and Risk Reduction & Functional baseline & Confirms the functional architecture satisfies performance requirements and supports preliminary design with acceptable risk. \\
-  PDR & Technology Maturation and Risk Reduction, normally before Milestone B & Allocated baseline & Confirms the preliminary design and architecture are mature enough to proceed to detailed design and support the Milestone B decision. \\
-  CDR & Engineering and Manufacturing Development & Initial product baseline & Confirms detailed design stability, expected performance, affordability posture, and readiness to start coding, fabrication, integration, and test. \\
-  TRR & Engineering and Manufacturing Development, before major test events & Test readiness & Confirms the test article, procedures, instrumentation, resources, environment, safety posture, and success criteria are ready for the planned test. \\
-  SVR/FCA & Late Engineering and Manufacturing Development & Verification against functional or allocated baseline & Verifies the system or configuration item satisfies approved requirements and that discrepancies are understood before production or operational test decisions. \\
-  PRR & Late Engineering and Manufacturing Development before LRIP; repeated in Production and Deployment when needed & Production readiness & Confirms producibility, quality, manufacturing planning, supply chain, facilities, tooling, and production risk are acceptable for LRIP or FRP. \\
-  OTRR & Production and Deployment, before IOT\&E, OA, or FOT\&E & Operational test readiness & Certifies that the production-representative configuration, reliability, maintainability, supportability, hazards, resources, and test planning are ready for operational test. \\
-  PCA & Production and Deployment, after successful OT\&E and before FRP decision & Final product baseline & Audits the as-built production-representative item against its technical documentation, resolves discrepancies, and establishes the final product baseline. \\
+  ASR      & MSA                                                  & Preferred material solution                           & Confirms the preferred material solution is technically feasible, affordable, and understood well enough to support a draft performance specification.                          \\
+  SRR      & TMRR                                                 & System requirements                                   & Confirms the developer and government share a clear, testable, traceable understanding of system performance requirements.                                                      \\
+  SFR      & TMRR                                                 & Functional baseline                                   & Confirms the functional architecture satisfies performance requirements and supports preliminary design with acceptable risk.                                                   \\
+  PDR      & TMRR, normally before Milestone B                    & Allocated baseline                                    & Confirms the preliminary design and architecture are mature enough to proceed to detailed design and support the Milestone B decision.                                          \\
+  CDR      & EMD                                                  & Initial product baseline                              & Confirms detailed design stability, expected performance, affordability posture, and readiness to start coding, fabrication, integration, and test.                             \\
+  TRR      & EMD, before major test events                        & Test readiness                                        & Confirms the test article, procedures, instrumentation, resources, environment, safety posture, and success criteria are ready for the planned test.                            \\
+  SVR/FCA  & EMD                                                  & Verification against functional or allocated baseline & Verifies the system or configuration item satisfies approved requirements and that discrepancies are understood before production or operational test decisions.                \\
+  PRR      & EMD before LRIP; repeated in P\&D when needed        & Production readiness                                  & Confirms producibility, quality, manufacturing planning, supply chain, facilities, tooling, and production risk are acceptable for LRIP or FRP.                                 \\
+  OTRR     & P\&D, before IOT\&E, OA, or FOT\&E                   & Operational test readiness                            & Certifies that the production-representative configuration, reliability, maintainability, supportability, hazards, resources, and test planning are ready for operational test. \\
+  PCA      & P\&D, after successful OT\&E and before FRP decision & Final product baseline                                & Audits the as-built production-representative item against its technical documentation, resolves discrepancies, and establishes the final product baseline.                     \\
   \bottomrule
 \end{longtblr}
+
+Please see \Fig{fig:mca_schedule_placeholder} for a visual showing when each of the technical reviews are held.
 
 \note{For a board answer, lead with the baseline progression: requirements/function first, allocated design at \ac{pdr}, product design at \ac{cdr}, verified configuration at \ac{svr}/\ac{fca}, production readiness at \ac{prr}, operational test readiness at \ac{otrr}, and final as-built product baseline at \ac{pca}.}
 

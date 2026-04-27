@@ -437,6 +437,7 @@
 ]{trl}{TRL}{Technology Readiness Level}
 \newacronym{irl}{IRL}{Integration Readiness Level}
 \newacronym{srl}{SRL}{System Readiness Level}
+\newacronym{mrl}{MRL}{Manufacturing Readiness Level}
 \newacronym{tra}{TRA}{Technology Readiness Assessment}
 \newacronym{ramc}{RAM-C}{Reliability, Availability, and Maintainability Cost Rationale}
 \newacronym{amavail}{Am}{Material Availability}
@@ -996,42 +997,7 @@
 
 % --- Operational Test Agencies & Interop ---
 \newacronym{optevfor}{OPTEVFOR}{Operational Test and Evaluation Force}
-\newacronym{comoptevfor}{COMOPTEVFOR}{Commander, Operational Test and Evaluation Force}
-\newacronym{cotf}{COTF}{Commander, Operational Test Force}
-\newacronym{afotec}{AFOTEC}{Air Force Operational Test and Evaluation Center}
-\newacronym{atec}{ATEC}{U.S. Army Test and Evaluation Command}
-\newacronym{mcotea}{MCOTEA}{Marine Corps Operational Test and Evaluation Activity}
 \newacronym{jitc}{JITC}{Joint Interoperability Test Command}
-
-% --- Test & Evaluation Fundamentals ---
-
-\newacronym{te}{T\&E}{Test and Evaluation}
-\newacronym{dte}{DT\&E}{Developmental Test and Evaluation}
-\newacronym{ote}{OT\&E}{Operational Test and Evaluation}
-\newacronym{lfte}{LFT\&E}{Live Fire Test and Evaluation}
-\newacronym{optest}{OT}{Operational Test}
-\newacronym{techeval}{TECHEVAL}{Technical Evaluation}
-\newacronym{opeval}{OPEVAL}{Operational Evaluation}
-\newacronym{dasdte}{DASW(T\&E)}{Deputy Assistant Secretary of War for Test and Evaluation}
-\newacronym{cdt}{CDT}{Chief Developmental Tester}
-\newacronym{ldto}{LDTO}{Lead Developmental Test and Evaluation Organization}
-\newacronym{ctp}{CTP}{Critical Technical Parameter}
-\newacronym{tpm}{TPM}{Technical Performance Measure}
-\newacronym{coi}{COI}{Critical Operational Issue}
-\newacronym[
-	shortplural={MOEs},
-	longplural={Measures of Effectiveness}
-]{moe}{MOE}{Measure of Effectiveness}
-\newacronym[
-	shortplural={MOSs},
-	longplural={Measures of Suitability}
-]{mos}{MOS}{Measure of Suitability}
-\newacronym{mop}{MOP}{Measure of Performance}
-\newacronym{eoa}{EOA}{Early Operational Assessment}
-\newacronym{oa}{OA}{Operational Assessment}
-\newacronym{iotre}{IOT\&RE}{Initial Operational Test and Readiness Evaluation}
-\newacronym{vv}{V\&V}{Verification and Validation}
-\newacronym{vva}{VV\&A}{Verification, Validation, and Accreditation}
 \newacronym{mtbomf}{MTBOMF}{Mean Time Between Operational Mission Failure}
 
 % --- Cost Estimation & Analysis ---
@@ -1062,7 +1028,6 @@
 \newacronym{fprp}{FPRP}{Forward Pricing Rate Proposal}
 \newacronym{ros}{ROS}{Return on Sales}
 \newacronym{roa}{ROA}{Return on Assets}
-\newacronym{dote}{DOT\&E}{Director, Operational Test and Evaluation}
 
 % --- Fiscal Law & Compliance ---
 
@@ -1130,15 +1095,6 @@
 \newacronym{nasa}{NASA}{National Aeronautics and Space Administration}
 
 % --- Acquisition Phases ---
-
-\newacronym[
-	shortplural={IOT\&Es},
-	longplural={Initial Operational Test and Evaluations}
-]{iote}{IOT\&E}{Initial Operational Test and Evaluation}
-\newacronym[
-	shortplural={FOT\&Es},
-	longplural={Follow-on Operational Tests and Evaluations}
-]{fote}{FOT\&E}{Follow-on Operational Test and Evaluation}
 \newacronym{pd.phase}{P\&D}{Production and Deployment Phase}
 \newacronym{ioc}{IOC}{Initial Operational Capability}
 \newacronym{foc}{FOC}{Full Operational Capability}
