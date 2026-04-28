@@ -57,6 +57,8 @@
 
 ## Build and Validation
 
+- Before building, ensure that no other build process is running. Multiple parallel builds can cause issues.
+- Latexworkshop automatically builds on save, so be aware of this when building manually.
 - Preferred validation path:
   `./scripts/docker-build.sh tex/main.tex`
 - Clean retry when artifacts may be stale:

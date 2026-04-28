@@ -195,6 +195,13 @@ case "$ENGINE" in
         ;;
 esac
 
+# Determine jobname: for subfiles, use the basename for clearer output naming
+JOBNAME=""
+if [[ "$TEXFILE" == */chapters/*.tex || "$TEXFILE" == *chapter*.tex ]]; then
+    JOBNAME=$(basename "$TEXFILE" .tex)
+    echo "[build] subfile build detected, jobname: $JOBNAME" >&2
+fi
+
 LMK_ARGS=(
     "-r" "$ROOT/tex/latexmkrc"
     "-pdf"
@@ -210,6 +217,7 @@ LMK_ARGS=(
 [[ -n "$JOBS" ]] && LMK_ARGS+=("-jobs=$JOBS")
 [[ "$QUIET" == "1" ]] && LMK_ARGS+=("-quiet")
 [[ "$WATCH" == "1" ]] && LMK_ARGS+=("-pvc")
+[[ -n "$JOBNAME" ]] && LMK_ARGS+=("-jobname=$JOBNAME")
 
 set +e
 latexmk "${LMK_ARGS[@]}" "$TEXFILE"
