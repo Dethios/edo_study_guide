@@ -1,0 +1,1527 @@
+# EDO coursebook coverage manifest.
+# Maintained from local PDFs in tex/assets/coursebook and study-guide source files.
+# Update this file when a coursebook module, TLO, chapter mapping, citation key, or coverage status changes.
+manifest:
+  name: EDO coursebook coverage manifest
+  current_as_of: '2026-04-29'
+  purpose: Trace coursebook modules and topic learning objectives to study-guide chapters, citation keys, and coverage status to reduce future drift.
+  source_root: tex/assets/coursebook
+  included_coursebook_chapters:
+  - '2'
+  - '3'
+  - '4'
+  - '6'
+  excluded_coursebook_chapters:
+    '1': 'Excluded per review scope: course introduction and administration.'
+    '5': 'Excluded per review scope: not part of the focused technical/acquisition coverage audit.'
+  status_values:
+    covered: Study guide materially covered the module before the current coursebook audit.
+    updated: Coverage existed and was updated or source-aligned during the coursebook audit.
+    added: Coverage was added during the coursebook audit.
+    partial: Coverage exists but needs additional expansion before it should be treated as complete.
+    excluded: Coursebook chapter or module is outside the current review scope.
+modules:
+- coursebook_module: 2.1.1
+  coursebook_title: Command Structures
+  source_pdf: tex/assets/coursebook/chapter-2-enterprise-and-authorities/section-1-organizations-and-roles/2.1.1 Command Structures.pdf
+  coursebook_version: '6.2'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the impact of the Goldwater-Nichols DoD Reorganization Act on the chains of command within DoD.
+  - id: TLO-2
+    text: Recognize the major components of the DoD and DoN.
+  - id: TLO-3
+    text: Identify the reporting chain of command (operational or administrative) for various DoD/DoN organizations and individuals.
+  - id: TLO-4
+    text: Identify the Secretary of the Navy's principal advisors and assistants by title and responsibilities.
+  - id: TLO-5
+    text: Recognize the definitions of common Navy terminology and acronyms (PEO, DRPM, OPNAV, and echelon).
+  - id: TLO-6
+    text: Identify the CNO's principal advisors and assistants by title and responsibilities.
+  - id: TLO-7
+    text: Identify the mission of COMUSFLTFORCOM.
+  - id: TLO-8
+    text: Recognize the difference between Type Commanders and Numbered Fleet Commanders.
+  - id: TLO-9
+    text: Recognize the relationship of the TYCOMS, Providers, and Resource Sponsors to the Warfare Enterprises.
+  - id: TLO-10
+    text: Identify EDO Flag billets by name and responsibility.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/1_Chain_of_command.tex
+    - tex/chapters/appendix_edo_flags.tex
+    citation_key: edo-2-1-1-command-structures-2025
+    coverage_status: updated
+    coverage_notes: Coursebook command-structure objectives are covered in chain-of-command material; EDO flag billet recognition is cross-referenced to the EDO flag appendix.
+- coursebook_module: 2.1.2
+  coursebook_title: NAVSEA Organization
+  source_pdf: tex/assets/coursebook/chapter-2-enterprise-and-authorities/section-1-organizations-and-roles/2.1.2 NAVSEA Organization.pdf
+  coursebook_version: '6.3'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the primary mission and major functions of Naval Sea Systems Command (NAVSEA).
+  - id: TLO-2
+    text: Recognize the functions performed by the major NAVSEA directorates and Program Executive Offices (PEOs).
+  - id: TLO-3
+    text: Determine when Program Executive Officers (PEOs) report to NAVSEA and when they report to Assistant Secretary of the Navy (ASN) for Research Development and Acquisition (RD&A).
+  - id: TLO-4
+    text: Recognize the differences between functional, project/product and matrix organizations.
+  - id: TLO-5
+    text: Identify the organizational scheme used by NAVSEA and the PEOs.
+  - id: TLO-6
+    text: 'Recognize the roles and responsibilities of the following: Ship Acquisition Program Manager (SHAPM), Participating Acquisition Resource Manager (PARM), Ship Life-cycle Manager (SLM), and Ship Program Manager (SPM).'
+  - id: TLO-7
+    text: Recognize the purpose of the Ship Project Directive (SPD).
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/3_NAVSEA.tex
+    citation_key: edo-2-1-2-navsea-organization-2025
+    coverage_status: updated
+    coverage_notes: NAVSEA organization, field activities, warfare centers, PEOs, and public shipyard governance are covered in the NAVSEA chapter.
+- coursebook_module: 2.1.3
+  coursebook_title: NAVWAR Enterprise
+  source_pdf: tex/assets/coursebook/chapter-2-enterprise-and-authorities/section-1-organizations-and-roles/2.1.3 NAVWAR Enterprise.pdf
+  coursebook_version: '6.0'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the commands that comprise Naval Information Warfare Systems Command (NAVWAR).
+  - id: TLO-2
+    text: Identify the mission and areas of expertise of the NAVWAR Organization.
+  - id: TLO-3
+    text: Recognize the functions performed by the major NAVWAR directorates and Program Executive Offices (PEOs).
+  - id: TLO-4
+    text: Identify the core competencies of each NAVWAR Echelon III Activity.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/4_NAVWAR.tex
+    citation_key: edo-2-1-3-navwar-enterprise-2024
+    coverage_status: updated
+    coverage_notes: NAVWAR enterprise, mission, systems commands, PMWs, and source-backed PEO C4I/PEO MLB orientation are covered in the NAVWAR chapter.
+- coursebook_module: 2.1.4
+  coursebook_title: Naval Warfare Centers
+  source_pdf: tex/assets/coursebook/chapter-2-enterprise-and-authorities/section-1-organizations-and-roles/2.1.4 Naval Warfare Centers.pdf
+  coursebook_version: '6.0'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the reporting relationships between the Navy's Systems Commands (SYSCOMS), warfare centers and divisions.
+  - id: TLO-2
+    text: Select the statements that best describe the missions of NAVAIR and NAVSEA warfare centers, divisions, Office of Naval Research (ONR) and Naval Research Lab (NRL).
+  - id: TLO-3
+    text: Identify the technical leadership areas for each warfare center division and NRL.
+  - id: TLO-4
+    text: Recognize the major customers of warfare centers.
+  - id: TLO-5
+    text: Recognize the reporting relationship between ONR and NRL.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/5_NAVAIR_and_PEOs.tex
+    citation_key: edo-2-1-4-warfare-centers-2024
+    coverage_status: updated
+    coverage_notes: NAVAIR, warfare-center roles, aviation PEOs, technical authority, technical warrant holders, and systems engineering alignment are covered in the NAVAIR chapter.
+- coursebook_module: 2.1.5
+  coursebook_title: Technical Authority and Engineering Agents
+  source_pdf: tex/assets/coursebook/chapter-2-enterprise-and-authorities/section-1-organizations-and-roles/2.1.5 Technical Authority and Engineering Agents.pdf
+  coursebook_version: '6.0'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the definition of technical authority.
+  - id: TLO-2
+    text: Identify the ultimate technical authority for ships, weapons systems, Command, Control, Communications, Computers, Intelligence, Surveillance, Reconnaissance (C4ISR), Cyber and Information Technology (IT) Systems.
+  - id: TLO-3
+    text: Recognize the types and responsibilities of each of type of Technical Warrant Holder.
+  - id: TLO-4
+    text: Identify the path for technical resolution of a waterfront issue.
+  - id: TLO-5
+    text: Recognize the responsibilities and the acquisition life-cycle phase for which each of the five types of engineering agents is involved.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/2_TA_EA.tex
+    citation_key: edo-2-1-5-technical-authority-2025
+    coverage_status: covered
+    coverage_notes: Technical authority, engineering authority, SEA 05 roles, certification authority, and formal delegation are covered in the technical-authority chapter.
+- coursebook_module: 3.1.1
+  coursebook_title: PPBE
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-1-resource-management/3.1.1 PPBE.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the basic flow of the financial management process, to include cost analysis, the Planning, Programming, Budgeting and Execution (PPBE) Process, Congressional enactment, and program execution.
+  - id: TLO-2
+    text: Recognize the role of the PPBE process in acquisition management.
+  - id: TLO-3
+    text: Identify the phases, associated products, and timeframes of the PPBE process.
+  - id: TLO-4
+    text: 'Relate the following building blocks of the Future Years Defense Program (FYDP) to the PPBE process: Major Program (MP); and Program Element (PE).'
+  - id: TLO-5
+    text: Identify the key events in the planning phase and recognize who prepares, reviews, and signs the Defense Planning Guidance (DPG).
+  - id: TLO-6
+    text: Identify the key events in the programming phase and recognize who prepares, reviews, and signs the Program Objective Memorandum (POM) and Program Decision Memoranda (PDM).
+  - id: TLO-7
+    text: Recognize the participants and processes of Navy POM development.
+  - id: TLO-8
+    text: Identify the key events in the budgeting phase and recognize who prepares, reviews, and signs the Budget Estimate Submission (BES), Program Budget Decisions (PBDs), and who generates reclamas.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/6_PPBE.tex
+    citation_key: edo-3-1-1-ppbe-2025
+    coverage_status: covered
+    coverage_notes: PPBE phases, major budget documents, and core appropriation categories are covered in the PPBE chapter.
+- coursebook_module: 3.1.2
+  coursebook_title: Congressional Enactment
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-1-resource-management/3.1.2 Congressional Enactment.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize that all funds are generated by an appropriations bill.
+  - id: TLO-2
+    text: 'Recognize and define the following terms: budget, budget authority, obligation, outlay, appropriation, authorization.'
+  - id: TLO-3
+    text: Recognize the players and processes involved in allocating budget authority to the services, acquisition commands, and program offices.
+  - id: TLO-4
+    text: Identify the roles of the House Armed Services, Senate Armed Services, and House and Senate Appropriations Committees.
+  - id: TLO-5
+    text: Recognize the definition of a continuing resolution.
+  - id: TLO-6
+    text: Recognize the restrictions for operating under a continuing resolution.
+  - id: TLO-7
+    text: Recognize the appeal process rules for an authorization and appropriation.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/8_Congressional_Enactment.tex
+    citation_key: edo-3-1-2-congressional-enactment-2025
+    coverage_status: covered
+    coverage_notes: Authorization, appropriations, marks, and congressional enactment workflow are covered in the congressional enactment chapter.
+- coursebook_module: 3.1.3
+  coursebook_title: Program Funding
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-1-resource-management/3.1.3 Program Funding.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the name and use for each of the major appropriations associated with Defense Acquisition Management.
+  - id: TLO-2
+    text: Identify the specific obligation and expenditure "windows" for the five appropriations associated with defense acquisition.
+  - id: TLO-3
+    text: Given a funding shortfall, apply the rules governing the use of expired funds to resolve the problem.
+  - id: TLO-4
+    text: Match the DoW funding policies (annual funding, incremental funding, and full funding) to their key characteristics.
+  - id: TLO-5
+    text: Relate the applicable funding policies to each of the DoW appropriation categories of greatest interest to acquisition programs, and recognize the difference between incremental and full funding policies and to which appropriations each applies.
+  - id: TLO-6
+    text: Identify the key characteristics of the two exceptions to the full funding policy.
+  - id: TLO-7
+    text: Identify the proper DoW Appropriation Category to be used for each of the three phases of product improvement (modernization).
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/9_Program_Funding_and_Execution.tex
+    citation_key: edo-3-1-3-program-funding-2025
+    coverage_status: covered
+    coverage_notes: Program funding controls, execution terminology, colors of money, and reprogramming concepts are covered in the funding and execution chapter.
+- coursebook_module: 3.1.4
+  coursebook_title: Budget Execution
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-1-resource-management/3.1.4 Budget Execution.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: 'Identify the definitions of the following financial terms: budget authority, commitment, obligation, expenditure, outlay, reprogramming, obligation plan, and expenditure plan.'
+  - id: TLO-2
+    text: Given a scenario, track budget execution through the commitment, obligation and expenditure process.
+  - id: TLO-3
+    text: Recognize the apportionment process, and major provisions and intent of the Misappropriation Act, Anti-Deficiency Act, and Bona Fide Need Rule. a. Select the appropriate public law that applies to the use of appropriated funds under specific circumstances.
+  - id: TLO-4
+    text: Identify the use and importance of obligation and expenditure plans.
+  - id: TLO-5
+    text: Assess the impact of the failure to execute funds in accordance with program plans.
+  - id: TLO-6
+    text: Recognize why DoW is allowed reprogramming authority.
+  - id: TLO-7
+    text: Identify the definition and requirements of the four major types of reprogramming used by the DoW.
+  - id: TLO-8
+    text: Given a funding shortfall, apply the rules governing reprogramming of appropriated funds in each appropriation category to resolve the problem.
+  - id: TLO-9
+    text: Identify the proper response to a program funding cut and identify the potential impacts on industry.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/9_Program_Funding_and_Execution.tex
+    citation_key: edo-3-1-4-budget-execution-2025
+    coverage_status: updated
+    coverage_notes: Budget-execution objectives are covered with strengthened execution-year and end-of-year funding controls.
+- coursebook_module: 3.1.5
+  coursebook_title: Field Activity Financial Management
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-1-resource-management/3.1.5 Field Activity Financial Management.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the types of cost contained in the different cost categories.
+  - id: TLO-2
+    text: Recognize the two types of financial management systems.
+  - id: TLO-3
+    text: Identify activities that are typically "Mission Funded" (General Funded (GF)) and those that are typically Working Capital Funded.
+  - id: TLO-4
+    text: Recognize how the General Fund financial system operates.
+  - id: TLO-5
+    text: Recognize the schedule for creating and reviewing an Expense Operating Budget (EOB) for a General Fund funded activity.
+  - id: TLO-6
+    text: Recognize the definition of Navy Working Capital Fund Terminology (Net Operating Result and Accumulated Operating Result).
+  - id: TLO-7
+    text: Recognize how the Navy Working Capital Fund (NWCF) System operates.
+  - id: TLO-8
+    text: Identify the general criteria an activity must satisfy to become part of the Navy Working Capital Fund.
+  - id: TLO-9
+    text: Recognize the schedule for the development of a budget for a Navy Working Capital Fund activity.
+  - id: TLO-10
+    text: Recognize the major factors used to determine a stabilized labor rate.
+  - id: TLO-11
+    text: Identify the documents used to task and transfer funds and the conditions for their use.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/7_NWCF.tex
+    citation_key: edo-3-1-5-field-activity-fm-2025
+    coverage_status: covered
+    coverage_notes: Field activity financial management and Navy Working Capital Fund logic are covered in the NWCF chapter.
+- coursebook_module: 3.1.6
+  coursebook_title: Cost Estimating
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-1-resource-management/3.1.6 Cost Estimating.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the scope and purpose of Life-Cycle Cost Estimates (LCCEs).
+  - id: TLO-2
+    text: Given a cost breakdown, determine Development Cost, Sailaway Cost, Weapon System Cost, Procurement Cost, Acquisition Cost, and Life-Cycle Cost.
+  - id: TLO-3
+    text: Recognize the impact and interrelationship of logistics support and life-cycle cost.
+  - id: TLO-4
+    text: Identify the four basic cost-estimating techniques.
+  - id: TLO-5
+    text: Identify the strengths and limitations of the four basic cost estimating techniques and where each roughly fits in the life-cycle.
+  - id: TLO-6
+    text: Select an appropriate method to estimate the cost of an acquisition program.
+  - id: TLO-7
+    text: Identify terms associated with Acquisition Program Cost Estimates, including Program Office Estimate (POE), Component Cost Estimate (CCE), Independent Cost Estimate (ICE), Cost Analysis Requirements Description (CARD), Cost Assessment and Program Evaluation (CAPE).
+  - id: TLO-8
+    text: Recognize the steps and review authority in the cost estimating review process for both Major Defense Acquisition Programs (MDAP) and Major Automated Information Systems (MAIS).
+  - id: TLO-9
+    text: Identify where and when learning curve theory is applied.
+  - id: TLO-10
+    text: Identify the concept of escalation in submitting program and budget documents.
+  - id: TLO-11
+    text: Identify the definitions of Will Cost, Should Cost, and Should Cost management initiatives.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/10_Cost_Fundamentals.tex
+    citation_key: edo-3-1-6-cost-estimating-2024
+    coverage_status: updated
+    coverage_notes: Cost-estimating objectives are covered with added cost-estimate taxonomy, inputs, and board-use context.
+- coursebook_module: 3.2.1
+  coursebook_title: Intro to Contracting
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-2-contracting/3.2.1 Intro to Contracting.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize why contracts are needed by DoD.
+  - id: TLO-2
+    text: Recognize the legal nature of a contract.
+  - id: TLO-3
+    text: Recognize the Federal Acquisition Regulation (FAR) and its Supplements as governing the contracting and procurement processes.
+  - id: TLO-4
+    text: Recognize the three types of contracting officers.
+  - id: TLO-5
+    text: Identify the complementary roles and responsibilities of the contracting officers and the program manager in their partnership throughout the acquisition process.
+  - id: TLO-6
+    text: Recognize the differences in background, rules, and responsibilities between the Program Manager (PM) and the Contracting Officer (KO).
+  - id: TLO-7
+    text: Identify the requirements associated with pursuing competition.
+  - id: TLO-8
+    text: Identify descriptions of contracting terms (e.g., responsiveness and responsibility, Justification and Approval (J&A), sole source).
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/11_Contracting_Fundamentals.tex
+    citation_key: edo-3-2-1-intro-contracting-2025
+    coverage_status: covered
+    coverage_notes: Contracting fundamentals, acquisition team roles, and basic contract structures are covered in the contracting fundamentals chapter.
+- coursebook_module: 3.2.2
+  coursebook_title: Solicitation Preparation
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-2-contracting/3.2.2 Solicitation Preparation.pdf
+  coursebook_version: '6.3'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the differences between sealed bidding and the negotiation methods of contracting.
+  - id: TLO-2
+    text: Recognize the differences between variants of fixed-price and cost- reimbursement type contracts. a. Given the actual cost, target cost, target profit, target price, share line, and ceiling price on a fixed price incentive firm target contract, correctly calculate the final contract price
+  - id: TLO-3
+    text: Select appropriate contract type based upon program risk, recognizing the linkage between acquisition strategy, the contracting process, and program risk.
+  - id: TLO-4
+    text: Recognize the availability and flexibility of Indefinite Delivery/Indefinite Quantity (ID/IQ) contract types.
+  - id: TLO-5
+    text: Recognize the Pre-Solicitation Phase development sequence, to include the development of source selection criteria before release to industry.
+  - id: TLO-6
+    text: Recognize the work required to develop a contract requirements package and the need for coherent solicitation packages. a. Identify methods of pre-solicitation communication with defense Contractors b. Identify how the Government communicates performance requirements in solicitations
+  - id: TLO-7
+    text: Recognize the costs of Contractor-furnished data and how to request Contractor-furnished data in the Request for Proposal (RFP).
+  - id: TLO-8
+    text: Recognize the necessity for a well-written Statement of Work (SOW) or Statement of Objectives (SOO) and DoW's movement towards using performance-based solicitations.
+  - id: TLO-9
+    text: Identify the role of various Integrated Product Team members in conducting market research and developing the solicitation.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/12_Solicitation.tex
+    citation_key: edo-3-2-2-solicitation-prep-2025
+    coverage_status: covered
+    coverage_notes: Solicitation preparation, requirements packaging, and proposal-instruction concepts are covered in the solicitation chapter.
+- coursebook_module: 3.2.3
+  coursebook_title: Source Selection Process
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-2-contracting/3.2.3 Source Selection Process.pdf
+  coursebook_version: '6.2'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize and identify the formal source selection procedure and the sequence of events from the receipt of the contractor's proposal.
+  - id: TLO-2
+    text: 'Identify the guiding documents for source selection: Source Selection Plan (SSP), Request for Proposals (RFP), Invitation for Bid (IFB).'
+  - id: TLO-3
+    text: Identify a description of the contracting term Best Value.
+  - id: TLO-4
+    text: 'Identify source selection best value policies: Tradeoff and Lowest Price Technically Acceptable (LPTA).'
+  - id: TLO-5
+    text: 'Identify the roles and responsibilities of the source selection participants: Source Selection Authority (SSA), Source Selection Evaluation Board (SSEB), Source Selection Advisory Council (SSAC), Procuring Contracting Officer (PCO).'
+  - id: TLO-6
+    text: Differentiate among the various types of interaction between the Government and contractors, e.g., discussions, clarifications, deficiencies, communications, and exchanges.
+  - id: TLO-7
+    text: Identify how to prepare for and conduct a fact-finding activity.
+  - id: TLO-8
+    text: Identify how to prepare for and support a negotiation.
+  - id: TLO-9
+    text: Identify the roles and responsibilities of the participants in fact-finding and negotiations.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/12A_Source_Selection.tex
+    citation_key: edo-3-2-3-source-selection-2025
+    coverage_status: covered
+    coverage_notes: Source-selection organization, evaluation factors, and decision logic are covered in the source-selection chapter.
+- coursebook_module: 3.2.4
+  coursebook_title: Cost and Price Evaluation
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-2-contracting/3.2.4 Cost and Price Evaluation.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the use of cost and price data in the context of determining a fair and reasonable price.
+  - id: TLO-2
+    text: Recognize the importance of Contractor financial principles to the defense acquisition process.
+  - id: TLO-3
+    text: Identify how the balance sheet and income statement portray the operating characteristics and health of a business.
+  - id: TLO-4
+    text: Differentiate between a direct cost and an indirect cost.
+  - id: TLO-5
+    text: 'Given the necessary information, calculate allocation of indirect costs to a contract: a. Calculate Contractor indirect cost rates. b. Allocate General and Administrative (G&A) costs to the Total Cost Input (TCI).'
+  - id: TLO-6
+    text: Identify the five bases for cost allowability.
+  - id: TLO-7
+    text: Recognize the purpose and application of forward pricing rates to Government contracts.
+  - id: TLO-8
+    text: Apply the fully burdened rate to labor hours to correctly calculate Contractor's costs.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/13C_cost-price-eval.tex
+    citation_key: edo-3-2-4-cost-price-evaluation-2025
+    coverage_status: covered
+    coverage_notes: Cost and price evaluation objectives are covered in the cost-price evaluation chapter.
+- coursebook_module: 3.2.5
+  coursebook_title: Source Selection Practical
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-2-contracting/3.2.5 Source Selection Practical.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: As a member of an Integrated Product Team, develop portions of a Source Selection Plan (SSP) to include relative ranking of sub factors and development of evaluation criteria.
+  - id: TLO-2
+    text: Identify the purpose of evaluation criteria and how the criteria are developed.
+  - id: TLO-3
+    text: Select a best value contractor by comparing contractor proposals and test results to source selection criteria.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/13A_Source_Selection_Practical.tex
+    citation_key: edo-3-2-5-source-selection-practical-2025
+    coverage_status: covered
+    coverage_notes: Practical source-selection workflow and applied evaluation considerations are covered in the source-selection practical chapter.
+- coursebook_module: 3.2.6
+  coursebook_title: Contract Administration
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-2-contracting/3.2.6 Contract Administration.pdf
+  coursebook_version: '6.0'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the role of contract administration in the contracting process.
+  - id: TLO-2
+    text: Recognize the roles of the Defense Contract Management Agency (DCMA), Defense Contract Audit Agency (DCAA), and Defense Finance and Accounting Service (DFAS) in contract administration.
+  - id: TLO-3
+    text: Identify the relationship between the Program Management Office, the Procuring Contracting Officer, the Administrative Contractor Officer, and Program Integrator (including SUPSHIP and RMC equivalents).
+  - id: TLO-4
+    text: Contrast a Change Order with a Supplemental Agreement.
+  - id: TLO-5
+    text: 'Identify the purpose of and approval authority for the following documents: Levels 1 - 4 of Non-Engineering Change Proposal (NECP) and Engineering Change Proposal (ECP), Value Engineering Change, Deviation, Waiver, Field Modification Request, Headquarters Modification Request.'
+  - id: TLO-6
+    text: Identify the causes and consequences of constructive changes and unauthorized commitments.
+  - id: TLO-7
+    text: Recognize the relationship between the Government, prime and subcontractors as defined by the term "privity of contract".
+  - id: TLO-8
+    text: Identify the process for resolving disputes between parties of a contract.
+  - id: TLO-9
+    text: Identify when Termination for Convenience, Termination for Default, and Termination for Cause are used.
+  - id: TLO-10
+    text: Recognize the importance of cash flow to the operation of a business.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/13B_Contract_Administration.tex
+    citation_key: edo-3-2-6-contract-administration-2025
+    coverage_status: covered
+    coverage_notes: Contract-administration offices, surveillance, modifications, and post-award execution objectives are covered in the contract-administration chapter.
+- coursebook_module: 3.3.1
+  coursebook_title: Acquisition Policy and Players
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-3-acquisition-policy-and-pathways/3.3.1 Acquisition Policy and Players.pdf
+  coursebook_version: '6.2'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Define Systems Acquisition Management.
+  - id: TLO-2
+    text: Identify the major institutions and key drivers of the defense acquisition process.
+  - id: TLO-3
+    text: Identify the principal regulations governing Department of Defense and Department of Navy acquisition and procurement.
+  - id: TLO-4
+    text: Recognize that risk (cost, schedule, and performance) are at the core of acquisition management.
+  - id: TLO-5
+    text: Identify key acquisition reform initiatives, including commercial practices, that impact the relationship between government and industry.
+  - id: TLO-6
+    text: Recognize the DoD 5000 definitions of Defense Acquisition System, Acquisition Program, Milestone Decision Authority, Defense Acquisition Executive and Program Manager.
+  - id: TLO-7
+    text: Identify key Defense and Navy acquisition decision makers by position and responsibilities.
+  - id: TLO-8
+    text: Recognize the definition and purpose of Acquisition Category (ACAT).
+  - id: TLO-9
+    text: Identify how and why defense acquisition programs are separated into ACATs.
+  - id: TLO-10
+    text: Recognize the latest policies, issues, and events pertaining to defense systems acquisition.
+  - id: TLO-11
+    text: Identify intelligence organizations, responsibilities, and
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/15_policy.tex
+    citation_key: edo-3-3-1-acq-policy-players-2025
+    coverage_status: updated
+    coverage_notes: Acquisition-policy objectives are covered with added AA/MDA/SAE/CAE/PEO/PM reporting relationships and EDO accountability framing.
+- coursebook_module: 3.3.2
+  coursebook_title: Acquisition Milestones and Phases
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-3-acquisition-policy-and-pathways/3.3.2 Acquisition Milestones and Phases.pdf
+  coursebook_version: '6.2'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the terms acquisition strategy, key performance parameter and acquisition program baseline.
+  - id: TLO-2
+    text: Recognize the user's (Warfighter's) role and tools in identifying deficiencies through the JCIDS process.
+  - id: TLO-3
+    text: Recognize the activities and work content of the Materiel Solution Analysis & Technology Maturation & Risk Reduction (Pre-Systems Acquisition) portion of the acquisition life-cycle.
+  - id: TLO-4
+    text: Identify uses of the Analysis of Alternatives.
+  - id: TLO-5
+    text: Recognize the activities and work content of the Engineering and Manufacturing Development & Production and Deployment (Systems Acquisition) portion of the acquisition life cycle.
+  - id: TLO-6
+    text: Recognize the activities and work content of the Operations and Support (Sustainment & Disposal) portion of the acquisition life-cycle.
+  - id: TLO-7
+    text: Identify how DoD International Acquisition and Exportability (IA&E) activities support the U.S. National Security and National Defense Strategies.
+  - id: TLO-8
+    text: Identify the information required for a milestone review.
+  - id: TLO-9
+    text: Recognize the policy regarding Configuration Steering Boards.
+  - id: TLO-10
+    text: Recognize the Navy's 2-pass/7-gate review process.
+  - id: TLO-11
+    text: Recognize the differences for a typical shipbuilding program in the execution of the acquisition framework.
+  - id: TLO-12
+    text: Identify the evolutionary acquisition strategy approach.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/16_Milestones.tex
+    citation_key: edo-3-3-2-acq-milestones-phases-2025
+    coverage_status: updated
+    coverage_notes: Milestone and phase objectives are covered with added pathway and adaptive acquisition framework alignment.
+- coursebook_module: 3.3.3
+  coursebook_title: JCIDS
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-3-acquisition-policy-and-pathways/3.3.3 JCIDS.pdf
+  coursebook_version: '6.0'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the interface between the Defense Acquisition System and the Joint Capabilities Integration and Development (JCIDS) System and identify the governing documents.
+  - id: TLO-2
+    text: Recognize the importance of the Capability Requirements and Capabilities- Based Assessment (CBA) Process, and the phases associated with the CBA process.
+  - id: TLO-3
+    text: 'Recognize the purpose of the following user-developed documents and the correlating phase of the acquisition system: Initial Capabilities Document (ICD), Capability Development Document (CDD), and CDD Updates.'
+  - id: TLO-4
+    text: Recognize the importance and priority of exploring materiel and non- materiel solutions.
+  - id: TLO-5
+    text: Identify the role of the Joint Requirements Oversight Council (JROC) and Joint Staff in the requirements validation and approval process for defense acquisition programs.
+  - id: TLO-6
+    text: Recognize the user's (Warfighter's) role and tools in identifying capability deficiencies.
+  - id: TLO-7
+    text: Identify the aspects of the Joint Capabilities Integration and Development System (JCIDS) as it applies to acquisition of Information Technology (e.g., Net-Ready, interoperability, architecture, reuse).
+  - id: TLO-8
+    text: Recognize why Command, Control, Communications, Computers, and Intelligence (C4I) interoperability must be considered with all affected U.S. and Allied systems.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/17K_jcids.tex
+    citation_key: edo-3-3-3-jcids-2025
+    coverage_status: updated
+    coverage_notes: JCIDS objectives are covered with added requirements documents, analysis links, and sponsor-to-acquisition handoff framing.
+- coursebook_module: 3.3.4
+  coursebook_title: Research and Development
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-3-acquisition-policy-and-pathways/3.3.4 Research and Development.pdf
+  coursebook_version: '6.0'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the U.S. technology posture in relation to defense acquisition.
+  - id: TLO-2
+    text: Explain the role of science and technology in defense acquisition.
+  - id: TLO-3
+    text: Recognize the continuum of science and technology development from the university environment to advanced technologies and key traits of maturity levels.
+  - id: TLO-4
+    text: Given descriptions of the activities and end products in Research and Development (R&D) programs, identify the appropriate R&D categories.
+  - id: TLO-5
+    text: Recognize the most likely phases in the life cycle to introduce new technologies.
+  - id: TLO-6
+    text: Recognize the characteristics to include objectives, benefits and drawbacks, outcomes, regulation and oversight of Advanced Technology Demonstrations (ATD) and Joint Concept Technology Demonstrations (JCTD) as technology transition mechanisms.
+  - id: TLO-7
+    text: Recall the purpose, roles, and acquisition program support provided by the Federally Funded Research Centers (FFRDC) and University Affiliated Research Centers (UARC).
+  - id: TLO-8
+    text: Given market research and company data, assess technology maturity to determine technology readiness levels.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/17A_Research_and_Development.tex
+    citation_key: edo-3-3-4-research-development-2025
+    coverage_status: covered
+    coverage_notes: Research and development objectives, early technology maturation, and transition concepts are covered in the R&D chapter.
+- coursebook_module: 3.3.6
+  coursebook_title: Risk Mgmt Prob Solving
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-3-acquisition-policy-and-pathways/3.3.6 Risk Mgmt Prob Solving.pdf
+  coursebook_version: '6.0'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the definition and components of acquisition risk.
+  - id: TLO-2
+    text: Identify typical sources of acquisition risk.
+  - id: TLO-3
+    text: Relate the Acquisition Program Baseline (APB) to planning, control, and risk management in attaining cost, schedule and performance goals.
+  - id: TLO-4
+    text: Identify the five steps (identifying, analyzing, planning, handling, and monitoring) of the risk management process model.
+  - id: TLO-5
+    text: Recognize methods for risk handling (Control, Avoid, Accept, Transfer).
+  - id: TLO-6
+    text: Recognize that the trade-off study process is used to evaluate alternatives.
+  - id: TLO-7
+    text: Given data, apply Multi-Attribute Utility Theory (MAUT) and other qualitative/quantitative tools to support a decision.
+  - id: TLO-8
+    text: Explain the use of the 5 Whys root cause determination method in identifying potential root causes.
+  - id: TLO-9
+    text: Identify a generic problem-solving model appropriate for a specific acquisition situation.
+  - id: TLO-10
+    text: Given sample risk management software tools, compare their features to determine their advantages and disadvantages.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/17B_Risk_Management_and_Problem_Solving.tex
+    citation_key: edo-3-3-6-risk-management-problem-solving-2025
+    coverage_status: covered
+    coverage_notes: Risk management, issue handling, and structured problem-solving objectives are covered in the risk-management chapter.
+- coursebook_module: 3.3.7
+  coursebook_title: Environmental Requirements and Responsibilities
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-3-acquisition-policy-and-pathways/3.3.7 Environmental Requirements and Responsibilities.pdf
+  coursebook_version: '6.2'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify key Federal and DoW policies governing environmental, safety and occupational health issues.
+  - id: TLO-2
+    text: Recognize the requirement for effective safety and health programs for every defense acquisition program.
+  - id: TLO-3
+    text: Identify the information required for a milestone review regarding environmental, safety and health issues.
+  - id: TLO-4
+    text: Identify the scope of the major Federal environmental regulations. a. Identify the National Environmental Policy Act (NEPA) process and identify all possible outcomes of the process for a major federal action.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/17C_Environmental_Requirements_and_Responsibilities.tex
+    citation_key: edo-3-3-7-environmental-requirements-2025
+    coverage_status: covered
+    coverage_notes: Environmental planning, compliance responsibilities, and program-office implications are covered in the environmental requirements chapter.
+- coursebook_module: 3.4.1
+  coursebook_title: Software Acquisition Environment
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-4-software-and-cybersecurity/3.4.1 Software Acquisition Environment.pdf
+  coursebook_version: '6.0'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the major components of a computer and the languages it uses to interface with itself, and the language we use to interface with it.
+  - id: TLO-2
+    text: Recognize the importance of software-intensive systems.
+  - id: TLO-3
+    text: Recognize the definition of a software-intensive systems.
+  - id: TLO-4
+    text: Recognize the DoD software domains.
+  - id: TLO-5
+    text: Recognize the differences between Weapons, Command Control Communications Computers Intelligence Surveillance Reconnaissance (C4ISR), and Defense Business Systems (DBS) systems.
+  - id: TLO-6
+    text: Identify key laws and software acquisition management policies and practices that are required for the acquisition of a DoD software-intensive system. a. Recognize the major provisions of the Information Technology Management Reform Act (ITMRA) contained in the Clinger-Cohen Act (CCA) of 1996. b. Recognize the basic provisions of DoDI 5000.02 and DoDI 5000.75 that are applicable to software-intensive systems.
+  - id: TLO-7
+    text: Recognize a software item (SI) and how it functions as a building block of software.
+  - id: TLO-8
+    text: Recognize the role of interoperability and architecture in software acquisition.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/17D_Software_Acquisition_Environment.tex
+    citation_key: edo-3-4-1-software-acquisition-environment-2025
+    coverage_status: covered
+    coverage_notes: Software acquisition environment, software-intensive systems, and governance context are covered in the software acquisition environment chapter.
+- coursebook_module: 3.4.2
+  coursebook_title: Software Acquisition Management
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-4-software-and-cybersecurity/3.4.2 Software Acquisition Management.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify common ways that software-intensive projects have gotten into trouble.
+  - id: TLO-2
+    text: Identify "Best Practices" that may be appropriate for the acquisition of software-intensive systems.
+  - id: TLO-3
+    text: Relate the typical distribution of software life-cycle costs to the planning of an acquisition program.
+  - id: TLO-4
+    text: Identify key solicitation planning activities that should be done when acquiring a software-intensive system.
+  - id: TLO-5
+    text: Select an appropriate approach (e.g., analogy, parametric, top-down, bottom up, Delphi) to estimate the cost and schedule for a software-intensive system.
+  - id: TLO-6
+    text: Identify key life-cycle planning issues in developing an acquisition strategy for a software-intensive system.
+  - id: TLO-7
+    text: Identify typical software development life-cycle activities and standards.
+  - id: TLO-8
+    text: Recognize the relationship between software development activities and the system engineering process.
+  - id: TLO-9
+    text: Recognize how solid requirements analysis and comprehensive testing are the marks of an effective software development program.
+  - id: TLO-10
+    text: Recognize the software development models.
+  - id: TLO-11
+    text: Given a software-intensive system (such as a telecommunications or guidance system), select an appropriate software development methodology.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/17E_Software_Acquisition_Management.tex
+    citation_key: edo-3-4-2-software-acquisition-management-2025
+    coverage_status: covered
+    coverage_notes: Software acquisition management, planning, and execution objectives are covered in the software management chapter.
+- coursebook_module: 3.4.3
+  coursebook_title: Cybersecurity Awareness
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-4-software-and-cybersecurity/3.4.3 Cybersecurity Awareness.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the importance of cybersecurity in the DoW, including its history and evolution.
+  - id: TLO-2
+    text: Recognize the increasing sophistication of the threat to DoW cybersecurity.
+  - id: TLO-3
+    text: Explain the consequences of not protecting DoW systems from cyber attacks.
+  - id: TLO-4
+    text: Recognize key players and policy in cybersecurity including the intelligence community.
+  - id: TLO-5
+    text: Recognize the critical processes that make and maintain secure systems, to include Risk Management Framework (RMF).
+  - id: TLO-6
+    text: Explain how cybersecurity is integrated into every aspect of the acquisition program life-cycle, including both sides of the Systems Engineering "V" and the program protection plan.
+  - id: TLO-7
+    text: Recognize that everyone, including EDOs, have a role in cybersecurity.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/17F_Cybersecurity_Awareness.tex
+    citation_key: edo-3-4-3-cybersecurity-awareness-2025
+    coverage_status: covered
+    coverage_notes: Cybersecurity awareness, risk, and acquisition-program implications are covered in the cybersecurity awareness chapter.
+- coursebook_module: 3.5.1
+  coursebook_title: Systems Engineering Overview
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-5-systems-engineering-logistics-and-test/3.5.1 Systems Engineering Overview.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the key provisions of Department of Defense policy that relate to systems engineering requirements in the DoD.
+  - id: TLO-2
+    text: 'Recognize that the following characteristics are included in a good design: Supportability, Mission Performance, Producibility, Testability, Cost Efficiency, Fully Integrated Software, and Technology Transition.'
+  - id: TLO-3
+    text: Recognize the most common supporting disciplines in the System Engineering Process.
+  - id: TLO-4
+    text: Recognize which Systems Engineering areas apply to jobs performed by EDOs.
+  - id: TLO-5
+    text: Relate the key tenets of Integrated Product and Process Development to planning and executing an acquisition program.
+  - id: TLO-6
+    text: Recognize that the Systems Engineering Process is a translation and feedback process from operational to system requirements.
+  - id: TLO-7
+    text: Recognize activities, processes, and required planning of the Systems Engineering Process and its visual model. a. Identify the eight technical processes in Systems Engineering. b. Identify the eight technical management processes in Systems Engineering.
+  - id: TLO-8
+    text: Trace the maturation of system design information as it evolves through the acquisition life-cycle of a system.
+  - id: TLO-9
+    text: Identify the role of the Systems Engineering Process in the product life-cycle to include balancing cost and performance and its effect on schedule.
+  - id: TLO-10
+    text: Recognize the roles and responsibilities of the Government and contractors in a typical Systems Engineering Process.
+  - id: TLO-11
+    text: Identify the main inputs and outputs of the overall systems engineering process.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/17G_Systems_Engineering_Overview.tex
+    citation_key: edo-3-5-1-systems-engineering-overview-2025
+    coverage_status: covered
+    coverage_notes: Systems engineering overview objectives are covered in the SE overview chapter.
+- coursebook_module: 3.5.2
+  coursebook_title: SE AC WBS
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-5-systems-engineering-logistics-and-test/3.5.2 SE AC WBS.pdf
+  coursebook_version: '6.0'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize a WBS as a product-oriented hierarchy and an output of the systems engineering process.
+  - id: TLO-2
+    text: Identify the role of the WBS in the systems engineering process.
+  - id: TLO-3
+    text: Recognize WBS's applicability throughout the acquisition life-cycle and across all acquisition management disciplines (e.g., technical/risk management, contracting, financial and business management, and acquisition planning).
+  - id: TLO-4
+    text: Recognize that MIL STD 881 provides guidance for developing a WBS.
+  - id: TLO-5
+    text: Recognize the WBS format.
+  - id: TLO-6
+    text: Identify the two types of WBS (Program and Contract).
+  - id: TLO-7
+    text: Recognize the relationship between the Program and Contract WBS.
+  - id: TLO-8
+    text: Identify who is responsible for the development and maintenance of the two types of WBS (Program and Contract).
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/17H_WBS_SE_Analysis_and_Control.tex
+    citation_key: edo-3-5-2-wbs-2025
+    coverage_status: covered
+    coverage_notes: Work breakdown structure, systems engineering analysis, and control objectives are covered in the WBS chapter.
+- coursebook_module: 3.5.3
+  coursebook_title: SE AC CM and Tech Reviews
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-5-systems-engineering-logistics-and-test/3.5.3 SE AC CM and Tech Reviews.pdf
+  coursebook_version: '6.0'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the purpose and functions of Configuration Management.
+  - id: TLO-2
+    text: Recognize the reasons and impacts of designating items as Configuration Items.
+  - id: TLO-3
+    text: Identify the three types of configuration baselines (functional, allocated & product).
+  - id: TLO-4
+    text: Identify the relationship between configuration baselines, specifications, and configuration management planning.
+  - id: TLO-5
+    text: Identify the three types of changes (engineering change, deviation & waiver).
+  - id: TLO-6
+    text: Recognize what constitutes the current approved configuration.
+  - id: TLO-7
+    text: Identify the roles, responsibilities, and methods for interface control and technical data management.
+  - id: TLO-8
+    text: Identify the purpose of specific technical reviews and their relationship to the acquisition process.
+  - id: TLO-9
+    text: Relate the different types of program-unique specifications to their appropriate configuration baselines and technical review requirements.
+  - id: TLO-10
+    text: Identify how instability of requirements, design, and production processes impact program cost and schedule.
+  - id: TLO-11
+    text: Identify how participants should prepare, conduct and follow-up technical reviews.
+  - id: TLO-12
+    text: Identify the impact of configuration management on test, logistics and manufacturing disciplines.
+  - id: TLO-13
+    text: Identify the impact on configuration management when commercial items are used in the system.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/17I_CM_and_Technical_Reviews.tex
+    citation_key: edo-3-5-3-cm-tech-reviews-2025
+    coverage_status: covered
+    coverage_notes: Configuration management and technical review objectives are covered in the CM and technical reviews chapter.
+- coursebook_module: 3.5.4
+  coursebook_title: Acquisition Logistics
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-5-systems-engineering-logistics-and-test/3.5.4 Acquisition Logistics.pdf
+  coursebook_version: '6.2'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the role of acquisition logistics and support costs of a system as they relate to life-cycle costs.
+  - id: TLO-2
+    text: Recognize the importance of conducting supportability analyses as an integrated part of the Systems Engineering (SE) process.
+  - id: TLO-3
+    text: Recognize the magnitude of the task involved with fielding/deploying a new defense system and the necessity for deploying/fielding the system with all its associated support in place at the deployed/fielded locations.
+  - id: TLO-4
+    text: Identify the relationship of Reliability, Availability, and Maintainability (RAM) to acquisition logistics, and its impact on system performance, operational effectiveness (including support), logistics planning, and life-cycle cost.
+  - id: TLO-5
+    text: Recognize the importance of the 12 integrated product support elements in supportability planning and their influences with respect to Acquisition Logistics.
+  - id: TLO-6
+    text: Identify system supportability issues in planning and executing a defense acquisition program.
+  - id: TLO-7
+    text: Determine the impacts to a given acquisition program if supportability issues are not resolved.
+  - id: TLO-8
+    text: Identify acquisition logistics support activities and requirements that deal with fielding/deployment (e.g., planning, coordination, organizing deployment teams, material release).
+  - id: TLO-9
+    text: Identify acquisition logistics support activities and requirements associated with post-production support (e.g., planning, adequate sources of supply, spares modernization, sustaining system readiness, and obsolescence).
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/17J_Acquisition_Logistics.tex
+    citation_key: edo-3-5-4-acquisition-logistics-2025
+    coverage_status: covered
+    coverage_notes: Acquisition logistics and supportability objectives are covered in the acquisition logistics chapter.
+- coursebook_module: 3.5.5
+  coursebook_title: Test and Evaluation Part I
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-5-systems-engineering-logistics-and-test/3.5.5 Test and Evaluation Part I.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the fundamentals of Test and Evaluation (T&E).
+  - id: TLO-2
+    text: Identify how T&E supports risk management by milestone decision authorities.
+  - id: TLO-3
+    text: Recognize how T&E supports the Systems Engineering Process.
+  - id: TLO-4
+    text: Identify the characteristics and purposes of the different types of T&E and the organizations responsible for each.
+  - id: TLO-5
+    text: Identify the key T&E support organizations within DoD.
+  - id: TLO-6
+    text: Identify the role of modeling and simulation as a tool in the systems engineering process.
+  - id: TLO-7
+    text: Recognize the importance of modeling and simulation in the defense acquisition process.
+  - id: TLO-8
+    text: Identify the regulation that dictates the development of a Test and Evaluation Master Plan (TEMP) and recognize why there is a need to develop a TEMP for most programs.
+  - id: TLO-9
+    text: Recognize how the TEMP generation, staffing and approval process integrates all functional disciplines throughout the acquisition life-cycle.
+  - id: TLO-10
+    text: Identify issues affecting T&E resource requirements, test planning, and test execution activities in support of a program's acquisition strategy.
+  - id: TLO-11
+    text: Given descriptions, identify the types of Development Test and Evaluation (DT&E), e.g., Production Qualification Tests and Production Acceptance Test and Evaluation.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/18B_test-eval.tex
+    citation_key: edo-3-5-5-test-eval-part-i-2025
+    coverage_status: covered
+    coverage_notes: Test and evaluation fundamentals, TEMP logic, and developmental/operational testing concepts are covered in the T&E chapter.
+- coursebook_module: 3.5.6
+  coursebook_title: Test and Evaluation Part II
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-5-systems-engineering-logistics-and-test/3.5.6 Test and Evaluation Part II.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the characteristics and purposes of the different types of T&E and the organizations responsible for each.
+  - id: TLO-2
+    text: Identify the characteristics and purposes of Operational Test and Evaluations (OT&E) and why independent agencies are involved.
+  - id: TLO-3
+    text: Identify the prime source of testable parameters for OT&E.
+  - id: TLO-4
+    text: Identify the characteristics and roles of Early Operational Assessment (EOA) and Operational Assessment (OA) in reducing program risk.
+  - id: TLO-5
+    text: Recognize the purpose and objectives of Live Fire Test and Evaluation (LFT&E).
+  - id: TLO-6
+    text: Identify the opportunities, risks, and benefits associated with Integrated Developmental Test & Operational Test (DT/OT).
+  - id: TLO-7
+    text: Identify the key T&E support organizations within DoD.
+  - id: TLO-8
+    text: Identify the requirements for interoperability testing.
+  - id: TLO-9
+    text: Identify which organizations develop, coordinate, and approve Critical Operational Issues (COIs).
+  - id: TLO-10
+    text: Recognize how Measures of Effectiveness (MOE) and Measures of Suitability (MOS) are used throughout the Test and Evaluation (T&E) process.
+  - id: TLO-11
+    text: Identify the key Operational Test & Evaluation (OT&E) activities that must be coordinated with the Director Operational Test & Evaluation (DOT&E) staff and the Operational Test Agencies.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/18B_test-eval.tex
+    citation_key: edo-3-5-6-test-eval-part-ii-2025
+    coverage_status: covered
+    coverage_notes: Follow-on T&E objectives, evaluation planning, and program-decision support are covered in the T&E chapter.
+- coursebook_module: 3.5.7
+  coursebook_title: Ship Trials
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-5-systems-engineering-logistics-and-test/3.5.7 Ship Trials.pdf
+  coursebook_version: '6.4'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the reason(s) why the Navy conducts ship trials.
+  - id: TLO-2
+    text: Identify the types of major ship trials.
+  - id: TLO-3
+    text: Identify the purpose of the major ship trials.
+  - id: TLO-4
+    text: Identify the roles and responsibilities of the organizations involved in conducting each of the major ship trials.
+  - id: TLO-5
+    text: Recognize the process for post-sea trials certification of ships.
+  - id: TLO-6
+    text: Recognize the differences between submarine new construction and overhaul and repair certification of submarines.
+  - id: TLO-7
+    text: Identify the timing of each type of major ship trial and test event.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/18A_Ship_Trials.tex
+    citation_key: edo-3-5-7-ship-trials-2025
+    coverage_status: updated
+    coverage_notes: Ship-trials objectives are covered with strengthened trial-event, deficiency, and delivery acceptance framing.
+- coursebook_module: 3.6.1
+  coursebook_title: Introduction to EVM
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-6-earned-value-management/3.6.1 Introduction to EVM.pdf
+  coursebook_version: '6.2'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the concept of Earned Value Management (EVM).
+  - id: TLO-2
+    text: Recognize how EVM fits into the defense acquisition process. a. Recognize under which conditions EVM is required based on governing EVM statutes, regulatory policy, and DoW implementation guidance. b. Recognize the value and benefits of EVM in the defense acquisition process.
+  - id: TLO-3
+    text: Recognize the importance of Earned Value as a management tool.
+  - id: TLO-4
+    text: Recognize the management processes associated with EVM.
+  - id: TLO-5
+    text: Recognize the key processes in the development and management of a Performance Measurement Baseline (PMB). a. Identify the relationship of the PMB to program objectives. b. Identify the sequence of steps in the development of the initial PMB.
+  - id: TLO-6
+    text: Identify the three major reasons for PMB changes, their impact, and the approval authority for each.
+  - id: TLO-7
+    text: Identify the benefits of reviewing the PMB at the Integrated Baseline Review (IBR) to evaluate its validity.
+  - id: TLO-8
+    text: Identify the DoW offices and agencies responsible for EVM.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/14_EVM.tex
+    citation_key: edo-3-6-1-evm-intro-2025
+    coverage_status: covered
+    coverage_notes: Earned value management basics, terms, and acquisition-management relevance are covered in the EVM chapter.
+- coursebook_module: 3.6.2
+  coursebook_title: EVM Data Analysis
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-6-earned-value-management/3.6.2 EVM Data Analysis.pdf
+  coursebook_version: '6.0'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Define the 5 Earned Value Management (EVM) independent variables (BCWS, BCWP, ACWP, BAC, EAC) and use them to compute appropriate performance status indicators.
+  - id: TLO-2
+    text: Identify the limitations in analyzing cost and schedule variance.
+  - id: TLO-3
+    text: Identify the four EVM data analysis steps.
+  - id: TLO-4
+    text: Recognize five EVM signs of significant problem areas or risk.
+  - id: TLO-5
+    text: Match the type of work with the most appropriate performance measurement technique.
+  - id: TLO-6
+    text: Given a Gantt chart and performance (e.g., cost, risk and schedule) data, detect and analyze the impact of significant problem areas, based on the status indicators.
+  - id: TLO-7
+    text: Analyze and interpret Contractor performance indicators (cost variance, schedule variance, SPI & CPI) to explain the program's cost and schedule status and identify trends and problem.
+  - id: TLO-8
+    text: Given performance data, calculate an estimate of cost at completion. a. Understand difference between Government and Contractor estimates at completion
+  - id: TLO-9
+    text: Analyze the Contractor's status by applying earned value analysis techniques (e.g., calculate cost variance, schedule variance, cost performance index and schedule performance index).
+  - id: TLO-10
+    text: Given a segment of contract work and associated tasks, plan and schedule the tasks and resources necessary to complete contract work within cost and schedule constraints.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/14_EVM.tex
+    citation_key: edo-3-6-2-evm-analysis-2025
+    coverage_status: covered
+    coverage_notes: EVM analysis measures, variance interpretation, and corrective-action implications are covered in the EVM chapter.
+- coursebook_module: 3.6.3
+  coursebook_title: EVM Exercise
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-6-earned-value-management/3.6.3 EVM Exercise.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Analyze and interpret Contractor performance indicators (cost variance, schedule variance, SPI & CPI) to explain the program's cost and schedule status and identify trends and problems.
+  - id: TLO-2
+    text: Given performance data, calculate an estimate of cost at completion (EAC).
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/14A_EVM_Exercise.tex
+    citation_key: edo-3-6-3-evm-exercise-2025
+    coverage_status: covered
+    coverage_notes: Applied EVM exercise objectives are covered in the EVM exercise chapter.
+- coursebook_module: 3.7.1
+  coursebook_title: Manufacturing and Producibility
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-7-manufacturing-and-production/3.7.1 Manufacturing and Producibility.pdf
+  coursebook_version: '6.0'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the impact of manufacturing on cost, schedule and performance.
+  - id: TLO-2
+    text: Recognize the nine key elements of the Industrial Process.
+  - id: TLO-3
+    text: Recognize the magnitude of the fiscal commitment to a program in production and beyond.
+  - id: TLO-4
+    text: Identify the methods and objectives of manufacturing that influence system design.
+  - id: TLO-5
+    text: Recognize top-level design techniques for a producible product.
+  - id: TLO-6
+    text: Distinguish from among the types of tradeoffs that may be required to attain a producible design.
+  - id: TLO-7
+    text: Recognize Production, Quality, and Manufacturing as an integrated part of the Systems Engineering Process.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/17L_Manufacturing_and_Producibility.tex
+    citation_key: edo-3-7-1-manufacturing-producibility-2025
+    coverage_status: added
+    coverage_notes: New chapter added to cover producibility, DFM/A, MRA/MRLs, industrial base, and manufacturing risk objectives.
+- coursebook_module: 3.7.2
+  coursebook_title: Production, Quality and Manufacturing
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-7-manufacturing-and-production/3.7.2 Production, Quality and Manufacturing.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the elements of manufacturing (5Ms) as they relate to designing a production program.
+  - id: TLO-2
+    text: Recognize the considerations/concerns of the elements of manufacturing (5Ms) and how other areas are affected (i.e., design and producibility).
+  - id: TLO-3
+    text: Distinguish between process and product structures.
+  - id: TLO-4
+    text: Identify the impact of variability on process and product performance.
+  - id: TLO-5
+    text: Identify methods of controlling manufacturing costs (e.g., process proofing, variability reduction, and statistical process control).
+  - id: TLO-6
+    text: Relate process performance to specification tolerance and process capability.
+  - id: TLO-7
+    text: Recognize the value of Lean Manufacturing.
+  - id: TLO-8
+    text: Relate the DoD Quality Systems policy and the role of ISO 9001 in an acquisition program.
+  - id: TLO-9
+    text: Recognize the value of the cost of quality.
+  - id: TLO-10
+    text: Recognize that the use of the "5 Whys" root cause determination method is used in identifying potential root causes.
+  - id: TLO-11
+    text: Recognize that the multi-voting technique is used to narrow large lists of possibilities into smaller, more manageable lists.
+  - id: TLO-12
+    text: Analyze the elements of manufacturing as they relate to a systems performance problem using a qualitative tool (cause and effect/fishbone diagram).
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/17M_Production_Quality_and_Manufacturing.tex
+    citation_key: edo-3-7-2-production-quality-manufacturing-2026
+    coverage_status: added
+    coverage_notes: New chapter added to cover production quality, variation control, quality management, and defect-response objectives.
+- coursebook_module: 3.7.3
+  coursebook_title: Intro to CPI
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-7-manufacturing-and-production/3.7.3 Intro to CPI.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the need for Continuous Process Improvement (CPI).
+  - id: TLO-2
+    text: Recognize the definition of Lean.
+  - id: TLO-3
+    text: Identify the five principles of Lean Thinking.
+  - id: TLO-4
+    text: Recognize Lean terminology.
+  - id: TLO-5
+    text: Recognize types of Lean waste.
+  - id: TLO-6
+    text: Recognize the primary Lean roles.
+  - id: TLO-7
+    text: Recognize the benefits of process improvement through a practical demonstration.
+  - id: TLO-8
+    text: Recognize the basic assumption of Theory of Constraints and identify the 5 focusing steps.
+  - id: TLO-9
+    text: Recognize the difference between a constraint and a bottleneck.
+  - id: TLO-10
+    text: Recognize the goal of Six Sigma and its statistical basis of measurement (e.g., in defects per million).
+  - id: TLO-11
+    text: Identify the Six Sigma methodology.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/17N_Continuous_Process_Improvement.tex
+    citation_key: edo-3-7-3-intro-cpi-2025
+    coverage_status: added
+    coverage_notes: New chapter added to cover CPI, Lean, Six Sigma, TOC, Kaizen, DMAIC, and DOWNTIME waste objectives.
+- coursebook_module: 3.8.1-4
+  coursebook_title: ICS Introduction and Modules
+  source_pdf: tex/assets/coursebook/chapter-3-acquisition-disciplines/section-8-industrial-control-systems/3.8.1-4 ICS Introduction and Modules.pdf
+  coursebook_version: '6.0'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the framework and requirements of the EDO School Integrated Case Study (ICS) and Program Office team assignments.
+  - id: TLO-2
+    text: Identify the case study modules and presentations required throughout the course.
+  - id: TLO-3
+    text: Identify the ground rules used in conducting the ICS.
+  - id: TLO-4
+    text: Understand the basis for grading and evaluation of the ICS presentations.
+  - id: TLO-5
+    text: Understand the time requirements needed to complete the ICS exercise both inside and outside of the classroom.
+  - id: TLO-6
+    text: Understand the need for and develop a team charter.
+  - id: TLO-7
+    text: 'Apply key principles associated with establishing and maintaining effective teams including: team charters, operating agreements, team organizational roles and responsibilities, success factors, and behavioral skills necessary for successfully leading and participating in Integrated Product Teams (IPTs).'
+  - id: TLO-8
+    text: While functioning as the leader for your ICS Team, use IPT leadership concepts to overcome barriers to effective teamwork.
+  - id: TLO-9
+    text: Identify the program stakeholders for the ICS.
+  - id: TLO-10
+    text: Identify the reporting chain(s) of command for a program office.
+  - id: TLO-11
+    text: Apply key principles of SYSCOM/PEO organization, funding, requirements, and technical authority to the ICS.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/17O_Integrated_Case_Study.tex
+    citation_key: edo-3-8-1-ics-introduction-2025
+    coverage_status: added
+    coverage_notes: New chapter added to preserve integrated case-study objectives and board-style synthesis cues for the acquisition module.
+- coursebook_module: 4.1.1
+  coursebook_title: Fleet Maintenance Assets
+  source_pdf: tex/assets/coursebook/chapter-4-fleet-maintenance-and-modernization/section-1-maintenance-foundations/4.1.1 Fleet Maintenance Assets.pdf
+  coursebook_version: '6.0'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the definitions of organizational, intermediate, and depot (O, I, D) levels of maintenance.
+  - id: TLO-2
+    text: Given activity names, identify their levels of maintenance and product lines.
+  - id: TLO-3
+    text: Identify the typical organizational structure (names and functions of major departments) of I and D level maintenance activities.
+  - id: TLO-4
+    text: Identify the Supervisor of Shipbuilding (SUPSHIP) and Regional Maintenance Center (RMC) missions and be able to differentiate between the repair and new construction roles.
+  - id: TLO-5
+    text: Identify the reporting chain and source of funding for the I and D level activities.
+  - id: TLO-6
+    text: Identify the workforce composition and workforce training mechanisms at maintenance activities.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/19_Fleet_Maintenance_Assets.tex
+    citation_key: edo-4-1-1-fleet-maint-assets-2025
+    coverage_status: covered
+    coverage_notes: Fleet maintenance organizations, assets, and availability-support roles are covered in the fleet maintenance assets chapter.
+- coursebook_module: 4.1.2
+  coursebook_title: Navy Modernization Program
+  source_pdf: tex/assets/coursebook/chapter-4-fleet-maintenance-and-modernization/section-1-maintenance-foundations/4.1.2 Navy Modernization Program.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the goals of the Navy Modernization Program.
+  - id: TLO-2
+    text: Recognize the difference between maintenance and modernization in the operations and sustainment phase of ships and weapon systems.
+  - id: TLO-3
+    text: Recognize attributes of the Fleet Modernization Program (FMP), or legacy submarine process. a. Match the various types or "titles" of SHIPALTs with who funds the development, procurement and installation. b. Match the various modernization documents (Justification Cost Form, SHIPALT Record, Ship Installation Drawing) with who prepares them and who approves them.
+  - id: TLO-4
+    text: Recognize attributes of the Navy Modernization Program (NMP). a. Match the various types of ship changes with who funds the development, procurement and installation. b. Recognize the purpose of the Ship Change Document (SCD) and who initiates and submits it. c. Identify the sponsor and approval authorities for modernization.
+  - id: TLO-5
+    text: Recognize policies regarding the scheduling and accomplishment of alterations.
+  - id: TLO-6
+    text: Recognize the activities that accomplish alterations.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/20_Navy_Modernization_Program.tex
+    citation_key: edo-4-1-2-navy-modernization-2025
+    coverage_status: covered
+    coverage_notes: Navy modernization planning, installation, and configuration-control objectives are covered in the modernization chapter.
+- coursebook_module: 4.1.3
+  coursebook_title: Fleet Maintenance Policy and Implementation
+  source_pdf: tex/assets/coursebook/chapter-4-fleet-maintenance-and-modernization/section-1-maintenance-foundations/4.1.3 Fleet Maintenance Policy and Implementation.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the Navy's ship maintenance policy.
+  - id: TLO-2
+    text: Identify the relationships between Condition Based Maintenance (CBM), Time Directed Maintenance (TDM), and Reliability Centered Maintenance (RCM).
+  - id: TLO-3
+    text: 'Identify the content, and uses of the following documents: OPNAVINST 4700.7M, OPNAVNOTE 4700, Navy Data Environment - Navy Modernization (NDE-NM), the Class Maintenance Plan (CMP), and the Integrated Class Maintenance Plan (ICMP).'
+  - id: TLO-4
+    text: Identify roles, responsibilities, considerations, and requirements involved with the CNO availability scheduling and approval process.
+  - id: TLO-5
+    text: Identify the Navy's current maintenance strategies and their key attributes.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/21_Fleet_Maintenance_Policy_and_Implementation.tex
+    citation_key: edo-4-1-3-fleet-maint-policy-2025
+    coverage_status: covered
+    coverage_notes: Fleet maintenance policy, implementation, and governance objectives are covered in the fleet maintenance policy chapter.
+- coursebook_module: 4.1.4
+  coursebook_title: AIT Fundamentals and Lessons Learned
+  source_pdf: tex/assets/coursebook/chapter-4-fleet-maintenance-and-modernization/section-1-maintenance-foundations/4.1.4 AIT Fundamentals and Lessons Learned.pdf
+  coursebook_version: '6.0'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the purposes and advantages of modernization performed by Alteration Installation Teams (AITs).
+  - id: TLO-2
+    text: Recognize the lessons learned from adoption and implementation of AITs.
+  - id: TLO-3
+    text: Identify the roles and responsibilities of various organizations (AIT Sponsor, Regional Maintenance and Modernization Coordination Office (RMMCO), AIT manager, On-Site Installation Coordinator (OSIC), Lead Maintenance Activity (LMA), Naval Supervising Activity (NSA)) involved in AIT management.
+  - id: TLO-4
+    text: Recognize the importance of the Memorandum of Agreement (MOA) in managing AIT installations during availabilities.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/22_AIT_Fundamentals_and_Lessons_Learned.tex
+    citation_key: edo-4-1-4-ait-fundamentals-2025
+    coverage_status: covered
+    coverage_notes: Alteration installation team fundamentals and lessons-learned objectives are covered in the AIT chapter.
+- coursebook_module: 4.1.5
+  coursebook_title: Waterfront Organizations, Work Controls, and Safety
+  source_pdf: tex/assets/coursebook/chapter-4-fleet-maintenance-and-modernization/section-1-maintenance-foundations/4.1.5 Waterfront Organizations, Work Controls, and Safety.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the mission and major functions of the Naval Reactors Representative's Office (NRRO).
+  - id: TLO-2
+    text: Recognize the general responsibilities of the Reactor Plant Contractor's Office (RPCO).
+  - id: TLO-3
+    text: Relate the THRESHER, GUITARRO, and MIAMI accidents to the resulting improvements to ship safety during maintenance.
+  - id: TLO-4
+    text: Recognize the purpose and the general requirements of the Submarine Safety (SUBSAFE) Program
+  - id: TLO-5
+    text: Recognize the purpose and the general requirements of the Deep Submergence Systems (DSS) Program
+  - id: TLO-6
+    text: Recognize the major requirements of the Industrial Ship Safety Manual for Submarines (6010 Manual).
+  - id: TLO-7
+    text: Recognize the major requirements of the Industrial Ship Safety Manual for Fire Prevention and Response (8010 Manual).
+  - id: TLO-8
+    text: Recognize the two requirements to perform work on a ship or submarine (Technical Work Document (TWD) and authorization).
+  - id: TLO-9
+    text: Recognize the special considerations for Tag-Outs in a maintenance environment (divers, barrier criteria, Repair Activity Representative).
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/23_Waterfront_Organization_Work_Control_Safety.tex
+    citation_key: edo-4-1-5-waterfront-work-control-2025
+    coverage_status: updated
+    coverage_notes: Waterfront work-control and safety objectives are covered with strengthened contracting work authorization, LOA, WAF, and safety cues.
+- coursebook_module: 4.1.6
+  coursebook_title: Battle Damage Assessment Repair
+  source_pdf: tex/assets/coursebook/chapter-4-fleet-maintenance-and-modernization/section-1-maintenance-foundations/4.1.6 Battle Damage Assessment Repair.pdf
+  coursebook_version: '6.3'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the importance of Battle Damage Assessment/Repair familiarization to EDO career development.
+  - id: TLO-2
+    text: Identify specific roles EDOs play in Battle Damage Assessment/Repair.
+  - id: TLO-3
+    text: Recognize the conceptual repair infrastructure that supports Battle Damage Assessment/Repair.
+  - id: TLO-4
+    text: Recognize the Repair Continuum, phases, and responsible organizations from Damage Control through Expeditionary Repair or Ashore Repair.
+  - id: TLO-5
+    text: Explain the difference between peace-time and war-time maintenance and repair, to include associated Technical Authority.
+  - id: TLO-6
+    text: Describe the Command and Control (C2) architecture that supports Battle Damage Assessment/Repair.
+  - id: TLO-7
+    text: Recognize the impact of Operational Logistics in a Contested Maritime Environment on Battle Damage Assessment/Repair.
+  - id: TLO-8
+    text: Recognize existing systems of people, parts and process that provide ship maintenance and repair to sustain the Fleet during operations.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/24_Battle_Damage_Assessment_Repair.tex
+    citation_key: edo-4-1-6-bdar-2025
+    coverage_status: updated
+    coverage_notes: Battle damage assessment and repair objectives are covered with added rapid assessment, temporary/permanent repair, and operational-restoration framing.
+- coursebook_module: 4.2.1
+  coursebook_title: CNO Availability Planning
+  source_pdf: tex/assets/coursebook/chapter-4-fleet-maintenance-and-modernization/section-2-cno-availabilities/4.2.1 CNO Availability Planning.pdf
+  coursebook_version: '6.2'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the need for balance between flexible requirements and stable requirements / early planning.
+  - id: TLO-2
+    text: Identify the five sources of jobs contained in Availability Work Packages (AWP).
+  - id: TLO-3
+    text: Identify the process for AWP development.
+  - id: TLO-4
+    text: Identify the names, abbreviations and purposes of typical CNO availability planning products.
+  - id: TLO-5
+    text: Identify the duties of the key Project Team members during availability planning.
+  - id: TLO-6
+    text: Identify the similarities and differences in the work definition and planning processes across different ship platforms in accordance with Surface Team One, Carrier Team One and Sub Team One.
+  - id: TLO-7
+    text: Identify the benefits of Multiple Award Contract Multiple Order (MACMO) contracts when planning ship maintenance.
+  - id: TLO-8
+    text: Identify the roles and responsibilities of availability planning activities/organizations.
+  - id: TLO-9
+    text: Recognize the planning goals to be met prior to availability start.
+  - id: TLO-10
+    text: Given a simple Gantt chart with defined task relationships, identify the critical path.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/25_CNO_Availability_Planning.tex
+    citation_key: edo-4-2-1-cno-availability-planning-2025
+    coverage_status: updated
+    coverage_notes: CNO availability planning objectives are covered with expanded planning-event, work-package, and readiness-accountability cues.
+- coursebook_module: 4.2.2
+  coursebook_title: CNO Availability Execution
+  source_pdf: tex/assets/coursebook/chapter-4-fleet-maintenance-and-modernization/section-2-cno-availabilities/4.2.2 CNO Availability Execution.pdf
+  coursebook_version: '6.2'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the members and responsibilities of a public shipyard project team and Regional Maintenance Center maintenance team.
+  - id: TLO-2
+    text: Identify typical execution phases of a repair availability and what goes on within each phase.
+  - id: TLO-3
+    text: Identify the terms associated with scheduling a maintenance availability.
+  - id: TLO-4
+    text: Recognize the roles and responsibilities of the Naval Supervising Activity (NSA) and Lead Maintenance Activity (LMA).
+  - id: TLO-5
+    text: Identify organizations that can fulfill the roles of NSA and LMA.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/26_CNO_Availability_Execution.tex
+    - tex/chapters/28_AWP_and_SOVT.tex
+    citation_key: edo-4-2-2-cno-availability-execution-2025
+    coverage_status: covered
+    coverage_notes: CNO availability execution, AWP, and SOVT objectives are covered in the execution and AWP/SOVT chapters.
+- coursebook_module: 6.1.1
+  coursebook_title: CIVPERS Overview
+  source_pdf: tex/assets/coursebook/chapter-6-civilian-personnel/section-1-civpers/6.1.1 CIVPERS Overview.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the importance of Civilian Personnel Management for an Engineering Duty Officer.
+  - id: TLO-2
+    text: Identify perceptions about civil servants that may be incorrect.
+  - id: TLO-3
+    text: Identify guidance sources for Civilian Personnel Management.
+  - id: TLO-4
+    text: Recognize the four primary functions of Human Resource Offices (HROs).
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/27_CIVPERS.tex
+    citation_key: edo-6-1-1-civpers-overview-2025
+    coverage_status: covered
+    coverage_notes: Civilian personnel management overview objectives are covered in the CIVPERS chapter.
+- coursebook_module: 6.1.2
+  coursebook_title: Workforce Shaping and Classification
+  source_pdf: tex/assets/coursebook/chapter-6-civilian-personnel/section-1-civpers/6.1.2 Workforce Shaping and Classification.pdf
+  coursebook_version: '6.0'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Given descriptions, identify General Schedule (GS), Wage Grade (WG), Pay Bands and Senior Executive Service (SES) pay systems.
+  - id: TLO-2
+    text: Recognize other types of pay that apply to GS and WG pay systems.
+  - id: TLO-3
+    text: Identify the basic provisions of the Fair Labor Standards Act (FLSA).
+  - id: TLO-4
+    text: Identify the purpose of position descriptions and job descriptions.
+  - id: TLO-5
+    text: Identify different methods for filling civilian vacancies (management reassignment, merit competition, hiring from off the street, outsourcing, mandatory placement programs (stopper list))
+  - id: TLO-6
+    text: Recognize key characteristics of the different methods of filling civilian vacancies.
+  - id: TLO-7
+    text: Identify different methods for reducing civilian staffing (Reduction in Force (RIF), Separation Incentive Program (SIP), Voluntary Early Retirement Authority (VERA), and furlough).
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/27_CIVPERS.tex
+    citation_key: edo-6-1-2-workforce-shaping-2025
+    coverage_status: updated
+    coverage_notes: Workforce-shaping objectives are covered with added staffing, position management, classification, and recruiting cues.
+- coursebook_module: 6.1.3
+  coursebook_title: EEO
+  source_pdf: tex/assets/coursebook/chapter-6-civilian-personnel/section-1-civpers/6.1.3 EEO.pdf
+  coursebook_version: '6.0'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Recognize the ten bases for discrimination.
+  - id: TLO-2
+    text: Identify the theories of discrimination.
+  - id: TLO-3
+    text: Identify characteristics of the different types of sexual harassment.
+  - id: TLO-4
+    text: Recognize the Federal sector discrimination complaint process.
+  - id: TLO-5
+    text: Identify management's responsibilities when notified of a discrimination complaint.
+  - id: TLO-6
+    text: Identify the complainant's and Responsible Management Official's rights.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/27_CIVPERS.tex
+    citation_key: edo-6-1-3-eeo-2025
+    coverage_status: updated
+    coverage_notes: EEO objectives are covered with added protected-class, reasonable-accommodation, harassment, reprisal, and complaint-channel cues.
+- coursebook_module: 6.1.4
+  coursebook_title: Employee Relations
+  source_pdf: tex/assets/coursebook/chapter-6-civilian-personnel/section-1-civpers/6.1.4 Employee Relations.pdf
+  coursebook_version: '6.0'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the different types of work schedules available to civilian employees.
+  - id: TLO-2
+    text: Recognize the policies applicable to civilian leave categories.
+  - id: TLO-3
+    text: Identify the rules governing the use of leave.
+  - id: TLO-4
+    text: Identify the elements in the civilian performance evaluation cycle.
+  - id: TLO-5
+    text: Recognize various types of civilian incentive awards.
+  - id: TLO-6
+    text: Recognize Navy procedures for dealing with employee poor performance and the Navy's philosophy of discipline.
+  - id: TLO-7
+    text: Recognize the various types of civilian disciplinary actions.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/27_CIVPERS.tex
+    citation_key: edo-6-1-4-employee-relations-2025
+    coverage_status: updated
+    coverage_notes: Employee-relations objectives are covered with added performance, discipline, grievance, and documentation cues.
+- coursebook_module: 6.1.5
+  coursebook_title: Labor Relations
+  source_pdf: tex/assets/coursebook/chapter-6-civilian-personnel/section-1-civpers/6.1.5 Labor Relations.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Identify the roles of the various organizations involved in the labor relations process.
+  - id: TLO-2
+    text: Identify categories of personnel considered to be "bargaining unit employees" with respect to Federal Service Labor Relations.
+  - id: TLO-3
+    text: Recognize activities where "official time" may be used.
+  - id: TLO-4
+    text: Identify when "official time" is an entitlement and when it must be negotiated.
+  - id: TLO-5
+    text: Recognize employee, Union, and management rights which are protected by Federal Labor Relations law.
+  - id: TLO-6
+    text: Identify when management has the obligation to notify the Union when making changes to personnel policies, practices and working conditions.
+  - id: TLO-7
+    text: Use formal discussion and Weingarten meeting criteria to determine when labor organization representatives should be given the opportunity to be present at meetings.
+  - id: TLO-8
+    text: Identify management and Union unfair labor practices.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/27_CIVPERS.tex
+    citation_key: edo-6-1-5-labor-relations-2025
+    coverage_status: updated
+    coverage_notes: Labor-relations objectives are covered with added bargaining-unit, Weingarten, formal-discussion, and impact-and-implementation bargaining cues.
+- coursebook_module: 6.1.6
+  coursebook_title: CIVPERS Wrap-up
+  source_pdf: tex/assets/coursebook/chapter-6-civilian-personnel/section-1-civpers/6.1.6 CIVPERS Wrap-up.pdf
+  coursebook_version: '6.1'
+  coursebook_date: null
+  tlos:
+  - id: TLO-1
+    text: Given civilian personnel scenarios and alternative supervisor actions, determine, as a member of a team, the most appropriate supervisor actions for each scenario.
+  coverage:
+    study_guide_chapters:
+    - tex/chapters/27_CIVPERS.tex
+    citation_key: edo-6-1-6-civpers-wrap-up-2025
+    coverage_status: updated
+    coverage_notes: Wrap-up objectives are covered with added supervisor-action synthesis and board-style civilian-personnel decision cues.

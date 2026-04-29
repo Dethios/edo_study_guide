@@ -1,0 +1,84 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+
+\documentclass[../main.tex]{subfiles}
+\externaldocument{../main}
+
+\begin{document}
+
+\section{Continuous Process Improvement}
+
+\subsection{Purpose}
+
+Continuous Process Improvement (CPI) is the disciplined use of improvement
+methods to remove waste, reduce variation, elevate constraints, and improve
+fleet outcomes.  Coursebook 3.7.3 links CPI to the EDO tool set: Lean, Theory
+of Constraints, and Six Sigma are practical methods for improving engineering,
+maintenance, production, and administrative processes
+\autocite{edo-3-7-3-intro-cpi-2025}.
+
+\subsection{Lean thinking}
+
+\begin{longtblr}[
+  caption = {Five Lean principles.},
+  label = {tab:lean-principles},
+]{
+  width = \linewidth,
+  colspec = {X[0.75,l] X[1.7,l]},
+  rowhead = 1,
+  hlines,
+  vlines,
+}
+\textbf{Principle} & \textbf{Meaning for an EDO process} \\
+Value & Define value from the customer or fleet perspective. \\
+Value stream & Map every step that creates, supports, delays, or obscures value. \\
+Flow & Remove queues, rework, handoff delays, and avoidable batching. \\
+Pull & Let demand signal the next step instead of pushing excess work into the system. \\
+Perfection & Continue improving after the first visible bottleneck is removed. \\
+\end{longtblr}
+
+Lean waste is any activity that does not add value for the customer.  Common
+waste categories include waiting, excess inventory, unnecessary motion,
+transportation, overproduction, overprocessing, defects, and unused talent
+\autocite{edo-3-7-3-intro-cpi-2025}.
+
+\subsection{Theory of Constraints}
+
+Theory of Constraints starts from the premise that every system has a limiting
+constraint.  The five focusing steps are: identify the constraint, exploit the
+constraint, subordinate other work to the constraint, elevate the constraint,
+and repeat when the constraint moves
+\autocite{edo-3-7-3-intro-cpi-2025}.  A bottleneck is a visible queue or
+capacity limit; a constraint is the system limit that controls total throughput.
+They may be the same, but the EDO should verify rather than assume.
+
+\subsection{Six Sigma and DMAIC}
+
+Six Sigma focuses on reducing variation and defects.  The common performance
+shorthand is 3.4 defects per million opportunities.  The DMAIC improvement
+cycle is define, measure, analyze, improve, and control
+\autocite{edo-3-7-3-intro-cpi-2025}.
+
+\begin{longtblr}[
+  caption = {DMAIC board cue.},
+  label = {tab:dmaic-board-cue},
+]{
+  width = \linewidth,
+  colspec = {X[0.55,l] X[1.75,l]},
+  rowhead = 1,
+  hlines,
+  vlines,
+}
+\textbf{Step} & \textbf{Question} \\
+Define & What problem, customer, process, and outcome are in scope? \\
+Measure & What data prove the current baseline and variation? \\
+Analyze & What root causes explain the performance gap? \\
+Improve & What countermeasures change the process? \\
+Control & What controls prevent regression after the event ends? \\
+\end{longtblr}
+
+\paragraph{Board cue.}
+Do not answer CPI as a slogan.  Name the method, state the constraint or waste,
+show the metric, and explain how the control plan prevents backsliding.
+
+\end{document}

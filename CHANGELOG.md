@@ -9,6 +9,9 @@ release tags (release-YYYYMMDD).
 
 ### Added
 
+- Added a coursebook coverage manifest that maps included coursebook modules and
+  topic learning objectives to study-guide chapters, citation keys, and coverage
+  status.
 - Documented the Git-root documentation set and project memory boundaries.
 
 ### Changed

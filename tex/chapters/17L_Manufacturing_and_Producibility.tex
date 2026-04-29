@@ -1,0 +1,74 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+
+\documentclass[../main.tex]{subfiles}
+\externaldocument{../main}
+
+\begin{document}
+
+\section{Manufacturing and Producibility}
+
+\subsection{Why manufacturing belongs in acquisition decisions}
+
+Manufacturing is not a post-design activity.  A program can meet technical
+requirements on paper and still fail because the design cannot be produced,
+tested, funded, or sustained at the required rate.  Coursebook 3.7.1 frames the
+manufacturing decision as a cost, schedule, and performance control problem:
+the program manager must use producibility thinking early enough to influence
+system design, supplier choices, manufacturing planning, and quality management
+before production commitments become expensive to reverse
+\autocite{edo-3-7-1-manufacturing-producibility-2025}.
+
+\subsection{Nine industrial process elements}
+
+\begin{longtblr}[
+  caption = {Industrial process elements to check before production commitment.},
+  label = {tab:industrial-process-elements},
+]{
+  width = \linewidth,
+  colspec = {X[1.05,l] X[0.9,l] X[1.65,l]},
+  rowhead = 1,
+  hlines,
+  vlines,
+}
+\textbf{Element} & \textbf{Program-manager leverage} & \textbf{Board cue} \\
+Design & Direct influence & Push producibility, testability, modularity, tolerances, and design margins into the design baseline. \\
+Materials & Direct influence & Check critical materials, alternate sources, lead times, and obsolescence risk before rate decisions. \\
+Cost and funding & Direct influence & Align design choices, production rate, and quality controls with executable funding. \\
+Process capability and control & Direct influence & Ask whether the process can repeatedly hold the required tolerances at the planned rate. \\
+Quality management & Direct influence & Treat prevention and appraisal as cheaper than repeated inspection, rework, and field failure. \\
+Manufacturing planning, scheduling, and control & Direct influence & Ensure work instructions, tooling, labor, suppliers, and schedule logic support the required flow. \\
+Technology and industrial base & Indirect influence & Assess fragile vendors, unique tooling, special processes, foreign dependencies, and surge capacity. \\
+Facilities & Indirect influence & Identify facility constraints, environmental permits, capital equipment, and layout limits. \\
+Personnel & Indirect influence & Check whether the supplier has trained labor, certified operators, supervision, and quality culture. \\
+\end{longtblr}
+
+\subsection{Manufacturing objectives for design}
+
+The manufacturing objective is to make the design producible, affordable, and
+testable without losing the operational capability that justified the program.
+The board answer should connect three levers
+\autocite{edo-3-7-1-manufacturing-producibility-2025}:
+
+\begin{description}
+  \item[\textbf{Design.}] Develop a producible and testable design rather than a design that only works in engineering demonstration.
+  \item[\textbf{Process.}] Design and mature manufacturing processes that can reliably build the item.
+  \item[\textbf{Process control.}] Establish process controls that satisfy requirements while minimizing avoidable cost.
+\end{description}
+
+\subsection{Producibility trade space}
+
+Producibility is a trade, not a slogan.  The program manager should be ready to
+explain how operational performance, reliability, availability, supportability,
+technology constraints, ownership cost, schedule, and producibility interact.
+A design that maximizes one attribute can damage another; for example, a very
+tight tolerance may improve a performance margin while increasing supplier
+yield loss and delaying delivery
+\autocite{edo-3-7-1-manufacturing-producibility-2025}.
+
+\paragraph{Board cue.}
+If asked why an EDO cares about manufacturing, answer: production is where
+design, funding, industrial base, quality, and schedule converge.  Producibility
+must be designed in before production locks in cost and risk.
+
+\end{document}

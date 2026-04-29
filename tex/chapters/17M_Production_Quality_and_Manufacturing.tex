@@ -1,0 +1,84 @@
+% !TEX root = ../main.tex
+% !TEX program = lualatex
+
+\documentclass[../main.tex]{subfiles}
+\externaldocument{../main}
+
+\begin{document}
+
+\section{Production, Quality, and Manufacturing}
+
+\subsection{Production system variables}
+
+Coursebook 3.7.2 ties production performance to the variables that create
+process variation.  The standard board framing is the ``5Ms'': material,
+machinery, method, manpower, and measurement.  Some quality tools add
+environment, or milieu, as a sixth source of variation
+\autocite{edo-3-7-2-production-quality-manufacturing-2026}.
+
+\begin{longtblr}[
+  caption = {Production variables and the EDO question to ask.},
+  label = {tab:production-variables},
+]{
+  width = \linewidth,
+  colspec = {X[0.7,l] X[1.6,l]},
+  rowhead = 1,
+  hlines,
+  vlines,
+}
+\textbf{Variable} & \textbf{EDO question} \\
+Material & Are incoming materials, parts, and supplier processes consistent enough for the required product? \\
+Machinery & Are equipment, tooling, fixtures, and calibration capable at the planned rate? \\
+Method & Are work instructions, routing, sequencing, and process controls mature and repeatable? \\
+Manpower & Are operators trained, certified, supervised, and available? \\
+Measurement & Can inspections and tests detect the variation that matters? \\
+Environment & Do temperature, humidity, cleanliness, safety, or other workplace conditions affect output? \\
+\end{longtblr}
+
+\subsection{Product and process structures}
+
+Production structures move along a variety-rate continuum.  Job shops support
+high variety and low volume; batch production groups similar work; assembly
+lines increase flow for more stable products; continuous-flow processes support
+very high volume with highly standardized products.  The acquisition question
+is whether the product design, production rate, and industrial base match the
+selected process structure
+\autocite{edo-3-7-2-production-quality-manufacturing-2026}.
+
+\subsection{Variation, capability, and statistical control}
+
+Process proofing and variation reduction precede confidence in rate production.
+The program manager should distinguish tolerance from capability: a drawing
+tolerance says what is acceptable, while process capability shows whether the
+production process can repeatedly produce within that tolerance.  Statistical
+process control is useful only when measurements are tied to the critical
+process characteristics and acted on before defects escape
+\autocite{edo-3-7-2-production-quality-manufacturing-2026}.
+
+\subsection{Lean, ISO 9001, and cost of quality}
+
+\begin{description}
+  \item[\textbf{Lean.}] Lean manufacturing is a people-oriented business philosophy that focuses on value, value stream, flow, pull, and perfection.
+  \item[\textbf{ISO 9001.}] DoD can accept an ISO 9001 quality system as evidence of disciplined quality management for complex or critical systems, but the program manager should not treat registration as the only possible quality approach.
+  \item[\textbf{Cost of quality.}] Prevention and appraisal cost are deliberate investments to avoid internal failure, external failure, rework, warranty, and fleet-impact costs.
+\end{description}
+These coursebook quality concepts are linked because they all push the program
+manager toward prevention, stable process control, and supplier-quality evidence
+instead of late defect discovery
+\autocite{edo-3-7-2-production-quality-manufacturing-2026}.
+
+\subsection{Problem-solving tools}
+
+Use ``5 Whys'' only after the problem statement is accurate and the answers are
+complete, unbiased, and honest.  Use multivoting to reduce a long list of
+candidate causes or improvements to the few priorities the team will actually
+work.  Use cause-and-effect, or fishbone, diagrams to organize possible causes
+by production variable before choosing corrective action
+\autocite{edo-3-7-2-production-quality-manufacturing-2026}.
+
+\paragraph{Board cue.}
+Quality is built into the process, not inspected into the product.  Tie every
+production-quality answer to variation, process capability, control, and cost
+of quality.
+
+\end{document}
