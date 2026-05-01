@@ -68,6 +68,8 @@
 - Format LaTeX with repo scripts or the configured Docker wrappers.
 - For content changes, run a focused TODO/citation/acronym check when relevant:
   `rg "TODO|undefined citation|Missing character" tex artifacts/build`
+- For acronym hygiene, run:
+  `make check-acronyms`
 - Report build warnings that remain, especially overfull boxes, missing
   citations, or shell-escape-related issues.
 

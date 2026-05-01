@@ -357,14 +357,16 @@
     pagenumberformat=\moderntech@toc@pagenumber,
     pagenumberwidth=2.2em
   ]{tocline}{section}%
-  % \DeclareTOCStyleEntry[
-  %   entryformat=\moderntech@toc@subsection,
-  %   pagenumberformat=\moderntech@toc@pagenumber,
-  %   pagenumberwidth=2.2em
-  % ]{tocline}{subsection}%
-  % \DeclareTOCStyleEntry[
-  %   pagenumberwidth=2.2em
-  % ]{tocline}{subsubsection}%
+  \DeclareTOCStyleEntry[
+    entryformat=\moderntech@toc@subsection,
+    pagenumberformat=\moderntech@toc@pagenumber,
+    numwidth=3.5em,
+    pagenumberwidth=2.2em
+  ]{tocline}{subsection}%
+  \DeclareTOCStyleEntry[
+    numwidth=4.5em,
+    pagenumberwidth=2.2em
+  ]{tocline}{subsubsection}%
 }
 \AtBeginDocument{\moderntechsetupTOC}
 

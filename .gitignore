@@ -99,6 +99,8 @@ __latexindent_temp_*
 *.temp
 *.swp
 *.swo
+__pycache__/
+*.py[cod]
 
 # ======================
 # OS cruft

@@ -1,4 +1,4 @@
-.PHONY: force-rebuild-tikz check-tikz-cache
+.PHONY: force-rebuild-tikz check-tikz-cache check-acronyms
 force-rebuild-tikz:
 	@project_root="$$(pwd)"; \
 	for cache_dir in "$$project_root/artifacts/tikz" "$$project_root/.build/tikz" "$$project_root/build/tikz"; do \
@@ -7,3 +7,6 @@ force-rebuild-tikz:
 
 check-tikz-cache:
 	@./scripts/check-tikz-cache.sh
+
+check-acronyms:
+	@./scripts/check-acronyms.py

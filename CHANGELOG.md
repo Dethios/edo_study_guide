@@ -9,6 +9,8 @@ release tags (release-YYYYMMDD).
 
 ### Added
 
+- Added a repo-local acronym hygiene check for duplicate definitions, undefined
+  acronym keys, table-body acronym macros, and item-label acronym macros.
 - Added a coursebook coverage manifest that maps included coursebook modules and
   topic learning objectives to study-guide chapters, citation keys, and coverage
   status.
@@ -16,6 +18,8 @@ release tags (release-YYYYMMDD).
 
 ### Changed
 
+- Performed a formatting and editorial audit pass for acronym placement,
+  citation/table-source consistency, list formatting, and table-of-contents depth.
 - Align README and contributing guidance with current build and release scripts.
 - Refreshed `AGENTS.md` to remove stale instruction-source references and keep
   active agent guidance focused on source recency, LaTeX conventions, and

@@ -913,6 +913,37 @@
 \newacronym{adcon}{ADCON}{Administrative Control}
 \newacronym{opcon}{OPCON}{Operational Control}
 \newacronym{canes}{CANES}{Consolidated Afloat Networks and Enterprise Services}
+\newacronym{amod}{AMOD}{AEGIS Modernization}
+\newacronym{acb}{ACB}{Advanced Capability Build}
+\newacronym{cps}{CPS}{Common Processor System}
+\newacronym{cds}{CDS}{Common Display System}
+\newacronym{amdr}{AMDR}{Air and Missile Defense Radar}
+\newacronym[shortplural={RMAs},longplural={Radar Modular Assemblies}]{rma}{RMA}{Radar Modular Assembly}
+\newacronym{iamd}{IAMD}{Integrated Air and Missile Defense}
+\newacronym{cop}{COP}{Common Operational Picture}
+\newacronym{ctpic}{CTP}{Common Tactical Picture}
+\newacronym[shortplural={MOCs},longplural={Maritime Operations Centers}]{moc}{MOC}{Maritime Operations Center}
+\newacronym{soa}{SOA}{Service-Oriented Architecture}
+\newacronym{mtc2}{MTC2}{Maritime Tactical Command and Control}
+\newacronym{dmo}{DMO}{Distributed Maritime Operations}
+\newacronym{ntcss}{NTCSS}{Naval Tactical Command Support System}
+\newacronym{nmro}{N-MRO}{Naval Maintenance, Repair, and Overhaul}
+\newacronym{noss}{NOSS}{Naval Operational Supply System}
+\newacronym{nmt}{NMT}{Navy Multiband Terminal}
+\newacronym{milsatcom}{MILSATCOM}{military satellite communications}
+\newacronym{aehf}{AEHF}{Advanced Extremely High Frequency}
+\newacronym{wgs}{WGS}{Wideband Global SATCOM}
+\newacronym{dscs}{DSCS}{Defense Satellite Communications System}
+\newacronym{eps}{EPS}{Enhanced Polar System}
+\newacronym{a2ad}{A2/AD}{anti-access/area-denial}
+\newacronym{lpi}{LPI}{low probability of intercept}
+\newacronym{xdr}{XDR}{Extended Data Rate}
+\newacronym{nen}{NEN}{Naval Enterprise Network}
+\newacronym{ngen}{NGEN}{Next Generation Enterprise Network}
+\newacronym{ngenr}{NGEN-R}{NGEN-Recompete}
+\newacronym{nmci}{NMCI}{Navy Marine Corps Intranet}
+\newacronym{cares}{CARES}{Coronavirus Aid, Relief, and Economic Security}
+\newacronym{cpi-process}{CPI}{Continuous Process Improvement}
 \newacronym{aws}{AWS}{Aegis Weapon System}
 \newacronym{gpnts}{GPNTS}{GPS-based Positioning, Navigation, and Timing Service}
 \newacronym{nde}{NDE}{Navy Data Environment}

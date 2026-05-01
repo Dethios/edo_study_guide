@@ -81,6 +81,16 @@ TikZ cache path validation:
 make check-tikz-cache
 ```
 
+Acronym hygiene validation:
+
+```shell
+make check-acronyms
+```
+
+The acronym check verifies that `tex/acronyms.def` has unique keys, acronym
+macros reference defined keys, and acronym macros do not appear inside
+table-like environments or optional `\item[...]` labels.
+
 ## Format
 
 Bash:
