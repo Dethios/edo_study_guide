@@ -1,4 +1,4 @@
-# EDO Acquisition Tutor (Study Guide)
+# EDO Acquisition Tutor
 
 This repository builds the Navy Engineering Duty Officer (EDO) Acquisition Tutor
 study guide. The LaTeX sources live in `tex/`, while build outputs and aux files
@@ -7,21 +7,21 @@ live under `artifacts/` at the repo root.
 Read `AGENTS.md` before content or workflow edits. It contains the current
 source-recency, citation, acronym, and validation rules for this project.
 
-## Repo layout
+## Repository Layout
 
-- `tex/` - LaTeX sources (chapters, templates, assets, TikZ)
-- `tex/assets/reference-docs/` - mirrored PDFs, notes, and source-support files used by the guide
-- `artifacts/out/` - PDF output (gitignored)
-- `artifacts/build/` - LaTeX aux files (gitignored)
-- `artifacts/tikz/` - TikZ externalization cache (gitignored)
-- `out/` and `build/` - compatibility symlinks to `artifacts/out/` and `artifacts/build/`
-- `release/` - dated PDF artifacts (gitignored; published via GitHub Releases)
-- `scripts/` - build/format/release helpers (bash + PowerShell)
-- `docs/reference/` - imported manuals, style assets, and one-off supporting material
-- `docs/archive/` - historical setup and migration notes
-- `project_export.json` - project memory/database snapshot
+- `tex/`: LaTeX sources, chapters, templates, assets, TikZ, and bibliographies.
+- `tex/assets/reference-docs/`: mirrored PDFs, notes, and source-support files.
+- `artifacts/out/`: PDF output, ignored by Git.
+- `artifacts/build/`: LaTeX aux files, ignored by Git.
+- `artifacts/tikz/`: TikZ externalization cache, ignored by Git.
+- `out/` and `build/`: compatibility symlinks to artifact directories.
+- `release/`: dated PDF artifacts, ignored by Git and published via releases.
+- `scripts/`: build, format, release, scrub, and helper scripts.
+- `docs/reference/`: imported manuals, style assets, and supporting material.
+- `docs/archive/`: historical setup and migration notes.
+- `project_export.json`: project memory and status snapshot.
 
-## Build
+## Build and Validation
 
 Bash (WSL/Linux/macOS):
 
@@ -158,10 +158,12 @@ License (see `LICENSE-CODE`).
 
 ## TikZ externalization security note
 
-TikZ externalization requires `-shell-escape`. Use it only in trusted builds or an isolated CI job. Keep lint/analysis jobs shell-escape-free.
+TikZ externalization requires `-shell-escape`. Use it only in trusted builds or
+an isolated CI job. Keep lint/analysis jobs shell-escape-free.
 
 TikZ externalization uses one canonical cache directory:
 
 - `${project-root}/artifacts/tikz/`
 
-When this project is used as a submodule, `project-root` is still the `projects/edo_study_guide` checkout.
+When this project is used as a submodule, `project-root` is the
+`edo_study_guide` checkout.

@@ -1,10 +1,11 @@
-# Codex Cloud Environment Scripts
+# Codex Environment Scripts
 
-Codex Cloud environments support a **setup script** (runs once per cache build) and an optional
-**maintenance script** (runs when a cached container is resumed). This repo is a LuaLaTeX + `latexmk`
-project, so Codex Cloud needs TeX Live + helpers installed before it can run `latexmk`.
+Codex Cloud environments support a setup script, run once per cache build, and
+an optional maintenance script, run when a cached container is resumed. This
+repo is a LuaLaTeX and `latexmk` project, so Codex Cloud needs TeX Live and
+helpers installed before it can run `latexmk`.
 
-Files:
+## Files
 
 - `.codex/setup.sh`: installs TeX Live (apt) + required binaries/fonts for this repo.
 - `.codex/maintenance.sh`: quick sanity checks + font database refresh for cached containers.
@@ -37,10 +38,15 @@ The maintenance script checks for these required binaries:
 - `pygmentize`: code highlighting (python3-pygments)
 - `make`: build tool
 
-Suggested Codex Cloud environment configuration (in `chatgpt.com/codex/settings/environments`):
+## Suggested Configuration
 
-- **Setup script**: paste the contents of `.codex/setup.sh` (recommended for automatic cache invalidation). If you instead run `bash .codex/setup.sh`, changing the repo script will not automatically reset the environment cache.
-- **Maintenance script** (optional): paste the contents of `.codex/maintenance.sh`, or run `bash .codex/maintenance.sh`.
+In `chatgpt.com/codex/settings/environments`:
+
+- Setup script: paste the contents of `.codex/setup.sh`. This is recommended
+  for automatic cache invalidation. If you instead run `bash .codex/setup.sh`,
+  changing the repo script will not automatically reset the environment cache.
+- Maintenance script: optionally paste `.codex/maintenance.sh`, or run
+  `bash .codex/maintenance.sh`.
 
 For ordinary local builds, prefer `./scripts/docker-build.sh tex/main.tex` from
 the repository root.
