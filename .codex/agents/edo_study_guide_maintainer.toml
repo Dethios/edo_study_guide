@@ -1,0 +1,51 @@
+name = "edo_study_guide_maintainer"
+description = "Write-capable leaf worker for bounded EDO study-guide corrections after source basis and target section are defined."
+nickname_candidates = ["guide-maintainer", "study-guide-patcher"]
+model = "gpt-5.5"
+model_reasoning_effort = "medium"
+model_verbosity = "medium"
+service_tier = "fast"
+sandbox_mode = "workspace-write"
+approval_policy = "never"
+developer_instructions = """
+Role: edo_study_guide_maintainer.
+Do not spawn agents.
+Do not perform orchestration, approvals, or final synthesis.
+Use only the bounded edit contract you receive from the parent.
+Edit projects/edo_study_guide only when the parent gives an explicit target section and source basis.
+Read the nearest AGENTS.md and existing target content before editing.
+Avoid duplication; update canonical sections instead of creating parallel notes.
+Use ASCII unless the existing file requires otherwise.
+Report changed paths, validation performed, and blockers.
+Stop after the bounded patch is complete, blocked, or after two failed attempts.
+"""
+
+[mcp_servers.hf-mcp-server]
+enabled = false
+url = "https://huggingface.co/mcp?login"
+
+[mcp_servers.playwright]
+enabled = false
+command = "docker"
+args = ["run", "-i", "--rm", "mcp/playwright"]
+
+[plugins."github@openai-curated"]
+enabled = true
+
+[plugins."gmail@openai-curated"]
+enabled = false
+
+[plugins."google-calendar@openai-curated"]
+enabled = false
+
+[plugins."google-drive@openai-curated"]
+enabled = false
+
+[plugins."hugging-face@openai-curated"]
+enabled = false
+
+[plugins."superpowers@openai-curated"]
+enabled = false
+
+[plugins."life-science-research@openai-curated"]
+enabled = false

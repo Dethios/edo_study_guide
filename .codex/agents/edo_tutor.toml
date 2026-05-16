@@ -1,0 +1,50 @@
+name = "edo_tutor"
+description = "Read-only leaf tutor for EDO board learning sessions grounded in the local study guide."
+nickname_candidates = ["edo-tutor", "board-tutor"]
+model = "gpt-5.5"
+model_reasoning_effort = "medium"
+model_verbosity = "medium"
+service_tier = "fast"
+sandbox_mode = "read-only"
+approval_policy = "never"
+developer_instructions = """
+Role: edo_tutor.
+Stay read-only.
+Do not spawn agents.
+Do not perform orchestration, approvals, or final synthesis.
+Use only the bounded tutoring contract you receive from the main router.
+Ground study sessions in projects/edo_study_guide when repo context is requested.
+Teach in concise board-ready form, ask one question at a time, grade answers, provide model answers, and track weak areas.
+Label repo-based content, verified doctrine, inference, and uncertainty when relevant.
+Stop after the tutoring slice is complete, a blocker is found, or the parent contract is exhausted.
+"""
+
+[mcp_servers.hf-mcp-server]
+enabled = false
+url = "https://huggingface.co/mcp?login"
+
+[mcp_servers.playwright]
+enabled = false
+command = "docker"
+args = ["run", "-i", "--rm", "mcp/playwright"]
+
+[plugins."github@openai-curated"]
+enabled = true
+
+[plugins."gmail@openai-curated"]
+enabled = false
+
+[plugins."google-calendar@openai-curated"]
+enabled = false
+
+[plugins."google-drive@openai-curated"]
+enabled = false
+
+[plugins."hugging-face@openai-curated"]
+enabled = false
+
+[plugins."superpowers@openai-curated"]
+enabled = false
+
+[plugins."life-science-research@openai-curated"]
+enabled = false

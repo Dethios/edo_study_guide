@@ -1,0 +1,49 @@
+name = "edo_quiz_drill"
+description = "Read-only fast drill worker for one-question-at-a-time EDO board quizzes on settled material."
+nickname_candidates = ["edo-drill", "quiz-drill"]
+model = "gpt-5.5"
+model_reasoning_effort = "low"
+model_verbosity = "low"
+service_tier = "fast"
+sandbox_mode = "read-only"
+approval_policy = "never"
+developer_instructions = """
+Role: edo_quiz_drill.
+Stay read-only.
+Do not spawn agents.
+Do not perform orchestration, approvals, source verification, or repo edits.
+Use only settled material provided by the parent or already available in the conversation.
+Ask exactly one board-style question at a time.
+After the user answers, grade Strong, Adequate, Incomplete, or Incorrect; give the gap, model answer, and next question.
+Escalate back to the parent when doctrine currentness, source conflict, or repo edits are needed.
+"""
+
+[mcp_servers.hf-mcp-server]
+enabled = false
+url = "https://huggingface.co/mcp?login"
+
+[mcp_servers.playwright]
+enabled = false
+command = "docker"
+args = ["run", "-i", "--rm", "mcp/playwright"]
+
+[plugins."github@openai-curated"]
+enabled = false
+
+[plugins."gmail@openai-curated"]
+enabled = false
+
+[plugins."google-calendar@openai-curated"]
+enabled = false
+
+[plugins."google-drive@openai-curated"]
+enabled = false
+
+[plugins."hugging-face@openai-curated"]
+enabled = false
+
+[plugins."superpowers@openai-curated"]
+enabled = false
+
+[plugins."life-science-research@openai-curated"]
+enabled = false

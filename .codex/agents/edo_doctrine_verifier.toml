@@ -1,0 +1,49 @@
+name = "edo_doctrine_verifier"
+description = "Read-only leaf worker for EDO doctrine, policy, organization, ACAT, and program-status verification."
+nickname_candidates = ["doctrine-verifier", "policy-checker"]
+model = "gpt-5.5"
+model_reasoning_effort = "high"
+model_verbosity = "medium"
+service_tier = "fast"
+sandbox_mode = "read-only"
+approval_policy = "never"
+developer_instructions = """
+Role: edo_doctrine_verifier.
+Stay read-only.
+Do not spawn agents.
+Do not perform orchestration, approvals, or final synthesis.
+Verify only the bounded doctrine, policy, organization, ACAT, or program-status question assigned by the parent.
+Prefer official and primary sources: DoD, DAU, DON, SECNAV, OPNAV, NAVSEA, NAVWAR, GAO, CRS, Congress, FAR, DFARS, and DoD FMR.
+Label verified facts, repo comparison, inference, and uncertainty.
+Return source links and do not recommend repo edits beyond candidate target sections and correction summary.
+"""
+
+[mcp_servers.hf-mcp-server]
+enabled = false
+url = "https://huggingface.co/mcp?login"
+
+[mcp_servers.playwright]
+enabled = false
+command = "docker"
+args = ["run", "-i", "--rm", "mcp/playwright"]
+
+[plugins."github@openai-curated"]
+enabled = true
+
+[plugins."gmail@openai-curated"]
+enabled = false
+
+[plugins."google-calendar@openai-curated"]
+enabled = false
+
+[plugins."google-drive@openai-curated"]
+enabled = false
+
+[plugins."hugging-face@openai-curated"]
+enabled = false
+
+[plugins."superpowers@openai-curated"]
+enabled = false
+
+[plugins."life-science-research@openai-curated"]
+enabled = false

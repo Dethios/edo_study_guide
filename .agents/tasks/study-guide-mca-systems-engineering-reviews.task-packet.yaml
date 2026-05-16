@@ -1,0 +1,91 @@
+task_packet_id: study-guide-mca-systems-engineering-reviews
+parent_task_id: null
+requesting_mode: implement
+normalized_goal: Integrate source-checked Navy MCA systems-engineering review content into the EDO study guide in the correct context, without adding short-answer prompts or flashcards.
+scope: projects/edo_study_guide content and project documentation only. Keep the canonical review lifecycle in tex/chapters/17I_CM_and_Technical_Reviews.tex, update adjacent chapters only for concise cross-context alignment, and do not touch unrelated workspace root drift.
+relevant_context:
+  - The user provided detailed content covering ASR, SRR, SFR, PDR, CDR, TRR, SVR/FCA, PRR, PCA, and IBR for Navy MCA programs.
+  - The user explicitly said not to add short-answer prompts and not to add flashcards.
+  - The content must be scoped as a study-guide update, inserted in the correct context, and deduplicated against existing material.
+  - The study-guide AGENTS.md requires current primary-source checks for doctrine, sentence-level \autocite{} citations, \ac{} acronym usage in prose, longtblr for tables, and Docker validation through ./scripts/docker-build.sh tex/main.tex.
+  - The submodule is currently dirty in tex/chapters/17G_Systems_Engineering_Overview.tex, tex/chapters/17I_CM_and_Technical_Reviews.tex, tex/chapters/17K_jcids.tex, and tex/chapters/18B_test-eval.tex; preserve user-owned work and merge with it rather than reverting.
+  - tex/chapters/17I_CM_and_Technical_Reviews.tex already contains an MCA Technical Reviews by Phase table. Expand and update it rather than creating a duplicate lifecycle table or a new chapter.
+  - tex/chapters/14_EVM.tex already contains an Integrated Baseline Review subsection. FAR 34.202 should be the primary IBR anchor if adding policy detail.
+  - tex/acronyms.def already defines asr, srr, sfr, pdr, cdr, trr, svr, otrr, prr, fca, pca, ibr, evms, pmb, dote, optevfor, and supship. Do not add duplicate acronym keys.
+  - README.me does not exist; the applicable file is projects/edo_study_guide/README.md.
+  - "Current planning source anchors checked: DoDI 5000.88 section 3.5, FAR 34.202, DAU Technical Reviews and Audits, and the DoD Systems Engineering Guidebook February 2022 section 3."
+relevant_file_paths:
+  - .agents/plans/study-guide-mca-systems-engineering-reviews-implementation-plan.md
+  - projects/edo_study_guide/AGENTS.md
+  - projects/edo_study_guide/README.md
+  - projects/edo_study_guide/CHANGELOG.md
+  - projects/edo_study_guide/tex/main.tex
+  - projects/edo_study_guide/tex/acronyms.def
+  - projects/edo_study_guide/tex/edo.bib
+  - projects/edo_study_guide/tex/chapters/17I_CM_and_Technical_Reviews.tex
+  - projects/edo_study_guide/tex/chapters/14_EVM.tex
+  - projects/edo_study_guide/tex/chapters/16_Milestones.tex
+  - projects/edo_study_guide/tex/chapters/17G_Systems_Engineering_Overview.tex
+  - projects/edo_study_guide/tex/chapters/17K_jcids.tex
+  - projects/edo_study_guide/tex/chapters/18B_test-eval.tex
+  - projects/edo_study_guide/tex/chapters/appendix_key_roles.tex
+constraints:
+  - Do not add short-answer prompts.
+  - Do not add flashcards.
+  - Do not duplicate content that already exists; update the existing 17I lifecycle content where possible.
+  - Keep IBR framed as a management-baseline realism review, not a systems-engineering design review.
+  - Use current official or primary sources for policy-sensitive claims before editing.
+  - Prefer DoDI 5000.88 for system-level technical-review requirements and FAR 34.202 for IBR requirements.
+  - Keep cross-chapter updates concise; do not scatter a full review matrix across multiple chapters.
+  - Use existing acronym keys and avoid acronym macros in headings and table headers if the surrounding file does not already require them.
+  - Use \autocite{} inside sentences before punctuation for new sourced claims.
+  - Preserve existing dirty changes and do not revert unrelated user work.
+  - Keep generated build artifacts and PDFs out of Git.
+  - Update CHANGELOG.md for the content update.
+  - Update README.md and AGENTS.md only if the implementation reveals a concrete appropriate change; otherwise report that no update was needed.
+deliverables:
+  - Expanded or revised 17I technical-review section covering lifecycle, baseline maturity, required reviews, Navy participants/authorities, common traps, and concise review-by-review details.
+  - FAR-grounded update to 14_EVM.tex IBR content if current text lacks the needed management-baseline contrast.
+  - Minimal cross-references or clarifications in milestones, systems engineering, JCIDS, T&E, and key-role appendix only where needed.
+  - Bibliography updates for FAR 34.202 and DAU or official source entries if missing, plus refreshed source metadata where verified.
+  - Acronym verification with no duplicate acronym keys.
+  - CHANGELOG.md Unreleased entry.
+  - README.md and AGENTS.md updates only if appropriate.
+  - Validation report with commands, exit status, and any residual warnings or blockers.
+validation_requirements:
+  - Run git -C projects/edo_study_guide status --short --branch before editing and before final response.
+  - Run git -C projects/edo_study_guide diff --check after edits.
+  - Run rg to confirm no short-answer or flashcard sections were added to the technical-review chapter.
+  - Run rg checks for DoDI5000-88, FAR 34.202 citation keys, SE Guidebook, DAU source entries, and any stale Title 10 or DoDI 5000.89/5000.98 references touched by the change.
+  - Run ./scripts/docker-build.sh tex/main.tex from projects/edo_study_guide after edits.
+  - If Docker build is unavailable, run ./scripts/build.sh tex/main.tex if local LaTeX is available, otherwise report the exact blocker and provide partial validation from diff/source checks.
+  - After a build attempt, run rg "undefined citation|Citation .* undefined|Reference .* undefined|Missing character|Overfull \\\\hbox|TODO" tex artifacts/build from projects/edo_study_guide and distinguish pre-existing warnings from new issues.
+selected_skills:
+  - explore-codebase
+  - deep-research-stage1
+  - implement-change
+  - verification-before-completion
+  - task-packet
+selected_roles:
+  - main_router
+  - implementer
+  - reviewer
+model_recommendation: Use the repo default model; GPT-5.5 is suitable if the runtime requires an explicit model for source-sensitive doctrine editing.
+reasoning_recommendation: high
+allowed_tools:
+  - read
+  - edit
+  - apply_patch
+  - command
+  - rg
+  - git
+  - web
+  - docker
+  - latexmk
+  - read-only subagents
+sandbox_expectations: Use normal workspace write access for the study-guide submodule only. Keep any exploratory or review workers read-only. Do not request destructive filesystem or Git operations.
+termination_condition: Stop when the study-guide content is integrated, deduplicated, source-checked, documented as appropriate, and validated, or when a stop condition requires user direction.
+spawn_budget:
+  max_depth: 1
+  max_threads: 4
+  write_workers: 1

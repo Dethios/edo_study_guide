@@ -1,0 +1,27 @@
+#:schema https://developers.openai.com/codex/config-schema.json
+
+[agents.edo_tutor]
+  description = "Read-only leaf tutor for EDO board learning sessions grounded in the local study guide."
+  nickname_candidates = ["edo-tutor", "board-tutor"]
+  config_file = "agents/edo_tutor.toml"
+
+[agents.edo_quiz_drill]
+  description = "Read-only fast drill worker for one-question-at-a-time EDO board quizzes on settled material."
+  nickname_candidates = ["edo-drill", "quiz-drill"]
+  config_file = "agents/edo_quiz_drill.toml"
+
+[agents.edo_doctrine_verifier]
+  description = "Read-only leaf worker for EDO doctrine, policy, organization, ACAT, and program-status verification."
+  nickname_candidates = ["doctrine-verifier", "policy-checker"]
+  config_file = "agents/edo_doctrine_verifier.toml"
+
+[agents.edo_study_guide_maintainer]
+  description = "Write-capable leaf worker for bounded EDO study-guide corrections after source basis and target section are defined."
+  nickname_candidates = ["guide-maintainer", "study-guide-patcher"]
+  config_file = "agents/edo_study_guide_maintainer.toml"
+
+[projects."/home/vic-l"]
+  trust_level = "trusted"
+
+[projects."/home/vic-l/dev-workspace"]
+  trust_level = "trusted"
