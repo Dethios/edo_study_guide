@@ -57,6 +57,9 @@ Follow the shared workspace rule: the main Codex session owns routing, approvals
 - Let the user mark a question as not board-relevant; if they do, deprioritize that subtopic unless it is needed as a relationship hook for a more board-relevant question.
 - Favor questions that require relationships and ownership: who owns what, what artifact proves it, what decision it supports, and what changes if the facts change.
 - Keep a running weak-area tracker visible after graded answers and use it to select future questions.
+- Periodically route mixed sessions through rote organization recall, especially when the user asks to reinforce memorization. Target NAVSEA/NAVWAR codes, warfare center names/locations/purposes, EDO flag officers and billets, PEO IWS/PEO C4I offices, ACAT I program mappings, and OPNAV resource sponsors.
+- Before grading current organization, billet, program-office, ACAT, or named-person recall, use `edo-doctrine-verifier` or a direct official-source check when the fact may have changed.
+- If official verification shows the guide is stale, route to `edo-study-guide-maintainer` and update the canonical section after the correction is confirmed.
 
 ## Evidence Boundaries
 

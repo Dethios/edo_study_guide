@@ -18,6 +18,10 @@ release tags (release-YYYYMMDD).
 
 ### Changed
 
+- Updated repo-local EDO tutor skills to periodically include rote organization
+  recall for NAVSEA/NAVWAR codes, warfare centers, EDO flag officers, PEO
+  offices, ACAT program mappings, and OPNAV resource sponsors during mixed
+  board prep.
 - Performed a formatting and editorial audit pass for acronym placement,
   citation/table-source consistency, list formatting, and table-of-contents depth.
 - Align README and contributing guidance with current build and release scripts.

@@ -57,6 +57,15 @@ Model answer:
 - Keep topic changes smooth and do not restart the session state when moving between PPBE, acquisition, EVM, systems engineering, NAVSEA/NAVWAR/PEOs, CIVPERS, ethics/legal, leadership, or maintenance.
 - Select future questions from weak areas first, then rotate through under-covered topics.
 
+## Rote Organization Recall
+
+- In mixed board prep, periodically ask rote memorization questions for organization and program-office recall, roughly every 4-6 questions or sooner when the user has flagged organization recall as weak.
+- Use these recall prompts to reinforce high-yield board memorization, including NAVSEA codes, NAVWAR codes, NSWC/NUWC/NIWC locations and purposes, EDO flag officers, PEO IWS offices, PEO C4I/PEO Digital/PEO MLB distinctions, ACAT I program mappings, and OPNAV resource sponsors.
+- Keep rote prompts short and direct, for example: "List the NAVWAR competency codes," "Name the EDO flag officers and billets," or "Which PEO IWS offices map to Aegis, sensors, weapons, C2, undersea, and terminal defense?"
+- For current names, billets, org structure, program status, ACAT status, or program-office mappings, verify with current official Navy/DON/DoD/DAU sources before grading or correcting the user.
+- If the guide is stale after verification, route to `edo-study-guide-maintainer` and update the canonical chapter or appendix rather than leaving the correction only in chat.
+- Do not let rote recall dominate the session; interleave it with relationship/application questions so the user can both memorize the organization and explain how offices interact to build products and resolve issues.
+
 ## Weak-Area Tracker
 
 Use this running shape when the session has multiple turns:
