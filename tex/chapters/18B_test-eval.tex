@@ -57,12 +57,12 @@
 
 \subsection{Statutory Requirements and Key Roles}
 \begin{description}
-  \item[\textbf{10~U.S.C.~\S~139.}] Establishes the \ac{dote} as an independent advisor to \ac{secdef} and Congress; \ac{dote} approves operational test plans, monitors execution, and must issue a public report for covered programs~\autocite{USC-10-139}.
+  \item[\textbf{10~U.S.C.~\S~139.}] Establishes the \ac{dote} as an independent advisor to \ac{secdef} and Congress; \ac{dote} approves operational and live-fire test plans, monitors execution, and submits required independent reports to defense leadership and Congress~\autocite{USC-10-139}.
   \item[\textbf{10~U.S.C.~\S~4171.}] Requires covered programs to complete adequate operational test and evaluation before proceeding beyond \ac{lrip}; \ac{dote} reports independent operational evaluation results to defense leadership and congressional defense committees~\autocite{USC-10-4171}.
   \item[\textbf{10~U.S.C.~\S~4172.}] Requires survivability and lethality testing, or an approved waiver, for covered systems and major munitions programs before full-scale production decisions; it also directs reporting of vulnerability and lethality findings to defense committees~\autocite{USC-10-4172}.
   \item[\textbf{DASD(T\&E).}] Serves as the \ac{osd} focal point for test resources, designates \acp{cdt} for \ac{acat}~I programs, charters \acp{ldto}, and co-chairs Defense-level \ac{te} Working Integrated Product Teams~\autocite{DoDI5000-89}.
   \item[\textbf{CDT and LDTO.}] The \ac{cdt} orchestrates the integrated test schedule, data requirements, and deficiency resolution cadence, while the \ac{ldto} (often a warfare center or system command test directorate) furnishes instrumentation, modeling, and range execution authority for \ac{dte}~\autocite{DoDI5000-89}.
-  \item[\textbf{Operational Test Agencies.}] \ac{comoptevfor}, \ac{afotec}, \ac{atec}, and \ac{mcotea} plan and execute \ac{ote} \ac{mda} record~\autocite{edo-3-5-6-test-eval-part-ii-2025}.
+  \item[\textbf{Operational Test Agencies.}] \ac{comoptevfor}, \ac{afotec}, \ac{atec}, and \ac{mcotea} plan and execute independent \ac{ote} and provide operational effectiveness, suitability, survivability, and supportability evidence for the \ac{mda} record~\autocite{edo-3-5-6-test-eval-part-ii-2025}.
 \end{description}
 
 \begin{figure}[htbp]
@@ -130,7 +130,7 @@
 \acp{ctp} are the small subset of design attributes that must be controlled to assure a \ac{kpp} or \ac{ksa} remains achievable; they are derived from the \ac{icd}/\ac{cdd} and baselined inside the \ac{apb}~\autocite{DoDI5000-85}. Each \ac{ctp} maps to one or more \acp{tpm} that engineers track continuously using lab data, digital models, or \ac{dte} results; \acp{tpm} trends highlight when technical debt threatens \ac{temp} and \ac{sep} assumptions so leadership can adjust scope, schedule, or funding. Programs are expected to show a clean trace from \ac{coi}~$\rightarrow$ \ac{kpp}/\ac{ksa}~$\rightarrow$ \ac{ctp}~$\rightarrow$ \ac{tpm}~$\rightarrow$ planned test points in the \ac{temp}, ensuring every test objective underwrites an operational outcome and every requirement has an observable verification method~\autocite{DoDI5000-89,edo-3-5-5-test-eval-part-i-2025}.
 
 \subsection{Test and Evaluation Master Plan}
-The \ac{temp} captures the integrated \ac{te} strategy, schedule, resources, and data management approach across the lifecycle; it harmonizes \ac{sep}, \ac{lcsp}, and \ac{apb} so that every milestone package shows how risk will be retired~\autocite{DoDAcqGuidebook}. Part~I summarizes program context and key performance requirements, Part~II defines the integrated test program (\ac{dt}, \ac{optest}, certification, modeling, and analysis), Part~III outlines resource needs (ranges, threat surrogates, workforce, instrumentation), and annexes address data rights, stats, and cyber accreditation~\autocite{DoDI5000-89}. \ac{acat}~I(D) \acp{temp} require \ac{dote} approval; other \acp{temp} are approved by Component Acquisition Executive. Updates are mandatory when requirements change, critical deficiencies emerge, or significant schedule/funding revisions alter test sequencing~\autocite{DoDI5000-85}.
+The \ac{temp} captures the integrated \ac{te} strategy, schedule, resources, and data management approach across the lifecycle; it harmonizes \ac{sep}, \ac{lcsp}, and \ac{apb} so that every milestone package shows how risk will be retired~\autocite{DoDM5000-100}. Part~I summarizes program context and key performance requirements, Part~II defines the integrated test program (\ac{dt}, \ac{optest}, certification, modeling, and analysis), Part~III outlines resource needs (ranges, threat surrogates, workforce, instrumentation), and annexes address data rights, stats, and cyber accreditation~\autocite{DoDM5000-100}. \ac{acat}~I(D) \acp{temp} require \ac{dote} approval; other \acp{temp} are approved by Component Acquisition Executive. Updates are mandatory when requirements change, critical deficiencies emerge, or significant schedule/funding revisions alter test sequencing~\autocite{DoDI5000-85,DoDM5000-100}.
 
 \subsection{How CDD Updates Drive Test and Engineering}
 \begin{description}
@@ -144,13 +144,13 @@ The \ac{temp} captures the integrated \ac{te} strategy, schedule, resources, and
 Modeling and simulation provide the only practical way to explore the mission design space before hardware exists, rehearse high-risk scenarios (e.g., hypersonic raid defense), and extend sparse live-test data across the operational envelope~\autocite{edo-3-5-5-test-eval-part-i-2025}. Programs must document model purpose, pedigree, uncertainty, and \ac{vva} status in the \ac{temp}; accredited models can bound live-test needs, size instrumentation, and support decision-quality evaluations when safety, cost, or treaties limit destructive testing~\autocite{DoDI5000-89}. Mission engineering digital threads (system-of-systems simulations, campaign models) allow combined \ac{dt}/\ac{optest} teams to choreograph events, align data management plans, and feed statistical confidence calculations before and after live events.
 
 \subsection{MCA Testing Lifecycle}
-\ac{mca} programs must align \ac{te} activities with milestone decision points to provide defensible evidence for phase transitions~\autocite{DoDI5000-85}. DoDI~5000.98, effective December~9,~2024, consolidates \ac{ote} and \ac{lfte} policy previously in DoDI~5000.89, while DoDI~5000.89 remains the primary source for integrated \ac{te} and \ac{dte} policy~\autocite{DoDI5000-98,DoDI5000-89}. Cyber \ac{dte} policy is specified in DoDM~5000.103, effective February~25,~2026~\autocite{DoDM5000-103}.
+\ac{mca} programs must align \ac{te} activities with milestone decision points to provide defensible evidence for phase transitions~\autocite{DoDI5000-85}. DoDI~5000.98, effective December~9,~2024, consolidates \ac{ote} and \ac{lfte} policy previously in DoDI~5000.89; DoDM~5000.100 governs \ac{temp} and \ac{te} strategy content and timing; and DoDI~5000.89 remains the primary source for integrated \ac{te} and \ac{dte} policy~\autocite{DoDI5000-98,DoDM5000-100,DoDI5000-89}. Cyber \ac{dte} policy is specified in DoDM~5000.103, effective February~25,~2026~\autocite{DoDM5000-103}.
 
 \begin{longtblr}[
     label   = {tab:mca-te-lifecycle},
     caption = {MCA Testing Lifecycle by Phase},
     entry   = {MCA Testing Lifecycle by Phase},
-    remark{\tSource} = {\tabCite{DoDI5000-85,DoDI5000-98,DoDI5000-89,DoDM5000-103}}
+    remark{\tSource} = {\tabCite{DoDI5000-85,DoDI5000-98,DoDM5000-100,DoDI5000-89,DoDM5000-103}}
   ]
   {colspec = {@{} X[0.85] X[1.6] X[1.4] X[1.1] X[1.3] @{}}}
   \toprule
@@ -162,9 +162,9 @@ Modeling and simulation provide the only practical way to explore the mission de
   \midrule
   Milestone~B / EMD entry & System-level DT\&E, integration testing, early OA, cyber DT\&E execution & CDR completion, TEMP approval, APB baselines, OTRR readiness & EMD authorization & MDA, PM, CDT, OTA, DOT\&E (covered programs) \\
   \midrule
-  EMD & Full-up system DT\&E, LFT\&E planning, OA, cyber DT\&E and OT\&E integration & Design stability, TRR success, OA results, LFT\&E strategy, cyber accreditation & Milestone~C / LRIP decision & PM, CDT, OTA, DOT\&E, LDTO, warfare centers \\
+  EMD & Full-up system DT\&E, LFT\&E planning, OA, cyber DT\&E and OT\&E integration & Design stability, TRR success, OA results, approved TEMP/T\&E strategy, LFT\&E strategy, cyber accreditation & Milestone~C / LRIP decision & PM, CDT, OTA, DOT\&E, LDTO, warfare centers \\
   \midrule
-  Milestone~C / LRIP & IOT\&E, LFT\&E, cyber OT\&E, interoperability certification & IOT\&E adequacy, LFT\&E survivability/lethality, cyber resilience, JITC certification & FRPDR eligibility & MDA, DOT\&E, OTA, COMOPTEVFOR, JITC, PM \\
+  Milestone~C / LRIP & LRIP start, production-representative articles, IOT\&E/LFT\&E readiness, cyber OT\&E preparation, interoperability certification planning & LRIP quantity approval, production readiness, stable configuration, approved operational test planning, required certifications on track & P\&D entry / LRIP / limited deployment & MDA, PM, CDT, OTA, DOT\&E, JITC \\
   \midrule
   IOT\&E / LFT\&E & Independent operational evaluation, realistic threat testing, cyber adversarial assessment & Operational effectiveness/suitability, survivability/lethality, cyber mission assurance & Beyond-LRIP / FRP & DOT\&E, OTA, COMOPTEVFOR, PM, MDA \\
   \midrule

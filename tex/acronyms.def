@@ -128,8 +128,8 @@
 \newacronym{n9}{N9}{OPNAV Warfare Systems}
 \newacronym{n9b}{N9B}{Assistant DCNO for Warfighting Requirements and Capabilities}
 \newacronym{n9dw}{N9DW}{Digital Warfare Office}
-\newacronym{n91}{N91}{Warfare Integration Directorate}
-\newacronym{n9i}{N9I}{Integrated Warfare Directorate}
+\newacronym{n91}{N91}{legacy or alternate OPNAV warfare integration reference}
+\newacronym{n9i}{N9I}{Integrated Warfare Directorate / resource sponsor code 9I}
 \newacronym{n95}{N95}{Expeditionary Warfare Directorate}
 \newacronym{n96}{N96}{Surface Warfare Directorate}
 \newacronym{n97}{N97}{Undersea Warfare Directorate}
@@ -876,7 +876,6 @@
 \newacronym{zm}{ZM}{Zone Manager}
 \newacronym{js}{JS}{Job Summary}
 \newacronym{cu}{CU}{Component Unit}
-\newacronym{cpaact}{CPA}{Carrier Planning Activity}
 \newacronym{lrms}{LRMS}{Long-Range Maintenance Schedule}
 \newacronym{fast}{FAST}{Fleet Availability Scheduling Team}
 \newacronym{fmbod}{FMBOD}{Fleet Maintenance Board of Directors}

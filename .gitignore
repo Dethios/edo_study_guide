@@ -9,6 +9,7 @@ artifacts/tikz/*
 !artifacts/build/
 !artifacts/build/.gitkeep
 !artifacts/out/
+!artifacts/out/main.pdf
 !artifacts/out/.gitkeep
 !artifacts/tikz/
 !artifacts/tikz/.gitkeep
