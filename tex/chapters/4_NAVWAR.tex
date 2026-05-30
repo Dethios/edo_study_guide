@@ -95,7 +95,7 @@
 
 \subsection{Affiliated program executive offices}
 \begin{description}
-  \item[\textbf{PEO MLB.}] \ac{don} manpower, logistics, and business \ac{it} acquisition agent; delivers MyNavy HR IT, Navy ERP financials, logistics IT, applications services, data transformation, and enterprise systems/innovation support portfolios~\autocite{edo-2-1-3-navwar-enterprise-2024}.
+  \item[\textbf{PEO MLB.}] \ac{don} manpower, logistics, and business \ac{it} acquisition agent; delivers MyNavy HR IT, Ready Relevant Learning, Navy ERP financials, logistics IT, Marine Corps logistics IT, naval applications/business services, and Marine Corps manpower IT modernization portfolios~\autocite{edo-2-1-3-navwar-enterprise-2024,PEOMLB-portfolio-book-2025}.
   \item[\textbf{PEO Digital.}] \ac{don} enterprise-wide \ac{it} acquisition agent; portfolios include naval enterprise networks, special networks and intelligence mission applications, naval commercial cloud services, special access program networks, enterprise \ac{it} strategic sourcing, and Marine Corps supporting establishment systems~\autocite{edo-2-1-3-navwar-enterprise-2024}.
   \item[\textbf{PEO C4I.}] Delivers command and control, intelligence sharing, terminals, and integration programs through capability development offices (PMW~120/130/150/160/170) and platform integration offices (PMW~740/750/760/770/790) to provide affordable, integrated, and interoperable \ac{c4i} capability to the fleet~\autocite{edo-2-1-3-navwar-enterprise-2024}.
 \end{description}
@@ -114,10 +114,12 @@
   \toprule
   {Program Office} & {Office / Portfolio}                              & {Program or Capability} & {Board-status cue} \\
   \midrule
+  PMA/PMW 101      & Multifunctional Information Distribution Systems & MIDS / Link 16   & Dual-aligned MIDS program office; public tear sheet lists Naval Base Point Loma, Harbor Drive Annex, San Diego. \\
   PMW 120          & Battlespace Awareness and Information Operations & DCGS-N FoS       & Current public status: Software Acquisition Pathway; legacy coursebook ACAT IAC/IAM. \\
   PMW 150          & Naval Command and Control Systems                & GCCS-M           & Current public status: ACAT IAC. \\
   PMW 150          & Naval Command and Control Systems                & NTCSS            & Legacy coursebook ACAT IAC; not confirmed on current PMW~150 top-program sheet. \\
   PMW 160          & Tactical Networks                                & CANES            & Current public status: ACAT IAC. \\
+  PMW 160          & Tactical Networks                                & ADNS             & Current public status: ACAT II; tactical WAN and ship-to-shore routing layer. \\
   PMW 170          & Communications and GPS Navigation                & NMT              & Current public status: ACAT IC. \\
   PEO Digital / NEN & Naval Enterprise Networks                        & NMCI, ONE-Net, SMIT, EUHW & Current public framing: enterprise network service/portfolio; do not teach NGEN/NGEN-R ACAT I/MAIS as current unless separately sourced. \\
   PMW 790          & Shore and Expeditionary Integration              & DJC2             & Current public status: ACAT IAC. \\
@@ -125,18 +127,27 @@
   \bottomrule
 \end{longtblr}
 
+\subsubsection{PMA/PMW 101: Multifunctional Information Distribution Systems}
+\label{ssubsec:pma-pmw101}
+
+\textbf{Program:} Multifunctional Information Distribution Systems (MIDS)
+
+PMA/PMW~101 develops, produces, and sustains tactical data-link products and waveforms, including Link~16 and Tactical Targeting Network Technology, to provide interoperable tactical data exchange across air, surface, shore, coalition, and international users. The current public tear sheet lists the office at Naval Base Point Loma, Harbor Drive Annex, 33050 Nixie Way, Building~17A, Suite~416, San Diego~\autocite{PEOC4I-PMA-PMW101-tearsheet-2025}.
+
+\textbf{Board cue:} PMA/PMW~101 is the MIDS/Link~16 office. It is adjacent to C4I recall, but do not confuse it with PMW~160: MIDS/Link~16 is the tactical data-link/waveform lane, while CANES/ADNS are the afloat network and routing lanes.
+
 \subsubsection{PMW 120: Battlespace Awareness and Information Operations}
 \label{ssubsec:pmw120}
 
-\textbf{Program:} Distributed Common Ground System-Navy (DCGS-N)
+\textbf{Program:} \ac{dcgsn}
 
 \textbf{Status cue:} Current public status is Software Acquisition Pathway; legacy coursebook status was Increment~1 (ACAT IAC) and Increment~2 (ACAT IAM)~\autocite{PEOC4I-PMW120-tearsheet-2026}.
 
-PMW 120 focuses on creating and breaking ``kill webs'' for the warfighter by delivering integrated intelligence, surveillance, reconnaissance (ISR), and electronic warfare capabilities. DCGS-N is the Navy's service component of the overarching DoD DCGS family of systems.
+PMW 120 focuses on creating and breaking ``kill webs'' for the warfighter by delivering integrated intelligence, surveillance, reconnaissance (ISR), targeting, and electronic warfare capabilities. \ac{dcgsn} is the Navy's flagship intelligence, surveillance, reconnaissance, and targeting support capability and is part of the broader DoD DCGS ecosystem~\autocite{PEOC4I-PMW120-tearsheet-2026}.
 
-DCGS-N is designed to provide multiservice integration of ISR and targeting capabilities. The legacy board cue is that DCGS-N consolidated intelligence analytical tools into an integrated computing environment and then evolved toward more agile software delivery. For current-status answers, call it DCGS-N Family of Systems under PMW~120 and state the Software Acquisition Pathway unless a current source supports a different designation.
+\ac{dcgsn} is designed to provide multiservice integration of ISR and targeting capabilities. The legacy board cue is that \ac{dcgsn} consolidated intelligence analytical tools into an integrated computing environment and then evolved toward more agile software delivery. For current-status answers, call it \ac{dcgsn} Family of Systems under PMW~120 and state the Software Acquisition Pathway unless a current source supports a different designation. Do not expand the acronym as ``Digital Consolidated'' or ``Maritime''; the board-safe expansion is \emph{Distributed Common Ground System-Navy}.
 
-\textbf{Strategic Insights:} The evolution of DCGS-N highlights a broader trend within NAVWAR ACAT I programs: the migration from hardware-heavy, monolithic deployments to agile, cloud-based software architectures. PMW 120's strategy involves transitioning from sustaining isolated systems to deploying afloat and ashore cloud environments. However, this transition introduces significant challenges in software growth, with instances of up to 30-percent increases in \ac{sloc} growth, requiring careful cost estimation and rigorous continuous testing.
+\textbf{Strategic Insights:} The evolution of \ac{dcgsn} highlights a broader trend within NAVWAR ACAT I programs: the migration from hardware-heavy, monolithic deployments to agile, cloud-based software architectures. PMW 120's strategy involves transitioning from sustaining isolated systems to deploying afloat and ashore cloud environments. However, this transition introduces significant challenges in software growth, with instances of up to 30-percent increases in \ac{sloc} growth, requiring careful cost estimation and rigorous continuous testing.
 
 \subsubsection{PMW 150: Naval Command and Control Systems}
 \label{ssubsec:pmw150}
@@ -168,9 +179,11 @@ The sustainment of the legacy NTCSS ACAT I baseline requires continuous configur
 
 PMW 160 is tasked with providing mission-effective and cyber-resilient tactical networks to forces afloat. Its premier ACAT I program is \ac{canes}, a Chief of Naval Operations-directed initiative that serves as the indispensable core of the Navy's Information Warfare Platform.
 
-\ac{canes} was initiated to collapse and replace five disparate legacy network systems (including ISNS, SubLAN, and CENTRIXS-M) into a single, consolidated afloat computing environment. It provides the necessary data transport, edge computing, voice, video, and systems management services across multiple security domains (NIPR, SIPR, SR, etc.) for the fleet. Achieving a Full Deployment Decision (FDD) in October 2015, \ac{canes} operates under ASN (RD\&A) oversight as an ACAT IAC program.
+\ac{canes} was initiated to collapse and replace five disparate legacy network systems into a single, consolidated afloat computing environment. Current PMW~160 public material groups the predecessor set as \ac{lns}: \ac{isns}, Sensitive Compartmented Information networks, CENTRIXS-M, and SubLAN~\autocite{PEOC4I-PMW160-tearsheet-2025}. It provides the necessary data transport, edge computing, voice, video, systems management, enterprise services, and cybersecurity functionality across multiple security domains for the fleet. Achieving a Full Deployment Decision (FDD) in October 2015, \ac{canes} operates under ASN (RD\&A) oversight as an ACAT IAC program.
 
-\textbf{Strategic Insights:} CANES represents arguably the most foundational enabler of maritime combat power within NAVWAR. Without the hardware and software infrastructure provided by \ac{canes}, advanced analytical applications developed by PMW 120 (DCGS-N) and PMW 150 (GCCS-M) simply cannot function afloat. Recognizing the pace of cyber threats, PMW 160 is aggressively driving \ac{canes} toward a DevSecOps framework, decoupling software development from hardware procurement and ensuring that commercial-off-the-shelf (COTS) baselines are continuously evolved and patched through cyclical Service Pack updates.
+\textbf{Related program:} \ac{adns} is PMW~160's ACAT~II tactical wide area network capability. It supplies surface ship, submarine, airborne, tactical-shore, and shore-based WAN gateway services and is the board cue for ship-to-shore IP routing~\autocite{PEOC4I-PMW160-tearsheet-2025}. In an afloat email example, the clean flow is: sailor application or workstation, \ac{canes} shipboard LAN/compute services, \ac{adns} routing and traffic engineering, SATCOM/RF bearer, shore gateway/Fleet Network Operations Center/DISN path, then the destination shore enterprise service.
+
+\textbf{Strategic Insights:} CANES represents arguably the most foundational enabler of maritime combat power within NAVWAR. Without the hardware and software infrastructure provided by \ac{canes}, advanced analytical applications developed by PMW 120 (\ac{dcgsn}) and PMW 150 (GCCS-M) simply cannot function afloat. Recognizing the pace of cyber threats, PMW 160 is aggressively driving \ac{canes} toward a DevSecOps framework, decoupling software development from hardware procurement and ensuring that commercial-off-the-shelf (COTS) baselines are continuously evolved and patched through cyclical Service Pack updates.
 
 \subsubsection{PMW 170: Communications and GPS Navigation}
 \label{ssubsec:pmw170}
@@ -201,13 +214,15 @@ Legacy courseware often used \ac{ngen} and \ac{ngenr} as the acquisition shortha
 \subsubsection{PMW 790: Shore and Expeditionary Integration}
 \label{ssubsec:pmw790}
 
-\textbf{Program:} Deployable Joint Command and Control (DJC2)
+\textbf{Program:} \ac{djc2}
 
 \textbf{ACAT Status:} ACAT IAC~\autocite{PEOC4I-PMW790-tearsheet-2025}
 
-PMW 790 delivers resilient, interoperable shore and expeditionary C4I capabilities, ensuring that the infrastructure ashore matches the capacity of deployed fleets. The office's primary ACAT I capability is the Deployable Joint Command and Control (DJC2) system.
+PMW 790 delivers resilient, interoperable shore and expeditionary C4I capabilities, ensuring that the infrastructure ashore matches the capacity of deployed fleets. The office's primary ACAT I capability is the \ac{djc2} system.
 
-Originating as a Secretary of Defense priority transformation initiative, DJC2 provides a standardized, self-contained, rapidly deployable, and scalable joint command and control infrastructure to Geographic Combatant Commands (GCCs) and Combined/Joint Task Force (C/JTF) Commanders. By integrating computer-network-enabled C2 applications with self-powered tactical shelters, DJC2 allows commanders to establish a fully functional operations center in austere expeditionary environments rapidly. PMW 790 integrates this capability with over 60 unique shore and expeditionary networks, including the Shore Tactical Assured C2 (STACC) enterprise, to maintain global reach.
+Originating as a Secretary of Defense priority transformation initiative, \ac{djc2} provides a standardized, self-contained, rapidly deployable, and scalable joint command and control infrastructure to Geographic Combatant Commands (GCCs) and Combined/Joint Task Force (C/JTF) Commanders. By integrating computer-network-enabled C2 applications with self-powered tactical shelters, \ac{djc2} allows commanders to establish a fully functional operations center in austere expeditionary environments rapidly. PMW 790 integrates this capability with over 60 unique shore and expeditionary networks, including the Shore Tactical Assured C2 (STACC) enterprise, to maintain global reach.
+
+\textbf{Board cue:} The PMW~790 ACAT~I answer is \ac{djc2}, not D2GCS or DG2S.
 
 \subsubsection{PEO MLB: Manpower, Logistics and Business Solutions}
 \label{ssubsec:peomlb}
@@ -217,6 +232,8 @@ Originating as a Secretary of Defense priority transformation initiative, DJC2 p
 \textbf{ACAT Status:} BCAT I~\autocite{DAU-MDAP-Changes-2024,PEOMLB-portfolio-book-2025}
 
 While strictly categorized as a Business Capability Acquisition Category (BCAT I) program, Navy ERP represents an enterprise IT investment equivalent in scale, complexity, and financial footprint to a traditional kinetic \ac{acat} I weapon system. DAU's 2024 MDAP change notice associates Navy ERP Financial IT Services with PMW~220, and current \ac{peomlb} public materials describe Navy ERP+ modernization following a June~2024 ASN(RD\&A) acquisition decision memorandum. The board cue is that Navy ERP standardizes Department of the Navy business processes for acquisition, financial management, and logistics operations.
+
+Current PEO MLB public material organizes the office around capability portfolios rather than the PMW~120/150/160-style construct used by PEO C4I. The board-safe portfolio list is MyNavy HR IT Solutions, Ready Relevant Learning, Navy ERP Financial IT Services, Logistics IT Services, Marine Corps Logistics Integrated Information Solutions, Naval Applications and Business Services, and Marine Corps Manpower IT Systems Modernization~\autocite{PEOMLB-portfolio-book-2025}.
 
 Combining commercial off-the-shelf software (primarily SAP architecture) with extensive business process reengineering, Navy ERP utilizes a single database to manage shared common data across functional communities. As of recent reporting, Navy ERP controls over 50 percent of the Navy's financial spending, manages global supply operations, and provides workforce management for over 65,000 personnel. By modernizing its code and upgrading software capabilities, Navy ERP serves as the fundamental enabler for the DoD's strategic goal of reforming business practices for greater performance and affordability, providing the auditability and financial tracking required for every other ACAT I program in the Navy's portfolio.
 

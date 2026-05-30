@@ -10,9 +10,13 @@ when requested.
 - `tex/main.tex`: main build target.
 - `tex/acronyms.def`: acronym source of truth.
 - `tex/edo.bib`, `tex/current_events.bib`, `tex/was_refs.bib`: bibliographies.
-- `scripts/`: build, Docker build, release, scrub, format, and count helpers.
-- `artifacts/out/`, `artifacts/build/`, `artifacts/tikz/`: generated output,
-  aux files, and TikZ cache; do not track generated contents.
+- `scripts/`: build, Docker build, release, scrub, formatting, count, and
+  validation helpers.
+- `scripts/tests/`: focused shell tests for repo helper scripts.
+- `artifacts/out/`: PDF output; `main.pdf` is tracked, while other generated
+  output remains ignored.
+- `artifacts/build/`, `artifacts/tikz/`: aux files and TikZ cache; keep
+  generated contents out of Git except placeholders.
 - `docs/reference/` and `docs/archive/`: source material and historical notes.
 - `project_export.json`: durable project memory/status snapshot.
 
@@ -27,6 +31,7 @@ build on save.
 - `./scripts/build.sh tex/main.tex`: local fallback.
 - `make check-acronyms`: validate acronym keys and macro placement.
 - `make check-tikz-cache`: validate TikZ externalization paths.
+- `scripts/tests/test-check-acronyms.sh`: regression test the acronym checker.
 - `rg "TODO|undefined citation|Missing character" tex artifacts/build`: focused
   content/build warning scan.
 
@@ -37,12 +42,16 @@ sentences before punctuation. Use lowercase `\ac{}` keys in prose; avoid acronym
 macros in headings and tables unless the surrounding file already requires it.
 Prefer `longtblr` for tables and `description` for term/definition lists. Use
 `docs/reference/legacy/` for legacy material; do not recreate `Other/`.
+Use `./scripts/latexindent-docker.sh <file>` when formatting LaTeX and Docker
+is available.
 
 ## Testing Guidelines
 
 Run the Docker build for source changes and report remaining warnings,
 especially overfull boxes, missing citations, or shell-escape issues. Run
 `make check-acronyms` when touching `tex/acronyms.def` or acronym usage.
+Run `make check-tikz-cache` when touching TikZ externalization paths or cache
+configuration.
 
 ## Commit & Pull Request Guidelines
 
@@ -50,6 +59,9 @@ Recent history uses concise imperative subjects such as `Add ACAT III cost
 thresholds and MDA assignment detail` and `Correct EDO flag roster grades`.
 Update `CHANGELOG.md` for notable documentation, build, release, or public
 workflow changes.
+
+Do not run `scripts/release.sh` unless explicitly asked; it stages all changes,
+commits, tags, pushes, and publishes the PDF with `gh`.
 
 Pull requests should summarize affected chapters/scripts, sources checked,
 validation run, residual warnings, and generated artifacts excluded.

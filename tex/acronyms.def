@@ -823,6 +823,8 @@
 \newacronym{wgi}{WGI}{Within-Grade Increase}
 \newacronym{qsi}{QSI}{Quality Step Increase}
 \newacronym{wg}{WG}{Wage Grade}
+\newacronym{wl}{WL}{Wage Leader}
+\newacronym{ws}{WS}{Wage Supervisor}
 \newacronym{demo}{DEMO}{Personnel Demonstration Project}
 \newacronym{acqdemo}{ACQDEMO}{Acquisition Workforce Personnel Demonstration Project}
 \newacronym{sstm}{SSTM}{Senior Scientist and Technical Manager}
@@ -912,6 +914,11 @@
 \newacronym{adcon}{ADCON}{Administrative Control}
 \newacronym{opcon}{OPCON}{Operational Control}
 \newacronym{canes}{CANES}{Consolidated Afloat Networks and Enterprise Services}
+\newacronym{adns}{ADNS}{Automated Digital Network System}
+\newacronym{dcgsn}{DCGS-N}{Distributed Common Ground System-Navy}
+\newacronym{djc2}{DJC2}{Deployable Joint Command and Control}
+\newacronym{lns}{LNS}{Legacy Network Systems}
+\newacronym{isns}{ISNS}{Integrated Shipboard Network System}
 \newacronym{amod}{AMOD}{AEGIS Modernization}
 \newacronym{acb}{ACB}{Advanced Capability Build}
 \newacronym{cps}{CPS}{Common Processor System}

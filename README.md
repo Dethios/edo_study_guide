@@ -1,8 +1,8 @@
-# EDO Acquisition Tutor
+# EDO Acquisition Study Guide
 
-This repository builds the Navy Engineering Duty Officer (EDO) Acquisition Tutor
-study guide. The LaTeX sources live in `tex/`, while build outputs and aux files
-live under `artifacts/` at the repo root.
+This repository builds a Navy Engineering Duty Officer (EDO) acquisition study
+guide. The LaTeX sources live in `tex/`, with generated build products under
+`artifacts/` at the repo root.
 
 Read `AGENTS.md` before content or workflow edits. It contains the current
 source-recency, citation, acronym, and validation rules for this project.
@@ -11,25 +11,27 @@ source-recency, citation, acronym, and validation rules for this project.
 
 - `tex/`: LaTeX sources, chapters, templates, assets, TikZ, and bibliographies.
 - `tex/assets/reference-docs/`: mirrored PDFs, notes, and source-support files.
-- `artifacts/out/`: PDF output, ignored by Git.
-- `artifacts/build/`: LaTeX aux files, ignored by Git.
-- `artifacts/tikz/`: TikZ externalization cache, ignored by Git.
-- `out/` and `build/`: compatibility symlinks to artifact directories.
+- `artifacts/out/`: PDF output; `main.pdf` is tracked, while other generated
+  outputs are ignored.
+- `artifacts/build/`: LaTeX aux files, ignored except `.gitkeep`.
+- `artifacts/tikz/`: TikZ externalization cache, ignored except `.gitkeep`.
 - `release/`: dated PDF artifacts, ignored by Git and published via releases.
-- `scripts/`: build, format, release, scrub, and helper scripts.
+- `scripts/`: build, release, scrub, formatting, count, and validation helpers.
+- `scripts/tests/`: focused regression tests for helper scripts.
 - `docs/reference/`: imported manuals, style assets, and supporting material.
 - `docs/archive/`: historical setup and migration notes.
+- `.codex/`: Codex Cloud setup/maintenance scripts and repo-local agent config.
 - `project_export.json`: project memory and status snapshot.
 
 ## Build and Validation
 
-Bash (WSL/Linux/macOS):
+Local build:
 
 ```bash
-./scripts/build.sh
+./scripts/build.sh tex/main.tex
 ```
 
-Docker using the already-pulled `texlive/texlive` image:
+Docker build using the already-pulled `texlive/texlive` image:
 
 ```bash
 ./scripts/docker-build.sh tex/main.tex
@@ -51,12 +53,6 @@ docker run --rm --init \
   -w /workdir \
   texlive/texlive:latest \
   ./scripts/build.sh
-```
-
-PowerShell (Windows):
-
-```powershell
-./scripts/build.ps1
 ```
 
 The Docker helper accepts the same trailing file argument as `scripts/build.sh`,
@@ -93,62 +89,42 @@ table-like environments or optional `\item[...]` labels.
 
 ## Format
 
-Bash:
+Use the Docker wrapper with normal `latexindent` arguments:
 
 ```bash
-./scripts/format.sh tex/main.tex
-```
-
-PowerShell:
-
-```powershell
-./scripts/format.ps1 tex/main.tex
+./scripts/latexindent-docker.sh -l tex/latexindent.yaml -w tex/main.tex
 ```
 
 ## Scrub temp artifacts
-
-Bash:
 
 ```bash
 ./scripts/scrub.sh
 ```
 
-PowerShell:
-
-```powershell
-./scripts/scrub.ps1
-```
-
 ## Release (GitHub Releases only)
 
-Release PDFs are not tracked in Git. The release script expects `artifacts/out/main.pdf`
-to exist, copies it into `release/` (still gitignored), commits any staged
-changes, tags the commit as `release-YYYYMMDD`, pushes, and uploads the PDF as a
-GitHub Release asset using the GitHub CLI.
+The current PDF lives at `artifacts/out/main.pdf` and is tracked. Dated release
+PDF copies under `release/` are not tracked in Git.
 
-Bash:
+The release script expects `artifacts/out/main.pdf` to exist, copies it into
+`release/`, stages all changes, commits when needed, tags the commit as
+`release-YYYYMMDD`, pushes, and uploads the PDF as a GitHub Release asset using
+the GitHub CLI. Do not run it unless the working tree is ready to publish.
 
 ```bash
 ./scripts/release.sh
 ```
 
-PowerShell:
-
-```powershell
-./scripts/release.ps1
-```
-
 The release script builds changelog-style notes using `CHANGELOG.md` when the
 matching tag section exists. If not, it falls back to recent git log entries.
 
-## AI context bundle
+## Deeper Documentation
 
-To generate an `ai_context.zip` bundle with diffs, log excerpts, and selected
-files, run:
-
-```bash
-./scripts/ai-context.sh
-```
+- `AGENTS.md`: repo-specific guidance for Codex and other coding agents.
+- `CONTRIBUTING.md`: contribution checklist.
+- `.codex/README.md`: Codex Cloud setup and maintenance details.
+- `docs/reference/README.md`: source-support material boundaries.
+- `docs/archive/README.md`: archived notes that are not current workflow truth.
 
 ## License
 
