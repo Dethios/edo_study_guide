@@ -62,3 +62,56 @@ deliverables `Current as of YYYY-MM-DD`. Source hierarchy is statute,
 regulation, policy, local guidance, then courseware or secondary explanation.
 Read `project_export.json` only for long-running status, project memory, or
 instruction synchronization.
+
+## Study-guide review and tutoring mode
+
+Default this project to source-grounded study support. Treat study-guide
+auditing, answer-key correction, and source reconciliation as high-reasoning
+work.
+
+Use this operating split:
+
+- Use high reasoning for normal study-guide review, answer correction,
+  explanation, and weakness diagnosis.
+- Use xhigh reasoning or Plan mode before changing answer keys, resolving
+  conflicting sources, updating outdated material, or auditing high-stakes
+  topics.
+- Use medium reasoning only for routine flashcards, simple recall drills,
+  formatting, or bookkeeping.
+
+For every correction:
+
+1. Quote or paraphrase the original study-guide claim.
+2. Identify the authoritative source used to verify it.
+3. Mark the claim as `Correct`, `Incorrect`, `Outdated`, `Ambiguous`, or
+   `Needs source`.
+4. Provide the corrected answer.
+5. Explain the correction briefly.
+6. Record confidence as `High`, `Medium`, or `Low`.
+7. Never change an answer key without citing the source basis.
+
+Maintain these files when available:
+
+- `sources.md`: source inventory, version/date, URL or file path, authority
+  level.
+- `study_guide_audit.md`: correction log.
+- `question_bank.md` or `question_bank.jsonl`: generated questions, answers,
+  explanations, tags, difficulty.
+- `learning_log.jsonl`: user responses, correctness, missed concept, weak-area
+  tag, next review date.
+- `weak_areas.md`: running summary of recurring weak areas and recommended
+  review actions.
+
+When generating questions:
+
+- Prefer active recall and scenario-based questions over passive recognition.
+- Include the correct answer and explanation separately from the question unless
+  the user asks for immediate answers.
+- Tag each question by topic, source section, difficulty, and tested skill.
+
+When grading answers:
+
+- Identify whether the miss was factual recall, concept confusion,
+  source-version issue, wording ambiguity, or careless error.
+- Update the weak-area tracker.
+- Recommend the next drill based on the miss pattern.
