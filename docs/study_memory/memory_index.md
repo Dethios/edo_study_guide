@@ -98,3 +98,10 @@ See `study_guide_audit.md` and `guide_changes.jsonl` for correction records.
 - Result: Adequate; CIVPERS removal-path weak area improved to medium severity but remains active.
 - Next active drill: route-selection tradeoff for Chapter 43 vs Chapter 75.
 - Next verified topic in progress: PPBE POM vs BES distinction.
+
+## 2026-05-31 CIVPERS Route-Trade Update
+
+- Session: `2026-05-31-civpers-route-trade-q8`
+- Latest graded answer: Chapter 43 vs Chapter 75 route-selection tradeoff.
+- Result: Incomplete; user knows mechanics but needs to state route-selection tradeoffs crisply.
+- Next active drill: PPBE Program Objective Memorandum vs Budget Estimate Submission, source-verified before asking.

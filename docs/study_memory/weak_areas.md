@@ -161,3 +161,14 @@ No entries yet.
 - Severity: `medium`
 - Next review: 2026-06-01
 - Status: `improving`
+
+## 2026-05-31 CIVPERS Route-Trade Update
+
+### CIVPERS - Chapter 43 vs Chapter 75 route selection
+
+- ID: `wa-20260530-civpers-removal`
+- Evidence: Q8 answer retained core mechanics but missed the route-selection tradeoff: Chapter 43 has easier substantial-evidence review but mandatory opportunity period; Chapter 75 avoids PIP but has higher preponderance burden, efficiency nexus, and Douglas penalty risk.
+- Miss type: `concept_confusion`
+- Severity: `medium`
+- Next review: 2026-06-01
+- Status: `active`
