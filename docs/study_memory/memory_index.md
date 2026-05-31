@@ -113,3 +113,11 @@ See `study_guide_audit.md` and `guide_changes.jsonl` for correction records.
 - Result: Adequate; user has phase/time horizon mostly correct but must avoid saying POM proves funding.
 - Next active drill: correct a PM who conflates POM and BES.
 - Next verified topic in progress: APB vs PMB.
+
+## 2026-05-31 PPBE Correction Update
+
+- Session: `2026-05-31-ppbe-pom-bes-correction-q10`
+- Latest graded answer: corrected PM statement that POM proves five-year funding and BES is the same document.
+- Result: Strong; POM/BES weak area improved to low severity.
+- Next active drill: APB vs PMB, source-verified before asking.
+- Next verified topic in progress: SE review baselines.

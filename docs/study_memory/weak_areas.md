@@ -183,3 +183,14 @@ No entries yet.
 - Severity: `medium`
 - Next review: 2026-06-02
 - Status: `active`
+
+## 2026-05-31 PPBE Correction Update
+
+### PPBE - POM/BES decision documents
+
+- ID: `wa-20260530-ppbe-pom-bes`
+- Evidence: Q10 correction was strong: user clearly stated POM is not funding and separated FYDP/program review from BES budget-year estimate. Residual precision issue: avoid calling BES allocated budget and avoid EVM control-account language in PPBE.
+- Miss type: `wording_ambiguity`
+- Severity: `low`
+- Next review: 2026-06-04
+- Status: `improving`
