@@ -194,3 +194,14 @@ No entries yet.
 - Severity: `low`
 - Next review: 2026-06-04
 - Status: `improving`
+
+## 2026-05-31 APB/PMB Update
+
+### Program baselines - APB vs PMB
+
+- ID: `wa-20260530-apb-vs-pmb`
+- Evidence: Q11 answer correctly separated APB as the MDA-approved program baseline for cost, schedule, and performance from PMB as the EVM execution baseline tied to WBS/schedule/control-account planning. User correctly stated that worsening CPI/SPI should trigger PMB/EVM root-cause analysis before proposing an APB revision. Residual precision: IBR assesses PMB realism and risk rather than simply approving the PMB; use control accounts/work packages rather than control packages.
+- Miss type: `wording_ambiguity`
+- Severity: `low`
+- Next review: 2026-06-04
+- Status: `improving`

@@ -121,3 +121,12 @@ See `study_guide_audit.md` and `guide_changes.jsonl` for correction records.
 - Result: Strong; POM/BES weak area improved to low severity.
 - Next active drill: APB vs PMB, source-verified before asking.
 - Next verified topic in progress: SE review baselines.
+
+## 2026-05-31 APB/PMB Update
+
+- Session: `2026-05-31-apb-pmb-q11`
+- Latest graded answer: corrected PM statement that worsening contract EVM CPI/SPI automatically means the APB was breached and should be revised.
+- Result: Strong; APB vs PMB weak area improved to low severity.
+- Key residual precision: avoid saying the PMB is approved at the IBR; the IBR jointly assesses PMB realism and risks after contract award. Use control accounts and work packages rather than control packages.
+- Study-guide impact: no LaTeX update warranted because `tex/chapters/16_Milestones.tex` and `tex/chapters/14_EVM.tex` already separate APB from PMB without duplicating content.
+- Next active drill: SE review baselines, source-verified before asking.

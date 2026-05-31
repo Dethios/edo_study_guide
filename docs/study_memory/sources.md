@@ -54,6 +54,15 @@ final.
 | DON SES bio for Dr. William H. Luebke | local_guidance | `https://www.secnav.navy.mil/donhr/About/Senior-Executives/Biographies/Luebke%2C%20W.pdf` | 2026-05-30 | 2026-05-30 | Imported from May 30 package source notes. |
 | MyNavyHR SWO(N) / EDO(N) material | policy | `https://www.mynavyhr.navy.mil/Career-Management/Detailing/Officer/Pers-41-SWO/Detailers/SWO-N/` | 2026-05-30 | 2026-05-30 | Imported from May 30 package source notes. |
 
+## APB / PMB / EVM
+
+| Title | Authority Level | URL Or Path | Version Or Date | Date Checked | Notes |
+| --- | --- | --- | --- | --- | --- |
+| DAU Glossary, Acquisition Program Baseline | policy | `https://www.dau.edu/glossary/acquisition-program-baseline-apb` | current online | 2026-05-31 | Source basis for APB as PM-to-MDA agreement documenting cost, schedule, and performance baselines. |
+| DAU Adaptive Acquisition Framework, Acquisition Program Baselines | policy | `https://www.dau.edu/aafdid/Acquisition-Program-Baselines` | current online | 2026-05-31 | Source basis for APB timing, revision limits, and deviation actions. |
+| DAU ACQuipedia, Performance Measurement Baseline | policy | `https://www.dau.edu/acquipedia-article/performance-measurement-baseline-pmb` | current online | 2026-05-31 | Source basis for PMB as time-phased resourced plan for authorized work and EVM measurement. |
+| DAU Adaptive Acquisition Framework, Major Capability Acquisition Program Management | policy | `https://aaf.dau.edu/aaf/mca/program-management/` | current online | 2026-05-31 | Source basis for EVM as contract performance measurement against the PMB. |
+
 ### 2026-05-31 CIVPERS Verification Additions
 
 | Title | Authority Level | URL Or Path | Version Or Date | Date Checked | Notes |
