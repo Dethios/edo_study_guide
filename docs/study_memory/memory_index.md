@@ -121,3 +121,11 @@ See `study_guide_audit.md` and `guide_changes.jsonl` for correction records.
 - Result: Strong; POM/BES weak area improved to low severity.
 - Next active drill: APB vs PMB, source-verified before asking.
 - Next verified topic in progress: SE review baselines.
+
+## 2026-05-31 APB/PMB Update
+
+- Session: `2026-05-31-apb-pmb-q11`
+- Latest graded answer: APB vs PMB distinction.
+- Result: Adequate; user knows APB is program-level and PMB is contractor/EVM-level, but needs breach-vs-variance wording.
+- Next active drill: PMB negative variance with APB still green.
+- Next verified topic ready: SE technical review baselines.

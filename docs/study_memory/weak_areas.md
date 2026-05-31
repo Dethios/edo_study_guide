@@ -194,3 +194,14 @@ No entries yet.
 - Severity: `low`
 - Next review: 2026-06-04
 - Status: `improving`
+
+## 2026-05-31 APB/PMB Update
+
+### Program baselines - APB vs PMB
+
+- ID: `wa-20260530-apb-vs-pmb`
+- Evidence: Q11 answer correctly separated APB as program/MDA baseline from PMB as contractor EVM baseline. Residual gap: IBR role and APB breach vs PMB variance consequences need sharper wording.
+- Miss type: `concept_confusion`
+- Severity: `medium`
+- Next review: 2026-06-02
+- Status: `active`
