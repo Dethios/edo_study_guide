@@ -150,3 +150,14 @@ No entries yet.
 - Severity: `high`
 - Next review: 2026-06-01
 - Status: `active`
+
+## 2026-05-31 CIVPERS Redrill Update
+
+### CIVPERS - Chapter 43 vs Chapter 75 unacceptable-performance removals
+
+- ID: `wa-20260530-civpers-removal`
+- Evidence: Q7 answer correctly separated Chapter 43 opportunity/PIP from Chapter 75 no-PIP and named efficiency-of-service plus preponderance for Chapter 75. Residual gap is exact Chapter 43 substantial-evidence wording and Douglas Factors as Chapter 75 penalty reasonableness.
+- Miss type: `concept_confusion`
+- Severity: `medium`
+- Next review: 2026-06-01
+- Status: `improving`

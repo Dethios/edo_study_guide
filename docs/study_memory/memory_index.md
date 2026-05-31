@@ -90,3 +90,11 @@ See `study_guide_audit.md` and `guide_changes.jsonl` for correction records.
 - Result: Incomplete; CIVPERS removal-path weak area remains active at high severity.
 - Guide update: applied authorized clarification to `tex/chapters/27_CIVPERS.tex` separating Chapter 43 substantial-evidence/PIP requirements from Chapter 75 preponderance/no-PIP/Douglas-factor requirements.
 - Next recommended drill: redrill Chapter 43 vs Chapter 75 in a concise CO-advice format before rotating back to PPBE or APB vs PMB.
+
+## 2026-05-31 CIVPERS Redrill Update
+
+- Session: `2026-05-31-civpers-redrill-q7`
+- Latest graded answer: Chapter 43 vs Chapter 75 30-second redrill.
+- Result: Adequate; CIVPERS removal-path weak area improved to medium severity but remains active.
+- Next active drill: route-selection tradeoff for Chapter 43 vs Chapter 75.
+- Next verified topic in progress: PPBE POM vs BES distinction.
