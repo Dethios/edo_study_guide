@@ -172,3 +172,14 @@ No entries yet.
 - Severity: `medium`
 - Next review: 2026-06-01
 - Status: `active`
+
+## 2026-05-31 PPBE Update
+
+### PPBE - POM/BES decision documents
+
+- ID: `wa-20260530-ppbe-pom-bes`
+- Evidence: Q9 answer had correct phase and time-horizon structure, but treated POM as proof of future funding and missed the OSD program-review vs budget-review owner distinction.
+- Miss type: `concept_confusion`
+- Severity: `medium`
+- Next review: 2026-06-02
+- Status: `active`

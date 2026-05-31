@@ -105,3 +105,11 @@ See `study_guide_audit.md` and `guide_changes.jsonl` for correction records.
 - Latest graded answer: Chapter 43 vs Chapter 75 route-selection tradeoff.
 - Result: Incomplete; user knows mechanics but needs to state route-selection tradeoffs crisply.
 - Next active drill: PPBE Program Objective Memorandum vs Budget Estimate Submission, source-verified before asking.
+
+## 2026-05-31 PPBE POM/BES Update
+
+- Session: `2026-05-31-ppbe-pom-bes-q9`
+- Latest graded answer: Program Objective Memorandum vs Budget Estimate Submission.
+- Result: Adequate; user has phase/time horizon mostly correct but must avoid saying POM proves funding.
+- Next active drill: correct a PM who conflates POM and BES.
+- Next verified topic in progress: APB vs PMB.
