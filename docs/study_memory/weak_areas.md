@@ -200,8 +200,16 @@ No entries yet.
 ### Program baselines - APB vs PMB
 
 - ID: `wa-20260530-apb-vs-pmb`
+<<<<<<< HEAD
 - Evidence: Q11 answer correctly separated APB as program/MDA baseline from PMB as contractor EVM baseline. Residual gap: IBR role and APB breach vs PMB variance consequences need sharper wording.
 - Miss type: `concept_confusion`
 - Severity: `medium`
 - Next review: 2026-06-02
 - Status: `active`
+=======
+- Evidence: Q11 answer correctly separated APB as the MDA-approved program baseline for cost, schedule, and performance from PMB as the EVM execution baseline tied to WBS/schedule/control-account planning. User correctly stated that worsening CPI/SPI should trigger PMB/EVM root-cause analysis before proposing an APB revision. Residual precision: IBR assesses PMB realism and risk rather than simply approving the PMB; use control accounts/work packages rather than control packages.
+- Miss type: `wording_ambiguity`
+- Severity: `low`
+- Next review: 2026-06-04
+- Status: `improving`
+>>>>>>> 1a3396ec9b39c07e72e433289382ca130b3e0e4d
