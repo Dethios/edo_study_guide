@@ -69,3 +69,13 @@ machine-readable companion record to `guide_changes.jsonl`.
 - Explanation: The guide paragraph below the table is directionally correct, but the table can be read as assigning the Chapter 43 proof standard to all unacceptable-performance routes, including Chapter 75. This should remain a proposed guide clarification until the user explicitly agrees to edit the LaTeX source.
 - Confidence: `High`
 - Status: `proposed`
+
+### 2026-05-31 - Applied CIVPERS Chapter 43 / Chapter 75 Clarification
+
+- IDs: `gc-20260530-civpers-removal`, `gc-20260531-civpers-ch43-ch75-standards`
+- Location: `tex/chapters/27_CIVPERS.tex`, table `tab:performance_conduct_comparison` and paragraph `Handling unacceptable performance`
+- Verdict: `Ambiguous`
+- Correction applied: clarified that Chapter 43 uses an opportunity period/\ac{pip}-style route and substantial-evidence review, while Chapter 75 unacceptable-performance removals do not require a \ac{pip} but require preponderance, efficiency-of-service nexus, due process, and Douglas Factor penalty analysis.
+- Source basis: 5 U.S.C. 4303, 5 U.S.C. 7513, 5 U.S.C. 7701, 5 CFR parts 432 and 752, OPM/MSPB comparison material, DoDI 1400.25 Volume 431, and the September 30, 2025 Under Secretary of War Personnel and Readiness memo listed in `sources.md`.
+- Confidence: `High`
+- Status: `applied`

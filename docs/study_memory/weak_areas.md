@@ -139,3 +139,14 @@ No entries yet.
 - Severity: `medium`
 - Next review: 2026-06-03
 - Status: `improving`
+
+## 2026-05-31 CIVPERS Update
+
+### CIVPERS - Chapter 43 vs Chapter 75 unacceptable-performance removals
+
+- ID: `wa-20260530-civpers-removal`
+- Evidence: Q6 answer understood the purpose of the opportunity period/PIP and the probationary caveat, but blurred Chapter 43 and Chapter 75 routes, omitted substantial-evidence vs preponderance proof standards, and overstated due-process timing as a universal 45-to-70-day window.
+- Miss type: `concept_confusion`
+- Severity: `high`
+- Next review: 2026-06-01
+- Status: `active`

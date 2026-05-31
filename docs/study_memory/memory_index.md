@@ -82,3 +82,11 @@ See `study_guide_audit.md` and `guide_changes.jsonl` for correction records.
 - Result: Adequate; CANES/ADNS/MIDS relationship weak area is improving.
 - Next recommended drill: CIVPERS Chapter 75 vs Chapter 43 removal paths.
 - Open guide-update item: proposed clarification to `tex/chapters/27_CIVPERS.tex` so the Chapter 43 substantial-evidence/PIP route is not conflated with the Chapter 75 preponderance/no-PIP/Douglas-factor route.
+
+## 2026-05-31 CIVPERS Applied Update
+
+- Session: `2026-05-31-civpers-ch43-ch75-application`
+- Latest graded answer: Chapter 43 vs Chapter 75 unacceptable-performance removal path.
+- Result: Incomplete; CIVPERS removal-path weak area remains active at high severity.
+- Guide update: applied authorized clarification to `tex/chapters/27_CIVPERS.tex` separating Chapter 43 substantial-evidence/PIP requirements from Chapter 75 preponderance/no-PIP/Douglas-factor requirements.
+- Next recommended drill: redrill Chapter 43 vs Chapter 75 in a concise CO-advice format before rotating back to PPBE or APB vs PMB.
