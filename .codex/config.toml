@@ -1,5 +1,6 @@
 #:schema https://developers.openai.com/codex/config-schema.json
 
+approval_policy = "never"
 [agents.edo_tutor]
   description = "Read-only leaf tutor for EDO board learning sessions grounded in the local study guide."
   nickname_candidates = ["edo-tutor", "board-tutor"]
@@ -25,3 +26,6 @@
 
 [projects."/home/vic-l/dev-workspace"]
   trust_level = "trusted"
+
+[sandbox_workspace_write]
+network_access = true
