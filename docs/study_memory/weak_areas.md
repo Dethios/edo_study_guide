@@ -200,16 +200,41 @@ No entries yet.
 ### Program baselines - APB vs PMB
 
 - ID: `wa-20260530-apb-vs-pmb`
-<<<<<<< HEAD
-- Evidence: Q11 answer correctly separated APB as program/MDA baseline from PMB as contractor EVM baseline. Residual gap: IBR role and APB breach vs PMB variance consequences need sharper wording.
-- Miss type: `concept_confusion`
-- Severity: `medium`
-- Next review: 2026-06-02
-- Status: `active`
-=======
 - Evidence: Q11 answer correctly separated APB as the MDA-approved program baseline for cost, schedule, and performance from PMB as the EVM execution baseline tied to WBS/schedule/control-account planning. User correctly stated that worsening CPI/SPI should trigger PMB/EVM root-cause analysis before proposing an APB revision. Residual precision: IBR assesses PMB realism and risk rather than simply approving the PMB; use control accounts/work packages rather than control packages.
 - Miss type: `wording_ambiguity`
 - Severity: `low`
 - Next review: 2026-06-04
 - Status: `improving`
->>>>>>> 1a3396ec9b39c07e72e433289382ca130b3e0e4d
+
+## 2026-05-31 SE Baselines Update
+
+### Systems engineering - SE review baselines
+
+- ID: `wa-20260530-se-review-baselines`
+- Evidence: Q12/Q13/Q14 answers correctly mapped functional baseline to SFR/SRR area, allocated baseline to PDR, and product baseline to CDR. Residual gap: user described baselines as reviews or test results rather than controlled technical definitions, and blended CDR design maturity with later verification/test evidence.
+- Miss type: `concept_confusion`
+- Severity: `medium`
+- Next review: 2026-06-01
+- Status: `active`
+
+## 2026-05-31 KPP/KSA/APA Update
+
+### JCIDS and requirements - KPP/KSA/APA hierarchy and required performance attributes
+
+- ID: `wa-20260530-required-kpps`
+- Evidence: Q15 answer mostly defined KPP and KSA, but APA was unknown. The answer also needed stronger CDD-to-APB-to-TEMP traceability and mandatory performance-attribute recall was incomplete.
+- Miss type: `concept_confusion`
+- Severity: `medium`
+- Next review: 2026-06-01
+- Status: `active`
+
+## 2026-05-31 APA Milestone-C Update
+
+### JCIDS and requirements - APA consequence at Milestone C
+
+- ID: `wa-20260530-required-kpps`
+- Evidence: Q16 answer correctly stated that an APA miss matters because it means the system has not met full capability. Residual gap: Milestone C was described as final production approval rather than Production and Deployment/LRIP or limited deployment entry, and the answer needed a tighter residual-risk, corrective-action, test-adequacy, and baseline/TEMP frame.
+- Miss type: `application`
+- Severity: `low`
+- Next review: 2026-06-01
+- Status: `improving`

@@ -63,6 +63,27 @@ final.
 | DAU ACQuipedia, Performance Measurement Baseline | policy | `https://www.dau.edu/acquipedia-article/performance-measurement-baseline-pmb` | current online | 2026-05-31 | Source basis for PMB as time-phased resourced plan for authorized work and EVM measurement. |
 | DAU Adaptive Acquisition Framework, Major Capability Acquisition Program Management | policy | `https://aaf.dau.edu/aaf/mca/program-management/` | current online | 2026-05-31 | Source basis for EVM as contract performance measurement against the PMB. |
 
+## Systems Engineering Technical Baselines
+
+| Title | Authority Level | URL Or Path | Version Or Date | Date Checked | Notes |
+| --- | --- | --- | --- | --- | --- |
+| DAU ACQuipedia, Technical Baselines | policy | `https://www.dau.edu/acquipedia-article/technical-baselines` | current online | 2026-05-31 | Source basis for functional, allocated, and product baselines as controlled technical definitions. |
+| DAU ACQuipedia, Preliminary Design Review | policy | `https://www.dau.edu/acquipedia-article/preliminary-design-review-pdr` | current online | 2026-05-31 | Source basis for PDR establishing the allocated baseline and readiness for detailed design. |
+| DAU ACQuipedia, Product Baseline | policy | `https://www.dau.edu/acquipedia-article/product-baseline` | current online | 2026-05-31 | Source basis for product baseline content and CDR relationship. |
+| DAU ACQuipedia, Critical Design Review | policy | `https://www.dau.edu/acquipedia-article/critical-design-review-cdr` | current online | 2026-05-31 | Source basis for CDR establishing the initial product baseline. |
+
+## JCIDS / JFRP Performance Attributes
+
+| Title | Authority Level | URL Or Path | Version Or Date | Date Checked | Notes |
+| --- | --- | --- | --- | --- | --- |
+| CJCSM 5123.01, Joint Requirements Oversight Council and Joint Force Requirements Process | policy | `https://www.jcs.mil/Portals/36/Documents/Library/Manuals/CJCSM%205123.01.pdf` | 2026-01-15 | 2026-05-31 | Current source basis for JFRP governance, Service/component requirements validation, Joint Capability Integration, and performance-attribute certifications/endorsements. |
+| DoDI 5000.85, Major Capability Acquisition | policy | `https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/500085p.pdf` | Change 1, 2021-11-04 | 2026-05-31 | Source basis for APB cost/schedule/performance parameters, CDD KPPs listed verbatim in the APB, and T&E evidence against KPPs/KSAs. |
+| DAU Glossary, Key Performance Parameter | policy | `https://www.dau.edu/glossary/key-performance-parameter-kpp` | current online | 2026-05-31 | Source basis for KPP definition, CDD/APB linkage, threshold/objective format, and measurable/testable T&E requirement. |
+| DAU Glossary, Key System Attribute | policy | `https://www.dau.edu/glossary/key-system-attribute` | current online | 2026-05-31 | Source basis for KSA definition as important but below KPP criticality, measurable/testable, and MOP-based. |
+| DAU Glossary, Additional Performance Attribute | policy | `https://www.dau.edu/glossary/additional-performance-attribute` | current online | 2026-05-31 | Source basis for APA definition as below KPP/KSA but still appropriate in the CDD or updated CDD, measurable/testable, and T&E-supporting. |
+| DAU ACQuipedia, Performance Attributes | policy | `https://www.dau.edu/acquipedia-article/performance-attributes-0` | current online | 2026-05-31 | Source basis for mandatory KPPs: Force Protection, System Survivability, Sustainment, and Energy; and mandatory Sustainment KSA areas: Reliability, Maintainability, and O&S Cost. |
+| DAU Glossary, Net Ready Key Performance Parameter | policy | `https://www.dau.edu/glossary/net-ready-key-performance-parameter` | current online | 2026-05-31 | Source basis for Net-Ready applicability to information systems and APB/TEMP planning for shipboard C4I systems. |
+
 ### 2026-05-31 CIVPERS Verification Additions
 
 | Title | Authority Level | URL Or Path | Version Or Date | Date Checked | Notes |
