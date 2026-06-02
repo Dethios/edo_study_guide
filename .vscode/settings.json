@@ -1,0 +1,137 @@
+{
+  "latex-acronyms.customPatterns": [
+    "ac",
+    "gls",
+    "acp",
+    "glspl",
+    "Ac",
+    "Acp",
+    "Gls",
+    "Glspl",
+    "acs",
+    "acsp",
+    "Acs",
+    "Acsp"
+  ],
+  "latex-citations.customPatterns": [
+    "tabCite",
+    "srcCite",
+    "nbcite"
+  ],
+  "latex-refs.customPatterns": [
+    "Fig",
+    "Tab"
+  ],
+  "latex-utilities.formattedPaste.image.template": "\\includegraphics[width=.8\\linewidth]{${imageFilePath}}",
+  "latex-utilities.formattedPaste.imagePathOverride": "tex/assets/images",
+  "latex-utilities.formattedPaste.maxLineLength": 100,
+  "latex-utilities.liveReformat.enabled": true,
+  "latex-utilities.liveReformat.languages": [
+    "tex",
+    "doctex",
+    "latex",
+    "rsweave",
+    "jlweave"
+  ],
+  "latex-utilities.message.update.show": false,
+  "latex-utilities.zotero.citeMethod": "vscode",
+  "latex-utilities.countWord.args": [
+    "-relaxed",
+    "-inc",
+    "-total"
+  ],
+  "latex-utilities.countWord.docker.enabled": false,
+  "latex-utilities.countWord.path": "/home/vic-l/gitRepos/edo_study_guide/scripts/texcount-docker.sh",
+  "latex-workshop.bibtex-fields.order": [
+    "title",
+    "author",
+    "date"
+  ],
+  "latex-workshop.bibtex-fields.sort.enabled": true,
+  "latex-workshop.bibtex-format.sort.enabled": true,
+  "latex-workshop.bind.altKeymap.enabled": true,
+  "latex-workshop.docker.enabled": false,
+  "latex-workshop.docker.image.latex": "texlive/texlive:latest",
+  "latex-workshop.format.fixMath.enabled": true,
+  "latex-workshop.format.fixQuotes.enabled": true,
+  "latex-workshop.formatting.latex": "latexindent",
+  "latex-workshop.formatting.latexindent.path": "/home/vic-l/gitRepos/edo_study_guide/scripts/latexindent-docker.sh",
+  "latex-workshop.texcount.path": "/home/vic-l/gitRepos/edo_study_guide/scripts/texcount-docker.sh",
+  "latex-workshop.intellisense.package.unusual": true,
+  "latex-workshop.intellisense.subsuperscript.enabled": true,
+  "latex-workshop.intellisense.update.aggressive.enabled": true,
+  "latex-workshop.intellisense.update.delay": 100,
+  "latex-workshop.latex.auxDir": "/home/vic-l/gitRepos/edo_study_guide/artifacts/build",
+  "latex-workshop.latex.build.enableMagicComments": false,
+  "latex-workshop.latex.build.rootfileInStatus": true,
+  "latex-workshop.latex.clean.subfolder.enabled": true,
+  "latex-workshop.latex.outDir": "/home/vic-l/gitRepos/edo_study_guide/artifacts/out",
+  "latex-workshop.latex.recipe.default": "lastUsed",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "BUILD-DOCKER",
+      "tools": [
+        "docker-build"
+      ]
+    },
+    {
+      "name": "BUILD-WIN",
+      "tools": [
+        "build-win"
+      ]
+    }
+  ],
+  "latex-workshop.latex.rootFile.doNotPrompt": true,
+  "latex-workshop.latex.rootFile.useSubFile": true,
+  "latex-workshop.latex.tools": [
+    {
+      "args": [
+        "/home/vic-l/gitRepos/edo_study_guide/scripts/docker-build.sh"
+      ],
+      "command": "/bin/bash",
+      "name": "docker-build"
+    },
+    {
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\vic-l\\gitRepos\\edo_study_guide\\scripts\\build.ps1",
+        "-Doc",
+        "%DOC_EXT%"
+      ],
+      "command": "pwsh",
+      "name": "build-win"
+    }
+  ],
+  "latex-workshop.latex.watch.pdf.delay": 100,
+  "latex-workshop.linting.chktex.enabled": true,
+  "latex-workshop.mathpreviewpanel.cursor.enabled": true,
+  "latex-workshop.message.badbox.show": "none",
+  "latex-workshop.message.error.show": false,
+  "latex-workshop.message.log.show": false,
+  "latex-workshop.message.warning.show": false,
+  "latex-workshop.showContextMenu": true,
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.view.autoFocus.enabled": true,
+  "latex-workshop.view.outline.sync.viewer": true,
+  "latex-workshop.view.pdf.internal.synctex.keybinding": "ctrl-click",
+  "latex-workshop.view.pdf.reload.transition": "none",
+  "latex-workshop.view.pdf.sidebar.open": "off",
+  "latex-workshop.view.pdf.sidebar.view": "outline",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latexPreview.latexFontDir": "C:\\Users\\vic-l\\AppData\\Local\\Programs\\MiKTeX\\fonts",
+  "latexPreview.pageSize": "US Letter",
+  "ltex.additionalRules.motherTongue": "en-US",
+  "ltex.completionEnabled": true,
+  "ltex.disabledRules": {
+    "en-US": [
+      "MORFOLOGIK_RULE_EN_US"
+    ]
+  },
+  "ltex.enabled": true,
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  }
+}
