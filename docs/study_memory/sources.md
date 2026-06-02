@@ -17,7 +17,7 @@ final.
 
 | Title | Authority Level | URL Or Path | Version Or Date | Date Checked | Notes |
 | --- | --- | --- | --- | --- | --- |
-| PEO C4I Program Offices | policy | `https://www.peoc4i.navy.mil/Program-Offices/` | 2026-05-30 | 2026-05-30 | Imported from May 30 package source notes. |
+| PEO C4I Program Offices | policy | `https://www.peoc4i.navy.mil/Program-Offices/` | current online | 2026-05-31 | Official source basis for PMW 120, PMW 150, PMW 160, PMW/A 170, and PMW 790 program-office mission-area recall. |
 | PMW 120 Overview Tear Sheet | policy | `https://www.peoc4i.navy.mil/Portals/98/PMW120_Overview_Tearsheet.pdf` | 2026-05-30 | 2026-05-30 | Imported from May 30 package source notes. |
 | PMW 150 Tear Sheet | policy | `https://www.peoc4i.navy.mil/Portals/98/2026_PMW%20150_Tear%20Sheet_FINAL_JAN2026.pdf` | 2026-01 | 2026-05-30 | Imported from May 30 package source notes. |
 | PMW 160 Tear Sheet | policy | `https://www.peoc4i.navy.mil/Portals/98/Documents/Tear-Sheets/2025_PMW%20160_Tear%20Sheet_v01312025.pdf` | 2025-01-31 | 2026-05-30 | Imported from May 30 package source notes. |

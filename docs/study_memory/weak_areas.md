@@ -238,3 +238,14 @@ No entries yet.
 - Severity: `low`
 - Next review: 2026-06-01
 - Status: `improving`
+
+## 2026-05-31 Mandatory KPP Recall Update
+
+### JCIDS and requirements - Mandatory KPP and performance-attribute recall
+
+- ID: `wa-20260530-required-kpps`
+- Evidence: Q17 answer named Net-Ready/interoperability and cybersecurity for a shipboard C4I system, but missed the full mandatory scan: Force Protection if applicable, System Survivability, Sustainment, Energy, and Net-Ready/interoperability. Q18 then correctly listed Force Protection, System Survivability, Sustainment, and Energy, and stated Net-Ready can be a KPP or KSA.
+- Miss type: `wording_ambiguity`
+- Severity: `low`
+- Next review: 2026-06-04
+- Status: `improving`
