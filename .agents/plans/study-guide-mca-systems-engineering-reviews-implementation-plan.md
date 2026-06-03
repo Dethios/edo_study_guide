@@ -25,10 +25,10 @@ Current local evidence:
 
 Current source anchors checked for planning:
 
-- DoDI 5000.88, `3.5. Program Technical Reviews and Assessments`, requires system-level SRR or SFR, PDR, CDR, SVR or FCA, PRR, and PCA unless waived through SEP approval, and covers OUSD(R&E)/Component PDR/CDR assessment roles: https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/500088p.PDF?ver=O8LFc8NzlyJX-SgM2Haalw%3D%3D
-- FAR 34.202 states the Government conducts an IBR when EVMS is required and defines the IBR purpose around technical content plus performance budget, resource, and schedule realism: https://www.acquisition.gov/far/34.202
-- DAU Technical Reviews and Audits summarizes ASR, SFR, PDR, CDR, SVR/FCA, PRR, PCA, and related review terms: https://www.dau.edu/tools/dau-systems-engineering-brainbook/technical-reviews-and-audits
-- DoD Systems Engineering Guidebook, February 2022, Section 3, provides detailed products, criteria, review sequencing, and Technical Review Chair completion language: https://ac.cto.mil/wp-content/uploads/2022/02/Systems-Eng-Guidebook_Feb2022-Cleared-slp.pdf
+- DoDI 5000.88, `3.5. Program Technical Reviews and Assessments`, requires system-level SRR or SFR, PDR, CDR, SVR or FCA, PRR, and PCA unless waived through SEP approval, and covers OUSD(R&E)/Component PDR/CDR assessment roles: <https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/500088p.PDF?ver=O8LFc8NzlyJX-SgM2Haalw%3D%3D>
+- FAR 34.202 states the Government conducts an IBR when EVMS is required and defines the IBR purpose around technical content plus performance budget, resource, and schedule realism: <https://www.acquisition.gov/far/34.202>
+- DAU Technical Reviews and Audits summarizes ASR, SFR, PDR, CDR, SVR/FCA, PRR, PCA, and related review terms: <https://www.dau.edu/tools/dau-systems-engineering-brainbook/technical-reviews-and-audits>
+- DoD Systems Engineering Guidebook, February 2022, Section 3, provides detailed products, criteria, review sequencing, and Technical Review Chair completion language: <https://ac.cto.mil/wp-content/uploads/2022/02/Systems-Eng-Guidebook_Feb2022-Cleared-slp.pdf>
 
 ## Architecture Decision
 

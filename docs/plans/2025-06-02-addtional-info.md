@@ -14,4 +14,4 @@ These are notes for items that I should know for the qual board. Marci plans on 
 - AIT process
 - Ship change documentation
 - ISEA involvement in AITs
-- Locations of shipyards, RMCs, etc. Also know
+- Locations of shipyards, RMCs, etc. Also know how they all play together to support the fleet and how edos support each process.
