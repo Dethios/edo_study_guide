@@ -9,6 +9,11 @@ release tags (release-YYYYMMDD).
 
 ### Added
 
+- Integrated Qual Board study notes from Marci covering public shipyards and
+  RMC locations, technical authority escalation paths, AIT product integration
+  walkthrough, and class modernization differences.
+- Expanded Validation vs. Verification definitions and detailed DOT\&E /
+  COMOPTEVFOR roles and responsibilities in testing chapter.
 - Added a repo-local acronym hygiene check for duplicate definitions, undefined
   acronym keys, table-body acronym macros, and item-label acronym macros.
 - Added a coursebook coverage manifest that maps included coursebook modules and

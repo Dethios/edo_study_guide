@@ -1,4 +1,4 @@
-5% ==========================================================
+% ==========================================================
 % moderntech.cls  —  Unified class over KOMA-Script
 % Supports: [book|report|article] and forwards theme options to moderntech-base
 % Requires: XeLaTeX or LuaLaTeX

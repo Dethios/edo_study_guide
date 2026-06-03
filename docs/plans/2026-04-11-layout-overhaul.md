@@ -10,14 +10,14 @@
 
 ---
 
-### Task 1: Create Explicit Homes for Reference and Archive Material
+## Task 1: Create Explicit Homes for Reference and Archive Material
 
 **Files:**
+
 - Create: `/home/victor/dev-workspace/projects/edo_study_guide/docs/reference/README.md`
 - Create: `/home/victor/dev-workspace/projects/edo_study_guide/docs/archive/README.md`
 - Modify: `/home/victor/dev-workspace/projects/edo_study_guide/README.md`
 - Modify: `/home/victor/dev-workspace/projects/edo_study_guide/AGENTS.md`
-
 - [ ] **Step 1: Create the folder entrypoints**
 
 ```md
@@ -75,6 +75,7 @@ git commit -m "create explicit reference and archive docs"
 ### Task 2: Normalize Chapter Naming in `tex/chapters/`
 
 **Files:**
+
 - Modify: `/home/victor/dev-workspace/projects/edo_study_guide/tex/main.tex`
 - Modify: `/home/victor/dev-workspace/projects/edo_study_guide/tex/chapters/content.tex`
 - Modify: `/home/victor/dev-workspace/projects/edo_study_guide/.vscode/settings.json`
@@ -82,7 +83,6 @@ git commit -m "create explicit reference and archive docs"
 - Rename: `/home/victor/dev-workspace/projects/edo_study_guide/tex/chapters/13_cost_price_eval.tex`
 - Rename: `/home/victor/dev-workspace/projects/edo_study_guide/tex/chapters/17_JCIDS.tex`
 - Rename: `/home/victor/dev-workspace/projects/edo_study_guide/tex/chapters/18_test_eval.tex`
-
 - [ ] **Step 1: Freeze the canonical naming scheme**
 
 Use one pattern only:
@@ -130,11 +130,11 @@ git commit -m "normalize chapter naming"
 ### Task 3: Rebucket `tex/assets/` for Better Retrieval
 
 **Files:**
+
 - Modify: `/home/victor/dev-workspace/projects/edo_study_guide/tex/main.tex`
 - Modify: `/home/victor/dev-workspace/projects/edo_study_guide/tex/moderntech.sty`
 - Modify: `/home/victor/dev-workspace/projects/edo_study_guide/README.md`
 - Modify: `/home/victor/dev-workspace/projects/edo_study_guide/project_export.json`
-
 - [ ] **Step 1: Define sub-buckets under `tex/assets/`**
 
 Target:
@@ -191,7 +191,9 @@ git commit -m "rebucket study guide assets"
 ### Task 4: Clean Root Visibility Without Moving Core Build Anchors
 
 **Files:**
+
 - Modify: `/home/victor/dev-workspace/projects/edo_study_guide/README.md`
+
 - Modify: `/home/victor/dev-workspace/projects/edo_study_guide/.gitignore`
 
 - [ ] **Step 1: Confirm generated and local-only paths are ignored**
@@ -225,11 +227,11 @@ git commit -m "clean root visibility for study guide"
 ### Task 5: Update Exported and Absolute-Path Tooling
 
 **Files:**
+
 - Modify: `/home/victor/dev-workspace/projects/edo_study_guide/scripts/Environment/wsl_vscode_setup.ipynb`
 - Modify: `/home/victor/dev-workspace/projects/edo_study_guide/scripts/Environment/wsl-env-export/vscode/machine-settings.json`
 - Modify: `/home/victor/dev-workspace/projects/edo_study_guide/scripts/Environment/wsl-env-export/vscode/workspace-settings.json`
 - Modify: `/home/victor/dev-workspace/projects/edo_study_guide/scripts/Environment/wsl-env-export/vscode/windows-settings.json`
-
 - [ ] **Step 1: Search stale absolute paths**
 
 ```bash

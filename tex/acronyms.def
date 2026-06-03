@@ -251,6 +251,7 @@
 \newacronym[shortplural={PEO USCs},longplural={Program Executive Offices, Unmanned and Small Combatants}]{peousc}{PEO USC}{Program Executive Office, Unmanned and Small Combatants}
 \newacronym[shortplural={PEO UWSs},longplural={Program Executive Offices, Undersea Warfare Systems}]{peouws}{PEO UWS}{Program Executive Office, Undersea Warfare Systems}
 \newacronym{ssbn}{SSBN}{Ballistic Missile Submarine, Nuclear}
+\newacronym{ssgn}{SSGN}{Guided Missile Submarine, Nuclear}
 
 % --- Program Leadership & Stakeholders ---
 

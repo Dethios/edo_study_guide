@@ -84,6 +84,36 @@
   \item[\textbf{Out-brief.}] The \ac{ait} conducts an out-brief with Ship's Force, \ac{nsa}, \ac{rmmco}, and \ac{tycom}; the completion report records status, deficiencies, and command comments~\autocite{edo-4-1-4-ait-fundamentals-2025}.
 \end{description}
 
+\subsection{Product Line Integration Walkthrough}
+The path for a new equipment product line from production to integration into a ship or submarine involves the following standard steps:
+\begin{enumerate}
+  \item \textbf{System Production}: The manufacturer produces and packages the hardware and software components.
+  \item \textbf{Factory Acceptance Testing (FAT)}: Verifies that the manufactured system meets design specifications and quality standards before shipment.
+  \item \textbf{Staging and Delivery}: The system is shipped to a dedicated staging facility, warehouse, or directly to the \ac{isea} or installation site.
+  \item \textbf{NMP and SCD Approval}: Under the Navy Modernization Process (NMP), a Ship Change Document (\ac{scd}) must be formally approved. The \ac{scd} details the physical change, weight and moment impacts, and power/cooling requirements, and is signed by the Program Manager and Technical Warrant Holder.
+  \item \textbf{Installation Package Development}: The \ac{isea} or Planning Yard develops the Ship Installation Drawings (SIDs) and drafts the \ac{sovt} procedures.
+  \item \textbf{RMMCO Gatekeeping}: The \ac{ait} Manager checks in with the Regional Maintenance Modernization Coordinating Office (\ac{rmmco}) (typically 30 days prior to installation) to verify the approved \ac{scd}, final SIDs, \ac{sovt} plan, and certified Integrated Logistics Support (ILS) products.
+  \item \textbf{Waterfront Coordination}: The \ac{ait} coordinates with the \ac{nsa} and \ac{lma} to gain ship access. A Memorandum of Agreement (\ac{moa}) is signed by A-1 to align support services.
+  \item \textbf{Physical Installation}: The \ac{ait} performs the physical installation on board (e.g., running cables, mounting racks, structural modifications).
+  \item \textbf{System Testing}: The \ac{ait} and Ship's Force execute the \ac{sovt} (including cold and hot checks) to demonstrate operational capability.
+  \item \textbf{Quality Assurance and Certification}: The \ac{nsa} and \ac{ait} \ac{osic} conduct final quality inspections and sign the certification/completion paperwork.
+  \item \textbf{Logistics Handover}: The \ac{ait} turns over technical manuals, spares, training, and Allowance Parts Lists (APLs) to the ship's force.
+  \item \textbf{Configuration Update}: The ship's configuration database (CDMD-OA) is updated within 30 days of completion to reflect the install.
+\end{enumerate}
+
+\subsection{Modernization Differences by Class}
+Modernization processes differ significantly between ship classes depending on their nuclear or safety boundaries:
+\begin{description}
+  \item[\textbf{Conventional Surface Ships.}] Managed under the standard NMP. Changes are driven by \acp{scd} and gated on the waterfront by the local \ac{rmmco} to ensure logistics readiness before install.
+  \item[\textbf{Submarines and Nuclear Vessels.}] Experience extremely tight configuration control due to \ac{subsafe}, Fly-By-Wire, and Nuclear Power (NAVSEA 08) boundaries:
+    \begin{itemize}
+      \item \textbf{Boundary Control}: Any change within a certified boundary (e.g., \ac{subsafe} or Fly-By-Wire) requires formal engineering authorization, execution by certified activities (e.g., public shipyards), and rigorous quality audits.
+      \item \textbf{Nuclear Systems}: Alterations affecting the reactor plant or reactor support systems require direct, explicit NAVSEA 08 review and authorization.
+      \item \textbf{Temporary Alterations (TempAlts)}: Submarine TempAlts are strictly time-bound, logged in active status lists, and must be completely uninstalled before the approved expiration date.
+    \end{itemize}
+  \item[\textbf{ISEA Involvement.}] The \ac{isea} serves as the lifecycle engineering agent for the system, responsible for developing the engineering changes, verifying SIDs, authoring \ac{sovt} plans, ensuring ILS product availability, and often providing the onsite \ac{ait} Manager or technical oversight.
+\end{description}
+
 \subsection{Lessons Learned}
 \begin{itemize}
   \item Integration issues arise when \acp{ait}, Ship's Force, and industrial activities compete for the same space, systems, or services~\autocite{edo-4-1-4-ait-fundamentals-2025}.

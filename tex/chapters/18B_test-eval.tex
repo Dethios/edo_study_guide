@@ -42,7 +42,12 @@
 \end{figure}
 
 \subsection{Definition and Relationship to Verification and Validation}
-\ac{dte} verifies ``did we build the system right'' by showing the technical baseline meets allocated requirements, standards, and interface controls, while \ac{ote} validates ``did we build the right capability'' by proving Sailors and Marines can accomplish missions under representative threat, environment, and sustainment conditions~\autocite{DoDI5000-02}. Verification relies on repeatable measurements (e.g., propulsion plant efficiency in a land-based engineering site) and feeds configuration control; validation uses operational scenarios, tactics, and logistics supportability to demonstrate mission effectiveness and suitability. \ac{dodi}~5000.88 further directs programs to execute frequent, iterative end-user validation of features and usability so mission thread owners can accept the delivered capability before major decisions~\autocite{DoDI5000-88}. \ac{vv} and \ac{vva} activities must be planned in the \ac{temp} and \ac{sep} so that models, simulations, hardware-in-the-loop facilities, and live events share common data assumptions and confidence levels before milestone reviews~\autocite{DoDI5000-89}.
+\ac{dte} verifies ``did we build the system right'' (verification) by showing the technical baseline meets allocated requirements, standards, and interface controls, while \ac{ote} validates ``did we build the right capability'' (validation) by proving Sailors and Marines can accomplish missions under representative threat, environment, and sustainment conditions~\autocite{DoDI5000-02}. In board-prep terms:
+\begin{itemize}
+  \item \textbf{How do we ensure we are building the right thing?} Through \textit{Validation} (operational testing), which evaluates the system in a realistic environment with representative operators against capability requirements (\acp{kpp}/\acp{ksa}).
+  \item \textbf{How do we ensure we are building the thing right?} Through \textit{Verification} (developmental testing), which evaluates the system against documented technical specifications, drawings, and baseline standards.
+\end{itemize}
+Verification relies on repeatable measurements (e.g., propulsion plant efficiency in a land-based engineering site) and feeds configuration control; validation uses operational scenarios, tactics, and logistics supportability to demonstrate mission effectiveness and suitability. \ac{dodi}~5000.88 further directs programs to execute frequent, iterative end-user validation of features and usability so mission thread owners can accept the delivered capability before major decisions~\autocite{DoDI5000-88}. \ac{vv} and \ac{vva} activities must be planned in the \ac{temp} and \ac{sep} so that models, simulations, hardware-in-the-loop facilities, and live events share common data assumptions and confidence levels before milestone reviews~\autocite{DoDI5000-89}.
 \textit{Verification} therefore proves compliance with the documented specification (analysis, inspection, test, demonstration), whereas \textit{validation} proves the warfighter accepts the delivered capability and can close the mission threads; both sides of the \ac{vv} matrix must be satisfied before the \ac{mdauthority} can certify readiness for production or fleet release~\autocite{DoDI5000-89}.
 
 \subsection{Operational vs.\ Developmental Testing}
@@ -57,12 +62,18 @@
 
 \subsection{Statutory Requirements and Key Roles}
 \begin{description}
-  \item[\textbf{10~U.S.C.~\S~139.}] Establishes the \ac{dote} as an independent advisor to \ac{secdef} and Congress; \ac{dote} approves operational and live-fire test plans, monitors execution, and submits required independent reports to defense leadership and Congress~\autocite{USC-10-139}.
+  \item[\textbf{DOT\&E (10~U.S.C.~\S~139).}] Establishes the \ac{dote} as the independent statutory advisor to the \ac{secdef} and Congress. The \ac{dote} is responsible for:
+    \begin{itemize}
+      \item Approving operational test plans and live-fire test strategies for all covered programs.
+      \item Monitoring operational and live-fire test execution.
+      \item Submitting independent adequacy and operational capability assessment reports directly to Congress, the \ac{secdef}, and the \ac{mda} before a program can proceed beyond \ac{lrip} or enter full-rate production.
+      \item Ensuring programs are realistically stressed under operational threat environments.
+    \end{itemize}
   \item[\textbf{10~U.S.C.~\S~4171.}] Requires covered programs to complete adequate operational test and evaluation before proceeding beyond \ac{lrip}; \ac{dote} reports independent operational evaluation results to defense leadership and congressional defense committees~\autocite{USC-10-4171}.
   \item[\textbf{10~U.S.C.~\S~4172.}] Requires survivability and lethality testing, or an approved waiver, for covered systems and major munitions programs before full-scale production decisions; it also directs reporting of vulnerability and lethality findings to defense committees~\autocite{USC-10-4172}.
   \item[\textbf{DASD(T\&E).}] Serves as the \ac{osd} focal point for test resources, designates \acp{cdt} for \ac{acat}~I programs, charters \acp{ldto}, and co-chairs Defense-level \ac{te} Working Integrated Product Teams~\autocite{DoDI5000-89}.
   \item[\textbf{CDT and LDTO.}] The \ac{cdt} orchestrates the integrated test schedule, data requirements, and deficiency resolution cadence, while the \ac{ldto} (often a warfare center or system command test directorate) furnishes instrumentation, modeling, and range execution authority for \ac{dte}~\autocite{DoDI5000-89}.
-  \item[\textbf{Operational Test Agencies.}] \ac{comoptevfor}, \ac{afotec}, \ac{atec}, and \ac{mcotea} plan and execute independent \ac{ote} and provide operational effectiveness, suitability, survivability, and supportability evidence for the \ac{mda} record~\autocite{edo-3-5-6-test-eval-part-ii-2025}.
+  \item[\textbf{Operational Test Agencies.}] Plan and execute independent \ac{ote} to evaluate operational effectiveness, suitability, survivability, and supportability, providing independent evidence for the milestone record. The Navy's agency is the Commander, Operational Test and Evaluation Force (\ac{comoptevfor}).
 \end{description}
 
 \begin{figure}[htbp]
@@ -291,7 +302,14 @@ Different test types answer distinct questions across the \ac{mca} lifecycle~\au
 Navy \ac{te} execution reflects maritime operational requirements, shipbuilding constraints, and the distributed nature of naval forces~\autocite{edo-3-5-6-test-eval-part-ii-2025,OPTEVFOR-official}.
 
 \begin{description}
-  \item[\textbf{COMOPTEVFOR as Navy OTA.}] \ac{comoptevfor} is the Navy independent operational test agency, responsible for planning and executing \ac{ote} for maritime systems~\autocite{OPTEVFOR-official}. \ac{comoptevfor} provides independent operational effectiveness and suitability assessments to support \ac{frp} decisions and reports to \ac{dote} for covered programs. The \ac{comoptevfor} commander retains authority to recommend restricted Fleet release if Category~I deficiencies remain~\autocite{edo-3-5-6-test-eval-part-ii-2025}.
+  \item[\textbf{COMOPTEVFOR as Navy OTA.}] \ac{comoptevfor} reports directly to the \ac{cno}, ensuring operational independence from program managers, \acp{peo}, and SYSCOMs. Key responsibilities include:
+    \begin{itemize}
+      \item Planning, executing, and reporting independent \ac{ote} (including \acp{oa}, \ac{iote}, and \ac{fote}) for Navy and Marine Corps systems.
+      \item Determining if a system is operationally effective (meets mission needs) and operationally suitable (reliability, training, supportability, and interoperability criteria).
+      \item Serving as the sole certification authority for the Operational Test Readiness Review (\ac{otrr}) to certify that a program is ready for OPEVAL.
+      \item Recommending restricted Fleet release to the \ac{cno} and \ac{mda} if critical Category I deficiencies remain.
+      \item Designing realistic test scenarios and operational test plans, independent of contractor or program office influence.
+    \end{itemize}
   \item[\textbf{SYSCOM Support for DT.}] NAVSEA, NAVWAR, and NAVAIR SYSCOMs support \ac{dte} through warfare centers, engineering sites, labs, ranges, and test infrastructure~\autocite{edo-3-5-5-test-eval-part-i-2025}. SYSCOMs provide technical expertise, instrumentation, certification testing (airworthiness, safety, information assurance, weapon certification), and integration support. SYSCOM developmental test organizations execute \ac{dte} under \ac{cdt} and \ac{ldto} direction but do not replace independent OT.
   \item[\textbf{OPNAV / Resource Sponsors.}] OPNAV N9 warfare-systems sponsors help define requirements, operational context, and portfolio tradeoffs but do not replace independent OT~\autocite{edo-3-5-6-test-eval-part-ii-2025}. N94 is the Test \& Evaluation office within the N9 warfare-systems sponsor family, but N94 is not the sole owner of all Navy testing. N94 coordinates \ac{te} policy and resource alignment across the Navy \ac{te} enterprise.
   \item[\textbf{Interoperability Coordination.}] For systems requiring interoperability with joint or coalition partners, programs must coordinate early with JITC and interface owners to ensure certification timelines align with \ac{frp} decisions~\autocite{JITC-interoperability}. Navy-specific interface control working groups (ICWGs) support this coordination.
