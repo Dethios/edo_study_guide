@@ -28,4 +28,4 @@ approval_policy = "never"
   trust_level = "trusted"
 
 [sandbox_workspace_write]
-network_access = true
+  network_access = true
