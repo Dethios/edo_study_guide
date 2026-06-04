@@ -162,7 +162,7 @@ and alterations across multiple ships.
 
 * **AIT Sponsor**: Funds and assigns the task (e.g., PEO, PM, TYCOM).
 * **AIT Manager**: Plans installation, assigns the team, and designates the OSIC.
-* **On-Site Installation Coordinator (OSIC)**: The AIT Manager's representative on-site. Directs the install,
+* **On-Site Installation Coordinator (OSIC)**: The AIT Manager's representative on-site. Directs the installation,
   coordinates with the shipyard/RMC, and handles QA.
 * **Naval Shipbuilding Activity (NSA) / Lead Maintenance Activity (LMA)**: Integrates the availability. Gates AIT
   access, enforces technical specs, and monitors QA.
@@ -263,7 +263,7 @@ acronym) reports directly to the CNO to maintain independence from program offic
   maintainability, training, supportability).
 * Serves as the sole certification authority for the **Operational Test Readiness Review (OTRR)** to certify that a
   program is ready for OPEVAL.
-* Recommends restricted Fleet release to the CNO and MDA if Category I deficiencies remain.
+* Recommends restricted Fleet release to the CNO and MDA if Category-I deficiencies remain.
 
 ---
 
@@ -333,8 +333,8 @@ The **Major Capability Acquisition (MCA) pathway** is the deliberate acquisition
 need mature requirements, disciplined milestone decisions, engineering maturity, production readiness, sustainment
 planning, and formal T&E before large-scale fielding.
 
-**Board answer flow:** validated gap or need -> MDD -> MSA -> Milestone A -> TMRR -> Development RFP Release ->
-Milestone B -> EMD -> Milestone C -> P&D / LRIP -> IOT&E -> FRP/FD -> O&S.
+**Board answer flow:** validated gap or need → MDD → MSA → Milestone A → TMRR → Development RFP Release →
+Milestone B → EMD → Milestone C → P&D / LRIP → IOT&E → FRP/FD → O&S.
 
 | Event                       | Purpose                                                                                                              | Typical Board Entry/Exit Logic                                                                                                                                                                        | Major Players                                                                                                    |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
@@ -417,8 +417,8 @@ offices, fleet/TYCOMs, shipyards/RMCs, joint customers, and allied partners depe
 
 ### Navy Supply Repair-Parts Walkthrough
 
-When a ship or submarine needs repair parts, the flow is operational need -> requisition -> inventory/source decision ->
-contracting/repair action if required -> delivery -> configuration/logistics update.
+When a ship or submarine needs repair parts, the flow is operational need → requisition → inventory/source decision →
+contracting/repair action if required → delivery → configuration/logistics update.
 
 **Board answer flow:**
 
@@ -477,7 +477,7 @@ question is: who owns the technical baseline, who pays, who installs, who verifi
   training acceptance, and post-install feedback.
 
 **Disagreement rule:** if stakeholders disagree with the technical authority, do not solve it by local preference or
-schedule pressure. Elevate through LTA/WFCHENG -> TWH -> DWO -> SEA 05/Chief Engineer -> COMNAVSEA as needed, while the
+schedule pressure. Elevate through LTA/WFCHENG → TWH → DWO → SEA 05/Chief Engineer → COMNAVSEA as needed, while the
 PM/PEO/fleet side manages cost, schedule, operational impact, and risk acceptance within its own authority.
 
 ### Current Official Source Check (June 2026)

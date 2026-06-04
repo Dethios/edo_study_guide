@@ -129,7 +129,14 @@
     "en-US": [
       "MORFOLOGIK_RULE_EN_US",
       "WHITESPACE_RULE",
-      "POSSESSIVE_APOSTROPHE"
+      "POSSESSIVE_APOSTROPHE",
+      "REPETITION_STYLE"
+    ]
+  },
+  "ltex.dictionary": {
+    "en-US": [
+      "materiel",
+      "Materiel"
     ]
   },
   "ltex.enabled": true,
