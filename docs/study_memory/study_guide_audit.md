@@ -837,3 +837,24 @@ The entries in this section preserve the original imported package state. Later 
   and 10 U.S.C. 2805, checked from official web sources on 2026-06-04.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied Installation-Flow Source and Format Follow-up
+
+- ID: `gc-20260604-install-flow-source-format-followup`
+- Location: `tex/chapters/20_Navy_Modernization_Program.tex`,
+  `tex/chapters/22_AIT_Fundamentals_and_Lessons_Learned.tex`,
+  `tex/chapters/23_Waterfront_Organization_Work_Control_Safety.tex`,
+  `tex/chapters/28_AWP_and_SOVT.tex`, `tex/edo.bib`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: aligned the `TS9090-310` bibliography record to the public NAVSEA TS9090-310G PDF; separated
+  NDE-NM/SCD authorization and scheduling support from NAVSEA logistics/CDMD-OA support; added TS9090/JFMM source
+  grounding to AIT governance, RMMCO check-in, and planning-role cues; softened submarine/nuclear modernization wording
+  into a certified-boundary control cue; added a waterfront-control bridge explaining that AIT MOAs and in-briefs do not
+  replace valid TWD/WAF, tag-out, and test authorization; and converted dense AWP/SOVT paragraphs into board-ready
+  description blocks with clearer SOVT and PCD distinctions.
+- Source basis: NAVSEA SUBMEPP JFMM page, public JFMM Volume VI Rev D Change 5 PDF, public NAVSEA TS9090-310G Rev 1
+  PDF, NAVSEA Logistics Planning, Processes & Policy page, 10 U.S.C. 2244a already checked in the modernization/fleet
+  maintenance source ledger, and read-only source/flow reviewer findings from the current audit slice.
+- Confidence: `High`
+- Status: `applied`

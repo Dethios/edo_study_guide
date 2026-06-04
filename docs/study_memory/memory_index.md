@@ -15,7 +15,8 @@ Current as of 2026-06-04.
   SE technical-review baseline cleanup, EDO flag/billet source hygiene, CIVPERS source-fidelity cleanup,
   small-business size-standard and SBIR/STTR cue cleanup, cybersecurity/RMF currentness cleanup,
   system-level technical-review detail cleanup, warfare-center official-source board synthesis,
-  PPBE/funding-policy source grounding and consistency cleanup, OPNAV resource-sponsor map cleanup, NAVWAR/PEO C4I official-source hygiene refresh, congressional committee
+  PPBE/funding-policy source grounding and consistency cleanup, installation-flow source/format follow-up,
+  OPNAV resource-sponsor map cleanup, NAVWAR/PEO C4I official-source hygiene refresh, congressional committee
   currentness cleanup, EVM/APB/PMB source-hygiene cleanup, and study-memory/source-ledger state.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
@@ -89,6 +90,10 @@ Recent applied updates:
   new shipyard source-ledger entries, and Figure 1.4 connector clearance in the rebuilt PDF.
 - Fleet-maintenance statute/policy currentness cleanup for 10 U.S.C. 2244a, 10 U.S.C. 2466, direct
   OPNAVINST 4700.7N citations, and the public NAVSEA TS9090-310G SOVT caveat.
+- Installation-flow source/format follow-up for NMP/AIT/AWP/SOVT: aligned the TS9090 bibliography entry to the public
+  NAVSEA TS9090-310G PDF, separated NDE-NM authorization from NAVSEA logistics/CDMD-OA support, softened nuclear and
+  certified-boundary wording, added an AIT-to-waterfront-control bridge, and converted dense AWP/SOVT prose into
+  board-answer description blocks.
 - EDO flag-count fast-cue cleanup: board-speed roster recall is 3 VADMs, 4 RADMs, 1 RADM(sel), and 7 RDMLs;
   Andrew Biehn remains a PAE Maritime / NAVSEA 21 awareness cue, not an EDO flag-roster entry.
 - Small-business and SBIR/STTR currentness cleanup for NAICS-specific SBA size standards, FAR 19.102/19.502-2
