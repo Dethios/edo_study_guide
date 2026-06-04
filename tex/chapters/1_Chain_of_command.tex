@@ -82,7 +82,7 @@ The \ac{asnrdanda} is the \ac{don} \ac{cae} and the \ac{nae}, with authority and
   \item[\textbf{Flag/PEO billets (current).}]
         \begin{itemize}
             \item[]
-            \item[] \textbf{EDO-led today:} \ac{asnrdanda}'s \ac{pmildep} (\ac{vadm} Seiko Okano), \ac{comnavwar} (\ac{radm} J.\ Kurt Rothenhaus), \ac{peoships} (\ac{rdml} Brian Metcalf), \ac{peocvn} (\ac{radm} Casey Moton), and \ac{peossn} (\ac{radm} Jonathan Rucker) anchor \ac{ta} and acquisition governance for the community~\autocite{navy-flag-roster-2026-05,navy-okano-2025,navy-rothenhaus-2025,navy-metcalf-2025,navy-moton-2025,navy-rucker-2025}.
+            \item[] \textbf{Selected EDO-led acquisition billets:} \ac{asnrdanda}'s \ac{pmildep} (\ac{vadm} Seiko Okano), \ac{comnavsea} (\ac{vadm} James P.\ Downey), \ac{comnavwar} (\ac{radm} J.\ Kurt Rothenhaus), \ac{pae} Strategic Systems Programs (\ac{vadm} Johnny Wolfe, with \ac{radm} Douglas Williams announced to assume command in Jun~2026), \ac{peoships} (\ac{rdml} Brian Metcalf), \ac{peocvn} (\ac{radm} Casey Moton), and \ac{peossn} (\ac{radm} Jonathan Rucker) anchor \ac{ta} and acquisition governance for the community~\autocite{navy-flag-roster-2026-06,DON-PAE-SSP-Williams-2026,navy-okano-2025,navy-rothenhaus-2025,navy-metcalf-2025,navy-moton-2025,navy-rucker-2025}.
             \item[] \textbf{Non-EDO leaders (awareness):} \ac{navsea}~08 is currently \ac{admiral} William J.\ Houston (Submarine officer), \ac{peoiws} is \ac{rdml} Thomas J.\ Dickinson (Surface Warfare Acquisition Professional), \ac{peomlb} is \ac{rdml} Kevin P.\ Biehn (Surface Warfare Acquisition Professional), NAVSEA~05 is \ac{rdml} Jay A.\ Seif (Submarine Acquisition Professional), and \ac{peousc} is filled by an \ac{ses} (formerly \ac{rdml} Kevin R.\ Smith)~\autocite{navsea-org-chart-2025}.
         \end{itemize}
         \FlagBilletNote{See Appendix~\ref{app:edo-flags} for the current EDO flag billet roster.}
@@ -149,10 +149,11 @@ Current as of 2026-06-04, Mr.\ William F.\ Mahan is performing the duties of \ac
     \begin{scope}[on background layer]
       \node[pae group, fit=(aviation)(missions)(munitions)(industrial)(maritime)(undersea)(ssp)(ras)(marine)] (paeGroup) {};
     \end{scope}
-    \coordinate (asnDrop) at ($(asn.south)+(0,-0.55cm)$);
-    \coordinate (paeBusLeft) at ($(aviation.north)+(0,0.42cm)$);
-    \coordinate (paeBusCenter) at ($(missions.north)+(0,0.42cm)$);
-    \coordinate (paeBusRight) at ($(munitions.north)+(0,0.42cm)$);
+    \coordinate (paeBusLeft) at ($(aviation.north)+(0,0.45cm)$);
+    \coordinate (paeBusCenter) at ($(missions.north)+(0,0.45cm)$);
+    \coordinate (paeBusRight) at ($(munitions.north)+(0,0.45cm)$);
+    \coordinate (paeBusRoot) at ($(paeBusCenter)+(0,0.40cm)$);
+    \coordinate (asnPortfolioDrop) at (asn.south |- paeBusRoot);
     \coordinate (supportBusTop) at ($(aviation.west)+(-0.55cm,0)$);
     \coordinate (supportBusMid) at (supportBusTop |- industrial.west);
     \coordinate (supportBusBottom) at (supportBusTop |- ssp.west);
@@ -162,7 +163,7 @@ Current as of 2026-06-04, Mr.\ William F.\ Mahan is performing the duties of \ac
     \draw[line] (cmc.south) |- (asn.east);
     \draw[line] (asn.south west) -- (pcd.north);
     \draw[line] (asn.south east) -- (pmd.north);
-    \draw[bus line] (asn.south) -- (asnDrop) -| (paeBusCenter);
+    \draw[bus line] (asn.south) -- (asnPortfolioDrop) -- (paeBusRoot) -- (paeBusCenter);
     \draw[bus line] (paeBusLeft) -- (paeBusRight);
     \draw[line] (paeBusLeft) -- (aviation.north);
     \draw[line] (paeBusCenter) -- (missions.north);
@@ -282,6 +283,6 @@ Coursebook 2.1.1 asks students to identify the EDO flag billets by name and
 responsibility.  Use Appendix~\ref{app:edo-flags} as the live roster for that
 board cue because the coursebook roster is a date-stamped training snapshot,
 while the appendix is maintained against public Navy flag-officer sources
-\autocite{edo-2-1-1-command-structures-2025,navy-flag-roster-2026-04}.
+\autocite{edo-2-1-1-command-structures-2025,navy-flag-roster-2026-06}.
 
 \end{document}

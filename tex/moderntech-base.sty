@@ -343,6 +343,10 @@
 \NewDocumentCommand{\moderntechsetupTOC}{}{%
   \KOMAoptions{toc=graduated}%
   \DeclareTOCStyleEntry[
+    pagenumberbox=\mbox,
+    pagenumberwidth=2.8em
+  ]{tocline}{part}%
+  \DeclareTOCStyleEntry[
     numwidth=4.4em,
     pagenumberbox=\mbox,
     pagenumberwidth=2.2em
