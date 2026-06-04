@@ -12,8 +12,9 @@ Current as of 2026-06-04.
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization
   currentness, NAVSEA non-EDO leader/source-ledger cleanup, standalone chapter flow, appendix standalone
   titles/glossaries, structure-guard coverage, PAE chart connector routing and clearance follow-up,
-  SE technical-review baseline cleanup, EDO flag/billet source hygiene, CIVPERS source-fidelity cleanup, OPNAV resource-sponsor map cleanup,
-  NAVWAR/PEO C4I official-source hygiene refresh, and study-memory/source-ledger state.
+  SE technical-review baseline cleanup, EDO flag/billet source hygiene, CIVPERS source-fidelity cleanup,
+  OPNAV resource-sponsor map cleanup, NAVWAR/PEO C4I official-source hygiene refresh, congressional committee
+  currentness cleanup, and study-memory/source-ledger state.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -64,6 +65,8 @@ Recent applied updates:
 - EDO flag/billet source-hygiene cleanup for PAE Maritime deputy lanes, stale bio citations, and weak-area state.
 - OPNAV resource-sponsor map cleanup for the N3/N5 vs N7 board trap and N8 integrator vs N9 sponsor distinction.
 - NAVWAR/PEO C4I source-hygiene refresh for PMW/A 170 naming, C4I fast-cue citations, and CEC article date alignment.
+- Congressional committee currentness cleanup for HASC/SASC authorization subcommittees and House/Senate
+  appropriations naming differences.
 
 ## Next Review Plan
 

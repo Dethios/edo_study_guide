@@ -528,3 +528,20 @@ The entries in this section preserve the original imported package state. Later 
   through official-source web retrieval on 2026-06-04.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied Congressional Committee Currentness Cleanup
+
+- ID: `gc-20260604-congressional-committee-currentness-cleanup`
+- Location: `tex/chapters/8_Congressional_Enactment.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: replaced the stale HASC/SASC authorization-subcommittee table with current official committee
+  names; removed old House Oversight and Investigations and House Emerging Threats and Capabilities rows from the
+  current HASC list; added SASC Airland; added a board trap that committee rosters are time-sensitive; and clarified
+  the current appropriations naming difference between the House National Security / State lane and the Senate State,
+  Foreign Operations, and Related Programs lane.
+- Source basis: official HASC subcommittees page, official SASC 119th Congress subcommittee-leadership release, official
+  House Appropriations subcommittees page, official Senate Appropriations subcommittee list, and official Senate
+  Appropriations jurisdiction page, all checked on 2026-06-04.
+- Confidence: `High`
+- Status: `applied`
