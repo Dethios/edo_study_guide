@@ -136,3 +136,35 @@ machine-readable companion record to `guide_changes.jsonl`.
   listed in `sources.md`.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied Current Organization and Fleet-Maintenance Source Drift
+
+- ID: `gc-20260604-current-org-fleet-maint-source-drift`
+- Location: `tex/chapters/1_Chain_of_command.tex`, `tex/chapters/appendix_pae_construct_mapping.tex`,
+  `tex/chapters/appendix_edo_flags.tex`, `tex/chapters/19_Fleet_Maintenance_Assets.tex`,
+  `tex/chapters/28_AWP_and_SOVT.tex`, `tex/edo.bib`, `docs/reference/2026-06-02-additional-info-study-material.md`,
+  `docs/study_memory/sources.md`
+- Verdict: `Applied`
+- Correction applied: corrected the 1949 National Military Establishment rename to Department of Defense; replaced the
+  source-limited PAE RAS leader cue with Rebecca J. Gassler, SES; preserved the SSP Wolfe/Williams transition as a
+  public-source conflict rather than a completed handoff; corrected the CNRMC RMC list to MARMC, SERMC, SWRMC, FDRMC,
+  and SRF-JRMC with RMC Northwest and Hawaii RMC treated as separately coordinated embedded I-level activities in both
+  the TeX chapter and reference study-material file; and refreshed the JFMM Rev E source path/date to the SUBMEPP
+  landing page.
+- Source basis: DoW Historic Highlights, SASC maritime unmanned surface vessels hearing page and transcript, SSP
+  leadership page, Navy SSP Williams promotion announcement, NAVSEA CNRMC About Us, and NAVSEA SUBMEPP JFMM records
+  listed in `sources.md`.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-04 - Applied Source Inventory Freshness Cleanup
+
+- ID: `gc-20260604-source-inventory-freshness-cleanup`
+- Location: `docs/study_memory/sources.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: updated the source inventory freshness date to 2026-06-04 and added explicit rows for the current
+  official sources used by the organization, RMC, JFMM, and historical-renaming corrections. Historical proposed JSONL
+  entries are preserved as append-only inputs; newer closeout IDs record the applied state.
+- Source basis: local study-memory audit plus the current official source rows listed in `sources.md`.
+- Confidence: `High`
+- Status: `applied`

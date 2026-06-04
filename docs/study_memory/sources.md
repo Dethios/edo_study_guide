@@ -1,6 +1,6 @@
 # Source Inventory
 
-Current as of 2026-05-30.
+Current as of 2026-06-04.
 
 Use this file to track source basis for study-guide corrections, generated
 questions, and doctrine-sensitive memory entries. Verify live again before
@@ -54,6 +54,28 @@ final.
 | ------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------ | --------------- | ------------ | ------------------------------------------ |
 | DON SES bio for Dr. William H. Luebke | local_guidance  | `https://www.secnav.navy.mil/donhr/About/Senior-Executives/Biographies/Luebke%2C%20W.pdf`        | 2026-05-30      | 2026-05-30   | Imported from May 30 package source notes. |
 | MyNavyHR SWO(N) / EDO(N) material     | policy          | `https://www.mynavyhr.navy.mil/Career-Management/Detailing/Officer/Pers-41-SWO/Detailers/SWO-N/` | 2026-05-30      | 2026-05-30   | Imported from May 30 package source notes. |
+
+## Command Structure / DoW History
+
+| Title                                      | Authority Level | URL Or Path                                                                                                  | Version Or Date | Date Checked | Notes                                                                                           |
+| ------------------------------------------ | --------------- | ------------------------------------------------------------------------------------------------------------ | --------------- | ------------ | ----------------------------------------------------------------------------------------------- |
+| DoW Historic Highlights                    | policy          | `https://www.war.gov/Multimedia/Experience/Historic-Highlights-from-the-Department-of-War/`                  | current online  | 2026-06-04   | Official source basis for 1947 National Military Establishment and 1949 Department of Defense rename wording. |
+
+## PAE / ASN(RD&A) Current Organization
+
+| Title                                      | Authority Level | URL Or Path                                                                                                  | Version Or Date | Date Checked | Notes                                                                                           |
+| ------------------------------------------ | --------------- | ------------------------------------------------------------------------------------------------------------ | --------------- | ------------ | ----------------------------------------------------------------------------------------------- |
+| SASC Maritime Unmanned Surface Vessels Hearing | oversight       | `https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-maritime-unmanned-surface-vessels`  | 2026-04-21      | 2026-06-04   | Official witness-list source identifying Rebecca J. Gassler as Portfolio Acquisition Executive for Robotics and Autonomous Systems. |
+| SASC Maritime Unmanned Surface Vessels Transcript | oversight   | `https://www.armed-services.senate.gov/imo/media/doc/04-21-26_sub-transcript.pdf`                           | 2026-04-21      | 2026-06-04   | Official transcript source for Gassler's PAE RAS testimony and board-level RAS mission language. |
+| SSP Leadership Page                        | policy          | `https://www.ssp.navy.mil/About-Us/Leadership/`                                                             | current online  | 2026-06-04   | Live SSP leadership source showing VADM Johnny Wolfe Jr. while the Williams transition remains pending in public sources. |
+| Navy SSP Williams Promotion Announcement   | policy          | `https://www.navy.mil/Press-Office/News-Stories/display-news/Article/4498313/senate-confirms-military-promotion-for-new-director-of-portfolio-acquisition-ex/` | 2026-05-20      | 2026-06-04   | Official source for RADM Douglas Williams confirmed promotion and planned June 2026 assumption as PAE SSP director. |
+
+## Fleet Maintenance / JFMM
+
+| Title                                      | Authority Level | URL Or Path                                                                                                  | Version Or Date | Date Checked | Notes                                                                                           |
+| ------------------------------------------ | --------------- | ------------------------------------------------------------------------------------------------------------ | --------------- | ------------ | ----------------------------------------------------------------------------------------------- |
+| NAVSEA CNRMC About Us                      | policy          | `https://www.navsea.navy.mil/Home/RMC/CNRMC/About-Us/`                                                       | current online  | 2026-06-04   | Official source for CNRMC-listed RMC activities and separate RMC Northwest / Hawaii RMC embedded I-level activities. |
+| NAVSEA SUBMEPP JFMM                        | policy          | `https://www.navsea.navy.mil/Home/SUBMEPP/Products/JFMM/`                                                    | Rev E, 2026-04-27 | 2026-06-04 | Official landing page for COMUSFLTFORCOMINST 4790.3 Rev E and the current JFMM access path. |
 
 ## APB / PMB / EVM
 

@@ -47,16 +47,19 @@ nuclear-powered aircraft carriers and submarines:
 
 ### Regional Maintenance Centers (RMCs)
 
-Overseen by the **Commander, Navy Regional Maintenance Center (CNRMC)**, the RMCs manage conventional surface ship
-depot-level maintenance (via private contracts) and provide intermediate military repair and Fleet Technical Assistance
-(FTA):
+Overseen by the **Commander, Navy Regional Maintenance Center (CNRMC)**, the listed RMC activities manage conventional
+surface ship depot-level maintenance (via private contracts) and provide intermediate military repair and Fleet Technical
+Assistance (FTA):
 
 * **MARMC** (Mid-Atlantic RMC - Norfolk, VA)
 * **SERMC** (Southeast RMC - Mayport, FL)
 * **SWRMC** (Southwest RMC - San Diego, CA)
 * **FDRMC** (Forward Deployed RMC - Naples, Italy; detachments in Rota, Spain and Manama, Bahrain)
-* **NWRMC** (Northwest RMC - Bremerton, WA; co-located and integrated with PSNS & IMF)
-* **HRMC** (Hawaii RMC - Pearl Harbor, HI; co-located and integrated with PHNSY & IMF)
+* **SRF-JRMC** (Ship Repair Facility Yokosuka, Japan)
+
+CNRMC separately coordinates I-level activities at **RMC Northwest** embedded at PSNS & IMF and **Hawaii RMC** embedded in
+PHNSY & IMF. For board recall, do not count those embedded I-level activities as the same public list as MARMC, SERMC,
+SWRMC, FDRMC, and SRF-JRMC unless a newer CNRMC source changes the taxonomy.
 
 ### Other Key Waterfront Organizations
 
