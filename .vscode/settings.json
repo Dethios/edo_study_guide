@@ -127,7 +127,9 @@
   "ltex.completionEnabled": true,
   "ltex.disabledRules": {
     "en-US": [
-      "MORFOLOGIK_RULE_EN_US"
+      "MORFOLOGIK_RULE_EN_US",
+      "WHITESPACE_RULE",
+      "POSSESSIVE_APOSTROPHE"
     ]
   },
   "ltex.enabled": true,

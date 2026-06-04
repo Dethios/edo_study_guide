@@ -1,0 +1,28 @@
+# rumdl configuration file
+# Reference: https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md
+
+[global]
+# Rules to enable in addition to the default rule set
+extend-enable = [
+  "MD060", # Format Markdown tables
+]
+
+# Rules to ignore/disable globally
+disable = [
+  "MD024", # Multiple headings with the same content
+  "MD025", # Multiple top-level headings in the same document
+  "MD045", # Images should have alternate text (alt text)
+]
+
+[MD013]
+# Line length rule configuration
+line-length = 120
+code-blocks = false  # Do not wrap lines inside fenced code blocks
+tables = false       # Do not wrap lines inside tables
+headings = false     # Do not wrap lines inside headings
+reflow = true        # Automatically reflow/wrap paragraph text on format
+reflow-mode = "default"
+
+[MD060]
+# Align pipe-table columns and normalize Markdown table formatting.
+style = "aligned"
