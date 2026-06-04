@@ -509,3 +509,22 @@ The entries in this section preserve the original imported package state. Later 
 - Confidence: `High` for NAVMAC resource-sponsor-code mapping; `Medium` for broader OPNAV instruction currentness because
   DONI direct retrieval was blocked during this pass.
 - Status: `applied`
+
+### 2026-06-04 - Applied NAVWAR/PEO C4I Source-Hygiene Refresh
+
+- ID: `gc-20260604-navwar-c4i-source-hygiene-refresh`
+- Location: `tex/chapters/4_NAVWAR.tex`, `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`, `docs/study_memory/weak_areas.md`, `docs/study_memory/weak_areas.jsonl`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: aligned the PEO C4I office list with the official PMW/A 170 styling, updated the NAVWAR current-source
+  cue from 2026-05-27 to 2026-06-04, moved the Board Fast Cues C4I product-ownership citation from coursebook-only support
+  to current official PEO C4I and NAVSEA sources, aligned PMW 150/160/170 bibliography checked dates with the source ledger,
+  added the missing PMW/A 170 source-ledger row, refreshed the PEO MLB portfolio-book source-ledger row, and corrected the
+  NAVSEA CEC article version date to 2025-08-21.
+- Source basis: PEO C4I Program Offices, PMW 120 Overview Tearsheet, PMW 150 Tear Sheet, PMW 160 Tear Sheet, PMW/A 170 Tear
+  Sheet, PMW 790 Tear Sheet, PMA/PMW 101 MIDS Tear Sheet, NAVAIR PMA/PMW-101, NAVAIR PMW/A-170, NAVSEA About PEO IWS,
+  NAVSEA Cooperative Engagement Capability article, PEO Digital Portfolio Overview, and PEO MLB Portfolio Book, all checked
+  through official-source web retrieval on 2026-06-04.
+- Confidence: `High`
+- Status: `applied`

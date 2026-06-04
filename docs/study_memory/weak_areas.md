@@ -309,6 +309,17 @@ No entries yet.
 - Next review: 2026-06-08
 - Status: `improving`
 
+### NAVWAR / PEO C4I - Source hygiene refresh
+
+- ID: `wa-20260530-peo-c4i-products`
+- Evidence: June 4 official-source refresh aligned the PEO C4I office list with PMW/A 170 styling, moved the fast-cue
+  source basis from coursebook-only citations to official PEO C4I/NAVSEA records, added the missing PMW/A 170 source-ledger
+  row, and corrected the CEC article date. Keep active for rapid product-office recall, not unresolved source drift.
+- Miss type: `factual_recall`
+- Severity: `medium`
+- Next review: 2026-06-05
+- Status: `active`
+
 ### Current EDO organization - Current EDO flags and billets
 
 - ID: `wa-20260530-edo-flags`
