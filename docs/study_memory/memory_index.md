@@ -11,8 +11,8 @@ Current as of 2026-06-04.
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization
   currentness, NAVSEA non-EDO leader/source-ledger cleanup, standalone chapter flow, appendix standalone
-  titles/glossaries, structure-guard coverage, PAE chart connector routing and clearance follow-up, and
-  study-memory/source-ledger state.
+  titles/glossaries, structure-guard coverage, PAE chart connector routing and clearance follow-up,
+  CIVPERS source-fidelity cleanup, and study-memory/source-ledger state.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -58,6 +58,7 @@ Recent applied updates:
 - Flow, study-memory, and PAE chart closeout, including the Q18 Net-Ready question-bank entry.
 - Standalone chapter flow cleanup for CIVPERS, NAVWAR FRD, Milestones, and AWP/SOVT.
 - Consistency/source-integrity cleanup for SOVT expansion, DASD(T\&E), and stale audit paths.
+- CIVPERS source-fidelity cleanup for Chapter 43/75, DPMAP, WGI/QSI, FLSA, and standalone chapter titles.
 
 ## Next Review Plan
 

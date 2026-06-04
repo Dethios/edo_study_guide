@@ -50,7 +50,7 @@ The entries in this section preserve the original imported package state. Later 
 - Source basis: OPM and eCFR sources listed in `sources.md`.
 - Explanation: imported as proposed until the current checkout and live source basis are reverified.
 - Confidence: `Medium`
-- Status: `proposed`
+- Status: `closed by gc-20260604-civpers-source-fidelity-cleanup`
 
 ### 2026-05-30 - Acronym Additions
 
@@ -84,7 +84,7 @@ The entries in this section preserve the original imported package state. Later 
   Chapter 43 proof standard to all unacceptable-performance routes, including Chapter 75. This should remain a proposed
   guide clarification until the user explicitly agrees to edit the LaTeX source.
 - Confidence: `High`
-- Status: `proposed`
+- Status: `closed by gc-20260531-civpers-ch43-ch75-standards-closeout; rechecked by gc-20260604-civpers-source-fidelity-cleanup`
 
 ### 2026-05-31 - Applied CIVPERS Chapter 43 / Chapter 75 Clarification
 
@@ -433,5 +433,22 @@ The entries in this section preserve the original imported package state. Later 
   node-border targeting or path shortening.
 - Source basis: user-reported rendered-PDF defect, main-thread TikZ source inspection, full PDF rebuild, and rendered
   page-image verification of Figure 1.4.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-04 - Applied CIVPERS Source-Fidelity Cleanup
+
+- ID: `gc-20260604-civpers-source-fidelity-cleanup`
+- Location: `tex/chapters/27_CIVPERS.tex`, `tex/chapters/27A_Naval_Justice_and_Standards.tex`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: replaced the generic standalone chapter titles with topic-specific titles; added primary statutory,
+  regulatory, and OPM source citations to the performance-vs-conduct table and unacceptable-performance paragraph; added
+  the missing BibTeX records for 5 U.S.C. 4303, 5 U.S.C. 7513, 5 U.S.C. 7701, 5 CFR 432.105, 5 CFR 752.404, OPM employee
+  rights, OPM performance management, and the OPM Chapter 43/75 comparison material; and refreshed CIVPERS source-ledger
+  checked dates to 2026-06-04.
+- Source basis: current official OPM, eCFR, U.S. Code, DoDI 1400.25 Volume 431 Change 4, Department-level unacceptable
+  performance memo, and MSPB records listed in `sources.md`.
 - Confidence: `High`
 - Status: `applied`
