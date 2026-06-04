@@ -541,6 +541,7 @@
 \newacronym{secnavinst}{SECNAVINST}{Secretary of the Navy Instruction}
 \newacronym{sam}{SAM}{System for Award Management}
 \newacronym{som}{SOM}{SUPSHIP Operation Manual}
+\newacronym{naics}{NAICS}{North American Industry Classification System}
 \newacronym{sap}{SAP}{Simplified Acquisition Procedures}
 \newacronym{sat}{SAT}{Simplified Acquisition Threshold}
 \newacronym{ucf}{UCF}{Uniform Contract Format}
@@ -551,6 +552,7 @@
 \newacronym{ot}{OT}{Other Transaction}
 \newacronym{hubzone}{HUBZone}{Historically Underutilized Business Zone}
 \newacronym{sbir}{SBIR}{Small Business Innovation Research}
+\newacronym{sttr}{STTR}{Small Business Technology Transfer}
 \newacronym{sba}{SBA}{Small Business Administration}
 \newacronym{sdvosb}{SDVOSB}{Service-Disabled Veteran-Owned Small Business}
 \newacronym{wosb}{WOSB}{Women-Owned Small Business}

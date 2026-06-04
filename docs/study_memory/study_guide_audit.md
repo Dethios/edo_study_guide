@@ -706,3 +706,25 @@ The entries in this section preserve the original imported package state. Later 
   modernization and sustainment lane.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied Small-Business and SBIR/STTR Currentness Cleanup
+
+- ID: `gc-20260604-small-business-sbir-currentness`
+- Location: `tex/chapters/12_Solicitation.tex`, `tex/chapters/15_policy.tex`,
+  `tex/chapters/17A_Research_and_Development.tex`,
+  `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`, `tex/acronyms.def`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Outdated`
+- Correction applied: replaced the coursebook-style universal small-business threshold cue with the current
+  FAR/SBA answer that size standards are NAICS-specific and generally stated as maximum employees or average annual
+  receipts. Strengthened the set-aside citation to FAR 19.502-2. Updated SBIR/STTR board cues from "approximately
+  3 percent" to the current 15 U.S.C. 638 allocation baseline: 3.2 percent SBIR and 0.45 percent STTR generally, with
+  the FY2025-FY2031 DoD budget-calculation pilot at 3.25 percent SBIR and 0.46 percent STTR. Replaced fixed SBIR
+  Phase II lower-bound wording in Chapters 12 and 17A with a solicitation/agency-specific caveat and SBIR.gov general
+  Phase I/II/III ranges.
+  Added NAICS and STTR acronym entries and official source-ledger/bibliography records.
+- Source basis: FAR 19.102, FAR 19.502-2, SBA Size Standards, 15 U.S.C. 638, and SBIR.gov Apply guidance, all checked
+  from official web sources on 2026-06-04.
+- Confidence: `High`
+- Status: `applied`

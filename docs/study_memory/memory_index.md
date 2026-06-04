@@ -13,6 +13,7 @@ Current as of 2026-06-04.
   currentness, NAVSEA non-EDO leader/source-ledger cleanup, standalone chapter flow, appendix standalone
   titles/glossaries, structure-guard coverage, PAE chart connector routing and clearance follow-up,
   SE technical-review baseline cleanup, EDO flag/billet source hygiene, CIVPERS source-fidelity cleanup,
+  small-business size-standard and SBIR/STTR cue cleanup,
   OPNAV resource-sponsor map cleanup, NAVWAR/PEO C4I official-source hygiene refresh, congressional committee
   currentness cleanup, EVM/APB/PMB source-hygiene cleanup, and study-memory/source-ledger state.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
@@ -89,6 +90,8 @@ Recent applied updates:
   OPNAVINST 4700.7N citations, and the public NAVSEA TS9090-310G SOVT caveat.
 - EDO flag-count fast-cue cleanup: board-speed roster recall is 3 VADMs, 4 RADMs, 1 RADM(sel), and 7 RDMLs;
   Andrew Biehn remains a PAE Maritime / NAVSEA 21 awareness cue, not an EDO flag-roster entry.
+- Small-business and SBIR/STTR currentness cleanup for NAICS-specific SBA size standards, FAR 19.102/19.502-2
+  set-aside cues, 15 U.S.C. 638 SBIR/STTR allocation percentages, and SBIR.gov phase/award-range caveats.
 
 ## Next Review Plan
 
