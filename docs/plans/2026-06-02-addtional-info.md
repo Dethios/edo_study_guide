@@ -11,11 +11,13 @@ These are notes for items that I should know for the qual board. Marci plans on 
 ### Maintenance
 
 - Knowledge of RMCs and Shipyards
-- Locations of shipyards, RMCs, etc. Also know how they all play together to support the fleet and how EDO's support each process.
+- Locations of shipyards, RMCs, etc. Also know how they all play together to support the fleet and how EDO's support
+  each process.
 
 ### Technical Authority
 
 markdown.extension.syntax.plainTheme- Be able to discuss technical authority
+
 - Be able to walk through the tech authority chain for problem resolution for major repairs
 
 ### AIT and Installs

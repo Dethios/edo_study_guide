@@ -1,10 +1,14 @@
 # EDO Study Guide Layout Overhaul Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or
+> superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Reorganize `edo_study_guide` so source, reference material, generated output, and tooling are easier to find without breaking LaTeX build, formatting, VS Code tasks, or project-exported metadata.
+**Goal:** Reorganize `edo_study_guide` so source, reference material, generated output, and tooling are easier to find
+without breaking LaTeX build, formatting, VS Code tasks, or project-exported metadata.
 
-**Architecture:** Keep the repo root focused on source-of-truth content and build/config entrypoints. Move reference clutter into explicit `docs/reference/` or `references/` buckets, normalize chapter naming, and leave generated output ignored and secondary. Treat `tex/`, `scripts/`, `.vscode/`, and `project_export.json` as high-coupling anchors.
+**Architecture:** Keep the repo root focused on source-of-truth content and build/config entrypoints. Move reference
+clutter into explicit `docs/reference/` or `references/` buckets, normalize chapter naming, and leave generated output
+ignored and secondary. Treat `tex/`, `scripts/`, `.vscode/`, and `project_export.json` as high-coupling anchors.
 
 **Tech Stack:** git, latexmk, latexindent, bash, PowerShell, VS Code tasks/settings, Markdown, JSON
 
@@ -229,9 +233,12 @@ git commit -m "clean root visibility for study guide"
 **Files:**
 
 - Modify: `/home/victor/dev-workspace/projects/edo_study_guide/scripts/Environment/wsl_vscode_setup.ipynb`
-- Modify: `/home/victor/dev-workspace/projects/edo_study_guide/scripts/Environment/wsl-env-export/vscode/machine-settings.json`
-- Modify: `/home/victor/dev-workspace/projects/edo_study_guide/scripts/Environment/wsl-env-export/vscode/workspace-settings.json`
-- Modify: `/home/victor/dev-workspace/projects/edo_study_guide/scripts/Environment/wsl-env-export/vscode/windows-settings.json`
+- Modify:
+  `/home/victor/dev-workspace/projects/edo_study_guide/scripts/Environment/wsl-env-export/vscode/machine-settings.json`
+- Modify:
+  `/home/victor/dev-workspace/projects/edo_study_guide/scripts/Environment/wsl-env-export/vscode/workspace-settings.json`
+- Modify:
+  `/home/victor/dev-workspace/projects/edo_study_guide/scripts/Environment/wsl-env-export/vscode/windows-settings.json`
 - [ ] **Step 1: Search stale absolute paths**
 
 ```bash
@@ -268,6 +275,7 @@ git diff --check
 
 ## Self-Review
 
-- Scope coverage: addresses root visibility, docs/reference separation, chapter naming, asset rebucketing, and exported-path cleanup.
+- Scope coverage: addresses root visibility, docs/reference separation, chapter naming, asset rebucketing, and
+  exported-path cleanup.
 - Placeholder scan: no TODO/TBD placeholders remain.
 - Consistency: all tasks treat `tex/`, `scripts/`, `.vscode/`, and `project_export.json` as path anchors.

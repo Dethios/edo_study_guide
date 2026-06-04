@@ -31,21 +31,21 @@ The session moved through:
 
 ## Weak Areas Tracked From Session
 
-| Concept                             | Error Type             | Severity |
-|:------------------------------------|:-----------------------|:---------|
-| PPBE POM/BES decision documents     | relationship/detail    | Medium   |
-| APB vs PMB                          | definition/relationship| Medium   |
-| SE review baselines                 | rote recall            | Medium   |
-| Required KPPs                       | rote recall            | Medium   |
-| PEO C4I program office products     | rote recall/detail     | High     |
-| IWS 6.0 vs PMW 150                  | relationship           | Medium   |
-| CANES vs ADNS vs MIDS/Link 16       | relationship           | High     |
-| DCGS-N acronym/product identity     | definition             | Medium   |
-| PMW 790 product                     | rote recall            | Medium   |
-| OPNAV resource sponsor mapping      | rote recall/application| Medium   |
-| CIVPERS removal paths               | application            | Medium   |
-| WG/WL/WS pay-plan distinctions      | rote recall            | Low      |
-| Current EDO flags/billets           | current org recall     | High     |
+| Concept                         | Error Type              | Severity |
+| :------------------------------ | :---------------------- | :------- |
+| PPBE POM/BES decision documents | relationship/detail     | Medium   |
+| APB vs PMB                      | definition/relationship | Medium   |
+| SE review baselines             | rote recall             | Medium   |
+| Required KPPs                   | rote recall             | Medium   |
+| PEO C4I program office products | rote recall/detail      | High     |
+| IWS 6.0 vs PMW 150              | relationship            | Medium   |
+| CANES vs ADNS vs MIDS/Link 16   | relationship            | High     |
+| DCGS-N acronym/product identity | definition              | Medium   |
+| PMW 790 product                 | rote recall             | Medium   |
+| OPNAV resource sponsor mapping  | rote recall/application | Medium   |
+| CIVPERS removal paths           | application             | Medium   |
+| WG/WL/WS pay-plan distinctions  | rote recall             | Low      |
+| Current EDO flags/billets       | current org recall      | High     |
 
 ## Current Drill Queue
 

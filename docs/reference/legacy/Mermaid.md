@@ -1,3 +1,5 @@
+# Legacy Flowchart
+
 flowchart TD
   A[Collect coursebooks + .tex] --> B[Extract LOs per module]
   B --> C[Map LOs → study‐guide sections]
