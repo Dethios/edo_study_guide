@@ -535,6 +535,7 @@
 
 \newacronym{far}{FAR}{Federal Acquisition Regulation}
 \newacronym{dfars}{DFARS}{Defense Federal Acquisition Regulation Supplement}
+\newacronym{pgi}{PGI}{Procedures, Guidance, and Information}
 \newacronym{nmcars}{NMCARS}{Navy Marine Corps Acquisition Regulation Supplement}
 \newacronym{secnavinst}{SECNAVINST}{Secretary of the Navy Instruction}
 \newacronym{sam}{SAM}{System for Award Management}
@@ -1071,6 +1072,7 @@
 \newacronym{fprp}{FPRP}{Forward Pricing Rate Proposal}
 \newacronym{ros}{ROS}{Return on Sales}
 \newacronym{roa}{ROA}{Return on Assets}
+\newacronym{gpe}{GPE}{Governmentwide Point of Entry}
 
 % --- Fiscal Law & Compliance ---
 

@@ -294,3 +294,28 @@ The entries in this section preserve the original imported package state. Later 
   2026-03-05 and effective 2026-03-16, and local TeX structure review of Chapters 23-25.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied Contracting RFO Competition and Solicitation Cleanup
+
+- ID: `gc-20260604-contracting-rfo-competition-solicitation-cleanup`
+- Location: `tex/chapters/11_Contracting_Fundamentals.tex`, `tex/chapters/12_Solicitation.tex`,
+  `tex/chapters/15_policy.tex`, `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`,
+  `tex/acronyms.def`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: updated the competition/CICA board cue from legacy FAR 6.302/6.303/6.304/6.305
+  numbering to the current DoD RFO Part 6/DFARS 206 structure: revised FAR 6.103 for
+  other-than-full-and-open authorities, revised FAR 6.104 for justification and approval content and
+  approvals, and revised FAR 6.301 for public-availability/posting rules. Replaced closed-list RFO current-events
+  language with a live-tracker warning because DoD execution now includes multiple agency deviations beyond the
+  initial Feb 1, 2026 set and Part 15/DFARS 215 has its own effective date. Clarified security-cooperation
+  realignment to avoid unsupported Capability Trade Council brokering language. Tightened solicitation chapter
+  cues for T&M fixed hourly rates/D&F/ceiling-price controls, small-business set-aside rule-of-two limits, and the
+  over-$20K through $25K public-notice band. Added the GPE acronym and refreshed RFO bibliography/source-inventory
+  access dates and rows.
+- Source basis: Acquisition.gov FAR Overhaul deviation tracker, Acquisition.gov RFO Part 6 model text, DoD RFO
+  Class Deviation Part 6 / DFARS Part 206, DoD RFO Class Deviations Parts 10/12/18, DoD Part 15 / DFARS Part 215
+  deviation, FAR 5.101, FAR 16.601, FAR 19.502-2, Acquisition.gov threshold changes, and the SecWar arms-transfer
+  and security-cooperation realignment memo.
+- Confidence: `High`
+- Status: `applied`
