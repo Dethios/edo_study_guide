@@ -117,8 +117,10 @@ Current as of 2026-06-04, Mr.\ William F.\ Mahan is performing the duties of \ac
     asn node/.style={rectangle, draw, fill=Gold!40, text width=14em, align=center, minimum height=4.2em},
     deputy node/.style={rectangle, draw, fill=Green!25, text width=11em, align=center, minimum height=3.6em},
     pae node/.style={rectangle, draw, fill=Blue!18, text width=10.5em, align=center, minimum height=3.2em},
+    pae group/.style={rectangle, draw=SteelGray, densely dashed, rounded corners, inner sep=0.35cm},
     support node/.style={rectangle, draw, dashed, fill=SteelGray!10, text width=16em, align=center, minimum height=4.0em},
-    line/.style={draw, -{Stealth[length=2mm]}}
+    line/.style={draw, -{Stealth[length=2mm]}, shorten >=1pt, shorten <=1pt},
+    support line/.style={draw, dashed, -{Stealth[length=2mm]}, shorten >=1pt, shorten <=1pt}
     ]
 
     \node[top node] (secnav) {\ac{secnav}};
@@ -142,18 +144,15 @@ Current as of 2026-06-04, Mr.\ William F.\ Mahan is performing the duties of \ac
     \node[pae node, right=of ras, fill=Red!18] (marine) {PAE Marine Corps};
 
     \node[support node, left=of industrial, xshift=-4.0cm] (syscoms) {\acp{syscom}, warfare centers,\\ shipyards, RMCs, NIWCs,\\ contracting, sustainment, and \ac{ta}};
+    \node[pae group, fit=(aviation)(missions)(munitions)(industrial)(maritime)(undersea)(ssp)(ras)(marine)] (paeGroup) {};
 
-    \draw[line] (secnav) -- (asn);
-    \draw[line] (cno) |- (asn);
-    \draw[line] (cmc) |- (asn);
-    \draw[line] (asn) -- (pcd);
-    \draw[line] (asn) -- (pmd);
-    \draw[line] (pcd) |- (missions);
-    \draw[line] (pmd) |- (missions);
-    \draw[line, dashed] (syscoms) -- (industrial);
-    \draw[line, dashed] (syscoms) -- (maritime);
-    \draw[line, dashed] (syscoms) -- (missions);
-    \draw[line, dashed] (syscoms) -- (ras);
+    \draw[line] (secnav.south) -- (asn.north);
+    \draw[line] (cno.south) |- (asn.west);
+    \draw[line] (cmc.south) |- (asn.east);
+    \draw[line] (asn.south west) -- (pcd.north);
+    \draw[line] (asn.south east) -- (pmd.north);
+    \draw[line] (asn.south) -- (paeGroup.north);
+    \draw[support line] (syscoms.east) -- (paeGroup.west);
   \end{tikzpicture}}
   \caption[ASN (RD\&A) and PAE organization transition]{Board-level ASN (RD\&A) and PAE organization transition, updated from the user-provided PAE chart with public announcements through 2026-06-04~\autocite{DON-New-SAE-2026,DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026}.}
   \label{fig:asnrda_org_chart}
