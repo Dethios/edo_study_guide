@@ -146,15 +146,12 @@ Current as of 2026-06-04, Mr.\ William F.\ Mahan is performing the duties of \ac
     \node[pae node, right=of ras, fill=Red!18] (marine) {PAE Marine Corps};
 
     \node[support node, left=of industrial, xshift=-4.2cm] (syscoms) {\acp{syscom}, warfare centers,\\ shipyards, RMCs, NIWCs,\\ contracting, sustainment, and \ac{ta}};
-    \begin{scope}[on background layer]
-      \node[pae group, fit=(aviation)(missions)(munitions)(industrial)(maritime)(undersea)(ssp)(ras)(marine)] (paeGroup) {};
-    \end{scope}
     \coordinate (serviceJoinY) at ($(asn.north)+(0,0.62cm)$);
     \coordinate (cnoJoin) at (cno.south |- serviceJoinY);
     \coordinate (cmcJoin) at (cmc.south |- serviceJoinY);
     \coordinate (asnCnoIn) at ($(asn.north west)!0.45!(asn.north)$);
     \coordinate (asnCmcIn) at ($(asn.north east)!0.45!(asn.north)$);
-    \coordinate (paeBranchY) at ($(missions.north)+(0,0.70cm)$);
+    \coordinate (paeBranchY) at ($(missions.north)+(0,1.05cm)$);
     \coordinate (asnPortfolioStem) at (asn.south |- paeBranchY);
     \coordinate (paeBranchLeft) at (aviation.north |- paeBranchY);
     \coordinate (paeBranchCenter) at (missions.north |- paeBranchY);
@@ -163,22 +160,25 @@ Current as of 2026-06-04, Mr.\ William F.\ Mahan is performing the duties of \ac
     \coordinate (supportBusMid) at (supportBusTop |- industrial.west);
     \coordinate (supportBusBottom) at (supportBusTop |- ssp.west);
 
-    \draw[line] (secnav.south) -- (asn.north);
-    \draw[line] (cno.south) -- (cnoJoin) -| (asnCnoIn);
-    \draw[line] (cmc.south) -- (cmcJoin) -| (asnCmcIn);
-    \draw[line] (asn.south west) -- ++(0,-0.25cm) -| (pcd.north);
-    \draw[line] (asn.south east) -- ++(0,-0.25cm) -| (pmd.north);
-    \draw[bus line] (asn.south) -- (asnPortfolioStem) -- (paeBranchCenter);
-    \draw[bus line] (paeBranchLeft) -- (paeBranchRight);
-    \draw[line] (paeBranchLeft) -- (aviation.north);
-    \draw[line] (paeBranchCenter) -- (missions.north);
-    \draw[line] (paeBranchRight) -- (munitions.north);
+    \begin{scope}[on background layer]
+      \node[pae group, fit=(aviation)(missions)(munitions)(industrial)(maritime)(undersea)(ssp)(ras)(marine)] (paeGroup) {};
+      \draw[line] (secnav.south) -- (asn.north);
+      \draw[line] (cno.south) -- (cnoJoin) -| (asnCnoIn);
+      \draw[line] (cmc.south) -- (cmcJoin) -| (asnCmcIn);
+      \draw[line] (asn.south west) -- ++(0,-0.25cm) -| (pcd.north);
+      \draw[line] (asn.south east) -- ++(0,-0.25cm) -| (pmd.north);
+      \draw[bus line] (asn.south) -- (asnPortfolioStem) -- (paeBranchCenter);
+      \draw[bus line] (paeBranchLeft) -- (paeBranchRight);
+      \draw[line] (paeBranchLeft) -- (aviation.north);
+      \draw[line] (paeBranchCenter) -- (missions.north);
+      \draw[line] (paeBranchRight) -- (munitions.north);
 
-    \draw[support bus] (syscoms.east) -- (supportBusMid);
-    \draw[support bus] (supportBusTop) -- (supportBusBottom);
-    \draw[support line] (supportBusTop) -- (aviation.west);
-    \draw[support line] (supportBusMid) -- (industrial.west);
-    \draw[support line] (supportBusBottom) -- (ssp.west);
+      \draw[support bus] (syscoms.east) -- (supportBusMid);
+      \draw[support bus] (supportBusTop) -- (supportBusBottom);
+      \draw[support line] (supportBusTop) -- (aviation.west);
+      \draw[support line] (supportBusMid) -- (industrial.west);
+      \draw[support line] (supportBusBottom) -- (ssp.west);
+    \end{scope}
   \end{tikzpicture}}
   \caption[ASN (RD\&A) and PAE organization transition]{Board-level ASN (RD\&A) and PAE organization transition, updated from the user-provided PAE chart with public announcements through 2026-06-04~\autocite{DON-New-SAE-2026,DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026}.}
   \label{fig:asnrda_org_chart}

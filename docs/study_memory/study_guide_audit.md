@@ -128,7 +128,7 @@ machine-readable companion record to `guide_changes.jsonl`.
 ### 2026-06-04 - Applied Acronym Additions Closeout
 
 - ID: `gc-20260530-acronyms`
-- Location: `tex/acronyms.def`, `tex/chapters/4_NAVWAR.tex`, `tex/chapters/8_Civilian_Personnel.tex`
+- Location: `tex/acronyms.def`, `tex/chapters/4_NAVWAR.tex`, `tex/chapters/27_CIVPERS.tex`
 - Verdict: `Applied`
 - Correction applied: verified definitions and guide usage for ADNS, DCGS-N, DJC2, LNS, ISNS, WL, and WS. The NAVWAR
   chapter uses the NAVWAR/C4I acronyms and the Civilian Personnel chapter uses WL/WS; `make check-acronyms` passes.
@@ -198,5 +198,54 @@ machine-readable companion record to `guide_changes.jsonl`.
 - Source basis: CRS R41129, GAO-24-107732, DoW Contracts for Sept. 24 2024, CRS R43543, GAO-25-106728, NAVFAC PEO
   Industrial Infrastructure SIOP, NAVFAC PSNS Dry Dock 4 seismic-upgrade release, and GAO-23-106067 records listed in
   `sources.md`.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-04 - Applied Flow, Study-Memory, and PAE Chart Closeout
+
+- ID: `gc-20260604-flow-study-memory-chart-closeout`
+- Location: `tex/chapters/1_Chain_of_command.tex`, `tex/chapters/16_Milestones.tex`,
+  `tex/chapters/28_AWP_and_SOVT.tex`, `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`,
+  `docs/study_memory/weak_areas.md`, `docs/study_memory/weak_areas.jsonl`,
+  `docs/study_memory/question_bank.jsonl`, `artifacts/out/main.pdf`
+- Verdict: `Applied`
+- Correction applied: moved the Milestones lifecycle-entry scenario cue before the subfile glossary block; added
+  AWP/SOVT quick-review prompts; broadened Board Fast Cues with rotating weak-area cues for requirements/acquisition
+  flow, APB/PMB, technical-review baselines, KPP/KSA/APA test evidence, C4I product ownership, and maintenance closeout;
+  restored the missing Q18 Net-Ready question-bank entry; refreshed weak-area severity/next-review state after June 4
+  guide closeouts; and rerouted the ASN(RD&A)/PAE TikZ chart connectors so the rendered lines no longer overlap the PAE
+  boxes or labels.
+- Source basis: local flow review of the affected TeX chapters, study-memory session and learning-log evidence for Q18
+  and weak-area state, current guide source records cited by the affected prompts, and rendered-PDF inspection of Figure
+  1.4.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-04 - Applied Standalone Chapter Flow Cleanup
+
+- ID: `gc-20260604-standalone-chapter-flow-cleanup`
+- Location: `tex/chapters/27_CIVPERS.tex`, `tex/chapters/28_AWP_and_SOVT.tex`
+- Verdict: `Applied`
+- Correction applied: moved the CIVPERS applied-rules cue and scenario tables before the standalone acronym glossary
+  block so standalone chapter builds keep all study content before backmatter; corrected the AWP/SOVT standalone chapter
+  title from the generic study-guide title to the actual topic; and added the standard standalone acronym glossary block
+  to the AWP/SOVT chapter.
+- Source basis: read-only TeX structure/format review and local source inspection.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-04 - Applied Consistency and Source-Integrity Cleanup
+
+- ID: `gc-20260604-consistency-source-integrity-cleanup`
+- Location: `tex/acronyms.def`, `tex/chapters/4_NAVWAR.tex`, `tex/chapters/18B_test-eval.tex`,
+  `docs/study_memory/guide_changes.jsonl`, `docs/study_memory/study_guide_audit.md`
+- Verdict: `Applied`
+- Correction applied: changed the SOVT acronym expansion to System Operational Verification Test to match the AWP/SOVT
+  chapter and NAVSEA TS usage; corrected a T&E organization chart typo from DASW(T&E) to DASD(T&E); moved the NAVWAR
+  Fleet Readiness Directorate cue before the standalone glossary block; replaced stale `8_Civilian_Personnel.tex`
+  audit-trail paths with `27_CIVPERS.tex`; and made older CIVPERS applied guide-change records unique closeout IDs with
+  `closes_id` links so parsers do not see duplicate machine keys.
+- Source basis: read-only cross-chapter consistency review, read-only source-integrity review, local file inspection, and
+  the official NAVSEA TS9090-310G public PDF for SOVT expansion.
 - Confidence: `High`
 - Status: `applied`

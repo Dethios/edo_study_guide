@@ -1,6 +1,6 @@
 # Weak Areas
 
-Current as of 2026-05-30.
+Current as of 2026-06-04.
 
 ## Active
 
@@ -9,18 +9,18 @@ Current as of 2026-05-30.
 - ID: `wa-20260530-ppbe-pom-bes`
 - Evidence: Package weak-area table listed relationship/detail misses.
 - Miss type: `concept_confusion`
-- Severity: `medium`
-- Next review: 2026-06-02
-- Status: `active`
+- Severity: `low`
+- Next review: 2026-06-07
+- Status: `improving`
 
 ### Program baselines - APB vs PMB
 
 - ID: `wa-20260530-apb-vs-pmb`
 - Evidence: Package weak-area table listed definition/relationship misses.
 - Miss type: `concept_confusion`
-- Severity: `medium`
-- Next review: 2026-06-02
-- Status: `active`
+- Severity: `low`
+- Next review: 2026-06-07
+- Status: `improving`
 
 ### Systems engineering - SE review baselines
 
@@ -28,7 +28,7 @@ Current as of 2026-05-30.
 - Evidence: Package weak-area table listed rote recall misses.
 - Miss type: `factual_recall`
 - Severity: `medium`
-- Next review: 2026-06-02
+- Next review: 2026-06-06
 - Status: `active`
 
 ### JCIDS and requirements - Required KPPs
@@ -36,17 +36,17 @@ Current as of 2026-05-30.
 - ID: `wa-20260530-required-kpps`
 - Evidence: Package weak-area table listed rote recall misses.
 - Miss type: `factual_recall`
-- Severity: `medium`
-- Next review: 2026-06-02
-- Status: `active`
+- Severity: `low`
+- Next review: 2026-06-07
+- Status: `improving`
 
 ### NAVWAR / PEO C4I - PEO C4I program office products
 
 - ID: `wa-20260530-peo-c4i-products`
 - Evidence: Package weak-area table listed rote recall/detail misses.
 - Miss type: `factual_recall`
-- Severity: `high`
-- Next review: 2026-06-01
+- Severity: `medium`
+- Next review: 2026-06-05
 - Status: `active`
 
 ### NAVSEA / PEO IWS - IWS 6.0 vs PMW 150
@@ -54,18 +54,18 @@ Current as of 2026-05-30.
 - ID: `wa-20260530-iws6-pmw150`
 - Evidence: Package weak-area table listed relationship misses.
 - Miss type: `concept_confusion`
-- Severity: `medium`
-- Next review: 2026-06-02
-- Status: `active`
+- Severity: `low`
+- Next review: 2026-06-08
+- Status: `improving`
 
 ### NAVWAR / PEO C4I - CANES vs ADNS vs MIDS/Link 16
 
 - ID: `wa-20260530-canes-adns-mids`
 - Evidence: Package weak-area table listed relationship misses.
 - Miss type: `concept_confusion`
-- Severity: `high`
-- Next review: 2026-06-01
-- Status: `active`
+- Severity: `medium`
+- Next review: 2026-06-08
+- Status: `improving`
 
 ### NAVWAR / PEO C4I - DCGS-N acronym and product identity
 
@@ -73,7 +73,7 @@ Current as of 2026-05-30.
 - Evidence: Package weak-area table listed definition misses.
 - Miss type: `factual_recall`
 - Severity: `medium`
-- Next review: 2026-06-02
+- Next review: 2026-06-05
 - Status: `active`
 
 ### NAVWAR / PEO C4I - PMW 790 product
@@ -82,7 +82,7 @@ Current as of 2026-05-30.
 - Evidence: Package weak-area table listed rote recall misses.
 - Miss type: `factual_recall`
 - Severity: `medium`
-- Next review: 2026-06-02
+- Next review: 2026-06-05
 - Status: `active`
 
 ### OPNAV organization - OPNAV resource sponsor mapping
@@ -117,8 +117,8 @@ Current as of 2026-05-30.
 - ID: `wa-20260530-edo-flags`
 - Evidence: Package weak-area table listed current org recall misses.
 - Miss type: `source_version`
-- Severity: `high`
-- Next review: 2026-06-01
+- Severity: `medium`
+- Next review: 2026-06-06
 - Status: `active`
 
 ## Improving
@@ -273,3 +273,46 @@ No entries yet.
 - Severity: `low`
 - Next review: 2026-06-04
 - Status: `improving`
+
+## 2026-06-04 Audit Maintenance Update
+
+### Study-memory state after guide closeouts
+
+- ID: `wa-20260530-peo-c4i-products`
+- Evidence: The guide now contains official-source-backed NAVWAR/PEO C4I product-office mappings and the active drill
+  queue should test recall rather than re-open source drift. Keep PMW product recall active, but lower severity from
+  source-drift high to recall medium.
+- Miss type: `factual_recall`
+- Severity: `medium`
+- Next review: 2026-06-05
+- Status: `active`
+
+### NAVSEA / PEO IWS - IWS 6.0 vs PMW 150
+
+- ID: `wa-20260530-iws6-pmw150`
+- Evidence: Q16 and the June 4 guide closeout separate IWS 6.0 combat-system C2/CEC from PMW 150 operational C2
+  applications and Link 16 network modernization. Retain as low-severity spaced review only.
+- Miss type: `wording_ambiguity`
+- Severity: `low`
+- Next review: 2026-06-08
+- Status: `improving`
+
+### NAVWAR / PEO C4I - CANES vs ADNS vs MIDS/Link 16
+
+- ID: `wa-20260530-canes-adns-mids`
+- Evidence: The afloat-email answer and updated guide correctly place CANES, ADNS, and MIDS/Link 16 in separate
+  infrastructure/routing/data-link lanes. Residual need is clean oral recall under pressure.
+- Miss type: `factual_recall`
+- Severity: `medium`
+- Next review: 2026-06-08
+- Status: `improving`
+
+### Current EDO organization - Current EDO flags and billets
+
+- ID: `wa-20260530-edo-flags`
+- Evidence: June 4 guide maintenance corrected current-source drift for EDO flag ranks/billets and related PAE/SSP
+  transition cues. Keep active only for memorization and rapid oral recall.
+- Miss type: `factual_recall`
+- Severity: `medium`
+- Next review: 2026-06-06
+- Status: `active`

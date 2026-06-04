@@ -2,7 +2,7 @@
 % !TEX program = lualatex
 \documentclass[../main.tex]{subfiles}
 \begin{document}
-\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+\IfSubfilesClassLoaded{\chapter{Availability Work Package and SOVT Closeout}}{}
 
 \section{Availability Work Package and SOVT Closeout}
 \subsection{Availability Work Package Requirements and Development Stages}
@@ -17,6 +17,26 @@ The \ac{sovt} is the structured verification that an alteration or ship change p
 \subsection{Signed and Unsigned System Operational Verification Tests}
 A signed \ac{sovt} is a completed test plan that has been executed, witnessed, and recorded with results and discrepancies, enabling formal acceptance and closeout of the alteration.~\autocite{TS9090-310} An unsigned \ac{sovt} indicates the test was not fully executed or witnessed, or that discrepancies remain unresolved, which delays acceptance and introduces schedule risk through retesting or deferred closeout actions.~\autocite{TS9090-310}
 
+\subsection{Quick Review}
+\begin{itemize}
+  \item What are the Baseline, Preliminary, Proposed, Approved, and Completed \ac{awp} stages, and which organizations own baseline \acp{awp} for submarines, surface ships, and carriers~\autocite{COMFLTFORCOMINST4790-3,edo-4-2-1-cno-availability-planning-2025}?
+  \item How does a \ac{cmav} planning timeline compress the \ac{sra}/\ac{cno}-availability planning cycle, and which gates are most likely to move closer to A-0~\autocite{COMFLTFORCOMINST4790-3,edo-4-2-1-cno-availability-planning-2025,edo-4-2-2-cno-availability-execution-2025}?
+  \item What does a signed \ac{sovt} prove, and why does an unsigned \ac{sovt} create acceptance, retest, and deferred-closeout risk~\autocite{TS9090-310}?
+  \item How do \ac{pcd}, completed/signed alteration records, and \ac{sovt} closeout differ in an alteration or ship-change completion discussion~\autocite{TS9090-310}?
+\end{itemize}
+
 Current as of 2026-06-04.
+
+%====================
+% End of file
+%====================
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
 
 \end{document}
