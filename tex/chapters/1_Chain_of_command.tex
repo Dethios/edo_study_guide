@@ -120,6 +120,8 @@ Current as of 2026-06-04, Mr.\ William F.\ Mahan is performing the duties of \ac
     pae group/.style={rectangle, draw=SteelGray, densely dashed, rounded corners, inner sep=0.35cm},
     support node/.style={rectangle, draw, dashed, fill=SteelGray!10, text width=16em, align=center, minimum height=4.0em},
     line/.style={draw, -{Stealth[length=2mm]}, shorten >=1pt, shorten <=1pt},
+    bus line/.style={draw, shorten >=1pt, shorten <=1pt},
+    support bus/.style={draw, dashed, shorten >=1pt, shorten <=1pt},
     support line/.style={draw, dashed, -{Stealth[length=2mm]}, shorten >=1pt, shorten <=1pt}
     ]
 
@@ -148,16 +150,29 @@ Current as of 2026-06-04, Mr.\ William F.\ Mahan is performing the duties of \ac
       \node[pae group, fit=(aviation)(missions)(munitions)(industrial)(maritime)(undersea)(ssp)(ras)(marine)] (paeGroup) {};
     \end{scope}
     \coordinate (asnDrop) at ($(asn.south)+(0,-0.55cm)$);
-    \coordinate (paeEntry) at ($(paeGroup.north)+(0,0.35cm)$);
-    \coordinate (supportEntry) at ($(paeGroup.west)+(-0.35cm,0)$);
+    \coordinate (paeBusLeft) at ($(aviation.north)+(0,0.42cm)$);
+    \coordinate (paeBusCenter) at ($(missions.north)+(0,0.42cm)$);
+    \coordinate (paeBusRight) at ($(munitions.north)+(0,0.42cm)$);
+    \coordinate (supportBusTop) at ($(aviation.west)+(-0.55cm,0)$);
+    \coordinate (supportBusMid) at (supportBusTop |- industrial.west);
+    \coordinate (supportBusBottom) at (supportBusTop |- ssp.west);
 
     \draw[line] (secnav.south) -- (asn.north);
     \draw[line] (cno.south) |- (asn.west);
     \draw[line] (cmc.south) |- (asn.east);
     \draw[line] (asn.south west) -- (pcd.north);
     \draw[line] (asn.south east) -- (pmd.north);
-    \draw[line] (asn.south) -- (asnDrop) -| (paeEntry) -- (paeGroup.north);
-    \draw[support line] (syscoms.east) -- ++(0.7cm,0) |- (supportEntry) -- (paeGroup.west);
+    \draw[bus line] (asn.south) -- (asnDrop) -| (paeBusCenter);
+    \draw[bus line] (paeBusLeft) -- (paeBusRight);
+    \draw[line] (paeBusLeft) -- (aviation.north);
+    \draw[line] (paeBusCenter) -- (missions.north);
+    \draw[line] (paeBusRight) -- (munitions.north);
+
+    \draw[support bus] (syscoms.east) -- (supportBusMid);
+    \draw[support bus] (supportBusTop) -- (supportBusBottom);
+    \draw[support line] (supportBusTop) -- (aviation.west);
+    \draw[support line] (supportBusMid) -- (industrial.west);
+    \draw[support line] (supportBusBottom) -- (ssp.west);
   \end{tikzpicture}}
   \caption[ASN (RD\&A) and PAE organization transition]{Board-level ASN (RD\&A) and PAE organization transition, updated from the user-provided PAE chart with public announcements through 2026-06-04~\autocite{DON-New-SAE-2026,DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026}.}
   \label{fig:asnrda_org_chart}
