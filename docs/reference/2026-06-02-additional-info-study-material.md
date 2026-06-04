@@ -30,8 +30,8 @@ the workforce:
 The Navy operates four public shipyards under **NAVSEA 04**, which are government-owned and focus primarily on
 nuclear-powered aircraft carriers and submarines:
 
-* **Portsmouth Naval Shipyard (PNSY)** (Kittery, ME): Specializes in nuclear-powered fast attack submarine (SSN)
-  maintenance, refueling, and modernization.
+* **Portsmouth Naval Shipyard (PNSY)** (Kittery, ME): Specializes in Los Angeles- and Virginia-class SSN overhaul,
+  repair, and modernization.
 * **Norfolk Naval Shipyard (NNSY)** (Portsmouth, VA): Specializes in aircraft carrier (CVN) and submarine
   (SSN/SSBN/SSGN) maintenance, modernization, and inactivation.
 * **Puget Sound Naval Shipyard & IMF (PSNS & IMF)** (Bremerton, WA): Specializes in CVN and submarine maintenance,
