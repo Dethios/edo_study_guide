@@ -14,7 +14,7 @@ Current as of 2026-06-04.
   titles/glossaries, structure-guard coverage, PAE chart connector routing and clearance follow-up,
   SE technical-review baseline cleanup, EDO flag/billet source hygiene, CIVPERS source-fidelity cleanup,
   small-business size-standard and SBIR/STTR cue cleanup, cybersecurity/RMF currentness cleanup,
-  system-level technical-review detail cleanup,
+  system-level technical-review detail cleanup, warfare-center official-source board synthesis,
   OPNAV resource-sponsor map cleanup, NAVWAR/PEO C4I official-source hygiene refresh, congressional committee
   currentness cleanup, EVM/APB/PMB source-hygiene cleanup, and study-memory/source-ledger state.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
@@ -104,6 +104,9 @@ Recent applied updates:
 - System-level technical-review detail cleanup for ASR, SRR, SFR, PDR, CDR, TRR, SVR/FCA, PRR, OTRR, and PCA:
   added purpose-adjacent board cues for major players, timing, milestone/event ties, OTRR source grounding, and the
   materiel-solution wording correction.
+- Warfare-center official-source board synthesis for NAVSEA NSWC/NUWC, NAVWAR NIWCs/NSFA, NAVAIR NAWCAD/NAWCWD,
+  NAVFAC EXWC, and ONR/NRL: added board-ready parent-command, location, product, and customer cues with current official
+  source anchors.
 
 ## Next Review Plan
 

@@ -92,6 +92,7 @@
 \newacronym{comnavwar}{COMNAVWAR}{Commander, Naval Information Warfare Systems Command}
 \newacronym{navsea}{NAVSEA}{Naval Sea Systems Command}
 \newacronym{navwar}{NAVWAR}{Naval Information Warfare Systems Command}
+\newacronym{navfac}{NAVFAC}{Naval Facilities Engineering Systems Command}
 \newacronym{navnetwarcom}{NAVNETWARCOM}{Naval Network Warfare Command}
 \newacronym{navifor}{NAVIFOR}{Naval Information Forces Command}
 \newacronym{fcc}{FCC}{Fleet Cyber Command}
@@ -99,6 +100,7 @@
 \newacronym{cssp}{CSSP}{Cyber Security Service Provider}
 \newacronym{navair}{NAVAIR}{Naval Air Systems Command}
 \newacronym{navsup}{NAVSUP}{Naval Supply Systems Command}
+\newacronym{exwc}{EXWC}{Engineering and Expeditionary Warfare Center}
 \newacronym{sea}{SEA}{NAVSEA headquarters staff code}
 \newacronym{supship}{SUPSHIP}{Supervisor of Shipbuilding}
 \newacronym{uss}{USS}{United States Ship}

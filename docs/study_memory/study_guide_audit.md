@@ -800,3 +800,21 @@ The entries in this section preserve the original imported package state. Later 
   T&E source ledger.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied Warfare-Center Official-Source Board Synthesis
+
+- ID: `gc-20260604-warfare-center-official-source-synthesis`
+- Location: `tex/chapters/5_NAVAIR_and_PEOs.tex`, `tex/acronyms.def`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: added an official-source board-synthesis table for warfare-center products, location cues, and
+  customers across NAVSEA NSWC/NUWC, NAVWAR NIWCs/NSFA, NAVAIR NAWCAD/NAWCWD, NAVFAC EXWC, and the ONR/NRL Naval
+  Research Enterprise. Reframed the reporting-relationships answer so board recall starts with the parent command and
+  then explains customer/product relationships rather than drawing warfare centers as a standalone acquisition chain.
+  Added official bibliography and source-ledger entries for NAVSEA warfare centers, NAVWAR About, NAWCAD, NAWCWD, NAVFAC
+  EXWC, and ONR Organization pages, plus NAVFAC and EXWC acronym definitions needed by the new text.
+- Source basis: current official NAVSEA, NAVWAR, NAVAIR, NAVFAC EXWC, and ONR public pages checked on 2026-06-04.
+- Confidence: `High`
+- Status: `applied`

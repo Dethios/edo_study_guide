@@ -39,6 +39,18 @@ final.
 | PEO IWS X Program Overview and ICS Development | policy          | `https://www.navsea.navy.mil/Portals/103/Documents/Exhibits/SAS2022/1100_ICS%20Engagement%20brief%2003302022_SAS_Distro%20A.pdf` | 2022-03-30      | 2026-05-30   | Imported from May 30 package source notes. |
 | NAVSEA Cooperative Engagement Capability article | policy        | `https://www.navsea.navy.mil/Media/News/Article-View/Article/4281878/cooperative-engagement-capability-enhancing-battlefield-awareness/` | 2025-08-21 | 2026-06-04 | Official source basis for CEC sensor-netting, live data-sharing, and integrated fire-control wording. |
 
+## Warfare Centers / Naval Research Enterprise
+
+| Title                         | Authority Level | URL Or Path                                                            | Version Or Date | Date Checked | Notes                                                                                                             |
+| ----------------------------- | --------------- | ---------------------------------------------------------------------- | --------------- | ------------ | ----------------------------------------------------------------------------------------------------------------- |
+| NAVSEA Field Activities       | policy          | `https://www.navsea.navy.mil/About/Organization/Field-Activities/`     | current online  | 2026-06-04   | Official source basis for NAVSEA having NSWC and NUWC warfare centers and for their fleet-support/RDT&E role.      |
+| NAVSEA Warfare Centers        | policy          | `https://www.navsea.navy.mil/Home/Warfare-Centers/`                    | current online  | 2026-06-04   | Official source basis for NSWC/NUWC major focus areas and the ten NAVSEA warfare-center divisions.                 |
+| NAVWAR About                  | policy          | `https://www.navwar.navy.mil/About/`                                   | current online  | 2026-06-04   | Official source basis for NAVWAR mission, bicoastal NIWCs, PEO C4I/Digital/MLB relationships, and 11,000+ people cue. |
+| NAVAIR NAWCAD                 | policy          | `https://www.navair.navy.mil/organization/NAWCAD`                      | current online  | 2026-06-04   | Official source basis for NAWCAD locations and RDT&E/sustainment mission for Navy and Marine Corps aircraft/systems. |
+| NAVAIR NAWCWD About           | policy          | `https://www.navair.navy.mil/nawcwd/About-NAWCWD`                      | current online  | 2026-06-04   | Official source basis for NAWCWD China Lake / Point Mugu locations and weapons/EW test, logistics, and support cues. |
+| NAVFAC EXWC Home              | policy          | `https://exwc.navfac.navy.mil/`                                        | current online  | 2026-06-04   | Official source basis for EXWC as NAVFAC's warfare center and its shore, oceans, expeditionary, RDT&E, and ISE roles. |
+| ONR Organization              | policy          | `https://www.onr.navy.mil/organization`                                | current online  | 2026-06-04   | Official source basis for the Naval Research Enterprise, ONR S&T departments, ONR Global, and NRL corporate-lab role. |
+
 ## CIVPERS / OPM / eCFR
 
 | Title                                                          | Authority Level | URL Or Path                                                                                                                                                                                           | Version Or Date              | Date Checked | Notes                                                                                                                                           |
