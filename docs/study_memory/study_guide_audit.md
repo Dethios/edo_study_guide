@@ -319,3 +319,29 @@ The entries in this section preserve the original imported package state. Later 
   and security-cooperation realignment memo.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied T&E Sequencing and Organization Currentness Cleanup
+
+- ID: `gc-20260604-te-org-currentness-cleanup`
+- Location: `tex/chapters/17G_Systems_Engineering_Overview.tex`, `tex/chapters/18B_test-eval.tex`,
+  `tex/chapters/1_Chain_of_command.tex`, `tex/chapters/appendix_edo_flags.tex`,
+  `tex/chapters/appendix_pae_construct_mapping.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: corrected the systems-engineering traceability flow so IOT&E/LFT&E follow
+  Milestone C/LRIP and support later beyond-LRIP, FRP, or full-deployment decisions rather than preceding
+  Milestone C. Clarified that early OT/operational-assessment evidence can support Milestone C, while
+  independent OTAs lead OT/IOT&E with DOT&E oversight for covered/listed programs. Replaced ACAT-keyed
+  TEMP approval wording with DoDM 5000.100 oversight-list wording: DOT&E approval for OT&E/LFT&E
+  oversight-list programs and designated-MDA approval for non-listed programs. Corrected the LFT&E
+  waiver cue from SECWAR to SECDEF routing through DOT&E with alternative-strategy certification and
+  congressional notification. Removed the unsupported RDML Kevin P. Biehn PEO MLB claim and replaced it
+  with a live-source caution that PEO MLB official pages conflict between Mary Thoms as Acting PEO and
+  Christine Rodriguez, SES, as PEO; RDML Andrew Biehn belongs to NAVSEA 21 / PAE Maritime modernization
+  and sustainment. Tightened Douglas Williams/Wolfe wording to treat SSP as a transition cue because the
+  June roster, Navy announcement, and live SSP leadership page are not yet fully synchronized.
+- Source basis: DoDI 5000.85, DoDI 5000.98, DoDM 5000.100, 10 U.S.C. 4172, PEO MLB front page,
+  PEO MLB leadership page, PAE Maritime homepage, June 2026 public Navy flag roster, SSP leadership
+  page, and Navy Williams promotion announcement.
+- Confidence: `High`
+- Status: `applied`
