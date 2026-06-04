@@ -185,6 +185,29 @@ No entries yet.
 - Next review: 2026-06-01
 - Status: `active`
 
+## 2026-06-04 CIVPERS Fast-Cue Cleanup
+
+### CIVPERS - Chapter 43 vs Chapter 75 route selection
+
+- ID: `wa-20260530-civpers-removal`
+- Evidence: June 4 guide maintenance split the dense unacceptable-performance paragraph into route-choice bullets and
+  added a fast cue: employee status first; Chapter 43 is PIP/opportunity period plus substantial evidence; Chapter 75
+  has no required PIP but requires preponderance, efficiency nexus, due process, and Douglas Factor penalty analysis.
+- Miss type: `concept_confusion`
+- Severity: `medium`
+- Next review: 2026-06-07
+- Status: `active`
+
+### CIVPERS - WG/WL/WS pay-plan distinctions
+
+- ID: `wa-20260530-wg-wl-ws`
+- Evidence: June 4 guide maintenance added the 15/15/19 Federal Wage System cue to the fast-cue chapter while preserving
+  the source-supported table in the CIVPERS chapter. Keep active for board-speed recall.
+- Miss type: `factual_recall`
+- Severity: `low`
+- Next review: 2026-06-08
+- Status: `active`
+
 ## 2026-05-31 PPBE Update
 
 ### PPBE - POM/BES decision documents

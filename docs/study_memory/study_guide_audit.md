@@ -579,3 +579,19 @@ The entries in this section preserve the original imported package state. Later 
   NAVSEA Logistics Planning, Processes & Policy page, and local EDO coursebook modernization/AIT modules.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied CIVPERS Route-Choice Fast-Cue Cleanup
+
+- ID: `gc-20260604-civpers-route-choice-fast-cue`
+- Location: `tex/chapters/27_CIVPERS.tex`, `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: split the dense unacceptable-performance paragraph into board-scan bullets for the front-end
+  record, Chapter 43, Chapter 75, probationary/trial employees, and WGI caveat; added a high-yield CIVPERS fast cue
+  that ties the active weak areas together: employee status first, Chapter 43 PIP/substantial-evidence tradeoff,
+  Chapter 75 no-required-PIP/preponderance/Douglas tradeoff, and WG/WL/WS 15/15/19 Federal Wage System recall.
+- Source basis: official OPM performance-management memo, official OPM probationary-period guidance, official OPM
+  employee-rights and appeals page, and current eCFR sections 5 CFR 532.203, 432.105, and 752.404.
+- Confidence: `High`
+- Status: `applied`

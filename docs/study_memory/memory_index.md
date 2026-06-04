@@ -71,6 +71,8 @@ Recent applied updates:
   precision.
 - NMP/AIT ship-change flow cleanup for the program-office to shipboard installation chain, missing walkthrough citations,
   and CDMD-OA/ILS/SID/FAT acronym support.
+- CIVPERS route-choice fast-cue cleanup for Chapter 43 vs Chapter 75, probationary/trial employees, WGI caveats, and
+  WG/WL/WS 15/15/19 recall.
 
 ## Next Review Plan
 
