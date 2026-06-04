@@ -14,6 +14,7 @@ Current as of 2026-06-04.
   titles/glossaries, structure-guard coverage, PAE chart connector routing and clearance follow-up,
   SE technical-review baseline cleanup, EDO flag/billet source hygiene, CIVPERS source-fidelity cleanup,
   small-business size-standard and SBIR/STTR cue cleanup, cybersecurity/RMF currentness cleanup,
+  system-level technical-review detail cleanup,
   OPNAV resource-sponsor map cleanup, NAVWAR/PEO C4I official-source hygiene refresh, congressional committee
   currentness cleanup, EVM/APB/PMB source-hygiene cleanup, and study-memory/source-ledger state.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
@@ -100,6 +101,9 @@ Recent applied updates:
 - Cybersecurity/RMF currentness cleanup for DoWI 5000.90, DoWI 8500.01, and DoWI 8510.01 source grounding; current
   RMF flow as Prepare plus Categorize, Select, Implement, Assess, Authorize, and Monitor; ongoing monitoring; and the
   security assessment report acronym-collision fix.
+- System-level technical-review detail cleanup for ASR, SRR, SFR, PDR, CDR, TRR, SVR/FCA, PRR, OTRR, and PCA:
+  added purpose-adjacent board cues for major players, timing, milestone/event ties, OTRR source grounding, and the
+  materiel-solution wording correction.
 
 ## Next Review Plan
 

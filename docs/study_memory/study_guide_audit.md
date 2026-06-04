@@ -783,3 +783,20 @@ The entries in this section preserve the original imported package state. Later 
   sources on 2026-06-04.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied System-Level Technical Review Detail Cleanup
+
+- ID: `gc-20260604-se-review-detail-board-summary`
+- Location: `tex/chapters/17I_CM_and_Technical_Reviews.tex`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: added a board-facing system-level technical-review detail table covering ASR, SRR, SFR, PDR,
+  CDR, TRR, SVR/FCA, PRR, OTRR, and PCA with major players, timing, and milestone/event cues; corrected
+  `material solution` to `materiel solution`; narrowed the OTRR timing cue from OA/IOT&E/FOT&E to OPEVAL/IOT&E or
+  follow-on OT&E; and expanded the review-table source note to include T&E and OPTEVFOR/COMOPTEVFOR OTRR grounding.
+- Source basis: DoDI 5000.88, the OUSD(R&E) Engineering of Defense Systems Guidebook Change 2, DAU technical-baseline
+  sources, DoDI 5000.89, DoDI 5000.98, and OPNAVINST 5450.332C/OPTEVFOR source grounding already recorded in the
+  T&E source ledger.
+- Confidence: `High`
+- Status: `applied`

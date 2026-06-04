@@ -182,6 +182,8 @@ final.
 | DAU ACQuipedia, Preliminary Design Review    | policy          | `https://www.dau.edu/index.php/acquipedia-article/preliminary-design-review-pdr`  | current online       | 2026-06-04   | Source basis for PDR assessing preliminary design maturity and supporting the allocated baseline.                                |
 | DAU Glossary, System Performance Specification | policy       | `https://www.dau.edu/index.php/glossary/system-performance-specification`        | current online       | 2026-06-04   | Source basis for the system performance specification being initially reviewed at SRR and confirmed as part of the functional baseline at SFR. |
 | DAU ACQuipedia, Critical Design Review       | policy          | `https://www.dau.edu/index.php/acquipedia-article/critical-design-review-cdr`     | current online       | 2026-06-04   | Source basis for CDR establishing the initial product baseline.                                                                  |
+| Engineering of Defense Systems Guidebook     | policy          | `https://www.cto.mil/wp-content/uploads/2024/10/Eng-Def-Sys-Change2-7October2024-v3.pdf` | February 2022 / Change 2, 2024-10-07 | 2026-06-04 | Source basis for system-level technical review players, event-driven SEP planning, ACAT ID OUSD(R&E) participation, PDR/CDR assessments, TRR in EMD, and PCA/OTRR linkage in P&D. |
+| T&E / OPTEVFOR OTRR sources                  | policy          | `See Test and Evaluation source rows above`                                       | current as listed    | 2026-06-04   | Cross-reference basis for TRR and OTRR cues in the technical-review chapter, including COMOPTEVFOR OTRR certification for OPEVAL. |
 
 ## JCIDS / JFRP Performance Attributes
 

@@ -124,13 +124,13 @@
     label   = {tab:mca-technical-reviews},
     caption = {Major Capability Acquisition technical reviews by phase},
     entry   = {MCA Technical Reviews by Phase},
-    remark{\tSource} = {\tabCite{DoDI5000-88,DoD-EngineeringDefenseSystemsGuidebook-2024,DAU-Technical-Baselines}}
+    remark{\tSource} = {\tabCite{DoDI5000-88,DoD-EngineeringDefenseSystemsGuidebook-2024,DAU-Technical-Baselines,DoDI5000-89,DoDI5000-98,OPNAVINST-5450-332C}}
   ]
   {colspec = {@{} l X[1.15] X[1.25] X[3.2] @{}}}
   \toprule
   {Review} & {Typical MCA phase}                                  & {Primary baseline/readiness focus}                    & {Board-prep purpose}                                                                                                                                                            \\
   \midrule
-  ASR      & MSA                                                  & Preferred material solution                           & Confirms the preferred material solution is technically feasible, affordable, and understood well enough to support a draft performance specification.                          \\
+  ASR      & MSA                                                  & Preferred materiel solution                           & Confirms the preferred materiel solution is technically feasible, affordable, and understood well enough to support a draft performance specification.                          \\
   SRR      & TMRR                                                 & System requirements                                   & Confirms the developer and government share a clear, testable, traceable understanding of system performance requirements.                                                      \\
   SFR      & TMRR                                                 & Functional baseline                                   & Confirms the functional architecture satisfies performance requirements and supports preliminary design with acceptable risk.                                                   \\
   PDR      & TMRR, normally before Milestone B                    & Allocated baseline                                    & Confirms the preliminary design and architecture are mature enough to proceed to detailed design and support the Milestone B decision.                                          \\
@@ -138,7 +138,7 @@
   TRR      & EMD, before major test events                        & Test readiness                                        & Confirms the test article, procedures, instrumentation, resources, environment, safety posture, and success criteria are ready for the planned test.                            \\
   SVR/FCA  & EMD                                                  & Verification against functional or allocated baseline & Verifies the system or configuration item satisfies approved requirements and that discrepancies are understood before production or operational test decisions.                \\
   PRR      & EMD before LRIP; repeated in P\&D when needed        & Production readiness                                  & Confirms producibility, quality, manufacturing planning, supply chain, facilities, tooling, and production risk are acceptable for LRIP or FRP.                                 \\
-  OTRR     & P\&D, before IOT\&E, OA, or FOT\&E                   & Operational test readiness                            & Certifies that the production-representative configuration, reliability, maintainability, supportability, hazards, resources, and test planning are ready for operational test. \\
+  OTRR     & P\&D, before OPEVAL/IOT\&E or follow-on OT\&E         & Operational test readiness                            & Certifies that the production-representative configuration, reliability, maintainability, supportability, hazards, resources, and test planning are ready for operational test. \\
   PCA      & P\&D, after successful OT\&E and before FRP decision & Final product baseline                                & Audits the as-built production-representative item against its technical documentation, resolves discrepancies, and establishes the final product baseline.                     \\
   \bottomrule
 \end{longtblr}
@@ -146,6 +146,32 @@
 Please see \Fig{\ref{fig:mca_schedule}} for a visual showing when each of the technical reviews are held.
 
 \note{For a board answer, lead with the baseline progression: \ac{srr} reviews the system requirements, \ac{sfr} supports the functional baseline, \ac{pdr} supports the allocated baseline, \ac{cdr} supports the initial product baseline, \ac{svr}/\ac{fca} verify configuration, \ac{prr} checks production readiness, \ac{otrr} checks operational test readiness, and \ac{pca} supports the final as-built product baseline.}
+
+\subsection{System-Level Technical Review Board Details}
+For oral boards, answer each review with four parts: why the review exists, who must be in the room, when it occurs, and what decision or baseline it supports. The \ac{pm} owns the review plan through the \ac{sep}; the chief engineer or lead systems engineer normally drives technical closure; \acp{ipt}, contractors, users, logisticians, test, manufacturing, cybersecurity, configuration-management, cost, contracting, and independent subject-matter experts provide the evidence. For \ac{acat}~ID design reviews, the \ac{pm} invites \ac{usdre} representatives, and independent review teams advise the \ac{cae} without being controlled by the \ac{pmo}~\autocite{DoDI5000-88,DoD-EngineeringDefenseSystemsGuidebook-2024}.
+
+\begin{longtblr}[
+    label   = {tab:technical-review-board-details},
+    caption = {System-level technical review board details},
+    entry   = {System-Level Technical Review Board Details},
+    remark{\tSource} = {\tabCite{DoDI5000-88,DoD-EngineeringDefenseSystemsGuidebook-2024,DAU-Technical-Baselines,DoDI5000-89,DoDI5000-98,OPNAVINST-5450-332C}}
+  ]
+  {colspec = {@{} l X[1.35] X[1.55] X[1.9] @{}}}
+  \toprule
+  {Review} & {Major players} & {When it normally occurs} & {Milestone, event, or board cue} \\
+  \midrule
+  ASR & PM, systems engineer, sponsor/user, AoA and cost teams, technical authority, sustainment, test, and independent reviewers & Late MSA, after AoA work identifies a preferred materiel solution & Supports Milestone A/TMRR planning by confirming the preferred solution is feasible, affordable, and mature enough to guide draft performance requirements. \\
+  SRR & PM, systems engineer, requirements sponsor/user, contractor, test, logistics, cybersecurity, configuration management, and independent reviewers & TMRR, after system requirements and the system performance specification are mature enough to review & Confirms requirements are clear, testable, traceable, and mutually understood; do not call it the normal baseline-setting event. \\
+  SFR & PM, systems engineer, architecture/function leads, contractor, users, test, logistics, cybersecurity, and configuration management & TMRR, after functional analysis and system architecture mature beyond SRR & Supports the functional baseline and approval of the system performance specification for configuration control. \\
+  PDR & PM, systems engineer, contractor design leads, manufacturing, logistics, test, cost, risk, independent reviewers, and for ACAT ID OUSD(R\&E) & Late TMRR, normally before Milestone B unless waived & Supports the Milestone B decision and EMD RFP/contracting posture by establishing the allocated baseline and confirming readiness for detailed design. \\
+  CDR & PM, chief engineer or lead systems engineer, contractor design leads, manufacturing, logistics, test, configuration management, independent reviewers, and for ACAT ID OUSD(R\&E) & EMD, after detailed design and build-to/code-to data are mature & Establishes the initial product baseline and authorizes fabrication, coding, integration, and test with acceptable residual risk. \\
+  TRR & PM, chief developmental tester, lead DT organization, systems engineer, safety, range/lab, instrumentation, contractor, and certification authorities & Before major DT, qualification, cybersecurity, interoperability, or live test events & Gates test execution by confirming the article, environment, procedures, resources, safety posture, instrumentation, and success criteria are ready. \\
+  SVR/FCA & PM, systems engineer, test, configuration management, contractor, certification authorities, and independent technical reviewers & EMD, after integration and verification evidence are mature & Verifies the system or configuration item satisfies approved functional and allocated requirements and identifies discrepancies before production or operational-test decisions. \\
+  PRR & PM, systems engineer, manufacturing and quality, DCMA or production representatives, contractor, supply chain, logistics, cost, and test & EMD before LRIP; repeated in P\&D when production risk changes & Supports LRIP/FRP readiness by checking producibility, manufacturing process control, facilities, tooling, quality, suppliers, and production risk. \\
+  OTRR & OTA/COMOPTEVFOR, PM, systems engineer, test, safety, logistics, users, cybersecurity, threat/intelligence, and resource providers & P\&D before OPEVAL/IOT\&E or follow-on OT\&E & Certifies readiness for operational test; for Navy programs, COMOPTEVFOR is the OTRR certification authority for OPEVAL. \\
+  PCA & PM, systems engineer, configuration management, contractor, quality, logistics, production, test, and sustainment stakeholders & P\&D, after successful OT\&E and before the FRP or full-deployment decision when tailored & Audits the as-built production-representative system against its technical documentation and supports the final product baseline. \\
+  \bottomrule
+\end{longtblr}
 
 \subsection{Specifications, Baselines, and Reviews}
 \begin{description}
