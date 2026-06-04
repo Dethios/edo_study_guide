@@ -617,13 +617,29 @@ If warfare centers raise rates too much, customers may buy fewer hours, defer wo
 
 ### NAVWAR, PAEs, DRPM Overmatch, and Current Leadership Traps
 
-**PEO reporting:** traditional Navy PEOs report to ASN(RD&A) through acquisition governance. Current PAE overlays add broader portfolio accountability but do not erase the need to know legacy PEO/SYSCOM lanes for board recall.
+**PEO reporting:** traditional Navy PEOs report to ASN(RD&A) through acquisition governance. Current PAEs add broader portfolio accountability and direct authority over program offices plus associated technical, contracting, sustainment, and industrial-base functions. This does **not** erase the need to know legacy PEO/SYSCOM lanes for board recall, because public pages and technical authority chains are still transitioning.
 
 **NAVWAR PEO locations and lanes:** PEO C4I is headquartered in San Diego and manages C4I program offices such as PMW 120/130/150/160/170/740/750/760/770/790. PEO Digital is the DON enterprise IT acquisition agent. PEO MLB is the manpower, logistics, and business-systems IT acquisition agent. Always verify live office locations and portfolio names before quoting them because the PAE transition is changing public-facing organization language.
 
 **ASN(RD&A) currency trap:** older board notes that say Nickolas Guertin is current are stale. As of the official Navy release dated **May 26, 2026**, **William F. Mahan** is performing the duties of ASN(RD&A) and serves as the senior acquisition executive for the Navy and Marine Corps. Jason Potter returned to Principal Civilian Deputy ASN(RD&A). VADM Seiko Okano remains the Principal Military Deputy.
 
-**PAE:** Portfolio Acquisition Executive. Current DON public releases describe PAEs as broader portfolio authorities intended to improve speed, accountability, and cross-program integration. PAE Mission Systems is a current-event board item: it brings together mission-system equities including PEO C4I, PEO Digital, PEO IWS, PEO MLB, DRPM Overmatch, DRPM LRNFO, DRPM MILE, Minotaur, and mission-system elements across NAVWAR, NAVSEA, NAVAIR, MCSC, and related organizations.
+**PMD/PCD trap:** in the ASN(RD&A) org chart, **PMD** means Principal Military Deputy and **PCD** means Principal Civilian Deputy. Do not confuse this PCD with maintenance **Production Completion Date**.
+
+**PAE:** Portfolio Acquisition Executive. Current DON public releases describe PAEs as broader portfolio authorities intended to improve speed, accountability, and cross-program integration. As of the May 11, 2026 DON release, there are **nine publicly announced PAEs**:
+
+| PAE | Board cue |
+| --- | --- |
+| **Aviation** | Naval aviation portfolio; public deputy lanes are Carrier Strike, Marine Corps Aviation, and Maritime ISR/NC3. |
+| **Industrial Operations** | Foundry/industrial execution: shipyards, RMCs, maintenance contracting, and industrial-base throughput. |
+| **Marine Corps** | Marine Corps ground systems; replaces PEO Land Systems and incorporates MCSC acquisition support functions. |
+| **Maritime** | Conventional surface-ship delivery: aircraft carriers, combatants, expeditionary/mine warfare, auxiliaries, modernization, and sustainment. |
+| **Mission Systems** | Central mission integrator: PEO C4I, PEO Digital, PEO IWS, PEO MLB, DRPM Overmatch, DRPM LRNFO, DRPM MILE, Minotaur, and mission-system elements across NAVWAR, NAVSEA, NAVAIR, and MCSC. |
+| **Munitions** | Weapons industrial base, air weapons, surface weapons, advanced capabilities, and innovation; includes former PEO UAS weapons offices and IWS weapons offices. |
+| **Robotics and Autonomous Systems (RAS)** | Unmanned/autonomy hedge capability; current public example is MUSV marketplace at-sea demonstrations. |
+| **Strategic Systems Programs (SSP)** | Sea-based strategic deterrence and strategic weapons lifecycle execution. |
+| **Undersea / DRPM Submarines** | SSN, SSBN, SSGN, and undersea industrial-base execution; tied to the one Columbia/two Virginia production-rate challenge. |
+
+**Chart answer:** draw SECNAV over ASN(RD&A), with Principal Civilian Deputy and PMILDEP under ASN(RD&A), then the PAEs as the current acquisition portfolio owners. Put CNO/CMC in the Service chain for requirements/readiness context and draw SYSCOMs/warfare centers/shipyards as the technical, contracting, sustainment, and workforce infrastructure being realigned into or in support of PAEs.
 
 **DRPM:** Direct Reporting Program Manager. Project Overmatch is the board example: a direct-reporting program manager construct used to drive cross-PEO/SYSCOM integration for naval contribution to JADC2/CJADC2 and Distributed Maritime Operations. Board answer: DRPMs are used when the integration problem cuts across ordinary PEO/SYSCOM boundaries and needs direct senior acquisition visibility.
 
@@ -686,13 +702,23 @@ Use these for refresh before board use:
   [DoD FMR Volume 11B PDF](https://comptroller.defense.gov/Portals/45/documents/fmr/Volume_11b.pdf)
 * [GAO, Effects of Continuing Resolutions on Selected DoD Activities](https://www.gao.gov/products/gao-26-107065)
   and [GAO, Shutdowns/Lapses in Appropriations](https://www.gao.gov/legal/appropriations-law/lapses-in-appropriations)
+* [Navy Reshapes Warfighting Acquisition System](https://www.navy.mil/Press-Office/Press-Releases/display-pressreleases/Article/4435370/navy-reshapes-warfighting-acquisition-system/),
+  [Navy Advances Acquisition Reform Strategy](https://www.navy.mil/Press-Office/Press-Releases/display-pressreleases/Article/4483312/navy-advances-acquisition-reform-strategy-appoints-three-new-portfolio-acquisit/),
+  [PAE Maritime](https://www.paemaritime.navy.mil/),
+  [NAVAIR PAE Aviation](https://www.navair.navy.mil/news/Navy-Establishes-Portfolio-Acquisition-Executive-Aviation/Mon-05112026-0943),
+  [PAE Munitions](https://www.navy.mil/Press-Office/News-Stories/display-news/Article/4483399/navy-establishes-portfolio-acquisition-executive-for-munitions-postured-to-harn/),
+  [PAE Marine Corps About](https://www.pae.marines.mil/About-Us/),
+  [PAE Marine Corps Organization](https://www.pae.marines.mil/Organization/),
+  [PAE Marine Corps Establishment](https://www.29palms.marines.mil/Articles/Article/4460140/department-of-the-navy-creates-portfolio-aqcuisition-executive-marine-corps-to/),
+  [FY 2027 Navy Shipbuilding Plan](https://media.defense.gov/2026/May/11/2003928909/-1/-1/1/NAVY%20SHIPBUILDING%20PLAN%20MAY%202026.PDF),
+  [PAE RAS MUSV Marketplace](https://www.navy.mil/Press-Office/Press-Releases/display-pressreleases/Article/4503917/us-navy-announces-seven-companies-selected-for-musv-marketplace-at-sea-demonstr/),
+  and
+  [PAE SSP public article](https://www.ssp.navy.mil/STEM/STEM-News/Article/4477482/pae-ssp-employees-bring-their-children-to-work/)
 * [NAVWAR About / 1NAVWAR](https://www.navwar.navy.mil/1NAVWAR/),
   [NAVWAR PAE Mission Systems release](https://www.navwar.navy.mil/Media/Article-Display/Article/4483415/department-of-the-navy-launches-pae-mission-systems-to-accelerate-warfighting-c/),
   and
   [Project Overmatch Five Eyes release](https://www.navwar.navy.mil/Media/Article/4077984/project-overmatch-achieves-historic-milestone-with-five-eyes-agreement/)
 * [Department of the Navy Names New Service Acquisition Executive](https://www.navy.mil/Press-Office/News-Stories/display-news/Article/4501092/department-of-the-navy-names-new-service-acquisition-executive/)
-  and
-  [William F. Mahan SES bio](https://www.secnav.navy.mil/donhr/About/Senior-Executives/Biographies/Mahan%2C%20W.pdf)
 * [OPM Douglas Factors](https://www.opm.gov/policy-data-oversight/employee-relations/reference-materials/douglas-factors.pdf),
   [MSPB adverse-action penalty discussion](https://www.mspb.gov/studies/adverse_action_report/10_DeterminingthePenalty.htm),
   [EEOC Federal Sector EEO Complaint Process](https://www.eeoc.gov/federal-sector/overview-federal-sector-eeo-complaint-process),

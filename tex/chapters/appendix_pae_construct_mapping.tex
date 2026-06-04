@@ -3,225 +3,98 @@
 \documentclass[../main.tex]{subfiles}
 \IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
 % =============================================================================
-% APPENDIX: NAVY PAE CONSTRUCT MAPPING (ANALYST SUMMARY)
-% DESCRIPTION: Working map of PAE portfolios against legacy SYSCOM/PEO seams.
+% APPENDIX: NAVY PAE CONSTRUCT MAPPING
+% DESCRIPTION: Current map of PAE portfolios against legacy SYSCOM/PEO seams.
 % =============================================================================
 \begin{document}
 \IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 
-\section{PAE Construct Mapping (Working Appendix)}
+\section{PAE Construct Mapping}
 \label{app:pae-construct-mapping}
-\textbf{Current as of 2026-04-27.}
+\textbf{Current as of 2026-06-04.}
 
 \subsection{Executive Summary}
 \begin{itemize}
-  \item The Navy \ac{pae} construct is not a 1:1 relabeling of \acp{syscom} or \acp{peo}; it is a portfolio-layer authority model that cuts across traditional program, technical, contracting, sustainment, and industrial-base seams~\autocite{FY2026-NDAA,DON-PAE-Establishment-2026}.
-  \item The six publicly announced baseline \acp{pae} are Robotics and Autonomous Systems, Industrial Operations, Marine Corps, Maritime, Strategic Systems Programs, and Undersea; the five non-RAS organizations were announced by \ac{don} on 16~Mar~2026 after the Dec~2025 RAS stand-up~\autocite{DON-PAE-Establishment-2026}.
-  \item PAE Mission Systems should be treated as an internally announced, source-limited update: the 16~Mar~2026 \ac{don} release said mission-systems transition studies were still pending public establishment, while subsequent public artifacts identify a ``Portfolio Acquisition Executive Mission Systems (PAE MS)'' DVIDS unit page, list Mr.\ James ``Jim'' Day as a Portfolio Acquisition Executive speaker, and show PMW~760 integration work inside PAE Mission Systems~\autocite{DON-PAE-Establishment-2026,DVIDS-PAE-MS-Unit-2026,AFCEA-Navy-IW-Industry-Day-2026,PEOC4I-PMW760-NDIA-2026}.
-  \item Key shift: \acp{syscom} increasingly function as technical authorities and infrastructure owners, \acp{peo} as execution arms, and \acp{pae} as portfolio owners with decision authority.
-  \item The largest effects appear in cross-cutting portfolios (Undersea, Maritime, Industrial Operations, and Mission Systems) where multiple \acp{syscom}/\acp{peo} previously overlapped.
-  \item Expected outcomes include duplication removal, contracting consolidation, and fewer stovepipes, with near-term authority friction during transition.
+  \item The \ac{pae} construct is now the public \ac{don} acquisition-reform baseline under \ac{asnrdanda}. It is not a 1:1 relabeling of \acp{syscom} or \acp{peo}; it is a portfolio-accountability model intended to align authority, responsibility, technical support, contracting support, sustainment, and industrial-base management around warfighting outcomes~\autocite{DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026}.
+  \item Public releases now identify nine \acp{pae}: Robotics and Autonomous Systems; Industrial Operations; Marine Corps; Maritime; Strategic Systems Programs; Undersea / DRPM Submarines; Aviation; Mission Systems; and Munitions~\autocite{DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026}.
+  \item The old ``source-limited'' caveat for PAE Mission Systems is no longer current. \ac{don} publicly established PAE Mission Systems on 11~May~2026 and named Mr.\ Jim Day as interim PAE~\autocite{DON-PAE-Expansion-May2026,DON-PAE-Mission-Systems-2026}.
+  \item The user-provided PAE chart is a useful transition snapshot, but it predates the May~2026 addition of PAE Aviation, PAE Mission Systems, and PAE Munitions. Use the nine-PAE answer for board recall unless a newer official chart supersedes it.
+  \item A board answer should not say \acp{syscom} disappeared. The public releases say PAEs will have direct authority over program offices and associated technical, contracting, and sustainment functions, and that about 70 percent of these associated functions and personnel will move from \acp{syscom} into PAEs. Technical authority, safety, certification, and engineering standards still need to be handled deliberately through the current technical authority chain until formal directives say otherwise~\autocite{DON-PAE-Expansion-May2026}.
 \end{itemize}
 
-\subsection{Mapping: PAEs to PEOs and SYSCOMs}
-
-\subsubsection{1) PAE Maritime}
-\textbf{Scope:} Surface ships, combatants, logistics vessels, amphibious ships.
-
-\textbf{Absorbing from SYSCOMs:}
-\begin{itemize}
-  \item Naval Sea Systems Command (primary).
-\end{itemize}
-
-\textbf{Absorbing from PEOs:}
-\begin{itemize}
-  \item \ac{peoships}.
-  \item \ac{peoiws} (surface combat systems portion).
-  \item \ac{peousc} (surface unmanned portion).
-\end{itemize}
-
-\textbf{What changes:}
-\begin{itemize}
-  \item Previously: hull (PEO Ships) and combat systems (IWS) split across authorities.
-  \item Now: one authority over full ship system (hull plus combat system).
-\end{itemize}
-
-\textbf{Impact:} reduces the classic hull versus combat-system integration boundary.
-
-\subsubsection{2) PAE Undersea}
-\textbf{Scope:} Submarines, undersea warfare systems, and \acp{uuv}.
-
-\textbf{Absorbing from SYSCOMs:}
-\begin{itemize}
-  \item Naval Sea Systems Command (submarine directorates).
-\end{itemize}
-
-\textbf{Absorbing from PEOs:}
-\begin{itemize}
-  \item Team Submarines elements (for platform portfolios).
-  \item \ac{peouws}.
-  \item \ac{peousc} (\ac{uuv} portion).
-\end{itemize}
-
-\textbf{What changes:}
-\begin{itemize}
-  \item Previously fragmented across platforms, payloads, and unmanned systems.
-  \item Now unified into one undersea kill-chain authority.
-\end{itemize}
-
-\textbf{Impact:} enables end-to-end undersea portfolio management across platform, weapons, and unmanned systems.
-
-\subsubsection{3) PAE Robotics and Autonomous Systems (RAS)}
-\textbf{Scope:} Cross-domain autonomy (air, surface, and subsurface).
-
-\textbf{Absorbing from SYSCOMs:}
-\begin{itemize}
-  \item Naval Air Systems Command.
-  \item Naval Sea Systems Command.
-  \item Space and Naval Warfare Systems Command / \ac{navwar} enterprise.
-\end{itemize}
-
-\textbf{Absorbing from PEOs:}
-\begin{itemize}
-  \item \ac{peousc}.
-  \item Unmanned aviation elements aligned under NAVAIR-led portfolios.
-  \item Autonomy software/control elements aligned under \ac{peoc4i}.
-\end{itemize}
-
-\textbf{What changes:}
-\begin{itemize}
-  \item Previously: unmanned capability split by domain.
-  \item Now: technology-centric portfolio around autonomy stack plus platforms.
-\end{itemize}
-
-\textbf{Impact:} centralizes \ac{ai}/autonomy integration and weakens domain stovepipes from platform-centric acquisition.
-
-\subsubsection{4) PAE Industrial Operations}
-\textbf{Scope:} Shipyards, depots, sustainment, and logistics infrastructure.
-
-\textbf{Absorbing from SYSCOMs:}
-\begin{itemize}
-  \item Naval Sea Systems Command (shipyards).
-  \item Naval Air Systems Command (depots).
-\end{itemize}
-
-\textbf{Absorbing from other organizations:}
-\begin{itemize}
-  \item Naval Shipyards.
-  \item Fleet Readiness Centers.
-\end{itemize}
-
-\textbf{What changes:}
-\begin{itemize}
-  \item Previously split among acquisition, sustainment, and industrial-base governance.
-  \item Now unified as industrial capacity managed like a portfolio.
-\end{itemize}
-
-\textbf{Impact:} enables integrated control of maintenance backlog, shipyard throughput, and depot readiness with lifecycle cost/readiness optimization.
-
-\subsubsection{5) PAE Strategic Systems Programs}
-\textbf{Scope:} Nuclear deterrent systems (for example, \ac{ssbn}s and missiles).
-
-\textbf{Absorbing from existing organization:}
-\begin{itemize}
-  \item Strategic Systems Programs.
-\end{itemize}
-
-\textbf{What changes:}
-\begin{itemize}
-  \item Minimal structural change because \ac{ssp} was already centralized.
-  \item Now formally aligned inside the \ac{pae} construct.
-\end{itemize}
-
-\textbf{Impact:} primarily governance alignment rather than operational disruption.
-
-\subsubsection{6) PAE Marine Corps}
-\textbf{Scope:} \ac{usmc} ground systems and expeditionary capabilities.
-
-\textbf{Absorbing from SYSCOMs:}
-\begin{itemize}
-  \item Marine Corps Systems Command.
-\end{itemize}
-
-\textbf{Absorbing from PEOs:}
-\begin{itemize}
-  \item PEO Land Systems (\ac{usmc}).
-  \item \ac{peoc4i} (\ac{usmc} portions).
-\end{itemize}
-
-\textbf{What changes:}
-\begin{itemize}
-  \item Consolidates Marine Corps acquisition under one Navy-aligned \ac{pae}.
-\end{itemize}
-
-\textbf{Impact:} improves Navy-Marine Corps expeditionary alignment, with potential friction where Marine Corps requirements autonomy intersects portfolio controls.
-
-\subsubsection{7) PAE Mission Systems (Source-Limited Update)}
-\textbf{Scope:} \ac{c4i}, enterprise information technology, business systems, enterprise services, and mission-system integration across platform portfolios.
-
-\textbf{Public source trail:}
-\begin{itemize}
-  \item On 16~Mar~2026, \ac{don} announced five additional \acp{pae} and stated that transition study efforts continued for aviation, industrial infrastructure, mission systems, and munitions, with those efforts to be announced as formally established~\autocite{DON-PAE-Establishment-2026}.
-  \item DVIDS now has a public unit page titled ``Portfolio Acquisition Executive Mission Systems (PAE MS),'' but no associated public news stories or publications were posted on that unit page as of the access date~\autocite{DVIDS-PAE-MS-Unit-2026}.
-  \item AFCEA's 18~Mar~2026 Navy Information Warfare Industry Day agenda listed Mr.\ James ``Jim'' Day, SES, Deputy Assistant Secretary of the Navy for Mission Systems, as the ``Portfolio Acquisition Executive'' speaker~\autocite{AFCEA-Navy-IW-Industry-Day-2026}.
-  \item A public PEO C4I PMW~760 brief dated 22~Jan~2026 and marked Distribution Statement~A uses ``Integration in PAE Mission Systems,'' places PMW~760 ship \ac{c4i} integration in a PAE Mission Systems context, and shows explicit interfaces with PAE Maritime for \ac{scn} integration, software-defined warship, unmanned \ac{c4i}, \ac{mosa}/modularity, Aegis Guam, digital innovation, and \ac{aiml}~\autocite{PEOC4I-PMW760-NDIA-2026}.
-\end{itemize}
-
-\textbf{Likely legacy alignment:}
-\begin{itemize}
-  \item \ac{peoc4i}.
-  \item \ac{peodigital}.
-  \item \ac{peomlb}.
-  \item Mission-system integration equities that cross platform \acp{peo}, especially ship \ac{c4i} integration with PAE Maritime.
-\end{itemize}
-
-\textbf{What changes:}
-\begin{itemize}
-  \item Previously: mission systems, ship integration, enterprise IT, business systems, and platform portfolios were coordinated across DASN Mission Systems, \ac{navwar}, PEO C4I, PEO Digital, PEO MLB, and platform \acp{peo}.
-  \item Now: the board-prep answer should anticipate a single portfolio authority for mission-system delivery, with platform PAEs retaining platform outcomes and PAE Mission Systems driving integrated digital, C4I, and mission-system delivery.
-\end{itemize}
-
-\textbf{Impact:} reduces the separation between information-warfare acquisition, ship or aviation platform acquisition, and enterprise digital delivery. The exact transfer of billets, program offices, and technical authority remains an open public-source question until \ac{don} releases a formal charter, directive, or announcement.
-
-\subsection{Cross-Cutting Changes (Most Important)}
-\subsubsection{1) Collapse of PEO Boundaries}
-\begin{quote}
-PEO Ships builds hulls.\\
-PEO IWS builds combat systems.\\
-Different chains of authority.
-\end{quote}
-
-\begin{quote}
-PAE Maritime owns both and can trade cost/performance internally.
-\end{quote}
-
-\textbf{Net effect:} lower inter-PEO coordination overhead.
-
-\subsubsection{2) SYSCOM Role Shift}
-\acp{syscom} are assessed to lose portions of decision authority while retaining engineering authority, technical standards, and infrastructure.
-
-\textbf{Transition vector:} owner/operator toward service-provider functions.
-
-\subsubsection{3) Portfolio-Level Trade Space}
-\acp{pae} are assessed to gain latitude to shift funding between programs, optimize procurement and sustainment jointly, and manage industrial-base effects at portfolio level.
-
-\textbf{Bottom line for reform:} the leverage is portfolio trade authority, not merely org-chart redraw.
-
-\subsection{Risks and Friction Points}
+\subsection{How to Draw the Current Board Chart}
 \begin{description}[style=nextline, labelsep=0.5em, font=\bfseries]
-  \item[Authority conflicts.] Tension between \ac{syscom} technical authority and \ac{pae} decision authority may drive early-cycle delays.
-  \item[Workforce realignment.] \acp{peo} may lose decision scope and senior billets, creating talent migration risk.
-  \item[Contracting consolidation.] Transition from program contracts to portfolio contracts may disrupt prime and supply-chain behavior.
+  \item[Top.] \ac{secnav} at the top, with \ac{cno} and \ac{cmc} as Service leadership and requirements/readiness context.
+  \item[Acquisition executive.] \ac{asnrdanda} under \ac{secnav}; current PTDO \ac{asnrdanda} is William F.\ Mahan, with Jason L.\ Potter as Principal Civilian Deputy and \ac{vadm} Seiko Okano as \ac{pmildep}~\autocite{DON-New-SAE-2026}.
+  \item[Portfolio layer.] The nine \acp{pae} sit under the acquisition executive as portfolio-accountable officials.
+  \item[Support and authorities.] \acp{syscom}, warfare centers, shipyards, RMCs, NIWCs, contracting organizations, and sustainment organizations provide the technical, industrial, and execution depth being realigned into or in support of PAEs. Do not confuse portfolio accountability with operational command of forces.
 \end{description}
 
-\subsection{Bottom Line}
+\subsection{Current Public PAE Roster}
+\begin{longtblr}[%
+    caption = {Current public PAE roster},
+    label   = {tab:pae-current-roster-detail},
+    entry   = {Current public PAE roster},
+    remark{\tSource} = {\tabCite{DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026,PAE-Maritime-Homepage-2026,DON-PAE-Mission-Systems-2026,DON-PAE-Munitions-2026,NAVAIR-PAE-Aviation-2026,PAE-Marine-Corps-About-2026,PAE-Marine-Corps-Organization-2026,DON-Shipbuilding-Plan-2026,DON-PAE-RAS-MUSV-2026,SSP-PAE-SSP-Children-2026}}
+  ]{colspec = {@{} L L X X @{}}}
+  \toprule
+  {PAE} & {Public leader / cue} & {Core portfolio} & {Board memory hook} \\
+  \midrule
+  Aviation & VADM John Dougherty & Naval aviation; public deputy lanes are Carrier Strike, Marine Corps Aviation, and Maritime ISR/NC3. & Aviation = air portfolio plus mission engineering, Rapid Capability Cell, and disruptive technology development. \\
+  Industrial Operations & VADM James P.\ Downey & Industrial capacity, naval shipyards, regional maintenance, maintenance contracting, and fleet maintenance throughput. & Industrial Operations = Foundry, shipyards, RMCs, maintenance backlog, industrial-base execution. \\
+  Marine Corps & LtGen Eric Austin & Marine Corps ground systems and acquisition support functions. & PAE Marine Corps replaced PEO Land Systems and incorporates MCSC programs/support functions. \\
+  Maritime & Christopher Miller & Conventional surface ships, including aircraft carriers, combatants, expeditionary and mine warfare, auxiliaries, and modernization/sustainment. & Maritime = conventional surface-ship delivery and shipbuilding accountability. \\
+  Mission Systems & Jim Day & C4I, enterprise IT, business systems, integrated warfare mission systems, Overmatch, LRNFO, MILE, Minotaur, and cross-SYSCOM mission-system elements. & Mission Systems = central mission integrator and kill-chain closure. \\
+  Munitions & Paul Mann & Munitions industrial base, air weapons, surface weapons, advanced capabilities, and innovation. & Munitions = weapons production capacity and weapons portfolio integration. \\
+  Robotics and Autonomous Systems & Public leader not confirmed in this refresh & Unmanned and autonomous hedge capabilities across air, surface, and undersea domains. & RAS = unmanned/autonomy marketplace, rapid fielding, and commercial solutions. \\
+  Strategic Systems Programs & VADM Johnny Wolfe & Strategic weapons and sea-based deterrence. & SSP = Trident II D5LE, D5LE2, SLCM-N, CPS, strategic deterrence. \\
+  Undersea / DRPM Submarines & VADM Robert Gaucher & Nuclear-powered attack submarines, ballistic-missile submarines, guided-missile submarines, and undersea industrial-base execution. & Undersea = DRPM SUBS and the one Columbia/two Virginia production-rate problem. \\
+  \bottomrule
+\end{longtblr}
+
+\subsection{Portfolio Notes}
+
+\subsubsection{PAE Aviation}
+PAE Aviation was publicly established on 11~May~2026 and is led by VADM John Dougherty. Its public deputy lanes are Carrier Strike, Marine Corps Aviation, and Maritime ISR/NC3. PAE Aviation also oversees Mission Engineering, a Rapid Capability Cell linked to the \ac{don} Rapid Capabilities Office, and Disruptive Technology Development. The board-level reform cue is that PAEs are directed to prioritize commercial solutions, \ac{mosa}, government-purpose-rights interfaces, modular competition, supply-chain resiliency, and faster contracting mechanisms such as \acp{ota}~\autocite{NAVAIR-PAE-Aviation-2026}.
+
+\subsubsection{PAE Industrial Operations}
+PAE Industrial Operations was announced on 16~Mar~2026 with \ac{vadm} James P.\ Downey as interim PAE~\autocite{DON-PAE-Establishment-2026}. The May~2026 shipbuilding plan describes PAE Industrial Operations as combining control of the Navy Regional Maintenance Centers, the NAVSEA Industrial Operations Directorate, the four naval shipyards, and all Navy Regional Maintenance Centers to connect maintenance contracting with fleet responsibility~\autocite{DON-Shipbuilding-Plan-2026}. The board answer is Foundry execution: shipyards, RMCs, maintenance backlog, ship repair throughput, and industrial-base management.
+
+\subsubsection{PAE Marine Corps}
+PAE Marine Corps was formally established on 10~Apr~2026. It replaced PEO Land Systems and incorporated programs from Marine Corps Systems Command, while MCSC assumed an expanded role as the workforce provider for the Force Development Enterprise~\autocite{PAE-Marine-Corps-Establishment-2026}. Public Marine Corps PAE pages describe the PAE model as a single leader with cradle-to-grave responsibility for delivering defined mission capability, aligning technical, contracting, and sustainment personnel into the acquisition chain of command~\autocite{PAE-Marine-Corps-About-2026}. Public capability portfolios are C5ISRT, Protect, Sustain/Enable, Maneuver, and Fires~\autocite{PAE-Marine-Corps-Organization-2026}.
+
+\subsubsection{PAE Maritime}
+PAE Maritime is the single accountable organization for delivering conventional surface ships for the U.S.\ Navy. Public portfolio lanes include Aircraft Carriers, Combatants, Expeditionary and Mine Warfare, Auxiliaries, and Modernization and Sustainment~\autocite{PAE-Maritime-Homepage-2026}. Public leadership listed by PAE Maritime includes Christopher Miller as PAE, RADM Casey Moton as Deputy PAE for Aircraft Carriers, RDML Brian Metcalf as Deputy PAE for Combatants, Melissa Kirkendall as Acting Deputy PAE for Expeditionary and Mine Warfare, CAPT Cedric McNeal as Acting Deputy PAE for Auxiliaries, and RDML Andrew Biehn as Deputy PAE for Modernization and Sustainment~\autocite{PAE-Maritime-Homepage-2026}. The May~2026 shipbuilding plan says PAE Maritime is intended to empower surface shipbuilding program leaders with subject matter experts and authority to drive program outcomes, safety, quality, resource use, producibility, and timely delivery~\autocite{DON-Shipbuilding-Plan-2026}.
+
+\subsubsection{PAE Mission Systems}
+PAE Mission Systems was publicly established on 11~May~2026 and Mr.\ Jim Day was named interim PAE~\autocite{DON-PAE-Expansion-May2026,DON-PAE-Mission-Systems-2026}. The public launch release says PAE Mission Systems pulls together mission-system elements from PEO C4I, PEO Digital, PEO IWS, PEO MLB, DRPM Overmatch, DRPM Long Range Naval Fires Office, DRPM Manpower IT Logistics ERP, the Minotaur program from PMA~290, NAVWAR, NAVSEA, NAVAIR, and MCSC~\autocite{DON-PAE-Mission-Systems-2026}. The board answer is: PAE Mission Systems is the central mission integrator for kill-chain closure, value-chain optimization, interoperability, and warfighting efficiency. Do not reduce it to NAVWAR; it spans information warfare, combat systems, digital/business systems, and cross-platform mission integration.
+
+\subsubsection{PAE Munitions}
+PAE Munitions was publicly established on 11~May~2026 and Mr.\ Paul Mann was named interim PAE~\autocite{DON-PAE-Expansion-May2026,DON-PAE-Munitions-2026}. Public pillars are Weapons Industrial Base, Air Weapons, Surface Weapons, and Advanced Capabilities and Innovation. The organization combines former PEO Unmanned Aviation and Strike Weapons offices PMA-201, PMA-208, PMA-242, PMA-259, PMA-280, and PMA-281 with former PEO IWS weapons offices IWS~3.0, IWS~11.0, and IWS~12.0. The public release also notes SM-3 is expected to transition from \ac{mda} in FY~2028 for production and sustainment~\autocite{DON-PAE-Munitions-2026}. The board answer is munitions industrial-base scale, weapons production capacity, and cross-platform weapons portfolio execution.
+
+\subsubsection{PAE Robotics and Autonomous Systems}
+PAE Robotics and Autonomous Systems predates the Mar~2026 PAE expansion; the 16~Mar~2026 \ac{don} release identifies it as established in Dec~2025 alongside the DON Rapid Capabilities Office~\autocite{DON-PAE-Establishment-2026}. Current public examples include the MUSV marketplace, where at-sea testing was scheduled to begin in June~2026 and complete by Oct~2026; the public mission statement for PAE RAS is to deliver hedge capabilities that expand naval power, increase operational persistence, and impose operational dilemmas that degrade adversary tempo and freedom of action~\autocite{DON-PAE-RAS-MUSV-2026}. The board answer is unmanned/autonomous hedge capability using commercial marketplace and rapid fielding logic.
+
+\subsubsection{PAE Strategic Systems Programs}
+PAE Strategic Systems Programs was announced on 16~Mar~2026 with \ac{vadm} Johnny Wolfe as interim PAE~\autocite{DON-PAE-Establishment-2026}. SSP public material now uses the PAE SSP label and describes the command as the Navy's trusted expert for maintaining and sustaining the Trident II D5LE strategic weapon system. It also identifies SSP responsibilities for Ohio-class SSBN strategic weapon sustainment, D5LE integration on Columbia-class SSBNs, D5LE2 development, SLCM-N development, and Conventional Prompt Strike~\autocite{SSP-PAE-SSP-Children-2026}. The board answer is sea-based strategic deterrence and strategic weapons lifecycle execution.
+
+\subsubsection{PAE Undersea / DRPM Submarines}
+PAE Undersea / DRPM Submarines was announced on 16~Mar~2026 with VADM Robert Gaucher as interim PAE~\autocite{DON-PAE-Establishment-2026}. The May~2026 shipbuilding plan states that PAE Undersea is dual-hatted as the Direct Reporting Portfolio Manager for Submarines and will direct all activities to deliver nuclear-powered attack submarines, ballistic-missile submarines, and guided-missile submarines. The plan links the construct to the Deputy Secretary of War goal of reaching at least one Columbia SSBN and two Virginia SSNs per year by FY~2031~\autocite{DON-Shipbuilding-Plan-2026}. The board answer is submarine production, AUKUS/undersea enterprise alignment, and industrial-base execution.
+
+\subsection{What Changed from Older Study Notes}
 \begin{itemize}
-  \item \acp{pae} absorb authority across both \acp{syscom} and \acp{peo}, not just one layer.
-  \item The largest changes occur where multiple \acp{peo} historically split one system or one kill chain (Maritime, Undersea, RAS, and Mission Systems).
-  \item The reform direction is portfolio-centric acquisition, closer to capability product lines.
+  \item Count changed from six baseline PAEs to nine public PAEs after 11~May~2026.
+  \item PAE Mission Systems changed from source-limited/public-indicator status to a formal public \ac{don} announcement.
+  \item PAE Aviation and PAE Munitions are no longer ``to be announced'' lanes.
+  \item PAE Marine Corps formally sunsetted PEO Land Systems and moved responsibilities to PAE-MC.
+  \item Current PTDO \ac{asnrdanda} is William F.\ Mahan, not Jason Potter; Potter is Principal Civilian Deputy as of the 26~May~2026 \ac{don} release~\autocite{DON-New-SAE-2026}.
+  \item The board distinction is no longer simply ``PEOs report to ASN(RD\&A) while SYSCOMs support.'' The current answer is ``PAEs are portfolio-accountable officials under ASN(RD\&A); legacy PEO/SYSCOM lanes still matter for program recall, technical authority, workforce, contracting, and sustainment execution during transition.''
 \end{itemize}
 
-\textit{Validation note: the existence of the six publicly announced baseline \acp{pae} is source-backed by the \ac{fy}~2026 \ac{ndaa} portfolio-acquisition-executive statute and the \ac{don} 16~Mar~2026 public announcement. PAE Mission Systems is supported here by public indicators and user-provided internal-announcement context, but a public \ac{don} establishment announcement or charter was not found during the 27~Apr~2026 source check. The detailed PEO/SYSCOM absorption mapping remains an analyst study aid until formal Navy implementation directives publish each portfolio boundary.}
+\subsection{Board Bottom Line}
+\begin{quote}
+The PAE restructuring moves Navy acquisition from a program-by-program, SYSCOM/PEO matrix toward accountable capability portfolios. PAEs own portfolio outcomes and industrial-base risk; SYSCOMs and warfare centers remain the technical depth and authority infrastructure; PMs still need contracting authority and technical authority alignment to execute.
+\end{quote}
 
 \IfSubfilesClassLoaded{
   \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}

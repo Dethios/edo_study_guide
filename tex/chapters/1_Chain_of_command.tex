@@ -77,7 +77,8 @@ The \ac{asnrdanda} is the \ac{don} \ac{cae} and the \ac{nae}, with authority and
 
 \begin{description}
   \item[\textbf{Policy authority.}] \ac{asnrdanda} is the \ac{sae} for the \ac{don} and sets policy for \acp{peo} and \acp{drpm}~\autocite{SECNAV5400-15D,SECNAV5000-2G}.
-  \item[\textbf{Matrix execution.}] \acp{peo} hold program authority; \acp{syscom} (\ac{navsea}, \ac{navwar}, \ac{navair}) provide \ac{ta} warrants and workforce; \acp{nwc} deliver research, development, test, and engineering support~\autocite{SECNAV5400-15D}.
+  \item[\textbf{Current portfolio authority.}] Since Dec~2025 and the 2026 \ac{don} acquisition restructuring, \acp{pae} are the board-relevant portfolio layer under \ac{asnrdanda}. Public \ac{don} releases describe \acp{pae} as accountable officials for whole portfolios, with authority over program offices and associated technical, contracting, sustainment, and industrial-base functions; about 70 percent of those associated functions and personnel are moving from \acp{syscom} into \acp{pae} as the construct matures~\autocite{DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026}.
+  \item[\textbf{Matrix execution.}] The older \ac{peo}/\ac{syscom} matrix remains important for board recall and for live execution during transition: \acp{peo} and \acp{pm} still execute named programs where public pages have not fully caught up; \acp{syscom} (\ac{navsea}, \ac{navwar}, \ac{navair}) still provide technical authority, engineering standards, warfare-center depth, contracting infrastructure, and sustainment support. The PAE construct changes accountability and alignment; it does not give a \ac{pm} permission to ignore \ac{ta} or contracting authority~\autocite{SECNAV5400-15D,DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026}.
   \item[\textbf{Flag/PEO billets (current).}]
         \begin{itemize}
             \item[]
@@ -87,7 +88,7 @@ The \ac{asnrdanda} is the \ac{don} \ac{cae} and the \ac{nae}, with authority and
         \FlagBilletNote{See Appendix~\ref{app:edo-flags} for the current EDO flag billet roster.}
 \end{description}
 
-Figure \ref{fig:chain_of_command_acq_gov} shows the Navy acquisition governance chain of command.
+Figure \ref{fig:chain_of_command_acq_gov} shows the legacy Navy acquisition governance chain of command. Use it to understand the \ac{peo}/\ac{syscom} matrix, then apply the PAE update in Figure~\ref{fig:asnrda_org_chart} and Table~\ref{tab:pae-roster-current}.
 
 \begin{figure}[H]
   \centering\color{SteelDeep}
@@ -96,86 +97,105 @@ Figure \ref{fig:chain_of_command_acq_gov} shows the Navy acquisition governance 
   \label{fig:chain_of_command_acq_gov}
 \end{figure}
 
-\subsection{ASN (RD\&A) Organization}
+\subsection{ASN (RD\&A) Organization and Portfolio Acquisition Executives}
 
-Current as of 2025-12-18, the \ac{asnrdanda} team is led by Mr.\ Jason L.\ Potter (Acting) with \ac{pmildep} \ac{vadm} Seiko Okano supporting \ac{don} acquisition governance. Figure~\ref{fig:asnrda_org_chart} shows the current office alignment, and Tables~\ref{tab:asnrda_leadership} and~\ref{tab:asnrda_dasns} capture roles and responsibilities for the \ac{asnrdanda}, \ac{pmildep}, and \acp{dasn}.
+Current as of 2026-06-04, Mr.\ William F.\ Mahan is performing the duties of \ac{asnrdanda} and serves as the senior acquisition executive for the Navy and Marine Corps. Mr.\ Jason L.\ Potter returned to Principal Civilian Deputy \ac{asnrdanda}, and \ac{pmildep} \ac{vadm} Seiko Okano remains the senior uniformed acquisition deputy supporting \ac{don} governance~\autocite{DON-New-SAE-2026}. Figure~\ref{fig:asnrda_org_chart} captures the board-level PAE organization, Table~\ref{tab:asnrda_leadership} captures top roles, and Table~\ref{tab:pae-roster-current} lists the publicly announced \acp{pae}.
 
 \begin{description}
-  \item[\textbf{Focus areas.}] Open systems, DevSecOps, cyber-resilient systems, \ac{aiml}, and continuous improvement in acquisition business models and execution~\autocite{edo-2-1-1-command-structures-2025}.
-  \item[\textbf{Stakeholders.}] The Department of the Navy workforce, Congress, the public, industry and academia, international partners, and interagency partners~\autocite{edo-2-1-1-command-structures-2025}.
+  \item[\textbf{PAE purpose.}] PAEs align authority with responsibility for outcomes across like portfolios. The reform target is faster delivery, fewer non-value-added reviews, disciplined cost/schedule/performance trades, direct industrial-base management, and cradle-to-grave control across program, technical, contracting, and sustainment functions~\autocite{DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026}.
+  \item[\textbf{Board answer.}] Draw \ac{secnav} at the top, \ac{asnrdanda} beneath \ac{secnav}, Principal Civilian Deputy and \ac{pmildep} directly under \ac{asnrdanda}, and the \acp{pae} as the current acquisition portfolio owners. Keep \ac{cno} and \ac{cmc} in the service chain for requirements/readiness and keep \acp{syscom} as the technical, contracting, sustainment, and workforce infrastructure that is being realigned into or in support of the PAEs.
+  \item[\textbf{Transition caution.}] The user's PAE organization chart is a useful transition snapshot, but it predates the May~2026 public announcement of PAE Aviation, PAE Mission Systems, and PAE Munitions. Use the current count of nine \acp{pae} unless a newer official chart supersedes it~\autocite{DON-PAE-Expansion-May2026}.
 \end{description}
 
 \begin{figure}[H]
   \centering
+  \resizebox{\linewidth}{!}{%
   \begin{tikzpicture}
     [
-    node distance=1.5cm and 2cm,
-    main node/.style={rectangle, draw, fill=Vapor, text width=9em, text centered, minimum height=4em},
-    dasn node/.style={rectangle, draw, fill=Green!35, text width=9em, text centered, minimum height=4em},
+    node distance=1.0cm and 1.0cm,
+    top node/.style={rectangle, draw, fill=Vapor, text width=10em, align=center, minimum height=3.5em},
+    asn node/.style={rectangle, draw, fill=Gold!40, text width=14em, align=center, minimum height=4.2em},
+    deputy node/.style={rectangle, draw, fill=Green!25, text width=11em, align=center, minimum height=3.6em},
+    pae node/.style={rectangle, draw, fill=Blue!18, text width=10.5em, align=center, minimum height=3.2em},
+    support node/.style={rectangle, draw, dashed, fill=SteelGray!10, text width=16em, align=center, minimum height=4.0em},
     line/.style={draw, -{Stealth[length=2mm]}}
     ]
 
-    \node[main node] (asn) {Performing the Duties of\\ ASN (RD\&A)\\ \textbf{Jason L. Potter} \\[0.5em] Principal Military Deputy\\ \textbf{\ac{vadm} Seiko Okano}};
+    \node[top node] (secnav) {\ac{secnav}};
+    \node[top node, left=of secnav, xshift=-2.5cm] (cno) {\ac{cno}};
+    \node[top node, right=of secnav, xshift=2.5cm, fill=Red!18] (cmc) {\ac{cmc}};
 
-    \node[dasn node, below left=of asn, xshift=2.5cm] (sustainment) {DASN (Sustainment)\\ \textbf{Ms. Erica Plath}};
-    \node[dasn node, below=of sustainment] (ships) {DASN (Ships)\\ \textbf{Ms. Bilyana Anderson}};
-    \node[dasn node, below=of ships] (ag) {DASN (Air-Ground)\\ \textbf{Mr. Robert D. Kimble}};
-    \node[dasn node, below=of ag] (p) {DASN (Procurement)\\ \textbf{Mr. Michael L. Brown (PTDO)}};
+    \node[asn node, below=of secnav] (asn) {Performing the Duties of\\ \ac{asnrdanda}\\ \textbf{William F.\ Mahan}\\ \small \ac{don} \ac{sae}};
+    \node[deputy node, below left=of asn, xshift=-1.6cm] (pcd) {Principal Civilian Deputy\\ \textbf{Jason L.\ Potter}};
+    \node[deputy node, below right=of asn, xshift=1.6cm] (pmd) {\ac{pmildep}\\ \textbf{\ac{vadm} Seiko Okano}};
 
-    \node[dasn node, below right=of asn, xshift=-2.5cm] (iwar) {DASN (Mission Systems)\\ \textbf{Mr. Jim Day}};
-    \node[dasn node, below=of iwar] (rdte) {DASN (RDT\&E)\\ \textbf{Mr. Peter C. Reddy}};
-    \node[dasn node, below=of rdte] (apb) {DASN (AP\&B)\\ \textbf{Ms. Maria Proestou}};
+    \node[pae node, below=of pcd, xshift=-2.1cm] (aviation) {PAE Aviation};
+    \node[pae node, right=of aviation] (missions) {PAE Mission Systems};
+    \node[pae node, right=of missions] (munitions) {PAE Munitions};
 
-    \node[dasn node, right=of iwar, xshift=3cm, fill=Gold!40] (nipo) {Director, NIPO\\ \textbf{RDML Ray Owens}};
+    \node[pae node, below=of aviation] (industrial) {PAE Industrial Operations};
+    \node[pae node, right=of industrial] (maritime) {PAE Maritime};
+    \node[pae node, right=of maritime] (undersea) {PAE Undersea\\ / DRPM Submarines};
 
-    \path [line] (asn) |- (sustainment);
-    \path [line] (asn) |- (ships);
-    \path [line] (asn) |- (ag);
-    \path [line] (asn) |- (p);
-    \path [line] (asn) |- (iwar);
-    \path [line] (asn) |- (rdte);
-    \path [line] (asn) |- (apb);
-    \path [line] (asn) -| (nipo);
-  \end{tikzpicture}
-  \caption[ASN (RD\&A) organization chart]{ASN (RD\&A) organization chart (current as of 2025-12-18).~\srcCite{navy-asnrda-org-chart-2025}}
+    \node[pae node, below=of industrial] (ssp) {PAE Strategic\\ Systems Programs};
+    \node[pae node, right=of ssp] (ras) {PAE Robotics and\\ Autonomous Systems};
+    \node[pae node, right=of ras, fill=Red!18] (marine) {PAE Marine Corps};
+
+    \node[support node, left=of industrial, xshift=-4.0cm] (syscoms) {\acp{syscom}, warfare centers,\\ shipyards, RMCs, NIWCs,\\ contracting, sustainment, and \ac{ta}};
+
+    \draw[line] (secnav) -- (asn);
+    \draw[line] (cno) |- (asn);
+    \draw[line] (cmc) |- (asn);
+    \draw[line] (asn) -- (pcd);
+    \draw[line] (asn) -- (pmd);
+    \draw[line] (pcd) |- (missions);
+    \draw[line] (pmd) |- (missions);
+    \draw[line, dashed] (syscoms) -- (industrial);
+    \draw[line, dashed] (syscoms) -- (maritime);
+    \draw[line, dashed] (syscoms) -- (missions);
+    \draw[line, dashed] (syscoms) -- (ras);
+  \end{tikzpicture}}
+  \caption[ASN (RD\&A) and PAE organization transition]{Board-level ASN (RD\&A) and PAE organization transition, updated from the user-provided PAE chart with public announcements through 2026-06-04~\autocite{DON-New-SAE-2026,DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026}.}
   \label{fig:asnrda_org_chart}
 \end{figure}
 
-Table~\ref{tab:asnrda_leadership} lists the \ac{asnrdanda} and \ac{pmildep} roles.
+Table~\ref{tab:asnrda_leadership} lists the current top \ac{asnrdanda} roles.
 
 \begin{longtblr}[%
     caption = {ASN (RD\&A) leadership roles},
     label   = {tab:asnrda_leadership},
     entry   = {ASN (RD\&A) leadership},
-    remark{\tSource} = {\tabCite{navy-asnrda-org-chart-2025}}
+    remark{\tSource} = {\tabCite{DON-New-SAE-2026}}
   ]{colspec = {@{} llX @{}}}
   \toprule
   {Role}             & {Person}              & {Roles and responsibilities}                                                                                                                                                                                                                      \\
   \midrule
-  Acting ASN (RD\&A) & Jason L.\ Potter      & Serves as the DON SAE with authority and accountability for acquisition functions, policy, and program oversight; represents the DON to OSD and Congress; and acts as MDA for ACAT IC programs. \\
-  PMILDEP            & VADM Seiko Okano      & Provides senior military advice to the ASN (RD\&A), helping manage DON research, development, and acquisition activities and delivering operational perspective across the enterprise.                                                    \\
+  PTDO ASN (RD\&A) & William F.\ Mahan & Serves as the DON senior acquisition executive for the Navy and Marine Corps while performing the duties of ASN (RD\&A). \\
+  Principal Civilian Deputy & Jason L.\ Potter & Provides senior civilian acquisition continuity and returned to this role after serving as PTDO ASN (RD\&A) from July~2025 to May~2026. \\
+  PMILDEP            & VADM Seiko Okano      & Provides senior military advice to ASN (RD\&A), helping manage DON research, development, acquisition governance, and the operational perspective across the acquisition enterprise.                                                    \\
   \bottomrule
 \end{longtblr}
 
-Table~\ref{tab:asnrda_dasns} summarizes the \acp{dasn} portfolio leads and their responsibilities.
+Table~\ref{tab:pae-roster-current} summarizes the public PAE portfolio map. Use Appendix~\ref{app:pae-construct-mapping} for detailed PAE-to-legacy-organization mapping.
 
 \begin{longtblr}[%
-    caption = {Deputy Assistant Secretaries of the Navy (ASN (RD\&A))},
-    label   = {tab:asnrda_dasns},
-    entry   = {ASN (RD\&A) DASNs},
-    remark{\tSource} = {\tabCite{navy-asnrda-org-chart-2025,navy-dasn-ships-2025,navy-dasn-rdte-2025,navy-dasn-air-ground-2025,navy-dasn-apb-2025,navy-dasn-nipo-2025,navy-dasn-iwar-2025,navy-dasn-procurement-2025,navy-dasn-sustainment-2025}}
+    caption = {Current public PAE roster and board cues},
+    label   = {tab:pae-roster-current},
+    entry   = {Current public PAE roster},
+    remark{\tSource} = {\tabCite{DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026,PAE-Maritime-Homepage-2026,DON-PAE-Mission-Systems-2026,DON-PAE-Munitions-2026,NAVAIR-PAE-Aviation-2026,PAE-Marine-Corps-About-2026,DON-PAE-RAS-MUSV-2026}}
   ]{colspec = {@{} L L X @{}}}
   \toprule
-  {Office}                    & {Person}                      & {Roles and responsibilities}                                                                                                                                                                                                                               \\
+  {PAE}                    & {Public leader / cue}                      & {Board-level scope} \\
   \midrule
-  DASN (Sustainment)          & Ms.\ Erica Plath              & Principal advisor on sustainment; leads the enterprise Naval Sustainment System framework, sets sustainment policy, reviews program performance, and modernizes infrastructure to reduce costs and strengthen the supply chain.                            \\
-  DASN (Ships)                & Ms.\ Bilyana Anderson         & Principal advisor for aircraft carriers, surface ships, and submarines; monitors NAVSEA and PEOs for ships and submarines; and advises on the shipbuilding industrial base, ship disposal, and donation.                                         \\
-  DASN (Air-Ground Programs)  & Mr.\ Robert D.\ Kimble        & Principal advisor for aircraft, ground systems, cruise missiles, and air-launched weapons; oversees programs managed by PEO (Air), Tactical Aircraft, Unmanned Aviation, Joint Strike Fighter, and Land Systems.                                      \\
-  DASN (Procurement)          & Mr.\ Michael L.\ Brown (PTDO) & Leads the DON contracting community; serves as the DON Competition Advocate General; establishes contracting, services acquisition, and government property policy; and drives improvements to the procurement system.                           \\
-  DASN (Mission Systems)      & Mr.\ Jim Day                  & Principal advisor for C4I, enterprise IT, and business systems; dual-hatted as the DON CIO Chief Technology Officer; and provides acquisition oversight for PEO C4I, PEO Digital, and PEO MLB.                             \\
-  DASN (RDT\&E)               & Mr.\ Peter C.\ Reddy          & Principal advisor for Navy science, technology, advanced RDT\&E, and system prototype programs; leads the Department Chief Systems Engineer and the Deputy for Test and Evaluation.                                                                     \\
-  DASN (AP\&B)                & Ms.\ Maria Proestou           & Principal advisor for acquisition policy (including Earned Value Management), the PPBE process, and Congressional affairs; directs Navy ACAT program analyses; manages the ASN (RD\&A) information system; and oversees corporate operations. \\
-  Director, NIPO              & RDML Ray Owens                & Leads NIPO in managing and implementing international security assistance programs, cooperative development, and technology security policy to build integrated capability with allies and partners.                                                  \\
+  Aviation & VADM John Dougherty & Naval aviation portfolio; public deputy lanes are Carrier Strike, Marine Corps Aviation, and Maritime ISR/NC3. \\
+  Industrial Operations & VADM James P.\ Downey & Industrial capacity, naval shipyards, regional maintenance, maintenance contracting, and industrial-base throughput. \\
+  Marine Corps & LtGen Eric Austin & Marine Corps ground systems; combines former PEO Land Systems and Marine Corps Systems Command acquisition support functions. \\
+  Maritime & Christopher Miller & Conventional surface-ship delivery, including aircraft carriers, combatants, expeditionary and mine warfare, auxiliaries, and modernization/sustainment. \\
+  Mission Systems & Jim Day & Central mission integrator for kill-chain closure across PEO C4I, PEO Digital, PEO IWS, PEO MLB, DRPM Overmatch, DRPM LRNFO, DRPM MILE, Minotaur, and mission-system elements across SYSCOMs. \\
+  Munitions & Paul Mann & Munitions production and weapons portfolio; public pillars are Weapons Industrial Base, Air Weapons, Surface Weapons, and Advanced Capabilities and Innovation. \\
+  Robotics and Autonomous Systems & Public leader not confirmed in this refresh & Hedge and unmanned/autonomous capabilities; current public example is MUSV marketplace at-sea demonstrations. \\
+  Strategic Systems Programs & VADM Johnny Wolfe & Sea-based strategic deterrence and strategic weapons; SSP aligned inside the PAE construct. \\
+  Undersea / DRPM Submarines & VADM Robert Gaucher & Submarine and undersea delivery; dual-hatted DRPM construct focused on SSN, SSBN, and SSGN production and undersea industrial-base execution. \\
   \bottomrule
 \end{longtblr}
 
