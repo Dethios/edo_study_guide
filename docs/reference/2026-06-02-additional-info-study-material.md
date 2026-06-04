@@ -287,11 +287,12 @@ Strategic priorities    POM development (5 years)  BES development (1 year)   Ob
 (Outputs: CPR, DPG)     (Signed by SECNAV)         (Signed by FMB/N82)        (Mid-year reviews)
 ```
 
-### OPNAV Resource Sponsors
+### OPNAV Resource Sponsor and Integrator Map
 
 * **N1**: Manpower, Personnel, Training, and Education.
 * **N2/N6**: Information Warfare.
-* **N3/N5**: Navy Warfare Development / Operations.
+* **N3/N5**: Operations, Plans, and Strategy principal-assistant lane; do **not** use it as the NAVMAC resource-sponsor code for warfighting development.
+* **N7**: Warfighting Development in the public NAVMAC resource-sponsor code list.
 * **N4**: Afloat and Shore Readiness.
 * **N8**: **Integrator** of Navy capabilities and resources (N80 builds/integrates the POM; N81 conducts assessments).
   *Note: N8 is the "checkbook" integrator, not a platform sponsor.*

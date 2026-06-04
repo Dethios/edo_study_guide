@@ -89,10 +89,11 @@ Current as of 2026-06-04.
 ### OPNAV organization - OPNAV resource sponsor mapping
 
 - ID: `wa-20260530-resource-sponsors`
-- Evidence: Package weak-area table listed rote recall/application misses.
+- Evidence: June 4 guide maintenance corrected the N3/N5 vs N7 resource-sponsor-code trap and clarified that
+  N8/N80/N81/N82/N83 are PPBE integration, assessment, budget, and readiness lanes while N9-family codes are the warfare sponsors.
 - Miss type: `concept_confusion`
 - Severity: `medium`
-- Next review: 2026-06-02
+- Next review: 2026-06-07
 - Status: `active`
 
 ### CIVPERS - Removal paths

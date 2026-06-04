@@ -488,3 +488,24 @@ The entries in this section preserve the original imported package state. Later 
 - Confidence: `High` for local consistency and PAE Maritime wording; `Medium` for external currentness beyond the existing
   June~2026 roster record because several official pages were inaccessible to command-line retrieval during this pass.
 - Status: `applied`
+
+### 2026-06-04 - Applied OPNAV Resource-Sponsor Map Cleanup
+
+- ID: `gc-20260604-opnav-resource-sponsor-map-cleanup`
+- Location: `tex/chapters/1_Chain_of_command.tex`, `tex/chapters/6_PPBE.tex`,
+  `tex/chapters/appendix_key_roles.tex`, `docs/reference/2026-06-02-additional-info-study-material.md`,
+  `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/weak_areas.md`,
+  `docs/study_memory/weak_areas.jsonl`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: corrected the PPBE resource-sponsor quick map so warfighting development is N7 in the public
+  NAVMAC resource-sponsor code list, not the CNO principal-assistant N3/N5 operations/plans lane; renamed sponsor-only
+  headings to sponsor/integrator wording; added board traps that N8 is the PPBE integration/checkbook lane rather than
+  a platform sponsor; added N7 to Appendix Key Roles; and added OPNAV/PPBE source-ledger rows.
+- Source basis: NAVMAC Activity Manpower Management Guide Section 24 checked on 2026-06-04, existing bibliography records
+  for OPNAVINST 3050.27A, OPNAVINST 3111.17C, and OPNAVINST 5420.117A, local consistency-scout findings, and main-thread
+  source-access checks. DONI direct command-line retrieval returned request-filtered HTML during this pass, so OPNAVINST
+  checked dates were not advanced beyond existing bibliography records.
+- Confidence: `High` for NAVMAC resource-sponsor-code mapping; `Medium` for broader OPNAV instruction currentness because
+  DONI direct retrieval was blocked during this pass.
+- Status: `applied`
