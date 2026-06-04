@@ -77,6 +77,12 @@ Recent applied updates:
   disclosure, KO authority, and constructive-change vs unauthorized-commitment ratification. FAR/DFARS and DoD procedure
   links were live-checked on 2026-06-04; NAVSEA source-selection/contract handbook URLs returned command-line 403 and
   remain official bibliography anchors pending manual/browser refresh.
+- T&E and ship-trials source-currentness cleanup for 10 U.S.C. 8674 replacing the stale 7304 ship-trials citation,
+  OPNAVINST 4700.8M, OPTEVFOR source URLs, the 10 U.S.C. 4171 alternative T&E pathway caveat, MDA/TEMP approval
+  wording, and the fast-cue Other Transaction acronym correction.
+- T&E role/acronym hygiene cleanup after validation: replaced stale DASD(T&E) cues with USW(R&E) / DTE&A wording
+  grounded in DoDI 5000.89 and the current ASW(MC) public organization page, removed acronym macros from longtblr
+  cells, and normalized the ship-trial board-cue caption.
 
 ## Next Review Plan
 

@@ -615,3 +615,42 @@ The entries in this section preserve the original imported package state. Later 
   handbook URLs remain official bibliography anchors but returned 403 to the command-line HEAD check on 2026-06-04.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied T&E and Ship-Trials Source-Currentness Cleanup
+
+- ID: `gc-20260604-te-ship-trials-source-currentness`
+- Location: `tex/chapters/18B_test-eval.tex`, `tex/chapters/18A_Ship_Trials.tex`,
+  `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: replaced the stale ship-trials statute reference from 10 U.S.C. 7304 to current
+  10 U.S.C. 8674; changed the ship-trials policy reference to OPNAVINST 4700.8M; added LFT&E citations to
+  the shock-trials cue; added the 10 U.S.C. 4171 alternative T&E pathway caveat without replacing the default
+  IOT&E/beyond-LRIP answer; corrected MDA/TEMP approval wording; normalized statutory DOT&E reporting language
+  to Secretary of Defense and Congress; refreshed OPTEVFOR source URLs; removed an internal maintenance note;
+  repaired the procurement-appropriation sentence; added a T&E/ship-trials fast cue; and corrected the innovation
+  tools cue from Operational Test to Other Transaction.
+- Source basis: current U.S. Code sections 10 U.S.C. 139, 4171, 4172, and 8674; DoDI 5000.98; DoDM 5000.100;
+  DoDM 5000.103; OPTEVFOR official website; OPNAVINST 5450.332C; OPNAVINST 4700.8M; and EDO School coursebook
+  modules 3.5.5, 3.5.6, and 3.5.7. DONI PDF URLs for OPNAVINST 5450.332C and 4700.8M returned
+  request-filtered HTML to direct command-line retrieval during this pass, so exact DONI wording should be
+  browser/manual-verified before future line-level wording changes.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-04 - Applied T&E Role and Acronym-Hygiene Cleanup
+
+- ID: `gc-20260604-te-role-acronym-hygiene`
+- Location: `tex/chapters/18B_test-eval.tex`, `tex/chapters/18A_Ship_Trials.tex`,
+  `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: replaced stale DASD(T&E) role cues with USW(R&E) / DTE&A wording; corrected the role split so
+  USW(R&E) owns DT&E policy and test infrastructure while the PM designates the CDT and lead DT organization; removed
+  acronym macros from longtblr cells; changed table tokens from `TEMP/T&E` and unbreakable infrastructure wording to
+  breakable phrases; and normalized the ship-trial board-cue table caption.
+- Source basis: DoDI 5000.89 for USD(R&E) DT&E policy/test-infrastructure responsibilities and the current ASW(MC)
+  public organization page for the DTE&A current-organization label.
+- Confidence: `High`
+- Status: `applied`
