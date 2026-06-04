@@ -561,3 +561,21 @@ The entries in this section preserve the original imported package state. Later 
   official DoD IPM Policy and Guidance page, official DON Naval CEVM page, and local coursebook EVM modules.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied NMP/AIT Ship-Change Flow Cleanup
+
+- ID: `gc-20260604-nmp-ait-ship-change-flow-cleanup`
+- Location: `tex/chapters/20_Navy_Modernization_Program.tex`,
+  `tex/chapters/22_AIT_Fundamentals_and_Lessons_Learned.tex`,
+  `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`, `tex/acronyms.def`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: added missing FAT, SID, ILS, and CDMD-OA acronym support; cited and tightened the product-line
+  integration walkthrough from program-office need through SCD/NDE-NM approval, RMMCO gatekeeping, AIT execution, SOVT,
+  logistics handover, and configuration closeout; added a board fast cue for the modernization-to-fleet chain; and added
+  public JFMM Volume VI and NAVSEA logistics/CDMD-OA source records.
+- Source basis: official JFMM Volume VI Rev D Change 5 public PDF, official NAVSEA TS9090-310G public PDF, official
+  NAVSEA Logistics Planning, Processes & Policy page, and local EDO coursebook modernization/AIT modules.
+- Confidence: `High`
+- Status: `applied`

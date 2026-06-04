@@ -69,6 +69,8 @@ Recent applied updates:
   appropriations naming differences.
 - EVM/APB/PMB source-hygiene cleanup for IBR wording, PMB measurement language, IPMDAR/CFSR naming, and EVM glossary
   precision.
+- NMP/AIT ship-change flow cleanup for the program-office to shipboard installation chain, missing walkthrough citations,
+  and CDMD-OA/ILS/SID/FAT acronym support.
 
 ## Next Review Plan
 

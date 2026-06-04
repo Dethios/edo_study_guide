@@ -868,6 +868,10 @@
 \newacronym{nec}{NEC}{Navy Enlisted Classification}
 \newacronym{nmp}{NMP}{Navy Modernization Program}
 \newacronym{scd}{SCD}{Ship Change Document}
+\newacronym[
+  shortplural={SIDs},
+  longplural={Ship Installation Drawings}
+]{sid}{SID}{Ship Installation Drawing}
 \newacronym{shipalt}{SHIPALT}{Ship Alteration}
 \newacronym{aer}{AER}{Alteration Equivalent to Repair}
 \newacronym{cmp}{CMP}{Class Maintenance Plan}
@@ -902,6 +906,9 @@
 \newacronym{tso}{TSO}{Temporary Standing Order}
 \newacronym{rmmco}{RMMCO}{Regional Maintenance and Modernization Coordination Office}
 \newacronym{nsa}{NSA}{Naval Supervising Activity}
+\newacronym{ils}{ILS}{Integrated Logistics Support}
+\newacronym{cdmdoa}{CDMD-OA}{Configuration Data Management Database -- Open Architecture}
+\newacronym{fat}{FAT}{Factory Acceptance Testing}
 \newacronym{imf}{IMF}{Intermediate Maintenance Facility}
 \newacronym{lma}{LMA}{Lead Maintenance Activity}
 \newacronym{dmt}{DMT}{Directed Maintenance Task}

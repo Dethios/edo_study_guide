@@ -85,33 +85,51 @@
 \end{description}
 
 \subsection{Product Line Integration Walkthrough}
-The path for a new equipment product line from production to integration into a ship or submarine involves the following standard steps:
+The path for a new equipment product line from production to integration into a ship or submarine is a board synthesis of
+program-office, engineering, modernization, waterfront, test, and logistics actions:
 \begin{enumerate}
-  \item \textbf{System Production}: The manufacturer produces and packages the hardware and software components.
-  \item \textbf{Factory Acceptance Testing (FAT)}: Verifies that the manufactured system meets design specifications and quality standards before shipment.
-  \item \textbf{Staging and Delivery}: The system is shipped to a dedicated staging facility, warehouse, or directly to the \ac{isea} or installation site.
-  \item \textbf{NMP and SCD Approval}: Under the Navy Modernization Process (NMP), a Ship Change Document (\ac{scd}) must be formally approved. The \ac{scd} details the physical change, weight and moment impacts, and power/cooling requirements, and is signed by the Program Manager and Technical Warrant Holder.
-  \item \textbf{Installation Package Development}: The \ac{isea} or Planning Yard develops the Ship Installation Drawings (SIDs) and drafts the \ac{sovt} procedures.
-  \item \textbf{RMMCO Gatekeeping}: The \ac{ait} Manager checks in with the Regional Maintenance Modernization Coordinating Office (\ac{rmmco}) (typically 30 days prior to installation) to verify the approved \ac{scd}, final SIDs, \ac{sovt} plan, and certified Integrated Logistics Support (ILS) products.
-  \item \textbf{Waterfront Coordination}: The \ac{ait} coordinates with the \ac{nsa} and \ac{lma} to gain ship access. A Memorandum of Agreement (\ac{moa}) is signed by A-1 to align support services.
-  \item \textbf{Physical Installation}: The \ac{ait} performs the physical installation on board (e.g., running cables, mounting racks, structural modifications).
-  \item \textbf{System Testing}: The \ac{ait} and Ship's Force execute the \ac{sovt} (including cold and hot checks) to demonstrate operational capability.
-  \item \textbf{Quality Assurance and Certification}: The \ac{nsa} and \ac{ait} \ac{osic} conduct final quality inspections and sign the certification/completion paperwork.
-  \item \textbf{Logistics Handover}: The \ac{ait} turns over technical manuals, spares, training, and Allowance Parts Lists (APLs) to the ship's force.
-  \item \textbf{Configuration Update}: The ship's configuration database (CDMD-OA) is updated within 30 days of completion to reflect the install.
+  \item \textbf{System production.} The manufacturer produces and packages the hardware and software components, and
+        \ac{fat} or equivalent acceptance activity verifies the build before shipment~\autocite{edo-4-1-4-ait-fundamentals-2025}.
+  \item \textbf{Staging and delivery.} The system is shipped to a staging facility, warehouse, \ac{isea}, or installation
+        site, with technical data, training, and logistics products tracked for fleet turnover~\autocite{NAVSEA-Logistics-Planning-Processes-Policy-2026}.
+  \item \textbf{\ac{nmp} and \ac{scd} approval.} Under the \ac{nmp}, the approved \ac{scd} is the authorization record
+        for the ship change; it carries ship applicability, technical/logistics impacts, and decision-point approval
+        through the modernization process~\autocite{edo-4-1-2-navy-modernization-2025,JFMM-VolVI-RevD-Chg5-2025}.
+  \item \textbf{Installation package development.} The \ac{isea}, planning yard, or responsible engineering activity
+        develops \acp{sid}, installation-control documents, logistics products, and the \ac{sovt} or test procedure
+        package~\autocite{TS9090-310,NAVSEA-Logistics-Planning-Processes-Policy-2026}.
+  \item \textbf{\ac{rmmco} gatekeeping.} The \ac{ait} Manager checks in with \ac{rmmco} before installation to verify
+        authorization, drawings, logistics maturity, test procedures, scheduling, and support requirements~\autocite{JFMM-VolVI-RevD-Chg5-2025,TS9090-310}.
+  \item \textbf{Waterfront coordination.} The \ac{ait} coordinates with the \ac{nsa}, \ac{lma}, Ship's Force, and other
+        availability stakeholders to gain access and align support services through the \ac{moa} and in-brief
+        process~\autocite{edo-4-1-4-ait-fundamentals-2025,TS9090-310}.
+  \item \textbf{Physical installation.} The \ac{ait} performs the shipboard work, such as cable runs, equipment mounts,
+        foundations, structural modifications, or software loading, under the \ac{osic}'s installation controls~\autocite{edo-4-1-4-ait-fundamentals-2025,TS9090-310}.
+  \item \textbf{System testing.} The \ac{ait} and Ship's Force execute the \ac{sovt} or approved system integration test
+        to demonstrate the installed capability and document exceptions~\autocite{JFMM-VolVI-RevD-Chg5-2025,TS9090-310}.
+  \item \textbf{Quality assurance and certification.} The \ac{nsa}, \ac{ait} \ac{osic}, Ship's Force, and technical
+        stakeholders sign required acceptance, completion, and exception documentation~\autocite{JFMM-VolVI-RevD-Chg5-2025,TS9090-310}.
+  \item \textbf{Logistics handover.} The \ac{ait} turns over technical manuals, training evidence, spares, special test
+        equipment, and allowance/listing products needed for Ship's Force self-sufficiency~\autocite{TS9090-310,NAVSEA-Logistics-Planning-Processes-Policy-2026}.
+  \item \textbf{Configuration update and closeout.} \ac{cdmdoa} work files, logistics records, and as-installed drawing
+        updates reconcile the ship's configuration; TS9090-310 drives red-line/as-installed drawing turnover after the
+        out-brief when applicable~\autocite{TS9090-310,NAVSEA-Logistics-Planning-Processes-Policy-2026}.
 \end{enumerate}
 
 \subsection{Modernization Differences by Class}
 Modernization processes differ significantly between ship classes depending on their nuclear or safety boundaries:
 \begin{description}
-  \item[\textbf{Conventional Surface Ships.}] Managed under the standard NMP. Changes are driven by \acp{scd} and gated on the waterfront by the local \ac{rmmco} to ensure logistics readiness before install.
+  \item[\textbf{Conventional Surface Ships.}] Managed under the standard \ac{nmp}. Changes are driven by \acp{scd} and
+        gated on the waterfront by the local \ac{rmmco} to ensure logistics readiness before install~\autocite{JFMM-VolVI-RevD-Chg5-2025,TS9090-310}.
   \item[\textbf{Submarines and Nuclear Vessels.}] Experience extremely tight configuration control due to \ac{subsafe}, Fly-By-Wire, and Nuclear Power (NAVSEA 08) boundaries:
     \begin{itemize}
       \item \textbf{Boundary Control}: Any change within a certified boundary (e.g., \ac{subsafe} or Fly-By-Wire) requires formal engineering authorization, execution by certified activities (e.g., public shipyards), and rigorous quality audits.
       \item \textbf{Nuclear Systems}: Alterations affecting the reactor plant or reactor support systems require direct, explicit NAVSEA 08 review and authorization.
       \item \textbf{Temporary Alterations (TempAlts)}: Submarine TempAlts are strictly time-bound, logged in active status lists, and must be completely uninstalled before the approved expiration date.
     \end{itemize}
-  \item[\textbf{ISEA Involvement.}] The \ac{isea} serves as the lifecycle engineering agent for the system, responsible for developing the engineering changes, verifying SIDs, authoring \ac{sovt} plans, ensuring ILS product availability, and often providing the onsite \ac{ait} Manager or technical oversight.
+  \item[\textbf{ISEA Involvement.}] The \ac{isea} serves as the lifecycle engineering agent for the system, responsible
+        for developing the engineering changes, verifying \acp{sid}, authoring \ac{sovt} plans, ensuring \ac{ils} product
+        availability, and often providing the onsite \ac{ait} Manager or technical oversight~\autocite{NAVSEA-Logistics-Planning-Processes-Policy-2026,edo-4-1-4-ait-fundamentals-2025}.
 \end{description}
 
 \subsection{Lessons Learned}
