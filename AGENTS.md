@@ -43,7 +43,8 @@ macros in headings and tables unless the surrounding file already requires it.
 Prefer `longtblr` for tables and `description` for term/definition lists. Use
 `docs/reference/legacy/` for legacy material; do not recreate `Other/`.
 Use `./scripts/latexindent-docker.sh <file>` when formatting LaTeX and Docker
-is available.
+is available. Markdown files must be wrapped at 120 characters and conform to
+the rules configured in `.rumdl.toml`.
 
 ## Testing Guidelines
 
@@ -51,7 +52,8 @@ Run the Docker build for source changes and report remaining warnings,
 especially overfull boxes, missing citations, or shell-escape issues. Run
 `make check-acronyms` when touching `tex/acronyms.def` or acronym usage.
 Run `make check-tikz-cache` when touching TikZ externalization paths or cache
-configuration.
+configuration. Always run `rumdl check` on any modified Markdown files after
+making edits, or use `rumdl fmt <file>` to automatically format them.
 
 ## Commit & Pull Request Guidelines
 
