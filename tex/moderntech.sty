@@ -137,7 +137,7 @@
 % so it doesn't inject a visible leading interword glue node in \gls output.
 \AtBeginDocument{%
     \@ifundefined{glsencapwrcontent}{}{%
-        \renewcommand*{\glsencapwrcontent}[1]{\setbox\z@=\hbox{\(\m@th\null\)#1}}%
+        \renewcommand*{\glsencapwrcontent}[1]{\leavevmode\hbox to \z@{#1\hss}}%
     }%
 }
 % NOTE: glossaries-extra emits a stray leading space in \glslink; avoid it.
@@ -167,7 +167,7 @@
 % Hyperlinked, no-space acronyms
 % =========================
 % Shared helpers for linked acronym output and smart spacing
-\DeclareRobustCommand{\silentglsadd}[1]{\begingroup\setbox\z@=\hbox{\glsadd{#1}}\endgroup}%
+\DeclareRobustCommand{\silentglsadd}[1]{\glsadd{#1}}%
 
 \DeclareDocumentCommand{\edoAcrLink}{m m}{%
     \@ifundefined{@glslink}{\@ifundefined{glslink}{#2}{\glslink{#1}{#2}}}{\@glslink{\glolinkprefix\glsdetoklabel{#1}}{#2}}%

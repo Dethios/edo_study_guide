@@ -1,5 +1,7 @@
 # Strategic Acquisition and Capability Integration: An Exhaustive Analysis of ACAT I Programs within NAVWAR and PEO IWS
 
+> **Superseded currentness note (2026-06-04):** This generated reference is retained for historical background and should not be used as the board-current NAVWAR, PEO IWS, Project Overmatch, PAE, or ACAT/BCAT ledger. For current study-guide answers, use [NAVWAR](../../../chapters/4_NAVWAR.tex), [NAVSEA](../../../chapters/3_NAVSEA.tex), [PAE construct mapping](../../../chapters/appendix_pae_construct_mapping.tex), and [current events](../../../chapters/appendix_current_events.tex), which include newer PAE Mission Systems, Project Overmatch, software-pathway, and IWS-organization caveats.
+
 ## 1. Introduction and Strategic Context
 
 The modernization, sustainment, and lethality of the United States Navy rely fundamentally on the successful execution of Major Defense Acquisition Programs (MDAPs). In an era characterized by great power competition and the proliferation of advanced anti-access/area-denial (A2/AD) weapon systems, the Department of the Navy must maintain absolute dominance across the electromagnetic spectrum, the cyber domain, and the traditional maritime theater. To achieve this, the Navy relies heavily on two premier systems commands and their affiliated Program Executive Offices (PEOs): the Naval Information Warfare Systems Command (NAVWAR) and the Program Executive Office for Integrated Warfare Systems (PEO IWS).
