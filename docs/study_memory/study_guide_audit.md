@@ -403,3 +403,20 @@ The entries in this section preserve the original imported package state. Later 
   rendered page-image verification of Figure 1.4.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied NAVSEA Leader and Source-Ledger Currentness Cleanup
+
+- ID: `gc-20260604-navsea-leader-source-ledger-cleanup`
+- Location: `tex/chapters/1_Chain_of_command.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: replaced the non-EDO leader cue that relied on a NAVSEA org-chart bibliography entry marked
+  ``verify current fills'' with the current NAVSEA command-leadership chart checked on 2026-06-04, naming NAVSEA 08
+  as ADM William J. Houston, PEO IWS as RDML Thomas J. Dickinson, and PEO USC as Melissa Kirkendall, SES; refreshed
+  the NAVSEA org-chart bibliography entry to the current official URL; aligned checked dates and notes for PMW 120,
+  PMW 790, PMA/PMW 101, PEO Digital, NAVSEA PEO IWS, and NAVSEA PEO IWS Industry Engagement source-ledger rows.
+- Source basis: official NAVSEA command-leadership chart, official PEO C4I program-office page and tear sheets,
+  official NAVSEA PEO IWS pages, official PEO Digital portfolio overview, and local consistency-scout findings.
+- Confidence: `High`
+- Status: `applied`
