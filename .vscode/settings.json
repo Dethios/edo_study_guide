@@ -130,7 +130,8 @@
       "MORFOLOGIK_RULE_EN_US",
       "WHITESPACE_RULE",
       "POSSESSIVE_APOSTROPHE",
-      "REPETITION_STYLE"
+      "REPETITION_STYLE",
+      "ARROWS"
     ]
   },
   "ltex.dictionary": {
@@ -142,5 +143,8 @@
   "ltex.enabled": true,
   "[latex]": {
     "editor.defaultFormatter": "James-Yu.latex-workshop"
-  }
+  },
+  "markdown.styles": [
+    "./.vscode/markdown.css"
+  ]
 }

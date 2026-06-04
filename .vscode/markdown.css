@@ -1,0 +1,27 @@
+/* markdown.css */
+
+h1 {
+  color: #8ED1E3; /* Function/method color */
+  border-bottom: 1px solid #3c4f5c;
+}
+
+h2 {
+  color: #A7C795; /* String color */
+  border-bottom: 1px solid #354a31;
+}
+
+h3 {
+  color: #F1D8A5; /* Number color */
+}
+
+h4 {
+  color: #94D0CC; /* Type color */
+}
+
+h5 {
+  color: #8FB3D9; /* Keyword color */
+}
+
+h6 {
+  color: #7E8591; /* Comment color */
+}
