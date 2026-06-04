@@ -6,7 +6,7 @@
 % File: 17I_CM_and_Technical_Reviews.tex
 % ====================
 \begin{document}
-\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
+\IfSubfilesClassLoaded{\chapter{Configuration Management and Technical Reviews}}{}
 % === SE Analysis & Control: CM & Technical Reviews (EDO 3.5.3) ===
 \section{SE Analysis \& Control: Configuration Management \& Technical Reviews}
 
@@ -77,9 +77,9 @@
 
 \subsection{Configuration Baselines}
 \begin{description}
-  \item[\textbf{Functional baseline.}] Defines overall system performance and functional characteristics~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
-  \item[\textbf{Allocated baseline.}] Defines performance requirements for \acp{ci} that make up a system~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
-  \item[\textbf{Product baseline.}] Defines functional and physical characteristics of \acp{ci}~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{Functional baseline.}] Defines approved system-level functional, performance, interoperability, interface, and verification requirements; the program manager normally establishes Government control at \ac{sfr}~\autocite{edo-3-5-3-cm-tech-reviews-2025,DAU-Functional-Baseline}.
+  \item[\textbf{Allocated baseline.}] Defines the allocated performance, interface, derived, design-restraint, and verification requirements for the \acp{ci} that make up the system; it is normally established at \ac{pdr}~\autocite{edo-3-5-3-cm-tech-reviews-2025,DAU-Allocated-Baseline}.
+  \item[\textbf{Product baseline.}] Defines the detailed build-to or code-to functional and physical characteristics of \acp{ci}; the initial product baseline is normally established at \ac{cdr} and finalized through \ac{pca}~\autocite{edo-3-5-3-cm-tech-reviews-2025,DAU-Product-Baseline,DAU-Critical-Design-Review}.
 \end{description}
 
 \subsection{Specifications, CM Planning, and Baselines}
@@ -118,13 +118,13 @@
 \end{itemize}
 
 \subsection{MCA Technical Reviews by Phase}
-\ac{mca} technical reviews are event-driven maturity points, not calendar ceremonies. Unless waived through the \ac{sep} approval process, \ac{dodi}~5000.88 requires the \ac{pm} to conduct system-level reviews or equivalents for requirements/functionality, preliminary design, critical design, verification/configuration audit, production readiness, and physical configuration audit; \ac{asr}, \ac{trr}, and \ac{otrr} remain important best-practice or test-readiness events that are tailored to the program and test strategy~\autocite{DoDI5000-88,DoD-EngineeringDefenseSystemsGuidebook-2024,DoD-TEEnterpriseGuidebook-2022}.
+\ac{mca} technical reviews are event-driven maturity points, not calendar ceremonies. Unless waived through the \ac{sep} approval process, \ac{dodi}~5000.88 requires the \ac{pm} to conduct system-level reviews or equivalents for requirements/functionality, preliminary design, critical design, verification/configuration audit, production readiness, and physical configuration audit. DAU's technical-baseline maturation table separates \ac{srr} as mutual requirements understanding from \ac{sfr} as functional-baseline approval; \ac{pdr} and \ac{cdr} then anchor the allocated and initial product baselines~\autocite{DoDI5000-88,DoD-EngineeringDefenseSystemsGuidebook-2024,DAU-Technical-Baselines,DAU-System-Requirements-Review,DAU-System-Functional-Review,DAU-Preliminary-Design-Review,DAU-Critical-Design-Review}.
 
 \begin{longtblr}[
     label   = {tab:mca-technical-reviews},
     caption = {Major Capability Acquisition technical reviews by phase},
     entry   = {MCA Technical Reviews by Phase},
-    remark{\tSource} = {\tabCite{DoDI5000-88,DoD-EngineeringDefenseSystemsGuidebook-2024,DoD-TEEnterpriseGuidebook-2022}}
+    remark{\tSource} = {\tabCite{DoDI5000-88,DoD-EngineeringDefenseSystemsGuidebook-2024,DAU-Technical-Baselines}}
   ]
   {colspec = {@{} l X[1.15] X[1.25] X[3.2] @{}}}
   \toprule
@@ -145,13 +145,13 @@
 
 Please see \Fig{\ref{fig:mca_schedule}} for a visual showing when each of the technical reviews are held.
 
-\note{For a board answer, lead with the baseline progression: requirements/function first, allocated design at \ac{pdr}, product design at \ac{cdr}, verified configuration at \ac{svr}/\ac{fca}, production readiness at \ac{prr}, operational test readiness at \ac{otrr}, and final as-built product baseline at \ac{pca}.}
+\note{For a board answer, lead with the baseline progression: \ac{srr} reviews the system requirements, \ac{sfr} supports the functional baseline, \ac{pdr} supports the allocated baseline, \ac{cdr} supports the initial product baseline, \ac{svr}/\ac{fca} verify configuration, \ac{prr} checks production readiness, \ac{otrr} checks operational test readiness, and \ac{pca} supports the final as-built product baseline.}
 
 \subsection{Specifications, Baselines, and Reviews}
 \begin{description}
-  \item[\textbf{System specifications.}] Link to the functional baseline and \ac{srr}/\ac{sfr}~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
-  \item[\textbf{Performance specifications.}] Link to the allocated baseline and \ac{pdr}~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
-  \item[\textbf{Detail/process/material specifications.}] Link to the product baseline and \ac{cdr}/\ac{fca}/\ac{pca}~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
+  \item[\textbf{System specifications.}] \ac{srr} reviews whether the system performance specification is clear, testable, and mutually understood; \ac{sfr} approves the system performance specification for use as the functional baseline~\autocite{edo-3-5-3-cm-tech-reviews-2025,DAU-System-Requirements-Review,DAU-System-Functional-Review,DAU-System-Performance-Specification}.
+  \item[\textbf{Performance specifications.}] Link to the allocated baseline and \ac{pdr}~\autocite{edo-3-5-3-cm-tech-reviews-2025,DAU-Allocated-Baseline,DAU-Preliminary-Design-Review}.
+  \item[\textbf{Detail/process/material specifications.}] Link to the product baseline and \ac{cdr}/\ac{fca}/\ac{pca}~\autocite{edo-3-5-3-cm-tech-reviews-2025,DAU-Product-Baseline,DAU-Critical-Design-Review}.
 \end{description}
 
 \subsection{General Principles for Reviews}
@@ -176,7 +176,7 @@ Please see \Fig{\ref{fig:mca_schedule}} for a visual showing when each of the te
   \item CM functions are identification, status accounting, control, and verification/audits~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
   \item Baselines are functional, allocated, and product; changes are engineering changes, deviations, and waivers~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
   \item Commercial items reduce Government control of design details and \ac{tdp} access, increasing interface and support planning needs~\autocite{edo-3-5-3-cm-tech-reviews-2025}.
-  \item In \ac{mca}, technical reviews should be explained as risk-reduction gates tied to phase maturity: \ac{srr}/\ac{sfr} in \ac{tmrr}, \ac{pdr} before \ac{emd}, \ac{cdr} and verification reviews in \ac{emd}, and \ac{prr}/\ac{otrr}/\ac{pca} around production and operational test~\autocite{DoD-EngineeringDefenseSystemsGuidebook-2024,DoD-TEEnterpriseGuidebook-2022}.
+  \item In \ac{mca}, technical reviews should be explained as risk-reduction gates tied to phase maturity: \ac{srr} reviews requirements in \ac{tmrr}, \ac{sfr} supports the functional baseline, \ac{pdr} supports the allocated baseline before \ac{emd}, \ac{cdr} supports the initial product baseline in \ac{emd}, and \ac{prr}/\ac{otrr}/\ac{pca} support production, operational test, and final product-baseline decisions~\autocite{DoDI5000-88,DoD-EngineeringDefenseSystemsGuidebook-2024,DAU-Technical-Baselines,DAU-System-Requirements-Review,DAU-System-Functional-Review}.
 \end{itemize}
 
 %====================

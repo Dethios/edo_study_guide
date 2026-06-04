@@ -452,3 +452,20 @@ The entries in this section preserve the original imported package state. Later 
   performance memo, and MSPB records listed in `sources.md`.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied SE Technical-Review Baseline Source-Fidelity Cleanup
+
+- ID: `gc-20260604-se-baseline-source-fidelity-cleanup`
+- Location: `tex/chapters/17G_Systems_Engineering_Overview.tex`, `tex/chapters/17I_CM_and_Technical_Reviews.tex`,
+  `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/weak_areas.md`, `docs/study_memory/weak_areas.jsonl`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: replaced generic standalone chapter titles for the two systems-engineering chapter files, added
+  DAU ACQuipedia bibliography records for SRR, SFR, system performance specification, functional baseline, allocated
+  baseline, product baseline, PDR, CDR, and technical baselines, and tightened the board cue so SRR is treated as a
+  requirements review while SFR/PDR/CDR map to functional/allocated/initial product baselines.
+- Source basis: current official DoDI 5000.88 and DAU pages checked through web search on 2026-06-04, plus local guide
+  and study-memory consistency review.
+- Confidence: `High`
+- Status: `applied`

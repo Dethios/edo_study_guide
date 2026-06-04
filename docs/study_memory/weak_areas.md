@@ -25,7 +25,8 @@ Current as of 2026-06-04.
 ### Systems engineering - SE review baselines
 
 - ID: `wa-20260530-se-review-baselines`
-- Evidence: Package weak-area table listed rote recall misses.
+- Evidence: June 4 guide maintenance verified and reinforced the board trap: SRR reviews system requirements;
+  SFR, PDR, and CDR map to the functional, allocated, and initial product baselines.
 - Miss type: `factual_recall`
 - Severity: `medium`
 - Next review: 2026-06-06
@@ -226,8 +227,8 @@ No entries yet.
 ### Systems engineering - SE review baselines
 
 - ID: `wa-20260530-se-review-baselines`
-- Evidence: Q12/Q13/Q14 answers correctly mapped functional baseline to SFR/SRR area, allocated baseline to PDR, and
-  product baseline to CDR. Residual gap: user described baselines as reviews or test results rather than controlled
+- Evidence: Q12/Q13/Q14 answers correctly mapped functional baseline to SFR while recognizing SRR as the requirements-review trap,
+  allocated baseline to PDR, and product baseline to CDR. Residual gap: user described baselines as reviews or test results rather than controlled
   technical definitions, and blended CDR design maturity with later verification/test evidence.
 - Miss type: `concept_confusion`
 - Severity: `medium`
@@ -312,6 +313,18 @@ No entries yet.
 - ID: `wa-20260530-edo-flags`
 - Evidence: June 4 guide maintenance corrected current-source drift for EDO flag ranks/billets and related PAE/SSP
   transition cues. Keep active only for memorization and rapid oral recall.
+- Miss type: `factual_recall`
+- Severity: `medium`
+- Next review: 2026-06-06
+- Status: `active`
+
+## 2026-06-04 SE Baselines Source-Fidelity Update
+
+### Systems engineering - SE review baselines
+
+- ID: `wa-20260530-se-review-baselines`
+- Evidence: Official-source maintenance updated the guide and source ledger to separate SRR's requirements review from SFR's
+  functional-baseline role, with PDR and CDR retained as the allocated and initial-product baseline reviews.
 - Miss type: `factual_recall`
 - Severity: `medium`
 - Next review: 2026-06-06
