@@ -13,7 +13,7 @@ Current as of 2026-06-04.
   currentness, NAVSEA non-EDO leader/source-ledger cleanup, standalone chapter flow, appendix standalone
   titles/glossaries, structure-guard coverage, PAE chart connector routing and clearance follow-up,
   SE technical-review baseline cleanup, EDO flag/billet source hygiene, CIVPERS source-fidelity cleanup,
-  small-business size-standard and SBIR/STTR cue cleanup,
+  small-business size-standard and SBIR/STTR cue cleanup, cybersecurity/RMF currentness cleanup,
   OPNAV resource-sponsor map cleanup, NAVWAR/PEO C4I official-source hygiene refresh, congressional committee
   currentness cleanup, EVM/APB/PMB source-hygiene cleanup, and study-memory/source-ledger state.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
@@ -97,6 +97,9 @@ Recent applied updates:
 - Software Acquisition Pathway currentness cleanup for DoWI 5000.02 Change 2, direct DoWI 5000.87 source
   grounding, DBS/BCAC versus SWP crosswalk, SWP JCIDS/MDAP treatment, execution-entry artifacts, Agile design
   wording, PDSS cost-cue caveat, and the March 2025 SecDef SWP/CSO/OT memo.
+- Cybersecurity/RMF currentness cleanup for DoWI 5000.90, DoWI 8500.01, and DoWI 8510.01 source grounding; current
+  RMF flow as Prepare plus Categorize, Select, Implement, Assess, Authorize, and Monitor; ongoing monitoring; and the
+  security assessment report acronym-collision fix.
 
 ## Next Review Plan
 

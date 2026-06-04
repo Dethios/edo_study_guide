@@ -765,3 +765,21 @@ The entries in this section preserve the original imported package state. Later 
   2026-06-04.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied Cybersecurity and RMF Currentness Cleanup
+
+- ID: `gc-20260604-cyber-rmf-currentness`
+- Location: `tex/chapters/17F_Cybersecurity_Awareness.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Outdated`
+- Correction applied: replaced the stale six-step RMF cue with the current DoD RMF flow of Prepare plus Categorize,
+  Select, Implement, Assess, Authorize, and Monitor; added a Prepare-step board cue; rewrote the RMF acquisition
+  requirement from a milestone-only paperwork framing to an early lifecycle/acquisition-integration framing; replaced
+  annual-only monitoring wording with ongoing continuous monitoring; fixed the cybersecurity `SAR` acronym collision
+  by spelling out security assessment report; and narrowed the USCYBERCOM role cue away from enterprise-policy
+  ownership.
+- Source basis: DoDI 5000.90, DoDI 8500.01, and DoDI 8510.01 official WHS PDFs, all checked from official web
+  sources on 2026-06-04.
+- Confidence: `High`
+- Status: `applied`
