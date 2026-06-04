@@ -168,3 +168,18 @@ machine-readable companion record to `guide_changes.jsonl`.
 - Source basis: local study-memory audit plus the current official source rows listed in `sources.md`.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied Strategy Baseline and Flow Cleanup
+
+- ID: `gc-20260604-strategy-baseline-flow-cleanup`
+- Location: `tex/main.tex`, `tex/chapters/1_Chain_of_command.tex`, `tex/chapters/17K_jcids.tex`,
+  `tex/chapters/28_AWP_and_SOVT.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`
+- Verdict: `Applied`
+- Correction applied: updated Chapter 1 from the 2022 NSS/NDS baseline to the current Nov 2025 NSS and Jan 2026 NDS
+  baseline; renamed the broad root chapter from `Requirements` to `Requirements, Engineering, and Test`; moved the
+  legacy-JCIDS coursebook cue before the JCIDS quick review and before the subfile glossary block; and reduced the short
+  AWP/SOVT addendum to one section with subsections so it no longer adds disproportionate top-level ToC weight.
+- Source basis: 2025 National Security Strategy and 2026 National Defense Strategy records listed in `sources.md`, plus
+  local structure/flow review of `tex/main.tex`, `17K_jcids.tex`, and `28_AWP_and_SOVT.tex`.
+- Confidence: `High`
+- Status: `applied`

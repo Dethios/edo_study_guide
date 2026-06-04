@@ -60,6 +60,8 @@ final.
 | Title                                      | Authority Level | URL Or Path                                                                                                  | Version Or Date | Date Checked | Notes                                                                                           |
 | ------------------------------------------ | --------------- | ------------------------------------------------------------------------------------------------------------ | --------------- | ------------ | ----------------------------------------------------------------------------------------------- |
 | DoW Historic Highlights                    | policy          | `https://www.war.gov/Multimedia/Experience/Historic-Highlights-from-the-Department-of-War/`                  | current online  | 2026-06-04   | Official source basis for 1947 National Military Establishment and 1949 Department of Defense rename wording. |
+| 2025 National Security Strategy            | policy          | `https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-National-Security-Strategy.pdf`                  | 2025-11         | 2026-06-04   | Current NSS baseline used in Chapter 1 and the current-events appendix. |
+| 2026 National Defense Strategy             | policy          | `https://media.defense.gov/2026/Jan/23/2003864773/-1/-1/0/2026-NATIONAL-DEFENSE-STRATEGY.pdf`               | 2026-01-23      | 2026-06-04   | Current NDS baseline and four lines of effort: homeland defense, deterring China in the Indo-Pacific, allied burden-sharing, and defense industrial base. |
 
 ## PAE / ASN(RD&A) Current Organization
 
