@@ -818,3 +818,22 @@ The entries in this section preserve the original imported package state. Later 
 - Source basis: current official NAVSEA, NAVWAR, NAVAIR, NAVFAC EXWC, and ONR public pages checked on 2026-06-04.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied PPBE and Funding-Policy Source Grounding
+
+- ID: `gc-20260604-ppbe-funding-policy-source-grounding`
+- Location: `tex/chapters/6_PPBE.tex`, `tex/chapters/7_NWCF.tex`,
+  `tex/chapters/9_Program_Funding_and_Execution.tex`, `tex/chapters/10_Cost_Fundamentals.tex`,
+  `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: corrected PPBE typos from OSW to OSD and USW(FM\&C) to OUSW(C); clarified the
+  General Fund appropriation-flow wording against the formal appropriation/apportionment/allocation/allotment chain;
+  added exact FMR/statutory grounding for full funding, product-improvement funding, MILCON, minor construction, and
+  reprogramming thresholds; corrected the reprogramming-reporting cue to DD 1416 quarterly reporting; replaced the
+  incorrect facility-modernization-with-OPN cue with a facility-versus-equipment funding distinction; and standardized
+  POE ownership language across the cost-estimating chapter.
+- Source basis: DoW FMR Volume 2A Chapter 1, DoW FMR Volume 2B Chapter 6, DoW FMR Volume 3 Chapter 6,
+  and 10 U.S.C. 2805, checked from official web sources on 2026-06-04.
+- Confidence: `High`
+- Status: `applied`

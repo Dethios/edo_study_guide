@@ -15,7 +15,7 @@ Current as of 2026-06-04.
   SE technical-review baseline cleanup, EDO flag/billet source hygiene, CIVPERS source-fidelity cleanup,
   small-business size-standard and SBIR/STTR cue cleanup, cybersecurity/RMF currentness cleanup,
   system-level technical-review detail cleanup, warfare-center official-source board synthesis,
-  OPNAV resource-sponsor map cleanup, NAVWAR/PEO C4I official-source hygiene refresh, congressional committee
+  PPBE/funding-policy source grounding and consistency cleanup, OPNAV resource-sponsor map cleanup, NAVWAR/PEO C4I official-source hygiene refresh, congressional committee
   currentness cleanup, EVM/APB/PMB source-hygiene cleanup, and study-memory/source-ledger state.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
