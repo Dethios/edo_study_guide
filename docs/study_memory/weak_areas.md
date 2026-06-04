@@ -16,10 +16,12 @@ Current as of 2026-06-04.
 ### Program baselines - APB vs PMB
 
 - ID: `wa-20260530-apb-vs-pmb`
-- Evidence: Package weak-area table listed definition/relationship misses.
-- Miss type: `concept_confusion`
+- Evidence: June 4 EVM chapter maintenance tightened the APB vs PMB board trap, reinforced that IBR assesses PMB
+  realism/risk rather than approving the APB, and corrected EVM glossary precision for IPMDAR, CFSR, TCPI, VAC,
+  BCWS, and BCWP.
+- Miss type: `wording_ambiguity`
 - Severity: `low`
-- Next review: 2026-06-07
+- Next review: 2026-06-08
 - Status: `improving`
 
 ### Systems engineering - SE review baselines

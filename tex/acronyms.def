@@ -506,7 +506,8 @@
 \newacronym{cpi}{CPI}{Cost Performance Index}
 \newacronym{evm}{EVM}{Earned Value Management}
 \newacronym{evms}{EVMS}{Earned Value Management System}
-\newacronym{ipmdar}{IPMDAR}{Integrated Program Manager's Data Analysis Report}
+\newacronym{cevm}{CEVM}{Naval Center for Earned Value Management}
+\newacronym{ipmdar}{IPMDAR}{Integrated Program Management Data and Analysis Report}
 \newacronym{ims}{IMS}{Integrated Master Schedule}
 \newacronym{p3i}{P3I}{Pre-Planned Product Improvement}
 \newacronym{rio}{RIO}{Risk, Issue, and Opportunity}
@@ -522,14 +523,14 @@
 	shortplural={CTCs},
 	longplural={Capability Trade Councils}
 ]{ctctrade}{CTC}{Capability Trade Council}
-\newacronym{bcws}{BCWS}{Budgeted Cost of Work Scheduled}
-\newacronym{bcwp}{BCWP}{Budgeted Cost of Work Performed}
+\newacronym{bcws}{BCWS}{Budgeted Cost for Work Scheduled}
+\newacronym{bcwp}{BCWP}{Budgeted Cost for Work Performed}
 \newacronym{acwp}{ACWP}{Actual Cost of Work Performed}
 \newacronym{ada.acq}{ADA}{Acquisition Data and Analytics}
 \newacronym{cam}{CAM}{Control Account Manager}
 \newacronym{ram}{RAM}{Reliability, Availability, and Maintainability}
-\newacronym{tcpi}{TCPI}{Total Cost Performance Index}
-\newacronym{vac}{VAC}{Variance at Complete}
+\newacronym{tcpi}{TCPI}{To-Complete Performance Index}
+\newacronym{vac}{VAC}{Variance at Completion}
 
 % --- Contracting Policies & Instruments ---
 
@@ -568,6 +569,7 @@
 \newacronym{arc}{ARC}{Acquisition Research Center}
 \newacronym{wawf}{WAWF}{Wide Area Workflow}
 \newacronym{cdrl}{CDRL}{Contract Data Requirements List}
+\newacronym{did}{DID}{Data Item Description}
 \newacronym{cica}{CICA}{Competition in Contracting Act}
 \newacronym{cofc}{COFC}{Court of Federal Claims}
 \newacronym[
@@ -579,7 +581,7 @@
 	longplural={Determinations and Findings}
 ]{df}{D\&F}{Determination and Findings}
 \newacronym{lpta}{LPTA}{Lowest Price Technically Acceptable}
-\newacronym{csfr}{CSFR}{Contract Funds Status Report}
+\newacronym{cfsr}{CFSR}{Contract Funds Status Report}
 
 % --- Contract Types & Incentives ---
 

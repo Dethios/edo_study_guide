@@ -545,3 +545,19 @@ The entries in this section preserve the original imported package state. Later 
   Appropriations jurisdiction page, all checked on 2026-06-04.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied EVM/APB/PMB Source-Hygiene Cleanup
+
+- ID: `gc-20260604-evm-apb-pmb-source-hygiene`
+- Location: `tex/chapters/14_EVM.tex`, `tex/acronyms.def`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/weak_areas.md`, `docs/study_memory/weak_areas.jsonl`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: corrected EVM acronym expansions for IPMDAR, CFSR, TCPI, VAC, BCWS, and BCWP; tightened the
+  EVM chapter so metrics measure against the PMB rather than establish it; reinforced that the IBR assesses PMB
+  realism/risk and is not MDA approval of the APB; updated the current DFARS 2026-O0011 source date; and added
+  current DoD IPM and DON CEVM source grounding.
+- Source basis: official DFARS RFO Part 234 Class Deviation 2026-O0011, official DoD IPM EVM Definitions page,
+  official DoD IPM Policy and Guidance page, official DON Naval CEVM page, and local coursebook EVM modules.
+- Confidence: `High`
+- Status: `applied`
