@@ -611,6 +611,7 @@ The entries in this section preserve the original imported package state. Later 
   for debrief/protest clocks and constructive-change vs unauthorized-commitment triage.
 - Source basis: acquisition.gov FAR 15.304, FAR 15.506, FAR 33.104, FAR 1.602-1, FAR 1.602-3, acquisition.gov DFARS
   Subpart 215.5, DFARS 233.104, DoD Source Selection Procedures, NAVSEA Source Selection Guide, and NAVSEA Contracts
-  Handbook, all checked on 2026-06-04.
+  Handbook. FAR/DFARS pages and DoD Source Selection Procedures were live-checked on 2026-06-04; the NAVSEA guide and
+  handbook URLs remain official bibliography anchors but returned 403 to the command-line HEAD check on 2026-06-04.
 - Confidence: `High`
 - Status: `applied`

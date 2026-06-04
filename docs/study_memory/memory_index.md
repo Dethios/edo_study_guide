@@ -74,7 +74,9 @@ Recent applied updates:
 - CIVPERS route-choice fast-cue cleanup for Chapter 43 vs Chapter 75, probationary/trial employees, WGI caveats, and
   WG/WL/WS 15/15/19 recall.
 - Source-selection and contract-administration cue cleanup for FAR/DFARS debrief/protest clocks, rating-method
-  disclosure, KO authority, and constructive-change vs unauthorized-commitment ratification.
+  disclosure, KO authority, and constructive-change vs unauthorized-commitment ratification. FAR/DFARS and DoD procedure
+  links were live-checked on 2026-06-04; NAVSEA source-selection/contract handbook URLs returned command-line 403 and
+  remain official bibliography anchors pending manual/browser refresh.
 
 ## Next Review Plan
 
