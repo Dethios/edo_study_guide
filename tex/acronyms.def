@@ -38,7 +38,7 @@
 \newacronym{asn}{ASN}{Assistant Secretary of the Navy}
 \newacronym{dasn}{DASN}{Deputy Assistant Secretary of the Navy}
 \newacronym{asnfmc}{ASN(FM\&C)}{Assistant Secretary of the Navy (Financial Management and Comptroller)}
-\newacronym{dasnapb}{DASN (APB)}{Deputy Assistant Secretary of the Navy (Acquisition Policy and Budget)}
+\newacronym{dasnapb}{DASN (AP\&B)}{Deputy Assistant Secretary of the Navy (Acquisition Policy and Budget)}
 \newacronym{cae}{CAE}{Component Acquisition Executive}
 \newacronym{nae}{NAE}{Navy Acquisition Executive}
 \newacronym{sae}{SAE}{Service Acquisition Executive}
@@ -101,7 +101,7 @@
 \newacronym{hii}{HII}{Huntington Ingalls Industries}
 \newacronym{nassco}{NASSCO}{National Steel and Shipbuilding Company}
 \newacronym{siop}{SIOP}{Shipyard Infrastructure Optimization Program}
-\newacronym[shortplural={PMWs},longplural={Program Management Warfare Offices}]{pmw}{PMW}{Program Management Warfare (NAVWAR PEO C4I/NAVAIR PMS series)}
+\newacronym[shortplural={PMWs},longplural={Program Manager, Warfare offices}]{pmw}{PMW}{Program Manager, Warfare}
 \newacronym{surfmepp}{SURFMEPP}{Surface Maintenance Engineering Planning Program}
 \newacronym{submepp}{SUBMEPP}{Submarine Maintenance Engineering Planning Program}
 \newacronym{navseainst}{NAVSEAINST}{Naval Sea Systems Command Instruction}
