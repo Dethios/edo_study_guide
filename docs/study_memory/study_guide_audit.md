@@ -183,3 +183,20 @@ machine-readable companion record to `guide_changes.jsonl`.
   local structure/flow review of `tex/main.tex`, `17K_jcids.tex`, and `28_AWP_and_SOVT.tex`.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied Shipbuilding Current-Events Official-Source Hardening
+
+- ID: `gc-20260604-current-events-official-source-hardening`
+- Location: `tex/chapters/appendix_current_events.tex`, `tex/current_events.bib`,
+  `docs/study_memory/sources.md`
+- Verdict: `Applied`
+- Correction applied: replaced third-party-supported current-event paragraphs for Columbia-class delay, amphibious
+  block buy, and SIOP status with wording grounded in official CRS, GAO, DoW, and NAVFAC sources. Removed the unsupported
+  Columbia 60 percent complete point, replaced the amphibious nearly $1B savings claim with the CRS-supported about
+  $914M estimate, and reframed SIOP annual-escalation and maintenance-reduction point estimates as unsupported by the
+  official source set checked in this slice.
+- Source basis: CRS R41129, GAO-24-107732, DoW Contracts for Sept. 24 2024, CRS R43543, GAO-25-106728, NAVFAC PEO
+  Industrial Infrastructure SIOP, NAVFAC PSNS Dry Dock 4 seismic-upgrade release, and GAO-23-106067 records listed in
+  `sources.md`.
+- Confidence: `High`
+- Status: `applied`
