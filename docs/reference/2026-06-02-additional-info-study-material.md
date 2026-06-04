@@ -1,4 +1,4 @@
-# EDO Qualification Board Study Material: Additional Information (Marci's Notes)
+# EDO Qualification Board Study Material
 
 This study material is designed to prepare you for the EDO Qualification Board, specifically addressing the high-yield
 topics compiled in [2026-06-02-addtional-info.md](../plans/2026-06-02-addtional-info.md). It is cross-referenced with
