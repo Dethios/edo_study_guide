@@ -272,3 +272,25 @@ The entries in this section preserve the original imported package state. Later 
   sheets, DoDI 5000.98, and 10 U.S.C. 4172 records listed in `sources.md` and `tex/edo.bib`.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied Contract Pricing Threshold and Maintenance Flow Cleanup
+
+- ID: `gc-20260604-contract-pricing-maintenance-flow-cleanup`
+- Location: `tex/chapters/13C_cost-price-eval.tex`, `tex/chapters/appendix_current_events.tex`, `tex/edo.bib`,
+  `tex/chapters/23_Waterfront_Organization_Work_Control_Safety.tex`,
+  `tex/chapters/24_Battle_Damage_Assessment_Repair.tex`,
+  `tex/chapters/25_CNO_Availability_Planning.tex`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: updated the certified cost/pricing data threshold cue from legacy `$2M` coursebook-only
+  wording to the current DoD Part 215 deviation: `$2.5M` for prime contracts awarded on or before 2026-06-30
+  and `$10M` for prime contracts awarded after 2026-06-30, unless a FAR/DFARS exception applies or an on-or-before
+  2026-06-30 contract states a different threshold. Clarified the DCAA audit-assistance cue versus broader
+  field-pricing support cues and aligned the current-events threshold-change cue to the same source. Added the official
+  Part 215 class-deviation source to `tex/edo.bib` and `sources.md`. Moved maintenance coursebook-cue content in
+  Chapters 23, 24, and 25 before the standalone acronym glossary blocks so standalone builds keep study content before
+  backmatter.
+- Source basis: DoD RFO Class Deviation Part 15 / DFARS Part 215, DARS Tracking Number 2026-O0048, signed
+  2026-03-05 and effective 2026-03-16, and local TeX structure review of Chapters 23-25.
+- Confidence: `High`
+- Status: `applied`

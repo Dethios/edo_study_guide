@@ -78,14 +78,6 @@
   \item Minimum work requirements are a valid \ac{twd} and authorization; double-barrier conditions follow \ac{tum} guidance~\autocite{edo-4-1-5-waterfront-work-control-2025}.
 \end{itemize}
 
-\IfSubfilesClassLoaded{
-  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
-  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
-  \printnoidxglossary[
-    type=\acronymtype,
-    title=Acronyms,
-    style=long-booktabs
-  ]}{}
 \subsection{Coursebook cue: RPCO and Deep Submergence Systems}
 
 The RPCO is a Naval Nuclear Laboratory waterfront presence that oversees
@@ -102,5 +94,14 @@ noncombatant submersibles, submarine-oriented diving systems, and man-rated
 portions of handling systems.  The board cue is that DSS is a certification and
 safety-assurance regime, not a generic diving label
 \autocite{edo-4-1-5-waterfront-work-control-2025}.
+
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
 
 \end{document}

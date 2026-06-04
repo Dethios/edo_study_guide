@@ -130,6 +130,12 @@ final.
 | SecWar Joint Requirements Reform Memo                    | policy          | `tex/assets/reference-docs/WAS/Reforming the Joint Requirements Process to Accelerate Fielding of Warfighting Capabilities OSD012762-25 FOD FINAL.pdf` | 2025-11-07      | 2026-06-04   | Local official-memo mirror used for Key Operational Problems, RRAB, and Joint Acceleration Reserve context.                                      |
 | Project Overmatch Five Eyes Project Arrangement          | policy          | `https://www.dvidshub.net/news/514959/project-overmatch-signs-first-five-eyes-project-arrangement`                             | 2025-11-13      | 2026-06-04   | Source basis for Capt. Remil Capili as PM, VADM Seiko Okano as PMILDEP/steering chair, and coalition-lab/Five Eyes Overmatch governance.        |
 
+## Contracting / FAR / DFARS / Pricing
+
+| Title                                                    | Authority Level | URL Or Path                                                                                                                   | Version Or Date | Date Checked | Notes                                                                                                                                            |
+| -------------------------------------------------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------- | --------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DoD RFO Class Deviation Part 15 / DFARS Part 215         | policy          | `https://www.acq.osd.mil/dpap/dars/classdev/DFARS_RFO/Part-215/2026-O0048_TAB_A_Deviation_Memo_Part_215.pdf`                  | 2026-O0048, signed 2026-03-05 / effective 2026-03-16 | 2026-06-04 | Source basis for certified cost/pricing data thresholds: \$2.5M on/before 2026-06-30 and \$10M after 2026-06-30; field-pricing and audit-assistance cues. |
+
 ### 2026-05-31 CIVPERS Verification Additions
 
 | Title                                                    | Authority Level | URL Or Path                                                                                                                                                                                           | Version Or Date              | Date Checked | Notes                                                                                                                                |
