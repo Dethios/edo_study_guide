@@ -51,7 +51,10 @@
 \newacronym{pmildep}{PMILDEP}{Principal Military Deputy}
 \newacronym{was}{WAS}{Warfighting Acquisition System}
 \newacronym{mosa}{MOSA}{Modular Open Systems Approach}
-\newacronym{ota}{OTA}{Other Transaction Authority}
+\newacronym[
+  shortplural={OTAs},
+  longplural={Other Transaction Authorities}
+]{ota}{OTA}{Other Transaction Authority}
 \newacronym{cso}{CSO}{Commercial Solutions Opening}
 \newacronym{nscf}{NSCF}{National Security Capital Forum}
 \newacronym{nss}{NSS}{National Security Strategy}
