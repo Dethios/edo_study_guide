@@ -8,6 +8,9 @@ machine-readable companion record to `guide_changes.jsonl`.
 
 ## Imported From May 30 Package
 
+The entries in this section preserve the original imported package state. Later applied closeout entries in
+`Active Session Findings` supersede any `proposed` status here when they reference the same topic or ID.
+
 ### 2026-05-30 - NAVWAR / PEO C4I Products
 
 - ID: `gc-20260530-navwar-c4i-products`
@@ -247,5 +250,25 @@ machine-readable companion record to `guide_changes.jsonl`.
   `closes_id` links so parsers do not see duplicate machine keys.
 - Source basis: read-only cross-chapter consistency review, read-only source-integrity review, local file inspection, and
   the official NAVSEA TS9090-310G public PDF for SOVT expansion.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-04 - Applied Current-Events, JFRP, LFT&E, and NAVWAR Source-Grounding Cleanup
+
+- ID: `gc-20260604-current-events-jfrp-lfte-navwar-source-cleanup`
+- Location: `tex/chapters/appendix_current_events.tex`, `tex/chapters/18B_test-eval.tex`,
+  `tex/chapters/4_NAVWAR.tex`, `docs/study_memory/memory_index.md`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`
+- Verdict: `Applied`
+- Correction applied: clarified that Capability Portfolio Management, Capability Trade Councils, and portfolio
+  scorecards are DoW/DON acquisition-portfolio reform mechanisms, while the Joint Staff requirements-process
+  replacement for legacy JCIDS is JFRP; corrected the Project Overmatch leadership cue so Capt. Remil Capili remains
+  the PM cue and VADM Seiko Okano is PMILDEP/steering chair; moved LFT&E subsection citations from DoDI 5000.89 to
+  Title 10 section 4172 plus DoDI 5000.98; removed unsupported NAVWAR quantitative SLOC-growth and DevSecOps
+  transformation claims; refreshed `memory_index.md` to the June 4 audit state; and added current source-inventory
+  rows for the acquisition/JFRP distinction and Project Overmatch cue.
+- Source basis: CJCSM 5123.01 JFRP source, Acquisition Transformation Strategy, SecWar Joint Requirements Reform memo
+  local official-memo mirror, Project Overmatch Five Eyes Project Arrangement public release, PMW 120/160 official tear
+  sheets, DoDI 5000.98, and 10 U.S.C. 4172 records listed in `sources.md` and `tex/edo.bib`.
 - Confidence: `High`
 - Status: `applied`

@@ -1,66 +1,70 @@
 # EDO Study Memory Index
 
-Current as of 2026-05-31.
+Current as of 2026-06-04.
 
 ## Latest Session
 
-- Session: `2026-05-31-apa-milestone-c-q16`
-- Date: 2026-05-31
-- Mode: active board drill with memory update.
-- Latest graded answers: KPP/KSA/APA hierarchy and APA missed-in-test consequence at Milestone C.
-- Result: KPP/KSA/APB basics are improving; APA definition and mandatory performance-attribute recall remain active, and
-  Milestone C should be stated as entry into Production and Deployment/LRIP or limited deployment rather than final
-  production approval.
+- Session: `2026-06-04-end-to-end-study-guide-audit`
+- Date: 2026-06-04
+- Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
+- Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
+  fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
+  standalone chapter flow, and study-memory weak-area state.
+- Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
+  source/currentness checks and keep study-memory records aligned after each applied correction.
 
 ## Current Priorities
 
-- Continue current drill: mandatory performance-attribute areas for a shipboard C4I system entering Milestone B.
-- Drill post-CDR change control on spaced review: CCB/ECP, cost/schedule/interface/test/logistics/risk impact analysis.
-- Tighten KPP/KSA/APA language: APA is below KPP/KSA criticality but still measurable, testable, documented, and
-  relevant to milestone risk.
-- Tighten SE baseline language: baselines are controlled technical definitions, not the review event or test result.
-- Continue spaced review for APB vs PMB, especially IBR role and control-account/work-package terminology.
-- Continue spaced review for PPBE POM/BES, especially avoiding "POM proves funding" and "BES is allocated budget."
-- Continue CIVPERS Chapter 43 vs Chapter 75 route-selection tradeoff.
-- Drill PEO C4I, PEO IWS, and PEO MLB product-to-office recall.
-- Verify current org structures, billets, program managers, ACAT status, and policy/law against live official sources
-  before treating details as current.
+- Continue the end-to-end guide audit across remaining chapters and appendices, using official/current sources for
+  time-sensitive facts.
+- Keep the one-question board-drill cadence when study flow resumes; do not let background maintenance interrupt the
+  active drill.
+- Preserve spaced review for SE baselines, C4I product-to-office recall, DCGS-N, PMW 790/DJC2, resource sponsor mapping,
+  CIVPERS removal paths, WG/WL/WS distinctions, and source-version-sensitive EDO flag billets.
+- Before adding or changing current org, billet, program-manager, ACAT, policy, law, budget, or threshold details,
+  verify against live official or primary sources and record the source basis.
 
 ## Active Weak Areas
 
 - Systems engineering - SE review baselines: active, medium severity.
-- JCIDS and requirements - KPP/KSA/APA hierarchy and required performance attributes: active/improving, medium severity.
-- CIVPERS - Chapter 43 vs Chapter 75 removal paths: active/improving, medium severity.
-- NAVWAR / PEO C4I - PEO C4I program office products: active, high severity.
-- Current EDO organization - current EDO flags and billets: active, high severity and source-version sensitive.
+- NAVWAR / PEO C4I - PEO C4I program office products: active, medium severity.
+- NAVWAR / PEO C4I - DCGS-N acronym and product identity: active, medium severity.
+- NAVWAR / PEO C4I - PMW 790 product: active, medium severity.
+- OPNAV organization - resource sponsor mapping: active, medium severity.
+- CIVPERS - Chapter 43 vs Chapter 75 removal paths: active, medium severity.
+- Current EDO organization - current EDO flags and billets: active, medium severity and source-version sensitive.
 - NAVWAR / PEO C4I - CANES vs ADNS vs MIDS/Link 16: improving, medium severity.
-- Program baselines - APB vs PMB: improving, low severity.
-- PPBE - POM/BES decision documents: improving, low severity.
-- Program baselines - APB vs PMB, SE review baselines, required performance attributes, IWS 6.0 vs PMW 150, DCGS-N, PMW
-  790/DJC2, OPNAV resource sponsor mapping, and WG/WL/WS distinctions remain on spaced review.
+- Program baselines - APB vs PMB, PPBE POM/BES, required KPPs, and IWS 6.0 vs PMW 150 remain improving/low severity
+  but should stay on spaced review.
 
 See `weak_areas.md` for the readable tracker and `weak_areas.jsonl` for append-only records.
 
 ## Open Study-Guide Updates
 
-The imported May 30 package reports completed parent-session updates in NAVWAR, NAVSEA, CIVPERS, acronyms, bibliography,
-and changelog files. These remain imported as `proposed` guide-change records until the current checkout is verified
-directly.
+The original May 30 imported records are preserved as historical `proposed` entries in `study_guide_audit.md` and
+`guide_changes.jsonl`. June 4 closeout records supersede the NAVWAR/C4I, IWS 6.0 vs PMW 150, acronym, CIVPERS,
+current-organization, fleet-maintenance, current-events, strategy-baseline, flow, and source-integrity items that have
+since been verified and applied.
 
-Applied update:
+Recent applied updates:
 
-- CIVPERS Chapter 43 / Chapter 75 clarification in `tex/chapters/27_CIVPERS.tex`, recorded in `study_guide_audit.md` and
-  `guide_changes.jsonl`.
-
-No LaTeX update was warranted from the APB/PMB, SE-baseline, or KPP/KSA/APA drills because the current guide already
-separates the relevant concepts and the observed misses were recall/framing issues rather than confirmed guide defects.
+- Current organization / fleet-maintenance source drift closeout across Chapter 1, PAE mapping, EDO flags, RMC/JFMM
+  material, and the June 2 reference study material.
+- Strategy-baseline and flow cleanup for the 2025 NSS / 2026 NDS baseline, JCIDS/JFRP caveats, and AWP/SOVT structure.
+- Current-events official-source hardening for Columbia-class delays, amphibious block buy, and SIOP status.
+- Flow, study-memory, and PAE chart closeout, including the Q18 Net-Ready question-bank entry.
+- Standalone chapter flow cleanup for CIVPERS, NAVWAR FRD, Milestones, and AWP/SOVT.
+- Consistency/source-integrity cleanup for SOVT expansion, DASD(T\&E), and stale audit paths.
 
 ## Next Review Plan
 
-- Continue current drill: mandatory performance-attribute areas for shipboard C4I at Milestone B.
-- Grade responses as Strong, Adequate, Incomplete, or Incorrect.
-- Update `learning_log.jsonl`, `weak_areas.jsonl`, and this index after substantive graded answers.
-- Validate memory files with `make check-study-memory` when shell/tooling permits.
+- Continue the next audit slice with current-fact and source-grounding checks before marking the broader guide audit
+  complete.
+- When returning to drills, ask exactly one board-style question and grade the answer before asking the next one.
+- Update `learning_log.jsonl`, `weak_areas.jsonl`, `study_guide_audit.md`, `guide_changes.jsonl`, and this index after
+  substantive graded answers or applied guide corrections.
+- Validate with `make check-study-memory`, `make check-acronyms`, `make check-tex-structure`, `git diff --check`, and a
+  Docker PDF build after substantive LaTeX edits.
 
 ## Memory Files
 
