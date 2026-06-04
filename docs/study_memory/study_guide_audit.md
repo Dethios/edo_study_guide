@@ -469,3 +469,22 @@ The entries in this section preserve the original imported package state. Later 
   and study-memory consistency review.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied EDO Flag Billet Source-Hygiene Cleanup
+
+- ID: `gc-20260604-edo-flag-billet-source-hygiene`
+- Location: `tex/chapters/1_Chain_of_command.tex`, `tex/chapters/appendix_edo_flags.tex`,
+  `docs/study_memory/sources.md`, `docs/study_memory/weak_areas.md`, `docs/study_memory/weak_areas.jsonl`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: removed an empty list item from the acquisition-governance selected-billets cue; reduced reliance on
+  stale individual Navy biography citations by using the June~2026 public flag roster as the grade/billet authority;
+  aligned RADM Casey Moton and RDML Brian Metcalf wording with the live PAE Maritime deputy-PAE lanes; and updated the
+  weak-area summary to show the remaining issue as memorization/rapid recall rather than unresolved source drift.
+- Source basis: June~2026 public flag-roster record already in the guide, live PAE Maritime homepage checked on
+  2026-06-04, local consistency-scout findings, and main-thread source-access checks. MyNavyHR, SSP, NAVSEA, and Navy.mil
+  command-line retrieval returned `403` during this pass, so their previously recorded 2026-06-04 currentness records were
+  not advanced beyond the existing source-ledger state.
+- Confidence: `High` for local consistency and PAE Maritime wording; `Medium` for external currentness beyond the existing
+  June~2026 roster record because several official pages were inaccessible to command-line retrieval during this pass.
+- Status: `applied`

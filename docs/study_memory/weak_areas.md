@@ -116,8 +116,8 @@ Current as of 2026-06-04.
 ### Current EDO organization - Current EDO flags and billets
 
 - ID: `wa-20260530-edo-flags`
-- Evidence: Package weak-area table listed current org recall misses.
-- Miss type: `source_version`
+- Evidence: June 4 guide maintenance corrected source-version drift for current EDO flag ranks/billets; keep active for memorization and rapid board recall.
+- Miss type: `factual_recall`
 - Severity: `medium`
 - Next review: 2026-06-06
 - Status: `active`

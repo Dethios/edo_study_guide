@@ -12,7 +12,7 @@ Current as of 2026-06-04.
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization
   currentness, NAVSEA non-EDO leader/source-ledger cleanup, standalone chapter flow, appendix standalone
   titles/glossaries, structure-guard coverage, PAE chart connector routing and clearance follow-up,
-  SE technical-review baseline cleanup, CIVPERS source-fidelity cleanup, and study-memory/source-ledger state.
+  SE technical-review baseline cleanup, EDO flag/billet source hygiene, CIVPERS source-fidelity cleanup, and study-memory/source-ledger state.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -60,6 +60,7 @@ Recent applied updates:
 - Consistency/source-integrity cleanup for SOVT expansion, DASD(T\&E), and stale audit paths.
 - CIVPERS source-fidelity cleanup for Chapter 43/75, DPMAP, WGI/QSI, FLSA, and standalone chapter titles.
 - Systems-engineering review/baseline cleanup for the SRR/SFR trap and SFR/PDR/CDR baseline mapping.
+- EDO flag/billet source-hygiene cleanup for PAE Maritime deputy lanes, stale bio citations, and weak-area state.
 
 ## Next Review Plan
 
