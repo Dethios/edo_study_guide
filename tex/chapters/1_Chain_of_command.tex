@@ -134,7 +134,7 @@ Current as of 2026-06-04, Mr.\ William F.\ Mahan is performing the duties of \ac
     \node[deputy node, below=1.0cm of asn, xshift=-3.25cm] (pcd) {Principal Civilian Deputy\\ \textbf{Jason L.\ Potter}};
     \node[deputy node, below=1.0cm of asn, xshift=3.25cm] (pmd) {\ac{pmildep}\\ \textbf{\ac{vadm} Seiko Okano}};
 
-    \node[pae node, below=4.1cm of asn] (missions) {PAE Mission Systems};
+    \node[pae node, below=4.45cm of asn] (missions) {PAE Mission Systems};
     \node[pae node, left=of missions] (aviation) {PAE Aviation};
     \node[pae node, right=of missions] (munitions) {PAE Munitions};
 
@@ -157,14 +157,14 @@ Current as of 2026-06-04, Mr.\ William F.\ Mahan is performing the duties of \ac
     \coordinate (pmdLane) at ($(pmd.north)+(0,0.42cm)$);
     \coordinate (pcdIn) at (pcd.north);
     \coordinate (pmdIn) at (pmd.north);
-    \coordinate (paeBusY) at ($(missions.north)+(0,1.08cm)$);
+    \coordinate (paeBusY) at ($(missions.north)+(0,1.18cm)$);
     \coordinate (paeBranchLeft) at (aviation.north |- paeBusY);
     \coordinate (paeBranchCenter) at (missions.north |- paeBusY);
     \coordinate (paeBranchRight) at (munitions.north |- paeBusY);
     \coordinate (aviationIn) at (aviation.north);
     \coordinate (missionsIn) at (missions.north);
     \coordinate (munitionsIn) at (munitions.north);
-    \coordinate (asnPortfolioDrop) at ($(asn.south)+(0,-0.55cm)$);
+    \coordinate (asnPortfolioDrop) at ($(asn.south)+(0,-0.72cm)$);
     \coordinate (asnPortfolioStem) at (asn.south |- paeBranchCenter);
     \coordinate (supportBusTop) at ($(aviation.west)+(-1.35cm,0)$);
     \coordinate (supportBusMid) at (supportBusTop |- industrial.west);

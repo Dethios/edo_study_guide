@@ -83,6 +83,8 @@ Recent applied updates:
 - T&E role/acronym hygiene cleanup after validation: replaced stale DASD(T&E) cues with USW(R&E) / DTE&A wording
   grounded in DoDI 5000.89 and the current ASW(MC) public organization page, removed acronym macros from longtblr
   cells, and normalized the ship-trial board-cue caption.
+- Shipyard source-grounding and PAE chart-spacing cleanup for direct NAVSEA support to public shipyard role bullets,
+  new shipyard source-ledger entries, and Figure 1.4 connector clearance in the rebuilt PDF.
 
 ## Next Review Plan
 

@@ -654,3 +654,19 @@ The entries in this section preserve the original imported package state. Later 
   public organization page for the DTE&A current-organization label.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied Shipyard Source-Grounding and PAE Chart-Spacing Cleanup
+
+- ID: `gc-20260604-shipyard-source-grounding-pae-chart-spacing`
+- Location: `tex/chapters/19_Fleet_Maintenance_Assets.tex`, `tex/chapters/1_Chain_of_command.tex`,
+  `tex/edo.bib`, `docs/study_memory/sources.md`, `artifacts/out/main.pdf`
+- Verdict: `Applied`
+- Correction applied: replaced coursebook-only public-shipyard specialization bullets with direct NAVSEA source
+  grounding for PNSY, NNSY, PSNS & IMF, and PHNSY & IMF; added NAVSEA source-inventory and bibliography entries
+  for the public shipyard enterprise, PSNS & IMF, PSNS history, and PHNSY & IMF; and adjusted the ASN(RD&A)/PAE
+  TikZ coordinates so Figure 1.4 keeps the PAE connector bus above the PAE boxes after PDF rebuild.
+- Source basis: official NAVSEA Shipyards/SIOP page, NAVSEA Portsmouth Naval Shipyard About Us, NAVSEA PSNS & IMF
+  home page, NAVSEA PSNS & IMF History, NAVSEA PHNSY & IMF home page, and rendered `artifacts/out/main.pdf`
+  inspection.
+- Confidence: `High`
+- Status: `applied`
