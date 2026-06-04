@@ -21,11 +21,5 @@ approval_policy = "never"
   nickname_candidates = ["guide-maintainer", "study-guide-patcher"]
   config_file = "agents/edo_study_guide_maintainer.toml"
 
-[projects."/home/vic-l"]
-  trust_level = "trusted"
-
-[projects."/home/vic-l/dev-workspace"]
-  trust_level = "trusted"
-
 [sandbox_workspace_write]
   network_access = true

@@ -15,7 +15,7 @@ These are notes for items that I should know for the qual board. Marci plans on 
 
 ### Technical Authority
 
-- Be able to discuss technical authority
+markdown.extension.syntax.plainTheme- Be able to discuss technical authority
 - Be able to walk through the tech authority chain for problem resolution for major repairs
 
 ### AIT and Installs
