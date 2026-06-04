@@ -81,4 +81,12 @@ Control & What controls prevent regression after the event ends? \\
 Do not answer CPI as a slogan.  Name the method, state the constraint or waste,
 show the metric, and explain how the control plan prevents backsliding.
 
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
 \end{document}

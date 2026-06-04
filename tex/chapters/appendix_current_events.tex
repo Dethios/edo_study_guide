@@ -7,7 +7,6 @@
 % =============================================================================
 
 \begin{document}
-\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 
 \chapter{Current Events}\label{app:current-events-snapshot}
 \section{Current Events Relevant to EDOs and Acquisition}
@@ -66,5 +65,12 @@ The Shipyard Infrastructure Optimization Program (\ac{siop}) remains the Navy's 
 \subsection{West Coast and Pacific Shipyard Development}
 West Coast and Pacific infrastructure are now explicit current-event examples of the Foundry/industrial-base story. At Puget Sound Naval Shipyard \& Intermediate Maintenance Facility, a new 25-ton portal crane arrived in July~2025 as part of a \$67M contract for four cranes supporting maintenance, repair, modernization, and retirement of U.S. naval vessels~\autocite{NAVSEA-PSNS-Cranes-2025}. In Hawaii, the future Pearl Harbor Dry Dock~5 remains a major \ac{siop} effort to modernize nuclear-powered submarine maintenance capacity for the Pacific Fleet~\autocite{NAVFAC-PHNSY-DryDock5-CNO-2025,NAVFAC-PHNSY-DryDock5-2023}. In Guam, NAVFAC Pacific awarded a combined \$15B design-build multiple-award construction contract in Sept~2025 for Guam and other Pacific projects; the official release ties the award to resilient, modern, strategically important facilities supporting operational readiness and regional stability~\autocite{NAVFAC-Pacific-Guam-DBMACC-2025}. Board answer: shipyard development is no longer only a facilities topic; it is a naval-operations enabler tied to Indo-Pacific posture, \ac{pae} Industrial Operations, and \ac{nds} industrial-base priorities~\autocite{NDS-2026,DON-PAE-Establishment-2026}.
 
-\IfSubfilesClassLoaded{}{}
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
 \end{document}

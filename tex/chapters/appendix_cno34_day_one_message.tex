@@ -8,7 +8,6 @@
 % =============================================================================
 
 \begin{document}
-\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 
 \chapter{CNO Strategic Messaging}\label{ch:cno-strat}
 \section{CNO 34 Day One Message (Foundry--Fleet--Fight)}\label{app:cno34-day-one-message}
@@ -404,4 +403,12 @@ NNNN
 CLASSIFICATION: UNCLASSIFIED/
 \end{verbatim}
 \end{quote}
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
 \end{document}

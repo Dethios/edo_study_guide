@@ -10,7 +10,8 @@ Current as of 2026-06-04.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization
-  currentness, standalone chapter flow, and study-memory/source-ledger state.
+  currentness, standalone chapter flow, appendix standalone titles/glossaries, structure-guard coverage, PAE chart
+  connector routing, and study-memory/source-ledger state.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 

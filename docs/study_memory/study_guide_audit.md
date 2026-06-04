@@ -367,3 +367,39 @@ The entries in this section preserve the original imported package state. Later 
   local study-memory inspection, and the official NAVSEA TS9090-310G public PDF.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied Standalone Appendix Title, Glossary, and Guard Cleanup
+
+- ID: `gc-20260604-standalone-title-glossary-guard-cleanup`
+- Location: `tex/chapters/appendix_plat_card.tex`, `tex/chapters/appendix_key_roles.tex`,
+  `tex/chapters/appendix_pae_construct_mapping.tex`, `tex/chapters/appendix_combatant_commands.tex`,
+  `tex/chapters/appendix_edo_billet_summary.tex`, `tex/chapters/appendix_edo_flags.tex`,
+  `tex/chapters/appendix_cno34_day_one_message.tex`, `tex/chapters/appendix_current_events.tex`,
+  `tex/chapters/15_policy.tex`, `tex/chapters/17N_Continuous_Process_Improvement.tex`,
+  `scripts/check-tex-structure.sh`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: removed generic standalone `EDO Study Guide` appendix titles where an appendix file already
+  has its own chapter title, converted section-only appendix standalone headings to topic-specific conditional chapter
+  titles, added standalone acronym glossary blocks to acronym-using files that lacked them, restored the missing
+  `\end{document}` in `15_policy.tex`, and expanded `check-tex-structure.sh` to fail on missing standalone glossaries,
+  substantive content after standalone glossary blocks, and generic appendix standalone titles.
+- Source basis: read-only standalone-flow scout, main-thread TeX structure inspection, local direct scans, and
+  `make check-tex-structure` with the new guard coverage.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-04 - Applied PAE Chart Connector Routing Cleanup
+
+- ID: `gc-20260604-pae-chart-connector-routing-cleanup`
+- Location: `tex/chapters/1_Chain_of_command.tex`, `artifacts/out/main.pdf`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: moved Figure 1.4 portfolio connector buses into explicit TikZ routing lanes above the PAE node
+  row and increased arrow endpoint shortening so connector lines terminate outside the node borders instead of
+  visually overlapping boxes.
+- Source basis: user-reported rendered-PDF defect, main-thread TikZ source inspection, full Docker PDF rebuild, and
+  rendered page-image verification of Figure 1.4.
+- Confidence: `High`
+- Status: `applied`
