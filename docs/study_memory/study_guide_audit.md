@@ -1,6 +1,6 @@
 # Study Guide Audit Log
 
-Current as of 2026-05-30.
+Current as of 2026-06-04.
 
 This file records readable correction and audit entries for study-guide claims,
 answer keys, outdated material, and doctrine-sensitive updates. Append the
@@ -95,5 +95,44 @@ machine-readable companion record to `guide_changes.jsonl`.
 - Source basis: 5 U.S.C. 4303, 5 U.S.C. 7513, 5 U.S.C. 7701, 5 CFR parts 432 and 752, OPM/MSPB comparison material, DoDI
   1400.25 Volume 431, and the September 30, 2025 Under Secretary of War Personnel and Readiness memo listed in
   `sources.md`.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-04 - Applied NAVWAR / PEO C4I Product Closeout
+
+- ID: `gc-20260530-navwar-c4i-products`
+- Location: `tex/chapters/4_NAVWAR.tex`, `tex/acronyms.def`, `tex/edo.bib`, `docs/study_memory/sources.md`
+- Verdict: `Applied`
+- Correction applied: verified the PMA/PMW 101, PMW 120, PMW 150, PMW 160, PMW/A 170, PMW 790, PEO Digital, and PEO MLB
+  current-source mappings in the checkout; aligned the PEO C4I overview sentence to the current eleven-office public
+  structure, including PMA/PMW 101; and retained board cues that distinguish program offices, products, and status cues.
+- Source basis: PEO C4I Program Offices page, PMW 120/150/160/170/790 tear sheets, PMA/PMW 101 MIDS tear sheet, PEO MLB
+  Portfolio Book, PEO Digital Portfolio Overview, and NAVAIR PMA/PMW 101 and PMW/A 170 pages listed in `sources.md`.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-04 - Applied NAVSEA IWS 6.0 vs PMW 150 Clarification
+
+- ID: `gc-20260530-iws6-pmw150`
+- Location: `tex/chapters/3_NAVSEA.tex`, `tex/chapters/4_NAVWAR.tex`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`
+- Verdict: `Applied`
+- Correction applied: retained IWS 6.0 as the combat-system command-and-control and CEC/sensor-netting lane; added a PMW
+  150 board cue for GCCS-M, MTC2, C2P, Link 16 Network, and LMMT; and clarified that PMA/PMW 101 remains the MIDS/Link 16
+  terminal and waveform lane.
+- Source basis: NAVSEA About PEO IWS, NAVSEA PEO IWS Industry Engagement, NAVSEA Cooperative Engagement Capability
+  article, PEO C4I Program Offices page, PMW 150 FY26 tear sheet, and PMA/PMW 101 MIDS tear sheet listed in `sources.md`.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-04 - Applied Acronym Additions Closeout
+
+- ID: `gc-20260530-acronyms`
+- Location: `tex/acronyms.def`, `tex/chapters/4_NAVWAR.tex`, `tex/chapters/8_Civilian_Personnel.tex`
+- Verdict: `Applied`
+- Correction applied: verified definitions and guide usage for ADNS, DCGS-N, DJC2, LNS, ISNS, WL, and WS. The NAVWAR
+  chapter uses the NAVWAR/C4I acronyms and the Civilian Personnel chapter uses WL/WS; `make check-acronyms` passes.
+- Source basis: local acronym-definition verification plus the NAVWAR, PEO C4I, and civilian-personnel source records
+  listed in `sources.md`.
 - Confidence: `High`
 - Status: `applied`
