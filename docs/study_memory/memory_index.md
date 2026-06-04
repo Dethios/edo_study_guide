@@ -92,6 +92,8 @@ Recent applied updates:
   Andrew Biehn remains a PAE Maritime / NAVSEA 21 awareness cue, not an EDO flag-roster entry.
 - Small-business and SBIR/STTR currentness cleanup for NAICS-specific SBA size standards, FAR 19.102/19.502-2
   set-aside cues, 15 U.S.C. 638 SBIR/STTR allocation percentages, and SBIR.gov phase/award-range caveats.
+- PAE chart endpoint-clearance follow-up for Figure 1.4: connector arrows now terminate in whitespace outside node
+  borders and the PAE group border has more spacing in the rebuilt PDF.
 
 ## Next Review Plan
 

@@ -671,6 +671,20 @@ The entries in this section preserve the original imported package state. Later 
 - Confidence: `High`
 - Status: `applied`
 
+### 2026-06-04 - Applied PAE Chart Endpoint Clearance Follow-up
+
+- ID: `gc-20260604-pae-chart-endpoint-clearance`
+- Location: `tex/chapters/1_Chain_of_command.tex`, `artifacts/out/main.pdf`
+- Verdict: `Applied`
+- Correction applied: moved Figure 1.4 deputy, top-row PAE, and SYSCOM-support connector endpoints to explicit
+  whitespace just outside the node borders; reduced clear-line endpoint shortening; and increased the PAE group
+  border spacing so connector arrows and dashed support lines no longer visually overlap PAE boxes in the rendered
+  PDF.
+- Source basis: user-reported rendered-PDF defect, TikZ source inspection, Docker PDF rebuild, and rendered page-image
+  verification of Figure 1.4.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-04 - Applied Fleet-Maintenance Statute and Policy Currentness Cleanup
 
 - ID: `gc-20260604-fleet-maintenance-statute-policy-currentness`

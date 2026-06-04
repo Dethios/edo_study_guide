@@ -116,14 +116,14 @@ Current as of 2026-06-04, Mr.\ William F.\ Mahan is performing the duties of \ac
     asn node/.style={rectangle, draw, fill=Gold!40, text width=14em, align=center, minimum height=4.2em},
     deputy node/.style={rectangle, draw, fill=Green!25, text width=11em, align=center, minimum height=3.6em},
     pae node/.style={rectangle, draw, fill=Blue!18, text width=10.5em, align=center, minimum height=3.2em},
-    pae group/.style={rectangle, draw=SteelGray, densely dashed, rounded corners, inner sep=0.35cm},
+    pae group/.style={rectangle, draw=SteelGray, densely dashed, rounded corners, inner sep=0.50cm},
     support node/.style={rectangle, draw, dashed, fill=SteelGray!10, text width=16em, align=center, minimum height=4.0em},
     line/.style={draw, -{Stealth[length=2mm]}, shorten >=6pt, shorten <=2pt, rounded corners=2pt},
     bus line/.style={draw, shorten >=2pt, shorten <=2pt, rounded corners=2pt},
     support bus/.style={draw, dashed, shorten >=2pt, shorten <=2pt, rounded corners=2pt},
     support line/.style={draw, dashed, -{Stealth[length=2mm]}, shorten >=4pt, shorten <=2pt, rounded corners=2pt},
-    clear line/.style={draw, -{Stealth[length=2mm]}, shorten >=6pt, shorten <=2pt, rounded corners=2pt},
-    clear support line/.style={draw, dashed, -{Stealth[length=2mm]}, shorten >=6pt, shorten <=2pt, rounded corners=2pt}
+    clear line/.style={draw, -{Stealth[length=2mm]}, shorten >=1pt, shorten <=1pt, rounded corners=2pt},
+    clear support line/.style={draw, dashed, -{Stealth[length=2mm]}, shorten >=1pt, shorten <=1pt, rounded corners=2pt}
     ]
 
     \node[top node] (secnav) {\ac{secnav}};
@@ -155,23 +155,23 @@ Current as of 2026-06-04, Mr.\ William F.\ Mahan is performing the duties of \ac
     % Route connector buses in open lanes so no line crosses a node interior.
     \coordinate (pcdLane) at ($(pcd.north)+(0,0.42cm)$);
     \coordinate (pmdLane) at ($(pmd.north)+(0,0.42cm)$);
-    \coordinate (pcdIn) at (pcd.north);
-    \coordinate (pmdIn) at (pmd.north);
+    \coordinate (pcdIn) at ($(pcd.north)+(0,0.14cm)$);
+    \coordinate (pmdIn) at ($(pmd.north)+(0,0.14cm)$);
     \coordinate (paeBusY) at ($(missions.north)+(0,1.18cm)$);
     \coordinate (paeBranchLeft) at (aviation.north |- paeBusY);
     \coordinate (paeBranchCenter) at (missions.north |- paeBusY);
     \coordinate (paeBranchRight) at (munitions.north |- paeBusY);
-    \coordinate (aviationIn) at (aviation.north);
-    \coordinate (missionsIn) at (missions.north);
-    \coordinate (munitionsIn) at (munitions.north);
+    \coordinate (aviationIn) at ($(aviation.north)+(0,0.14cm)$);
+    \coordinate (missionsIn) at ($(missions.north)+(0,0.14cm)$);
+    \coordinate (munitionsIn) at ($(munitions.north)+(0,0.14cm)$);
     \coordinate (asnPortfolioDrop) at ($(asn.south)+(0,-0.72cm)$);
     \coordinate (asnPortfolioStem) at (asn.south |- paeBranchCenter);
     \coordinate (supportBusTop) at ($(aviation.west)+(-1.35cm,0)$);
     \coordinate (supportBusMid) at (supportBusTop |- industrial.west);
     \coordinate (supportBusBottom) at (supportBusTop |- ssp.west);
-    \coordinate (aviationSupportIn) at (aviation.west);
-    \coordinate (industrialSupportIn) at (industrial.west);
-    \coordinate (sspSupportIn) at (ssp.west);
+    \coordinate (aviationSupportIn) at ($(aviation.west)+(-0.14cm,0)$);
+    \coordinate (industrialSupportIn) at ($(industrial.west)+(-0.14cm,0)$);
+    \coordinate (sspSupportIn) at ($(ssp.west)+(-0.14cm,0)$);
 
     \begin{scope}[on background layer]
       \node[pae group, fit=(aviation)(missions)(munitions)(industrial)(maritime)(undersea)(ssp)(ras)(marine)] (paeGroup) {};
