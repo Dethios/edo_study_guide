@@ -103,7 +103,8 @@ The entries in this section preserve the original imported package state. Later 
 
 ### 2026-06-04 - Applied NAVWAR / PEO C4I Product Closeout
 
-- ID: `gc-20260530-navwar-c4i-products`
+- ID: `gc-20260604-navwar-c4i-products-closeout`
+- Closes ID: `gc-20260530-navwar-c4i-products`
 - Location: `tex/chapters/4_NAVWAR.tex`, `tex/acronyms.def`, `tex/edo.bib`, `docs/study_memory/sources.md`
 - Verdict: `Applied`
 - Correction applied: verified the PMA/PMW 101, PMW 120, PMW 150, PMW 160, PMW/A 170, PMW 790, PEO Digital, and PEO MLB
@@ -116,7 +117,8 @@ The entries in this section preserve the original imported package state. Later 
 
 ### 2026-06-04 - Applied NAVSEA IWS 6.0 vs PMW 150 Clarification
 
-- ID: `gc-20260530-iws6-pmw150`
+- ID: `gc-20260604-iws6-pmw150-closeout`
+- Closes ID: `gc-20260530-iws6-pmw150`
 - Location: `tex/chapters/3_NAVSEA.tex`, `tex/chapters/4_NAVWAR.tex`, `tex/edo.bib`,
   `docs/study_memory/sources.md`
 - Verdict: `Applied`
@@ -130,7 +132,8 @@ The entries in this section preserve the original imported package state. Later 
 
 ### 2026-06-04 - Applied Acronym Additions Closeout
 
-- ID: `gc-20260530-acronyms`
+- ID: `gc-20260604-acronyms-closeout`
+- Closes ID: `gc-20260530-acronyms`
 - Location: `tex/acronyms.def`, `tex/chapters/4_NAVWAR.tex`, `tex/chapters/27_CIVPERS.tex`
 - Verdict: `Applied`
 - Correction applied: verified definitions and guide usage for ADNS, DCGS-N, DJC2, LNS, ISNS, WL, and WS. The NAVWAR
@@ -343,5 +346,24 @@ The entries in this section preserve the original imported package state. Later 
 - Source basis: DoDI 5000.85, DoDI 5000.98, DoDM 5000.100, 10 U.S.C. 4172, PEO MLB front page,
   PEO MLB leadership page, PAE Maritime homepage, June 2026 public Navy flag roster, SSP leadership
   page, and Navy Williams promotion announcement.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-04 - Applied Standalone Flow and Source-Ledger Follow-up
+
+- ID: `gc-20260604-standalone-flow-source-ledger-followup`
+- Location: `tex/chapters/5_NAVAIR_and_PEOs.tex`, `tex/chapters/9_Program_Funding_and_Execution.tex`,
+  `tex/chapters/10_Cost_Fundamentals.tex`, `tex/chapters/18A_Ship_Trials.tex`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/sources.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: moved the warfare-center, budget-execution, cost-estimate, and ship-trial coursebook cue
+  sections before their standalone acronym glossary blocks so the acronym glossary remains chapter backmatter.
+  Updated readable audit closeout IDs to match the machine-readable `guide_changes.jsonl` closeout IDs while
+  preserving the original May 30 IDs as `Closes ID` lines. Added the official NAVSEA TS9090-310G public PDF to
+  the source inventory because it supports the SOVT expansion closeout, and refreshed the memory index latest-work
+  summary to include the later June 4 audit closeouts.
+- Source basis: read-only formatting-flow review, local TeX structure scan after the patch, source-integrity review,
+  local study-memory inspection, and the official NAVSEA TS9090-310G public PDF.
 - Confidence: `High`
 - Status: `applied`

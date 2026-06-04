@@ -90,6 +90,7 @@ final.
 | ------------------------------------------ | --------------- | ------------------------------------------------------------------------------------------------------------ | --------------- | ------------ | ----------------------------------------------------------------------------------------------- |
 | NAVSEA CNRMC About Us                      | policy          | `https://www.navsea.navy.mil/Home/RMC/CNRMC/About-Us/`                                                       | current online  | 2026-06-04   | Official source for CNRMC-listed RMC activities and separate RMC Northwest / Hawaii RMC embedded I-level activities. |
 | NAVSEA SUBMEPP JFMM                        | policy          | `https://www.navsea.navy.mil/Home/SUBMEPP/Products/JFMM/`                                                    | Rev E, 2026-04-27 | 2026-06-04 | Official landing page for COMUSFLTFORCOMINST 4790.3 Rev E and the current JFMM access path. |
+| Official NAVSEA TS9090-310G public PDF     | policy          | `https://www.navsea.navy.mil/Portals/103/Documents/NSWC_Dahlgren/FiberOptics/docrep_installation/9090-310GREV1.pdf?ver=2018-04-27-133951-417` | Rev 1 public PDF | 2026-06-04 | Official public source for NAVSEA Technical Specification 9090-310G Rev 1, AIT modernization requirements, and SOVT terminology. |
 
 ## Shipbuilding and Sustainment Current Events
 

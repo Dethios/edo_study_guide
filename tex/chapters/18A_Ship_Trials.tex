@@ -127,17 +127,6 @@
   \item Post-sea trial certification and availability completion messages confirm readiness and track deficiencies~\autocite{edo-3-5-7-ship-trials-2025}.
 \end{itemize}
 
-%====================
-% End of file
-%====================
-\IfSubfilesClassLoaded{
-  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
-  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
-  \printnoidxglossary[
-    type=\acronymtype,
-    title=Acronyms,
-    style=long-booktabs
-  ]}{}
 \subsection{Coursebook cue: ship-trial types and roles}
 
 Coursebook 3.5.7 expects more than the names of trials.  The board answer
@@ -163,5 +152,17 @@ Special trials & Focused events for unique systems, mission areas, or certificat
 Role split & Builder, supervisor of shipbuilding, INSURV, program office, TYCOM, and technical authorities each have distinct interests. \\
 Submarine distinction & Nuclear, SUBSAFE, deep-submergence, and certification constraints can change trial sequencing and evidence requirements. \\
 \end{longtblr}
+
+%====================
+% End of file
+%====================
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
 
 \end{document}
