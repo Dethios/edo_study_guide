@@ -87,6 +87,8 @@ Recent applied updates:
   new shipyard source-ledger entries, and Figure 1.4 connector clearance in the rebuilt PDF.
 - Fleet-maintenance statute/policy currentness cleanup for 10 U.S.C. 2244a, 10 U.S.C. 2466, direct
   OPNAVINST 4700.7N citations, and the public NAVSEA TS9090-310G SOVT caveat.
+- EDO flag-count fast-cue cleanup: board-speed roster recall is 3 VADMs, 4 RADMs, 1 RADM(sel), and 7 RDMLs;
+  Andrew Biehn remains a PAE Maritime / NAVSEA 21 awareness cue, not an EDO flag-roster entry.
 
 ## Next Review Plan
 

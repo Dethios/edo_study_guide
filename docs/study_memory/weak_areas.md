@@ -349,7 +349,9 @@ No entries yet.
 
 - ID: `wa-20260530-edo-flags`
 - Evidence: June 4 guide maintenance corrected current-source drift for EDO flag ranks/billets and related PAE/SSP
-  transition cues. Keep active only for memorization and rapid oral recall.
+  transition cues. Follow-on flow cleanup added the board-count cue: 3 VADMs, 4 RADMs, 1 RADM(sel), and 7 RDMLs,
+  while keeping Andrew Biehn as a PAE Maritime / NAVSEA 21 awareness cue rather than an EDO flag-roster entry. Keep
+  active only for memorization and rapid oral recall.
 - Miss type: `factual_recall`
 - Severity: `medium`
 - Next review: 2026-06-06

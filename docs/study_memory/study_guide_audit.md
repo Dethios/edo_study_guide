@@ -689,3 +689,20 @@ The entries in this section preserve the original imported package state. Later 
   confirmation for OPNAVINST 4700.7N, and the official public NAVSEA TS9090-310G PDF.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied EDO Flag-Count Fast-Cue Cleanup
+
+- ID: `gc-20260604-edo-flag-count-fast-cue`
+- Location: `tex/chapters/appendix_edo_flags.tex`, `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`,
+  `docs/study_memory/weak_areas.md`, `docs/study_memory/weak_areas.jsonl`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: added a board-count cue to the EDO flag appendix and the fast-cue chapter: 3 VADMs, 4 RADMs,
+  1 RADM(sel), and 7 RDMLs. The cue explicitly warns not to collapse RADM/RDML and not to add non-EDO PAE Maritime
+  leaders such as RDML Andrew Biehn to the EDO flag roster.
+- Source basis: existing MyNavyHR June 2026 flag roster source for grade authority, live SSP leadership page showing
+  VADM Wolfe still in the PAE SSP seat, and live PAE Maritime homepage showing RDML Andrew Biehn in the separate
+  modernization and sustainment lane.
+- Confidence: `High`
+- Status: `applied`
