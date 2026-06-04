@@ -595,3 +595,22 @@ The entries in this section preserve the original imported package state. Later 
   employee-rights and appeals page, and current eCFR sections 5 CFR 532.203, 432.105, and 752.404.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied Source-Selection and Contract-Administration Cue Cleanup
+
+- ID: `gc-20260604-source-selection-contract-admin-cues`
+- Location: `tex/chapters/12A_Source_Selection.tex`, `tex/chapters/13A_Source_Selection_Practical.tex`,
+  `tex/chapters/13B_Contract_Administration.tex`, `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: tightened FAR post-award debriefing timing; added DoD enhanced-debriefing and GAO stay-clock
+  cues; changed source-selection practical wording so the RFP discloses factors, significant subfactors, and relative
+  importance while the rating method need not be disclosed; corrected the COR sentence to use KO authority rather than
+  the guide's CO acronym; separated constructive changes from unauthorized-commitment ratification; and added fast cues
+  for debrief/protest clocks and constructive-change vs unauthorized-commitment triage.
+- Source basis: acquisition.gov FAR 15.304, FAR 15.506, FAR 33.104, FAR 1.602-1, FAR 1.602-3, acquisition.gov DFARS
+  Subpart 215.5, DFARS 233.104, DoD Source Selection Procedures, NAVSEA Source Selection Guide, and NAVSEA Contracts
+  Handbook, all checked on 2026-06-04.
+- Confidence: `High`
+- Status: `applied`
