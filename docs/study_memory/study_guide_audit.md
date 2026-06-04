@@ -742,3 +742,26 @@ The entries in this section preserve the original imported package state. Later 
   from official web sources on 2026-06-04.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied Software Acquisition Pathway Source-Currentness Cleanup
+
+- ID: `gc-20260604-software-acquisition-pathway-currentness`
+- Location: `tex/chapters/17D_Software_Acquisition_Environment.tex`,
+  `tex/chapters/17E_Software_Acquisition_Management.tex`, `tex/acronyms.def`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Outdated`
+- Correction applied: refreshed software-acquisition board cues against current official sources. Updated DoWI
+  5000.02 to Change 2, added a direct DoWI 5000.87 URL, added the 6 March 2025 Secretary of Defense software
+  acquisition memo, and added an SWP acronym. Clarified that covered DBS programs normally use BCAC/DoWI 5000.75
+  but may incorporate SWP for custom-developed software; SWP programs are not subject to JCIDS except through the
+  SWP-specific process and are not treated as MDAPs even if former MDAP thresholds are exceeded; SWP execution-entry
+  artifacts are the DA-approved CNS, user agreement, acquisition strategy, test strategy, and cost estimate; and
+  Agile design/verification is iterative rather than inapplicable. Added the current memo cue that SWP is preferred
+  for software-development components of business and weapon-system programs and that CSOs/OTs are default
+  solicitation/award approaches when statutory thresholds and pathway context apply.
+- Source basis: DoWI 5000.02 Change 2, DoDI 5000.75, DoDI 5000.87, and the Secretary of Defense memorandum
+  `Directing Modern Software Acquisition to Maximize Lethality`, all checked from official web sources on
+  2026-06-04.
+- Confidence: `High`
+- Status: `applied`

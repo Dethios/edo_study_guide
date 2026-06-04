@@ -94,6 +94,9 @@ Recent applied updates:
   set-aside cues, 15 U.S.C. 638 SBIR/STTR allocation percentages, and SBIR.gov phase/award-range caveats.
 - PAE chart endpoint-clearance follow-up for Figure 1.4: connector arrows now terminate in whitespace outside node
   borders and the PAE group border has more spacing in the rebuilt PDF.
+- Software Acquisition Pathway currentness cleanup for DoWI 5000.02 Change 2, direct DoWI 5000.87 source
+  grounding, DBS/BCAC versus SWP crosswalk, SWP JCIDS/MDAP treatment, execution-entry artifacts, Agile design
+  wording, PDSS cost-cue caveat, and the March 2025 SecDef SWP/CSO/OT memo.
 
 ## Next Review Plan
 
