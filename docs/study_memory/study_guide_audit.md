@@ -420,3 +420,18 @@ The entries in this section preserve the original imported package state. Later 
   official NAVSEA PEO IWS pages, official PEO Digital portfolio overview, and local consistency-scout findings.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied PAE Chart Connector Clearance Follow-up
+
+- ID: `gc-20260604-pae-chart-clearance-followup`
+- Location: `tex/chapters/1_Chain_of_command.tex`, `artifacts/out/main.pdf`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: added explicit outside-node TikZ endpoint coordinates and clear connector styles for Figure 1.4
+  deputy, PAE-row, and SYSCOM-support arrows so connector arrowheads stop before the boxes instead of relying on
+  node-border targeting or path shortening.
+- Source basis: user-reported rendered-PDF defect, main-thread TikZ source inspection, full PDF rebuild, and rendered
+  page-image verification of Figure 1.4.
+- Confidence: `High`
+- Status: `applied`

@@ -122,7 +122,9 @@ Current as of 2026-06-04, Mr.\ William F.\ Mahan is performing the duties of \ac
     line/.style={draw, -{Stealth[length=2mm]}, shorten >=4pt, shorten <=2pt, rounded corners=2pt},
     bus line/.style={draw, shorten >=2pt, shorten <=2pt, rounded corners=2pt},
     support bus/.style={draw, dashed, shorten >=2pt, shorten <=2pt, rounded corners=2pt},
-    support line/.style={draw, dashed, -{Stealth[length=2mm]}, shorten >=4pt, shorten <=2pt, rounded corners=2pt}
+    support line/.style={draw, dashed, -{Stealth[length=2mm]}, shorten >=4pt, shorten <=2pt, rounded corners=2pt},
+    clear line/.style={draw, -{Stealth[length=2mm]}, shorten >=0pt, shorten <=2pt, rounded corners=2pt},
+    clear support line/.style={draw, dashed, -{Stealth[length=2mm]}, shorten >=0pt, shorten <=2pt, rounded corners=2pt}
     ]
 
     \node[top node] (secnav) {\ac{secnav}};
@@ -151,33 +153,41 @@ Current as of 2026-06-04, Mr.\ William F.\ Mahan is performing the duties of \ac
     \coordinate (cmcJoin) at (cmc.south |- serviceJoinY);
     \coordinate (asnCnoIn) at ($(asn.north west)!0.45!(asn.north)$);
     \coordinate (asnCmcIn) at ($(asn.north east)!0.45!(asn.north)$);
-    % Keep connector buses in explicit lanes outside node interiors.
-    \coordinate (paeBranchLeft) at ($(aviation.north)+(0,0.75cm)$);
-    \coordinate (paeBranchCenter) at ($(missions.north)+(0,0.75cm)$);
-    \coordinate (paeBranchRight) at ($(munitions.north)+(0,0.75cm)$);
+    % Keep connector buses and arrow endpoints in explicit lanes outside node interiors.
+    \coordinate (pcdIn) at ($(pcd.north)+(0,0.14cm)$);
+    \coordinate (pmdIn) at ($(pmd.north)+(0,0.14cm)$);
+    \coordinate (paeBranchLeft) at ($(aviation.north)+(0,0.95cm)$);
+    \coordinate (paeBranchCenter) at ($(missions.north)+(0,0.95cm)$);
+    \coordinate (paeBranchRight) at ($(munitions.north)+(0,0.95cm)$);
+    \coordinate (aviationIn) at ($(aviation.north)+(0,0.16cm)$);
+    \coordinate (missionsIn) at ($(missions.north)+(0,0.16cm)$);
+    \coordinate (munitionsIn) at ($(munitions.north)+(0,0.16cm)$);
     \coordinate (asnPortfolioStem) at (asn.south |- paeBranchCenter);
     \coordinate (supportBusTop) at ($(aviation.west)+(-0.80cm,0)$);
     \coordinate (supportBusMid) at (supportBusTop |- industrial.west);
     \coordinate (supportBusBottom) at (supportBusTop |- ssp.west);
+    \coordinate (aviationSupportIn) at ($(aviation.west)+(-0.16cm,0)$);
+    \coordinate (industrialSupportIn) at ($(industrial.west)+(-0.16cm,0)$);
+    \coordinate (sspSupportIn) at ($(ssp.west)+(-0.16cm,0)$);
 
     \begin{scope}[on background layer]
       \node[pae group, fit=(aviation)(missions)(munitions)(industrial)(maritime)(undersea)(ssp)(ras)(marine)] (paeGroup) {};
       \draw[line] (secnav.south) -- (asn.north);
       \draw[line] (cno.south) -- (cnoJoin) -| (asnCnoIn);
       \draw[line] (cmc.south) -- (cmcJoin) -| (asnCmcIn);
-      \draw[line] (asn.south west) -- ++(0,-0.25cm) -| (pcd.north);
-      \draw[line] (asn.south east) -- ++(0,-0.25cm) -| (pmd.north);
+      \draw[clear line] (asn.south west) -- ++(0,-0.25cm) -| (pcdIn);
+      \draw[clear line] (asn.south east) -- ++(0,-0.25cm) -| (pmdIn);
       \draw[bus line] (asn.south) -- (asnPortfolioStem) -- (paeBranchCenter);
       \draw[bus line] (paeBranchLeft) -- (paeBranchRight);
-      \draw[line] (paeBranchLeft) -- (aviation.north);
-      \draw[line] (paeBranchCenter) -- (missions.north);
-      \draw[line] (paeBranchRight) -- (munitions.north);
+      \draw[clear line] (paeBranchLeft) -- (aviationIn);
+      \draw[clear line] (paeBranchCenter) -- (missionsIn);
+      \draw[clear line] (paeBranchRight) -- (munitionsIn);
 
       \draw[support bus] (syscoms.east) -- (supportBusMid);
       \draw[support bus] (supportBusTop) -- (supportBusBottom);
-      \draw[support line] (supportBusTop) -- (aviation.west);
-      \draw[support line] (supportBusMid) -- (industrial.west);
-      \draw[support line] (supportBusBottom) -- (ssp.west);
+      \draw[clear support line] (supportBusTop) -- (aviationSupportIn);
+      \draw[clear support line] (supportBusMid) -- (industrialSupportIn);
+      \draw[clear support line] (supportBusBottom) -- (sspSupportIn);
     \end{scope}
   \end{tikzpicture}}
   \caption[ASN (RD\&A) and PAE organization transition]{Board-level ASN (RD\&A) and PAE organization transition, updated from the user-provided PAE chart with public announcements through 2026-06-04~\autocite{DON-New-SAE-2026,DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026}.}
