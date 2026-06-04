@@ -85,6 +85,8 @@ Recent applied updates:
   cells, and normalized the ship-trial board-cue caption.
 - Shipyard source-grounding and PAE chart-spacing cleanup for direct NAVSEA support to public shipyard role bullets,
   new shipyard source-ledger entries, and Figure 1.4 connector clearance in the rebuilt PDF.
+- Fleet-maintenance statute/policy currentness cleanup for 10 U.S.C. 2244a, 10 U.S.C. 2466, direct
+  OPNAVINST 4700.7N citations, and the public NAVSEA TS9090-310G SOVT caveat.
 
 ## Next Review Plan
 

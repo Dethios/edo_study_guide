@@ -670,3 +670,22 @@ The entries in this section preserve the original imported package state. Later 
   inspection.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied Fleet-Maintenance Statute and Policy Currentness Cleanup
+
+- ID: `gc-20260604-fleet-maintenance-statute-policy-currentness`
+- Location: `tex/chapters/20_Navy_Modernization_Program.tex`,
+  `tex/chapters/21_Fleet_Maintenance_Policy_and_Implementation.tex`,
+  `tex/chapters/28_AWP_and_SOVT.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Outdated`
+- Correction applied: replaced the stale Public Law 102-396 heading and cue with current 10 U.S.C. 2244a; rewrote
+  the 50/50 depot-maintenance rule as the 10 U.S.C. 2466 private-sector contracting ceiling; added direct
+  OPNAVINST 4700.7N citations in Chapter 21; narrowed the AWP/SOVT caveat to state that the public NAVSEA
+  TS9090-310G text supports the board-prep summary while operational execution should check any newer controlled
+  technical-specification revision; and added the new statute/policy source-ledger and bibliography records.
+- Source basis: current House U.S. Code text for 10 U.S.C. 2244a and 10 U.S.C. 2466, DONI listing/search
+  confirmation for OPNAVINST 4700.7N, and the official public NAVSEA TS9090-310G PDF.
+- Confidence: `High`
+- Status: `applied`
