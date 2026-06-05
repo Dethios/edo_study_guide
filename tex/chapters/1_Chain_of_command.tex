@@ -166,8 +166,6 @@ Current as of 2026-06-05, Mr.\ William F.\ Mahan is performing the duties of \ac
     \coordinate (paeBranchLeft) at (aviation.north |- paeBusY);
     \coordinate (paeBranchCenter) at (missions.north |- paeBusY);
     \coordinate (paeBranchRight) at (munitions.north |- paeBusY);
-    \coordinate (pcdPaeDrop) at (pcd.south |- paeBusY);
-    \coordinate (pmdPaeDrop) at (pmd.south |- paeBusY);
 
     \begin{scope}[on background layer]
       \node[pae group, fit=(aviation)(missions)(munitions)(industrial)(maritime)(undersea)(ssp)(ras)(marine)] (paeGroup) {};
@@ -191,8 +189,7 @@ Current as of 2026-06-05, Mr.\ William F.\ Mahan is performing the duties of \ac
       \draw[bus line] (pcdBranch) -- (pmdBranch);
       \draw[line] (pcdBranch) -- (pcd.north);
       \draw[line] (pmdBranch) -- (pmd.north);
-      \draw[bus line] (pcd.south) -- (pcdPaeDrop);
-      \draw[bus line] (pmd.south) -- (pmdPaeDrop);
+      \draw[bus line] (deputyStem) -- (paeBranchCenter);
       \draw[bus line] (paeBranchLeft) -- (paeBranchRight);
       \draw[line] (paeBranchLeft) -- (aviation.north);
       \draw[line] (paeBranchCenter) -- (missions.north);
