@@ -117,6 +117,10 @@ Recent applied updates:
 - SE/logistics/manufacturing source-grounding follow-up: updated RIO handling options, MIL-STD-881F WBS wording, current
   JFRP sustainment performance-attribute framing, DoDI 5000.91 IPS elements, 17L/17M standalone formatting, and
   manufacturing readiness / escaped-defect board cues.
+- TA/environmental/availability/case-study source-grounding follow-up: corrected CO command authority versus technical
+  authority, current 10 U.S.C. 8669b STA/PAE reporting, CEQ/DoD/DON NEPA 2025 dates, NPDES point-source wording, PESHE
+  versus current ESOH-documentation framing, FY-specific NAVSEA Standard Item caveats, and Integrated Case Study
+  standalone summary/quick-review flow.
 
 ## Next Review Plan
 

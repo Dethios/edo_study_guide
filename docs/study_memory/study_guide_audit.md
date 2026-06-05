@@ -904,3 +904,26 @@ The entries in this section preserve the original imported package state. Later 
   primary web sources on 2026-06-04.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Applied TA, Environmental, Availability, and Case-Study Source Grounding
+
+- ID: `gc-20260605-ta-env-availability-case-source-grounding`
+- Location: `tex/chapters/2_TA_EA.tex`,
+  `tex/chapters/17C_Environmental_Requirements_and_Responsibilities.tex`,
+  `tex/chapters/17O_Integrated_Case_Study.tex`, `tex/chapters/26_CNO_Availability_Execution.tex`,
+  `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: corrected the board trap that a ship CO holds underway technical authority; the guide now
+  distinguishes CO command authority from the warranted technical-authority chain. Added current 10 U.S.C. 8669b and
+  SECNAVINST 5400.15D anchors for STA, PAE reporting, SYSCOM TA, and programmatic-vs-technical escalation. Corrected the
+  Clean Water Act / NPDES point-source versus nonpoint-source distinction, refreshed the 2025 NEPA update sequence with
+  CEQ, DoD, and DON dates, reframed PESHE as the coursebook shorthand while current MCA policy integrates ESOH risk and
+  requirements management into approved program documentation, qualified CNO availability Standard Item rules as
+  contract/FY-package dependent, and normalized the Integrated Case Study standalone wrapper, summary, and quick review.
+- Source basis: 10 U.S.C. 8669b, SECNAVINST 5400.15D, CEQ NEPA regulations removal, DoD NEPA Implementing Procedures,
+  DON 32 CFR Part 775 rescission, 32 CFR Part 187, DoDI 5000.85, EPA NPDES Permit Basics, EPA Nonpoint Source Program,
+  NAVSEA SSRAC, FY28 NAVSEA Standard Items 009-001 and 009-060, and read-only source/structure reviewer findings, all
+  checked from official or primary web sources on 2026-06-05.
+- Confidence: `High`
+- Status: `applied`

@@ -2,11 +2,25 @@
 % !TEX program = lualatex
 
 \documentclass[../main.tex]{subfiles}
-\externaldocument{../main}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
 
 \begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 
 \section{Integrated Case Study}
+
+\subsection{Summary}
+\begin{description}
+  \item[\textbf{What it is.}] The Integrated Case Study (ICS) is an EDO School application exercise that
+  forces a team to integrate requirements, acquisition phase, funding, technical authority, test,
+  logistics, cybersecurity, contracting, and stakeholder communication into one defensible recommendation.
+  \item[\textbf{Board value.}] Treat the case as a program-office scenario: start with the operational
+  problem, identify the authority chain, trace the money and technical baseline, compare alternatives,
+  and state residual risk.
+  \item[\textbf{Evidence discipline.}] A strong answer separates facts from assumptions, explains which
+  stakeholders must concur, and uses source-backed constraints instead of jumping straight to a preferred
+  solution~\autocite{SECNAV5000-2G,SECNAV5400-15D,DoDI5000-85,edo-3-8-1-ics-introduction-2025}.
+\end{description}
 
 \subsection{Purpose and scope}
 
@@ -67,5 +81,24 @@ requirements into a defensible program-office recommendation
 If a board question sounds like an integrated scenario, answer as a
 program-office problem: requirement, authority, funding, technical baseline,
 stakeholders, risks, alternatives, and recommendation.
+
+\subsection{Quick Review}
+\begin{itemize}
+  \item What is the first move in an integrated board scenario? \textbf{Answer:} State the operational
+  problem and the requirement source before picking a solution.
+  \item What keeps the answer from becoming a guess? \textbf{Answer:} Separate facts, assumptions,
+  source-backed constraints, alternatives, recommendation, and residual risk.
+  \item Which chains usually matter? \textbf{Answer:} Programmatic authority, technical authority, resource
+  sponsor or funding chain, Fleet/user chain, and contracting or test stakeholders as applicable.
+\end{itemize}
+
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
 
 \end{document}
