@@ -2473,3 +2473,25 @@ The entries in this section preserve the original imported package state. Later 
   committee pages checked on 2026-06-05; local Chapter 8 citation-fit scan.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Ground Chapter 16 MCA Milestone Mechanics
+
+- ID: `gc-20260605-mca-milestone-official-source-grounding`
+- Location: `tex/chapters/16_Milestones.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: Chapter 16's core MCA milestone mechanics relied heavily on the EDO coursebook even though
+  official sources directly support the board answer. Added point-of-use official citations for DAS/AAF tailoring, MCA
+  phase and decision-point structure, milestone review requirements, entrance/exit criteria, APB/deviation cues,
+  MDD/MSA/AoA, Acquisition Strategy, TMRR, CDD validation, configuration steering boards, Development RFP Release,
+  Milestone B, EMD, Milestone C, P&D, O&S, ship-acquisition nuance, and Navy 2-pass/7-gate overlays. Refreshed the
+  Nunn-McCurdy 10 U.S.C. 4371 citation from a generic U.S. Code homepage to the exact current section page. Remaining
+  coursebook-only blocks are the coursebook figure, program-deviation classroom actions, scenario drills, and Quick
+  Review prompts.
+- Source basis: official DoDD 5000.01, DoDI 5000.02, DoDI 5000.85, DoDI 5000.88, DoDI 5000.89, DoDI 5000.90, DoDI
+  5000.91, DoDI 5000.73, SECNAVINST 5000.2G, CJCSM 5123.01, 10 U.S.C. 4251, 10 U.S.C. 4371, 10 U.S.C. 4171,
+  10 U.S.C. 4172, OUSD(R&E) TRA Guidebook, Engineering of Defense Systems Guidebook, DoD MRL Deskbook, and local
+  Chapter 16 citation-fit scan checked on 2026-06-05.
+- Confidence: `High`
+- Status: `applied`
