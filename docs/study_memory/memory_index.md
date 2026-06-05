@@ -7,9 +7,9 @@ Current as of 2026-06-05.
 - Session: `2026-06-04-end-to-end-study-guide-audit`
 - Date: 2026-06-04
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
-- Current follow-up: 2026-06-05 OPNAV instruction source-alignment cleanup refreshed active OPNAVINST 3050.27A,
-  4700.7N, and 5420.117A metadata to current DONI listing/search evidence and removed the unsupported
-  OPNAVINST 3111.17C citation from Chapter 6 PPBE claims.
+- Current follow-up: 2026-06-05 active-citation backlog access-caveat cleanup refreshed DAU Performance Attributes
+  metadata and aligned the retained NAVSEA Source Selection Guide, NAVSEA Contracts Handbook, and SL720-AA-MAN-030
+  entries to current public-access checks with explicit 403/manual-verification caveats.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,
@@ -148,6 +148,9 @@ Recent applied updates:
 - OPNAV instruction source alignment: active OPNAVINST 3050.27A, 4700.7N, and 5420.117A metadata now reflects current
   official DONI listing/search evidence; Chapter 6 no longer cites OPNAVINST 3111.17C for unsupported N8/N81 or N9
   PPBE claims.
+- Active-citation backlog access-caveat alignment: DAU Performance Attributes now has a 2026-06-05 currentness stamp,
+  while retained NAVSEA SEA 02 guide URLs and the controlled NDE/NMP-MOM source keep explicit 403 and
+  manual-verification caveats instead of appearing as unreviewed stale active citations.
 - NIP/MIP budget-release source-currentness alignment: ODNI FY2025 NIP request and appropriation, War.gov FY2025 MIP,
   War.gov FY2024 MIP, and War.gov FY2025 MIP budget-request bibliography/source-ledger entries now use direct official
   pages, corrected titles/dates, and 2026-06-05 access dates.

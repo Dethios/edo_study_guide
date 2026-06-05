@@ -66,6 +66,24 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied Active-Citation Backlog Access-Caveat Alignment
+
+- ID: `gc-20260605-active-citation-backlog-access-caveat-alignment`
+- Location: `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: cleared the remaining active-citation metadata backlog by refreshing the DAU Performance
+  Attributes access date to 2026-06-05 and aligning retained access-limited NAVSEA/NDE sources to their current
+  2026-06-05 public-access check date. For NAVSEA Source Selection Guide, NAVSEA Contracts Handbook, and
+  SL720-AA-MAN-030, the bibliography/source ledger now explicitly distinguishes the retained official URL and current
+  public 403 result from the older content-bearing/manual baseline that should still be manually verified before
+  operational use.
+- Source basis: official DAU Performance Attributes indexed page; current public HTTP checks of the DAU, NAVSEA
+  SEA 02 PDF, and NDE URLs; existing SOM Chapter 3 statement that NAVSEA Contracts Handbook access may require Navy
+  network or restricted access; local active-citation metadata scan.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied OPNAV Instruction Source-Alignment Cleanup
 
 - ID: `gc-20260605-opnav-instruction-source-alignment`
