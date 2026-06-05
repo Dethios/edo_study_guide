@@ -32,6 +32,8 @@ build on save.
   artifacts.
 - `./scripts/build.sh tex/main.tex`: local fallback.
 - `make check-acronyms`: validate acronym keys and macro placement.
+- `make audit-cited-bib-sources`: report cited BibTeX `http(s)` URLs that
+  are not exact-match represented in the study-memory source ledger.
 - `make check-current-events-sources`: validate current-events BibTeX entries
   against TeX usage and the study-memory source ledger.
 - `make check-guide-change-sources`: validate applied guide-change external
@@ -65,11 +67,13 @@ configuration. Run `make check-tex-structure` after wrapper, standalone
 glossary, Summary / Quick Review, or chapter-flow edits. Run
 `make check-study-memory` after study-memory, audit-log, source-ledger, weak-area,
 or guide-change updates; this target also runs the current-events and applied
-guide-change source-ledger checks. Run `make check-current-events-sources`
-directly after editing `tex/current_events.bib` or current-events source rows,
-and run `make check-guide-change-sources` directly after source-basis or
-source-inventory edits. Always run `rumdl check` on any modified Markdown files
-after making edits, or use `rumdl fmt <file>` to automatically format them.
+guide-change source-ledger checks. Run `make audit-cited-bib-sources` after
+editing `tex/edo.bib`, chapter citations, or source-inventory rows to report
+remaining exact-URL ledger gaps, run `make check-current-events-sources` directly
+after editing `tex/current_events.bib` or current-events source rows, and run
+`make check-guide-change-sources` directly after source-basis or source-inventory
+edits. Always run `rumdl check` on any modified Markdown files after making edits,
+or use `rumdl fmt <file>` to automatically format them.
 
 ## Commit & Pull Request Guidelines
 

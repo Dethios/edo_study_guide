@@ -97,6 +97,19 @@ The current-events check verifies that `tex/current_events.bib` entries are
 cited by the guide and that their URLs also appear in
 `docs/study_memory/sources.md`.
 
+Cited BibTeX source-ledger audit:
+
+```shell
+make audit-cited-bib-sources
+```
+
+The cited-BibTeX audit reports chapter-cited entries in `tex/edo.bib` and
+`tex/current_events.bib` whose `http(s)` URLs do not exact-match a row in
+`docs/study_memory/sources.md`. It is report-only by default because some legacy
+entries are intentionally represented by source landing pages or consolidated
+ledger rows; use `scripts/check-cited-bib-sources.py --strict` only after those
+gaps are burned down.
+
 Applied guide-change source-ledger validation:
 
 ```shell

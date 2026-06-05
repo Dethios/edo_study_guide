@@ -1378,3 +1378,25 @@ The entries in this section preserve the original imported package state. Later 
   the strengthened `check-study-memory` target.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Applied Cited Official-Source Ledger Backfill and Audit Helper
+
+- ID: `gc-20260605-cited-official-source-ledger-backfill`
+- Location: `tex/edo.bib`, `scripts/check-cited-bib-sources.py`, `Makefile`, `AGENTS.md`, `README.md`,
+  `docs/study_memory/README.md`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: backfilled high-value official sources that are already cited across the TeX guide but were
+  missing from `docs/study_memory/sources.md`: OMB Circular A-11, DoDI 5000.89, SECNAVINST 5000.2G, Acquisition.gov
+  threshold changes, and DIU Work With Us / CSO pathway material. Refreshed the BibTeX access dates for OMB A-11, DoDI
+  5000.89, DIU Work With Us, and Acquisition.gov thresholds to 2026-06-05. SECNAVINST 5000.2G was added to the source
+  ledger with an explicit DONI-listing caveat because the public DONI listing showed the instruction active, while
+  direct PDF access was filtered/reset from this environment. Added the report-only `make audit-cited-bib-sources`
+  helper so future audit slices can identify cited `http(s)` URLs in `tex/edo.bib` and `tex/current_events.bib` that do
+  not exact-match the source ledger. The helper is intentionally not a required validation gate yet because some cited
+  URLs are represented by source landing pages or consolidated ledger rows instead of exact direct-PDF URLs.
+- Source basis: official Acquisition.gov threshold table; official OMB circulars page and A-11 PDF; official DIU Work
+  With Us page; official ESD DoD issuances listing and DoDI 5000.89 PDF; and official DONI listing evidence for
+  SECNAVINST 5000.2G, plus local validation of the new report-only cited-BibTeX source-ledger audit helper.
+- Confidence: `High`
+- Status: `applied`
