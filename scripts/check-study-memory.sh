@@ -121,6 +121,135 @@ expected_files = {
 
 errors = []
 
+enum_specs = {
+    ("weak_areas.jsonl", "miss_type"): {
+        "application",
+        "careless_error",
+        "concept_confusion",
+        "factual_recall",
+        "source_version",
+        "unknown",
+        "wording_ambiguity",
+    },
+    ("weak_areas.jsonl", "severity"): {"low", "medium", "high"},
+    ("weak_areas.jsonl", "status"): {"active", "improving", "resolved"},
+    ("guide_changes.jsonl", "status"): {"proposed", "applied", "rejected", "blocked"},
+    ("guide_changes.jsonl", "verdict"): {
+        "Applied",
+        "Correct",
+        "Incorrect",
+        "Outdated",
+        "Ambiguous",
+        "Needs source",
+    },
+    ("guide_changes.jsonl", "confidence"): {"High", "Medium", "Low"},
+    ("question_bank.jsonl", "difficulty"): {"basic", "intermediate", "board_ready"},
+    ("question_bank.jsonl", "tested_skill"): {"recall", "application", "comparison", "scenario"},
+    ("learning_log.jsonl", "result"): {"correct", "partial", "incorrect", "skipped"},
+    ("learning_log.jsonl", "miss_type"): {
+        "application",
+        "careless_error",
+        "concept_confusion",
+        "factual_recall",
+        "none",
+        "source_version",
+        "wording_ambiguity",
+    },
+}
+
+source_fields = {"title", "authority_level", "url_or_path", "version_or_date", "date_checked"}
+future_quality_cutoff = "2026-06-05"
+absolute_local_pattern = re.compile(r"(?:(?<=^)|(?<=[;,\s]))(?:/[A-Za-z0-9_.-]+/|[A-Za-z]:[\\/]|\\\\)")
+legacy_question_sections = {"May 30 lookup deck", "May 30 study_state.md drill queue"}
+
+
+def record_date(name, record):
+    if name == "guide_changes.jsonl":
+        return str(record.get("date_identified", ""))
+    if name in {"sessions.jsonl", "weak_areas.jsonl", "learning_log.jsonl"}:
+        return str(record.get("date", ""))
+    if name == "question_bank.jsonl":
+        match = re.match(r"q-(\d{4})(\d{2})(\d{2})-", str(record.get("id", "")))
+        if match:
+            return "-".join(match.groups())
+    return ""
+
+
+def is_future_quality_record(name, record):
+    date = record_date(name, record)
+    return bool(date) and date >= future_quality_cutoff
+
+
+def check_enum(path, line_no, name, record):
+    for (spec_name, field), allowed_values in enum_specs.items():
+        if name != spec_name or field not in record:
+            continue
+        value = record.get(field)
+        if value not in allowed_values:
+            allowed = ", ".join(sorted(allowed_values))
+            errors.append(
+                f"{path.relative_to(root)}:{line_no}: invalid {field} {value!r}; allowed values: {allowed}"
+            )
+
+
+def check_source_basis(path, line_no, record):
+    if "source_basis" not in record:
+        return
+    source_basis = record.get("source_basis")
+    if not isinstance(source_basis, list):
+        errors.append(f"{path.relative_to(root)}:{line_no}: source_basis must be an array")
+        return
+    for index, source in enumerate(source_basis, 1):
+        if not isinstance(source, dict):
+            errors.append(f"{path.relative_to(root)}:{line_no}: source_basis[{index}] must be an object")
+            continue
+        missing = sorted(source_fields - set(source))
+        if missing:
+            errors.append(
+                f"{path.relative_to(root)}:{line_no}: source_basis[{index}] missing fields: {', '.join(missing)}"
+            )
+
+
+def check_portable_provenance(path, line_no, name, record):
+    if not is_future_quality_record(name, record):
+        return
+    local_paths = []
+    if isinstance(record.get("source_package"), str):
+        local_paths.append(("source_package", record["source_package"]))
+    for index, source in enumerate(record.get("source_basis") or [], 1):
+        if isinstance(source, dict):
+            local_paths.append((f"source_basis[{index}].url_or_path", str(source.get("url_or_path", ""))))
+    for field, value in local_paths:
+        if "://" in value:
+            continue
+        if absolute_local_pattern.search(value):
+            errors.append(
+                f"{path.relative_to(root)}:{line_no}: {field} should be repo-relative or a URL, not an absolute local path: {value}"
+            )
+
+
+def check_question_source_section(path, line_no, record):
+    section = str(record.get("source_section", "")).strip()
+    if not section:
+        errors.append(f"{path.relative_to(root)}:{line_no}: source_section must not be empty")
+        return
+    if section in legacy_question_sections:
+        if is_future_quality_record("question_bank.jsonl", record):
+            errors.append(
+                f"{path.relative_to(root)}:{line_no}: future question source_section must use a stable repo path, session ID, or source reference"
+            )
+        return
+    parts = [part.strip() for part in section.split(";") if part.strip()]
+    stable = all(
+        part.startswith(("tex/", "docs/"))
+        or re.match(r"^(?:session|source|guide_change|question):[A-Za-z0-9_.:/-]+$", part)
+        for part in parts
+    )
+    if not stable:
+        errors.append(
+            f"{path.relative_to(root)}:{line_no}: source_section should use repo paths or stable references, got {section!r}"
+        )
+
 for name in sorted(expected_files):
     path = memory_dir / name
     if not path.exists():
@@ -149,6 +278,11 @@ for name, spec in jsonl_specs.items():
                 errors.append(
                     f"{path.relative_to(root)}:{line_no}: expected type {spec['type']!r}, got {record.get('type')!r}"
                 )
+            check_enum(path, line_no, name, record)
+            check_source_basis(path, line_no, record)
+            check_portable_provenance(path, line_no, name, record)
+            if name == "question_bank.jsonl":
+                check_question_source_section(path, line_no, record)
             if name == "guide_changes.jsonl" and record.get("status") == "applied":
                 if not record.get("source_basis"):
                     errors.append(

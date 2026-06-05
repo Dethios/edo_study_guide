@@ -9,9 +9,10 @@ final.
 
 ## Local Provenance
 
-| Title                                       | Authority Level | Path                                                                         | Version Or Date | Date Checked | Notes                                                        |
-| ------------------------------------------- | --------------- | ---------------------------------------------------------------------------- | --------------- | ------------ | ------------------------------------------------------------ |
-| May 30 EDO Study Guide chat session package | local_guidance  | `/home/victor/dev-workspace/EDO_Study_Guide_Chat_Session_Package_2026-05-30` | 2026-05-30      | 2026-05-30   | Initial source of truth for seeding persistent study memory. |
+| Title                                       | Authority Level | Path                                                                         | Version Or Date | Date Checked | Notes                                                                                 |
+| ------------------------------------------- | --------------- | ---------------------------------------------------------------------------- | --------------- | ------------ | ------------------------------------------------------------------------------------- |
+| May 30 EDO Study Guide chat session package | local_guidance  | `/home/victor/dev-workspace/EDO_Study_Guide_Chat_Session_Package_2026-05-30` | 2026-05-30      | 2026-05-30   | Initial source of truth for seeding persistent study memory.                          |
+| Archived May 30 session package             | local_guidance  | `docs/EDO_Study_Guide_Chat_Session_Package_2026-05-30`                       | 2026-05-30      | 2026-06-05   | Repo-retained copy of the imported May 30 package for portable source reconstruction. |
 
 ## NAVWAR / PEO C4I / PEO MLB
 

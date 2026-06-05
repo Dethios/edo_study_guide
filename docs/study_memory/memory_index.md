@@ -48,7 +48,8 @@ Current as of 2026-06-05.
   1's NAVSEA non-EDO leader cue to the February 2026 command-leadership chart, preserved the December 2025 chart as the
   rendered Chapter 3 figure source, and rechecked the PEO MLB Christine Rodriguez / Mary Thoms conflict. June 5
   guide-change source-ledger follow-up added an applied-guide-change URL checker and backfilled the missing 10 U.S.C.
-  162, ESD DoDD listing, and NAVSEA SUBMEPP TUM landing-page source rows.
+  162, ESD DoDD listing, and NAVSEA SUBMEPP TUM landing-page source rows. June 5 study-memory semantic-validation
+  follow-up tightened JSONL enum, `source_basis`, future portable-provenance, and question-bank `source_section` checks.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -192,6 +193,8 @@ Recent applied updates:
   caveats for flag-roster-dependent claims.
 - Guide-change source-ledger guard: added `make check-guide-change-sources`, wired it into `make check-study-memory`,
   and backfilled missing source rows for applied guide-change URLs found during the first scan.
+- Study-memory semantic validation guard: `make check-study-memory` now validates JSONL enum values, `source_basis`
+  object shape, future machine-local absolute path usage, and stable question-bank source-section references.
 
 ## Next Review Plan
 

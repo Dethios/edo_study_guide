@@ -72,3 +72,7 @@ sh scripts/check-study-memory.sh
 For LaTeX source edits, continue to run the normal guide validation such as
 `make check-acronyms`, `make check-current-events-sources`,
 `make check-guide-change-sources`, `git diff --check`, and the Docker PDF build.
+
+`make check-study-memory` also enforces the JSONL schemas, enum values,
+`source_basis` object shape, portable future provenance paths, and stable
+question-bank `source_section` references.

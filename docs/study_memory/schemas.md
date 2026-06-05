@@ -20,12 +20,14 @@ Required fields:
 - `weak_areas_added`: array
 - `guide_updates_identified`: array
 - `next_actions`: array
-- `source_package`: string or null
+- `source_package`: repo-relative path, stable source label, URL, or null.
+  Historical imports may retain their original absolute path, but new records
+  should not use machine-local absolute paths.
 
 Example:
 
 ```json
-{"type":"session","session_id":"2026-05-30-import","date":"2026-05-30","mode":"imported_long_session","objectives":[],"topics":[],"source_basis":[],"questions_covered":0,"misses":[],"weak_areas_added":[],"guide_updates_identified":[],"next_actions":[],"source_package":"/home/victor/dev-workspace/EDO_Study_Guide_Chat_Session_Package_2026-05-30"}
+{"type":"session","session_id":"2026-05-30-import","date":"2026-05-30","mode":"imported_long_session","objectives":[],"topics":[],"source_basis":[],"questions_covered":0,"misses":[],"weak_areas_added":[],"guide_updates_identified":[],"next_actions":[],"source_package":"docs/EDO_Study_Guide_Chat_Session_Package_2026-05-30"}
 ```
 
 ## `weak_areas.jsonl`
@@ -39,7 +41,7 @@ Required fields:
 - `subtopic`
 - `evidence`
 - `miss_type`: `factual_recall`, `concept_confusion`, `source_version`,
-  `wording_ambiguity`, `careless_error`, or `unknown`
+  `application`, `wording_ambiguity`, `careless_error`, or `unknown`
 - `severity`: `low`, `medium`, or `high`
 - `next_review_date`
 - `status`: `active`, `improving`, or `resolved`
@@ -61,7 +63,7 @@ Required fields:
 - `study_guide_claim`
 - `location`
 - `status`: `proposed`, `applied`, `rejected`, or `blocked`
-- `verdict`: `Correct`, `Incorrect`, `Outdated`, `Ambiguous`, or
+- `verdict`: `Applied`, `Correct`, `Incorrect`, `Outdated`, `Ambiguous`, or
   `Needs source`
 - `corrected_answer`
 - `source_basis`: array of source objects
@@ -84,7 +86,10 @@ Required fields:
 - `type`: must be `question`
 - `id`
 - `topic`
-- `source_section`
+- `source_section`: repo path, semicolon-separated repo paths, or stable
+  reference such as `session:<session_id>`. Historical May 30 imported
+  questions may retain `May 30 lookup deck` or `May 30 study_state.md drill
+  queue`, but new questions should use stable references.
 - `difficulty`: `basic`, `intermediate`, or `board_ready`
 - `tested_skill`: `recall`, `application`, `comparison`, or `scenario`
 - `question`
@@ -110,7 +115,7 @@ Required fields:
 - `user_answer_summary`
 - `result`: `correct`, `partial`, `incorrect`, or `skipped`
 - `miss_type`: `factual_recall`, `concept_confusion`, `source_version`,
-  `wording_ambiguity`, `careless_error`, or `none`
+  `application`, `wording_ambiguity`, `careless_error`, or `none`
 - `weak_area_id`
 - `next_review_date`
 

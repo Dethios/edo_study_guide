@@ -1361,3 +1361,20 @@ The entries in this section preserve the original imported package state. Later 
   and the first checker run against the current checkout.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Applied Study-Memory Semantic Validation Guard
+
+- ID: `gc-20260605-study-memory-semantic-validation`
+- Location: `scripts/check-study-memory.sh`, `docs/study_memory/schemas.md`, `docs/study_memory/README.md`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: extended `make check-study-memory` so it now validates documented enum values, `source_basis`
+  object shape, future machine-local absolute provenance paths, and stable question-bank `source_section` references.
+  Updated the schema documentation to match actual retained values such as `Applied` guide-change verdicts and
+  `application` miss types. Added a portable in-repo source-ledger row for the archived May 30 session package while
+  preserving the historical imported absolute path as provenance.
+- Source basis: read-only structure/provenance audit findings, current JSONL value inventory, and local validation of
+  the strengthened `check-study-memory` target.
+- Confidence: `High`
+- Status: `applied`
