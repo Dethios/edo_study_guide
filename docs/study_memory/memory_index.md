@@ -333,6 +333,10 @@ Recent applied updates:
 - Cost and Price Evaluation source grounding: replaced broad FAR citations in Chapter 13C with exact FAR 15.404-1,
   FAR 15.404-2, FAR 15.406-1, FAR 15.406-3, FAR 15.407-3, FAR 31.201-2/31.201-3/31.201-4, FAR 31.202, FAR 31.203,
   FAR 31.205, and unallowable-cost example section support.
+- Earned Value Management source grounding: added point-of-use official citations in Chapter 14 for DFARS EVMS
+  deviation thresholds/clauses and 180-day IBR timing, DoD IPM definitions and policy guidance, DCMA EVMS
+  compliance/surveillance, DCAA audit support, Naval CEVM, and SUPSHIP's EVMS role; refreshed EVM source metadata to
+  the 2026-06-05 current check.
 
 ## Next Review Plan
 

@@ -2347,3 +2347,21 @@ The entries in this section preserve the original imported package state. Later 
   local active-TeX and source-ledger scan.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Ground EVM Roles and Reviews in Official Sources
+
+- ID: `gc-20260605-evm-role-review-source-grounding`
+- Location: `tex/chapters/14_EVM.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: Chapter 14 already had current EVM thresholds and IPMDAR support, but several role and review
+  bullets relied on paragraph-level or coursebook-only citation context. Added point-of-use official citations for
+  DFARS 252.234-7998/-7999, the 180-day IBR timing requirement, DCMA EVMS compliance/surveillance, DCAA audit support,
+  DoD IPM policy and definitions, Naval CEVM, and SUPSHIP's EVMS role. Refreshed EVM source metadata to the current
+  2026-06-05 checks and added a DCMA EVMS Group source row.
+- Source basis: official DoD IPM definitions page; official DoD IPM policy and guidance page; DFARS RFO Part 234 EVMS
+  class-deviation PDF; official DCMA EVMS Group page from search/browser retrieval with command-line 403 caveat;
+  official DCAA About source already in the ledger; official DON CEVM page; local active-TeX and source-ledger scan.
+- Confidence: `High`
+- Status: `applied`
