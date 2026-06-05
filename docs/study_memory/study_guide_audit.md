@@ -66,6 +66,23 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied Finance, Cost, EVM, and T&E Flow Standardization
+
+- ID: `gc-20260605-finance-cost-evm-te-flow-standardization`
+- Location: `tex/chapters/6_PPBE.tex`, `tex/chapters/9_Program_Funding_and_Execution.tex`,
+  `tex/chapters/10_Cost_Fundamentals.tex`, `tex/chapters/14_EVM.tex`, `tex/chapters/18B_test-eval.tex`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: added first-screen Summary blocks and end-of-chapter Quick Review blocks to PPBE, Program Funding
+  and Execution, Cost Estimating, and EVM; converted the Test and Evaluation `Board Prep Summary` heading to the standard
+  `Summary` heading; and preserved existing cited doctrine and official-source anchors while turning loose board cues into
+  consistent board-speed recall prompts.
+- Source basis: existing coursebook and official-source citations already present in each chapter, plus local structure,
+  acronym, and whitespace validation.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-05-31 - CIVPERS Chapter 43 / Chapter 75 Standards
 
 - ID: `gc-20260531-civpers-ch43-ch75-standards`
