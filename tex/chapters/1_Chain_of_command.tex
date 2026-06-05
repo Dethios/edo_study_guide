@@ -157,43 +157,38 @@ Current as of 2026-06-04, Mr.\ William F.\ Mahan is performing the duties of \ac
     \coordinate (cmcJoin) at (cmc.south |- serviceJoinY);
     \coordinate (asnCnoIn) at ($(asn.north west)!0.45!(asn.north)$);
     \coordinate (asnCmcIn) at ($(asn.north east)!0.45!(asn.north)$);
-    % Route connector buses through open lanes so no line crosses a node interior.
-    \coordinate (pcdStart) at ($(asn.south west)+(0.62cm,0)$);
-    \coordinate (pmdStart) at ($(asn.south east)+(-0.62cm,0)$);
-    \coordinate (deputyLane) at ($(pcd.north)+(0,0.56cm)$);
-    \coordinate (pcdElbow) at (pcdStart |- deputyLane);
-    \coordinate (pmdElbow) at (pmdStart |- deputyLane);
-    \coordinate (pcdIn) at ($(pcd.north)+(0,0.30cm)$);
-    \coordinate (pmdIn) at ($(pmd.north)+(0,0.30cm)$);
-    \coordinate (paeBusY) at ($(missions.north)+(0,1.12cm)$);
+    % Keep hierarchy and support buses in open lanes; branch arrows terminate at node borders.
+    \coordinate (deputyBusY) at ($(pcd.north)+(0,0.46cm)$);
+    \coordinate (pcdBranch) at (pcd.north |- deputyBusY);
+    \coordinate (pmdBranch) at (pmd.north |- deputyBusY);
+    \coordinate (paeBusY) at ($(missions.north)+(0,1.05cm)$);
     \coordinate (paeBranchLeft) at (aviation.north |- paeBusY);
     \coordinate (paeBranchCenter) at (missions.north |- paeBusY);
     \coordinate (paeBranchRight) at (munitions.north |- paeBusY);
-    \coordinate (aviationIn) at ($(aviation.north)+(0,0.42cm)$);
-    \coordinate (missionsIn) at ($(missions.north)+(0,0.42cm)$);
-    \coordinate (munitionsIn) at ($(munitions.north)+(0,0.42cm)$);
-    \coordinate (paeStemTop) at ($(asn.south)+(0,-0.50cm)$);
-    \coordinate (paeStemBottom) at (paeBranchCenter);
     \coordinate (supportTrunkTop) at ($(aviation.west)+(-0.72cm,0)$);
     \coordinate (supportTrunkMid) at ($(industrial.west)+(-0.72cm,0)$);
     \coordinate (supportTrunkBottom) at ($(ssp.west)+(-0.72cm,0)$);
     \coordinate (supportOut) at ($(syscoms.east)+(0.24cm,0)$);
+    \coordinate (supportMidEntry) at (supportOut |- supportTrunkMid);
     \coordinate (supportJoin) at (supportTrunkMid);
 
-    \node[pae group, fit=(aviation)(missions)(munitions)(industrial)(maritime)(undersea)(ssp)(ras)(marine)] (paeGroup) {};
+    \begin{scope}[on background layer]
+      \node[pae group, fit=(aviation)(missions)(munitions)(industrial)(maritime)(undersea)(ssp)(ras)(marine)] (paeGroup) {};
+    \end{scope}
 
     \draw[line] (secnav.south) -- (asn.north);
     \draw[line] (cno.south) -- (cnoJoin) -| (asnCnoIn);
     \draw[line] (cmc.south) -- (cmcJoin) -| (asnCmcIn);
-    \draw[line] (pcdStart) -- (pcdElbow) -| (pcdIn);
-    \draw[line] (pmdStart) -- (pmdElbow) -| (pmdIn);
-    \draw[bus line] (asn.south) -- (paeStemTop) -- (paeStemBottom);
+    \draw[bus line] (pcdBranch) -- (pmdBranch);
+    \draw[line] (pcdBranch) -- (pcd.north);
+    \draw[line] (pmdBranch) -- (pmd.north);
+    \draw[bus line] (asn.south) -- (paeBranchCenter);
     \draw[bus line] (paeBranchLeft) -- (paeBranchRight);
-    \draw[line] (paeBranchLeft) -- (aviationIn);
-    \draw[line] (paeBranchCenter) -- (missionsIn);
-    \draw[line] (paeBranchRight) -- (munitionsIn);
+    \draw[line] (paeBranchLeft) -- (aviation.north);
+    \draw[line] (paeBranchCenter) -- (missions.north);
+    \draw[line] (paeBranchRight) -- (munitions.north);
 
-    \draw[dashed, rounded corners=2pt] (syscoms.east) -- (supportOut) -- (supportJoin);
+    \draw[dashed, rounded corners=2pt] (syscoms.east) -- (supportOut) -- (supportMidEntry) -- (supportJoin);
     \draw[dashed, rounded corners=2pt] (supportTrunkTop) -- (supportTrunkBottom);
     \draw[support line] (supportTrunkTop) -- (aviation.west);
     \draw[support line] (supportTrunkMid) -- (industrial.west);

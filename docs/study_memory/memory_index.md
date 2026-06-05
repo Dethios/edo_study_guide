@@ -25,7 +25,9 @@ Current as of 2026-06-05.
   standardized Summary / Quick Review flow across Chapters 1, 3, 4, 5, 8, and 29 and replaced NAVSEA exact-count
   coursebook-only bullets with an official-source snapshot caution. June 5 contracting/acquisition-flow follow-up added
   board-speed Quick Review blocks to Chapters 2, 11, 12, 12A, 13A, 13B, 13C, 15, and 27, and added a first-screen
-  Summary to Chapter 28.
+  Summary to Chapter 28. June 5 appendix follow-up standardized remaining appendix Summary / Quick Review flow, added
+  official combatant-command source support, refreshed active repo guidance, and fixed Figure 1.4 connector routing so
+  the rendered PAE chart uses node-border anchors instead of lines through boxes.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -93,8 +95,8 @@ Recent applied updates:
   rather than a single live constant.
 - Contracting, acquisition-policy, CIVPERS, and AWP/SOVT structure standardization so Chapters 2, 11, 12, 12A, 13A, 13B,
   13C, 15, and 27 each close with board-speed Quick Review blocks and Chapter 28 now opens with a Summary.
-- NMP/AIT ship-change flow cleanup for the program-office to shipboard installation chain, missing walkthrough citations,
-  and CDMD-OA/ILS/SID/FAT acronym support.
+- NMP/AIT ship-change flow cleanup for the program-office to shipboard installation chain, missing walkthrough
+  citations, and CDMD-OA/ILS/SID/FAT acronym support.
 - CIVPERS route-choice fast-cue cleanup for Chapter 43 vs Chapter 75, probationary/trial employees, WGI caveats, and
   WG/WL/WS 15/15/19 recall.
 - Source-selection and contract-administration cue cleanup for FAR/DFARS debrief/protest clocks, rating-method
@@ -119,8 +121,11 @@ Recent applied updates:
   Andrew Biehn remains a PAE Maritime / NAVSEA 21 awareness cue, not an EDO flag-roster entry.
 - Small-business and SBIR/STTR currentness cleanup for NAICS-specific SBA size standards, FAR 19.102/19.502-2
   set-aside cues, 15 U.S.C. 638 SBIR/STTR allocation percentages, and SBIR.gov phase/award-range caveats.
-- PAE chart endpoint-clearance follow-up for Figure 1.4: connector arrows now terminate in whitespace outside node
-  borders and the PAE group border has more spacing in the rebuilt PDF.
+- PAE chart node-anchor follow-up for Figure 1.4: deputy, PAE-row, and SYSCOM support connectors now route through open
+  lanes, terminate on box anchors, and draw the PAE group frame behind the PAE nodes in the rebuilt PDF.
+- Appendix flow and command-source cleanup: remaining appendices now have Summary / Quick Review flow, the combatant
+  command appendix spells out area of responsibility to avoid the NWCF AOR acronym collision, and the source ledger
+  includes official DoD combatant-command and SPACECOM sources.
 - Software Acquisition Pathway currentness cleanup for DoWI 5000.02 Change 2, direct DoWI 5000.87 source
   grounding, DBS/BCAC versus SWP crosswalk, SWP JCIDS/MDAP treatment, execution-entry artifacts, Agile design
   wording, PDSS cost-cue caveat, and the March 2025 SecDef SWP/CSO/OT memo.
@@ -141,8 +146,8 @@ Recent applied updates:
   versus current ESOH-documentation framing, FY-specific NAVSEA Standard Item caveats, and Integrated Case Study
   standalone summary/quick-review flow.
 - Leadership/professional-development source and flow audit: added EVM exercise quick review, precise FAR procurement
-  integrity/OCI source grounding, DAWIA greater-than-50-percent and functional-area-specific certification wording,
-  ED Dolphin expectation for non-warfare-qualified EDO accessions, OSR/PSR plus OMPF career-record framing, HCEPF acronym
+  integrity/OCI source grounding, DAWIA greater-than-50-percent and functional-area-specific certification wording, ED
+  Dolphin expectation for non-warfare-qualified EDO accessions, OSR/PSR plus OMPF career-record framing, HCEPF acronym
   handling, Warrior Toughness/NLDF official-source anchors, and LDF flow bridges for mentoring and resilience chapters.
 
 ## Next Review Plan

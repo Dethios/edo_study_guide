@@ -38,6 +38,9 @@ release tags (release-YYYYMMDD).
   active agent guidance focused on source recency, LaTeX conventions, and
   validation.
 - Clarified Docker build examples in `README.md`.
+- Standardized remaining appendix Summary / Quick Review flow, added official
+  combatant-command source support, and rerouted the ASN(RD&A) / PAE TikZ chart
+  connectors so lines no longer overlap the boxes in the rendered PDF.
 
 ## [release-20251221] - 2025-12-21
 

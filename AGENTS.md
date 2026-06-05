@@ -18,6 +18,8 @@ when requested.
 - `artifacts/build/`, `artifacts/tikz/`: aux files and TikZ cache; keep
   generated contents out of Git except placeholders.
 - `docs/reference/` and `docs/archive/`: source material and historical notes.
+- `docs/study_memory/`: validated tutoring memory, source ledger, audit log,
+  weak-area state, and JSONL guide-change records.
 - `project_export.json`: durable project memory/status snapshot.
 
 ## Build, Test, and Development Commands
@@ -31,6 +33,9 @@ build on save.
 - `./scripts/build.sh tex/main.tex`: local fallback.
 - `make check-acronyms`: validate acronym keys and macro placement.
 - `make check-tikz-cache`: validate TikZ externalization paths.
+- `make check-tex-structure`: validate standalone wrappers, glossaries, and
+  structural guards.
+- `make check-study-memory`: validate study-memory Markdown and JSONL state.
 - `scripts/tests/test-check-acronyms.sh`: regression test the acronym checker.
 - `rg "TODO|undefined citation|Missing character" tex artifacts/build`: focused
   content/build warning scan.
@@ -52,8 +57,11 @@ Run the Docker build for source changes and report remaining warnings,
 especially overfull boxes, missing citations, or shell-escape issues. Run
 `make check-acronyms` when touching `tex/acronyms.def` or acronym usage.
 Run `make check-tikz-cache` when touching TikZ externalization paths or cache
-configuration. Always run `rumdl check` on any modified Markdown files after
-making edits, or use `rumdl fmt <file>` to automatically format them.
+configuration. Run `make check-tex-structure` after wrapper, standalone
+glossary, Summary / Quick Review, or chapter-flow edits. Run
+`make check-study-memory` after study-memory, audit-log, source-ledger, weak-area,
+or guide-change updates. Always run `rumdl check` on any modified Markdown files
+after making edits, or use `rumdl fmt <file>` to automatically format them.
 
 ## Commit & Pull Request Guidelines
 
@@ -106,19 +114,23 @@ For every correction:
 
 Maintain these files when available:
 
-- `sources.md`: source inventory, version/date, URL or file path, authority
-  level.
-- `study_guide_audit.md`: correction log.
-- `question_bank.md` or `question_bank.jsonl`: generated questions, answers,
+- `docs/study_memory/sources.md`: source inventory, version/date, URL or file
+  path, authority level.
+- `docs/study_memory/study_guide_audit.md`: correction log.
+- `docs/study_memory/question_bank.jsonl`: generated questions, answers,
   explanations, tags, difficulty.
-- `learning_log.jsonl`: user responses, correctness, missed concept, weak-area
-  tag, next review date.
-- `weak_areas.md`: running summary of recurring weak areas and recommended
-  review actions.
+- `docs/study_memory/learning_log.jsonl`: user responses, correctness, missed
+  concept, weak-area tag, next review date.
+- `docs/study_memory/weak_areas.md` and `docs/study_memory/weak_areas.jsonl`:
+  recurring weak areas and recommended review actions.
+- `docs/study_memory/guide_changes.jsonl`: append-only applied guide-change
+  records.
 
 When generating questions:
 
 - Prefer active recall and scenario-based questions over passive recognition.
+- Keep exactly one active board-style drill question at a time unless the user
+  asks for a batch.
 - Include the correct answer and explanation separately from the question unless
   the user asks for immediate answers.
 - Tag each question by topic, source section, difficulty, and tested skill.

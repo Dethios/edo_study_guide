@@ -14,9 +14,11 @@
 \section{November 2025 Main Slate Distribution}\label{app:edo-billet-distribution}
 \noindent\textit{Current as of 2025-11-01. This appendix is a historical billet-density snapshot from the November~2025 main slate; use Appendix~\ref{app:edo-flags} for the current flag roster.}
 
+\subsection{Summary}
 \begin{description}[style=nextline, labelsep=0.5em, font=\bfseries]
   \item[\textbf{Purpose.}] Quick reference to where \acp{edo} had billets on the November~2025 main slate, grouped by community and sorted by location with billet counts by rank.
-  \item[\textbf{Method.}] Parsed the ``SLATE\_EDO\_MAIN'' worksheet in \emph{EDO Main Slate November 2025.xlsx} by mentor group (community), location (AHPORT), and billet rank (BRANK); rank order follows flag to junior officer seniority (\acs{vadm}, \acs{radm}, \acs{rdml}, CAPT, CDR, LCDR, LT, LTJG).
+  \item[\textbf{Source workbook.}] The repo-local source is \emph{tex/assets/reference-docs/EDO/EDO Main Slate November 2025.xlsx}; the parsed worksheet is ``SLATE\_EDO\_MAIN''.
+  \item[\textbf{Method.}] Parsed the worksheet by mentor group (community), location (AHPORT), and billet rank (BRANK); rank order follows flag to junior officer seniority (\acs{vadm}, \acs{radm}, \acs{rdml}, CAPT, CDR, LCDR, LT, LTJG).
   \item[\textbf{Location expansions.}] Location codes were expanded best-effort based on billet context (e.g., ANNAP~$\rightarrow$~Annapolis, MD; MONTEY~$\rightarrow$~Monterey, CA). Confirmations are appreciated for potentially ambiguous codes listed after the table.
 \end{description}
 
@@ -169,6 +171,14 @@
   UEDO               & Washington, DC                     & CAPT~7 / CDR~9 / LCDR~18                            \\
   \bottomrule
 \end{longtblr}
+
+\subsection{Quick Review}
+\begin{itemize}
+  \item Use this appendix for historical billet-density recall, not current flag-grade recall.
+  \item For current flag officers and grade counts, use Appendix~\ref{app:edo-flags}.
+  \item The table is derived from the November~2025 main slate workbook and is only as current as that slate.
+  \item If a location expansion looks ambiguous, verify against the original billet row before using it as a board answer.
+\end{itemize}
 
 \IfSubfilesClassLoaded{
   \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}

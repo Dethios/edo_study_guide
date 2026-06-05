@@ -75,9 +75,9 @@ The entries in this section preserve the original imported package state. Later 
   `docs/study_memory/guide_changes.jsonl`
 - Verdict: `Applied`
 - Correction applied: added first-screen Summary blocks and end-of-chapter Quick Review blocks to PPBE, Program Funding
-  and Execution, Cost Estimating, and EVM; converted the Test and Evaluation `Board Prep Summary` heading to the standard
-  `Summary` heading; and preserved existing cited doctrine and official-source anchors while turning loose board cues into
-  consistent board-speed recall prompts.
+  and Execution, Cost Estimating, and EVM; converted the Test and Evaluation `Board Prep Summary` heading to the
+  standard `Summary` heading; and preserved existing cited doctrine and official-source anchors while turning loose
+  board cues into consistent board-speed recall prompts.
 - Source basis: existing coursebook and official-source citations already present in each chapter, plus local structure,
   acronym, and whitespace validation.
 - Confidence: `High`
@@ -101,7 +101,8 @@ The entries in this section preserve the original imported package state. Later 
   Chapter 43 proof standard to all unacceptable-performance routes, including Chapter 75. This should remain a proposed
   guide clarification until the user explicitly agrees to edit the LaTeX source.
 - Confidence: `High`
-- Status: `closed by gc-20260531-civpers-ch43-ch75-standards-closeout; rechecked by gc-20260604-civpers-source-fidelity-cleanup`
+- Status:
+  `closed by gc-20260531-civpers-ch43-ch75-standards-closeout; rechecked by gc-20260604-civpers-source-fidelity-cleanup`
 
 ### 2026-05-31 - Applied CIVPERS Chapter 43 / Chapter 75 Clarification
 
@@ -157,10 +158,10 @@ The entries in this section preserve the original imported package state. Later 
   `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
   `docs/study_memory/guide_changes.jsonl`
 - Verdict: `Applied`
-- Correction applied: rerouted Figure 1.4 connector geometry into explicit whitespace lanes. Deputy arrows now start from
-  ASN(RD&A) bottom-edge ports and terminate above the deputy boxes, the PAE portfolio bus runs above the first PAE row with
-  arrows stopping above node borders, the SYSCOM support cue stops outside the PAE group, and all node fills are explicitly
-  opaque so background connectors cannot show through boxes.
+- Correction applied: rerouted Figure 1.4 connector geometry into explicit whitespace lanes. Deputy arrows now start
+  from ASN(RD&A) bottom-edge ports and terminate above the deputy boxes, the PAE portfolio bus runs above the first PAE
+  row with arrows stopping above node borders, the SYSCOM support cue stops outside the PAE group, and all node fills
+  are explicitly opaque so background connectors cannot show through boxes.
 - Source basis: user-reported rendered-PDF defect in the 2026-06-05 screenshot and local rendered-page verification from
   `artifacts/out/main.pdf` page 16.
 - Confidence: `High`
@@ -188,10 +189,11 @@ The entries in this section preserve the original imported package state. Later 
   `docs/study_memory/sources.md`
 - Verdict: `Applied`
 - Correction applied: retained IWS 6.0 as the combat-system command-and-control and CEC/sensor-netting lane; added a PMW
-  150 board cue for GCCS-M, MTC2, C2P, Link 16 Network, and LMMT; and clarified that PMA/PMW 101 remains the MIDS/Link 16
-  terminal and waveform lane.
+  150 board cue for GCCS-M, MTC2, C2P, Link 16 Network, and LMMT; and clarified that PMA/PMW 101 remains the MIDS/Link
+  16 terminal and waveform lane.
 - Source basis: NAVSEA About PEO IWS, NAVSEA PEO IWS Industry Engagement, NAVSEA Cooperative Engagement Capability
-  article, PEO C4I Program Offices page, PMW 150 FY26 tear sheet, and PMA/PMW 101 MIDS tear sheet listed in `sources.md`.
+  article, PEO C4I Program Offices page, PMW 150 FY26 tear sheet, and PMA/PMW 101 MIDS tear sheet listed in
+  `sources.md`.
 - Confidence: `High`
 - Status: `applied`
 
@@ -261,11 +263,11 @@ The entries in this section preserve the original imported package state. Later 
 - Location: `tex/chapters/appendix_current_events.tex`, `tex/current_events.bib`,
   `docs/study_memory/sources.md`
 - Verdict: `Applied`
-- Correction applied: replaced third-party-supported current-event paragraphs for Columbia-class delay, amphibious
-  block buy, and SIOP status with wording grounded in official CRS, GAO, DoW, and NAVFAC sources. Removed the unsupported
-  Columbia 60 percent complete point, replaced the amphibious nearly $1B savings claim with the CRS-supported about
-  $914M estimate, and reframed SIOP annual-escalation and maintenance-reduction point estimates as unsupported by the
-  official source set checked in this slice.
+- Correction applied: replaced third-party-supported current-event paragraphs for Columbia-class delay, amphibious block
+  buy, and SIOP status with wording grounded in official CRS, GAO, DoW, and NAVFAC sources. Removed the unsupported
+  Columbia 60 percent complete point, replaced the amphibious nearly
+  $1B savings claim with the CRS-supported about $914M estimate, and reframed SIOP annual-escalation and
+  maintenance-reduction point estimates as unsupported by the official source set checked in this slice.
 - Source basis: CRS R41129, GAO-24-107732, DoW Contracts for Sept. 24 2024, CRS R43543, GAO-25-106728, NAVFAC PEO
   Industrial Infrastructure SIOP, NAVFAC PSNS Dry Dock 4 seismic-upgrade release, and GAO-23-106067 records listed in
   `sources.md`.
@@ -316,8 +318,8 @@ The entries in this section preserve the original imported package state. Later 
   Fleet Readiness Directorate cue before the standalone glossary block; replaced stale `8_Civilian_Personnel.tex`
   audit-trail paths with `27_CIVPERS.tex`; and made older CIVPERS applied guide-change records unique closeout IDs with
   `closes_id` links so parsers do not see duplicate machine keys.
-- Source basis: read-only cross-chapter consistency review, read-only source-integrity review, local file inspection, and
-  the official NAVSEA TS9090-310G public PDF for SOVT expansion.
+- Source basis: read-only cross-chapter consistency review, read-only source-integrity review, local file inspection,
+  and the official NAVSEA TS9090-310G public PDF for SOVT expansion.
 - Confidence: `High`
 - Status: `applied`
 
@@ -508,11 +510,11 @@ The entries in this section preserve the original imported package state. Later 
   `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
   `docs/study_memory/guide_changes.jsonl`
 - Verdict: `Applied`
-- Correction applied: replaced the generic standalone chapter titles with topic-specific titles; added primary statutory,
-  regulatory, and OPM source citations to the performance-vs-conduct table and unacceptable-performance paragraph; added
-  the missing BibTeX records for 5 U.S.C. 4303, 5 U.S.C. 7513, 5 U.S.C. 7701, 5 CFR 432.105, 5 CFR 752.404, OPM employee
-  rights, OPM performance management, and the OPM Chapter 43/75 comparison material; and refreshed CIVPERS source-ledger
-  checked dates to 2026-06-04.
+- Correction applied: replaced the generic standalone chapter titles with topic-specific titles; added primary
+  statutory, regulatory, and OPM source citations to the performance-vs-conduct table and unacceptable-performance
+  paragraph; added the missing BibTeX records for 5 U.S.C. 4303, 5 U.S.C. 7513, 5 U.S.C. 7701, 5 CFR 432.105, 5 CFR
+  752.404, OPM employee rights, OPM performance management, and the OPM Chapter 43/75 comparison material; and refreshed
+  CIVPERS source-ledger checked dates to 2026-06-04.
 - Source basis: current official OPM, eCFR, U.S. Code, DoDI 1400.25 Volume 431 Change 4, Department-level unacceptable
   performance memo, and MSPB records listed in `sources.md`.
 - Confidence: `High`
@@ -542,16 +544,17 @@ The entries in this section preserve the original imported package state. Later 
   `docs/study_memory/sources.md`, `docs/study_memory/weak_areas.md`, `docs/study_memory/weak_areas.jsonl`,
   `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
 - Verdict: `Applied`
-- Correction applied: removed an empty list item from the acquisition-governance selected-billets cue; reduced reliance on
-  stale individual Navy biography citations by using the June~2026 public flag roster as the grade/billet authority;
+- Correction applied: removed an empty list item from the acquisition-governance selected-billets cue; reduced reliance
+  on stale individual Navy biography citations by using the June~2026 public flag roster as the grade/billet authority;
   aligned RADM Casey Moton and RDML Brian Metcalf wording with the live PAE Maritime deputy-PAE lanes; and updated the
   weak-area summary to show the remaining issue as memorization/rapid recall rather than unresolved source drift.
 - Source basis: June~2026 public flag-roster record already in the guide, live PAE Maritime homepage checked on
-  2026-06-04, local consistency-scout findings, and main-thread source-access checks. MyNavyHR, SSP, NAVSEA, and Navy.mil
-  command-line retrieval returned `403` during this pass, so their previously recorded 2026-06-04 currentness records were
-  not advanced beyond the existing source-ledger state.
-- Confidence: `High` for local consistency and PAE Maritime wording; `Medium` for external currentness beyond the existing
-  June~2026 roster record because several official pages were inaccessible to command-line retrieval during this pass.
+  2026-06-04, local consistency-scout findings, and main-thread source-access checks. MyNavyHR, SSP, NAVSEA, and
+  Navy.mil command-line retrieval returned `403` during this pass, so their previously recorded 2026-06-04 currentness
+  records were not advanced beyond the existing source-ledger state.
+- Confidence: `High` for local consistency and PAE Maritime wording; `Medium` for external currentness beyond the
+  existing June~2026 roster record because several official pages were inaccessible to command-line retrieval during
+  this pass.
 - Status: `applied`
 
 ### 2026-06-04 - Applied OPNAV Resource-Sponsor Map Cleanup
@@ -567,12 +570,12 @@ The entries in this section preserve the original imported package state. Later 
   NAVMAC resource-sponsor code list, not the CNO principal-assistant N3/N5 operations/plans lane; renamed sponsor-only
   headings to sponsor/integrator wording; added board traps that N8 is the PPBE integration/checkbook lane rather than
   a platform sponsor; added N7 to Appendix Key Roles; and added OPNAV/PPBE source-ledger rows.
-- Source basis: NAVMAC Activity Manpower Management Guide Section 24 checked on 2026-06-04, existing bibliography records
-  for OPNAVINST 3050.27A, OPNAVINST 3111.17C, and OPNAVINST 5420.117A, local consistency-scout findings, and main-thread
-  source-access checks. DONI direct command-line retrieval returned request-filtered HTML during this pass, so OPNAVINST
-  checked dates were not advanced beyond existing bibliography records.
-- Confidence: `High` for NAVMAC resource-sponsor-code mapping; `Medium` for broader OPNAV instruction currentness because
-  DONI direct retrieval was blocked during this pass.
+- Source basis: NAVMAC Activity Manpower Management Guide Section 24 checked on 2026-06-04, existing bibliography
+  records for OPNAVINST 3050.27A, OPNAVINST 3111.17C, and OPNAVINST 5420.117A, local consistency-scout findings, and
+  main-thread source-access checks. DONI direct command-line retrieval returned request-filtered HTML during this pass,
+  so OPNAVINST checked dates were not advanced beyond existing bibliography records.
+- Confidence: `High` for NAVMAC resource-sponsor-code mapping; `Medium` for broader OPNAV instruction currentness
+  because DONI direct retrieval was blocked during this pass.
 - Status: `applied`
 
 ### 2026-06-04 - Applied NAVWAR/PEO C4I Source-Hygiene Refresh
@@ -582,15 +585,15 @@ The entries in this section preserve the original imported package state. Later 
   `docs/study_memory/sources.md`, `docs/study_memory/weak_areas.md`, `docs/study_memory/weak_areas.jsonl`,
   `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
 - Verdict: `Applied`
-- Correction applied: aligned the PEO C4I office list with the official PMW/A 170 styling, updated the NAVWAR current-source
-  cue from 2026-05-27 to 2026-06-04, moved the Board Fast Cues C4I product-ownership citation from coursebook-only support
-  to current official PEO C4I and NAVSEA sources, aligned PMW 150/160/170 bibliography checked dates with the source ledger,
-  added the missing PMW/A 170 source-ledger row, refreshed the PEO MLB portfolio-book source-ledger row, and corrected the
-  NAVSEA CEC article version date to 2025-08-21.
-- Source basis: PEO C4I Program Offices, PMW 120 Overview Tearsheet, PMW 150 Tear Sheet, PMW 160 Tear Sheet, PMW/A 170 Tear
-  Sheet, PMW 790 Tear Sheet, PMA/PMW 101 MIDS Tear Sheet, NAVAIR PMA/PMW-101, NAVAIR PMW/A-170, NAVSEA About PEO IWS,
-  NAVSEA Cooperative Engagement Capability article, PEO Digital Portfolio Overview, and PEO MLB Portfolio Book, all checked
-  through official-source web retrieval on 2026-06-04.
+- Correction applied: aligned the PEO C4I office list with the official PMW/A 170 styling, updated the NAVWAR
+  current-source cue from 2026-05-27 to 2026-06-04, moved the Board Fast Cues C4I product-ownership citation from
+  coursebook-only support to current official PEO C4I and NAVSEA sources, aligned PMW 150/160/170 bibliography checked
+  dates with the source ledger, added the missing PMW/A 170 source-ledger row, refreshed the PEO MLB portfolio-book
+  source-ledger row, and corrected the NAVSEA CEC article version date to 2025-08-21.
+- Source basis: PEO C4I Program Offices, PMW 120 Overview Tearsheet, PMW 150 Tear Sheet, PMW 160 Tear Sheet, PMW/A 170
+  Tear Sheet, PMW 790 Tear Sheet, PMA/PMW 101 MIDS Tear Sheet, NAVAIR PMA/PMW-101, NAVAIR PMW/A-170, NAVSEA About PEO
+  IWS, NAVSEA Cooperative Engagement Capability article, PEO Digital Portfolio Overview, and PEO MLB Portfolio Book, all
+  checked through official-source web retrieval on 2026-06-04.
 - Confidence: `High`
 - Status: `applied`
 
@@ -938,7 +941,8 @@ The entries in this section preserve the original imported package state. Later 
   anti-jam/LPI claims; PMW 790 now distinguishes DJC2, STACC, MOC, and over-100 C4ISR-capability delivery instead of the
   unsupported over-60-network wording; PEO MLB/Navy ERP now uses current GAO financial-system-of-record and Navy ERP+
   modernization wording instead of older user-count or spending-percentage figures; and the PAE Mission Systems cue now
-  clearly preserves current public PEO/PMW/IWS recall while treating PAE Mission Systems as current governance alignment.
+  clearly preserves current public PEO/PMW/IWS recall while treating PAE Mission Systems as current governance
+  alignment.
 - Source basis: official PEO C4I program-office page, PMW 150 tear sheet, PMW/A 170 tear sheet, PMW 790 tear sheet, Navy
   PAE Mission Systems release, PEO MLB public pages, and GAO-26-107119, all checked from official web sources on
   2026-06-04.
@@ -961,9 +965,9 @@ The entries in this section preserve the original imported package state. Later 
   logistics, and manufacturing/production quality. Risk transfer now says transfer does not remove Government
   responsibility; issue and opportunity management now use the DoD RIO Guide handling options; WBS now cites active
   MIL-STD-881F and avoids a universal Level 4 contract-WBS rule; acquisition logistics now uses current JFRP sustainment
-  performance-attribute wording and the DoDI 5000.91 IPS list; manufacturing chapters now include summary and quick-review
-  blocks, MRA/MRL and DFM/A board cues, escaped-defect/corrective-action handling, and consistent standalone subfile
-  glossary handling.
+  performance-attribute wording and the DoDI 5000.91 IPS list; manufacturing chapters now include summary and
+  quick-review blocks, MRA/MRL and DFM/A board cues, escaped-defect/corrective-action handling, and consistent
+  standalone subfile glossary handling.
 - Source basis: DoD RIO Guide, ASSIST MIL-STD-881F details, DoDI 5000.91, CJCSM 5123.01, DoD MRL Deskbook 2025, DoD
   Producibility and Manufacturability Engineering Guide, and DAU Manufacturing and Quality, all checked from official or
   primary web sources on 2026-06-04.
@@ -1054,11 +1058,49 @@ The entries in this section preserve the original imported package state. Later 
   `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
 - Verdict: `Applied`
 - Correction applied: standardized board-flow closeout across technical authority, contracting, solicitation, source
-  selection, source-selection practical, contract administration, cost/price evaluation, acquisition policy, and CIVPERS by
-  adding focused Quick Review blocks grounded in each chapter's existing cited material. Added a first-screen Summary to
-  AWP/SOVT so the chapter now has the same summary-plus-quick-review reading pattern as the other recently normalized
+  selection, source-selection practical, contract administration, cost/price evaluation, acquisition policy, and CIVPERS
+  by adding focused Quick Review blocks grounded in each chapter's existing cited material. Added a first-screen Summary
+  to AWP/SOVT so the chapter now has the same summary-plus-quick-review reading pattern as the other recently normalized
   chapters.
 - Source basis: existing cited coursebook and official-source sets already present in the affected chapters; no new
   current-source or threshold claims were introduced in this structure/flow pass.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-05 - Applied Appendix Flow and Combatant-Command Source Cleanup
+
+- ID: `gc-20260605-appendix-flow-command-source-cleanup`
+- Location: `tex/chapters/28_AWP_and_SOVT.tex`, `tex/chapters/appendix_plat_card.tex`,
+  `tex/chapters/appendix_key_roles.tex`, `tex/chapters/appendix_pae_construct_mapping.tex`,
+  `tex/chapters/appendix_combatant_commands.tex`, `tex/chapters/appendix_edo_billet_summary.tex`,
+  `tex/chapters/appendix_edo_flags.tex`, `tex/chapters/appendix_cno34_day_one_message.tex`,
+  `tex/chapters/appendix_current_events.tex`, `tex/edo.bib`, `AGENTS.md`, `CHANGELOG.md`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: standardized the remaining appendix flow with Summary and Quick Review blocks where they were
+  missing, added the missing standalone external-document guard to the AWP/SOVT chapter, replaced the combatant-command
+  `aor` acronym collision with spelled-out area-of-responsibility wording, added official combatant-command source
+  support, and recorded the November 2025 EDO main-slate workbook as the billet-summary source. Refreshed `AGENTS.md` so
+  repo guidance points at `docs/study_memory/` and includes the active validation commands and one-question drill rule.
+- Source basis: official Department public combatant-command pages, the USSPACECOM strategic-environment article, 10
+  U.S.C. 162, the repo-local EDO Main Slate November 2025 workbook, existing cited sources in the affected appendices,
+  read-only formatting/structure review, local TeX structure scan, and local validation.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-05 - Applied PAE Chart Node-Anchor Follow-Up
+
+- ID: `gc-20260605-pae-chart-node-anchor-followup`
+- Location: `tex/chapters/1_Chain_of_command.tex`, `artifacts/out/main.pdf`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: replaced the earlier floating endpoint coordinates in Figure 1.4 with branch buses that terminate
+  at the actual node borders. The deputy, PAE-row, and SYSCOM support connectors now route through open lanes and stop
+  on box anchors in the rendered PDF; the PAE group frame is drawn on the background layer so its border does not draw
+  over the PAE boxes.
+- Source basis: user-reported rendered-PDF defect, main-thread TikZ source inspection, full Docker PDF rebuild,
+  log/structure validation, and rendered page-image verification of Figure 1.4 on physical PDF page 16.
 - Confidence: `High`
 - Status: `applied`
