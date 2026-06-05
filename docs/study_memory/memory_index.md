@@ -348,6 +348,9 @@ Recent applied updates:
   6.1--6.8 by adding Software and Digital Technology Pilot Programs.
 - FFRDC/UARC distinction cleanup: corrected Chapter 17A so UARCs are not described as a specialized FFRDC model; added
   official OUSD(R&E) FFRDC/UARC support and current examples for both constructs.
+- Fleet-maintenance policy source grounding: added point-of-use OPNAVINST 4700.7N, JFMM, and 10 U.S.C. 2466 support to
+  Chapter 21's maintenance-policy, RCM/CBM/TDM, CMP, FAST, availability-type, and right-level-of-maintenance cues while
+  preserving coursebook support for board-specific membership and scheduling details.
 
 ## Next Review Plan
 

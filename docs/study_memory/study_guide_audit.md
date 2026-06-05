@@ -2433,3 +2433,23 @@ The entries in this section preserve the original imported package state. Later 
 - Source basis: official OUSD(R&E) FFRDC/UARC overview page checked on 2026-06-05; local Chapter 17A terminology scan.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Ground Chapter 21 Fleet-Maintenance Policy Cues
+
+- ID: `gc-20260605-fleet-maint-policy-source-grounding`
+- Location: `tex/chapters/21_Fleet_Maintenance_Policy_and_Implementation.tex`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: Chapter 21 already cited OPNAVINST 4700.7N for the headline policy baseline, but several
+  policy-level maintenance, RCM, CBM, TDM, CMP, scheduling, availability-type, FAST, and right-level-of-maintenance cues
+  still relied only on the EDO coursebook. Added point-of-use citations to OPNAVINST 4700.7N where the claim is ship
+  maintenance policy, maintenance philosophy, RCM/CBM/TDM, or CMP; added JFMM citation support where the claim is fleet
+  maintenance scheduling or availability framework; and added 10 U.S.C. 2466 support to the right-level-of-maintenance
+  cue because legal workload constraints are part of the assignment decision. Board-specific membership and detailed
+  coursebook recall remain supported by the EDO coursebook.
+- Source basis: official DONI OPNAVINST 4700.7N listing/search and PDF-source evidence checked on 2026-06-05; official
+  NAVSEA SUBMEPP JFMM landing page checked on 2026-06-05; official U.S. Code 10 U.S.C. 2466 text checked on 2026-06-05;
+  local Chapter 21 citation-fit scan.
+- Confidence: `High`
+- Status: `applied`
