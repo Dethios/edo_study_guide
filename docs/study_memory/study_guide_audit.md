@@ -2063,3 +2063,20 @@ The entries in this section preserve the original imported package state. Later 
 - Source basis: official Acquisition Transformation Strategy PDF and local active-citation metadata scan.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Align Auxiliary Current-Organization Source Notes
+
+- ID: `gc-20260605-auxiliary-current-org-source-note-alignment`
+- Location: `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: renamed the imported "Current Organization Sources Mentioned" source-ledger section to
+  "Auxiliary Current-Organization Source Notes" and refreshed the two official web-source rows that still carried
+  May 30 check dates. The DONHR Luebke row now reflects current official index/search evidence and the
+  browser-filtering caveat for direct PDF access. The MyNavyHR SWO(N) row now reflects the current online page and
+  21 May 2026 community brief update. The historical May 30 local-provenance row remains intentionally dated to its
+  import source.
+- Source basis: official DONHR Senior Executive Biographies index and search evidence for the Luebke biography,
+  official MyNavyHR SWO(N) page, and local source-ledger/currentness scan.
+- Confidence: `High`
+- Status: `applied`
