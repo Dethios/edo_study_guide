@@ -66,6 +66,24 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied WAS Memo and NSCF Citation Source Refresh
+
+- ID: `gc-20260605-was-memo-nscf-citation-refresh`
+- Location: `tex/edo.bib`, `tex/chapters/appendix_current_events.tex`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: replaced active WAS transformation, Joint Requirements reform, and arms-transfer memo BibTeX
+  URLs with official Defense Media PDF URLs and refreshed their access dates to 2026-06-05. Added an exact
+  `10 U.S.C. 149` citation and source-ledger row for the National Security Capital Forum statutory creation and chair
+  language, retained the local NSCF memo mirror as a dated implementation cue, and widened the current-events NSCF
+  citation to include both the statute and memo.
+- Source basis: official Defense Media PDFs for the 7 Nov 2025 WAS, Joint Requirements reform, and arms-transfer
+  memoranda; official U.S. Code 10 U.S.C. 149 page showing text in effect on 2026-06-04; local active-citation metadata
+  scan.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied Historical Acquisition Statute Name Cleanup
 
 - ID: `gc-20260605-historical-acquisition-statute-name-cleanup`

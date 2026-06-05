@@ -7,9 +7,10 @@ Current as of 2026-06-05.
 - Session: `2026-06-04-end-to-end-study-guide-audit`
 - Date: 2026-06-04
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
-- Current follow-up: 2026-06-05 Acquisition Transformation Strategy metadata pass aligned the active
-  `secwar-acq-transformation-2025` bibliography access date and source-ledger check date to 2026-06-05 after confirming
-  the official PDF remains reachable and active in WAS, PAE, portfolio-trade, and current-events material.
+- Current follow-up: 2026-06-05 WAS memo and NSCF citation refresh replaced active local WAS/JFRP/arms-transfer memo
+  bibliography URLs with official Defense Media PDF URLs, added exact 10 U.S.C. 149 source support for National Security
+  Capital Forum statutory creation and chair language, and retained the local NSCF memo mirror as a dated implementation
+  cue.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,
