@@ -262,6 +262,9 @@ Recent applied updates:
   NAVFAC/NAVSEA infrastructure, NAVSEA FY26 Standard Items, SECNAVINST 5460.4, SECNAVINST 5400.15D, RFO White House,
   FMB/N82, SSP, NAVPLAN, and CNO Day One sources; and backfilled all remaining cited-BibTeX source inventory rows so
   `make audit-cited-bib-sources` reports no exact-URL gaps.
+- Warfare-center main-matter include cleanup: changed the Chapter 5 active include in `tex/main.tex` from the generic
+  `\StudySubfile` helper to `\ChapterWithRefsAtStart` so the Organization chapters use one consistent main-matter
+  include pattern; no rendered doctrine or source content changed.
 
 ## Next Review Plan
 

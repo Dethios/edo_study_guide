@@ -1777,3 +1777,17 @@ The entries in this section preserve the original imported package state. Later 
   class-deviation PDF; and official Acquisition.gov threshold-changes page.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Aligned Warfare-Center Main-Matter Include Flow
+
+- ID: `gc-20260605-warfare-center-mainmatter-include-flow`
+- Location: `tex/main.tex`, `tex/chapters/5_NAVAIR_and_PEOs.tex`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: changed the active main-matter include for `5_NAVAIR_and_PEOs.tex` from the generic
+  `\StudySubfile` helper to `\ChapterWithRefsAtStart`, matching every other active main-matter study-guide chapter.
+  The rendered section remains `Naval Warfare Centers`; no doctrine text, citations, labels, or appendix includes
+  changed.
+- Source basis: local structure-flow review of `tex/main.tex` and `tex/chapters/5_NAVAIR_and_PEOs.tex`.
+- Confidence: `High`
+- Status: `applied`
