@@ -23,7 +23,7 @@ The entries in this section preserve the original imported package state. Later 
 - Explanation: imported as a proposed current-checkout record because the package reports parent-session edits but this
   implementation did not verify those LaTeX diffs.
 - Confidence: `Medium`
-- Status: `proposed`
+- Status: `closed by gc-20260604-navwar-c4i-products-closeout`
 
 ### 2026-05-30 - NAVSEA IWS 6.0 vs PMW 150
 
@@ -36,7 +36,7 @@ The entries in this section preserve the original imported package state. Later 
 - Source basis: NAVSEA PEO IWS and PEO C4I sources listed in `sources.md`.
 - Explanation: imported as proposed until the current checkout and live source basis are reverified.
 - Confidence: `Medium`
-- Status: `proposed`
+- Status: `closed by gc-20260604-iws6-pmw150-closeout`
 
 ### 2026-05-30 - CIVPERS Removal Routes
 
@@ -62,9 +62,24 @@ The entries in this section preserve the original imported package state. Later 
 - Source basis: package provenance and official source list in `sources.md`.
 - Explanation: imported as proposed until the current checkout is verified.
 - Confidence: `Medium`
-- Status: `proposed`
+- Status: `closed by gc-20260604-acronyms-closeout`
 
 ## Active Session Findings
+
+### 2026-06-05 - Applied Imported Proposal Status Closeout
+
+- ID: `gc-20260605-imported-proposal-status-closeout`
+- Location: `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: updated the readable May 30 imported NAVWAR/C4I, IWS 6.0 vs PMW 150, and acronym records so
+  their status lines point to the June 4 applied closeout records that already verified and closed those topics. The
+  append-only `guide_changes.jsonl` historical proposed records remain unchanged; the current applied closeout records
+  remain the authoritative current state.
+- Source basis: local audit-log consistency review against `gc-20260604-navwar-c4i-products-closeout`,
+  `gc-20260604-iws6-pmw150-closeout`, and `gc-20260604-acronyms-closeout`.
+- Confidence: `High`
+- Status: `applied`
 
 ### 2026-06-05 - Applied Active-Citation Backlog Access-Caveat Alignment
 
