@@ -7,9 +7,8 @@ Current as of 2026-06-05.
 - Session: `2026-06-04-end-to-end-study-guide-audit`
 - Date: 2026-06-04
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
-- Current follow-up: 2026-06-05 Chapter 6 PPBE cleanup added exact 10 U.S.C. 221 and 31 U.S.C. 1105 statutory anchors
-  for FYDP and President's Budget mechanics, tightened PPBE execution/program-review citations, and preserved
-  coursebook-only support for Navy-internal classroom details.
+- Current follow-up: 2026-06-05 Chapter 7 NWCF timeline cleanup aligned field-activity budget wording with the Chapter 6
+  President's Budget statutory window and removed the stale "President signs the budget" shorthand.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,
@@ -69,6 +68,8 @@ Current as of 2026-06-05.
   OMB M-25-26, Federal Register EO publication, FY 2026 NDAA, NMCARS, 10 U.S.C. 139, 10 U.S.C. 4251, and USFF Mission.
   June 5 PPBE statutory follow-on added exact 10 U.S.C. 221 and 31 U.S.C. 1105 anchors for FYDP horizon/consistency and
   President's Budget submission timing in Chapter 6.
+  June 5 NWCF timeline follow-on aligned Chapter 7's fall BES/PB review and Jan--Feb PB submission wording with the
+  same statutory budget-process anchors while preserving the coursebook's 18--24 month NWCF rate-setting cue.
   June 5 CIVPERS/labor follow-on updated the stale OPNAVINST 5354.1H EEO citation to current 5354.1J, corrected the FLRA
   Oklahoma City decision metadata, removed a weak National Guard handbook citation from GS step timing, and backfilled
   OPM, EEOC, and FLRA exact source-ledger rows. June 5 IPMDAR/JITC/TRA follow-on refreshed the IPMDAR DID access date,

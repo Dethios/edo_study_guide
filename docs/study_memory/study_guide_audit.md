@@ -66,6 +66,22 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Align Chapter 7 NWCF Budget Timeline with PB Submission Law
+
+- ID: `gc-20260605-nwcf-budget-timeline-pb-alignment`
+- Location: `tex/chapters/7_NWCF.tex`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: Chapter 7's NWCF budget timeline still said DoD submits to Congress in September and that the
+  President signs the budget on the first Monday in February. Reworded the fall step as BES/President's Budget review
+  and the final step as President's Budget submission to Congress within the statutory January-to-February window, while
+  preserving the coursebook's cue that NWCF rates are set 18--24 months in advance through the budget process. Added
+  OMB A-11, 31 U.S.C. 1105, DoW FMR Volume 3, and DoW FMR Volume 11B Chapter 3 point-of-use support where applicable.
+- Source basis: official OMB Circular A-11, 31 U.S.C. 1105, DoW FMR Volume 3, DoW FMR Volume 11B Chapter 3, and local
+  Chapter 7 / Chapter 6 consistency scan checked on 2026-06-05.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Ground Chapter 6 PPBE Statutory Anchors
 
 - ID: `gc-20260605-ppbe-fydp-pb-statutory-grounding`
