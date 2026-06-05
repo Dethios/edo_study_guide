@@ -2155,3 +2155,18 @@ The entries in this section preserve the original imported package state. Later 
   existing bibliography/source-ledger rows checked on 2026-06-05, and local active-TeX source scan.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Ground Leading People GRGB Bullets in Official Source
+
+- ID: `gc-20260605-leading-people-grgb-source-grounding`
+- Location: `tex/chapters/27E_Leading_People.tex`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: added the official MyNavyHR GRGB Leadership Toolkit citation to the Leading People summary,
+  culture-shift, Get Better, and Quick Review bullets that summarize GRGB transparency, self-assessment,
+  problem-solving, fixing/elevating barriers, and team/culture building. The coursebook citation remains to preserve
+  lecture-source traceability.
+- Source basis: official MyNavyHR GRGB Leadership Toolkit page updated 2026-04-01, existing bibliography/source-ledger
+  row checked on 2026-06-05, and local active-TeX source scan.
+- Confidence: `High`
+- Status: `applied`

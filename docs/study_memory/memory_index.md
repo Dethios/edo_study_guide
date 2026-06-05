@@ -102,6 +102,8 @@ Current as of 2026-06-05.
   resolve `../main.tex` during standalone validation. June 5 numbered-reference follow-on extended the shared
   reference macros and structure guard to Appendix, Section, and plural Figures references. June 5 leadership-source
   follow-on added official CNO34 source support to the Leading People Day One Message and Charge of Command bullets.
+  June 5 GRGB source-fidelity follow-on added official MyNavyHR GRGB/NLDF source support to the Leading People GRGB
+  bullets.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
