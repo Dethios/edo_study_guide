@@ -7,8 +7,9 @@ Current as of 2026-06-05.
 - Session: `2026-06-04-end-to-end-study-guide-audit`
 - Date: 2026-06-04
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
-- Current follow-up: 2026-06-05 DOT&E manual metadata pass aligned the active `DoDM5000-96` and `DoDM5000-102`
-  bibliography access dates with the existing 2026-06-05 source-ledger check for the DOT&E December 2024 manual set.
+- Current follow-up: 2026-06-05 engineering-guidebook metadata pass aligned the active
+  `DoD-EngineeringDefenseSystemsGuidebook-2024` bibliography access date and source-ledger check date to 2026-06-05
+  after confirming the official OUSD(R&E) PDF remains reachable and active in the rendered guide.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,
@@ -92,6 +93,8 @@ Current as of 2026-06-05.
   annual-code page to the current exact U.S. Code page and aligned the source ledger.
   June 5 DOT&E manual metadata follow-on aligned active DoDM 5000.96 and DoDM 5000.102 BibTeX access dates to the
   already-recorded 2026-06-05 DOT&E source-ledger currentness check.
+  June 5 engineering-guidebook metadata follow-on aligned the active OUSD(R&E) Engineering of Defense Systems Guidebook
+  BibTeX access date and source-ledger check date to the 2026-06-05 official PDF check.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 

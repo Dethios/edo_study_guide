@@ -1866,3 +1866,17 @@ The entries in this section preserve the original imported package state. Later 
   guide.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Align Engineering Guidebook Citation Access Date
+
+- ID: `gc-20260605-engineering-guidebook-access-date-alignment`
+- Location: `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: updated the active `DoD-EngineeringDefenseSystemsGuidebook-2024` BibTeX access date and matching
+  source-ledger check date to 2026-06-05 after confirming the official OUSD(R&E) PDF remains reachable and is cited in
+  the rendered guide. No systems-engineering or technical-review doctrine prose changed.
+- Source basis: official OUSD(R&E) Engineering of Defense Systems Guidebook PDF, local PDF metadata check, and local
+  active-citation scan showing the key is cited in the technical-review chapter.
+- Confidence: `High`
+- Status: `applied`
