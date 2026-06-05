@@ -66,6 +66,27 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Ground Chapter 6 PPBE Statutory Anchors
+
+- ID: `gc-20260605-ppbe-fydp-pb-statutory-grounding`
+- Location: `tex/chapters/6_PPBE.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: Chapter 6 already had current official support for OMB A-11, CAPE, FMB/N82, N8/N9, and the FY26
+  budget-request top line, but several FYDP and President's Budget mechanics still leaned on coursebook-only citations.
+  Added exact statutory citekeys and source-ledger rows for 10 U.S.C. 221 and 31 U.S.C. 1105; revised the FYDP section
+  to distinguish the official budget-year-plus-four statutory horizon from the coursebook's PY/CY and Navy-system
+  tracking details; changed the President's Budget cue from nominal first-Monday shorthand to the statutory
+  January-to-February submission window; and tightened PPBE overview/execution/program-review citations to OMB A-11, 10
+  U.S.C. 139a, DoW FMR Volume 3 Chapter 6, and DoW FMR Volume 3 Chapter 8 where those sources directly support the
+  point.
+- Source basis: official OMB Circular A-11 page/PDF, 10 U.S.C. 221, 31 U.S.C. 1105, 10 U.S.C. 139a, DoW FMR Volume 3
+  Chapters 6 and 8, FY2026 Defense Budget Overview / DoW budget briefing evidence, and local Chapter 6 citation-fit scan
+  checked on 2026-06-05.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Grounded Cost and Price Evaluation in Exact FAR Sections
 
 - ID: `gc-20260605-cost-price-eval-far-source-grounding`
