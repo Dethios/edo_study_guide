@@ -1185,6 +1185,40 @@ The entries in this section preserve the original imported package state. Later 
 - Confidence: `High`
 - Status: `applied`
 
+### 2026-06-05 - Applied AWP/SOVT Source Currentness Follow-Up
+
+- ID: `gc-20260605-awp-sovt-source-currentness`
+- Location: `tex/chapters/28_AWP_and_SOVT.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: rechecked the official NAVSEA JFMM landing page, the public JFMM Volume VI Rev D Change 5 PDF, and
+  the public NAVSEA TS9090-310G SOVT source. The existing AWP stages, current-source caveat, SOVT completion evidence,
+  and PCD distinction remained supported, so no doctrine wording changed. Refreshed Chapter 28's currentness note to the
+  standard italic style and advanced the affected BibTeX and source-ledger access dates to 2026-06-05.
+- Source basis: official NAVSEA SUBMEPP JFMM landing page; official public JFMM Volume VI Rev D Change 5 PDF; official
+  public NAVSEA TS9090-310G PDF; and local Chapter 28 source/cross-reference review.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-05 - Applied Structure-Scout Small-Cleanup Follow-Up
+
+- ID: `gc-20260605-structure-scout-small-cleanup`
+- Location: `tex/main.tex`, `tex/chapters/1_Chain_of_command.tex`, `tex/chapters/3_NAVSEA.tex`,
+  `tex/chapters/4_NAVWAR.tex`, `tex/chapters/17I_CM_and_Technical_Reviews.tex`,
+  `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: changed the Board Assumptions and Fast Cues summary from "appendix" to "chapter" because the file
+  is included before `\appendix`; removed the stale commented TikZ externalization demo input from the final appendix
+  flow; normalized selected Chapter 1 figure references to the guide's `\Fig{...}` style; pluralized the NAVSEA
+  warfare-center figure short caption; corrected the NIWC Atlantic caption wording and National Capital Region spelling;
+  and tightened an awkward technical-review figure lead-in sentence.
+- Source basis: read-only structure/flow scout and local TeX source inspection; no doctrine or external-source facts
+  changed.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied Milestone and NAVWAR Question-Bank Source Hygiene
 
 - ID: `gc-20260605-milestones-navwar-question-bank-source-hygiene`

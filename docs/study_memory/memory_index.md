@@ -69,7 +69,11 @@ Current as of 2026-06-05.
   `appendix_community_rosters` include from the main appendix sequence. June 5 currentness follow-on rechecked HASC,
   SASC, HAC, and SAC subcommittee names plus RFO Part 6 / DFARS 206 and \$350K SAT fast-cue anchors against official
   pages; no committee-name or fast-cue fact rewrite was required, but source dates and the Senate Appropriations
-  subcommittee URL were refreshed.
+  subcommittee URL were refreshed. June 5 AWP/SOVT follow-on rechecked the JFMM Rev E landing page, JFMM Volume VI Rev D
+  Change 5 public PDF, and public TS9090-310G SOVT source; no AWP/SOVT fact rewrite was required, but the Chapter 28
+  currentness note and source dates were refreshed. June 5 structure-scout follow-on corrected the Board Fast Cues
+  chapter label, removed a stale commented TikZ demo include, normalized selected figure references, and cleaned two
+  caption/prose nits.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
