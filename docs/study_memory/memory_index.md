@@ -343,6 +343,9 @@ Recent applied updates:
 - Contracting broad-citation cleanup: replaced remaining broad `FAR`/`DFARS` citations in Chapters 11, 12, and 12A with
   exact FAR 5.101, FAR Part 15, FAR 15.303, FAR 33.101, FAR 33.102, FAR 33.104, and DFARS 233.104 citation keys; updated
   the source ledger for solicitation publicizing thresholds and protest venue/stay timing.
+- R&D / TRL source grounding: updated Chapter 17A to cite the current OUSD(R&E) TRA Guidebook for TRL/IRL/SRL cues and
+  the official FMR Volume 2B Chapter 5 for RDT&E budget activities; corrected the activity list from 6.1--6.7 to
+  6.1--6.8 by adding Software and Digital Technology Pilot Programs.
 
 ## Next Review Plan
 

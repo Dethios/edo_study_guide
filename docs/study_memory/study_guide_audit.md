@@ -2399,3 +2399,21 @@ The entries in this section preserve the original imported package state. Later 
   DFARS 233.104 pages checked on 2026-06-05; local broad-citation scan of Chapters 11, 12, and 12A.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Ground Chapter 17A TRL and RDT&E Budget Activity Cues
+
+- ID: `gc-20260605-rd-trls-rdte-budget-activity-source-grounding`
+- Location: `tex/chapters/17A_Research_and_Development.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: Chapter 17A's technology-readiness and RDT&E budget-activity sections relied on the EDO
+  coursebook even though current official sources directly support the board answer. Added the current OUSD(R&E)
+  Technology Readiness Assessment Guidebook to TRL, IRL, SRL, and pre-Milestone B technology-maturity cues; added
+  DoW FMR Volume 2B Chapter 5 as the RDT&E budget-activity source; and corrected the RDT&E budget-activity list from
+  6.1--6.7 to 6.1--6.8 by adding Software and Digital Technology Pilot Programs.
+- Source basis: official OUSD(R&E) Technology Readiness Assessment Guidebook, February 2025, checked 2026-06-05;
+  official DoW FMR 7000.14-R Volume 2B Chapter 5, September 2022/current FMR PDF, checked 2026-06-05; local Chapter
+  17A source scan.
+- Confidence: `High`
+- Status: `applied`
