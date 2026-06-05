@@ -56,7 +56,10 @@ Current as of 2026-06-05.
   Treasury G-Invoicing source rows and moved the Chapter 11 Contracting Fundamentals Summary block to the first-screen
   position. June 5 fiscal/T&E/RFO/statutory follow-on backfilled exact rows for DAU fiscal-law pages, DoDD 5000.01,
   DOT&E DoDM 5000.96/5000.102, FAR Council and Acquisition.gov RFO sources, OMB M-25-26, Federal Register EO
-  publication, FY 2026 NDAA, NMCARS, 10 U.S.C. 139, 10 U.S.C. 4251, and USFF Mission.
+  publication, FY 2026 NDAA, NMCARS, 10 U.S.C. 139, 10 U.S.C. 4251, and USFF Mission. June 5 CIVPERS/labor follow-on
+  updated the stale OPNAVINST 5354.1H EEO citation to current 5354.1J, corrected the FLRA Oklahoma City decision
+  metadata, removed a weak National Guard handbook citation from GS step timing, and backfilled OPM, EEOC, and FLRA
+  exact source-ledger rows.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 

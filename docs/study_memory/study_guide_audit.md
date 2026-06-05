@@ -1452,3 +1452,26 @@ The entries in this section preserve the original imported package state. Later 
   reviewer classification; and the local `make audit-cited-bib-sources` exact-URL backlog.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Applied CIVPERS Labor and EEO Source-Ledger Backfill
+
+- ID: `gc-20260605-civpers-labor-eeo-source-ledger-backfill`
+- Location: `tex/chapters/27_CIVPERS.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: updated the CIVPERS EEO citation from stale `OPNAVINST-5354-1H` to current
+  `OPNAVINST-5354-1J`, backed by the MyNavyHR Equal Opportunity references page and DONI listing evidence. Corrected
+  the mismatched FLRA past-practice citation from an IRS/Kansas City title to the actual FLRA page, Oklahoma City Air
+  Logistics Center / Local 916, 3 FLRA No. 82 at 3 FLRA 512. Removed the weak National Guard technician handbook
+  citation from the GS step-timing sentence because the OPM within-grade increase fact sheet already supports that
+  board cue. Backfilled exact source-ledger rows for OPM GS classification, OPM Direct Hire Authority, EEOC federal
+  EEO complaint process, EEOC harassment, FLRA Sections 7114 and 7118, the FLRA Oklahoma City decision, MyNavyHR Equal
+  Opportunity references, and OPNAVINST 5354.1J.
+- Source basis: official MyNavyHR Equal Opportunity references page; official DONI OPNAVINST 5354.1J listing/direct-PDF
+  evidence; official OPM GS classification and Direct Hire Authority pages; official EEOC federal-sector EEO complaint
+  process and harassment pages; official FLRA Section 7114 and Section 7118 statute pages; official FLRA Oklahoma City
+  Air Logistics Center decision; read-only CIVPERS/labor source reviewer; and the local
+  `make audit-cited-bib-sources` exact-URL backlog.
+- Confidence: `High`
+- Status: `applied`
