@@ -7,9 +7,8 @@ Current as of 2026-06-05.
 - Session: `2026-06-04-end-to-end-study-guide-audit`
 - Date: 2026-06-04
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
-- Current follow-up: 2026-06-05 combatant-command statute source-fidelity pass retargeted the active `USC-162`
-  bibliography entry and source-ledger row from the 2023 govinfo annual-code page to the current exact U.S. Code
-  10 U.S.C. 162 page after confirming the key is cited in Chapter 1 and the combatant-command appendix.
+- Current follow-up: 2026-06-05 DOT&E manual metadata pass aligned the active `DoDM5000-96` and `DoDM5000-102`
+  bibliography access dates with the existing 2026-06-05 source-ledger check for the DOT&E December 2024 manual set.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,
@@ -91,6 +90,8 @@ Current as of 2026-06-05.
   updated matching active TeX cites plus the June 2 supplemental study material.
   June 5 command-chain source-fidelity follow-on refreshed the active 10 U.S.C. 162 citation from a 2023 govinfo
   annual-code page to the current exact U.S. Code page and aligned the source ledger.
+  June 5 DOT&E manual metadata follow-on aligned active DoDM 5000.96 and DoDM 5000.102 BibTeX access dates to the
+  already-recorded 2026-06-05 DOT&E source-ledger currentness check.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 

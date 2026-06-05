@@ -1851,3 +1851,18 @@ The entries in this section preserve the original imported package state. Later 
   Chapter 1 and the combatant-command appendix.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Align DOT&E Manual Citation Access Dates
+
+- ID: `gc-20260605-dote-manual-access-date-alignment`
+- Location: `tex/edo.bib`, `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: updated active `DoDM5000-96` and `DoDM5000-102` BibTeX access dates from 2026-04-26 to
+  2026-06-05 so the bibliography matches the existing source-ledger/currentness check for the DOT&E December 2024
+  manual set. No T&E doctrine prose changed.
+- Source basis: official DOT&E Guidance page listing DoDM 5000.96 and DoDM 5000.102 in the 2024 policy-update set, the
+  existing DOT&E manual source-ledger rows, and local active-citation scan showing both keys are cited in the rendered
+  guide.
+- Confidence: `High`
+- Status: `applied`
