@@ -265,6 +265,9 @@ Recent applied updates:
 - Warfare-center main-matter include cleanup: changed the Chapter 5 active include in `tex/main.tex` from the generic
   `\StudySubfile` helper to `\ChapterWithRefsAtStart` so the Organization chapters use one consistent main-matter
   include pattern; no rendered doctrine or source content changed.
+- Fast-cue cost source grounding: retargeted Chapter 29's cost-talk and lifecycle-framing citations from generic AAF/DAS
+  references to the cost-estimating coursebook source plus the existing DoD FMR cost source, keeping the cue text intact
+  while improving source fit.
 
 ## Next Review Plan
 

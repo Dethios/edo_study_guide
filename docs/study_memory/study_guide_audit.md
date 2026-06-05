@@ -1791,3 +1791,18 @@ The entries in this section preserve the original imported package state. Later 
 - Source basis: local structure-flow review of `tex/main.tex` and `tex/chapters/5_NAVAIR_and_PEOs.tex`.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Tightened Fast-Cue Cost Source Grounding
+
+- ID: `gc-20260605-fast-cue-cost-source-grounding`
+- Location: `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: retargeted the fast-cue cost and lifecycle-framing citations from generic AAF/DAS references to
+  the actual cost-estimating coursebook source and the DoD FMR cost source already carried in the guide. The cue text
+  still asks the same board questions; this cleanup improves source fit for direct/indirect costs, estimating methods,
+  learning curves, escalation, and LCC/TOC framing.
+- Source basis: local citation-fit review of Chapter 29 against Chapter 10's cost-estimating source set and the existing
+  DoD FMR Volume 11B Chapter 12 source-ledger row.
+- Confidence: `High`
+- Status: `applied`
