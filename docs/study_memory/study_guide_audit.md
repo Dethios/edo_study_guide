@@ -274,6 +274,24 @@ The entries in this section preserve the original imported package state. Later 
 - Confidence: `High`
 - Status: `applied`
 
+### 2026-06-05 - Applied SIOP Current-Status Source Refresh
+
+- ID: `gc-20260605-siop-current-status-source-refresh`
+- Location: `tex/chapters/appendix_current_events.tex`, `tex/current_events.bib`,
+  `docs/study_memory/sources.md`
+- Verdict: `Applied`
+- Correction applied: refreshed the current-events source metadata for CRS R41129 and CRS R43543 to the live
+  Congress.gov product dates checked on 2026-06-05, moved the SIOP bibliography and source-ledger basis from the older
+  PEO Industrial Infrastructure path to NAVFAC's current PEO Infrastructure and Expeditionary page, and added the
+  7 May 2026 NAVFAC SIOP status story. The SIOP board answer now reflects PEO IE / PMO 555 current reporting,
+  30-year / 400-plus project scope, completed facilities and industrial-plant-equipment progress, and around $7B under
+  contract while retaining the GAO caveat that the old 20-year / $21B figure is only an early baseline.
+- Source basis: CRS R41129 current product page, CRS R43543 current product page, NAVFAC PEO Infrastructure and
+  Expeditionary page, NAVFAC 7 May 2026 SIOP program-manager transition/status story, NAVFAC 2 Sep 2025 PSNS Dry Dock
+  4 seismic-upgrade release, and GAO-23-106067 records listed in `sources.md`.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-04 - Applied Flow, Study-Memory, and PAE Chart Closeout
 
 - ID: `gc-20260604-flow-study-memory-chart-closeout`

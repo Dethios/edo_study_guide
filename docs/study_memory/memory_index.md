@@ -38,7 +38,9 @@ Current as of 2026-06-05.
   budget-release follow-up aligned ODNI and War.gov direct budget-release metadata for FY2025 NIP request and
   appropriation, FY2025 MIP, FY2024 MIP, and the FY2025 MIP budget request. June 5 NAVSEA manual access follow-up
   replaced generic NAVSEA Instructions URLs with public TUM/6010/8010/SUPSALV PDFs where available and controlled-access
-  caveats where not.
+  caveats where not. June 5 SIOP current-status follow-up refreshed CRS product dates, moved the SIOP source basis to
+  NAVFAC's current PEO Infrastructure and Expeditionary / PMO 555 page, and added the 7 May 2026 SIOP progress story to
+  the current-events appendix and source ledger.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
