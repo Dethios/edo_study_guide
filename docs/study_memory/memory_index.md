@@ -64,7 +64,9 @@ Current as of 2026-06-05.
   2025 OUSD(R&E) Technology Readiness Assessment Guidebook, and backfilled exact source-ledger rows for all three. June
   5 acquisition/statutory follow-on replaced the retired DAG operational-test citation, refreshed GAO-20-84,
   Goldwater-Nichols, 10 U.S.C. 113, 10 U.S.C. 8032, DAU MDAP changes, and the legacy JCIDS Manual source metadata, and
-  backfilled their exact source-ledger rows.
+  backfilled their exact source-ledger rows. June 5 formatting follow-on removed duplicated Appendix-reference wording
+  from the `\FlagBilletNote` call sites in the acquisition-governance and EVM chapters and removed a stale disabled
+  `appendix_community_rosters` include from the main appendix sequence.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 

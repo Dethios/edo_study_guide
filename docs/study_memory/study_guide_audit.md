@@ -1539,3 +1539,33 @@ The entries in this section preserve the original imported package state. Later 
   `make audit-cited-bib-sources` exact-URL backlog.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Removed Duplicated Flag-Billet Appendix Notes
+
+- ID: `gc-20260605-flag-billet-note-formatting`
+- Location: `tex/chapters/1_Chain_of_command.tex`, `tex/chapters/14_EVM.tex`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: shortened the three `\FlagBilletNote{...}` call-site arguments that already flowed through the
+  macro-defined `Appendix~\ref{app:edo-flags}` prefix. This removes rendered wording like "Appendix ... See Appendix
+  ..." from Chapter 1's acquisition-governance flag cue and Chapter 14's SUPSHIP/EVM cues while preserving the intended
+  cross-reference to the current EDO flag roster.
+- Source basis: local TeX macro/call-site review of `tex/main.tex`, `tex/chapters/1_Chain_of_command.tex`, and
+  `tex/chapters/14_EVM.tex`; rendered-prose formatting inspection; and the local TeX validation gate.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-05 - Removed Stale Disabled Community-Rosters Include
+
+- ID: `gc-20260605-stale-disabled-community-rosters-include`
+- Location: `tex/main.tex`, `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: removed the commented `\StudySubfile{appendix_community_rosters}` line from the appendix
+  sequence because no matching `tex/chapters/appendix_community_rosters.tex` file exists and the disabled include could
+  mislead future structure audits into treating the appendix as a missing active artifact.
+- Source basis: read-only structure-flow scout plus local file-existence and active-include review of `tex/main.tex`
+  and `tex/chapters`.
+- Confidence: `High`
+- Status: `applied`
