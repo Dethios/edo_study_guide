@@ -36,7 +36,9 @@ Current as of 2026-06-05.
   RMC-location claims. June 5 MIP directive follow-up refreshed duplicate DoDD/DoWD 5205.12 bibliography keys to the
   current DoDD 5205.12 effective-date metadata and added an intelligence-program source-ledger row. June 5 NIP/MIP
   budget-release follow-up aligned ODNI and War.gov direct budget-release metadata for FY2025 NIP request and
-  appropriation, FY2025 MIP, FY2024 MIP, and the FY2025 MIP budget request.
+  appropriation, FY2025 MIP, FY2024 MIP, and the FY2025 MIP budget request. June 5 NAVSEA manual access follow-up
+  replaced generic NAVSEA Instructions URLs with public TUM/6010/8010/SUPSALV PDFs where available and controlled-access
+  caveats where not.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 

@@ -1222,3 +1222,25 @@ The entries in this section preserve the original imported package state. Later 
   request release, all checked on 2026-06-05.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Applied NAVSEA Manual Source-Access Alignment
+
+- ID: `gc-20260605-navsea-manual-source-access`
+- Location: `tex/edo.bib`, `tex/chapters/22_AIT_Fundamentals_and_Lessons_Learned.tex`,
+  `tex/chapters/23_Waterfront_Organization_Work_Control_Safety.tex`,
+  `tex/chapters/26_CNO_Availability_Execution.tex`, `docs/study_memory/sources.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: replaced generic NAVSEA Instructions URLs for TUM, 6010, 8010, and salvage policy with direct
+  official public sources where available; corrected 6010 from `S9002-AB-MAN-010` to `S9002-AK-CCM-010/6010`; corrected
+  8010 from `S0570-AB-SAF-010` to `S0570-AC-CCM-010/8010`; corrected salvage from `NAVSEA 4740.2H` to
+  `OPNAVINST 4740.2H`; and added controlled-source caveats for NAVSEAINST 5450.14D, NAVSEA 0924-62-0010,
+  SS800-AG-MAN-010/P-9290, and NAVSEAINST 4440.16B. Chapter 22 and waterfront-work-control citations now point to the
+  corrected public manual keys where the prose discusses TUM, 6010, 8010, and certified-boundary work.
+- Source basis: official NAVSEA SUBMEPP TUM page and TUM Rev 8 PDF; official SUBMEPP 6010 manual landing-page/PDF;
+  official NAVSEA FOIA Reading Room 8010 public PDF; official NAVSEALOGCEN Configuration Management & Modernization
+  page for public context on SUBSAFE, DSS-SOC, and Level I/SUBSAFE Stock Program support; official SUPSALV Salvage
+  Publications page/PDF for OPNAVINST 4740.2H; and the NAVSEA Resources / Instructions redirect to Flank
+  Speed/SharePoint controlled access, all checked on 2026-06-05.
+- Confidence: `High`
+- Status: `applied`
