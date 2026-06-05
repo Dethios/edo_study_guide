@@ -2,11 +2,19 @@
 % !TEX program = lualatex
 
 \documentclass[../main.tex]{subfiles}
-\externaldocument{../main}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
 
 \begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 
 \section{Manufacturing and Producibility}
+
+\subsection{Summary}
+\begin{description}
+  \item[\textbf{Acquisition issue.}] Manufacturing is a cost, schedule, performance, quality, and industrial-base risk that must be shaped while the design is still tradeable~\autocite{edo-3-7-1-manufacturing-producibility-2025,DoD-Producibility-Manufacturability-Guide-2024}.
+  \item[\textbf{Producibility.}] Producibility and manufacturability improve ease of manufacture, repeatability, product quality, reliability, maintainability, and life-cycle affordability~\autocite{DoD-Producibility-Manufacturability-Guide-2024}.
+  \item[\textbf{Readiness evidence.}] Use \acp{mrl} and \ac{mra} evidence to expose maturity gaps in design, materials, process capability, supply base, facilities, tooling, workforce, quality, and rate assumptions before production decisions~\autocite{DoD-MRL-Deskbook-2025,DoD-Producibility-Manufacturability-Guide-2024}.
+\end{description}
 
 \subsection{Why manufacturing belongs in acquisition decisions}
 
@@ -17,7 +25,7 @@ manufacturing decision as a cost, schedule, and performance control problem:
 the program manager must use producibility thinking early enough to influence
 system design, supplier choices, manufacturing planning, and quality management
 before production commitments become expensive to reverse
-\autocite{edo-3-7-1-manufacturing-producibility-2025}.
+\autocite{edo-3-7-1-manufacturing-producibility-2025,DoD-Producibility-Manufacturability-Guide-2024}.
 
 \subsection{Nine industrial process elements}
 
@@ -48,13 +56,23 @@ Personnel & Indirect influence & Check whether the supplier has trained labor, c
 The manufacturing objective is to make the design producible, affordable, and
 testable without losing the operational capability that justified the program.
 The board answer should connect three levers
-\autocite{edo-3-7-1-manufacturing-producibility-2025}:
+\autocite{edo-3-7-1-manufacturing-producibility-2025,DoD-Producibility-Manufacturability-Guide-2024}:
 
 \begin{description}
   \item[\textbf{Design.}] Develop a producible and testable design rather than a design that only works in engineering demonstration.
   \item[\textbf{Process.}] Design and mature manufacturing processes that can reliably build the item.
   \item[\textbf{Process control.}] Establish process controls that satisfy requirements while minimizing avoidable cost.
 \end{description}
+
+\subsection{Manufacturing Readiness Board Cue}
+
+Use \ac{mra}/\acp{mrl} to ask whether the design, materials, suppliers, tooling,
+process controls, workforce, facilities, quality system, and cost/rate assumptions
+are mature enough for the next production decision.  Design for manufacturing
+and assembly (DFM/A) is the design-side
+lever: simplify parts and assembly, control tolerances, reduce special processes,
+and design for repeatable build/test flow
+\autocite{DoD-MRL-Deskbook-2025,DoD-Producibility-Manufacturability-Guide-2024,DAU-Manufacturing-Quality}.
 
 \subsection{Producibility trade space}
 
@@ -64,11 +82,26 @@ technology constraints, ownership cost, schedule, and producibility interact.
 A design that maximizes one attribute can damage another; for example, a very
 tight tolerance may improve a performance margin while increasing supplier
 yield loss and delaying delivery
-\autocite{edo-3-7-1-manufacturing-producibility-2025}.
+\autocite{edo-3-7-1-manufacturing-producibility-2025,DoD-Producibility-Manufacturability-Guide-2024}.
 
 \paragraph{Board cue.}
 If asked why an EDO cares about manufacturing, answer: production is where
 design, funding, industrial base, quality, and schedule converge.  Producibility
 must be designed in before production locks in cost and risk.
 
+\subsection{Quick Review}
+\begin{itemize}
+  \item What is the board trap in manufacturing? \textbf{Answer:} Treating manufacturing as post-design execution instead of an early acquisition-risk and design-trade issue.
+  \item What do \ac{mra}/\acp{mrl} add? \textbf{Answer:} Evidence of manufacturing maturity gaps, risk, and maturation work needed before production or rate decisions.
+  \item Why does design for manufacturing and assembly matter? \textbf{Answer:} It simplifies build and assembly while requirements are still tradeable, reducing later yield, quality, schedule, and cost risk.
+\end{itemize}
+
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
 \end{document}

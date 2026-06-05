@@ -2,11 +2,19 @@
 % !TEX program = lualatex
 
 \documentclass[../main.tex]{subfiles}
-\externaldocument{../main}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
 
 \begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 
 \section{Production, Quality, and Manufacturing}
+
+\subsection{Summary}
+\begin{description}
+  \item[\textbf{Production variables.}] The 5Ms and environment give a board-speed way to isolate production variation and root causes~\autocite{edo-3-7-2-production-quality-manufacturing-2026}.
+  \item[\textbf{Process capability.}] A tolerance states what is acceptable; process capability and statistical control show whether the production process can repeatedly deliver it at rate~\autocite{edo-3-7-2-production-quality-manufacturing-2026,DoD-Producibility-Manufacturability-Guide-2024}.
+  \item[\textbf{Quality answer.}] Quality is built into the process through design, supplier controls, manufacturing management, process proofing, and corrective action, not inspected into the product at the end~\autocite{edo-3-7-2-production-quality-manufacturing-2026,DAU-Manufacturing-Quality}.
+\end{description}
 
 \subsection{Production system variables}
 
@@ -76,9 +84,32 @@ work.  Use cause-and-effect, or fishbone, diagrams to organize possible causes
 by production variable before choosing corrective action
 \autocite{edo-3-7-2-production-quality-manufacturing-2026}.
 
+\subsection{Escaped Defects and Corrective Action}
+
+When defects escape, do not answer with inspection alone.  Contain the lot,
+protect fleet/user safety, identify root cause, correct the process, verify
+effectiveness, assess supplier and configuration impacts, and feed lessons into
+cost, schedule, and risk decisions
+\autocite{edo-3-7-2-production-quality-manufacturing-2026,DoD-Producibility-Manufacturability-Guide-2024,DAU-Manufacturing-Quality}.
+
 \paragraph{Board cue.}
 Quality is built into the process, not inspected into the product.  Tie every
 production-quality answer to variation, process capability, control, and cost
 of quality.
 
+\subsection{Quick Review}
+\begin{itemize}
+  \item What do the 5Ms help you diagnose? \textbf{Answer:} Material, machinery, method, manpower, and measurement sources of process variation; environment is often the sixth category.
+  \item What is the difference between tolerance and capability? \textbf{Answer:} Tolerance is the drawing limit; capability is whether the process can repeatedly stay inside that limit.
+  \item What is the defect-response trap? \textbf{Answer:} Adding inspection without containment, root-cause correction, effectiveness verification, and supplier/configuration/risk follow-through.
+\end{itemize}
+
+\IfSubfilesClassLoaded{
+  \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}
+  \RenewDocumentCommand{\descriptionname}{}{\textbf{\color{Modern} Definition}}
+  \printnoidxglossary[
+    type=\acronymtype,
+    title=Acronyms,
+    style=long-booktabs
+  ]}{}
 \end{document}

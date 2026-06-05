@@ -447,6 +447,7 @@
 \newacronym{irl}{IRL}{Integration Readiness Level}
 \newacronym{srl}{SRL}{System Readiness Level}
 \newacronym{mrl}{MRL}{Manufacturing Readiness Level}
+\newacronym{mra}{MRA}{Manufacturing Readiness Assessment}
 \newacronym{tra}{TRA}{Technology Readiness Assessment}
 \newacronym{ramc}{RAM-C}{Reliability, Availability, and Maintainability Cost Rationale}
 \newacronym{amavail}{Am}{Material Availability}

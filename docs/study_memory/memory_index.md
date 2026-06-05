@@ -114,6 +114,9 @@ Recent applied updates:
 - Warfare-center official-source board synthesis for NAVSEA NSWC/NUWC, NAVWAR NIWCs/NSFA, NAVAIR NAWCAD/NAWCWD,
   NAVFAC EXWC, and ONR/NRL: added board-ready parent-command, location, product, and customer cues with current official
   source anchors.
+- SE/logistics/manufacturing source-grounding follow-up: updated RIO handling options, MIL-STD-881F WBS wording, current
+  JFRP sustainment performance-attribute framing, DoDI 5000.91 IPS elements, 17L/17M standalone formatting, and
+  manufacturing readiness / escaped-defect board cues.
 
 ## Next Review Plan
 

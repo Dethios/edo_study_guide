@@ -879,3 +879,28 @@ The entries in this section preserve the original imported package state. Later 
   2026-06-04.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied SE, Logistics, and Manufacturing Source-Grounding Follow-Up
+
+- ID: `gc-20260604-se-logistics-manufacturing-source-grounding`
+- Location: `tex/chapters/17B_Risk_Management_and_Problem_Solving.tex`,
+  `tex/chapters/17H_WBS_SE_Analysis_and_Control.tex`,
+  `tex/chapters/17J_Acquisition_Logistics.tex`,
+  `tex/chapters/17L_Manufacturing_and_Producibility.tex`,
+  `tex/chapters/17M_Production_Quality_and_Manufacturing.tex`,
+  `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`, `tex/acronyms.def`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: added official-source anchors and board-ready corrections for RIO management, WBS, acquisition
+  logistics, and manufacturing/production quality. Risk transfer now says transfer does not remove Government
+  responsibility; issue and opportunity management now use the DoD RIO Guide handling options; WBS now cites active
+  MIL-STD-881F and avoids a universal Level 4 contract-WBS rule; acquisition logistics now uses current JFRP sustainment
+  performance-attribute wording and the DoDI 5000.91 IPS list; manufacturing chapters now include summary and quick-review
+  blocks, MRA/MRL and DFM/A board cues, escaped-defect/corrective-action handling, and consistent standalone subfile
+  glossary handling.
+- Source basis: DoD RIO Guide, ASSIST MIL-STD-881F details, DoDI 5000.91, CJCSM 5123.01, DoD MRL Deskbook 2025, DoD
+  Producibility and Manufacturability Engineering Guide, and DAU Manufacturing and Quality, all checked from official or
+  primary web sources on 2026-06-04.
+- Confidence: `High`
+- Status: `applied`
