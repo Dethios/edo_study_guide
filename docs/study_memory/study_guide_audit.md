@@ -66,6 +66,23 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Grounded Source Selection in Official FAR / DFARS Cues
+
+- ID: `gc-20260605-source-selection-official-source-grounding`
+- Location: `tex/chapters/12A_Source_Selection.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: added targeted official-source support to Chapter 12A's board-facing source-selection summary,
+  source-selection-plan, best-value, LPTA, tradeoff, evaluation, organization, exchange, award, and debriefing cues.
+  Added granular FAR 1.602, FAR 15.101, FAR 15.101-1, FAR 15.101-2, FAR 15.303, FAR 15.304, FAR 15.305, FAR 15.306,
+  FAR 15.308, FAR 15.506, DFARS 215.506, and DFARS 215.506-70 bibliography/source-ledger support while retaining the
+  EDO coursebook and DoD Source Selection Procedures for classroom and DoD-process traceability.
+- Source basis: Acquisition.gov FAR and DFARS section pages, DoD Source Selection Procedures PDF, and local
+  source-selection citation scan checked on 2026-06-05.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied Question Bank Source-Metadata Alignment
 
 - ID: `gc-20260605-question-bank-source-metadata-alignment`
