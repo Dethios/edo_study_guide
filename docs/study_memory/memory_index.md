@@ -59,7 +59,12 @@ Current as of 2026-06-05.
   publication, FY 2026 NDAA, NMCARS, 10 U.S.C. 139, 10 U.S.C. 4251, and USFF Mission. June 5 CIVPERS/labor follow-on
   updated the stale OPNAVINST 5354.1H EEO citation to current 5354.1J, corrected the FLRA Oklahoma City decision
   metadata, removed a weak National Guard handbook citation from GS step timing, and backfilled OPM, EEOC, and FLRA
-  exact source-ledger rows.
+  exact source-ledger rows. June 5 IPMDAR/JITC/TRA follow-on refreshed the IPMDAR DID access date, retargeted JITC
+  interoperability support to the official JITC Interoperability Process Guide, updated the TRA citation to the February
+  2025 OUSD(R&E) Technology Readiness Assessment Guidebook, and backfilled exact source-ledger rows for all three. June
+  5 acquisition/statutory follow-on replaced the retired DAG operational-test citation, refreshed GAO-20-84,
+  Goldwater-Nichols, 10 U.S.C. 113, 10 U.S.C. 8032, DAU MDAP changes, and the legacy JCIDS Manual source metadata, and
+  backfilled their exact source-ledger rows.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -217,6 +222,18 @@ Recent applied updates:
   and backfilled missing source rows for applied guide-change URLs found during the first scan.
 - Study-memory semantic validation guard: `make check-study-memory` now validates JSONL enum values, `source_basis`
   object shape, future machine-local absolute path usage, and stable question-bank source-section references.
+- IPMDAR/JITC/TRA source-ledger follow-up: updated the TRA citation from the older `USDRE-TRA-2020` key to the February
+  2025 OUSD(R&E) TRA Guidebook, pointed JITC interoperability claims at the official Interoperability Process Guide, and
+  added exact source-ledger support for IPMDAR DI-MGMT-81861D, JITC, and TRA.
+- Acquisition/statutory source-ledger follow-up: replaced a retired DAG operational-test citation with active DoDI
+  5000.89/5000.98 support, moved Goldwater-Nichols to GovInfo, moved 10 U.S.C. 113 and 8032 to current
+  uscode.house.gov pages, refreshed GAO-20-84 and DAU MDAP metadata, and marked the 2021 JCIDS Manual as a legacy
+  crosswalk source.
+- Current-events/infrastructure exact-ledger closeout: redirected the DON Cyber Strategy citation to the official
+  media.defense.gov PDF; refreshed verified access dates for Project Overmatch, NAVAIR PMA/PMW-101 and PMW/A-170,
+  NAVFAC/NAVSEA infrastructure, NAVSEA FY26 Standard Items, SECNAVINST 5460.4, SECNAVINST 5400.15D, RFO White House,
+  FMB/N82, SSP, NAVPLAN, and CNO Day One sources; and backfilled all remaining cited-BibTeX source inventory rows so
+  `make audit-cited-bib-sources` reports no exact-URL gaps.
 
 ## Next Review Plan
 

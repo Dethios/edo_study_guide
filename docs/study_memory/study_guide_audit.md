@@ -1475,3 +1475,67 @@ The entries in this section preserve the original imported package state. Later 
   `make audit-cited-bib-sources` exact-URL backlog.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Applied IPMDAR, JITC, and TRA Source-Ledger Backfill
+
+- ID: `gc-20260605-ipmdar-jitc-tra-source-ledger-backfill`
+- Location: `tex/chapters/16_Milestones.tex`, `tex/chapters/appendix_key_roles.tex`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: updated the milestones chapter and bibliography from the older `USDRE-TRA-2020` key to the
+  February 2025 OUSD(R&E) Technology Readiness Assessment Guidebook. Retargeted the `JITC-interoperability`
+  bibliography entry from a generic JITC homepage URL to the official JITC Interoperability Process Guide Version 3.0,
+  which directly supports early coordination, operationally representative test data, and
+  certification/fielding-decision cues. Aligned the appendix operational-test oversight cue from the broad legacy DAG
+  citation to DoDI 5000.89 and DoDI 5000.98. Refreshed the IPMDAR DID Rev D access date and added an ASSIST note.
+  Backfilled exact source-ledger rows for the DLA ASSIST IPMDAR details page, JITC homepage, JITC Interoperability
+  Process Guide Version 3.0, and the OUSD(R&E) TRA Guidebook.
+- Source basis: official DLA ASSIST QuickSearch document-details page for DI-MGMT-81861D; official ASSIST-downloaded
+  IPMDAR Rev D PDF; official JITC homepage and Interoperability Process Guide Version 3.0; official OUSD(R&E) February
+  2025 Technology Readiness Assessment Guidebook; and the local `make audit-cited-bib-sources` exact-URL backlog.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-05 - Applied Acquisition and Statutory Source-Ledger Backfill
+
+- ID: `gc-20260605-acq-statutory-source-ledger-backfill`
+- Location: `tex/chapters/1_Chain_of_command.tex`, `tex/chapters/4_NAVWAR.tex`,
+  `tex/chapters/12_Solicitation.tex`, `tex/chapters/appendix_key_roles.tex`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: replaced the current operational-test oversight citation to the retired Defense Acquisition
+  Guidebook with active DoDI 5000.89 and DoDI 5000.98 citations; marked the legacy DAG BibTeX key as retired and pointed
+  it to DAU's current acquisition tools page; refreshed GAO-20-84 to the official GAO product page and full publication
+  date; replaced the NPS-hosted Goldwater-Nichols PDF with the GovInfo Statutes at Large source; refreshed 10 U.S.C.
+  113 and 10 U.S.C. 8032 to current uscode.house.gov preliminary text; refreshed the DAU MDAP changes citation access
+  date and caveat; and marked the 2021 JCIDS Manual as a legacy crosswalk source to use alongside current CJCSM 5123.01
+  JFRP governance.
+- Source basis: official DAU acquisition tools page; official DAU MDAP Program Manager Changes article; official GAO
+  product page for GAO-20-84; official GovInfo Public Law 99-433 Statutes at Large page; current uscode.house.gov pages
+  for 10 U.S.C. 113 and 10 U.S.C. 8032; DAU-hosted distribution-A JCIDS Manual; active DoDI 5000.89 and DoDI 5000.98
+  rows already listed in `sources.md`; and the local `make audit-cited-bib-sources` exact-URL backlog.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-05 - Closed Remaining Cited-BibTeX Source-Ledger Gaps
+
+- ID: `gc-20260605-current-events-infrastructure-exact-ledger-closeout`
+- Location: `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: redirected the DON Cyber Strategy citation from a CloudFront thumbnail/PDF URL to the official
+  media.defense.gov PDF linked from the Navy release. Refreshed live-verified BibTeX access dates for the Project
+  Overmatch, NAVWAR Okano change-of-command, NAVAIR PMA/PMW-101, NAVAIR PMW/A-170, NAVFAC/NAVSEA infrastructure,
+  NAVSEA FY26 Standard Items, SECNAVINST 5400.15D, SECNAVINST 5460.4, RFO White House, FMB/N82, SSP, NAVPLAN 2022,
+  CNO Day One, and FY27 budget request sources. Backfilled source-inventory rows for the remaining cited URLs so the
+  cited-BibTeX source-ledger audit now reports no exact-URL gaps.
+- Source basis: official Navy FY27 budget transcript; official NAVWAR/DVIDS Project Overmatch and Okano articles;
+  official NAVAIR PMA/PMW-101 and PMW/A-170 pages; official NAVFAC/NAVSEA infrastructure articles; official NAVSEA
+  FY26 Standard Item PDFs; official media.defense.gov DON Cyber Strategy, NAVPLAN 2022, and CNO Day One PDFs; official
+  White House RFO presidential action and fact sheet; official WarGov flag-officer assignment release; official SSP PAE
+  article; official DONI instruction URLs with access-filtering caveat where applicable; and the local
+  `make audit-cited-bib-sources` exact-URL backlog.
+- Confidence: `High`
+- Status: `applied`
