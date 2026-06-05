@@ -89,14 +89,14 @@ Current as of 2026-06-05.
   active TeX cites plus the June 2 supplemental study material. June 5 command-chain source-fidelity follow-on refreshed
   the active 10 U.S.C. 162 citation from a 2023 govinfo annual-code page to the current exact U.S. Code page and aligned
   the source ledger. June 5 DOT&E manual metadata follow-on aligned active DoDM 5000.96 and DoDM 5000.102 BibTeX access
-  dates to the
-  already-recorded 2026-06-05 DOT&E source-ledger currentness check.
-  June 5 engineering-guidebook metadata follow-on aligned the active OUSD(R&E) Engineering of Defense Systems Guidebook
-  BibTeX access date and source-ledger check date to the 2026-06-05 official PDF check. June 5
-  acquisition-transformation metadata follow-on aligned the active Acquisition Transformation Strategy BibTeX access
-  date and source-ledger check date to the 2026-06-05 official PDF check. June 5 auxiliary current-organization
-  source-note follow-on refreshed the imported DONHR Luebke and MyNavyHR SWO(N) rows to 2026-06-05 official-source
-  checks and clarified that they are auxiliary provenance notes, not active rendered guide claims.
+  dates to the already-recorded 2026-06-05 DOT&E source-ledger currentness check. June 5 engineering-guidebook metadata
+  follow-on aligned the active OUSD(R&E) Engineering of Defense Systems Guidebook BibTeX access date and source-ledger
+  check date to the 2026-06-05 official PDF check. June 5 acquisition-transformation metadata follow-on aligned the
+  active Acquisition Transformation Strategy BibTeX access date and source-ledger check date to the 2026-06-05 official
+  PDF check. June 5 auxiliary current-organization source-note follow-on refreshed the imported DONHR Luebke and
+  MyNavyHR SWO(N) rows to 2026-06-05 official-source checks and clarified that they are auxiliary provenance notes, not
+  active rendered guide claims. June 5 reference-style follow-on normalized remaining raw Figure/Table references to
+  `\Fig` and `\Tab` and added a TeX structure guard for future drift.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 

@@ -2080,3 +2080,20 @@ The entries in this section preserve the original imported package state. Later 
   official MyNavyHR SWO(N) page, and local source-ledger/currentness scan.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Enforce Figure and Table Reference Macros
+
+- ID: `gc-20260605-figure-table-reference-macro-guard`
+- Location: `tex/chapters/1_Chain_of_command.tex`, `tex/chapters/6_PPBE.tex`,
+  `tex/chapters/7_NWCF.tex`, `tex/chapters/8_Congressional_Enactment.tex`,
+  `scripts/check-tex-structure.sh`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: normalized the remaining raw `Figure~\ref{...}` and `Table~\ref{...}` references in active
+  chapters to the guide macros `\Fig{\ref{...}}` and `\Tab{\ref{...}}`. Expanded `check-tex-structure.sh` to fail
+  future raw Figure/Table references in chapter prose. No doctrine prose, citations, source facts, or bibliography
+  metadata changed.
+- Source basis: local TeX reference-style scan across `tex/chapters/*.tex`, existing `\Fig` and `\Tab` macro
+  definitions in `tex/moderntech-base.sty`, and `make check-tex-structure`.
+- Confidence: `High`
+- Status: `applied`

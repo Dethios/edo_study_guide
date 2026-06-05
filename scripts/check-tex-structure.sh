@@ -29,6 +29,7 @@ duplicate_labels="$tmp_dir/duplicate-labels.txt"
 ref_records="$tmp_dir/ref-records.txt"
 ref_keys="$tmp_dir/ref-keys.txt"
 missing_refs="$tmp_dir/missing-refs.txt"
+raw_numbered_refs="$tmp_dir/raw-numbered-refs.txt"
 subsection_flow="$tmp_dir/subsection-flow.txt"
 
 sed -n -E 's/^[[:space:]]*\\(ChapterWithRefsAtStart|StudySubfile)\{([^}]+)\}.*/\2.tex/p' "$main_file" \
@@ -129,6 +130,22 @@ if [ -s "$missing_refs" ]; then
     echo "  - $key" >&2
     grep -F "$key|" "$ref_records" | sed 's/^[^|]*|/      /' >&2
   done < "$missing_refs"
+fi
+
+awk '
+  {
+    raw = $0
+    sub(/%.*/, "", raw)
+    if (raw ~ /(^|[^[:alnum:]_])(Figure|Table)~\\ref\{[^}]+\}/) {
+      print FILENAME ":" FNR ":" $0
+    }
+  }
+' "$chapters_dir"/*.tex > "$raw_numbered_refs"
+
+if [ -s "$raw_numbered_refs" ]; then
+  status=1
+  echo "Raw Figure/Table references found; use \\Fig{\\ref{...}} or \\Tab{\\ref{...}}:" >&2
+  sed 's/^/  - /' "$raw_numbered_refs" >&2
 fi
 
 for file in "$chapters_dir"/*.tex; do
