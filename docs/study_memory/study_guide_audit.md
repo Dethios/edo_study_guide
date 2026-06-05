@@ -1806,3 +1806,16 @@ The entries in this section preserve the original imported package state. Later 
   DoD FMR Volume 11B Chapter 12 source-ledger row.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Corrected DON FY27 Budget Citation Metadata
+
+- ID: `gc-20260605-don-fy27-budget-citation-date`
+- Location: `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: fixed the active `DON-FY27-Budget-Request-2026` BibTeX entry so its date and access date match the
+  official Navy transcript date and the existing source-inventory row: 2026-06-05. Added a short note identifying the
+  source as the official Navy transcript of the Department of the Navy FY27 budget request briefing.
+- Source basis: official Navy FY27 budget request transcript and local cited-BibTeX metadata contradiction scan.
+- Confidence: `High`
+- Status: `applied`

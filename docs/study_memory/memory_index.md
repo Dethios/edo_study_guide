@@ -268,6 +268,8 @@ Recent applied updates:
 - Fast-cue cost source grounding: retargeted Chapter 29's cost-talk and lifecycle-framing citations from generic AAF/DAS
   references to the cost-estimating coursebook source plus the existing DoD FMR cost source, keeping the cue text intact
   while improving source fit.
+- DON FY27 budget citation metadata: corrected the active BibTeX entry for the official Navy FY27 budget request
+  transcript from an April placeholder date/access date to the source-ledger-supported 2026-06-05 transcript date.
 
 ## Next Review Plan
 
