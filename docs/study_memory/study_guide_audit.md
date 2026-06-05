@@ -1819,3 +1819,21 @@ The entries in this section preserve the original imported package state. Later 
 - Source basis: official Navy FY27 budget request transcript and local cited-BibTeX metadata contradiction scan.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Split Fiscal-Law U.S. Code Citation Anchors
+
+- ID: `gc-20260605-fiscal-law-uscode-exact-citations`
+- Location: `tex/edo.bib`, `tex/chapters/9_Program_Funding_and_Execution.tex`,
+  `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`,
+  `docs/reference/2026-06-02-additional-info-study-material.md`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: retargeted the active fiscal-law BibTeX entries from the generic U.S. Code homepage to exact
+  31 U.S.C. 1301, 1341, and 1502 pages; added a separate exact 31 U.S.C. 1517 citation key for the Anti-Deficiency Act
+  apportionment/allotment control; updated active cite lists that say `\S~1341/\S~1517`; and aligned the supplemental
+  June 2 study material so the amount-rule shorthand includes both 31 U.S.C. 1341 and 31 U.S.C. 1517.
+- Source basis: official U.S. Code pages for 31 U.S.C. 1301, 1341, 1502, and 1517 plus local cited-source and
+  fiscal-law wording scans.
+- Confidence: `High`
+- Status: `applied`

@@ -7,12 +7,9 @@ Current as of 2026-06-05.
 - Session: `2026-06-04-end-to-end-study-guide-audit`
 - Date: 2026-06-04
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
-- Current follow-up: 2026-06-05 PAE chart connector clearance update raised the Figure 1.4 PAE bus, moved the support
-  rail outside the fitted PAE group, rebuilt the PDF, and visually confirmed the connector lines no longer run through
-  PAE boxes or labels. A follow-on structure pass moved the existing Chapter 12 and Chapter 12A Summary blocks to the
-  first-screen position so the contracting chapter sequence matches the guide-wide Summary / Quick Review flow. A
-  historical statute-name pass corrected Chapter 15's 1985 procurement and Goldwater-Nichols short-title wording and
-  added exact official-source support for the 1985 statute note.
+- Current follow-up: 2026-06-05 fiscal-law source-fidelity pass retargeted active 31 U.S.C. 1301, 1341, and 1502
+  BibTeX entries to exact U.S. Code pages, split 31 U.S.C. 1517 into its own Anti-Deficiency Act citation key, and
+  aligned the June 2 supplemental study material's amount-rule shorthand with the same 1341/1517 cue.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,
@@ -89,6 +86,9 @@ Current as of 2026-06-05.
   references with 10 U.S.C. 139a, and refreshed exact U.S. Code URLs for active statutory citations. June 5 core
   acquisition source-metadata follow-on refreshed heavily cited SECNAVINST 5000.2G, DoDI 5000.85, CJCSM 5123.01, and
   DFARS metadata and added the missing DFARS source-ledger row.
+  June 5 fiscal-law U.S. Code follow-on replaced generic homepage URLs for active 31 U.S.C. 1301, 1341, and 1502
+  citations with exact official U.S. Code section pages, added a separate 31 U.S.C. 1517 Anti-Deficiency Act key, and
+  updated matching active TeX cites plus the June 2 supplemental study material.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 

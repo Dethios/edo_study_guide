@@ -388,7 +388,8 @@ expended, and finally outlayed. A board answer should separate **who asks for mo
 10. **Treasury outlays** cash from the government.
 
 **Statutory guardrails:** 31 U.S.C. 1301 is the purpose rule; 31 U.S.C. 1502 is the time/bona-fide-need rule; 31 U.S.C.
-1341 is the amount/Anti-Deficiency rule. For a board answer, say: "right color, right year, right amount."
+1341 and 1517 are the Anti-Deficiency amount/apportionment guardrails. For a board answer, say: "right color, right
+year, right amount."
 
 ---
 
@@ -810,6 +811,8 @@ Use these for refresh before board use:
   [31 U.S.C. 1502](https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title31-section1502),
   and
   [31 U.S.C. 1341](https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title31-section1341)
+  /
+  [31 U.S.C. 1517](https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title31-section1517)
 * [NAVSEA Warfare Centers](https://www.navsea.navy.mil/Home/Warfare-Centers) and
   [NAVSEA Field Activities](https://www.navsea.navy.mil/About/Organization/Field-Activities/)
 * [NAVSUP WSS](https://www.navsup.navy.mil/NAVSUP-Enterprise/NAVSUP-Weapon-Systems-Support/About-NAVSUP-WSS/) and
