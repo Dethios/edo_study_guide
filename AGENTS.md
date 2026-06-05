@@ -34,6 +34,8 @@ build on save.
 - `make check-acronyms`: validate acronym keys and macro placement.
 - `make check-current-events-sources`: validate current-events BibTeX entries
   against TeX usage and the study-memory source ledger.
+- `make check-guide-change-sources`: validate applied guide-change external
+  source URLs against the study-memory source ledger.
 - `make check-tikz-cache`: validate TikZ externalization paths.
 - `make check-tex-structure`: validate standalone wrappers, glossaries, and
   structural guards.
@@ -62,11 +64,12 @@ Run `make check-tikz-cache` when touching TikZ externalization paths or cache
 configuration. Run `make check-tex-structure` after wrapper, standalone
 glossary, Summary / Quick Review, or chapter-flow edits. Run
 `make check-study-memory` after study-memory, audit-log, source-ledger, weak-area,
-or guide-change updates; this target also runs the current-events source-ledger
-check. Run `make check-current-events-sources` directly after editing
-`tex/current_events.bib` or current-events source rows. Always run `rumdl check`
-on any modified Markdown files after making edits, or use `rumdl fmt <file>` to
-automatically format them.
+or guide-change updates; this target also runs the current-events and applied
+guide-change source-ledger checks. Run `make check-current-events-sources`
+directly after editing `tex/current_events.bib` or current-events source rows,
+and run `make check-guide-change-sources` directly after source-basis or
+source-inventory edits. Always run `rumdl check` on any modified Markdown files
+after making edits, or use `rumdl fmt <file>` to automatically format them.
 
 ## Commit & Pull Request Guidelines
 

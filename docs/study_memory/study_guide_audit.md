@@ -1344,3 +1344,20 @@ The entries in this section preserve the original imported package state. Later 
   official Navy Williams promotion announcement, all checked or rechecked on 2026-06-05.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Applied Guide-Change Source-Ledger Guard
+
+- ID: `gc-20260605-guide-change-source-ledger-guard`
+- Location: `Makefile`, `scripts/check-guide-change-sources.py`, `AGENTS.md`, `README.md`,
+  `docs/study_memory/README.md`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: added an applied-guide-change source-ledger checker that scans `guide_changes.jsonl` records from
+  the active audit period and fails when external source-basis URLs are missing from `docs/study_memory/sources.md`.
+  Wired the checker into `make check-study-memory`, added the direct `make check-guide-change-sources` target, and
+  recorded the three missing source-inventory URLs surfaced by the first scan: 10 U.S.C. 162 on govinfo, the ESD DoDD
+  listing page for DoDD 5205.12, and the NAVSEA SUBMEPP TUM landing page.
+- Source basis: local validation workflow review of `guide_changes.jsonl`, `sources.md`, existing source-check scripts,
+  and the first checker run against the current checkout.
+- Confidence: `High`
+- Status: `applied`

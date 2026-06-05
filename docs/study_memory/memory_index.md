@@ -46,7 +46,9 @@ Current as of 2026-06-05.
   ASN(RD&A)/PAE source inventory, updated PAE-specific currentness stamps, and removed stale unused PAE/NAVSEA BibTeX
   keys. June 5 current-organization leader-cue follow-up refreshed the MyNavyHR June roster access date, moved Chapter
   1's NAVSEA non-EDO leader cue to the February 2026 command-leadership chart, preserved the December 2025 chart as the
-  rendered Chapter 3 figure source, and rechecked the PEO MLB Christine Rodriguez / Mary Thoms conflict.
+  rendered Chapter 3 figure source, and rechecked the PEO MLB Christine Rodriguez / Mary Thoms conflict. June 5
+  guide-change source-ledger follow-up added an applied-guide-change URL checker and backfilled the missing 10 U.S.C.
+  162, ESD DoDD listing, and NAVSEA SUBMEPP TUM landing-page source rows.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -188,6 +190,8 @@ Recent applied updates:
   DON, NAVAIR, NAVWAR, Marine Corps, PAE Maritime, SASC, SSP, and shipbuilding-plan sources; refreshed PAE-specific
   currentness stamps to 2026-06-05; and removed stale unused PAE/NAVSEA BibTeX keys while preserving source-version
   caveats for flag-roster-dependent claims.
+- Guide-change source-ledger guard: added `make check-guide-change-sources`, wired it into `make check-study-memory`,
+  and backfilled missing source rows for applied guide-change URLs found during the first scan.
 
 ## Next Review Plan
 
@@ -196,9 +200,9 @@ Recent applied updates:
 - When returning to drills, ask exactly one board-style question and grade the answer before asking the next one.
 - Update `learning_log.jsonl`, `weak_areas.jsonl`, `study_guide_audit.md`, `guide_changes.jsonl`, and this index after
   substantive graded answers or applied guide corrections.
-- Validate with `make check-study-memory`, `make check-current-events-sources`, `make check-acronyms`,
-  `make check-tex-structure`, `make check-markdown`, `git diff --check`, and a Docker PDF build after substantive
-  LaTeX edits.
+- Validate with `make check-study-memory`, `make check-current-events-sources`, `make check-guide-change-sources`,
+  `make check-acronyms`, `make check-tex-structure`, `make check-markdown`, `git diff --check`, and a Docker PDF build
+  after substantive LaTeX edits.
 
 ## Memory Files
 

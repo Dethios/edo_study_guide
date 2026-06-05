@@ -97,6 +97,16 @@ The current-events check verifies that `tex/current_events.bib` entries are
 cited by the guide and that their URLs also appear in
 `docs/study_memory/sources.md`.
 
+Applied guide-change source-ledger validation:
+
+```shell
+make check-guide-change-sources
+```
+
+The guide-change check verifies that applied `guide_changes.jsonl` records from
+the active audit period cite external URLs that also appear in
+`docs/study_memory/sources.md`.
+
 ## Format
 
 Use the Docker wrapper with normal `latexindent` arguments:
