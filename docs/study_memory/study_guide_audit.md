@@ -1880,3 +1880,16 @@ The entries in this section preserve the original imported package state. Later 
   active-citation scan showing the key is cited in the technical-review chapter.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Align Acquisition Transformation Strategy Citation Access Date
+
+- ID: `gc-20260605-acq-transformation-strategy-access-date-alignment`
+- Location: `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: updated the active `secwar-acq-transformation-2025` BibTeX access date and matching
+  source-ledger check date to 2026-06-05 after confirming the official PDF remains reachable and is actively cited
+  across the WAS, PAE, portfolio-trade, and current-events material. No acquisition-policy prose changed.
+- Source basis: official Acquisition Transformation Strategy PDF and local active-citation metadata scan.
+- Confidence: `High`
+- Status: `applied`

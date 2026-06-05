@@ -7,9 +7,9 @@ Current as of 2026-06-05.
 - Session: `2026-06-04-end-to-end-study-guide-audit`
 - Date: 2026-06-04
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
-- Current follow-up: 2026-06-05 engineering-guidebook metadata pass aligned the active
-  `DoD-EngineeringDefenseSystemsGuidebook-2024` bibliography access date and source-ledger check date to 2026-06-05
-  after confirming the official OUSD(R&E) PDF remains reachable and active in the rendered guide.
+- Current follow-up: 2026-06-05 Acquisition Transformation Strategy metadata pass aligned the active
+  `secwar-acq-transformation-2025` bibliography access date and source-ledger check date to 2026-06-05 after confirming
+  the official PDF remains reachable and active in WAS, PAE, portfolio-trade, and current-events material.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,
@@ -95,6 +95,8 @@ Current as of 2026-06-05.
   already-recorded 2026-06-05 DOT&E source-ledger currentness check.
   June 5 engineering-guidebook metadata follow-on aligned the active OUSD(R&E) Engineering of Defense Systems Guidebook
   BibTeX access date and source-ledger check date to the 2026-06-05 official PDF check.
+  June 5 acquisition-transformation metadata follow-on aligned the active Acquisition Transformation Strategy BibTeX
+  access date and source-ledger check date to the 2026-06-05 official PDF check.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
