@@ -31,7 +31,9 @@ Current as of 2026-06-05.
   follow-up tightened Milestone C phase-entry wording, aligned O&S PESHE/ESOH framing, added a direct DAU Performance
   Attributes bibliography source, and refreshed NAVWAR question-bank PMW 790 and PMW/A 170 source styling. June 5
   appendix-summary follow-up found the last two Summary-heading outliers and normalized the CNO 34 message and PAE
-  construct mapping appendices.
+  construct mapping appendices. June 5 RMC source-access follow-up aligned the NAVSEAINST 5450.145A bibliography and
+  source ledger to the official CNRMC Instructions copy-request path while preserving CNRMC About Us for current public
+  RMC-location claims.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -72,6 +74,8 @@ Recent applied updates:
 
 - Current organization / fleet-maintenance source drift closeout across Chapter 1, PAE mapping, EDO flags, RMC/JFMM
   material, and the June 2 reference study material.
+- RMC instruction source-access alignment: NAVSEAINST 5450.145A now points to the CNRMC Instructions copy-request path
+  in BibTeX/source memory, while live RMC-location claims remain grounded in the CNRMC About Us page.
 - Strategy-baseline and flow cleanup for the 2025 NSS / 2026 NDS baseline, JCIDS/JFRP caveats, and AWP/SOVT structure.
 - Current-events official-source hardening for Columbia-class delays, amphibious block buy, and SIOP status.
 - Flow, study-memory, and PAE chart closeout, including the Q18 Net-Ready question-bank entry.

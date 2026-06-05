@@ -1172,3 +1172,18 @@ The entries in this section preserve the original imported package state. Later 
   `TS9090-310G SL720-AA-MAN-030` and NMP-MOM Appendix K, and read-only modernization source-access review.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Applied RMC Instruction Source-Access Alignment
+
+- ID: `gc-20260605-rmc-instruction-source-access`
+- Location: `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: changed the `NAVSEAINST5450-145A` bibliography entry from the generic NAVSEA instructions URL to
+  the official CNRMC Instructions page, refreshed the access date, and recorded the CNRMC copy-request caveat. Added a
+  Fleet Maintenance / JFMM source-ledger row for the instruction access path. The RMC chapter still cites the current
+  CNRMC About Us page for public RMC-location and embedded I-level activity claims.
+- Source basis: official CNRMC Instructions page opened on 2026-06-05, official CNRMC About Us page cross-check for the
+  current public RMC list and RMC Northwest / Hawaii RMC wording, and read-only source-currentness review.
+- Confidence: `High`
+- Status: `applied`
