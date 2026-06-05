@@ -308,6 +308,8 @@ Recent applied updates:
 - ASN(RD&A) / PAE TikZ routing cleanup: collapsed Figure 1.4's SYSCOM support wiring from three individual dashed
   arrows into one dashed connector to the PAE group edge, and increased the fitted PAE group clearance so support lines
   do not run toward or through individual PAE boxes.
+- Leader Development Framework source grounding: added the official MyNavyHR GRGB Leadership Toolkit citation to
+  Chapter 27O's NLDF strategic-alignment and self-guided-learning GRGB bullets while preserving coursebook traceability.
 
 ## Next Review Plan
 

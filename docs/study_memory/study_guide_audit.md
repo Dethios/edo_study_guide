@@ -2185,3 +2185,17 @@ The entries in this section preserve the original imported package state. Later 
   structure check, whitespace check, and Docker PDF rebuild.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Ground Leader Development Framework GRGB Bullets in Official Source
+
+- ID: `gc-20260605-ldf-nldf-grgb-source-grounding`
+- Location: `tex/chapters/27O_Leader_Development_Framework.tex`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: added the official MyNavyHR GRGB Leadership Toolkit citation to the Leader Development Framework
+  NLDF strategic-alignment bullet and self-guided-learning GRGB bullet while retaining the EDO coursebook citation for
+  lecture traceability.
+- Source basis: official MyNavyHR GRGB Leadership Toolkit page updated 2026-04-01, existing bibliography/source-ledger
+  row checked on 2026-06-05, current official-page check on 2026-06-05, and local active-TeX source scan.
+- Confidence: `High`
+- Status: `applied`
