@@ -2265,3 +2265,18 @@ The entries in this section preserve the original imported package state. Later 
   DoDD 1344.10, DoD SOCO August 2025 Political Activities Deskbook, and local active-TeX source scan.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Route PAE Chart Through Group Header
+
+- ID: `gc-20260605-pae-chart-group-header-routing`
+- Location: `tex/chapters/1_Chain_of_command.tex`, `artifacts/out/main.pdf`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: replaced the Figure 1.4 connector fanout into the top row of individual PAE boxes with one
+  ``Portfolio Acquisition Executives'' group-header node. The ASN(RD&A) connector now terminates at that header, and the
+  nine PAE boxes sit below it inside the fitted group without line segments entering or crossing their interiors.
+- Source basis: user-reported rendered-PDF defect, local TikZ source inspection, rendered PDF page inspection, TeX
+  structure check, whitespace check, and Docker PDF rebuild.
+- Confidence: `High`
+- Status: `applied`

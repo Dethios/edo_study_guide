@@ -123,6 +123,7 @@ Current as of 2026-06-05, Mr.\ William F.\ Mahan is performing the duties of \ac
     top node/.style={rectangle, draw, fill=Vapor, fill opacity=1, text opacity=1, text width=10em, align=center, minimum height=3.5em},
     asn node/.style={rectangle, draw, fill=Gold!40, fill opacity=1, text opacity=1, text width=14em, align=center, minimum height=4.2em},
     deputy node/.style={rectangle, draw, fill=Green!25, fill opacity=1, text opacity=1, text width=11em, align=center, minimum height=3.6em},
+    pae header/.style={rectangle, draw=SteelGray, fill=SteelGray!12, fill opacity=1, text opacity=1, text width=27em, align=center, minimum height=2.8em, font=\bfseries},
     pae node/.style={rectangle, draw, fill=Blue!18, fill opacity=1, text opacity=1, text width=10.5em, align=center, minimum height=3.2em},
     pae group/.style={rectangle, draw=SteelGray, densely dashed, rounded corners, inner xsep=0.92cm, inner ysep=0.74cm},
     support node/.style={rectangle, draw, dashed, fill=SteelGray!10, fill opacity=1, text opacity=1, text width=16em, align=center, minimum height=4.0em},
@@ -139,7 +140,8 @@ Current as of 2026-06-05, Mr.\ William F.\ Mahan is performing the duties of \ac
     \node[deputy node, below=1.0cm of asn, xshift=-3.25cm] (pcd) {Principal Civilian Deputy\\ \textbf{Jason L.\ Potter}};
     \node[deputy node, below=1.0cm of asn, xshift=3.25cm] (pmd) {\ac{pmildep}\\ \textbf{\ac{vadm} Seiko Okano}};
 
-    \node[pae node, below=5.75cm of asn] (missions) {PAE Mission Systems};
+    \node[pae header, below=4.35cm of asn] (paeHeader) {Portfolio Acquisition Executives};
+    \node[pae node, below=0.85cm of paeHeader] (missions) {PAE Mission Systems};
     \node[pae node, left=of missions] (aviation) {PAE Aviation};
     \node[pae node, right=of missions] (munitions) {PAE Munitions};
 
@@ -162,13 +164,9 @@ Current as of 2026-06-05, Mr.\ William F.\ Mahan is performing the duties of \ac
     \coordinate (deputyStem) at (asn.south |- deputyBusY);
     \coordinate (pcdBranch) at (pcd.north |- deputyBusY);
     \coordinate (pmdBranch) at (pmd.north |- deputyBusY);
-    \coordinate (paeTopBusY) at ($(missions.north)+(0,1.35cm)$);
-    \coordinate (paeBranchLeft) at (aviation.north |- paeTopBusY);
-    \coordinate (paeBranchCenter) at (missions.north |- paeTopBusY);
-    \coordinate (paeBranchRight) at (munitions.north |- paeTopBusY);
 
     \begin{scope}[on background layer]
-      \node[pae group, fit=(aviation)(missions)(munitions)(industrial)(maritime)(undersea)(ssp)(ras)(marine)] (paeGroup) {};
+      \node[pae group, fit=(paeHeader)(aviation)(missions)(munitions)(industrial)(maritime)(undersea)(ssp)(ras)(marine)] (paeGroup) {};
     \end{scope}
 
     \coordinate (supportOut) at ($(syscoms.east)+(0.42cm,0)$);
@@ -182,11 +180,7 @@ Current as of 2026-06-05, Mr.\ William F.\ Mahan is performing the duties of \ac
       \draw[bus line] (pcdBranch) -- (pmdBranch);
       \draw[line] (pcdBranch) -- (pcd.north);
       \draw[line] (pmdBranch) -- (pmd.north);
-      \draw[bus line] (deputyStem) -- (paeBranchCenter);
-      \draw[bus line] (paeBranchLeft) -- (paeBranchRight);
-      \draw[line] (paeBranchLeft) -- (aviation.north);
-      \draw[line] (paeBranchCenter) -- (missions.north);
-      \draw[line] (paeBranchRight) -- (munitions.north);
+      \draw[line] (deputyStem) -- (paeHeader.north);
 
       \draw[support line] (syscoms.east) -- (supportOut) -- (supportGroupEntry);
     \end{scope}

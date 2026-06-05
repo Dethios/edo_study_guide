@@ -107,7 +107,8 @@ Current as of 2026-06-05.
   support to the Leading People Day One Message and Charge of Command bullets. June 5 GRGB source-fidelity follow-on
   added official MyNavyHR GRGB/NLDF source support to the Leading People GRGB bullets. June 5 naval-justice ethics
   follow-on added official OGE, DoD SOCO, JER, eCFR, and DoDD 1344.10 source support to the 27A standards-of-conduct,
-  gifts, fundraising, and political-activity board cues.
+  gifts, fundraising, and political-activity board cues. June 5 PAE chart routing follow-on replaced individual top-row
+  PAE connector arrows with a single PAE group header connection so Figure 1.4 lines do not enter or overlap PAE boxes.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
