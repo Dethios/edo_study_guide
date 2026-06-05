@@ -506,6 +506,7 @@
 ]{apuc}{APUC}{Average Procurement Unit Cost}
 \newacronym{bac}{BAC}{Budget at Completion}
 \newacronym{eac}{EAC}{Estimate at Completion}
+\newacronym{etc}{ETC}{Estimate to Complete}
 \newacronym{spi}{SPI}{Schedule Performance Index}
 \newacronym{cpi}{CPI}{Cost Performance Index}
 \newacronym{evm}{EVM}{Earned Value Management}
@@ -799,6 +800,7 @@
 % --- Leadership & Development ---
 
 \newacronym{mbti}{MBTI}{Myers-Briggs Type Indicator}
+\newacronym{hcepf}{HCEPF}{High Consequence Events Prevention Framework}
 \newacronym{dawia}{DAWIA}{Defense Acquisition Workforce Improvement Act}
 \newacronym{awf}{AWF}{Acquisition Workforce}
 \newacronym{cap}{CAP}{Critical Acquisition Position}

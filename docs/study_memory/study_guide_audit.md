@@ -101,6 +101,22 @@ The entries in this section preserve the original imported package state. Later 
 - Confidence: `High`
 - Status: `applied`
 
+### 2026-06-05 - Repaired ASN(RD&A)/PAE Figure Connector Clearance
+
+- ID: `gc-20260605-pae-chart-whitespace-routing`
+- Location: `tex/chapters/1_Chain_of_command.tex`, `artifacts/out/main.pdf`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: rerouted Figure 1.4 connector geometry into explicit whitespace lanes. Deputy arrows now start from
+  ASN(RD&A) bottom-edge ports and terminate above the deputy boxes, the PAE portfolio bus runs above the first PAE row with
+  arrows stopping above node borders, the SYSCOM support cue stops outside the PAE group, and all node fills are explicitly
+  opaque so background connectors cannot show through boxes.
+- Source basis: user-reported rendered-PDF defect in the 2026-06-05 screenshot and local rendered-page verification from
+  `artifacts/out/main.pdf` page 16.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-04 - Applied NAVWAR / PEO C4I Product Closeout
 
 - ID: `gc-20260604-navwar-c4i-products-closeout`
@@ -925,5 +941,35 @@ The entries in this section preserve the original imported package state. Later 
   DON 32 CFR Part 775 rescission, 32 CFR Part 187, DoDI 5000.85, EPA NPDES Permit Basics, EPA Nonpoint Source Program,
   NAVSEA SSRAC, FY28 NAVSEA Standard Items 009-001 and 009-060, and read-only source/structure reviewer findings, all
   checked from official or primary web sources on 2026-06-05.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-05 - Applied Leadership and Professional Development Source/Flow Audit
+
+- ID: `gc-20260605-leadership-profdev-source-flow`
+- Location: `tex/chapters/14A_EVM_Exercise.tex`, `tex/chapters/27B_Ethics_and_Acquisition.tex`,
+  `tex/chapters/27C_Presentation_Techniques.tex`, `tex/chapters/27D_Team_Building.tex`,
+  `tex/chapters/27E_Leading_People.tex`, `tex/chapters/27F_MBTI.tex`, `tex/chapters/27G_CPI_260.tex`,
+  `tex/chapters/27H_High_Consequence_Events_Management.tex`, `tex/chapters/27I_DAWIA.tex`,
+  `tex/chapters/27J_EDQP.tex`, `tex/chapters/27K_Career_Topics.tex`,
+  `tex/chapters/27L_Mentoring_Tips.tex`, `tex/chapters/27M_Warrior_Toughness.tex`,
+  `tex/chapters/27N_Critical_Conversations.tex`, `tex/chapters/27O_Leader_Development_Framework.tex`,
+  `tex/acronyms.def`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: source-grounded the uncovered leadership/professional-development slice and the EVM exercise.
+  Added an EVM exercise quick review tied to DoD IPM terminology; replaced generic FAR ethics citations with FAR 3.104
+  and FAR 9.504/9.505; added the HCEPF acronym; corrected DAWIA wording for greater-than-50-percent acquisition
+  positions, functional-area-specific certification categories, CAP/KLP tenure, APM assignment-readiness framing, and
+  80-hour continuous-learning support; tied EDQP to the public MyNavy HR EDQP page; corrected the ED Dolphin board cue
+  for EDOs entering without prior warfare qualification; corrected OSR/PSR wording to include the OMPF; softened merit
+  reorder into a board-specific convening-order cue; and added leader-development flow bridges so mentoring and Warrior
+  Toughness point to the LDF anchor.
+- Source basis: FAR 3.104-3/3.104-4/3.104-5, FAR 9.504/9.505, DoDI 5000.66 Change 3, DAU Continuous Learning, OUSD
+  Back-to-Basics archive, MyNavy HR EDQP, MILPERSMAN 1301-220, BUPERSINST 1610.10H CH-1, MyNavy HR Officer Record
+  Update, MyNavy HR Selection Boards, FY26 Staff Corps convening-order merit-reorder language, NETC Warrior Toughness,
+  MyNavy HR GRGB Leadership Toolkit, DoD IPM EVM Definitions, DoD IPM Policy and Guidance, and read-only
+  source/structure reviewer findings, all checked from official or primary web sources on 2026-06-05.
 - Confidence: `High`
 - Status: `applied`

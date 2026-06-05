@@ -61,6 +61,8 @@ Recent applied updates:
 - Strategy-baseline and flow cleanup for the 2025 NSS / 2026 NDS baseline, JCIDS/JFRP caveats, and AWP/SOVT structure.
 - Current-events official-source hardening for Columbia-class delays, amphibious block buy, and SIOP status.
 - Flow, study-memory, and PAE chart closeout, including the Q18 Net-Ready question-bank entry.
+- ASN(RD\&A)/PAE Figure 1.4 connector-clearance follow-up: rerouted deputy, PAE bus, and SYSCOM support connectors into
+  whitespace lanes and verified the rendered page so no connector line crosses a node interior or label.
 - Standalone chapter flow cleanup for CIVPERS, NAVWAR FRD, Milestones, and AWP/SOVT.
 - Consistency/source-integrity cleanup for SOVT expansion, DASD(T\&E), and stale audit paths.
 - CIVPERS source-fidelity cleanup for Chapter 43/75, DPMAP, WGI/QSI, FLSA, and standalone chapter titles.
@@ -121,6 +123,10 @@ Recent applied updates:
   authority, current 10 U.S.C. 8669b STA/PAE reporting, CEQ/DoD/DON NEPA 2025 dates, NPDES point-source wording, PESHE
   versus current ESOH-documentation framing, FY-specific NAVSEA Standard Item caveats, and Integrated Case Study
   standalone summary/quick-review flow.
+- Leadership/professional-development source and flow audit: added EVM exercise quick review, precise FAR procurement
+  integrity/OCI source grounding, DAWIA greater-than-50-percent and functional-area-specific certification wording,
+  ED Dolphin expectation for non-warfare-qualified EDO accessions, OSR/PSR plus OMPF career-record framing, HCEPF acronym
+  handling, Warrior Toughness/NLDF official-source anchors, and LDF flow bridges for mentoring and resilience chapters.
 
 ## Next Review Plan
 
