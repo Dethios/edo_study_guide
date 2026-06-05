@@ -2141,3 +2141,17 @@ The entries in this section preserve the original imported package state. Later 
   `\Tab` macro pattern in `tex/moderntech-base.sty`, and `make check-tex-structure`.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Ground Leading People CNO34 Bullets in Official Sources
+
+- ID: `gc-20260605-leading-people-cno34-source-grounding`
+- Location: `tex/chapters/27E_Leading_People.tex`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: added the official CNO34 Day One Message citation to the Leading People Foundry--Fleet--Fight
+  bullet and the official CNO34 Charge of Command citation to the command-expectations bullet. The coursebook citation
+  remains to preserve the chapter's lecture-source traceability.
+- Source basis: official CNO Day One Message PDF, official Navy C-Notes display page for CNO 34 Charge of Command,
+  existing bibliography/source-ledger rows checked on 2026-06-05, and local active-TeX source scan.
+- Confidence: `High`
+- Status: `applied`

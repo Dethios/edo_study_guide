@@ -100,7 +100,8 @@ Current as of 2026-06-05.
   generic `EDO Study Guide` standalone chapter titles with topic-specific titles and added a structure guard for future
   generic-title drift; the same slice fixed the build script so chapter subfiles run from their own directory and can
   resolve `../main.tex` during standalone validation. June 5 numbered-reference follow-on extended the shared
-  reference macros and structure guard to Appendix, Section, and plural Figures references.
+  reference macros and structure guard to Appendix, Section, and plural Figures references. June 5 leadership-source
+  follow-on added official CNO34 source support to the Leading People Day One Message and Charge of Command bullets.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
