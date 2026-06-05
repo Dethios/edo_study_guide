@@ -46,8 +46,8 @@ Current as of 2026-06-04.
 ### NAVWAR / PEO C4I - PEO C4I program office products
 
 - ID: `wa-20260530-peo-c4i-products`
-- Evidence: June 4 official-source follow-up aligned PMW 150 GCCS-M/MTC2 wording, PMW/A 170 NMT protected-SATCOM wording,
-  PMW 790 DJC2/MOC/STACC wording, PEO MLB/Navy ERP wording, and the PAE Mission Systems cue. Keep active for
+- Evidence: June 4 official-source follow-up aligned PMW 150 GCCS-M/MTC2 wording, PMW/A 170 NMT protected-SATCOM
+  wording, PMW 790 DJC2/MOC/STACC wording, PEO MLB/Navy ERP wording, and the PAE Mission Systems cue. Keep active for
   product-office recall, not unresolved source drift.
 - Miss type: `factual_recall`
 - Severity: `medium`
@@ -68,7 +68,8 @@ Current as of 2026-06-04.
 
 - ID: `wa-20260530-canes-adns-mids`
 - Evidence: The guide correctly separates CANES shipboard LAN/compute services, ADNS routing and traffic engineering,
-  SATCOM/RF bearers, and PMA/PMW 101 MIDS/Link 16 terminals/waveforms. Residual need is clean oral recall under pressure.
+  SATCOM/RF bearers, and PMA/PMW 101 MIDS/Link 16 terminals/waveforms. Residual need is clean oral recall under
+  pressure.
 - Miss type: `factual_recall`
 - Severity: `medium`
 - Next review: 2026-06-08
@@ -98,7 +99,8 @@ Current as of 2026-06-04.
 
 - ID: `wa-20260530-resource-sponsors`
 - Evidence: June 4 guide maintenance corrected the N3/N5 vs N7 resource-sponsor-code trap and clarified that
-  N8/N80/N81/N82/N83 are PPBE integration, assessment, budget, and readiness lanes while N9-family codes are the warfare sponsors.
+  N8/N80/N81/N82/N83 are PPBE integration, assessment, budget, and readiness lanes while N9-family codes are the warfare
+  sponsors.
 - Miss type: `concept_confusion`
 - Severity: `medium`
 - Next review: 2026-06-07
@@ -125,7 +127,8 @@ Current as of 2026-06-04.
 ### Current EDO organization - Current EDO flags and billets
 
 - ID: `wa-20260530-edo-flags`
-- Evidence: June 4 guide maintenance corrected source-version drift for current EDO flag ranks/billets; keep active for memorization and rapid board recall.
+- Evidence: June 4 guide maintenance corrected source-version drift for current EDO flag ranks/billets; keep active for
+  memorization and rapid board recall.
 - Miss type: `factual_recall`
 - Severity: `medium`
 - Next review: 2026-06-06
@@ -259,9 +262,10 @@ No entries yet.
 ### Systems engineering - SE review baselines
 
 - ID: `wa-20260530-se-review-baselines`
-- Evidence: Q12/Q13/Q14 answers correctly mapped functional baseline to SFR while recognizing SRR as the requirements-review trap,
-  allocated baseline to PDR, and product baseline to CDR. Residual gap: user described baselines as reviews or test results rather than controlled
-  technical definitions, and blended CDR design maturity with later verification/test evidence.
+- Evidence: Q12/Q13/Q14 answers correctly mapped functional baseline to SFR while recognizing SRR as the
+  requirements-review trap, allocated baseline to PDR, and product baseline to CDR. Residual gap: user described
+  baselines as reviews or test results rather than controlled technical definitions, and blended CDR design maturity
+  with later verification/test evidence.
 - Miss type: `concept_confusion`
 - Severity: `medium`
 - Next review: 2026-06-01
@@ -344,8 +348,9 @@ No entries yet.
 
 - ID: `wa-20260530-peo-c4i-products`
 - Evidence: June 4 official-source refresh aligned the PEO C4I office list with PMW/A 170 styling, moved the fast-cue
-  source basis from coursebook-only citations to official PEO C4I/NAVSEA records, added the missing PMW/A 170 source-ledger
-  row, and corrected the CEC article date. Keep active for rapid product-office recall, not unresolved source drift.
+  source basis from coursebook-only citations to official PEO C4I/NAVSEA records, added the missing PMW/A 170
+  source-ledger row, and corrected the CEC article date. Keep active for rapid product-office recall, not unresolved
+  source drift.
 - Miss type: `factual_recall`
 - Severity: `medium`
 - Next review: 2026-06-05
@@ -368,8 +373,8 @@ No entries yet.
 ### Systems engineering - SE review baselines
 
 - ID: `wa-20260530-se-review-baselines`
-- Evidence: Official-source maintenance updated the guide and source ledger to separate SRR's requirements review from SFR's
-  functional-baseline role, with PDR and CDR retained as the allocated and initial-product baseline reviews.
+- Evidence: Official-source maintenance updated the guide and source ledger to separate SRR's requirements review from
+  SFR's functional-baseline role, with PDR and CDR retained as the allocated and initial-product baseline reviews.
 - Miss type: `factual_recall`
 - Severity: `medium`
 - Next review: 2026-06-06

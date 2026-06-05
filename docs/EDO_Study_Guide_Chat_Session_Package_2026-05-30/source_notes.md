@@ -3,7 +3,9 @@
 These are the official or primary sources cited or used in the visible session.
 Verify live again before treating current org/billet/program facts as final.
 
-> Superseded for current-org use: this May 30 handoff source list is archival session provenance. For current PAE, SSP, ASN(RD&A), and EDO flag-roster facts, use the canonical guide sources in `tex/edo.bib` and current chapters updated through 2026-06-04. Re-verify live official sources before board use.
+> Superseded for current-org use: this May 30 handoff source list is archival session provenance. For current PAE, SSP,
+> ASN(RD&A), and EDO flag-roster facts, use the canonical guide sources in `tex/edo.bib` and current chapters updated
+> through 2026-06-04. Re-verify live official sources before board use.
 
 ## NAVWAR / PEO C4I / PEO MLB
 

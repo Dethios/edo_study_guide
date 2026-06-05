@@ -307,6 +307,21 @@ The entries in this section preserve the original imported package state. Later 
 - Confidence: `High`
 - Status: `applied`
 
+### 2026-06-05 - Applied Markdown Validation Formatting Cleanup
+
+- ID: `gc-20260605-markdown-validation-formatting-cleanup`
+- Location: `docs/study_memory/weak_areas.md`,
+  `docs/EDO_Study_Guide_Chat_Session_Package_2026-05-30/source_notes.md`,
+  `docs/reference/2026-06-02-additional-info-study-material.md`
+- Verdict: `Applied`
+- Correction applied: mechanically wrapped long Markdown lines and aligned Markdown tables with `rumdl fmt` so the
+  repository-wide `make check-markdown` target passes. This was a formatting-only cleanup; no doctrine, source,
+  board-answer, or current-fact content was intentionally changed.
+- Source basis: local Markdown validation output from `make check-markdown`, followed by `rumdl fmt` on the three
+  failing files and a passing rerun of `make check-markdown`.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-04 - Applied Flow, Study-Memory, and PAE Chart Closeout
 
 - ID: `gc-20260604-flow-study-memory-chart-closeout`

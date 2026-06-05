@@ -41,7 +41,8 @@ Current as of 2026-06-05.
   caveats where not. June 5 SIOP current-status follow-up refreshed CRS product dates, moved the SIOP source basis to
   NAVFAC's current PEO Infrastructure and Expeditionary / PMO 555 page, and added the 7 May 2026 SIOP progress story to
   the current-events appendix and source ledger. June 5 source-integrity follow-up added a current-events source-ledger
-  checker and wired it into `make check-study-memory`.
+  checker and wired it into `make check-study-memory`. June 5 Markdown formatting follow-up mechanically wrapped
+  pre-existing long lines and aligned tables in the remaining failing Markdown files so `make check-markdown` passes.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -186,7 +187,8 @@ Recent applied updates:
 - Update `learning_log.jsonl`, `weak_areas.jsonl`, `study_guide_audit.md`, `guide_changes.jsonl`, and this index after
   substantive graded answers or applied guide corrections.
 - Validate with `make check-study-memory`, `make check-current-events-sources`, `make check-acronyms`,
-  `make check-tex-structure`, `git diff --check`, and a Docker PDF build after substantive LaTeX edits.
+  `make check-tex-structure`, `make check-markdown`, `git diff --check`, and a Docker PDF build after substantive
+  LaTeX edits.
 
 ## Memory Files
 
