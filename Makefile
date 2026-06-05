@@ -1,4 +1,4 @@
-.PHONY: force-rebuild-tikz check-tikz-cache check-acronyms check-study-memory check-tex-structure check-markdown fmt-markdown
+.PHONY: force-rebuild-tikz check-tikz-cache check-acronyms check-current-events-sources check-study-memory check-tex-structure check-markdown fmt-markdown
 force-rebuild-tikz:
 	@project_root="$$(pwd)"; \
 	for cache_dir in "$$project_root/artifacts/tikz" "$$project_root/.build/tikz" "$$project_root/build/tikz"; do \
@@ -11,8 +11,12 @@ check-tikz-cache:
 check-acronyms:
 	@./scripts/check-acronyms.py
 
+check-current-events-sources:
+	@./scripts/check-current-events-sources.py
+
 check-study-memory:
 	@sh scripts/check-study-memory.sh
+	@./scripts/check-current-events-sources.py
 
 check-tex-structure:
 	@sh scripts/check-tex-structure.sh

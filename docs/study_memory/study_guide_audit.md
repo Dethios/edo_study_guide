@@ -292,6 +292,21 @@ The entries in this section preserve the original imported package state. Later 
 - Confidence: `High`
 - Status: `applied`
 
+### 2026-06-05 - Applied Current-Events Source-Ledger Guard
+
+- ID: `gc-20260605-current-events-source-ledger-guard`
+- Location: `Makefile`, `scripts/check-current-events-sources.py`, `AGENTS.md`, `README.md`,
+  `docs/study_memory/README.md`, `docs/study_memory/memory_index.md`
+- Verdict: `Applied`
+- Correction applied: added a repo-local checker that validates `tex/current_events.bib` source entries are cited by the
+  guide and that each current-events URL is represented in `docs/study_memory/sources.md`. Wired the checker into
+  `make check-study-memory` and exposed a direct `make check-current-events-sources` target so current-events
+  source-currentness slices fail fast when BibTeX and source-ledger records drift apart.
+- Source basis: local validation workflow review after the SIOP current-status refresh found that the standard checks
+  did not compare `tex/current_events.bib` to the study-memory source inventory.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-04 - Applied Flow, Study-Memory, and PAE Chart Closeout
 
 - ID: `gc-20260604-flow-study-memory-chart-closeout`

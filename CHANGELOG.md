@@ -16,6 +16,8 @@ release tags (release-YYYYMMDD).
   COMOPTEVFOR roles and responsibilities in testing chapter.
 - Added a repo-local acronym hygiene check for duplicate definitions, undefined
   acronym keys, table-body acronym macros, and item-label acronym macros.
+- Added a current-events source-ledger check for `tex/current_events.bib`
+  citation usage and `docs/study_memory/sources.md` URL coverage.
 - Added a coursebook coverage manifest that maps included coursebook modules and
   topic learning objectives to study-guide chapters, citation keys, and coverage
   status.

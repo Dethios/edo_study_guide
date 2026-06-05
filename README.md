@@ -87,6 +87,16 @@ The acronym check verifies that `tex/acronyms.def` has unique keys, acronym
 macros reference defined keys, and acronym macros do not appear inside
 table-like environments or optional `\item[...]` labels.
 
+Current-events source-ledger validation:
+
+```shell
+make check-current-events-sources
+```
+
+The current-events check verifies that `tex/current_events.bib` entries are
+cited by the guide and that their URLs also appear in
+`docs/study_memory/sources.md`.
+
 ## Format
 
 Use the Docker wrapper with normal `latexindent` arguments:

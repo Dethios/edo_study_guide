@@ -70,4 +70,5 @@ sh scripts/check-study-memory.sh
 ```
 
 For LaTeX source edits, continue to run the normal guide validation such as
-`make check-acronyms`, `git diff --check`, and the Docker PDF build.
+`make check-acronyms`, `make check-current-events-sources`, `git diff --check`,
+and the Docker PDF build.
