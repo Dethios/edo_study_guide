@@ -312,6 +312,8 @@ Recent applied updates:
   Chapter 27O's NLDF strategic-alignment and self-guided-learning GRGB bullets while preserving coursebook traceability.
 - Warrior Toughness source grounding: added the official NETC Warrior Toughness Components source and cited it for
   Chapter 27M's warrior mindset cycle, core attributes, and performance psychology skills.
+- Career Topics board-process source grounding: aligned Chapter 27K's selection-board summary and Quick Review wording
+  with official MyNavyHR selection-board output/routing language while preserving coursebook internal-mechanics recall.
 
 ## Next Review Plan
 

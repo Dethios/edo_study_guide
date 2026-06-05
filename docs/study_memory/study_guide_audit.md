@@ -2214,3 +2214,18 @@ The entries in this section preserve the original imported package state. Later 
   on 2026-06-05, existing source-ledger row for the overview page, and local active-TeX source scan.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Ground Career Topics Selection-Board Flow in Official Source
+
+- ID: `gc-20260605-career-topics-selection-board-source-grounding`
+- Location: `tex/chapters/27K_Career_Topics.tex`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: updated Chapter 27K's board-procedure summary, promotion-context summary, board-process detail,
+  and Quick Review selection-board bullet so the official board answer emphasizes precepts, confidentiality,
+  findings/recommendations, and approval routing while retaining coursebook-only internal brief/vote/crunch mechanics
+  as recall rather than official retained deliberation records.
+- Source basis: official MyNavyHR selection-board page checked on 2026-06-05, official FY26 Staff Corps convening order
+  already in the source ledger, and local Career Topics source scan.
+- Confidence: `High`
+- Status: `applied`
