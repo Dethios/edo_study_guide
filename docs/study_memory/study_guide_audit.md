@@ -66,6 +66,21 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied TeX Cross-Reference Structure Guard
+
+- ID: `gc-20260605-tex-cross-reference-structure-guard`
+- Location: `scripts/check-tex-structure.sh`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: expanded the TeX structure checker so it extracts labels from both normal `\label{...}` commands
+  and tabularray-style `label = {...}` declarations, detects duplicate label keys, and fails on `\ref`, `\pageref`,
+  `\autoref`, `\cref`, or `\Cref` targets that do not resolve to a known label. The current checkout passes the new
+  guard, converting another manual cross-reference scout into repeatable validation coverage.
+- Source basis: local TeX label/reference scout across `tex/main.tex` and `tex/chapters/*.tex`, and successful
+  `make check-tex-structure` validation.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied Summary / Quick Review Structure Guard
 
 - ID: `gc-20260605-summary-quick-review-structure-guard`

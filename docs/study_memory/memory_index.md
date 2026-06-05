@@ -7,8 +7,8 @@ Current as of 2026-06-05.
 - Session: `2026-06-04-end-to-end-study-guide-audit`
 - Date: 2026-06-04
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
-- Current follow-up: 2026-06-05 Summary / Quick Review structure-guard cleanup expanded `make check-tex-structure`
-  so all TeX chapter subfiles must keep the board-speed Summary and Quick Review flow pattern.
+- Current follow-up: 2026-06-05 TeX cross-reference structure-guard cleanup expanded `make check-tex-structure`
+  so duplicate labels and missing `\ref` / `\cref` targets are caught automatically, including tabularray labels.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,
@@ -154,6 +154,8 @@ Recent applied updates:
   their applied June 4 closeout records; append-only JSONL historical records remain unchanged.
 - Summary / Quick Review structure guard: `make check-tex-structure` now enforces that each TeX chapter subfile retains
   the standardized Summary and Quick Review subsections.
+- TeX cross-reference structure guard: `make check-tex-structure` now extracts normal `\label{...}` and tabularray
+  `label = {...}` declarations, fails on duplicate labels, and fails on unresolved `\ref` / `\cref`-style targets.
 - NIP/MIP budget-release source-currentness alignment: ODNI FY2025 NIP request and appropriation, War.gov FY2025 MIP,
   War.gov FY2024 MIP, and War.gov FY2025 MIP budget-request bibliography/source-ledger entries now use direct official
   pages, corrected titles/dates, and 2026-06-05 access dates.

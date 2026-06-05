@@ -22,6 +22,13 @@ included="$tmp_dir/included.txt"
 chapter_files="$tmp_dir/chapter-files.txt"
 orphaned="$tmp_dir/orphaned.txt"
 missing="$tmp_dir/missing.txt"
+label_records="$tmp_dir/label-records.txt"
+label_keys_all="$tmp_dir/label-keys-all.txt"
+label_keys="$tmp_dir/label-keys.txt"
+duplicate_labels="$tmp_dir/duplicate-labels.txt"
+ref_records="$tmp_dir/ref-records.txt"
+ref_keys="$tmp_dir/ref-keys.txt"
+missing_refs="$tmp_dir/missing-refs.txt"
 
 sed -n -E 's/^[[:space:]]*\\(ChapterWithRefsAtStart|StudySubfile)\{([^}]+)\}.*/\2.tex/p' "$main_file" \
   | sort -u > "$included"
@@ -44,6 +51,83 @@ if [ -s "$missing" ]; then
   status=1
   echo "Included chapters missing from $chapters_dir:" >&2
   sed 's/^/  - /' "$missing" >&2
+fi
+
+awk '
+  function emit_labels(text, loc, m) {
+    while (match(text, /\\label\{[^}]+\}/)) {
+      m = substr(text, RSTART, RLENGTH)
+      sub(/^\\label\{/, "", m)
+      sub(/\}$/, "", m)
+      print m "|" loc
+      text = substr(text, RSTART + RLENGTH)
+    }
+    while (match(text, /label[[:space:]]*=[[:space:]]*\{[^}]+\}/)) {
+      m = substr(text, RSTART, RLENGTH)
+      sub(/^label[[:space:]]*=[[:space:]]*\{/, "", m)
+      sub(/\}$/, "", m)
+      print m "|" loc
+      text = substr(text, RSTART + RLENGTH)
+    }
+  }
+  {
+    raw = $0
+    sub(/%.*/, "", raw)
+    emit_labels(raw, FILENAME ":" FNR)
+  }
+' "$main_file" "$chapters_dir"/*.tex > "$label_records"
+
+cut -d '|' -f 1 "$label_records" > "$label_keys_all"
+sort -u "$label_keys_all" > "$label_keys"
+sort "$label_keys_all" | uniq -d > "$duplicate_labels"
+
+if [ -s "$duplicate_labels" ]; then
+  status=1
+  echo "Duplicate TeX labels found:" >&2
+  while IFS= read -r key; do
+    echo "  - $key" >&2
+    grep -F "$key|" "$label_records" | sed 's/^[^|]*|/      /' >&2
+  done < "$duplicate_labels"
+fi
+
+awk '
+  function trim(value) {
+    gsub(/^[[:space:]]+/, "", value)
+    gsub(/[[:space:]]+$/, "", value)
+    return value
+  }
+  function emit_refs(text, loc, m, keys, n, i) {
+    while (match(text, /\\(ref|pageref|autoref|cref|Cref)\{[^}]+\}/)) {
+      m = substr(text, RSTART, RLENGTH)
+      sub(/^\\(ref|pageref|autoref|cref|Cref)\{/, "", m)
+      sub(/\}$/, "", m)
+      n = split(m, keys, ",")
+      for (i = 1; i <= n; i++) {
+        keys[i] = trim(keys[i])
+        if (keys[i] != "") {
+          print keys[i] "|" loc
+        }
+      }
+      text = substr(text, RSTART + RLENGTH)
+    }
+  }
+  {
+    raw = $0
+    sub(/%.*/, "", raw)
+    emit_refs(raw, FILENAME ":" FNR)
+  }
+' "$main_file" "$chapters_dir"/*.tex > "$ref_records"
+
+cut -d '|' -f 1 "$ref_records" | sort -u > "$ref_keys"
+comm -23 "$ref_keys" "$label_keys" > "$missing_refs"
+
+if [ -s "$missing_refs" ]; then
+  status=1
+  echo "TeX references with no matching label:" >&2
+  while IFS= read -r key; do
+    echo "  - $key" >&2
+    grep -F "$key|" "$ref_records" | sed 's/^[^|]*|/      /' >&2
+  done < "$missing_refs"
 fi
 
 for file in "$chapters_dir"/*.tex; do
