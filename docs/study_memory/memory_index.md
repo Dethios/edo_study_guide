@@ -27,7 +27,9 @@ Current as of 2026-06-05.
   board-speed Quick Review blocks to Chapters 2, 11, 12, 12A, 13A, 13B, 13C, 15, and 27, and added a first-screen
   Summary to Chapter 28. June 5 appendix follow-up standardized remaining appendix Summary / Quick Review flow, added
   official combatant-command source support, refreshed active repo guidance, and fixed Figure 1.4 connector routing so
-  the rendered PAE chart uses node-border anchors instead of lines through boxes.
+  the rendered PAE chart uses node-border anchors instead of lines through boxes. June 5 milestone/source-hygiene
+  follow-up tightened Milestone C phase-entry wording, aligned O&S PESHE/ESOH framing, added a direct DAU Performance
+  Attributes bibliography source, and refreshed NAVWAR question-bank PMW 790 and PMW/A 170 source styling.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 

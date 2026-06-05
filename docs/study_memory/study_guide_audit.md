@@ -1104,3 +1104,20 @@ The entries in this section preserve the original imported package state. Later 
   log/structure validation, and rendered page-image verification of Figure 1.4 on physical PDF page 16.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Applied Milestone and NAVWAR Question-Bank Source Hygiene
+
+- ID: `gc-20260605-milestones-navwar-question-bank-source-hygiene`
+- Location: `tex/chapters/16_Milestones.tex`, `tex/edo.bib`,
+  `docs/study_memory/question_bank.jsonl`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: tightened the Milestone C comparison table so phase entry reads as P&D / LRIP or limited
+  deployment rather than generic production; aligned O&S guidance with current product-support and ESOH framing while
+  preserving PESHE as the legacy coursebook board shorthand; added a direct DAU Performance Attributes bibliography
+  source for the mandatory KPP/performance-attribute cue; and updated two NAVWAR question-bank records so PMW 790 uses
+  the current tear-sheet URL and PMW/A 170 uses the same styling as the guide and source ledger.
+- Source basis: DoWI 5000.85, DoDI 5000.91, DAU Performance Attributes, the existing EDO School 3.3.2 coursebook
+  source, the PEO C4I PMW 790 tear sheet already recorded in `sources.md`, and the read-only NAVWAR weak-area audit.
+- Confidence: `High`
+- Status: `applied`
