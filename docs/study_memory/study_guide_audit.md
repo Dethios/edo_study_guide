@@ -2280,3 +2280,20 @@ The entries in this section preserve the original imported package state. Later 
   structure check, whitespace check, and Docker PDF rebuild.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Ground Cost Estimating Products in Official Sources
+
+- ID: `gc-20260605-cost-estimating-official-source-grounding`
+- Location: `tex/chapters/10_Cost_Fundamentals.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: Chapter 10's cost-estimating products relied on coursebook-only citations and described CARD
+  updates as tied to the DoD Manual 5000.04 series. Current official source checks showed DoDI 5000.73 is the
+  controlling cost-analysis source for CARD, POE, CCE, CCP, ICE, Service cost agency, and CAPE review, while DoDM
+  5000.04 is the Cost and Software Data Reporting manual. Updated Chapter 10 citations and wording to make that
+  distinction explicit and added CAPE DoD Cost Estimating Guide support for defensible-estimate process cues.
+- Source basis: official WHS DoDI 5000.73 PDF; official WHS DoDM 5000.04 PDF; official CAPE DoD Cost Estimating Guide
+  Version 2; existing 10 U.S.C. 139a CAPE source entry; local active-TeX and source-ledger scan.
+- Confidence: `High`
+- Status: `applied`

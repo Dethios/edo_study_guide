@@ -23,7 +23,7 @@
   design is detailed, and actuals when production or sustainment data exist.
   \item[\textbf{Decision products.}] The \ac{pmo} owns the program definition and \ac{card}; the \ac{poe}, \ac{cce},
   \ac{ccp}, \ac{ice}, and CAPE review lanes test whether the cost position is realistic enough for milestone and
-  budget decisions.
+  budget decisions~\autocite{DoDI5000-73-Cost-Analysis-2024}.
 \end{description}
 ~\srcCite{edo-3-1-6-cost-estimating-2024}
 
@@ -92,7 +92,7 @@
     label   = {tab:cost_players_products},
     caption = {Cost estimating players and products},
     entry   = {Cost Players and Products},
-    remark{\tSource} = {\tabCite{edo-3-1-6-cost-estimating-2024}}
+    remark{\tSource} = {\tabCite{edo-3-1-6-cost-estimating-2024,DoDI5000-73-Cost-Analysis-2024,USC-139a-CAPE}}
   ]
   {colspec = {@{} ll @{}}}
   \toprule
@@ -105,18 +105,18 @@
 \end{longtblr}
 
 \begin{description}
-  \item[\textbf{Program management office.}] Defines the program, owns the CARD and program estimate need, and may use the SYSCOM cost organization to develop the POE on behalf of the PMO~\autocite{edo-3-1-6-cost-estimating-2024}.
-  \item[\textbf{Component cost agency.}] Leads cost analysis independent of the acquisition decision chain; prepares \ac{cce} for ACAT IC/ID programs and may serve as the \ac{ice}~\autocite{edo-3-1-6-cost-estimating-2024}.
-  \item[\textbf{CAPE.}] Conducts or approves \acp{ice} for ACAT ID/IC programs, participates in PPBE reviews, and advises \ac{secdef}~\autocite{edo-3-1-6-cost-estimating-2024}.
+  \item[\textbf{Program management office.}] Defines the program, owns the \ac{card} and program estimate need, and may use the SYSCOM cost organization to develop the \ac{poe} on behalf of the \ac{pmo}. For major capability acquisition reviews, the \ac{pmo} prepares the draft and final \ac{card} for \ac{cape} Cost Assessment and the Service cost agency~\autocite{edo-3-1-6-cost-estimating-2024,DoDI5000-73-Cost-Analysis-2024}.
+  \item[\textbf{Component / Service cost agency.}] Leads cost analysis independent of the acquisition decision chain; prepares or reviews \acp{ice}, component cost estimates, component cost positions, and related cost analysis according to component policy and DoDI~5000.73~\autocite{edo-3-1-6-cost-estimating-2024,DoDI5000-73-Cost-Analysis-2024}.
+  \item[\textbf{CAPE.}] Conducts, reviews, or approves independent cost analysis for major programs, participates in resource and acquisition decision support, and advises \ac{secdef}~\autocite{edo-3-1-6-cost-estimating-2024,USC-139a-CAPE,DoDI5000-73-Cost-Analysis-2024}.
 \end{description}
 
 \subsection{Cost estimating products}
 \begin{description}
-  \item[\textbf{CARD.}] Developed by the program office; provides quantitative technical and programmatic descriptions for costing; updated for all milestone reviews (\ac{dod} Manual 5000.04 series)~\autocite{edo-3-1-6-cost-estimating-2024}.
-  \item[\textbf{CCE.}] Developed by the component cost agency using input from the POE; reviewed by CAPE for \acp{mdap} and \acp{mais}~\autocite{edo-3-1-6-cost-estimating-2024}.
-  \item[\textbf{POE.}] Program estimate developed by or for the \ac{pmo}, often by the SYSCOM cost organization; estimates full life-cycle resources and costs based on the CARD~\autocite{edo-3-1-6-cost-estimating-2024}.
-  \item[\textbf{CCP.}] Reconciliation between the CCE and POE; official component cost position (DoN typically uses the POE in lieu of a CCP)~\autocite{edo-3-1-6-cost-estimating-2024}.
-  \item[\textbf{ICE.}] Independent \ac{lcc} required for ACAT I programs; conducted by an organization independent of the \ac{pmo}~\autocite{edo-3-1-6-cost-estimating-2024}.
+  \item[\textbf{CARD.}] Developed by the program office; provides quantitative technical and programmatic descriptions for costing; supports \acp{ice}, \acp{poe}, \acp{cce}, \acp{ccp}, and related cost estimates. Current DoDI~5000.73, not DoDM~5000.04, is the controlling cost-analysis source for \ac{card} preparation and submission; DoDM~5000.04 governs cost and software data reporting~\autocite{edo-3-1-6-cost-estimating-2024,DoDI5000-73-Cost-Analysis-2024,DoDM5000-04-CSDR-2021}.
+  \item[\textbf{CCE.}] Developed by the component or Service cost agency as a component-level estimate or assessment that challenges the program view and supports the component cost position~\autocite{edo-3-1-6-cost-estimating-2024,DoDI5000-73-Cost-Analysis-2024}.
+  \item[\textbf{POE.}] Program estimate developed by or for the \ac{pmo}, often by the SYSCOM cost organization; estimates full life-cycle resources and costs based on the \ac{card} and supports the component cost position~\autocite{edo-3-1-6-cost-estimating-2024,DoDI5000-73-Cost-Analysis-2024}.
+  \item[\textbf{CCP.}] Official component cost position derived from the \ac{cce}, \ac{poe}, and component policy before major cost decisions; the coursebook notes that DoN often uses the \ac{poe} in lieu of a separate \ac{ccp}~\autocite{edo-3-1-6-cost-estimating-2024,DoDI5000-73-Cost-Analysis-2024}.
+  \item[\textbf{ICE.}] Independent full life-cycle estimate covering development, production, deployment, operations and support, disposal, and MILCON when applicable; conducted or approved by the independent cost authority required for the decision~\autocite{edo-3-1-6-cost-estimating-2024,DoDI5000-73-Cost-Analysis-2024}.
   \item[\textbf{Economic analysis.}] Evaluates relative costs of technical alternatives and acquisition strategies; developed by the \ac{pmo} for \acp{mais}~\autocite{edo-3-1-6-cost-estimating-2024}.
 \end{description}
 
@@ -168,7 +168,7 @@ the math is finished.  The PMO prepares and defends the program estimate, the
 SYSCOM or component cost organization reviews the estimate for realism and
 method, and the CAPE role becomes central for major programs that require
 independent cost assessment before a milestone decision
-\autocite{edo-3-1-6-cost-estimating-2024}.
+\autocite{edo-3-1-6-cost-estimating-2024,DoDI5000-73-Cost-Analysis-2024,CAPE-Cost-Estimating-Guide-2022}.
 
 \begin{longtblr}[
   caption = {Cost-estimate products and review roles.},
@@ -199,6 +199,9 @@ CAPE review & OSD CAPE & Provides independent cost analysis for major decisions 
   inflation and outlay rates.
   \item What makes a defensible estimate? \textbf{Answer:} A technical baseline, documented assumptions, independent
   review, and a clear decision use; know who owns the \ac{card}, \ac{poe}, component review, \ac{ice}, and CAPE role.
+  \item What is the source trap for \ac{card}? \textbf{Answer:} DoDI~5000.73 is the board-safe official source for \ac{card},
+  \ac{poe}, \ac{cce}, \ac{ccp}, \ac{ice}, Service cost agency, and CAPE cost-analysis cues; DoDM~5000.04 is the cost and
+  software data reporting manual~\autocite{DoDI5000-73-Cost-Analysis-2024,DoDM5000-04-CSDR-2021}.
 \end{itemize}
 
 %====================
