@@ -54,6 +54,16 @@ for file in "$chapters_dir"/*.tex; do
     echo "Acronym-using chapter missing standalone acronym glossary: $file" >&2
   fi
 
+  if ! grep -Eq '^[[:space:]]*\\subsection\*?\{Summary\}' "$file"; then
+    status=1
+    echo "Chapter missing Summary subsection: $file" >&2
+  fi
+
+  if ! grep -Eq '^[[:space:]]*\\subsection\*?\{Quick Review\}' "$file"; then
+    status=1
+    echo "Chapter missing Quick Review subsection: $file" >&2
+  fi
+
   if awk '
     /\\printnoidxglossary/ { after = 1; next }
     after && /^[[:space:]]*\\(section|subsection|subsubsection|paragraph)\{/ { print FNR ":" $0; bad = 1 }

@@ -66,6 +66,20 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied Summary / Quick Review Structure Guard
+
+- ID: `gc-20260605-summary-quick-review-structure-guard`
+- Location: `scripts/check-tex-structure.sh`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: expanded the TeX structure checker so every chapter subfile under `tex/chapters` must contain
+  a `Summary` subsection and a `Quick Review` subsection. The current checkout already satisfies this pattern; the
+  new guard converts the previously manual flow scout into a repeatable validation check.
+- Source basis: local TeX chapter flow scout, existing `check-tex-structure.sh` structural guard, and successful
+  `make check-tex-structure` validation.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied Imported Proposal Status Closeout
 
 - ID: `gc-20260605-imported-proposal-status-closeout`
