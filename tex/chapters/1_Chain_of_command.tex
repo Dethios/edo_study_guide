@@ -162,17 +162,17 @@ Current as of 2026-06-05, Mr.\ William F.\ Mahan is performing the duties of \ac
     \coordinate (deputyStem) at (asn.south |- deputyBusY);
     \coordinate (pcdBranch) at (pcd.north |- deputyBusY);
     \coordinate (pmdBranch) at (pmd.north |- deputyBusY);
-    \coordinate (paeBusY) at ($(missions.north)+(0,1.22cm)$);
-    \coordinate (paeBranchLeft) at (aviation.north |- paeBusY);
-    \coordinate (paeBranchCenter) at (missions.north |- paeBusY);
-    \coordinate (paeBranchRight) at (munitions.north |- paeBusY);
+    \coordinate (paeTopBusY) at ($(missions.north)+(0,1.35cm)$);
+    \coordinate (paeBranchLeft) at (aviation.north |- paeTopBusY);
+    \coordinate (paeBranchCenter) at (missions.north |- paeTopBusY);
+    \coordinate (paeBranchRight) at (munitions.north |- paeTopBusY);
 
     \begin{scope}[on background layer]
       \node[pae group, fit=(aviation)(missions)(munitions)(industrial)(maritime)(undersea)(ssp)(ras)(marine)] (paeGroup) {};
     \end{scope}
 
     \coordinate (supportOut) at ($(syscoms.east)+(0.42cm,0)$);
-    \coordinate (supportGroupEntry) at ($(paeGroup.west)+(-0.08cm,0)$);
+    \coordinate (supportGroupEntry) at ($(paeGroup.west |- industrial.west)+(-0.08cm,0)$);
 
     \begin{scope}[on background layer]
       \draw[line] (secnav.south) -- (asn.north);
@@ -188,7 +188,7 @@ Current as of 2026-06-05, Mr.\ William F.\ Mahan is performing the duties of \ac
       \draw[line] (paeBranchCenter) -- (missions.north);
       \draw[line] (paeBranchRight) -- (munitions.north);
 
-      \draw[support line] (syscoms.east) -- (supportOut) |- (supportGroupEntry);
+      \draw[support line] (syscoms.east) -- (supportOut) -- (supportGroupEntry);
     \end{scope}
   \end{tikzpicture}}
   \caption[ASN (RD\&A) and PAE organization transition]{Board-level ASN (RD\&A) and PAE organization transition, updated from the user-provided PAE chart with public announcements through 2026-06-05~\autocite{DON-New-SAE-2026,DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026}.}
