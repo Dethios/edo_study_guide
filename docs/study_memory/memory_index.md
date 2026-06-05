@@ -355,6 +355,10 @@ Recent applied updates:
 - Fleet-maintenance policy source grounding: added point-of-use OPNAVINST 4700.7N, JFMM, and 10 U.S.C. 2466 support to
   Chapter 21's maintenance-policy, RCM/CBM/TDM, CMP, FAST, availability-type, and right-level-of-maintenance cues while
   preserving coursebook support for board-specific membership and scheduling details.
+- Contract-admin and fast-cue citation precision: added exact FAR/FMR section anchors for Chapter 13B and Chapter 29 COR
+  limits, ratification, commercial definitions, disputes, ADR, CAO visit notification, responsibility standards,
+  contract-type prompts, data-rights prompts, order-type prompts, NWCF prompts, and reprogramming prompts while
+  retaining broad FAR/DFARS/NMCARS cites only where the text explicitly discusses volatile regulation text as a whole.
 
 ## Next Review Plan
 

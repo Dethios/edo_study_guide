@@ -2495,3 +2495,25 @@ The entries in this section preserve the original imported package state. Later 
   Chapter 16 citation-fit scan checked on 2026-06-05.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Replace Broad FAR/FMR Citations in Contract Admin Fast Cues
+
+- ID: `gc-20260605-contract-admin-fast-cue-citation-precision`
+- Location: `tex/chapters/13B_Contract_Administration.tex`,
+  `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: Chapter 13B and Chapter 29 still used broad `FAR`, `DFARS`, and `DoDFMR-Vol3` citations for
+  COR limits, ratification, commercial definitions, disputes, ADR, contractor-facility visit notice, execution anchors,
+  responsibility standards, source-selection release cues, contract-type prompts, data-rights prompts, IGT/order-type
+  prompts, NWCF prompts, and reprogramming prompts. Added exact official-source support and point-of-use citations while
+  retaining broad FAR, DFARS, and NMCARS landing-page citations only where the sentence is explicitly about volatile
+  regulation text as a whole.
+- Source basis: official Acquisition.gov FAR pages for FAR 1.602-2, 1.602-3, 2.101, 5.101, 9.104-1, 15.101, 15.304,
+  15.506, 16.102, 16.103, 16.403-1, 16.504, 16.601, 16.602, 16.603-1, 19.502-2, 33.104, 33.202, 33.204, 42.302,
+  42.402, 43.103, DFARS 215.506, DFARS 215.506-70, DFARS 233.104, DFARS 227.7103-5, and DFARS Subpart 227.72 checked
+  on 2026-06-05; DoW FMR Volume 3 Chapters 6, 8, and 19; DoW FMR Volume 11A Chapters 2 and 3; DoW FMR Volume 11B
+  Chapters 1 and 3; local broad-citation scan.
+- Confidence: `High`
+- Status: `applied`
