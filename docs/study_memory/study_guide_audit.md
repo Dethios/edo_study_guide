@@ -1837,3 +1837,17 @@ The entries in this section preserve the original imported package state. Later 
   fiscal-law wording scans.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Refresh Combatant-Command Statute Citation
+
+- ID: `gc-20260605-usc162-current-uscode-citation`
+- Location: `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: refreshed the active `USC-162` bibliography entry from the 2023 govinfo annual-code page to the
+  current exact U.S. Code 10 U.S.C. 162 page, updated the access date and source-ledger row, and corrected the subtitle
+  to the statute's plural `Combatant commands` title.
+- Source basis: official U.S. Code 10 U.S.C. 162 page and local active-citation scan showing `USC-162` is cited in
+  Chapter 1 and the combatant-command appendix.
+- Confidence: `High`
+- Status: `applied`
