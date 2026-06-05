@@ -66,6 +66,24 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied Statutory Citation Source-Fidelity and OT Authority Correction
+
+- ID: `gc-20260605-statutory-ot-source-fidelity`
+- Location: `tex/chapters/6_PPBE.tex`, `tex/chapters/12_Solicitation.tex`,
+  `tex/chapters/12A_Source_Selection.tex`, `tex/chapters/15_policy.tex`,
+  `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`, `tex/chapters/appendix_key_roles.tex`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: cited-source audit found generic U.S. Code URLs and a substantive OT statute drift. Updated
+  10 U.S.C. 4021 from prototype OT shorthand to current research-project OT authority and 10 U.S.C. 4022 to the
+  prototype-project / follow-on production authority. Replaced the obsolete CAPE key for 10 U.S.C. 139c with current
+  10 U.S.C. 139a, refreshed exact U.S. Code URLs for 10 U.S.C. 181, 139a, 2208, 3201, 4021, and 4022, and added
+  missing source-ledger rows for the corrected statute anchors.
+- Source basis: current uscode.house.gov pages for 10 U.S.C. 181, 139a, 2208, 3201, 4021, and 4022.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied CNO34 Current C-Notes Overlay
 
 - ID: `gc-20260605-cno34-current-cnotes-overlay`

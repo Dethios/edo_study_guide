@@ -78,7 +78,9 @@ Current as of 2026-06-05.
   follow-on rechecked the JFMM Rev E landing page, JFMM Volume VI Rev D Change 5 public PDF, and public TS9090-310G SOVT
   source; no AWP/SOVT fact rewrite was required, but the Chapter 28 currentness note and source dates were refreshed.
   June 5 structure-scout follow-on corrected the Board Fast Cues chapter label, removed a stale commented TikZ demo
-  include, normalized selected figure references, and cleaned two caption/prose nits.
+  include, normalized selected figure references, and cleaned two caption/prose nits. June 5 statutory source-fidelity
+  follow-on corrected the 10 U.S.C. 4021 / 4022 OT authority distinction, replaced obsolete CAPE 10 U.S.C. 139c
+  references with 10 U.S.C. 139a, and refreshed exact U.S. Code URLs for active statutory citations.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
