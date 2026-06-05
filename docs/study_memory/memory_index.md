@@ -7,9 +7,8 @@ Current as of 2026-06-05.
 - Session: `2026-06-04-end-to-end-study-guide-audit`
 - Date: 2026-06-04
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
-- Current follow-up: 2026-06-05 Summary / Quick Review placement cleanup moved remaining detailed cue sections ahead
-  of the chapter closeout and expanded `make check-tex-structure` to enforce first-subsection Summary and final
-  Quick Review placement before standalone glossaries.
+- Current follow-up: 2026-06-05 question-bank source-metadata cleanup synchronized active drill-question sources with
+  `sources.md` and expanded `make check-study-memory` to fail future question-bank source drift.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,
@@ -160,6 +159,9 @@ Recent applied updates:
 - Summary / Quick Review placement guard: remaining flow outliers in Ship Trials, Waterfront Work Control, BDAR, CNO
   Availability Planning, and the CNO strategic-message appendix were reordered so detailed cue/source material appears
   before the final Quick Review; `make check-tex-structure` now enforces Summary first and Quick Review last.
+- Question-bank source-metadata alignment: active `question_bank.jsonl` sources now match canonical `sources.md`
+  metadata, remaining DAU APB/PMB/KPP/KSA/APA/Net-Ready rows were refreshed to 2026-06-05 official DAU URLs/checks,
+  and `make check-study-memory` now fails question-bank source drift.
 - NIP/MIP budget-release source-currentness alignment: ODNI FY2025 NIP request and appropriation, War.gov FY2025 MIP,
   War.gov FY2024 MIP, and War.gov FY2025 MIP budget-request bibliography/source-ledger entries now use direct official
   pages, corrected titles/dates, and 2026-06-05 access dates.

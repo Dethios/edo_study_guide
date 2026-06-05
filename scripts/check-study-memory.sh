@@ -17,6 +17,7 @@ $PYTHON_RUNNER - "$ROOT_DIR" <<'PY'
 import json
 import re
 import sys
+from collections import Counter
 from pathlib import Path
 
 root = Path(sys.argv[1])
@@ -163,6 +164,38 @@ absolute_local_pattern = re.compile(r"(?:(?<=^)|(?<=[;,\s]))(?:/[A-Za-z0-9_.-]+/
 legacy_question_sections = {"May 30 lookup deck", "May 30 study_state.md drill queue"}
 
 
+def load_source_inventory():
+    path = memory_dir / "sources.md"
+    if not path.exists():
+        return {}, {}
+
+    rows = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.startswith("|") or "---" in line or line.startswith("| Title"):
+            continue
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        if len(cells) < 5:
+            continue
+        title, authority_level, url_or_path, version_or_date, date_checked = cells[:5]
+        rows.append(
+            {
+                "title": title,
+                "authority_level": authority_level,
+                "url_or_path": url_or_path.strip("`"),
+                "version_or_date": version_or_date,
+                "date_checked": date_checked,
+            }
+        )
+
+    by_url = {row["url_or_path"]: row for row in rows}
+    title_counts = Counter(row["title"] for row in rows)
+    by_unique_title = {row["title"]: row for row in rows if title_counts[row["title"]] == 1}
+    return by_url, by_unique_title
+
+
+source_inventory_by_url, source_inventory_by_unique_title = load_source_inventory()
+
+
 def record_date(name, record):
     if name == "guide_changes.jsonl":
         return str(record.get("date_identified", ""))
@@ -250,6 +283,31 @@ def check_question_source_section(path, line_no, record):
             f"{path.relative_to(root)}:{line_no}: source_section should use repo paths or stable references, got {section!r}"
         )
 
+
+def check_question_source_inventory(path, line_no, record):
+    source_basis = record.get("source_basis")
+    if not isinstance(source_basis, list):
+        return
+    for index, source in enumerate(source_basis, 1):
+        if not isinstance(source, dict):
+            continue
+        title = str(source.get("title", ""))
+        url_or_path = str(source.get("url_or_path", ""))
+        canonical = source_inventory_by_url.get(url_or_path) or source_inventory_by_unique_title.get(title)
+        if not canonical:
+            errors.append(
+                f"{path.relative_to(root)}:{line_no}: source_basis[{index}] is not present in sources.md: {title}"
+            )
+            continue
+        for field, expected in canonical.items():
+            actual = str(source.get(field, ""))
+            if actual != expected:
+                errors.append(
+                    f"{path.relative_to(root)}:{line_no}: source_basis[{index}].{field} should match sources.md "
+                    f"({expected!r}), got {actual!r}"
+                )
+
+
 for name in sorted(expected_files):
     path = memory_dir / name
     if not path.exists():
@@ -283,6 +341,7 @@ for name, spec in jsonl_specs.items():
             check_portable_provenance(path, line_no, name, record)
             if name == "question_bank.jsonl":
                 check_question_source_section(path, line_no, record)
+                check_question_source_inventory(path, line_no, record)
             if name == "guide_changes.jsonl" and record.get("status") == "applied":
                 if not record.get("source_basis"):
                     errors.append(

@@ -66,6 +66,22 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied Question Bank Source-Metadata Alignment
+
+- ID: `gc-20260605-question-bank-source-metadata-alignment`
+- Location: `docs/study_memory/question_bank.jsonl`, `docs/study_memory/sources.md`,
+  `scripts/check-study-memory.sh`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: refreshed the remaining stale DAU APB, PMB, KPP, KSA, APA, and Net-Ready source-ledger rows to
+  the current official DAU URLs and 2026-06-05 check date, then synchronized all question-bank `source_basis` entries
+  from the canonical source inventory. Expanded `check-study-memory.sh` so future question-bank sources must be present
+  in `sources.md` and must match the canonical title, authority level, URL/path, version/date, and checked date.
+- Source basis: official DAU indexed APB, PMB, AAF program-management, KPP, KSA, APA, and Net-Ready pages checked on
+  2026-06-05, the local source-ledger reconciliation scan, and successful `make check-study-memory` validation.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied Summary / Quick Review Placement Guard
 
 - ID: `gc-20260605-summary-quick-review-placement-guard`
