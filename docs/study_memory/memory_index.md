@@ -29,7 +29,9 @@ Current as of 2026-06-05.
   official combatant-command source support, refreshed active repo guidance, and fixed Figure 1.4 connector routing so
   the rendered PAE chart uses node-border anchors instead of lines through boxes. June 5 milestone/source-hygiene
   follow-up tightened Milestone C phase-entry wording, aligned O&S PESHE/ESOH framing, added a direct DAU Performance
-  Attributes bibliography source, and refreshed NAVWAR question-bank PMW 790 and PMW/A 170 source styling.
+  Attributes bibliography source, and refreshed NAVWAR question-bank PMW 790 and PMW/A 170 source styling. June 5
+  appendix-summary follow-up found the last two Summary-heading outliers and normalized the CNO 34 message and PAE
+  construct mapping appendices.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 

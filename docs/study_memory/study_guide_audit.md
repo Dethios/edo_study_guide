@@ -1121,3 +1121,19 @@ The entries in this section preserve the original imported package state. Later 
   source, the PEO C4I PMW 790 tear sheet already recorded in `sources.md`, and the read-only NAVWAR weak-area audit.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Applied Appendix Summary Flow Follow-Up
+
+- ID: `gc-20260605-appendix-summary-flow-followup`
+- Location: `tex/chapters/appendix_cno34_day_one_message.tex`,
+  `tex/chapters/appendix_pae_construct_mapping.tex`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: ran a guide-wide structure scan for standalone wrappers, first-screen Summary blocks, and Quick
+  Review closeouts; normalized the two remaining appendix outliers by adding a Summary block ahead of the CNO 34
+  day-one message text and renaming the PAE construct appendix's Executive Summary to the guide-standard Summary
+  heading.
+- Source basis: local TeX structure scan and existing cited appendix sources; this was a structure/flow correction only
+  and did not change doctrine, leader names, dates, thresholds, or other current-source claims.
+- Confidence: `High`
+- Status: `applied`
