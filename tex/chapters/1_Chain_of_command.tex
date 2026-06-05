@@ -162,13 +162,13 @@ Current as of 2026-06-04, Mr.\ William F.\ Mahan is performing the duties of \ac
     \coordinate (deputyStem) at (asn.south |- deputyBusY);
     \coordinate (pcdBranch) at (pcd.north |- deputyBusY);
     \coordinate (pmdBranch) at (pmd.north |- deputyBusY);
-    \coordinate (paeBusY) at ($(missions.north)+(0,1.25cm)$);
+    \coordinate (paeBusY) at ($(missions.north)+(0,1.50cm)$);
     \coordinate (paeBranchLeft) at (aviation.north |- paeBusY);
     \coordinate (paeBranchCenter) at (missions.north |- paeBusY);
     \coordinate (paeBranchRight) at (munitions.north |- paeBusY);
-    \coordinate (supportTrunkTop) at ($(aviation.west)+(-1.05cm,0)$);
-    \coordinate (supportTrunkMid) at ($(industrial.west)+(-1.05cm,0)$);
-    \coordinate (supportTrunkBottom) at ($(ssp.west)+(-1.05cm,0)$);
+    \coordinate (supportTrunkTop) at ($(aviation.west)+(-1.30cm,0)$);
+    \coordinate (supportTrunkMid) at ($(industrial.west)+(-1.30cm,0)$);
+    \coordinate (supportTrunkBottom) at ($(ssp.west)+(-1.30cm,0)$);
     \coordinate (supportOut) at ($(syscoms.east)+(0.32cm,0)$);
     \coordinate (supportMidEntry) at (supportOut |- supportTrunkMid);
     \coordinate (supportJoin) at (supportTrunkMid);
@@ -177,24 +177,26 @@ Current as of 2026-06-04, Mr.\ William F.\ Mahan is performing the duties of \ac
       \node[pae group, fit=(aviation)(missions)(munitions)(industrial)(maritime)(undersea)(ssp)(ras)(marine)] (paeGroup) {};
     \end{scope}
 
-    \draw[line] (secnav.south) -- (asn.north);
-    \draw[line] (cno.south) -- (cnoJoin) -| (asnCnoIn);
-    \draw[line] (cmc.south) -- (cmcJoin) -| (asnCmcIn);
-    \draw[bus line] (asn.south) -- (deputyStem);
-    \draw[bus line] (pcdBranch) -- (pmdBranch);
-    \draw[line] (pcdBranch) -- (pcd.north);
-    \draw[line] (pmdBranch) -- (pmd.north);
-    \draw[bus line] (deputyStem) -- (paeBranchCenter);
-    \draw[bus line] (paeBranchLeft) -- (paeBranchRight);
-    \draw[line] (paeBranchLeft) -- (aviation.north);
-    \draw[line] (paeBranchCenter) -- (missions.north);
-    \draw[line] (paeBranchRight) -- (munitions.north);
+    \begin{scope}[on background layer]
+      \draw[line] (secnav.south) -- (asn.north);
+      \draw[line] (cno.south) -- (cnoJoin) -| (asnCnoIn);
+      \draw[line] (cmc.south) -- (cmcJoin) -| (asnCmcIn);
+      \draw[bus line] (asn.south) -- (deputyStem);
+      \draw[bus line] (pcdBranch) -- (pmdBranch);
+      \draw[line] (pcdBranch) -- (pcd.north);
+      \draw[line] (pmdBranch) -- (pmd.north);
+      \draw[bus line] (deputyStem) -- (paeBranchCenter);
+      \draw[bus line] (paeBranchLeft) -- (paeBranchRight);
+      \draw[line] (paeBranchLeft) -- (aviation.north);
+      \draw[line] (paeBranchCenter) -- (missions.north);
+      \draw[line] (paeBranchRight) -- (munitions.north);
 
-    \draw[dashed, rounded corners=2pt] (syscoms.east) -- (supportOut) -- (supportMidEntry) -- (supportJoin);
-    \draw[dashed, rounded corners=2pt] (supportTrunkTop) -- (supportTrunkBottom);
-    \draw[support line] (supportTrunkTop) -- (aviation.west);
-    \draw[support line] (supportTrunkMid) -- (industrial.west);
-    \draw[support line] (supportTrunkBottom) -- (ssp.west);
+      \draw[dashed, rounded corners=2pt] (syscoms.east) -- (supportOut) -- (supportMidEntry) -- (supportJoin);
+      \draw[dashed, rounded corners=2pt] (supportTrunkTop) -- (supportTrunkBottom);
+      \draw[support line] (supportTrunkTop) -- (aviation.west);
+      \draw[support line] (supportTrunkMid) -- (industrial.west);
+      \draw[support line] (supportTrunkBottom) -- (ssp.west);
+    \end{scope}
   \end{tikzpicture}}
   \caption[ASN (RD\&A) and PAE organization transition]{Board-level ASN (RD\&A) and PAE organization transition, updated from the user-provided PAE chart with public announcements through 2026-06-04~\autocite{DON-New-SAE-2026,DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026}.}
   \label{fig:asnrda_org_chart}
