@@ -99,7 +99,8 @@ Current as of 2026-06-05.
   `\Fig` and `\Tab` and added a TeX structure guard for future drift. June 5 standalone-title follow-on replaced
   generic `EDO Study Guide` standalone chapter titles with topic-specific titles and added a structure guard for future
   generic-title drift; the same slice fixed the build script so chapter subfiles run from their own directory and can
-  resolve `../main.tex` during standalone validation.
+  resolve `../main.tex` during standalone validation. June 5 numbered-reference follow-on extended the shared
+  reference macros and structure guard to Appendix, Section, and plural Figures references.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 

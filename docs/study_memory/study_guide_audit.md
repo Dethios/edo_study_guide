@@ -2125,3 +2125,19 @@ The entries in this section preserve the original imported package state. Later 
   (`File '../main.tex' not found`) and successful representative rebuild after the fix.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Extend Numbered Reference Macros
+
+- ID: `gc-20260605-numbered-reference-macro-extension`
+- Location: `tex/moderntech-base.sty`, `tex/main.tex`, `tex/chapters/*.tex`,
+  `scripts/check-tex-structure.sh`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: added shared `\Figs`, `\Sec`, and `\App` wrappers next to the existing `\Fig` and `\Tab`
+  helpers; normalized the remaining raw `Figures~\ref{...}`, `Section~\ref{...}`, and `Appendix~\ref{...}` prose
+  references; and expanded `check-tex-structure.sh` so future raw numbered references fail in `tex/main.tex` and active
+  chapter files.
+- Source basis: local numbered-reference scan across `tex/main.tex` and `tex/chapters/*.tex`, existing `\Fig` and
+  `\Tab` macro pattern in `tex/moderntech-base.sty`, and `make check-tex-structure`.
+- Confidence: `High`
+- Status: `applied`

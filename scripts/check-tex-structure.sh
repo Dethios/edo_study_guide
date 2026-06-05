@@ -136,15 +136,15 @@ awk '
   {
     raw = $0
     sub(/%.*/, "", raw)
-    if (raw ~ /(^|[^[:alnum:]_])(Figure|Table)~\\ref\{[^}]+\}/) {
+    if (raw ~ /(^|[^[:alnum:]_])(Figure|Figures|Table|Section|Appendix)~\\ref\{[^}]+\}/) {
       print FILENAME ":" FNR ":" $0
     }
   }
-' "$chapters_dir"/*.tex > "$raw_numbered_refs"
+' "$main_file" "$chapters_dir"/*.tex > "$raw_numbered_refs"
 
 if [ -s "$raw_numbered_refs" ]; then
   status=1
-  echo "Raw Figure/Table references found; use \\Fig{\\ref{...}} or \\Tab{\\ref{...}}:" >&2
+  echo "Raw numbered references found; use \\Fig, \\Figs, \\Tab, \\Sec, or \\App wrappers:" >&2
   sed 's/^/  - /' "$raw_numbered_refs" >&2
 fi
 
