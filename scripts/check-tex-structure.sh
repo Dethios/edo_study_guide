@@ -156,6 +156,11 @@ for file in "$chapters_dir"/*.tex; do
     echo "Acronym-using chapter missing standalone acronym glossary: $file" >&2
   fi
 
+  if grep -Fq '\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}' "$file"; then
+    status=1
+    echo "Standalone chapter title is still generic: $file" >&2
+  fi
+
   if awk '
     /\\printnoidxglossary/ { exit }
     /^[[:space:]]*\\subsection\*?\{[^{}]+\}/ {

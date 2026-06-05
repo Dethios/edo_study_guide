@@ -106,6 +106,7 @@ else
         fi
     fi
 fi
+TEXFILE="$(cd "$(dirname "$TEXFILE")" && pwd)/$(basename "$TEXFILE")"
 
 cd "$ROOT"
 
@@ -162,6 +163,13 @@ if [[ "$MODERNTECH_TIKZ_EXTERNAL_FALLBACK" != "$MODERNTECH_TIKZ_EXTERNAL_PRIMARY
     mkdir -p "$MODERNTECH_TIKZ_EXTERNAL_FALLBACK"
 fi
 
+BUILD_DIR="$ROOT"
+BUILD_TEXFILE="$TEXFILE"
+if [[ "$TEXFILE" == */chapters/*.tex || "$TEXFILE" == *chapter*.tex ]]; then
+    BUILD_DIR="$(dirname "$TEXFILE")"
+    BUILD_TEXFILE="$(basename "$TEXFILE")"
+fi
+
 # Ensure TeX can locate class/style/bib files when latexmk runs from repo root.
 export TEXINPUTS="$ROOT/tex:${TEXINPUTS:-}"
 export BIBINPUTS="$ROOT/tex:${BIBINPUTS:-}"
@@ -176,7 +184,7 @@ run_scrub() {
 
 if [[ "$CLEAN" == "1" ]]; then
     set +e
-    latexmk -C -r "$ROOT/tex/latexmkrc" -outdir="$OUTDIR_ABS" -auxdir="$AUXDIR_ABS" "$TEXFILE"
+    (cd "$BUILD_DIR" && latexmk -C -r "$ROOT/tex/latexmkrc" -outdir="$OUTDIR_ABS" -auxdir="$AUXDIR_ABS" "$BUILD_TEXFILE")
     status=$?
     set -e
     if [[ "$SCRUB" == "1" ]]; then
@@ -220,7 +228,7 @@ LMK_ARGS=(
 [[ -n "$JOBNAME" ]] && LMK_ARGS+=("-jobname=$JOBNAME")
 
 set +e
-latexmk "${LMK_ARGS[@]}" "$TEXFILE"
+(cd "$BUILD_DIR" && latexmk "${LMK_ARGS[@]}" "$BUILD_TEXFILE")
 status=$?
 set -e
 

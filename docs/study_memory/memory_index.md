@@ -96,7 +96,10 @@ Current as of 2026-06-05.
   PDF check. June 5 auxiliary current-organization source-note follow-on refreshed the imported DONHR Luebke and
   MyNavyHR SWO(N) rows to 2026-06-05 official-source checks and clarified that they are auxiliary provenance notes, not
   active rendered guide claims. June 5 reference-style follow-on normalized remaining raw Figure/Table references to
-  `\Fig` and `\Tab` and added a TeX structure guard for future drift.
+  `\Fig` and `\Tab` and added a TeX structure guard for future drift. June 5 standalone-title follow-on replaced
+  generic `EDO Study Guide` standalone chapter titles with topic-specific titles and added a structure guard for future
+  generic-title drift; the same slice fixed the build script so chapter subfiles run from their own directory and can
+  resolve `../main.tex` during standalone validation.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 

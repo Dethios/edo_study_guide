@@ -2097,3 +2097,31 @@ The entries in this section preserve the original imported package state. Later 
   definitions in `tex/moderntech-base.sty`, and `make check-tex-structure`.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Normalize Standalone Chapter Titles
+
+- ID: `gc-20260605-standalone-chapter-title-normalization`
+- Location: `tex/chapters/*.tex`, `scripts/check-tex-structure.sh`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: replaced 57 generic standalone subfile titles of `\chapter{EDO Study Guide}` with the first
+  visible section title from each chapter file. Expanded `check-tex-structure.sh` to fail future generic standalone
+  chapter titles. This affects standalone chapter/subfile builds only; the main guide uses the existing chapter and
+  section structure.
+- Source basis: local standalone-title scan across `tex/chapters/*.tex`, first-section title extraction from each
+  affected file, and `make check-tex-structure`.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-05 - Repair Standalone Chapter Build Path
+
+- ID: `gc-20260605-standalone-subfile-build-path-fix`
+- Location: `scripts/build.sh`
+- Verdict: `Applied`
+- Correction applied: fixed the build script to invoke chapter subfiles from their own directory while preserving the
+  normal absolute output and auxiliary directories. This lets standalone chapter builds resolve their
+  `\documentclass[../main.tex]{subfiles}` parent path.
+- Source basis: failed representative build of `tex/chapters/17H_WBS_SE_Analysis_and_Control.tex` before the fix
+  (`File '../main.tex' not found`) and successful representative rebuild after the fix.
+- Confidence: `High`
+- Status: `applied`
