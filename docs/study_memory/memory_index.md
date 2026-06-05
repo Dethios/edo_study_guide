@@ -157,6 +157,9 @@ Recent applied updates:
   Selection Guide and Contracts Handbook while recording 2026-06-05 HTTP 403 checks, added the official SUPSHIP
   Operations Manual Chapter 3 source row, and updated the board fast-cue overlay so those guides are treated as retained
   official baselines pending manual verification.
+- NMP-MOM controlled-source ledger alignment: added the missing `SL720-AA-MAN-030` source-inventory row, changed the
+  BibTeX URL to the responding controlled-access `www.nde.navy.mil` host, and recorded the 2026-06-05 public HTTP 403
+  caveat while retaining TS9090-310G as the visible public AIT appendix source rather than the full manual.
 
 ## Next Review Plan
 

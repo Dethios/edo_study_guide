@@ -1155,3 +1155,20 @@ The entries in this section preserve the original imported package state. Later 
   consistency review.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Applied NMP-MOM Controlled-Source Ledger Alignment
+
+- ID: `gc-20260605-nmp-mom-controlled-source-ledger`
+- Location: `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: added a Fleet Maintenance / JFMM source-inventory row for `SL720-AA-MAN-030`, the Navy
+  Modernization Process Management and Operations Manual, and changed the BibTeX URL from non-resolving
+  `https://nde.navy.mil` to the responding controlled-access host `https://www.nde.navy.mil`. The entry preserves the
+  prior internal/source metadata date while recording that the public host returned HTTP 403 on 2026-06-05. The public
+  TS9090-310G PDF remains the visible source for the AIT appendix slice and is not treated as a substitute for the full
+  controlled NMP-MOM.
+- Source basis: official NDE host public-access check on 2026-06-05, official NAVSEA TS9090-310G public PDF showing
+  `TS9090-310G SL720-AA-MAN-030` and NMP-MOM Appendix K, and read-only modernization source-access review.
+- Confidence: `High`
+- Status: `applied`
