@@ -1431,3 +1431,24 @@ The entries in this section preserve the original imported package state. Later 
   local TeX structure/build validation.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Applied Fiscal, T&E, RFO, and Statutory Exact-URL Source-Ledger Backfill
+
+- ID: `gc-20260605-fiscal-te-rfo-statutory-exact-ledger-backfill`
+- Location: `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: backfilled exact source-ledger rows for the cited DAU fiscal-law ACQuipedia pages, DoDD 5000.01,
+  DOT&E DoDM 5000.96 and DoDM 5000.102, FAR Council RFO deviation guidance, Acquisition.gov FAR Overhaul FAQ,
+  Federal Register EO 14275 publication, OMB M-25-26, FY 2026 NDAA, NMCARS, 10 U.S.C. 139, 10 U.S.C. 4251, and USFF
+  Mission and Functions. Refreshed verified BibTeX access dates for the official RFO, statute, NMCARS, NDAA, USFF, and
+  DAU pages; corrected the DoDD 5000.01 Change 1 metadata from 2023-11-09 to 2022-07-28 based on the official ESD PDF.
+  The DOT&E DoDM entries were added to the source ledger with a caveat that the DOT&E guidance listing confirmed the
+  manuals while local direct-PDF retrieval was filtered.
+- Source basis: official ESD DoDD 5000.01 PDF; official DOT&E guidance listing; official Acquisition.gov FAR Council
+  guidance, FAR Overhaul FAQ, OMB M-25-26 mirror, and NMCARS landing page; official Federal Register EO publication;
+  official GovInfo FY 2026 NDAA PDF; official U.S. Code pages for 10 U.S.C. 139 and 10 U.S.C. 4251; official USFF
+  Mission page; DAU ACQuipedia/RFO official pages via browser/search verification; local HTTP probes; read-only
+  reviewer classification; and the local `make audit-cited-bib-sources` exact-URL backlog.
+- Confidence: `High`
+- Status: `applied`

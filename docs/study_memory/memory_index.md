@@ -54,7 +54,9 @@ Current as of 2026-06-05.
   5000.2G, Acquisition.gov threshold changes, and DIU Work With Us / CSO pathway material, then added a report-only
   cited-BibTeX source-ledger audit helper. June 5 follow-on exact-URL work backfilled direct Comptroller FMR and
   Treasury G-Invoicing source rows and moved the Chapter 11 Contracting Fundamentals Summary block to the first-screen
-  position.
+  position. June 5 fiscal/T&E/RFO/statutory follow-on backfilled exact rows for DAU fiscal-law pages, DoDD 5000.01,
+  DOT&E DoDM 5000.96/5000.102, FAR Council and Acquisition.gov RFO sources, OMB M-25-26, Federal Register EO
+  publication, FY 2026 NDAA, NMCARS, 10 U.S.C. 139, 10 U.S.C. 4251, and USFF Mission.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -115,6 +117,10 @@ Recent applied updates:
   source-ledger rows remain under review.
 - FMR / Treasury exact-source backfill: source inventory now includes exact Comptroller FMR home, Volume 3 Chapter 19,
   Volume 11A Chapters 2-3, Volume 11B Chapters 1-3/11-12, and Fiscal Service G-Invoice URLs cited by the guide.
+- Fiscal, T&E, RFO, statutory, and command exact-source backfill: source inventory now includes exact rows for DAU
+  fiscal-law ACQuipedia pages, DoDD 5000.01, DOT&E DoDM 5000.96/5000.102, FAR Council and Acquisition.gov RFO sources,
+  OMB M-25-26, Federal Register EO publication, FY 2026 NDAA, NMCARS, 10 U.S.C. 139, 10 U.S.C. 4251, and USFF Mission
+  and Functions; DoDD 5000.01 Change 1 metadata now matches the official 2022-07-28 PDF.
 - Contracting Fundamentals flow cleanup: Chapter 11 now opens with its Summary block immediately after the section title
   and keeps Quick Review as the closeout.
 - Standalone chapter flow cleanup for CIVPERS, NAVWAR FRD, Milestones, and AWP/SOVT.
