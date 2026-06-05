@@ -2417,3 +2417,19 @@ The entries in this section preserve the original imported package state. Later 
   17A source scan.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Correct Chapter 17A FFRDC and UARC Distinction
+
+- ID: `gc-20260605-rd-ffrdc-uarc-distinction`
+- Location: `tex/chapters/17A_Research_and_Development.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: Chapter 17A described UARCs as a specialized FFRDC model. Replaced that with the official
+  distinction: DoW-supported FFRDCs are independent not-for-profit private-sector organizations established for special
+  long-term engineering, research, development, or analytic needs, while UARCs are nonprofit university-affiliated
+  research organizations with core competencies tailored to long-term Department needs and established, transferred, or
+  terminated only by USW(R&E). Added official OUSD(R&E) examples for both constructs.
+- Source basis: official OUSD(R&E) FFRDC/UARC overview page checked on 2026-06-05; local Chapter 17A terminology scan.
+- Confidence: `High`
+- Status: `applied`

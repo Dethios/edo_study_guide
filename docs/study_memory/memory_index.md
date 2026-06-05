@@ -346,6 +346,8 @@ Recent applied updates:
 - R&D / TRL source grounding: updated Chapter 17A to cite the current OUSD(R&E) TRA Guidebook for TRL/IRL/SRL cues and
   the official FMR Volume 2B Chapter 5 for RDT&E budget activities; corrected the activity list from 6.1--6.7 to
   6.1--6.8 by adding Software and Digital Technology Pilot Programs.
+- FFRDC/UARC distinction cleanup: corrected Chapter 17A so UARCs are not described as a specialized FFRDC model; added
+  official OUSD(R&E) FFRDC/UARC support and current examples for both constructs.
 
 ## Next Review Plan
 
