@@ -858,3 +858,24 @@ The entries in this section preserve the original imported package state. Later 
   maintenance source ledger, and read-only source/flow reviewer findings from the current audit slice.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-04 - Applied NAVWAR C4I Source-Fidelity Follow-Up
+
+- ID: `gc-20260604-navwar-c4i-source-fidelity-followup`
+- Location: `tex/chapters/4_NAVWAR.tex`, `tex/chapters/appendix_key_roles.tex`, `tex/acronyms.def`,
+  `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/weak_areas.md`,
+  `docs/study_memory/weak_areas.jsonl`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: replaced stale or over-specific NAVWAR examples with official-source wording: PMW 150 now states
+  GCCS-M provides COP/common tactical picture/data-sharing capability and treats MTC2 as a separate Software Acquisition
+  Pathway program; PMW/A 170 now uses protected-SATCOM/NMT language from the current tear sheet instead of unsupported
+  anti-jam/LPI claims; PMW 790 now distinguishes DJC2, STACC, MOC, and over-100 C4ISR-capability delivery instead of the
+  unsupported over-60-network wording; PEO MLB/Navy ERP now uses current GAO financial-system-of-record and Navy ERP+
+  modernization wording instead of older user-count or spending-percentage figures; and the PAE Mission Systems cue now
+  clearly preserves current public PEO/PMW/IWS recall while treating PAE Mission Systems as current governance alignment.
+- Source basis: official PEO C4I program-office page, PMW 150 tear sheet, PMW/A 170 tear sheet, PMW 790 tear sheet, Navy
+  PAE Mission Systems release, PEO MLB public pages, and GAO-26-107119, all checked from official web sources on
+  2026-06-04.
+- Confidence: `High`
+- Status: `applied`

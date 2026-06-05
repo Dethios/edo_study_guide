@@ -46,7 +46,9 @@ Current as of 2026-06-04.
 ### NAVWAR / PEO C4I - PEO C4I program office products
 
 - ID: `wa-20260530-peo-c4i-products`
-- Evidence: Package weak-area table listed rote recall/detail misses.
+- Evidence: June 4 official-source follow-up aligned PMW 150 GCCS-M/MTC2 wording, PMW/A 170 NMT protected-SATCOM wording,
+  PMW 790 DJC2/MOC/STACC wording, PEO MLB/Navy ERP wording, and the PAE Mission Systems cue. Keep active for
+  product-office recall, not unresolved source drift.
 - Miss type: `factual_recall`
 - Severity: `medium`
 - Next review: 2026-06-05
@@ -55,8 +57,9 @@ Current as of 2026-06-04.
 ### NAVSEA / PEO IWS - IWS 6.0 vs PMW 150
 
 - ID: `wa-20260530-iws6-pmw150`
-- Evidence: Package weak-area table listed relationship misses.
-- Miss type: `concept_confusion`
+- Evidence: Q16 and the June 4 guide closeout separate IWS 6.0 combat-system C2/CEC from PMW 150 operational C2
+  applications and Link 16 network modernization. Retain as low-severity spaced review only.
+- Miss type: `wording_ambiguity`
 - Severity: `low`
 - Next review: 2026-06-08
 - Status: `improving`
@@ -64,8 +67,9 @@ Current as of 2026-06-04.
 ### NAVWAR / PEO C4I - CANES vs ADNS vs MIDS/Link 16
 
 - ID: `wa-20260530-canes-adns-mids`
-- Evidence: Package weak-area table listed relationship misses.
-- Miss type: `concept_confusion`
+- Evidence: The guide correctly separates CANES shipboard LAN/compute services, ADNS routing and traffic engineering,
+  SATCOM/RF bearers, and PMA/PMW 101 MIDS/Link 16 terminals/waveforms. Residual need is clean oral recall under pressure.
+- Miss type: `factual_recall`
 - Severity: `medium`
 - Next review: 2026-06-08
 - Status: `improving`
@@ -82,7 +86,9 @@ Current as of 2026-06-04.
 ### NAVWAR / PEO C4I - PMW 790 product
 
 - ID: `wa-20260530-pmw790-djc2`
-- Evidence: Package weak-area table listed rote recall misses.
+- Evidence: June 4 official-source follow-up tightened PMW 790 recall: DJC2 is the board-relevant ACAT IAC capability,
+  STACC is a shore C2 portfolio, and the MOC project coordinates delivery of over 100 C4ISR capabilities to Fleet
+  commanders. Keep active for rapid oral recall.
 - Miss type: `factual_recall`
 - Severity: `medium`
 - Next review: 2026-06-05
@@ -322,7 +328,7 @@ No entries yet.
 - Miss type: `wording_ambiguity`
 - Severity: `low`
 - Next review: 2026-06-08
-- Status: `improving`
+- Status: `superseded by Active summary`
 
 ### NAVWAR / PEO C4I - CANES vs ADNS vs MIDS/Link 16
 
@@ -332,7 +338,7 @@ No entries yet.
 - Miss type: `factual_recall`
 - Severity: `medium`
 - Next review: 2026-06-08
-- Status: `improving`
+- Status: `superseded by Active summary`
 
 ### NAVWAR / PEO C4I - Source hygiene refresh
 
@@ -343,7 +349,7 @@ No entries yet.
 - Miss type: `factual_recall`
 - Severity: `medium`
 - Next review: 2026-06-05
-- Status: `active`
+- Status: `superseded by Active summary`
 
 ### Current EDO organization - Current EDO flags and billets
 

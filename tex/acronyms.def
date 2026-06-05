@@ -937,6 +937,7 @@
 \newacronym{adns}{ADNS}{Automated Digital Network System}
 \newacronym{dcgsn}{DCGS-N}{Distributed Common Ground System-Navy}
 \newacronym{djc2}{DJC2}{Deployable Joint Command and Control}
+\newacronym{stacc}{STACC}{Shore Tactical Assured Command and Control}
 \newacronym{lns}{LNS}{Legacy Network Systems}
 \newacronym{isns}{ISNS}{Integrated Shipboard Network System}
 \newacronym{amod}{AMOD}{AEGIS Modernization}
@@ -956,11 +957,13 @@
 \newacronym{nmro}{N-MRO}{Naval Maintenance, Repair, and Overhaul}
 \newacronym{noss}{NOSS}{Naval Operational Supply System}
 \newacronym{nmt}{NMT}{Navy Multiband Terminal}
+\newacronym{satcom}{SATCOM}{satellite communications}
 \newacronym{milsatcom}{MILSATCOM}{military satellite communications}
 \newacronym{aehf}{AEHF}{Advanced Extremely High Frequency}
 \newacronym{wgs}{WGS}{Wideband Global SATCOM}
 \newacronym{dscs}{DSCS}{Defense Satellite Communications System}
 \newacronym{eps}{EPS}{Enhanced Polar System}
+\newacronym{pnt}{PNT}{Position, Navigation, and Timing}
 \newacronym{a2ad}{A2/AD}{anti-access/area-denial}
 \newacronym{lpi}{LPI}{low probability of intercept}
 \newacronym{xdr}{XDR}{Extended Data Rate}

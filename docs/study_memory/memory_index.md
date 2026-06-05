@@ -16,8 +16,8 @@ Current as of 2026-06-04.
   small-business size-standard and SBIR/STTR cue cleanup, cybersecurity/RMF currentness cleanup,
   system-level technical-review detail cleanup, warfare-center official-source board synthesis,
   PPBE/funding-policy source grounding and consistency cleanup, installation-flow source/format follow-up,
-  OPNAV resource-sponsor map cleanup, NAVWAR/PEO C4I official-source hygiene refresh, congressional committee
-  currentness cleanup, EVM/APB/PMB source-hygiene cleanup, and study-memory/source-ledger state.
+  OPNAV resource-sponsor map cleanup, NAVWAR/PEO C4I official-source hygiene refresh and source-fidelity follow-up,
+  congressional committee currentness cleanup, EVM/APB/PMB source-hygiene cleanup, and study-memory/source-ledger state.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -68,6 +68,8 @@ Recent applied updates:
 - EDO flag/billet source-hygiene cleanup for PAE Maritime deputy lanes, stale bio citations, and weak-area state.
 - OPNAV resource-sponsor map cleanup for the N3/N5 vs N7 board trap and N8 integrator vs N9 sponsor distinction.
 - NAVWAR/PEO C4I source-hygiene refresh for PMW/A 170 naming, C4I fast-cue citations, and CEC article date alignment.
+- NAVWAR/PEO C4I source-fidelity follow-up for PMW 150 GCCS-M/MTC2 wording, PMW/A 170 protected-SATCOM/NMT wording,
+  PMW 790 DJC2/MOC/STACC wording, PEO MLB/Navy ERP current GAO wording, and the PAE Mission Systems governance cue.
 - Congressional committee currentness cleanup for HASC/SASC authorization subcommittees and House/Senate
   appropriations naming differences.
 - EVM/APB/PMB source-hygiene cleanup for IBR wording, PMB measurement language, IPMDAR/CFSR naming, and EVM glossary
