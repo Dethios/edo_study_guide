@@ -2,11 +2,22 @@
 % !TEX program = lualatex
 
 \documentclass[../main.tex]{subfiles}
-\externaldocument{../main}
+\IfSubfilesClassLoaded{\externaldocument{\subfix{../build/main}}}{}
 
 \begin{document}
+\IfSubfilesClassLoaded{\chapter{EDO Study Guide}}{}
 
 \section{Continuous Process Improvement}
+
+\subsection{Summary}
+\begin{description}
+  \item[\textbf{Purpose.}] \ac{cpi-process} is the disciplined use of improvement methods to remove waste,
+  reduce variation, elevate constraints, and improve fleet outcomes~\autocite{edo-3-7-3-intro-cpi-2025}.
+  \item[\textbf{Core methods.}] Lean removes non-value-added work, Theory of Constraints focuses the team on
+  the system constraint, and Six Sigma reduces variation and defects~\autocite{edo-3-7-3-intro-cpi-2025}.
+  \item[\textbf{Board cue.}] Do not answer \ac{cpi-process} as a slogan. Name the method, state the constraint
+  or waste, show the metric, and explain how the control plan prevents backsliding.
+\end{description}
 
 \subsection{Purpose}
 
@@ -77,9 +88,14 @@ Improve & What countermeasures change the process? \\
 Control & What controls prevent regression after the event ends? \\
 \end{longtblr}
 
-\paragraph{Board cue.}
-Do not answer CPI as a slogan.  Name the method, state the constraint or waste,
-show the metric, and explain how the control plan prevents backsliding.
+\subsection{Quick Review}
+\begin{itemize}
+  \item Lean: define value, map the value stream, create flow, establish pull, and pursue perfection.
+  \item Theory of Constraints: identify, exploit, subordinate, elevate, and repeat when the constraint moves.
+  \item Six Sigma: use DMAIC to define the problem, measure the baseline, analyze root causes, improve the process,
+  and control the result.
+  \item Board answer: tie the improvement method to the mission process, metric, bottleneck or waste, and control plan.
+\end{itemize}
 
 \IfSubfilesClassLoaded{
   \RenewDocumentCommand{\entryname}{}{\textbf{\color{Modern} Acronym}}

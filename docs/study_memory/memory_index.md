@@ -1,6 +1,6 @@
 # EDO Study Memory Index
 
-Current as of 2026-06-04.
+Current as of 2026-06-05.
 
 ## Latest Session
 
@@ -18,6 +18,9 @@ Current as of 2026-06-04.
   PPBE/funding-policy source grounding and consistency cleanup, installation-flow source/format follow-up,
   OPNAV resource-sponsor map cleanup, NAVWAR/PEO C4I official-source hygiene refresh and source-fidelity follow-up,
   congressional committee currentness cleanup, EVM/APB/PMB source-hygiene cleanup, and study-memory/source-ledger state.
+  June 5 finance follow-up added FY26 budget-overview scale wording and official FMR 11A/11B support for Chapter 7
+  NWCF, Economy Act work request, and project-order board cues. June 5 CPI follow-up normalized Chapter 17N standalone
+  structure and added Summary / Quick Review board-speed blocks.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -76,6 +79,8 @@ Recent applied updates:
   appropriations naming differences.
 - EVM/APB/PMB source-hygiene cleanup for IBR wording, PMB measurement language, IPMDAR/CFSR naming, and EVM glossary
   precision.
+- PPBE/NWCF finance-source and CPI structure follow-up for the FY26 DoD budget top line, 10 U.S.C. 2208, FMR 11A/11B
+  working-capital-fund cues, and Chapter 17N Summary / Quick Review flow.
 - NMP/AIT ship-change flow cleanup for the program-office to shipboard installation chain, missing walkthrough citations,
   and CDMD-OA/ILS/SID/FAT acronym support.
 - CIVPERS route-choice fast-cue cleanup for Chapter 43 vs Chapter 75, probationary/trial employees, WGI caveats, and

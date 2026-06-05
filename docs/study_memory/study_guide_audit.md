@@ -101,6 +101,38 @@ The entries in this section preserve the original imported package state. Later 
 - Confidence: `High`
 - Status: `applied`
 
+### 2026-06-05 - Applied PPBE and NWCF Finance Source/Flow Follow-Up
+
+- ID: `gc-20260605-ppbe-nwcf-finance-source-flow`
+- Location: `tex/chapters/6_PPBE.tex`, `tex/chapters/7_NWCF.tex`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: replaced the generic PPBE scale statement with the current FY 2026 DoD budget-request top line
+  and caveated that live budget figures must be source-checked before quoting. Added official FMR 11A/11B and
+  10 U.S.C. 2208 support to the field-activity financial-management chapter; tightened the General Fund versus NWCF
+  board distinction; grounded stabilized-rate, NOR/AOR, carryover, Economy Act work-request, and project-order cues; and
+  added Chapter 7 summary and quick-review blocks for board-speed recall.
+- Source basis: FY 2026 Defense Budget Overview; DoD FMR 7000.14-R Volume 11A Chapters 2 and 3; DoD FMR 7000.14-R
+  Volume 11B Chapters 1, 2, 3, 11, and 12; 10 U.S.C. 2208; and existing coursebook references, all checked from official
+  or primary web sources on 2026-06-05.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-05 - Applied CPI Chapter Structure Follow-Up
+
+- ID: `gc-20260605-cpi-structure-flow`
+- Location: `tex/chapters/17N_Continuous_Process_Improvement.tex`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: normalized the standalone subfile wrapper for the Continuous Process Improvement chapter, added an
+  upfront Summary block for Lean, Theory of Constraints, Six Sigma, and board-answer framing, and converted the loose
+  closing board cue into a Quick Review section for board-speed recall.
+- Source basis: EDO School coursebook module `edo-3-7-3-intro-cpi-2025` and local structure validation.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Repaired ASN(RD&A)/PAE Figure Connector Clearance
 
 - ID: `gc-20260605-pae-chart-whitespace-routing`
