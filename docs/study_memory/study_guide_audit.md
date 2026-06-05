@@ -66,6 +66,23 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied NAVPLAN 2024 and CNO34 Strategy Cue Alignment
+
+- ID: `gc-20260605-navplan-cno34-strategy-cue`
+- Location: `tex/chapters/appendix_current_events.tex`, `tex/chapters/15_policy.tex`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: changed the current-events and acquisition-policy board cues so NAVPLAN 2024 is treated as the
+  current published CNO navigation-plan update to the 2022 NAVPLAN, while CNO34's Foundry--Fleet--Fight message is used
+  as the current Navy-leadership cue. NAVPLAN 2022 and Force Design 2045 remain as legacy context rather than the
+  current strategy answer.
+- Source basis: official Navy NAVPLAN 2024 resource page and release page; official CNO34 Day One message; official
+  2025 NSS; official 2026 NDS; DON FY27 budget request; official WAS/RFO and PAE sources; and local source-ledger
+  inspection.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied Strategy and NAVWAR Currentness Refresh
 
 - ID: `gc-20260605-strategy-navwar-currentness-refresh`
