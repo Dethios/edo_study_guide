@@ -33,7 +33,8 @@ Current as of 2026-06-05.
   appendix-summary follow-up found the last two Summary-heading outliers and normalized the CNO 34 message and PAE
   construct mapping appendices. June 5 RMC source-access follow-up aligned the NAVSEAINST 5450.145A bibliography and
   source ledger to the official CNRMC Instructions copy-request path while preserving CNRMC About Us for current public
-  RMC-location claims.
+  RMC-location claims. June 5 MIP directive follow-up refreshed duplicate DoDD/DoWD 5205.12 bibliography keys to the
+  current DoDD 5205.12 effective-date metadata and added an intelligence-program source-ledger row.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -76,6 +77,8 @@ Recent applied updates:
   material, and the June 2 reference study material.
 - RMC instruction source-access alignment: NAVSEAINST 5450.145A now points to the CNRMC Instructions copy-request path
   in BibTeX/source memory, while live RMC-location claims remain grounded in the CNRMC About Us page.
+- MIP directive source-currentness alignment: duplicate legacy `DoDD5205-12` / `DoWD-5205-12` BibTeX keys now both carry
+  current DoDD 5205.12 metadata, preserving compatibility while removing stale 2017/2020 revision notes.
 - Strategy-baseline and flow cleanup for the 2025 NSS / 2026 NDS baseline, JCIDS/JFRP caveats, and AWP/SOVT structure.
 - Current-events official-source hardening for Columbia-class delays, amphibious block buy, and SIOP status.
 - Flow, study-memory, and PAE chart closeout, including the Q18 Net-Ready question-bank entry.

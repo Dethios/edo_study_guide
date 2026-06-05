@@ -1187,3 +1187,18 @@ The entries in this section preserve the original imported package state. Later 
   current public RMC list and RMC Northwest / Hawaii RMC wording, and read-only source-currentness review.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Applied MIP Directive Source-Currentness Alignment
+
+- ID: `gc-20260605-mip-directive-source-currentness`
+- Location: `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: refreshed both existing MIP directive bibliography keys, `DoDD5205-12` and `DoWD-5205-12`, to the
+  current official `DoDD 5205.12` metadata while retaining both keys for compatibility. The date is now 2024-11-27, the
+  URL uses the official ESD PDF path, stale Change 2 / certified-current notes were removed, and the source ledger now
+  has an Intelligence Program / Budget Sources row for DoDD 5205.12.
+- Source basis: official ESD DoW/DoD directives listing showing `DoDD 5205.12` dated 11/27/2024 and the official PDF
+  cover showing `DOD DIRECTIVE 5205.12`, effective 2024-11-27, reissuing and cancelling the 2008-as-amended directive.
+- Confidence: `High`
+- Status: `applied`
