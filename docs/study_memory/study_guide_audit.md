@@ -66,6 +66,22 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied CNO34 C-Notes Citation URL Backfill
+
+- ID: `gc-20260605-cno34-cnotes-url-backfill`
+- Location: `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: local cited-BibTeX URL audit found that the CNO34 C-Notes appendix cited C-Note #1, C-Note #2,
+  C-Note #3, and Charge of Command bibliography entries that had NAVADMIN-style descriptions but no URLs. The entries
+  now point to the official Navy C-Notes display pages, use the displayed Navy page dates, and carry 2026-06-05 access
+  dates. Exact source-ledger rows were added for each page.
+- Source basis: official Navy C-Notes display pages for C-Note #1 Sailors First, C-Note #2 Foundry Always, C-Note #3
+  World Class Fleet, and CNO 34 Charge of Command; MyNavyHR NAVADMIN search results for NAVADMIN 241/25 and 225/25
+  corroborated the message numbers for the latter two.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied NAVPLAN 2024 and CNO34 Strategy Cue Alignment
 
 - ID: `gc-20260605-navplan-cno34-strategy-cue`

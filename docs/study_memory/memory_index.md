@@ -29,9 +29,11 @@ Current as of 2026-06-05.
   and fixed Figure 1.4 connector routing so the rendered PAE chart uses node-border anchors instead of lines through
   boxes. June 5 strategy-cue follow-up aligned current-events and acquisition-policy bullets so NAVPLAN 2024 is the
   current CNO NAVPLAN cue, CNO34 Foundry--Fleet--Fight is the current Navy-leadership cue, and NAVPLAN 2022 / Force
-  Design 2045 remain legacy context. June 5 milestone/source-hygiene follow-up tightened Milestone C phase-entry
-  wording, aligned O&S PESHE/ESOH framing, added a direct DAU Performance Attributes bibliography source, and refreshed
-  NAVWAR question-bank PMW 790 and PMW/A 170 source styling. June 5 appendix-summary follow-up found the last two
+  Design 2045 remain legacy context. June 5 CNO34 source-integrity follow-up added official Navy C-Notes display URLs
+  and exact source-ledger rows for C-Note #1, C-Note #2, C-Note #3, and Charge of Command. June 5
+  milestone/source-hygiene follow-up tightened Milestone C phase-entry wording, aligned O&S PESHE/ESOH framing, added a
+  direct DAU Performance Attributes bibliography source, and refreshed NAVWAR question-bank PMW 790 and PMW/A 170 source
+  styling. June 5 appendix-summary follow-up found the last two
   Summary-heading outliers and normalized the CNO 34 message and PAE construct mapping appendices. June 5 RMC
   source-access follow-up aligned the NAVSEAINST 5450.145A bibliography and source ledger to the official CNRMC
   Instructions copy-request path while preserving CNRMC About Us for current public RMC-location claims. June 5 MIP
