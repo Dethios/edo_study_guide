@@ -7,8 +7,8 @@ Current as of 2026-06-05.
 - Session: `2026-06-04-end-to-end-study-guide-audit`
 - Date: 2026-06-04
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
-- Current follow-up: 2026-06-05 Chapter 7 NWCF timeline cleanup aligned field-activity budget wording with the Chapter 6
-  President's Budget statutory window and removed the stale "President signs the budget" shorthand.
+- Current follow-up: 2026-06-05 Chapter 20 Navy Modernization Program cleanup added existing official modernization
+  manual, JFMM, and SOVT/installation source anchors to core NMP/SCD governance and Quick Review claims.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,
@@ -70,6 +70,9 @@ Current as of 2026-06-05.
   President's Budget submission timing in Chapter 6.
   June 5 NWCF timeline follow-on aligned Chapter 7's fall BES/PB review and Jan--Feb PB submission wording with the
   same statutory budget-process anchors while preserving the coursebook's 18--24 month NWCF rate-setting cue.
+  June 5 NMP/SCD source-grounding follow-on added existing SL720-AA-MAN-030, JFMM Volume VI, and TS9090-310 anchors to
+  Chapter 20's core Navy Modernization Program, Ship Change Document, NDE-EP, threshold, NDE-NM, and Quick Review claims
+  without changing the board answer.
   June 5 CIVPERS/labor follow-on updated the stale OPNAVINST 5354.1H EEO citation to current 5354.1J, corrected the FLRA
   Oklahoma City decision metadata, removed a weak National Guard handbook citation from GS step timing, and backfilled
   OPM, EEOC, and FLRA exact source-ledger rows. June 5 IPMDAR/JITC/TRA follow-on refreshed the IPMDAR DID access date,

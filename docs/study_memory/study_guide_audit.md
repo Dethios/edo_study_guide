@@ -66,6 +66,24 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Ground Chapter 20 NMP/SCD Claims in Existing Official Sources
+
+- ID: `gc-20260605-nmp-scd-official-source-grounding`
+- Location: `tex/chapters/20_Navy_Modernization_Program.tex`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: Chapter 20's core Navy Modernization Program, Ship Change Document, NDE entitled process,
+  approval-threshold, NDE-NM tracking, and Quick Review claims still relied mostly on the EDO coursebook even though the
+  guide already carried official modernization-process, public JFMM, and TS9090-310 source anchors. Added point-of-use
+  citations to `SL720-AA-MAN-030`, `JFMM-VolVI-RevD-Chg5-2025`, and `TS9090-310` where those existing sources directly
+  support the ship-change governance and waterfront handoff claims. No board-facing NMP, SCD, funding, approval, or
+  installation-flow wording changed.
+- Source basis: local Chapter 20 citation-fit scan, controlled-source caveat for SL720-AA-MAN-030, public JFMM Volume VI
+  Rev D Change 5, public NAVSEA TS9090-310G source metadata, and existing source-ledger rows checked on 2026-06-05.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Align Chapter 7 NWCF Budget Timeline with PB Submission Law
 
 - ID: `gc-20260605-nwcf-budget-timeline-pb-alignment`
