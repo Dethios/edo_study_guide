@@ -83,6 +83,38 @@ The entries in this section preserve the original imported package state. Later 
 - Confidence: `High`
 - Status: `applied`
 
+### 2026-06-05 - Applied PAE Source-Ledger and Currentness Alignment
+
+- ID: `gc-20260605-pae-source-ledger-currentness`
+- Location: `tex/edo.bib`, `tex/chapters/1_Chain_of_command.tex`, `tex/chapters/3_NAVSEA.tex`,
+  `tex/chapters/appendix_edo_flags.tex`, `tex/chapters/appendix_key_roles.tex`,
+  `tex/chapters/appendix_pae_construct_mapping.tex`,
+  `docs/study_memory/sources.md`, `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: refreshed the PAE source-access dates and the PAE-specific "current as of" stamps from the
+  2026-06-05 official-source check; expanded the PAE / ASN(RD&A) source ledger to include the official DON PAE
+  establishment and expansion releases, Mahan service-acquisition-executive announcement, PAE Aviation, PAE Mission
+  Systems, PAE Munitions, PAE Marine Corps, PAE Maritime, DON shipbuilding plan, MUSV marketplace, SASC RAS, and SSP
+  transition sources; updated the PAE Maritime ledger row to include Melissa Kirkendall, CAPT Cedric McNeal, and RDML
+  Andrew Biehn deputy lanes; removed an uncited stale `navsea_warfare_centers` BibTeX key with a misspelled title/URL;
+  removed an unused DVIDS PAE Mission Systems unit-page key now superseded by the official DON/NAVWAR launch release;
+  and normalized leading whitespace on the PAE BibTeX records.
+- Source basis: official DON PAE establishment release; official DON May 2026 PAE expansion release; official DON
+  service acquisition executive announcement; official NAVAIR PAE Aviation release; official NAVWAR PAE Mission Systems
+  release; official DON PAE Munitions story; official PAE Marine Corps About / Organization pages and establishment
+  article; official PAE Maritime page; official DON May 2026 shipbuilding plan; official DON MUSV marketplace release;
+  official SASC MUSV hearing page; and official SSP leadership / Williams promotion sources, all checked on
+  2026-06-05. The June 2026 MyNavyHR flag roster and NAVSEA command leadership chart were not re-dated in this slice
+  because they were not re-verified in the 2026-06-05 live-source pass; the EDO flag appendix now states that split
+  source-date caveat explicitly.
+- Validation: `make check-markdown`, `make check-study-memory`, `make check-current-events-sources`,
+  `make check-acronyms`, `make check-tex-structure`, JSONL parse, BibTeX duplicate-key scan, `git diff --check`, and
+  `./scripts/docker-build.sh --quiet tex/main.tex` passed on 2026-06-05. The fresh `artifacts/build/main.log` ends with
+  `Output written on main.pdf (434 pages, 13689733 bytes)`, and the `main.log` / `main.blg` warning scan found no
+  unresolved citation, biblatex, LaTeX warning, overfull/underfull, error, or missing-character hits.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-05-31 - CIVPERS Chapter 43 / Chapter 75 Standards
 
 - ID: `gc-20260531-civpers-ch43-ch75-standards`

@@ -43,6 +43,8 @@ Current as of 2026-06-05.
   the current-events appendix and source ledger. June 5 source-integrity follow-up added a current-events source-ledger
   checker and wired it into `make check-study-memory`. June 5 Markdown formatting follow-up mechanically wrapped
   pre-existing long lines and aligned tables in the remaining failing Markdown files so `make check-markdown` passes.
+  June 5 PAE source-ledger follow-up refreshed official PAE access dates, expanded the ASN(RD&A)/PAE source inventory,
+  updated PAE-specific currentness stamps, and removed stale unused PAE/NAVSEA BibTeX keys.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -178,6 +180,10 @@ Recent applied updates:
 - NMP-MOM controlled-source ledger alignment: added the missing `SL720-AA-MAN-030` source-inventory row, changed the
   BibTeX URL to the responding controlled-access `www.nde.navy.mil` host, and recorded the 2026-06-05 public HTTP 403
   caveat while retaining TS9090-310G as the visible public AIT appendix source rather than the full manual.
+- PAE source-ledger/currentness alignment: expanded the PAE / ASN(RD&A) source inventory to include current official
+  DON, NAVAIR, NAVWAR, Marine Corps, PAE Maritime, SASC, SSP, and shipbuilding-plan sources; refreshed PAE-specific
+  currentness stamps to 2026-06-05; and removed stale unused PAE/NAVSEA BibTeX keys while preserving source-version
+  caveats for flag-roster-dependent claims.
 
 ## Next Review Plan
 
