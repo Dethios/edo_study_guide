@@ -66,6 +66,34 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied PAE Chart Connector Clearance Follow-Up
+
+- ID: `gc-20260605-pae-chart-connector-clearance-followup`
+- Location: `tex/chapters/1_Chain_of_command.tex`, `artifacts/out/main.pdf`
+- Verdict: `Applied`
+- Correction applied: rerouted Figure 1.4 so the ASN(RD&A) / PAE connector bus sits above the top PAE row, the
+  Principal Civilian Deputy and PMILDEP lines drop into that external bus, the top-row PAE arrows terminate at node
+  border anchors, and the SYSCOM support rail sits farther left of the fitted PAE group. Rebuilt and visually checked
+  the rendered PDF page to confirm connector lines no longer run through the PAE boxes or labels.
+- Source basis: local TikZ source inspection, Docker PDF rebuild, rendered Figure 1.4 page inspection, TeX structure
+  check, whitespace check, and build-log warning scan.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-05 - Applied Core Acquisition Source-Metadata Refresh
+
+- ID: `gc-20260605-core-acquisition-source-metadata`
+- Location: `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: rechecked heavily cited acquisition-governance anchors and aligned source metadata for
+  SECNAVINST 5000.2G, DoDI 5000.85, CJCSM 5123.01, and DFARS. Added an explicit DFARS landing-page row to the source
+  inventory and refreshed the matching BibTeX access dates. No board-facing doctrine prose changed.
+- Source basis: official Acquisition.gov DFARS page, official ESD DoDI 5000.85 PDF, official Joint Staff CJCSM 5123.01
+  PDF, and DONI/search evidence for active SECNAVINST 5000.2G.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied Statutory Citation Source-Fidelity and OT Authority Correction
 
 - ID: `gc-20260605-statutory-ot-source-fidelity`

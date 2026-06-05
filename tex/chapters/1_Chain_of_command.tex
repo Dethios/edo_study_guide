@@ -162,27 +162,26 @@ Current as of 2026-06-05, Mr.\ William F.\ Mahan is performing the duties of \ac
     \coordinate (deputyStem) at (asn.south |- deputyBusY);
     \coordinate (pcdBranch) at (pcd.north |- deputyBusY);
     \coordinate (pmdBranch) at (pmd.north |- deputyBusY);
-    \coordinate (paeBusY) at ($(missions.north)+(0,1.05cm)$);
+    \coordinate (paeBusY) at ($(missions.north)+(0,1.22cm)$);
     \coordinate (paeBranchLeft) at (aviation.north |- paeBusY);
     \coordinate (paeBranchCenter) at (missions.north |- paeBusY);
     \coordinate (paeBranchRight) at (munitions.north |- paeBusY);
-    \coordinate (aviationIn) at ($(aviation.north)+(0,0.08cm)$);
-    \coordinate (missionsIn) at ($(missions.north)+(0,0.08cm)$);
-    \coordinate (munitionsIn) at ($(munitions.north)+(0,0.08cm)$);
+    \coordinate (pcdPaeDrop) at (pcd.south |- paeBusY);
+    \coordinate (pmdPaeDrop) at (pmd.south |- paeBusY);
 
     \begin{scope}[on background layer]
       \node[pae group, fit=(aviation)(missions)(munitions)(industrial)(maritime)(undersea)(ssp)(ras)(marine)] (paeGroup) {};
     \end{scope}
 
-    \coordinate (supportRailX) at ($(paeGroup.west)+(-0.58cm,0)$);
+    \coordinate (supportRailX) at ($(paeGroup.west)+(-0.95cm,0)$);
     \coordinate (supportTrunkTop) at (supportRailX |- aviation.west);
     \coordinate (supportTrunkMid) at (supportRailX |- industrial.west);
     \coordinate (supportTrunkBottom) at (supportRailX |- ssp.west);
     \coordinate (supportOut) at ($(syscoms.east)+(0.38cm,0)$);
     \coordinate (supportMidEntry) at (supportOut |- supportTrunkMid);
-    \coordinate (aviationSupportIn) at ($(aviation.west)+(-0.08cm,0)$);
-    \coordinate (industrialSupportIn) at ($(industrial.west)+(-0.08cm,0)$);
-    \coordinate (sspSupportIn) at ($(ssp.west)+(-0.08cm,0)$);
+    \coordinate (aviationSupportIn) at ($(aviation.west)+(-0.10cm,0)$);
+    \coordinate (industrialSupportIn) at ($(industrial.west)+(-0.10cm,0)$);
+    \coordinate (sspSupportIn) at ($(ssp.west)+(-0.10cm,0)$);
 
     \begin{scope}[on background layer]
       \draw[line] (secnav.south) -- (asn.north);
@@ -192,11 +191,12 @@ Current as of 2026-06-05, Mr.\ William F.\ Mahan is performing the duties of \ac
       \draw[bus line] (pcdBranch) -- (pmdBranch);
       \draw[line] (pcdBranch) -- (pcd.north);
       \draw[line] (pmdBranch) -- (pmd.north);
-      \draw[bus line] (deputyStem) -- (paeBranchCenter);
+      \draw[bus line] (pcd.south) -- (pcdPaeDrop);
+      \draw[bus line] (pmd.south) -- (pmdPaeDrop);
       \draw[bus line] (paeBranchLeft) -- (paeBranchRight);
-      \draw[line] (paeBranchLeft) -- (aviationIn);
-      \draw[line] (paeBranchCenter) -- (missionsIn);
-      \draw[line] (paeBranchRight) -- (munitionsIn);
+      \draw[line] (paeBranchLeft) -- (aviation.north);
+      \draw[line] (paeBranchCenter) -- (missions.north);
+      \draw[line] (paeBranchRight) -- (munitions.north);
 
       \draw[dashed, rounded corners=2pt] (syscoms.east) -- (supportOut) -- (supportMidEntry) -- (supportTrunkMid);
       \draw[dashed, rounded corners=2pt] (supportTrunkTop) -- (supportTrunkBottom);

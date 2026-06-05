@@ -7,6 +7,9 @@ Current as of 2026-06-05.
 - Session: `2026-06-04-end-to-end-study-guide-audit`
 - Date: 2026-06-04
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
+- Current follow-up: 2026-06-05 PAE chart connector clearance update raised the Figure 1.4 PAE bus, moved the support
+  rail outside the fitted PAE group, rebuilt the PDF, and visually confirmed the connector lines no longer run through
+  PAE boxes or labels.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,
@@ -80,7 +83,9 @@ Current as of 2026-06-05.
   June 5 structure-scout follow-on corrected the Board Fast Cues chapter label, removed a stale commented TikZ demo
   include, normalized selected figure references, and cleaned two caption/prose nits. June 5 statutory source-fidelity
   follow-on corrected the 10 U.S.C. 4021 / 4022 OT authority distinction, replaced obsolete CAPE 10 U.S.C. 139c
-  references with 10 U.S.C. 139a, and refreshed exact U.S. Code URLs for active statutory citations.
+  references with 10 U.S.C. 139a, and refreshed exact U.S. Code URLs for active statutory citations. June 5 core
+  acquisition source-metadata follow-on refreshed heavily cited SECNAVINST 5000.2G, DoDI 5000.85, CJCSM 5123.01, and
+  DFARS metadata and added the missing DFARS source-ledger row.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
