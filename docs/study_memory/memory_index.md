@@ -9,7 +9,8 @@ Current as of 2026-06-05.
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
 - Current follow-up: 2026-06-05 PAE chart connector clearance update raised the Figure 1.4 PAE bus, moved the support
   rail outside the fitted PAE group, rebuilt the PDF, and visually confirmed the connector lines no longer run through
-  PAE boxes or labels.
+  PAE boxes or labels. A follow-on structure pass moved the existing Chapter 12 and Chapter 12A Summary blocks to the
+  first-screen position so the contracting chapter sequence matches the guide-wide Summary / Quick Review flow.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,

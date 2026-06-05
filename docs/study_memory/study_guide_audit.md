@@ -66,6 +66,19 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied Contracting Summary Flow Cleanup
+
+- ID: `gc-20260605-contracting-summary-flow-cleanup`
+- Location: `tex/chapters/12_Solicitation.tex`, `tex/chapters/12A_Source_Selection.tex`
+- Verdict: `Applied`
+- Correction applied: moved the existing Chapter 12 Solicitation and Chapter 12A Source Selection Summary blocks from
+  late-chapter positions to the first-screen position directly under each chapter's main section heading. This aligns
+  those chapters with the rest of the guide's Summary / Quick Review flow pattern without changing board-facing facts,
+  citations, or Quick Review content.
+- Source basis: local TeX structure and flow audit across active chapter Summary / Quick Review placement.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied PAE Chart Connector Clearance Follow-Up
 
 - ID: `gc-20260605-pae-chart-connector-clearance-followup`
