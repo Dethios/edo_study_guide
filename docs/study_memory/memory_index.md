@@ -7,9 +7,9 @@ Current as of 2026-06-05.
 - Session: `2026-06-04-end-to-end-study-guide-audit`
 - Date: 2026-06-04
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
-- Current follow-up: 2026-06-05 active-citation metadata audit helper added a report-only
-  `make audit-active-citation-sources` target so future source-currentness slices can see stale, missing, or overly
-  generic metadata for URL-backed citekeys active in the latest PDF build.
+- Current follow-up: 2026-06-05 OPNAV instruction source-alignment cleanup refreshed active OPNAVINST 3050.27A,
+  4700.7N, and 5420.117A metadata to current DONI listing/search evidence and removed the unsupported
+  OPNAVINST 3111.17C citation from Chapter 6 PPBE claims.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,
@@ -145,6 +145,9 @@ Recent applied updates:
   in BibTeX/source memory, while live RMC-location claims remain grounded in the CNRMC About Us page.
 - MIP directive source-currentness alignment: duplicate legacy `DoDD5205-12` / `DoWD-5205-12` BibTeX keys now both carry
   current DoDD 5205.12 metadata, preserving compatibility while removing stale 2017/2020 revision notes.
+- OPNAV instruction source alignment: active OPNAVINST 3050.27A, 4700.7N, and 5420.117A metadata now reflects current
+  official DONI listing/search evidence; Chapter 6 no longer cites OPNAVINST 3111.17C for unsupported N8/N81 or N9
+  PPBE claims.
 - NIP/MIP budget-release source-currentness alignment: ODNI FY2025 NIP request and appropriation, War.gov FY2025 MIP,
   War.gov FY2024 MIP, and War.gov FY2025 MIP budget-request bibliography/source-ledger entries now use direct official
   pages, corrected titles/dates, and 2026-06-05 access dates.

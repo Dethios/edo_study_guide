@@ -66,6 +66,25 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied OPNAV Instruction Source-Alignment Cleanup
+
+- ID: `gc-20260605-opnav-instruction-source-alignment`
+- Location: `tex/edo.bib`, `tex/chapters/6_PPBE.tex`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: refreshed active OPNAVINST 3050.27A, 4700.7N, and 5420.117A bibliography/source-ledger
+  metadata to official DONI listing/search evidence checked on 2026-06-05; corrected 3050.27A's effective date
+  and title to Battle Force Structure Assessments; expanded 5420.117A's title to Resources and Requirements
+  Review Board and Naval Capabilities Board; and removed OPNAVINST 3111.17C from Chapter 6 PPBE citations because
+  DONI identifies it as Strategic Laydown and Dispersal Plan guidance, not the N8/N81 assessment or N9 governance
+  source the chapter needed.
+- Source basis: official DONI listing/search records for OPNAVINST 3050.27A, OPNAVINST 3111.17C, OPNAVINST
+  4700.7N, and OPNAVINST 5420.117A; current-tool direct raw PDF checks returned request-filtered HTML, so the
+  source ledger keeps an access-mode caveat.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied Active-Citation Metadata Audit Helper
 
 - ID: `gc-20260605-active-citation-metadata-audit-helper`
