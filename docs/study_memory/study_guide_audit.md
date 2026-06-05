@@ -66,6 +66,22 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied Strategy and NAVWAR Currentness Refresh
+
+- ID: `gc-20260605-strategy-navwar-currentness-refresh`
+- Location: `tex/chapters/1_Chain_of_command.tex`, `tex/chapters/4_NAVWAR.tex`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: rechecked the active Chapter 1 \ac{nss}/\ac{nds} baseline and Chapter 4 NAVWAR/PEO portfolio
+  currentness statements against official public sources. Existing wording remains supported, so this slice advanced the
+  active TeX currentness lines plus the matching BibTeX/source-ledger access dates to 2026-06-05.
+- Source basis: official White House NSS PDF; official Department of War NDS PDF; NAVWAR About page; PEO C4I
+  program-office page and PMA/PMW 101, PMW 120, PMW 150, PMW 160, PMW/A 170, and PMW 790 information sheets;
+  PEO Digital portfolio overview; PEO MLB portfolio book; and local source-ledger inspection.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied T&E Policy Currentness Refresh
 
 - ID: `gc-20260605-te-policy-currentness-refresh`

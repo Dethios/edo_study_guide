@@ -112,6 +112,8 @@ since been verified and applied.
 
 Recent applied updates:
 
+- Strategy and NAVWAR currentness refresh: Chapter 1's NSS/NDS baseline and Chapter 4's NAVWAR/PEO portfolio framing
+  remain supported after 2026-06-05 official-source checks; only currentness/access dates changed.
 - T&E policy currentness refresh: Chapter 18B's DoDI 5000.98, DoDM 5000.100, DoDM 5000.103, and 10 U.S.C. 4171
   overlay remains supported after 2026-06-05 official-source checks; only currentness/access dates changed.
 - Current organization / fleet-maintenance source drift closeout across Chapter 1, PAE mapping, EDO flags, RMC/JFMM
