@@ -2365,3 +2365,20 @@ The entries in this section preserve the original imported package state. Later 
   official DCAA About source already in the ledger; official DON CEVM page; local active-TeX and source-ledger scan.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Ground Solicitation Contract Types in FAR Part 16
+
+- ID: `gc-20260605-solicitation-contract-types-far-part16`
+- Location: `tex/chapters/12_Solicitation.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: Chapter 12's contract-type overview, fixed-price/cost-reimbursement sections, IDIQ/T&M/labor-hour
+  / letter-contract cues, and fixed-vs-cost comparison still relied mostly on the EDO coursebook and one generic `FAR`
+  citation. Added exact FAR Part 16 citations for contract-type selection, FFP, FPEPA, FFP level-of-effort, incentive,
+  FPIF, fixed-price award fee, cost-reimbursement, CPFF, CPIF, CPAF, cost, cost-sharing, indefinite-delivery, IDIQ, T&M,
+  labor-hour, and letter-contract cues while preserving the coursebook for classroom exercises and diagrams.
+- Source basis: official Acquisition.gov FAR Part 16 exact section pages, FAC 2026-01 / effective 2026-03-13, checked
+  2026-06-05; local Chapter 12 source scan.
+- Confidence: `High`
+- Status: `applied`

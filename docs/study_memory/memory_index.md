@@ -7,9 +7,9 @@ Current as of 2026-06-05.
 - Session: `2026-06-04-end-to-end-study-guide-audit`
 - Date: 2026-06-04
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
-- Current follow-up: 2026-06-05 Chapter 13C cost/price-evaluation cleanup grounded proposal analysis, field pricing,
-  prenegotiation objectives, FPRAs, cost allowability, direct/indirect cost, selected-cost, and unallowable-cost cues in
-  exact official FAR section sources.
+- Current follow-up: 2026-06-05 Chapter 12 solicitation cleanup grounded contract-type selection, fixed-price,
+  cost-reimbursement, incentive, indefinite-delivery, T&M, labor-hour, and letter-contract cues in exact official FAR
+  Part 16 section sources.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,
@@ -337,6 +337,9 @@ Recent applied updates:
   deviation thresholds/clauses and 180-day IBR timing, DoD IPM definitions and policy guidance, DCMA EVMS
   compliance/surveillance, DCAA audit support, Naval CEVM, and SUPSHIP's EVMS role; refreshed EVM source metadata to
   the 2026-06-05 current check.
+- Solicitation contract-type source grounding: added exact FAR Part 16 source support to Chapter 12 for contract-type
+  selection, fixed-price, cost-reimbursement, incentive, IDIQ, T&M, labor-hour, and letter-contract cues while
+  preserving coursebook traceability for classroom examples.
 
 ## Next Review Plan
 
