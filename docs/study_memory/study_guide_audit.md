@@ -66,6 +66,21 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied T&E Policy Currentness Refresh
+
+- ID: `gc-20260605-te-policy-currentness-refresh`
+- Location: `tex/chapters/18B_test-eval.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: rechecked Chapter 18B's current official T&E overlay against DoDI 5000.98, DoDM 5000.100,
+  DoDM 5000.103, and 10 U.S.C. 4171. Existing chapter wording remains supported, so this slice refreshed only the
+  active chapter currentness line and matching BibTeX/source-ledger access dates to 2026-06-05.
+- Source basis: official ESD PDFs for DoDI 5000.98, DoDM 5000.100, and DoDM 5000.103; current uscode.house.gov
+  page for 10 U.S.C. 4171; and local source-ledger inspection.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied Finance, Cost, EVM, and T&E Flow Standardization
 
 - ID: `gc-20260605-finance-cost-evm-te-flow-standardization`

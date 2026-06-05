@@ -112,6 +112,8 @@ since been verified and applied.
 
 Recent applied updates:
 
+- T&E policy currentness refresh: Chapter 18B's DoDI 5000.98, DoDM 5000.100, DoDM 5000.103, and 10 U.S.C. 4171
+  overlay remains supported after 2026-06-05 official-source checks; only currentness/access dates changed.
 - Current organization / fleet-maintenance source drift closeout across Chapter 1, PAE mapping, EDO flags, RMC/JFMM
   material, and the June 2 reference study material.
 - RMC instruction source-access alignment: NAVSEAINST 5450.145A now points to the CNRMC Instructions copy-request path
