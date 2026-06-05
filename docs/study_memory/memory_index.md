@@ -7,9 +7,9 @@ Current as of 2026-06-05.
 - Session: `2026-06-04-end-to-end-study-guide-audit`
 - Date: 2026-06-04
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
-- Current follow-up: 2026-06-05 source-selection and IWS X access-date pass refreshed the active DoD Source Selection
-  Procedures and NAVSEA PEO IWS X bibliography/source-ledger dates to 2026-06-05 after current official-source
-  retrieval checks.
+- Current follow-up: 2026-06-05 active-citation metadata audit helper added a report-only
+  `make audit-active-citation-sources` target so future source-currentness slices can see stale, missing, or overly
+  generic metadata for URL-backed citekeys active in the latest PDF build.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,
@@ -258,6 +258,8 @@ Recent applied updates:
   and backfilled missing source rows for applied guide-change URLs found during the first scan.
 - Study-memory semantic validation guard: `make check-study-memory` now validates JSONL enum values, `source_basis`
   object shape, future machine-local absolute path usage, and stable question-bank source-section references.
+- Active-citation source-metadata audit helper: added report-only `make audit-active-citation-sources` to inspect
+  `artifacts/build/main.bcf` and report weak metadata for URL-backed citekeys active in the latest PDF build.
 - IPMDAR/JITC/TRA source-ledger follow-up: updated the TRA citation from the older `USDRE-TRA-2020` key to the February
   2025 OUSD(R&E) TRA Guidebook, pointed JITC interoperability claims at the official Interoperability Process Guide, and
   added exact source-ledger support for IPMDAR DI-MGMT-81861D, JITC, and TRA.
@@ -287,8 +289,8 @@ Recent applied updates:
 - Update `learning_log.jsonl`, `weak_areas.jsonl`, `study_guide_audit.md`, `guide_changes.jsonl`, and this index after
   substantive graded answers or applied guide corrections.
 - Validate with `make check-study-memory`, `make check-current-events-sources`, `make check-guide-change-sources`,
-  `make check-acronyms`, `make check-tex-structure`, `make check-markdown`, `git diff --check`, and a Docker PDF build
-  after substantive LaTeX edits.
+  `make audit-active-citation-sources`, `make check-acronyms`, `make check-tex-structure`, `make check-markdown`,
+  `git diff --check`, and a Docker PDF build after substantive LaTeX edits.
 
 ## Memory Files
 

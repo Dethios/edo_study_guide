@@ -70,13 +70,17 @@ sh scripts/check-study-memory.sh
 ```
 
 For LaTeX source edits, continue to run the normal guide validation such as
-`make check-acronyms`, `make audit-cited-bib-sources`,
-`make check-current-events-sources`, `make check-guide-change-sources`, `git diff
---check`, and the Docker PDF build.
+`make check-acronyms`, `make audit-active-citation-sources`,
+`make audit-cited-bib-sources`, `make check-current-events-sources`,
+`make check-guide-change-sources`, `git diff --check`, and the Docker PDF build.
 
 `make check-study-memory` also enforces the JSONL schemas, enum values,
 `source_basis` object shape, portable future provenance paths, stable
 question-bank `source_section` references, current-events source-ledger coverage,
 and applied-guide-change source coverage. `make audit-cited-bib-sources` is a
-report-only backlog tool unless `scripts/check-cited-bib-sources.py --strict` is
-used after exact-URL source-ledger gaps are burned down.
+report-only exact-URL backlog tool unless `scripts/check-cited-bib-sources.py
+--strict` is used after exact-URL source-ledger gaps are burned down. `make
+audit-active-citation-sources` is a report-only active-citation metadata backlog
+tool for active citekeys with URLs unless `scripts/audit-active-citation-sources.py
+--strict` is used after stale or source-limited active-citation items are burned
+down.

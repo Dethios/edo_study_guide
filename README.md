@@ -110,6 +110,19 @@ entries are intentionally represented by source landing pages or consolidated
 ledger rows; use `scripts/check-cited-bib-sources.py --strict` only after those
 gaps are burned down.
 
+Active citation source-metadata audit:
+
+```shell
+make audit-active-citation-sources
+```
+
+The active-citation audit reads `artifacts/build/main.bcf` from the latest PDF
+build and reports active citekeys with URLs that have stale access dates, missing
+access dates, or overly generic source URLs. It is report-only by default because
+some sources are intentionally controlled-access or request-filtered; use
+`scripts/audit-active-citation-sources.py --strict` only after those weak-source
+items are ready to become a hard validation gate.
+
 Applied guide-change source-ledger validation:
 
 ```shell

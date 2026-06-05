@@ -66,6 +66,24 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied Active-Citation Metadata Audit Helper
+
+- ID: `gc-20260605-active-citation-metadata-audit-helper`
+- Location: `scripts/audit-active-citation-sources.py`, `Makefile`, `AGENTS.md`, `README.md`,
+  `docs/study_memory/README.md`, `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: added a report-only `make audit-active-citation-sources` helper that reads the latest
+  `artifacts/build/main.bcf`, loads the configured BibTeX files, and reports URL-backed citekeys active in the built
+  guide with stale access dates, missing access dates, or overly generic source URLs. The helper defaults to the first
+  day of the current month as the minimum access-date threshold and supports `--strict` for future use once the
+  weak-source backlog is ready to become a gate. Updated repository and study-memory instructions so the workflow does
+  not rely on ad hoc Python snippets.
+- Source basis: local repeated active-citation metadata scan pattern, existing source-ledger audit helper patterns, and
+  local validation of the new report-only target.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied Source Selection and IWS X Citation Date Alignment
 
 - ID: `gc-20260605-source-selection-iwsx-access-date-alignment`
