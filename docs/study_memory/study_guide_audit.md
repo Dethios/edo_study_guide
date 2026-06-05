@@ -1042,3 +1042,23 @@ The entries in this section preserve the original imported package state. Later 
   warfare-center synthesis, and congressional committee currentness.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Applied Contracting and Acquisition Flow Quick Reviews
+
+- ID: `gc-20260605-contracting-acq-flow-quick-review`
+- Location: `tex/chapters/2_TA_EA.tex`, `tex/chapters/11_Contracting_Fundamentals.tex`,
+  `tex/chapters/12_Solicitation.tex`, `tex/chapters/12A_Source_Selection.tex`,
+  `tex/chapters/13A_Source_Selection_Practical.tex`, `tex/chapters/13B_Contract_Administration.tex`,
+  `tex/chapters/13C_cost-price-eval.tex`, `tex/chapters/15_policy.tex`, `tex/chapters/27_CIVPERS.tex`,
+  `tex/chapters/28_AWP_and_SOVT.tex`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: standardized board-flow closeout across technical authority, contracting, solicitation, source
+  selection, source-selection practical, contract administration, cost/price evaluation, acquisition policy, and CIVPERS by
+  adding focused Quick Review blocks grounded in each chapter's existing cited material. Added a first-screen Summary to
+  AWP/SOVT so the chapter now has the same summary-plus-quick-review reading pattern as the other recently normalized
+  chapters.
+- Source basis: existing cited coursebook and official-source sets already present in the affected chapters; no new
+  current-source or threshold claims were introduced in this structure/flow pass.
+- Confidence: `High`
+- Status: `applied`

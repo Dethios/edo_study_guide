@@ -23,7 +23,9 @@ Current as of 2026-06-05.
   structure and added Summary / Quick Review board-speed blocks. June 5 finance/cost/EVM/T&E follow-up standardized
   Summary / Quick Review flow across Chapters 6, 9, 10, 14, and 18B. June 5 organization/currentness follow-up
   standardized Summary / Quick Review flow across Chapters 1, 3, 4, 5, 8, and 29 and replaced NAVSEA exact-count
-  coursebook-only bullets with an official-source snapshot caution.
+  coursebook-only bullets with an official-source snapshot caution. June 5 contracting/acquisition-flow follow-up added
+  board-speed Quick Review blocks to Chapters 2, 11, 12, 12A, 13A, 13B, 13C, 15, and 27, and added a first-screen
+  Summary to Chapter 28.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -89,6 +91,8 @@ Recent applied updates:
 - Organization/currentness flow standardization so Chapters 1, 3, 4, 5, 8, and 29 each have first-screen Summary and
   board-speed Quick Review blocks; Chapter 3 now treats exact NAVSEA size figures as official-page-specific snapshots
   rather than a single live constant.
+- Contracting, acquisition-policy, CIVPERS, and AWP/SOVT structure standardization so Chapters 2, 11, 12, 12A, 13A, 13B,
+  13C, 15, and 27 each close with board-speed Quick Review blocks and Chapter 28 now opens with a Summary.
 - NMP/AIT ship-change flow cleanup for the program-office to shipboard installation chain, missing walkthrough citations,
   and CDMD-OA/ILS/SID/FAT acronym support.
 - CIVPERS route-choice fast-cue cleanup for Chapter 43 vs Chapter 75, probationary/trial employees, WGI caveats, and
