@@ -111,7 +111,9 @@ Current as of 2026-06-05.
   gifts, fundraising, and political-activity board cues. June 5 PAE chart routing follow-on replaced individual top-row
   PAE connector arrows with a single PAE group header connection so Figure 1.4 lines do not enter or overlap PAE boxes.
   June 5 Chapter 10 cost-estimating follow-on corrected the CARD source trap from DoDM 5000.04 to DoDI 5000.73 and added
-  official cost-analysis support for CARD/POE/CCE/CCP/ICE and CAPE review cues.
+  official cost-analysis support for CARD/POE/CCE/CCP/ICE and CAPE review cues. June 5 Chapter 8 congressional
+  enactment follow-on added official Constitution Annotated, Congress.gov CRS, GAO, CBO, CRS, OMB, OMB A-11, and DoW FMR
+  point-of-use support for authorization, appropriation, budget-process, CR, support-agency, and sequestration cues.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 

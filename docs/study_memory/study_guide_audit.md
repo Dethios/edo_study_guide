@@ -2453,3 +2453,23 @@ The entries in this section preserve the original imported package state. Later 
   local Chapter 21 citation-fit scan.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Ground Chapter 8 Congressional Enactment Cues
+
+- ID: `gc-20260605-congressional-enactment-source-grounding`
+- Location: `tex/chapters/8_Congressional_Enactment.tex`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: Chapter 8's congressional enactment chapter had current HASC/SASC/HAC/SAC subcommittee support but
+  still used the EDO coursebook as the only source for the constitutional appropriations basis, authorization versus
+  appropriation distinction, budget-process sequence, support-agency roles, continuing-resolution constraints, and
+  sequestration cue. Added point-of-use official citations to Constitution Annotated, Congress.gov CRS products, GAO,
+  CBO, CRS, OMB, OMB A-11, and DoW FMR Volume 3 while preserving the coursebook for classroom timeline/appeal recall.
+  Also softened the sequestration role cue so CBO is framed as objective budget-analysis support and OMB as the
+  sequestration report/order authority.
+- Source basis: official Constitution Annotated Article I, CRS R47235, CRS R46497, CRS R46595, GAO About, CBO
+  Introduction, CRS About, OMB sequestration reports and orders, OMB Circular A-11, DoW FMR Volume 3, and current
+  committee pages checked on 2026-06-05; local Chapter 8 citation-fit scan.
+- Confidence: `High`
+- Status: `applied`
