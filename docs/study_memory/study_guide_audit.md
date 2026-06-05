@@ -66,6 +66,22 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied Source Selection and IWS X Citation Date Alignment
+
+- ID: `gc-20260605-source-selection-iwsx-access-date-alignment`
+- Location: `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: refreshed the active `DoD-Source-Selection-Procedures-2022` BibTeX access date and matching
+  source-ledger check date to 2026-06-05 after a successful HTTP 200 retrieval of the official DoD PDF. Refreshed the
+  active `navsea-peo-iws-x-overview-2022` BibTeX access date and source-ledger check date to 2026-06-05 after
+  browser-open verification of the official NAVSEA public-release PDF; retained a note that command-line checks still
+  returned 403. No board-facing source-selection or IWS prose changed.
+- Source basis: official DoD Source Selection Procedures PDF; official NAVSEA PEO IWS X Program Overview and ICS
+  Development PDF; local active-citation metadata scan.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied WAS Memo and NSCF Citation Source Refresh
 
 - ID: `gc-20260605-was-memo-nscf-citation-refresh`
