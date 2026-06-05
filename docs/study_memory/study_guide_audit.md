@@ -2199,3 +2199,18 @@ The entries in this section preserve the original imported package state. Later 
   row checked on 2026-06-05, current official-page check on 2026-06-05, and local active-TeX source scan.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Ground Warrior Toughness Components in Official Source
+
+- ID: `gc-20260605-warrior-toughness-components-source-grounding`
+- Location: `tex/chapters/27M_Warrior_Toughness.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: added the official NETC Warrior Toughness Components source and cited it for the Chapter 27M
+  bullets covering the warrior mindset cycle, core attributes, and performance psychology skills. Normalized the
+  performance-skills examples to match the official NETC Components list while retaining coursebook traceability.
+- Source basis: official NETC Warrior Toughness overview page, official NETC Warrior Toughness Components page checked
+  on 2026-06-05, existing source-ledger row for the overview page, and local active-TeX source scan.
+- Confidence: `High`
+- Status: `applied`

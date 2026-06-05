@@ -310,6 +310,8 @@ Recent applied updates:
   do not run toward or through individual PAE boxes.
 - Leader Development Framework source grounding: added the official MyNavyHR GRGB Leadership Toolkit citation to
   Chapter 27O's NLDF strategic-alignment and self-guided-learning GRGB bullets while preserving coursebook traceability.
+- Warrior Toughness source grounding: added the official NETC Warrior Toughness Components source and cited it for
+  Chapter 27M's warrior mindset cycle, core attributes, and performance psychology skills.
 
 ## Next Review Plan
 
