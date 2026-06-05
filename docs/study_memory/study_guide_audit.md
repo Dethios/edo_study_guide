@@ -1,6 +1,6 @@
 # Study Guide Audit Log
 
-Current as of 2026-06-04.
+Current as of 2026-06-05.
 
 This file records readable correction and audit entries for study-guide claims,
 answer keys, outdated material, and doctrine-sensitive updates. Append the
@@ -1135,5 +1135,23 @@ The entries in this section preserve the original imported package state. Later 
   heading.
 - Source basis: local TeX structure scan and existing cited appendix sources; this was a structure/flow correction only
   and did not change doctrine, leader names, dates, thresholds, or other current-source claims.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-05 - Applied NAVSEA Contracting Source-Access Caveat
+
+- ID: `gc-20260605-navsea-contracting-source-access-caveat`
+- Location: `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: aligned the source inventory, BibTeX notes, and board fast-cue overlay for the NAVSEA Source
+  Selection Guide and NAVSEA Contracts Handbook. The two retained official guide URLs still returned HTTP 403 on
+  2026-06-05, so the guide now treats them as official baseline references that require manual verification before
+  advancing the availability date. The SUPSHIP Operations Manual Chapter 3 citation now points to the current official
+  NAVSEA `SUPSHIP/SOM` chapter URL and uses the 2023-12-01 Rev. 2 Change 35 date.
+- Source basis: official NAVSEA SUPSHIP Operations Manual Chapter 3 opened through browser retrieval, command-line HTTP
+  checks of the NAVSEA Source Selection Guide and Contracts Handbook URLs on 2026-06-05, and source-ledger
+  consistency review.
 - Confidence: `High`
 - Status: `applied`

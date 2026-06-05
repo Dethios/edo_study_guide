@@ -153,6 +153,10 @@ Recent applied updates:
   integrity/OCI source grounding, DAWIA greater-than-50-percent and functional-area-specific certification wording, ED
   Dolphin expectation for non-warfare-qualified EDO accessions, OSR/PSR plus OMPF career-record framing, HCEPF acronym
   handling, Warrior Toughness/NLDF official-source anchors, and LDF flow bridges for mentoring and resilience chapters.
+- NAVSEA contracting source-access caveat: preserved the 2025-10-12 successful availability date for the NAVSEA Source
+  Selection Guide and Contracts Handbook while recording 2026-06-05 HTTP 403 checks, added the official SUPSHIP
+  Operations Manual Chapter 3 source row, and updated the board fast-cue overlay so those guides are treated as retained
+  official baselines pending manual verification.
 
 ## Next Review Plan
 
