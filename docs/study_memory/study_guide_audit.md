@@ -1400,3 +1400,34 @@ The entries in this section preserve the original imported package state. Later 
   SECNAVINST 5000.2G, plus local validation of the new report-only cited-BibTeX source-ledger audit helper.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Applied FMR and Treasury Exact-URL Source-Ledger Backfill
+
+- ID: `gc-20260605-fmr-treasury-exact-ledger-backfill`
+- Location: `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: added exact source-ledger rows for the cited Comptroller FMR URLs used in finance, NWCF,
+  order-type, and budget-execution board cues: FMR home, Volume 3 Chapter 19, Volume 11A Chapters 2 and 3, and Volume
+  11B Chapters 1, 2, 3, 11, and 12. Updated `DoDFMR-Vol3` to the current Comptroller FMR landing page, updated
+  `DoDFMR-Vol3-Ch19` from a generic FMR landing page to the direct Chapter 19 PDF, and updated `Treasury-GInvoicing`
+  from the stale `www.fiscal.treasury.gov/g-invoicing/` path to the current Fiscal Service G-Invoice page.
+- Source basis: official Comptroller FMR landing page and direct FMR PDFs for Volume 3 Chapter 19, Volume 11A Chapters 2
+  and 3, and Volume 11B Chapters 1, 2, 3, 11, and 12; official Fiscal Service G-Invoice page; and the local
+  `make audit-cited-bib-sources` exact-URL backlog.
+- Confidence: `High`
+- Status: `applied`
+
+### 2026-06-05 - Applied Contracting Fundamentals Summary Placement Cleanup
+
+- ID: `gc-20260605-contracting-summary-placement-cleanup`
+- Location: `tex/chapters/11_Contracting_Fundamentals.tex`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: moved the Chapter 11 `Summary` block from the end of `Intro to Contracting Fundamentals` to the
+  first-screen position immediately after the section heading, matching the guide's recent Summary / Quick Review flow.
+  Left the existing `Quick Review` block as the closeout.
+- Source basis: read-only flow scout finding against the current checkout, existing Chapter 11 coursebook citation, and
+  local TeX structure/build validation.
+- Confidence: `High`
+- Status: `applied`

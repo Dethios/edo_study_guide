@@ -50,9 +50,11 @@ Current as of 2026-06-05.
   guide-change source-ledger follow-up added an applied-guide-change URL checker and backfilled the missing 10 U.S.C.
   162, ESD DoDD listing, and NAVSEA SUBMEPP TUM landing-page source rows. June 5 study-memory semantic-validation
   follow-up tightened JSONL enum, `source_basis`, future portable-provenance, and question-bank `source_section` checks.
-  June 5 cited-source ledger follow-up backfilled high-value official source rows for OMB A-11, DoDI 5000.89,
-  SECNAVINST 5000.2G, Acquisition.gov threshold changes, and DIU Work With Us / CSO pathway material, then added a
-  report-only cited-BibTeX source-ledger audit helper.
+  June 5 cited-source ledger follow-up backfilled high-value official source rows for OMB A-11, DoDI 5000.89, SECNAVINST
+  5000.2G, Acquisition.gov threshold changes, and DIU Work With Us / CSO pathway material, then added a report-only
+  cited-BibTeX source-ledger audit helper. June 5 follow-on exact-URL work backfilled direct Comptroller FMR and
+  Treasury G-Invoicing source rows and moved the Chapter 11 Contracting Fundamentals Summary block to the first-screen
+  position.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -111,6 +113,10 @@ Recent applied updates:
   Acquisition.gov threshold changes, and DIU Work With Us / CSO pathway material; `make audit-cited-bib-sources` now
   reports exact-match cited `http(s)` BibTeX URL gaps, but it is not a failing guard while landing-page and consolidated
   source-ledger rows remain under review.
+- FMR / Treasury exact-source backfill: source inventory now includes exact Comptroller FMR home, Volume 3 Chapter 19,
+  Volume 11A Chapters 2-3, Volume 11B Chapters 1-3/11-12, and Fiscal Service G-Invoice URLs cited by the guide.
+- Contracting Fundamentals flow cleanup: Chapter 11 now opens with its Summary block immediately after the section title
+  and keeps Quick Review as the closeout.
 - Standalone chapter flow cleanup for CIVPERS, NAVWAR FRD, Milestones, and AWP/SOVT.
 - Consistency/source-integrity cleanup for SOVT expansion, DASD(T\&E), and stale audit paths.
 - CIVPERS source-fidelity cleanup for Chapter 43/75, DPMAP, WGI/QSI, FLSA, and standalone chapter titles.
