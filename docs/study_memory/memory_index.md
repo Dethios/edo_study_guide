@@ -66,7 +66,10 @@ Current as of 2026-06-05.
   Goldwater-Nichols, 10 U.S.C. 113, 10 U.S.C. 8032, DAU MDAP changes, and the legacy JCIDS Manual source metadata, and
   backfilled their exact source-ledger rows. June 5 formatting follow-on removed duplicated Appendix-reference wording
   from the `\FlagBilletNote` call sites in the acquisition-governance and EVM chapters and removed a stale disabled
-  `appendix_community_rosters` include from the main appendix sequence.
+  `appendix_community_rosters` include from the main appendix sequence. June 5 currentness follow-on rechecked HASC,
+  SASC, HAC, and SAC subcommittee names plus RFO Part 6 / DFARS 206 and \$350K SAT fast-cue anchors against official
+  pages; no committee-name or fast-cue fact rewrite was required, but source dates and the Senate Appropriations
+  subcommittee URL were refreshed.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 

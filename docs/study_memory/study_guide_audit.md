@@ -1569,3 +1569,23 @@ The entries in this section preserve the original imported package state. Later 
   and `tex/chapters`.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Refreshed Committee and RFO Fast-Cue Currentness
+
+- ID: `gc-20260605-committee-rfo-fast-cue-currentness`
+- Location: `tex/chapters/8_Congressional_Enactment.tex`, `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`,
+  `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: rechecked the Chapter 8 HASC, SASC, HAC, and SAC subcommittee names against official committee
+  pages and advanced the committee-currentness stamps to 2026-06-05 without changing the listed names. Retargeted the
+  Senate Appropriations subcommittee BibTeX and source-ledger URL from a single agriculture subcommittee page to the
+  actual official Senate subcommittees list page. Rechecked the Chapter 29 fast-cue anchors for active RFO Part 6 /
+  DFARS 206 competition deviations and the \$350K simplified acquisition threshold; the existing fast-cue facts remain
+  supported, so only source access dates and source-ledger currentness were refreshed.
+- Source basis: official HASC subcommittee page; official SASC 119th Congress subcommittee-leadership release; official
+  HAC subcommittee page; official SAC subcommittees page and jurisdiction page; official Acquisition.gov FAR Part
+  Deviation Guidance tracker; official Acquisition.gov FAR Overhaul Part 6 page; official DoD RFO Part 6 / DFARS 206
+  class-deviation PDF; and official Acquisition.gov threshold-changes page.
+- Confidence: `High`
+- Status: `applied`
