@@ -278,6 +278,24 @@ The entries in this section preserve the original imported package state. Later 
 - Confidence: `High`
 - Status: `applied`
 
+### 2026-06-05 - Applied Ethics and Acquisition OIG Source Grounding
+
+- ID: `gc-20260605-ethics-acquisition-oig-source-grounding`
+- Location: `tex/chapters/27B_Ethics_and_Acquisition.tex`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: Chapter 27B's ethics/acquisition chapter already had official FAR support for procurement
+  integrity and OCI, but its senior-official-misconduct discussion was coursebook-only. Added official DoW OIG
+  Administrative Investigations, DoW OIG Administrative Investigations Manual, and latest DoW OIG Semiannual Report
+  support for the senior-official misconduct, reprisal, restriction, Hotline, Contractor Disclosure, and escalation cues
+  while preserving the coursebook decision-model and acquisition-stakeholder structure.
+- Source basis: current DoW OIG Administrative Investigations page; 2025-08-28 ODIG Administrative Investigations
+  Manual; DoW OIG Semiannual Report to the Congress for 2025-10-01 through 2026-03-31; existing SOCO/JER and FAR source
+  entries.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied Core Acquisition Source-Metadata Refresh
 
 - ID: `gc-20260605-core-acquisition-source-metadata`
