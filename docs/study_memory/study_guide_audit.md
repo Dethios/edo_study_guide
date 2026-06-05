@@ -2229,3 +2229,21 @@ The entries in this section preserve the original imported package state. Later 
   already in the source ledger, and local Career Topics source scan.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Ground Naval Justice Ethics Rules in Official Sources
+
+- ID: `gc-20260605-naval-justice-ethics-official-source-grounding`
+- Location: `tex/chapters/27A_Naval_Justice_and_Standards.tex`, `tex/edo.bib`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: added official OGE, DoD SOCO, JER, DoDD 1344.10, and eCFR source support to the 27A
+  standards-of-conduct, gifts, group gifts, fundraising, political-activity, and Quick Review bullets while preserving
+  coursebook traceability. Replaced the overbroad statement that 5 C.F.R. Part 2635 and the JER are "punitive" with
+  "enforceable standards" to avoid overstating the regulatory characterization.
+- Source basis: OGE Standards of Ethical Conduct 508-compliant summary dated 2024-08-15, OGE modernization update
+  showing the August 15, 2024 Part 2635 update in effect, DoD SOCO Ethics Laws and Regulations page listing the JER
+  effective 2024-05-15, DoD SOCO departure-gift guidance, DoD SOCO July 2025 Gifts Deskbook, eCFR 5 C.F.R. 2635.808,
+  DoDD 1344.10, DoD SOCO August 2025 Political Activities Deskbook, and local active-TeX source scan.
+- Confidence: `High`
+- Status: `applied`

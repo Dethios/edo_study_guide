@@ -103,7 +103,8 @@ Current as of 2026-06-05.
   reference macros and structure guard to Appendix, Section, and plural Figures references. June 5 leadership-source
   follow-on added official CNO34 source support to the Leading People Day One Message and Charge of Command bullets.
   June 5 GRGB source-fidelity follow-on added official MyNavyHR GRGB/NLDF source support to the Leading People GRGB
-  bullets.
+  bullets. June 5 naval-justice ethics follow-on added official OGE, DoD SOCO, JER, eCFR, and DoDD 1344.10 source
+  support to the 27A standards-of-conduct, gifts, fundraising, and political-activity board cues.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -314,6 +315,8 @@ Recent applied updates:
   Chapter 27M's warrior mindset cycle, core attributes, and performance psychology skills.
 - Career Topics board-process source grounding: aligned Chapter 27K's selection-board summary and Quick Review wording
   with official MyNavyHR selection-board output/routing language while preserving coursebook internal-mechanics recall.
+- Naval Justice ethics source grounding: added official OGE, DoD SOCO, JER, eCFR, and DoDD 1344.10 source support to
+  Chapter 27A's standards-of-conduct, gifts, group gifts, fundraising, and political-activity bullets.
 
 ## Next Review Plan
 
