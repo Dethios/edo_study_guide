@@ -66,6 +66,27 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied Summary / Quick Review Placement Guard
+
+- ID: `gc-20260605-summary-quick-review-placement-guard`
+- Location: `tex/chapters/18A_Ship_Trials.tex`,
+  `tex/chapters/23_Waterfront_Organization_Work_Control_Safety.tex`,
+  `tex/chapters/24_Battle_Damage_Assessment_Repair.tex`,
+  `tex/chapters/25_CNO_Availability_Planning.tex`,
+  `tex/chapters/appendix_cno34_day_one_message.tex`, `scripts/check-tex-structure.sh`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: moved existing coursebook cue, table, and preserved message-text sections ahead of each chapter's
+  `Quick Review` closeout so the guide-wide flow now has `Summary` as the first subsection and `Quick Review` as the
+  final subsection before the standalone glossary in every TeX chapter subfile. Expanded `check-tex-structure.sh` to
+  enforce exactly one `Summary`, exactly one `Quick Review`, `Summary` as the first subsection, and `Quick Review` as
+  the final subsection before the glossary.
+- Source basis: local TeX chapter-flow placement scan across `tex/chapters/*.tex`, and successful
+  `make check-tex-structure` validation with the new placement guard.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied TeX Cross-Reference Structure Guard
 
 - ID: `gc-20260605-tex-cross-reference-structure-guard`

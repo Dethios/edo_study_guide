@@ -29,6 +29,7 @@ duplicate_labels="$tmp_dir/duplicate-labels.txt"
 ref_records="$tmp_dir/ref-records.txt"
 ref_keys="$tmp_dir/ref-keys.txt"
 missing_refs="$tmp_dir/missing-refs.txt"
+subsection_flow="$tmp_dir/subsection-flow.txt"
 
 sed -n -E 's/^[[:space:]]*\\(ChapterWithRefsAtStart|StudySubfile)\{([^}]+)\}.*/\2.tex/p' "$main_file" \
   | sort -u > "$included"
@@ -138,14 +139,50 @@ for file in "$chapters_dir"/*.tex; do
     echo "Acronym-using chapter missing standalone acronym glossary: $file" >&2
   fi
 
-  if ! grep -Eq '^[[:space:]]*\\subsection\*?\{Summary\}' "$file"; then
+  if awk '
+    /\\printnoidxglossary/ { exit }
+    /^[[:space:]]*\\subsection\*?\{[^{}]+\}/ {
+      heading = $0
+      sub(/^[[:space:]]*\\subsection\*?\{/, "", heading)
+      sub(/\}.*/, "", heading)
+      count++
+      if (count == 1) {
+        first = heading
+        first_line = FNR
+      }
+      last = heading
+      last_line = FNR
+      if (heading == "Summary") {
+        summary_count++
+      }
+      if (heading == "Quick Review") {
+        quick_review_count++
+      }
+    }
+    END {
+      bad = 0
+      if (summary_count != 1) {
+        printf("Summary subsection count is %d\n", summary_count + 0)
+        bad = 1
+      }
+      if (quick_review_count != 1) {
+        printf("Quick Review subsection count is %d\n", quick_review_count + 0)
+        bad = 1
+      }
+      if (count > 0 && first != "Summary") {
+        printf("First subsection is %s at line %d\n", first, first_line)
+        bad = 1
+      }
+      if (count > 0 && last != "Quick Review") {
+        printf("Last subsection before standalone glossary is %s at line %d\n", last, last_line)
+        bad = 1
+      }
+      exit bad ? 0 : 1
+    }
+  ' "$file" > "$subsection_flow"; then
     status=1
-    echo "Chapter missing Summary subsection: $file" >&2
-  fi
-
-  if ! grep -Eq '^[[:space:]]*\\subsection\*?\{Quick Review\}' "$file"; then
-    status=1
-    echo "Chapter missing Quick Review subsection: $file" >&2
+    echo "Chapter Summary / Quick Review flow issue: $file" >&2
+    sed 's/^/  - /' "$subsection_flow" >&2
   fi
 
   if awk '
