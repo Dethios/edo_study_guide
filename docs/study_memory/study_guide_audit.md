@@ -1202,3 +1202,23 @@ The entries in this section preserve the original imported package state. Later 
   cover showing `DOD DIRECTIVE 5205.12`, effective 2024-11-27, reissuing and cancelling the 2008-as-amended directive.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Applied NIP/MIP Budget-Release Source Metadata Alignment
+
+- ID: `gc-20260605-nip-mip-budget-source-currentness`
+- Location: `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: aligned the NIP/MIP budget-release bibliography metadata and source ledger with current official
+  direct pages. The ODNI FY2025 NIP compatibility key now points to the direct appropriated-budget release, and a new
+  FY2025 NIP request key captures the distinct ODNI budget-request release. The FY2025 MIP budget release now uses the
+  current War.gov direct article URL; the FY2024 MIP release now uses the official War.gov-hosted historical Department
+  of Defense release; and the FY2025 MIP request entry now uses the correct 2024-03-12 Department of Defense
+  budget-request release instead of the stale 2025 article/date. Added source-ledger rows for the FY2025 NIP request,
+  FY2025 NIP appropriated release, FY2025 MIP appropriated release, FY2024 MIP appropriated release, and FY2025 MIP
+  request.
+- Source basis: official ODNI FY2025 NIP request release; official ODNI FY2025 NIP appropriated release; official
+  War.gov FY2025 MIP budget release; official War.gov FY2024 MIP budget release; and official War.gov FY2025 MIP budget
+  request release, all checked on 2026-06-05.
+- Confidence: `High`
+- Status: `applied`

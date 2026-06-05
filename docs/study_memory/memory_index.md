@@ -34,7 +34,9 @@ Current as of 2026-06-05.
   construct mapping appendices. June 5 RMC source-access follow-up aligned the NAVSEAINST 5450.145A bibliography and
   source ledger to the official CNRMC Instructions copy-request path while preserving CNRMC About Us for current public
   RMC-location claims. June 5 MIP directive follow-up refreshed duplicate DoDD/DoWD 5205.12 bibliography keys to the
-  current DoDD 5205.12 effective-date metadata and added an intelligence-program source-ledger row.
+  current DoDD 5205.12 effective-date metadata and added an intelligence-program source-ledger row. June 5 NIP/MIP
+  budget-release follow-up aligned ODNI and War.gov direct budget-release metadata for FY2025 NIP request and
+  appropriation, FY2025 MIP, FY2024 MIP, and the FY2025 MIP budget request.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -79,6 +81,9 @@ Recent applied updates:
   in BibTeX/source memory, while live RMC-location claims remain grounded in the CNRMC About Us page.
 - MIP directive source-currentness alignment: duplicate legacy `DoDD5205-12` / `DoWD-5205-12` BibTeX keys now both carry
   current DoDD 5205.12 metadata, preserving compatibility while removing stale 2017/2020 revision notes.
+- NIP/MIP budget-release source-currentness alignment: ODNI FY2025 NIP request and appropriation, War.gov FY2025 MIP,
+  War.gov FY2024 MIP, and War.gov FY2025 MIP budget-request bibliography/source-ledger entries now use direct official
+  pages, corrected titles/dates, and 2026-06-05 access dates.
 - Strategy-baseline and flow cleanup for the 2025 NSS / 2026 NDS baseline, JCIDS/JFRP caveats, and AWP/SOVT structure.
 - Current-events official-source hardening for Columbia-class delays, amphibious block buy, and SIOP status.
 - Flow, study-memory, and PAE chart closeout, including the Q18 Net-Ready question-bank entry.
