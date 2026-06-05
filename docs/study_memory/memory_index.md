@@ -7,8 +7,9 @@ Current as of 2026-06-05.
 - Session: `2026-06-04-end-to-end-study-guide-audit`
 - Date: 2026-06-04
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
-- Current follow-up: 2026-06-05 Chapter 12A source-selection cleanup grounded best-value, LPTA, tradeoff, evaluation,
-  exchange, source-selection-decision, award, and debriefing cues in current official FAR/DFARS section sources.
+- Current follow-up: 2026-06-05 Chapter 13C cost/price-evaluation cleanup grounded proposal analysis, field pricing,
+  prenegotiation objectives, FPRAs, cost allowability, direct/indirect cost, selected-cost, and unallowable-cost cues in
+  exact official FAR section sources.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,
@@ -329,6 +330,9 @@ Recent applied updates:
 - Source Selection source grounding: added official FAR 1.602, FAR 15.101/15.101-1/15.101-2, FAR 15.303 through
   15.308, FAR 15.506, DFARS 215.506/215.506-70, and DoD Source Selection Procedures support to Chapter 12A's
   source-selection-plan, best-value, LPTA, tradeoff, evaluation, exchange, award, and debriefing cues.
+- Cost and Price Evaluation source grounding: replaced broad FAR citations in Chapter 13C with exact FAR 15.404-1,
+  FAR 15.404-2, FAR 15.406-1, FAR 15.406-3, FAR 15.407-3, FAR 31.201-2/31.201-3/31.201-4, FAR 31.202, FAR 31.203,
+  FAR 31.205, and unallowable-cost example section support.
 
 ## Next Review Plan
 

@@ -66,6 +66,21 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Grounded Cost and Price Evaluation in Exact FAR Sections
+
+- ID: `gc-20260605-cost-price-eval-far-source-grounding`
+- Location: `tex/chapters/13C_cost-price-eval.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: replaced broad `FAR` citations in Chapter 13C with exact official FAR section citekeys for
+  proposal analysis, field pricing assistance, prenegotiation objectives, price negotiation documentation, forward
+  pricing rate agreements, cost allowability, direct costs, indirect costs, selected costs, and unallowable examples.
+- Source basis: Acquisition.gov FAR 15.404-1, 15.404-2, 15.406-1, 15.406-3, 15.407-3, 31.201-2, 31.201-3, 31.201-4,
+  31.202, 31.203, 31.205, 31.205-3, 31.205-8, 31.205-14, and 31.205-51 checked on 2026-06-05.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Grounded Source Selection in Official FAR / DFARS Cues
 
 - ID: `gc-20260605-source-selection-official-source-grounding`
