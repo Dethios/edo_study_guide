@@ -340,6 +340,9 @@ Recent applied updates:
 - Solicitation contract-type source grounding: added exact FAR Part 16 source support to Chapter 12 for contract-type
   selection, fixed-price, cost-reimbursement, incentive, IDIQ, T&M, labor-hour, and letter-contract cues while
   preserving coursebook traceability for classroom examples.
+- Contracting broad-citation cleanup: replaced remaining broad `FAR`/`DFARS` citations in Chapters 11, 12, and 12A with
+  exact FAR 5.101, FAR Part 15, FAR 15.303, FAR 33.101, FAR 33.102, FAR 33.104, and DFARS 233.104 citation keys; updated
+  the source ledger for solicitation publicizing thresholds and protest venue/stay timing.
 
 ## Next Review Plan
 

@@ -2382,3 +2382,20 @@ The entries in this section preserve the original imported package state. Later 
   2026-06-05; local Chapter 12 source scan.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Replace Remaining Broad Contracting FAR/DFARS Citations
+
+- ID: `gc-20260605-contracting-broad-far-dfars-citation-cleanup`
+- Location: `tex/chapters/11_Contracting_Fundamentals.tex`, `tex/chapters/12_Solicitation.tex`,
+  `tex/chapters/12A_Source_Selection.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: replaced the remaining broad `FAR`/`DFARS` contracting citations with exact official-source keys:
+  FAR 15.303 for SSA/KO source-selection roles, FAR 5.101 for SAM.gov/GPE publicizing thresholds, FAR Part 15 for the
+  CSO contrast to negotiated-acquisition proposal procedures, FAR 33.101 and 33.102 for protest definition and venues,
+  and FAR 33.104 plus DFARS 233.104 for post-award GAO protest stay timing and DoD enhanced-debriefing stay-clock cues.
+- Source basis: official Acquisition.gov FAR 5.101, FAR Part 15, FAR 15.303, FAR 33.101, FAR 33.102, FAR 33.104, and
+  DFARS 233.104 pages checked on 2026-06-05; local broad-citation scan of Chapters 11, 12, and 12A.
+- Confidence: `High`
+- Status: `applied`
