@@ -119,16 +119,16 @@ Current as of 2026-06-05, Mr.\ William F.\ Mahan is performing the duties of \ac
   \resizebox{\linewidth}{!}{%
   \begin{tikzpicture}
     [
-    node distance=1.08cm and 1.55cm,
+    node distance=1.12cm and 1.75cm,
     top node/.style={rectangle, draw, fill=Vapor, fill opacity=1, text opacity=1, text width=10em, align=center, minimum height=3.5em},
     asn node/.style={rectangle, draw, fill=Gold!40, fill opacity=1, text opacity=1, text width=14em, align=center, minimum height=4.2em},
     deputy node/.style={rectangle, draw, fill=Green!25, fill opacity=1, text opacity=1, text width=11em, align=center, minimum height=3.6em},
     pae node/.style={rectangle, draw, fill=Blue!18, fill opacity=1, text opacity=1, text width=10.5em, align=center, minimum height=3.2em},
     pae group/.style={rectangle, draw=SteelGray, densely dashed, rounded corners, inner sep=0.86cm},
     support node/.style={rectangle, draw, dashed, fill=SteelGray!10, fill opacity=1, text opacity=1, text width=16em, align=center, minimum height=4.0em},
-    line/.style={draw, -{Stealth[length=2mm]}, shorten >=4pt, shorten <=2pt, rounded corners=2pt},
+    line/.style={draw, -{Stealth[length=2mm]}, shorten >=2pt, shorten <=2pt, rounded corners=2pt},
     bus line/.style={draw, rounded corners=2pt},
-    support line/.style={draw, dashed, -{Stealth[length=2mm]}, shorten >=4pt, shorten <=2pt, rounded corners=2pt}
+    support line/.style={draw, dashed, -{Stealth[length=2mm]}, shorten >=2pt, shorten <=2pt, rounded corners=2pt}
     ]
 
     \node[top node] (secnav) {\ac{secnav}};
@@ -139,7 +139,7 @@ Current as of 2026-06-05, Mr.\ William F.\ Mahan is performing the duties of \ac
     \node[deputy node, below=1.0cm of asn, xshift=-3.25cm] (pcd) {Principal Civilian Deputy\\ \textbf{Jason L.\ Potter}};
     \node[deputy node, below=1.0cm of asn, xshift=3.25cm] (pmd) {\ac{pmildep}\\ \textbf{\ac{vadm} Seiko Okano}};
 
-    \node[pae node, below=4.95cm of asn] (missions) {PAE Mission Systems};
+    \node[pae node, below=5.25cm of asn] (missions) {PAE Mission Systems};
     \node[pae node, left=of missions] (aviation) {PAE Aviation};
     \node[pae node, right=of missions] (munitions) {PAE Munitions};
 
@@ -158,17 +158,17 @@ Current as of 2026-06-05, Mr.\ William F.\ Mahan is performing the duties of \ac
     \coordinate (asnCnoIn) at ($(asn.north west)!0.45!(asn.north)$);
     \coordinate (asnCmcIn) at ($(asn.north east)!0.45!(asn.north)$);
     % Keep connector lanes outside node interiors; branch arrows terminate at node-border anchors.
-    \coordinate (deputyBusY) at ($(asn.south)+(0,-0.48cm)$);
+    \coordinate (deputyBusY) at ($(asn.south)+(0,-0.55cm)$);
     \coordinate (deputyStem) at (asn.south |- deputyBusY);
     \coordinate (pcdBranch) at (pcd.north |- deputyBusY);
     \coordinate (pmdBranch) at (pmd.north |- deputyBusY);
-    \coordinate (paeBusY) at ($(missions.north)+(0,1.70cm)$);
+    \coordinate (paeBusY) at ($(missions.north)+(0,0.62cm)$);
     \coordinate (paeBranchLeft) at (aviation.north |- paeBusY);
     \coordinate (paeBranchCenter) at (missions.north |- paeBusY);
     \coordinate (paeBranchRight) at (munitions.north |- paeBusY);
-    \coordinate (supportTrunkTop) at ($(aviation.west)+(-1.55cm,0)$);
-    \coordinate (supportTrunkMid) at ($(industrial.west)+(-1.55cm,0)$);
-    \coordinate (supportTrunkBottom) at ($(ssp.west)+(-1.55cm,0)$);
+    \coordinate (supportTrunkTop) at ($(aviation.west)+(-1.75cm,0)$);
+    \coordinate (supportTrunkMid) at ($(industrial.west)+(-1.75cm,0)$);
+    \coordinate (supportTrunkBottom) at ($(ssp.west)+(-1.75cm,0)$);
     \coordinate (supportOut) at ($(syscoms.east)+(0.32cm,0)$);
     \coordinate (supportMidEntry) at (supportOut |- supportTrunkMid);
     \coordinate (supportJoin) at (supportTrunkMid);
