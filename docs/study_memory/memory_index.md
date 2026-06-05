@@ -7,8 +7,8 @@ Current as of 2026-06-05.
 - Session: `2026-06-04-end-to-end-study-guide-audit`
 - Date: 2026-06-04
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
-- Current follow-up: 2026-06-05 question-bank source-metadata cleanup synchronized active drill-question sources with
-  `sources.md` and expanded `make check-study-memory` to fail future question-bank source drift.
+- Current follow-up: 2026-06-05 Chapter 13B contract-administration cleanup grounded DCMA, DCAA, DFAS, payment,
+  modification, and termination cues in current official FAR and agency sources.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,
@@ -323,6 +323,9 @@ Recent applied updates:
   with official MyNavyHR selection-board output/routing language while preserving coursebook internal-mechanics recall.
 - Naval Justice ethics source grounding: added official OGE, DoD SOCO, JER, eCFR, and DoDD 1344.10 source support to
   Chapter 27A's standards-of-conduct, gifts, group gifts, fundraising, and political-activity bullets.
+- Contract Administration source grounding: added official DCMA, DCAA, DFAS, and FAR support to Chapter 13B for
+  administration roles, payment due dates, bilateral versus unilateral modifications, cure/show-cause notices, and
+  commercial versus noncommercial termination language.
 
 ## Next Review Plan
 

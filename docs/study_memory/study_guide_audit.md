@@ -2297,3 +2297,21 @@ The entries in this section preserve the original imported package state. Later 
   Version 2; existing 10 U.S.C. 139a CAPE source entry; local active-TeX and source-ledger scan.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Ground Contract Administration in FAR and Agency Sources
+
+- ID: `gc-20260605-contract-admin-official-source-grounding`
+- Location: `tex/chapters/13B_Contract_Administration.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: Chapter 13B's summary, organization table, payment/cash-flow cue, contract-change distinction,
+  and termination-notice cue still relied heavily on coursebook-only citations even though official FAR, DCMA, DCAA, and
+  DFAS sources directly support the board answer. Added targeted official citations for DCMA/DCAA/DFAS roles, FAR 32.904
+  payment due dates, FAR 42.302 contract-administration functions, FAR 43.103 bilateral/unilateral modifications, FAR
+  49.402-3 and 49.607 default procedure and cure/show-cause notices, and FAR 52.212-4 commercial termination context.
+- Source basis: Acquisition.gov FAR pages for 32.904, 42.302, 43.103, 49.402-3, 49.607, and 52.212-4 checked on
+  2026-06-05; official DCMA About page; official DCAA About DCAA page; official DFAS Doing Business with DFAS page;
+  local active-TeX and source-ledger scan.
+- Confidence: `High`
+- Status: `applied`
