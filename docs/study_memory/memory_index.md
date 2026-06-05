@@ -9,42 +9,44 @@ Current as of 2026-06-05.
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
-  JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization
-  currentness, NAVSEA non-EDO leader/source-ledger cleanup, standalone chapter flow, appendix standalone
-  titles/glossaries, structure-guard coverage, PAE chart connector routing and clearance follow-up,
-  SE technical-review baseline cleanup, EDO flag/billet source hygiene, CIVPERS source-fidelity cleanup,
-  small-business size-standard and SBIR/STTR cue cleanup, cybersecurity/RMF currentness cleanup,
-  system-level technical-review detail cleanup, warfare-center official-source board synthesis,
-  PPBE/funding-policy source grounding and consistency cleanup, installation-flow source/format follow-up,
-  OPNAV resource-sponsor map cleanup, NAVWAR/PEO C4I official-source hygiene refresh and source-fidelity follow-up,
-  congressional committee currentness cleanup, EVM/APB/PMB source-hygiene cleanup, and study-memory/source-ledger state.
-  June 5 finance follow-up added FY26 budget-overview scale wording and official FMR 11A/11B support for Chapter 7
-  NWCF, Economy Act work request, and project-order board cues. June 5 CPI follow-up normalized Chapter 17N standalone
-  structure and added Summary / Quick Review board-speed blocks. June 5 finance/cost/EVM/T&E follow-up standardized
-  Summary / Quick Review flow across Chapters 6, 9, 10, 14, and 18B. June 5 organization/currentness follow-up
-  standardized Summary / Quick Review flow across Chapters 1, 3, 4, 5, 8, and 29 and replaced NAVSEA exact-count
-  coursebook-only bullets with an official-source snapshot caution. June 5 contracting/acquisition-flow follow-up added
-  board-speed Quick Review blocks to Chapters 2, 11, 12, 12A, 13A, 13B, 13C, 15, and 27, and added a first-screen
-  Summary to Chapter 28. June 5 appendix follow-up standardized remaining appendix Summary / Quick Review flow, added
-  official combatant-command source support, refreshed active repo guidance, and fixed Figure 1.4 connector routing so
-  the rendered PAE chart uses node-border anchors instead of lines through boxes. June 5 milestone/source-hygiene
-  follow-up tightened Milestone C phase-entry wording, aligned O&S PESHE/ESOH framing, added a direct DAU Performance
-  Attributes bibliography source, and refreshed NAVWAR question-bank PMW 790 and PMW/A 170 source styling. June 5
-  appendix-summary follow-up found the last two Summary-heading outliers and normalized the CNO 34 message and PAE
-  construct mapping appendices. June 5 RMC source-access follow-up aligned the NAVSEAINST 5450.145A bibliography and
-  source ledger to the official CNRMC Instructions copy-request path while preserving CNRMC About Us for current public
-  RMC-location claims. June 5 MIP directive follow-up refreshed duplicate DoDD/DoWD 5205.12 bibliography keys to the
-  current DoDD 5205.12 effective-date metadata and added an intelligence-program source-ledger row. June 5 NIP/MIP
-  budget-release follow-up aligned ODNI and War.gov direct budget-release metadata for FY2025 NIP request and
-  appropriation, FY2025 MIP, FY2024 MIP, and the FY2025 MIP budget request. June 5 NAVSEA manual access follow-up
-  replaced generic NAVSEA Instructions URLs with public TUM/6010/8010/SUPSALV PDFs where available and controlled-access
-  caveats where not. June 5 SIOP current-status follow-up refreshed CRS product dates, moved the SIOP source basis to
-  NAVFAC's current PEO Infrastructure and Expeditionary / PMO 555 page, and added the 7 May 2026 SIOP progress story to
-  the current-events appendix and source ledger. June 5 source-integrity follow-up added a current-events source-ledger
-  checker and wired it into `make check-study-memory`. June 5 Markdown formatting follow-up mechanically wrapped
-  pre-existing long lines and aligned tables in the remaining failing Markdown files so `make check-markdown` passes.
-  June 5 PAE source-ledger follow-up refreshed official PAE access dates, expanded the ASN(RD&A)/PAE source inventory,
-  updated PAE-specific currentness stamps, and removed stale unused PAE/NAVSEA BibTeX keys.
+  JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,
+  NAVSEA non-EDO leader/source-ledger cleanup, standalone chapter flow, appendix standalone titles/glossaries,
+  structure-guard coverage, PAE chart connector routing and clearance follow-up, SE technical-review baseline cleanup,
+  EDO flag/billet source hygiene, CIVPERS source-fidelity cleanup, small-business size-standard and SBIR/STTR cue
+  cleanup, cybersecurity/RMF currentness cleanup, system-level technical-review detail cleanup, warfare-center
+  official-source board synthesis, PPBE/funding-policy source grounding and consistency cleanup, installation-flow
+  source/format follow-up, OPNAV resource-sponsor map cleanup, NAVWAR/PEO C4I official-source hygiene refresh and
+  source-fidelity follow-up, congressional committee currentness cleanup, EVM/APB/PMB source-hygiene cleanup, and
+  study-memory/source-ledger state. June 5 finance follow-up added FY26 budget-overview scale wording and official FMR
+  11A/11B support for Chapter 7 NWCF, Economy Act work request, and project-order board cues. June 5 CPI follow-up
+  normalized Chapter 17N standalone structure and added Summary / Quick Review board-speed blocks. June 5
+  finance/cost/EVM/T&E follow-up standardized Summary / Quick Review flow across Chapters 6, 9, 10, 14, and 18B. June 5
+  organization/currentness follow-up standardized Summary / Quick Review flow across Chapters 1, 3, 4, 5, 8, and 29 and
+  replaced NAVSEA exact-count coursebook-only bullets with an official-source snapshot caution. June 5
+  contracting/acquisition-flow follow-up added board-speed Quick Review blocks to Chapters 2, 11, 12, 12A, 13A, 13B,
+  13C, 15, and 27, and added a first-screen Summary to Chapter 28. June 5 appendix follow-up standardized remaining
+  appendix Summary / Quick Review flow, added official combatant-command source support, refreshed active repo guidance,
+  and fixed Figure 1.4 connector routing so the rendered PAE chart uses node-border anchors instead of lines through
+  boxes. June 5 milestone/source-hygiene follow-up tightened Milestone C phase-entry wording, aligned O&S PESHE/ESOH
+  framing, added a direct DAU Performance Attributes bibliography source, and refreshed NAVWAR question-bank PMW 790 and
+  PMW/A 170 source styling. June 5 appendix-summary follow-up found the last two Summary-heading outliers and normalized
+  the CNO 34 message and PAE construct mapping appendices. June 5 RMC source-access follow-up aligned the NAVSEAINST
+  5450.145A bibliography and source ledger to the official CNRMC Instructions copy-request path while preserving CNRMC
+  About Us for current public RMC-location claims. June 5 MIP directive follow-up refreshed duplicate DoDD/DoWD 5205.12
+  bibliography keys to the current DoDD 5205.12 effective-date metadata and added an intelligence-program source-ledger
+  row. June 5 NIP/MIP budget-release follow-up aligned ODNI and War.gov direct budget-release metadata for FY2025 NIP
+  request and appropriation, FY2025 MIP, FY2024 MIP, and the FY2025 MIP budget request. June 5 NAVSEA manual access
+  follow-up replaced generic NAVSEA Instructions URLs with public TUM/6010/8010/SUPSALV PDFs where available and
+  controlled-access caveats where not. June 5 SIOP current-status follow-up refreshed CRS product dates, moved the SIOP
+  source basis to NAVFAC's current PEO Infrastructure and Expeditionary / PMO 555 page, and added the 7 May 2026 SIOP
+  progress story to the current-events appendix and source ledger. June 5 source-integrity follow-up added a
+  current-events source-ledger checker and wired it into `make check-study-memory`. June 5 Markdown formatting follow-up
+  mechanically wrapped pre-existing long lines and aligned tables in the remaining failing Markdown files so
+  `make check-markdown` passes. June 5 PAE source-ledger follow-up refreshed official PAE access dates, expanded the
+  ASN(RD&A)/PAE source inventory, updated PAE-specific currentness stamps, and removed stale unused PAE/NAVSEA BibTeX
+  keys. June 5 current-organization leader-cue follow-up refreshed the MyNavyHR June roster access date, moved Chapter
+  1's NAVSEA non-EDO leader cue to the February 2026 command-leadership chart, preserved the December 2025 chart as the
+  rendered Chapter 3 figure source, and rechecked the PEO MLB Christine Rodriguez / Mary Thoms conflict.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -94,6 +96,8 @@ Recent applied updates:
   pages, corrected titles/dates, and 2026-06-05 access dates.
 - Strategy-baseline and flow cleanup for the 2025 NSS / 2026 NDS baseline, JCIDS/JFRP caveats, and AWP/SOVT structure.
 - Current-events official-source hardening for Columbia-class delays, amphibious block buy, and SIOP status.
+- Current organization source refresh for the MyNavyHR June roster, February 2026 NAVSEA command-leadership chart, and
+  PEO MLB front-page versus leadership-page conflict.
 - Flow, study-memory, and PAE chart closeout, including the Q18 Net-Ready question-bank entry.
 - ASN(RD\&A)/PAE Figure 1.4 connector-clearance follow-up: rerouted deputy, PAE bus, and SYSCOM support connectors into
   whitespace lanes and verified the rendered page so no connector line crosses a node interior or label.

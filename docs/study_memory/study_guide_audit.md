@@ -1324,3 +1324,23 @@ The entries in this section preserve the original imported package state. Later 
   Speed/SharePoint controlled access, all checked on 2026-06-05.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Applied Current Organization Leader-Cue Source Refresh
+
+- ID: `gc-20260605-current-org-leader-cue-source-refresh`
+- Location: `tex/edo.bib`, `tex/chapters/1_Chain_of_command.tex`, `tex/chapters/appendix_edo_flags.tex`,
+  `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: refreshed the current-organization leader-cue source basis after a live official-source check. The
+  EDO flag appendix now records a 2026-06-05 roster-link check while preserving the June 2026 roster as the grade
+  authority. Chapter 1 now cites the February 2026 NAVSEA command-leadership chart for current non-EDO leader awareness
+  instead of using the older December 2025 chart citation. The December 2025 NAVSEA chart remains explicitly tied to the
+  rendered Chapter 3 figure asset until the binary figure is replaced. PEO MLB front-page and leadership-page access
+  dates now reflect the 2026-06-05 recheck of the Christine Rodriguez / Mary Thoms conflict.
+- Source basis: official MyNavyHR Flag Management page linking the June 2026 Public Roster PDF and Excel roster;
+  official June 2026 MyNavyHR public flag roster PDF; official February 2026 NAVSEA Command Leadership chart; official
+  PEO MLB front page and PEO MLB Leadership page; official PAE Maritime homepage; official SSP Leadership page; and
+  official Navy Williams promotion announcement, all checked or rechecked on 2026-06-05.
+- Confidence: `High`
+- Status: `applied`
