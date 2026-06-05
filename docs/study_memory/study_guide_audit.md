@@ -66,6 +66,22 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied CNO34 Current C-Notes Overlay
+
+- ID: `gc-20260605-cno34-current-cnotes-overlay`
+- Location: `tex/chapters/appendix_cno34_day_one_message.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: official-source audit found that the CNO34 appendix preserved the initial C-Notes and Charge of
+  Command texts but did not flag later official CNO products. Added a sourced current-series overlay noting that the
+  official CNO page now lists C-Notes #4 through #8 and U.S. Navy Fighting Instructions. Added bibliography and
+  source-ledger entries for the CNO landing page, each later C-Note display page, and Fighting Instructions.
+- Source basis: official Navy Chief of Naval Operations page; official Navy C-Notes display pages for C-Note #4, C-Note
+  #5, C-Note #6, CNOte #7, CNOte #8, and U.S. Navy Fighting Instructions.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied CNO34 C-Notes Citation URL Backfill
 
 - ID: `gc-20260605-cno34-cnotes-url-backfill`

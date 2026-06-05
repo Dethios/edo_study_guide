@@ -30,7 +30,8 @@ Current as of 2026-06-05.
   boxes. June 5 strategy-cue follow-up aligned current-events and acquisition-policy bullets so NAVPLAN 2024 is the
   current CNO NAVPLAN cue, CNO34 Foundry--Fleet--Fight is the current Navy-leadership cue, and NAVPLAN 2022 / Force
   Design 2045 remain legacy context. June 5 CNO34 source-integrity follow-up added official Navy C-Notes display URLs
-  and exact source-ledger rows for C-Note #1, C-Note #2, C-Note #3, and Charge of Command. June 5
+  and exact source-ledger rows for C-Note #1, C-Note #2, C-Note #3, and Charge of Command. June 5 CNO34
+  current-series follow-up added a sourced overlay for C-Notes #4--#8 and U.S. Navy Fighting Instructions. June 5
   milestone/source-hygiene follow-up tightened Milestone C phase-entry wording, aligned O&S PESHE/ESOH framing, added a
   direct DAU Performance Attributes bibliography source, and refreshed NAVWAR question-bank PMW 790 and PMW/A 170 source
   styling. June 5 appendix-summary follow-up found the last two
