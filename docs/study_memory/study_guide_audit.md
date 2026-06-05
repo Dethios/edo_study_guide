@@ -66,6 +66,21 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Applied Historical Acquisition Statute Name Cleanup
+
+- ID: `gc-20260605-historical-acquisition-statute-name-cleanup`
+- Location: `tex/chapters/15_policy.tex`, `tex/edo.bib`, `docs/study_memory/sources.md`
+- Verdict: `Applied`
+- Correction applied: corrected Chapter 15's historical acquisition-law list so the 1985 procurement statute is
+  identified as the Defense Procurement Improvement Act of 1985, and Goldwater-Nichols is identified by its official
+  Goldwater-Nichols Department of Defense Reorganization Act of 1986 short title. Added exact BibTeX and source-ledger
+  support for the 1985 statute note. This prevents current DoW naming conventions from being back-applied to historical
+  statute short titles.
+- Source basis: official U.S. Code historical note for 10 U.S.C. 2302 and GovInfo Statutes at Large source for Public
+  Law 99-433.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Applied Contracting Summary Flow Cleanup
 
 - ID: `gc-20260605-contracting-summary-flow-cleanup`
