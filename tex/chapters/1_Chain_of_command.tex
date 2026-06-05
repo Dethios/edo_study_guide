@@ -124,11 +124,11 @@ Current as of 2026-06-05, Mr.\ William F.\ Mahan is performing the duties of \ac
     asn node/.style={rectangle, draw, fill=Gold!40, fill opacity=1, text opacity=1, text width=14em, align=center, minimum height=4.2em},
     deputy node/.style={rectangle, draw, fill=Green!25, fill opacity=1, text opacity=1, text width=11em, align=center, minimum height=3.6em},
     pae node/.style={rectangle, draw, fill=Blue!18, fill opacity=1, text opacity=1, text width=10.5em, align=center, minimum height=3.2em},
-    pae group/.style={rectangle, draw=SteelGray, densely dashed, rounded corners, inner sep=0.86cm},
+    pae group/.style={rectangle, draw=SteelGray, densely dashed, rounded corners, inner xsep=0.92cm, inner ysep=0.74cm},
     support node/.style={rectangle, draw, dashed, fill=SteelGray!10, fill opacity=1, text opacity=1, text width=16em, align=center, minimum height=4.0em},
     line/.style={draw, -{Stealth[length=2mm]}, shorten >=3pt, shorten <=3pt, rounded corners=2pt},
     bus line/.style={draw, shorten >=2pt, shorten <=2pt, rounded corners=2pt},
-    support line/.style={draw, dashed, -{Stealth[length=2mm]}, shorten >=4pt, shorten <=4pt, rounded corners=2pt}
+    support line/.style={draw, dashed, -{Stealth[length=2mm]}, shorten >=5pt, shorten <=4pt, rounded corners=2pt}
     ]
 
     \node[top node] (secnav) {\ac{secnav}};
@@ -171,15 +171,8 @@ Current as of 2026-06-05, Mr.\ William F.\ Mahan is performing the duties of \ac
       \node[pae group, fit=(aviation)(missions)(munitions)(industrial)(maritime)(undersea)(ssp)(ras)(marine)] (paeGroup) {};
     \end{scope}
 
-    \coordinate (supportRailX) at ($(paeGroup.west)+(-0.95cm,0)$);
-    \coordinate (supportTrunkTop) at (supportRailX |- aviation.west);
-    \coordinate (supportTrunkMid) at (supportRailX |- industrial.west);
-    \coordinate (supportTrunkBottom) at (supportRailX |- ssp.west);
-    \coordinate (supportOut) at ($(syscoms.east)+(0.38cm,0)$);
-    \coordinate (supportMidEntry) at (supportOut |- supportTrunkMid);
-    \coordinate (aviationSupportIn) at ($(aviation.west)+(-0.10cm,0)$);
-    \coordinate (industrialSupportIn) at ($(industrial.west)+(-0.10cm,0)$);
-    \coordinate (sspSupportIn) at ($(ssp.west)+(-0.10cm,0)$);
+    \coordinate (supportOut) at ($(syscoms.east)+(0.42cm,0)$);
+    \coordinate (supportGroupEntry) at ($(paeGroup.west)+(-0.08cm,0)$);
 
     \begin{scope}[on background layer]
       \draw[line] (secnav.south) -- (asn.north);
@@ -195,11 +188,7 @@ Current as of 2026-06-05, Mr.\ William F.\ Mahan is performing the duties of \ac
       \draw[line] (paeBranchCenter) -- (missions.north);
       \draw[line] (paeBranchRight) -- (munitions.north);
 
-      \draw[dashed, rounded corners=2pt] (syscoms.east) -- (supportOut) -- (supportMidEntry) -- (supportTrunkMid);
-      \draw[dashed, rounded corners=2pt] (supportTrunkTop) -- (supportTrunkBottom);
-      \draw[support line] (supportTrunkTop) -- (aviationSupportIn);
-      \draw[support line] (supportTrunkMid) -- (industrialSupportIn);
-      \draw[support line] (supportTrunkBottom) -- (sspSupportIn);
+      \draw[support line] (syscoms.east) -- (supportOut) |- (supportGroupEntry);
     \end{scope}
   \end{tikzpicture}}
   \caption[ASN (RD\&A) and PAE organization transition]{Board-level ASN (RD\&A) and PAE organization transition, updated from the user-provided PAE chart with public announcements through 2026-06-05~\autocite{DON-New-SAE-2026,DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026}.}

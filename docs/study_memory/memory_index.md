@@ -305,6 +305,9 @@ Recent applied updates:
   while improving source fit.
 - DON FY27 budget citation metadata: corrected the active BibTeX entry for the official Navy FY27 budget request
   transcript from an April placeholder date/access date to the source-ledger-supported 2026-06-05 transcript date.
+- ASN(RD&A) / PAE TikZ routing cleanup: collapsed Figure 1.4's SYSCOM support wiring from three individual dashed
+  arrows into one dashed connector to the PAE group edge, and increased the fitted PAE group clearance so support lines
+  do not run toward or through individual PAE boxes.
 
 ## Next Review Plan
 

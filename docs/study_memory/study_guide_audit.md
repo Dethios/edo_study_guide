@@ -2170,3 +2170,18 @@ The entries in this section preserve the original imported package state. Later 
   row checked on 2026-06-05, and local active-TeX source scan.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Route PAE Chart Support Line to Group Edge
+
+- ID: `gc-20260605-pae-chart-syscom-group-edge-routing`
+- Location: `tex/chapters/1_Chain_of_command.tex`, `artifacts/out/main.pdf`,
+  `docs/study_memory/study_guide_audit.md`, `docs/study_memory/memory_index.md`,
+  `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: collapsed the Figure 1.4 SYSCOM support wiring from three dashed arrows aimed at individual PAE
+  boxes into one dashed connector that terminates at the fitted PAE group edge. Increased the PAE group fit clearance so
+  support routing remains outside individual PAE node interiors and labels.
+- Source basis: user-reported rendered-PDF defect, local TikZ source inspection, rendered PDF page inspection, TeX
+  structure check, whitespace check, and Docker PDF rebuild.
+- Confidence: `High`
+- Status: `applied`
