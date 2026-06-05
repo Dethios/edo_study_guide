@@ -66,6 +66,22 @@ The entries in this section preserve the original imported package state. Later 
 
 ## Active Session Findings
 
+### 2026-06-05 - Normalize Inconsistent Figure Label Keys
+
+- ID: `gc-20260605-figure-label-style-normalization`
+- Location: `tex/chapters/18B_test-eval.tex`, `tex/chapters/7_NWCF.tex`,
+  `tex/chapters/appendix_plat_card.tex`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: The cross-reference label scout found three inconsistent figure label keys:
+  `fig:TE_MCA`, `fig:nwcfCycleOfOperations`, and `fig:plat_product_Improvements`. Renamed them to
+  `fig:te-mca`, `fig:nwcf-cycle-of-operations`, and `fig:plat-product-improvements`. Local search found no active
+  references to update, so this was a label-style cleanup only.
+- Source basis: read-only cross-reference scout, local `rg` search for old labels, TeX structure validation, and full
+  PDF rebuild.
+- Confidence: `High`
+- Status: `applied`
+
 ### 2026-06-05 - Ground Chapter 20 NMP/SCD Claims in Existing Official Sources
 
 - ID: `gc-20260605-nmp-scd-official-source-grounding`

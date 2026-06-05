@@ -7,8 +7,8 @@ Current as of 2026-06-05.
 - Session: `2026-06-04-end-to-end-study-guide-audit`
 - Date: 2026-06-04
 - Mode: editor-in-chief study-guide audit with structure, consistency, and official-source review.
-- Current follow-up: 2026-06-05 Chapter 20 Navy Modernization Program cleanup added existing official modernization
-  manual, JFMM, and SOVT/installation source anchors to core NMP/SCD governance and Quick Review claims.
+- Current follow-up: 2026-06-05 cross-reference label cleanup normalized three inconsistent figure label keys found by
+  the cross-reference scout.
 - Latest repository work: June 4 audit closeouts refreshed the ASN(RD\&A)/PAE chart, current-organization and
   fleet-maintenance source basis, NAVWAR/PEO C4I mappings, IWS 6.0 vs PMW 150 distinction, AWP/SOVT quick review,
   JFRP/LFT&E/NAVWAR source grounding, contracting/RFO and certified cost/pricing cues, T&E organization currentness,
@@ -73,6 +73,8 @@ Current as of 2026-06-05.
   June 5 NMP/SCD source-grounding follow-on added existing SL720-AA-MAN-030, JFMM Volume VI, and TS9090-310 anchors to
   Chapter 20's core Navy Modernization Program, Ship Change Document, NDE-EP, threshold, NDE-NM, and Quick Review claims
   without changing the board answer.
+  June 5 cross-reference label follow-on normalized three unused/inconsistent figure labels in Chapter 18B, Chapter 7,
+  and the Platinum Card appendix to lowercase, hyphenated keys.
   June 5 CIVPERS/labor follow-on updated the stale OPNAVINST 5354.1H EEO citation to current 5354.1J, corrected the FLRA
   Oklahoma City decision metadata, removed a weak National Guard handbook citation from GS step timing, and backfilled
   OPM, EEOC, and FLRA exact source-ledger rows. June 5 IPMDAR/JITC/TRA follow-on refreshed the IPMDAR DID access date,
