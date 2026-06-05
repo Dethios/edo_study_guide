@@ -1022,3 +1022,23 @@ The entries in this section preserve the original imported package state. Later 
   source/structure reviewer findings, all checked from official or primary web sources on 2026-06-05.
 - Confidence: `High`
 - Status: `applied`
+
+### 2026-06-05 - Applied Organization Chapter Flow and NAVSEA Snapshot Caution
+
+- ID: `gc-20260605-org-flow-navsea-snapshot-caution`
+- Location: `tex/chapters/1_Chain_of_command.tex`, `tex/chapters/3_NAVSEA.tex`,
+  `tex/chapters/4_NAVWAR.tex`, `tex/chapters/5_NAVAIR_and_PEOs.tex`,
+  `tex/chapters/8_Congressional_Enactment.tex`, `tex/chapters/29_Board_Assumptions_and_Fast_Cues.tex`,
+  `tex/edo.bib`, `docs/study_memory/sources.md`, `docs/study_memory/study_guide_audit.md`,
+  `docs/study_memory/memory_index.md`, `docs/study_memory/guide_changes.jsonl`
+- Verdict: `Applied`
+- Correction applied: standardized the remaining organization/currentness slice by adding first-screen Summary and
+  end-of-chapter Quick Review blocks to Chapters 1, 3, 4, 5, 8, and 29. Hardened the NAVSEA corporate-overview answer
+  by replacing coursebook-only live-count bullets with a board-safe currentness caution: official NAVSEA public pages
+  carry page-specific snapshots, so exact manpower, activity, budget-share, and program-count figures must be quoted
+  with the dated source used rather than memorized as a single live constant.
+- Source basis: official NAVSEA Directorates and NAVSEA Warfare Centers ``Who We Are'' pages checked through web search
+  on 2026-06-05; existing official/coursebook source anchors for DON command chains, PAE restructuring, NAVWAR/PEO C4I,
+  warfare-center synthesis, and congressional committee currentness.
+- Confidence: `High`
+- Status: `applied`

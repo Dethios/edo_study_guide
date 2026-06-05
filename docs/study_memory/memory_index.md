@@ -21,7 +21,9 @@ Current as of 2026-06-05.
   June 5 finance follow-up added FY26 budget-overview scale wording and official FMR 11A/11B support for Chapter 7
   NWCF, Economy Act work request, and project-order board cues. June 5 CPI follow-up normalized Chapter 17N standalone
   structure and added Summary / Quick Review board-speed blocks. June 5 finance/cost/EVM/T&E follow-up standardized
-  Summary / Quick Review flow across Chapters 6, 9, 10, 14, and 18B.
+  Summary / Quick Review flow across Chapters 6, 9, 10, 14, and 18B. June 5 organization/currentness follow-up
+  standardized Summary / Quick Review flow across Chapters 1, 3, 4, 5, 8, and 29 and replaced NAVSEA exact-count
+  coursebook-only bullets with an official-source snapshot caution.
 - Result: the guide is in an active audit state, not a completed end-to-end certification. Continue slice-by-slice
   source/currentness checks and keep study-memory records aligned after each applied correction.
 
@@ -84,6 +86,9 @@ Recent applied updates:
   working-capital-fund cues, and Chapter 17N Summary / Quick Review flow.
 - Finance, cost, EVM, and T&E structure standardization so Chapters 6, 9, 10, 14, and 18B each have a first-screen
   Summary and board-speed Quick Review closeout.
+- Organization/currentness flow standardization so Chapters 1, 3, 4, 5, 8, and 29 each have first-screen Summary and
+  board-speed Quick Review blocks; Chapter 3 now treats exact NAVSEA size figures as official-page-specific snapshots
+  rather than a single live constant.
 - NMP/AIT ship-change flow cleanup for the program-office to shipboard installation chain, missing walkthrough citations,
   and CDMD-OA/ILS/SID/FAT acronym support.
 - CIVPERS route-choice fast-cue cleanup for Chapter 43 vs Chapter 75, probationary/trial employees, WGI caveats, and
