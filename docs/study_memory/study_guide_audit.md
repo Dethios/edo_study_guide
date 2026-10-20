@@ -1,6 +1,6 @@
 # Study Guide Audit Log
 
-Current as of 2026-06-05.
+Last updated: 2026-10-20. Individual source checks retain their own dates.
 
 This file records readable correction and audit entries for study-guide claims,
 answer keys, outdated material, and doctrine-sensitive updates. Append the
@@ -2759,3 +2759,57 @@ Live policy pages and September organizational realignments were not independent
 The earlier text-only coursebook extraction missed the image-based flag roster. This update renders
 and reads both September slides, reconciles primary-source handoffs, and replaces the active roster
 instead of retaining the June snapshot as the main study answer. Exact October totals are not independently claimed.
+
+## 2026-10-20 Acquisition Policy Audit
+
+The dated [audit report](../reference/2026-10-acquisition-policy-audit.md) records original claims,
+status, corrections, primary sources, explanations, confidence, coverage, and access limitations for
+20 correction groups. Matching applied records are appended to `guide_changes.jsonl`; historical records
+are preserved. Two existing performance-attribute answers now retain the JFRP tailoring caveat.
+
+- **Incorrect / High - instruction versions:** Correct 5000.74 (2020/CH1 2021), .75 (2017/CH2 2020), .80 (CH1 Nov 2024),
+  .81 (original 2019), .87 (original 2020), .88 (Nov18 2020), .89 (Nov19 2020), and .66 (2017/CH3 2022).
+- **Incorrect / High - issuance identifiers:** Preserve published DoDI/DoDD/DoDM identifiers for unchanged issuances;
+  use DoWI for the actual revised 5000.02 and new 8430.01.
+- **Incorrect / High - category boundaries:** Use strictly more than the statutory FY2024 amounts, designation, pathway
+  exceptions, and the specific software/covered-hardware designation rule.
+- **Outdated / High - mta codification:** Add 10 U.S.C. 3602 timing objectives, approved subsequent iteration periods,
+  and written USD(A&S) approval under the instruction for programs above current MDAP dollar thresholds.
+- **Incorrect / High - aoa authority:** For MDAPs CAPE approves the study plan and assesses adequacy/compliance; the MDA
+  selects the materiel solution.
+- **Incorrect / High - unit cost clocks:** Apply 10 U.S.C. 4374: 45 days after quarter-end for a quarterly unit-cost
+  report, or 45 days after the immediate section 4373 report. Keep APB deviations, unit-cost breaches, and
+  critical-breach reassessment distinct.
+- **Ambiguous / Medium - apb values:** Use the approved program APB threshold/objective pairs. The coursebook figures
+  are recall conventions, not authority to manufacture missing program values.
+- **Incorrect / High - live fire coverage:** Apply section 4172 covered-system, munitions/missile, and
+  product-improvement definitions, any designation, and the beyond-LRIP testing/reporting gate.
+- **Incorrect / High - live fire waiver:** Require the statutory determination that testing would be unreasonably
+  expensive and impractical, congressional certification, an alternative evaluation plan, and applicable timing and
+  approval/delegation rules.
+- **Outdated / High - software statute:** Add current section 3603 software and covered-hardware scope, the specific
+  designation exception, annual delivery, and the embedded-system representative-environment distinction.
+- **Incorrect / High - sep approval:** Use DoDI 5000.88: USD(R&E) or designee for ACAT ID, MDA or designee for IB/IC,
+  and CAE-designated authority otherwise. Approve before major-phase RFPs, with applicable tailoring, waivers, and
+  updates.
+- **Outdated / High - digital engineering:** Treat the DAG as historical guidance. Add DoDI 5000.97: programs initiated
+  after December 21, 2023 incorporate digital engineering unless excepted; earlier programs may adopt it when practical,
+  beneficial, and affordable.
+- **Outdated / High - sustainment currency:** Add the DoDI 5000.91 MCA update cadence, current Service/JFRP
+  requirements, and DoDI 4245.15 Change 1 proactive DMSMS management, including software.
+- **Ambiguous / High - annual service funding:** Separate section 3133 severable-service contracts with periods not
+  exceeding one year from nonseverable complete undertakings funded according to bona fide need and award timing.
+- **Outdated / High - sbir ceilings:** Use the SBA October 16, 2026 no-waiver ceilings of $335,937 and $2,239,578,
+  including modifications. Solicitations and approved waivers control actual awards.
+- **Outdated / High - cas october rule:** Add the effective October 1 rule: a basic exemption through $35M, $100M
+  full-coverage and Disclosure Statement thresholds, removal of the $7.5M trigger, and transition/exemption caveats.
+- **Outdated / High - msar transition:** Explain section 4351(j) termination after FY2023 and the MSAR transition.
+  Retain separate cost-growth duties and current program-specific submission guidance.
+- **Outdated / High - nontraditional exemptions:** Screen section 3014 status and the Section 1826 exemptions first.
+  Only an authorized written waiver or partial application may reimpose the listed requirements.
+- **Outdated / Medium - rfo revisions:** Update revision metadata and index-based currency cues; add the standing
+  section 3709 TINA Lite authority. Label precise EVM prescriptions verified only in the original deviation as a
+  baseline pending current attachment verification.
+- **Ambiguous / High - jfrp tailoring:** Qualify the checklist with current Component-approved requirements and
+  tailoring; corroborate CJCSI 5123.01J Change 1 and CJCSM 5123.01A in Joint Staff catalogs, and align the existing
+  question answers.

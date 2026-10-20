@@ -404,8 +404,9 @@
 	shortplural={APIs},
 	longplural={Application Programming Interfaces}
 ]{api}{API}{Application Programming Interface}
-\newacronym{dodd}{DoWD}{Department of War Directive}
-\newacronym{dodi}{DoWI}{Department of War Instruction}
+\newacronym{dodd}{DoDD}{Department of Defense Directive}
+\newacronym{dodi}{DoDI}{Department of Defense Instruction}
+\newacronym{dowi}{DoWI}{Department of War Instruction}
 \newacronym{dagir}{DAGIR}{Data and Applications Government-owned Interoperable Repositories}
 \newacronym{emd}{EMD}{Engineering and Manufacturing Development}
 \newacronym{ibr}{IBR}{Integrated Baseline Review}
@@ -1174,3 +1175,4 @@
 \newacronym{jop}{JOP}{Joint Operational Problem}
 
 \newacronym{jicr}{JICR}{Joint Immediate Combatant Command Requirement}
+\newacronym{msar}{MSAR}{Modernized Selected Acquisition Report}

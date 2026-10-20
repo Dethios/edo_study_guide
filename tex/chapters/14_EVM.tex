@@ -49,7 +49,9 @@ themselves~\autocite{edo-3-6-1-evm-intro-2025,edo-3-6-2-evm-analysis-2025,DoD-IP
 \Info{\ac{pv}, \ac{ev}, and \ac{ac} are the modern labels; \ac{bcws}, \ac{bcwp}, and \ac{acwp} are the equivalent legacy EVM terms.}
 
 \subsection{When to Use EVM}
-\ac{evm} is mandated on cost or incentive contracts (and applicable subcontracts) when the program meets the policy thresholds and the effort is discretely measurable~\autocite{edo-3-6-1-evm-intro-2025,DFARS-EVMS-Deviation-2026}. Key decision points for the \ac{pm} include:
+\ac{evm} applicability depends on contract type, dollar value, discretely measurable work, and statutory exemptions. Products and services provided by qualifying nontraditional defense contractors are exempt from the EVMS clause under FY~2026 NDAA Section~1826, subject to an authorized written waiver of the exemption; the original software-contract exemption is also important. For cost or incentive contracts and applicable subcontracts, apply those screens before the dollar tests~\autocite{USC-10-3014,DFARS-EVMS-Deviation-2026,DPCAP-RFO-Index-20261020}.
+\note{The dollar and clause crosswalk in this section is supported by the original government-hosted deviation; DPCAP now lists Revision~1 dated 5~August~2026. The statutory nontraditional-contractor exemption must be applied. Obtain the current attachment before using exact clause prescriptions in an award; its full revised body could not be retrieved in this audit~\autocite{DFARS-EVMS-Deviation-2026-Baseline,DPCAP-RFO-Index-20261020,USC-10-3014}.}
+
 \begin{description}
   \item[\$100 million and above.] Require an \ac{evms} that the cognizant Federal agency has determined complies with
         \ac{eia}-748.
@@ -58,16 +60,17 @@ themselves~\autocite{edo-3-6-1-evm-intro-2025,edo-3-6-2-evm-analysis-2025,DoD-IP
   \item[Below \$50 million.] Apply \ac{evm} only when the \ac{pm} determines it is useful; below \$20 million, the
         cost-benefit analysis must be documented in the contract file.
 \end{description}
-Additional policy considerations follow~\autocite{edo-3-6-1-evm-intro-2025,DoDI5000-85,DFARS-EVMS-Deviation-2026}.
+Additional policy considerations follow~\autocite{DFARS-EVMS-Deviation-2026-Baseline,DFARS-EVMS-Deviation-2026,USC-10-3014}.
 \begin{itemize}
   \item Applicability determinations must confirm the work scope can be discretely measured before mandating \ac{evm}.
-  \item \ac{evm} on \ac{ffp}, time-and-materials, or \ac{loe} contracts is discouraged absent clear management benefit.
-  \item Contracts primarily for software, including \ac{dodi}~5000.87 software-acquisition pathway contracts, are exempt from \ac{dfars} Subpart~234.2 under the active class deviation.
-  \item Contracts that require \ac{evm} normally also require \ac{ipmdar} data and an \ac{ibr} as early as practicable
-        and no later than 180 calendar days after contract award, exercise of a significant option, or major modification~\autocite{DFARS-EVMS-Deviation-2026}.
+  \item \ac{evm} on \ac{ffp} contracts is discouraged and requires the applicable waiver/approval; management benefit alone is not authority to insert the clause~\autocite{DFARS-EVMS-Deviation-2026-Baseline}.
+  \item Contracts primarily for software, including \ac{dodi}~5000.87 software-acquisition pathway contracts, are exempt under the original deviation; also apply the current statutory nontraditional-contractor exemption and revised applicability text.
+  \item The original deviation provides that contracts requiring \ac{evm} normally also require \ac{ipmdar} data and an \ac{ibr} as early as practicable
+        and no later than 180 calendar days after contract award, exercise of a significant option, or major modification~\autocite{DFARS-EVMS-Deviation-2026-Baseline,DFARS-EVMS-Deviation-2026}.
 \end{itemize}
+
 \subsection{EVM Compliance}
-\ac{evm} clauses are flowed in the solicitation and award package. Under Class Deviation~2026-O0011, use \ac{dfars}~252.234-7998 and 252.234-7999 instead of the legacy 252.234-7001 and 252.234-7002 text~\autocite{DFARS-EVMS-Deviation-2026}. Compliance expectations follow~\autocite{edo-3-6-1-evm-intro-2025,DoDI5000-85,DFARS-EVMS-Deviation-2026,DoD-IPM-EVM-Definitions-2026,DCMA-EVMS-Group-2026}.
+\ac{evm} clauses are flowed in the solicitation and award package. The original Class Deviation~2026-O0011 crosswalk uses \ac{dfars}~252.234-7998 and 252.234-7999 in place of the legacy 252.234-7001 and 252.234-7002 text; verify the current Revision~1 attachment before contract use~\autocite{DFARS-EVMS-Deviation-2026-Baseline,DFARS-EVMS-Deviation-2026}. Compliance expectations follow~\autocite{edo-3-6-1-evm-intro-2025,DoDI5000-85,DFARS-EVMS-Deviation-2026,DoD-IPM-EVM-Definitions-2026,DCMA-EVMS-Group-2026}.
 \begin{itemize}
   \item The program office integrates \ac{evm} planning into the \ac{wbs}, maintains the \ac{pmb}, and ensures timely receipt and analysis of \ac{ipmdar} submissions.
   \item When \ac{dod} is the cognizant Federal agency, \ac{dcma} determines \ac{evms} compliance against \ac{ansi}/\ac{eia}-748; the contracting officer approves or disapproves the system with input from functional specialists and auditors~\autocite{DFARS-EVMS-Deviation-2026,DoD-IPM-EVM-Definitions-2026,DCMA-EVMS-Group-2026}.
@@ -152,7 +155,7 @@ Formal reviews validate the integrity of \ac{evm} data products before and after
 \begin{itemize}
   \item Participants: the contractor, \ac{pm} and deputy, \ac{dcma}/\ac{dcaa}/\ac{supship} personnel, and relevant technical staff.
   \item Purpose: joint assessment to verify \ac{sow} coverage, logical schedule sequencing, resource realism, and risks captured in the \ac{pmb}~\autocite{DoD-IPM-EVM-Definitions-2026}.
-  \item Timing: conducted no later than 180 calendar days after contract award, exercise of a significant option, or major modification in accordance with the \ac{dod} \ac{evm} Implementation Guide and service policy~\autocite{edo-3-6-1-evm-intro-2025,DFARS-EVMS-Deviation-2026,DoD-IPM-Policy-Guidance-2026}.
+  \item Timing: conducted no later than 180 calendar days after contract award, exercise of a significant option, or major modification under the verified original deviation; confirm the current attachment and applicable service policy~\autocite{edo-3-6-1-evm-intro-2025,DFARS-EVMS-Deviation-2026,DoD-IPM-Policy-Guidance-2026}.
 \end{itemize}
 \subsubsection{Integrated Program Management Data and Analysis Report}
 This contractually required report delivers cost, schedule, and technical status derived from the Contractor's \ac{evm}

@@ -1,6 +1,6 @@
 # EDO Study Memory Index
 
-Current as of 2026-06-05.
+Last updated: 2026-10-20. Individual source checks retain their own dates.
 
 ## Latest Session
 
@@ -408,3 +408,11 @@ The latest incumbent cue supersedes the May Mahan entry; the wider June flag ros
 The active EDO roster now uses the September 23 image-based coursebook roster and subsequent duty updates.
 See `docs/reference/2026-10-toc-roster-refresh.md` for corrections and primary sources.
 The June roster is superseded for current recall; NAVSEA directorates are a historical crosswalk.
+
+## 2026-10-20 Acquisition Policy Audit
+
+- Corrected current instruction versions, statutory category boundaries, AoA/SEP authorities, reporting clocks,
+  LFT coverage/waivers, software/MTA law, annual-service funding, CAS/SBIR figures, and NDC/RFO exceptions.
+- Reconciled two existing performance-attribute answers with Component approval and JFRP tailoring.
+- Full-current-PDF access gaps for8430.01 and selected RFO revisions are explicit in the
+  [audit report](../reference/2026-10-acquisition-policy-audit.md).

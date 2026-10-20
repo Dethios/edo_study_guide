@@ -100,8 +100,9 @@ Verification relies on repeatable measurements (e.g., propulsion plant efficienc
 
 \subsection{Live Fire Test and Evaluation}
 \begin{description}[style=nextline,labelsep=0.5em,font=\bfseries]
-  \item[\textbf{When required.}] Title~10 demands \ac{lfte} for every new or significantly upgraded crew-occupied platform, combat vehicle, major munitions program, or missile defense component that will face threat lethality; full-up system-level shots must be realistically stressed prior to requesting Full-Rate Production approval~\autocite{USC-10-4172,DoDI5000-98}.
-  \item[\textbf{When waived.}] Only the \ac{secdef} can waive full-up \ac{lfte} when the system is unmanned, when destructive testing would be unreasonably expensive or impractical, or when alternative testing (component shots, validated modeling, allied data) provides equivalent insights; Congress must be notified of the rationale and the alternative plan~\autocite{USC-10-4172,DoDI5000-98}.
+  \item[\textbf{When required.}] Apply 10~U.S.C.\ 4172's definitions: covered major systems designed to protect users in combat (or otherwise designated systems), major munitions and missile programs, and covered product improvements. Complete the applicable realistic survivability or lethality testing and required reporting before proceeding beyond \ac{lrip}. Crew occupancy or a generic ``missile defense component'' label alone does not establish statutory coverage~\autocite{USC-10-4172,DoDI5000-98}.
+  \Needspace{5\baselineskip}
+  \item[\textbf{When waived.}] Under 10~U.S.C.\ 4172(c), the Secretary's determination must be that live-fire testing is \emph{unreasonably expensive and impractical}, with certification to Congress and an alternative evaluation plan. Certification normally precedes Milestone~B, with specified timing for programs initiated at Milestone~B or C. Being unmanned, or merely having alternative test data, is not an automatic waiver. Apply the statutory requirements and current approval/delegation policy~\autocite{USC-10-4172,DoDI5000-98}.
   \item[\textbf{Execution and use.}] Programs plan vulnerability and lethality events in the \ac{temp}, employ full-up articles plus critical subsystems and surrogates, and collect battle damage, crew survivability, and cascading-effect data to inform design hardening, tactics, and survivability equipment upgrades; the results become an annex to the \ac{dote} report before the \ac{frpdr}~\autocite{USC-10-4172,DoDI5000-98,DoDI5000-85}.
 \end{description}
 
@@ -218,17 +219,17 @@ Different test types answer distinct questions across the \ac{mca} lifecycle~\au
     label   = {tab:acat-te-differences},
     caption = {ACAT-Level Differences for Test and Evaluation},
     entry   = {ACAT-Level Differences for Test and Evaluation},
-    remark{\tSource} = {\tabCite{DoDI5000-85,DoDI5000-89,DoDI5000-98}}
+    remark{\tSource} = {\autocite{DoDI5000-85,DoDI5000-89,DoDI5000-98,USC-10-4351,DOD-MSAR-Transition-2023}}
   ]
   {colspec = {@{} X[0.8] X[1.3] X[1.45] X[1.25] X[1.15] X[1.35] @{}}}
   \toprule
   {ACAT Level} & {Oversight Intensity} & {MDA Level} & {Required Documentation} & {Approval Authority} & {Reporting} \\
   \midrule
-  ACAT ID & Highest MDAP oversight; DOT\&E oversight if listed & DAE {\scriptsize (USW(A\&S))} & Full TEMP, SAR, UCR, DOT\&E reports if covered & DOT\&E approval if listed; otherwise MDA approval & Quarterly DAES, SAR, UCR, and DOT\&E reports when applicable \\
+  ACAT ID & Highest MDAP oversight; DOT\&E oversight if listed & DAE {\scriptsize (USW(A\&S))} & Full TEMP, MSAR, UCR, DOT\&E reports if covered & DOT\&E approval if listed; otherwise MDA approval & Program status, annual MSAR, statutory UCR, and DOT\&E reports if covered \\
   \midrule
-  ACAT IC & High; DOT\&E oversight for covered/listed programs & CAE {\scriptsize (ASN(RD\&A))} & Full TEMP, DOT\&E reports if covered, SAR, UCR & MDA approval unless listed; DOT\&E approves listed test products & Quarterly DAES, SAR, UCR, DOT\&E reports if covered \\
+  ACAT IC & High; DOT\&E oversight for covered/listed programs & CAE {\scriptsize (ASN(RD\&A))} & Full TEMP, DOT\&E reports if covered, MSAR, UCR & MDA approval unless listed; DOT\&E approves listed test products & Program status, annual MSAR, statutory UCR, DOT\&E reports if covered \\
   \midrule
-  ACAT IB & High MDAP oversight under SAE MDA; DOT\&E oversight if covered & SAE unless USW(A\&S) designates an alternate & Full or tailored TEMP, SAR/UCR, DAES as applicable & SAE approves TEMP; DOT\&E approves OT plans for covered programs & MDAP reporting; SAR/UCR and DAES as applicable \\
+  ACAT IB & High MDAP oversight under SAE MDA; DOT\&E oversight if covered & SAE unless USW(A\&S) designates an alternate & Full or tailored TEMP, MSAR/UCR, DAES as applicable & SAE approves TEMP; DOT\&E approves OT plans for covered programs & MDAP reporting; MSAR/UCR and DAES as applicable \\
   \midrule
   ACAT II & Moderate; Service/component oversight & CAE or PEO & Tailored TEMP & Component Acquisition Executive or PEO & Component reporting \\
   \midrule

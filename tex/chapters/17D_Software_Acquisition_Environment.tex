@@ -16,7 +16,7 @@
   \item[\textbf{Software importance.}] Software drives risk for many programs, requires continuous updates, and continues to grow in size and complexity across modern weapon systems~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
   \item[\textbf{Software-intensive systems.}] A system is software-intensive when software is a major risk driver for development cost, process, time, or functionality~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
   \item[\textbf{System domains.}] DoW software domains include weapon systems, \ac{c4isr} systems, and \ac{dbs} systems, each with distinct architecture, data latency, and mission focus~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
-  \item[\textbf{Policy environment.}] The Clinger-Cohen Act, \ac{dodi}~5000.02, \ac{dodi}~5000.75, and \ac{dodi}~5000.87 set expectations for software acquisition, modular delivery, and interoperability. Current Secretary-level direction makes the \ac{swp} the preferred pathway for software-development components of business and weapon-system programs~\autocite{edo-3-4-1-software-acquisition-environment-2025,DoDI5000-02,DoDI5000-75,DoDI5000-87,SecDef-Software-Acq-2025}.
+  \item[\textbf{Policy environment.}] The Clinger-Cohen Act, \ac{dowi}~5000.02, \ac{dodi}~5000.75, and \ac{dodi}~5000.87 set expectations for software acquisition, modular delivery, and interoperability. Current Secretary-level direction makes the \ac{swp} the preferred pathway for software-development components of business and weapon-system programs~\autocite{edo-3-4-1-software-acquisition-environment-2025,DoDI5000-02,DoDI5000-75,DoDI5000-87,SecDef-Software-Acq-2025}.
 \end{description}
 
 \subsection{Computer Basics}
@@ -97,14 +97,16 @@
 \subsection{DoW Instruction Provisions}
 \begin{description}
   \item[\textbf{DoWI~5000.02.}] Frames the \ac{aaf}, assigns pathway-level responsibilities, and identifies software acquisition and \ac{dbs} acquisition as distinct pathways inside the defense acquisition system~\autocite{edo-3-4-1-software-acquisition-environment-2025,DoDI5000-02}.
-  \item[\textbf{DoWI~5000.75.}] Implements Clinger-Cohen requirements for business systems, minimizes \ac{cots} customization, and uses a tailorable \ac{bcac} with authority-to-proceed decision points; covered \acp{dbs} normally use this pathway but may incorporate the \ac{swp} for custom-developed software~\autocite{edo-3-4-1-software-acquisition-environment-2025,DoDI5000-75,DoDI5000-87}.
-  \item[\textbf{DoWI~5000.87.}] Establishes the \ac{swp} for custom software capabilities. The instruction exempts pathway programs from legacy \ac{jcids}; use pathway-specific requirements artifacts and current Service/JFRP integration rules and are not treated as \acp{mdap} even if they exceed former \ac{mdap} thresholds; the pathway integrates Agile, DevSecOps, Lean, user-centered design, test, cyber, and product-support planning~\autocite{edo-3-4-1-software-acquisition-environment-2025,DoDI5000-87}.
+  \item[\textbf{DoDI~5000.75.}] Implements Clinger-Cohen requirements for business systems, minimizes \ac{cots} customization, and uses a tailorable \ac{bcac} with authority-to-proceed decision points; covered \acp{dbs} normally use this pathway but may incorporate the \ac{swp} for custom-developed software~\autocite{edo-3-4-1-software-acquisition-environment-2025,DoDI5000-75,DoDI5000-87}.
+  \item[\textbf{DoDI~5000.87.}] Establishes the \ac{swp} for custom software. Current 10~U.S.C.\ 3603 also addresses covered hardware and exempts qualifying software/covered-hardware efforts from ordinary \ac{mdap} treatment unless specifically designated by \ac{usdas} or a Service Acquisition Executive. Use pathway-specific artifacts and current Service/JFRP integration rules~\autocite{DoDI5000-87,USC-10-3603,USC-10-4201-2026}.
   \item[\textbf{2025 software-acquisition memo.}] The Secretary of Defense directed DoD Components to adopt the \ac{swp} as the preferred pathway for software-development components of business and weapon-system programs and to use \acp{cso} and \acp{ot} as default solicitation and award approaches when the statutory thresholds and pathway context apply~\autocite{SecDef-Software-Acq-2025}.
 \end{description}
 
+\note{October policy check: the official ESD catalog and CIO library list DoWI~8430.01, \emph{Accelerated Mission Software}, effective 8~September~2026. Consult that issuance alongside acquisition-pathway and cybersecurity policy. Its full text was unavailable during this audit, so this guide does not infer new authorization deadlines or detailed mandates from commercial summaries~\autocite{ESD-Issuance-Catalog-20261020,DoW-CIO-Policy-Library-20261020}.}
+
 \subsection{Software Acquisition Pathway Execution}
 \begin{description}
-  \item[\textbf{Iterative delivery.}] The pathway treats software as continuously delivered capability with frequent releases, user feedback loops, and rapid defect remediation. Programs must demonstrate viability for operational use within 1 year after first obligation and deliver new capability at least annually when the pathway rules apply~\autocite{edo-3-4-1-software-acquisition-environment-2025,DoDI5000-87}.
+  \item[\textbf{Iterative delivery.}] Demonstrate viable, effective operational capability within one year after funds are first obligated to acquire or develop software; deliver new capability at least annually. For embedded software before host-system operational acceptance, the instruction permits annual delivery into an operationally representative environment; after acceptance, align operational updates with the host schedule. Do not confuse this minimum with the preferred frequent-release cadence~\autocite{DoDI5000-87,USC-10-3603}.
   \item[\textbf{Risk management.}] Cybersecurity, program protection, and \ac{rmf} requirements are integrated into release planning, test, cyber assessment, and operational monitoring rather than left as one-time compliance gates~\autocite{edo-3-4-1-software-acquisition-environment-2025,DoDI5000-87}.
   \item[\textbf{Artifacts and metrics.}] Programs emphasize product roadmaps, program backlogs, release cadence, operational use metrics, value assessments, and sustainment pipelines in place of a single monolithic baseline snapshot~\autocite{edo-3-4-1-software-acquisition-environment-2025,DoDI5000-87}.
 \end{description}
@@ -132,8 +134,8 @@
 \begin{itemize}
   \item A software-intensive system is one in which software is a major risk driver for development cost, time, process, or functionality~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
   \item Software-intensive system classifications include weapon systems, \ac{c4isr} systems, and \ac{dbs} systems~\autocite{edo-3-4-1-software-acquisition-environment-2025}.
-  \item \textbf{Question:} Which law drives DoW software acquisition policy~\autocite{edo-3-4-1-software-acquisition-environment-2025}? \textbf{Answer:} The Clinger-Cohen Act.
-  \item \textbf{Board cue:} For custom software, answer \ac{swp}; for covered business systems, start with \ac{bcac}/DoWI~5000.75 and note that custom-developed software inside a business system may use \ac{swp} processes~\autocite{DoDI5000-75,DoDI5000-87}.
+  \item \textbf{Law and policy:} Clinger-Cohen governs information-technology management; 10~U.S.C.\ 3603 is the current software-pathway statute, implemented through DoDI~5000.87 and subsequent applicable policy~\autocite{USC-10-3603,DoDI5000-87}.
+  \item \textbf{Board cue:} For custom software, answer \ac{swp}; for covered business systems, start with \ac{bcac}/DoDI~5000.75 and note that custom-developed software inside a business system may use \ac{swp} processes~\autocite{DoDI5000-75,DoDI5000-87}.
 \end{itemize}
 
 %====================
