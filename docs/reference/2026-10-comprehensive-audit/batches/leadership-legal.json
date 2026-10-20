@@ -1,0 +1,292 @@
+{
+  "current_as_of": "2026-10-20",
+  "reviewer": "leadership_audit",
+  "module": "5.1.1",
+  "pages": 90,
+  "visual_reviewed_pages": [
+    [
+      1,
+      90
+    ]
+  ],
+  "text_reviewed_pages": [
+    [
+      1,
+      90
+    ]
+  ],
+  "zoom_reviewed_pages": [
+    18,
+    29,
+    53,
+    87
+  ],
+  "method": "All 90 retained PDF pages examined visually in six-slide contact sheets at original resolution; dense image-only flowchart, Article 31 form, NJP matrix and VCNO memo inspected separately at 2x. Extracted text supplements this visual review. PDF page numbers, not printed slide numbers.",
+  "status": "reviewed_with_gaps",
+  "metadata": {
+    "first_page_title": "Intermediate Leader Legal Course",
+    "visible_version": null,
+    "visible_date": null,
+    "pdf_title": "Microsoft PowerPoint - 5.1.1 Naval Justice & Standards ILLC Master Slides - Oct 2025",
+    "pdf_creation": "2026-03-20 13:27:46 -07:00",
+    "pdf_modified": "2026-03-20 13:29:05 -07:00",
+    "caution": "October 2025 is title metadata, not independently established publication date; March 2026 is file creation, not content effective date. Printed slide numbers end at 122 but retained PDF has 90 pages."
+  },
+  "learning_objective_map": [
+    {
+      "pdf_pages": [
+        1,
+        10
+      ],
+      "topic": "Legal services roles, SJA/commander, RLSO versus DSO, QUICKMAN",
+      "guide": "27A Legal Resources and Roles"
+    },
+    {
+      "pdf_pages": [
+        11,
+        17
+      ],
+      "topic": "Law hierarchy, oath, military law purposes",
+      "guide": "27A Legal Authorities and Purpose"
+    },
+    {
+      "pdf_pages": [
+        18,
+        27
+      ],
+      "topic": "Military justice process, administrative investigations, NCIS and OSTC, IO selection",
+      "guide": "27A Investigations and Referrals; OSTC/IO selection gap"
+    },
+    {
+      "pdf_pages": [
+        28,
+        34
+      ],
+      "topic": "Article 31 and cleansing warning forms; sexual assault scenarios",
+      "guide": "27A Rights Advisement; nature-of-accusation omission"
+    },
+    {
+      "pdf_pages": [
+        35,
+        44
+      ],
+      "topic": "Search forms/PASS/CASS, probable cause, inspection purpose, targeted-inspection scenario",
+      "guide": "27A Search Authorization"
+    },
+    {
+      "pdf_pages": [
+        45,
+        47
+      ],
+      "topic": "Line of duty",
+      "guide": "27A Line of Duty"
+    },
+    {
+      "pdf_pages": [
+        48,
+        54
+      ],
+      "topic": "Nonpunitive tools, NJP authority, refusal, rights, punishment matrix, appeal",
+      "guide": "27A Nonpunitive/NJP; matrix missing"
+    },
+    {
+      "pdf_pages": [
+        55,
+        63
+      ],
+      "topic": "ADSEP bases, mandatory processing, notification/board rights, board composition and findings",
+      "guide": "27A Administrative Separation; six-year right/composition missing"
+    },
+    {
+      "pdf_pages": [
+        64,
+        80
+      ],
+      "topic": "Ethics basis, prohibited sources, gifts, 20/50, gifts between employees, group gifts",
+      "guide": "27A Ethics; outdated cap and contribution wording"
+    },
+    {
+      "pdf_pages": [
+        81,
+        87
+      ],
+      "topic": "Commercial dealings, fundraising, political activities, VCNO guidance screenshot",
+      "guide": "27A Fundraising and Political Activity; scope qualification needed"
+    },
+    {
+      "pdf_pages": [
+        88,
+        90
+      ],
+      "topic": "Ethics wrap-up and roadmap",
+      "guide": "27A Quick Review; operational-law roadmap retained but no standalone operational-law teaching slides"
+    }
+  ],
+  "findings": [
+    {
+      "id": "LEAD-LEGAL-1",
+      "status": "Outdated",
+      "original_claim": "27A Group gifts: no more than $10 per contributor; total value cap $480.",
+      "coursebook_pages": [
+        79,
+        80
+      ],
+      "proposed_text": "For a special infrequent occasion, a group including a subordinate may give a superior a gift up to the applicable minimal value ($525 effective 1 January 2026). Solicitations must be voluntary and may not suggest more than $10 per person; a person may voluntarily give more. Separate voluntary food/refreshment contributions are not subject to the $10 solicitation limit. Apply aggregation rules when donor groups overlap through a subordinate.",
+      "sources": [
+        {
+          "proposed_citekey": "GSA-FMR-B2025-01-Minimal-Value",
+          "url": "https://www.gsa.gov/policy-regulations/regulations/federal-management-regulation/fmr-and-related-files/gsa-bulletin-fmr-b202501-foreign-gifts-and-decorations-minimal-value",
+          "publication": "2025-12-29",
+          "effective": "2026-01-01",
+          "accessed": "2026-10-20",
+          "evidence": "Bulletin para 4 sets $525 from 1 Jan 2026; para 6 cancels B-54."
+        },
+        {
+          "proposed_citekey": "eCFR-5CFR3601-104-Group-Gifts-2026",
+          "url": "https://www.ecfr.gov/current/title-5/chapter-XXVI/part-3601/section-3601.104",
+          "currency": "2026-10-15",
+          "accessed": "2026-10-20",
+          "evidence": "(a) group including subordinate ties ceiling to 5 USC 7342 minimal value; (b) $10 limits solicited nominal contribution, not unsolicited voluntary contribution."
+        }
+      ],
+      "confidence": "High",
+      "explanation": "Current regulation incorporates GSA minimal value. Coursebook $480 is stale; $10 was incorrectly described as a hard contribution cap in guide."
+    },
+    {
+      "id": "LEAD-LEGAL-2",
+      "status": "Incorrect",
+      "original_claim": "27A says commanders make final decisions without qualification; investigations omit OSTC.",
+      "coursebook_pages": [
+        18,
+        24,
+        25
+      ],
+      "proposed_text": "Commands must promptly report covered offenses to NCIS and/or OSTC under current reporting guidance and must not delay reporting to investigate or question personnel. Special trial counsel independently determines whether an offense is covered and controls specified prosecutorial decisions; commands may not take disciplinary action on covered offenses committed on or after 28 December 2023 until OSTC returns or defers them. Consult the SJA on jurisdiction and referral.",
+      "sources": [
+        {
+          "proposed_citekey": "Navy-OSTC-Command-Incident-Reporting-2026",
+          "url": "https://www.jag.navy.mil/about/organization/ostc/command-incident-reporting/",
+          "accessed": "2026-10-20",
+          "effective": "2023-12-28",
+          "evidence": "Official Navy page explicitly bars command discipline pending return/deferral and says prompt report without investigation delay."
+        }
+      ],
+      "confidence": "High",
+      "explanation": "Do not treat the official reporting page covered-offense table as exhaustive current law: it lacks later sexual-harassment coverage. If listing offenses, separately verify 10 USC 824a/801(17)."
+    },
+    {
+      "id": "LEAD-LEGAL-3",
+      "status": "Incorrect",
+      "original_claim": "27A Article31(b) summary omits nature of accusation.",
+      "coursebook_pages": [
+        28,
+        29
+      ],
+      "proposed_text": "Before questioning an accused or suspected service member, give the applicable Article 31(b) warning: nature of the suspected offense, no obligation to make a statement, and that any statement may be used as evidence at court-martial. Custodial interrogation may trigger additional counsel advisements. Use the current rights form and SJA advice.",
+      "sources": [
+        {
+          "citekey": "edo-5-1-1-naval-justice-standards-2025",
+          "location": "PDF p29, JAGMAN A-1-o enlarged suspect offense field"
+        },
+        {
+          "proposed_citekey": "USC-10-831-Article31",
+          "url": "https://uscode.house.gov/view.xhtml?req=(title:10%20section:831%20edition:prelim)",
+          "accessed": "2026-10-20",
+          "evidence": "Official search result reproduced statute text (laws in effect 26 Sep 2026); direct opens returned not-found/maintenance. Link should be verified/replaced before final citation."
+        }
+      ],
+      "confidence": "High",
+      "explanation": "Image-only callout establishes an omission obscured by text-only review; statutory text corroborated through official search but direct-page availability unresolved."
+    },
+    {
+      "id": "LEAD-LEGAL-4",
+      "status": "Incorrect",
+      "original_claim": "27A notification versus board procedures implies board only when OTH possible.",
+      "coursebook_pages": [
+        59
+      ],
+      "proposed_text": "Notification procedures also permit members with six or more years of total active and/or reserve service at notification to elect an administrative board. When OTH is possible, board procedures apply regardless of service length, subject to waiver.",
+      "sources": [
+        {
+          "proposed_citekey": "MILPERSMAN-1910-402",
+          "url": "https://www.mynavyhr.navy.mil/Portals/55/Reference/MILPERSMAN/1000/1900Separation/1910-402.pdf",
+          "accessed": "2026-10-20",
+          "evidence": "Coursebook explicitly states 6+ year right; official whole MILPERSMAN indexed 1910-158 cross-reference corroborates for reservists, but direct 1910-402 open failed; verify current source before finalizing."
+        }
+      ],
+      "confidence": "Medium",
+      "explanation": "Substantive rights omission. Official source retrieval still pending."
+    },
+    {
+      "id": "LEAD-LEGAL-5",
+      "status": "Ambiguous",
+      "original_claim": "27A NCIS sexual assault referral parenthetical says when not restricted.",
+      "coursebook_pages": [
+        23,
+        31,
+        32,
+        33
+      ],
+      "proposed_text": "Explain that independently obtained information or a report received by command before a restricted report can still trigger NCIS notification; handle protected restricted-report information through SAPR/SJA procedures. Include weapons, ordnance and controlled-substance theft/loss among reportable events.",
+      "sources": [
+        {
+          "citekey": "edo-5-1-1-naval-justice-standards-2025",
+          "location": "PDF p23"
+        }
+      ],
+      "confidence": "Medium",
+      "explanation": "Needs current NCIS/SAPR authority before legal correction; coursebook itself distinguishes before restriction/third-party information."
+    },
+    {
+      "id": "LEAD-LEGAL-6",
+      "status": "Needs source",
+      "original_claim": "27A blanket political activity wording covers all members/public office.",
+      "coursebook_pages": [
+        83,
+        84
+      ],
+      "proposed_text": "Qualify active-duty restrictions and acknowledge reserve/nonpartisan-office exceptions; members should consult current DoDD1344.10 and ethics counsel before participation. Do not imply universal prohibition on holding every public office.",
+      "sources": [
+        {
+          "existing_citekey": "DoDD-1344-10-Political-Activities"
+        }
+      ],
+      "confidence": "Medium",
+      "explanation": "Coursebook p84 says reservists have special rules; current directive text not yet re-opened in this audit."
+    },
+    {
+      "id": "LEAD-LEGAL-7",
+      "status": "Ambiguous",
+      "original_claim": "27A gives bare 20/50 rule and calls low-value coffee/plaques/contests non-gifts.",
+      "coursebook_pages": [
+        71,
+        72,
+        74
+      ],
+      "proposed_text": "Add application: aggregate gifts from one source on an occasion ($8 lanyard plus $14 notepad exceeds $20); do not pay down an over-limit gift to $20. Distinguish modest refreshments from meals and public contests from official-duty awards.",
+      "sources": [
+        {
+          "existing_citekey": "OGE-Standards-Ethical-Conduct-2024",
+          "target_sections": "5 CFR 2635.203(b), .204(a)"
+        }
+      ],
+      "confidence": "Medium",
+      "explanation": "Check current regulation for precise examples before expansion."
+    }
+  ],
+  "pending": [
+    "Verify stable official Article31 statutory URL; searches retrieved statute but direct opens returned maintenance/not-found.",
+    "Retrieve current MILPERSMAN1910-402 and board composition authority; do not rely on third-party copies.",
+    "Verify NCIS/SAPR restricted-report nuance and political-activity scope against current official policies.",
+    "NJP punishment-table learning content omitted; do not copy incomplete-footnote image without current JAGMAN/MCM verification.",
+    "Map actual final edits to these findings; research report does not itself change guide."
+  ],
+  "visual_findings": [
+    "p18 diagram differentiates OSTC exclusive covered-offense path from convening-authority/RTO path, Article 32, trial and appeal; dated 4 March 2024 and includes sexual harassment effective 1 January 2025. This substantive distinction is absent from guide.",
+    "p29 JAGMAN A-1-o form magnifies suspected-offense field; guide omits required nature-of-accusation warning.",
+    "p53 image-only NJP limits table depends on imposing officer and recipient rank. Footnote visible: three-day confinement only attached/embarked vessel, incompatible with correctional custody/restriction/extra duties. Most footnotes are absent from retained image; do not reproduce as complete current authority.",
+    "p60 ADSEP board composition diagram: senior O-4+, E-7+ senior to respondent, majority commissioned/warrant; reserve-specific composition distinction.",
+    "p87 screenshot is VCNO memo dated 22 April 2019; a historical example, not evidence of current annual guidance.",
+    "Scenario pages 31-33,43-44,74-75,80,85 support application practice; no answers supplied in retained PDF."
+  ]
+}

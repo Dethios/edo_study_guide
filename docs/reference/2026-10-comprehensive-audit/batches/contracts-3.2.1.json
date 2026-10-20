@@ -1,0 +1,239 @@
+{
+  "module": "3.2.1",
+  "title": "3.2.1 Intro to Contracting.pdf",
+  "current_as_of": "2026-10-20",
+  "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-2-contracting/3.2.1 Intro to Contracting.pdf",
+  "sha256": "6ad04a5f9574b5d507d58ef658a2d0c74293b46a4bef4ee4e165b936c2866a5d",
+  "version": "6.1",
+  "edition_date": "2026-03-13",
+  "citation_key": "edo-3-2-1-intro-contracting-2025",
+  "page_count": 32,
+  "status": "review_complete",
+  "reviewed_pdf_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "visually_reviewed_pdf_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "visual_method": "PyMuPDF rendered 1.2x; six-slide contact sheets opened with view_image; extracted page text crosschecked against all slides. Page ranges refer to physical PDF pages, not printed slide numbers.",
+  "visual_artifacts": "artifacts/audit/contracts_sheets/3.2.1_*.jpg",
+  "guide_files": [
+    "tex/chapters/11_Contracting_Fundamentals.tex"
+  ],
+  "objective_topic_mapping": [
+    {
+      "objective_or_topic": "TLO 1: need for contracts",
+      "pdf_pages": [
+        4
+      ],
+      "guide_sections_or_labels": [
+        "Why Contracts Are Needed"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO 2: legal nature and essential elements",
+      "pdf_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "guide_sections_or_labels": [
+        "Essential Elements of a Contract",
+        "Government Relationship to Contractors"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO 3: FAR and supplements",
+      "pdf_pages": [
+        14
+      ],
+      "guide_sections_or_labels": [
+        "Federal Acquisition Regulation System"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO 4: PCO, ACO, TCO",
+      "pdf_pages": [
+        16
+      ],
+      "guide_sections_or_labels": [
+        "Types of Contracting Officers"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO 5-6: PM/KO partnership and differences",
+      "pdf_pages": [
+        18,
+        19,
+        20
+      ],
+      "guide_sections_or_labels": [
+        "KO and PM Roles and Responsibilities",
+        "tab:pm_vs_ko_differences",
+        "tab:responsibility_ko_pm"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO 7: competition and seven authorities",
+      "pdf_pages": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "guide_sections_or_labels": [
+        "Advantages of Competition",
+        "Competition in Contracting Act (CICA)",
+        "Seven Other-Than-Full-and-Open Authorities"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO 8: contracting terms, responsiveness, responsibility",
+      "pdf_pages": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "guide_sections_or_labels": [
+        "Contracting Terms",
+        "Determining Responsibility",
+        "Determining Responsiveness"
+      ],
+      "status": "covered"
+    }
+  ],
+  "findings": [
+    {
+      "id": "CON-001",
+      "original_claim": "Summary says sole-source actions require approved justification; Contracting Terms implies a J&A for all other-than-full-and-open contracts.",
+      "classification": "Ambiguous",
+      "guide_location": "Summary and Contracting Terms",
+      "required_change": "Use: Sole-source means soliciting and negotiating with one source. Apply the justification, approval, or determination required by the specific authority and procedure; a FAR Part 6 J&A is not universal. The statutory-authority and public-interest exceptions and procedures excluded from Part 6 have their own rules. Cite FAR-Overhaul-Part6-2026 and DoD-RFO-Deviation-Part6-2026.",
+      "source_basis": "RFO FAR 6.001, 6.103-5, 6.103-7, 6.104; current page retrieved 2026-10-20",
+      "explanation": "Preserves coursebook definition without turning a common J&A workflow into a universal mandate.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-002",
+      "original_claim": "Contracting Terms says bid must conform to all IFB requirements.",
+      "classification": "Ambiguous",
+      "guide_location": "Contracting Terms / Responsiveness",
+      "required_change": "Use: A sealed bid must conform in all material respects to the IFB; minor informalities are handled under the applicable sealed-bidding rules. Retain the existing detailed responsiveness explanation. Cite new FAR-14-301-Responsiveness (https://www.acquisition.gov/far/14.301).",
+      "source_basis": "FAR 14.301(a)",
+      "explanation": "Existing later section correctly says material respects; harmonize the short definition to avoid implying any trivial defect automatically defeats responsiveness.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-003",
+      "original_claim": "PM authority table lists Tenure agreement.",
+      "classification": "Ambiguous",
+      "guide_location": "tab:pm_vs_ko_differences / Authority row",
+      "required_change": "Replace PM cell with CAE designation (tenure agreement documents assignment); retain existing note about 5000.66 and designation. Cite edo-3-2-1-intro-contracting-2025.",
+      "source_basis": "Coursebook PDF p19 footnote",
+      "explanation": "The footnote, already retained in guide, identifies the actual designation authority more precisely than the table memory hook.",
+      "confidence": "High"
+    }
+  ],
+  "current_sources": [
+    {
+      "citekey": "FAR-Overhaul-Part6-2026",
+      "url": "https://www.acquisition.gov/far-overhaul/far-part-deviation-guide/far-overhaul-part-6",
+      "title": "RFO FAR Part 6",
+      "version": "Live official page",
+      "effective_date": null,
+      "access_date": "2026-10-20",
+      "access_method": "official web text retrieved"
+    },
+    {
+      "citekey": "FAR-14-301-Responsiveness",
+      "url": "https://www.acquisition.gov/far/14.301",
+      "title": "FAR 14.301 Responsiveness of bids",
+      "version": "FAC 2026-01",
+      "effective_date": "2026-03-13",
+      "access_date": "2026-10-20",
+      "access_method": "official web text retrieved"
+    }
+  ],
+  "notes": [
+    "All slides including decorative imagery, role table, overviews, and summaries visually inspected. No image-only substantive topic omitted. Existing SSA caveat and RFO crosswalk correctly improve coursebook shorthand.",
+    "Official current DoD deviation attachment verification limits in earlier audit remain; this module does not claim a newly retrieved full current DFARS attachment."
+  ],
+  "blockers": [],
+  "implementation_status": "Recommendations only; guide edits owned by integrating agent."
+}

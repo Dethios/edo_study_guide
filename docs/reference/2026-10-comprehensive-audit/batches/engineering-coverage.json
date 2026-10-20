@@ -1,0 +1,1133 @@
+{
+  "as_of": "2026-10-20",
+  "baseline": "e8b2ef1",
+  "method": "Every recorded visual page inspected as 6-page contact sheets, 1200px per slide, original detail; text independently read. Page numbers are PDF pages. Guide section names refer to baseline files.",
+  "modules": [
+    {
+      "module": "3.5.1",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-5-systems-engineering-logistics-and-test/3.5.1 Systems Engineering Overview.pdf",
+      "citation_key": "edo-3-5-1-systems-engineering-overview-2025",
+      "pages": 35,
+      "version": "6.1",
+      "date": "2025-12-19",
+      "sha256": "0bf62afe585562ebf79a114116ba5e1550a560406c7da438ca5c80ae01f6cf3d",
+      "review_status": "complete_text_and_visual",
+      "reviewed_pages": [
+        [
+          1,
+          35
+        ]
+      ],
+      "visual_reviewed_pages": [
+        [
+          1,
+          35
+        ]
+      ],
+      "guide_file": "tex/chapters/17G_Systems_Engineering_Overview.tex",
+      "topic_mappings": [
+        {
+          "pages": [
+            1,
+            4
+          ],
+          "topic": "Title, objectives and agenda",
+          "tlos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "guide_sections": [
+            "Summary"
+          ]
+        },
+        {
+          "pages": [
+            5,
+            7
+          ],
+          "topic": "Definition and mandatory engineering policy",
+          "tlos": [
+            1,
+            6,
+            9
+          ],
+          "guide_sections": [
+            "Introduction to Systems Engineering",
+            "DoW Policy on Systems Engineering"
+          ]
+        },
+        {
+          "pages": [
+            8,
+            8
+          ],
+          "topic": "Seven design characteristics",
+          "tlos": [
+            2
+          ],
+          "guide_sections": [
+            "Characteristics of Good Design"
+          ]
+        },
+        {
+          "pages": [
+            9,
+            9
+          ],
+          "topic": "IPPD tenets",
+          "tlos": [
+            5
+          ],
+          "guide_sections": [
+            "Integrated Product and Process Development"
+          ]
+        },
+        {
+          "pages": [
+            10,
+            11
+          ],
+          "topic": "SE disciplines and EDO billets; agenda",
+          "tlos": [
+            3,
+            4
+          ],
+          "guide_sections": [
+            "Systems Engineering Disciplines"
+          ]
+        },
+        {
+          "pages": [
+            12,
+            13
+          ],
+          "topic": "SEP content and approval",
+          "tlos": [
+            7,
+            12
+          ],
+          "guide_sections": [
+            "System Engineering Plan"
+          ]
+        },
+        {
+          "pages": [
+            14,
+            20
+          ],
+          "topic": "V model, technical and management processes",
+          "tlos": [
+            6,
+            7,
+            "7a",
+            "7b",
+            9
+          ],
+          "guide_sections": [
+            "Systems Engineering Process Model",
+            "Systems Engineering \"V\" Model",
+            "Eight Technical Processes",
+            "Eight Technical Management Processes"
+          ]
+        },
+        {
+          "pages": [
+            21,
+            22
+          ],
+          "topic": "Requirements and functional/physical feedback loops; agenda",
+          "tlos": [
+            "7a"
+          ],
+          "guide_sections": [
+            "Requirements Traceability Flow"
+          ]
+        },
+        {
+          "pages": [
+            23,
+            24
+          ],
+          "topic": "Inputs and outputs",
+          "tlos": [
+            11
+          ],
+          "guide_sections": [
+            "Systems Engineering Process Inputs and Outputs"
+          ]
+        },
+        {
+          "pages": [
+            25,
+            27
+          ],
+          "topic": "Standards and specification hierarchy",
+          "tlos": [
+            13
+          ],
+          "guide_sections": [
+            "Standards and Specifications",
+            "Program-Unique Specifications"
+          ]
+        },
+        {
+          "pages": [
+            28,
+            29
+          ],
+          "topic": "Specification maturation diagram; agenda",
+          "tlos": [
+            8
+          ],
+          "guide_sections": [
+            "Program-Unique Specifications (partial; add maturation explanation)"
+          ]
+        },
+        {
+          "pages": [
+            30,
+            31
+          ],
+          "topic": "Government/contractor responsibility matrix",
+          "tlos": [
+            10
+          ],
+          "guide_sections": [
+            "Government and Contractor Roles"
+          ]
+        },
+        {
+          "pages": [
+            32,
+            32
+          ],
+          "topic": "MBSE definition and three pillars",
+          "tlos": [],
+          "guide_sections": [
+            "Digital Engineering Policy (partial; MBSE not defined)"
+          ]
+        },
+        {
+          "pages": [
+            33,
+            35
+          ],
+          "topic": "Summary and answer layer",
+          "tlos": [
+            1,
+            2,
+            3,
+            5,
+            7,
+            8,
+            9,
+            11
+          ],
+          "guide_sections": [
+            "Quick Review",
+            "Summary"
+          ]
+        }
+      ],
+      "visual_notes": [
+        "Page 14 V model includes integration; summary answer layer page 34 accidentally omits integration. Guide correctly includes all eight.",
+        "Page 21 has image-only feedback-loop detail missing from text extraction: each requirement -> function -> hardware/software element, reverse justification eliminates unnecessary duplication.",
+        "Page 28 visual explicitly relates system definition/system spec; preliminary design/item performance spec; detailed design/item detail, process and material specs.",
+        "Page 32 diagram has modeling languages, methods and tools as MBSE pillars."
+      ]
+    },
+    {
+      "module": "3.5.2",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-5-systems-engineering-logistics-and-test/3.5.2 SE AC WBS.pdf",
+      "citation_key": "edo-3-5-2-wbs-2025",
+      "pages": 21,
+      "version": "6.0",
+      "date": "2025-12-12",
+      "sha256": "f0131b303978bb0f59fce06b55b76610a11e764b54f56daa98741d4ead365013",
+      "review_status": "complete_text_and_visual",
+      "reviewed_pages": [
+        [
+          1,
+          21
+        ]
+      ],
+      "visual_reviewed_pages": [
+        [
+          1,
+          21
+        ]
+      ],
+      "guide_file": "tex/chapters/17H_WBS_SE_Analysis_and_Control.tex",
+      "topic_mappings": [
+        {
+          "pages": [
+            1,
+            3
+          ],
+          "topic": "Title, objectives and agenda",
+          "tlos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guide_sections": [
+            "Summary"
+          ]
+        },
+        {
+          "pages": [
+            4,
+            6
+          ],
+          "topic": "Lifecycle management uses",
+          "tlos": [
+            2,
+            3
+          ],
+          "guide_sections": [
+            "Introduction",
+            "Basic Role of the WBS",
+            "WBS as a Management Tool"
+          ]
+        },
+        {
+          "pages": [
+            7,
+            8
+          ],
+          "topic": "SE inputs, outputs and WBS applications",
+          "tlos": [
+            1,
+            2
+          ],
+          "guide_sections": [
+            "WBS and the SE Process"
+          ]
+        },
+        {
+          "pages": [
+            9,
+            11
+          ],
+          "topic": "Hierarchy, product and enabling elements; creation graphic",
+          "tlos": [
+            1,
+            5
+          ],
+          "guide_sections": [
+            "WBS Hierarchy"
+          ]
+        },
+        {
+          "pages": [
+            12,
+            12
+          ],
+          "topic": "MIL-STD-881 and categories",
+          "tlos": [
+            4
+          ],
+          "guide_sections": [
+            "WBS Guidance"
+          ]
+        },
+        {
+          "pages": [
+            13,
+            15
+          ],
+          "topic": "Sea/C4ISR system examples; agenda",
+          "tlos": [
+            5
+          ],
+          "guide_sections": [
+            "WBS Hierarchy (partial; no worked example)"
+          ]
+        },
+        {
+          "pages": [
+            16,
+            19
+          ],
+          "topic": "Program/contract types, ownership and nesting",
+          "tlos": [
+            6,
+            7,
+            8
+          ],
+          "guide_sections": [
+            "WBS Types",
+            "Program WBS",
+            "Contract WBS"
+          ]
+        },
+        {
+          "pages": [
+            20,
+            20
+          ],
+          "topic": "WBS maturation through phases",
+          "tlos": [
+            3
+          ],
+          "guide_sections": [
+            "Introduction (partial; lifecycle use only)"
+          ]
+        },
+        {
+          "pages": [
+            21,
+            21
+          ],
+          "topic": "Summary",
+          "tlos": [
+            1,
+            2,
+            4,
+            6,
+            7,
+            8
+          ],
+          "guide_sections": [
+            "Quick Review"
+          ]
+        }
+      ],
+      "visual_notes": [
+        "Sea system p13: sea system -> ship -> hull structure/propulsion etc, with parallel enabling elements. C4ISR p14: prime mission product and enabling elements.",
+        "P19 graphic includes upper levels inside contract WBS: supports preserving guide correction that contract WBS does not simply begin at level 4.",
+        "P20 government proposes, contractor drafts then updates, government approves updated and production WBS; mature detail follows design."
+      ]
+    },
+    {
+      "module": "3.5.3",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-5-systems-engineering-logistics-and-test/3.5.3 SE AC CM and Tech Reviews.pdf",
+      "citation_key": "edo-3-5-3-cm-tech-reviews-2025",
+      "pages": 34,
+      "version": "6.0",
+      "date": "2025-12-12",
+      "sha256": "ee3353c289ae24b6d6334476c648603237e36816b136b2919d19478daa022898",
+      "review_status": "complete_text_and_visual",
+      "reviewed_pages": [
+        [
+          1,
+          34
+        ]
+      ],
+      "visual_reviewed_pages": [
+        [
+          1,
+          34
+        ]
+      ],
+      "guide_file": "tex/chapters/17I_CM_and_Technical_Reviews.tex",
+      "topic_mappings": [
+        {
+          "pages": [
+            1,
+            3
+          ],
+          "topic": "Title, objectives and agenda",
+          "tlos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "guide_sections": [
+            "Summary"
+          ]
+        },
+        {
+          "pages": [
+            4,
+            5
+          ],
+          "topic": "CM definition and purpose",
+          "tlos": [
+            1
+          ],
+          "guide_sections": [
+            "Configuration Management",
+            "Why CM Matters"
+          ]
+        },
+        {
+          "pages": [
+            6,
+            7
+          ],
+          "topic": "CI designation",
+          "tlos": [
+            2
+          ],
+          "guide_sections": [
+            "Configuration Items",
+            "Considerations for Designating CIs"
+          ]
+        },
+        {
+          "pages": [
+            8,
+            8
+          ],
+          "topic": "CM functions",
+          "tlos": [
+            1
+          ],
+          "guide_sections": [
+            "CM Functional Components"
+          ]
+        },
+        {
+          "pages": [
+            9,
+            9
+          ],
+          "topic": "Cross-discipline impacts",
+          "tlos": [
+            10,
+            12
+          ],
+          "guide_sections": [
+            "IPPD and CM"
+          ]
+        },
+        {
+          "pages": [
+            10,
+            10
+          ],
+          "topic": "Commercial item impacts",
+          "tlos": [
+            13
+          ],
+          "guide_sections": [
+            "Commercial Item Impacts"
+          ]
+        },
+        {
+          "pages": [
+            11,
+            12
+          ],
+          "topic": "CCB process and changes",
+          "tlos": [
+            5,
+            6
+          ],
+          "guide_sections": [
+            "Configuration Control"
+          ]
+        },
+        {
+          "pages": [
+            13,
+            14
+          ],
+          "topic": "Baseline/specification matrix",
+          "tlos": [
+            3,
+            4,
+            9
+          ],
+          "guide_sections": [
+            "Configuration Baselines",
+            "Specifications, CM Planning, and Baselines"
+          ]
+        },
+        {
+          "pages": [
+            15,
+            17
+          ],
+          "topic": "Interface control",
+          "tlos": [
+            7
+          ],
+          "guide_sections": [
+            "Interface Control"
+          ]
+        },
+        {
+          "pages": [
+            18,
+            20
+          ],
+          "topic": "Data package and control strategy",
+          "tlos": [
+            7
+          ],
+          "guide_sections": [
+            "Technical Data Management",
+            "Configuration Management Strategy"
+          ]
+        },
+        {
+          "pages": [
+            21,
+            24
+          ],
+          "topic": "Reviews lifecycle and V model",
+          "tlos": [
+            8,
+            9
+          ],
+          "guide_sections": [
+            "Technical Reviews Purpose",
+            "MCA Technical Reviews by Phase"
+          ]
+        },
+        {
+          "pages": [
+            25,
+            28
+          ],
+          "topic": "Specific reviews/baseline relationship",
+          "tlos": [
+            8,
+            9,
+            10
+          ],
+          "guide_sections": [
+            "MCA Technical Reviews by Phase",
+            "Specifications, Baselines, and Reviews"
+          ]
+        },
+        {
+          "pages": [
+            29,
+            31
+          ],
+          "topic": "Review principles, participation, preparation and follow-up",
+          "tlos": [
+            11
+          ],
+          "guide_sections": [
+            "General Principles for Reviews",
+            "System-Level Technical Review Board Details",
+            "Steps to Effective Design Reviews"
+          ]
+        },
+        {
+          "pages": [
+            32,
+            34
+          ],
+          "topic": "Summary",
+          "tlos": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            10,
+            11,
+            13
+          ],
+          "guide_sections": [
+            "Quick Review"
+          ]
+        }
+      ],
+      "visual_notes": [
+        "P11 image-only CCB flow includes contracting officer for contractual implementation; guide omits process flow.",
+        "P28 functional/allocated/product baseline chronology visually compared with guide; preserve improved distinction between SRR/SFR and initial/final product baseline.",
+        "P31 before/during/after review ladder adds entry/exit criteria, responsibilities, error classification and tracked closure; guide names steps but omits these actionable details."
+      ]
+    },
+    {
+      "module": "3.5.4",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-5-systems-engineering-logistics-and-test/3.5.4 Acquisition Logistics.pdf",
+      "citation_key": "edo-3-5-4-acquisition-logistics-2025",
+      "pages": 77,
+      "version": "6.2",
+      "date": "2026-03-20",
+      "sha256": "0141e03c3f9d4b63056dbf5c511c901c9b678c0ee84a2029e3d4f215ee538517",
+      "review_status": "complete_text_and_visual",
+      "reviewed_pages": [
+        [
+          1,
+          77
+        ]
+      ],
+      "visual_reviewed_pages": [
+        [
+          1,
+          77
+        ]
+      ],
+      "guide_file": "tex/chapters/17J_Acquisition_Logistics.tex",
+      "topic_mappings": [
+        {
+          "pages": [
+            1,
+            4
+          ],
+          "topic": "Title, TLOs, agenda",
+          "tlos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "guide_sections": [
+            "Summary"
+          ]
+        },
+        {
+          "pages": [
+            5,
+            9
+          ],
+          "topic": "Whole system and acquisition logistics role",
+          "tlos": [
+            1,
+            3
+          ],
+          "guide_sections": [
+            "Defining Acquisition Logistics",
+            "Role of Acquisition Logistics"
+          ]
+        },
+        {
+          "pages": [
+            10,
+            12
+          ],
+          "topic": "PM accountability, PSM, LCSP policy",
+          "tlos": [
+            11,
+            13
+          ],
+          "guide_sections": [
+            "Acquisition Logistics Policy",
+            "Policy Implementation: PSM and LCSP"
+          ]
+        },
+        {
+          "pages": [
+            13,
+            16
+          ],
+          "topic": "RAM definitions, requirements, metrics and availability formula",
+          "tlos": [
+            4,
+            15
+          ],
+          "guide_sections": [
+            "RAM Definitions",
+            "Acquisition Logistics and RAM",
+            "RAM Metrics"
+          ]
+        },
+        {
+          "pages": [
+            17,
+            19
+          ],
+          "topic": "RAM design techniques",
+          "tlos": [
+            10
+          ],
+          "guide_sections": [
+            "RAM Techniques",
+            "Design to Minimize Failures"
+          ]
+        },
+        {
+          "pages": [
+            20,
+            24
+          ],
+          "topic": "Cost distribution, early design influence, logistics concepts",
+          "tlos": [
+            1,
+            2,
+            4,
+            11
+          ],
+          "guide_sections": [
+            "Support Costs and Life-Cycle Cost",
+            "Logistics-Related Concepts"
+          ]
+        },
+        {
+          "pages": [
+            25,
+            28
+          ],
+          "topic": "PBL outcomes, metrics and incentives",
+          "tlos": [
+            11,
+            14,
+            15,
+            16
+          ],
+          "guide_sections": [
+            "Performance-Based Logistics",
+            "PBL Metrics and Contracting Strategy"
+          ]
+        },
+        {
+          "pages": [
+            29,
+            34
+          ],
+          "topic": "PSA integrated with SE, maintenance and configuration data",
+          "tlos": [
+            2
+          ],
+          "guide_sections": [
+            "Supportability Analysis",
+            "Product Support Analysis"
+          ]
+        },
+        {
+          "pages": [
+            35,
+            38
+          ],
+          "topic": "Milestone support objectives and unresolved impacts",
+          "tlos": [
+            2,
+            3,
+            4,
+            6,
+            7
+          ],
+          "guide_sections": [
+            "Supportability and the Acquisition Life Cycle",
+            "Supportability Issues and Impact"
+          ]
+        },
+        {
+          "pages": [
+            39,
+            43
+          ],
+          "topic": "PSBM accountability and iterative 12-step strategy",
+          "tlos": [
+            12
+          ],
+          "guide_sections": [
+            "Product Support Business Model",
+            "12-Step Product Support Strategy Process"
+          ]
+        },
+        {
+          "pages": [
+            44,
+            46
+          ],
+          "topic": "Living LCSP and maturation",
+          "tlos": [
+            13
+          ],
+          "guide_sections": [
+            "Life-Cycle Sustainment Plan",
+            "LCSP Development by Milestone"
+          ]
+        },
+        {
+          "pages": [
+            47,
+            59
+          ],
+          "topic": "IPS relationships and first ten elements",
+          "tlos": [
+            5
+          ],
+          "guide_sections": [
+            "12 Integrated Product Support Elements",
+            "IPS Element Highlights"
+          ]
+        },
+        {
+          "pages": [
+            60,
+            64
+          ],
+          "topic": "Facilities development and IT lifecycle support",
+          "tlos": [
+            2,
+            5
+          ],
+          "guide_sections": [
+            "IPS Element Highlights"
+          ]
+        },
+        {
+          "pages": [
+            65,
+            67
+          ],
+          "topic": "Planning and supportability gaps",
+          "tlos": [
+            6
+          ],
+          "guide_sections": [
+            "Logistics and Program Planning"
+          ]
+        },
+        {
+          "pages": [
+            68,
+            70
+          ],
+          "topic": "Fielding milestones, materiel release, IOC",
+          "tlos": [
+            3,
+            8
+          ],
+          "guide_sections": [
+            "Fielding and Deployment"
+          ]
+        },
+        {
+          "pages": [
+            71,
+            74
+          ],
+          "topic": "Postproduction options, battery example and obsolete IC curve",
+          "tlos": [
+            9
+          ],
+          "guide_sections": [
+            "Post-Production Support"
+          ]
+        },
+        {
+          "pages": [
+            75,
+            77
+          ],
+          "topic": "Summary",
+          "tlos": [
+            1,
+            4,
+            5,
+            7,
+            9
+          ],
+          "guide_sections": [
+            "Quick Review"
+          ]
+        }
+      ],
+      "visual_notes": [
+        "P16 image-only availability formula and downtime contributors missing guide: uptime includes standby and operating time; downtime includes logistics, administrative delay, corrective and preventive maintenance.",
+        "P20/23 cost curves are conceptual teaching examples, not universal cost estimates or irrevocable spending; avoid numeric 70-80 percent presented as all programs.",
+        "P27 image-only metric matrix; p28 incentive matrix are TLO15/16 coverage gaps.",
+        "P31/33/34 show supportability trades continuing through sustainment; configuration-managed engineering BOM and support BOM connect design to logistics product data.",
+        "P40: requirements downward and performance/data upward, government PM accountability retained when PSI/PSP is industry.",
+        "P47/48 IPS architecture and p51 feedback show elements interdependent; naming 12 alone does not explain relationship.",
+        "P73 2003 battery case illustrates low demand sole-source risk and bridging purchases pending redesign; p74 commercial IC supply ends before long platform life."
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "ENG-01",
+      "module": "3.5.1",
+      "status": "Outdated",
+      "original_claim": "Quick Review says SEP approved at each milestone review.",
+      "guide_location": "17G / Quick Review",
+      "replacement_text": "The SEP documents the program technical approach. Apply the designated approval authority and approve before major-phase requests for proposals; update for substantive changes and applicable reviews. \\autocite{DoDI5000-88}",
+      "source_basis": "DoDI 5000.88 (2020-11-18), 3.4.a; official indexed PDF retrieved 2026-10-20; prior correct detailed paragraph preserved.",
+      "confidence": "High"
+    },
+    {
+      "id": "ENG-02",
+      "module": "3.5.1",
+      "status": "Needs source",
+      "original_claim": "No explicit teaching of image-only requirements feedback loops, design maturation, or MBSE pillars.",
+      "guide_location": "17G / Requirements Traceability Flow; Program-Unique Specifications; Digital Engineering Policy",
+      "replacement_text": "Requirements traceability works in both directions: every requirement maps to a function and every function to a hardware or software element; each function and element must also be justified by a valid requirement. Design information matures from system definition and system specifications, through preliminary design and item performance specifications, to detailed design and item detail, process, and material specifications. Model-based systems engineering uses related models throughout requirements, design, analysis, verification and validation; its three pillars are modeling languages, methods and tools. \\autocite[pp. 21, 28, 32]{edo-3-5-1-systems-engineering-overview-2025}",
+      "source_basis": "Coursebook visual pages 21, 28, 32; learning objectives 7a/8 and explicit MBSE teaching.",
+      "confidence": "High"
+    },
+    {
+      "id": "ENG-03",
+      "module": "3.5.1",
+      "status": "Outdated",
+      "original_claim": "System specification derived only from CDD KPPs.",
+      "guide_location": "17G / Program-Unique Specifications / System specification",
+      "replacement_text": "The system specification translates approved Service requirements (updated SRD/CDD and applicable performance attributes) into system-level technical requirements and verification criteria. \\autocite{edo-3-3-3-jfrp-2026,edo-3-5-1-systems-engineering-overview-2025}",
+      "source_basis": "Existing JFRP update; 3.5.1 pp26/31 retains old CDD-only language; harmonize with current guide requirements crosswalk.",
+      "confidence": "High"
+    },
+    {
+      "id": "ENG-04",
+      "module": "3.5.2",
+      "status": "Outdated",
+      "original_claim": "System types reproduce 11 older categories despite citing current MIL-STD-881F.",
+      "guide_location": "17H / WBS Guidance / System types",
+      "replacement_text": "MIL-STD-881F provides commodity structures in Appendices A--J and common elements in Appendix K. Select the applicable commodity and tailor its structure to the program; use the edition incorporated into the agreement. \\autocite{MILSTD-881F}",
+      "source_basis": "ASSIST MIL-STD-881 record, active Revision F 2022-05-13; live record 2026-10-20 describes A--J and K. Avoid asserting old 11-category taxonomy as F.",
+      "confidence": "High"
+    },
+    {
+      "id": "ENG-05",
+      "module": "3.5.2",
+      "status": "Needs source",
+      "original_claim": "Guide does not demonstrate WBS format or evolution shown on coursebook pages 13-14/20.",
+      "guide_location": "17H / WBS Hierarchy",
+      "replacement_text": "Example: a sea-system WBS places the Sea System at Level 1, Ship at Level 2, and hull structure or propulsion plant at Level 3. Training, system test, data, support equipment and initial spares are enabling branches, not ship hardware. As design matures, the Government proposes the program structure, contractors develop and update their contract detail, and the Government approves the agreed structure and changes. The level numbers illustrate this example rather than a universal limit. \\autocite[pp. 13--14,20]{edo-3-5-2-wbs-2025}",
+      "source_basis": "Coursebook visuals 13,14,20; TLO5 format and TLO3 lifecycle.",
+      "confidence": "High"
+    },
+    {
+      "id": "ENG-06",
+      "module": "3.5.3",
+      "status": "Incorrect",
+      "original_claim": "Configuration Management Strategy assigns allocated and product baselines to contractor without phase or change-class qualification.",
+      "guide_location": "17I / Configuration Management Strategy",
+      "replacement_text": "Tailor Government and contractor control in the SEP and configuration-management plan. The lead systems engineer maintains the functional, allocated and product baselines under the PM. At completion of system-level CDR, the PM assumes control of initial product-baseline Class I configuration changes from the contractor; contractor detail design and internal control remain subject to that approved allocation. \\autocite{DoDI5000-88}",
+      "source_basis": "DoDI 5000.88 \u00a73.4.b(1)-(2), 2020-11-18, official indexed text checked 2026-10-20.",
+      "confidence": "High"
+    },
+    {
+      "id": "ENG-07",
+      "module": "3.5.3",
+      "status": "Ambiguous",
+      "original_claim": "Three types of baseline changes includes deviations and waivers, suggesting these always revise the approved baseline.",
+      "guide_location": "17I / Configuration Control and Quick Review",
+      "replacement_text": "An engineering change revises approved configuration documentation. The coursebook distinguishes a deviation authorized before manufacture from a waiver accepting a nonconforming item during/after manufacture. These authorize a limited departure rather than automatically revising the baseline. Current configuration-management guidance groups such departures as requests for variance; use the terminology and authority specified in the contract and CM plan. \\autocite{edo-3-5-3-cm-tech-reviews-2025,MIL-HDBK-61B-CH1-2025}",
+      "source_basis": "MIL-HDBK-61B Change 1 (2025-08-15), current official indexed PDF https://quicksearch.dla.mil/WMX/Default.aspx?token=5796547 table definition RFV explicitly says no revision of product definition information; verified 2026-10-20.",
+      "confidence": "High"
+    },
+    {
+      "id": "ENG-08",
+      "module": "3.5.3",
+      "status": "Needs source",
+      "original_claim": "Image-only configuration-control workflow and review entrance/exit criteria insufficiently represented.",
+      "guide_location": "17I / Configuration Control; Steps to Effective Design Reviews",
+      "replacement_text": "Route an engineering change proposal through the configuration manager/CCB secretariat to the configuration control board. Record the board directive and obtain contracting-officer action when contractual changes are required before contractor implementation. For a design review, select entrance and exit criteria, assign reviewer roles, record and classify discrepancies, assign action owners, and track closure and error trends. \\autocite[pp. 11,31]{edo-3-5-3-cm-tech-reviews-2025}",
+      "source_basis": "Coursebook visual pp11,31; TLO1/5/11.",
+      "confidence": "High"
+    },
+    {
+      "id": "ENG-09",
+      "module": "3.5.4",
+      "status": "Outdated",
+      "original_claim": "PSA guidance still MIL-HDBK-502A.",
+      "guide_location": "17J / Product Support Analysis",
+      "replacement_text": "Product support analysis defines and verifies the support package. MIL-HDBK-502B (18 April 2025) provides tailoring guidance; the handbook is not itself a contractual requirement. Specify required analyses and deliverables in the applicable agreement. \\autocite{MIL-HDBK-502B-2025}",
+      "source_basis": "ASSIST active revision B official catalog, checked 2026-10-20.",
+      "confidence": "High"
+    },
+    {
+      "id": "ENG-10",
+      "module": "3.5.4",
+      "status": "Needs source",
+      "original_claim": "Image-only Ao formula, metrics and incentive examples missing despite TLO4/15/16.",
+      "guide_location": "17J / RAM Metrics; PBL Metrics and Contracting Strategy",
+      "replacement_text": "Operational availability is uptime divided by uptime plus downtime; count standby and operating time as uptime, and logistics, administrative, corrective-maintenance and preventive-maintenance time as downtime. Pair a readiness metric with an affordability measure and a defined period: mission-capable rate, mission completion/MTBF, cost per steaming hour, and customer wait time/MTTR. Financial incentives can reward measured outcomes; option or award-term opportunities can encourage investment when authorized. Open architecture and public-private depot partnerships are nonfinancial approaches that enable competition and efficient support. \\autocite[pp.16,26--28]{edo-3-5-4-acquisition-logistics-2025}",
+      "source_basis": "Visual p16,27,28; text p26; avoid treating slide incentive categories as procurement authority.",
+      "confidence": "High"
+    },
+    {
+      "id": "ENG-11",
+      "module": "3.5.4",
+      "status": "Ambiguous",
+      "original_claim": "70-80 percent cost share stated as typical program estimate; supportability diagrams omit trade relationships.",
+      "guide_location": "17J / Support Costs and Life-Cycle Cost; Product Support Analysis",
+      "replacement_text": "The coursebook uses 70--80 percent O\\&S as an illustrative life-cycle cost share; use the actual program estimate for decisions. Early design choices commit future support costs before cash is spent. Support analysis iterates through design, maintenance planning and sustaining engineering, feeding a configuration-consistent support package. \\autocite[pp.20,23,31--34]{edo-3-5-4-acquisition-logistics-2025}",
+      "source_basis": "Visual conceptual cost curves and support-analysis flows.",
+      "confidence": "High"
+    },
+    {
+      "id": "ENG-12",
+      "module": "3.5.4",
+      "status": "Ambiguous",
+      "original_claim": "Materiel release implies every release requires every deficiency closed.",
+      "guide_location": "17J / Fielding and Deployment",
+      "replacement_text": "The coursebook describes full materiel release as certification that identified materiel/logistics deficiencies are corrected and initial support resources are available, while also identifying conditional release as a fielding issue. Apply the governing Service release process and document unresolved conditions, risk acceptance and corrective actions; do not infer that delivery or IOC proves all deficiencies are closed. \\autocite[pp.68--69]{edo-3-5-4-acquisition-logistics-2025}",
+      "source_basis": "Coursebook itself mentions conditional materiel release p68; no unverified Navy release authority added.",
+      "confidence": "High"
+    }
+  ],
+  "sources": [
+    {
+      "citekey": "DoDI5000-88",
+      "title": "Engineering of Defense Systems",
+      "url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/500088p.PDF",
+      "version_date": "2020-11-18",
+      "effective_date": "2020-11-18",
+      "accessed": "2026-10-20",
+      "access_mode": "official indexed PDF text",
+      "supports": "SEP approvals and major-phase RFP timing, section 3.4.a"
+    },
+    {
+      "citekey": "MILSTD-881F",
+      "title": "Work Breakdown Structures for Defense Materiel Items",
+      "url": "https://quicksearch.dla.mil/qsdocdetails.aspx?ident_number=36026",
+      "version_date": "2022-05-13",
+      "effective_date": "2022-05-13",
+      "accessed": "2026-10-20",
+      "access_mode": "full official catalog; active status; data updated 2026-10-19",
+      "supports": "Active Revision F; commodity appendices A-J/common K; tailored contract/program structure",
+      "blocker": "Catalog image link resolved to gif; standard PDF body not obtained in this check."
+    },
+    {
+      "citekey": "MIL-HDBK-61B-CH1-2025",
+      "title": "Configuration Management Guidance, Revision B Change 1",
+      "url": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=202239",
+      "version_date": "2025-08-15",
+      "effective_date": "2025-08-15",
+      "accessed": "2026-10-20",
+      "access_mode": "Official catalog and current indexed PDF table definition",
+      "body_url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796547",
+      "supports": "Request for variance is bounded departure without revising product definition."
+    },
+    {
+      "citekey": "MIL-HDBK-502B-2025",
+      "title": "Product Support Analysis",
+      "url": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=201462",
+      "version_date": "2025-04-18",
+      "effective_date": "2025-04-18",
+      "accessed": "2026-10-20",
+      "access_mode": "Full official ASSIST catalog",
+      "supports": "Revision B active; tailoring, SAE TA-STD-0017A integration, guidance not requirement"
+    }
+  ]
+}

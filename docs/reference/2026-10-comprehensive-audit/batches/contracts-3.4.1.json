@@ -1,0 +1,321 @@
+{
+  "module": "3.4.1",
+  "title": "3.4.1 Software Acquisition Environment.pdf",
+  "current_as_of": "2026-10-20",
+  "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-4-software-and-cybersecurity/3.4.1 Software Acquisition Environment.pdf",
+  "sha256": "dc0ae9c6fbb11a1397c47357dbba49de38164c3f0265fe31c8f8c03c0011beca",
+  "version": "6.1",
+  "edition_date": "2026-09-19",
+  "citation_key": "edo-3-4-1-software-acquisition-environment-2025",
+  "page_count": 37,
+  "status": "review_complete",
+  "reviewed_pdf_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37
+  ],
+  "visually_reviewed_pdf_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37
+  ],
+  "visual_method": "PyMuPDF rendered 1.2x; six-slide contact sheets opened with view_image; extracted page text crosschecked against all slides. Page ranges refer to physical PDF pages, not printed slide numbers.",
+  "visual_artifacts": "artifacts/audit/contracts_sheets/3.4.1_*.jpg",
+  "guide_files": [
+    "tex/chapters/17D_Software_Acquisition_Environment.tex"
+  ],
+  "objective_topic_mapping": [
+    {
+      "objective_or_topic": "TLO1 computer components, system/application software and languages",
+      "pdf_pages": [
+        4,
+        5,
+        6
+      ],
+      "guide_sections_or_labels": [
+        "Computer Basics",
+        "Programming Language Categories"
+      ],
+      "status": "correction required"
+    },
+    {
+      "objective_or_topic": "TLO2 software importance, risk plot and code-size graph",
+      "pdf_pages": [
+        8,
+        9
+      ],
+      "guide_sections_or_labels": [
+        "The Importance of Software"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO3 definition and four risk dimensions",
+      "pdf_pages": [
+        11
+      ],
+      "guide_sections_or_labels": [
+        "Software-Intensive System Definition"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO4-5 domains and comparison table",
+      "pdf_pages": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "guide_sections_or_labels": [
+        "Classifications of Software-Intensive Systems",
+        "Software-Intensive System Summary"
+      ],
+      "status": "qualifier required"
+    },
+    {
+      "objective_or_topic": "TLO6 and6a policies, CCA and documentation matrix",
+      "pdf_pages": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "guide_sections_or_labels": [
+        "Software Management Policies and Practices",
+        "Clinger-Cohen Act Requirements",
+        "DoW Instruction Provisions"
+      ],
+      "status": "expansion required"
+    },
+    {
+      "objective_or_topic": "TLO6b SWP and BCAC diagram details",
+      "pdf_pages": [
+        24,
+        25
+      ],
+      "guide_sections_or_labels": [
+        "Software Acquisition Pathway Execution",
+        "Business Capability Acquisition Cycle"
+      ],
+      "status": "expansion required"
+    },
+    {
+      "objective_or_topic": "TLO7 software items and units",
+      "pdf_pages": [
+        27
+      ],
+      "guide_sections_or_labels": [
+        "Software Items"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO8 interoperability and architecture matrix",
+      "pdf_pages": [
+        29,
+        32
+      ],
+      "guide_sections_or_labels": [
+        "Interoperability and Architecture"
+      ],
+      "status": "version correction and legacy qualification required"
+    },
+    {
+      "objective_or_topic": "Backup software types A-D, customization, OSS, embedded safety",
+      "pdf_pages": [
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "guide_sections_or_labels": [
+        "new Software Sourcing and Integration Patterns"
+      ],
+      "status": "omitted"
+    },
+    {
+      "objective_or_topic": "Titles, objectives, overviews and review",
+      "pdf_pages": [
+        1,
+        2,
+        3,
+        7,
+        10,
+        17,
+        26,
+        28,
+        30,
+        31
+      ],
+      "guide_sections_or_labels": [
+        "Summary",
+        "Quick Review"
+      ],
+      "status": "covered"
+    }
+  ],
+  "findings": [
+    {
+      "id": "SW001",
+      "original_claim": "C++ and Java all compiled to machine code",
+      "classification": "overgeneralization",
+      "guide_location": "Programming Language Categories",
+      "required_change": "High-level languages are compiled, interpreted, or use both; Java commonly targets JVM bytecode.",
+      "source_basis": "Oracle JVM introduction; coursebookp6",
+      "explanation": "Avoid treating a simple classroom taxonomy as a universal execution model.",
+      "confidence": "High"
+    },
+    {
+      "id": "SW002",
+      "original_claim": "All weapons use nanosecond data; DBS always COTS/privacy only",
+      "classification": "overgeneralization",
+      "guide_location": "Classifications of Software-Intensive Systems",
+      "required_change": "Explicitly label timing/architecture traits as coursebook comparisons, not categorical requirements; mission-specific latency, safety, security and privacy apply.",
+      "source_basis": "Coursebookpp13-16",
+      "explanation": "Preserve recall without false technical universality.",
+      "confidence": "High"
+    },
+    {
+      "id": "SW003",
+      "original_claim": "CCA documentation matrix and SWP/BCAC diagram flows absent",
+      "classification": "omission",
+      "guide_location": "CCA Requirements; SWP Execution; BCAC",
+      "required_change": "Map CCA evidence to strategy, cost, capability need, architecture, cyber strategy and portfolio record; explain planning/execution/user agreement and five BCAC phases with ATPs.",
+      "source_basis": "Coursebookpp20,24-25; existing DoDI5000.75/87",
+      "explanation": "Substantive image/table content omitted.",
+      "confidence": "High"
+    },
+    {
+      "id": "SW004",
+      "original_claim": "Interoperability authority implicitly 2014/2017 and architecture matrix universal",
+      "classification": "stale framing",
+      "guide_location": "Interoperability and Architecture",
+      "required_change": "Date DoDI8330.01 to27September2022 as official catalog confirms; label p32 matrix legacy ICD/CDD/IS view allocation, explain view families and sponsor/programoffice split, require current tailored requirements.",
+      "source_basis": "ESD official catalog; coursebookpp29,32",
+      "explanation": "Full8330PDF403; do not infer detailed changes.",
+      "confidence": "High"
+    },
+    {
+      "id": "SW005",
+      "original_claim": "Backup pages33-37 sourcing content absent",
+      "classification": "omission",
+      "guide_location": "new Software Sourcing and Integration Patterns",
+      "required_change": "Add TypeA COTS, TypeB configuredcustomization, TypeC customapps onCOTShardware/OS, TypeD tightlycoupledembedded; OSS license/provenance/support and controlledrelease, not automaticallypublic orfree; integrationandtest obligations.",
+      "source_basis": "Coursebookpp33-37; officialCode.milFAQupdated2026-07-28",
+      "explanation": "Important risk/reuse/embedded validation concepts not in guide.",
+      "confidence": "High"
+    }
+  ],
+  "current_sources": [
+    {
+      "citekey": "DoD-OSS-FAQ-2026",
+      "url": "https://code.mil/oss-faq.html",
+      "title": "DoW Open Source Software FAQ",
+      "version": "Updated2026-07-28",
+      "effective_date": null,
+      "access_date": "2026-10-20",
+      "access_method": "official web text retrieved"
+    },
+    {
+      "citekey": "Oracle-JVM-Introduction-25",
+      "url": "https://docs.oracle.com/javase/specs/jvms/se25/html/jvms-1.html",
+      "title": "Java Virtual Machine Specification: Introduction",
+      "version": "Java SE25",
+      "effective_date": null,
+      "access_date": "2026-10-20",
+      "access_method": "official web text retrieved"
+    },
+    {
+      "citekey": "ESD-Issuance-Catalog-20261020",
+      "url": "https://www.esd.whs.mil/directives/issuances/dodi/",
+      "title": "Official instruction catalog",
+      "version": "DoDI8330.01 entry dated2022-09-27",
+      "effective_date": null,
+      "access_date": "2026-10-20",
+      "access_method": "official web text retrieved"
+    }
+  ],
+  "notes": [
+    "All37pages visually reviewed; dense architecture matrix p32 separately enlarged at2x.",
+    "Preserved earlier verified USC3603/SWPdesignationexception and annualdelivery,2025Secretarymemo,and explicit8430.01blockedfulltext note.",
+    "Software riskpercentage andSLOC plot are historical illustrative metrics, not livecurrentestimates."
+  ],
+  "blockers": [
+    "DoDI8330.01 officialPDFreturned403; title/date verified viaofficialcatalog andindexedofficialPDF, detailedcurrentcertification provisions not independentlyretrieved.",
+    "NewDoWI8430.01fulltext remainedblocked in prior audit; no new detailedmandates asserted."
+  ],
+  "implementation_status": "Recommendations only; guide edits owned by integrating agent."
+}

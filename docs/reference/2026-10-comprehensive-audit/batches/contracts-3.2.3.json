@@ -1,0 +1,285 @@
+{
+  "module": "3.2.3",
+  "title": "3.2.3 Source Selection Process.pdf",
+  "current_as_of": "2026-10-20",
+  "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-2-contracting/3.2.3 Source Selection Process.pdf",
+  "sha256": "405ed530bd07131ca7a8cd695963bcaae7a9bfcee77ce75a879ade51b3f83171",
+  "version": "6.3",
+  "edition_date": "2026-09-30",
+  "citation_key": "edo-3-2-3-source-selection-2025",
+  "page_count": 35,
+  "status": "review_complete",
+  "reviewed_pdf_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "visually_reviewed_pdf_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "visual_method": "PyMuPDF rendered 1.2x; six-slide contact sheets opened with view_image; extracted page text crosschecked against all slides. Page ranges refer to physical PDF pages, not printed slide numbers.",
+  "visual_artifacts": "artifacts/audit/contracts_sheets/3.2.3_*.jpg",
+  "guide_files": [
+    "tex/chapters/12A_Source_Selection.tex"
+  ],
+  "objective_topic_mapping": [
+    {
+      "objective_or_topic": "TLO1: sequence from receipt; tradeoff/LPTA; branching interactions",
+      "pdf_pages": [
+        3,
+        12,
+        21,
+        32,
+        34
+      ],
+      "guide_sections_or_labels": [
+        "Source Selection Steps",
+        "Interactions with Contractors",
+        "Contract Award and Protests"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO2: SSP/RFP/IFB",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "guide_sections_or_labels": [
+        "Overview",
+        "Source Selection Plan"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO3-4: best value, tradeoff, LPTA",
+      "pdf_pages": [
+        8,
+        9,
+        10
+      ],
+      "guide_sections_or_labels": [
+        "Basis for Award and Best Value",
+        "Lowest Price Technically Acceptable",
+        "Tradeoff Process"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO5: SSA/SSAC/SSEB/PCO roles and organization",
+      "pdf_pages": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "guide_sections_or_labels": [
+        "Source Selection Organization",
+        "Roles and Responsibilities"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO6: deficiencies, competitive range, clarifications, communications/discussions",
+      "pdf_pages": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "guide_sections_or_labels": [
+        "Interactions with Contractors",
+        "Guidance on Exchanges"
+      ],
+      "status": "covered coursebook but current RFO terminology needs refresh"
+    },
+    {
+      "objective_or_topic": "TLO7: prepare and conduct fact-finding",
+      "pdf_pages": [
+        26,
+        27,
+        35
+      ],
+      "guide_sections_or_labels": [
+        "Fact-Finding and Analysis",
+        "Preparing for Fact-Finding"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO8: preparation/objectives/negotiating skills",
+      "pdf_pages": [
+        23,
+        24,
+        28,
+        29,
+        30,
+        31,
+        35
+      ],
+      "guide_sections_or_labels": [
+        "Negotiation Preparation and Objectives",
+        "Negotiation Skills",
+        "Keep the End Goal in Mind"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO9: negotiation participant responsibilities",
+      "pdf_pages": [
+        25
+      ],
+      "guide_sections_or_labels": [
+        "Roles and Responsibilities",
+        "Preparing for Fact-Finding"
+      ],
+      "status": "partial PMO supporting role not explicit"
+    },
+    {
+      "objective_or_topic": "Supplementary topic: award/debrief/protest",
+      "pdf_pages": [
+        32,
+        33
+      ],
+      "guide_sections_or_labels": [
+        "Contract Award and Protests"
+      ],
+      "status": "covered"
+    }
+  ],
+  "findings": [
+    {
+      "id": "CON-013",
+      "original_claim": "Clarifications only minor/clerical/adverse performance and only when awarding without discussions; communications is separate mandatory stage.",
+      "classification": "Outdated",
+      "guide_location": "Interactions with Contractors and Quick Review",
+      "required_change": "Use: The coursebook uses legacy clarification/communication/discussion labels. Current RFO 15.202 permits clarifications from proposal receipt through award to resolve ambiguities and seek nonmaterial supporting information, but not revise a proposal, cure a deficiency/material omission, or change material technical or cost elements. If competitive negotiations permit revisions, the KO establishes a competitive range and negotiates with each responsible offeror in it under 15.204. Cite FAR-Overhaul-Part15-2026.",
+      "source_basis": "RFO15.202(a)(2),15.204-1,15.204-2 live official text",
+      "explanation": "Keeps coursebook recognition while teaching current controlling distinctions.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-014",
+      "original_claim": "Do not reveal Government findings/specific numbers or negotiate task performance.",
+      "classification": "Ambiguous",
+      "guide_location": "Negotiation Skills and Quick Review",
+      "required_change": "Use: Technical team members must not disclose Government analysis or commit to changed work without KO concurrence and delegated authority; the KO controls negotiation strategy and authorized exchanges. Protect another offeror's proprietary solution, price and source-selection information. Cite FAR-Overhaul-Part15-2026, section15.404(b).",
+      "source_basis": "RFO15.404(b) expressly requires KO concurrence for disclosure of recommendations/conclusions",
+      "explanation": "Absolute wording conflicts with meaningful KO-led bargaining and could prevent required discussions.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-015",
+      "original_claim": "Fact-finding section does not explicitly identify PMO support role.",
+      "classification": "Ambiguous",
+      "guide_location": "Roles and Responsibilities",
+      "required_change": "Add: The PMO supplies technical/program personnel to evaluation teams and supports the KO; the KO remains the focal point for offeror communications and leads negotiations. Cite edo-3-2-3-source-selection-2025, p25.",
+      "source_basis": "Coursebook p25",
+      "explanation": "Restores TLO9 role distinction.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-016",
+      "original_claim": "Deficiency defined using legacy combination-of-weaknesses language and many legacy Part15 citations imply current numbering.",
+      "classification": "Outdated",
+      "guide_location": "Interactions with Contractors / Deficiencies; opening note",
+      "required_change": "Use current definition: A deficiency is a proposal part that fails to conform to a material RFP requirement. Add one chapter note: Legacy FAR15.3/15.306 coursebook references map to current RFO15.201-15.205; consult the active DoD deviation for implementing overlays. Cite FAR-Overhaul-Part15-2026.",
+      "source_basis": "RFO15.001;15.201-15.205",
+      "explanation": "Prevents obsolete paragraph citations and definition from being memorized as current. Preserve original coursebook source for historical labels.",
+      "confidence": "High"
+    }
+  ],
+  "current_sources": [
+    {
+      "citekey": "FAR-Overhaul-Part15-2026",
+      "url": "https://www.acquisition.gov/far-overhaul/far-part-deviation-guide/far-overhaul-part-15",
+      "title": "RFO FAR Part 15",
+      "version": "Live official page",
+      "effective_date": null,
+      "access_date": "2026-10-20",
+      "access_method": "official web text retrieved"
+    },
+    {
+      "citekey": "DFARS-215-506-Postaward-Debriefing",
+      "url": "https://www.acquisition.gov/dfars/215.506-postaward-debriefing-offerors.",
+      "title": "DFARS postaward debriefing",
+      "version": "Current official text; $15M threshold corroborated",
+      "effective_date": null,
+      "access_date": "2026-10-20",
+      "access_method": "official web text retrieved"
+    }
+  ],
+  "notes": [
+    "All 35 slides visually reviewed including image-only interaction flow p21: discussions anticipated -> communications -> competitive range -> bargaining/discussions; no-discussions -> clarifications -> selection. Guide covers sequence but RFO update supersedes rigid stage model.",
+    "Existing guide correctly narrows coursebook demand to discuss all weaknesses to significant weaknesses and corrects coursebook automatic-protest-stay overstatement. Preserve these improvements.",
+    "Exact current DoD RFO Part15 signed attachment remains earlier-audit access limitation; official model text fully retrieved, legacy DFARS15M corroborated, avoid inventing changed DoD-specific procedure."
+  ],
+  "blockers": [],
+  "implementation_status": "Recommendations only; guide edits owned by integrating agent."
+}

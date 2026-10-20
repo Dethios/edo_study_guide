@@ -1,0 +1,735 @@
+{
+  "snapshot_status": "INCOMPLETE - preservation only; not a validated release",
+  "as_of": "2026-10-20",
+  "baseline": "e8b2ef1a10271b1e6e64bb717a70b1707b57b11e",
+  "recovery_branch": "recovery/edo-source-update-20261020T162032Z",
+  "interpretation": "Saved module review claims are preserved, not independently recertified. Presence of rendered images is not evidence of completed review. Guide changes require source integration and validation.",
+  "inventory_validation": {
+    "coursebooks": 71,
+    "pages": 2805,
+    "sha256_mismatches_or_untracked_sources": []
+  },
+  "modules_with_saved_review_records": 29,
+  "modules": [
+    {
+      "module": "1.0.1",
+      "source_pdf": "tex/assets/coursebook/chapter-1-course-introduction/section-0-overview/1.0.1 Course Introduction.pdf",
+      "pages": 39,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/leadership-orientation.json",
+          "reported_status": "reviewed_with_gaps"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "1.0.2",
+      "source_pdf": "tex/assets/coursebook/chapter-1-course-orientation/section-0-introduction-and-administration/1.0.2 Course Administration.pdf",
+      "pages": 43,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/leadership-orientation.json",
+          "reported_status": "reviewed_reference_only"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "2.1.1",
+      "source_pdf": "tex/assets/coursebook/chapter-2-enterprise-and-authorities/section-1-organizations-and-roles/2.1.1 Command Structures.pdf",
+      "pages": 54,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "2.1.2",
+      "source_pdf": "tex/assets/coursebook/chapter-2-enterprise-and-authorities/section-1-organizations-and-roles/2.1.2 NAVSEA Organization.pdf",
+      "pages": 41,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "2.1.3",
+      "source_pdf": "tex/assets/coursebook/chapter-2-enterprise-and-authorities/section-1-organizations-and-roles/2.1.3 NAVWAR Enterprise.pdf",
+      "pages": 31,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "2.1.4",
+      "source_pdf": "tex/assets/coursebook/chapter-2-enterprise-and-authorities/section-1-organizations-and-roles/2.1.4 Naval Warfare Centers.pdf",
+      "pages": 41,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "2.1.5",
+      "source_pdf": "tex/assets/coursebook/chapter-2-enterprise-and-authorities/section-1-organizations-and-roles/2.1.5 Technical Authority and Engineering Agents.pdf",
+      "pages": 37,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.1.1",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-1-resource-management/3.1.1 PPBE.pdf",
+      "pages": 40,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/requirements-coverage.json",
+          "reported_status": "reviewed; current/legacy crosswalk, review forum, PE example, and legacy POM example corrected"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "3.1.2",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-1-resource-management/3.1.2 Congressional Enactment.pdf",
+      "pages": 43,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/requirements-coverage.json",
+          "reported_status": "reviewed; definitions and CR wording corrected; appeal example added"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "3.1.3",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-1-resource-management/3.1.3 Program Funding.pdf",
+      "pages": 43,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/requirements-coverage.json",
+          "reported_status": "reviewed; definitions, MYP, fixed-period scope corrected; numeric examples added"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "3.1.4",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-1-resource-management/3.1.4 Budget Execution.pdf",
+      "pages": 34,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.1.5",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-1-resource-management/3.1.5 Field Activity Financial Management.pdf",
+      "pages": 33,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.1.6",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-1-resource-management/3.1.6 Cost Estimating.pdf",
+      "pages": 41,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.2.1",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-2-contracting/3.2.1 Intro to Contracting.pdf",
+      "pages": 32,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/contracts-3.2.1.json",
+          "reported_status": "review_complete"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "3.2.2",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-2-contracting/3.2.2 Solicitation Preparation.pdf",
+      "pages": 64,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/contracts-3.2.2.json",
+          "reported_status": "review_complete"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "3.2.3",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-2-contracting/3.2.3 Source Selection Process.pdf",
+      "pages": 35,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/contracts-3.2.3.json",
+          "reported_status": "review_complete"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "3.2.4",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-2-contracting/3.2.4 Cost and Price Evaluation.pdf",
+      "pages": 41,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/contracts-3.2.4.json",
+          "reported_status": "review_complete"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "3.2.5",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-2-contracting/3.2.5 Source Selection Practical.pdf",
+      "pages": 22,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/contracts-3.2.5.json",
+          "reported_status": "review_complete"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "3.2.6",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-2-contracting/3.2.6 Contract Administration.pdf",
+      "pages": 46,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/contracts-3.2.6.json",
+          "reported_status": "review_complete"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "3.3.1",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-3-acquisition-policy-and-pathways/3.3.1 Acquisition Policy and Players.pdf",
+      "pages": 55,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.3.2",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-3-acquisition-policy-and-pathways/3.3.2 Acquisition Milestones and Phases.pdf",
+      "pages": 77,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.3.3",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-3-acquisition-policy-and-pathways/3.3.3 Joint Force Requirements Process (JFRP).pdf",
+      "pages": 37,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/requirements-coverage.json",
+          "reported_status": "reviewed; Service approval gate added; current official full-body access gap retained"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "3.3.4",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-3-acquisition-policy-and-pathways/3.3.4 Research and Development.pdf",
+      "pages": 27,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.3.6",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-3-acquisition-policy-and-pathways/3.3.6 Risk Mgmt Prob Solving.pdf",
+      "pages": 49,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.3.7",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-3-acquisition-policy-and-pathways/3.3.7 Environmental Requirements and Responsibilities.pdf",
+      "pages": 59,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.4.1",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-4-software-and-cybersecurity/3.4.1 Software Acquisition Environment.pdf",
+      "pages": 37,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/contracts-3.4.1.json",
+          "reported_status": "review_complete"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "3.4.2",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-4-software-and-cybersecurity/3.4.2 Software Acquisition Management.pdf",
+      "pages": 41,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.4.3",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-4-software-and-cybersecurity/3.4.3 Cybersecurity Awareness.pdf",
+      "pages": 29,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.5.1",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-5-systems-engineering-logistics-and-test/3.5.1 Systems Engineering Overview.pdf",
+      "pages": 35,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/engineering-coverage.json",
+          "reported_status": "complete_text_and_visual"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "3.5.2",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-5-systems-engineering-logistics-and-test/3.5.2 SE AC WBS.pdf",
+      "pages": 21,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/engineering-coverage.json",
+          "reported_status": "complete_text_and_visual"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "3.5.3",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-5-systems-engineering-logistics-and-test/3.5.3 SE AC CM and Tech Reviews.pdf",
+      "pages": 34,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/engineering-coverage.json",
+          "reported_status": "complete_text_and_visual"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "3.5.4",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-5-systems-engineering-logistics-and-test/3.5.4 Acquisition Logistics.pdf",
+      "pages": 77,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/engineering-coverage.json",
+          "reported_status": "complete_text_and_visual"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "3.5.5",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-5-systems-engineering-logistics-and-test/3.5.5 Test and Evaluation Part I.pdf",
+      "pages": 44,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.5.6",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-5-systems-engineering-logistics-and-test/3.5.6 Test and Evaluation Part II.pdf",
+      "pages": 42,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.5.7",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-5-systems-engineering-logistics-and-test/3.5.7 Ship Trials.pdf",
+      "pages": 38,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.6.1",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-6-earned-value-management/3.6.1 Introduction to EVM.pdf",
+      "pages": 63,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.6.2",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-6-earned-value-management/3.6.2 EVM Data Analysis.pdf",
+      "pages": 38,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.6.3",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-6-earned-value-management/3.6.3 EVM Exercise.pdf",
+      "pages": 3,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.7.1",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-7-manufacturing-and-production/3.7.1 Manufacturing and Producibility.pdf",
+      "pages": 27,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.7.2",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-7-manufacturing-and-production/3.7.2 Production, Quality and Manufacturing.pdf",
+      "pages": 47,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.7.3",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-7-manufacturing-and-production/3.7.3 Intro to CPI.pdf",
+      "pages": 37,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "3.8.1-4",
+      "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-8-industrial-control-systems/3.8.1-4 ICS Introduction and Modules.pdf",
+      "pages": 64,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "4.1.1",
+      "source_pdf": "tex/assets/coursebook/chapter-4-fleet-maintenance-and-modernization/section-1-maintenance-foundations/4.1.1 Fleet Maintenance Assets.pdf",
+      "pages": 43,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/maintenance_civpers_coverage.json",
+          "reported_status": "full_review_complete"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "4.1.2",
+      "source_pdf": "tex/assets/coursebook/chapter-4-fleet-maintenance-and-modernization/section-1-maintenance-foundations/4.1.2 Navy Modernization Program.pdf",
+      "pages": 28,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/maintenance_civpers_coverage.json",
+          "reported_status": "full_review_complete"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "4.1.3",
+      "source_pdf": "tex/assets/coursebook/chapter-4-fleet-maintenance-and-modernization/section-1-maintenance-foundations/4.1.3 Fleet Maintenance Policy and Implementation.pdf",
+      "pages": 41,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/maintenance_civpers_coverage.json",
+          "reported_status": "full_review_complete"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "4.1.4",
+      "source_pdf": "tex/assets/coursebook/chapter-4-fleet-maintenance-and-modernization/section-1-maintenance-foundations/4.1.4 AIT Fundamentals and Lessons Learned.pdf",
+      "pages": 23,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/maintenance_civpers_coverage.json",
+          "reported_status": "full_review_complete"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "4.1.5",
+      "source_pdf": "tex/assets/coursebook/chapter-4-fleet-maintenance-and-modernization/section-1-maintenance-foundations/4.1.5 Waterfront Organizations, Work Controls, and Safety.pdf",
+      "pages": 55,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/maintenance_civpers_coverage.json",
+          "reported_status": "full_review_complete"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "4.1.6",
+      "source_pdf": "tex/assets/coursebook/chapter-4-fleet-maintenance-and-modernization/section-1-maintenance-foundations/4.1.6 Battle Damage Assessment Repair.pdf",
+      "pages": 63,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/maintenance_civpers_coverage.json",
+          "reported_status": "full_review_complete"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "4.2.1",
+      "source_pdf": "tex/assets/coursebook/chapter-4-fleet-maintenance-and-modernization/section-2-cno-availabilities/4.2.1 CNO Availability Planning.pdf",
+      "pages": 41,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/maintenance_civpers_coverage.json",
+          "reported_status": "full_review_complete"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "4.2.2",
+      "source_pdf": "tex/assets/coursebook/chapter-4-fleet-maintenance-and-modernization/section-2-cno-availabilities/4.2.2 CNO Availability Execution.pdf",
+      "pages": 26,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "5.1.1",
+      "source_pdf": "tex/assets/coursebook/chapter-5-leadership-ethics-and-career-development/section-1-leadership-and-ethics/5.1.1 Naval Justice & Standards.pdf",
+      "pages": 90,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/leadership-legal.json",
+          "reported_status": "reviewed_with_gaps"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "5.1.10",
+      "source_pdf": "tex/assets/coursebook/chapter-5-leadership-ethics-and-career-development/section-1-leadership-and-ethics/5.1.10 High Consequence Events Management.pdf",
+      "pages": 61,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "5.1.3",
+      "source_pdf": "tex/assets/coursebook/chapter-5-leadership-ethics-and-career-development/section-1-leadership-and-ethics/5.1.3 Ethics and Acquisition.pdf",
+      "pages": 31,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/leadership-5.1.3.json",
+          "reported_status": "reviewed_with_gaps"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "5.1.4",
+      "source_pdf": "tex/assets/coursebook/chapter-5-leadership-ethics-and-career-development/section-1-leadership-and-ethics/5.1.4 Presentation Techniques.pdf",
+      "pages": 32,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/leadership-5.1.4.json",
+          "reported_status": "reviewed_covered"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "5.1.5",
+      "source_pdf": "tex/assets/coursebook/chapter-5-leadership-ethics-and-career-development/section-1-leadership-and-ethics/5.1.5 Team Building.pdf",
+      "pages": 23,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/leadership-5.1.5.json",
+          "reported_status": "reviewed_with_gaps"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "5.1.6",
+      "source_pdf": "tex/assets/coursebook/chapter-5-leadership-ethics-and-career-development/section-1-leadership-and-ethics/5.1.6 Leading People.pdf",
+      "pages": 22,
+      "saved_review_records": [
+        {
+          "path": "docs/reference/2026-10-comprehensive-audit/batches/leadership-5.1.6.json",
+          "reported_status": "reviewed_with_gaps"
+        }
+      ],
+      "recovery_state": "saved_review_requires_reconciliation"
+    },
+    {
+      "module": "5.1.8",
+      "source_pdf": "tex/assets/coursebook/chapter-5-leadership-ethics-and-career-development/section-1-leadership-and-ethics/5.1.8 MBTI.pdf",
+      "pages": 60,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "5.1.9",
+      "source_pdf": "tex/assets/coursebook/chapter-5-leadership-ethics-and-career-development/section-1-leadership-and-ethics/5.1.9 CPI 260.pdf",
+      "pages": 49,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "5.2.1",
+      "source_pdf": "tex/assets/coursebook/chapter-5-leadership-ethics-and-career-development/section-2-career-development/5.2.1 DAWIA.pdf",
+      "pages": 29,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "5.2.10",
+      "source_pdf": "tex/assets/coursebook/chapter-5-leadership-ethics-and-career-development/section-2-career-development/5.2.10 Leader Development Framework.pdf",
+      "pages": 28,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "5.2.2",
+      "source_pdf": "tex/assets/coursebook/chapter-5-leadership-ethics-and-career-development/section-2-career-development/5.2.2 EDQP.pdf",
+      "pages": 28,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "5.2.3",
+      "source_pdf": "tex/assets/coursebook/chapter-5-leadership-ethics-and-career-development/section-2-career-development/5.2.3 Career Topics.pdf",
+      "pages": 46,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "5.2.6",
+      "source_pdf": "tex/assets/coursebook/chapter-5-leadership-ethics-and-career-development/section-2-career-development/5.2.6 Mentoring Tips.pdf",
+      "pages": 22,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "5.2.8",
+      "source_pdf": "tex/assets/coursebook/chapter-5-leadership-ethics-and-career-development/section-2-career-development/5.2.8 Warrior Toughness.pdf",
+      "pages": 29,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "5.2.9",
+      "source_pdf": "tex/assets/coursebook/chapter-5-leadership-ethics-and-career-development/section-2-career-development/5.2.9 Critical Conversations.pdf",
+      "pages": 15,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "6.1.1",
+      "source_pdf": "tex/assets/coursebook/chapter-6-civilian-personnel/section-1-civpers/6.1.1 CIVPERS Overview.pdf",
+      "pages": 13,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "6.1.2",
+      "source_pdf": "tex/assets/coursebook/chapter-6-civilian-personnel/section-1-civpers/6.1.2 Workforce Shaping and Classification.pdf",
+      "pages": 29,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "6.1.3",
+      "source_pdf": "tex/assets/coursebook/chapter-6-civilian-personnel/section-1-civpers/6.1.3 EEO.pdf",
+      "pages": 25,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "6.1.4",
+      "source_pdf": "tex/assets/coursebook/chapter-6-civilian-personnel/section-1-civpers/6.1.4 Employee Relations.pdf",
+      "pages": 50,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "6.1.5",
+      "source_pdf": "tex/assets/coursebook/chapter-6-civilian-personnel/section-1-civpers/6.1.5 Labor Relations.pdf",
+      "pages": 45,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    },
+    {
+      "module": "6.1.6",
+      "source_pdf": "tex/assets/coursebook/chapter-6-civilian-personnel/section-1-civpers/6.1.6 CIVPERS Wrap-up.pdf",
+      "pages": 17,
+      "saved_review_records": [],
+      "recovery_state": "no_saved_module_review_record"
+    }
+  ],
+  "preserved_source_edits": [
+    {
+      "path": "tex/chapters/11_Contracting_Fundamentals.tex",
+      "sha256": "25858edfd64e5be2f150f3fb9e9781eca0f1b96022c383ca7eae9f58fe422c3d"
+    },
+    {
+      "path": "tex/chapters/12A_Source_Selection.tex",
+      "sha256": "829250bbb73b00a12b93d9ac2152fb93c4e8c5aea88e41662c9544625caf48b2"
+    },
+    {
+      "path": "tex/chapters/12_Solicitation.tex",
+      "sha256": "24ebf1f62c632eebb9af1c264485a4ea1aa01c5067bfd1ed4142accd4873b34c"
+    },
+    {
+      "path": "tex/chapters/13A_Source_Selection_Practical.tex",
+      "sha256": "7a75cba88f367856067e167d229d5a17d50829ae7a53de88369d8aa5f1bc8f1b"
+    },
+    {
+      "path": "tex/chapters/13B_Contract_Administration.tex",
+      "sha256": "2209669619988e4de8759a8245e0d6b849f5acedd05c520dd32855c63e44780b"
+    },
+    {
+      "path": "tex/chapters/13C_cost-price-eval.tex",
+      "sha256": "9e3ba0b8b572c977b50a6f8a23943f6c59fdc2a0b4b67f2e5cdc2d5e0eab10a8"
+    },
+    {
+      "path": "tex/chapters/17K_jcids.tex",
+      "sha256": "d8b05e3b0d898f5724dde60dfeca20d4ab1bde77fbc57df2cdbc3e8e3c9b28dc"
+    },
+    {
+      "path": "tex/chapters/6_PPBE.tex",
+      "sha256": "e0ee1dbf7d810c7501430916179b4644eea220cf8ed9446a35695c4c38fbe560"
+    },
+    {
+      "path": "tex/chapters/8_Congressional_Enactment.tex",
+      "sha256": "c976bdb352ce7aadd7b0f17a72ad9b945ad2e339c83b89420f910b295b8b83a0"
+    },
+    {
+      "path": "tex/chapters/9_Program_Funding_and_Execution.tex",
+      "sha256": "e27bf57c78d565f32d66a39e8abd29544ae2db81a6d86ac2eb5e04ab913d4e99"
+    }
+  ],
+  "missing_bibliography_keys": {
+    "tex/chapters/11_Contracting_Fundamentals.tex": [
+      "FAR-14-301-Responsiveness"
+    ],
+    "tex/chapters/12A_Source_Selection.tex": [
+      "FAR-Overhaul-Part15-2026"
+    ],
+    "tex/chapters/12_Solicitation.tex": [
+      "DFARS-252-227-7013-2026",
+      "DoD-RFO-Deviation-Part7-2026",
+      "FAR-Overhaul-Part15-2026",
+      "FAR-Overhaul-Part7-2026"
+    ],
+    "tex/chapters/13A_Source_Selection_Practical.tex": [
+      "FAR-Overhaul-Part15-2026"
+    ],
+    "tex/chapters/13B_Contract_Administration.tex": [
+      "FAR-52-249-14-Excusable-Delays",
+      "FAR-Overhaul-Part49-2026",
+      "USC-41-7104-Contract-Appeals"
+    ],
+    "tex/chapters/13C_cost-price-eval.tex": [
+      "FAR-Overhaul-Part15-2026"
+    ],
+    "tex/chapters/8_Congressional_Enactment.tex": [
+      "GAO-Budget-Glossary-2005"
+    ],
+    "tex/chapters/9_Program_Funding_and_Execution.tex": [
+      "GAO-Budget-Glossary-2005"
+    ]
+  },
+  "missing_research_artifacts": [
+    "No organizations report or coverage JSON was saved in batches; do not infer review completion from contact sheets.",
+    "No contracts-new.bib, engineering-new.bib, leadership-new.bib, or maintenance_civpers-new.bib exists. requirements-new.bib contains only the unmerged GAO glossary entry."
+  ],
+  "build_state": "No new full or focused build performed. artifacts/out/main.pdf is unchanged baseline output."
+}

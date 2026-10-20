@@ -1,0 +1,105 @@
+{
+  "current_as_of": "2026-10-20",
+  "baseline": "e8b2ef1",
+  "reviewer": "requirements_audit",
+  "numbering": "one-based PDF pages",
+  "modules": [
+    {
+      "module": "3.1.1",
+      "version": "6.3",
+      "date": "2026-09-29",
+      "pages": 40,
+      "text_reviewed": [
+        [
+          1,
+          40
+        ]
+      ],
+      "visually_reviewed": [
+        [
+          1,
+          40
+        ]
+      ],
+      "guide_files": [
+        "tex/chapters/6_PPBE.tex"
+      ],
+      "status": "reviewed; current/legacy crosswalk, review forum, PE example, and legacy POM example corrected",
+      "report_section": "3.1.1 PPBE"
+    },
+    {
+      "module": "3.3.3",
+      "version": "7.0",
+      "date": "2026-09-30",
+      "pages": 37,
+      "text_reviewed": [
+        [
+          1,
+          37
+        ]
+      ],
+      "visually_reviewed": [
+        [
+          1,
+          37
+        ]
+      ],
+      "guide_files": [
+        "tex/chapters/17K_jcids.tex"
+      ],
+      "status": "reviewed; Service approval gate added; current official full-body access gap retained",
+      "report_section": "3.3.3 Joint Force Requirements Process",
+      "dense_visual_reviewed": [
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "module": "3.1.2",
+      "version": "6.2",
+      "date": "2026-09-19",
+      "pages": 43,
+      "text_reviewed": [
+        [
+          1,
+          43
+        ]
+      ],
+      "visually_reviewed": [
+        [
+          1,
+          43
+        ]
+      ],
+      "guide_files": [
+        "tex/chapters/8_Congressional_Enactment.tex"
+      ],
+      "status": "reviewed; definitions and CR wording corrected; appeal example added",
+      "report_section": "3.1.2 Congressional Enactment"
+    },
+    {
+      "module": "3.1.3",
+      "version": "6.2",
+      "date": "2026-09-29",
+      "pages": 43,
+      "text_reviewed": [
+        [
+          1,
+          43
+        ]
+      ],
+      "visually_reviewed": [
+        [
+          1,
+          43
+        ]
+      ],
+      "guide_files": [
+        "tex/chapters/9_Program_Funding_and_Execution.tex"
+      ],
+      "status": "reviewed; definitions, MYP, fixed-period scope corrected; numeric examples added",
+      "report_section": "3.1.3 Program Funding"
+    }
+  ]
+}

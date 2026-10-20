@@ -1,0 +1,290 @@
+{
+  "module": "3.2.4",
+  "title": "3.2.4 Cost and Price Evaluation.pdf",
+  "current_as_of": "2026-10-20",
+  "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-2-contracting/3.2.4 Cost and Price Evaluation.pdf",
+  "sha256": "e40ce206098cec0cb7dcce58eab80f0d4e6d734e90fa17165a6a8584f2696d24",
+  "version": "6.1",
+  "edition_date": "2025-03-11",
+  "citation_key": "edo-3-2-4-cost-price-evaluation-2025",
+  "page_count": 41,
+  "status": "review_complete",
+  "reviewed_pdf_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+  ],
+  "visually_reviewed_pdf_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+  ],
+  "visual_method": "PyMuPDF rendered 1.2x; six-slide contact sheets opened with view_image; extracted page text crosschecked against all slides. Page ranges refer to physical PDF pages, not printed slide numbers.",
+  "visual_artifacts": "artifacts/audit/contracts_sheets/3.2.4_*.jpg",
+  "guide_files": [
+    "tex/chapters/13C_cost-price-eval.tex"
+  ],
+  "objective_topic_mapping": [
+    {
+      "objective_or_topic": "TLO1: fair/reasonable, price vs cost, technical and field support",
+      "pdf_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "guide_sections_or_labels": [
+        "Fair and Reasonable Price Determination",
+        "Cost or Pricing Data Requirements",
+        "Cost and Price Analysis",
+        "Field Pricing Support"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO2-3: contractor financial health, statements, ROS/ROA",
+      "pdf_pages": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "guide_sections_or_labels": [
+        "Contractor Financial Health",
+        "Indirect Cost Pools, Bases, and Rates"
+      ],
+      "status": "partial: statement identity and net-income ROS example absent"
+    },
+    {
+      "objective_or_topic": "TLO4: direct/indirect/OH/G&A",
+      "pdf_pages": [
+        21,
+        22,
+        23,
+        24,
+        27
+      ],
+      "guide_sections_or_labels": [
+        "Direct and Indirect Costs",
+        "fig:direct_indirect_costs"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO5a: pools/bases/rate/allocation",
+      "pdf_pages": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "guide_sections_or_labels": [
+        "Indirect Cost Pools, Bases, and Rates"
+      ],
+      "status": "partial: worked allocation absent"
+    },
+    {
+      "objective_or_topic": "TLO5b: TCI and G&A rate",
+      "pdf_pages": [
+        34,
+        35,
+        41
+      ],
+      "guide_sections_or_labels": [
+        "Indirect Cost Pools, Bases, and Rates"
+      ],
+      "status": "partial: explicit G&A rate division and worked example absent"
+    },
+    {
+      "objective_or_topic": "TLO6: five allowability bases",
+      "pdf_pages": [
+        25,
+        26
+      ],
+      "guide_sections_or_labels": [
+        "Cost Allowability",
+        "Current Cost Accounting Standards Thresholds"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO7: forward pricing",
+      "pdf_pages": [
+        39,
+        41
+      ],
+      "guide_sections_or_labels": [
+        "Forward Pricing Rates"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO8: fully burdened rates and worked costs",
+      "pdf_pages": [
+        36,
+        37,
+        38,
+        40
+      ],
+      "guide_sections_or_labels": [
+        "Fully Burdened Rate",
+        "Indirect Cost Pools, Bases, and Rates"
+      ],
+      "status": "ambiguous: cost rate vs fee-inclusive price rate"
+    }
+  ],
+  "findings": [
+    {
+      "id": "CON-017",
+      "original_claim": "ROS formula is Operating Profit / Net Sales while coursebook uses Net Income / Revenue.",
+      "classification": "Ambiguous",
+      "guide_location": "Formula block / ROS",
+      "required_change": "Label coursebook ROS/net profit margin = net income / revenue, multiplying by 100 for percent. Add: Operating-profit-based return on sales is a different convention; identify numerator before comparing firms. Cite edo-3-2-4-cost-price-evaluation-2025 pp17-18.",
+      "source_basis": "Coursebook pp16-18 visible statement and calculations",
+      "explanation": "Aligns drill calculation without claiming finance has only one ROS definition.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-018",
+      "original_claim": "Fully burdened labor rate always includes profit/fee; example $34/hr contains only costs.",
+      "classification": "Ambiguous",
+      "guide_location": "Formula block and Fully Burdened Rate",
+      "required_change": "Separate: Burdened cost rate = (direct labor + applicable allocated indirect costs)/labor hours. A quoted billing/price rate may add profit/fee; specify basis. The coursebook examples use cost-only $63.25/hr (6325/100) and $34/hr (1.7M/50000). Cost estimate = hours x matching cost rate; avoid adding overhead or fee twice. Cite coursebook pp36-38 and p40.",
+      "source_basis": "Coursebook p36 prose conflicts with explicit p37 formula/table and p38 exercise",
+      "explanation": "Preserve cost/price distinction and correct numerical learning objective.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-019",
+      "original_claim": "Indirect rate formulas lack worked allocation and explicit G&A rate formula.",
+      "classification": "Ambiguous",
+      "guide_location": "Indirect Cost Pools, Bases, and Rates",
+      "required_change": "Add: OH rate = 2000/1500 = 133.333%; for direct labor A750/B500/C250 allocate OH1000/666.67/333.33, totaling2000. Total costs are1750/1166.67/583.33. With direct50k + OH100k, TCI150k; G&A15k/TCI150k =10%, total cost165k before fee. Round only final allocations. Cite coursebook pp32-35.",
+      "source_basis": "Coursebook pp32-35 diagrams and tables",
+      "explanation": "Completes explicit calculation TLO5a/b; guide previously only formula-level coverage.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-020",
+      "original_claim": "Balance sheet and income statement names described but no relationships.",
+      "classification": "Ambiguous",
+      "guide_location": "Contractor Financial Health",
+      "required_change": "Add: Assets = liabilities + owners' equity; current liabilities are near-term obligations. Revenue less costs/expenses yields successive gross, operating and net results. Use the stated net-income line and consistent period/asset basis for the coursebook ratios; profitability does not by itself prove liquidity or responsibility. Cite coursebook pp15-19.",
+      "source_basis": "Image-only balance sheet/income statement pp15-16",
+      "explanation": "Makes diagram teaching accessible in prose.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-021",
+      "original_claim": "Practitioner Steps says price first then cost only if price insufficient.",
+      "classification": "Ambiguous",
+      "guide_location": "Practitioner Steps item2",
+      "required_change": "Use: Perform price analysis to assess the total price. Perform cost analysis when certified cost or pricing data are required, and as needed for other-data cases when price analysis alone cannot establish reasonableness. Use cost realism for contemplated cost-reimbursement awards. Cite FAR-Overhaul-Part15-2026,15.404.",
+      "source_basis": "Official RFO15.404(a) verified in parent live body",
+      "explanation": "Ensures procedural shortcut does not override required cost analysis.",
+      "confidence": "High"
+    }
+  ],
+  "current_sources": [
+    {
+      "citekey": "FAR-Overhaul-Part15-2026",
+      "url": "https://www.acquisition.gov/far-overhaul/far-part-deviation-guide/far-overhaul-part-15",
+      "title": "RFO FAR Part15",
+      "version": "Live official page",
+      "effective_date": null,
+      "access_date": "2026-10-20",
+      "access_method": "official web text retrieved"
+    }
+  ],
+  "notes": [
+    "All41 slides inspected visually including p6 proposed-price tree, p8 detailed cost table, p15-18 financial statements/ratios, p27/31 cost breakdown, p33 overhead allocations, p34 TCI, p37 fully burdened-rate table.",
+    "Coursebook p8 has $10,500 computer engineer versus much larger comparators; it is a fact-finding anomaly, not silently corrected to $105,000. Arithmetic as printed ties.",
+    "Current certified-data threshold, CAS threshold, nontraditional exemption and TINA Lite changes were fully verified in preceding 2026-10-20 acquisition-policy audit and must be retained. This review does not duplicate that research or claim access to current signed DFARS Part215 attachment."
+  ],
+  "blockers": [],
+  "implementation_status": "Recommendations only; guide edits owned by integrating agent."
+}

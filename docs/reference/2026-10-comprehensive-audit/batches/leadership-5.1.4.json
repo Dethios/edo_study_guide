@@ -1,0 +1,92 @@
+{
+  "current_as_of": "2026-10-20",
+  "reviewer": "leadership_audit",
+  "module": "5.1.4",
+  "pages": 32,
+  "version": "6.2",
+  "date": "2026-06-12",
+  "visual_reviewed_pages": [
+    [
+      1,
+      32
+    ]
+  ],
+  "text_reviewed_pages": [
+    [
+      1,
+      32
+    ]
+  ],
+  "method": "Every page visually examined in six-page original-resolution contact sheets. Text on every slide read visually; extracted text checked for exact wording as needed. PDF page numbering is 1-based. Guide chapter read in full and mapped below.",
+  "guide": "27C_Presentation_Techniques.tex",
+  "status": "reviewed_covered",
+  "tlo_map": [
+    {
+      "tlo": 1,
+      "topic": "Prepare and deliver effective presentation",
+      "pages": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        22,
+        29,
+        30
+      ],
+      "guide": "Preparation and Design; Recommended Courses of Action; Checklist and Written Communication"
+    },
+    {
+      "tlo": 2,
+      "topic": "Parts and objectives",
+      "pages": [
+        8,
+        9,
+        10,
+        13,
+        27
+      ],
+      "guide": "Preparation and Design"
+    },
+    {
+      "tlo": 3,
+      "topic": "Visual/verbal/vocal components",
+      "pages": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "guide": "Delivery Components; Q&A; Virtual Tips; Common Failure Modes"
+    },
+    {
+      "tlo": 4,
+      "topic": "Demonstrate techniques in professional brief",
+      "pages": [
+        4,
+        29
+      ],
+      "guide": "Student Presentation Requirements plus Checklist; actual performance requires rehearsal/feedback"
+    }
+  ],
+  "visual_findings": [
+    "All instructional graphics are illustrative; p17 diagram example reinforces simplifying/labeling graphics.",
+    "p8 timing percentages/3-5minutes per slide are course heuristics; guide correctly frames them as rough targets.",
+    "p23 underlined Q&A verbs form PAUSE mnemonic; guide includes each behavior without mnemonic.",
+    "p31-32 supplementary resource links are reference-only.",
+    "Printed slide numbers end35; PDF32pages; no missing-content inference from numbering."
+  ],
+  "gaps": [],
+  "pending": []
+}

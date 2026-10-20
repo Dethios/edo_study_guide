@@ -1,0 +1,118 @@
+{
+  "current_as_of": "2026-10-20",
+  "reviewer": "leadership_audit",
+  "module": "5.1.6",
+  "pages": 22,
+  "version": "6.2",
+  "date": "2026-06-03",
+  "visual_reviewed_pages": [
+    [
+      1,
+      22
+    ]
+  ],
+  "text_reviewed_pages": [
+    [
+      1,
+      22
+    ]
+  ],
+  "method": "Every page visually examined in six-page original-resolution contact sheets. Text on every slide read visually; extracted text checked for exact wording as needed. PDF page numbering is 1-based. Guide chapter read in full and mapped below.",
+  "guide": "27E_Leading_People.tex",
+  "status": "reviewed_with_gaps",
+  "tlo_map": [
+    {
+      "tlo": 1,
+      "topic": "Effectively lead people",
+      "pages": [
+        4,
+        6,
+        9,
+        21,
+        22
+      ],
+      "guide": "Summary/Styles/Expectations/Where to Start"
+    },
+    {
+      "tlo": 2,
+      "topic": "Charge of Command developing others",
+      "pages": [
+        8,
+        9,
+        11
+      ],
+      "guide": "Leadership Expectations"
+    },
+    {
+      "tlo": 3,
+      "topic": "Responsibility accountability authority",
+      "pages": [
+        5,
+        8,
+        22
+      ],
+      "guide": "Responsibility triad"
+    },
+    {
+      "tlo": 4,
+      "topic": "Intent-based leadership advantages",
+      "pages": [
+        4,
+        17,
+        18,
+        19,
+        20,
+        22
+      ],
+      "guide": "Intent-Based Leadership/Team of Teams"
+    },
+    {
+      "tlo": 5,
+      "topic": "Teambuilding/trust",
+      "pages": [
+        8,
+        9,
+        12,
+        17,
+        18,
+        19,
+        20
+      ],
+      "guide": "Learning Teams/Intent-Based/Team of Teams"
+    },
+    {
+      "tlo": 6,
+      "topic": "GRGB goals",
+      "pages": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "guide": "Get Real Get Better; applied analytics omitted"
+    }
+  ],
+  "visual_findings": [
+    "p11 Charge of Command screenshot plus values->mindset->behavior diagram; exact screenshot dense and zoom pending.",
+    "p13 2018-2021 learning journey and traditional-behavior versus best-practice table: outcome measures, transparent red performance, single accountable owner, daily visual management.",
+    "p14 CNRMC plots illustrate comparing forecast and actual duration then acting on controllable drivers; numbers are historical/notional.",
+    "p15 key-lever table explicitly source data Aug2021; do not present forecast improvement percentages as2026facts.",
+    "p18 competence and clarity are the two supports for giving control; guide represents this correctly.",
+    "p19 Trafalgar deployment map supports initiative/shared-intent illustration; tactical details not needed for TLO."
+  ],
+  "gaps": [
+    {
+      "id": "LEAD-PEOPLE-1",
+      "status": "Ambiguous",
+      "original_claim": "GRGB chapter is declarative; course uses data-to-action maintenance example.",
+      "proposal": "For an availability, compare planned, forecast and actual duration; identify controllable drivers such as new/growth work discovery, contract timing and schedule quality, assign an owner, act on the highest-impact barrier, and measure the result. Treat the slide percentages as historical illustrative analysis.",
+      "source": "edo-5-1-6-leading-people-2025 PDF13-15",
+      "confidence": "High",
+      "priority": "useful application"
+    }
+  ],
+  "pending": [
+    "Zoom dense p11 Charge of Command embedded screenshot and p13/p15 tables; current primary Charge already cited by guide, audit has not re-opened it yet."
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "current_as_of": "2026-10-20",
+  "reviewer": "leadership_audit",
+  "method": "Every PDF page opened visually in six-page 2000x2310 original-resolution contact sheets; dense embedded screenshot identified for zoom. PDF page numbering is 1-based, not printed slide number. Extracted text used for exact wording and mapping, never as substitute for image review.",
+  "modules": [
+    {
+      "module": "1.0.1",
+      "pages": 39,
+      "version": "6.6",
+      "date": "2026-10-01",
+      "visual_reviewed_pages": [
+        [
+          1,
+          39
+        ]
+      ],
+      "text_reviewed_pages": [
+        [
+          1,
+          39
+        ]
+      ],
+      "status": "reviewed_with_gaps",
+      "tlo_map": [
+        {
+          "tlo": 1,
+          "topic": "Recognize diverse backgrounds of classmates",
+          "pages": [
+            11
+          ],
+          "guide": "Excluded: classroom introductions; not persistent board teaching."
+        },
+        {
+          "tlo": 2,
+          "topic": "Relate EDO responsibilities to Navy priorities",
+          "pages": [
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "guide": "1_Chain_of_command strategy baseline; appendix_cno34_day_one_message; missing explicit community mission and distinctive role."
+        },
+        {
+          "tlo": 3,
+          "topic": "Identify major EDO competencies and subspecialties",
+          "pages": [
+            23,
+            24
+          ],
+          "guide": "27J EDQP core competencies (BDAR omitted); 27L mentor groups does not list groups/subspecialties."
+        },
+        {
+          "tlo": 4,
+          "topic": "Recognize what distinguishes EDOs",
+          "pages": [
+            21
+          ],
+          "guide": "27J summarizes technical/business/tour qualification but lacks operational + technical + business + leadership synthesis."
+        },
+        {
+          "tlo": 5,
+          "topic": "Purpose of EDO Basic Course",
+          "pages": [
+            27,
+            28,
+            29,
+            30
+          ],
+          "guide": "27J EDQP milestones; suggest concise orientation paragraph."
+        },
+        {
+          "tlo": 6,
+          "topic": "Basic and Reserve curricula",
+          "pages": [
+            31,
+            32
+          ],
+          "guide": "Guide TOC spans all disciplines; classroom course differences may stay reference."
+        },
+        {
+          "tlo": 7,
+          "topic": "Purpose of Senior Course",
+          "pages": [
+            33
+          ],
+          "guide": "27O development lanes; add explicit purpose if orientation added."
+        },
+        {
+          "tlo": 8,
+          "topic": "Major Senior Course topics",
+          "pages": [
+            34
+          ],
+          "guide": "27O; local curriculum details excluded."
+        },
+        {
+          "tlo": 9,
+          "topic": "CO expectations and student responsibilities",
+          "pages": [
+            36,
+            37,
+            38,
+            39
+          ],
+          "guide": "Classroom policies excluded; ethics and responsibility already 27B/27E."
+        }
+      ],
+      "visual_findings": [
+        "p7 school organization chart and p8-9 biographical/career-planner example are local orientation, excluded from enduring guide.",
+        "p13-16 historic portraits, naval construction photo/table: context rather than separately tested EDO doctrine.",
+        "p20 CNO campaign-plan screenshot zoom inspected: Battle-Ready Sailors/CNP; Battle-Ready Force/VCNO; Battle Force Today and Tomorrow/N8; Global Battle Integration/N3N5N7. Broader current official strategy reconciliation is assigned to organization audit.",
+        "p22 30 Apr 2026 staffing table/pie chart is historical data, not current inventory; do not silently certify in October.",
+        "p24 subspecialties and mentor groups are loosely correlated, not a one-to-one mapping."
+      ],
+      "gaps": [
+        {
+          "id": "LEAD-INTRO-1",
+          "status": "Needs source",
+          "original": "Entire 1.0.1 was previously excluded as administration.",
+          "proposed": "Add an EDO purpose and competencies orientation: EDOs combine operational experience, technical education, acquisition/business knowledge and leadership to design, develop, deliver and sustain combat-ready naval power. List the seven core competencies: leadership, technical acumen, financial management, contracting, acquisition, civilian personnel management, battle damage assessment and repair.",
+          "citekeys": [
+            "edo-1-0-1-course-introduction-2025"
+          ],
+          "pages": [
+            17,
+            18,
+            21,
+            23
+          ],
+          "confidence": "High"
+        },
+        {
+          "id": "LEAD-INTRO-2",
+          "status": "Ambiguous",
+          "original": "p19 appends integrated deterrence, campaigning, enduring advantage to the 2026 NDS four LOEs.",
+          "proposed": "Retain guide current four LOEs; do not transplant the three legacy 2022 strategy ways without primary-source verification.",
+          "pages": [
+            19
+          ],
+          "confidence": "High"
+        }
+      ],
+      "pending": [
+        "Reconcile substantive orientation additions with final guide and bibliography; current strategy checks assigned to organization audit."
+      ],
+      "zoom_reviewed_pages": [
+        20
+      ]
+    },
+    {
+      "module": "1.0.2",
+      "pages": 43,
+      "version": "6.3",
+      "date": "2026-07-07",
+      "visual_reviewed_pages": [
+        [
+          1,
+          43
+        ]
+      ],
+      "text_reviewed_pages": [
+        [
+          1,
+          43
+        ]
+      ],
+      "status": "reviewed_reference_only",
+      "tlo_map": [
+        {
+          "tlo": 1,
+          "topic": "Military support, housing and subsistence arrangements",
+          "pages": [
+            11,
+            14,
+            16,
+            22,
+            30,
+            36,
+            37
+          ],
+          "guide": "Excluded as local administrative support; safety resources should be obtained from current official school channels."
+        },
+        {
+          "tlo": 2,
+          "topic": "EDO School command and classroom procedures",
+          "pages": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            13,
+            15,
+            17,
+            18,
+            19,
+            25,
+            26,
+            27,
+            28,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "guide": "Excluded local maps, facility rules, contacts, class events, housekeeping and security procedures; no enduring board topic omitted."
+        },
+        {
+          "tlo": 3,
+          "topic": "Course notebook, IT, LMS and structure",
+          "pages": [
+            20,
+            21,
+            23,
+            24
+          ],
+          "guide": "Excluded changing LMS/calendar, exam weighting and awards rules."
+        },
+        {
+          "tlo": 4,
+          "topic": "Motor vehicle safety per OPNAVINST 5100.12",
+          "pages": [
+            31,
+            32,
+            33,
+            34,
+            35
+          ],
+          "guide": "Reference-only local orientation; do not copy course outdated/generalized legal claims as universal law."
+        }
+      ],
+      "visual_findings": [
+        "All facility maps, evacuation/active-shooter diagrams, parking/liberty/jogging maps, course calendar screenshot, recreation inventory, OPSEC poster and local dining map inspected.",
+        "PDF38\u201343 have printed slide numbers 39\u201344; use PDF page indexes.",
+        "p32 seatbelt-in-all-50-states statement and p37 typical annual suicide count are unverified blanket/current-statistical claims. They are not in guide and should remain excluded.",
+        "p27 all PII as subset of CUI is an overgeneralization; guide should follow applicable CUI/privacy authority rather than this orientation slide."
+      ],
+      "gaps": [],
+      "pending": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "current_as_of": "2026-10-20",
+  "reviewer": "leadership_audit",
+  "module": "5.1.5",
+  "pages": 23,
+  "version": "6.0",
+  "date": "2025-12-17",
+  "visual_reviewed_pages": [
+    [
+      1,
+      23
+    ]
+  ],
+  "text_reviewed_pages": [
+    [
+      1,
+      23
+    ]
+  ],
+  "method": "Every page visually examined in six-page original-resolution contact sheets. Text on every slide read visually; extracted text checked for exact wording as needed. PDF page numbering is 1-based. Guide chapter read in full and mapped below.",
+  "guide": "27D_Team_Building.tex",
+  "status": "reviewed_with_gaps",
+  "tlo_map": [
+    {
+      "tlo": 1,
+      "topic": "Effective team behaviors",
+      "pages": [
+        9,
+        18,
+        19
+      ],
+      "guide": "Team Characteristics/Development"
+    },
+    {
+      "tlo": 2,
+      "topic": "IPT role and barriers",
+      "pages": [
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "guide": "Foundations/Types/Characteristics"
+    },
+    {
+      "tlo": 3,
+      "topic": "Supervisory, participative, team leadership",
+      "pages": [
+        10,
+        11
+      ],
+      "guide": "IPT Leadership Requirements incomplete"
+    },
+    {
+      "tlo": 4,
+      "topic": "Better group decisions",
+      "pages": [
+        12,
+        13
+      ],
+      "guide": "Group Decision Making/Virtual Teaming"
+    },
+    {
+      "tlo": 5,
+      "topic": "Advantages/disadvantages group decisions",
+      "pages": [
+        12,
+        13
+      ],
+      "guide": "Group Decision Making"
+    },
+    {
+      "tlo": 6,
+      "topic": "Cohesion stages",
+      "pages": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "guide": "Team Development Stages"
+    },
+    {
+      "tlo": 7,
+      "topic": "Group dynamics IPPD/IPT",
+      "pages": [
+        5,
+        6,
+        7,
+        15
+      ],
+      "guide": "Foundations/Development"
+    },
+    {
+      "tlo": 8,
+      "topic": "Team charter, operating agreements, roles",
+      "pages": [
+        22
+      ],
+      "guide": "Building Effective Teams"
+    },
+    {
+      "tlo": 9,
+      "topic": "Overcome teamwork barriers",
+      "pages": [
+        9,
+        10,
+        11,
+        22,
+        23
+      ],
+      "guide": "Characteristics/Leadership/Building"
+    },
+    {
+      "tlo": 10,
+      "topic": "IPPD tenets acquisition planning/execution",
+      "pages": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "guide": "Foundations/Types"
+    }
+  ],
+  "visual_findings": [
+    "p6 functional-representative diagram includes PM, engineering, manufacturing, logistics, T&E, contracting and customer. Guide cross-functional shorthand covers concept.",
+    "p10 three-style image comparison contains substantive content missing guide.",
+    "p15 performance curve/stage strategies: forming expectation setting; storming encourage feedback/resolve issues; norming recognition/upskilling; performing guide from side; adjourning retrospective and recognition. Guide covers characteristics but fewer leader responses.",
+    "No diagram should imply all real teams follow fixed linear stages without setbacks."
+  ],
+  "gaps": [
+    {
+      "id": "LEAD-TEAM-1",
+      "status": "Incorrect",
+      "original_claim": "TLO3 is not fully covered: supervisor/facilitator/coach roles stand in for three distinct leadership styles.",
+      "proposal": "Supervisory leadership directs people, explains decisions, trains individuals, contains conflict and reacts to change. Participative leadership seeks input, develops individual performance, coordinates effort and resolves conflict. Team leadership builds trust and shared identity, supports team decisions, expands collective capability, uses differences and anticipates change.",
+      "source": "edo-5-1-5-team-building-2025 PDF10",
+      "confidence": "High"
+    }
+  ],
+  "pending": []
+}

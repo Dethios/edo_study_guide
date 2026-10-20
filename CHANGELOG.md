@@ -7,6 +7,11 @@ release tags (release-YYYYMMDD).
 
 ## [Unreleased]
 
+### Incomplete recovery snapshot
+
+- Preserve interrupted coursebook research and partial chapter edits with an inventory, recovery state, and handoff.
+  Bibliography integration, remaining coursebook review, and build validation are unfinished; this is not a release.
+
 ## [release-20261020] - 2026-10-20
 
 ### Fixed

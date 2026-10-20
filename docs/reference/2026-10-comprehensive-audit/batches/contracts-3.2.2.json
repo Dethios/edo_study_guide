@@ -1,0 +1,487 @@
+{
+  "module": "3.2.2",
+  "title": "3.2.2 Solicitation Preparation.pdf",
+  "current_as_of": "2026-10-20",
+  "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-2-contracting/3.2.2 Solicitation Preparation.pdf",
+  "sha256": "3aaa5421a4c576dbf67cd841d261695b4cd783805397c9ef681ff90480d5e89c",
+  "version": "6.5",
+  "edition_date": "2026-09-29",
+  "citation_key": "edo-3-2-2-solicitation-prep-2025",
+  "page_count": 64,
+  "status": "review_complete",
+  "reviewed_pdf_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64
+  ],
+  "visually_reviewed_pdf_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64
+  ],
+  "visual_method": "PyMuPDF rendered 1.2x; six-slide contact sheets opened with view_image; extracted page text crosschecked against all slides. Page ranges refer to physical PDF pages, not printed slide numbers.",
+  "visual_artifacts": "artifacts/audit/contracts_sheets/3.2.2_*.jpg",
+  "guide_files": [
+    "tex/chapters/12_Solicitation.tex"
+  ],
+  "objective_topic_mapping": [
+    {
+      "objective_or_topic": "TLO 1 and 12: sealed bidding, negotiation, IFB/RFP",
+      "pdf_pages": [
+        16,
+        17,
+        57
+      ],
+      "guide_sections_or_labels": [
+        "Methods of Contracting",
+        "Solicitation, Evaluation, and Award Phase"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO 2/2a: fixed-price/cost-reimbursement variants and incentive arithmetic",
+      "pdf_pages": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "guide_sections_or_labels": [
+        "Fixed-Price Contracts",
+        "fig:fp_contract_types",
+        "Fixed-Price Incentive (Firm Target) Example",
+        "Fixed-Price Incentive Practical Exercise",
+        "Cost-Reimbursement Contracts",
+        "fig:cr_contract_types",
+        "Cost-Plus-Incentive-Fee Example",
+        "Incentives and Award Fees",
+        "tab:fixed_vs_cost_reimb"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO 3: risk, phase and type selection",
+      "pdf_pages": [
+        37,
+        38,
+        39
+      ],
+      "guide_sections_or_labels": [
+        "Contract Type by Acquisition Phase",
+        "Risk and Contract Types",
+        "Practical Exercise: Contract Type Selection"
+      ],
+      "status": "partial: exercise has no suggested rationale"
+    },
+    {
+      "objective_or_topic": "TLO 4: indefinite-delivery and other types",
+      "pdf_pages": [
+        40,
+        41
+      ],
+      "guide_sections_or_labels": [
+        "Indefinite-Delivery Contracts",
+        "Other Contract Types"
+      ],
+      "status": "partial: three indefinite-delivery definitions compressed to names"
+    },
+    {
+      "objective_or_topic": "TLO 5-6: pre-solicitation sequence and coherent requirements package",
+      "pdf_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        56,
+        57,
+        63
+      ],
+      "guide_sections_or_labels": [
+        "Contracting Process Overview",
+        "Pre-Solicitation Phase",
+        "Pre-Solicitation Communication and Market Research",
+        "Big-Picture Flow"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO 7: contractor-furnished data/CDRL costs",
+      "pdf_pages": [
+        50,
+        54,
+        60,
+        61
+      ],
+      "guide_sections_or_labels": [
+        "Factors in Determining Data Rights",
+        "Uniform Contract Format Essentials"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO 8: SOW, SOO, PWS",
+      "pdf_pages": [
+        10,
+        60
+      ],
+      "guide_sections_or_labels": [
+        "Statement of Objectives and Performance Work Statement",
+        "Uniform Contract Format Essentials"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO 9: IPT roles and market research",
+      "pdf_pages": [
+        13,
+        14
+      ],
+      "guide_sections_or_labels": [
+        "Market Research Purpose",
+        "IPT Roles in Market Research"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO 10: socioeconomic programs/SBIR/OT",
+      "pdf_pages": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "guide_sections_or_labels": [
+        "Socioeconomic Programs and Set-Asides",
+        "Small Business Innovation Research",
+        "Other Transaction"
+      ],
+      "status": "covered"
+    },
+    {
+      "objective_or_topic": "TLO 11: data-rights spectrum and license categories",
+      "pdf_pages": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ],
+      "guide_sections_or_labels": [
+        "Data Rights Overview",
+        "Factors in Determining Data Rights"
+      ],
+      "status": "partial: four additional categories omitted; exceptions oversimplified"
+    },
+    {
+      "objective_or_topic": "TLO 12: solicitation/UCF/evaluation factors",
+      "pdf_pages": [
+        57,
+        59,
+        60,
+        61,
+        62
+      ],
+      "guide_sections_or_labels": [
+        "Solicitation, Evaluation, and Award Phase",
+        "Uniform Contract Format Essentials"
+      ],
+      "status": "covered"
+    }
+  ],
+  "findings": [
+    {
+      "id": "CON-004",
+      "original_claim": "Acquisition plan if action exceeds $10M.",
+      "classification": "Ambiguous",
+      "guide_location": "Pre-Solicitation Phase",
+      "required_change": "Replace with: Perform acquisition planning for every acquisition. Apply the current DoD/Navy rules to determine whether a written plan, streamlined plan, or other record is required; the coursebook $10M cue is not a universal contract-action threshold. Development, production/services, contract risk and local approval requirements differ. Cite new FAR-Overhaul-Part7-2026 and DoD-RFO-Deviation-Part7-2026.",
+      "source_basis": "RFO FAR 7.102; DFARS RFO 207.103-70; coursebook p9",
+      "explanation": "RFO development threshold is program total $10M or more, production/services $50M total/$25M per FY, and FAR requires written plans for cost-reimbursement/high-risk contracts. Avoid claiming full-current Navy threshold review without current signed attachment.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-005",
+      "original_claim": "Contractor may not exceed the ceiling at its own risk.",
+      "classification": "Incorrect",
+      "guide_location": "Cost-Reimbursement Contracts",
+      "required_change": "Use: The contractor exceeds the stated cost ceiling at its own risk unless the KO approves an increase; applicable limitation-of-cost or limitation-of-funds provisions govern notice and continued performance. Cite FAR-16-301-1-Cost-Reimbursement and new FAR-Overhaul-Part16-2026.",
+      "source_basis": "FAR and RFO 16.301-1",
+      "explanation": "The guide dropped the word except and reversed the source.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-006",
+      "original_claim": "FFP price not subject to adjustment.",
+      "classification": "Ambiguous",
+      "guide_location": "Fixed-Price Contracts / FFP",
+      "required_change": "Use: FFP price is not adjusted because of the contractor's cost experience; authorized changes and other applicable contract clauses can still change the price. Cite FAR-16-202-1-FFP.",
+      "source_basis": "FAR 16.202-1; coursebook p21",
+      "explanation": "Keep cost-risk teaching without implying no modification can change an FFP price.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-007",
+      "original_claim": "Guide repeats older SBIR typical ranges without current no-waiver ceiling.",
+      "classification": "Outdated",
+      "guide_location": "Small Business Innovation Research",
+      "required_change": "After phase descriptions use: As of 16 October 2026, SBA's no-waiver ceilings, including modifications, are $335,937 for Phase I and $2,239,578 for Phase II. The solicitation controls actual award amount and duration; Phase III uses non-SBIR/STTR funds. Cite SBA-SBIR-Limits-20261016; cross-reference R&D chapter.",
+      "source_basis": "SBA about page live 2026-10-20",
+      "explanation": "Earlier correction in R&D was not propagated into this chapter.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-008",
+      "original_claim": "Data-rights summary omits negotiated, SBIR and commercial licenses; private funding framed as absolute limited rights.",
+      "classification": "Ambiguous",
+      "guide_location": "Data Rights Overview",
+      "required_change": "Add: Funding is a starting point, not the only rights rule. Form/fit/function and specified operation, maintenance, installation and training data may carry unlimited rights. GPR permits Government-purpose competition during its term, then normally converts to unlimited rights. Limited-rights exceptions permit specified emergency repair/overhaul and covered support-contractor access with safeguards. Negotiated licenses tailor rights; SBIR/STTR data uses its special clause; commercial technical data and commercial software use their respective licenses. Delivery obligations and license rights must both be acquired. Cite new DFARS-252-227-7013-2026 plus coursebook pp51-55; use 7014/7015/7018/227.7202 when adding detailed rules.",
+      "source_basis": "DFARS 252.227-7013 definitions and (b),(c); coursebook pp51-55",
+      "explanation": "Corrects p53 erroneous delay of competitive use until expiry and covers all substantive table categories without copying inaccurate blanket permissions.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-009",
+      "original_claim": "Both IFB and RFP use UCF.",
+      "classification": "Ambiguous",
+      "guide_location": "Solicitation, Evaluation, and Award Phase; Uniform Contract Format Essentials",
+      "required_change": "Use: The UCF is a common organization for covered solicitations; apply the format and exceptions required by the procurement procedure. RFO Part 15 places RFP structure at 15.102 and UCF at 15.109. Parts I-III form the physical award; Part IV stays in the file, with applicable representations/certifications incorporated by reference. Cite FAR-Overhaul-Part15-2026.",
+      "source_basis": "RFO FAR 15.102(b), 15.109; coursebook p59 diagram",
+      "explanation": "Not every acquisition uses UCF; guide omits important visual distinction between solicitation and resulting contract.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-010",
+      "original_claim": "Three indefinite-delivery contract types only named.",
+      "classification": "Needs source",
+      "guide_location": "Indefinite-Delivery Contracts",
+      "required_change": "Add: Definite quantity fixes quantity for a stated period with deliveries as ordered; IDIQ establishes a minimum and maximum for orders during a fixed period; a requirements contract covers the designated Government activity's actual purchase requirements during the stated period. Cite FAR-16-501-2-Indefinite-Delivery and coursebook p40.",
+      "source_basis": "Coursebook p40; existing cited FAR 16.501-2",
+      "explanation": "Restores meaningful distinctions asked by TLO 4.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-011",
+      "original_claim": "Exercise lists scenarios without reasoned answer.",
+      "classification": "Ambiguous",
+      "guide_location": "Practical Exercise: Contract Type Selection",
+      "required_change": "Add: Defined repeat work and reliable estimates support considering FFP. A first-of-class overhaul with unvalidated estimates supports considering a cost-reimbursement or appropriately structured incentive arrangement if its prerequisites are met. Prior relationship alone does not select a type; justify the choice by scope certainty, measurable incentives, accounting adequacy and surveillance. Cite coursebook p39 and FAR-16-103-Negotiating-Contract-Type.",
+      "source_basis": "Coursebook pp26,38-39",
+      "explanation": "Provides usable learning rationale without inventing one mandatory answer.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-012",
+      "original_claim": "Phase diagram retains ICD/draft CDD/CDD-V/CDD with no legacy warning.",
+      "classification": "Outdated",
+      "guide_location": "fig:contract_by_phase",
+      "required_change": "Add to caption: Legacy requirements labels are retained only as part of the coursebook graphic; use current JFRP tailored SRD/ICD and SRD/CDD terminology and approval rules in the requirements chapter. This diagram is a notional risk-to-contract-type illustration.",
+      "source_basis": "Coursebook p37 and prior verified JFRP audit",
+      "explanation": "Prevents old embedded image labels undoing current chapter corrections.",
+      "confidence": "High"
+    }
+  ],
+  "current_sources": [
+    {
+      "citekey": "FAR-Overhaul-Part7-2026",
+      "url": "https://www.acquisition.gov/far-overhaul/far-part-deviation-guide/far-overhaul-part-7",
+      "title": "RFO FAR Part 7",
+      "version": "Live official page",
+      "effective_date": null,
+      "access_date": "2026-10-20",
+      "access_method": "official web text retrieved"
+    },
+    {
+      "citekey": "DoD-RFO-Deviation-Part7-2026",
+      "url": "https://www.acquisition.gov/sites/default/files/page_file_uploads/DoD_RFO_Deviation_Part-7.pdf",
+      "title": "DoD RFO Part 7 attachment",
+      "version": "DARS 2026-00020; public baseline attachment, not independently proven latest signed revision",
+      "effective_date": null,
+      "access_date": "2026-10-20",
+      "access_method": "official web text retrieved"
+    },
+    {
+      "citekey": "FAR-Overhaul-Part16-2026",
+      "url": "https://www.acquisition.gov/far-overhaul/far-part-deviation-guide/far-overhaul-part-16",
+      "title": "RFO FAR Part 16",
+      "version": "Live official page",
+      "effective_date": null,
+      "access_date": "2026-10-20",
+      "access_method": "official web text retrieved"
+    },
+    {
+      "citekey": "FAR-Overhaul-Part15-2026",
+      "url": "https://www.acquisition.gov/far-overhaul/far-part-deviation-guide/far-overhaul-part-15",
+      "title": "RFO FAR Part 15",
+      "version": "Live official page",
+      "effective_date": null,
+      "access_date": "2026-10-20",
+      "access_method": "official web text retrieved"
+    },
+    {
+      "citekey": "DFARS-252-227-7013-2026",
+      "url": "https://www.acquisition.gov/dfars/252.227-7013-rights-technical-data%E2%80%94other-commercial-products-and-commercial-services.",
+      "title": "DFARS Rights in Technical Data",
+      "version": "Live official page",
+      "effective_date": null,
+      "access_date": "2026-10-20",
+      "access_method": "official web text retrieved"
+    },
+    {
+      "citekey": "SBA-SBIR-Limits-20261016",
+      "url": "https://www.sbir.gov/about",
+      "title": "SBA SBIR/STTR current award limits",
+      "version": "As of October 16, 2026",
+      "effective_date": "2026-10-16",
+      "access_date": "2026-10-20",
+      "access_method": "official web text retrieved"
+    }
+  ],
+  "notes": [
+    "All 64 slides visually viewed. Dense image-only spectrum p51 and license table p55 separately enlarged to 1.7x and read. FP/CR geometry and risk diagrams inspected. Arithmetic confirmed: FPIF AC120 => profit6/price126; AC90k => profit12k/price102k; PTA125; CPIF AC900 => fee100/price1000.",
+    "Existing $15K/$350K set-aside update and caveats improve obsolete coursebook p44. Existing signed incentive formulas/bounds must be preserved.",
+    "Detailed current DFARS/NMCARS signed RFO attachments remain subject to earlier audit access limits; proposed prose deliberately avoids inventing exact approval hierarchy."
+  ],
+  "blockers": [],
+  "implementation_status": "Recommendations only; guide edits owned by integrating agent."
+}

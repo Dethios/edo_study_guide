@@ -1,0 +1,188 @@
+{
+  "module": "3.2.5",
+  "title": "3.2.5 Source Selection Practical.pdf",
+  "current_as_of": "2026-10-20",
+  "source_pdf": "tex/assets/coursebook/chapter-3-acquisition-disciplines/section-2-contracting/3.2.5 Source Selection Practical.pdf",
+  "sha256": "876cd59b07bc220722c5cdd8090b26bae9ee2584845417d256df1fa04626fac8",
+  "version": "6.1",
+  "edition_date": "2025-12-16",
+  "citation_key": "edo-3-2-5-source-selection-practical-2025",
+  "page_count": 22,
+  "status": "review_complete",
+  "reviewed_pdf_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "visually_reviewed_pdf_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "visual_method": "PyMuPDF rendered 1.2x; six-slide contact sheets opened with view_image; extracted page text crosschecked against all slides. Page ranges refer to physical PDF pages, not printed slide numbers.",
+  "visual_artifacts": "artifacts/audit/contracts_sheets/3.2.5_*.jpg",
+  "guide_files": [
+    "tex/chapters/13A_Source_Selection_Practical.tex"
+  ],
+  "objective_topic_mapping": [
+    {
+      "objective_or_topic": "TLO1: develop SSP, rank subfactors, create standards",
+      "pdf_pages": [
+        7,
+        8,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "guide_sections_or_labels": [
+        "Source Selection Plan",
+        "Program Manager Roles",
+        "Exercise: CGW(X) Source Selection",
+        "tab:cgwx-thresholds"
+      ],
+      "status": "partial: no completed example of predeclared standards"
+    },
+    {
+      "objective_or_topic": "TLO2: purpose/development of criteria and ratings",
+      "pdf_pages": [
+        4,
+        5,
+        6,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "guide_sections_or_labels": [
+        "Request for Proposal Format",
+        "DoW Source Selection Process",
+        "Evaluation Factors, Subfactors, and Standards",
+        "Evaluation Standards and Rating Scales"
+      ],
+      "status": "partial: p13-14 image-only rubric/example omitted"
+    },
+    {
+      "objective_or_topic": "TLO3: compare proposals and recommend best value",
+      "pdf_pages": [
+        21,
+        22
+      ],
+      "guide_sections_or_labels": [
+        "Part 2: Down-Select"
+      ],
+      "status": "partial: no reasoned worked comparison; prices absent in source"
+    }
+  ],
+  "findings": [
+    {
+      "id": "CON-022",
+      "original_claim": "Aviation table says rotors folded for both deck and hangar.",
+      "classification": "Incorrect",
+      "guide_location": "tab:cgwx-thresholds / Aviation capability",
+      "required_change": "Replace threshold with deck for one SH-60 with rotors turning and hangar for one with rotors folded; objective two in each respective condition. Cite coursebook p19.",
+      "source_basis": "Coursebook p19 table",
+      "explanation": "Deck clearance and hangar stowage are different requirements.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-023",
+      "original_claim": "Scenario preparing for MS A approval.",
+      "classification": "Incorrect",
+      "guide_location": "Exercise / Part1 Background",
+      "required_change": "Use: The classroom scenario assumes ASN(RD&A) has already approved Milestone A; the team is developing the DD&C source selection. Its CDD/CPD labels and KPP list are historical scenario assumptions, not a current universal JFRP requirement. Cite coursebook pp16-17.",
+      "source_basis": "Coursebook p16 explicitly approval has been granted",
+      "explanation": "Restores phase sequencing and avoids perpetuating legacy requirements language.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-024",
+      "original_claim": "Color names given without rubric or reliability bands.",
+      "classification": "Ambiguous",
+      "guide_location": "Evaluation Standards and Rating Scales",
+      "required_change": "Add coursebook rubric: Blue outstanding exceptional approach/multiple strengths or significant strength; Purple good thorough approach/at least one strength; Green acceptable adequate approach; Yellow marginal inadequate demonstration; Red unacceptable deficiency/unawardable. The illustrative MTBCF bands are blue>=130h, purple100-<130h, green70-<100h, yellow40-<70h, red<40h. State these are classroom bands, not universal ratings. Cite pp13-14.",
+      "source_basis": "Image-only p13-14 tables",
+      "explanation": "Visual audit found substantive missing teaching.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-025",
+      "original_claim": "Exercise has proposal inputs but no checked comparative result or recognition that price is missing.",
+      "classification": "Ambiguous",
+      "guide_location": "Part2 Down-Select",
+      "required_change": "Add worked comparison: Both meet the six stated thresholds on supplied data. A is stronger in payload/endurance/fuel consumption; B in sprint speed/offload time. Aviation is split: A deck2/hangar1, B deck1/hangar2, so neither meets the complete two-aircraft objective. A mission/payload/endurance-prioritized ranking favors A technically; speed/troop delivery priorities can favor B. The source gives no prices, so no final best-value or LPTA winner can be established. Choose weights/standards before reading proposals and do not simply average colors. Cite pp18-22 and FAR-Overhaul-Part15-2026.",
+      "source_basis": "Coursebook pp18-22 plus RFO best-value principles",
+      "explanation": "Makes TLO3 executable and avoids fabricated award answer.",
+      "confidence": "High"
+    },
+    {
+      "id": "CON-026",
+      "original_claim": "Note uses FAR15.204 as current UCF exceptions reference.",
+      "classification": "Outdated",
+      "guide_location": "Note below tab:rfp-format",
+      "required_change": "Replace current reference with RFO15.102(b) and15.109 while retaining legacy coursebook provenance. Cite FAR-Overhaul-Part15-2026.",
+      "source_basis": "Current RFO Part15 official text",
+      "explanation": "Same crosswalk as solicitation chapter.",
+      "confidence": "High"
+    }
+  ],
+  "current_sources": [
+    {
+      "citekey": "FAR-Overhaul-Part15-2026",
+      "url": "https://www.acquisition.gov/far-overhaul/far-part-deviation-guide/far-overhaul-part-15",
+      "title": "RFO FAR Part15",
+      "version": "Live official page",
+      "effective_date": null,
+      "access_date": "2026-10-20",
+      "access_method": "official web text retrieved"
+    }
+  ],
+  "notes": [
+    "All22 slides viewed, including p4 process, p9 authority pyramid, p13 rubric, p14 reliability bands, p19 aircraft-table details and p22 empty decision matrix.",
+    "No single official exercise answer is supplied. Recommended addition explicitly labels assumptions and cannot identify an LPTA winner without prices.",
+    "2022 SSAC $100M-or-more correction already in guide is retained; coursebook p6 says over while p9 says or more."
+  ],
+  "blockers": [],
+  "implementation_status": "Recommendations only; guide edits owned by integrating agent."
+}
