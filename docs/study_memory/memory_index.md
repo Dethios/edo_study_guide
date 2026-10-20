@@ -391,3 +391,9 @@ Recent applied updates:
 - `question_bank.jsonl`: generated or validated questions.
 - `learning_log.jsonl`: graded-answer outcomes.
 - `schemas.md`: JSONL field definitions and examples.
+
+## October 2026 Coursebooks
+
+See `docs/reference/2026-10-coursebook-refresh.md` for all-module reconciliation and source conflicts, and
+`docs/reference/2026-10-coursebook-inventory.json` for version, hash, and source paths. Current requirements teaching
+is JFRP; historical learning logs and weak-area observations retain their original session terminology.

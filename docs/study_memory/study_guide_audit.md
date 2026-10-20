@@ -2588,3 +2588,123 @@ The entries in this section preserve the original imported package state. Later 
   Chapters 1 and 3; local broad-citation scan.
 - Confidence: `High`
 - Status: `applied`
+
+## 2026-10-19 - Latest Coursebook Reconciliation
+
+Current as of 2026-10-19. Source basis is the supplied coursebooks, including the reproduced August manual excerpts.
+Live policy pages and September organizational realignments were not independently revalidated in this pass.
+
+### Jfrp Core
+
+- ID: `gc-20261019-jfrp-core`
+- Original claim: The requirements chapter and policy quick review teach JCIDS as the default, with a current-policy
+  caveat.
+- Verdict: `Outdated`
+- Corrected answer: JFRP is the current process. Rebuilt chapter around Service authority, five components, CGA/IPLs,
+  SRD tailoring, joint governance, and RRAB/MEIA/JAR; removed JCIDS-era figures from current teaching.
+- Source basis: 3.3.3 Joint Force Requirements Process (JFRP), Version 7.0 (2026-09-30), 3.3.1 Acquisition Policy &
+  Players, Version 7.0 (2026-09-30).
+- Explanation: the new coursebook changes the default board answer or resolves an ambiguous existing claim.
+- Confidence: `High`
+- Status: `applied`
+
+### Requirements Handoffs
+
+- ID: `gc-20261019-requirements-handoffs`
+- Original claim: Related chapters use a fixed CBA-to-ICD-to-CDD flow and legacy Joint Staff ownership.
+- Verdict: `Outdated`
+- Corrected answer: Use initial SRD/ICD and updated SRD/CDD, Component approval, tailored names, and separate MDA
+  phase-entry authority; align SE, T&E, milestones, and board cues.
+- Source basis: 3.3.3 Joint Force Requirements Process (JFRP), Version 7.0 (2026-09-30), 3.3.2 Acquisition Milestones
+  and Phases, Version 7.0 (2026-09-30).
+- Explanation: the new coursebook changes the default board answer or resolves an ambiguous existing claim.
+- Confidence: `High`
+- Status: `applied`
+
+### Jicr
+
+- ID: `gc-20261019-jicr`
+- Original claim: Milestones and key-role summaries teach JUON and JEON as current parallel joint pathways.
+- Verdict: `Outdated`
+- Corrected answer: Teach consolidated JICR and severity threshold; distinguish 35-business-day assessment/approval from
+  fielding within two years, and include the six-month post-fielding operational-utility assessment.
+- Source basis: 3.3.3 Joint Force Requirements Process (JFRP), Version 7.0 (2026-09-30), 3.3.2 Acquisition Milestones
+  and Phases, Version 7.0 (2026-09-30).
+- Explanation: the new coursebook changes the default board answer or resolves an ambiguous existing claim.
+- Confidence: `High`
+- Status: `applied`
+
+### Joint Chairs
+
+- ID: `gc-20261019-joint-chairs`
+- Original claim: Key-role appendix says CJCS co-chairs JROC and VCJCS chairs JCB.
+- Verdict: `Incorrect`
+- Corrected answer: VCJCS chairs JROC; Joint Staff J-8 chairs JCB.
+- Source basis: 3.3.3 Joint Force Requirements Process (JFRP), Version 7.0 (2026-09-30).
+- Explanation: the new coursebook changes the default board answer or resolves an ambiguous existing claim.
+- Confidence: `High`
+- Status: `applied`
+
+### Pae Opnav
+
+- ID: `gc-20261019-pae-opnav`
+- Original claim: Organization and PPBE tables present older PEO and N-code structures as current.
+- Verdict: `Outdated`
+- Corrected answer: Add September PAE and SYSCOM-transition framing; distinguish reporting from collaboration; label old
+  N-code lists as historical crosswalks and add PRIME/Sustainment/OWA/RCP plus N2/N6N9C/N99 coursebook updates.
+- Source basis: 2.1.1 Command Structures, Version 7.1 (2026-09-30), 2.1.2 NAVSEA Organization, Version 7.0 (2026-09-30),
+  2.1.3 NAVWAR Enterprise, Version 7.1 (2026-09-30), 3.1.1 Planning, Programming, Budgeting and Execution (PPBE),
+  Version 6.3 (2026-09-29).
+- Explanation: the new coursebook changes the default board answer or resolves an ambiguous existing claim.
+- Confidence: `Medium`
+- Status: `applied`
+
+### Incentive Signs
+
+- ID: `gc-20261019-incentive-signs`
+- Original claim: FPIF and CPIF formulas use actual-minus-target with an ambiguous minus/plus adjustment.
+- Verdict: `Ambiguous`
+- Corrected answer: Use signed variance = target minus actual (underrun positive), then add contractor share times
+  variance; enforce CPIF fee bounds and FPIF ceiling. Checked 120-cost FPIF and 900-cost CPIF examples.
+- Source basis: 3.2.2 Solicitation Preparation, Version 6.5 (2026-09-29).
+- Explanation: the new coursebook changes the default board answer or resolves an ambiguous existing claim.
+- Confidence: `High`
+- Status: `applied`
+
+### Warrior Toughness
+
+- ID: `gc-20261019-warrior-toughness`
+- Original claim: Warrior Toughness emphasizes mind/body/soul and a limited generic tool list.
+- Verdict: `Outdated`
+- Corrected answer: Use mind/body/spirit; distinguish recalibration from recovery, add the updated skills, five core
+  leader functions, and EDO application.
+- Source basis: 5.2.8 Warrior Toughness, Version 6.1 (2026-06-11).
+- Explanation: the new coursebook changes the default board answer or resolves an ambiguous existing claim.
+- Confidence: `High`
+- Status: `applied`
+
+### Leadership Refinements
+
+- ID: `gc-20261019-leadership-refinements`
+- Original claim: Critical-conversation preparation does not emphasize avoiding predetermined outcomes; virtual
+  presentations omit dial-in fallback.
+- Verdict: `Outdated`
+- Corrected answer: Add openness to changed assessments and dial-in contingency.
+- Source basis: 5.2.9 Critical Conversations, Version 6.2 (2026-07-12), 5.1.4 Presentation Techniques, Version 6.2
+  (2026-06-12).
+- Explanation: the new coursebook changes the default board answer or resolves an ambiguous existing claim.
+- Confidence: `High`
+- Status: `applied`
+
+### Attribute Consequences
+
+- ID: `gc-20261019-attribute-consequences`
+- Original claim: Requirements table claims a KPP miss always causes statutory reporting/program stoppage and implies
+  every APA is in the APB.
+- Verdict: `Incorrect`
+- Corrected answer: Qualify KPP miss consequences as operational/baseline/decision-authority assessment; distinguish KPP
+  APB commitments from KSA/APA traceability.
+- Source basis: 3.3.3 Joint Force Requirements Process (JFRP), Version 7.0 (2026-09-30).
+- Explanation: the new coursebook changes the default board answer or resolves an ambiguous existing claim.
+- Confidence: `Medium`
+- Status: `applied`

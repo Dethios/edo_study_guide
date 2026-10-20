@@ -130,10 +130,17 @@ The \ac{fydp} tracks funding for each military service and other \ac{dod} agenci
 \end{description}
 ~\srcCite{edo-3-1-1-ppbe-2025}
 
-\subsubsection{Resource sponsor and integration roles}
+\subsubsection{September 2026 Coursebook Organization Update}
+The new PPBE coursebook groups OPNAV functions as Total Force (formerly N1), PRIME (Policy, Requirements, Integration, Management, and Evaluation; formerly N5), Sustainment (formerly N4), OWA (Operations, Warfighting, and Analysis; combining elements of N2/N3/N5/N6/N9), and RCP (Resourcing, Capabilities, and Programming; formerly N8). Use these coursebook groupings for current organization questions; the N-code tables below preserve the prior source-specific crosswalk rather than establish a verified new billet chart~\autocite{edo-3-1-1-ppbe-2025}.
+
+The new command-structures coursebook separately identifies N2 (Director, OPNAV Intelligence Division), N6N9C (Assistant DCNO for Information Warfare Requirements and Capabilities), and N99 (Director for Information Warfare), citing NAVADMIN 123/26 and marking the structure subject to change. Do not silently transfer the older N99 ``Unmanned Warfare'' label into the new organization~\autocite{edo-2-1-1-command-structures-2025}.
+
+The JFRP resourcing link is through prioritized joint problems and the RRAB; it does not make FMB a requirements-validation authority. PAE Mission Systems replaces legacy PEO C4I/IWS references in the new PPBE and budget-execution examples~\autocite{edo-3-1-1-ppbe-2025,edo-3-1-4-budget-execution-2025,edo-3-3-3-jfrp-2026}.
+
+\subsubsection{Legacy Resource Sponsor and Integration Roles}
 \begin{longtblr}
   [%
-    caption = {Navy PPBE resource and integration responsibilities.},%
+    caption = {Legacy Navy PPBE resource and integration responsibilities.},%
     label   = {tab:ppbe-resource-sponsors},%
     entry   = {Navy PPBE Resource and Integration Roles},%
     remark{\tSource} = {\tabCite{edo-3-1-1-ppbe-2025,NAVMAC-AMMG-2025,OPNAVINST4700-7N}}
@@ -152,7 +159,7 @@ The \ac{fydp} tracks funding for each military service and other \ac{dod} agenci
 
 \noindent\textbf{Code-list caution:} NAVMAC's public resource-sponsor table lists N7 as warfighting development; do not import the CNO principal-assistant N3/N5 operations/plans lane into the resource-sponsor code list. Likewise, N8/N80/N81/N82/N83 are PPBE integration, assessment, budget, and readiness lanes for board purposes, but N8 is not a platform sponsor~\autocite{NAVMAC-AMMG-2025}.
 
-\subsubsection{Resource integrator N8}
+\subsubsection{Legacy N8 Resource-Integration Crosswalk}
 \begin{description}
   \item[\textbf{Role.}] \ac{n8} integrates Navy capabilities and resources through \ac{ppbe}; for \ac{edo} board purposes, treat N8 as the ``checkbook'' integrator that balances sponsor submissions rather than as a single warfare platform sponsor.
 \end{description}
@@ -160,7 +167,7 @@ The \ac{fydp} tracks funding for each military service and other \ac{dod} agenci
 
 \begin{longtblr}
   [%
-    caption = {N8 offices most relevant to EDO PPBE and readiness work.},%
+    caption = {Legacy N8 offices relevant to EDO PPBE and readiness work.},%
     label   = {tab:ppbe-n8-offices},%
     entry   = {N8 Offices Relevant to EDO PPBE},%
     remark{\tSource} = {\tabCite{edo-3-1-1-ppbe-2025,OPNAVINST3050-27A,OPNAVINST4700-7N}}
@@ -209,13 +216,13 @@ For board answers, the FMB/N82 budget lane is responsible for:
     caption = {Common misconceptions about FMB (N82).},
     label   = {tab:ppbe-fmb-traps},
     entry   = {FMB Common Misconceptions},
-    remark{\tSource} = {\tabCite{edo-3-1-1-ppbe-2025,OPNAVINST4700-7N}}%
-  ]{colspec = {@{} ll @{}}}
+    remark{\tSource} = {\tabCite{edo-3-1-1-ppbe-2025,OPNAVINST4700-7N,edo-3-3-3-jfrp-2026}}%
+  ]{colspec = {@{} X[1] X[1.6] @{}}}
   \toprule
   {Incorrect assumption}     & {Correction}                              \\
   \midrule
   FMB builds the POM         & N80 builds the POM                        \\
-  FMB validates requirements & JCIDS / N9 sponsors validate requirements \\
+  FMB validates requirements & Service/Component approval under JFRP; sponsors develop requirements \\
   FMB is a warfare sponsor   & N9 sponsors are warfare sponsors          \\
   FMB owns force structure   & N81 / N8 assessments own force structure  \\
   FMB is just accounting     & FMB is strategic budget control + defense \\
@@ -240,7 +247,7 @@ For board answers, the FMB/N82 budget lane is responsible for:
   \bottomrule
 \end{longtblr}
 
-\subsubsection{Resource sponsor N9}
+\subsubsection{Legacy N9 Resource-Sponsor Crosswalk}
 \begin{description}
   \item[\textbf{Role.}] \ac{n9} advocates the largest portion of Navy \ac{toa} each year, integrating expeditionary, surface, undersea, air, unmanned, and warfare-integration requirements with associated systems, manpower, training, and readiness.
 \end{description}
@@ -248,7 +255,7 @@ For board answers, the FMB/N82 budget lane is responsible for:
 
 \begin{longtblr}
   [%
-    caption = {N9 warfare systems directorates.},%
+    caption = {Legacy N9 warfare systems directorates.},%
     label   = {tab:ppbe-n9-directorates},%
     entry   = {N9 Warfare Systems Directorates},%
     remark{\tSource} = {\tabCite{edo-3-1-1-ppbe-2025,NAVMAC-AMMG-2025,OPNAVINST5420-117A,SECNAVINST5460-4}}
@@ -258,7 +265,7 @@ For board answers, the FMB/N82 budget lane is responsible for:
   \midrule
   N9       & DCNO for Warfighting Requirements and Capabilities / Warfare Systems & Warfare-system requirements and resource sponsorship                           & Official excerpts say N9 establishes requirements, sets priorities, and directs planning/programming for expeditionary, surface, undersea, air, unmanned, and warfare systems, including associated manpower, support, training, and readiness.                                                          \\
   N9B      & Assistant DCNO for Warfighting Requirements and Capabilities         & Senior civilian/assistant advisory role to N9                                  & A DON senior executive bio says N9B advises N9 on warfare requirements, naval warfare system integration, budget matters, and centralized coordination of Navy programs/plans.                                                                                                                           \\
-  N9I / 9I & Integrated Warfare / Warfare Integration                             & Cross-domain integration across warfare portfolios                             & NAVMAC AMMG lists RS code \textbf{9I = Warfare Integration}. Use N9I/9I as the current board answer; N91 appears in older or alternate public references and should not be treated as the current resource-sponsor code. N9I is the cross-domain integrator when the issue cuts across surface, air, undersea, expeditionary, and unmanned portfolios.                                                                                                               \\
+  N9I / 9I & Integrated Warfare / Warfare Integration                             & Cross-domain integration across warfare portfolios                             & NAVMAC AMMG lists RS code \textbf{9I = Warfare Integration}. Use N9I/9I in the legacy source crosswalk; N91 appears in older or alternate public references and should not be treated as the source-specific resource-sponsor code. N9I is the cross-domain integrator when the issue cuts across surface, air, undersea, expeditionary, and unmanned portfolios.                                                                                                               \\
   N9DW     & Digital Warfare Office                                               & Naval operational architecture, digital integration, kill-chain integration    & OPNAVINST 5400.43C states that CNO N9 and CNO N2N6 maintain a cooperative \textbf{Director, Digital Warfare Office (OPNAV N9DW)} to lead naval operational architecture development/prototyping, drive digital integration, and identify requirements to close long-range kill chains.                   \\
   N94      & Test \& Evaluation                                                   & T\&E resource sponsor                                                          & NAVMAC lists RS code \textbf{94 = Test \& Evaluation, org code N94}. OPNAVINST 5450.352B excerpt says CNO N9 is resource sponsor for S\&T, major range and test facility base infrastructure, Commander Operational Test and Evaluation Force personnel, and oversight of Navy T\&E programs.            \\
   N95      & Expeditionary Warfare                                                & Expeditionary warfare resource sponsor                                         & NAVMAC lists \textbf{95 = Expeditionary Warfare, org code N95}. NAVEDTRA 135D also maps N95 to expeditionary-related learning centers such as EOD/diving, security forces, Seabees/facilities engineering, and SEAL/SWCC training centers.                                                               \\

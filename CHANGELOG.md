@@ -25,6 +25,8 @@ release tags (release-YYYYMMDD).
 
 ### Changed
 
+- Refreshed all 70 uploaded coursebooks and actual edition metadata; rebuilt JFRP requirements teaching, JICR/SRD
+  handoffs, current organization crosswalks, incentive calculations, and Warrior Toughness skills.
 - Refreshed root repository documentation to match the current script set,
   tracked `artifacts/out/main.pdf`, and release-script behavior.
 - Updated repo-local EDO tutor skills to periodically include rote organization

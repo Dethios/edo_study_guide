@@ -115,18 +115,20 @@
 
 \subsection{Fixed-Price Incentive (Firm Target) Example}
 \begin{itemize}
-  \item Given: target cost 100, target fee 10, target price 110, ceiling price 130, shareline 80/20~\autocite{edo-3-2-2-solicitation-prep-2025}.
-  \item Overrun/underrun = actual cost - target cost~\autocite{edo-3-2-2-solicitation-prep-2025}.
-  \item Adjusted fee = target fee -/+ (0.2 x overrun/underrun)~\autocite{edo-3-2-2-solicitation-prep-2025}.
-  \item Final price = actual cost + adjusted fee (if below the ceiling)~\autocite{edo-3-2-2-solicitation-prep-2025}.
+  \item Given: target cost 100, target profit 10 (called target fee in the coursebook), target price 110, ceiling price 130, shareline 80/20~\autocite{edo-3-2-2-solicitation-prep-2025}.
+  \item Signed cost variance = target cost minus actual cost (underrun positive; overrun negative)~\autocite{edo-3-2-2-solicitation-prep-2025}.
+  \item Adjusted profit = target profit + (0.2 x signed cost variance)~\autocite{edo-3-2-2-solicitation-prep-2025}.
+  \item Final price = the lesser of the ceiling price and actual cost plus adjusted profit~\autocite{edo-3-2-2-solicitation-prep-2025}.
 \end{itemize}
 \note{\ac{pta} = (ceiling price - target price) / Government share + target cost~\autocite{edo-3-2-2-solicitation-prep-2025}.}
 
+\noindent New coursebook example: at actual cost 120, the signed variance is $100-120=-20$, adjusted profit is $10+0.2(-20)=6$, and final price is $120+6=126$, below the 130 ceiling~\autocite{edo-3-2-2-solicitation-prep-2025,FAR-16-403-1-FPIF}.
+
 \subsection{Fixed-Price Incentive Practical Exercise}
 \begin{itemize}
-  \item Actual cost \$90,000; target cost \$100,000; target fee \$10,000; target price \$110,000.
+  \item Actual cost \$90,000; target cost \$100,000; target profit \$10,000; target price \$110,000.
   \item Shareline 80 Government / 20 contractor; ceiling price \$130,000.
-  \item Underrun = \$10,000; adjusted fee = \$10,000 + (0.2 x \$10,000) = \$12,000.
+  \item Underrun = \$10,000; adjusted profit = \$10,000 + (0.2 x \$10,000) = \$12,000.
   \item Final price = \$90,000 + \$12,000 = \$102,000.
 \end{itemize}
 ~\autocite{edo-3-2-2-solicitation-prep-2025}
@@ -154,10 +156,12 @@
 \subsection{Cost-Plus-Incentive-Fee Example}
 \begin{itemize}
   \item Given: target cost 1000, target fee 80, max fee 100, min fee 60, shareline 80/20~\autocite{edo-3-2-2-solicitation-prep-2025}.
-  \item Overrun/underrun = actual cost -- target cost~\autocite{edo-3-2-2-solicitation-prep-2025}.
-  \item Adjusted fee = target fee --/+ (0.2 x overrun/underrun)~\autocite{edo-3-2-2-solicitation-prep-2025}.
+  \item Signed cost variance = target cost minus actual cost (underrun positive; overrun negative)~\autocite{edo-3-2-2-solicitation-prep-2025}.
+  \item Adjusted fee = target fee + (0.2 x signed cost variance), bounded by the minimum and maximum fee~\autocite{edo-3-2-2-solicitation-prep-2025}.
   \item Final price = actual cost + adjusted fee~\autocite{edo-3-2-2-solicitation-prep-2025}.
 \end{itemize}
+
+\noindent New coursebook example: at actual cost 900, the signed variance is $1000-900=100$, adjusted fee is $80+0.2(100)=100$ (the maximum fee), and final price is $900+100=1000$~\autocite{edo-3-2-2-solicitation-prep-2025,FAR-16-405-1-CPIF}.
 
 \subsection{Incentives and Award Fees}
 \begin{itemize}

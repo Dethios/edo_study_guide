@@ -6,194 +6,137 @@
 % File: 17K_jcids.tex
 % ====================
 \begin{document}
-\IfSubfilesClassLoaded{\chapter{Joint Capabilities Integration \& Development System}}{}
-% === JCIDS (EDO 3.3.3) ===
-\section{Joint Capabilities Integration \& Development System}
+\IfSubfilesClassLoaded{\chapter{Joint Force Requirements Process}}{}
+% === JFRP (EDO 3.3.3); filename retained for historical source links ===
+\section{Joint Force Requirements Process}
+\label{sec:jfrp}
+\note{Current as of 2026-10-19. Coursebook 3.3.3, Version 7.0 (30 September 2026), teaches the JFRP as the current process. Its slides 33--35 reproduce excerpts labeled CJCSM 5123.01A, 5 August 2026; those excerpts are the source basis for the resourcing discussion below. Legacy JCIDS terminology is retained only for historical crosswalks~\autocite{edo-3-3-3-jfrp-2026}.}
 
 \subsection{Summary}
 \begin{description}
-  \item[\textbf{Decision support triad.}] \ac{jcids} (requirements), \ac{ppbe} (funding), and the \ac{das} (materiel) operate continuously and must stay aligned to enable timely decisions~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Current JFRP note.}] Current Joint Staff guidance cancels the 2021 \ac{jcids} manual and rescinds/replaces the \ac{jcids} process with the Joint Force Requirements Process (JFRP); this section preserves \ac{jcids} terminology for legacy EDO lecture context and calls out current JFRP governance where it changes the answer~\autocite{CJCSM5123-01}.
-  \item[\textbf{Purpose.}] \ac{jcids} ensures the joint warfighter receives required capabilities, institutionalizes joint needs, and initiates the acquisition management process~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{CBA foundation.}] \acp{cba} identify capability gaps and recommend materiel or non-materiel solutions based on operational risk and feasibility~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Capability documents.}] \ac{icd} and \ac{cdd} (with \ac{cdd} updates) align to acquisition phases and provide validated requirements for program execution~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Key players.}] \ac{cjcs}, \ac{jroc}, \ac{jcb}, \acp{fcb}, the Joint Staff Gatekeeper (J-8), and Joint Staff J-6 drive validation, prioritization, and interoperability decisions~\autocite{edo-3-3-3-jcids-2025}.
+  \item[\textbf{Decision support triad.}] \ac{jfrp} defines requirements, \ac{ppbe} provides resources, and the \ac{was}, through the \ac{aaf}, delivers materiel capabilities. These systems operate continuously and must stay aligned~\autocite{edo-3-3-3-jfrp-2026}.
+  \item[\textbf{Replacement.}] The Joint Staff rescinded \ac{jcids} on 15 January 2026. The new coursebook identifies CJCSI 5123.01J and CJCSM 5123.01A as its governing references~\autocite{edo-3-3-3-jfrp-2026}.
+  \item[\textbf{Service authority.}] Services and Components approve and certify their own requirements, sharing approved documents and program data for joint awareness and integration rather than waiting for routine joint validation~\autocite[slides 7--10, 34]{edo-3-3-3-jfrp-2026}.
+  \item[\textbf{Joint focus.}] The \ac{jroc} concentrates on Joint Force Design, Joint Capability Integration, and \ac{ccmd} requirements; it annually prioritizes \acp{jop}~\autocite[slides 9, 30--33]{edo-3-3-3-jfrp-2026}.
+  \item[\textbf{Documents.}] An initial \ac{srd} or \ac{icd} describes the gap before \ac{mdd}; an updated \ac{srd} or \ac{cdd} defines measurable capabilities before Milestone~B. Services may tailor document names and approval processes~\autocite[slides 7, 20--23]{edo-3-3-3-jfrp-2026}.
+  \item[\textbf{Urgent needs.}] The \ac{jicr} consolidates the former \ac{juon}/\ac{jeon} pathways; distinguish urgent requirements approval from the acquisition pathway that delivers the solution~\autocite{edo-3-3-3-jfrp-2026,edo-3-3-2-acq-milestones-phases-2025}.
 \end{description}
 
-\subsection{Decision Support Systems}
+\subsection{Why JFRP Replaced JCIDS}
+The reform seeks faster capability delivery by reducing sequential staffing, empowering Services, preserving the independent warfighter voice, and connecting strategy, analysis, requirements, and budgets. Component autonomy does not remove joint interoperability, analytic due diligence, or acquisition decision requirements~\autocite[slides 7--10, 33--35]{edo-3-3-3-jfrp-2026}.
+
+\subsection{Five Core Components}
+\begin{enumerate}
+  \item \textbf{Reoriented JROC.} Focus on Joint Force Design (the future force), Joint Capability Integration (interdependencies and interoperability), and Combatant Command requirements.
+  \item \textbf{Joint Operational Problems.} The \ac{jroc} annually identifies and ranks \acp{jop}, providing the authoritative joint demand signal for analysis, experimentation, and budgeting.
+  \item \textbf{Unified urgent needs.} The \ac{jicr} replaces the separate joint urgent and emergent pathways.
+  \item \textbf{Empowered Services.} Services generate, validate, document, and approve their requirements while sharing information for joint integration.
+  \item \textbf{Direct link to resourcing.} The \ac{rrab} aligns fiscal resources to \ac{jroc}-prioritized problems.
+\end{enumerate}
+\noindent Source: coursebook slides 9--10~\autocite{edo-3-3-3-jfrp-2026}.
+
+\subsection{Capability Gap Assessment and the Warfighter Voice}
 \begin{description}
-  \item[\textbf{Requirements.}] \ac{jcids} captures warfighter capability needs and requirements~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Funding.}] \ac{ppbe} provides the resource decisions to execute validated priorities~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Materiel.}] The \ac{das} executes acquisition strategies that deliver validated capabilities~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Synchronization.}] These systems must interface continuously to keep requirements, funding, and execution aligned~\autocite{edo-3-3-3-jcids-2025}.
+  \item[\textbf{Annual assessment.}] The \ac{cga} collects, consolidates, assesses, and prioritizes risk-informed \ac{ccmd} capability gaps in an iterative annual process.
+  \item[\textbf{Primary input.}] \acp{ccdr} submit \acp{ipl}: prioritized, singular, discrete capability gaps across Service and functional lines that affect assigned missions.
+  \item[\textbf{FYDP connection.}] The assessment evaluates whether the current \ac{fydp} addresses those gaps and informs future FYDP recommendations and the Chairman's reporting responsibilities.
+  \item[\textbf{CBA crosswalk.}] Older material uses \ac{cba} for a mission/gap/solution study. Know that analytical concept, but answer the new coursebook's annual joint gap-prioritization question with \ac{cga} and \acp{ipl}; the terms are not a universal one-for-one rename.
 \end{description}
+\noindent Source: coursebook slides 13--15~\autocite{edo-3-3-3-jfrp-2026}.
 
-\begin{figure}[htb]
-  \centering
-  \includegraphics[width=0.8\linewidth]{JCIDStoDAS.png}
-  \caption[JCIDS to DAS Relationship]{Relationship between \ac{jcids} and the \ac{das}. \srcCite{edo-3-3-3-jcids-2025}.}
-  \label{fig:jcids-to-das}
-\end{figure}
-
-\subsection{Capabilities-Based Assessment (CBA)}
+\subsection{Materiel and Non-Materiel Solutions}
 \begin{description}
-  \item[\textbf{Objective.}] A \ac{cba} analyzes mission needs and capability gaps, assesses risk, and recommends materiel and non-materiel solutions~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Initiation.}] A \ac{cba} can start from any \ac{dod} organization, a joint concept, a \ac{conops}, or an operational need~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Outputs.}] The \ac{cba} identifies mission and capability needs, gaps and risks, validates non-materiel feasibility, and recommends a path forward~\autocite{edo-3-3-3-jcids-2025}.
+  \item[\textbf{Non-materiel first.}] Explore doctrine, organization, training, leadership and education, personnel, facilities, and policy changes before assuming a new system is needed. A \ac{dcr} documents a non-materiel approach; these changes can be faster and less costly.
+  \item[\textbf{Materiel solution.}] A new or modified item addresses the gap through acquisition. An initial \ac{srd}/\ac{icd} supports further analysis; the \ac{mdauthority}'s \ac{mdd} authorizes entry into the acquisition process.
+  \item[\textbf{Combined solutions.}] A capability gap may require both materiel and non-materiel actions. \ac{dotmlpfp} means Doctrine, Organization, Training, Materiel, Leadership and education, Personnel, Facilities, and Policy.
 \end{description}
+\noindent Source: coursebook slides 14--18~\autocite{edo-3-3-3-jfrp-2026}.
+\note{Source ambiguity: slide 14 places a definition of a defense acquisition program under ``Non-materiel Solution.'' Read it with the doctrine/policy examples and the DCR explanation on slides 15--16; do not memorize acquisition of a new system as a non-materiel solution.}
 
-\subsection{CBA Phases}
-\begin{description}
-  \item[\textbf{Study definition.}] What does the mission require~\autocite{edo-3-3-3-jcids-2025}?
-  \item[\textbf{Needs assessment.}] How well do current capabilities meet those needs; where are the gaps~\autocite{edo-3-3-3-jcids-2025}?
-  \item[\textbf{Solutions recommendation.}] What materiel or non-materiel options should close the gaps~\autocite{edo-3-3-3-jcids-2025}?
-\end{description}
-
-\subsection{CBA Recommended Solutions}
-\begin{description}
-  \item[\textbf{Materiel.}] New or modified systems acquired through the \ac{das}; guided by validated \ac{jcids} documents~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Non-materiel.}] Changes in doctrine, organization, training, leadership, personnel, facilities, or policy; often faster and less costly than new systems~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Document path.}] Non-materiel solutions lead to a \ac{dcr}; materiel solutions lead to an \ac{icd}~\autocite{edo-3-3-3-jcids-2025}.
-\end{description}
-
-\subsection{DOTMLPF-P Elements}
-\begin{description}
-  \item[\textbf{Doctrine.}] Fundamental guiding principles~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Organization.}] How the \ac{dod} organizes to fight~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Training.}] How the force prepares to fight tactically~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Materiel.}] Existing equipment and systems~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Leadership and education.}] Leader development requirements~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Personnel.}] People required to accomplish the mission~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Facilities.}] Property, installations, and industrial facilities supporting forces~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Policy.}] Policies that impact military operations~\autocite{edo-3-3-3-jcids-2025}.
-\end{description}
-
-\subsection{Capability Documents}
-\begin{description}
-  \item[\textbf{Purpose.}] Capability documents communicate operator needs to acquisition, test, and resourcing communities~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Primary documents.}] \ac{icd} (approved prior to \ac{mdd}) and \ac{cdd} (approved prior to Milestone~B); \ac{cdd} updates support production~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{AoA support.}] \ac{aoa} is performed during the \ac{msa} phase as part of the requirements-to-acquisition handoff~\autocite{edo-3-3-3-jcids-2025}.
-\end{description}
-
-\subsection{Initial Capabilities Document (ICD)}
-\begin{description}
-  \item[\textbf{Purpose.}] Summarizes the \ac{cba} and justifies requirements to resolve capability gaps within a timeframe, including possible solutions for \ac{msa} and \ac{tmrr}~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Inputs.}] Summarizes \ac{dotmlpfp} analysis and capability gaps~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Supports.}] \ac{mdd}, \ac{aoa}, Acquisition Strategy, and Milestone~A~\autocite{edo-3-3-3-jcids-2025}.
-\end{description}
-
-\subsection{Capability Development Document (CDD)}
-\begin{description}
-  \item[\textbf{Purpose.}] Defines authoritative, measurable, and testable capabilities for \ac{emd} and the program technical baseline~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Affordability.}] Captures information needed to deliver an affordable and supportable capability across increments~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Performance.}] Specifies performance attributes, including \acp{kpp}, needed to design systems that close the gaps in the \ac{icd}~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Updates.}] Can be updated near end of development to refine production attributes, quantities, and subsequent increments~\autocite{edo-3-3-3-jcids-2025}.
-\end{description}
-
-\subsection{CDD Update and Production Requirements}
-\begin{description}
-  \item[\textbf{Policy change.}] The 2018 \ac{jcids} manual removed the requirement for a separate \ac{cpd}; a \ac{cdd} update supports production needs~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Legacy CPD intent.}] Defined capabilities for Production and Deployment, refined \ac{cdd} thresholds/objectives, and was approved before Milestone~C after \ac{cdr}~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Legacy production role.}] A legacy \ac{cpd} defined the production baseline requirements used for test and evaluation, establishing the threshold performance attributes that had to be demonstrated before Milestone~C~\autocite{DoDI5000-85,edo-3-3-3-jcids-2025}.
-  \item[\textbf{CDD update function.}] Modern \ac{cdd} updates incorporate production attributes, quantities, and supportability considerations that traditionally appeared in separate \ac{cpd} documents~\autocite{edo-3-3-3-jcids-2025}.
-\end{description}
-
-\subsection{JCIDS Within the Acquisition Framework}
-\begin{figure}[htb]
-  \centering
-  \includegraphics[width=0.9\linewidth]{JCIDSinDAS.png}
-  \caption[JCIDS Within the DAS]{Placement of \ac{jcids} documents within \ac{mca} phases. \srcCite{edo-3-3-3-jcids-2025}.}
-  \label{fig:jcids-within-das}
-\end{figure}
-
-\begin{description}
-  \item[\textbf{ICD.}] Defines capability gaps and supports \ac{mdd}, \ac{msa}, and \ac{tmrr} (no \acp{kpp})~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{CDD.}] Introduces \acp{kpp}, provides cost estimates, and guides \ac{emd} with measurable, testable capability definitions~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{CDD update.}] Refines \acp{kpp} and performance attributes, updates cost estimates, and guides Production and Deployment~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Team effort.}] Requirements development must involve the warfighter and all stakeholders to produce executable technical requirements~\autocite{edo-3-3-3-jcids-2025}.
-\end{description}
-
-\subsection{Legacy JCIDS Key Players}
-\begin{description}
-  \item[\textbf{Coursebook framing.}] The roles below preserve the legacy EDO lecture flow; apply the current JFRP validation caveat in the later Validation Authority and Document Review subsections for board answers~\autocite{CJCSM5123-01,edo-3-3-3-jcids-2025}.
-  \item[\textbf{Gatekeeper (J-8/DDR).}] Manages document flow, assigns \ac{jsd}, and designates lead/supporting \acp{fcb} for staffing and validation~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Chairman of the Joint Chiefs of Staff.}] The \ac{cjcs} is the principal military adviser to the President, \ac{secdef}, and the \ac{nsc}; sets the agenda and presides over the Joint Chiefs of Staff~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Joint Requirements Oversight Council.}] The \ac{jroc} is the process owner; validates requirements, prioritizes joint capabilities, and validates \acp{kpp} unless delegated~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Joint Capabilities Board.}] The \ac{jcb} supports the \ac{jroc}, reviews documents, adjudicates issues, and validates \acp{kpp} for \ac{jcb}-interest documents~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Functional Capabilities Boards.}] The \acp{fcb} are permanent bodies that analyze, prioritize, and integrate stakeholder views across functional areas; include \ac{ccmd} participation~\autocite{edo-3-3-3-jcids-2025}.
-\end{description}
-
-\subsection{Joint Staff J-6 (C4/Cyber)}
-\begin{description}
-  \item[\textbf{Net-ready validation.}] Validates the Net-Ready performance attribute (\ac{kpp} or \ac{ksa}) for \ac{jroc}/\ac{jcb}-interest documents~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Interoperability certification.}] Performs IT and national security system interoperability and supportability certifications; \ac{jitc} issues certification before full-rate production~\autocite{edo-3-3-3-jcids-2025}.
-\end{description}
-
-\subsection{Key Performance Parameters and Performance Attributes}
-\begin{description}
-  \item[\textbf{Definition.}] \acp{kpp} and related performance attributes are system attributes critical to delivering effective capability and are documented in the \ac{cdd} and \ac{apb}~\autocite{DoDI5000-85,edo-3-3-2-acq-milestones-phases-2025}.
-  \item[\textbf{Current governance.}] Under the current JFRP, the \ac{jroc} remains the senior joint requirements body, but Joint Staff review is focused on Joint Force Design, Joint Capability Integration, Combatant Command requirements, and by-exception reviews; Service and Component requirements are not automatically held for legacy \ac{jcids} validation before acquisition execution~\autocite{CJCSM5123-01}.
-  \item[\textbf{Traceability.}] Programs still need clean traceability from validated capability needs to \acp{kpp}, \acp{ksa}, other performance attributes, verification methods, and decision evidence~\autocite{DoDI5000-85,edo-3-3-3-jcids-2025}.
-\end{description}
-
-\subsection{KPP vs KSA vs APA Comparison}
+\subsection{Service Requirements Documents and Acquisition Phases}
 \begin{longtblr}[
-    label   = {tab:kpp-ksa-apa-comparison},
-    caption = {KPP vs KSA vs APA Comparison},
-    entry   = {KPP vs KSA vs APA Comparison},
-    remark{\tSource} = {\tabCite{CJCSM5123-01,DoDI5000-85,edo-3-3-3-jcids-2025}}
-  ]
-  {colspec = {@{} X[1.2] X[2.0] X[1.8] X[2.2] X[1.8] @{}}}
-  \toprule
-  {Parameter Type} & {Definition} & {Governance Level} & {Impact if Unmet} & {Navy Example} \\
-  \midrule
-  \textbf{Key Performance Parameter (KPP)} & Critical capability attribute tied to the validated capability need and acquisition baseline & JROC/JFRP review when tied to joint-force requirements or by-exception joint impact; Component validation for Service-specific programs & Program stoppage; statutory reporting required; Milestone decisions blocked & Illustrative Aegis Weapon System example: defended-area detection coverage sufficient to support raid engagement timelines \\
-  \midrule
-  \textbf{Key System Attribute (KSA)} & Important performance attribute that supports KPP achievement and operational suitability & Joint Staff or functional review where the attribute has joint/interoperability impact; Component validation for program-specific attributes & Interoperability certification delays; reduced operational effectiveness; potential re-baseline & Illustrative Aegis Weapon System example: identification data exchange responsive enough to support engagement coordination \\
-  \midrule
-  \textbf{Additional Performance Attribute (APA)} & Performance attribute required for full system capability but not critical enough for KPP & Component validation; documented in CDD/APB & Reduced test priority; capability gaps if not met; schedule impacts & Illustrative Aegis Weapon System example: electronic-protection behavior that preserves mission effectiveness in representative threat environments \\
-  \bottomrule
+  caption = {Requirements documents in the Major Capability Acquisition teaching flow},
+  label = {tab:jfrp-documents},
+  entry = {JFRP Requirements Documents},
+  remark{\tSource} = {\tabCite{edo-3-3-3-jfrp-2026,edo-3-3-2-acq-milestones-phases-2025}}
+]{colspec = {@{} X[1.1] X[1.7] X[1.5] @{}}}
+\toprule
+{Document} & {Purpose and content} & {Decision / phase linkage} \\
+\midrule
+Initial SRD / ICD & Describes capability gaps, timeframe, and DOTMLPF-P analysis; no KPPs in the coursebook flow & Approved before MDD; supports MSA, AoA, acquisition strategy, Milestone A, and TMRR \\
+Updated SRD / CDD & Defines affordable, supportable, measurable, testable capabilities and performance attributes, including KPPs & Approved before Milestone B; guides EMD and the technical baseline \\
+Updated SRD / updated CDD, if required & Refines production attributes, quantities, cost estimates, and later increments & Supports Milestone C and Production and Deployment \\
+\bottomrule
 \end{longtblr}
 
-\subsection{IT Acquisition Requirements}
 \begin{description}
-  \item[\textbf{Net-Ready attribute.}] Documented as a \ac{kpp} or \ac{ksa} to ensure IT supports operations, is manageable on networks, and exchanges information effectively~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Architecture compliance.}] Systems must align to \ac{dodaf}; architecture views are mandatory parts of the \ac{cdd} and must be consistent with \ac{disr} standards~\autocite{edo-3-3-3-jcids-2025}.
+  \item[\textbf{Naming is tailorable.}] \ac{srd} is the coursebook's generic Service-document term, not a universally mandated replacement form. \ac{icd}/\ac{cdd} names may remain in use. A separate \ac{cpd} is a legacy production-document concept~\autocite[slides 7, 20--23]{edo-3-3-3-jfrp-2026}.
+  \item[\textbf{Approval distinction.}] Requirements approval establishes the capability need. The \ac{mdauthority} authorizes acquisition phase entry; Milestone~B normally initiates the acquisition program. An approved document does not itself authorize spending or award a contract~\autocite{edo-3-3-3-jfrp-2026,DoDI5000-85}.
+  \item[\textbf{Team effort.}] Operators, requirements sponsors, acquisition, engineering, test, logistics, and resource managers must develop executable requirements together. \ac{aoa} during \ac{msa} informs the choice of solution~\autocite{edo-3-3-3-jfrp-2026}.
 \end{description}
 
-\subsection{Importance of Interoperability}
+\subsection{Joint Governance and the Annual Process}
 \begin{description}
-  \item[\textbf{Definition.}] Ability of systems, units, or forces to provide and accept services and operate effectively with U.S. and coalition partners~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Operational risk.}] Poor interoperability increases risk to people and equipment and reduces operational effectiveness~\autocite{edo-3-3-3-jcids-2025}.
-  \item[\textbf{Cost discipline.}] Stovepiped systems are costly and hinder joint operations; interoperability is a core \ac{jcids} validation priority~\autocite{edo-3-3-3-jcids-2025}.
+  \item[\textbf{JROC.}] Senior joint requirements board, chaired by the \ac{vcjcs} with the Service vice chiefs (including the Vice Chief of Space Operations) and Assistant Commandant of the Marine Corps. It prioritizes joint problems and adjudicates joint capability requirements when necessary.
+  \item[\textbf{JCB.}] Chaired by Joint Staff J-8; advises the \ac{jroc} and adjudicates requirements, capability assessments, and documents as delegated.
+  \item[\textbf{FCBs.}] Seven \acp{fcb}, aligned to Joint Capability Areas, identify/prioritize joint problems, support force design, and continuously review military capabilities. General/flag officer and O-6 integration groups perform initial portfolio-level reviews.
+  \item[\textbf{Warfighter participation.}] \acp{ccdr} identify gaps through \acp{ipl} and participation in functional capability boards; retain the operator's voice through analysis and implementation.
+\end{description}
+\noindent Source: coursebook slides 26--31, 37~\autocite{edo-3-3-3-jfrp-2026}.
+
+The annual teaching sequence is: prioritize \acp{jop} (problems), develop Joint Force Design (joint vision), conduct continuous Joint Capability Integration (integration), use \ac{cpm} to align related investments and requirements (delegation), then review and respond~\autocite[slide 31]{edo-3-3-3-jfrp-2026}.
+
+\subsection{Requirements and Resourcing Theory of Victory}
+\begin{description}
+  \item[\textbf{JROC demand signal.}] Annually ranks \acp{jop} and identifies associated concept-required capabilities.
+  \item[\textbf{RRAB.}] Aligns fiscal resources to prioritized problems during Program Budget Review; selects problems for deeper analysis and funding consideration. By exception it may recommend changing or terminating Component activities that conflict with joint priorities.
+  \item[\textbf{MEIA.}] The \ac{meia} conducts mission engineering, experimentation, assessments, and operational integration. It engages industry and provides evidence about solution effectiveness, integration, and interoperability to inform resourcing.
+  \item[\textbf{Joint Acceleration Reserve.}] The reproduced manual excerpt directs \ac{cape} to implement the \ac{jar} beginning with the FY~2027 budget cycle: a deliberate topline reserve placing funding into Service execution lines across the \ac{fydp}, with internal tags for visibility. It is not a substitute for appropriations or fiscal controls.
+  \item[\textbf{Service execution.}] Services share approved requirements and program data while executing without routine joint-validation delays. Strategy drives priorities, priorities drive resources, and resources drive capability delivery.
+\end{description}
+\noindent Source: CJCSM 5123.01A, 5 August 2026, excerpts reproduced on coursebook slides 33--35~\autocite{edo-3-3-3-jfrp-2026}.
+
+\subsection{Joint Immediate Combatant Command Requirement}
+\begin{description}
+  \item[\textbf{Replacement and threshold.}] The \ac{jicr} consolidates \ac{juon}/\ac{jeon}. It addresses an immediate joint \ac{ccmd} gap that, unfulfilled, will result in certain death and/or unacceptable risk to a primary objective of ongoing or imminent operations~\autocite[slide 10]{edo-3-3-3-jfrp-2026}.
+  \item[\textbf{Timing.}] The coursebook describes a 35-business-day assessment/approval process and a goal of fielding usable capability within two years. This is not a 35-day fielding promise~\autocite[slide 10]{edo-3-3-3-jfrp-2026}.
+  \item[\textbf{Execution.}] The Urgent Capability Acquisition pathway is the acquisition mechanism for validated urgent needs; requirements validation and acquisition execution are separate decisions~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
+  \item[\textbf{Disposition.}] Within six months of fielding, the requirements sponsor submits an Assessment of Operational Utility to the solution sponsor and approval authority. It informs whether to transition to a program of record, sustain for the current contingency, or cancel~\autocite{edo-3-3-2-acq-milestones-phases-2025}.
 \end{description}
 
+\subsection{Performance Attributes and Test Evidence}
+\begin{longtblr}[
+  caption = {KPP, KSA, and APA distinctions},
+  label = {tab:kpp-ksa-apa-comparison},
+  entry = {KPP vs KSA vs APA Comparison},
+  remark{\tSource} = {\tabCite{DoDI5000-85,edo-3-3-3-jfrp-2026}}
+]{colspec = {@{} X[0.65] X[1.7] X[2] @{}}}
+\toprule
+{Attribute} & {Meaning} & {Decision consequence} \\
+\midrule
+KPP & Critical or essential performance attribute & A threshold miss can threaten operational utility and APB compliance; assess corrective action, baseline implications, and decision-authority action \\
+KSA & Important to a balanced solution or operational suitability; below KPP criticality & A miss still creates capability, suitability, integration, or acceptance risk \\
+APA & Additional attribute needed for full capability; below KPP/KSA criticality & A miss still requires test evidence, impact assessment, corrective action, and explicit residual-risk disposition \\
+\bottomrule
+\end{longtblr}
+\noindent All attributes must be measurable and testable. Trace approved requirements through engineering allocations to verification methods, the \ac{temp}, and milestone evidence. \acp{kpp} are carried into the \ac{apb}; do not assume every KSA or APA is automatically an APB performance parameter, or that a KPP miss automatically triggers a particular statutory report~\autocite{DoDI5000-85,edo-3-3-3-jfrp-2026}.
 
-\subsection{Validation Authority}
+\subsection{Information Technology and Interoperability}
 \begin{description}
-  \item[\textbf{Joint Requirements Oversight Council.}] Under the JFRP, the \ac{jroc} remains the senior joint requirements body and reviews prioritized Joint Force and Combatant Command requirement issues, but it is not the default validator for every Service-generated acquisition requirement document~\autocite{CJCSM5123-01}.
-  \item[\textbf{Joint Capabilities Board.}] The \ac{jcb} supports \ac{jroc} deliberations and adjudicates staffing issues for Joint Capability Integration and by-exception reviews directed by the Joint Staff~\autocite{CJCSM5123-01}.
-  \item[\textbf{Component sponsor.}] Services and Components generate and validate their own requirements; Joint Capability Integration occurs after Component validation and in parallel with acquisition execution when joint impact warrants it~\autocite{CJCSM5123-01}.
+  \item[\textbf{Net-Ready.}] The coursebook documents interoperability needs as a Net-Ready \ac{kpp} or \ac{ksa}: IT supports military operations, can enter and be managed on the network, and effectively exchanges information.
+  \item[\textbf{Architecture and reuse.}] \ac{dodaf} defines architecture views and encourages reuse; technical views must be consistent with \ac{disr}. The coursebook identifies architecture views as required parts of a \ac{cdd}.
+  \item[\textbf{Joint and allied operations.}] Consider all affected U.S. and allied systems. Stovepipes waste resources; failed interoperability can compromise operations and put lives and equipment at risk.
 \end{description}
-
-\subsection{Document Review and Staffing}
-\begin{description}
-  \item[\textbf{Submission.}] Under legacy JCIDS teaching flow, sponsors submit documents to Joint Staff J-8 for staffing; under current JFRP, this routing is selective and focused on joint-force integration priorities rather than universal staffing of Service documents~\autocite{CJCSM5123-01,edo-3-3-3-jcids-2025}.
-  \item[\textbf{JSD assignment.}] J-8 assigns staffing and review mechanisms according to joint impact and JFRP governance decisions~\autocite{CJCSM5123-01}.
-  \item[\textbf{FCB review.}] Lead \ac{fcb} analysis still informs joint integration decisions when a requirement has cross-functional or joint implications~\autocite{CJCSM5123-01}.
-  \item[\textbf{Validation.}] Board answer: state Component validation first, then explain Joint Staff/JROC integration review as required by scope and joint impact~\autocite{CJCSM5123-01}.
-\end{description}
-
-\subsection{Coursebook cue: legacy JCIDS language}
-Coursebook 3.3.3 uses JCIDS-era vocabulary to teach capability gaps, requirements documents, and validation. For a board answer, state the coursebook concept first, then add the current-policy caveat when relevant: legacy JCIDS terms remain useful for explaining need, gap, validation, and traceability, but current Joint Staff requirements reform may change document names, routing, and review mechanics~\autocite{edo-3-3-3-jcids-2025,CJCSM5123-01}.
+\noindent Source: coursebook slides 28--29~\autocite{edo-3-3-3-jfrp-2026}.
 
 \subsection{Quick Review}
 \begin{itemize}
-  \item What system institutionalizes a joint capability need and sponsors further evaluation of a materiel solution~\autocite{CJCSM5123-01,edo-3-3-3-jcids-2025}? \textbf{Answer:} Legacy/coursebook answer: \ac{jcids}; current-policy caveat: JFRP now governs Joint Staff requirements integration.
-  \item Which acquisition phases use the \ac{icd} and \ac{cdd}~\autocite{edo-3-3-3-jcids-2025}? \textbf{Answer:} \ac{msa}/\ac{tmrr}, \ac{emd}, and Production and Deployment.
-  \item Which document defines capabilities and is transformed into a program start~\autocite{edo-3-3-3-jcids-2025}? \textbf{Answer:} \ac{cdd}, with Milestone~B approval by the \ac{mdauthority}.
-  \item JROC and the Joint Staff ensure new capabilities are conceived and developed in what context~\autocite{edo-3-3-3-jcids-2025}? \textbf{Answer:} Joint warfighting context.
-  \item Warfighter gap identification is driven by Combatant Commander participation in what body~\autocite{edo-3-3-3-jcids-2025}? \textbf{Answer:} \acp{fcb}.
+  \item What replaced JCIDS? \textbf{Answer:} \ac{jfrp}; Services approve their requirements while the \ac{jroc} focuses on joint problems and integration~\autocite{edo-3-3-3-jfrp-2026}.
+  \item Name the five core components. \textbf{Answer:} Reoriented JROC, prioritized JOPs, unified JICR process, empowered Services, and direct requirements-to-resourcing alignment~\autocite{edo-3-3-3-jfrp-2026}.
+  \item What feeds the annual CGA? \textbf{Answer:} Combatant Commander Integrated Priority Lists~\autocite{edo-3-3-3-jfrp-2026}.
+  \item Which documents support MDD and Milestone B? \textbf{Answer:} Initial SRD/ICD before MDD; updated SRD/CDD before Milestone~B. The MDA approves acquisition phase entry~\autocite{edo-3-3-3-jfrp-2026}.
+  \item What replaced JUON/JEON, and does approval mean immediate fielding? \textbf{Answer:} JICR; the coursebook distinguishes a 35-business-day assessment/approval process from fielding within two years~\autocite{edo-3-3-3-jfrp-2026}.
+  \item What do RRAB and MEIA do? \textbf{Answer:} RRAB aligns resources to joint priorities; MEIA provides mission-engineering, experimentation, and integration evidence~\autocite[slides 33--35]{edo-3-3-3-jfrp-2026}.
 \end{itemize}
 
 %====================
