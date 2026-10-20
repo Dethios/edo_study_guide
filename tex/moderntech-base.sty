@@ -336,19 +336,8 @@
 % * TOC styling (modern by default)
 % =============================
 \RequirePackage{needspace}
-% Use an actual bold small-cap face for major TOC entries, independently of sans fallback.
-\IfFontExistsTF{Kerkis-BoldSmallCaps.otf}{%
-  \newfontfamily\moderntech@toccaps[
-    BoldFont=Kerkis-BoldSmallCaps.otf
-  ]{Kerkis-SmallCaps.otf}%
-}{%
-  % Minimal TeX installations still get real small-cap glyphs with explicit emphasis.
-  \newfontfamily\moderntech@toccaps[
-    BoldFont=lmromancaps10-regular.otf,
-    BoldFeatures={FakeBold=1.4}
-  ]{lmromancaps10-regular.otf}%
-}
-\NewDocumentCommand{\moderntech@toc@chapter}{}{\normalfont\moderntech@toccaps\bfseries\fontsize{12.5}{15}\selectfont\color{Blue}}
+% Major entries share the TOC's sans family, with bold uppercase emphasis.
+\NewDocumentCommand{\moderntech@toc@chapter}{}{\normalfont\sffamily\bfseries\upshape\fontsize{12.5}{15}\selectfont\color{Blue}}
 \NewDocumentCommand{\moderntech@toc@section}{}{\normalfont\sffamily\mdseries\upshape\normalsize\color{BodyText}}
 \NewDocumentCommand{\moderntech@list@entry}{}{\normalfont\firasanssemibold\color{Blue}}
 \NewDocumentCommand{\moderntech@toc@subsection}{}{\normalfont\sffamily\itshape\small\color{BodyText}}
@@ -387,7 +376,14 @@
     pagenumberwidth=2.2em
   ]{tocline}{subsubsection}%
 }
-\AtBeginDocument{\moderntechsetupTOC}
+\AtBeginDocument{%
+  \moderntechsetupTOC
+  % Uppercase the title before it is written, leaving numberline and layout code intact.
+  \@ifundefined{addchaptertocentry}{}{%
+    \let\moderntech@toc@originalchapterentry\addchaptertocentry
+    \renewcommand*{\addchaptertocentry}[2]{\moderntech@toc@originalchapterentry{#1}{\MakeUppercase{#2}}}%
+  }%
+}
 
 \NewDocumentCommand{\moderntechsetupLists}{}{%
   \DeclareTOCStyleEntry[

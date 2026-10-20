@@ -2813,3 +2813,37 @@ are preserved. Two existing performance-attribute answers now retain the JFRP ta
 - **Ambiguous / High - jfrp tailoring:** Qualify the checklist with current Component-approved requirements and
   tailoring; corroborate CJCSI 5123.01J Change 1 and CJCSM 5123.01A in Joint Staff catalogs, and align the existing
   question answers.
+
+### 2026-10-20 - ASN (RD&A) Chart Retrieval and TOC Typeface
+
+- Original: The guide contains a reconstructed PAE transition chart and serif small-cap TOC major headings.
+- TOC correction: Use the same sans-serif family as the other entries, with bold ALL CAPS major headings.
+  Status: applied; source: direct user formatting instruction; confidence: High.
+- Chart verdict: `Needs source`; status: blocked; confidence: Low for the unseen replacement chart.
+- Requested authority:
+  [official ASN (RD&A) organization chart](https://www.secnav.navy.mil/rda/Pages/ASNRDAOrgChart.aspx).
+- Access check: 2026-10-20. The live page returned a Navy request-rejected response through web access;
+  executor retrieval returned HTTP 403. Search indexing exposes an older page, but not the chart image.
+- Action: Preserve the existing, dated chart until the current official image/PDF can be inspected.
+  No new reporting lines or incumbent changes are inferred from an inaccessible image.
+
+### 2026-10-20 - Supplied ASN (RD&A) Image and Redundant Figure Removal
+
+- Supersedes the blocked chart follow-up `gc-20261020-asnrda-current-chart-access` above.
+- Original: Figure 1.3 repeated the legacy governance chart; Figure 1.4 was an expanded PAE reconstruction
+  that did not preserve the supplied official-page image's command groups and individual links.
+- Verdict: `Outdated` for the requested presentation; status: applied; confidence: High for image transcription.
+- Source: user-supplied image from the official ASN (RD&A) chart page, visually inspected 2026-10-20.
+  The source image is undated; live page verification remains blocked.
+- Correction: Remove the legacy figure and its referring paragraph. Redraw the former Figure 1.4 with the
+  CNO/SECNAV/CMC header, ASN, PMD/PCD, five Navy commands, six named portfolios, pending block, and MCSC.
+  Preserve solid/dashed connectors without inventing a legend for their authority semantics. Normalize the
+  image's transposed "DPRM SUB" to the standard "DRPM SUB" used in the surrounding, sourced discussion.
+- Explain the snapshot's scope alongside the separately sourced later PAE roster; do not present the image as
+  proof of current incumbent names or a reduction from nine portfolios. Automatic figure numbering follows removal.
+- Location: `tex/chapters/1_Chain_of_command.tex`, `fig:asnrda_org_chart`.
+- Validation: native LuaLaTeX build completed successfully at 471 pages. Visually reviewed all three TOC
+  pages, the revised chart, and adjacent leadership tables; adjusted connector clearance and deputy-box spacing.
+  All 20 major TOC destinations match their printed references. The final scan found no text outside margins,
+  unresolved citations, overfull boxes, missing characters, or rerun requests; existing font substitutions remain.
+- Final PDF SHA-256: `391fa0ad35d4fed0d1b8f393c3f7ac4e554540cef824b298854def6019c1d05b`.

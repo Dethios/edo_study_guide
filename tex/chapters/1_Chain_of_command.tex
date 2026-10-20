@@ -95,97 +95,78 @@ The \ac{asnrdanda} is the \ac{don} \ac{cae} and the \ac{nae}, with authority and
         \FlagBilletNote{Current EDO flag billet roster.}
 \end{description}
 
-\Fig{\ref{fig:chain_of_command_acq_gov}} shows the legacy Navy acquisition governance chain of command. Use it to understand the \ac{peo}/\ac{syscom} matrix, then apply the PAE update in \Fig{\ref{fig:asnrda_org_chart}} and \Tab{\ref{tab:pae-roster-current}}.
-
-\begin{figure}[H]
-  \centering\color{SteelDeep}
-  \includegraphics[width=0.7\linewidth]{Navy Acquisition Organization.png}
-  \caption[Acquisition Governance Chain of Command]{Acquisition Governance Chain of Command.~\srcCite{edo-2-1-1-command-structures-2025}}
-  \label{fig:chain_of_command_acq_gov}
-\end{figure}
-
 \subsection{ASN (RD\&A) Organization and Portfolio Acquisition Executives}
 
-Current as of 2026-10-20, \ac{vadm} Elizabeth ``Seiko'' Okano is performing the duties of \ac{asnrdanda}. The September~29 transition moved William F.\ Mahan to performing the duties of Under Secretary of the Navy; the May~26 announcement naming Mahan as the acquisition executive is historical, not the current incumbent cue~\autocite{ExecutiveGov-ASNRDA-Sep2026,DONCIO-Okano-PTDO-2026}. Principal Civilian Deputy and \ac{pmildep} are distinct supporting roles. Jason L.\ Potter's return to Principal Civilian Deputy and Okano's \ac{pmildep} assignment are the May~2026 baseline; they should not be mistaken for a separately verified October deputy roster~\autocite{DON-New-SAE-2026}. \Fig{\ref{fig:asnrda_org_chart}} captures the board-level PAE organization, \Tab{\ref{tab:asnrda_leadership}} captures top roles, and \Tab{\ref{tab:pae-roster-current}} lists the publicly announced \acp{pae}.
+Current as of 2026-10-20, \ac{vadm} Elizabeth ``Seiko'' Okano is performing the duties of \ac{asnrdanda}. The September~29 transition moved William F.\ Mahan to performing the duties of Under Secretary of the Navy; the May~26 announcement naming Mahan as the acquisition executive is historical, not the current incumbent cue~\autocite{ExecutiveGov-ASNRDA-Sep2026,DONCIO-Okano-PTDO-2026}. Principal Civilian Deputy and \ac{pmildep} are distinct supporting roles. Jason L.\ Potter's return to Principal Civilian Deputy and Okano's \ac{pmildep} assignment are the May~2026 baseline; they should not be mistaken for a separately verified October deputy roster~\autocite{DON-New-SAE-2026}. \Fig{\ref{fig:asnrda_org_chart}} reproduces the supplied ASN (RD\&A) structural snapshot, \Tab{\ref{tab:asnrda_leadership}} captures top roles, and \Tab{\ref{tab:pae-roster-current}} lists the publicly announced \acp{pae}.
 
 \begin{description}
   \item[\textbf{PAE purpose.}] PAEs align authority with responsibility for outcomes across like portfolios. The reform target is faster delivery, fewer non-value-added reviews, disciplined cost/schedule/performance trades, direct industrial-base management, and cradle-to-grave control across program, technical, contracting, and sustainment functions~\autocite{DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026}.
   \item[\textbf{Board answer.}] Draw \ac{secnav} at the top, \ac{asnrdanda} beneath \ac{secnav}, Principal Civilian Deputy and \ac{pmildep} directly under \ac{asnrdanda}, and the \acp{pae} as the current acquisition portfolio owners. Keep \ac{cno} and \ac{cmc} in the service chain for requirements/readiness and keep \acp{syscom} as the technical, contracting, sustainment, and workforce infrastructure that is being realigned into or in support of the PAEs.
-  \item[\textbf{Transition caution.}] The user's PAE organization chart is a useful transition snapshot, but it predates the May~2026 public announcement of PAE Aviation, PAE Mission Systems, and PAE Munitions. Use the current count of nine \acp{pae} unless a newer official chart supersedes it~\autocite{DON-PAE-Expansion-May2026}.
+  \item[\textbf{Transition caution.}] The supplied official-page chart is undated and shows six named portfolios plus a ``To be announced'' block. Reproduce those labels and links for this structural snapshot; the separately sourced roster below includes the later public announcements of PAE Aviation, PAE Mission Systems, and PAE Munitions. Do not infer a current portfolio count or incumbent from the image alone~\autocite{asnrda-chart-supplied-20261020,DON-PAE-Expansion-May2026}.
 \end{description}
 
 \begin{figure}[H]
   \centering
   \resizebox{\linewidth}{!}{%
-  \begin{tikzpicture}
-    [
-    node distance=1.12cm and 1.75cm,
-    top node/.style={rectangle, draw, fill=Vapor, fill opacity=1, text opacity=1, text width=10em, align=center, minimum height=3.5em},
-    asn node/.style={rectangle, draw, fill=Gold!40, fill opacity=1, text opacity=1, text width=14em, align=center, minimum height=4.2em},
-    deputy node/.style={rectangle, draw, fill=Green!25, fill opacity=1, text opacity=1, text width=11em, align=center, minimum height=3.6em},
-    pae header/.style={rectangle, draw=SteelGray, fill=SteelGray!12, fill opacity=1, text opacity=1, text width=30em, align=center, minimum height=2.8em, font=\bfseries},
-    pae node/.style={rectangle, draw, fill=Blue!18, fill opacity=1, text opacity=1, text width=10.5em, align=center, minimum height=3.2em},
-    pae group/.style={rectangle, draw=SteelGray, densely dashed, rounded corners, inner xsep=0.92cm, inner ysep=0.74cm},
-    support node/.style={rectangle, draw, dashed, fill=SteelGray!10, fill opacity=1, text opacity=1, text width=16em, align=center, minimum height=4.0em},
-    line/.style={draw, -{Stealth[length=2mm]}, shorten >=3pt, shorten <=3pt, rounded corners=2pt},
-    bus line/.style={draw, shorten >=2pt, shorten <=2pt, rounded corners=2pt},
-    support line/.style={draw, dashed, -{Stealth[length=2mm]}, shorten >=5pt, shorten <=4pt, rounded corners=2pt}
-    ]
+  \begin{tikzpicture}[
+    font=\sffamily\small,
+    head/.style={rectangle,draw=SteelDeep,fill=SteelDeep,text=white,text width=3.2cm,minimum height=0.8cm,align=center,font=\sffamily\bfseries},
+    office/.style={head,fill=Blue,draw=Blue,text width=3.7cm},
+    deputy/.style={office,text width=1.7cm,minimum height=0.8cm},
+    command/.style={rectangle,draw=Blue!65,fill=Blue!75,text=white,text width=2.6cm,minimum height=0.8cm,align=center,font=\sffamily\bfseries},
+    portfolio/.style={command,text width=2.8cm},
+    marine/.style={fill=Red!85,draw=Red!85},
+    source link/.style={draw=Blue,line width=1.1pt},
+    source dashed/.style={source link,densely dashed},
+    service link/.style={draw=SteelDeep,line width=1.1pt}
+  ]
+    \node[head] (cno) at (1.5,0) {CNO};
+    \node[head] (secnav) at (7.5,0) {SECNAV};
+    \node[head,marine] (cmc) at (13.5,0) {CMC};
+    \node[office] (asn) at (7.5,-1.7) {ASN (RD\&A)};
+    \node[deputy] (pmd) at (2.0,-3.1) {PMD};
+    \node[deputy] (pcd) at (4.1,-3.1) {PCD};
 
-    \node[top node] (secnav) {\ac{secnav}};
-    \node[top node, left=of secnav, xshift=-2.5cm] (cno) {\ac{cno}};
-    \node[top node, right=of secnav, xshift=2.5cm, fill=Red!18] (cmc) {\ac{cmc}};
+    \node[command] (navair) at (2.6,-4.7) {NAVAIR};
+    \node[command] (navfac) at (2.6,-5.8) {NAVFAC};
+    \node[command] (navsea) at (2.6,-6.9) {NAVSEA};
+    \node[command] (navsup) at (2.6,-8.0) {NAVSUP};
+    \node[command] (navwar) at (2.6,-9.1) {NAVWAR};
 
-    \node[asn node, below=of secnav] (asn) {Performing the Duties of\\ \ac{asnrdanda}\\ \textbf{\ac{vadm} Seiko Okano}\\ \small \ac{don} \ac{sae}};
-    \node[deputy node, below=1.0cm of asn, xshift=-3.25cm] (pcd) {Principal Civilian Deputy\\ \small Civilian deputy role};
-    \node[deputy node, below=1.0cm of asn, xshift=3.25cm] (pmd) {\ac{pmildep}\\ \small Military deputy role};
-
-    \node[pae header, below=4.45cm of asn] (paeHeader) {Portfolio Acquisition Executives};
-    \node[pae node, below=1.05cm of paeHeader] (missions) {PAE Mission Systems};
-    \node[pae node, left=of missions] (aviation) {PAE Aviation};
-    \node[pae node, right=of missions] (munitions) {PAE Munitions};
-
-    \node[pae node, below=of aviation] (industrial) {PAE Industrial Operations};
-    \node[pae node, right=of industrial] (maritime) {PAE Maritime};
-    \node[pae node, right=of maritime] (undersea) {PAE Undersea\\ / DRPM Submarines};
-
-    \node[pae node, below=of industrial] (ssp) {PAE Strategic\\ Systems Programs};
-    \node[pae node, right=of ssp] (ras) {PAE / DRPM Robotics\\ and Autonomous Systems};
-    \node[pae node, right=of ras, fill=Red!18] (marine) {PAE Marine Corps};
-
-    \node[support node, left=of industrial, xshift=-4.75cm] (syscoms) {\acp{syscom} and warfare centers\\ Engineering and technical support\\ under current delegations};
-    \coordinate (serviceJoinY) at ($(asn.north)+(0,0.62cm)$);
-    \coordinate (cnoJoin) at (cno.south |- serviceJoinY);
-    \coordinate (cmcJoin) at (cmc.south |- serviceJoinY);
-    \coordinate (asnCnoIn) at ($(asn.north west)!0.45!(asn.north)$);
-    \coordinate (asnCmcIn) at ($(asn.north east)!0.45!(asn.north)$);
-    % Keep connector lanes outside node interiors; branch arrows terminate at node-border anchors.
-    \coordinate (deputyBusY) at ($(asn.south)+(0,-0.55cm)$);
-    \coordinate (deputyStem) at (asn.south |- deputyBusY);
-    \coordinate (pcdBranch) at (pcd.north |- deputyBusY);
-    \coordinate (pmdBranch) at (pmd.north |- deputyBusY);
+    \node[portfolio] (industrial) at (7.5,-3.5) {INDUSTRIAL\\OPERATIONS};
+    \node[portfolio] (maritime) at (7.5,-4.6) {MARITIME};
+    \node[portfolio] (undersea) at (7.5,-5.7) {UNDERSEA /\\DRPM SUB};
+    \node[portfolio] (ssp) at (7.5,-6.8) {SSP};
+    \node[portfolio] (ras) at (7.5,-7.9) {RAS};
+    \node[portfolio,marine] (marine) at (7.5,-9.0) {MARINE CORPS};
+    \node[portfolio,fill=SteelGray!25,draw=SteelGray!25,text=SteelDeep] (tba) at (7.5,-10.1) {TO BE\\ANNOUNCED};
+    \node[command,marine] (mcsc) at (13.5,-9.0) {MCSC};
 
     \begin{scope}[on background layer]
-      \node[pae group, fit=(paeHeader)(aviation)(missions)(munitions)(industrial)(maritime)(undersea)(ssp)(ras)(marine)] (paeGroup) {};
-    \end{scope}
-
-    \coordinate (supportOut) at ($(syscoms.east)+(0.42cm,0)$);
-    \coordinate (supportGroupEntry) at ($(paeGroup.west |- industrial.west)+(-0.08cm,0)$);
-
-    \begin{scope}[on background layer]
-      \draw[line] (secnav.south) -- (asn.north);
-      \draw[line] (cno.south) -- (cnoJoin) -| (asnCnoIn);
-      \draw[line] (cmc.south) -- (cmcJoin) -| (asnCmcIn);
-      \draw[bus line] (asn.south) -- (deputyStem);
-      \draw[bus line] (pcdBranch) -- (pmdBranch);
-      \draw[line] (pcdBranch) -- (pcd.north);
-      \draw[line] (pmdBranch) -- (pmd.north);
-      \draw[bus line] (deputyStem) -- (paeHeader.north);
-
-      \draw[support line] (syscoms.east) -- (supportOut) -- (supportGroupEntry);
+      \node[fill=SteelGray!12,inner sep=0.13cm,fit=(navair)(navfac)(navsea)(navsup)(navwar)] {};
+      \node[fill=SteelGray!12,inner sep=0.13cm,fit=(industrial)(maritime)(undersea)(ssp)(ras)(marine)(tba)] {};
+      \draw[service link] (cno.south) -- (1.5,-0.85) -- (13.5,-0.85) -- (cmc.south);
+      \draw[service link] (secnav.south) -- (asn.north);
+      \draw[source link] (asn.south) -- (7.5,-2.5) -- (2,-2.5) -- (pmd.north);
+      \draw[source link] (4.1,-2.5) -- (pcd.north);
+      \draw[source link] (9.2,-2.1) -- (9.2,-9.0);
+      \foreach \office in {industrial,maritime,undersea,ssp,ras,marine}{
+        \draw[source link] (\office.east) -- (9.2,0 |- \office.east);
+      }
+      \draw[draw=Gold,line width=1.1pt] (0.1,-0.4) -- (0.1,-9.1);
+      \foreach \command in {navair,navfac,navsea,navsup,navwar}{
+        \draw[draw=Gold,line width=1.1pt] (0.1,0 |- \command.west) -- (\command.west);
+      }
+      \draw[draw=Red!85,line width=1.1pt] (14.3,-0.4) -- (14.3,-8.55) -- (mcsc.north -| 14.3,0);
+      \draw[source dashed] (6.3,-2.1) -- (6.3,-2.3) -- (0.65,-2.3) -- (0.65,-3.95) -- (2.6,-3.95) -- (navair.north);
+      \draw[source dashed] (navsea.east) -- (5.35,-6.9) |- (industrial.west);
+      \draw[source dashed] (navsea.east) -- (5.6,-6.9) |- (maritime.west);
+      \draw[source dashed] (navsea.east) -- (5.85,-6.9) |- (undersea.west);
+      \draw[source dashed] (navwar.east) -- (5.7,-9.1) |- (ras.west);
+      \draw[draw=Red!85,line width=1.1pt,densely dashed] (marine.east) -- (mcsc.west);
     \end{scope}
   \end{tikzpicture}}
-  \caption[ASN (RD\&A) and PAE organization transition]{Board-level ASN (RD\&A) and PAE organization transition, updated from the user-provided PAE chart with the ASN (RD\&A) incumbent corrected through 2026-10-20; portfolio functions reflect the September coursebook; separate DRPM reporting routes are not depicted~\autocite{ExecutiveGov-ASNRDA-Sep2026,DONCIO-Okano-PTDO-2026,DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026}.}
+  \caption[ASN (RD\&A) organization: official-page snapshot]{ASN (RD\&A) organization redrawn from the official-page image supplied by the user on 2026-10-20. Solid and dashed links, PMD/PCD labels, and the ``To be announced'' block reproduce the undated source; consult the separate roster for later portfolio announcements~\autocite{asnrda-chart-supplied-20261020}.}
   \label{fig:asnrda_org_chart}
 \end{figure}
 

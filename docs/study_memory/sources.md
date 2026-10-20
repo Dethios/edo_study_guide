@@ -684,3 +684,13 @@ revision metadata for the same document; blocked current PDFs are not represente
 | 10 U.S.C. 4376: Critical breach reassessment and termination presumption                                    | statute    | `https://uscode.house.gov/us/usc/119-118/t10/s4376/`                                                                                           | 2026-10-07                  | 2026-10-20 | Full OLRC body read; reassessment, continuation certification and report.                                                                                                           |
 | 10 U.S.C. 4172: Live-fire testing and waiver requirements                                                   | statute    | `https://uscode.house.gov/us/usc/119-118/t10/s4172/`                                                                                           | 2026-10-07                  | 2026-10-20 | Full OLRC body read; coverage definitions, beyond-LRIP gate, waiver conjunctive predicate and certification timing.                                                                 |
 | 10 U.S.C. 4371: Cost growth definitions                                                                     | statute    | `https://uscode.house.gov/us/usc/119-118/t10/s4371/`                                                                                           | 2026-10-07                  | 2026-10-20 | Full OLRC body read; original/current baseline and unit-cost definitions.                                                                                                           |
+
+## ASN (RD&A) Organization Chart Follow-up - 2026-10-20
+
+- User-specified primary source: `https://www.secnav.navy.mil/rda/Pages/ASNRDAOrgChart.aspx`.
+- Authority: Department of the Navy organizational chart; current image version not yet verified.
+- Retrieval attempted 2026-10-20: live web request rejected; executor HTTP 403. Search-index text is older
+  and does not expose the chart image. This is an access attempt, not successful current-chart verification.
+- Resolved: the user supplied the chart image in chat on 2026-10-20; its labels and connectors were visually read.
+  The live page remains inaccessible. The image is undated and shows six named portfolios plus a pending block;
+  it is the source for the redrawn structural snapshot, not for the later nine-portfolio roster.

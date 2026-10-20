@@ -9,11 +9,13 @@ release tags (release-YYYYMMDD).
 
 ### Fixed
 
+- Remove the redundant acquisition-governance figure and redraw the ASN(RD&A) chart from the supplied official image.
 - Audit acquisition instruction versions and statutory boundaries; correct AoA/SEP approvals, cost reporting and LFT
   rules.
 - Refresh October CAS/SBIR limits, software/MTA authority, service funding, and nontraditional-contractor exemptions.
 - Replace current SAR teaching with the MSAR crosswalk and document blocked-policy verification limits.
-- Distinguish TOC levels with larger bold small-cap major headings and regular smaller subheadings.
+- Use the same sans-serif family throughout the TOC, with larger bold ALL CAPS major headings and smaller regular
+  entries.
 - Replace the June EDO roster with the visually read September roster and verified later duty changes.
 - Update Small, Weeks, Williams, Moton and Miller leadership cues; carry NAVSEA-to-PAE transfers through summaries.
 - Correct malformed T&E tables caused by literal ampersands; restore usable column widths and pagination.
