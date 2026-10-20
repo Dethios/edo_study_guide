@@ -397,3 +397,8 @@ Recent applied updates:
 See `docs/reference/2026-10-coursebook-refresh.md` for all-module reconciliation and source conflicts, and
 `docs/reference/2026-10-coursebook-inventory.json` for version, hash, and source paths. Current requirements teaching
 is JFRP; historical learning logs and weak-area observations retain their original session terminology.
+
+## October 20 PDF and Leadership Review
+
+See `docs/reference/2026-10-pdf-layout-review.md` for table-rendering corrections and ASN(RD&A) verification.
+The latest incumbent cue supersedes the May Mahan entry; the wider June flag roster remains a dated snapshot.

@@ -56,26 +56,34 @@ Verification relies on repeatable measurements (e.g., propulsion plant efficienc
 \begin{figure}[htbp]
   \centering
   \begin{tikzpicture}[
-      node distance=1.5cm and 2.2cm,
-      org/.style={draw=Blue, fill=Blue!10, rounded corners=2pt, align=center, inner sep=6pt, minimum width=3.8cm, text width=3.8cm},
-      arrow/.style={-Latex, line width=1pt, draw=SteelGray}
+      org/.style={draw=Blue, fill=Blue!10, rounded corners=2pt, align=center,
+        inner sep=6pt, text width=4cm, font=\small},
+      arrow/.style={-Latex, line width=0.8pt, draw=SteelGray},
+      key/.style={fill=white, inner sep=2pt, font=\footnotesize\bfseries}
     ]
-    \node[org] (dote) {OSD DOT\&E\\Statutory adequacy oversight};
-    \node[org, right=of dote] (dasdte) {USW(R\&E) / DTE\&A\\DT\&E policy and test infrastructure};
-    \node[org, below left=0.4cm and 1.4cm of dote] (otas) {Service OTAs\\COMOPTEVFOR / AFOTEC / ATEC / MCOTEA};
-    \node[org, below right=0.4cm and 1.4cm of dote] (exec) {Service T\&E executors\\Warfare centers, ranges, labs, M\&S};
-    \node[org, below=of otas] (programs) {Component acquisition chain\\PEO / PM / Chief Dev Tester / LDTO};
-    \node[org, below=of exec] (fleet) {Warfighter users\\Type commanders / Fleet sponsors};
-
-    \draw[arrow] (dote) -- node[above left]{OT adequacy reports} (otas);
-    \draw[arrow] (dasdte) -- node[above right]{T\&E policy / resources} (exec);
-    \draw[arrow] (dote) -- node[above]{Congress reports} (programs);
-    \draw[arrow] (dasdte) -- node[above]{CDT / LDTO charters} (programs);
-    \draw[arrow] (otas) -- node[left]{OT results / suitability} (programs);
-    \draw[arrow] (exec) -- node[right]{DT data / certifications} (programs);
-    \draw[arrow] (programs) -- node[left]{fielding recommendations} (fleet);
-    \draw[arrow] (fleet) -- node[right]{user feedback / mission threads} (programs);
+    \node[org] (dote) at (0,0) {OSD DOT\&E\\Statutory adequacy oversight};
+    \node[org] (dasdte) at (7,0) {USW(R\&E) / DTE\&A\\DT\&E policy and test infrastructure};
+    \node[org] (otas) at (0,-2.8) {Service OTAs\\COMOPTEVFOR / AFOTEC / ATEC / MCOTEA};
+    \node[org] (exec) at (7,-2.8) {Service T\&E executors\\Warfare centers, ranges, labs, M\&S};
+    \node[org] (programs) at (0,-5.6) {Component acquisition chain\\PEO / PM / Chief Dev Tester / LDTO};
+    \node[org] (fleet) at (7,-5.6) {Warfighter users\\Type commanders / Fleet sponsors};
+    \draw[arrow] (dote) -- node[key]{1} (otas);
+    \draw[arrow] (dasdte) -- node[key]{2} (exec);
+    \draw[arrow] (dote.west) -- ++(-0.7,0) |- node[key,pos=0.75]{3} (programs.west);
+    \draw[arrow] (dasdte.south west) -- node[key,pos=0.38]{4} (programs.north east);
+    \draw[arrow] (otas) -- node[key]{5} (programs);
+    \draw[arrow] (exec.south west) -- node[key]{6} (programs.north east);
+    \draw[arrow] (programs.east) to[bend left=18] node[key]{7} (fleet.west);
+    \draw[arrow] (fleet.west) to[bend left=18] node[key]{8} (programs.east);
   \end{tikzpicture}
+  \par\smallskip
+  {\footnotesize
+  \begin{tabularx}{\linewidth}{@{}XX@{}}
+    1: OT adequacy reports & 2: T\&E policy / resources \\
+    3: Congress reports & 4: CDT / LDTO charters \\
+    5: OT results / suitability & 6: DT data / certifications \\
+    7: Fielding recommendations & 8: User feedback / mission threads
+  \end{tabularx}}
   \caption[DoD TE organization]{\ac{dod} test and evaluation governance chain linking \ac{osd} oversight, Service Operational Test Agencies, warfare centers/ranges, and program-level test leadership.}
   \label{fig:dow-te-org}
 \end{figure}
@@ -226,7 +234,7 @@ Different test types answer distinct questions across the \ac{mca} lifecycle~\au
   \midrule
   ACAT III / IV & Low; tailored oversight & CAE, PEO, or SYSCOM & Tailored TEMP or T\&E Strategy & Designated MDA & Minimal reporting \\
   \midrule
-  Non-DOT&E oversight & Tailored; Service/component channels & Component MDA & Tailored TEMP or T\&E Strategy & Component Acquisition Executive or designee & Component reporting; statutory requirements still apply \\
+  Non-DOT\&E oversight & Tailored; Service/component channels & Component MDA & Tailored TEMP or T\&E Strategy & Component Acquisition Executive or designee & Component reporting; statutory requirements still apply \\
   \bottomrule
 \end{longtblr}
 
@@ -253,7 +261,7 @@ Different test types answer distinct questions across the \ac{mca} lifecycle~\au
   \midrule
   T\&E WIPT / Integrated Test Team & Coordinates T\&E planning and execution across stakeholders & Test schedules, data sharing, cross-discipline coordination & Milestone decisions, budget authority, independent OT independence \\
   \midrule
-  DOT&E & Independent statutory oversight for covered programs; reports to the Secretary of Defense and Congress & OT plan approval, LFT\&E strategy approval, OT adequacy assessment & DT planning, DT\&E execution, certification decisions, program acquisition strategy \\
+  DOT\&E & Independent statutory oversight for covered programs; reports to the Secretary of Defense and Congress & OT plan approval, LFT\&E strategy approval, OT adequacy assessment & DT planning, DT\&E execution, certification decisions, program acquisition strategy \\
   \midrule
   {\scriptsize USW(R\&E)} / DTE\&A & Sets DT\&E policy and test-resource guidance & DT\&E policy, test facilities, ranges, tools, modeling, simulation, and test resources & Individual program TEMP content, OT execution, milestone decisions \\
   \midrule
@@ -269,7 +277,7 @@ Different test types answer distinct questions across the \ac{mca} lifecycle~\au
   \midrule
   Contractor & Executes CT\&E, provides test articles, supports DT\&E & Contractor test plans, test article delivery, CT\&E data & OT plans, OT execution, independent OT judgments, DOT\&E oversight \\
   \midrule
-  Threat / Intelligence Community & Provides threat data, intelligence support, and threat representative targets & Threat assessments, threat surrogates, intelligence products & Test planning, test execution, certification decisions \\
+  Threat / Intelligence Community & Provides threat data, intelligence support, and threat representative targets & Threat assessments, threat surrogates, intelligence products & Test planning, test execution, certification decisions \\*
   \midrule
   Certification Authorities (Cyber, Interoperability, Safety, Airworthiness, Spectrum, Nuclear Surety) & Issue statutory or regulatory certifications & Certification criteria, certification decisions, ATO / CATO & Test planning, test execution, acquisition strategy \\
   \bottomrule
@@ -293,6 +301,7 @@ Navy \ac{te} execution reflects maritime operational requirements, shipbuilding 
   \item[\textbf{Cyber Testing Integration.}] For cyber-heavy systems, cyber \ac{dte} and cyber \ac{ote} must be integrated early in the lifecycle, not deferred until \ac{iote}~\autocite{DoDM5000-103,DoDI5000-90}. Navy cyber testing leverages NIWC Atlantic and Pacific, FCC, and NCDOC for cyber DT\&E and OT\&E support.
 \end{description}
 
+\Needspace{18\baselineskip}
 \subsection{Common Board Traps}
 Avoid these high-yield misconceptions when discussing \ac{mca} testing~\autocite{DoDI5000-85,DoDI5000-89,DoDI5000-98,DoDM5000-103}.
 \begin{longtblr}[

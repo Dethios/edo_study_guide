@@ -2708,3 +2708,17 @@ Live policy pages and September organizational realignments were not independent
 - Explanation: the new coursebook changes the default board answer or resolves an ambiguous existing claim.
 - Confidence: `Medium`
 - Status: `applied`
+
+## 2026-10-20 - ASN(RD&A) and PDF Layout
+
+- ID: `gc-20261020-asnrda-incumbent`
+- Original claim: Mahan is current PTDO ASN(RD&A); the May deputy roster reads as current.
+- Verdict: `Outdated`.
+- Corrected answer: VADM Elizabeth Seiko Okano performs ASN(RD&A) duties after the September transition.
+  Mahan moved to Under Secretary duties; the May deputy names remain dated historical information.
+- Source basis: September 30 ExecutiveGov report and indexed official Navy CIO memorandum signature,
+  recorded in `sources.md`. The report links the September 29 Navy announcement, whose body could not be retrieved.
+- Confidence: `Medium`; corroborated incumbent change, with direct-source retrieval limits disclosed.
+- Formatting: escaped two literal DOT&E ampersands that created unintended table columns; used wrapping
+  appropriation columns, wider compact tables, protected table starts, wider list numbering, and a diagram legend.
+- Review evidence: `docs/reference/2026-10-pdf-layout-review.md`.

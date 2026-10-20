@@ -335,6 +335,7 @@
 % =============================
 % * TOC styling (modern by default)
 % =============================
+\RequirePackage{needspace}
 \NewDocumentCommand{\moderntech@toc@chapter}{}{\normalfont\sffamily\scshape\bfseries\large\color{Blue}}
 \NewDocumentCommand{\moderntech@toc@section}{}{\normalfont\firasanssemibold\color{Blue}}
 \NewDocumentCommand{\moderntech@toc@subsection}{}{\normalfont\sffamily\itshape\small\color{BodyText}}
@@ -382,7 +383,7 @@
   ]{tocline}{figure}%
   \DeclareTOCStyleEntry[
     entryformat=\moderntech@toc@section,
-    numwidth=3.2em,
+    numwidth=5em,
     pagenumberformat=\moderntech@toc@pagenumber,
     pagenumberwidth=2.2em
   ]{tocline}{table}%

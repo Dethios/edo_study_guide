@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 This format is based on Keep a Changelog, and this project uses date-based
 release tags (release-YYYYMMDD).
 
+## [Unreleased]
+
+### Fixed
+
+- Correct malformed T&E tables caused by literal ampersands; restore usable column widths and pagination.
+- Wrap appropriation descriptions, widen compact tables and list-of-tables numbering, and separate diagram labels.
+- Update ASN(RD&A) to VADM Seiko Okano performing duties after the September transition; preserve deputy-roster dates.
+- Date the revised guide October 20, 2026.
+
 ## [release-20261019] - 2026-10-19
 
 ### Changed
