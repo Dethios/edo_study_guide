@@ -10,7 +10,7 @@ source-recency, citation, acronym, and validation rules for this project.
 ## Repository Layout
 
 - `tex/`: LaTeX sources, chapters, templates, assets, TikZ, and bibliographies.
-- `tex/assets/reference-docs/`: mirrored PDFs, notes, and source-support files.
+- `tex/assets/coursebook/`: coursebook PDFs; `tex/assets/reference-docs/`: other mirrored evidence and notes.
 - `artifacts/out/`: PDF output; `main.pdf` is tracked, while other generated
   outputs are ignored.
 - `artifacts/build/`: LaTeX aux files, ignored except `.gitkeep`.
@@ -20,24 +20,30 @@ source-recency, citation, acronym, and validation rules for this project.
 - `scripts/tests/`: focused regression tests for helper scripts.
 - `docs/reference/`: imported manuals, style assets, and supporting material.
 - `docs/archive/`: historical setup and migration notes.
-- `.codex/`: Codex Cloud setup/maintenance scripts and repo-local agent config.
+- `.agents/skills/`: focused tutoring, research/PDF, maintenance and review procedures.
+- `.codex/`: local-client defaults/roles, legacy provisioning helpers and dated runtime verification.
 - `project_export.json`: project memory and status snapshot.
 
 ## Build and Validation
 
-Local build:
+Run commands from the repository root. Native builds need LuaLaTeX, latexmk, Biber, Pygments, the repository's TeX
+packages and fonts. PDF review needs Poppler (`pdfinfo`, `pdftotext`, `pdftoppm`) or equivalent viewers; Markdown checks
+need `rumdl`. See [.codex/README.md](.codex/README.md) for Cloud setup and known legacy installer limits. Do not assume
+Docker is usable simply because its executable is installed. Avoid concurrent editor/agent builds.
+
+Native build (the normal path in a provisioned Cloud environment):
 
 ```bash
 ./scripts/build.sh tex/main.tex
 ```
 
-Docker build using the already-pulled `texlive/texlive` image:
+Preferred local Docker build using an accessible daemon and already-pulled `texlive/texlive` image:
 
 ```bash
 ./scripts/docker-build.sh tex/main.tex
 ```
 
-Clean Docker build:
+Clean target output/auxiliary files only (diagnose first; this deletes output and exits without rebuilding):
 
 ```bash
 ./scripts/docker-build.sh --clean tex/main.tex
@@ -59,11 +65,9 @@ The Docker helper accepts the same trailing file argument as `scripts/build.sh`,
 for example `./scripts/docker-build.sh tex/main.tex` or
 `./scripts/docker-build.sh tex/chapters/27_CIVPERS.tex`.
 
-Direct latexmk:
-
-```shell
-latexmk -r tex/latexmkrc -shell-escape -outdir=artifacts/out -auxdir=artifacts/build tex/main.tex
-```
+After a justified clean, run the normal build again. Use the wrappers to preserve engine, search paths, writable caches
+and shell-escape conventions. The Docker wrapper falls back to native only if Docker is absent; an inaccessible daemon
+or missing image is an error. `--help` on `scripts/build.sh` lists output/auxiliary-directory options.
 
 TikZ cache invalidation:
 
@@ -133,6 +137,31 @@ The guide-change check verifies that applied `guide_changes.jsonl` records from
 the active audit period cite external URLs that also appear in
 `docs/study_memory/sources.md`.
 
+## Verification and contribution
+
+For TeX or figure changes, run a representative build and visually inspect affected rendered pages, adjacent pagination,
+and affected TOC/cross-references. Review the actual build log for undefined citations/references, missing glyphs,
+overfull boxes and shell-escape errors. Record warnings and pages viewed; compilation alone does not verify layout.
+For coursebook review, render relevant image-only slides and diagrams even when text extraction is empty or unchanged.
+See the [evidence skill](.agents/skills/edo-doctrine-verifier/SKILL.md) and
+[maintenance skill](.agents/skills/edo-study-guide-maintainer/SKILL.md) for procedures.
+
+Run checks that match the change:
+
+```bash
+make check-tex-structure
+make check-tikz-cache
+make check-study-memory
+scripts/tests/test-check-acronyms.sh
+rumdl check AGENTS.md README.md CONTRIBUTING.md .codex/README.md .agents/skills/
+git diff --check
+```
+
+The source audits above are report-only; a zero exit does not mean there are no evidence gaps. `make check-study-memory`
+also checks current-events and applied guide-change source coverage. Instruction-only edits need metadata, syntax,
+reference and Markdown checks, without replacing the tracked PDF. Report unavailable tools instead of claiming a pass.
+Follow [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution checklist.
+
 ## Format
 
 Use the Docker wrapper with normal `latexindent` arguments:
@@ -155,7 +184,7 @@ PDF copies under `release/` are not tracked in Git.
 The release script expects `artifacts/out/main.pdf` to exist, copies it into
 `release/`, stages all changes, commits when needed, tags the commit as
 `release-YYYYMMDD`, pushes, and uploads the PDF as a GitHub Release asset using
-the GitHub CLI. Do not run it unless the working tree is ready to publish.
+the GitHub CLI. Agents must not run it without explicit authorization to commit, push and publish.
 
 ```bash
 ./scripts/release.sh
@@ -164,11 +193,16 @@ the GitHub CLI. Do not run it unless the working tree is ready to publish.
 The release script builds changelog-style notes using `CHANGELOG.md` when the
 matching tag section exists. If not, it falls back to recent git log entries.
 
+The GitHub release workflow publishes the checked-in PDF without compiling it. It runs on release tags or manual
+dispatch; manual dispatch can create/push a tag. It is not build or agent-validation CI.
+
 ## Deeper Documentation
 
 - `AGENTS.md`: repo-specific guidance for Codex and other coding agents.
 - `CONTRIBUTING.md`: contribution checklist.
-- `.codex/README.md`: Codex Cloud setup and maintenance details.
+- [.codex/README.md](.codex/README.md): configured local defaults, hosted limitations, model strategy and dated official
+  sources.
+- [Agent workflow checkpoint](docs/agent-workflow-checkpoint.md): maintenance scope, changes and validation status.
 - `docs/reference/README.md`: source-support material boundaries.
 - `docs/archive/README.md`: archived notes that are not current workflow truth.
 

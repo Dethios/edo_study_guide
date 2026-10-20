@@ -1,3 +1,5 @@
+# Historical imported packet; not an active instruction queue. Original workspace paths and proposed steps
+# are retained as provenance, not current configuration or evidence of unfinished work. See ../../AGENTS.md.
 task_packet_id: study-guide-mca-systems-engineering-reviews
 parent_task_id: null
 requesting_mode: implement

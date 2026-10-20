@@ -7,6 +7,14 @@ release tags (release-YYYYMMDD).
 
 ## [Unreleased]
 
+### Changed
+
+- Consolidate agent workflows into four discoverable repository skills and one optional evidence/review role.
+- Replace retired signed-in Codex model defaults with Sol/medium local-client configuration; remove copied permission,
+  network and connector overrides and document hosted model/setup actions separately.
+- Require dated source reconciliation, visual coverage of image-only slides and rendered-PDF checks for content edits;
+  clarify clean-versus-build behavior, contribution checks and release-only CI.
+
 ## [release-20261020] - 2026-10-20
 
 ### Fixed

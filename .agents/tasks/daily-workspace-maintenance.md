@@ -1,9 +1,12 @@
 # Codex Execution Packet
 
+Historical imported task context, not an active instruction queue. Original paths, tool assumptions and unchecked
+steps are retained as provenance. Reassess current files and [AGENTS.md](../../AGENTS.md) before any future execution.
+
 ## Recommended Codex invocation
 
 ```bash
-codex --model gpt-5.5
+codex --model gpt-6.1-sol
 ```
 
 ## Reasoning effort

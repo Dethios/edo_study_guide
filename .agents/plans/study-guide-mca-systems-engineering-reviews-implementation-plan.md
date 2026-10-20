@@ -1,5 +1,8 @@
 # Study Guide MCA Systems Engineering Reviews Implementation Plan
 
+Historical imported task context, not an active instruction queue. Original paths, tool assumptions and unchecked
+steps are retained as provenance. Reassess current files and [AGENTS.md](../../AGENTS.md) before any future execution.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use `subagent-driven-development` or `executing-plans` to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Integrate source-checked Navy MCA systems-engineering review content into the EDO study guide without adding short-answer prompts or flashcards.

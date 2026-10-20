@@ -2,37 +2,32 @@
 
 Thanks for your interest in improving the EDO acquisition study guide.
 
-## Quick start
+## Workflow
 
-1. Fork and clone the repository.
-2. Create a feature branch.
-3. Make your changes.
-4. Run a build:
-   - `./scripts/docker-build.sh tex/main.tex` preferred
-   - `./scripts/build.sh tex/main.tex` local fallback
-5. Scrub temp artifacts:
-   - `./scripts/scrub.sh`
-6. Update `CHANGELOG.md` under the Unreleased section.
-7. Submit a pull request.
+1. Read [AGENTS.md](AGENTS.md). Inspect status/diffs and preserve existing work; create a branch when appropriate.
+2. Define the bounded change and locate canonical coverage. For current organizational/policy claims, record dated
+   authoritative sources and reconcile applicability/supersession before editing. Visually inspect relevant image-only
+   source slides. Keep history, provenance and published output intact for documentation-only tasks.
+3. Follow [README.md](README.md) for the installed-toolchain build and checks relevant to the touched files. TeX/figure
+   changes need a representative build and inspection of affected rendered pages. Agent-only edits need metadata,
+   references and syntax/discovery checks; do not rebuild the study guide solely for instruction prose.
+4. Check `git diff --check` and `rumdl check <modified Markdown paths>`. Review the final diff for unrelated changes and
+   generated artifacts. Do not run scrub/clean merely to start with an empty workspace.
+5. Update `CHANGELOG.md` under Unreleased for notable changes. In a PR, summarize behavior, sources/dates, tests,
+   visual coverage and remaining warnings or unavailable checks. Commit/push only when authorized for agent tasks.
 
 ## Style and formatting
 
-- Keep LaTeX sources in `tex/`.
-- Use `latexindent` via `./scripts/latexindent-docker.sh` when formatting files.
-- Keep ASCII and house style in LaTeX content.
+Keep LaTeX sources in `tex/`. Preserve LuaLaTeX/latexmk, minted/Pygments and source-macro conventions in `AGENTS.md`.
+Use `./scripts/latexindent-docker.sh` on scoped files when Docker is available. Keep ASCII unless existing content
+requires otherwise; wrap Markdown at 120 characters using `.rumdl.toml`.
 
 ## Contributions and derivatives
 
-If you create improvements or derivative material, please open a pull request
-so changes can be reviewed and incorporated into the main guide.
+Please propose improvements or derivative material through a pull request for review and incorporation into the guide.
 
-## Releases
+## Releases and security
 
-Release PDFs are published through GitHub Releases only. Run a build first so
-`artifacts/out/main.pdf` exists. The release script copies the PDF into the
-gitignored `release/` directory, stages all changes, commits when needed, tags
-the commit, pushes, and uploads the asset via the GitHub CLI.
-
-## Security
-
-For security issues, see `SECURITY.md`.
+Release PDFs use GitHub Releases. The release helper stages all changes, commits, tags, pushes and uploads the tracked
+PDF; the workflow publishes without building. Neither is a validation command. Agents need explicit publication
+authorization. See [SECURITY.md](SECURITY.md) for reporting sensitive issues.
