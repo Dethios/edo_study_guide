@@ -1,4 +1,4 @@
-name: Compile and Release PDF
+name: Publish Study Guide PDF
 
 on:
   push:
@@ -19,26 +19,36 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Pull LaTeX Docker Image
-        run: docker pull texlive/texlive:latest
-
-      - name: Compile PDF
-        run: ./scripts/docker-build.sh tex/main.tex
-
       - name: Prepare Release Asset
+        env:
+          TZ: America/New_York
         run: |
-          date_str=$(date +%Y-%m-%d)
-          RELEASE_FILE="EDO_Study_Guide_dtd_${date_str}.pdf"
-          cp artifacts/out/main.pdf "$RELEASE_FILE"
-          echo "RELEASE_FILE=$RELEASE_FILE" >> $GITHUB_ENV
-          
-          # Determine tag name
-          if [ "${{ github.ref_type }}" = "tag" ]; then
-            TAG_NAME="${{ github.ref_name }}"
+          if [ "$GITHUB_REF_TYPE" = "tag" ]; then
+            TAG_NAME="$GITHUB_REF_NAME"
           else
             TAG_NAME="release-$(date +%Y%m%d)"
           fi
-          echo "TAG_NAME=$TAG_NAME" >> $GITHUB_ENV
+          if [[ "$TAG_NAME" =~ ^release-([0-9]{4})([0-9]{2})([0-9]{2})$ ]]; then
+            date_str="${BASH_REMATCH[1]}-${BASH_REMATCH[2]}-${BASH_REMATCH[3]}"
+          else
+            date_str=$(date +%Y-%m-%d)
+          fi
+          RELEASE_FILE="EDO_Study_Guide_dtd_${date_str}.pdf"
+          test -s artifacts/out/main.pdf
+          cp artifacts/out/main.pdf "$RELEASE_FILE"
+          cmp artifacts/out/main.pdf "$RELEASE_FILE"
+          sha256sum "$RELEASE_FILE"
+          echo "RELEASE_FILE=$RELEASE_FILE" >> "$GITHUB_ENV"
+          echo "TAG_NAME=$TAG_NAME" >> "$GITHUB_ENV"
+          echo "RELEASE_DATE=$date_str" >> "$GITHUB_ENV"
+          awk -v tag="$TAG_NAME" '
+            $1 == "##" && $2 == "[" tag "]" { found=1; next }
+            found && /^## / { exit }
+            found { print }
+          ' CHANGELOG.md > release-notes.md
+          if [ ! -s release-notes.md ]; then
+            printf 'Study guide dated %s, using the checked-in artifacts/out/main.pdf.\n' "$date_str" > release-notes.md
+          fi
 
       - name: Push Tag if Manual Run
         if: github.ref_type != 'tag'
@@ -56,8 +66,10 @@ jobs:
         run: |
           if gh release view "$TAG_NAME" >/dev/null 2>&1; then
             gh release upload "$TAG_NAME" "$RELEASE_FILE" --clobber
+            gh release edit "$TAG_NAME" --title "EDO Study Guide - $RELEASE_DATE" --notes-file release-notes.md --latest
           else
             gh release create "$TAG_NAME" "$RELEASE_FILE" \
-              --title "$TAG_NAME" \
-              --notes "Automated release of the EDO Study Guide compiled on $(date +%Y-%m-%d)."
+              --verify-tag --latest \
+              --title "EDO Study Guide - $RELEASE_DATE" \
+              --notes-file release-notes.md
           fi

@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 This format is based on Keep a Changelog, and this project uses date-based
 release tags (release-YYYYMMDD).
 
+## [release-20261019] - 2026-10-19
+
+### Changed
+
+- Publish the newest checked-in 474-page study guide from `main`.
+- Replace default JCIDS teaching with JFRP, including Service approval, SRD documents, CGA/IPLs, JICR,
+  and requirements-to-resourcing integration.
+- Refresh PAE/PPBE organization material, Warrior Toughness, incentive-contract examples, review questions,
+  and provenance for all 70 uploaded coursebooks.
+- Publish the exact checked-in PDF; derive the asset date from the release tag rather than the runner clock.
+
+### Validation and Limitations
+
+- PDF build and source-ledger, acronym, structure, and study-memory checks passed. Citations and references resolve.
+- Layout/font warnings remain, and 390 older live-source access dates require separate policy revalidation.
+  Source ambiguities and verification limits are recorded in `docs/reference/2026-10-coursebook-refresh.md`.
+
 ## [Unreleased]
 
 ### Added
