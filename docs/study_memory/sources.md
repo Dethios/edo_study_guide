@@ -625,3 +625,23 @@ The retired JCIDS PDF is retained under `docs/reference/legacy/`; current teachi
 
 Official September 29 announcement URL (linked by reporting; direct body not retrieved):
 <https://www.navy.mil/Press-Office/Press-Releases/display-pressreleases/Article/4614226/william-f-mahan-to-perform-the-duties-of-under-secretary-of-the-navy/>.
+
+## October 20 EDO Roster and NAVSEA/PAE Refresh
+
+The September 23 EDO roster is embedded as images on slides 49-50 of the uploaded Command Structures
+coursebook. Both slides were rendered and read; text extraction alone omits the names and billets.
+
+| Title                                                                                                                 | Authority Level    | URL Or Path                                                                                                                                       | Version Or Date | Date Checked | Notes                                                                  |
+| --------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ------------ | ---------------------------------------------------------------------- |
+| Small Relieves Downey as Commander Naval Sea Systems Command                                                          | official_reference | <https://www.dvidshub.net/news/printable/571797>                                                                                                  | 2026-08-06      | 2026-10-20   | Official release/caption; supersedes older incumbent or function cues. |
+| Weeks Relieves Downey as Portfolio Acquisition Executive Industrial Operations                                        | official_reference | <https://www.dvidshub.net/news/printable/571787>                                                                                                  | 2026-08-06      | 2026-10-20   | Official release/caption; supersedes older incumbent or function cues. |
+| Vice Adm. Douglas L. Williams Relieves Vice Adm. Johnny Wolfe Jr. at PAE Strategic Systems Programs Change of Command | official_reference | <https://www.dvidshub.net/news/printable/567595>                                                                                                  | 2026-06-12      | 2026-10-20   | Official release/caption; supersedes older incumbent or function cues. |
+| USS Harry S. Truman (CVN 75) to Undergo Midlife Refueling and Complex Overhaul                                        | official_reference | <https://www.paemaritime.navy.mil/press-release/USS-Harry-S-Truman-CVN75-to-Undergo-Midlife-Refueling-and-Complex-Overhaul>                       | 2026-09-30      | 2026-10-20   | Official release/caption; supersedes older incumbent or function cues. |
+| Ms Elizabeth Nashhold Pins the Legion of Merit star onto Rear Admiral Scott Brown                                     | official_reference | <https://www.dvidshub.net/image/9914648/ms-elizabeth-nashhold-pins-legion-merit-star-onto-rear-admiral-scott-brown>                               | 2026-09-03      | 2026-10-20   | Official release/caption; supersedes older incumbent or function cues. |
+| Department of the Navy Establishes Direct Reporting Portfolio Manager for Robotic and Autonomous Systems              | official_reference | <https://drpmras.navy.mil/press-release/department-of-the-navy-establishes-direct-reporting-portfolio-manager-for-robotic-and-autonomous-systems> | 2026-08-05      | 2026-10-20   | Official release/caption; supersedes older incumbent or function cues. |
+| PAE SSP Rear Adm. Michael Richman Presides Over Funeral Honors for WWII Sailor                                        | official_reference | <https://www.dvidshub.net/news/printable/565899>                                                                                                  | 2026-05-21      | 2026-10-20   | Official release/caption; supersedes older incumbent or function cues. |
+
+The May 11 Navy reform announcement was rechecked through indexed official text: approximately 70%
+of associated functions and personnel were announced to move into PAEs. This is not a completed NAVSEA
+headcount measurement. Direct Navy-site retrieval remains restricted. The September MyNavy HR roster
+was advertised by the official index but could not be retrieved; no October census is claimed.

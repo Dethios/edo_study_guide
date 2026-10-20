@@ -336,8 +336,21 @@
 % * TOC styling (modern by default)
 % =============================
 \RequirePackage{needspace}
-\NewDocumentCommand{\moderntech@toc@chapter}{}{\normalfont\sffamily\scshape\bfseries\large\color{Blue}}
-\NewDocumentCommand{\moderntech@toc@section}{}{\normalfont\firasanssemibold\color{Blue}}
+% Use an actual bold small-cap face for major TOC entries, independently of sans fallback.
+\IfFontExistsTF{Kerkis-BoldSmallCaps.otf}{%
+  \newfontfamily\moderntech@toccaps[
+    BoldFont=Kerkis-BoldSmallCaps.otf
+  ]{Kerkis-SmallCaps.otf}%
+}{%
+  % Minimal TeX installations still get real small-cap glyphs with explicit emphasis.
+  \newfontfamily\moderntech@toccaps[
+    BoldFont=lmromancaps10-regular.otf,
+    BoldFeatures={FakeBold=1.4}
+  ]{lmromancaps10-regular.otf}%
+}
+\NewDocumentCommand{\moderntech@toc@chapter}{}{\normalfont\moderntech@toccaps\bfseries\fontsize{12.5}{15}\selectfont\color{Blue}}
+\NewDocumentCommand{\moderntech@toc@section}{}{\normalfont\sffamily\mdseries\upshape\normalsize\color{BodyText}}
+\NewDocumentCommand{\moderntech@list@entry}{}{\normalfont\firasanssemibold\color{Blue}}
 \NewDocumentCommand{\moderntech@toc@subsection}{}{\normalfont\sffamily\itshape\small\color{BodyText}}
 \NewDocumentCommand{\moderntech@toc@pagenumber}{}{\normalfont\color{Blue}}
 
@@ -354,7 +367,8 @@
   ]{tocline}{chapter}%
   \DeclareTOCStyleEntry[
     entryformat=\moderntech@toc@chapter,
-    pagenumberformat=\moderntech@toc@pagenumber,
+    beforeskip=0.7em plus 0.1em,
+    pagenumberformat=\moderntech@toc@chapter,
     pagenumberwidth=2.2em
   ]{tocline}{chapter}%
   \DeclareTOCStyleEntry[
@@ -377,12 +391,12 @@
 
 \NewDocumentCommand{\moderntechsetupLists}{}{%
   \DeclareTOCStyleEntry[
-    entryformat=\moderntech@toc@section,
+    entryformat=\moderntech@list@entry,
     pagenumberformat=\moderntech@toc@pagenumber,
     pagenumberwidth=2.2em
   ]{tocline}{figure}%
   \DeclareTOCStyleEntry[
-    entryformat=\moderntech@toc@section,
+    entryformat=\moderntech@list@entry,
     numwidth=5em,
     pagenumberformat=\moderntech@toc@pagenumber,
     pagenumberwidth=2.2em

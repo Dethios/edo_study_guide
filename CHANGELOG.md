@@ -9,6 +9,9 @@ release tags (release-YYYYMMDD).
 
 ### Fixed
 
+- Distinguish TOC levels with larger bold small-cap major headings and regular smaller subheadings.
+- Replace the June EDO roster with the visually read September roster and verified later duty changes.
+- Update Small, Weeks, Williams, Moton and Miller leadership cues; carry NAVSEA-to-PAE transfers through summaries.
 - Correct malformed T&E tables caused by literal ampersands; restore usable column widths and pagination.
 - Wrap appropriation descriptions, widen compact tables and list-of-tables numbering, and separate diagram labels.
 - Update ASN(RD&A) to VADM Seiko Okano performing duties after the September transition; preserve deputy-roster dates.

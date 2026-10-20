@@ -402,3 +402,9 @@ is JFRP; historical learning logs and weak-area observations retain their origin
 
 See `docs/reference/2026-10-pdf-layout-review.md` for table-rendering corrections and ASN(RD&A) verification.
 The latest incumbent cue supersedes the May Mahan entry; the wider June flag roster remains a dated snapshot.
+
+## October 20 TOC, EDO Flags, and NAVSEA/PAE Corrections
+
+The active EDO roster now uses the September 23 image-based coursebook roster and subsequent duty updates.
+See `docs/reference/2026-10-toc-roster-refresh.md` for corrections and primary sources.
+The June roster is superseded for current recall; NAVSEA directorates are a historical crosswalk.

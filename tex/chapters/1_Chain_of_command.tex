@@ -89,7 +89,7 @@ The \ac{asnrdanda} is the \ac{don} \ac{cae} and the \ac{nae}, with authority and
   \item[\textbf{Matrix execution.}] The older \ac{peo}/\ac{syscom} matrix remains important for board recall and for live execution during transition: \acp{peo} and \acp{pm} still execute named programs where public pages have not fully caught up; \acp{syscom} (\ac{navsea}, \ac{navwar}, \ac{navair}) still provide technical authority, engineering standards, warfare-center depth, contracting infrastructure, and sustainment support. The PAE construct changes accountability and alignment; it does not give a \ac{pm} permission to ignore \ac{ta} or contracting authority~\autocite{SECNAV5400-15D,DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026}.
   \item[\textbf{Flag/PEO billets (current).}]
         \begin{itemize}
-            \item[] \textbf{Selected EDO-led acquisition billets:} \ac{vadm} Seiko Okano (now performing \ac{asnrdanda} duties), \ac{comnavsea} (\ac{vadm} James P.\ Downey), \ac{comnavwar} (\ac{radm} J.\ Kurt Rothenhaus), \ac{pae} Strategic Systems Programs (\ac{vadm} Johnny Wolfe on the live \ac{ssp} page, with \ac{radm} Douglas Williams announced for the June~2026 handoff), NAVSEA~05 / Chief Engineer (\ac{rdml} Peter D.\ Small), \ac{pae} Maritime deputy lanes for aircraft carriers (\ac{radm} Casey Moton) and combatants (\ac{rdml} Brian Metcalf), and Team Submarines / attack submarines (\ac{radm} Jonathan Rucker) anchor \ac{ta} and acquisition governance for the community~\autocite{navy-flag-roster-2026-06,SSP-Leadership-2026,DON-PAE-SSP-Williams-2026,PAE-Maritime-Homepage-2026}.
+            \item[] \textbf{Selected EDO-led acquisition billets:} \ac{vadm} Seiko Okano performs \ac{asnrdanda} duties; \ac{rdml} Peter D.\ Small is acting \ac{comnavsea}; \ac{radm} J.\ Kurt Rothenhaus is \ac{comnavwar} and Deputy PAE Mission Systems; \ac{vadm} Douglas Williams leads PAE SSP; \ac{radm} Casey Moton is acting PAE Maritime; \ac{rdml} Brian Metcalf is its combatants deputy; \ac{radm} Jonathan Rucker leads Design and Construction for DRPM Submarines / PAE Undersea. Use \App{\ref{app:edo-flags}} for the twelve-officer September roster and later duty updates~\autocite{edo-2-1-1-command-structures-2025,DVIDS-Small-NAVSEA-Aug2026,DVIDS-SSP-Handoff-Jun2026,PAE-Maritime-Moton-Sep2026,ExecutiveGov-ASNRDA-Sep2026}.
             \item[] \textbf{Non-EDO leaders (awareness):} The current NAVSEA command-leadership chart checked on 2026-06-05 lists \ac{navsea}~08 as \ac{admiral} William J.\ Houston (Submarine officer), \ac{peoiws} as \ac{rdml} Thomas J.\ Dickinson (Surface Warfare Acquisition Professional), and \ac{peousc} as Melissa Kirkendall, \ac{ses}~\autocite{navsea-command-leadership-2026}. Do not use RDML Kevin P.\ Biehn as the current \ac{peomlb} answer: the live \ac{peomlb} leadership page lists Mary Thoms as Acting \ac{peo}, the \ac{peomlb} front page lists Christine Rodriguez, SES, as \ac{peo}, and PAE Maritime lists RDML Andrew Biehn in the separate modernization and sustainment lane~\autocite{PEOMLB-leadership-2026,PEOMLB-home-2026,PAE-Maritime-Homepage-2026}.
         \end{itemize}
         \FlagBilletNote{Current EDO flag billet roster.}
@@ -150,10 +150,10 @@ Current as of 2026-10-20, \ac{vadm} Elizabeth ``Seiko'' Okano is performing the 
     \node[pae node, right=of maritime] (undersea) {PAE Undersea\\ / DRPM Submarines};
 
     \node[pae node, below=of industrial] (ssp) {PAE Strategic\\ Systems Programs};
-    \node[pae node, right=of ssp] (ras) {PAE Robotics and\\ Autonomous Systems};
+    \node[pae node, right=of ssp] (ras) {PAE / DRPM Robotics\\ and Autonomous Systems};
     \node[pae node, right=of ras, fill=Red!18] (marine) {PAE Marine Corps};
 
-    \node[support node, left=of industrial, xshift=-4.75cm] (syscoms) {\acp{syscom}, warfare centers,\\ shipyards, RMCs, NIWCs,\\ contracting, sustainment, and \ac{ta}};
+    \node[support node, left=of industrial, xshift=-4.75cm] (syscoms) {\acp{syscom} and warfare centers\\ Engineering and technical support\\ under current delegations};
     \coordinate (serviceJoinY) at ($(asn.north)+(0,0.62cm)$);
     \coordinate (cnoJoin) at (cno.south |- serviceJoinY);
     \coordinate (cmcJoin) at (cmc.south |- serviceJoinY);
@@ -185,7 +185,7 @@ Current as of 2026-10-20, \ac{vadm} Elizabeth ``Seiko'' Okano is performing the 
       \draw[support line] (syscoms.east) -- (supportOut) -- (supportGroupEntry);
     \end{scope}
   \end{tikzpicture}}
-  \caption[ASN (RD\&A) and PAE organization transition]{Board-level ASN (RD\&A) and PAE organization transition, updated from the user-provided PAE chart with the ASN (RD\&A) incumbent corrected through 2026-10-20; the PAE portfolio structure retains its June~2026 source baseline~\autocite{ExecutiveGov-ASNRDA-Sep2026,DONCIO-Okano-PTDO-2026,DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026}.}
+  \caption[ASN (RD\&A) and PAE organization transition]{Board-level ASN (RD\&A) and PAE organization transition, updated from the user-provided PAE chart with the ASN (RD\&A) incumbent corrected through 2026-10-20; portfolio functions reflect the September coursebook; separate DRPM reporting routes are not depicted~\autocite{ExecutiveGov-ASNRDA-Sep2026,DONCIO-Okano-PTDO-2026,DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026}.}
   \label{fig:asnrda_org_chart}
 \end{figure}
 
@@ -212,19 +212,19 @@ Current as of 2026-10-20, \ac{vadm} Elizabeth ``Seiko'' Okano is performing the 
     caption = {Current public PAE roster and board cues},
     label   = {tab:pae-roster-current},
     entry   = {Current public PAE roster},
-    remark{\tSource} = {\tabCite{DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026,PAE-Maritime-Homepage-2026,DON-PAE-Mission-Systems-2026,DON-PAE-Munitions-2026,NAVAIR-PAE-Aviation-2026,PAE-Marine-Corps-About-2026,DON-PAE-RAS-MUSV-2026,SASC-PAE-RAS-Gassler-2026,SSP-Leadership-2026,DON-PAE-SSP-Williams-2026}}
+    remark{\tSource} = {\tabCite{DVIDS-Weeks-PAEIO-Aug2026,DVIDS-SSP-Handoff-Jun2026,PAE-Maritime-Moton-Sep2026,DON-DRPM-RAS-Aug2026,DON-PAE-Establishment-2026,DON-PAE-Expansion-May2026,PAE-Maritime-Homepage-2026,DON-PAE-Mission-Systems-2026,DON-PAE-Munitions-2026,NAVAIR-PAE-Aviation-2026,PAE-Marine-Corps-About-2026,DON-PAE-RAS-MUSV-2026,SASC-PAE-RAS-Gassler-2026,SSP-Leadership-2026,DON-PAE-SSP-Williams-2026}}
   ]{colspec = {@{} L L X @{}}}
   \toprule
   {PAE}                    & {Public leader / cue}                      & {Board-level scope} \\
   \midrule
   Aviation & VADM John Dougherty & Naval aviation portfolio; public deputy lanes are Carrier Strike, Marine Corps Aviation, and Maritime ISR/NC3. \\
-  Industrial Operations & VADM James P.\ Downey & Industrial capacity, naval shipyards, regional maintenance, maintenance contracting, and industrial-base throughput. \\
+  Industrial Operations & Rear Adm.\ Todd Weeks (interim) & Industrial capacity, naval shipyards, regional maintenance, maintenance contracting, and industrial-base throughput. \\
   Marine Corps & LtGen Eric Austin & Marine Corps ground systems; combines former PEO Land Systems and Marine Corps Systems Command acquisition support functions. \\
-  Maritime & Christopher Miller & Conventional surface-ship delivery, including aircraft carriers, combatants, expeditionary and mine warfare, auxiliaries, and modernization/sustainment. \\
+  Maritime & RADM Casey Moton (acting) & Conventional surface-ship delivery, including aircraft carriers, combatants, expeditionary and mine warfare, auxiliaries, and modernization/sustainment. \\
   Mission Systems & Jim Day & Central mission integrator for kill-chain closure across PEO C4I, PEO Digital, PEO IWS, PEO MLB, DRPM Overmatch, DRPM LRNFO, DRPM MILE, Minotaur, and mission-system elements across SYSCOMs. \\
   Munitions & Paul Mann & Munitions production and weapons portfolio; public pillars are Weapons Industrial Base, Air Weapons, Surface Weapons, and Advanced Capabilities and Innovation. \\
-  Robotics and Autonomous Systems & Rebecca J.\ Gassler, SES & Hedge and unmanned/autonomous capabilities; current public examples include the MUSV marketplace and congressional testimony on Navy robotic and autonomous systems. \\
-  Strategic Systems Programs & VADM Johnny Wolfe / RADM Douglas Williams transition & Sea-based strategic deterrence and strategic weapons; SSP aligned inside the PAE construct, with Wolfe still listed on the live SSP leadership page, Williams listed in the June~2026 flag roster as Director for Test at MDA, and Williams announced to assume PAE SSP command in Jun~2026. \\
+  Robotics and Autonomous Systems & Christopher Miller (acting PAE / DRPM) & Unmanned/autonomous capabilities; August 5 DRPM restructuring gives a directed reporting route to the Under Secretary office. \\
+  Strategic Systems Programs & VADM Douglas L.\ Williams & Sea-based strategic deterrence, strategic weapons, and regional strike; assumed command on June 12, 2026. \\
   Undersea / DRPM Submarines & VADM Robert Gaucher & Submarine and undersea delivery; dual-hatted DRPM construct focused on SSN, SSBN, and SSGN production and undersea industrial-base execution. \\
   \bottomrule
 \end{longtblr}

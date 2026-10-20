@@ -2722,3 +2722,40 @@ Live policy pages and September organizational realignments were not independent
 - Formatting: escaped two literal DOT&E ampersands that created unintended table columns; used wrapping
   appropriation columns, wider compact tables, protected table starts, wider list numbering, and a diagram legend.
 - Review evidence: `docs/reference/2026-10-pdf-layout-review.md`.
+
+## 2026-10-20 - Image-Based EDO Roster and PAE Transfers
+
+- ID: `gc-20261020-edo-roster-image-refresh`
+  - Original claim: June roster and old incumbent cues are used for current EDO flag recall.
+  - Verdict: `Outdated`. Confidence: `High`.
+  - Correction: Use the September 23 roster: 2 VADMs, 3 RADMs, 7 RDMLs (12 total), with later Okano duty update. Remove
+    Downey, Wolfe and Brown from current roster; update Williams, Small, Moton, Rucker, Rothenhaus, Richman and
+    Jett-Parmer roles.
+  - Source basis: 2.1.1 Command Structures, image-based EDO roster slides 49-50; Small Relieves Downey as Commander
+    Naval Sea Systems Command; Weeks Relieves Downey as Portfolio Acquisition Executive Industrial Operations; Vice Adm.
+    Douglas L. Williams Relieves Vice Adm. Johnny Wolfe Jr. at PAE Strategic Systems Programs Change of Command; USS
+    Harry S. Truman (CVN 75) to Undergo Midlife Refueling and Complex Overhaul; Ms Elizabeth Nashhold Pins the Legion of
+    Merit star onto Rear Admiral Scott Brown.
+- ID: `gc-20261020-navsea-pae-transfer`
+  - Original claim: NAVSEA summaries still assign former enterprise functions and unchanged technical authority to
+    NAVSEA, despite PAE transfer caveats.
+  - Verdict: `Outdated`. Confidence: `High`.
+  - Correction: Lead with the substantive transfer of associated technical, contracting and sustainment functions to
+    PAEs; shipyards/RMCs are PAE IO and SUPSHIPs are PAE Maritime. Label old directorates and size figures historical,
+    and distinguish transfer scope from measured residual staffing.
+  - Source basis: Weeks Relieves Downey as Portfolio Acquisition Executive Industrial Operations; 2.1.2 NAVSEA
+    Organization.
+- ID: `gc-20261020-pae-current-leaders`
+  - Original claim: PAE roster names Downey, Miller at Maritime, Gassler at RAS, and an uncompleted Wolfe-Williams
+    transition.
+  - Verdict: `Outdated`. Confidence: `High`.
+  - Correction: Weeks is interim PAE IO; Moton acting PAE Maritime; Miller acting PAE/DRPM RAS; Williams PAE SSP after
+    June 12. DRPM RAS has a directed Under Secretary reporting route.
+  - Source basis: Weeks Relieves Downey as Portfolio Acquisition Executive Industrial Operations; Vice Adm. Douglas L.
+    Williams Relieves Vice Adm. Johnny Wolfe Jr. at PAE Strategic Systems Programs Change of Command; USS Harry S.
+    Truman (CVN 75) to Undergo Midlife Refueling and Complex Overhaul; Department of the Navy Establishes Direct
+    Reporting Portfolio Manager for Robotic and Autonomous Systems.
+
+The earlier text-only coursebook extraction missed the image-based flag roster. This update renders
+and reads both September slides, reconciles primary-source handoffs, and replaces the active roster
+instead of retaining the June snapshot as the main study answer. Exact October totals are not independently claimed.
