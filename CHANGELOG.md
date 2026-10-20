@@ -7,6 +7,8 @@ release tags (release-YYYYMMDD).
 
 ## [Unreleased]
 
+## [release-20261020] - 2026-10-20
+
 ### Fixed
 
 - Remove the redundant acquisition-governance figure and redraw the ASN(RD&A) chart from the supplied official image.
@@ -22,6 +24,12 @@ release tags (release-YYYYMMDD).
 - Wrap appropriation descriptions, widen compact tables and list-of-tables numbering, and separate diagram labels.
 - Update ASN(RD&A) to VADM Seiko Okano performing duties after the September transition; preserve deputy-roster dates.
 - Date the revised guide October 20, 2026.
+
+### Validation and Limitations
+
+- Publish the verified 471-page PDF from `main`; TOC and chart changes were visually reviewed.
+- Document, source-ledger, and formatting checks pass; citations and major TOC page references resolve.
+- Detailed DoWI 8430.01 and current RFO attachment verification limits remain documented in the acquisition audit.
 
 ## [release-20261019] - 2026-10-19
 
