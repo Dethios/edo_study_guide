@@ -1,5 +1,9 @@
 # Study Memory Schemas
 
+Only `guide_changes.jsonl` is shared guide evidence. Session, question, learning, and weak-area records are ignored
+local operational files; they are optional on a fresh clone and initialized lazily. Never stage learner data.
+Use the same schemas in separate ignored learner subdirectories when needed.
+
 All JSONL files are append-only. Each nonblank line must be a complete JSON
 object with a `type` field. Dates use `YYYY-MM-DD`.
 

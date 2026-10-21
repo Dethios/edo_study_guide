@@ -131,3 +131,13 @@ Thumbs.db
 gha-creds-*.json
 
 # Keep placeholders so artifact mount paths exist in devcontainers.
+
+# Tutor operational state is local, including future artifacts by default.
+/docs/study_memory/*
+!/docs/study_memory/README.md
+!/docs/study_memory/schemas.md
+!/docs/study_memory/sources.md
+!/docs/study_memory/study_guide_audit.md
+!/docs/study_memory/guide_changes.jsonl
+/docs/EDO_Study_Guide_Chat_Session_Package_*/
+/.codex/coordination/

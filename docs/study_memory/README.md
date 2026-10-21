@@ -1,86 +1,59 @@
-# EDO Study Memory
+# Study Evidence and Local Tutor State
 
-This directory is the persistent, repo-tracked memory for EDO study sessions,
-weak areas, source-backed corrections, generated questions, and study-guide
-update candidates.
+This directory separates shared guide evidence from local operational tutoring records.
+Git tracks only this README, `schemas.md`, `sources.md`, `study_guide_audit.md`, and `guide_changes.jsonl`.
+All other contents, including new subdirectories, are ignored by default. Imported
+`docs/EDO_Study_Guide_Chat_Session_Package_*/` directories are also ignored.
 
-The memory system is intentionally hybrid:
+## Shared guide evidence
 
-- Markdown files hold readable current state and review notes.
-- JSONL files hold append-only records for validation, search, and later
-  automation.
-- Any doctrine-sensitive guide change or answer-key correction requires a
-  strict source basis before it can be marked applied.
+- `sources.md`: source inventory with authority, exact URL/path, edition, and actual check date.
+- `study_guide_audit.md`: source-backed guide findings and correction rationale.
+- `guide_changes.jsonl`: guide-change provenance, including applied changes and their validation.
+- `schemas.md`: record formats; examples contain no learner data.
 
-## Start Of Session
+Local question evidence can include newly verified official sources without changing the shared inventory.
+Promote source evidence to the shared inventory only as part of authorized guide maintenance.
 
-Before tutoring, auditing, or correcting the guide:
+Keep learner identities, responses, scores, question history, weak areas, and session summaries out of shared evidence,
+`project_export.json`, changelogs, commits, and pull requests. Record only the impersonal claim, source, location,
+correction, confidence, and checks when a tutoring finding becomes an authorized guide edit.
+An inventory/check date documents a past check; it does not establish current doctrine.
 
-1. Read `memory_index.md` for current state, next actions, and open items.
-2. Read the active sections of `weak_areas.md`.
-3. Read the latest relevant lines in `sessions.jsonl`,
-   `learning_log.jsonl`, and `guide_changes.jsonl`.
-4. For study-guide corrections, verify the source basis before changing guide
-   content.
+## Local operational records
 
-## End Of Session
+Create these lazily when a study session needs them; a fresh clone has no prior learner history:
 
-After every substantive study session:
+- `memory_index.md`: current learner/session pointer, priorities, and next actions.
+- `sessions.jsonl`: session summaries and coverage.
+- `question_bank.jsonl`: questions, hidden model answers, explanations, tags, and evidence.
+- `learning_log.jsonl`: answer summaries and grading outcomes.
+- `weak_areas.md` and `weak_areas.jsonl`: current review plan and dated observations.
+- Other generated decks, exports, extracted text, and scratch artifacts stay under an ignored subdirectory here.
 
-1. Append one `session` record to `sessions.jsonl`.
-2. Update `memory_index.md` with the latest session, active priorities, and
-   next review plan.
-3. Update `weak_areas.md` and append weak-area observations to
-   `weak_areas.jsonl`.
-4. Append graded-answer outcomes to `learning_log.jsonl` when answers were
-   evaluated.
-5. Append generated board-style questions to `question_bank.jsonl` only when
-   they include answer, explanation, tags, difficulty, and source basis.
+At session start, read the index and only relevant recent records. Confirm the learner before reusing another
+person's history; use a separate ignored subdirectory for a different learner. Do not invent missing prior results.
+Before writing, check `git check-ignore --no-index <path>` and `git ls-files -- <path>`: the path must be ignored and
+untracked. Never force-add operational files. The main tutor writes records; read-only workers return proposed deltas.
+If writes are unavailable, continue tutoring with in-chat state and disclose that persistence was unavailable.
 
-## Correction Rules
+Append the question with a stable ID before grading. After each answer, append its outcome and update the weak-area
+plan. At session end, append a session summary and update the index. Keep answer summaries minimal; do not copy full
+transcripts or sensitive information. Resume an unanswered question rather than recording a new attempt. JSONL history
+is append-only; append later observations to change status, and treat the latest observation for an ID as current.
 
-For any answer-key correction, doctrine update, or study-guide change
-candidate:
-
-1. Quote or paraphrase the original claim.
-2. Identify the authoritative source used to verify it.
-3. Mark the claim as `Correct`, `Incorrect`, `Outdated`, `Ambiguous`, or
-   `Needs source`.
-4. Provide the corrected answer.
-5. Explain the correction briefly.
-6. Record confidence as `High`, `Medium`, or `Low`.
-7. Do not mark a guide change as `applied` unless the corresponding
-   study-guide file was actually edited and validated.
-
-Use this source hierarchy: statute, regulation, policy, local guidance,
-courseware, then secondary explanation.
+Removing a path from Git's index preserves the local file but does not remove earlier commits. A clean clone will not
+recover private state, and Git ignore rules do not provide backup or access control. Do not rewrite Git history as
+part of ordinary tutoring maintenance.
 
 ## Validation
 
-Run this after memory edits:
+Run `make check-study-memory` after state or evidence updates. It validates shared evidence, validates local records
+when present, and rejects tracked operational files. Absent local files are valid on a fresh clone. Existing local
+records retain their schemas in `schemas.md`; creating empty JSONL files and an index referencing `sessions.jsonl` and
+`weak_areas.md` is sufficient to start.
 
-```sh
-make check-study-memory
-```
-
-If the Makefile target is unavailable in a partial checkout, run:
-
-```sh
-sh scripts/check-study-memory.sh
-```
-
-For LaTeX source edits, continue to run the normal guide validation such as
-`make check-acronyms`, `make audit-active-citation-sources`,
-`make audit-cited-bib-sources`, `make check-current-events-sources`,
-`make check-guide-change-sources`, `git diff --check`, and the Docker PDF build.
-
-`make check-study-memory` also enforces the JSONL schemas, enum values,
-`source_basis` object shape, portable future provenance paths, stable
-question-bank `source_section` references, current-events source-ledger coverage,
-and applied-guide-change source coverage. `make audit-cited-bib-sources` is a
-report-only exact-URL backlog tool unless `scripts/check-cited-bib-sources.py
---strict` is used after exact-URL source-ledger gaps are burned down. `make
-audit-active-citation-sources` is a report-only active-citation metadata backlog
-tool for active citekeys with URLs unless `scripts/audit-active-citation-sources.py
---strict` is used after stale or source-limited active-citation items are burned
-down.
+For Windows without a shell, run `python scripts/check-study-memory.py`. Without Make, run
+`sh scripts/check-study-memory.sh`, then run
+`scripts/check-current-events-sources.py` and `scripts/check-guide-change-sources.py` with an existing Python
+interpreter. LaTeX edits still require the repository's normal acronym, structure, citation, and PDF build checks.

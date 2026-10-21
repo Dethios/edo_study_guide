@@ -1,50 +1,38 @@
 ---
 name: edo-doctrine-verifier
-description: Use when EDO board study depends on current policy, doctrine, organization, ACAT/program status, statutory roles, budget process authority, or authoritative definitions that may have changed.
+description: Use when EDO study depends on current doctrine, law, policy, organization, personnel, thresholds, program status, or conflicting sources.
 internal: true
 ---
 
-# edo-doctrine-verifier
+# EDO Doctrine Verifier
 
-Use this before teaching or editing when currentness matters. Keep source gathering separate from repo baseline when the user requests distinct phases.
+Verify the bounded claim before teaching it as current, correcting an answer, or changing the guide.
+Read the relevant guide section and mapped coursebook module/page, using the coverage manifest and inventory in
+`docs/reference/`. Preserve separate research phases when the user requests them.
 
-## Use when
+## Evidence procedure
 
-- The topic involves current policy, statute, regulation, organization, ACAT status, program status, or named offices.
-- The user asks whether the study guide is current, accurate, or aligned to official sources.
-- The user is in EDO study mode and asks that all study material be cross-referenced against primary official sources.
-- The answer depends on DoD, DON, NAVSEA, NAVWAR, DAU, GAO, CRS, Congress, FAR, DFARS, or DoD FMR authority.
-- Local study-guide content conflicts with an external authoritative source.
+1. State the exact claim, date/context, and controlling jurisdiction or acquisition pathway. Distinguish a historical
+   coursebook question from a question about today's rules.
+2. Search current official primary sources and open the supporting document/page. A search snippet, HTTP success,
+   source-ledger entry, access date, or bibliography title alone does not verify the claim.
+3. Prefer statute, regulation, applicable policy/directive, then local guidance. Use the official issuing
+   authority (Congress/U.S. Code, eCFR, Acquisition.gov FAR/DFARS, DoD issuances/FMR, DON/SECNAV/OPNAV,
+   NAVSEA/NAVWAR, MyNavyHR, and official program/budget pages as applicable). DAU courseware, GAO, and CRS can explain
+   application but do not override governing authority. An official domain alone does not make a news release policy.
+4. Check effective date, cancellation/supersession, scope, exceptions, and Navy overlays. Prefer the signed issuance
+   or controlling text over a newer summary. For thresholds, preserve dollar basis/fiscal year, category, pathway,
+   and decision authority. For people/offices, distinguish the dated roster, assumption of duty, and current billet.
+5. Resolve conflicts by authority and applicability, then effective date. Separate course-era and current answers
+   when both matter; do not blend old names/rules with new ones. If the controlling text is blocked or missing,
+   mark `Needs source` or `Ambiguous`, retain uncertainty, and defer disputed grading/correction.
+6. If browsing is unavailable or explicitly disallowed, state that current verification was not performed. Do not
+   relabel remembered or ledger-listed facts as verified today. Continue with settled, explicitly bounded content.
 
-## Avoid when
+## Return to main
 
-- The user is doing pure drill on settled material and does not ask for current verification.
-- The answer can safely be sourced from the local study guide without current policy or organization risk.
-- The user explicitly asks to avoid web verification for the current turn.
-- The task is a repo patch with already verified source text and no unresolved doctrine question.
-
-## Source Priority
-
-- Statute and regulation first: U.S. Code, FAR, DFARS, DoD FMR.
-- DoD and DON policy next: DoDI 5000 series, SECNAV, OPNAV, ASN or NAVSEA/NAVWAR public guidance.
-- Authoritative acquisition learning sources: DAU/WARU transition pages, GAO, CRS, official budget materials.
-- Public Navy program pages for organization and office ownership.
-- Use third-party sources only as leads; do not rely on them for board-ready claims unless clearly labeled.
-- Prefer the latest official document or official web page over coursebook text when there is a conflict or update.
-
-## Output Shape
-
-- Current as of: runtime date when verification occurs.
-- Verified doctrine: concise supported facts.
-- Repo comparison: aligned, missing, stale, or conflicting.
-- Inference: explicitly labeled.
-- Uncertainty: what could not be confirmed and why.
-- Study-guide impact: no change, candidate update, or correction required, with target section if a correction is needed.
-
-## Validate
-
-- Each verified claim is tied to a retrieved source.
-- Date-sensitive claims include the current verification date.
-- Conflicts identify the source hierarchy.
-- Recommendations do not exceed what the sources support.
-- If verification identifies source drift, the next step is a bounded study-guide-maintainer update unless the user explicitly asks not to edit.
+Include `Current as of YYYY-MM-DD`, original claim/location, verdict, corrected or confirmed answer, authority,
+document version/effective date, exact section/page, direct URL, actual check date, confidence, and unresolved limits.
+Explain any guide/coursebook conflict and candidate canonical target. Never change an answer key on unresolved evidence.
+The read-only verifier returns evidence; main owns learner state and decides whether maintenance is authorized.
+Ordinary tutoring alone does not authorize guide edits or shared-ledger writes.
