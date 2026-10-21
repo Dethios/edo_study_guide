@@ -2,17 +2,17 @@
 
 Last updated: 2026-10-20. Individual source checks retain their own dates.
 
-Use this file to track source basis for study-guide corrections, generated
-questions, and doctrine-sensitive memory entries. Verify live again before
+Use this file to track shared source basis for study-guide corrections.
+Keep question-specific evidence and learner history in ignored local operational records. Verify live again before
 using current org, billet, program-manager, ACAT, policy, or law details as
 final.
 
 ## Local Provenance
 
-| Title                                       | Authority Level | Path                                                                         | Version Or Date | Date Checked | Notes                                                                                 |
-| ------------------------------------------- | --------------- | ---------------------------------------------------------------------------- | --------------- | ------------ | ------------------------------------------------------------------------------------- |
-| May 30 EDO Study Guide chat session package | local_guidance  | `/home/victor/dev-workspace/EDO_Study_Guide_Chat_Session_Package_2026-05-30` | 2026-05-30      | 2026-05-30   | Initial source of truth for seeding persistent study memory.                          |
-| Archived May 30 session package             | local_guidance  | `docs/EDO_Study_Guide_Chat_Session_Package_2026-05-30`                       | 2026-05-30      | 2026-06-05   | Repo-retained copy of the imported May 30 package for portable source reconstruction. |
+| Title                                       | Authority Level | Path                                                                         | Version Or Date | Date Checked | Notes                                                                                           |
+| ------------------------------------------- | --------------- | ---------------------------------------------------------------------------- | --------------- | ------------ | ----------------------------------------------------------------------------------------------- |
+| May 30 EDO Study Guide chat session package | local_guidance  | `/home/victor/dev-workspace/EDO_Study_Guide_Chat_Session_Package_2026-05-30` | 2026-05-30      | 2026-05-30   | Historical local import used to seed tutor state; not controlling doctrine.                     |
+| Archived May 30 session package             | local_guidance  | `docs/EDO_Study_Guide_Chat_Session_Package_2026-05-30`                       | 2026-05-30      | 2026-06-05   | Ignored local copy of the historical import; absent on a fresh clone, not controlling doctrine. |
 
 ## NAVWAR / PEO C4I / PEO MLB
 

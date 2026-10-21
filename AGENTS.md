@@ -18,8 +18,8 @@ when requested.
 - `artifacts/build/`, `artifacts/tikz/`: aux files and TikZ cache; keep
   generated contents out of Git except placeholders.
 - `docs/reference/` and `docs/archive/`: source material and historical notes.
-- `docs/study_memory/`: validated tutoring memory, source ledger, audit log,
-  weak-area state, and JSONL guide-change records.
+- `docs/study_memory/`: shared source/correction evidence and ignored local tutor state.
+  See its README for the tracked allowlist; personal training records must stay untracked.
 - `project_export.json`: durable project memory/status snapshot.
 
 ## Build, Test, and Development Commands
@@ -128,32 +128,34 @@ For every correction:
 6. Record confidence as `High`, `Medium`, or `Low`.
 7. Never change an answer key without citing the source basis.
 
-Maintain these files when available:
+Maintain shared source inventory, correction audit, and guide-change provenance in
+`docs/study_memory/sources.md`, `study_guide_audit.md`, and `guide_changes.jsonl`.
+Keep these impersonal: no learner identities, answers, scores, questions asked, or weakness history.
 
-- `docs/study_memory/sources.md`: source inventory, version/date, URL or file
-  path, authority level.
-- `docs/study_memory/study_guide_audit.md`: correction log.
-- `docs/study_memory/question_bank.jsonl`: generated questions, answers,
-  explanations, tags, difficulty.
-- `docs/study_memory/learning_log.jsonl`: user responses, correctness, missed
-  concept, weak-area tag, next review date.
-- `docs/study_memory/weak_areas.md` and `docs/study_memory/weak_areas.jsonl`:
-  recurring weak areas and recommended review actions.
-- `docs/study_memory/guide_changes.jsonl`: append-only applied guide-change
-  records.
+All operational tutor state is ignored by Git: `memory_index.md`, `sessions.jsonl`, `question_bank.jsonl`,
+`learning_log.jsonl`, `weak_areas.md`, `weak_areas.jsonl`, and future generated artifacts under `docs/study_memory/`.
+Imported `docs/EDO_Study_Guide_Chat_Session_Package_*/` directories are also local only.
+Initialize missing local state lazily using `docs/study_memory/schemas.md`; main owns persistence and read-only
+workers return proposed deltas. Verify ignored and untracked status before writing; never force-add learner records.
+Do not copy personal training state into `project_export.json`, shared audits, changelogs, or pull requests.
+
+Start with the relevant guide section, then the mapped coursebook objective/pages using the coverage manifest and
+edition inventory in `docs/reference/`. Inspect actual source text; use official online authority for current or
+conflicting claims. Cite guide location, coursebook module/page/edition, and official provision/date as applicable.
+Ordinary tutoring does not authorize guide edits. Record candidates locally until maintenance is authorized.
 
 When generating questions:
 
 - Prefer active recall and scenario-based questions over passive recognition.
 - Keep exactly one active board-style drill question at a time unless the user
   asks for a batch.
-- Include the correct answer and explanation separately from the question unless
-  the user asks for immediate answers.
+- Prepare the answer and rubric privately; reveal the correct answer and explanation only after
+  the learner responds, unless immediate answers are requested.
 - Tag each question by topic, source section, difficulty, and tested skill.
 
 When grading answers:
 
 - Identify whether the miss was factual recall, concept confusion,
   source-version issue, wording ambiguity, or careless error.
-- Update the weak-area tracker.
+- Update the ignored local weak-area tracker; do not penalize the learner for an ambiguous question or stale source.
 - Recommend the next drill based on the miss pattern.

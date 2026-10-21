@@ -1,53 +1,37 @@
 ---
 name: edo-study-guide-maintainer
-description: Use when EDO board tutoring identifies study-guide gaps or the user asks to update, correct, or integrate material into projects/edo_study_guide without duplicating existing coverage.
+description: Use for authorized corrections or additions to canonical EDO guide sections after the source basis and target are established.
 internal: true
 ---
 
-# edo-study-guide-maintainer
+# EDO Study Guide Maintainer
 
-Use this for bounded study-guide edits after the learning or verification step identifies a concrete gap.
+Edit only within the user's authorized maintenance scope. A tutoring discovery alone is a candidate, not permission
+to edit. Use the actual repository root, read `AGENTS.md`, and search existing coverage before changing a section.
 
-## Use when
+## Source and change contract
 
-- The user asks to update, correct, improve, or incorporate information into the EDO study guide.
-- A tutoring session identifies a material gap, stale statement, or confusing board-prep relationship.
-- Current official sources supersede, nuance, or contradict study-guide content during EDO board prep.
-- The change belongs in `projects/edo_study_guide` and should be integrated into the canonical chapter or appendix.
-- The user asks for insertion text, update text, or a patch plan for the study guide.
+- Read the owning guide section and mapped coursebook module/objective using
+  `docs/reference/coursebook-coverage-manifest.yaml` and `2026-10-coursebook-inventory.json` in that directory.
+  Inspect the actual relevant PDF pages, including diagrams/tables when necessary.
+- For current or conflicting doctrine, use `../edo-doctrine-verifier/SKILL.md`. Record the original claim,
+  authoritative source with exact provision/version/date, verdict, corrected answer, rationale, and confidence.
+  Unresolved evidence blocks an answer-key change; report the gap and candidate text instead.
+- Update the canonical chapter/appendix rather than adding parallel study notes. Preserve valid course-era context
+  where it explains a transition; label it clearly. Do not infer module-wide coverage from one corrected objective.
+- Use existing acronym keys, ASCII unless needed, and `\autocite{}` inside sentences before punctuation.
+  Add/update bibliography and exact source-ledger rows when the evidence changes. Advance check dates only after
+  actual verification. Update the coverage manifest when objective coverage changes.
+- Shared `sources.md`, `study_guide_audit.md`, and `guide_changes.jsonl` under `docs/study_memory/` contain impersonal
+  guide provenance only. Learner answers, scores, question history, and weakness notes belong in ignored local state.
+  Record applied status only after the corresponding source edit and required validation succeed; otherwise leave
+  the candidate proposed/blocked with the reason. Do not force-add operational records.
 
-## Avoid when
+## Verification and return
 
-- The user only wants tutoring or quizzing and has not asked for a repo change.
-- The source basis is unresolved or current doctrine has not been verified where required.
-- The proposed content duplicates an existing section instead of improving it.
-- The request belongs to a different repository or workspace document.
-
-## Edit Rules
-
-- Read `projects/edo_study_guide/AGENTS.md` and the target chapter before editing.
-- Search for existing coverage before adding new content.
-- Prefer revising the canonical subject chapter or appendix over creating standalone notes.
-- Treat the study guide as the starting point and current official sources as controlling when policy, law, regulation, organization, ACAT/program status, or authoritative definitions have changed.
-- Use `\autocite{}` inside sentences before punctuation and existing acronym keys from `tex/acronyms.def`.
-- Keep prose board-ready, concise, and non-duplicative.
-- Update bibliography only when a new source is used.
-- Report validation performed and residual warnings or blockers after writes.
-
-## Targeting Heuristics
-
-- PPBE, budget roles, POM, BES, execution: `tex/chapters/6_PPBE.tex` and adjacent funding chapters.
-- Milestones and MCA: `tex/chapters/16_Milestones.tex`.
-- Systems engineering reviews: `tex/chapters/17I_CM_and_Technical_Reviews.tex`.
-- EVM and IBR: `tex/chapters/14_EVM.tex`.
-- CDD, KPP/KSA, SEP, TEMP, and requirements relationships: `tex/chapters/17K_jcids.tex`, `tex/chapters/17G_Systems_Engineering_Overview.tex`, and `tex/chapters/18B_test-eval.tex`.
-- CIVPERS, HRO, EEO, employee relations, labor relations, DPMAP, WGI/QSI, Douglas Factors, and Weingarten: `tex/chapters/27_CIVPERS.tex`.
-- Current events and PAE structure: the relevant appendix files under `tex/chapters/`.
-- PEO IWS and NAVSEA office content: `tex/chapters/3_NAVSEA.tex`.
-- PEO C4I and NAVWAR content: `tex/chapters/4_NAVWAR.tex`.
-
-## Validate
-
-- Run the lightest relevant text-integrity check after edits.
-- Use the Docker build path when the user requests build validation.
-- If validation is blocked by environment or baseline drift, say exactly what was skipped or failed.
+Run required repository checks for touched surfaces, including `make check-study-memory`, appropriate source-ledger
+checks, acronym/structure checks when relevant, and the Docker PDF build for LaTeX source changes (local fallback if
+Docker is unavailable). Run `rumdl check` on modified Markdown and `git diff --check`.
+Report changed paths, source provisions checked, commands/results, remaining warnings, and any skipped/blocked checks.
+Stop when the bounded patch and checks finish or after two failed recovery approaches. Do not release, commit, push,
+or expand the edit scope unless authorized.

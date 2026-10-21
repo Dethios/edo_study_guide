@@ -7,6 +7,14 @@ release tags (release-YYYYMMDD).
 
 ## [Unreleased]
 
+### Changed
+
+- Keep tutor sessions, questions, learning outcomes, weak areas, and imported study handoffs local and Git-ignored;
+  retain shared source/correction evidence and validate the boundary on fresh clones.
+- Ground board tutoring in guide sections, mapped coursebook objectives/pages, and applicable current official
+  sources; refine grading, hidden-answer cadence, adaptive review, and bounded worker responsibilities.
+- Remove retired tutor worker model/effort pins so explicit supported dispatch settings can apply.
+
 ## [release-20261020] - 2026-10-20
 
 ### Fixed
